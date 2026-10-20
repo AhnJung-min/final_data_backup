@@ -1,0 +1,159 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-4b669b8f6bec",
+ "image": {
+  "sha256": "4b669b8f6bec89c716d6f4db6fd8c07f3e32d5f3ee52a04dfcacfff5717679d5",
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:54+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "'출:모화제 cultural Festival 2026 그때 그 시절 사련함 속스로.",
+  "official": "'출:모화제 cultural Festival 그때 그 시절 사련함 속스로.",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_006",
+    "easy_rgb_1x_008",
+    "easy_rgb_1x_009"
+   ],
+   "bbox": [
+    142.0,
+    88.0,
+    424.0,
+    223.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_004"
+   ],
+   "bbox": [
+    70.0,
+    92.0,
+    156.0,
+    124.0
+   ],
+   "confidence": 0.9999939799308777
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "absent",
+  "raw": null,
+  "start": null,
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": null
+ },
+ "venue": {
+  "status": "absent",
+  "raw": null,
+  "items": [],
+  "evidence": null
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,326 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-d968fc4ea170",
+  "image": {
+    "sha256": "d968fc4ea17028a42ea2363097ce1bc1a7056e970ddd5810181695f41ca27397",
+    "width": 441,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:15+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "장소에 시·군·구가 두 개(진도군, 해남군) 인쇄되어 admin_area.district에 쉼표로 함께 기록.",
+      "주관 기관은 '관광재단' 앞 작은 두 글자를 확대해도 확정하지 못해 legibility=partial로 판독된 부분만 기록. 후원 로고 '대한민국해군'도 일부 글자가 불확실해 partial.",
+      "좌상단 손글씨 브랜드 문구는 둘째 줄 '함께 사는 특별시'만 판독되어 badges에 그 줄만 기록(첫 줄 손글씨는 판독 불가). QR 아래 작은 글자도 판독 불가."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "명량대첩축제",
+    "official": "명량대첩축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "불멸의 명량! 호국의 울돌목!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.09.11.(금) - 09.13.(일)",
+    "start": {
+      "iso": "2026-09-11",
+      "year": 2026,
+      "month": 9,
+      "day": 11,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-09-13",
+      "year": 2026,
+      "month": 9,
+      "day": 13,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "진도군 녹진관광지, 해남군 우수영관광지",
+    "items": [
+      "진도군 녹진관광지",
+      "해남군 우수영관광지"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "진도군 녹진관광지, 해남군 우수영관광지",
+    "region": null,
+    "district": "진도군, 해남군",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "전남광주통합특별시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "Jindo",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "해남군",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "관광재단",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "대한민국해군",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한국관광공사",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "함께 사는 특별시",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "디지털 합성 일러스트",
+      "붓글씨 제목",
+      "불꽃놀이 배경"
+    ],
+    "main_colors": [
+      "분홍",
+      "보라",
+      "남색",
+      "흰색",
+      "노랑",
+      "파랑"
+    ],
+    "main_objects": [
+      "보름달",
+      "칼을 든 장군 실루엣",
+      "거북선 실루엣",
+      "파도",
+      "불꽃놀이",
+      "QR 코드"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "분홍·보라 밤하늘에 불꽃놀이가 터지고 상단에 흰 붓글씨 '명량대첩축제'와 노란 슬로건·일정·장소를 두었으며, 가운데 보름달 앞에 칼을 든 장군과 배 실루엣, 소용돌이 파도를 그리고 맨 아래 흰 띠에 기관 로고를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "441×627 이미지. 하단 기관 띠의 일부 로고 글자, QR 아래 글자, 좌상단 손글씨는 확정하지 못함."
+    ]
+  }
+}

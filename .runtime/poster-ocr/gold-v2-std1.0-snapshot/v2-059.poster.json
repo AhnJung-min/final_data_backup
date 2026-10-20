@@ -1,0 +1,353 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-6cce4beddb5d",
+  "image": {
+    "sha256": "6cce4beddb5d47c9a2836f1ac94619355abe13422b6b5f37c4af7cda8e7ebf07",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:28+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "일정 문구에는 연도·요일이 없어 제목의 2026을 poster_text로 적용하고 weekday는 null. '매주 토·일 14:00~20:00(10회)' 중 운영일은 operating_raw, 시간은 times로 나누고 '(10회)'는 별도 슬롯이 없어 기록하지 않음.",
+      "제목은 작은 '2026 울산 야외도서관'과 큰 '소풍'을 이어 읽음. 표 제목 '주말마다 새로운 소풍 프로그램'에서 소풍이 행사 브랜드로 쓰여 variants(brand)에도 기록.",
+      "프로그램 표는 날짜별 회차(약 45개)와 출연자 이름이 작아 오독 위험이 커서 반복되는 프로그램 유형 8개만 기록하고 날짜·출연자는 넣지 않음. 사람 검토 시 회차별 기록 여부 결정 필요.",
+      "기관 로고·역할 표기가 포스터에 없어 organizations는 absent. 표 아래 각주는 일정·출연 변경 안내로 보이나 문구를 확정하지 못해 notices를 illegible로 둠.",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 울산 야외도서관 소풍",
+    "official": "울산 야외도서관 소풍",
+    "variants": [
+      {
+        "kind": "brand",
+        "raw": "소풍",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "바다를 보며 책 읽는 특별한 가을 소풍",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "울산, 슬독讀에 빠지다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "9.19-10.18",
+    "start": {
+      "iso": "2026-09-19",
+      "year": 2026,
+      "month": 9,
+      "day": 19,
+      "weekday": null,
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": null,
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "14:00~20:00",
+        "start": "14:00",
+        "end": "20:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": "매주 토·일",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "illegible",
+    "raw": null,
+    "items": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "absent",
+    "items": []
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "버스킹",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "북토크",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "DJ",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "팬플룻",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "별빛 도슨트",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "마술",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "낭독",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "영화",
+        "category_raw": "주요 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "illegible",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "풍경 일러스트",
+      "표 형식 프로그램 안내"
+    ],
+    "main_colors": [
+      "분홍",
+      "파랑",
+      "하늘색",
+      "흰색",
+      "베이지",
+      "남색"
+    ],
+    "main_objects": [
+      "노을 진 바다",
+      "등대와 방파제",
+      "고래 조형물",
+      "여행가방 모양 책",
+      "헤드폰을 걸친 책 더미"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "hanja"
+    ],
+    "description": "상단 분홍 하늘에 흰 '소풍' 대형 글자와 손글씨 슬로건, 가운데 노을 진 바다와 등대·방파제·책 더미 일러스트, 하단 절반에 날짜별 '주요 프로그램' 표를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 장소 문구 첫 글자와 괄호 안 위치 설명, 그 아래 '*슬독(讀)…' 각주는 확대해도 확정하지 못해 venue를 illegible로 둠.",
+      "프로그램 표의 출연자·영화 제목과 9.26·9.27·10.3 옆 빨간 표기, 표 아래 변경 가능 안내 각주는 글자가 작아 일부만 판독됨."
+    ]
+  }
+}

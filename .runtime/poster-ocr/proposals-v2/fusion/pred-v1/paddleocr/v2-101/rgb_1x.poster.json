@@ -1,0 +1,354 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-505578c9b9ff",
+ "image": {
+  "sha256": "505578c9b9ff6f2ac050bd15b927fb7c2865d4c28838b9ce6d874a275b7674ee",
+  "width": 424,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T00:00:00+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "고극깜축제",
+  "official": "고극깜축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    14.0,
+    176.0,
+    198.0,
+    217.0
+   ],
+   "confidence": 0.8646958470344543
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "20th",
+  "number": 20,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000"
+   ],
+   "bbox": [
+    10.0,
+    12.0,
+    117.0,
+    68.0
+   ],
+   "confidence": 0.898892879486084
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    12.0,
+    89.0,
+    138.0,
+    135.0
+   ],
+   "confidence": 0.9987276792526245
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.7.(수)-25.(일)",
+  "start": {
+   "iso": "2026-10-07",
+   "year": 2026,
+   "month": 10,
+   "day": 7,
+   "weekday": "wed",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007"
+   ],
+   "bbox": [
+    16.0,
+    226.0,
+    149.0,
+    243.0
+   ],
+   "confidence": 0.9607454538345337
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "공간아울,후암스테이지.열린극장",
+  "items": [
+   "공간아울",
+   "후암스테이지.열린극장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    16.0,
+    246.0,
+    148.0,
+    259.0
+   ],
+   "confidence": 0.8557222485542297
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "present",
+  "raw": "~9/30(수)까지 예매 시 적용 조기예매 15,000원 15,000원 소극장공연매니아 2,000원 ※소극장공연 유료 티켓지참 공연예술계종사자 15,000원 15,000원 15,000원 15,000원 ※일인 관중예매 시, 한정에서증방지로 책인 후 대켓 수령이 가능합니다 (이지할 시 정가 기준의 지에 지봉)",
+  "free": null,
+  "prices": [],
+  "reservation_raw": "~9/30(수)까지 예매 시 적용",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_015",
+    "padd_rgb_1x_013",
+    "padd_rgb_1x_014",
+    "padd_rgb_1x_017",
+    "padd_rgb_1x_020",
+    "padd_rgb_1x_021",
+    "padd_rgb_1x_023",
+    "padd_rgb_1x_024",
+    "padd_rgb_1x_025",
+    "padd_rgb_1x_029",
+    "padd_rgb_1x_033",
+    "padd_rgb_1x_037",
+    "padd_rgb_1x_040"
+   ],
+   "bbox": [
+    29.0,
+    335.0,
+    407.0,
+    608.0
+   ],
+   "confidence": null
+  }
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "※출생년도 명시원 신분증(학생증.청소년중, 여건,건강보협증,동본 등)재청",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019"
+     ],
+     "bbox": [
+      156.0,
+      381.0,
+      384.0,
+      394.0
+     ],
+     "confidence": 0.7870939373970032
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※소극장공연 유료 티켓지참",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_023"
+     ],
+     "bbox": [
+      156.0,
+      421.0,
+      247.0,
+      431.0
+     ],
+     "confidence": 0.8433018922805786
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※신분증및 예술인매스,명합등지침",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_027"
+     ],
+     "bbox": [
+      155.0,
+      458.0,
+      271.0,
+      471.0
+     ],
+     "confidence": 0.792809009552002
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※신분증 및 소속 공무원증재직증명서 지침",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_031"
+     ],
+     "bbox": [
+      157.0,
+      497.0,
+      289.0,
+      509.0
+     ],
+     "confidence": 0.8847724795341492
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※신분증 및 복지키드, 유공자증 등 지침 (K경로자는 96년 이전 출생자",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_035"
+     ],
+     "bbox": [
+      157.0,
+      538.0,
+      361.0,
+      548.0
+     ],
+     "confidence": 0.8444298505783081
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※문화누리카드 지참",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_039"
+     ],
+     "bbox": [
+      157.0,
+      575.0,
+      220.0,
+      586.0
+     ],
+     "confidence": 0.8345244526863098
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※일인 관중예매 시, 한정에서증방지로 책인 후 대켓 수령이 가능합니다 (이지할 시 정가 기준의 지에 지봉)",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_040"
+     ],
+     "bbox": [
+      110.0,
+      595.0,
+      407.0,
+      608.0
+     ],
+     "confidence": 0.6812055706977844
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

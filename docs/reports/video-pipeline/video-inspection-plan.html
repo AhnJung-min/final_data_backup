@@ -1,0 +1,1580 @@
+<title>숏폼 검수 실행안</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a spec sheet on a frame-strip rail — stage cards hang off a vertical rail, summary first, detail folded. */
+:root {
+  --bg: #f5f7fa; --surface: #ffffff; --surface-2: #f4f7fa; --code-bg: #f1f4f8;
+  --ink: #18283f; --muted: #5d6e83; --line: #dce5ee; --line-strong: #c6d3e1;
+  --blue: #0069dc; --blue-ink: #0051b2; --pale: #eaf4ff; --navy: #152844;
+  --green: #14765d; --green-soft: #e6f4ee; --amber: #9b6505; --amber-soft: #fff5e0;
+  --red: #bc3f39; --red-soft: #fdeeed; --slate: #64758a; --slate-soft: #eef2f6;
+  --chart-a: #0069dc; --chart-b: #64758a; --chart-grid: #e3e9f0;
+  --font-sans: "Pretendard", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e141d; --surface: #151e2a; --surface-2: #1a2533; --code-bg: #101822;
+    --ink: #e4ebf3; --muted: #9aabbd; --line: #283647; --line-strong: #364860;
+    --blue: #6aa6f8; --blue-ink: #9cc4ff; --pale: #16273d; --navy: #d3e1f1;
+    --green: #5cc29b; --green-soft: #15302a; --amber: #e2a457; --amber-soft: #33281a;
+    --red: #f08a80; --red-soft: #3a1f1d; --slate: #9aabbd; --slate-soft: #1f2a38;
+    --chart-a: #3d84ea; --chart-b: #8a9bb0; --chart-grid: #263445;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e141d; --surface: #151e2a; --surface-2: #1a2533; --code-bg: #101822;
+  --ink: #e4ebf3; --muted: #9aabbd; --line: #283647; --line-strong: #364860;
+  --blue: #6aa6f8; --blue-ink: #9cc4ff; --pale: #16273d; --navy: #d3e1f1;
+  --green: #5cc29b; --green-soft: #15302a; --amber: #e2a457; --amber-soft: #33281a;
+  --red: #f08a80; --red-soft: #3a1f1d; --slate: #9aabbd; --slate-soft: #1f2a38;
+  --chart-a: #3d84ea; --chart-b: #8a9bb0; --chart-grid: #263445;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 15.5px; line-height: 1.7;
+  word-break: keep-all; overflow-wrap: anywhere;
+}
+.wrap {
+  max-width: 980px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--blue); text-underline-offset: 3px; }
+a:focus-visible, summary:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3, h4 { line-height: 1.35; letter-spacing: -0.035em; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+code, .mono { font-family: var(--font-mono); font-size: 0.86em; }
+:not(pre) > code { background: var(--code-bg); border: 1px solid var(--line); padding: 0.05em 0.4em; border-radius: 5px; white-space: nowrap; }
+td code, li code, p code { white-space: normal; }
+
+/* header */
+.masthead { background: var(--surface); border-bottom: 1px solid var(--line); }
+.strip { height: 14px; background:
+  repeating-linear-gradient(90deg, var(--navy) 0 10px, transparent 10px 22px) top / 100% 4px no-repeat,
+  repeating-linear-gradient(90deg, var(--navy) 0 10px, transparent 10px 22px) bottom / 100% 4px no-repeat;
+  opacity: 0.85; }
+.masthead .wrap { padding-block: 34px 28px; display: grid; gap: 14px; }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: var(--blue); }
+h1 { font-size: clamp(28px, 4.6vw, 40px); font-weight: 800; }
+.dek { font-size: 17px; color: var(--muted); max-width: 64ch; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--muted); }
+.meta b { color: var(--ink); font-weight: 600; }
+.verdict {
+  margin-top: 6px; background: var(--pale); border: 1px solid var(--line-strong); border-radius: var(--radius);
+  padding: 16px 18px; display: grid; gap: 6px; max-width: 78ch;
+}
+.verdict strong { font-size: 15px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 13px; color: var(--muted); align-items: center; }
+
+/* basis + verdict tags */
+.tag { display: inline-block; font-size: 11.5px; font-weight: 700; line-height: 1; padding: 4px 7px 3px; border-radius: 999px; vertical-align: 2px; white-space: nowrap; letter-spacing: 0.01em; }
+.t-m { background: var(--green-soft); color: var(--green); }
+.t-o { background: var(--pale); color: var(--blue-ink); }
+.t-e { background: var(--amber-soft); color: var(--amber); }
+.t-c { background: var(--slate-soft); color: var(--slate); }
+.v { font-size: 12px; font-weight: 700; padding: 4px 9px 3px; border-radius: 999px; border: 1px solid; white-space: nowrap; }
+.v-keep { color: var(--green); border-color: var(--green); }
+.v-mod { color: var(--amber); border-color: var(--amber); }
+.v-swap { color: var(--red); border-color: var(--red); }
+.v-new { color: var(--blue); border-color: var(--blue); }
+.v-hold { color: var(--slate); border-color: var(--slate); }
+
+/* toc */
+nav.toc { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+nav.toc .wrap { display: flex; gap: 6px; overflow-x: auto; padding-block: 10px; scrollbar-width: thin; }
+nav.toc a { flex: none; font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; padding: 6px 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav.toc a:hover { border-color: var(--blue); color: var(--blue); }
+
+main .wrap { display: grid; gap: 56px; padding-block: 40px 72px; }
+section { display: grid; gap: 18px; scroll-margin-top: 64px; }
+.sec-head { display: grid; gap: 6px; }
+.sec-head h2 { font-size: clamp(22px, 3vw, 27px); font-weight: 800; }
+.sec-head p { color: var(--muted); max-width: 70ch; }
+.kicker { font-family: var(--font-mono); font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
+
+/* tables */
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 11px 13px; border-bottom: 1px solid var(--line); }
+tr:last-child td { border-bottom: 0; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 700; background: var(--surface-2); white-space: nowrap; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.changes td:first-child { font-weight: 700; width: 20%; }
+.changes td:nth-child(2) { width: 42%; }
+.changes .n { font-family: var(--font-mono); color: var(--blue); margin-right: 6px; }
+
+/* callouts */
+.note { border-radius: 12px; padding: 14px 16px; font-size: 14.5px; display: grid; gap: 6px; border: 1px solid var(--line); background: var(--surface); }
+.note.warn { background: var(--amber-soft); border-color: transparent; }
+.note.law { background: var(--surface-2); }
+.note h4 { font-size: 14.5px; }
+ul.tight, ol.tight { margin: 0; padding-left: 20px; display: grid; gap: 5px; }
+
+/* flow */
+.flow { display: grid; gap: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+.flow-row { display: grid; grid-template-columns: 52px minmax(0, 1.25fr) minmax(0, 1.5fr) minmax(0, 0.8fr) minmax(0, 0.9fr); gap: 12px; align-items: center; padding: 11px 14px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.flow-row:last-child { border-bottom: 0; }
+.flow-row.head { background: var(--surface-2); font-size: 12.5px; color: var(--muted); font-weight: 700; }
+.flow-row.off { color: var(--muted); background: repeating-linear-gradient(135deg, transparent 0 8px, var(--surface-2) 8px 16px); }
+.flow-row.total { background: var(--pale); font-weight: 700; }
+.badge { font-family: var(--font-mono); font-weight: 600; font-size: 12.5px; color: var(--surface); background: var(--navy); border-radius: 6px; padding: 3px 0; text-align: center; width: 40px; }
+.flow-row.off .badge { background: var(--slate); }
+.flow-row .file { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); }
+.flow-row .t { font-variant-numeric: tabular-nums; text-align: right; }
+
+/* chart */
+.chart-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 18px 18px 12px; display: grid; gap: 10px; }
+.chart-card h3 { font-size: 16px; }
+.chart-card .sub { font-size: 13px; color: var(--muted); }
+.chart-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.chart-svg text { font-family: var(--font-sans); font-size: 12.5px; fill: var(--muted); }
+.chart-svg .lbl { fill: var(--ink); font-weight: 700; font-size: 13px; }
+.chart-svg .val { fill: var(--ink); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.chart-svg .grid { stroke: var(--chart-grid); stroke-width: 1; }
+.chart-svg .gate { stroke: var(--ink); stroke-width: 1.5; }
+.chart-svg .bar-a { fill: var(--chart-a); }
+.chart-svg .bar-b { fill: var(--chart-b); }
+.chart-svg .hatch-bg { fill: var(--surface); }
+.chart-svg .hatch-ln { stroke: var(--chart-a); stroke-width: 2.2; }
+.chart-svg .hit { fill: transparent; cursor: default; }
+.tip { position: fixed; z-index: 30; pointer-events: none; background: var(--navy); color: var(--surface); font-size: 12.5px; line-height: 1.5; padding: 8px 10px; border-radius: 8px; max-width: 280px; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+:root[data-theme="dark"] .tip { color: #0e141d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tip { color: #0e141d; } }
+
+/* stage cards */
+.rail { display: grid; gap: 22px; position: relative; }
+.stage { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; scroll-margin-top: 64px; }
+.stage-mark { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.stage-mark .no { font-family: var(--font-mono); font-weight: 600; font-size: 15px; color: var(--surface); background: var(--navy); border-radius: 8px; width: 48px; text-align: center; padding: 8px 0; }
+.stage-mark .line { flex: 1; width: 2px; background: var(--line-strong); border-radius: 2px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; display: grid; gap: 16px; min-width: 0; }
+.card-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+.card-head h3 { font-size: 20px; font-weight: 800; margin-right: 4px; }
+.owner { font-size: 13px; color: var(--muted); }
+.owner b { color: var(--ink); }
+.shift { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+.shift > div { border-radius: 10px; padding: 11px 13px; font-size: 14px; display: block; }
+.shift .was { background: var(--surface-2); color: var(--muted); }
+.shift .now { background: var(--pale); }
+.shift .lab { display: block; margin-bottom: 3px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.05em; color: var(--muted); }
+.shift .now .lab { color: var(--blue-ink); }
+.block { display: grid; gap: 8px; }
+.block > h4 { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0.02em; }
+ol.steps { margin: 0; padding-left: 22px; display: grid; gap: 7px; font-size: 14.5px; }
+ol.steps li::marker { font-family: var(--font-mono); color: var(--blue); font-weight: 600; }
+.done { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 14px; }
+.done li { padding-left: 24px; position: relative; }
+.done li::before { content: ""; position: absolute; left: 2px; top: 0.5em; width: 12px; height: 7px; border-left: 2px solid var(--green); border-bottom: 2px solid var(--green); transform: rotate(-45deg); }
+.vals td:first-child { white-space: nowrap; font-weight: 600; }
+.vals td:nth-child(2) { font-family: var(--font-mono); font-size: 13px; white-space: nowrap; }
+
+details { border: 1px solid var(--line); border-radius: 10px; background: var(--surface-2); }
+details > summary { cursor: pointer; list-style: none; padding: 10px 14px; font-size: 13.5px; font-weight: 700; color: var(--ink); display: flex; gap: 8px; align-items: center; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: "+"; font-family: var(--font-mono); color: var(--blue); width: 12px; }
+details[open] > summary::before { content: "−"; }
+details > .inner { padding: 0 14px 14px; display: grid; gap: 10px; }
+pre { margin: 0; background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; overflow-x: auto; font-family: var(--font-mono); font-size: 12.5px; line-height: 1.6; color: var(--ink); tab-size: 4; }
+.cap { font-size: 12.5px; color: var(--muted); }
+
+/* gates */
+.gates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.gate-card { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 14px 16px; display: grid; gap: 6px; font-size: 14px; }
+.gate-card h4 { font-size: 15px; display: flex; gap: 8px; align-items: baseline; }
+.gate-card h4 .k { font-family: var(--font-mono); color: var(--blue); }
+.gate-card.hard { border-color: var(--red); }
+.gate-card.hard h4 .k { color: var(--red); }
+
+.week { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.week > div { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 14px 16px; display: grid; gap: 8px; font-size: 14px; }
+.week h4 { font-size: 15px; }
+.week ol { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 6px; }
+.week li { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 8px; }
+.week li .d { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); padding-top: 1px; }
+
+.decisions { counter-reset: dec; display: grid; gap: 10px; }
+.dec { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 12px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 13px 15px; font-size: 14px; }
+.dec::before { counter-increment: dec; content: counter(dec, decimal-leading-zero); font-family: var(--font-mono); font-weight: 600; color: var(--blue); padding-top: 1px; }
+.dec .q { font-weight: 700; }
+.dec .r { color: var(--muted); }
+.dec .who { font-size: 12.5px; font-weight: 700; color: var(--navy); background: var(--slate-soft); border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
+
+.sources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; font-size: 13.5px; }
+.sources > div { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 14px 16px; display: grid; gap: 8px; }
+.sources h4 { font-size: 14px; }
+.sources ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+footer { color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* gpu */
+.pick { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pick > div { border: 1px solid var(--line); background: var(--surface); border-radius: 12px; padding: 14px 16px; display: grid; gap: 6px; font-size: 14px; align-content: start; }
+.pick > div.on { border-color: var(--blue); }
+.pick > div.off { border-style: dashed; background: var(--surface-2); }
+.pick h4 { font-size: 15px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; }
+.pick .k { font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--muted); }
+.chart-svg .hatch-ln-b { stroke: var(--chart-b); stroke-width: 2.2; }
+.gpu-env td:first-child { min-width: 128px; }
+
+@media (max-width: 760px) {
+  .flow-row { grid-template-columns: 44px minmax(0, 1fr) auto; }
+  .flow-row .file, .flow-row .who-col { display: none; }
+  .flow-row.head .file, .flow-row.head .who-col { display: none; }
+  .stage { grid-template-columns: minmax(0, 1fr); }
+  .stage-mark { flex-direction: row; }
+  .stage-mark .line { height: 2px; width: auto; flex: 1; }
+  .card { padding: 16px; }
+  .shift, .gates, .week, .sources, .pick { grid-template-columns: minmax(0, 1fr); }
+  .dec { grid-template-columns: 28px minmax(0, 1fr); }
+  .dec .who { grid-column: 2; justify-self: start; }
+  .changes td:first-child, .changes td:nth-child(2) { width: auto; }
+}
+@media (max-width: 640px) {
+  .tbl table, .tbl tbody, .tbl tr, .tbl td { display: block; }
+  .tbl thead { display: none; }
+  .tbl tr { display: grid; gap: 6px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .tbl tr:last-child { border-bottom: 0; }
+  .tbl td { border: 0; padding: 0; width: auto !important; white-space: normal !important; text-align: left !important; }
+  .tbl td:first-child { font-weight: 700; }
+  .tbl td[data-label]:not(:first-child)::before { content: attr(data-label); display: block; font-family: var(--font-sans); font-size: 11.5px; font-weight: 700; color: var(--muted); letter-spacing: 0.02em; }
+  .vals td:nth-child(2) { white-space: normal !important; }
+}
+nav.toc .wrap { scrollbar-width: none; }
+nav.toc .wrap::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+
+<header class="masthead">
+  <div class="strip" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">크리에이티브체커 · 영상 검수 설계 검토</div>
+    <h1>숏폼 영상 검수, 단계별 실행안</h1>
+    <p class="dek">팀원이 조사한 <b>숏폼 영상 검수 파이프라인</b>(2026-10-16, 설계 검토 단계)을 main 코드와 공식 자료로 대조하고, 단계마다 무엇을 어떻게 만들지 구체화했습니다. RunPod GPU(A40·L40·A100 SXM)나 개인 RTX 5070을 쓸 때 달라지는 점과 비용도 함께 정리했습니다.</p>
+    <div class="meta">
+      <span>작성 <b>2026-10-16</b></span>
+      <span>기준 코드 <b class="mono">origin/main 220dd8c</b></span>
+      <span>측정 PC <b>i5-1135G7 · 16GB · Windows 11</b></span>
+    </div>
+    <div class="verdict">
+      <strong>결론: 뼈대는 유지하고 다섯 곳을 바꿉니다.</strong>
+      <p>시간 순서로 자르고 포스터 OCR·판정 규칙을 재사용한다는 원안의 뼈대는 맞습니다. 다만 <b>판정 단위</b>, <b>OCR 실행 방식</b>, <b>OCR 생략 규칙(pHash)</b>, <b>광고·협찬 표시 기준</b>, <b>이중 검수</b>는 그대로 만들면 결과가 틀리거나 너무 느립니다. 처리 시간은 아직 추정이라 착수 첫 주에 Windows 팀 PC에서 다시 재야 합니다.</p>
+      <p><b>GPU를 쓰면</b>: 운영 기준은 팀 PC(CPU)로 두고, 개인 RTX 5070은 2주 검증을 빠르게 돌리는 데 먼저 씁니다. RunPod은 필요할 때만 A40으로 켜고, A100 SXM은 값이 2~3배인데 1.2배 빨라질 뿐이라 뺍니다. 다만 Paddle 경로가 CPU로 고정돼 있어 코드를 고치기 전에는 GPU 효과가 없습니다. CPU 시간 가정도 낙관적일 수 있어 2일차에 팀 PC부터 잽니다.</p>
+    </div>
+    <div class="legend">
+      <span>수치 표기</span>
+      <span><span class="tag t-m">실측</span> 이번 대조 실험이나 저장소 문서에서 잰 값</span>
+      <span><span class="tag t-m">재현</span> main 규칙 사본을 돌려 같은 결과를 확인</span>
+      <span><span class="tag t-o">공식</span> 제조사 문서·법령</span>
+      <span><span class="tag t-e">추정</span> 아직 재지 않은 값, 법령 근거 없는 팀 내부 기준</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="목차">
+  <div class="wrap">
+    <a href="#changes">바꿀 5가지</a>
+    <a href="#flow">전체 흐름</a>
+    <a href="#s0">0 입력</a>
+    <a href="#s1">1 프레임</a>
+    <a href="#s2">2 장면</a>
+    <a href="#s3">3 OCR</a>
+    <a href="#s4">4 트랙·구간</a>
+    <a href="#s5">5 대표 프레임</a>
+    <a href="#s6">6 판정</a>
+    <a href="#s6a">6-A 광고 표시</a>
+    <a href="#s61">6-1 이중 검수</a>
+    <a href="#s7">7 결과</a>
+    <a href="#budget">처리 시간</a>
+    <a href="#gpu">GPU·비용</a>
+    <a href="#validation">착수 전 검증</a>
+    <a href="#decisions">팀 결정</a>
+    <a href="#sources">근거</a>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+<!-- ============ CHANGES ============ -->
+<section id="changes">
+  <div class="sec-head">
+    <span class="kicker">01 · 먼저 바꿀 것</span>
+    <h2>원안에서 먼저 바꿀 다섯 가지</h2>
+    <p>각 항목은 main 코드를 직접 돌려 보거나 공식 문서로 확인한 결과입니다. 나머지 단계별 내용은 이 다섯 가지를 전제로 합니다.</p>
+  </div>
+  <div class="tbl">
+    <table class="changes">
+      <thead><tr><th>원안</th><th>확인한 사실</th><th>바꾸는 방법</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="n">1</span>구간마다 대표 프레임을 포스터처럼 검수</td>
+          <td><code>review_criteria</code>는 문구를 못 찾으면 '확인 필요'를 냅니다. 구간별로 돌리면 문구가 없는 구간 대부분이 '확인 필요'가 됩니다. '함께 즐기는 축제' 같은 자막만 있는 구간은, 기준이 '행사명: …축제' 형식이고 그 자막을 0.97 이상 신뢰도로 읽으면 행사명이 <b>위반</b>으로 나옵니다. <span class="tag t-m">재현</span></td>
+          <td>기준은 <b>영상당 1회</b>, 같은 자막을 묶은 '자막 트랙' 전체로 판정합니다. 구간은 근거 위치를 보여 주는 단위로만 씁니다.</td>
+        </tr>
+        <tr>
+          <td><span class="n">2</span>OCR 장당 0.5~2초, 1분 영상 30초~2분</td>
+          <td>지금 paddle-only는 이미지마다 하위 프로세스를 띄우고 모델을 새로 올립니다. 장당 <b>6.90초</b> <span class="tag t-m">실측</span> Mac 포스터. 60초 영상 84프레임이면 OCR만 약 <b>9.7분</b>(84 × 6.90초 계산)이고, 그동안 포스터 검수도 멈춥니다.</td>
+          <td>모델을 한 번만 올려 여러 프레임을 읽는 <b>배치 모드</b>를 추가합니다. OCR 47~174초, 전체 약 63~193초 <span class="tag t-e">추정</span></td>
+        </tr>
+        <tr>
+          <td><span class="n">3</span>앞 프레임과 pHash가 가까우면 OCR 생략</td>
+          <td>전체 프레임 pHash는 자막만 바뀐 화면을 구분하지 못합니다. '할인 50%→70%'의 해밍 거리가 <b>0/64</b>입니다. <span class="tag t-m">실측</span></td>
+          <td>MVP는 1초 프레임을 <b>전부</b> OCR합니다. 생략은 2~4fps로 올릴 때 OCR 박스 기준으로 다시 설계합니다.</td>
+        </tr>
+        <tr>
+          <td><span class="n">4</span>광고·협찬 표기가 영상 어딘가에 있는지</td>
+          <td>공정위 예규 제499호는 동영상 표시를 <b>제목 또는 영상 안</b>에 두고, 영상 안이면 <b>시작부분과 끝부분</b>에 넣고 반복하라고 합니다. 'AD', 'Thanks to', '체험단'은 부적절한 표현입니다. 축제 엔딩의 '협찬: ○○' 크레딧은 표시문구가 아닙니다. <span class="tag t-o">공식</span></td>
+          <td>별도 모듈 <code>video_disclosure.py</code>가 적용 대상, 문구, 위치를 판정합니다. 시작·끝 3초는 0.2초 간격으로 다시 읽습니다.</td>
+        </tr>
+        <tr>
+          <td><span class="n">5</span>EmbeddingGemma 2로 같은 항목을 한 번 더 확인</td>
+          <td>모델은 실재합니다(2026-10-06, Apache 2.0, 740M). 하지만 공식 예제에서 관련 문구와 무관한 문구의 유사도 차이가 약 0.1(0.641 대 0.534)이고, 작은 한국어 글자에 대한 평가가 없습니다. <span class="tag t-o">공식</span></td>
+          <td><b>기본은 꺼 둡니다.</b> 45회 스모크로 광고 표시 점검을 계속할지 먼저 가리고, 켜는 것은 점검별 본 시험과 2주 기록 운영을 통과한 뒤입니다. 결과는 '확인 필요'와 구분해 <b>'이중 검수 엇갈림'</b>으로 표시합니다.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note warn">
+    <h4>원안의 사실관계 중 함께 고칠 것</h4>
+    <ul class="tight">
+      <li><code>ffmpeg -vf fps=1</code>의 <code>frame_0012.jpg</code>는 12초 화면이 아닙니다. 반올림 기본값(<code>round=near</code>)과 번호 시작값(1) 때문에 11.5초 직전 프레임이 됩니다. 30fps 영상에서는 11.467초 화면이었습니다. <span class="tag t-m">실측</span></li>
+      <li>PySceneDetect는 자막만 바뀐 지점을 13번 중 0번 잡았고, 1초 디졸브도 잡지 못했습니다. 하드컷 전용 신호입니다. <span class="tag t-m">실측</span></li>
+      <li>현재 판정 규칙에는 오탈자 판정이 없습니다. 일반 문구 기준은 글자가 다르면 '근거 없는 확인 필요'가 됩니다. '위반'은 기간과 '…축제/…페스티벌' 행사명 기준에서만, 그것도 Paddle 점수 0.97 이상일 때만 나옵니다. 광고 표기가 없어도 지금 규칙으로는 위반이 나오지 않습니다.</li>
+      <li>기존 업로드(<code>POST /api/reviews</code>)는 PIL로 정지 이미지만 받습니다. 20MiB를 넘는 MP4는 413, 그 이하는 415로 거부되고, 업로드는 메모리로 통째 읽습니다.</li>
+      <li>화면 용어는 '충족·<b>위반</b>·확인 필요'입니다. 원안의 '미충족'과 맞춰야 합니다.</li>
+      <li>기획서는 영상을 '약 30초, P2'로 두고, README도 영상 검수를 이미지 검수 이후 과제로 둡니다. 일정 판단이 먼저 필요합니다.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FLOW ============ -->
+<section id="flow">
+  <div class="sec-head">
+    <span class="kicker">02 · 전체 흐름</span>
+    <h2>바뀐 전체 흐름</h2>
+    <p>원안의 단계 번호를 그대로 쓰고, 새로 생긴 단계는 0과 6-A로 붙였습니다. 시간은 60초·1080×1920 영상 1건 기준입니다. 담당은 README 역할(A 김일환, B 김성훈, C 안정민, D 주상현, E 최지흠)에 맞춘 제안입니다.</p>
+  </div>
+  <div class="flow" role="table" aria-label="단계별 흐름">
+    <div class="flow-row head" role="row"><span>단계</span><span>하는 일</span><span class="file">산출물</span><span class="who-col">담당</span><span class="t">시간</span></div>
+    <div class="flow-row" role="row"><span class="badge">0</span><span>입력 검증 · 디스크로 받기</span><span class="file">original.bin · media.json</span><span class="who-col">A · C</span><span class="t">1초 이하 <span class="tag t-m">실측</span></span></div>
+    <div class="flow-row" role="row"><span class="badge">1</span><span>프레임 추출 (1초 + 시작·끝 0.2초)</span><span class="file">frames/t012000.jpg · frames.json</span><span class="who-col">C</span><span class="t">5~6초 <span class="tag t-m">실측</span></span></div>
+    <div class="flow-row" role="row"><span class="badge">2</span><span>장면 경계 (하드컷 후보)</span><span class="file">scenes.json</span><span class="who-col">C</span><span class="t">7~10초 <span class="tag t-m">실측</span></span></div>
+    <div class="flow-row" role="row"><span class="badge">3</span><span>프레임별 OCR (배치, 84장)</span><span class="file">ocr/frames.jsonl</span><span class="who-col">B · D</span><span class="t">47~174초 <span class="tag t-e">추정</span></span></div>
+    <div class="flow-row" role="row"><span class="badge">4</span><span>자막 트랙 · 구간 분할</span><span class="file">tracks.json · segments.json</span><span class="who-col">C · B</span><span class="t">약 2초 <span class="tag t-m">실측</span></span></div>
+    <div class="flow-row" role="row"><span class="badge">5</span><span>대표 프레임 선택</span><span class="file">segments.json (rep_frame_id, rep_order)</span><span class="who-col">C</span><span class="t">4에 포함</span></div>
+    <div class="flow-row" role="row"><span class="badge">6</span><span>기준 판정 (영상당 1회)</span><span class="file">review.json results[]</span><span class="who-col">B</span><span class="t">0.3초 이하 <span class="tag t-m">실측</span></span></div>
+    <div class="flow-row" role="row"><span class="badge">6-A</span><span>광고·협찬 표시 판정</span><span class="file">review.json disclosure</span><span class="who-col">B · C</span><span class="t">0.01초 이하 <span class="tag t-m">실측</span></span></div>
+    <div class="flow-row off" role="row"><span class="badge">6-1</span><span>이중 검수 (기본 꺼짐)</span><span class="file">result.json double_check</span><span class="who-col">C → D</span><span class="t">켜면 +60초 목표</span></div>
+    <div class="flow-row" role="row"><span class="badge">7</span><span>결과 조립 · API · 화면</span><span class="file">result.json</span><span class="who-col">A · D · E</span><span class="t">약 1초 <span class="tag t-e">추정</span></span></div>
+    <div class="flow-row total" role="row"><span class="badge">합계</span><span>배치 워커 기준</span><span class="file">목표 p50 180초 이하</span><span class="who-col"></span><span class="t">63~193초 <span class="tag t-e">추정</span></span></div>
+  </div>
+  <div class="note">
+    <h4>판정은 이렇게 흐릅니다</h4>
+    <p>프레임마다 OCR → 같은 자리에서 같은 문구로 읽힌 줄을 <b>자막 트랙</b>으로 묶고 프레임 투표로 문구를 정함 → 트랙 문구를 기존 <code>review_criteria</code>에 <b>한 번</b> 넣음 → 결과 근거의 <code>ocr_id</code>(=트랙)를 프레임·시각·구간으로 펼쳐 '00:12~00:15 위치 보기'로 보여 줌.</p>
+  </div>
+</section>
+
+<!-- ============ STAGES ============ -->
+<section id="stages">
+  <div class="sec-head">
+    <span class="kicker">03 · 단계별 실행안</span>
+    <h2>단계마다 무엇을 어떻게 만드나</h2>
+    <p>모든 카드는 <b>할 일 → 정할 값 → 완료 기준 → 코드</b> 순서입니다. 코드는 설계용 스케치이며, 프로젝트 파일을 바꾸지 않고 별도 사본에서 실행해 확인했습니다.</p>
+  </div>
+
+  <div class="rail">
+
+  <!-- 0 -->
+  <article class="stage" id="s0">
+    <div class="stage-mark"><span class="no">0</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>입력 검증</h3><span class="v v-new">신규</span><span class="owner">담당 <b>A</b> 엔드포인트·한도 · <b>C</b> 영상 검사</span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>영상 업로드 → 작업 큐 등록 → <code>job_id</code> 반환</div>
+        <div class="now"><span class="lab">바뀌는 점</span>영상 전용 엔드포인트를 따로 둡니다. 폴링은 기존 <code>id·status·stage·progress</code> 계약을 그대로 씁니다.</div>
+      </div>
+      <div class="block"><h4>할 일</h4>
+        <ol class="steps">
+          <li><code>POST /api/video-reviews</code>(multipart: <code>video</code>, <code>criteria</code>, <code>criteria_version</code>, <code>project_name</code>, <code>disclosure</code>) → 202 <code>{id, status:'queued', kind:'video'}</code>.</li>
+          <li>본문 크기 검사 미들웨어를 CORS보다 <b>먼저</b> 등록합니다. FastAPI는 핸들러 실행 전에 본문을 임시 파일로 다 받기 때문에, 크기를 미리 막을 곳은 여기뿐입니다. Content-Length가 없으면 411, 200MiB+1,065,536B를 넘으면 413.</li>
+          <li><code>.incoming/&lt;hex&gt;.part</code>에 1MiB씩 복사하며 SHA-256을 계산하고, PyAV로 검사한 뒤 <code>&lt;id&gt;/original.bin</code>으로 옮깁니다. 어디서든 실패하면 임시 파일을 지웁니다.</li>
+          <li>검사 항목: 컨테이너(MP4·MOV·WebM), 코덱(H.264·HEVC·VP9·AV1), 길이·해상도·fps, 회전, HDR 경고. 길이는 <b>영상 스트림</b> 기준입니다. WebM은 오디오가 길면 컨테이너 길이가 틀립니다(4,008ms 대 실제 2,000ms). <span class="tag t-m">실측</span></li>
+          <li><code>media.json</code>, <code>snapshot.json</code>(기준 + 광고 입력을 한 번만 고정), <code>result.json</code>(queued, 5)을 쓰고 작업을 등록합니다.</li>
+          <li><code>/api/health</code>의 <code>limits</code>에 영상 한도를 숫자 하나씩 추가해, 화면이 같은 값을 안내하게 합니다.</li>
+        </ol>
+      </div>
+      <div class="block"><h4>정할 값</h4>
+        <div class="tbl"><table class="vals">
+          <thead><tr><th>항목</th><th>값</th><th>근거</th></tr></thead>
+          <tbody>
+            <tr><td>최대 크기</td><td>200MiB</td><td><span class="tag t-e">추정</span> 실제 휴대폰 원본 미측정. 샘플 크기 p95×2로 확정</td></tr>
+            <tr><td>길이</td><td>1~90초</td><td><span class="tag t-e">추정</span> 기획서 약 30초, 원안 1분. 팀 결정</td></tr>
+            <tr><td>해상도</td><td>짧은 변 ≥360 · 긴 변 ≤3840</td><td><span class="tag t-e">추정</span> 4K 세로는 1080×1920으로 축소</td></tr>
+            <tr><td>fps</td><td>≤ 120</td><td><span class="tag t-e">추정</span> 60·120fps 실샘플 디코딩 시간으로 확정</td></tr>
+            <tr><td>동시 영상</td><td>실행+대기 3건</td><td><span class="tag t-e">추정</span> 이미 3건(실행 1 + 대기 2)이면 다음 요청은 429. 포스터 대기열은 그대로</td></tr>
+            <tr><td>검사 시간</td><td>18~50ms</td><td><span class="tag t-m">실측</span> 150MiB 복사+해시 0.3~0.7초</td></tr>
+          </tbody>
+        </table></div>
+        <p class="cap">상태 코드: 400 빈 파일 · 411 Content-Length 없음 · 413 본문·파일 크기 초과, 긴 변 3840px 초과 · 415 형식·코덱·디코딩 실패, 영상 스트림 없음, 90° 단위가 아닌 회전 · 422 기준·광고 입력 형식, 길이 1~90초 밖, 짧은 변 360px 미만, 120fps 초과 · 429 실행+대기 영상 3건</p>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>어떤 거부 뒤에도 저장 폴더에 남는 파일이 0개입니다.</li>
+          <li><code>media.json.sha256</code>이 <code>original.bin</code>의 SHA-256과 같습니다.</li>
+          <li><code>GET …/video</code>에 Range 요청을 보내면 206으로 답합니다(화면의 구간 이동에 필요).</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- 1 -->
+  <article class="stage" id="s1">
+    <div class="stage-mark"><span class="no">1</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>프레임 추출</h3><span class="v v-mod">수정</span><span class="owner">담당 <b>C</b></span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span><code>ffmpeg -vf fps=1</code> → <code>frame_0012.jpg</code>, 파일명으로 시각을 앎</div>
+        <div class="now"><span class="lab">바뀌는 점</span>PyAV로 한 번 디코딩해 그 시각에 화면에 있던 프레임을 고릅니다. <code>t012000.jpg</code>는 정확히 12.000초입니다.</div>
+      </div>
+      <div class="block"><h4>할 일</h4>
+        <ol class="steps">
+          <li>뽑을 시각: 1초 간격 전체 + <b>시작·끝 3초는 0.2초 간격</b>(광고 표시 검사용). 60초 영상이면 84장, 90초면 114장입니다.</li>
+          <li>각 시각 k에 'pts가 k 이하인 마지막 프레임'을 배정합니다. ffmpeg <code>fps=N:round=up:start_time=0</code>과 <b>321/321</b> 슬롯이 일치했습니다(H.264 고정·가변 fps·시작 지연, VP9, AV1, HEVC 10bit). 예외로 오디오가 긴 WebM+Opus는 ffmpeg가 오디오 pre-skip(−7ms)을 원점으로 잡아 10슬롯 중 5개가 한 칸 앞 프레임이었습니다(차이 7ms 이하). <span class="tag t-m">실측</span></li>
+          <li>회전 메타데이터를 적용하고(PyAV는 자동 회전하지 않음), 긴 변을 1920 이하로 줄이고, JPEG 품질 90으로 저장합니다.</li>
+          <li>모든 슬롯에 파일을 하나씩 두고 <code>frames.json</code>에 <code>frame_id</code>, <code>time_ms</code>, <code>source_pts_ms</code>, <code>sampling</code>(base·head·tail), 크기, SHA-256을 적습니다. 원본 프레임이 같은 슬롯은 <code>same_as</code>로 표시해 OCR 결과만 복사합니다.</li>
+          <li>마지막 프레임이 영상 끝에 못 미치면(잘린 파일) <code>failed_stage='extracting'</code>으로 끝냅니다.</li>
+        </ol>
+      </div>
+      <div class="block"><h4>정할 값</h4>
+        <div class="tbl"><table class="vals">
+          <thead><tr><th>항목</th><th>값</th><th>근거</th></tr></thead>
+          <tbody>
+            <tr><td>JPEG 품질</td><td>Pillow 90 (제안)</td><td><span class="tag t-m">실측</span> PSNR 43.4dB(60장 12.1MB). ffmpeg <code>-q:v 2</code>는 41.6dB(8.3MB). OCR 차이는 착수 전 검증의 q85·q90·q95 비교로 확정</td></tr>
+            <tr><td>추출 시간</td><td>84장 5.1~5.9초</td><td><span class="tag t-m">실측</span> 합성 H.264. 휴대폰 HEVC·HDR·60fps는 미측정</td></tr>
+            <tr><td>도구</td><td>av==19.0.1</td><td>Windows에는 ffmpeg·ffprobe가 기본으로 없음. PyAV 휠에 디코더 포함. ffmpeg CLI는 대조 스크립트에만</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>60초 영상의 <code>frames.json</code>이 84항목이고 1초 프레임은 <code>t000000</code>~<code>t059000</code> 60개입니다.</li>
+          <li>개발용 대조 스크립트에서 ffmpeg 결과와 슬롯이 모두 일치합니다. WebM+Opus의 7ms 이하 원점 차이는 예외로 기록합니다.</li>
+          <li>회전 픽스처 15종의 평균 픽셀 차이가 1.5 이하입니다(실측 0.16~1.44).</li>
+        </ul>
+      </div>
+      <details><summary>코드: 뽑을 시각 정하기 (<code>video_media.sample_slots</code>)</summary><div class="inner">
+<pre>FRAME_POLICY = {"base_step_ms": 1000, "window_step_ms": 200, "head_ms": 3000, "tail_ms": 3000,
+                "rule": "last_frame_with_pts_le_slot", "autorotate": True,
+                "max_long_side": 1920, "jpeg_quality": 90}
+
+
+def sample_slots(duration_ms: int, policy: dict = FRAME_POLICY) -&gt; dict[int, list[str]]:
+    """1초 격자와 시작·끝 3초 0.2초 창을 합친다. 겹치는 시각은 태그만 늘린다."""
+    step = policy["window_step_ms"]
+    slots = {t: ["base"] for t in range(0, duration_ms, policy["base_step_ms"])}
+    for t in range(0, min(policy["head_ms"], duration_ms), step):
+        slots.setdefault(t, []).append("head")
+    tail_start = -(-(duration_ms - policy["tail_ms"]) // step) * step   # 판정 창 [d-3000, d)와 맞춤(올림)
+    for t in range(max(0, tail_start), duration_ms, step):
+        slots.setdefault(t, []).append("tail")
+    return dict(sorted(slots.items()))
+
+# sample_slots(60000) → 84개(base 60), sample_slots(90000) → 114개 (실행 확인)</pre>
+<p class="cap">파일명은 <code>f"t{time_ms:06d}.jpg"</code>입니다. 6자리라 999,999ms(약 16분)까지 표현됩니다. 끝 창 시작을 올림으로 잡아 영상 길이가 200ms 배수가 아니어도 'tail' 프레임이 모두 판정 창 안에 들어갑니다.</p>
+      </div></details>
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="stage" id="s2">
+    <div class="stage-mark"><span class="no">2</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>장면 경계</h3><span class="v v-mod">수정</span><span class="owner">담당 <b>C</b></span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>PySceneDetect ContentDetector가 원본의 모든 프레임으로 컷 경계를 찾음</div>
+        <div class="now"><span class="lab">바뀌는 점</span>결과는 <b>하드컷 후보</b>로만 씁니다. 자막 변화는 4단계가 잡습니다.</div>
+      </div>
+      <div class="block"><h4>할 일</h4>
+        <ol class="steps">
+          <li><code>scenedetect-headless==0.7.2</code>를 설치합니다. 일반 <code>scenedetect</code>는 <code>opencv-python</code>을 끌어와 프로젝트의 <code>opencv-python-headless==5.0.0.93</code>과 충돌합니다. 0.7.1은 <code>av==19.0.1</code>과 함께 쓰면 오류가 나므로 두 버전을 묶어 관리합니다. <span class="tag t-m">실측</span></li>
+          <li><code>AdaptiveDetector(min_scene_len='0.5s')</code>, <code>backend='pyav'</code>(14.4초 → 8.1초), <code>get_scene_list(start_in_scene=True)</code>로 컷이 없어도 전체를 한 장면으로 받습니다. 시각은 <code>.seconds</code>를 씁니다(<code>get_seconds()</code>는 폐기 예정).</li>
+          <li>pyav 백엔드는 스트림 시작 시각을 빼고 보고하므로 컨테이너 기준 ms로 되돌립니다. 0.5초 늦게 시작하는 파일에서 500ms 차이가 났습니다. <span class="tag t-m">실측</span></li>
+          <li>컷 시각 이후 첫 1초 프레임을 경계(<code>grid_ms</code>)로 둡니다. 1초 안의 컷 두 개는 하나로 합치고, 그 사이의 짧은 장면은 <code>unsampled_scenes</code>에 기록합니다.</li>
+          <li>장면 검출이 실패해도 검수는 멈추지 않습니다. <code>scenes.status='failed'</code>와 경고만 남기고 계속합니다.</li>
+        </ol>
+      </div>
+      <div class="block"><h4>정할 값</h4>
+        <div class="tbl"><table class="vals">
+          <thead><tr><th>항목</th><th>값</th><th>근거</th></tr></thead>
+          <tbody>
+            <tr><td>검출기</td><td>AdaptiveDetector</td><td><span class="tag t-o">공식</span> 숏폼 벤치마크(AutoShot) F1 73.86, ContentDetector 69.26</td></tr>
+            <tr><td>자막만 바뀐 지점</td><td>13회 중 0회</td><td><span class="tag t-m">실측</span> 1초 디졸브도 0회. ContentDetector 점수는 1.3~5.0(임계 27). AdaptiveDetector는 비율이 최대 28.7(임계 3.0)까지 올랐지만 <code>min_content_val=15</code>에 막혀 컷이 되지 않았습니다. 그래서 15 아래로 내리지 않습니다</td></tr>
+            <tr><td>처리 시간</td><td>7.3~10.2초</td><td><span class="tag t-m">실측</span> 60초 1080×1920 30fps</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li><code>scenes.json</code>의 모든 시각이 컨테이너 기준 정수 ms입니다.</li>
+          <li>0.5초 늦게 시작하는 파일의 5.5초 컷이 <code>cut_ms 5500</code>, <code>grid_ms 6000</code>으로 기록됩니다.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="stage" id="s3">
+    <div class="stage-mark"><span class="no">3</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>프레임별 OCR</h3><span class="v v-swap">교체</span><span class="owner">담당 <b>B</b> 워커 · <b>D</b> 실행 연결 · <b>C</b> 정확도 비교</span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>EmbeddingGemma 2 + PaddleOCR, pHash가 가까우면 OCR 생략, 장당 0.5~2초</div>
+        <div class="now"><span class="lab">바뀌는 점</span>임베딩은 6-1로 떼어 꺼 둡니다. OCR은 모델을 한 번만 올리는 배치 모드로 84장을 모두 읽습니다.</div>
+      </div>
+      <div class="note warn">
+        <h4>지금 코드로 돌리면</h4>
+        <p><code>recognize_paddle()</code>은 이미지 1장마다 <code>paddle_full_worker</code> 하위 프로세스를 띄우고, PaddleOCR 모델을 새로 만들고, 모델 파일 SHA-256 검증을 3번 합니다. 포스터(2배 입력) 실측이 장당 6.90초, 작업자 최대 메모리 8.15GiB입니다 <span class="tag t-m">실측</span> Mac M4 Pro. 84프레임이면 약 580초(84 × 6.90초 계산)이고, 그동안 <code>inference_lock</code>을 잡아 포스터 검수도 대기합니다.</p>
+      </div>
+      <div class="block"><h4>할 일</h4>
+        <ol class="steps">
+          <li><code>paddle_full_worker.py</code>에 <code>--manifest</code> 모드를 추가합니다. 모델은 한 번 만들고, 프레임마다 <code>predict</code> 후 JSONL 한 줄을 바로 기록합니다. 기존 <code>--input</code> 모드와 테스트 27건은 그대로 둡니다.</li>
+          <li><code>paddle_ocr.recognize_paddle_frames()</code>를 추가합니다. 해시 검증은 배치당 3회(0.23초)로 줄입니다. 한 프레임의 예외·좌표 이상·멈춤은 <b>그 프레임만</b> 실패로 남깁니다. 지금은 레코드 하나만 이상해도 호출 전체가 실패합니다.</li>
+          <li>프레임을 <b>원래 크기</b>로 넣습니다. <code>text_det_limit_side_len=1280</code> 때문에 1080×1920은 1배든 2배든 탐지 입력이 704×1280으로 같습니다(PaddleX 축소 규칙으로 계산). 2배 확대는 인식 crop에만 영향을 주고(소스 기준 추론), 프레임당 1.48초(확대+PNG 저장)를 더합니다 <span class="tag t-m">실측</span>.</li>
+          <li>좌표는 프레임 픽셀 그대로 쓰고(÷2 없음), 레코드 ID는 <code>t012000:paddle_003</code>처럼 프레임을 붙여 영상 전체에서 유일하게 만듭니다. 그대로 합치면 <code>Duplicate record id: paddle_000</code> 오류가 납니다.</li>
+          <li>정규화한 결과를 <code>ocr/frames.jsonl</code>(프레임당 1줄)에 씁니다. 다음 단계는 이 파일만 읽습니다. 프레임별 탐지 상자 점수(<code>dt_scores</code>)와 글자가 빈 상자도 함께 남겨, 나중에 '글자를 못 읽음' 점검에 씁니다. 성공 비율이 0.9 미만이면 <code>failed_stage='ocr'</code>로 끝냅니다.</li>
+          <li>영상 성격이 '광고주 자체 광고'(광고 표시 적용 대상 아님)이면 시작·끝 창 전용 24장은 OCR하지 않고 <code>skipped</code>로 기록합니다(12~48초 절약 <span class="tag t-e">추정</span>).</li>
+          <li>Windows에는 <code>resource</code> 모듈이 없어 지금은 메모리가 <code>null</code>로 남습니다. 표준 라이브러리 <code>ctypes</code>로 최대 작업 집합(PeakWorkingSetSize)을 기록합니다.</li>
+          <li>팀 PC에서 측정합니다: 탐지 한도 1280 대 1920(탐지 픽셀 2.32배), <code>cpu_threads</code> 4 대 논리 코어 수, <code>enable_mkldnn</code>(Paddle 3.3 CPU 오류 보고, PaddleOCR 이슈 #17539).</li>
+        </ol>
+      </div>
+      <div class="block"><h4>정할 값</h4>
+        <div class="tbl"><table class="vals">
+          <thead><tr><th>항목</th><th>값</th><th>근거</th></tr></thead>
+          <tbody>
+            <tr><td>모델 로드</td><td>4~5초 (배치당 1회)</td><td><span class="tag t-e">추정</span> 6.90초에서 포스터 추론을 2~3초로 가정해 뺀 값. 로드·추론 분리 측정값은 저장소에 없고 Windows는 미측정</td></tr>
+            <tr><td>프레임당 추론</td><td>0.5~2.0초</td><td><span class="tag t-e">추정</span> 참고: server_det 383ms + 한국어 rec 줄당 21ms <span class="tag t-o">공식</span> Xeon 8스레드</td></tr>
+            <tr><td>탐지 한도</td><td>1280 유지</td><td>1920은 작은 글자 검출률이 0.1 이상 오르고 시간 안에 들 때만 채택</td></tr>
+            <tr><td>성공 비율 하한</td><td>0.9</td><td><span class="tag t-e">추정</span> 시작·끝 창 프레임 실패는 광고 표시 판정을 '확인 필요'로</td></tr>
+            <tr><td>파이프라인 이름</td><td>paddle_frames_v1</td><td>포스터 경로는 <code>paddle_full_v1</code>이면 <code>multiline=True</code>로 판정하므로 이름을 분리합니다. 새 이름은 <code>_safe_runtime</code>(api.py:281)이 버리므로 공개 runtime 허용 목록에 따로 추가</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>팀 PC 실측 1건에서 작업자 실행 1회, 실패 프레임 0개, 로드·프레임별 추론·최대 메모리가 모두 숫자로 남습니다.</li>
+          <li>배치 전체 시간 ≤ 로드 + 프레임 추론 합 + 3초입니다(숨은 고정비 없음).</li>
+          <li>Paddle 프로세스가 동시에 2개 뜨지 않습니다.</li>
+          <li>84장 OCR 단계 p50 ≤ 160초입니다. 넘으면 표와 함께 보고하고 설정을 다시 정합니다.</li>
+        </ul>
+      </div>
+      <details><summary>코드: 배치 워커 핵심 루프 (<code>paddle_full_worker.run_batch</code>, 발췌)</summary><div class="inner">
+<pre>def run_batch(manifest_path, output_path, detection_dir, recognition_dir):
+    """모델을 한 번 만들고 프레임마다 결과 한 줄을 JSONL에 즉시 기록한다."""
+    _prepare_environment()
+    frames, settings = read_manifest(manifest_path)
+    identities = {"detection": verify_model(detection_dir, DETECTION_MODEL),   # 배치당 1회
+                  "recognition": verify_model(recognition_dir, MODEL)}
+    started = time.perf_counter()
+    from PIL import Image
+    import paddle
+    model = _build_model(detection_dir, recognition_dir, **settings)   # 기존 생성 인자 그대로
+    with Path(output_path).open("x", encoding="utf-8") as stream:
+        def emit(value):
+            stream.write(json.dumps(value, ensure_ascii=False, allow_nan=False) + "\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+
+        emit({"type": "start", "device": paddle.get_device(), "model_identity": identities,
+              "load_seconds": time.perf_counter() - started, "frame_count": len(frames)})
+        for frame in frames:
+            tick = time.perf_counter()
+            try:
+                with Image.open(frame["path"]) as opened:
+                    dimensions = list(opened.size)
+                outputs = list(model.predict(input=frame["path"]))
+                if len(outputs) != 1:
+                    raise ValueError("Expected exactly one Paddle OCR image result")
+                raw = outputs[0].json
+                raw = json.loads(raw) if isinstance(raw, str) else raw
+                emit({"type": "frame", "id": frame["id"], "status": "ok", "input_dimensions": dimensions,
+                      "inference_seconds": time.perf_counter() - tick, "raw": raw})
+            except Exception as exc:  # 한 프레임의 예외로 남은 프레임을 버리지 않는다
+                traceback.print_exc()
+                emit({"type": "frame", "id": frame["id"], "status": "failed",
+                      "error_type": type(exc).__name__})
+        emit({"type": "end", "peak_rss_bytes": _peak_memory_bytes()})</pre>
+<p class="cap">발췌입니다(전체는 직렬화 실패 처리와 프레임별 메모리 기록 포함). 부모 쪽은 0.5초마다 새 줄을 읽어 진행률을 갱신하고, start 줄의 <code>device</code>·<code>model_identity</code>를 사후 해시와 대조하며, 60초 동안 새 줄이 없으면 그 프레임을 멈춤으로 처리합니다.</p>
+      </div></details>
+      <p class="cap">GPU로 돌릴 때는 <code>paddle.get_device()</code> 대신 요청 장치와 GPU 진단 정보를 기록합니다. <code>paddle.get_device()</code>는 전역 기본값이라 실제 추론 장치가 아닙니다. 장치 선택, 카나리, CUDA 오류 처리는 <a href="#gpu">05 GPU를 쓰면</a>을 따릅니다.</p>
+      <p class="cap">곁가지 발견: <code>backend/tests/test_paddle_ocr.py:189</code>의 <code>read_text()</code>가 인코딩 없이 파일을 열어 한국어 Windows(cp949)에서 실패합니다. <code>encoding="utf-8"</code>을 붙이면 됩니다(main에서도 재현).</p>
+    </div>
+  </article>
+
+  <!-- 4 -->
+  <article class="stage" id="s4">
+    <div class="stage-mark"><span class="no">4</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>자막 트랙 · 구간 분할</h3><span class="v v-mod">수정</span><span class="owner">담당 <b>C</b> 구현·평가 · <b>B</b> 임계값·판정 계약</span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>OCR 텍스트 유사도 임계값 + 임베딩 거리로 끊고, 떨어진 같은 장면은 Agglomerative로 묶음</div>
+        <div class="now"><span class="lab">바뀌는 점</span>같은 자막을 <b>트랙</b>으로 묶고, 보이는 트랙이 바뀌는 지점에서 자릅니다. 숫자는 정확히, 한글은 자모로 비교합니다.</div>
+      </div>
+      <div class="note">
+        <h4>유사도 하나로는 안 되는 이유</h4>
+        <p>오인식 '할인→할언'과 실제 변경 '50%→70%'의 유사도가 음절 기준 0.80, 자모 기준 0.889로 <b>똑같습니다</b>. 임계값을 낮춰 오인식을 흡수하면 할인율·가격 변경이 같은 구간에 묻힙니다. <span class="tag t-m">실측</span></p>
+      </div>
+      <div class="block"><h4>할 일</h4>
+        <ol class="steps">
+          <li><code>text_changed(a, b)</code>: 숫자·% 토큰은 정확히 비교하고, 나머지는 자모 편집거리로 봅니다. 허용 편집 수는 <code>min(3, max(1, round(0.15×자모 길이)))</code>, 4자모 미만은 0입니다. 숫자 옆의 O·I는 비교 키에서만 0·1로 접습니다(원문은 그대로).</li>
+          <li><code>build_tracks</code>: 1초 프레임만 씁니다. bbox IoU ≥ 0.5이고 문구가 같으면 같은 트랙입니다. 근사 일치는 1프레임, 정확 일치는 2프레임 누락까지 잇습니다. 다른 강한 줄이 그 자리를 차지하면 바로 닫습니다(50→70→50 교체가 숨지 않게). 신뢰도 0.5 미만 줄은 새 트랙을 열지 못합니다.</li>
+          <li>문구 투표: 비교 키가 과반이면 그 문구, 아니면 자모 중심(medoid)을 고르고 <code>requires_review</code>를 붙여 자동 충족·위반을 막습니다. 트랙 신뢰도는 투표 문구를 읽은 강한 프레임 신뢰도의 median_low입니다.</li>
+          <li>같은 프레임 안의 2줄 제목('2026 김천' / '김밥축제')은 새 <code>trk_</code> 번호로 합치고 <code>joined_from</code>을 남깁니다. 안 합치면 '김밥축제'만 후보가 되어 행사명이 위반으로 나옵니다(신뢰도 0.97 이상일 때). <span class="tag t-m">재현</span></li>
+          <li>구간 경계 = 장면 컷 ∪ 보이는 트랙 집합이 바뀌는 프레임. 1프레임짜리 트랙만으로 생긴 경계는 지웁니다(표시용이라 판정에는 영향 없음).</li>
+          <li>원안의 Agglomerative(반복 엔딩 로고 묶기)는 같은 문구 키 묶음(<code>text_groups</code>)으로 바꿉니다. sklearn이 필요 없습니다.</li>
+        </ol>
+      </div>
+      <div class="block"><h4>정할 값</h4>
+        <div class="tbl"><table class="vals">
+          <thead><tr><th>항목</th><th>값</th><th>정하는 법</th></tr></thead>
+          <tbody>
+            <tr><td>신호 신뢰도 하한</td><td>0.5</td><td><span class="tag t-e">추정</span> '자막 아님' 줄의 95%가 걸러지는 값</td></tr>
+            <tr><td>트랙 IoU</td><td>0.5</td><td><span class="tag t-e">추정</span> 같은 자막 연속 프레임 IoU의 5퍼센타일</td></tr>
+            <tr><td>누락 허용</td><td>1 / 2 프레임</td><td><span class="tag t-e">추정</span> 검출 누락 연속 길이 분포의 99%</td></tr>
+            <tr><td>자모 허용</td><td>0.15 · 상한 3</td><td><span class="tag t-e">추정</span> 오인식 쌍과 실제 수정 쌍의 거리 분포가 겹치지 않는 값</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>합성 20프레임(오인식, '5O%', 누락 1프레임, 저신뢰 잡음 2줄, OCR 실패 프레임, 하드컷)에서 트랙 10개, 구간 정확히 6개, 숫자 변경 미검출 0건. <span class="tag t-m">실측</span> 54개 검사 통과</li>
+          <li>실표본: 자막 변경 지점 재현율 ≥ 0.95(±1초), 숫자·% 변경 미검출 0건. <span class="tag t-e">추정</span> 팀 내부 목표</li>
+          <li>④⑤ 합계가 60초 영상에서 5초 이내입니다(합성 실측 1.4~2.0초).</li>
+        </ul>
+      </div>
+      <details><summary>코드: 자막이 바뀌었는지 (<code>video_tracks.text_changed</code>)</summary><div class="inner">
+<pre>NUMBER = re.compile(r"\d+(?:[.,]\d+)*%?")
+DIGIT_RUN = re.compile(r"[0-9Oo〇Il|]*[0-9][0-9Oo〇Il|]*")
+DIGIT_FOLD = str.maketrans({"O": "0", "o": "0", "〇": "0", "I": "1", "l": "1", "|": "1"})
+JAMO_RATIO, JAMO_MAX_EDITS, JAMO_MIN_LEN = 0.15, 3, 4
+
+
+def text_key(text: str) -&gt; str:
+    """review_rules.normalized 결과에서 숫자에 붙은 O/I만 0/1로 접은 비교 키."""
+    return DIGIT_RUN.sub(lambda m: m.group().translate(DIGIT_FOLD), normalized(text))
+
+
+def text_changed(a: str, b: str) -&gt; bool:
+    key_a, key_b = text_key(a), text_key(b)
+    if NUMBER.findall(key_a) != NUMBER.findall(key_b):
+        return True                                   # 숫자는 정확히
+    rest_a = unicodedata.normalize("NFD", NUMBER.sub("", key_a))
+    rest_b = unicodedata.normalize("NFD", NUMBER.sub("", key_b))
+    longest = max(len(rest_a), len(rest_b))
+    allowed = 0 if longest &lt; JAMO_MIN_LEN else min(JAMO_MAX_EDITS, max(1, round(JAMO_RATIO * longest)))
+    return Levenshtein.distance(rest_a, rest_b) &gt; allowed   # 한글은 자모로
+
+# 할인 50%/할언 50% → False · 할인 50%/할인 70% → True · 할인 5O%/할인 50% → False
+# 특가/특가! → False · 3,000원/13,000원 → True · 행사/축제 → True   (실행 확인)</pre>
+      </div></details>
+    </div>
+  </article>
+
+  <!-- 5 -->
+  <article class="stage" id="s5">
+    <div class="stage-mark"><span class="no">5</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>대표 프레임</h3><span class="v v-mod">수정</span><span class="owner">담당 <b>C</b></span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>선명도(Laplacian variance)와 OCR 글자 수가 높은 프레임, 구간 첫 프레임은 피함</div>
+        <div class="now"><span class="lab">바뀌는 점</span>화면 전체가 아니라 <b>자막 글자 획</b>의 선명도로 고릅니다. 대표 프레임은 다시 OCR하지 않습니다.</div>
+      </div>
+      <div class="note">
+        <h4>화면 전체 선명도가 틀리는 이유</h4>
+        <p>배경이 선명하면 자막이 흐려도 값이 거의 같고(11,312 대 11,188), 해상도만 바꿔도 195.9가 340.8이 됩니다. 자막 영역 분산도 배경이 복잡하면 2배(21,669 대 10,874)가 되어 흐린 프레임을 골랐습니다. <span class="tag t-m">실측</span> 합성</p>
+      </div>
+      <div class="block"><h4>할 일</h4>
+        <ol class="steps">
+          <li>후보: 구간 프레임이 3장 이상이면 양 끝을 빼고, OCR 실패 프레임도 뺍니다.</li>
+          <li>트랙마다 같은 bbox를 높이 48px로 맞춰 자르고, 구간 중앙값 영상에서 |Laplacian| 상위 20%를 글자 획 마스크로 잡습니다. 프레임별 획 선명도를 그 트랙 최고값 대비 비율로 바꿉니다.</li>
+          <li>점수 = 획 선명도 + 평균 rec_score + 투표 문구와의 자모 일치도(가중치 각 1). 동점이면 구간 가운데에 가까운 프레임입니다.</li>
+          <li>점수순 후보 목록(<code>rep_order</code>)을 남겨, 나중에 사람이나 이중 검수가 바꿀 수 있게 합니다.</li>
+          <li>3단계 결과를 그대로 쓰고 다시 OCR하지 않습니다. 원안대로면 구간 수 × 6.9초가 더 듭니다.</li>
+        </ol>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>합성 시나리오에서 자막이 선명한 프레임을 고르고, 첫·끝·실패 프레임은 고르지 않습니다. <span class="tag t-m">실측</span></li>
+          <li>실표본에서 사람이 고른 대표 프레임과 일치율 ≥ 80% <span class="tag t-e">추정</span> 팀 내부 목표. 자막 영역 분산 중앙값 방식(<code>crop_median</code>, 위에서 틀렸던 방식)과 A/B 비교</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- 6 -->
+  <article class="stage" id="s6">
+    <div class="stage-mark"><span class="no">6</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>기준 판정</h3><span class="v v-mod">수정</span><span class="owner">담당 <b>B</b></span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>구간별 대표 프레임 1장을 포스터 검수 파이프라인에 그대로 넣음</div>
+        <div class="now"><span class="lab">바뀌는 점</span>영상당 1회, 트랙 문구로 판정합니다. <code>review_rules.py</code>·<code>extract_event.py</code>·<code>event_layout.py</code>는 한 줄도 바꾸지 않습니다.</div>
+      </div>
+      <div class="block"><h4>할 일</h4>
+        <ol class="steps">
+          <li>트랙을 판정 레코드로 바꿉니다: <code>{id:'trk_0003', text: 투표 문구, confidence: 트랙 신뢰도, bbox_xyxy, recognition_engine:'paddleocr'}</code>.</li>
+          <li><code>review_criteria(criteria, track_records, multiline=False)</code>를 영상당 한 번 부릅니다. <code>multiline=True</code>를 쓰지 않는 이유: 레코드가 500개를 넘으면 행사명·기간을 비우고(<code>event_layout.py:157</code>), bbox만 보고 시각이 다른 트랙을 한 제목으로 이어 붙입니다. <span class="tag t-m">재현</span></li>
+          <li>근거 펼치기는 <code>attach_video_evidence</code> 하나로만 합니다. <code>_evidence()</code>가 정해진 키 외에는 버리므로, <code>ocr_id</code>(=트랙)를 보고 구간마다 근거 1개(<code>segment_id</code>, <code>frame_id</code>, <code>time_ms</code>, 프레임 URL·크기, 그 프레임의 bbox)로 펼칩니다.</li>
+          <li>기간·행사명이 트랙마다 다르면 '확인 필요'를 유지하고 사유 앞에 <i>'구간마다 표기가 다릅니다: 00:05 10.23~10.25 / 00:41 10.24~10.25'</i>를 붙입니다.</li>
+          <li><b>오탈자/불일치 의심</b>: 기준 문구를 정확히 못 찾았을 때만 트랙 문구와 비교합니다(기준 길이 ±1 글자 창). 숫자 토큰이 같고 자모 거리가 1 이상 <code>min(3, max(1, ⌊0.15×비숫자 자모 길이⌋))</code> 이하이면 <code>typo</code>입니다. '할인 쿠폰' 같은 짧은 문구는 거리 1까지만입니다. 한글 부분 자모 거리가 0~1이고 숫자만 다르면 <code>number_mismatch</code>입니다. 상태는 '확인 필요'를 유지하고 사유와 위치를 붙입니다. 예: <i>'오탈자/불일치 의심: 기준 “할인 쿠폰”, 화면 “할언 쿠폰 증정” (00:12~00:15)'</i>. 허용 거리 계산 함수는 4단계와 하나로 공유합니다(지금 설계는 반올림·내림이 달라 경계가 어긋남).</li>
+          <li>OCR 실패 프레임이 있으면 '위반'을 '확인 필요'로 낮춥니다. 빠진 프레임에 진짜 값이 있을 수 있기 때문입니다.</li>
+        </ol>
+      </div>
+      <div class="note">
+        <h4>남는 한계</h4>
+        <ul class="tight">
+          <li><b>허위 위반이 완전히 없어지지는 않습니다.</b> '…축제'로 끝나는 일반 자막이 실제 행사명과 함께 읽히면 행사명은 '확인 필요'가 됩니다. 그런데 실제 행사명이 어느 프레임에서도 읽히지 않으면(또는 2줄 제목 결합이 실패하면) '함께 즐기는 축제' 하나만 후보로 남고, 신뢰도가 0.97 이상이면 지금 규칙으로도 '위반'이 나옵니다. 표본 v01에 이 함정이 들어 있습니다. B가 '…축제 단일 후보' 처리 규칙을 정하기 전에는 하드 게이트 C를 통과했다고 보지 않습니다.</li>
+          <li>기준 문구가 없는 자유 자막의 맞춤법 검사는 범위 밖입니다. 한국어 맞춤법 엔진이 없습니다.</li>
+          <li><code>number_mismatch</code>는 원래 범위(근거 없는 확인 필요만)를 조금 넓힌 것이라 팀 승인이 필요합니다. 가장 중요한 숫자 오류라 MVP에 넣기를 권합니다.</li>
+        </ul>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>세 규칙 파일의 git diff가 0줄입니다.</li>
+          <li>영상당 <code>review_criteria</code> 호출이 정확히 1회이고, 결과 순서·ID가 기준과 같습니다.</li>
+          <li>후처리 전후로 status가 같습니다(OCR 실패 강등만 예외로 기록).</li>
+          <li>모든 근거에 프레임 URL·크기, <code>time_ms</code>, <code>segment_id</code>가 있습니다. 사본에서 30개 테스트 통과, 기준 100개 × 트랙 80개 판정 0.16~0.21초. <span class="tag t-m">실측</span></li>
+        </ul>
+      </div>
+      <details><summary>산출물 예시: <code>results[]</code> 한 항목 (기존 결과 화면과 하위 호환)</summary><div class="inner">
+<pre>{
+  "criterion_id": "c3", "criterion": "장소: 직지문화공원", "type": "information",
+  "status": "pass", "observed_text": "직지문화공원",
+  "reason": "기준에 지정된 문구가 OCR 근거에서 확인됐습니다. ...",
+  "flags": [], "conflicts": [], "near_miss": [],
+  "evidence": [{
+    "text": "직지문화공원", "ocr_id": "trk_0003", "confidence": 0.98,
+    "recognition_engine": "paddleocr",
+    "track_id": "trk_0003", "segment_id": "seg_02",
+    "frame_id": "t009000", "time_ms": 9000, "frame_ocr_id": "t009000:paddle_001",
+    "bbox_xyxy": [100, 400, 400, 440],
+    "frame_url": "/api/video-reviews/&lt;id&gt;/frames/t009000", "frame_width": 1080, "frame_height": 1920,
+    "track_start_ms": 8000, "track_end_ms": 10000, "match": "exact"
+  }]
+}</pre>
+<p class="cap"><code>flags</code> 값: <code>near_miss</code> · <code>value_conflict</code> · <code>frames_disagree</code> · <code>ocr_gap_downgrade</code>. 오탈자 의심은 <code>match: "near_miss"</code> 근거로도 들어가 '위치 보기'가 됩니다.</p>
+      </div></details>
+    </div>
+  </article>
+
+  <!-- 6-A -->
+  <article class="stage" id="s6a">
+    <div class="stage-mark"><span class="no">6-A</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>광고·협찬 표시 판정</h3><span class="v v-new">신규</span><span class="owner">담당 <b>B</b> 규칙 · <b>C</b> 라벨·창 길이 측정 · <b>E</b> 입력 화면</span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>'광고/협찬' 표기가 영상 어딘가에 있는지 전체 OCR 텍스트에서 확인</div>
+        <div class="now"><span class="lab">바뀌는 점</span>적용 대상 · 문구 · 위치를 따로 봅니다. 판정 기준 문장이 아니라 별도 모듈(<code>video_disclosure.py</code>)로 만듭니다.</div>
+      </div>
+      <div class="note law">
+        <h4>근거: 추천·보증 심사지침 (공정위 예규 제499호, 2026-06-01 시행)</h4>
+        <ul class="tight">
+          <li><b>위치</b>: 동영상은 게시물 제목 또는 영상 안에 표시합니다. 영상 안이면 시작부분과 끝부분에 넣고 중간에 반복합니다(예시는 5분마다). 일부 구간만 추천하면 그 구간의 시작·끝에 넣고 추천하는 동안 반복합니다. 유명인이 상품을 의도적으로 노출하면 시작·끝 표시만으로 됩니다. (Ⅴ.6.다.(3)(가)③)</li>
+          <li><b>문구</b>: '#광고', '#협찬', '상품 협찬', '대가성 광고'(Ⅴ.6.나.(3))와 동영상 예시의 '유료 광고' 배너, '협찬 광고 포함'(Ⅴ.6.다.(3))은 적절합니다. 정부 해설(찾기쉬운 생활법령)은 '광고', '~협찬'도 적절로 봅니다. '체험단', '선물' 같은 불명확한 표현(Ⅴ.6.나.(3))과 'Thanks to', 'AD', 'Sponsor' 같은 영문 단독 표기(Ⅴ.6.나.(4))는 부적절합니다.</li>
+          <li><b>시간</b>: 최소 노출 '초' 기준은 없습니다. 원안의 '찾지 못함'은 맞지만, 시작·끝·반복이라는 시점 요건은 있습니다.</li>
+          <li><b>캡션</b>: '더보기'를 눌러야 보이는 표시는 부적절한 예로 나옵니다.</li>
+          <li><b>적용 대상</b>: 광고주가 자기 계정에서 하는 광고에는 적용되지 않습니다(2025-12 안내서 Q4). CF처럼 광고임이 명확한 영상은 표시를 생략할 수 있습니다(2020 안내서 Q&amp;A). 원안의 '거의 모든 업종 해당'은 업종이 아니라 '제3자 추천 + 경제적 대가' 여부로 정해집니다.</li>
+        </ul>
+      </div>
+      <div class="block"><h4>입력 (업로드 화면에 추가)</h4>
+        <p style="font-size:14.5px">영상 성격(모름 · 광고주 자체 광고 · 영상 전체 추천 · 일부 구간 · 유명인 노출), 게시물 제목, 캡션, 음성 고지(모름 · 있음 · 없음), 플랫폼. '일부 구간'을 고르면 구간(시작·끝 ms, 최대 20개)을 함께 받고 업로드 때 0 ≤ 시작 &lt; 끝 ≤ 영상 길이를 검사합니다(422). 하나의 JSON 필드 <code>disclosure</code>로 보내고 <code>snapshot.json</code>에 고정합니다. 기본값 '모름'이면 '위반'은 나오지 않는다고 화면에 적습니다.</p>
+      </div>
+      <div class="block"><h4>규칙</h4>
+        <div class="tbl"><table>
+          <thead><tr><th>규칙</th><th>보는 것</th><th>판정</th></tr></thead>
+          <tbody>
+            <tr><td><b>R0</b> 적용 대상</td><td>영상 성격 입력</td><td>광고주 자체 광고면 <b>적용 대상 아님</b>(새 상태값). '모름'이면 모든 규칙을 돌리되 최대 '확인 필요'</td></tr>
+            <tr><td><b>R1</b> 문구</td><td>프레임 OCR 줄(신뢰도 0.5 이상)을 허용·불허·모호·제외 사전으로 분류</td><td>불허 문구만 있으면 위반 후보, 허용과 섞이면 확인 필요. 대상 없이 쓴 '협찬: ○○'은 엔딩 크레딧과 구분되지 않아 모호로 둡니다</td></tr>
+            <tr><td><b>R2</b> 제목 경로</td><td>게시물 제목 앞 15자 안의 허용 문구</td><td>있으면 충족 경로. 뒤쪽이면 확인 필요(모바일 잘림). 릴스·틱톡은 제목란이 없어 확인 필요</td></tr>
+            <tr><td><b>R3</b> 영상 안 위치</td><td>시작 창 [0, 3000ms)·끝 창 [길이−3000ms, 길이)의 허용 문구. 0.2초 간격 프레임 포함</td><td>양쪽 다 있으면 충족. 지침 예시 '5분마다'를 반복 간격 상한으로 보는 내부 해석으로, 1분 영상은 이것만으로 반복도 충족으로 봅니다(법령 수치 아님). 0.2~0.4초짜리 표시는 1초 프레임만으로는 놓칩니다 <span class="tag t-m">실측</span> 합성 테스트. '일부 구간'의 경계는 0.2초 재샘플이 없어 1초 간격 한계를 사유에 남깁니다</td></tr>
+            <tr><td><b>R4</b> 캡션만</td><td>캡션에만 허용 문구</td><td>확인 필요</td></tr>
+            <tr><td><b>R5</b> 형태 (후속)</td><td>글자 높이 2%, 명암비 3:1, 1초 미만 노출</td><td>확인 필요 표시만. 수치는 법령이 아닌 내부 기준</td></tr>
+          </tbody>
+        </table></div>
+        <p class="cap">제외 사전: '광고문의', '광고주', '협찬사', '협찬문의', 그리고 같은 화면에 '주최·주관·후원·협찬'이 함께 있는 크레딧 블록. 축제 영상 엔딩에서 흔합니다.</p>
+      </div>
+      <div class="note warn">
+        <h4>'위반'은 다섯 조건이 모두 맞을 때만</h4>
+        <p>적용 대상 확정 ∧ 제목이나 캡션 입력 ∧ 음성 고지 '없음' ∧ 시작·끝 창 OCR 모두 성공 ∧ 허용 문구 흔적이 전혀 없음. 그 밖에 표시를 못 찾으면 '확인 필요'입니다. 지침은 음성 표시도 인정하고, OCR이 못 읽은 것은 없다는 증거가 아니기 때문입니다.</p>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>판정표 테스트 10건과 어휘·크레딧·0.2초 창·창 OCR 실패 테스트가 통과합니다(사본에서 통과). <span class="tag t-m">실측</span></li>
+          <li>라벨 세트에서 광고 표시 위반 영상의 거짓 충족이 0건입니다.</li>
+          <li>결과 화면에 '3초', '15자'가 <b>내부 기준</b>이라고 표시됩니다.</li>
+        </ul>
+      </div>
+      <details><summary>범위 결정(원안 08) 고친 표</summary><div class="inner">
+        <div class="tbl"><table>
+          <thead><tr><th>항목</th><th>MVP</th><th>근거</th></tr></thead>
+          <tbody>
+            <tr><td>적용 대상 판정</td><td>포함 (R0, 입력값)</td><td>2025-12 안내서 Q4</td></tr>
+            <tr><td>문구 적정성 (허용·불허·영문·조건부)</td><td>포함 (R1)</td><td>Ⅴ.6.나.(3)(4), 2024 개정</td></tr>
+            <tr><td>축제 크레딧 '협찬'</td><td>포함 (표시문구에서 제외)</td><td>크레딧은 표시문구가 아님</td></tr>
+            <tr><td>제목 경로</td><td>포함 (R2, 제목 입력 시)</td><td>Ⅴ.6.다.(3)①②</td></tr>
+            <tr><td>영상 안 시작·끝 표시</td><td>포함 (R3, 3초 창)</td><td>Ⅴ.6.다.(3)③</td></tr>
+            <tr><td>캡션에만 표시</td><td>포함 (R4 → 확인 필요)</td><td>Ⅴ.6.나.(1)</td></tr>
+            <tr><td>최소 노출 '초'</td><td>제외 (법령에 없음)</td><td>1초 미만 깜빡임은 R5 후속</td></tr>
+            <tr><td>크기·색 대비</td><td>후속 (R5, 확인 필요 표시만)</td><td>Ⅴ.6.나.(2), 수치 없음</td></tr>
+            <tr><td>음성 고지</td><td>STT 없이 입력값, '있음'도 확인 필요</td><td>지침은 음성 언급 인정</td></tr>
+            <tr><td>가상인물 표시</td><td>후속 (R6, 등장 구간 입력 필요)</td><td>Ⅴ.5, 2026-06 신설</td></tr>
+            <tr><td>플랫폼 '유료 광고 포함' 라벨</td><td>범위 밖</td><td>플레이어가 덧씌우는 라벨이라 납품 파일에 없음(추정)</td></tr>
+            <tr><td>1초 미만 일반 자막</td><td>한계로 기록</td><td>1초 간격이면 길이 d초 자막은 확률 d로만 잡힘</td></tr>
+            <tr><td>오디오(나레이션)</td><td>제외</td><td>속도는 장애 아님: faster-whisper small int8 1분 약 8초 <span class="tag t-e">추정</span></td></tr>
+          </tbody>
+        </table></div>
+      </div></details>
+    </div>
+  </article>
+
+  <!-- 6-1 -->
+  <article class="stage" id="s61">
+    <div class="stage-mark"><span class="no">6-1</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>이중 검수 (EmbeddingGemma 2)</h3><span class="v v-hold">보류</span><span class="owner">담당 <b>C</b> 시험 → 통과 시 <b>D</b> 구현</span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>OCR과 다른 방식으로 같은 항목을 확인하고, 엇갈리면 '확인 필요'</div>
+        <div class="now"><span class="lab">바뀌는 점</span>기본은 꺼 둡니다. 시험을 통과한 항목만 켜고, 판정은 바꾸지 않고 <b>'이중 검수 엇갈림'</b> 표시만 붙입니다.</div>
+      </div>
+      <div class="block"><h4>모델 사실 확인</h4>
+        <div class="tbl"><table>
+          <thead><tr><th>원안 기술</th><th>확인 결과</th></tr></thead>
+          <tbody>
+            <tr><td>Google DeepMind, 2026-10-06, Apache 2.0</td><td>맞음 <span class="tag t-o">공식</span> (<code>google/embeddinggemma-2</code>, gated 아님). 일부 Google 문서에 Gemma 약관 문구가 남아 있다는 2차 보고가 있어 켜기 전에 모델 카드 원문 확인</td></tr>
+            <tr><td>740M, 텍스트 270M·이미지 170M만 불러서 사용</td><td>740M = 텍스트 270M + 비전 170M + 오디오 300M. <b>이미지 전용 구성은 없어</b> 이미지를 쓰려면 텍스트+비전 약 440M을 올립니다 <span class="tag t-o">공식</span>. 이미지 토큰(기본 280개)이 텍스트 백본을 지나는 구조로 보여 CLIP 같은 독립 이미지 타워는 아닐 가능성이 큽니다 <span class="tag t-e">추정</span> 1차 문서에 연결 방식 명시 없음</td></tr>
+            <tr><td>768차원 공간</td><td>맞음. 512·256·128로 줄일 수 있지만 128에서는 미디어 성능이 크게 떨어집니다(MMEB 59.01 → 45.65)</td></tr>
+            <tr><td>CPU 처리 시간 미측정</td><td>PyTorch CPU 공식 수치 없음. LiteRT(int4/int8 양자화, 이미지 토큰 70개)는 Intel Core Ultra Series 3 CPU에서 이미지당 338ms <span class="tag t-o">공식</span>. 이미지 토큰은 70·140만 지원. float16은 NaN 위험이라 CPU는 float32</td></tr>
+            <tr><td>한국어 성능 미확인</td><td>맞음. 한국어 이미지-글자 평가는 공식·비공식 어디에도 없습니다</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="note warn">
+        <h4>그대로 쓰면 생기는 문제</h4>
+        <p>공식 예제에서 금문교 사진과 'San Francisco'의 유사도가 0.641, 무관한 'a cute cat walking'이 0.534, 무관한 주방 그림 이미지가 0.585입니다. 고정 임계값으로 '광고 표기 있음'을 가르기 어렵습니다. 또 의미가 비슷하면 불허 표현인 'Thanks to'나 'AD'도 '광고'와 가깝게 나올 수 있어(미측정), 통과 근거로 쓰면 지침과 반대로 동작할 위험이 있습니다.</p>
+      </div>
+      <div class="block"><h4>네 가지 점검, 다시 설계</h4>
+        <div class="tbl"><table>
+          <thead><tr><th>점검</th><th>새 방식</th><th>우선순위</th></tr></thead>
+          <tbody>
+            <tr><td>OCR 큰 실패</td><td>'탐지 상자는 있는데 글자를 못 읽음(빈 문구 또는 신뢰도 &lt; 0.5)'은 <b>모델 없이</b> 판정할 수 있습니다. 3단계가 <code>dt_scores</code>와 빈 상자를 남긴 뒤 켭니다. 임베딩은 같은 영상 안 다른 구간 문구와의 순위로만 비교</td><td>높음</td></tr>
+            <tr><td>광고 표시</td><td>OCR이 허용 문구를 하나도 못 찾은 창에서만 '이중 검수 엇갈림'으로 올립니다. 통과 근거로는 쓰지 않습니다. 질의에서 '유료 광고 포함'(유튜브 플레이어 라벨)은 뺍니다</td><td>시험 결과에 따라</td></tr>
+            <tr><td>장면 경계 보조</td><td>이웃 프레임 유사도 급락을 영상별 기준(중앙값 − k·σ̂)으로 봅니다. 모델이 필요 없는 HistogramDetector보다 나을 때만 씁니다</td><td>중간</td></tr>
+            <tr><td>대표 프레임</td><td>자동 교체하지 않고 대체 후보만 기록합니다. 5단계가 이미 자막 획으로 고르므로 기대 효과가 낮습니다</td><td>낮음</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="block"><h4>구간 경계 판정표 (원안 04, 한 행 추가)</h4>
+        <div class="tbl"><table>
+          <thead><tr><th>주 경계 (컷·트랙)</th><th>임베딩 경계 (±1초)</th><th>그 자리 문구 변화</th><th>판정</th></tr></thead>
+          <tbody>
+            <tr><td>있음</td><td>있음</td><td>상관없음</td><td>정상</td></tr>
+            <tr><td>있음</td><td>없음</td><td>있음</td><td>정상 (자막만 바뀜)</td></tr>
+            <tr><td>컷만 있음</td><td>없음</td><td>없음</td><td>정보로만 기록 (표시 안 함)</td></tr>
+            <tr><td>없음</td><td>있음</td><td>없음</td><td>이중 검수 엇갈림: 장면 경계 누락 의심 (디졸브·페이드)</td></tr>
+            <tr><td><b>없음</b></td><td><b>있음</b></td><td><b>있음</b></td><td><b>이중 검수 엇갈림: OCR 경계 누락 의심</b> (추가 행. 자모 허용이 실제 문구 변경을 흡수했을 수 있음)</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="block"><h4>MVP에서 할 일 (시험만)</h4>
+        <ol class="steps">
+          <li>별도 가상환경에서 <code>sentence-transformers</code>·<code>transformers</code> 설치가 <code>torch==2.10.0</code>을 바꾸지 않는지 확인합니다. paddle-env에는 넣지 않고, API 프로세스에서 import하지 않습니다(paddle-only API는 torch를 로드하지 않는 상태로 검증됨).</li>
+          <li>모델 revision을 고정하고, 팀 PC에서 토큰 280·560·1120별 로드 시간, 장당 시간, 최대 메모리를 잽니다.</li>
+          <li><b>스모크 45회</b>: 프레임 5장 × ('광고' 80px 하단, '할인' 80px 하단, 원본) × 토큰 3종. 모든 예산에서 '광고'와 '할인'의 유사도 차이가 이웃 프레임 노이즈(q95) 이하이면 광고 표시 점검은 그만둡니다. 이 시험은 그만둘지를 가리는 조기 중단 시험이고, 통과해도 바로 켜지 않습니다.</li>
+        </ol>
+        <p class="cap">MVP 이후(별도 작업): 스모크를 통과한 점검만 실제 숏폼 8편 이상으로 본 시험(AUC 0.90 등 점검별 게이트)을 하고, double_check 단계를 연결해 2주간 화면에 띄우지 않고 기록합니다. 엇갈림 중 실제 문제 비율이 0.5 이상인 점검만 화면에 표시합니다 <span class="tag t-e">추정</span> 팀 내부 기준.</p>
+      </div>
+      <details><summary>코드: CPU 로딩 스케치 (시험용)</summary><div class="inner">
+<pre>from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer("google/embeddinggemma-2", device="cpu",
+                            config_kwargs={"audio_config": None})   # 텍스트+비전 약 440M
+model = model.float()                                               # float16 금지, CPU는 float32
+
+frames = model.encode([{"image": p} for p in frame_paths],
+                      processing_kwargs={"image": {"max_soft_tokens": 280}},
+                      normalize_embeddings=True)                    # 이미지에는 prefix 없음
+queries = model.encode(["광고", "유료 광고", "협찬받음", "협찬 광고 포함"],
+                       prompt_name="SearchQuery", normalize_embeddings=True)</pre>
+<p class="cap">인자 이름과 최소 버전은 sentence-transformers 버전마다 다를 수 있어 시험 환경에서 먼저 확인합니다.</p>
+      </div></details>
+    </div>
+  </article>
+
+  <!-- 7 -->
+  <article class="stage" id="s7">
+    <div class="stage-mark"><span class="no">7</span><span class="line"></span></div>
+    <div class="card">
+      <div class="card-head"><h3>결과 반환 · 실행 · 화면 · DB</h3><span class="v v-mod">수정</span><span class="owner">담당 <b>A</b> API·DB · <b>D</b> 실행·진행률 · <b>E</b> 화면</span></div>
+      <div class="shift">
+        <div class="was"><span class="lab">원안</span>구간별 <code>start_sec~end_sec</code>, 대표 프레임, 검수 결과, 이중 검수 플래그를 타임라인으로</div>
+        <div class="now"><span class="lab">바뀌는 점</span>판정은 기준별 1개, 구간은 근거 위치입니다. 시간은 정수 <code>*_ms</code>, '확인 필요' 강조는 근거가 있는 구간에만 칠합니다.</div>
+      </div>
+      <div class="block"><h4>실행 (D)</h4>
+        <ol class="steps">
+          <li><code>video_pipeline.run_video_job</code> 하나가 단계 순서·진행률·실패를 관리합니다. 단계 함수는 <code>report(done, total)</code>만 부르고 결과를 돌려줍니다.</li>
+          <li>작업 전체를 기존 <code>inference_lock</code>으로 <b>한 번만</b> 잡습니다. 단계 안에서 다시 잡으면 <code>threading.Lock</code>이라 교착 상태가 됩니다. 기다리는 동안은 <code>queued</code>로 보이고, 그동안 포스터 검수도 기다립니다.</li>
+          <li>서버가 재시작되면 대기·진행 중인 영상을 모두 실패로 바꾸고 산출물은 남깁니다. 자동 재개는 하지 않습니다(새 검수 ID로 다시 실행). 재개는 PostgreSQL worker 단계에서 넣습니다.</li>
+        </ol>
+        <div class="tbl"><table>
+          <thead><tr><th>stage</th><th class="num">progress</th><th>stage_detail</th></tr></thead>
+          <tbody>
+            <tr><td><code>queued</code></td><td class="num">5</td><td>잠금 대기 포함</td></tr>
+            <tr><td><code>extracting</code></td><td class="num">5 → 10</td><td>프레임 수</td></tr>
+            <tr><td><code>scene_detection</code></td><td class="num">10 → 15</td><td>1회</td></tr>
+            <tr><td><code>ocr</code></td><td class="num">15 → 90</td><td>프레임 23 / 84 (1초에 한 번 기록)</td></tr>
+            <tr><td><code>segmenting</code></td><td class="num">90 → 93</td><td>구간 수</td></tr>
+            <tr><td><code>review</code></td><td class="num">93 → 97</td><td>기준 판정, 광고 표시</td></tr>
+            <tr><td><code>double_check</code></td><td class="num">97 → 99</td><td>MVP에서는 건너뜀</td></tr>
+            <tr><td><code>completed</code></td><td class="num">100</td><td>결과 저장과 같은 갱신에서만</td></tr>
+          </tbody>
+        </table></div>
+        <p class="cap">실패하면 <code>stage='failed'</code>이고, <code>failed_stage</code>는 extracting·ocr·segmenting·review 중 하나 또는 <code>null</code>(처리를 시작하기 전에 재시작으로 실패한 경우, 화면은 재시작 문구만 표시)입니다. 장면 검출과 이중 검수 실패는 경고만 남기고 완료합니다.</p>
+      </div>
+      <div class="block"><h4>화면 (E)</h4>
+        <ol class="steps">
+          <li>입력: <code>accept</code>에 mp4·mov·webm 추가, <code>validateVideo</code>(파일 서명 + <code>loadedmetadata</code>로 길이 확인), 영상일 때만 광고·협찬 입력 칸.</li>
+          <li>진행: 단계 목록을 상수로 빼고 <code>VIDEO_STAGES</code>를 추가합니다. OCR 단계에 '프레임 23 / 84'를 보이고, 실패하면 <code>failed_stage</code> 단계만 빨갛게 표시합니다.</li>
+          <li>결과: <code>VideoResultsPage</code> = 영상 플레이어 + <code>SegmentTimeline</code> + <code>EvidenceCanvas</code>(근거 프레임 위 bbox) + 기준별 결과 + 광고 표시 카드. 구간이나 근거를 누르면 그 시각으로 이동해 멈춥니다.</li>
+          <li>bbox 분모는 <code>video.videoWidth</code>가 아니라 추출한 프레임 JPG 크기입니다. 재생은 업로드한 blob URL을 먼저 쓰고, 없으면 <code>/video</code>(Range)를 씁니다. HEVC처럼 재생이 안 되면 대표 프레임만 보여 줍니다.</li>
+          <li>모바일: 1분을 375px에 그리면 1초가 약 6px라 타임라인은 개요로만 두고 <b>구간 목록</b>을 주 조작 수단으로 씁니다(버튼 높이 44px 이상).</li>
+        </ol>
+        <p class="cap">강조 규칙: 그 구간에 근거가 있는 위반·확인 필요·오탈자 의심, 못 찾은 광고 창, OCR 실패 프레임, 이중 검수 엇갈림만 칠합니다. 근거 없는 '확인 필요'(시각 기준, 미발견)는 구간을 칠하지 않고 '영상 전체에서 확인할 항목'으로 따로 보여 줍니다. 그러지 않으면 타임라인 전체가 노란색이 됩니다.</p>
+      </div>
+      <div class="block"><h4>DB (A): 원안 07을 실제 ERD에 맞추면</h4>
+        <div class="tbl"><table>
+          <thead><tr><th>원안</th><th>실제 ERD (ERD_물리.md)</th></tr></thead>
+          <tbody>
+            <tr><td><code>video(file_path, duration_sec, status, progress)</code></td><td><code>assets</code> · <code>asset_versions</code>(길이·코덱은 <code>measurement_metadata</code>) · <code>stored_files</code>. 상태와 진행률은 영상이 아니라 실행(<code>review_runs</code>)에 둡니다. 같은 영상을 기준을 바꿔 여러 번 검수하기 때문입니다</td></tr>
+            <tr><td><code>segment</code></td><td>신규 <code>video_segments</code>(실행에 묶음, <code>start_ms</code>·<code>end_ms</code>, 대표 프레임)</td></tr>
+            <tr><td><code>inspection_result(segment_id)</code></td><td>그런 테이블은 없고 <code>item_results</code>입니다. <code>UNIQUE(attempt_id, criteria_item_id)</code>라 구간별 행을 넣을 수 없습니다. 기준당 1행 + <code>evidence_records.frame_id</code>로 프레임·시각을 잇습니다</td></tr>
+            <tr><td><code>double_check</code></td><td>신규 <code>segment_quality_checks</code>(구간·경계·창 단위 점검)</td></tr>
+            <tr><td>(없음)</td><td>신규 <code>video_frame_samples</code>(슬롯·시각·OCR 실행), <code>video_disclosure_checks</code>(광고 표시 결과)</td></tr>
+          </tbody>
+        </table></div>
+        <p class="cap">프레임 이미지는 <code>image_coordinate_frames(frame_kind='video_frame')</code>, 프레임별 OCR은 <code>ocr_runs</code> 1행 + <code>ocr_tokens(external_token_id='paddle_003')</code>로 기존 테이블을 그대로 씁니다. DB 설계 보고서 v04와 테이블 이름이 달라 어느 쪽을 기준으로 할지는 A가 정합니다.</p>
+      </div>
+      <div class="block"><h4>완료 기준</h4>
+        <ul class="done">
+          <li>stage가 정해진 순서를 따르고 progress가 줄지 않습니다.</li>
+          <li>모든 근거의 <code>time_ms</code>가 해당 구간 [<code>start_ms</code>, <code>end_ms</code>) 안에 있고, 구간들이 [0, 영상 길이)를 빈틈없이 덮습니다.</li>
+          <li>근거 없는 '확인 필요'만 있는 영상에서는 강조 구간이 0개입니다.</li>
+          <li>영상 작업 중 제출한 포스터는 영상이 끝난 뒤 완료됩니다.</li>
+          <li>구간을 누르면 영상 위치가 목표 시각 ±50ms 안이고, 375px 폭에서 가로 스크롤이 없습니다.</li>
+        </ul>
+      </div>
+      <details><summary>저장 구조 <code>.runtime/video-reviews/&lt;id&gt;/</code></summary><div class="inner">
+<pre>original.bin          업로드 원본 그대로 (SHA-256 보존)
+media.json            컨테이너·코덱·길이·회전·HDR 경고
+snapshot.json         확정 기준 + 광고 입력 (수정 없음)
+result.json           API가 돌려주는 상태·결과
+frames/t000000.jpg …  1초 + 시작·끝 0.2초 프레임
+frames.json           슬롯 목록 (frame_id, time_ms, sampling, 크기, sha256, same_as)
+scenes.json           하드컷 후보 (cut_ms, grid_ms)
+ocr/frames.jsonl      프레임당 정규화 OCR 1줄 (다음 단계의 유일한 입력)
+ocr/attempt-1.jsonl   작업자 원본 출력 (비공개: 로컬 경로 포함)
+tracks.json           자막 트랙
+segments.json         구간 + 대표 프레임
+review.json           기준 판정 + 광고 표시</pre>
+<p class="cap">60초 영상 1건의 프레임은 약 17MB입니다. 보존·삭제 정책이 필요합니다.</p>
+      </div></details>
+    </div>
+  </article>
+
+  </div>
+</section>
+
+<!-- ============ BUDGET ============ -->
+<section id="budget">
+  <div class="sec-head">
+    <span class="kicker">04 · 처리 시간</span>
+    <h2>60초 영상 1건, 얼마나 걸리나</h2>
+    <p>원안의 '30초~2분'은 배치 워커가 있어야 가까워집니다. 아래 OCR 수치는 Windows에서 아직 재지 않은 추정입니다.</p>
+  </div>
+  <div class="chart-card">
+    <h3>전체 처리 시간: 지금 코드 그대로 vs 배치 워커</h3>
+    <p class="sub">60초 · 1080×1920 · OCR 대상 84장. 빗금은 추정 범위입니다.</p>
+    <svg class="chart-svg" viewBox="0 0 720 176" role="img" aria-labelledby="chartTitle chartDesc">
+      <title id="chartTitle">전체 처리 시간 비교</title>
+      <desc id="chartDesc">지금 코드 그대로는 약 594초, 배치 워커는 63초에서 193초. 목표는 180초.</desc>
+      <defs>
+        <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <rect class="hatch-bg" width="7" height="7"></rect>
+          <line class="hatch-ln" x1="0" y1="0" x2="0" y2="7"></line>
+        </pattern>
+      </defs>
+      <!-- scale: x = 170 + t * 0.85  (0..600s → 170..680) -->
+      <g>
+        <line class="grid" x1="170" y1="18" x2="170" y2="140"></line>
+        <line class="grid" x1="272" y1="18" x2="272" y2="140"></line>
+        <line class="grid" x1="374" y1="18" x2="374" y2="140"></line>
+        <line class="grid" x1="476" y1="18" x2="476" y2="140"></line>
+        <line class="grid" x1="578" y1="18" x2="578" y2="140"></line>
+        <line class="grid" x1="680" y1="18" x2="680" y2="140"></line>
+        <text x="170" y="160" text-anchor="middle">0</text>
+        <text x="272" y="160" text-anchor="middle">2분</text>
+        <text x="374" y="160" text-anchor="middle">4분</text>
+        <text x="476" y="160" text-anchor="middle">6분</text>
+        <text x="578" y="160" text-anchor="middle">8분</text>
+        <text x="680" y="160" text-anchor="middle">10분</text>
+      </g>
+      <!-- row 1: current path 594s → x2 = 170+505 = 675 -->
+      <text class="lbl" x="0" y="50">지금 코드 그대로</text>
+      <text x="0" y="68">장마다 프로세스·모델 로드</text>
+      <path class="bar-b" d="M170 34 H671 a4 4 0 0 1 4 4 V54 a4 4 0 0 1 -4 4 H170 Z"></path>
+      <text class="val" x="664" y="27" text-anchor="end">약 594초 (≈10분)</text>
+      <rect class="hit" x="170" y="28" width="510" height="36" data-tip="지금 코드 그대로: 84장 × 6.90초(Mac 포스터 실측값으로 계산) ≈ 580초 + 추출·장면 약 14초. Windows에서는 더 느릴 수 있음."></rect>
+      <!-- row 2: batch 63..193s → 170+53.55=223.55 ; 170+164.05=334.05 -->
+      <text class="lbl" x="0" y="110">배치 워커</text>
+      <text x="0" y="128">모델 1회 로드</text>
+      <rect class="bar-a" x="170" y="94" width="53.55" height="24"></rect>
+      <path d="M225.55 94 H330.05 a4 4 0 0 1 4 4 V114 a4 4 0 0 1 -4 4 H225.55 Z" fill="url(#hatch)"></path>
+      <text class="val" x="342" y="111">63~193초 (추정)</text>
+      <rect class="hit" x="170" y="88" width="172" height="36" data-tip="배치 워커: 업로드·검사 1초 이하 + 추출·장면 13.8~14.3초(같은 실행 실측) + OCR 47~174초(로드 4~5초 + 84장 × 0.5~2.0초 + 고정비 약 1.5초, 추정) + 트랙·판정·결과 약 3초."></rect>
+      <!-- gate 180s → 170+153 = 323 -->
+      <line class="gate" x1="323" y1="80" x2="323" y2="140"></line>
+      <text class="val" x="323" y="76" text-anchor="middle">목표 p50 180초</text>
+    </svg>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>단계</th><th class="num">시간</th><th>근거</th></tr></thead>
+      <tbody>
+        <tr><td>업로드 복사·해시 + 검사</td><td class="num">≤ 1초</td><td><span class="tag t-m">실측</span> 150MiB 0.3~0.7초, 검사 18~50ms</td></tr>
+        <tr><td>1·2 프레임 추출 + 장면 경계</td><td class="num">13.8~14.3초</td><td><span class="tag t-m">실측</span> 같은 실행의 합계(추출 84장 5.1~5.9초, 장면 7.3~10.2초), 합성 H.264</td></tr>
+        <tr><td>3 OCR (84장)</td><td class="num">47~174초</td><td><span class="tag t-e">추정</span> 로드 4~5초 + 84 × 0.5~2.0초 + 고정비 약 1.5초(기동·해시·기록). 탐지 한도 1920이면 프레임당 약 1.8~2.1배</td></tr>
+        <tr><td>4·5 트랙·구간·대표 프레임</td><td class="num">1.4~2.0초</td><td><span class="tag t-m">실측</span> 합성, JPEG 디코드 포함</td></tr>
+        <tr><td>6 기준 판정 + 6-A 광고 표시</td><td class="num">≤ 0.3초</td><td><span class="tag t-m">실측</span> 기준 100 × 트랙 80</td></tr>
+        <tr><td>7 결과 조립·기록</td><td class="num">≈ 1초</td><td><span class="tag t-e">추정</span> 실측은 진행률 기록 1회 32ms, 근거 부착 0.38ms</td></tr>
+        <tr><td><b>합계</b></td><td class="num"><b>63~193초</b></td><td>목표: 전체 p50 ≤ 180초, OCR ≤ 160초, 프레임 p50 ≤ 1.8초. 90초 영상(114장)은 ≤ 250초</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">측정 PC는 i5-1135G7(4코어 8스레드), 16GB, Windows 11입니다. 실행 PC가 다르면 그 PC에서 다시 잽니다. 작업 전체가 잠금을 잡으므로 포스터 대기 시간은 영상 1건 전체 시간과 같습니다.</p>
+  <div class="note warn">
+    <h4>CPU 프레임당 0.5~2.0초는 낙관적일 수 있습니다</h4>
+    <p>Paddle 공식 파이프라인 표(문서 이미지 200장, server 탐지)에서 GPU 없이 CPU만 쓰면 Xeon 서버 CPU(약 10스레드)가 장당 2.16~3.23초, Apple M4가 5.4~7.3초였습니다. <span class="tag t-o">공식</span> 팀 Mac(M4 Pro)의 포스터 실측 6.90초/장도 비슷한 크기입니다. <span class="tag t-m">실측</span> 팀 PC는 4스레드에 MKLDNN을 꺼서 더 느릴 수 있고, 숏폼 프레임은 문서보다 줄이 적어 더 빠를 수도 있습니다. 공식 Xeon 속도를 그대로 대입하면 OCR 약 187~278초, 전체 약 205~297초로 목표 180초를 넘습니다. <span class="tag t-e">추정</span></p>
+    <p>그래서 <b>2일차에 팀 PC에서 프레임 시간부터</b> 잽니다. 모델을 한 번 올리는 스크래치 스크립트로 s01 프레임 20장을 읽으면 30분 안팎이면 됩니다. 장당 2초를 넘으면 설정(T1~T3)을 먼저 보고, 그래도 넘으면 GPU 운영(<a href="#gpu">05</a>)이 실제 선택지가 됩니다.</p>
+  </div>
+</section>
+
+<!-- ============ GPU ============ -->
+<section id="gpu">
+  <div class="sec-head">
+    <span class="kicker">05 · GPU를 쓰면</span>
+    <h2>RunPod GPU나 개인 RTX 5070을 쓰면 무엇이 달라지나</h2>
+    <p>뼈대(1초 프레임 84장, 모델을 한 번 올리는 배치 워커, 자막 트랙, 영상당 1회 판정)는 그대로입니다. 바뀌는 것은 3단계 OCR 시간과 <b>어느 장치의 결과로 게이트를 판정하느냐</b>입니다. 이 문서를 만든 PC에는 GPU가 없어서 GPU 시간은 모두 공식 자료로 계산한 추정입니다.</p>
+  </div>
+
+  <div class="note warn">
+    <h4>먼저 알아 둘 것: 지금 코드로는 어느 GPU를 빌려도 Paddle OCR이 빨라지지 않습니다</h4>
+    <ul class="tight">
+      <li>Paddle 작업자는 <code>PaddleOCR(device="cpu")</code>로 고정돼 있고(<code>paddle_full_worker.py:27-35</code>), 부모는 결과 장치가 <code>cpu</code>가 아니면 실패로 처리합니다(<code>paddle_ocr.py:114</code>). <span class="tag t-m">실측</span></li>
+      <li>기존 RunPod 워커는 EasyOCR 전용이고 이미지 1장을 7MiB까지만 받습니다(<code>runpod_worker.py</code>, <code>ocr_runtime.py:30</code>). 영상 프레임 84장은 약 17MB, base64로 약 22.6MB라 <code>/run</code> 본문 한도 10MB를 넘습니다. <span class="tag t-o">공식</span> <span class="tag t-e">추정</span></li>
+      <li>반면 이중 검수 스모크, STT 평가, EasyOCR 비교처럼 torch로 도는 실험은 GPU 환경만 만들면 코드를 고치지 않고 5070에서 돌릴 수 있습니다.</li>
+    </ul>
+  </div>
+
+  <div class="block"><h4>권장안</h4>
+    <div class="pick">
+      <div class="on">
+        <h4>팀 PC (CPU) <span class="k">운영·게이트 판정</span></h4>
+        <p>운영과 시연의 기준 장치로 유지합니다. Gate C(거짓 위반 0건)와 D의 최종 판정은 여기서 합니다. 다만 CPU 시간 가정이 낙관적일 수 있어(<a href="#budget">04</a>) <b>2일차에 프레임 시간부터</b> 잽니다. 목표를 넘으면 그때 GPU 운영이 실제 선택지가 됩니다.</p>
+      </div>
+      <div class="on">
+        <h4>개인 RTX 5070 <span class="k">2주 검증 가속</span></h4>
+        <p>무료이고 데이터가 국내에 남습니다. 카나리와 CPU/GPU 대조를 통과하면 무거운 실험(탐지 1920, 2·4fps, 이중 검수 스모크, STT)을 여기서 먼저 돌립니다. 결과는 GPU 열에만 적고, 팀 공유 서버로는 열지 않습니다.</p>
+      </div>
+      <div>
+        <h4>RunPod <span class="k">필요할 때만 · A40</span></h4>
+        <p>2주 검증에는 쓰지 않습니다. 5070이 Windows와 WSL2 모두에서 막히면 A40 Secure Pod를 20~40시간 빌립니다(약 $13~25). 운영을 GPU로 정하면 Serverless flex A40 등급을 씁니다(건당 약 11~32원). L40은 A40이 없을 때, A100 SXM은 제외합니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block"><h4>환경 비교 (60초 · 1080×1920 · 84장)</h4>
+    <div class="tbl"><table class="gpu-env">
+      <thead><tr><th>환경</th><th>3단계 OCR</th><th>전체</th><th>비용</th><th>준비</th><th>데이터 위험</th></tr></thead>
+      <tbody>
+        <tr><td>팀 PC (CPU)<br><span class="cap">i5-1135G7 · 16GB</span></td><td>47~174초 <span class="tag t-e">추정</span><br><span class="cap">공식 CPU 속도면 약 187~278초</span></td><td>63~193초 <span class="tag t-e">추정</span></td><td>0원</td><td>없음</td><td>가장 낮음</td></tr>
+        <tr><td>개인 RTX 5070<br><span class="cap">12GB GDDR7 · sm_120</span></td><td>15~50초 <span class="tag t-e">추정</span></td><td>30~70초 <span class="tag t-e">추정</span></td><td>2주 전기요금 약 400~5,500원</td><td>드라이버가 있으면 1~3시간, WSL2로 가면 반나절 더. 코드 변경 필요</td><td>낮음(국내 개인 PC). OneDrive 밖에 두고 디스크 암호화, 캠페인 뒤 삭제</td></tr>
+        <tr><td>RunPod Pod<br><span class="cap">A40 · Secure</span></td><td>약 20~60초(로드 포함) <span class="tag t-e">추정</span></td><td>약 40~80초 + 영상 업로드 <span class="tag t-e">추정</span></td><td>$0.59/시간. 20~40시간 $13.47~25.32</td><td>처음 2~4시간, 이후 세션마다 10~30분. 같은 코드 변경</td><td>중간~높음. 국외 처리, 세 후보 모두 한국·일본 리전 없음</td></tr>
+        <tr><td>RunPod Serverless<br><span class="cap">A40 등급(48 GB) · flex</span></td><td>16~41초 + 콜드 스타트 <span class="tag t-e">추정</span></td><td>약 40~110초 <span class="tag t-e">추정</span><br><span class="cap">첫 이미지 pull이면 수 분 더</span></td><td>건당 $0.008~0.024 (약 11~32원)</td><td>새 이미지·핸들러·청크 클라이언트·제출 기록·테스트, 3~5인일</td><td>높음. 국외 이전이라 개인정보 보호법 제28조의8 검토</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cap">5070과 A40은 프레임당 0.1~0.5초 범위로 비슷한 급입니다. 프레임당 시간의 40~65%가 CPU·Python 몫이라 GPU 종류보다 호스트 CPU의 단일 스레드 성능이 더 크게 작용하고, 둘 중 어느 쪽이 빠른지는 실측 전에는 알 수 없습니다. 공식 표에서 GPU OCR 1개 스트림은 CPU 코어 약 1개를 썼습니다(CPU 사용률 101~107%). <span class="tag t-o">공식</span></p>
+  </div>
+
+  <div class="chart-card">
+    <h3>전체 처리 시간: 장치별</h3>
+    <p class="sub">60초 영상 1건. 진한 막대는 하한, 빗금은 추정 범위입니다. 회색 줄은 공식 CPU 속도를 대입한 참고 시나리오입니다.</p>
+    <svg class="chart-svg" viewBox="0 0 740 284" role="img" aria-labelledby="gpuChartTitle gpuChartDesc">
+      <title id="gpuChartTitle">장치별 전체 처리 시간</title>
+      <desc id="gpuChartDesc">팀 PC CPU 실행안 가정 63~193초, 공식 CPU 속도 대입 205~297초, RTX 5070 30~70초, RunPod Pod A40 40~80초, RunPod Serverless A40 등급 40~110초. 목표 180초.</desc>
+      <defs>
+        <pattern id="hatch2a" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <rect class="hatch-bg" width="7" height="7"></rect>
+          <line class="hatch-ln" x1="0" y1="0" x2="0" y2="7"></line>
+        </pattern>
+        <pattern id="hatch2b" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <rect class="hatch-bg" width="7" height="7"></rect>
+          <line class="hatch-ln-b" x1="0" y1="0" x2="0" y2="7"></line>
+        </pattern>
+      </defs>
+      <!-- scale: x = 170 + t * 1.6  (0..300s → 170..650) -->
+      <g>
+        <line class="grid" x1="170" y1="22" x2="170" y2="252"></line>
+        <line class="grid" x1="266" y1="22" x2="266" y2="252"></line>
+        <line class="grid" x1="362" y1="22" x2="362" y2="252"></line>
+        <line class="grid" x1="458" y1="22" x2="458" y2="252"></line>
+        <line class="grid" x1="554" y1="22" x2="554" y2="252"></line>
+        <line class="grid" x1="650" y1="22" x2="650" y2="252"></line>
+        <text x="170" y="272" text-anchor="middle">0</text>
+        <text x="266" y="272" text-anchor="middle">1분</text>
+        <text x="362" y="272" text-anchor="middle">2분</text>
+        <text x="458" y="272" text-anchor="middle">3분</text>
+        <text x="554" y="272" text-anchor="middle">4분</text>
+        <text x="650" y="272" text-anchor="middle">5분</text>
+      </g>
+      <!-- row 1: team CPU, plan assumption 63..193s -->
+      <text class="lbl" x="0" y="45">팀 PC (CPU)</text>
+      <text x="0" y="62">실행안 가정 0.5~2.0초/장</text>
+      <rect class="bar-a" x="170" y="30" width="100.8" height="22"></rect>
+      <path d="M272.8 30 H474.8 a4 4 0 0 1 4 4 V48 a4 4 0 0 1 -4 4 H272.8 Z" fill="url(#hatch2a)"></path>
+      <text class="val" x="486.8" y="45">63~193초</text>
+      <rect class="hit" x="170" y="26" width="370" height="30" data-tip="팀 PC(CPU), 실행안 가정: 업로드·검사 1초 이하 + 추출·장면 13.8~14.3초(실측) + OCR 47~174초(로드 4~5초 + 84장 × 0.5~2.0초 + 고정비 약 1.5초, 추정) + 트랙·판정·결과 약 3초."></rect>
+      <!-- row 2: team CPU, official CPU speed 205..297s -->
+      <text class="lbl" x="0" y="93">팀 PC (CPU) 참고</text>
+      <text x="0" y="110">공식 CPU 속도 대입</text>
+      <rect class="bar-b" x="170" y="78" width="328" height="22"></rect>
+      <path d="M500 78 H641.2 a4 4 0 0 1 4 4 V96 a4 4 0 0 1 -4 4 H500 Z" fill="url(#hatch2b)"></path>
+      <text class="val" x="653.2" y="93">205~297초</text>
+      <rect class="hit" x="170" y="74" width="550" height="30" data-tip="참고 시나리오: Paddle 공식 파이프라인 표의 Xeon CPU 2.16~3.23초/장(문서 이미지, 약 10스레드)을 84장에 대입하면 OCR 약 187~278초, 전체 약 205~297초. 팀 PC는 4스레드라 더 느릴 수 있고, 숏폼 프레임은 문서보다 줄이 적어 더 빠를 수 있음."></rect>
+      <!-- row 3: RTX 5070 30..70s -->
+      <text class="lbl" x="0" y="141">개인 RTX 5070</text>
+      <text x="0" y="158">로컬 GPU, 코드 변경 후</text>
+      <rect class="bar-a" x="170" y="126" width="48" height="22"></rect>
+      <path d="M220 126 H278 a4 4 0 0 1 4 4 V144 a4 4 0 0 1 -4 4 H220 Z" fill="url(#hatch2a)"></path>
+      <text class="val" x="290" y="141">30~70초</text>
+      <rect class="hit" x="170" y="122" width="190" height="30" data-tip="RTX 5070: OCR 84장 15~50초(프레임당 0.1~0.35초 + 기동·모델 생성 5~20초, 추정) + CPU 단계 약 17~19초. 5070 PC의 CPU 단계는 미측정."></rect>
+      <!-- row 4: RunPod Pod A40 40..80s -->
+      <text class="lbl" x="0" y="189">RunPod Pod · A40</text>
+      <text x="0" y="206">영상 업로드 시간 별도</text>
+      <rect class="bar-a" x="170" y="174" width="64" height="22"></rect>
+      <path d="M236 174 H294 a4 4 0 0 1 4 4 V192 a4 4 0 0 1 -4 4 H236 Z" fill="url(#hatch2a)"></path>
+      <text class="val" x="306" y="189">40~80초</text>
+      <rect class="hit" x="170" y="170" width="200" height="30" data-tip="RunPod Pod A40: OCR 84장 16~41초 + 로드 4~20초(추정) + CPU 단계 약 17~19초(Pod vCPU 미측정). 영상 업로드는 별도로, 200MiB를 50Mbps로 올리면 약 34초."></rect>
+      <!-- row 5: RunPod Serverless A40 class 40..110s -->
+      <text class="lbl" x="0" y="237">RunPod Serverless</text>
+      <text x="0" y="254">A40 등급, 청크 3건</text>
+      <rect class="bar-a" x="170" y="222" width="64" height="22"></rect>
+      <path d="M236 222 H342 a4 4 0 0 1 4 4 V240 a4 4 0 0 1 -4 4 H236 Z" fill="url(#hatch2a)"></path>
+      <text class="val" x="354" y="237">40~110초</text>
+      <rect class="hit" x="170" y="218" width="250" height="30" data-tip="RunPod Serverless A40 등급: 로컬 CPU 단계 17~19초 + base64 22.6MB 업로드 4~18초(10~50Mbps) + 콜드 스타트 1~20초 + OCR 16~41초 + 청크 3건 대기·폴링. 첫 이미지 pull이면 수 분 더. 모두 추정."></rect>
+      <!-- gate 180s → 458 -->
+      <line class="gate" x1="458" y1="22" x2="458" y2="252"></line>
+      <text class="val" x="458" y="14" text-anchor="middle">목표 p50 180초</text>
+    </svg>
+  </div>
+
+  <div class="block"><h4>단계별로 달라지는 것</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>단계</th><th>개인 RTX 5070</th><th>RunPod</th><th>계획에서 바꿀 것</th></tr></thead>
+      <tbody>
+        <tr><td>0 입력 검증</td><td>변화 없음</td><td>Serverless는 로컬에서 그대로 합니다. Pod는 영상을 Pod로 올려야 합니다(최대 200MiB).</td><td>Pod는 공개 proxy 대신 SSH 터널(<code>ssh -L 8000:127.0.0.1:8000</code>)로 접속합니다. 개발용 로그인은 loopback만 허용해 proxy로는 404가 납니다(<code>local_auth.py:29-35</code>).</td></tr>
+        <tr><td>1·2 프레임 · 장면</td><td>CPU 그대로 둡니다. NVDEC로 옮기지 않습니다. 장치가 달라도 <code>frames.json</code> sha256이 같아야 하고, 얻을 시간도 5~6초뿐입니다.</td><td>Serverless는 로컬에서 뽑은 JPEG를 보냅니다. Pod는 Pod의 vCPU에서 돌며 성능은 미측정입니다.</td><td>GPU 환경에서는 CPU 단계 약 17~19초(업로드·추출·장면·트랙·판정은 i5 실측, 결과 조립 약 1초는 추정)가 전체의 절반 가까이 됩니다. 장치별 시간표에서 이 몫은 CPU 값으로 둡니다.</td></tr>
+        <tr><td>3 OCR</td><td>15~50초 <span class="tag t-e">추정</span>. 전제는 device 인자, 별도 GPU 환경, 카나리, CPU/GPU 대조 통과입니다.</td><td>A40 16~41초 + 콜드 스타트 <span class="tag t-e">추정</span>. Serverless는 6MiB 청크 3건을 순차로 보냅니다.</td><td><code>VIDEO_OCR_TARGET=local-cpu|local-gpu|runpod</code>를 둡니다(기본 <code>local-cpu</code>, <code>auto</code> 없음). manifest v2에 device·precision을 넣고, GPU 고장 처리(시작 카나리, CUDA error 719면 1회 재기동, TensorRT 끔)를 완료 기준에 넣습니다.</td></tr>
+        <tr><td>4·5 트랙 · 구간</td><td>변화 없음</td><td>원격은 raw만 돌려주고, 서버가 로컬과 같은 normalize로 <code>ocr/frames.jsonl</code>을 씁니다.</td><td>OCR 대상이 무엇이든 <code>video_ocr_frames_v1</code> 스키마가 같아야 합니다.</td></tr>
+        <tr><td>6 · 6-A 판정</td><td>시간은 그대로입니다. 다만 GPU 수치 차이로 0.97·0.6·0.5 경계 근처 판정이 뒤집힐 수 있습니다. paddle 3.3.1은 GPU conv에서 TF32를 기본으로 허용합니다(PR #77781).</td><td>같습니다. A40·L40·A100 모두 TF32를 쓰는 GPU입니다.</td><td>E0-GPU 대조를 통과하기 전에는 GPU 결과로 판정하지 않습니다. OCR이 비면 '표시 흔적 없음'과 맞물려 거짓 위반이 될 수 있어 탐지 0개 프레임 비율을 감시합니다.</td></tr>
+        <tr><td>6-1 이중 검수</td><td>bf16 기준 280토큰 +5~25초, 1120토큰 +20~80초 <span class="tag t-e">추정</span>. 임계값을 재는 fp32는 1.5~3배 느릴 수 있습니다. 스모크 45회는 1분 안쪽입니다.</td><td>OCR 청크와 같은 job에 <code>tasks: ["ocr", "embed"]</code>로 보내 프레임을 다시 보내지 않습니다.</td><td>'기본 꺼짐'을 유지하고 시간 목표를 장치별로 나눕니다. 임계값은 fp32로 재고 bf16은 속도 참고용, fp16은 금지입니다(모델 카드). 본 시험(약 2,000회)은 계획대로 MVP 이후입니다.</td></tr>
+        <tr><td>7 결과 · 잠금</td><td>5070을 운영에 쓰면 포스터 대기가 30~70초로 줄어 20장 단위 분할이 필요 없습니다.</td><td>원격을 기다리는 동안에도 <code>inference_lock</code>을 유지합니다. 명세가 '동시 추론 1'이라(<code>project-specification.md:242</code>) 따로 잡으려면 명세부터 고칩니다.</td><td><code>result.json</code>에 <code>ocr_target</code>·<code>device</code>·<code>device_name</code>·<code>compute_capability</code>·<code>peak_gpu_bytes</code>를 넣습니다. <code>_safe_runtime</code>이 <code>gpu:0</code>을 버리므로(<code>api.py:260</code>) <code>cuda</code>로 정규화합니다. 원격 job ID는 공개하지 않습니다.</td></tr>
+        <tr><td>STT (선택)</td><td>large-v3 fp16 추론 3~6초 + 로드 3~10초, VRAM 약 4.5GB <span class="tag t-e">추정</span>. int8은 못 씁니다(CTranslate2 4.6.2부터 sm_120 INT8 비활성). <span class="tag t-o">공식</span></td><td>Blackwell이 아닌 A40·L40·A100은 int8 계열도 쓸 수 있습니다.</td><td>MVP 제외는 유지합니다. 걸림돌은 속도가 아니라 한국어 정확도와 배경음악입니다. 5070에서는 <code>compute_type="float16"</code>으로만 평가합니다.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="block"><h4>RunPod 후보 세 GPU: 가격과 사양</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>GPU</th><th>Pod Secure</th><th>Pod Community</th><th>Serverless flex</th><th>vCPU · RAM</th><th>메모</th></tr></thead>
+      <tbody>
+        <tr><td>A40 48GB</td><td>$0.59/시간</td><td>$0.35 (조회 때 재고 없음)</td><td>$1.22/시간 · '48 GB' 등급 (A6000과 같은 등급)</td><td>9 · 50GB</td><td>세 후보 중 가장 쌈. RAM이 가장 작음</td></tr>
+        <tr><td>L40 48GB</td><td>$0.82/시간</td><td>$0.69 (재고 Low)</td><td>$1.75/시간 · '48 GB PRO' 등급 (L40S·6000 Ada와 같은 등급)</td><td>8 · 94GB</td><td>vCPU가 가장 적음. Secure 재고가 수시로 바뀜. Paddle 공식 Ada 실측 없음</td></tr>
+        <tr><td>A100 SXM 80GB</td><td>$1.79/시간</td><td>$1.39 (재고 Low)</td><td>$2.72/시간 · '80 GB' 등급 (PCIe·SXM 구분 없음)</td><td>16 · 125GB</td><td>10-05~10-12 사이 $1.59→$1.79 인상 기록(2차 출처)</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cap"><span class="tag t-o">공식</span> runpod.io/pricing을 2026-10-16에 조회한 값입니다('Updated' 표기는 페이지 수정일이지 가격 날짜가 아닙니다). 재고는 같은 날 06:06 UTC 기준입니다. Serverless는 등급 단위로 배치·과금해 A40을 골라도 A6000에 배정될 수 있고, REST API <code>gpuTypeIds</code>에 <code>"NVIDIA A40"</code>처럼 개별 GPU를 넣어 고정할 수 있습니다. Active 워커 단가와 Spot 가격은 지금 공개돼 있지 않습니다. 후보 밖인 Serverless 24GB 등급(L4·A5000·3090)은 $0.69/시간으로 A40 등급보다 43% 싸고 OCR VRAM(3~8GB, 추정)도 들어가므로, 속도를 재 볼 만한 참고 대안입니다.</p>
+  </div>
+
+  <div class="block"><h4>속도와 영상 1건 비용 (Serverless, OCR만)</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>GPU</th><th class="num">프레임당 OCR</th><th class="num">84장 OCR</th><th class="num">1건 과금 시간</th><th class="num">1건 비용</th><th>A40과 비교</th></tr></thead>
+      <tbody>
+        <tr><td>A40</td><td class="num">0.19~0.49초</td><td class="num">16~41초</td><td class="num">23~71초</td><td class="num">$0.0078~0.0241<br>약 11~32원</td><td>기준</td></tr>
+        <tr><td>L40</td><td class="num">0.16~0.44초</td><td class="num">13~37초</td><td class="num">20~67초</td><td class="num">$0.0097~0.0326<br>약 13~44원</td><td>속도 1.1~1.2배, 단가 1.43배(Pod 1.39배)</td></tr>
+        <tr><td>A100 SXM</td><td class="num">0.16~0.40초</td><td class="num">13~34초</td><td class="num">20~64초</td><td class="num">$0.0151~0.0484<br>약 20~65원</td><td>과금 시간 전체로 1.11~1.16배 빠름, 단가 2.23배(Pod 3.03배)</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cap"><span class="tag t-e">추정</span> 과금 시간 = 콜드 스타트 0~20초 + OCR + 전송 2~5초 + idle 5초입니다. 하한은 이미 켜진 워커, 상한은 완전 콜드입니다. 근거는 Paddle 공식 파이프라인 실측(A100 0.34초/장, A10 0.41초/장, 문서 이미지)을 사양 비율로 옮긴 값이고, RunPod에서는 아직 재지 않았습니다. A100은 공식 표에서 GPU 사용률이 32%였습니다. 연산 성능이 남아도 CPU 몫 때문에 빨라지지 않습니다. 이중 검수를 켜면 A40 기준 콜드에서 건당 약 2~5원, warm에서 0.5~1.4원이 더 듭니다.</p>
+  </div>
+
+  <div class="block"><h4>시나리오별 비용</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>시나리오</th><th class="num">A40</th><th class="num">L40</th><th class="num">A100 SXM</th><th>메모</th></tr></thead>
+      <tbody>
+        <tr><td>첫날 스모크 (Secure, 각 1시간)</td><td class="num">$0.59</td><td class="num">$0.82</td><td class="num">$1.79</td><td>합계 $3.20(약 4,300원). 운영을 RunPod으로 검토할 때만 합니다. 프레임당 시간·콜드 스타트·<code>lscpu</code>를 남겨 위 추정을 실측으로 바꿉니다.</td></tr>
+        <tr><td>5070 대안 Pod 20~40 GPU시간 (Secure + 네트워크 볼륨 50GB, 2주)</td><td class="num">$13.47~25.32<br>약 1.8만~3.4만 원</td><td class="num">$18.07~34.52<br>약 2.4만~4.7만 원</td><td class="num">$37.47~73.32<br>약 5.1만~9.9만 원</td><td>실제 OCR 연산은 2시간 남짓이고 나머지는 개발·대기 시간입니다. 볼륨 디스크를 쓰면 약 $2.7 더 듭니다.</td></tr>
+        <tr><td>Serverless 월 100건</td><td class="num">$0.81~2.41<br>약 1,100~3,300원</td><td class="num">$1.02~3.26<br>약 1,400~4,400원</td><td class="num">$1.59~4.84<br>약 2,100~6,500원</td><td>모델을 이미지에 구우면 저장비가 없습니다. 네트워크 볼륨을 쓰면 월 $3.50이 더해집니다.</td></tr>
+        <tr><td>Serverless 월 500건</td><td class="num">$4.07~12.03<br>약 5,500~16,200원</td><td class="num">$5.10~16.28<br>약 6,900~22,000원</td><td class="num">$7.93~24.18<br>약 1.1만~3.3만 원</td><td>이중 검수를 켜도 A40 $4.24~13.89</td></tr>
+        <tr><td>Serverless 월 2,000건</td><td class="num">$16.27~48.12<br>약 2.2만~6.5만 원</td><td class="num">$20.42~65.14<br>약 2.8만~8.8만 원</td><td class="num">$31.73~96.71<br>약 4.3만~13.0만 원</td><td>A40 상한 기준 과금 39시간이라 max workers 1로 충분합니다.</td></tr>
+        <tr><td>참고: 시연 달 Pod, 하루 8시간 × 22일</td><td class="num">$107.82<br>약 14.5만 원</td><td class="num">$148.30<br>약 20.0만 원</td><td class="num">$319.02<br>약 43.0만 원</td><td>앱 전체를 Pod에 올리는 방식이라 권장하지 않습니다. HTTP proxy는 공개 URL이고 연결이 100초로 제한됩니다.</td></tr>
+        <tr><td>사고: 주말 64시간 Pod 방치</td><td class="num">$37.76</td><td class="num">$52.48</td><td class="num">$114.56</td><td>Active 워커 1대를 24시간 켜 두면 A40 등급만 월 $620~891입니다.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cap"><span class="tag t-e">추정</span> 원화는 1,348.5원/USD(한국은행 매매기준율, 2026-10-16)로 바꿨고, 카드 해외 결제 수수료와 부가세 적용 여부(미확인)는 뺐습니다. 24시간 켜 둔 Pod가 Serverless flex보다 싸지려면 하루 과금 시간이 A40 11.6시간, L40 11.2시간, A100 15.8시간을 넘어야 합니다. 팀 규모(월 100~2,000건)에서는 flex가 평일 8시간 Pod보다 A40 기준 약 2~128배 쌉니다. 그래서 비용은 결정 요인이 아니고, 데이터 국외 이전과 콜드 스타트가 결정 요인입니다.</p>
+  </div>
+
+  <div class="block"><h4>GPU별 판단</h4>
+    <div class="pick">
+      <div class="on">
+        <h4>A40 <span class="k">기본</span></h4>
+        <p>Pod $0.59, Serverless $1.22로 세 후보 중 가장 쌉니다. VRAM 최악치가 약 20GB(Paddle 3~8GB, 이중 검수 1~4GB, whisper 약 6GB, 추정)라 48GB면 넉넉합니다. vCPU 9·RAM 50GB로 할당이 작고, Serverless에서는 A6000에 배정될 수 있어 측정값에 GPU 이름을 함께 남깁니다.</p>
+      </div>
+      <div>
+        <h4>L40 <span class="k">2순위</span></h4>
+        <p>A40보다 Pod 39%, Serverless 43% 비싼데 속도는 1.1~1.2배라 건당 비용이 더 높습니다. Serverless에서는 L40만 골라도 L40S·6000 Ada와 같은 값이 매겨집니다. Paddle 공식 Ada(sm_89) 실측이 없어 쓰려면 스모크가 먼저입니다.</p>
+      </div>
+      <div class="off">
+        <h4>A100 SXM <span class="k">제외</span></h4>
+        <p>값은 Pod 3.03배, Serverless 2.23배인데 영상 1건이 2.5~7.6초 빨라질 뿐입니다. 80GB VRAM과 2TB/s 대역폭도 쓰이지 않습니다. 대형 비전·언어 모델을 함께 돌리는 실험이 생길 때만 짧게 빌립니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block"><h4>비용 통제 수칙</h4>
+    <ul class="tight" style="font-size:14.5px">
+      <li><b>Serverless 설정</b>: Active 0, Max workers 1(기본 3), idle timeout 5~10초(청크 사이 warm 유지에 10초, 건당 $0.002 미만 추가), execution timeout 청크당 180초(기본 600초), ttl 900초(대기열을 포함하는 하드 삭제 한도). <span class="tag t-o">공식</span></li>
+      <li><b>잔액을 예산 상한으로</b>: 계정 기본 지출 한도는 시간당 $80이라 월 예산이 아닙니다. 자동 충전을 끄고 $30~40만 미리 충전합니다. 잔액이 0이 되면 Pod가 멈추고, 네트워크 볼륨이 없는 Pod는 데이터가 사라지며, 볼륨도 결국 지워질 수 있으니 저장비 1~2달치를 남깁니다.</li>
+      <li><b>작업마다 명시적으로 선택</b>: 'GPU 서버(RunPod)로 처리'는 기본 꺼짐이고, 켤 때 예상 비용을 보여 줍니다. 이중 검수와 STT는 따로 켭니다. 로컬이 실패해도 유료 원격으로 자동 전환하지 않습니다(<code>project-specification.md:22, 240-241</code>).</li>
+      <li><b>자동 재제출 없음</b>: job ID를 받지 못하면 unknown으로 기록하고 재제출하지 않으며 <code>/retry</code>도 부르지 않습니다. 같은 영상의 SHA-256으로 중복 제출을 막습니다.</li>
+      <li><b>Pod는 쓸 때만</b>: 하루가 끝나면 자동 정지, 캠페인 뒤에는 terminate합니다. 네트워크 볼륨은 Secure Cloud에서만, Pod를 만들 때만 붙일 수 있습니다. Community(P2P 호스트)에는 팀 가상 표본만 올립니다.</li>
+      <li><b>GPU에는 GPU 일만</b>: 디코드·장면 검출을 워커에서 하면 건당 약 14초(약 $0.005)가 더 과금됩니다. 광고주 자체 광고는 시작·끝 24장 OCR을 건너뜁니다.</li>
+      <li><b>결제 직전 재확인</b>: 10-05~10-12 사이 13~20% 인상 기록이 있고(2차 출처), 재고가 Low·없음으로 수시로 바뀝니다.</li>
+      <li><b>기존 EasyOCR endpoint</b>를 이미 만들어 두었다면 GPU 목록에서 Blackwell 등급(5090, RTX PRO 6000, B200)을 빼고 Active 0, Max workers 1~2인지 확인합니다. 지금 이미지(torch 2.6 cu124)는 sm_120에서 'no kernel image'로 실패하고, 워커가 이 메시지를 'OCR inference failed'로 가립니다. 아직 배포하지 않았다면 이미지를 torch 2.10.0 cu128로 올린 뒤 만듭니다.</li>
+    </ul>
+  </div>
+
+  <details><summary>RunPod 영상 OCR job 계약 (2단계, 팀이 RunPod을 명시적으로 고른 경우만)</summary><div class="inner">
+    <ul class="tight" style="font-size:14px">
+      <li><b>선택</b>: <code>VIDEO_OCR_TARGET=runpod</code>를 업로드 시점 snapshot에 고정했을 때만 보냅니다. endpoint는 <code>RUNPOD_VIDEO_ENDPOINT_ID</code>로 포스터용과 분리하고 API 키는 서버에만 둡니다. health는 설정 형식만 보고 유료 호출을 하지 않습니다.</li>
+      <li><b>전달</b>: <code>/run</code> 본문 base64 청크입니다. 기본 6MiB(상한 7MiB), 84장이면 31·31·22장 3청크, 본문은 청크당 약 8.3MB입니다. 7MiB를 base64로 바꾸면 9.79MB라 10MB 한도에 여유가 2%뿐이어서 6MiB를 기본으로 합니다. 제출 전에 직렬화한 본문이 9,500,000B 이하인지 확인하고, 한 장이 넘으면 축소하지 않고 <code>remote_frame_too_large</code>로 실패합니다. 로컬 경로·파일명·기준 문구·라벨은 보내지 않습니다.</li>
+      <li><b>출력 검증</b>: 원격은 raw만 돌려줍니다. 서버는 id 집합 일치, <code>input_dimensions</code> = <code>frames.json</code>, <code>model_identity</code> = 로컬 해시, <code>device == "cuda"</code>, 응답 10MiB 이하를 확인한 뒤 같은 normalize로 <code>frames.jsonl</code>을 씁니다. 결과 보존은 30분이라 그 안에 폴링을 끝냅니다.</li>
+      <li><b>실패</b>: 청크는 순차로 제출합니다. <code>/run</code> 직전에 <code>remote-jobs.json</code>에 dispatching을 남기고, ID를 받으면 submitted로 바꿉니다. 상태 조회는 같은 ID로 429·5xx에만 3회까지 다시 합니다. 성공 비율 0.9를 넘을 수 없게 되면 다음 청크를 보내지 않고 <code>failed_stage="ocr"</code>로 끝냅니다. 서버가 재시작되면 진행 중 청크는 '원격 결과 확인 불가'입니다. 한 영상 안에서 로컬·원격, CPU·GPU를 섞지 않습니다.</li>
+      <li><b>바꾸는 조건</b>: 청크가 8개를 넘거나 fps를 올리면, 팀 결정을 거쳐 외부 객체 저장소의 짧은 만료 presigned GET URL과 runpod SDK <code>download_files_from_urls</code>로 바꿉니다. RunPod 네트워크 볼륨 S3 API는 presigned URL을 지원하지 않고 US·EU 15개 데이터센터에서만 됩니다. <span class="tag t-o">공식</span></li>
+    </ul>
+<pre>input  = {schema: "video_ocr_request_v1", task: "paddle_frames", tasks: ["ocr"],
+          request_id: "&lt;attempt_id&gt;:&lt;chunk&gt;", chunk: {index, count},
+          pipeline: "paddle_frames_v1", settings: {det_limit_side_len: 1280, precision: "fp32"},
+          expected_model_identity: {detection, recognition},
+          frames: [{id: "t012000", sha256, width, height, image_base64}]}
+policy = {executionTimeout: 180000, ttl: 900000}
+output = {schema: "video_ocr_response_v1", status: "success|partial", device: "cuda", device_name,
+          model_identity: {..., paddle_cuda, cudnn}, warm, load_seconds, peak_gpu_bytes,
+          frames: [{id, status: "ok", input_dimensions, inference_seconds,
+                    raw: {rec_texts, rec_scores, rec_polys, dt_polys, dt_scores}}
+                 | {id, status: "failed", code: "frame_error|sha256_mismatch|decode_error"}]}</pre>
+  </div></details>
+
+  <details><summary>개인 RTX 5070 설정 체크리스트 (C)</summary><div class="inner">
+    <ol class="steps">
+      <li><b>사양 확인</b>: <code>nvidia-smi --query-gpu=name,driver_version,memory.total,compute_cap --format=csv</code>. 기대값은 'NVIDIA GeForce RTX 5070'(Laptop 아님), 약 12GB, 12.0, 드라이버 576.02 이상(CUDA 12.9 Windows 최소). 노트북용 5070(8GB, 50~100W)이면 VRAM 상한과 시간 추정을 다시 계산합니다.</li>
+      <li><b>작업 위치</b>: 저장소를 OneDrive 동기화 폴더 밖(예: <code>C:\work</code>)에 clone하고 디스크 암호화를 확인합니다. 실제 광고주 소재는 넣지 않습니다.</li>
+      <li><b>CPU 기준 환경</b>: 실행가이드대로 <code>.venv</code>, <code>.runtime\paddle-env</code>(CPU paddlepaddle 3.3.1), <code>prepare_paddle --include-detection</code>을 준비하고, 같은 PC의 CPU 경로로 E0 프레임을 먼저 돌려 CPU-P 값을 남깁니다. 'CPU가 빨라서 생긴 차이'와 'GPU 효과'를 나누기 위해서입니다.</li>
+      <li><b>Paddle GPU 환경을 따로</b>: <code>.runtime\paddle-gpu-env</code>를 만들고 그 python으로 <code>-m pip install paddlepaddle-gpu==3.3.1 -i https://www.paddlepaddle.org.cn/packages/stable/cu129/</code>, 이어서 <code>-m pip install paddleocr==3.7.0 paddlex==3.7.2</code>. PyPI의 paddlepaddle-gpu는 2.6.2가 최신이라 이 인덱스가 필요합니다. 다운로드는 Paddle 휠 0.81GB에 cuDNN(0.77GB)·cuBLAS(0.55GB) 등 의존 휠을 더해 2.5GB 이상입니다. <code>pip list</code>에 CPU paddlepaddle 없이 paddlepaddle-gpu만 있어야 합니다.</li>
+      <li><b>빌드 확인</b>: <code>import paddle; print(paddle.__version__, paddle.version.cuda(), paddle.version.cudnn(), paddle.device.cuda.get_device_capability())</code>의 기대값은 3.3.1, 12.9, (12, 0)입니다. 'Mismatched GPU Architecture' 경고가 나오면 멈춥니다. <code>paddle.utils.run_check()</code>는 틀린 연산에도 통과한 사례(#73937)가 있어 참고만 합니다.</li>
+      <li><b>카나리와 대조</b>: <code>PaddleOCR(device="gpu:0")</code>을 나머지 인자는 작업자와 같게, TensorRT는 끄고 만듭니다. 글자를 아는 이미지 1장과 E0 프레임을 읽어 CPU 결과와 문구·상자 수를 비교합니다. 대조 때는 <code>NVIDIA_TF32_OVERRIDE=0</code>, <code>FLAGS_cudnn_deterministic=1</code>, <code>FLAGS_cudnn_allow_tf32=0</code>을 함께 켭니다. 3.3.1의 <code>FLAGS_cudnn_allow_tf32</code>는 cuDNN frontend 경로에만 적용돼 grouped conv에는 TF32가 남을 수 있기 때문입니다. 탐지 0개(#79354)나 문구 불일치가 나오면 다음 단계로 갑니다.</li>
+      <li><b>대안 WSL2</b>(사람이 판단해서 전환): <code>wsl --install -d Ubuntu-24.04</code>. WSL 안에 Linux 드라이버를 설치하지 않고, 저장소는 <code>/mnt/c</code>가 아니라 <code>~/</code> 아래에 둡니다. 같은 cu129 명령으로 Linux 휠을 설치하고, 결과에는 OS=WSL2라고 적습니다.</li>
+      <li><b>torch GPU 환경</b>(이중 검수, EasyOCR 비교, STT): <code>.runtime\torch-gpu-env</code>에 <code>torch==2.10.0 torchvision==0.25.0 --index-url https://download.pytorch.org/whl/cu128</code>을 <code>requirements.txt</code>보다 먼저 설치합니다. cu126은 쓰지 않습니다. <code>'sm_120' in torch.cuda.get_arch_list()</code>가 True여야 합니다.</li>
+      <li><b>STT</b>(선택): ctranslate2 4.8.3 이상. <code>get_supported_compute_types("cuda")</code>에 int8 계열이 없어야 정상이고, <code>compute_type="float16"</code>으로 둡니다. cuBLAS·cuDNN DLL을 못 찾으면 WSL2에서 합니다. 제3자 DLL 아카이브는 팀 승인 뒤에만 받습니다.</li>
+      <li><b>측정 환경</b>: NVIDIA 제어판에서 실제 <code>python.exe</code>의 'CUDA - Sysmem Fallback Policy'를 'Prefer No Sysmem Fallback'으로(드라이버 546.01 이상), 고성능 전원, 게임·브라우저 GPU 가속 끔. 측정 중에는 <code>nvidia-smi ... -l 1 &gt; gpu-log.csv</code>로 온도·전력·클럭·VRAM을 남깁니다.</li>
+      <li><b>측정 규칙</b>: 첫 실행은 버리고 3회 p50을 씁니다. 장치 열(GPU-P)에 드라이버, CUDA·cuDNN, 버전, 탐지 한도, fps, load_s, frame_p50, ocr_total_s, e2e_p50, peak_vram, peak_rss, CER을 적습니다. 결과 JSON/MD만 커밋하고 영상 원본은 커밋하지 않습니다.</li>
+    </ol>
+  </div></details>
+
+  <div class="block"><h4>코드 변경</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>파일</th><th>바꿀 것</th><th>담당</th><th>시점</th></tr></thead>
+      <tbody>
+        <tr><td><code>paddle_full_worker.py:27-35</code></td><td><code>run(..., device="cpu")</code> 인자와 <code>--device</code>를 추가하고 <code>PaddleOCR(device=device)</code>로 바꿉니다. 기본값이 cpu라 기존 테스트는 그대로 통과합니다. payload에 요청 장치, GPU 이름, compute capability, paddle CUDA·cuDNN, TF32 설정, <code>peak_gpu_bytes</code>를 남깁니다. <code>paddle.get_device()</code>는 전역 기본값이라 실제 추론 장치 근거로 쓰지 않습니다.</td><td>B</td><td>3~4일차 배치 워커 머지 때</td></tr>
+        <tr><td><code>paddle_ocr.py:20-24, 114, 122, 126-128</code></td><td>장치별로 env 경로(<code>paddle-env</code> 또는 <code>paddle-gpu-env</code>)를 고르고, <code>device != "cpu"</code> 검사를 '기대 장치와 일치'로 바꿉니다. readiness 검사에 CUDA 장치 수를 넣습니다. 포스터 경로는 CPU로 유지합니다.</td><td>B</td><td>같은 때</td></tr>
+        <tr><td>영상 배치 워커와 부모</td><td>manifest v2(settings에 device, <code>precision="fp32"</code>), 시작 카나리 1장, CUDA error 719면 종료 후 남은 프레임만 새 프로세스로 1회, TensorRT 끔. '프레임별 예외 후 계속'은 GPU에서 쓰지 않습니다.</td><td>B · D</td><td>같은 때</td></tr>
+        <tr><td><code>video_ocr_target.py</code> (신규)</td><td><code>VIDEO_OCR_TARGET</code>을 업로드 때 snapshot에 고정하고, 실행 때 설정과 다르면 <code>CONFIGURATION_MISMATCH</code>로 실패합니다. <code>RUN_TARGET</code>에서 유도하지 않고, GPU→CPU 폴백은 기본으로 끕니다.</td><td>D</td><td>같은 때 (<code>runpod</code> 값은 2단계)</td></tr>
+        <tr><td><code>api.py:233, 255-303</code></td><td>health에 실제 장치를 표시하고, <code>_safe_runtime</code>에서 <code>gpu:N</code>을 <code>cuda</code>로 정규화하며 <code>ocr_target</code>을 허용 목록에 넣습니다. health는 paddle·torch import, 네트워크, 유료 호출 없이 설정 형식만 봅니다.</td><td>A</td><td>0·7단계 연결 때</td></tr>
+        <tr><td><code>requirements-paddle-gpu.txt</code> (신규), <code>start.py:137-150</code></td><td>설치를 두 단계로 나눕니다(Paddle cu129 인덱스 → PyPI의 paddleocr·paddlex). 해시를 고정하고 <code>start.py</code>에 GPU 환경 안내를 넣습니다.</td><td>D</td><td>5070 환경이 정착한 뒤</td></tr>
+        <tr><td><code>requirements.txt:1-4</code>, <code>ocr_runtime.py:101-111</code></td><td>Windows에서는 torch를 cu128 인덱스에서 먼저 설치하라고 명시합니다(지금 안내대로면 CPU torch가 깔림, 실측). 'no kernel image'를 장치 오류가 아니라 설치 불일치로 보고합니다.</td><td>D</td><td>같은 때</td></tr>
+        <tr><td><code>scripts/gpu_check.py</code> (신규), 벤치마크 스크립트</td><td>장치명·CC·드라이버·카나리 결과를 <code>.runtime/gpu-check.json</code>에 남깁니다. 벤치마크에 <code>--device</code>와 CPU/GPU 대조 출력(문구 일치율, Δconf p99, 경계 레코드, peak VRAM)을 넣습니다.</td><td>C</td><td>2일차</td></tr>
+        <tr><td>테스트</td><td>잘못된 대상 값이면 not_ready, local-gpu가 실패해도 원격 호출 없음, device별 매개변수화, (2단계) 84장이 3청크, 두 번째 <code>/run</code> 타임아웃이면 unknown이고 재제출 없음. 실제 GPU·유료 호출은 pytest marker <code>gpu</code>·<code>paid</code>로 기본 제외합니다.</td><td>D · B</td><td>각 변경과 함께</td></tr>
+        <tr><td>(2단계) <code>runpod_client.py</code>, <code>video_remote_ocr.py</code>, <code>runpod_video_worker.py</code>, <code>Dockerfile.runpod-video</code></td><td>포스터 클라이언트의 submit·wait·cancel을 떼어 공유하고(포스터 동작은 그대로), 청크·순차 제출·제출 기록·응답 검증을 만듭니다. Paddle GPU 이미지는 빌드 때 모델 해시를 검증해 굽습니다. DB 단계에서는 원격 ID가 1개뿐인 <code>ReviewAttempt</code> 아래에 <code>remote_dispatches</code>가 필요합니다.</td><td>D · A</td><td>팀이 RunPod 운영을 정한 뒤</td></tr>
+        <tr><td>명세 · 실행가이드 · <code>.gitignore</code></td><td>실측 전까지 'Paddle은 CPU, GPU 미검증' 표기를 유지합니다(<code>project-specification.md:239</code>). 영상 원격 경로와 청크별 시도 기록을 §7.3에 넣습니다. <code>.gitignore</code>에 <code>data/video/</code>를 추가합니다(지금은 <code>/.runtime/</code>만 제외).</td><td>A · C</td><td>실측 뒤</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="note warn">
+    <h4>GPU를 쓸 때의 위험</h4>
+    <ul class="tight">
+      <li><b>Windows + sm_120은 오류 없이 틀린 결과를 낼 수 있습니다.</b> cu126 이하 휠은 경고만 내고 1/3=0 같은 잘못된 연산을 했고(#73937), cu129 3.3.1에서도 RTX 5060 노트북에서 탐지 0개라는 미해결 보고가 있습니다(#79354). 빈 OCR은 6-A의 '표시 흔적 없음'과 맞물려 거짓 위반이 됩니다. 카나리와 대조 게이트가 막습니다.</li>
+      <li><b>공식 문서가 엇갈려 보입니다.</b> PaddleOCR 설치 문서의 'Windows 50 시리즈 미지원' 경고는 그 문서가 안내하는 3.2.0 cu118·cu126 설치에 대한 것입니다. cu129 3.3.1 Windows 휠은 인덱스에 있지만(실측), Windows에서 PP-OCRv5를 검증한 공식 기록은 없습니다. 그래서 실행 검증 전까지 미검증으로 봅니다.</li>
+      <li><b>CPU와 GPU 판정이 달라질 수 있습니다.</b> TF32 기본 허용과 cuDNN 비결정성 때문에 0.97 경계 근처 레코드가 뒤집히면, GPU에서 통과한 Gate C가 CPU 운영에서 깨집니다.</li>
+      <li><b>장치 기록이 틀어질 수 있습니다.</b> <code>paddle.get_device()</code>는 전역 기본값이고, <code>_safe_runtime</code>은 <code>gpu:0</code>을 조용히 버리며, Windows에서 <code>requirements.txt</code>만 설치하면 CPU torch가 들어가 'GPU 수치'가 실제로는 CPU 값일 수 있습니다.</li>
+      <li><b>12GB VRAM</b>에서 탐지 1920(공식 min1280 계열 10~13.5GB), 이중 검수 batch 32, whisper batch 8, 화면 출력이 겹치면 OOM이 납니다. sysmem fallback이 켜져 있으면 오류 없이 느려지기만 해서 시간 측정을 믿을 수 없습니다.</li>
+      <li><b>RunPod</b>은 세 후보 모두 한국·일본 리전이 없습니다(국외 이전, 고객 NDA). 청크 분할은 '제출 결과 불명' 위험을 청크 수만큼 늘리고, 콜드 스타트 꼬리(이미지 pull 수 분)가 길면 1건 단위로는 로컬 CPU보다 느릴 수 있습니다.</li>
+      <li><b>개인 PC를 팀 서버로 열면</b> 안 됩니다. <code>POST /api/reviews</code>에 인증이 없고(<code>api.py:657</code>), 결과는 ID만 알면 읽힙니다(<code>api.py:726-735</code>). 포트포워딩, 0.0.0.0 바인딩, trycloudflare, Tailscale Funnel은 공개 노출입니다. 측정과 환경이 한 사람에게 묶이는 문제도 있습니다.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ VALIDATION ============ -->
+<section id="validation">
+  <div class="sec-head">
+    <span class="kicker">06 · 착수 전 검증 (원안 05·09)</span>
+    <h2>2주 안에 판단할 것: 숏폼 자막을 믿고 쓸 수 있나</h2>
+    <p>원안의 원칙을 그대로 둡니다. 인식률을 먼저 재고, 통과하기 전에는 구간·트랙 튜닝에 시간을 쓰지 않습니다. 이 일은 데이터·라벨·평가 담당인 <b>C</b>가 주도하고, 2차 라벨은 B·E가 나눠 맡습니다. 2주 동안 C가 맡은 1·2·4·5단계 구현은 다른 담당과 나누거나 검증 뒤로 미룹니다.</p>
+  </div>
+
+  <div class="block"><h4>표본: 실제 11편 + 확인용 2편</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>ID</th><th>분할</th><th>담는 어려움</th><th>광고 표시</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">v01</td><td>튜닝</td><td>외곽선 자막, '함께 즐기는 축제' 자막, 엔딩 크레딧</td><td>광고주 자체 홍보(적용 아님)</td></tr>
+        <tr><td class="mono">v02</td><td>튜닝</td><td>이모지, 사람·제품 위 자막, 음성 고지</td><td>시작 3초 + 끝 3초</td></tr>
+        <tr><td class="mono">v03</td><td>튜닝</td><td>팝업·타자기 애니메이션, 빠른 컷, '할인 50%→70%'</td><td>중간에만</td></tr>
+        <tr><td class="mono">v04</td><td>튜닝</td><td>휴대폰 원본 HEVC 10bit HDR 60fps, 회전, 그림자 자막</td><td>시작에만 작은 '협찬'</td></tr>
+        <tr><td class="mono">v06</td><td>튜닝</td><td>작은 '유료 광고' 배너, 박스 배경 자막, 디졸브 전환</td><td>끝 3초에만 작은 배너</td></tr>
+        <tr><td class="mono">v07</td><td>튜닝</td><td>간판·메뉴판 글자, 카메라 흔들림, 자막 적음</td><td>없음(확인 필요 기대)</td></tr>
+        <tr><td class="mono">v08</td><td>튜닝</td><td>스티커 안 글자, 영문 표기</td><td>'체험단'·'Thanks to'·'AD'만</td></tr>
+        <tr><td class="mono">h01</td><td>holdout</td><td>리뷰형, HEVC HDR, 이모지</td><td>시작+끝, 음성 고지</td></tr>
+        <tr><td class="mono">h02</td><td>holdout</td><td>빠른 컷, 애니메이션 자막, 숫자·가격 변경</td><td>일부 구간(구간 시작·끝)</td></tr>
+        <tr><td class="mono">h03</td><td>holdout</td><td>축제 홍보, '…축제' 자막, 크레딧, 오탈자 1곳</td><td>중간에만</td></tr>
+        <tr><td class="mono">h04</td><td>holdout</td><td>복잡 배경, 디졸브</td><td>시작에 작은 표시</td></tr>
+        <tr><td class="mono">v04-sdr</td><td>파생</td><td>v04를 SDR H.264로 다시 내보내 HDR 영향만 분리</td><td>—</td></tr>
+        <tr><td class="mono">s01</td><td>합성</td><td>정답이 있는 60초 합성 영상. 채점기 자체 검증용, 게이트 제외</td><td>—</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cap">가상 브랜드·가상 축제로 팀이 직접 만들고, 출연은 팀원만, 저작권 음원은 쓰지 않습니다. 플랫폼에서 내려받지 않습니다. 원본은 <code>data/video/</code>에 두고 Git에서 제외합니다. 설계 원안의 12편에서 1편(디졸브·끝 표시 전용 v05)을 빼고 그 범주를 v06에 합쳤습니다.</p>
+  </div>
+
+  <div class="block"><h4>라벨과 실험</h4>
+    <ul class="tight" style="font-size:14.5px">
+      <li><b>라벨 형식</b>은 파이프라인의 <code>tracks.json</code>과 같은 단위(자막 줄, <code>start_ms</code>·<code>end_ms</code>, bbox, 스타일 태그)라 자동 채점됩니다. 두 사람이 서로 보지 않고 따로 쓰고, 조정 후 <code>human_verified=true</code>를 붙입니다(포스터 라벨과 같은 규칙). OCR 결과로 초안을 만들지 않습니다.</li>
+      <li><b>프레임은 운영 추출 함수</b>(<code>video_media.extract_frames</code>)로 뽑습니다. ffmpeg CLI로 따로 뽑으면 JPEG 품질과 창 시작 슬롯이 달라 운영과 다른 프레임을 재게 됩니다.</li>
+      <li><b>필수 실험</b>: E0 원래 크기·탐지 1280(기준선) · E1 2배 확대 · E2 탐지 1920 · P2 신호 신뢰도 하한 0/0.5/0.7 · P4 자모 허용 0.10/0.15/0.20 × IoU 0.3/0.5/0.7. P는 저장된 OCR로 다시 채점하므로 추론이 없습니다.</li>
+      <li><b>시간이 남으면</b>: E3 흐리거나 작은 줄만 crop 2배 재인식(미달 범주가 있을 때 우선) · E4 CLAHE 대비 보정 · E5 적응 이진화 · JPEG q85/q90/q95 비교 · P1 투표 방식 · P3 트랙 신뢰도 중앙값/최대/최소 · T1 <code>cpu_threads</code> 8 · T2 <code>enable_mkldnn</code> · T3 시작·끝 창은 1초 프레임에서 표시를 못 찾았을 때만 OCR. 문구가 같거나 정확도가 나빠지지 않을 때만 채택합니다.</li>
+    </ul>
+  </div>
+
+  <div class="block"><h4>GPU를 함께 쓰면 바뀌는 검증</h4>
+    <ul class="tight" style="font-size:14.5px">
+      <li><b>장치별 측정표</b>: 장치 열은 CPU-T(팀 PC), CPU-P(5070 PC의 CPU 경로), GPU-P(5070), GPU-R(RunPod, GPU 이름 표기)입니다. 공통 열은 OS, CPU, RAM, GPU(노트북 여부), 드라이버, CUDA·cuDNN, paddle·paddleocr·paddlex 버전, precision, TensorRT 끔, 탐지 한도, fps, 프레임 수, load_s, frame_p50, ocr_total_s, e2e_p50, peak_rss, peak_vram, sysmem fallback, CER, 게이트 판정입니다.</li>
+      <li><b>E0-GPU 대조</b>(신규): 같은 <code>frames.json</code>(sha256 동일), 같은 <code>model_identity</code>, 같은 OCR 인자로 FP32·TensorRT 없이 CPU-T와 GPU-P를 돌립니다. 대조 때는 <code>NVIDIA_TF32_OVERRIDE=0</code>, <code>FLAGS_cudnn_deterministic=1</code>을 켭니다. 지표는 문구 완전일치율, |Δ신뢰도| p99, bbox IoU, 0.97·0.6·0.5 경계를 넘나든 레코드 수, 탐지 0개 프레임 비율입니다. 통과는 <code>results[].status</code>와 광고 표시 판정 차이 0건이고, CER 허용폭은 팀이 정합니다(제안 0.2%p).</li>
+      <li><b>게이트별 장치</b>: A·B는 5070에서 탐색해도 되지만 채택한 설정은 운영 장치에서 다시 채점합니다. C는 운영 장치의 holdout으로만 판정합니다. 0.97 임계값이 장치 간 수치 차이에 민감하기 때문입니다. D는 D-CPU와 D-GPU로 나눕니다.</li>
+      <li><b>'시간 안에 들 때만 채택'</b>(탐지 1920, 2fps)은 운영 장치의 시간 기준입니다. 운영이 CPU면 D-CPU를 통과해야 합니다. 2·4fps로 올리면 시작·끝 창 밖의 1초 미만 일반 자막을 잡을 확률이 2배·4배가 됩니다. 시작·끝 3초는 이미 0.2초 간격이라 달라지지 않습니다.</li>
+      <li><b>3단계 GPU 고장 처리</b>: 시작 카나리가 기대 문구와 다르면 GPU를 쓰지 않습니다. CUDA error 719가 나면 워커를 끝내고 남은 프레임만 새 프로세스로 1회 다시 돌린 뒤, 또 실패하면 <code>failed_stage="ocr"</code>로 끝냅니다.</li>
+      <li><b>CI</b>: 실제 GPU와 유료 호출은 pytest marker <code>gpu</code>·<code>paid</code>로 기본 제외합니다. 실기 결과는 수동 스크립트(<code>--confirm-paid</code>)로만 얻어 벤치마크 보고서에 실측으로 남깁니다.</li>
+    </ul>
+  </div>
+
+  <div class="block"><h4>통과 기준 (A·B·D는 제안값으로 첫 회의에서 한 번만 조정, C는 조정 불가)</h4>
+    <div class="gates">
+      <div class="gate-card"><h4><span class="k">A</span>OCR 정확도</h4><p>읽을 수 있는 자막의 프레임 CER ≤ 5% · 가장 나쁜 범주 ≤ 15% · 작은 고지 문구 검출률 ≥ 0.8. 참고로 포스터 5장 Paddle 단독의 핵심 문자 오류율은 3.5%(7/199자, 초안 라벨, Mac 1회)로, 지표 정의가 달라 직접 비교할 값은 아닙니다.</p></div>
+      <div class="gate-card"><h4><span class="k">B</span>트랙·경계</h4><p>트랙 재현율 ≥ 0.90 · 정밀도 ≥ 0.85 · 쪼개짐 ≤ 1.30 · 문구 완전일치 ≥ 0.85 · 경계 F1(±1초) ≥ 0.80.</p></div>
+      <div class="gate-card hard"><h4><span class="k">C</span>하드 게이트 (조정 불가)</h4><p>거짓 위반 0건(기준·광고 표시 모두) · 일부러 틀린 기준의 거짓 충족 0건 · 제외·불허 문구가 표시로 잡힌 경우 0건. 하나라도 나오면 MVP 보류.</p></div>
+      <div class="gate-card"><h4><span class="k">D</span>시간·메모리</h4><p><b>D-CPU</b>(팀 PC): 60초 1건 전체 p50 ≤ 180초 · OCR ≤ 160초 · 프레임 추론 p50 ≤ 1.8초 · 작업자 최대 메모리 ≤ 11GiB(16GB PC의 70%). <b>D-GPU</b>는 운영을 GPU로 정할 때만 씁니다: 전체 p50 ≤ 60초 · OCR ≤ 40초 · 최대 VRAM ≤ 9GiB(12GB의 75%) · sysmem fallback 끔(제안값, 첫 실측 뒤 한 번 조정).</p></div>
+    </div>
+  </div>
+
+  <div class="block"><h4>2주 순서</h4>
+    <div class="week">
+      <div>
+        <h4>1주차: 표본과 OCR</h4>
+        <ol>
+          <li><span class="d">1일</span><span>영상별 시나리오 시트(자막 원고, 시각, 함정, 기대 판정)</span></li>
+          <li><span class="d">2일</span><span>촬영·내보내기, 해시 고정 · 채점기 작성(합성 s01로 자체 검증) · <b>팀 PC CPU 프레임 시간 먼저</b>(s01 20장) · C가 5070 GPU 환경과 카나리(1~3시간)</span></li>
+          <li><span class="d">3~4일</span><span>튜닝 라벨 이중 작성·조정 · B·D가 배치 워커와 추출 모듈(1단계) 머지, device 인자(기본 cpu)·manifest v2를 처음부터 포함</span></li>
+          <li><span class="d">4일</span><span>E0 기준선: 팀 PC(CPU-T)와 5070(GPU-P)에서 같은 프레임으로 CER, 로드·프레임 시간, 최대 메모리 첫 실측 · E0-GPU 대조</span></li>
+          <li><span class="d">5일</span><span>E1·E2(탐지 1920은 5070에서 먼저, 채택 전 팀 PC 시간 확인) → <b>Gate A 회의</b>. 미달이면 다음 단계로 가지 않음</span></li>
+        </ol>
+      </div>
+      <div>
+        <h4>2주차: 트랙·광고·시간</h4>
+        <ol>
+          <li><span class="d">6일</span><span>holdout 라벨 마감(이때도 OCR에 넣지 않음) · 4·6·6-A 모듈을 설계 사본 코드에서 옮김</span></li>
+          <li><span class="d">6~7일</span><span>트랙·구간 지표, P2·P4로 기본값 제안 · 미달 범주가 있으면 E3 · 5070에서 6-1 스모크(프레임 20장 이상, fp32·bf16 시간 따로)</span></li>
+          <li><span class="d">8일</span><span>광고 표시 측정 · 팀 PC에서 v02·v04를 3회씩 끝까지 돌려 시간 측정(미달이면 T1~T3)</span></li>
+          <li><span class="d">9일</span><span>설정 동결 → 팀 PC에서 holdout 1회 실행 → Gate B·C·D</span></li>
+          <li><span class="d">10일</span><span>보고서(<code>docs/video-ocr-benchmark-날짜.md</code>), 채택값을 A·B·D·E에 전달</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DECISIONS ============ -->
+<section id="decisions">
+  <div class="sec-head">
+    <span class="kicker">07 · 팀이 정할 것</span>
+    <h2>착수 전에 정할 것</h2>
+    <p>각 항목의 권장안과 정할 사람입니다. 이 문서의 단계별 내용은 권장안을 전제로 했습니다.</p>
+  </div>
+  <div class="decisions">
+    <div class="dec"><div><p class="q">영상 검수를 지금 시작할지</p><p class="r">README와 기획서는 영상을 이미지 검수 이후(P2)로 둡니다. 권장: 2주 동안 검증에 필요한 최소 구현(배치 워커, 1·2·4·6·6-A 모듈과 실행 스크립트)과 착수 전 검증을 함께 하고, API·화면·DB 연결(0·7단계)은 게이트 결과로 판단합니다.</p></div><span class="who">팀</span></div>
+    <div class="dec"><div><p class="q">영상 길이 상한</p><p class="r">기획서 약 30초, 원안 1분. 권장: 90초로 받고 Windows 실측 뒤 줄입니다.</p></div><span class="who">팀</span></div>
+    <div class="dec"><div><p class="q">판정 단위를 영상당 1회로</p><p class="r">권장: 채택. 구간별 판정은 '확인 필요' 잡음과 허위 위반을 만듭니다.</p></div><span class="who">B · 전원</span></div>
+    <div class="dec"><div><p class="q">숫자만 다른 불일치(number_mismatch)를 MVP에</p><p class="r">권장: 포함. 상태는 '확인 필요', 사유와 위치만 붙입니다.</p></div><span class="who">B</span></div>
+    <div class="dec"><div><p class="q">'…축제' 단일 후보 처리</p><p class="r">실제 행사명이 읽히지 않고 '함께 즐기는 축제' 같은 자막만 있으면 지금도 허위 위반이 납니다. 권장: 영상 경로에서는 행사명 후보가 '…축제' 일반 자막 하나뿐이면 위반 대신 '확인 필요'로 낮추고 사유를 남깁니다. 포스터 판정에도 영향이 있는지 함께 봅니다.</p></div><span class="who">B</span></div>
+    <div class="dec"><div><p class="q">광고 표시 '위반'을 내는 조건</p><p class="r">권장: 다섯 조건이 모두 맞을 때만. 영상 성격 입력은 필수 선택, '모름' 선택지 유지.</p></div><span class="who">B</span></div>
+    <div class="dec"><div><p class="q">잠금 범위</p><p class="r">권장: 영상 작업 전체를 <code>inference_lock</code> 하나로 잡습니다. 이때 포스터 대기는 영상 1건 시간(60초 영상 목표 p50 180초, 90초 영상 250초)까지 늘어납니다. 이보다 짧아야 하면 OCR 배치를 20장 단위로 나눠 그 사이에 포스터가 끼어들게 합니다(단위마다 로드 4~5초 추가, 추정). OCR 단계만 잠그는 방식은 대기를 15초 정도밖에 줄이지 못합니다. 운영을 5070이나 RunPod GPU로 정하면 대기가 약 30~110초로 줄어 분할이 필요 없을 수 있습니다.</p></div><span class="who">D</span></div>
+    <div class="dec"><div><p class="q">ERD 기준 문서와 진행 컬럼</p><p class="r">ERD_물리.md와 DB 설계 보고서 v04의 테이블 이름이 다릅니다. 권장: ERD_물리.md(영상에 필요한 <code>image_coordinate_frames</code>, <code>evidence_records.frame_id</code>가 있음). <code>review_runs</code>에 단계·실패 단계·진행률 컬럼 추가. API 판정어는 <code>review</code> 유지.</p></div><span class="who">A</span></div>
+    <div class="dec"><div><p class="q">재생 소스와 HEVC</p><p class="r">권장: 업로드한 blob URL을 먼저, 서버 변환은 하지 않음. 재생이 안 되면 대표 프레임만 표시.</p></div><span class="who">E · A</span></div>
+    <div class="dec"><div><p class="q">HDR 영상</p><p class="r">권장: 거부하지 않고 경고와 함께 받기. v04와 v04-sdr 비교 뒤 톤매핑 여부 결정.</p></div><span class="who">C</span></div>
+    <div class="dec"><div><p class="q">오디오(STT)</p><p class="r">권장: MVP 제외. 음성 고지는 입력값으로 받고, 라벨에 음성 고지 시각을 미리 기록해 나중에 평가합니다.</p></div><span class="who">팀</span></div>
+    <div class="dec"><div><p class="q">이중 검수 켜는 시점</p><p class="r">권장: MVP에는 스모크 45회까지만 넣습니다. 켜는 것은 점검별 본 시험 통과, 2주 기록 운영(엇갈림 정밀도 0.5 이상), 모델 카드 원문 확인 뒤입니다. 모델이 필요 없는 '글자를 못 읽음' 점검은 3단계가 <code>dt_scores</code>를 남기게 되면 먼저 기록용으로 켭니다.</p></div><span class="who">C</span></div>
+    <div class="dec"><div><p class="q">의존성 고정</p><p class="r"><code>av==19.0.1</code>, <code>scenedetect-headless==0.7.2</code>, <code>rapidfuzz==3.14.6</code>을 <code>requirements.txt</code>와 <code>requirements-test.txt</code> 두 곳에 같은 버전으로. <code>start.py</code>가 paddle-only 기본 경로에서 test 파일 설치 명령을 안내하고, <code>setup_local.py</code>는 두 파일을 포함한 <code>requirements-dev.txt</code>를 설치하기 때문입니다. <code>start.py</code> 사전 검사에도 세 패키지를 넣습니다. 0.7.2는 10월 12일 출시라 av와 묶어 관리합니다.</p></div><span class="who">C · A</span></div>
+    <div class="dec"><div><p class="q">영상 저장 보존 기간</p><p class="r">1건에 원본(최대 200MiB) + 프레임 약 17MB. 권장: MVP는 정리하지 않고 DB 단계에서 기간을 정합니다.</p></div><span class="who">A</span></div>
+    <div class="dec"><div><p class="q">GPU: 운영과 게이트 판정 기준 장치</p><p class="r">권장: GPU 없는 팀 PC(CPU)로 유지합니다. 5070·RunPod 결과는 별도 장치 열로만 보고합니다. 2일차 CPU 실측이 D-CPU를 넘으면 GPU 운영을 다시 논의합니다.</p></div><span class="who">팀 · D 정리</span></div>
+    <div class="dec"><div><p class="q">GPU: 개인 RTX 5070의 역할</p><p class="r">권장: 개인 개발·벤치마크 PC이자 2주 검증 가속기로만 씁니다. 팀원은 표본을 공유 드라이브로 넘기고 결과 JSON/MD만 받습니다. 팀 공유 서버는 운영 인증이 생긴 뒤에 검토합니다.</p></div><span class="who">C</span></div>
+    <div class="dec"><div><p class="q">GPU: 실제 광고주 소재를 개인 PC나 RunPod(국외)에서 처리해도 되나</p><p class="r">권장: MVP와 2주 검증에는 팀이 만든 가상 표본만 씁니다. 실제 소재는 팀 PC에서만 처리합니다. RunPod으로 보내려면 Secure Cloud 한정, 처리방침·동의·NDA 검토, 처리 후 즉시 삭제를 먼저 정합니다.</p></div><span class="who">팀 · 지도자</span></div>
+    <div class="dec"><div><p class="q">GPU: RunPod을 언제, 어떤 GPU로</p><p class="r">권장: 2주 검증에는 쓰지 않습니다. 5070이 Windows와 WSL2 모두에서 막히면 A40 Secure Pod를 20~40시간(약 $13~25) 씁니다. 운영을 GPU로 정하면 Serverless flex '48 GB'(A40) 등급을 1순위, '48 GB PRO'(L40)를 2순위로 두고 A100 SXM은 뺍니다. 세 GPU 1시간 스모크($3.20)는 운영을 검토할 때만 합니다.</p></div><span class="who">D</span></div>
+    <div class="dec"><div><p class="q">GPU: RunPod 계정·키·예산 담당</p><p class="r">권장: 한 명이 키와 결제를 맡습니다. 자동 충전을 끄고 $30~40만 미리 충전하며, 지출 알림을 겁니다.</p></div><span class="who">A (제안)</span></div>
+    <div class="dec"><div><p class="q">GPU: 5070 Paddle GPU 버전과 OS</p><p class="r">권장: CPU와 같은 <code>paddlepaddle-gpu==3.3.1</code> cu129를 Windows 네이티브에 먼저 설치하고, 카나리가 실패하면 사람이 판단해 WSL2로 옮깁니다. dev 휠(3.0.0.dev20250717)과 3.4.0은 쓰지 않고 TensorRT는 끕니다.</p></div><span class="who">C</span></div>
+    <div class="dec"><div><p class="q">GPU: GPU 결과를 CPU와 같은 판정으로 인정할지</p><p class="r">권장: E0-GPU 대조에서 판정 차이 0건일 때만 정확도 탐색용 대리 장치로 인정합니다. 넘지 못하면 파이프라인 이름을 <code>paddle_frames_gpu_v1</code>로 분리합니다.</p></div><span class="who">B · C</span></div>
+    <div class="dec"><div><p class="q">GPU: 샘플링을 2fps로 올릴지</p><p class="r">권장: 지금은 1fps를 유지합니다. GPU 운영이 결정되고 대조를 통과한 뒤 5070에서 2·4fps의 정확도 이득을 재고 정합니다.</p></div><span class="who">C · 팀</span></div>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+  <div class="sec-head">
+    <span class="kicker">08 · 근거</span>
+    <h2>근거</h2>
+    <p>코드 인용은 origin/main(220dd8c) 기준입니다. 실험은 별도 임시 폴더에서 했고 프로젝트 파일은 바꾸지 않았습니다.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <h4>저장소 코드·문서</h4>
+      <ul>
+        <li><code>backend/app/paddle_ocr.py:90-132</code> 장마다 하위 프로세스 실행</li>
+        <li><code>backend/app/paddle_full_worker.py:21-39</code> 호출마다 모델 생성, 결과 1개만</li>
+        <li><code>backend/app/api.py:104-153</code> 업로드 검증, <code>:306-367</code> 좌표 ×2 고정, <code>:470, 611-615</code> 잠금</li>
+        <li><code>backend/app/review_rules.py:45-55</code> 근거 키 화이트리스트, <code>:88-94</code> 전체 충족 요구, <code>:151-264</code> 판정</li>
+        <li><code>backend/app/event_layout.py:157</code> 500레코드 상한</li>
+        <li><code>docs/ocr-paddle-only-2026-10-13.md:94-98</code> 6.90초·8.15GiB</li>
+        <li><code>docs/ERD_물리.md:357-404</code> item_results 유일 제약</li>
+        <li><code>docs/project-specification.md:250-289</code> 목표 worker 규칙</li>
+        <li><code>backend/app/paddle_full_worker.py:27-35</code> CPU 고정, <code>paddle_ocr.py:114</code> 장치 검사</li>
+        <li><code>backend/app/runpod_worker.py</code>, <code>Dockerfile.runpod:3,7</code> EasyOCR 전용, torch 2.6 cu124</li>
+        <li><code>backend/app/ocr_runtime.py:30, 234, 281-289</code> 7MiB, 응답 10MiB, ttl = timeout</li>
+        <li><code>docs/project-specification.md:22, 239-242</code> RunPod 명시 선택, 자동 전환 금지, 동시 추론 1</li>
+        <li><code>backend/app/api.py:657, 726-735</code> 업로드·조회 인증 없음</li>
+      </ul>
+    </div>
+    <div>
+      <h4>외부 자료</h4>
+      <ul>
+        <li><a href="https://www.law.go.kr/LSW/admRulInfoR.do?admRulSeq=2100000280130">추천·보증 등에 관한 표시·광고 심사지침 (예규 제499호)</a></li>
+        <li><a href="https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&amp;bordCd=3&amp;nttSn=46709">공정위 경제적 이해관계 표시 안내서 (2025-12-02)</a> · <a href="https://www.consumer.go.kr/user/bbs/consumer/1/117/bbsDataView/2525.do?page=4">2020 안내서 요약 (Q&amp;A, CF 표시 생략)</a></li>
+        <li><a href="https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&amp;csmSeq=1575&amp;ccfNo=2&amp;cciNo=3&amp;cnpClsNo=1">찾기쉬운 생활법령: 경제적 이해관계 표시</a></li>
+        <li><a href="https://huggingface.co/google/embeddinggemma-2">google/embeddinggemma-2 모델 카드</a> · <a href="https://ai.google.dev/gemma/docs/embeddinggemma/model_card_2">ai.google.dev 모델 카드</a></li>
+        <li><a href="https://huggingface.co/litert-community/embeddinggemma-2-740m-litert-lm">LiteRT 변환본 지연 시간 표</a></li>
+        <li><a href="https://ffmpeg.org/ffmpeg-filters.html#fps-1">ffmpeg fps 필터</a> · <a href="https://ffmpeg.org/ffmpeg-formats.html#image2-1">image2 번호 규칙</a></li>
+        <li><a href="https://www.scenedetect.com/benchmarks/">PySceneDetect 벤치마크</a> · <a href="https://www.paddleocr.ai/main/en/version3.x/pipeline_usage/OCR.html">PaddleOCR 3.x OCR 파이프라인</a></li>
+        <li><a href="https://github.com/PaddlePaddle/PaddleOCR/issues/17539">PaddleOCR 이슈 #17539 (MKLDNN)</a> · <a href="https://rapidfuzz.github.io/RapidFuzz/Usage/distance/Levenshtein.html">rapidfuzz Levenshtein</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>RunPod · 비용</h4>
+      <ul>
+        <li><a href="https://www.runpod.io/pricing">RunPod 가격표 (2026-10-16 조회)</a></li>
+        <li><a href="https://docs.runpod.io/serverless/pricing">Serverless 과금</a> · <a href="https://docs.runpod.io/pods/pricing">Pod 과금</a> · <a href="https://docs.runpod.io/pods/storage/types">저장소 종류</a></li>
+        <li><a href="https://docs.runpod.io/serverless/endpoints/operation-reference">요청 한도 (/run 10MB)</a> · <a href="https://docs.runpod.io/serverless/endpoints/send-requests">policy (ttl, executionTimeout)</a></li>
+        <li><a href="https://docs.runpod.io/serverless/endpoints/endpoint-configurations">endpoint 설정 기본값</a> · <a href="https://docs.runpod.io/storage/s3-api">S3 호환 API 제약</a></li>
+        <li><a href="https://www.runpod.io/blog/serverless-gpu-cold-starts-flashboot">콜드 스타트와 FlashBoot (벤더 글)</a></li>
+        <li><a href="https://ecos.bok.or.kr/">한국은행 ECOS 원/달러 매매기준율</a> · <a href="https://www.law.go.kr/법령/개인정보보호법">개인정보 보호법 (제28조의8 국외 이전)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>GPU · Paddle · torch</h4>
+      <ul>
+        <li><a href="https://www.paddleocr.ai/main/en/version3.x/algorithm/PP-OCRv5/PP-OCRv5.html">PP-OCRv5 파이프라인 시간·VRAM 표</a> · <a href="https://www.paddleocr.ai/main/en/version3.x/module_usage/text_detection.html">탐지 모듈 시간</a></li>
+        <li><a href="https://www.paddlepaddle.org.cn/packages/stable/cu129/paddlepaddle-gpu/">Paddle cu129 휠 인덱스</a> · <a href="https://www.paddlepaddle.org.cn/documentation/docs/en/install/Tables_en.html">GPU·CUDA 지원표</a> · <a href="https://www.paddleocr.ai/main/en/version3.x/paddlepaddle_installation.html">PaddleOCR 설치 문서</a></li>
+        <li><a href="https://github.com/PaddlePaddle/Paddle/issues/73937">Paddle #73937 (sm_120 틀린 연산)</a> · <a href="https://github.com/PaddlePaddle/Paddle/issues/79354">#79354 (탐지 0개)</a> · <a href="https://github.com/PaddlePaddle/PaddleOCR/issues/18235">PaddleOCR #18235 (CUDA 719)</a> · <a href="https://github.com/PaddlePaddle/Paddle/pull/77781">PR #77781 (TF32)</a></li>
+        <li><a href="https://developer.nvidia.com/cuda-gpus">NVIDIA compute capability</a> · <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5070-family/">RTX 5070 사양</a> · <a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html">CUDA 드라이버 최소 버전</a></li>
+        <li><a href="https://download.pytorch.org/whl/cu128/torch/">PyTorch cu128 휠</a> · <a href="https://github.com/OpenNMT/CTranslate2/blob/master/CHANGELOG.md">CTranslate2 변경 이력</a> · <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a></li>
+        <li><a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5490/~/system-memory-fallback-for-stable-diffusion">sysmem fallback 정책</a> · <a href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html">WSL2 CUDA 가이드</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    GPU·RunPod 시간은 GPU가 없는 PC에서 공식 자료로 계산한 추정이고, 가격과 재고는 2026-10-16 조회값입니다. 처리 시간 중 OCR 수치는 Windows에서 아직 재지 않은 추정입니다. 합성 영상 실험은 실제 휴대폰 원본(HEVC·HDR·60fps)과 다를 수 있습니다. 법령 해석은 팀 내부 검수 기준을 정하기 위한 정리이며 법률 자문이 아닙니다.
+  </footer>
+</section>
+
+</div>
+</main>
+
+<div class="tip" id="tip" hidden></div>
+<script>
+(function () {
+  document.querySelectorAll('.tbl table').forEach(function (table) {
+    var heads = Array.prototype.map.call(table.querySelectorAll('thead th'), function (th) { return th.textContent.trim(); });
+    table.querySelectorAll('tbody tr').forEach(function (row) {
+      Array.prototype.forEach.call(row.children, function (cell, i) {
+        if (heads[i]) cell.setAttribute('data-label', heads[i]);
+      });
+    });
+  });
+  var tip = document.getElementById('tip');
+  function show(e) {
+    var t = e.currentTarget.getAttribute('data-tip');
+    if (!t) return;
+    tip.textContent = t;
+    tip.hidden = false;
+    move(e);
+  }
+  function move(e) {
+    var x = (e.clientX || 0) + 14, y = (e.clientY || 0) + 14;
+    if (!e.clientX) {
+      var r = e.currentTarget.getBoundingClientRect();
+      x = r.left + 8; y = r.bottom + 8;
+    }
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    if (x + w > window.innerWidth - 8) x = window.innerWidth - w - 8;
+    if (y + h > window.innerHeight - 8) y = y - h - 28;
+    tip.style.left = Math.max(8, x) + 'px';
+    tip.style.top = Math.max(8, y) + 'px';
+  }
+  function hide() { tip.hidden = true; }
+  document.querySelectorAll('[data-tip]').forEach(function (el) {
+    el.setAttribute('tabindex', '0');
+    el.addEventListener('mouseenter', show);
+    el.addEventListener('mousemove', move);
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', show);
+    el.addEventListener('blur', hide);
+  });
+})();
+</script>

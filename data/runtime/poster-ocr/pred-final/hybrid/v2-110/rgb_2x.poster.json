@@ -1,0 +1,200 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-087abb4374df",
+ "image": {
+  "sha256": "087abb4374dfc82407bb9368a047236b36a43f5e45f6230957ed9db21ac59e0c",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:12:02+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "대장경기록 문화축제*",
+  "official": "대장경기록 문화축제*",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_004",
+    "easy_rgb_2x_005"
+   ],
+   "bbox": [
+    28.0,
+    85.5,
+    269.5,
+    210.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_001"
+   ],
+   "bbox": [
+    29.5,
+    48.0,
+    148.5,
+    96.5
+   ],
+   "confidence": 0.9999949336051941
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.9.- 11.1.",
+  "start": {
+   "iso": "2026-10-09",
+   "year": 2026,
+   "month": 10,
+   "day": 9,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-01",
+   "year": 2026,
+   "month": 11,
+   "day": 1,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_008"
+   ],
+   "bbox": [
+    31.5,
+    253.5,
+    197.5,
+    274.5
+   ],
+   "confidence": 0.9764647483825684
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "기록이 어무는 곳, 사람이 꽃피는 합천",
+  "items": [
+   "기록이 어무는 곳",
+   "사람이 꽃피는 합천"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_002",
+    "easy_rgb_2x_003"
+   ],
+   "bbox": [
+    310.5,
+    65.5,
+    413.5,
+    103.5
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

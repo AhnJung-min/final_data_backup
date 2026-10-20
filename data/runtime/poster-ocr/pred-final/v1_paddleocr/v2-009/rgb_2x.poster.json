@@ -1,0 +1,207 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-6ffadbfd9df9",
+ "image": {
+  "sha256": "6ffadbfd9df9a1139bd78a29ebc7e1c597283881f550063ac6a4be4cc9d2ea45",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:55+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "ART",
+  "official": "ART",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    100.0,
+    157.5,
+    339.0,
+    303.5
+   ],
+   "confidence": 0.9984855055809021
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    144.5,
+    84.5,
+    296.0,
+    103.0
+   ],
+   "confidence": 0.9538227915763855
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "absent",
+  "raw": null,
+  "start": null,
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": null
+ },
+ "venue": {
+  "status": "present",
+  "raw": "대덕문화전당 제1~3전시실 대교대학통하대의교미 부산대교 비학",
+  "items": [
+   "대덕문화전당 제1~3전시실 대교대학통하대의교미 부산대교 비학"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008",
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    90.5,
+    479.5,
+    352.0,
+    519.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "대교대학통하대의교미 부산대교 비학",
+  "region": "부산",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    90.5,
+    505.5,
+    352.0,
+    519.0
+   ],
+   "confidence": 0.5386404395103455
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "053-684-3118",
+    "value": "053-684-3118",
+    "label_raw": null,
+    "department": "주하주관 대꾸 남구 대덕문화전당 억",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_010",
+      "padd_rgb_2x_011",
+      "padd_rgb_2x_012"
+     ],
+     "bbox": [
+      88.5,
+      567.0,
+      353.0,
+      581.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,359 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-aa3a797fb337",
+  "image": {
+    "sha256": "aa3a797fb33713f2b2b785581ce70c81705de393089da82fb5355a9efff50ea3",
+    "width": 445,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:40:28+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목은 '강경/젓갈/상월고구마/축제' 줄바꿈이라 줄을 공백 하나로 이음. 상단 문구 '강경젓갈·상월고구마, 드디어 최고가되다!'는 슬로건.",
+      "하단 기관 띠: 주최·주관 뒤 '후원' 표기 다음 로고들을 모두 후원으로 기록. 후원 첫 기관(텍스트)과 마지막 전구 모양 로고는 판독 불가.",
+      "좌상단 '와wow!' 캠페인 마크의 작은 글자, 우상단 논산 캐릭터 로고와 사각 인증 마크의 글자는 판독하지 못함.",
+      "검토(pass2): 우상단 캐릭터와 함께 인쇄된 '논산' 로고(역할 표기 없음)를 organizations 첫 항목으로 추가. 옆 사각 인증 마크는 글자를 판독하지 못해 기록하지 않음. 나머지 항목은 이미지와 일치."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 제30회 강경 젓갈 상월고구마 축제",
+    "official": "강경 젓갈 상월고구마 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제30회",
+    "number": 30,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "강경젓갈·상월고구마, 드디어 최고가되다!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10. 15.(목) ~ 10. 18.(일)",
+    "start": {
+      "iso": "2026-10-15",
+      "year": 2026,
+      "month": 10,
+      "day": 15,
+      "weekday": "thu",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "논산시 강경읍 금강 둔치 일원",
+    "items": [
+      "논산시 강경읍 금강 둔치 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "논산시 강경읍 금강 둔치 일원",
+    "region": null,
+    "district": "논산시",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "논산",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "논산",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "논산문화관광재단",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "건양대학교",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "NH농협은행 논산시지부",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "하나은행 논산지점",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "모나리자",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "와wow!",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "캐릭터 일러스트와 음식 사진 합성",
+      "한옥 창살 프레임"
+    ],
+    "main_colors": [
+      "베이지",
+      "남색",
+      "분홍",
+      "빨강",
+      "보라",
+      "주황",
+      "노랑"
+    ],
+    "main_objects": [
+      "오징어·새우·고구마 캐릭터",
+      "젓갈 사진",
+      "한옥 팔각 창틀",
+      "보름달과 구름"
+    ],
+    "has_character": true,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "베이지 배경 중앙의 한옥 팔각 창틀 안에 '2026 제30회 강경 젓갈 상월고구마 축제' 제목과 일정·장소, 하단에 젓갈 사진 위 오징어·새우·고구마 캐릭터, 맨 아래에 기관 로고 띠를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "445×627 이미지. 하단 기관 띠의 로고 글자는 작아 일부만 판독됨. 상단 좌우 캠페인·인증 마크의 작은 글자는 판독 불가."
+    ]
+  }
+}

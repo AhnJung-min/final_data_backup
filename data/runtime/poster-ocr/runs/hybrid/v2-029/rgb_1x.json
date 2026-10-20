@@ -1,0 +1,276 @@
+{
+ "case_id": "v2-029",
+ "engine": "easyocr+paddleocr",
+ "variant": "rgb_1x",
+ "scale": 1,
+ "normalized_dimensions": [
+  443,
+  627
+ ],
+ "input_dimensions": [
+  443,
+  627
+ ],
+ "input_sha256": "9f9300f8aa9a0522a6f1945af8d4e1d02a74ef315aac97635eb0d415cf247fef",
+ "coordinate_space": "normalized_original_pixels",
+ "status": "success",
+ "records": [
+  {
+   "id": "easy_rgb_1x_000",
+   "text": "2026광명마당극축제",
+   "confidence": 0.9896188974380493,
+   "bbox_xyxy": [
+    270.0,
+    8.0,
+    434.0,
+    34.0
+   ],
+   "polygon": [
+    [
+     270.0,
+     8.0
+    ],
+    [
+     434.0,
+     8.0
+    ],
+    [
+     434.0,
+     34.0
+    ],
+    [
+     270.0,
+     34.0
+    ]
+   ],
+   "baseline_text": "2026 광명미당극축제",
+   "baseline_confidence": 0.5534291202666196,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "2026광명마당극축제",
+     "confidence": 0.9896188974380493,
+     "bbox_xyxy": [
+      270.0,
+      8.0,
+      434.0,
+      34.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-029/rgb_1x/easy_rgb_1x_000"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_1x_001",
+   "text": "제36회 대한민국미당극축제",
+   "confidence": 0.9200907349586487,
+   "bbox_xyxy": [
+    230.0,
+    31.0,
+    433.0,
+    56.0
+   ],
+   "polygon": [
+    [
+     230.0,
+     31.0
+    ],
+    [
+     433.0,
+     31.0
+    ],
+    [
+     433.0,
+     56.0
+    ],
+    [
+     230.0,
+     56.0
+    ]
+   ],
+   "baseline_text": "제36회대한민국미당국축제",
+   "baseline_confidence": 0.4252925195781516,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "제36회 대한민국미당극축제",
+     "confidence": 0.9200907349586487,
+     "bbox_xyxy": [
+      230.0,
+      31.0,
+      433.0,
+      56.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-029/rgb_1x/easy_rgb_1x_001"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_1x_002",
+   "text": "X",
+   "confidence": 0.7955421799904663,
+   "bbox_xyxy": [
+    134.0,
+    84.0,
+    256.0,
+    218.0
+   ],
+   "polygon": [
+    [
+     134.0,
+     84.0
+    ],
+    [
+     256.0,
+     84.0
+    ],
+    [
+     256.0,
+     218.0
+    ],
+    [
+     134.0,
+     218.0
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_1x_003",
+   "text": "'",
+   "confidence": 0.44512796170602087,
+   "bbox_xyxy": [
+    421.0,
+    299.0,
+    435.0,
+    353.0
+   ],
+   "polygon": [
+    [
+     421.0,
+     299.0
+    ],
+    [
+     435.0,
+     299.0
+    ],
+    [
+     435.0,
+     353.0
+    ],
+    [
+     421.0,
+     353.0
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_1x_004",
+   "text": "2026.9.11.3-9.13. 광명시민운동장일대",
+   "confidence": 0.9345255494117737,
+   "bbox_xyxy": [
+    8.0,
+    592.0,
+    364.0,
+    618.0
+   ],
+   "polygon": [
+    [
+     8.0,
+     592.0
+    ],
+    [
+     364.0,
+     592.0
+    ],
+    [
+     364.0,
+     618.0
+    ],
+    [
+     8.0,
+     618.0
+    ]
+   ],
+   "baseline_text": "2026.911.e ~ 9.13.0 광명시민운동장 일대",
+   "baseline_confidence": 0.4229460351612347,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "2026.9.11.3-9.13. 광명시민운동장일대",
+     "confidence": 0.9345255494117737,
+     "bbox_xyxy": [
+      8.0,
+      592.0,
+      364.0,
+      618.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-029/rgb_1x/easy_rgb_1x_004"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  }
+ ],
+ "inference_seconds": 2.938,
+ "memory": {
+  "rss_bytes": 3022655488,
+  "peak_bytes": 3280584704
+ },
+ "pipeline": "paddle_regions_v1",
+ "missing_core_fields": true,
+ "refinements": [
+  {
+   "record_id": "easy_rgb_1x_000",
+   "reasons": [
+    "core_field_verification",
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    266,
+    4,
+    438,
+    38
+   ]
+  },
+  {
+   "record_id": "easy_rgb_1x_004",
+   "reasons": [
+    "core_field_verification",
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    4,
+    588,
+    368,
+    622
+   ]
+  },
+  {
+   "record_id": "easy_rgb_1x_001",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    227,
+    28,
+    436,
+    59
+   ]
+  }
+ ],
+ "easyocr_inference_seconds": 2.041,
+ "paddle_rec_seconds": 0.897
+}

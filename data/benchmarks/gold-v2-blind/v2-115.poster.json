@@ -1,0 +1,293 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-3be0b3ddb090",
+  "image": {
+    "sha256": "3be0b3ddb090d45ec4e855d8f462ffccf7e7b04025cf375fdb6856ca747cd31d",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:12:35+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/blind",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "블라인드 독립 판독(일치도 검사용). 원본 443×627을 직접 보고 확대 크롭으로 상단 문구와 하단 기관 띠를 확인함.",
+      "좌측 상단 '2026 국가유산 미디어아트 여수'를 행사명으로, 그 아래 'ETERNAL SIGNAL from YEOSU'는 별도 인쇄된 영문 제목으로 variants에 둠. 우측 상단 로고 '2026 국가유산 미디어아트'는 brand 변형.",
+      "가장 크게 인쇄된 '진남관, 빛으로 재건하다'는 의미상 슬로건(headline)으로 기록함.",
+      "운영 시간 '오후 7시 30분 ~ 9시 30분'의 종료 시각은 앞의 '오후'를 이어받아 21:30으로 변환함."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 국가유산 미디어아트 여수",
+    "official": "국가유산 미디어아트 여수",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "ETERNAL SIGNAL from YEOSU",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand",
+        "raw": "국가유산 미디어아트",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "진남관, 빛으로 재건하다",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.9. - 11.8.",
+    "start": {
+      "iso": "2026-10-09",
+      "year": 2026,
+      "month": 10,
+      "day": 9,
+      "weekday": null,
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-11-08",
+      "year": 2026,
+      "month": 11,
+      "day": 8,
+      "weekday": null,
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "오후 7시 30분 ~ 9시 30분",
+        "start": "19:30",
+        "end": "21:30",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "진남관·고소대·이순신광장 일대",
+    "items": [
+      "진남관",
+      "고소대",
+      "이순신광장 일대"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "국가유산청",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전남광주통합특별시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "여수시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "국가유산진흥원",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "미디어아트 사진 합성",
+      "빛줄기 그래픽",
+      "어두운 배경"
+    ],
+    "main_colors": [
+      "검정",
+      "흰색",
+      "보라",
+      "청록",
+      "분홍",
+      "금색"
+    ],
+    "main_objects": [
+      "빛으로 표현된 진남관 전통 건축물",
+      "세로 빛줄기"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "검은 배경에 오로라 같은 세로 빛줄기와 프로젝션 조명을 받은 진남관 건물을 두고, 좌측 상단에 행사명·장소·영문 제목·일정·시간, 우측에 큰 손글씨풍 '진남관, 빛으로 재건하다', 하단에 주최·주관 로고를 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 주최·주관 띠는 대부분 읽히나 국가유산진흥원 로고 위 영문 등 아주 작은 글자는 판독 불가."
+    ]
+  }
+}

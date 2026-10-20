@@ -1,0 +1,413 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-09da68aad8c8",
+  "image": {
+    "sha256": "09da68aad8c88d84e62cb54eed995b42c5ce89cccc5c525a9b53a6aab4fe7464",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:01:22+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "운영일정은 10.10. · 10.17. · 10.30. · 10.31. 네 날짜만 인쇄되어 schedule은 첫날~끝날로 두고, 날짜별 프로그램을 programs.period에 기록함.",
+      "날짜 옆 원 안의 요일 글자는 확대해도 판독되지 않아 weekday를 null로 둠.",
+      "제목의 '1931'은 개최 연도가 아니라 축제명의 일부라 official에 남김. 연도는 상단 문구 '2026년'에서 확인(poster_text)."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "장항 1931 밤의 기행",
+    "official": "장항 1931 밤의 기행",
+    "variants": [
+      {
+        "kind": "brand",
+        "raw": "장항 1931",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "2026년 시간을 건너 1931 장항으로",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "운영일정 10.10. 10.17. 10.30. 10.31.",
+    "start": {
+      "iso": "2026-10-10",
+      "year": 2026,
+      "month": 10,
+      "day": 10,
+      "weekday": null,
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-31",
+      "year": 2026,
+      "month": 10,
+      "day": 31,
+      "weekday": null,
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "17:00~21:00",
+        "start": "17:00",
+        "end": "21:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "장항도시탐험역 일원",
+    "items": [
+      "장항도시탐험역 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "서천군",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최 / 주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최 / 주관",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "음악기행",
+        "category_raw": null,
+        "period": {
+          "raw": "10.10. 17:00~21:00",
+          "start": {
+            "iso": "2026-10-10",
+            "year": 2026,
+            "month": 10,
+            "day": 10,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:00~21:00",
+              "start": "17:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "영화기행",
+        "category_raw": null,
+        "period": {
+          "raw": "10.17. 17:00~21:00",
+          "start": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:00~21:00",
+              "start": "17:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "다방기행",
+        "category_raw": null,
+        "period": {
+          "raw": "10.30. 10.31. 17:00~21:00",
+          "start": {
+            "iso": "2026-10-30",
+            "year": 2026,
+            "month": 10,
+            "day": 30,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "end": {
+            "iso": "2026-10-31",
+            "year": 2026,
+            "month": 10,
+            "day": 31,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "times": [
+            {
+              "raw": "17:00~21:00",
+              "start": "17:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "미식기행",
+        "category_raw": null,
+        "period": {
+          "raw": "10.30. 10.31. 17:00~21:00",
+          "start": {
+            "iso": "2026-10-30",
+            "year": 2026,
+            "month": 10,
+            "day": 30,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "end": {
+            "iso": "2026-10-31",
+            "year": 2026,
+            "month": 10,
+            "day": 31,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "times": [
+            {
+              "raw": "17:00~21:00",
+              "start": "17:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "illegible",
+    "raw": null,
+    "total_krw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "레트로 일러스트",
+      "노을 풍경",
+      "티켓 모양 정보 상자"
+    ],
+    "main_colors": [
+      "남색",
+      "보라",
+      "분홍",
+      "주황",
+      "베이지",
+      "흰색"
+    ],
+    "main_objects": [
+      "기차",
+      "역 건물",
+      "굴뚝",
+      "건널목 신호등",
+      "장항역 표지판",
+      "노을 구름"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "노을 진 하늘 아래 옛 장항역과 기차를 그린 레트로 일러스트 위에 흰 글씨 제목을 크게 두고, 하단 승차권 모양 상자에 운영일정·시간·프로그램·장소를 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 주최/주관 두 번째 로고명과 우측 총 예산·부서 문구는 확대해도 판독되지 않음.",
+      "'운영일정' 표기는 세로쓰기."
+    ]
+  }
+}

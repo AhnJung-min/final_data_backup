@@ -1,0 +1,211 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-97e9f7cc4f7a",
+ "image": {
+  "sha256": "97e9f7cc4f7ab8629f47b37918a407352b6356b2d1a396bf28effd16271dd578",
+  "width": 452,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:51+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_contacts_h_present"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_contacts_h_present): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "종는축",
+  "official": "종는축",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    100.5,
+    116.0,
+    356.0,
+    230.0
+   ],
+   "confidence": 0.4238095283508301
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    177.5,
+    87.5,
+    275.5,
+    129.5
+   ],
+   "confidence": 0.9927547574043274
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.9.(금)-10.11.(일)",
+  "start": {
+   "iso": "2026-10-09",
+   "year": 2026,
+   "month": 10,
+   "day": 9,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-11",
+   "year": 2026,
+   "month": 10,
+   "day": 11,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    142.0,
+    237.5,
+    310.0,
+    259.5
+   ],
+   "confidence": 0.9828994274139404
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "세종호수공원·세종중앙공원",
+  "items": [
+   "세종호수공원",
+   "세종중앙공원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    153.0,
+    260.5,
+    299.0,
+    278.0
+   ],
+   "confidence": 0.9644460082054138
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "세종호수공원·세종중앙공원",
+  "region": "세종",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    153.0,
+    260.5,
+    299.0,
+    278.0
+   ],
+   "confidence": 0.9644460082054138
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,202 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-af9244249bfb",
+ "image": {
+  "sha256": "af9244249bfbd151438bd97c81878570506d187ad4ab45d23baca13d0410f1f2",
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T00:00:00+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "대전@ 축제",
+  "official": "대전@ 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_003"
+   ],
+   "bbox": [
+    15.0,
+    75.0,
+    427.0,
+    209.0
+   ],
+   "confidence": 0.17908845064708148
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_002"
+   ],
+   "bbox": [
+    30.0,
+    88.0,
+    104.0,
+    118.0
+   ],
+   "confidence": 0.6434182557621057
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10. 17.(토) , 18.(일)",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_005"
+   ],
+   "bbox": [
+    173.0,
+    511.0,
+    407.0,
+    550.0
+   ],
+   "confidence": 0.6953396575082865
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "액스포과학공원 일원",
+  "items": [
+   "액스포과학공원 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_008"
+   ],
+   "bbox": [
+    156.0,
+    548.0,
+    365.0,
+    585.0
+   ],
+   "confidence": 0.9547451038320384
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "대전@ 축제",
+  "region": "대전",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_003"
+   ],
+   "bbox": [
+    15.0,
+    75.0,
+    427.0,
+    209.0
+   ],
+   "confidence": 0.17908845064708148
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

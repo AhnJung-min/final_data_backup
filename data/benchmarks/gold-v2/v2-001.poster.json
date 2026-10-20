@@ -1,0 +1,272 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-48bfcef9917a",
+  "image": {
+    "sha256": "48bfcef9917a2335adde97c62b942efe2ad2f02d671c3c6be38389230810d47b",
+    "width": 446,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:31:44+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "행사 기간 날짜가 인쇄되지 않고 '일시 매일(월~일) 11시, 14시, 16시'만 있어 schedule은 absent로 두고 운영 규칙을 notices(operating_rule)에 기록함.",
+      "제목 위 '국악공연' 상자는 장르 표기로 보고 title.raw에 넣지 않음. 영문 일정·위치·문의 문구는 국문과 같은 내용이라 따로 기록하지 않음.",
+      "'Performed by' 연주 단체는 역할 표기가 주최·주관 등이 아니어서 roles=[other]로 기록함.",
+      "검토(pass2): 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "진연",
+    "official": "진연",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "Jinyeon",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "absent",
+    "raw": null,
+    "value": null,
+    "evidence": null
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "대한민국 전통예술의 다채로움을 한 무대에서 경험하다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "Experience the full spectrum of Traditional Korean Music in one performance",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "A Performance of Traditional Korean Music",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "absent",
+    "raw": null,
+    "start": null,
+    "end": null,
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": null
+  },
+  "venue": {
+    "status": "present",
+    "raw": "서울시 종로구 인사동5길 10, 2층 (진연 홀)",
+    "items": [
+      "서울시 종로구 인사동5길 10, 2층 (진연 홀)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "present",
+    "raw": "서울시 종로구 인사동5길 10, 2층",
+    "kind": "road",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "서울시 종로구 인사동5길 10, 2층 (진연 홀)",
+    "region": "서울시",
+    "district": "종로구",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "지지대악(JIJIDAEAK) Traditional Korean Music Ensemble",
+        "roles": [
+          "other"
+        ],
+        "role_raw": "Performed by",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "02-953-0515",
+        "value": "02-953-0515",
+        "label_raw": "문의",
+        "department": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "operating_rule",
+        "raw": "매일(월~일) 11시, 14시, 16시",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "인물 사진",
+      "전통 공연 포스터"
+    ],
+    "main_colors": [
+      "파랑",
+      "빨강",
+      "흰색",
+      "갈색"
+    ],
+    "main_objects": [
+      "전통 복식과 관모를 쓴 연주자 2명",
+      "가야금",
+      "해금",
+      "한옥 창살"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "한옥 창살 앞 파란 전통 복식의 두 연주자 사진 위에 흰색 큰 제목 '진연'과 영문 병기, 하단에 일시·위치·문의를 국문·영문으로 나란히 둔 공연 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "446×627 이미지. 하단 일시·위치·문의 글자는 확대 시 판독됨."
+    ]
+  }
+}

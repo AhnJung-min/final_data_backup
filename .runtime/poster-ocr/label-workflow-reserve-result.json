@@ -1,0 +1,1162 @@
+{
+ "batches": [
+  {
+   "batch": "r01",
+   "first": {
+    "summary": "Labelled all 18 posters (r2-001 to r2-018) in festival-poster 1.0 from the original images plus zoom bands and extra crops. Every file is in data/benchmarks/gold-v2/ and prints OK on validate. All 18 are real event posters. Points that need a reviewer:\n- Year missing: only r2-016 prints no 4-digit year, so its iso is null with year_basis absent. The validator warns year_absent and gives [2026] as a candidate, which I did not fill in.\n- admin_area: I set it from bare city or county names printed as separate words in the title or venue (원주, 부여, 장수, 용산, 하남, 남양주, 속초, 광명). I left it absent where the name only appears inside a compound word (예산황새축제, 시흥갯골축제, 수원화성, 금산세계인삼축제), following the team's yesan example. The reviewed v2 gold files are not consistent on this, so the team should agree on one rule.\n- Small logos: many sponsor and organiser logos at about 443 px wide could not be read. They are recorded as illegible items with null names, keeping their printed role labels.\n- Not recorded: text that is not festival information, such as signs inside illustrations, design credits and English translations of the venue.\n- QR codes: all QR codes are decode_status not_attempted.\nTemporary helper and crop files are in the scratchpad folder r2lab001_018. The only repository files written are the 18 gold JSONs, plus the zoom PNGs the tool writes to .runtime/poster-ocr/zoom.",
+    "cases": [
+     {
+      "case_id": "r2-001",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-001.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 2026 원주 국가유산 야행, 2 slogans, schedule 2026.09.04.(금)~06.(일) with 17:00~22:00, venue split into 3 items, admin_area district 원주",
+       "organizations: 3 host logos (partial), 1 illegible organiser logo, 11 illegible sponsor logos; QR labelled 상세정보안내; 3 programmes on 9.4; badge 국가유산 야행 (other)"
+      ],
+      "notes": "The second quoted slogan containing '8夜' is small text and only moderately certain. The single line of tiny text below the sponsor logos could not be read."
+     },
+     {
+      "case_id": "r2-002",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-002.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 제7회 예산황새축제, slogans (headline 007 네버다이), budget 100,000,000원, contact 041-339-8367, links for instagram and a search-bar term, QR, badges illegible"
+      ],
+      "notes": "The top-right handwritten brand logo could not be read. The QR label '축제 프로그램 자세히 보기' is only moderately certain. admin_area is absent because 예산 appears only inside compound words."
+     },
+     {
+      "case_id": "r2-003",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-003.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "filled all slots: title 2026 국가유산 미디어아트 사비백사, schedule 9.7(월)-9.27(일) with year from the title (poster_text) and 19:00~22:00, venue 부여 정림사지, district 부여, 4 logos without role labels, badge Lovely BuYEO"
+      ],
+      "notes": "The small top-right logo repeats part of the title, so it is not stored as a title variant."
+     },
+     {
+      "case_id": "r2-004",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-004.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 제20회 장수 한우랑 사과랑 축제, schedule 2026. 9.10.(목)~9.13.(일) with duration 4일간, venue split on 및, organisations: host·organiser (사)장수한우랑사과랑축제추진위원회 plus 3 sponsors, district 장수 taken from the title"
+      ],
+      "notes": "The small ribbon text in the top-right illustration could not be read and is not festival information."
+     },
+     {
+      "case_id": "r2-005",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-005.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 2026 신촌글로벌 대학문화축제 with English and SWYFT variants, schedule 09.11 FRI - 09.13 SUN with separate hours per day, 11 programmes (Day1-3 and booths), budget 358,000천원, badge 서대문 전성시대, QR labelled Festival Website"
+      ],
+      "notes": "Of the 8 performer photos, only the name JUNCOCO could be read. It is linked to the SWYFT 콘서트 programme with medium confidence. The two-line sub-programme text under 운동회 could not be read."
+     },
+     {
+      "case_id": "r2-006",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-006.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "filled all slots: title 용산 국가유산 야행, 3 slogans, schedule over 2 days with hours per day, venue 효창공원 일대, district 용산, host 용산구청, organiser 에스에이치네스크, contact 02-458-3315 (운영사무국)"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-007",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-007.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "filled all slots: title 2026 국가유산 야행 근대 도시 대전 중구 야행, schedule 9.11.(금)~13.(일) with 18:00~22:00, admin_area region 대전 and district 중구, 3 logos without role labels, badge 국가유산 야행"
+      ],
+      "notes": "The location-pin labels on buildings in the illustration are map annotations and are not used as the venue."
+     },
+     {
+      "case_id": "r2-008",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-008.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 2026 글로컬 문화 IN 남산 페스티벌, one-day event 2026. 9.12.(토) with 15:00~22:00, venue and road address 부산 금정구 남산로 13~27, 3 logos without role labels, badge 변화와 성장으로 함께 뛰는 금정"
+      ],
+      "notes": "The speech-bubble '人' next to the title is treated as decoration."
+     },
+     {
+      "case_id": "r2-009",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-009.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 2026 동대문구 북 페스티벌, slogans (headline 책력장), schedule 2026. 09.12.(토) with 12:00~17:00 and a separate hall time, venue split on 및, district 동대문구, budget 49,952천원, 7 organisations, badges illegible"
+      ],
+      "notes": "Most logo names in the bottom strip could not be read. Only 동대문구 (후원) and 동대문구시설관리공단 (협력) were partly readable."
+     },
+     {
+      "case_id": "r2-010",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-010.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 제21회 시흥갯골축제, schedule 2026.9.18.(금)~9.20.(일), venue absent (no venue printed), 시흥 logo, 2 QR codes (홈페이지, 인스타그램), badge 문화관광축제"
+      ],
+      "notes": "The QR labels are small and only moderately certain."
+     },
+     {
+      "case_id": "r2-011",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-011.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 2026 수원화성 미디어아트 with English variant, schedule 9.19. SAT ~ 10.06. TUE, venue split into 3 items, 2 logos without role labels, badge 2026-2027 수원 방문의 해"
+      ],
+      "notes": "The small text in the SUWON campaign logo is only moderately certain."
+     },
+     {
+      "case_id": "r2-012",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-012.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "filled all slots: title 2026 하남 이성산성 문화제 with English variant, schedule 9월 19일(토)~9월 20일(일), venue split on ·, district 하남, 4 programmes, 3 logos without role labels"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-013",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-013.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 2026 남양주 청년축제 유플페 with English variant, one-day event 2026. 9. 19. 토요일, district 남양주, 6 programmes with PM times converted to 24h and performers, contact 031-590-8226 (남양주 청년담당관), QR labelled 행사안내, 1 illegible logo"
+      ],
+      "notes": "The 부대행사 time is printed with its start time twice ('12:00 PM 12:00 - 7:00'). The vertical credit text on the right edge could not be read and is not used in any slot."
+     },
+     {
+      "case_id": "r2-014",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-014.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 제61회 설악문화제 with English variant, slogan 설악, 함께 물들다, schedule 2026. 10. 2. 금 ~ 10. 4. 일, venue split on 및, district 속초, 2 logos without role labels, programme 설악권 행사 (2026. 9. 20. 일, 설악산 일원)"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-015",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-015.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 제44회 금산세계인삼축제, slogan 언제나 청춘!, schedule 2026 10.2 금 ~10.11 일, venue split on 및, 2 logos (금산군 partial, 1 illegible), badges illegible"
+      ],
+      "notes": "The name on the second bottom logo and the small top-right logo could not be read."
+     },
+     {
+      "case_id": "r2-016",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-016.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 제26회 산청한방약초축제 with English variant, no year printed (iso null, year_basis absent), schedule 10.02.(금) ~ 10.11.(일), district 산청군, host·organiser 산청축제관광재단 plus 4 sponsors, 2 QR codes"
+      ],
+      "notes": "The validator warns year_absent and gives [2026] as a candidate. I left it unfilled, as the standard requires."
+     },
+     {
+      "case_id": "r2-017",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-017.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 페스티벌 2026 광명 (official 페스티벌 광명), schedule 2026. 10. 3.(토) ~ 10. 4.(일), venue 철산로(중앙로 사거리 ~ 철산역 앞 삼거리), district 광명, 6 organisations (3 illegible)"
+      ],
+      "notes": "The logo strip is very small. Only 광명시 and 광명시의회 were partly readable."
+     },
+     {
+      "case_id": "r2-018",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-018.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "filled all slots: title 2026 영주 풍기인삼 축제 with English variant, schedule 10.03. 토 ~ 10.11. 일 (9일간) with year from the title (poster_text), venue split on 및, district 영주시, host·organiser logo illegible, sponsor 영주시, QR labelled 홈페이지 바로가기, brand badge 나의 힘, 나의 삶, 풍기인삼 Since 1541"
+      ],
+      "notes": "The name on the host·organiser logo could not be read."
+     }
+    ]
+   },
+   "second": {
+    "cases": [
+     {
+      "case_id": "r2-001",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-001.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 제목·슬로건 2개·일정(17:00~22:00)·장소 3곳·주최 3/주관 1/후원 11 로고 수·QR '상세정보안내'·프로그램 3개(개막식/인열왕후 선발대회/드론쇼)·국가유산 야행 배지 모두 이미지와 일치. 후원 로고 아래 한 줄 작은 글자는 판독 불가(슬롯 미지정)."
+     },
+     {
+      "case_id": "r2-002",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-002.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 제7회 예산황새축제, 슬로건 3개(007 네버다이 headline), 2026. 9. 5.(토) - 6.(일), 예산황새공원 일원, 주최·주관/후원 2, 문의 041) 339-8367, SNS 2, QR 1, 예산 1억 원 확인. 우상단 손글씨 브랜드 로고는 확대해도 판독 불가(badges=illegible 유지)."
+     },
+     {
+      "case_id": "r2-003",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-003.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "검토: 변경 없음. 9. 7.(월) - 9. 27.(일) poster_text, 19:00 ~ 22:00, 부여 정림사지, 로고 4개(역할 없음), Lovely BuYEO 배지 확인."
+     },
+     {
+      "case_id": "r2-004",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-004.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 제20회 2026. 9.10.(목)~ 9.13.(일), 4일간, 장소 '및' 분리, 주최·주관 1·후원 3 확인."
+     },
+     {
+      "case_id": "r2-005",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-005.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. Day1~3 프로그램·시간, 부스 3개, 출연진 이름은 JUNCOCO만 판독(나머지 7개 판독 불가 재확인), 주최/주관 2/후원, 총예산 358,000천원, QR 'Festival Website', '서대문 전성시대' 배지 확인."
+     },
+     {
+      "case_id": "r2-006",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-006.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "검토: 변경 없음. 두 줄 일정과 날짜별 시간, 효창공원 일대, 주최 용산구청·주관 에스에이치네스크, 문의 운영사무국 02-458-3315, 소개 문구 8인 이름 확인."
+     },
+     {
+      "case_id": "r2-007",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-007.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "검토: 변경 없음. 9. 11.(금) ~ 13.(일) poster_text, 18:00 ~ 22:00, 장소 두 줄 한 항목, 상단 로고 3개·국가유산 야행 배지 확인."
+     },
+     {
+      "case_id": "r2-008",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-008.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 2026. 9.12.(토) 15:00~22:00 하루 행사, 부산 금정구 남산로 13~27 일원(도로명 주소), 로고 3개, 금정 슬로건 배지 확인."
+     },
+     {
+      "case_id": "r2-009",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-009.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 책력장 headline, 2026. 09.12.(토) 12:00~17:00와 다목적 강당 시간, 장소 '및' 분리, 주최주관 1·후원 2·협력 4 로고 수, 총 예산 49,952천원 문구 확인."
+     },
+     {
+      "case_id": "r2-010",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-010.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 장소 미인쇄(absent) 재확인, 2026.9.18.(금)~ 9.20.(일), QR 2개(홈페이지/인스타그램), 시흥 로고, 문화관광축제 배지 확인."
+     },
+     {
+      "case_id": "r2-011",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-011.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "quality.notes[0]: '443×627 이미지' → '445×627 이미지' (실제 이미지 폭 445)"
+      ],
+      "notes": "추출 값 변경 없음. 9.19. SAT ~ 10.06. TUE poster_text, 화서문, 장안문, 장안공원, 로고 2개, 2026-2027 수원 방문의 해 배지 확인."
+     },
+     {
+      "case_id": "r2-012",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-012.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "검토: 변경 없음. 9월 19일(토)~9월 20일(일), 프로그램 4개(먹거리존), 미사호수공원잔디광장 · 이성산성, 로고 3개, 영문 변형 확인."
+     },
+     {
+      "case_id": "r2-013",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-013.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "quality.notes[0]: '443×627 이미지' → '444×627 이미지' (실제 이미지 폭 444)"
+      ],
+      "notes": "추출 값 변경 없음. 2026. 9. 19. 토요일, 프로그램 6개와 시간, 출연진 8명+ARTIST 2명, 문의 031-590-8226, QR '행사안내', 좌상단 로고 판독 불가 재확인."
+     },
+     {
+      "case_id": "r2-014",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-014.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 제61회 설악문화제, 2026. 10. 2. 금 ~ 10. 4. 일, 장소 '및' 분리, 설악권 행사 2026. 9. 20. 일 프로그램, 로고 2개 확인."
+     },
+     {
+      "case_id": "r2-015",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-015.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 제44회 금산세계인삼축제(대각선 한 줄 입체 글자라 공백 없음 유지), 2026 10.2 금 ~10.11 일, 장소 '및' 분리, 로고 2개(두 번째 판독 불가), 우상단 로고 판독 불가 재확인."
+     },
+     {
+      "case_id": "r2-016",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-016.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 4자리 연도 미인쇄 재확인(year absent, iso null), 10.02.(금) ~ 10.11.(일), 산청군 동의보감촌 일원, 주최·주관 1·후원 4, QR 2개 확인."
+     },
+     {
+      "case_id": "r2-017",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-017.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 페스티벌 2026 광명, 2026. 10. 3.(토) ~ 10. 4.(일), 철산로(중앙로 사거리 ~ 철산역 앞 삼거리), 주최 1·주관 3·후원 2 로고 수 확인."
+     },
+     {
+      "case_id": "r2-018",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-018.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 10.03. 토 ~ 10.11. 일 (9일간) poster_text, 장소 '및' 분리, 주최/주관 로고 판독 불가 재확인, 후원 영주시, QR '홈페이지 바로가기', 풍기인삼 브랜드 배지 확인."
+     }
+    ],
+    "summary": "I re-checked all 18 gold files (r2-001 to r2-018) against the original images and my own zoomed crops. No label slot needed correcting. Every file has status, raw/normalised values and evidence consistent with what is printed: titles and slogans, dates with year inheritance and year_basis, printed weekdays, times, venue splits, admin_area, organisations with role labels and logo counts, contacts, links, QR codes, programmes and performers, budget lines and badges. The only fixes were two wrong image sizes in quality.notes: r2-011 says 443×627 but the image is 445×627, and r2-013 says 443×627 but it is 444×627. In all 18 files I set extraction.extractor.version to \"gold-v2/pass2-reviewed\" and added one extraction.notes line starting \"검토(pass2)\" (r2-011 and r2-013 also record the size fix). All 18 files print OK on validate; the remaining output is only the expected info/warning findings, such as unread logos, QR codes not decoded and year_absent on r2-016. Text I re-zoomed and still could not read stays illegible or unrecorded: performer names in r2-005 other than JUNCOCO, the illegible logos in r2-002, r2-009, r2-013, r2-015 and r2-018, and the small line under r2-001's sponsor logos. I edited only the 18 assigned files; temporary crops and helper scripts are in the session scratchpad under rev_a."
+   }
+  },
+  {
+   "batch": "r02",
+   "first": {
+    "cases": [
+     {
+      "case_id": "r2-019",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-019.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "English variant corrected to the printed 'IMSILN CHEESE 12th FESTIVAL' (12th sits between the English lines)",
+       "admin_area set from the title's '임실'"
+      ],
+      "notes": "Title '2026 임실N치즈축제', edition 12th, schedule 10.8(목)-11(일) with year from the title (poster_text), URL WWW.IMSILFESTIVAL.COM, badge 예비문화관광축제. No organisation band printed."
+     },
+     {
+      "case_id": "r2-020",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-020.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "Title '2026 흥부제 제34회' with English 'Heungbu Festival'; slogan 善공成공. Venue split on 및. Organisations: 주최 남원시, 주관 흥부제전위원회, 후원 전북특별자치도. admin_area absent."
+     },
+     {
+      "case_id": "r2-021",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-021.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "Added the '와wow!' campaign mark to badges"
+      ],
+      "notes": "Title '웰컴투 신관동' with variant '2026 Welcome to Singwan-dong'; '2일간' recorded as duration. Road-closure text recorded as a notice. The 445px organisation band: several 주최/주관 logos are illegible (name null), plus one unreadable line of small organisation names."
+     },
+     {
+      "case_id": "r2-022",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-022.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "Removed the time text from schedule.raw (times kept in schedule.times)",
+       "admin_area set from the title's '함안'"
+      ],
+      "notes": "Title '2026 함안 국가 유산 야행' (wrapped lines joined with single spaces) with English variant; slogan “무궁무진無窮無盡”. Includes 18:00~22:00, phone 055-586-0979, link new.yahaeng.com, and a booking QR '사전예약 QR코드스캔' (also recorded under admission.reservation_raw). Five logos, none with a role label."
+     },
+     {
+      "case_id": "r2-023",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-023.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "admin_area set from the title's '파주'"
+      ],
+      "notes": "Title '2026 파주페어 북앤컬처' with variants 'Paju Fair Book & Culture' (english) and 'PFBC' (brand); 'Books Alive.' is a headline slogan. Schedule '26.10.9. — 10.18.' uses a 2-digit year (date_text, no weekdays printed). Five sticker labels recorded as programs. Organisation names are small (partial)."
+     },
+     {
+      "case_id": "r2-024",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-024.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "Moved '밤을 건너는 시간' from slogans to a title variant (brand), in line with other gold files for 국가유산야행 theme names",
+       "admin_area set from the title's '담양'"
+      ],
+      "notes": "Title '담양국가유산야행'; headline slogan '내 재산은 달빛 아래 숲일 뿐'. Weekdays are superscripts, times 17:00~22:00, four venues split on ·. The vertical website (www.dy…co.kr) could not be read, so links = illegible. QR present but unlabeled. The poem lines in small print were not recorded."
+     },
+     {
+      "case_id": "r2-025",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-025.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "353×627 low-resolution poster. Title '제7회 양평 부추축제'; seven slogan/speech-bubble lines. Eleven programs, including 개막식 & 축하공연 (10.9 11시, 양동역 앞 메인무대); performer name tags 김소유, 비나쌤, 요요미, 김나희 attached to 초청가수 공연 (the poster prints no explicit link between them). The city brand mark is illegible. No organisation labels printed."
+     },
+     {
+      "case_id": "r2-026",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-026.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "admin_area set from the title's '유성'"
+      ],
+      "notes": "Title '2026 유성독서대전'; headline slogan '서락서락 책이 좋아써!'. Ten programs: 개막식 (10.10 18:00), the author line-ups (작가와의 만남: 4 names; 동화작가: 3 names) and booth items. One unlabeled vertical logo, 대전광역시 유성구."
+     },
+     {
+      "case_id": "r2-027",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-027.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "admin_area set from the title's '강릉'"
+      ],
+      "notes": "Title '2026 제5회 강릉 국수 축제'; schedule 10.15.(목) - 10.18.(일) (poster_text year); venue 월화거리; one unlabeled logo, 강릉시."
+     },
+     {
+      "case_id": "r2-028",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-028.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "Title '2026 제30회 강경 젓갈 상월고구마 축제'; slogan '강경젓갈·상월고구마, 드디어 최고가되다!'. Organisations: 주최 논산, 주관 논산문화관광재단, then six 후원 items (two illegible). Badge '와wow!'. The small text on the top-corner marks is unreadable."
+     },
+     {
+      "case_id": "r2-029",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-029.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "admin_area region '울산' set from the title"
+      ],
+      "notes": "Title '2026 제30회 울산고래축제'; slogan '고래의 초대, 서른살 파티'. Organisations: 주최 울산광역시 남구, 주관 고래문화재단. Venue '장생포 고래문화특구일원'."
+     },
+     {
+      "case_id": "r2-030",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-030.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "admin_area district '강동' added from the title (region '서울' from the venue)"
+      ],
+      "notes": "Title '제31회 강동 선사문화축제'; link gdsunsa.com; one QR. Twelve programs across 4 categories, including two 축하공연 dates with performers (설운도, 왁스, 스페이스A / 남진, 소찬휘, 신효범). The budget line (…천원) is too small to read, so budget_disclosure = illegible. The brand mark is illegible. Note: admin_area.raw is the venue phrase while district comes from the title."
+     },
+     {
+      "case_id": "r2-031",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-031.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "admin_area set from the title's '청도'"
+      ],
+      "notes": "Title '2026 청도 반시축제' with English 'CHEONGDO BANSI FESTIVAL'; slogan 감감희소식; '3일간' recorded as duration. Organisations: 주최 청도군, 주관 청도반시축제 추진위원회, 후원 경상북도. Badge '청도 반시'."
+     },
+     {
+      "case_id": "r2-032",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-032.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "Vertical brush-script title '노원달빛산책'. Slogans: '새로운 달 NEW MOON, NEW WISHES' and '공공미술 빛조각축제'. Schedule 2026.10.16.-11.08. Organisations: 주최·주관 노원문화재단 (partial), plus four 후원. One QR."
+     },
+     {
+      "case_id": "r2-033",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-033.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "Recorded admin_area as absent because '광명동굴' is the cave's proper name (noted in the file)"
+      ],
+      "notes": "Title '2026년 제4회 광명동굴 빛축제'; headline slogan '빛의 숲, 깨어나는 생명'; times 11:00~21:00. Programs: 개막식 and its 3 sub-items; 드론쇼 with per-day start-only times; ZERO-WASTE 푸드존 (제2주차장) with per-day ranges. Two QRs (one labeled '▲ 셔틀버스 정보'). Three notices, including subject_to_change. Two unlabeled logos."
+     },
+     {
+      "case_id": "r2-034",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-034.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "admin_area set from the title's '목포'"
+      ],
+      "notes": "Title '목포 항구축제 2026' (the year is printed after the name). Schedule 10.16-10.18, no weekdays (poster_text year). Venue split on 및. Five unlabeled logos. The '1897 2026' on the ship is decoration and is not recorded."
+     },
+     {
+      "case_id": "r2-035",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-035.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "Removed the time text from schedule.raw",
+       "admin_area set from the title's '구로'"
+      ],
+      "notes": "One-day event (end null): 2026. 10. 17.(토), 11:00 ~ 18:00. Title '2026년 제11회 구로 청소년축제'; slogan '일상에서 이륙, 힐링으로 착륙'. 축하공연 performers 원슈타인, 브브걸, VNX are small but read (somewhat uncertain); five 운영프로그램. The budget disclosure numbers could not be confirmed, so it is illegible. One 주관 logo and the city brand phrase are illegible."
+     },
+     {
+      "case_id": "r2-036",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-036.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "admin_area set from the title's '달성'"
+      ],
+      "notes": "Title '2026 달성가족문화축제', with the large 'YES! 키즈존' as a brand variant. Schedule '26. 10. 17.(토) ~ 10. 18.(일)' uses a 2-digit year (date_text). Two date cards: 희극인즈 (코미디 듀오; members 신윤승 and 박민성 also listed) and 이은결 (일루셔니스트). 주최·주관: 달성군, 달성문화재단, 달성문화도시센터. Badge '군민이 빛나는 달성'."
+     }
+    ],
+    "summary": "I labelled all 18 posters (r2-019 to r2-036) in pass 1. Each file at data/benchmarks/gold-v2/r2-0NN.poster.json passes the validate command with OK. Every slot is checked (no not_checked), extraction is completed/manual, all evidence is manual with bbox and confidence null, QRs are not_attempted, and every image is a real event poster.\n\nWhere small text could not be read, I marked it illegible instead of guessing:\n- **Budget lines:** r2-030 and r2-035.\n- **City brand marks:** r2-025, r2-030 and r2-035.\n- **Website:** the vertical URL on r2-024.\n- **Logos:** several organisation logos, set to name null, mainly on r2-021, r2-028 and r2-035.\n\nChoices that need a consistent rule across the gold set:\n- **admin_area from titles:** I recorded city/district names that appear in titles without the 시/군/구 suffix (e.g. 강릉, 청도, 구로; 울산 as region). This follows most of the existing gold-v2 files, but it does not match the yesan example, which left admin_area absent for '예산사과축제'. In r2-030 the region comes from the venue ('서울') and the district from the title ('강동'), so admin_area.raw (the venue phrase) does not contain '강동'. I left r2-033 absent because '광명동굴' is the cave's proper name.\n- **Brand titles vs slogans:** I recorded large names of this year's edition as brand title variants, matching other gold files: 'YES! 키즈존' (r2-036) and '밤을 건너는 시간' (r2-024). Large catchphrases stay as headline slogans (r2-023, r2-024, r2-026, r2-033).\n- **schedule.raw:** I left out operating hours printed on their own line; they go in schedule.times only.\n\nI wrote helper scripts and crops only to my own scratch folder, labr2_019_036. The zoom tool's PNGs are in .runtime/poster-ocr/zoom. No other repository files were changed."
+   },
+   "second": {
+    "cases": [
+     {
+      "case_id": "r2-019",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-019.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "admin_area: present (raw '2026 임실N치즈축제', district '임실') → absent (the 임실 in '임실N치즈축제' is part of the festival name, and 임실읍 is an 읍, not a 시·군·구; same rule as the yesan example)"
+      ],
+      "notes": "Title/variant/edition 12th, schedule 10.8(목)-11(일) poster_text, venue, link WWW.IMSILFESTIVAL.COM and badge 예비문화관광축제 all match the image. No org logos."
+     },
+     {
+      "case_id": "r2-020",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-020.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "검토: 변경 없음. 善공成공 slogan, 2026 흥부제 제34회, Heungbu Festival variant, venue split on 및, and the 주최 남원시 / 주관 흥부제전위원회 / 후원 전북특별자치도 orgs are all confirmed. admin_area absent is correct because 남원시 appears only as an organisation."
+     },
+     {
+      "case_id": "r2-021",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-021.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. The bottom org band is very blurry at 447px. Pass1's illegible/partial split is reasonable. The '2026 문화유산 …' mark at top right is still unreadable."
+     },
+     {
+      "case_id": "r2-022",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-022.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. Kept admin_area district '함안' because 함안 is printed as a separate word in the title (same treatment as other files with a spaced place name). The QR 'reservation' (사전예약 QR코드스캔), phone, link and 5 unlabeled logos are confirmed."
+     },
+     {
+      "case_id": "r2-023",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-023.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "admin_area: present (raw '2026 파주페어 북앤컬처', district '파주') → absent (파주 appears only inside '파주페어' and '파주출판도시'; 파주시 appears only as a sponsor)"
+      ],
+      "notes": "Venue and the host/sponsor text are tiny but readable when zoomed. The 5 sticker programmes and the Books Alive. headline slogan are confirmed."
+     },
+     {
+      "case_id": "r2-024",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-024.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "admin_area: present (raw '담양국가유산야행', district '담양') → absent (담양 is printed joined to the festival name; 담양군 appears only on a logo)"
+      ],
+      "notes": "The vertical URL looks like www.dy…co.kr but the middle letters are unreadable even at 8x, so links stays illegible. The superscript weekdays 금/토 are tiny but consistent with the image."
+     },
+     {
+      "case_id": "r2-025",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-025.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. The '“미래를 디자인 하다”' line in the 지역 특성화 학교 box is the school's tagline, so it was deliberately not added as a festival slogan. The top-left city brand mark is still illegible."
+     },
+     {
+      "case_id": "r2-026",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-026.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "admin_area: present (raw '2026 유성독서대전', district '유성') → absent (유성 is printed joined to the festival name; 대전광역시 유성구 appears only on the vertical logo)"
+      ],
+      "notes": "The author names (김영철 etc.) were checked at 8x and match pass1."
+     },
+     {
+      "case_id": "r2-027",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-027.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "검토: 변경 없음. 강릉 is printed as its own line of the title, so district '강릉' is kept."
+     },
+     {
+      "case_id": "r2-028",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-028.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "organizations: missed item → added {name '논산', roles [], role_raw null, form logo, legibility partial} for the top-right 논산 wordmark printed with mascot characters (not labelled with a role)"
+      ],
+      "notes": "The square certification mark next to it is unreadable and was not recorded. The bottom band (주최 논산, 주관 논산문화관광재단, 6 sponsors) and the slogan split are confirmed."
+     },
+     {
+      "case_id": "r2-029",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-029.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "admin_area: present (raw '2026 제30회 울산고래축제', region '울산') → absent (울산 is printed joined into '울산고래축제'; 울산광역시 남구 appears only on the host logo)"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-030",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-030.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. The budget line (ending in what looks like …120,200천원) is still not readable, so it stays illegible. Region 서울 (from the spaced venue) and district 강동 (from the spaced title) are kept."
+     },
+     {
+      "case_id": "r2-031",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-031.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [],
+      "notes": "검토: 변경 없음"
+     },
+     {
+      "case_id": "r2-032",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-032.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음"
+     },
+     {
+      "case_id": "r2-033",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-033.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "notices[0].raw: '…셔틀버스를 이용하여주시기 바랍니다.' → '…셔틀버스를 이용해주시기 바랍니다.' (the printed line has 6 glyphs before 바랍니다)"
+      ],
+      "notes": "Programmes, the two QR codes and the other notices are confirmed. admin_area absent is correct because 광명 appears only inside '광명동굴'."
+     },
+     {
+      "case_id": "r2-034",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-034.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. 목포 is printed as its own title line, so district '목포' is kept."
+     },
+     {
+      "case_id": "r2-035",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-035.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [],
+      "notes": "검토: 변경 없음. The 4-line budget disclosure is still unreadable at 10x and stays illegible."
+     },
+     {
+      "case_id": "r2-036",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-036.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "admin_area: present (raw '2026 달성가족문화축제', district '달성') → absent (달성 is printed joined to the festival name; 달성군 appears only on the logo and the brand phrase '군민이 빛나는 달성')"
+      ],
+      "notes": ""
+     }
+    ],
+    "summary": "I reviewed all 18 pass-1 gold files (r2-019 to r2-036) against the original images and zoomed crops. Every file now has extractor.version 'gold-v2/pass2-reviewed' and one appended pass2 note, and all 18 validate OK.\n\nThere are 9 corrections in 9 files; the other 9 files are unchanged ('검토: 변경 없음').\n\n1. **admin_area set to absent (7 files: r2-019, 023, 024, 026, 029, 036).** The pass-1 labeller took the district or region from a place name printed joined to the festival name (임실N치즈축제, 파주페어, 담양국가유산야행, 유성독서대전, 울산고래축제, 달성가족문화축제). I followed the team's yesan example (예산사과축제 → absent) and the other pass-1 files that already treat joined names this way (예산황새축제, 시흥갯골축제, 금산세계인삼축제). Where the place name is printed as a separate word (함안, 강릉, 청도, 목포, 구로, 강동), I kept it.\n2. **r2-028: added a missed organisation.** The top-right 논산 logo has no role label, so it was added with roles [].\n3. **r2-033: fixed one transcription.** The parking notice read '이용하여주시기'; the printed line says '이용해주시기'.\n\nThings I left as they were:\n- **Unreadable items stay illegible:** the r2-024 URL, the r2-030 and r2-035 budget lines, and a few brand marks and logos.\n- **Not added as a slogan:** in r2-025, '“미래를 디자인 하다”' is the high school's tagline, not the festival's.\n- **Older pass-1 notes:** in the corrected files they still say where admin_area came from. My appended note replaces them; I did not edit them.\n\nI modified only the 18 assigned gold files. The temporary crops and helper scripts are in the scratchpad."
+   }
+  },
+  {
+   "batch": "r03",
+   "first": {
+    "cases": [
+     {
+      "case_id": "r2-037",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-037.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 2026 수봉산 페스티벌 / official 수봉산 페스티벌; year 2026 (date_text)",
+       "schedule 2026. 10. 17. (토) ~ 10. 18. (일)",
+       "venue 수봉공원 인공폭포 일대; admin_area absent (no 시·군·구 in venue/title)",
+       "orgs: 주최 / 주관 인천광역시 미추홀구 (logo, partial), 후원 인천광역시 (logo, partial)",
+       "programs: 10 items under 무대공연/체험행사/부대행사; 축하공연 performers 에일리, 변진섭, 김현정"
+      ],
+      "notes": "Food chalkboard in the illustration is not event information."
+     },
+     {
+      "case_id": "r2-038",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-038.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "title 2026 제주 원도심 야간여행 나이트 워크 / official 제주 원도심 야간여행 나이트 워크",
+       "one-day schedule 10.17(토) 18:30~19:30 (year_basis poster_text), times 18:30-19:30",
+       "venue = printed walking-course route (no separate venue label)",
+       "admission: 사전접수 via 탐나오 (reservation_raw); notice subject_to_change (기상 상황)",
+       "organizations absent (Tamnao logo treated as booking platform, not an org)"
+      ],
+      "notes": "admin_area absent: 제주 printed without 시·도 suffix."
+     },
+     {
+      "case_id": "r2-039",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-039.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 2026 문경 사과 축제 (three stacked lines joined with spaces)",
+       "schedule 10. 17. 토 ~ 11. 1. 일 16일간 (poster_text), duration 16일간",
+       "7 orgs: 주최 문경사과축제추진위원회 (text); 주관/후원/4 협찬 logos partial",
+       "link www.mgapple.or.kr; 1 QR (not_attempted)",
+       "programs: 개막식 (10.17 14:00), 개막축하공연 with 5 performers, 3 더나는 축제 items; badge 더나는 문경"
+      ],
+      "notes": "The second line of the top-left brush brand and the text under the QR could not be read, so they are not recorded."
+     },
+     {
+      "case_id": "r2-040",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-040.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 제26회 한성 백제 문화제 + English variant The 26th Hanseong Baekje Cultural Festival",
+       "no 4-digit year: year absent, schedule 10.23.금 - 25.일 with iso null",
+       "5 orgs: 주최 송파구, 주관 추진위원회 logo, 후원 서울특별시/KSPO partial + 1 illegible",
+       "badge We♥Songpa; slogan 찬란한 문화, 깊은 울림, 하나된 우리"
+      ],
+      "notes": "Validator warning year_absent is expected (candidate 2026 not filled in)."
+     },
+     {
+      "case_id": "r2-041",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-041.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 제11회 강진만 춤추는 갈대축제, edition 11",
+       "schedule 2026. 10. 24. 토 ~ 11. 01. 일 / 9일간, duration 9일간",
+       "venue 강진만생태공원 일원",
+       "org 주관 강진군축제추진위원회 (text, partial)"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-042",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-042.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "title 2026 부산 종합 민속 예술제",
+       "headline slogan 넘실 넘실 (vertical brush text)",
+       "schedule 2026. 10.24.(토) - 10.25.(일); venue 부산시민공원 다솜광장",
+       "org 부산광역시 logo without a role label"
+      ],
+      "notes": "부산 is printed without an administrative suffix, so admin_area is absent."
+     },
+     {
+      "case_id": "r2-043",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-043.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 제34회 영도다리 축제 + English variant YEONGDO BRIDGE FESTIVAL 2026",
+       "venue split on 및: 봉래동 물양장 / 아미르 공원 일원",
+       "5 programs with venue_raw taken from the table headers",
+       "3 unlabeled orgs: 영도구, 영도문화원, 해양클러스터 기관협의회 (partial)"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-044",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-044.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 2026 월출산국화축제",
+       "schedule 2026 10. 30. 금 - 11. 15. 일; venue 월출산기찬랜드 일원",
+       "org 주최·주관 영암군 (logo, partial); contact 문의 061-470-2259",
+       "badge 2027-2028 영암방문의해 (ribbon in the illustration)"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-045",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-045.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "legible",
+      "changes": [
+       "title 제2회 동두천시 책문화축제 (vertical title)",
+       "one-day schedule 2026.10.31 (토) 15:30~19:00",
+       "address road 동두천로314; admin_area district 동두천시",
+       "org/contact 동두천시 도서문화사업소 (031) 860-2707 → 031-860-2707",
+       "4 program zones"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-046",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-046.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 제20회 청송사과 축제; slogan 지금 청송! 사과로 물들다",
+       "schedule 2026. 11. 4 수 - 11. 8 일; venue 청송읍 용전천 현비암 일원",
+       "14 orgs: 2 주최·주관 + 12 후원, mostly partial, one K-water item illegible (name null)",
+       "badge other 대한민국 대표"
+      ],
+      "notes": "The sponsor list is about 7px tall, so the names are best-effort partial readings and need a human check."
+     },
+     {
+      "case_id": "r2-047",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-047.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 2026 괴산김장축제 + brand variant K-RED 푸드페스타",
+       "headline slogan RED하게 세상을 버무리다",
+       "schedule 2026. 11. 5. 목 ~ 11. 8. 일; venue 괴산유기농엑스포광장 일원",
+       "org 괴산축제위원회 (no role); badge 자연울림"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-048",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-048.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 2026 청춘양구 펀치볼 사과시래기 축제",
+       "slogans Fall in LOVE and 사과의 달콤함과 시래기의 구수함이 만나는 양구!",
+       "admin_area district 양구군 (from venue)",
+       "orgs: 주최·주관 양구문화재단, 후원 CROWN 해태 (logos, partial); 5 programs"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-049",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-049.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 제31회 김해 분청도자기 축제",
+       "schedule 2026. 11.6.(금) - 11.10.(화); venue 롯데가든파크 롯데아울렛 김해",
+       "orgs: 2 주최·주관 logos illegible, 후원 김해시 and KRA 한국마사회 partial",
+       "slogan 도심 속 분청, 도자기 마을로의 초대"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-050",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-050.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 제4회 보물찾기 축제 (chosen by meaning); headline slogan 1945, 그날의 금괴를 찾아라",
+       "schedule 2026. 11. 7. SAT - 8. SUN",
+       "venue 인화동 솜리마을 일대 (second character blurry)",
+       "3 unlabeled top logos: 1 illegible, 익산시, 익산문화도시지원센터; brand badge 보석문화도시 익산"
+      ],
+      "notes": "Title versus slogan was decided by meaning. The venue should get a human check."
+     },
+     {
+      "case_id": "r2-051",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-051.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "partial",
+      "changes": [
+       "title 2026 제14회 온가족 책잔치, edition 14",
+       "one-day schedule 2026. 11. 7. (토) 11:00 ~ 17:00; venue 정독도서관 책의 정원",
+       "2 slogans; 8 programs from the slash-separated list",
+       "2 unlabeled logos (서울특별시교육청 ...); 1 QR with no label"
+      ],
+      "notes": ""
+     },
+     {
+      "case_id": "r2-052",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-052.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "small_text": "illegible",
+      "changes": [
+       "title 2026 포항 해병대문화축제 + English variant 2026 Pohang Marine Corps Culture Festival",
+       "schedule 2026.11.14.(토) - 15.(일)",
+       "venue split on 및: 오천읍 해병의거리(서문사거리) / 해병대 제1사단 일원",
+       "10 orgs: 주최 pohang logo (포항시, partial), 3 주관 illegible, 6 후원 (경상북도 partial, rest illegible)",
+       "2 brand badges (올굿포항 ALL GOOD, 위대한 포항 더 나은 내일)"
+      ],
+      "notes": "The bottom organization strip is about 5px text on a textured red background, so it is mostly unreadable."
+     }
+    ],
+    "summary": "I labelled all 16 posters (r2-037 to r2-052), and every file passes validate with OK. All 16 are event posters. Each file is data/benchmarks/gold-v2/<case_id>.poster.json, version gold-v2/pass1, completed and manual, with no not_checked slots. I wrote notes on each file explaining title, slogan and venue choices.\n\nValidation flags:\n- r2-040 is the only file with a warning, year_absent. No year is printed anywhere, so the year is left empty and the schedule iso is null.\n- The other flags are information only: organization names that are uncertain or unreadable, logos with no printed role, and QR codes that were not decoded.\n\nLower-confidence items worth a human check:\n- r2-046: the sponsor names are partial readings of very small text, and one is unreadable.\n- r2-049: the names of the two 주최·주관 organizations could not be read.\n- r2-052: most of the bottom organization strip could not be read.\n- r2-050: the title is 제4회 보물찾기 축제, chosen by meaning, and the larger 1945 phrase is recorded as the headline slogan. One character of the venue, 인화동, is blurry.\n\nMy helper scripts and zoom crops are temporary and sit outside the repository in the scratchpad; I changed no other repository files."
+   },
+   "second": {
+    "summary": "I reviewed all 16 files (r2-037 to r2-052) in pass 2. For each one I checked the original image, the zoom bands and close-up crops of the small text. I corrected 4 files and left 12 unchanged. In every file extraction.extractor.version is now \"gold-v2/pass2-reviewed\", one note was appended to extraction.notes, and validate prints OK for all 16. The corrections:\n- r2-039: removed '16일간' from schedule.raw. On the poster it sits on the venue line, not with the dates; duration_raw keeps it.\n- r2-043: the third organisation's name changed from 해양클러스터 기관협의회 to 해양클러스터 기관장협의회.\n- r2-048: one programme name now keeps the spaces printed around the middle dot (공연 · 체험행사).\n- r2-050: the third top logo's text could not be read even with contrast boost and zoom, so I made it illegible with no name, the same as the first logo.\n\nSome uncertain readings were left as the first labeller wrote them; the case notes give the details. They are mainly two performer names in r2-039 (스 vs 소), the venue's second character in r2-050, the last sponsor logo in r2-040, and the tiny sponsor and organiser strips in r2-046 and r2-052. My helper scripts and crops are in a separate scratchpad folder; no other repository file was changed.",
+    "cases": [
+     {
+      "case_id": "r2-037",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-037.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. Title, schedule, venue, the 10 programmes with 3 performers, and the 주최 / 주관 and 후원 logos all match the image. admin_area stays absent: 미추홀구 appears only in the logo text."
+     },
+     {
+      "case_id": "r2-038",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-038.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "legible",
+      "notes": "검토: 변경 없음. The course text as venue, the Tamnao pre-registration text as admission/reservation, and the weather notice are correct. '제주' has no administrative suffix, so admin_area stays absent."
+     },
+     {
+      "case_id": "r2-039",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-039.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [
+       "schedule.raw: '10. 17. 토 ~ 11. 1. 일 16일간' → '10. 17. 토 ~ 11. 1. 일' ('16일간' is printed on the venue line; duration_raw keeps it)"
+      ],
+      "small_text": "partial",
+      "notes": "The other slots match the image. Kept the first labeller's reading of 에스플라바 / 노부스심포니오케스트라 (this font draws 스 so it looks like 소). The QR label and the second line of the top-left brand mark are too blurry to read and stay unrecorded."
+     },
+     {
+      "case_id": "r2-040",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-040.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. No 4-digit year is printed, so iso stays null. The last 후원 circle logo looks like a 5-character name but cannot be read with confidence, so it stays illegible. The 송파구 logo at top right repeats the 주최 organisation and is not a separate item."
+     },
+     {
+      "case_id": "r2-041",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-041.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. The end-date weekday sits in a blurry red circle; it reads 일 (sun). The 주관 name is readable with 'partial' legibility."
+     },
+     {
+      "case_id": "r2-042",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-042.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "legible",
+      "notes": "검토: 변경 없음. The '넘실 넘실' headline slogan, the schedule spread over several lines, the venue, and the unlabelled 부산광역시 logo are correct. The coloured diamond is a kite decoration, not a logo."
+     },
+     {
+      "case_id": "r2-043",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-043.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [
+       "organizations[2].name: '해양클러스터 기관협의회' → '해양클러스터 기관장협의회' (the second line has 6 characters, as wide as the first line; legibility stays partial; the quality note was updated to match)"
+      ],
+      "small_text": "partial",
+      "notes": "The programme venue_raw values follow the table header divider correctly. The venue split on 및 is correct."
+     },
+     {
+      "case_id": "r2-044",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-044.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. The stacked '20/26' year in the title, the schedule, the 문의 phone number, the 주최·주관 영암군 logo, and the 2027-2028 영암방문의해 badge are correct."
+     },
+     {
+      "case_id": "r2-045",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-045.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "legible",
+      "notes": "검토: 변경 없음. The vertical title, the one-day schedule with its time range, the venue in brackets (not split, because the comma is inside the brackets), the road address, admin_area from the title, and the contact with its department are correct."
+     },
+     {
+      "case_id": "r2-046",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-046.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. The 후원 list is about 7px high and very blurry. The 12 sponsor items and their partial/illegible ratings match what can be seen (the K-water item has no name). 청송읍 is a 읍, so admin_area stays absent."
+     },
+     {
+      "case_id": "r2-047",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-047.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. The title, the K-RED 푸드페스타 brand variant, the headline slogan, the schedule, the venue, the 자연울림 badge, and the unlabelled 괴산축제위원회 are correct."
+     },
+     {
+      "case_id": "r2-048",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-048.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [
+       "programs[2].name: '공연·체험행사' → '공연 · 체험행사' (spaces around the middle dot, as printed)"
+      ],
+      "small_text": "partial",
+      "notes": "The venue reads 힐링하우스 (the stylised 스 was checked). admin_area 양구군 comes from the venue. The other slots are correct."
+     },
+     {
+      "case_id": "r2-049",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-049.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. The text next to the two 주최·주관 logos is about 6px high and cannot be read (illegible is correct). The 후원 김해시 and KRA 한국마사회 logos are correctly marked partial."
+     },
+     {
+      "case_id": "r2-050",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-050.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [
+       "organizations[2]: name '익산문화도시지원센터', legibility partial → name null, legibility illegible (the text is about 4px high; even with contrast boost and 16x zoom the character count, 10 or 11, cannot be settled)"
+      ],
+      "small_text": "partial",
+      "notes": "The title / headline-slogan split, the schedule, the badge, and the legible 익산시 logo are correct. The second character of the venue '인화동 솜리마을 일대' is blurry but reads 화; kept as present, and the first labeller's request for a human check still applies."
+     },
+     {
+      "case_id": "r2-051",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-051.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "partial",
+      "notes": "검토: 변경 없음. The 2 slogans, the title with year and edition, the one-day schedule with its time range, the 8 programmes, the 2 unlabelled logos, and the QR code (no label, not_attempted) are correct."
+     },
+     {
+      "case_id": "r2-052",
+      "file": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\benchmarks\\gold-v2\\r2-052.poster.json",
+      "valid": true,
+      "is_poster": true,
+      "changes": [],
+      "small_text": "illegible",
+      "notes": "검토: 변경 없음. The bottom organisation strip sits on a textured red background. The logo counts per role (1 주최, 3 주관, 6 후원) match the image. Apart from the 주최 pohang logo (포항시) and 경상북도, the names cannot be read, so illegible is correct. The venue split on 및 and the two city-brand badges are correct."
+     }
+    ]
+   }
+  }
+ ],
+ "blind": []
+}

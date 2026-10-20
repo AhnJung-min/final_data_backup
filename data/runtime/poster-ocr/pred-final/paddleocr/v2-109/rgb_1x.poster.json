@@ -1,0 +1,251 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-35c0d7affe64",
+ "image": {
+  "sha256": "35c0d7affe64d50110d0e946fc6d3a2f270e4b38ccc111618cd8664ee5a635ee",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "K-밀리터리 페스티벌 춘천대첩",
+  "official": "K-밀리터리 페스티벌 춘천대첩",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_001",
+    "padd_rgb_1x_002",
+    "padd_rgb_1x_003"
+   ],
+   "bbox": [
+    15.0,
+    56.0,
+    243.0,
+    248.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_015"
+   ],
+   "bbox": [
+    292.0,
+    508.0,
+    346.0,
+    515.0
+   ],
+   "confidence": 0.8512294292449951
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.09.()-10.11.(일)",
+  "start": {
+   "iso": "2026-10-09",
+   "year": 2026,
+   "month": 10,
+   "day": 9,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-11",
+   "year": 2026,
+   "month": 10,
+   "day": 11,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    21.0,
+    257.0,
+    194.0,
+    280.0
+   ],
+   "confidence": 0.9308755397796631
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "춘천 수변공원 일원 (베어스호텔 맞은편)",
+  "items": [
+   "춘천 수변공원 일원 (베어스호텔 맞은편)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005",
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    21.0,
+    288.0,
+    158.0,
+    328.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "1588-6953",
+    "value": "1588-6953",
+    "label_raw": null,
+    "department": "육군 간부모집",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_020"
+     ],
+     "bbox": [
+      297.0,
+      538.0,
+      367.0,
+      548.0
+     ],
+     "confidence": 0.804536759853363
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "present",
+  "raw": "군문화공연(의장대,태원도),축하공연,씨네마크 무료염화 상염",
+  "free": true,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_018"
+   ],
+   "bbox": [
+    67.0,
+    532.0,
+    264.0,
+    542.0
+   ],
+   "confidence": 0.8604794144630432
+  }
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "※6-25전쟁의 총탄 혼적이",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_007"
+     ],
+     "bbox": [
+      337.0,
+      351.0,
+      438.0,
+      363.0
+     ],
+     "confidence": 0.9204145073890686
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

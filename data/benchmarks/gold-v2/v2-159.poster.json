@@ -1,0 +1,311 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-f86efb3eb1b5",
+  "image": {
+    "sha256": "f86efb3eb1b51eafcb53f506272854626d14ad0aaac20aa7d4c455e26400e1aa",
+    "width": 444,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:08:06+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "가장 크게 인쇄된 '홍성은 맛있다'는 슬로건(headline)으로, 아래 '2026 홍성백반페스타'를 축제명으로 기록함. 그릇 모양 '홍성 백반' 로고와 그 아래 작은 '홍성은 맛있다'는 같은 문구라 따로 기록하지 않음.",
+      "좌측 '로컬푸드 / 백년시장 / 맛의기록'과 하단 아이콘 띠(로컬푸드·100년 시장·백년의 기록·가족과 함께·상품권 등 혜택)는 프로그램 이름이 아니라 주제 표기로 보고 programs는 absent로 둠.",
+      "'대한민국 문화도시 홍성'은 도시 지정 표기로 badges(other)에 둠. 기관 로고는 모두 역할 표기가 없음.",
+      "pass2 검토: 제목의 '홍성'을 시·군·구 이름으로 보아 admin_area를 present(district 홍성)로 바꿈. 나머지 항목은 이미지와 일치.",
+      "표준 1.1 A1 적용: 시·군·구는 행정 접미사가 붙은 독립 낱말만, 시·도는 독립 낱말이거나 행정 단위만으로 된 붙은 낱말일 때 인정."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 홍성백반페스타",
+    "official": "홍성백반페스타",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "Hongseong Baekban Festival",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "홍성은 맛있다",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "홍성의 맛을 담은 한 상, 100년 시장의 이야기",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10월 17일(토) ~ 10월 18일(일)",
+    "start": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "11:00 ~ 21:00",
+        "start": "11:00",
+        "end": "21:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "광천문화시장",
+    "items": [
+      "광천문화시장"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "홍성군",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "홍주문화관광재단",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "문화체육관광부",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "충청남도",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "광천문화시장상인회",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "대한민국 문화도시 홍성",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "연필 스케치 배경",
+      "붓글씨 타이포그래피",
+      "음식 사진 합성"
+    ],
+    "main_colors": [
+      "베이지",
+      "검정",
+      "빨강",
+      "갈색",
+      "초록"
+    ],
+    "main_objects": [
+      "거대한 붓글씨 '맛'",
+      "백반 반찬 그릇",
+      "젓가락",
+      "전통 시장 거리 스케치",
+      "시장 상인 사진",
+      "새우·버섯 등 식재료"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "크림색 바탕에 전통 시장 거리와 백반 상차림을 연필 스케치로 그리고, 가운데 거대한 검은 붓글씨 '맛'과 '홍성은 … 있다'를 겹친 포스터. 하단에 축제명·일정·장소, 주제 아이콘 띠와 기관 로고."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "444×627 이미지. 기관 로고 글자는 대부분 판독되나 우하단 상인회 로고는 장식 글씨라 일부 불확실함. 아이콘 띠 영문은 흐림."
+    ]
+  }
+}

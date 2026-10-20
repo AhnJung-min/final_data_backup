@@ -1,0 +1,235 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-f86efb3eb1b5",
+ "image": {
+  "sha256": "f86efb3eb1b51eafcb53f506272854626d14ad0aaac20aa7d4c455e26400e1aa",
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+easyocr(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "홍성은",
+  "official": "홍성은",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    28.0,
+    54.5,
+    206.0,
+    169.5
+   ],
+   "confidence": 0.9969800114631653
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "absent",
+  "raw": null,
+  "value": null,
+  "evidence": null
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "맛의기록 10월 17일(토) ~10월 18일(일) 11:00~21:00",
+  "start": {
+   "iso": null,
+   "year": null,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "absent"
+  },
+  "end": {
+   "iso": null,
+   "year": null,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "absent"
+  },
+  "times": [
+   {
+    "raw": "11:00~21:00",
+    "start": "11:00",
+    "end": "21:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_018",
+    "padd_rgb_2x_019"
+   ],
+   "bbox": [
+    18.0,
+    517.5,
+    357.0,
+    538.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "광천문화시장",
+  "items": [
+   "광천문화시장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_020"
+   ],
+   "bbox": [
+    187.0,
+    542.5,
+    257.0,
+    558.0
+   ],
+   "confidence": 0.9997009634971619
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "홍주문화관광재단",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_003"
+     ],
+     "bbox": [
+      364.0,
+      9.0,
+      431.0,
+      21.0
+     ],
+     "confidence": 0.967485785484314
+    }
+   },
+   {
+    "name": "문화체육관광부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_033"
+     ],
+     "bbox": [
+      35.0,
+      604.5,
+      108.5,
+      618.0
+     ],
+     "confidence": 0.9980207681655884
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

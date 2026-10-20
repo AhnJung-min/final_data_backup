@@ -1,0 +1,106 @@
+diff --git a/app/poster_ocr/extract.py b/.runtime/poster-ocr/proposals/title/extract.py
+index 726b848..3e04897 100644
+--- a/app/poster_ocr/extract.py
++++ b/.runtime/poster-ocr/proposals/title/extract.py
+@@ -44,8 +44,12 @@ SIDO = re.compile(r"(서울특별시|서울|부산광역시|부산|대구광역
+ DISTRICT = re.compile(r"(?<![가-힣])([가-힣]{1,4}(?:시|군|구))(?![가-힣])")
+ NOT_DISTRICT = {"일시", "개최시", "도시", "전시", "상시", "수시", "동시", "당시", "즉시", "역시", "임시", "잠시", "오후시", "매시",
+                 "주관", "가구", "입구", "출구", "연구", "운구", "부군", "아군", "공군", "해군", "육군", "장군", "대군"}
+-YEAR = re.compile(r"(?<!\d)(20[2-3]\d)(?!\d)")
++# 연도 뒤 구분점이 OCR에서 빠져 월과 붙은 경우('202609. 18')도 연도로 읽는다(문자는 바꾸지 않고 경계만 본다).
++YEAR = re.compile(r"(?<!\d)(20[2-3]\d)(?:(?!\d)|(?=(?:0[1-9]|1[0-2])\s*[./]\s*\d))")
+ EDITION = re.compile(r"제\s*(\d{1,3})\s*회|(?<![\d.])(\d{1,3})\s*(?:st|nd|rd|th)\b|(?<!\d)(\d{1,3})\s*번째", re.I)
++# 숫자 없이 고유어 서수로 쓴 회차('첫 번째 이야기'). 숫자 회차가 없을 때만, 짧은 줄에서만 쓴다.
++EDITION_WORD = re.compile(r"(?<![가-힣])(첫|두|세|네|다섯|여섯|일곱|여덟|아홉|열)\s*번\s*째")
++ORDINAL_KO = {"첫": 1, "두": 2, "세": 3, "네": 4, "다섯": 5, "여섯": 6, "일곱": 7, "여덟": 8, "아홉": 9, "열": 10}
+ 
+ 
+ def norm(text):
+@@ -465,10 +469,14 @@ def extract(records, image, engine, *, extracted_at=None):
+ 
+     # 회차 ---------------------------------------------------------------
+     editions = [(l, m) for l in lines for m in EDITION.finditer(l["norm"])]
++    worded = [(l, m) for l in lines for m in EDITION_WORD.finditer(l["norm"]) if len(re.findall(r"[가-힣]", l["norm"])) <= 10]
+     if editions:
+         l, m = max(editions, key=lambda pair: pair[0]["h"])
+         number = int(next(g for g in m.groups() if g))
+         doc["edition"].update(status="present", raw=m.group(0).strip(), number=number, evidence=evidence(l["members"]))
++    elif worded:
++        l, m = max(worded, key=lambda pair: pair[0]["h"])
++        doc["edition"].update(status="present", raw=m.group(0).strip(), number=ORDINAL_KO[m.group(1)], evidence=evidence(l["members"]))
+     else:
+         doc["edition"]["status"] = "absent"
+ 
+@@ -479,7 +487,7 @@ def extract(records, image, engine, *, extracted_at=None):
+             hangul = [r for r in line["members"] if re.search(r"[가-힣]", r["text"])]
+             latin_only = [r for r in line["members"] if not re.search(r"[가-힣]", r["text"]) and re.search(r"[A-Za-z]{2}", r["text"])]
+             keep = hangul if hangul and latin_only else line["members"]
+-            return " ".join(unicodedata.normalize("NFC", r["text"]).strip() for r in keep)
++            return " ".join(drop_latin_tail(unicodedata.normalize("NFC", r["text"]).strip()) for r in keep)
+         raw = " ".join(title_text(l) for l in title_lines)
+         official = remove_tokens(norm(raw), [YEAR, re.compile(r"(?<!\d)20[2-3]\d\s*년"), EDITION])
+         official = official if hangul_or_latin(official) >= 2 else None
+@@ -508,7 +516,8 @@ def pick_title(lines, used, image):
+             continue
+         confidence = sum(r["confidence"] for r in l["members"]) / len(l["members"])
+         score = 3 * l["h"] / max_h
+-        score += 3.0 if TITLE_SUFFIX.search(stripped) else 0
++        suffix = TITLE_SUFFIX.search(stripped)
++        score += 3.0 if suffix and hangul_or_latin(stripped[:suffix.start()]) >= 1 else 0  # '축제'·'Festival' 한 단어만 있는 줄은 이름이 아니다
+         score += .8 if (l["box"][1] + l["box"][3]) / 2 < .7 * height_px else 0
+         score += 1.2 * confidence - .6
+         score -= 1.2 if re.fullmatch(r"[A-Za-z0-9\s.&'\-:]+", stripped) else 0  # 영문만이면 병기일 가능성
+@@ -518,15 +527,14 @@ def pick_title(lines, used, image):
+         return []
+     best = max(scored, key=lambda pair: pair[0])[1]
+     chosen = [best]
+-    # 위아래로 붙은 같은 크기 줄(여러 줄 제목)을 최대 3줄까지 붙인다.
++    # 위아래로 붙은 같은 크기 줄(여러 줄 제목)을 최대 3줄까지 붙인다. 이웃은 읽기 순서 번호가 아니라 같은 단(가로로 겹치는 줄)에서
++    # 세로로 가장 가까운 줄이다(옆 단의 슬로건·일정 줄이 읽기 순서 사이에 끼어도 건너뛴다).
+     for direction in (-1, 1):
+-        index = best["index"]
+         while len(chosen) < 3:
+-            index += direction
+-            if not 0 <= index < len(lines):
+-                break
+-            other = lines[index]
+             ref = chosen[0] if direction < 0 else chosen[-1]
++            other = column_neighbor(lines, ref, direction, chosen)
++            if other is None:
++                break
+             gap = (ref["box"][1] - other["box"][3]) if direction < 0 else (other["box"][1] - ref["box"][3])
+             overlap = min(ref["box"][2], other["box"][2]) - max(ref["box"][0], other["box"][0])
+             complete = TITLE_SUFFIX.search(remove_tokens(other["norm"], [YEAR, EDITION])) and TITLE_SUFFIX.search(remove_tokens(ref["norm"], [YEAR, EDITION]))
+@@ -541,6 +549,32 @@ def pick_title(lines, used, image):
+     return chosen
+ 
+ 
++LATIN_TAIL = re.compile(r"(?<=[가-힣])([A-Za-z][A-Za-z\s.&'\-]*)$")
++
++
++def drop_latin_tail(text):
++    """한 OCR 기록 안에서 한글 제목 끝에 띄어쓰기 없이 붙어 읽힌 영문 병기(4자 이상, '진연Jinyeon')를 뗀다.
++    띄어 쓴 영문('동구 HARMONY FESTIVAL')은 제목의 일부일 수 있어 그대로 둔다. 문자는 바꾸지 않고 끝부분만 자른다."""
++    m = LATIN_TAIL.search(text)
++    if m and len(re.findall(r"[A-Za-z]", m.group(1))) >= 4 and len(re.findall(r"[가-힣]", text[:m.start()])) >= 2:
++        return text[:m.start()].rstrip()
++    return text
++
++
++def column_neighbor(lines, ref, direction, chosen):
++    """ref와 가로로 겹치는 줄 중 위(direction<0) 또는 아래(>0)에서 맞닿는 가장자리 간격이 가장 작은 줄."""
++    centre = (ref["box"][1] + ref["box"][3]) / 2
++    taken = {l["index"] for l in chosen}
++    options = []
++    for l in lines:
++        if l["index"] in taken or min(ref["box"][2], l["box"][2]) - max(ref["box"][0], l["box"][0]) <= 0:
++            continue
++        if ((l["box"][1] + l["box"][3]) / 2 - centre) * direction > 0:
++            gap = (ref["box"][1] - l["box"][3]) if direction < 0 else (l["box"][1] - ref["box"][3])
++            options.append((gap, l))
++    return min(options, key=lambda pair: pair[0])[1] if options else None
++
++
+ def clock(meridiem, hour, minute):
+     hour, minute = int(hour), int(minute or 0)
+     if meridiem in ("오후", "PM", "pm", "저녁", "밤") and hour < 12:

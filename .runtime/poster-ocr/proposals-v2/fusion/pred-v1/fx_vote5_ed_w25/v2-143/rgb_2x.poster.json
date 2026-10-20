@@ -1,0 +1,197 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-cd6a92fce79a",
+ "image": {
+  "sha256": "cd6a92fce79a4355168256bd75495d46cb023e912794a2c4717973fc7ec455fc",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote5_ed_w25"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote5_ed_w25): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "부산태지국납대전",
+  "official": "부산태지국납대전",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    0.0,
+    62.5,
+    443.0,
+    221.0
+   ],
+   "confidence": 0.9133613109588623
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    168.0,
+    41.5,
+    274.0,
+    84.5
+   ],
+   "confidence": 0.9996991753578186
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.16.FRI 10.18.SUN",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009",
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    300.0,
+    516.0,
+    428.0,
+    580.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "absent",
+  "raw": null,
+  "items": [],
+  "evidence": null
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "부산태지국납대전",
+  "region": "부산",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    0.0,
+    62.5,
+    443.0,
+    221.0
+   ],
+   "confidence": 0.9133613109588623
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

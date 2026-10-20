@@ -1,0 +1,206 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-336f0926e77f",
+ "image": {
+  "sha256": "336f0926e77fb14ef8263e017b67e8b098e2a8826704f87ccd974b7ce6a67260",
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:fb_h+conf_p1_title"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(fb_h+conf_p1_title): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "아라아트센터(Ara Art Center)",
+  "official": "아라아트센터(Ara Art Center)",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004",
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    39.0,
+    104.0,
+    238.5,
+    525.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004",
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    39.0,
+    104.0,
+    238.5,
+    525.5
+   ],
+   "confidence": null
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.11.-9.16. 2026 서울국제작가축제",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-16",
+   "year": 2026,
+   "month": 9,
+   "day": 16,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003",
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    64.5,
+    98.0,
+    201.5,
+    326.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "absent",
+  "raw": null,
+  "items": [],
+  "evidence": null
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "homepage",
+    "platform": null,
+    "raw": "SIWEOR.KR",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_005"
+     ],
+     "bbox": [
+      433.5,
+      298.5,
+      447.0,
+      367.0
+     ],
+     "confidence": 0.9837836027145386
+    }
+   }
+  ]
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

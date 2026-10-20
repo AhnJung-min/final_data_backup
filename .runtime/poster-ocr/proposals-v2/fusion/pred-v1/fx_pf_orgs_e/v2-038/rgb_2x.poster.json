@@ -1,0 +1,219 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-37e592705561",
+ "image": {
+  "sha256": "37e59270556130dabb8f91b110f7bd298b240cf7595646c727d817dc5af155fd",
+  "width": 434,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:50+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_orgs_e"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_orgs_e): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "함평모악산",
+  "official": "함평모악산",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    252.0,
+    85.0,
+    278.0,
+    193.0
+   ],
+   "confidence": 0.9487665295600891
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    27.5,
+    30.0,
+    65.0,
+    47.0
+   ],
+   "confidence": 0.9992793798446655
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.16.(수)-9.20.(일)",
+  "start": {
+   "iso": "2026-09-16",
+   "year": 2026,
+   "month": 9,
+   "day": 16,
+   "weekday": "wed",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-20",
+   "year": 2026,
+   "month": 9,
+   "day": 20,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    28.0,
+    47.0,
+    180.5,
+    69.5
+   ],
+   "confidence": 0.9691953063011169
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "용천사 꽃무롯 공원",
+  "items": [
+   "용천사 꽃무롯 공원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    27.5,
+    73.0,
+    180.5,
+    97.0
+   ],
+   "confidence": 0.9215019345283508
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "농국정공사",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_008"
+     ],
+     "bbox": [
+      346.5,
+      602.0,
+      374.0,
+      610.5
+     ],
+     "confidence": 0.5383919477462769
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

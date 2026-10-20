@@ -1,0 +1,242 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-7ac18d77c175",
+ "image": {
+  "sha256": "7ac18d77c1753c4293c249e207633958b76cffa074b998f4797c1cab1bcb860c",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:40+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "easyocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "오늘은",
+  "official": "오늘은",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_015"
+   ],
+   "bbox": [
+    82.35,
+    74.28,
+    146.15,
+    143.22
+   ],
+   "confidence": 0.9995990333186766
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제2회",
+  "number": 2,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_001"
+   ],
+   "bbox": [
+    240.5,
+    163.5,
+    295.5,
+    185.5
+   ],
+   "confidence": 0.6771018007217374
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_005"
+   ],
+   "bbox": [
+    111.5,
+    401.5,
+    335.5,
+    423.5
+   ],
+   "confidence": 0.795453624486543
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.31 (토) 15:30~19.00",
+  "start": {
+   "iso": "2026-10-31",
+   "year": 2026,
+   "month": 10,
+   "day": 31,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "15:30~19.00",
+    "start": "15:30",
+    "end": "19:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_005"
+   ],
+   "bbox": [
+    111.5,
+    401.5,
+    335.5,
+    423.5
+   ],
+   "confidence": 0.795453624486543
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "복합문화커유니티센터 1층 (오르빛도서관 동두천로314)",
+  "items": [
+   "복합문화커유니티센터 1층 (오르빛도서관 동두천로314)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_006"
+   ],
+   "bbox": [
+    85.5,
+    429.5,
+    363.5,
+    447.5
+   ],
+   "confidence": 0.5450315930750423
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "동두천로314",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_006"
+   ],
+   "bbox": [
+    85.5,
+    429.5,
+    363.5,
+    447.5
+   ],
+   "confidence": 0.5450315930750423
+  }
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "031) 860-2707",
+    "value": "031-860-2707",
+    "label_raw": null,
+    "department": null,
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_2x_011"
+     ],
+     "bbox": [
+      308.0,
+      599.0,
+      432.5,
+      620.0
+     ],
+     "confidence": 0.7609622818124944
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

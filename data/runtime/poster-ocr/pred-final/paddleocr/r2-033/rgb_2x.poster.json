@@ -1,0 +1,243 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-7e1ae5e814b8",
+ "image": {
+  "sha256": "7e1ae5e814b8f024418ce58c3d7a300c995091be9eb28d3dd611a23d828b5ad0",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:49+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026년 제4회 광명동굴 빛축제",
+  "official": "년 광명동굴 빛축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    46.0,
+    39.0,
+    204.0,
+    54.5
+   ],
+   "confidence": 0.9624155759811401
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제4회",
+  "number": 4,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    46.0,
+    39.0,
+    204.0,
+    54.5
+   ],
+   "confidence": 0.9624155759811401
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    46.0,
+    181.0,
+    255.5,
+    203.0
+   ],
+   "confidence": 0.9972190260887146
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.16.(금)~10.17.(토)",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "times": [
+   {
+    "raw": "11:00~21:00",
+    "start": "11:00",
+    "end": "21:00",
+    "applies_to": null
+   },
+   {
+    "raw": "11:00-21:00",
+    "start": "11:00",
+    "end": "21:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    46.0,
+    181.0,
+    255.5,
+    203.0
+   ],
+   "confidence": 0.9972190260887146
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "광명동굴 일원",
+  "items": [
+   "광명동굴 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    47.0,
+    209.0,
+    212.5,
+    226.0
+   ],
+   "confidence": 0.9758607149124146
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "광명도시공사",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_026"
+     ],
+     "bbox": [
+      360.5,
+      589.5,
+      415.0,
+      604.5
+     ],
+     "confidence": 0.9997062683105469
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

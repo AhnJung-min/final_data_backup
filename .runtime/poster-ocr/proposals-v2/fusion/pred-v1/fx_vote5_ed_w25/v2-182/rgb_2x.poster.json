@@ -1,0 +1,215 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-e7e8ea3a422a",
+ "image": {
+  "sha256": "e7e8ea3a422aa11600655b37f6782095fa7641a1d943e1cc30d3847c2a9a16fb",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:53+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote5_ed_w25"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote5_ed_w25): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "도곡 메타세쿼이아 로드 페스타",
+  "official": "도곡 메타세쿼이아 로드 페스타",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_008",
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    80.0,
+    109.0,
+    361.5,
+    191.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    64.5,
+    212.0,
+    114.5,
+    230.0
+   ],
+   "confidence": 0.998017430305481
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.24.SAT",
+  "start": {
+   "iso": "2026-10-24",
+   "year": 2026,
+   "month": 10,
+   "day": 24,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "11:00~18:00",
+    "start": "11:00",
+    "end": "18:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_014"
+   ],
+   "bbox": [
+    64.5,
+    231.0,
+    140.5,
+    248.0
+   ],
+   "confidence": 0.9698752164840698
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "서울 강남구 양재천로 및 강남수도사업소 삼거리 일내",
+  "items": [
+   "서울 강남구 양재천로",
+   "강남수도사업소 삼거리 일내"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_018",
+    "padd_rgb_2x_019"
+   ],
+   "bbox": [
+    65.0,
+    270.0,
+    153.5,
+    290.5
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "서울 강남구 양재천로 및",
+  "region": "서울",
+  "district": "강남구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_018"
+   ],
+   "bbox": [
+    65.0,
+    270.0,
+    141.5,
+    280.0
+   ],
+   "confidence": 0.9199835062026978
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

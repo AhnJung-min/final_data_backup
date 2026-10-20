@@ -1,0 +1,230 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-5d5018f249cd",
+ "image": {
+  "sha256": "5d5018f249cd5c1d5b5c1b3a3eeb8cd2bdbd134f7886dc0a916447c045f7daab",
+  "width": 489,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:53+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "평화축제",
+  "official": "평화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    137.5,
+    325.0,
+    351.5,
+    391.0
+   ],
+   "confidence": 0.9837668538093567
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제28회",
+  "number": 28,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    177.0,
+    140.0,
+    311.5,
+    190.0
+   ],
+   "confidence": 0.9990558624267578
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    140.5,
+    406.0,
+    333.0,
+    428.0
+   ],
+   "confidence": 0.9990411400794983
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.23~10.25",
+  "start": {
+   "iso": "2026-10-23",
+   "year": 2026,
+   "month": 10,
+   "day": 23,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    140.5,
+    406.0,
+    333.0,
+    428.0
+   ],
+   "confidence": 0.9990411400794983
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "평화공원일원",
+  "items": [
+   "평화공원일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    193.0,
+    432.5,
+    309.0,
+    457.0
+   ],
+   "confidence": 0.9964773654937744
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "부산남구문화재단",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_009"
+     ],
+     "bbox": [
+      284.5,
+      580.5,
+      362.5,
+      596.0
+     ],
+     "confidence": 0.9634000062942505
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

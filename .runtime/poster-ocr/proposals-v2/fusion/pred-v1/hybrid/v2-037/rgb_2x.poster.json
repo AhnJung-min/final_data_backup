@@ -1,0 +1,223 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-67181f8ad763",
+ "image": {
+  "sha256": "67181f8ad76334f19ea9b464f9b497c6b15e7532d67803a43e35e350605ceff2",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T00:00:00+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "미추를 미디어 문화축제",
+  "official": "미추를 미디어 문화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_005",
+    "easy_rgb_2x_006",
+    "easy_rgb_2x_007"
+   ],
+   "bbox": [
+    22.0,
+    80.0,
+    266.0,
+    307.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제23회",
+  "number": 23,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_004"
+   ],
+   "bbox": [
+    29.5,
+    58.5,
+    167.0,
+    90.0
+   ],
+   "confidence": 0.9270623326301575
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_004"
+   ],
+   "bbox": [
+    29.5,
+    58.5,
+    167.0,
+    90.0
+   ],
+   "confidence": 0.9270623326301575
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.12.(토)-9.13.(일)",
+  "start": {
+   "iso": "2026-09-12",
+   "year": 2026,
+   "month": 9,
+   "day": 12,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_008"
+   ],
+   "bbox": [
+    26.5,
+    315.5,
+    168.5,
+    336.5
+   ],
+   "confidence": 0.9547505378723145
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "인천대학교 제물포캠퍼스평생교육원 옆광장",
+  "items": [
+   "인천대학교 제물포캠퍼스평생교육원 옆광장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_009"
+   ],
+   "bbox": [
+    26.5,
+    336.0,
+    231.5,
+    354.5
+   ],
+   "confidence": 0.9214717149734497
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "인천대학교 제물포캠퍼스평생교육원 옆광장",
+  "region": "인천",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_009"
+   ],
+   "bbox": [
+    26.5,
+    336.0,
+    231.5,
+    354.5
+   ],
+   "confidence": 0.9214717149734497
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

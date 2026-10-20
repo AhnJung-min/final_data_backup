@@ -1,0 +1,337 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-1640bcc0d851",
+ "image": {
+  "sha256": "1640bcc0d851f5d4a5242e9a2d0ce793842cd1f4f6bf0820e6cb62f070036acb",
+  "width": 442,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+paddleocr(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "코스모스 메밀꽃축제",
+  "official": "코스모스 메밀꽃축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005",
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    107.0,
+    170.0,
+    334.0,
+    297.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제20회",
+  "number": 20,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    111.0,
+    142.0,
+    272.0,
+    178.0
+   ],
+   "confidence": 0.9887059926986694
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007",
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    113.0,
+    311.0,
+    292.0,
+    336.0
+   ],
+   "confidence": null
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.22. 10.5.",
+  "start": {
+   "iso": "2026-09-22",
+   "year": 2026,
+   "month": 9,
+   "day": 22,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": "4일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007",
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    113.0,
+    311.0,
+    292.0,
+    336.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "제20회하동북천",
+  "items": [
+   "제20회하동북천"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    111.0,
+    142.0,
+    272.0,
+    178.0
+   ],
+   "confidence": 0.9887059926986694
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "※ 하동 북천 코스모스",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019"
+     ],
+     "bbox": [
+      28.0,
+      608.0,
+      221.0,
+      618.0
+     ],
+     "confidence": 0.8999744057655334
+    }
+   },
+   {
+    "name": "메밀꽃 영농조합법인",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019"
+     ],
+     "bbox": [
+      28.0,
+      608.0,
+      221.0,
+      618.0
+     ],
+     "confidence": 0.8999744057655334
+    }
+   },
+   {
+    "name": "스이동군",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019",
+      "padd_rgb_1x_020"
+     ],
+     "bbox": [
+      28.0,
+      608.0,
+      296.0,
+      618.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "인내",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019",
+      "padd_rgb_1x_021"
+     ],
+     "bbox": [
+      28.0,
+      606.0,
+      413.0,
+      619.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "055)884-7416",
+    "value": "055-884-7416",
+    "label_raw": "문의",
+    "department": "인내- /",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_021"
+     ],
+     "bbox": [
+      304.0,
+      606.0,
+      413.0,
+      619.0
+     ],
+     "confidence": 0.9336659908294678
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "주좌·주관/※ 하동 북천 코스모스·메밀꽃 영농조합법인 원/스이동군",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019",
+      "padd_rgb_1x_020"
+     ],
+     "bbox": [
+      28.0,
+      608.0,
+      296.0,
+      618.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

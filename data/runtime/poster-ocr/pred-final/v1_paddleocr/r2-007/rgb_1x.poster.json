@@ -1,0 +1,218 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-0bcdc9a92393",
+ "image": {
+  "sha256": "0bcdc9a9239306afb385c08216dceca18a4bf6134c4e2b2d109b4d805a3bd4b6",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:55+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "근대 도시 대전 중구 야행",
+  "official": "근대 도시 대전 중구 야행",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004",
+    "padd_rgb_1x_005",
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    124.0,
+    118.0,
+    307.0,
+    259.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003"
+   ],
+   "bbox": [
+    128.0,
+    90.0,
+    300.0,
+    113.0
+   ],
+   "confidence": 0.9842884540557861
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.11.(금)~13.(일)",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [
+   {
+    "raw": "18:00~22:00",
+    "start": "18:00",
+    "end": "22:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007"
+   ],
+   "bbox": [
+    222.0,
+    213.0,
+    345.0,
+    233.0
+   ],
+   "confidence": 0.9962807297706604
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "중구원도심국가유산일원",
+  "items": [
+   "중구원도심국가유산일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_010"
+   ],
+   "bbox": [
+    149.0,
+    288.0,
+    280.0,
+    302.0
+   ],
+   "confidence": 0.993537187576294
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "대전 중구",
+  "region": "대전",
+  "district": "중구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    125.0,
+    163.0,
+    307.0,
+    211.0
+   ],
+   "confidence": 0.94384765625
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

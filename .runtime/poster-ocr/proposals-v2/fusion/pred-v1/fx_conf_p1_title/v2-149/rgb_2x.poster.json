@@ -1,0 +1,241 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-197eab8b18b4",
+ "image": {
+  "sha256": "197eab8b18b4d825466e0970c514802e63af26614a3db1ea2d54af5c3bcd8fd8",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_title"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_title): title"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "존선 왕를 축천",
+  "official": "존선 왕를 축천",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_001",
+    "padd_rgb_1x_002",
+    "padd_rgb_1x_003"
+   ],
+   "bbox": [
+    294.0,
+    39.0,
+    429.0,
+    268.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    309.0,
+    23.5,
+    415.0,
+    46.0
+   ],
+   "confidence": 0.9961907267570496
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.17.(토)-10.25.(일)",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    17.5,
+    398.5,
+    163.5,
+    415.5
+   ],
+   "confidence": 0.980105459690094
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "궁농유적분부",
+  "items": [
+   "궁농유적분부"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    319.5,
+    602.5,
+    357.5,
+    612.0
+   ],
+   "confidence": 0.8412401080131531
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "국가유진청",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_009"
+     ],
+     "bbox": [
+      320.0,
+      597.0,
+      343.0,
+      604.0
+     ],
+     "confidence": 0.5722613334655762
+    }
+   },
+   {
+    "name": "국까유신진흥원",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_011"
+     ],
+     "bbox": [
+      383.0,
+      601.5,
+      424.0,
+      610.5
+     ],
+     "confidence": 0.70326167345047
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

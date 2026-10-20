@@ -1,0 +1,364 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-6ab5163134fd",
+  "image": {
+    "sha256": "6ab5163134fd719558671b401ce29566e74812f75ec04965a578699709fb2a9d",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:07:05+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목은 '2026 가락 OKTOBER'와 일러스트 아래 'Fest'로 나뉘어 인쇄되어 읽는 순서대로 이어 붙임. 'Fest' 아래 '옥토버페스트'는 한글 별칭으로 variants에 기록.",
+      "일정 줄의 '16시-22시'는 schedule.times로 분리함.",
+      "하단 프로그램 표는 6개 분류 제목만 기록하고, 그 아래 세부 항목(각 2~3줄)은 확대해도 글자를 확정하지 못해 넣지 않음.",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 가락 OKTOBER Fest",
+    "official": "가락 OKTOBER Fest",
+    "variants": [
+      {
+        "kind": "alias",
+        "raw": "옥토버페스트",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10.16(금) - 18(일)",
+    "start": {
+      "iso": "2026-10-16",
+      "year": 2026,
+      "month": 10,
+      "day": 16,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "16시-22시",
+        "start": "16:00",
+        "end": "22:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "가락몰 3층 하늘공원",
+    "items": [
+      "가락몰 3층 하늘공원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "서울시농수산식품공사",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최,주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "가락몰",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최,주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "가락몰 유통인 연합회",
+        "roles": [
+          "corporate_sponsor"
+        ],
+        "role_raw": "협찬",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "축제안내",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "가락 퍼레이드",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "가락 오락관",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "공연",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "가락몰 먹거리",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "추첨 경품",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "키즈존",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "빈티지 일러스트",
+      "레트로 타이포그래피"
+    ],
+    "main_colors": [
+      "주황",
+      "갈색",
+      "베이지",
+      "초록",
+      "노랑"
+    ],
+    "main_objects": [
+      "맥주잔을 든 바이에른 전통 의상 남녀",
+      "소시지·문어·랍스터·통닭 요리",
+      "불꽃",
+      "초승달",
+      "Fest 리본 배너"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "주황 하늘 배경 중앙 아치형 패널에 연도·제목·일정·장소를 두고, 맥주잔을 부딪치는 남녀와 음식 일러스트 아래 Fest 리본과 프로그램 표, 하단 기관 띠를 둔 옥토버페스트 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 프로그램 세부 항목과 하단 기관 로고 글자는 확대해도 일부만 판독됨.",
+      "주최·주관 표기의 구분 기호(쉼표로 보임)와 두 번째 역할 표기('협찬'으로 보임)는 흐려 확실하지 않음.",
+      "우측 상단 QR 옆 '축제안내'는 세로쓰기."
+    ]
+  }
+}

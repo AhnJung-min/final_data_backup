@@ -1,0 +1,199 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-23376a892f69",
+ "image": {
+  "sha256": "23376a892f69be8c10569ffc0c2d3e61b6320d4962eea755c5681ffb43702d03",
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_core"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_core): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "직지문화축제",
+  "official": "직지문화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    69.5,
+    71.0,
+    347.5,
+    133.5
+   ],
+   "confidence": 0.9994204044342041
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    163.5,
+    27.0,
+    252.5,
+    70.5
+   ],
+   "confidence": 0.9995506405830383
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.4.금-9.6.일",
+  "start": {
+   "iso": "2026-09-04",
+   "year": 2026,
+   "month": 9,
+   "day": 4,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-06",
+   "year": 2026,
+   "month": 9,
+   "day": 6,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    80.0,
+    534.0,
+    330.0,
+    565.0
+   ],
+   "confidence": 0.9570474624633789
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "청주고인쇄박물관,청주예술의전당 일원",
+  "items": [
+   "청주고인쇄박물관",
+   "청주예술의전당 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    109.0,
+    569.5,
+    310.0,
+    587.0
+   ],
+   "confidence": 0.9722824096679688
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

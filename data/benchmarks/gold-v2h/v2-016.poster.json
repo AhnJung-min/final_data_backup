@@ -1,0 +1,283 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-667043efc7c8",
+  "image": {
+    "sha256": "667043efc7c80f86a4e52b6b395ce6be7118b0016153b0c77eda98b6a1df5f2c",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:02+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목 위 '2026 창작 실경뮤지컬'은 연도와 장르 표기로 보고 title.raw에서 제외하고, 큰 제목 '화적연'과 부제 '천년의 약속'을 제목으로 기록함.",
+      "포스터 전체가 한 공연이어서 출연 배우를 기록하기 위해 같은 이름의 프로그램 1건에 장르를 category_raw로 둠.",
+      "'총2회 공연'은 operating_raw, '전석 무료관람'은 admission(free=true)로 기록함. 상단 로고는 역할 표기가 없어 roles를 비움.",
+      "'포천'은 행정구역 접미사 없이, '관인면'은 읍·면이라 admin_area는 absent.",
+      "검토(pass2): 변경 없음",
+      "사람 검토(안정민, 2026-10-19T15:34:19+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "화적연 천년의 약속",
+    "official": "화적연 천년의 약속",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "대한민국 대표 뮤지컬 배우 홍지민과 함께하는 수도권 유일의 실경 뮤지컬!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 9. 4.(금) - 5.(토)",
+    "start": {
+      "iso": "2026-09-04",
+      "year": 2026,
+      "month": 9,
+      "day": 4,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-09-05",
+      "year": 2026,
+      "month": 9,
+      "day": 5,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "19:30",
+        "start": "19:30",
+        "end": null,
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": "총2회 공연",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "대한민국 명승 포천 화적연 특설무대(관인면 사정리 66)",
+    "items": [
+      "대한민국 명승 포천 화적연 특설무대(관인면 사정리 66)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "present",
+    "raw": "관인면 사정리 66",
+    "kind": "jibun",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "경기도",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "포천시",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "포천문화관광재단",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "illegible",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "화적연 천년의 약속",
+        "category_raw": "창작 실경뮤지컬",
+        "period": null,
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "홍지민",
+            "role_raw": "대한민국 대표 뮤지컬 배우"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "present",
+    "raw": "전석 무료관람",
+    "free": true,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "기하학 패턴 일러스트",
+      "인물 사진 합성",
+      "붓글씨 제목"
+    ],
+    "main_colors": [
+      "연분홍",
+      "남색",
+      "주황",
+      "빨강",
+      "베이지"
+    ],
+    "main_objects": [
+      "기하학 패턴의 용",
+      "주상절리 모양 바위",
+      "원형 산 그래픽",
+      "주연 배우 인물 사진"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "연분홍 배경 상단에 남색 붓글씨 제목과 부제, 무료관람·일정·장소·문의를 두고 오른쪽에 기하학 패턴의 용, 하단에 주연 배우 사진과 홍보 문구를 배치한 뮤지컬 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. '문의' 줄(기관·부서명과 전화번호)은 확대해도 숫자를 판독하지 못해 contacts=illegible.",
+      "우측 상단 재단 로고 글자와 영문 소문구는 일부만 판독됨."
+    ]
+  }
+}

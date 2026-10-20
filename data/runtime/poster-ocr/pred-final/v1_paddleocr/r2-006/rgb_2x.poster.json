@@ -1,0 +1,279 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-58d0676c794b",
+ "image": {
+  "sha256": "58d0676c794b6046fa330890a3d924d0fa75d833b4e5e0d8442f0aaff6f25286",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:55+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "야행",
+  "official": "야행",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    154.0,
+    197.5,
+    334.0,
+    308.5
+   ],
+   "confidence": 0.94162517786026
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    130.5,
+    333.0,
+    305.5,
+    354.5
+   ],
+   "confidence": 0.9819755554199219
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026:9.11(금)17:00-21:00 2026.9.12(토)13:00- 21:00",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-12",
+   "year": 2026,
+   "month": 9,
+   "day": 12,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "times": [
+   {
+    "raw": "17:00-21:00",
+    "start": "17:00",
+    "end": "21:00",
+    "applies_to": null
+   },
+   {
+    "raw": "13:00- 21:00",
+    "start": "13:00",
+    "end": "21:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    130.5,
+    333.0,
+    305.5,
+    376.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "효창공원 일대",
+  "items": [
+   "효창공원 일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    184.5,
+    387.0,
+    256.5,
+    403.0
+   ],
+   "confidence": 0.9895524382591248
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "용산구청",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_012",
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      21.0,
+      603.5,
+      106.5,
+      616.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "에스에이치네스크",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_014",
+      "padd_rgb_2x_015"
+     ],
+     "bbox": [
+      117.5,
+      603.5,
+      233.5,
+      615.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "02-458-3315",
+    "value": "02-458-3315",
+    "label_raw": "문의",
+    "department": "운영사무국",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_016"
+     ],
+     "bbox": [
+      320.0,
+      605.5,
+      428.0,
+      615.5
+     ],
+     "confidence": 0.9661661982536316
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

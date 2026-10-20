@@ -1,0 +1,380 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-330af1d271ea",
+  "image": {
+    "sha256": "330af1d271eabe45427233ed03d63e390b1490d1bda5b2938983f9ebc99df4f5",
+    "width": 940,
+    "height": 1175
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-14T14:20:43+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": null,
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 도구가 TourAPI detailImage2 원본(content_id 4001390)을 직접 보고 기록한 예시. OCR 엔진을 실행하지 않음.",
+      "QR 값과 위치는 OpenCV QRCodeDetector로 4배 확대해 실제로 해독한 결과. 다른 항목에는 좌표를 만들지 않음.",
+      "프로그램 문구 끝의 '등'은 목록에 넣지 않음. 사람 검토 전 관찰값이며 학습·평가 정답이 아님."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제1회 단양 겨울놀이 축제",
+    "official": "단양 겨울놀이 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제1회",
+    "number": 1,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "그리운 그시절 그놀이",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 1. 23.(금) ~ 25.(일) 3일간",
+    "start": {
+      "iso": "2026-01-23",
+      "year": 2026,
+      "month": 1,
+      "day": 23,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-01-25",
+      "year": 2026,
+      "month": 1,
+      "day": 25,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": "3일간",
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "단양군 대강면 죽령천 인근(대강오토캠핑장)",
+    "items": [
+      "단양군 대강면 죽령천 인근(대강오토캠핑장)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "단양군 대강면 죽령천 인근(대강오토캠핑장)",
+    "region": null,
+    "district": "단양군",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "단양겨울놀이축제 추진위원회",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "단양관광공사",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "단양군",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "단양관광공사 마케팅팀 043-421-7883",
+        "value": "043-421-7883",
+        "label_raw": "문의",
+        "department": "단양관광공사 마케팅팀",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "행사안내",
+        "purpose": "event_info",
+        "decode_status": "decoded",
+        "decoded_url": "https://m.site.naver.com/1XWfS",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": [
+            830,
+            36,
+            904,
+            104
+          ],
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "얼음 위 민속놀이",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "소망기원 낙화놀이",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "체험공방",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "불멍존",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "겨울간식 체험",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "먹거리장터",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "민화풍 일러스트",
+      "한지 질감 배경"
+    ],
+    "main_colors": [
+      "베이지",
+      "갈색",
+      "남색",
+      "흰색",
+      "빨강",
+      "노랑"
+    ],
+    "main_objects": [
+      "한복 차림으로 겨울 놀이를 하는 아이들",
+      "썰매",
+      "연",
+      "까치",
+      "눈 덮인 산"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "한지 질감 배경 위에 갈색 굵은 제목과 일정·장소·프로그램을 두고, 하단에 얼음 위에서 전통 놀이를 하는 아이들을 그린 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "상세 이미지 중 해상도가 높은 940×1175 포스터로 하단 주최·주관·후원·문의 글자까지 판독됨."
+    ]
+  }
+}

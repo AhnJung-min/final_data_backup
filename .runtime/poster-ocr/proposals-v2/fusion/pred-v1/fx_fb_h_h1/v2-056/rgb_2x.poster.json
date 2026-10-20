@@ -1,0 +1,302 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-e97e53a56e34",
+ "image": {
+  "sha256": "e97e53a56e34aba54bd8619ef8e2d1125c5d16c38c82e2707f6846168e8c2fd4",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:50+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:fb_h_h1"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(fb_h_h1): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "광명시 축제 핵",
+  "official": "광명시 축제 핵",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008",
+    "padd_rgb_2x_012",
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    24.5,
+    83.0,
+    248.0,
+    289.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    34.5,
+    38.0,
+    139.5,
+    78.0
+   ],
+   "confidence": 0.9995429515838623
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.19.",
+  "start": {
+   "iso": "2026-09-19",
+   "year": 2026,
+   "month": 9,
+   "day": 19,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "10:00-17:00",
+    "start": "10:00",
+    "end": "17:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    294.5,
+    53.0,
+    399.0,
+    72.0
+   ],
+   "confidence": 0.9979972839355469
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "광명시민체육관",
+  "items": [
+   "광명시민체육관"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    322.0,
+    102.0,
+    424.5,
+    119.0
+   ],
+   "confidence": 0.9998260140419006
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "광명시",
+  "region": null,
+  "district": "광명시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    31.5,
+    83.0,
+    196.0,
+    144.0
+   ],
+   "confidence": 0.9999081492424011
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "광명시도서관정책과",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_019"
+     ],
+     "bbox": [
+      26.0,
+      611.5,
+      212.5,
+      621.5
+     ],
+     "confidence": 0.9770511388778687
+    }
+   },
+   {
+    "name": "형력: 광명시도서관",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_019",
+      "padd_rgb_2x_020"
+     ],
+     "bbox": [
+      26.0,
+      611.5,
+      416.0,
+      622.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "경기도광명교육지원청",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_019",
+      "padd_rgb_2x_020"
+     ],
+     "bbox": [
+      26.0,
+      611.5,
+      416.0,
+      622.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "02-2680-5442",
+    "value": "02-2680-5442",
+    "label_raw": null,
+    "department": "주최 광명시도서관정책과",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_019"
+     ],
+     "bbox": [
+      26.0,
+      611.5,
+      212.5,
+      621.5
+     ],
+     "confidence": 0.9770511388778687
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

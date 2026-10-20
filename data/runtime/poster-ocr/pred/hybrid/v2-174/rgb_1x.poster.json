@@ -1,0 +1,222 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-98482c010784",
+ "image": {
+  "sha256": "98482c010784d39fb86c01c13972d2b96cdf0e9a1ac91d4a26976674d6514d31",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:55:00+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "전주 막2",
+  "official": "전주 막2",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_002",
+    "easy_rgb_1x_004"
+   ],
+   "bbox": [
+    110.0,
+    134.0,
+    338.0,
+    316.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_001"
+   ],
+   "bbox": [
+    196.0,
+    118.0,
+    266.0,
+    146.0
+   ],
+   "confidence": 0.9973759651184082
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": ".10.23.(금)~10.24.(토)",
+  "start": {
+   "iso": "2026-10-23",
+   "year": 2026,
+   "month": 10,
+   "day": 23,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-24",
+   "year": 2026,
+   "month": 10,
+   "day": 24,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_006"
+   ],
+   "bbox": [
+    160.0,
+    324.0,
+    328.0,
+    350.0
+   ],
+   "confidence": 0.8580772280693054
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "전주비전대학교 대운동장",
+  "items": [
+   "전주비전대학교 대운동장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_007"
+   ],
+   "bbox": [
+    152.0,
+    352.0,
+    306.0,
+    376.0
+   ],
+   "confidence": 0.9887488280449195
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "전주시 완신구 천장로 235",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_008"
+   ],
+   "bbox": [
+    183.0,
+    373.0,
+    273.0,
+    387.0
+   ],
+   "confidence": 0.9403432011604309
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "(전주시 완신구 천장로 235)",
+  "region": null,
+  "district": "전주시 완신구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_008"
+   ],
+   "bbox": [
+    183.0,
+    373.0,
+    273.0,
+    387.0
+   ],
+   "confidence": 0.9403432011604309
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

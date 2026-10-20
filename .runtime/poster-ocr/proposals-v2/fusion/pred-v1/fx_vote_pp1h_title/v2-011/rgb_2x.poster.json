@@ -1,0 +1,191 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-ada1fe85fde9",
+ "image": {
+  "sha256": "ada1fe85fde94404f06da955fb915e643f030f70aee2c128b1aa3b6084e1ceec",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote_pp1h_title"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote_pp1h_title): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "경예복… 궁",
+  "official": "경예복... 궁",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    15.5,
+    8.5,
+    432.0,
+    96.0
+   ],
+   "confidence": 0.7744486927986145
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    96.5,
+    554.0,
+    349.5,
+    578.0
+   ],
+   "confidence": 0.9576034545898438
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026. 09.02. WED → 10. 24. SAT",
+  "start": {
+   "iso": "2026-09-02",
+   "year": 2026,
+   "month": 9,
+   "day": 2,
+   "weekday": "wed",
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    96.5,
+    554.0,
+    349.5,
+    578.0
+   ],
+   "confidence": 0.9576034545898438
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "궁증유시콘랜드",
+  "items": [
+   "궁증유시콘랜드"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    195.0,
+    586.0,
+    249.0,
+    600.0
+   ],
+   "confidence": 0.523120105266571
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

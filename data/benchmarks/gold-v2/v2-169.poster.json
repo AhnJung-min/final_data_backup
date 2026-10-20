@@ -1,0 +1,309 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-e8cd6bd226e0",
+  "image": {
+    "sha256": "e8cd6bd226e0c0be35787de982feb68dbd60f1bd2f1cb6e3b7cc740b4dd29eaa",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:09:55+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "세로쓰기 '제5회 연천율무축제 농특산물 큰장터'를 제목 원문으로, 가운데 크게 쓴 '율무 농민의 장터'(갈색 율·무·장, 녹색 농·민·터)는 title.variants(brand)로 기록.",
+      "연도 '2026.'은 일정 바로 위 별도 줄에 인쇄되어 일정 문구의 일부로 보고 year_basis=date_text.",
+      "우측 하단 '연천국화축제 10.16.~10.25. 함께해요'는 함께 열리는 행사 안내로 programs에 period와 함께 기록.",
+      "'연천'은 시·군 접미사 없이 인쇄되어 admin_area는 absent(연천군은 로고에만 있음).",
+      "검토(pass2): 원본·확대 이미지와 전 항목 대조, 변경 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제5회 연천율무축제 농특산물 큰장터",
+    "official": "연천율무축제 농특산물 큰장터",
+    "variants": [
+      {
+        "kind": "brand",
+        "raw": "율무 농민의 장터",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제5회",
+    "number": 5,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "청정 연천율무, 건강한 내일을 담다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10.23.금 ~ 10.25.일",
+    "start": {
+      "iso": "2026-10-23",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-25",
+      "year": 2026,
+      "month": 10,
+      "day": 25,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "연천전곡리 유적 일원",
+    "items": [
+      "연천전곡리 유적 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "연천군",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "연천한우 특별판매",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "연천국화축제",
+        "category_raw": null,
+        "period": {
+          "raw": "10.16. ~ 10.25.",
+          "start": {
+            "iso": "2026-10-16",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "end": {
+            "iso": "2026-10-25",
+            "year": 2026,
+            "month": 10,
+            "day": 25,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "남토북수",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand_campaign",
+        "raw": "다함께 미래로 Yes.연천!",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "굵은 타이포그래피",
+      "항공사진 합성",
+      "캐릭터 일러스트"
+    ],
+    "main_colors": [
+      "흰색",
+      "갈색",
+      "연두",
+      "분홍",
+      "노랑",
+      "하늘색",
+      "초록"
+    ],
+    "main_objects": [
+      "율무 알갱이 모양 글자",
+      "농부 캐릭터",
+      "축제장 항공사진",
+      "국화 꽃",
+      "한우 고기 접시"
+    ],
+    "has_character": true,
+    "has_photo": true,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "흰 배경 위 가운데 갈색·연두 큰 글자 '율무 농민의 장터'와 양옆 세로쓰기 제목·슬로건을 두고, 아래에 분홍 일정·장소, 축제장 항공사진, 좌우 원형 안내(연천한우 특별판매, 연천국화축제)와 연천군 로고를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 남토북수 로고 아래 작은 글자와 '함께해요' 아래 문구, 우측 상단 마크 끝 작은 글자는 판독 불가.",
+      "연천국화축제 이름은 작은 흰 글자라 사람 확인 권장."
+    ]
+  }
+}

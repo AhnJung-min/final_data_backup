@@ -1,0 +1,309 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-2eb99ed0da62",
+ "image": {
+  "sha256": "2eb99ed0da623d018bb9e9c260737f21a317609ecf8e2b9ceca788eac94f6590",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_title+pf_edition_p1+pf_orgs_p1+fb_p1"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_title+pf_edition_p1+pf_orgs_p1+fb_p1): organizations, title"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "32동래읍성역사축리",
+  "official": "32동래읍성역사축리",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_002"
+   ],
+   "bbox": [
+    34.0,
+    105.0,
+    412.0,
+    173.0
+   ],
+   "confidence": 0.8086540102958679
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    15.5,
+    583.0,
+    389.5,
+    595.0
+   ],
+   "confidence": 0.9399679899215698
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.16.(금)~10.18.(일)|동래문화회관1몽래읍성지 북문광장1명론1번가1온천장 일원",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    15.5,
+    583.0,
+    389.5,
+    595.0
+   ],
+   "confidence": 0.9399679899215698
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "동래문화회관1몽래읍성지 북문광장1명론1번가1온천장 일원 부스망이시통래구 주진/ 동허읍성역사축개주진위원회,동리문화원 조원1 부신끝역시",
+  "items": [
+   "동래문화회관1몽래읍성지 북문광장1명론1번가1온천장 일원 부스망이시통래구 주진/ 동허읍성역사축개주진위원회",
+   "동리문화원 조원1 부신끝역시"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003",
+    "padd_rgb_2x_005",
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    15.5,
+    583.0,
+    389.5,
+    610.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "부스망이시통래구 주진/ 동허읍성역사축개주진위원회,동리문화원 조원1 부신끝역시",
+  "region": null,
+  "district": "부신끝역시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005",
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    56.0,
+    599.5,
+    291.5,
+    610.0
+   ],
+   "confidence": null
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "부선애시동래구 주진",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_004",
+      "padd_rgb_1x_005"
+     ],
+     "bbox": [
+      22.0,
+      600.0,
+      295.0,
+      610.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "동러읍성력사축계주진위원회",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_004",
+      "padd_rgb_1x_005"
+     ],
+     "bbox": [
+      22.0,
+      600.0,
+      295.0,
+      610.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "동레문화원 원",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_004",
+      "padd_rgb_1x_005"
+     ],
+     "bbox": [
+      22.0,
+      600.0,
+      295.0,
+      610.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "무신광역시",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_004",
+      "padd_rgb_1x_005"
+     ],
+     "bbox": [
+      22.0,
+      600.0,
+      295.0,
+      610.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

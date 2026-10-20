@@ -1,0 +1,116 @@
+{
+ "case_id": "v2-003",
+ "engine": "easyocr+paddleocr",
+ "variant": "rgb_2x",
+ "scale": 2,
+ "normalized_dimensions": [
+  520,
+  627
+ ],
+ "input_dimensions": [
+  1040,
+  1254
+ ],
+ "input_sha256": "3c8b2269d0a18eff9ee022714f79a78ad18a0d3c1d037a730b77f3af92c396a1",
+ "coordinate_space": "normalized_original_pixels",
+ "status": "success",
+ "records": [
+  {
+   "id": "easy_rgb_2x_000",
+   "text": "NAORA SHOw 2026",
+   "confidence": 0.7473225186893251,
+   "bbox_xyxy": [
+    161.5,
+    90.5,
+    351.5,
+    112.5
+   ],
+   "polygon": [
+    [
+     161.5,
+     90.5
+    ],
+    [
+     351.5,
+     90.5
+    ],
+    [
+     351.5,
+     112.5
+    ],
+    [
+     161.5,
+     112.5
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_2x_001",
+   "text": "WONJU NEXT",
+   "confidence": 0.8594487923287745,
+   "bbox_xyxy": [
+    116.0,
+    119.0,
+    401.0,
+    167.5
+   ],
+   "polygon": [
+    [
+     116.0,
+     119.0
+    ],
+    [
+     401.0,
+     119.0
+    ],
+    [
+     401.0,
+     167.5
+    ],
+    [
+     116.0,
+     167.5
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_2x_002",
+   "text": "FUTURE OF LIGHT",
+   "confidence": 0.9663601731394245,
+   "bbox_xyxy": [
+    164.0,
+    172.5,
+    345.0,
+    195.0
+   ],
+   "polygon": [
+    [
+     164.0,
+     172.5
+    ],
+    [
+     345.0,
+     172.5
+    ],
+    [
+     345.0,
+     195.0
+    ],
+    [
+     164.0,
+     195.0
+    ]
+   ]
+  }
+ ],
+ "inference_seconds": 13.046,
+ "memory": {
+  "rss_bytes": 1870966784,
+  "peak_bytes": 1921593344
+ },
+ "pipeline": "paddle_regions_v1",
+ "missing_core_fields": true,
+ "refinements": [],
+ "easyocr_inference_seconds": 13.046,
+ "paddle_rec_seconds": 0.0
+}

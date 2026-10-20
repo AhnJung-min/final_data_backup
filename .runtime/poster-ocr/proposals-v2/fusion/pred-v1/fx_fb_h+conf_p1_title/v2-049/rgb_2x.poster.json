@@ -1,0 +1,270 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-c2358d2fbc24",
+ "image": {
+  "sha256": "c2358d2fbc247b503940284ec127a7076e4bf6bd79b1d85e64befb0849f849a4",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:fb_h+conf_p1_title"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(fb_h+conf_p1_title): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "안산 대부포도 축제",
+  "official": "안산 대부포도 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011",
+    "padd_rgb_2x_012",
+    "padd_rgb_2x_013"
+   ],
+   "bbox": [
+    26.5,
+    362.0,
+    159.0,
+    484.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    25.0,
+    57.5,
+    131.0,
+    149.5
+   ],
+   "confidence": 0.9962677955627441
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.19.(토) 9.20.(일)2일간",
+  "start": {
+   "iso": "2026-09-19",
+   "year": 2026,
+   "month": 9,
+   "day": 19,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-20",
+   "year": 2026,
+   "month": 9,
+   "day": 20,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": "2일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_017",
+    "padd_rgb_2x_021"
+   ],
+   "bbox": [
+    27.0,
+    510.0,
+    135.5,
+    592.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "대부바다향기테마파크",
+  "items": [
+   "대부바다향기테마파크"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_024"
+   ],
+   "bbox": [
+    30.5,
+    589.5,
+    130.5,
+    603.5
+   ],
+   "confidence": 0.9737142324447632
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "(사대부도포도개위원회",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_025"
+     ],
+     "bbox": [
+      176.0,
+      595.0,
+      289.0,
+      605.5
+     ],
+     "confidence": 0.7600385546684265
+    }
+   },
+   {
+    "name": "후적",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_025",
+      "padd_rgb_2x_026"
+     ],
+     "bbox": [
+      176.0,
+      595.0,
+      312.5,
+      605.5
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "안산시",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_025",
+      "padd_rgb_2x_027"
+     ],
+     "bbox": [
+      176.0,
+      594.5,
+      359.5,
+      607.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

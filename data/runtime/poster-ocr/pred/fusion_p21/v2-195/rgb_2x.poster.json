@@ -1,0 +1,198 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-780e11893a51",
+ "image": {
+  "sha256": "780e11893a51d1fb6664bf803ec8fcd0014c531a4c88d3651f3b63f9b3c47e9b",
+  "width": 442,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:38+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr/rgb_2x+paddleocr/rgb_1x(paddle2x1x)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(paddle2x1x): 제목은 근거 판독 신뢰도가 높은 전처리, 회차·기관은 rgb_1x, 나머지 빈 슬롯은 rgb_1x로 채움. rgb_1x에서 가져온 슬롯: title, organizations."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "구라출",
+  "official": "구라출",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    124.0,
+    162.0,
+    226.0,
+    462.0
+   ],
+   "confidence": 0.6938726305961609
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    167.5,
+    124.5,
+    279.5,
+    175.0
+   ],
+   "confidence": 0.9980621933937073
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.11.6(금)~8(일)",
+  "start": {
+   "iso": "2026-11-06",
+   "year": 2026,
+   "month": 11,
+   "day": 6,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-08",
+   "year": 2026,
+   "month": 11,
+   "day": 8,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    133.0,
+    476.0,
+    307.5,
+    508.5
+   ],
+   "confidence": 0.953201413154602
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "구미역일원",
+  "items": [
+   "구미역일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    158.0,
+    504.5,
+    269.0,
+    542.5
+   ],
+   "confidence": 0.9968849420547485
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

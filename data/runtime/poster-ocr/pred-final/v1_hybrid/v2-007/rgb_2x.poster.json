@@ -1,0 +1,210 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-c2e43f7bd652",
+ "image": {
+  "sha256": "c2e43f7bd652bb10ba09fef31c9ee09f73fe823aeb7ffe015b5cc119d6c24a1d",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:12:05+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "무안황도 것벌축제",
+  "official": "무안황도 것벌축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_002",
+    "easy_rgb_2x_004"
+   ],
+   "bbox": [
+    33.0,
+    42.0,
+    403.0,
+    277.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제12회",
+  "number": 12,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_000"
+   ],
+   "bbox": [
+    168.5,
+    14.5,
+    273.0,
+    50.5
+   ],
+   "confidence": 0.8060523271560669
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_006"
+   ],
+   "bbox": [
+    76.0,
+    303.0,
+    368.0,
+    327.0
+   ],
+   "confidence": 0.9460444450378418
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.8.29.(토)~9.6.(일)주말집중운영",
+  "start": {
+   "iso": "2026-08-29",
+   "year": 2026,
+   "month": 8,
+   "day": 29,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-06",
+   "year": 2026,
+   "month": 9,
+   "day": 6,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_006"
+   ],
+   "bbox": [
+    76.0,
+    303.0,
+    368.0,
+    327.0
+   ],
+   "confidence": 0.9460444450378418
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "무안황도것벌랜드일원",
+  "items": [
+   "무안황도것벌랜드일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_007"
+   ],
+   "bbox": [
+    132.5,
+    325.5,
+    310.0,
+    351.0
+   ],
+   "confidence": 0.7949075698852539
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

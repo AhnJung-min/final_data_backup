@@ -1,0 +1,291 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-dcfb2b128f7f",
+ "image": {
+  "sha256": "dcfb2b128f7f1955445bf98c24602c3aed4b30c0e6018c07c374ad77b3e0b5e3",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr/rgb_2x+paddleocr/rgb_1x(paddle2x1x)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(paddle2x1x): 제목은 근거 판독 신뢰도가 높은 전처리, 회차·기관은 rgb_1x, 나머지 빈 슬롯은 rgb_1x로 채움. rgb_1x에서 가져온 슬롯: title, edition, organizations, badges."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "문화관광축제",
+  "official": "문화관광축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    353.0,
+    36.0,
+    398.0,
+    50.0
+   ],
+   "confidence": 0.9283496737480164
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제21회",
+  "number": 21,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    100.0,
+    86.0,
+    346.0,
+    116.0
+   ],
+   "confidence": 0.8125152587890625
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    55.5,
+    552.5,
+    281.0,
+    580.0
+   ],
+   "confidence": 0.9352666735649109
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.15s~ 10.18.",
+  "start": {
+   "iso": "2026-10-15",
+   "year": 2026,
+   "month": 10,
+   "day": 15,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": "4일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    55.5,
+    552.5,
+    281.0,
+    580.0
+   ],
+   "confidence": 0.9352666735649109
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "순창전동고추장민속마을, 순창발효테마파크 일원",
+  "items": [
+   "순창전동고추장민속마을",
+   "순창발효테마파크 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012",
+    "padd_rgb_2x_013"
+   ],
+   "bbox": [
+    296.5,
+    555.5,
+    393.0,
+    577.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "순창군 순침장류축제추진위원회",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_018"
+     ],
+     "bbox": [
+      60.0,
+      603.0,
+      173.0,
+      616.0
+     ],
+     "confidence": 0.8554991483688354
+    }
+   },
+   {
+    "name": "한국민공사",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_020"
+     ],
+     "bbox": [
+      330.0,
+      603.0,
+      369.0,
+      613.0
+     ],
+     "confidence": 0.7032273411750793
+    }
+   },
+   {
+    "name": "문화처육관광부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019"
+     ],
+     "bbox": [
+      193.0,
+      604.0,
+      247.0,
+      614.0
+     ],
+     "confidence": 0.9438672661781311
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "festival_designation",
+    "raw": "문화관광축제",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_006"
+     ],
+     "bbox": [
+      353.0,
+      36.0,
+      398.0,
+      50.0
+     ],
+     "confidence": 0.9283496737480164
+    }
+   }
+  ]
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

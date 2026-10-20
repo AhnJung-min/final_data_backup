@@ -1,0 +1,223 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-672b3f901a2f",
+ "image": {
+  "sha256": "672b3f901a2f4fe09d41d191b63654b132b0f2097e3ad73850d35e90aada7feb",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:38+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_title+pf_edition_p1+pf_orgs_p1+fb_p1+vote_pp1h_sched"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_title+pf_edition_p1+pf_orgs_p1+fb_p1+vote_pp1h_sched): organizations"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "감기없는 대한민국이",
+  "official": "감기없는 대한민국이",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000",
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    50.5,
+    23.5,
+    395.5,
+    218.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    255.5,
+    555.0,
+    424.0,
+    573.5
+   ],
+   "confidence": 0.992787778377533
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.11.12.목-15.일",
+  "start": {
+   "iso": "2026-11-12",
+   "year": 2026,
+   "month": 11,
+   "day": 12,
+   "weekday": "thu",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-15",
+   "year": 2026,
+   "month": 11,
+   "day": 15,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    255.5,
+    555.0,
+    424.0,
+    573.5
+   ],
+   "confidence": 0.992787778377533
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "전남광주통합록법시 고홀군 풍영면 한동리 7",
+  "items": [
+   "전남광주통합록법시 고홀군 풍영면 한동리 7"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    255.5,
+    576.5,
+    428.0,
+    586.5
+   ],
+   "confidence": 0.8827233910560608
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "전남광주통합록법시 고홀군 풍영면 한동리 701-7번지",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    255.5,
+    576.5,
+    428.0,
+    586.5
+   ],
+   "confidence": 0.8827233910560608
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "전남광주통합록법시 고홀군 풍영면 한동리 701-7번지 일원",
+  "region": "전남",
+  "district": "고홀군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    255.5,
+    576.5,
+    428.0,
+    586.5
+   ],
+   "confidence": 0.8827233910560608
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

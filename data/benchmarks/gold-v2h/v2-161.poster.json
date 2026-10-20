@@ -1,0 +1,401 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-4edb7db4eb90",
+  "image": {
+    "sha256": "4edb7db4eb90254169159bd0dfd7aa59afe75db4dd01359629128e17b38dc5b5",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:09:50+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목 왼쪽 아래 '2026' 표기는 제목 글자 블록과 떨어진 별도 배지라 title.raw에 넣지 않고 year로만 기록.",
+      "축제 프로그램 표는 구역명(미래체험광장 등)을 category_raw로, 각 줄의 체험·공연을 programs로 기록.",
+      "사이언스파크 칸 둘째 항목(…파일럿 경진대회)은 첫 글자가 메/페 중 무엇인지 확대해도 확정되지 않아 programs에서 제외.",
+      "검토(pass2): 원본·확대 이미지와 전 항목 대조, 변경 없음.",
+      "사람 검토(안정민, 2026-10-19T16:20:42+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "영등포구 미래인재 과학 축제",
+    "official": "영등포구 미래인재 과학 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "Science on YDP - Your Dream Playground",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "과학을 플레이하다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.17.(토)",
+    "start": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "10:00-17:00",
+        "start": "10:00",
+        "end": "17:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "영등포공원",
+    "items": [
+      "영등포공원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "영등포구",
+    "region": null,
+    "district": "영등포구",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "영등포구 미래교육재단",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "VR시뮬레이터",
+        "category_raw": "미래체험광장",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "AI포토부스",
+        "category_raw": "미래체험광장",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "휴머노이드 로봇",
+        "category_raw": "미래체험광장",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "생활 과학 체험부스",
+        "category_raw": "과학탐험 연구소",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "AI, AR 등 미래 과학 기술 체험부스",
+        "category_raw": "과학탐험 연구소",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "사이언스 피크닉",
+        "category_raw": "사이언스파크",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "과학 매직 콘서트",
+        "category_raw": "상상창의 무대",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "휴머노이드 로봇 퍼포먼스",
+        "category_raw": "상상창의 무대",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "스탬프 투어 이벤트",
+        "category_raw": "사이언스 플레이",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "포토존",
+        "category_raw": "사이언스 플레이",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "illegible",
+    "raw": null,
+    "total_krw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "천하제일 영등포",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "팝 컬러 일러스트",
+      "블록형 장난감 레터링"
+    ],
+    "main_colors": [
+      "파랑",
+      "분홍",
+      "노랑",
+      "주황",
+      "하늘색",
+      "흰색"
+    ],
+    "main_objects": [
+      "눈 달린 제목 글자 캐릭터",
+      "로봇 팔",
+      "망원경",
+      "로봇 머리"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "파란 배경에 장난감 부품처럼 꾸민 알록달록한 '미래인재 과학 축제' 글자를 크게 두고, 오른쪽 아래 일정·시간·장소, 하단에 구역별 축제 프로그램 표를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 최하단 예산 표기 한 줄은 확대해도 금액·문구를 판독할 수 없어 budget_disclosure=illegible.",
+      "우측 상단 영등포구 미래교육재단 로고 글자는 작아 일부만 또렷함."
+    ]
+  }
+}

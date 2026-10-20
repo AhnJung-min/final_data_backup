@@ -1,0 +1,235 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-6a3e14529e55",
+ "image": {
+  "sha256": "6a3e14529e5511fea98d599cddd0dfdda08d4a08d34b9d2e3aeaa70c8b65254b",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+hybrid(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 admin_area을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "정정제 산축",
+  "official": "정정제 산축",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_002",
+    "padd_rgb_1x_003"
+   ],
+   "bbox": [
+    157.0,
+    107.0,
+    289.0,
+    302.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000"
+   ],
+   "bbox": [
+    166.0,
+    74.0,
+    278.0,
+    113.0
+   ],
+   "confidence": 0.9997991323471069
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.16.금~10.18.일",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    18.0,
+    541.0,
+    175.0,
+    560.0
+   ],
+   "confidence": 0.98421710729599
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "금정신 국립공원,금정신성,금정신성령장 일원",
+  "items": [
+   "금정신 국립공원",
+   "금정신성",
+   "금정신성령장 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    18.0,
+    564.0,
+    235.0,
+    578.0
+   ],
+   "confidence": 0.9239987134933472
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "스금정구 금정구수체위원회",
+  "region": null,
+  "district": "스금정구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_004",
+    "easy_rgb_1x_005"
+   ],
+   "bbox": [
+    18.0,
+    595.0,
+    115.0,
+    607.0
+   ],
+   "confidence": null
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "금정구축제위원회",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_007"
+     ],
+     "bbox": [
+      60.0,
+      594.0,
+      114.0,
+      603.0
+     ],
+     "confidence": 0.7295025587081909
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

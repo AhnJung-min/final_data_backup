@@ -1,0 +1,289 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-dcad53d98917",
+ "image": {
+  "sha256": "dcad53d9891761334ade46fcce1ddef268151702712d71ddfe3c4a8a1d959496",
+  "width": 467,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_title+fb_p1_h"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_title+fb_p1_h): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "쇠소깍축제",
+  "official": "쇠소깍축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    28.0,
+    58.0,
+    305.0,
+    141.0
+   ],
+   "confidence": 0.9931729435920715
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "absent",
+  "raw": null,
+  "value": null,
+  "evidence": null
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "26.9.19(토)-9.20(g)",
+  "start": {
+   "iso": null,
+   "year": null,
+   "month": 9,
+   "day": 19,
+   "weekday": "sat",
+   "year_basis": "absent"
+  },
+  "end": {
+   "iso": null,
+   "year": null,
+   "month": 9,
+   "day": 20,
+   "weekday": null,
+   "year_basis": "absent"
+  },
+  "times": [
+   {
+    "raw": "10:00~13:00",
+    "start": "10:00",
+    "end": "13:00",
+    "applies_to": null
+   },
+   {
+    "raw": "10:00~13:00",
+    "start": "10:00",
+    "end": "13:00",
+    "applies_to": null
+   },
+   {
+    "raw": "13:00~13:30",
+    "start": "13:00",
+    "end": "13:30",
+    "applies_to": null
+   },
+   {
+    "raw": "1:00~13:00",
+    "start": "01:00",
+    "end": "13:00",
+    "applies_to": null
+   },
+   {
+    "raw": "13:30-17:30",
+    "start": "13:30",
+    "end": "17:30",
+    "applies_to": null
+   },
+   {
+    "raw": "13:00~13:30",
+    "start": "13:00",
+    "end": "13:30",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    191.0,
+    29.5,
+    303.0,
+    45.0
+   ],
+   "confidence": 0.9340795874595642
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "하효항 및 쇠소깍일원",
+  "items": [
+   "하효항",
+   "쇠소깍일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    191.0,
+    44.0,
+    297.5,
+    61.5
+   ],
+   "confidence": 0.922839879989624
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "효돈동연산절년회",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최-주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_047"
+     ],
+     "bbox": [
+      20.0,
+      608.0,
+      114.0,
+      616.5
+     ],
+     "confidence": 0.8515729308128357
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "010-4614-4281",
+    "value": "010-4614-4281",
+    "label_raw": null,
+    "department": null,
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_043"
+     ],
+     "bbox": [
+      64.5,
+      426.0,
+      214.5,
+      437.5
+     ],
+     "confidence": 0.9951990246772766
+    }
+   },
+   {
+    "kind": "phone",
+    "raw": "010-4242-2409",
+    "value": "010-4242-2409",
+    "label_raw": null,
+    "department": null,
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_046"
+     ],
+     "bbox": [
+      64.5,
+      452.0,
+      175.0,
+      464.0
+     ],
+     "confidence": 0.9929897785186768
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

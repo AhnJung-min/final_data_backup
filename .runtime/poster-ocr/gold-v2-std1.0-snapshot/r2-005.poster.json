@@ -1,0 +1,695 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-e6bfc7ef6bd8",
+  "image": {
+    "sha256": "e6bfc7ef6bd8d9f104a32ddce263a6595751920f07112c279b29ef5511db1fe0",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:40:12+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "요일은 날짜 옆 세로 영문(FRI·SAT·SUN)으로 인쇄됨. 연도는 제목 위 2026(poster_text).",
+      "'SWYFT' 대형 글자는 축제 약칭으로 brand 변형, 'SINCHON WORLD YOUTH FESTIVAL'은 영문 변형으로 기록.",
+      "주관 '서대문구 · 축제 대학생중앙기획단'을 가운뎃점 기준으로 두 기관으로 나눔.",
+      "'9.11 개막축하공연 —— 9.13 SWYFT 콘서트' 띠 아래 출연진 사진이 이어져 JUNCOCO(뒤쪽 사진)를 SWYFT 콘서트 출연자로 연결함. 확신도 중간.",
+      "부스 운영 줄 'Day2-3 부스 운영 11:00~19:00 [연세로] 글로벌 문화 부스 / 대학생 부스 [창천문화공원] 세계 음식 부스'는 연도·날짜 숫자가 없어 period start/end를 비움.",
+      "검토(pass2): 원본·확대 이미지로 모든 항목 대조, 값 변경 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 신촌글로벌 대학문화축제",
+    "official": "신촌글로벌 대학문화축제",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "SINCHON WORLD YOUTH FESTIVAL",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand",
+        "raw": "SWYFT",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "The World Meets Sinchon",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "09.11 FRI - 09.13 SUN",
+    "start": {
+      "iso": "2026-09-11",
+      "year": 2026,
+      "month": 9,
+      "day": 11,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-09-13",
+      "year": 2026,
+      "month": 9,
+      "day": 13,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "17:00~20:00",
+        "start": "17:00",
+        "end": "20:00",
+        "applies_to": "Day1 09.11"
+      },
+      {
+        "raw": "10:00~19:00",
+        "start": "10:00",
+        "end": "19:00",
+        "applies_to": "Day2 09.12"
+      },
+      {
+        "raw": "12:00~21:00",
+        "start": "12:00",
+        "end": "21:00",
+        "applies_to": "Day3 09.13"
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "신촌 연세로 일대",
+    "items": [
+      "신촌 연세로 일대"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "서대문구",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "서대문구",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축제 대학생중앙기획단",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "서울특별시",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "Festival Website",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "개막식",
+        "category_raw": "Day1",
+        "period": {
+          "raw": "09.11 FRI 17:00~20:00",
+          "start": {
+            "iso": "2026-09-11",
+            "year": 2026,
+            "month": 9,
+            "day": 11,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:00~20:00",
+              "start": "17:00",
+              "end": "20:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "개막 축하공연",
+        "category_raw": "Day1",
+        "period": {
+          "raw": "09.11 FRI 17:00~20:00",
+          "start": {
+            "iso": "2026-09-11",
+            "year": 2026,
+            "month": 9,
+            "day": 11,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:00~20:00",
+              "start": "17:00",
+              "end": "20:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "신촌 SWYFT 운동회",
+        "category_raw": "Day2",
+        "period": {
+          "raw": "09.12 SAT 10:00~19:00",
+          "start": {
+            "iso": "2026-09-12",
+            "year": 2026,
+            "month": 9,
+            "day": 12,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "10:00~19:00",
+              "start": "10:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "SINCHON UNI.ON (동아리 공연)",
+        "category_raw": "Day2",
+        "period": {
+          "raw": "09.12 SAT 10:00~19:00",
+          "start": {
+            "iso": "2026-09-12",
+            "year": 2026,
+            "month": 9,
+            "day": 12,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "10:00~19:00",
+              "start": "10:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "신촌대학교 거리특강",
+        "category_raw": "Day2",
+        "period": {
+          "raw": "09.12 SAT 10:00~19:00",
+          "start": {
+            "iso": "2026-09-12",
+            "year": 2026,
+            "month": 9,
+            "day": 12,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "10:00~19:00",
+              "start": "10:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "지구촌 문화여행",
+        "category_raw": "Day3",
+        "period": {
+          "raw": "09.13 SUN 12:00~21:00",
+          "start": {
+            "iso": "2026-09-13",
+            "year": 2026,
+            "month": 9,
+            "day": 13,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "12:00~21:00",
+              "start": "12:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "외국인 유학생 가요제",
+        "category_raw": "Day3",
+        "period": {
+          "raw": "09.13 SUN 12:00~21:00",
+          "start": {
+            "iso": "2026-09-13",
+            "year": 2026,
+            "month": 9,
+            "day": 13,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "12:00~21:00",
+              "start": "12:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "SWYFT 콘서트",
+        "category_raw": "Day3",
+        "period": {
+          "raw": "09.13 SUN 12:00~21:00",
+          "start": {
+            "iso": "2026-09-13",
+            "year": 2026,
+            "month": 9,
+            "day": 13,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "12:00~21:00",
+              "start": "12:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "JUNCOCO",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "글로벌 문화 부스",
+        "category_raw": "부스 운영",
+        "period": {
+          "raw": "Day2-3 11:00~19:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "11:00~19:00",
+              "start": "11:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": "연세로",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "대학생 부스",
+        "category_raw": "부스 운영",
+        "period": {
+          "raw": "Day2-3 11:00~19:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "11:00~19:00",
+              "start": "11:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": "연세로",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "세계 음식 부스",
+        "category_raw": "부스 운영",
+        "period": {
+          "raw": "Day2-3 11:00~19:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "11:00~19:00",
+              "start": "11:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": "창천문화공원",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "총예산 358,000천원(구비 288,000천원, 시비 70,000천원)",
+    "total_krw": 358000000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "서대문 전성시대",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "사진 합성 레터링",
+      "타이포그래피 중심",
+      "일정표형 레이아웃"
+    ],
+    "main_colors": [
+      "아이보리",
+      "남색",
+      "보라",
+      "분홍",
+      "하늘색"
+    ],
+    "main_objects": [
+      "야경·불꽃놀이 사진을 채운 SWYFT 대형 글자",
+      "뛰어오르는 사람 실루엣",
+      "출연진 사진 8장"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "아이보리 배경 상단에 남색·분홍 제목, 중앙에 야경 사진을 채운 SWYFT 대형 글자와 필기체 영문 문구, 하단에 Day1~3 프로그램표·큰 일정·장소·출연진 사진·기관과 예산을 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 출연진 사진 아래 이름 8개 중 'JUNCOCO'만 판독되고 나머지는 판독 불가.",
+      "'신촌 SWYFT 운동회' 아래 2줄 세부 프로그램 작은 글자와 우상단 '서대문 전성시대' 위 작은 글자는 판독 불확실해 기록하지 않음.",
+      "주관의 '축제 대학생중앙기획단'은 작은 글자라 일부 불확실."
+    ]
+  }
+}

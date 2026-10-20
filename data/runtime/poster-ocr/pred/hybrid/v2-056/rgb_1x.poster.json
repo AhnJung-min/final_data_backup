@@ -1,0 +1,284 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-e97e53a56e34",
+ "image": {
+  "sha256": "e97e53a56e34aba54bd8619ef8e2d1125c5d16c38c82e2707f6846168e8c2fd4",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:56+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "광명시 용시원체육량 축제 책",
+  "official": "광명시 용시원체육량 축제 책",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_006",
+    "easy_rgb_1x_007",
+    "easy_rgb_1x_008",
+    "easy_rgb_1x_009"
+   ],
+   "bbox": [
+    26.0,
+    76.0,
+    428.0,
+    285.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_002"
+   ],
+   "bbox": [
+    32.0,
+    34.0,
+    142.0,
+    78.0
+   ],
+   "confidence": 0.9999909996986389
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.19. SAT",
+  "start": {
+   "iso": "2026-09-19",
+   "year": 2026,
+   "month": 9,
+   "day": 19,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_003"
+   ],
+   "bbox": [
+    292.0,
+    50.0,
+    428.0,
+    74.0
+   ],
+   "confidence": 0.9592860341072083
+  }
+ },
+ "venue": {
+  "status": "absent",
+  "raw": null,
+  "items": [],
+  "evidence": null
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "광명시 용시원체육량",
+  "region": null,
+  "district": "광명시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_006",
+    "easy_rgb_1x_007"
+   ],
+   "bbox": [
+    26.0,
+    76.0,
+    428.0,
+    148.0
+   ],
+   "confidence": null
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "광명시도서관정책과",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_1x_013"
+     ],
+     "bbox": [
+      27.0,
+      611.0,
+      215.0,
+      625.0
+     ],
+     "confidence": 0.9897558093070984
+    }
+   },
+   {
+    "name": "컬리: 깔망 시도 서관",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_1x_013",
+      "easy_rgb_1x_014"
+     ],
+     "bbox": [
+      27.0,
+      611.0,
+      317.0,
+      625.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "콩기도광당 교육지인청",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_1x_013",
+      "easy_rgb_1x_015"
+     ],
+     "bbox": [
+      27.0,
+      611.0,
+      419.0,
+      625.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "02-2680-5442",
+    "value": "02-2680-5442",
+    "label_raw": null,
+    "department": "주최 광명시도서관정책과",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_1x_013",
+      "easy_rgb_1x_014",
+      "easy_rgb_1x_015"
+     ],
+     "bbox": [
+      27.0,
+      611.0,
+      419.0,
+      625.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,245 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-3331d1b307b3",
+ "image": {
+  "sha256": "3331d1b307b3cc26ed15ab683d04a937b25498cf2c48eeb1e7a11818daf3260f",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:53+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "강릉커피축제",
+  "official": "강릉커피축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000"
+   ],
+   "bbox": [
+    94.0,
+    33.0,
+    403.0,
+    71.0
+   ],
+   "confidence": 0.9831483960151672
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제18회",
+  "number": 18,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_001"
+   ],
+   "bbox": [
+    27.0,
+    43.0,
+    85.0,
+    60.0
+   ],
+   "confidence": 0.9928557872772217
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003"
+   ],
+   "bbox": [
+    273.0,
+    121.0,
+    407.0,
+    137.0
+   ],
+   "confidence": 0.9857911467552185
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.21.수 10.25.일",
+  "start": {
+   "iso": "2026-10-21",
+   "year": 2026,
+   "month": 10,
+   "day": 21,
+   "weekday": "wed",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003",
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    273.0,
+    121.0,
+    407.0,
+    156.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "강륨커피거리 및 강릉시일원",
+  "items": [
+   "강륨커피거리",
+   "강릉시일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005",
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    313.0,
+    161.0,
+    407.0,
+    188.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "강릉시일원",
+  "region": null,
+  "district": "강릉시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    339.0,
+    174.0,
+    407.0,
+    188.0
+   ],
+   "confidence": 0.9866039156913757
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "신회체관광부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_010"
+     ],
+     "bbox": [
+      395.0,
+      552.0,
+      433.0,
+      562.0
+     ],
+     "confidence": 0.3759976327419281
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

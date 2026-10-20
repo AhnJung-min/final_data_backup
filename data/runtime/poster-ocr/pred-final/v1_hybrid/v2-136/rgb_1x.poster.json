@@ -1,0 +1,294 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-b4dc381f6d27",
+ "image": {
+  "sha256": "b4dc381f6d27ddc7a740a9fbbb91d8abb248ca850edfcccf86356b616aec09c8",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:12:08+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "연천국화축제",
+  "official": "연천국화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_002"
+   ],
+   "bbox": [
+    83.0,
+    63.0,
+    359.0,
+    125.0
+   ],
+   "confidence": 0.9981659054756165
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제8회",
+  "number": 8,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_001"
+   ],
+   "bbox": [
+    90.0,
+    38.0,
+    160.0,
+    70.0
+   ],
+   "confidence": 0.9541575908660889
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_004"
+   ],
+   "bbox": [
+    95.0,
+    155.0,
+    341.0,
+    175.0
+   ],
+   "confidence": 0.9672483801841736
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "기간: 2026.10.16.(금)~10.25.(일)/10일간",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": "10일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_004"
+   ],
+   "bbox": [
+    95.0,
+    155.0,
+    341.0,
+    175.0
+   ],
+   "confidence": 0.9672483801841736
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "연천군 전곡읍 양연로1510 (연천 전곡리 유적)",
+  "items": [
+   "연천군 전곡읍 양연로1510 (연천 전곡리 유적)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_005"
+   ],
+   "bbox": [
+    97.0,
+    175.0,
+    335.0,
+    193.0
+   ],
+   "confidence": 0.9171122908592224
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "연천군 전곡읍 양연로1510",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_005"
+   ],
+   "bbox": [
+    97.0,
+    175.0,
+    335.0,
+    193.0
+   ],
+   "confidence": 0.9171122908592224
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "장소:연천군 전곡읍 양연로1510 (연천 전곡리 유적)",
+  "region": null,
+  "district": "연천군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_005"
+   ],
+   "bbox": [
+    97.0,
+    175.0,
+    335.0,
+    193.0
+   ],
+   "confidence": 0.9171122908592224
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "연천군",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_1x_017"
+     ],
+     "bbox": [
+      157.0,
+      599.0,
+      233.0,
+      617.0
+     ],
+     "confidence": 0.7611564486618654
+    }
+   },
+   {
+    "name": "연천군농업기술센터",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_1x_018",
+      "easy_rgb_1x_019"
+     ],
+     "bbox": [
+      263.0,
+      598.0,
+      424.0,
+      617.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "present",
+  "raw": "국화국제(유료): 의장료 5,00031 집력 연숙사랑상국기 지급 무축제(무료):2026.10.23.(금) 10.25 (민)",
+  "free": true,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_013",
+    "easy_rgb_1x_014",
+    "easy_rgb_1x_015",
+    "easy_rgb_1x_016"
+   ],
+   "bbox": [
+    135.0,
+    281.0,
+    351.0,
+    307.0
+   ],
+   "confidence": null
+  }
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

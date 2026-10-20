@@ -1,0 +1,249 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-287b64dce822",
+ "image": {
+  "sha256": "287b64dce822ff1b9ad0797aaf706f3a91ba27cd0fc2b0d0624d7d4643ece12f",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_title+pf_edition_p1+pf_orgs_p1+fb_p1_h+vote_pp1h_sched"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_title+pf_edition_p1+pf_orgs_p1+fb_p1_h+vote_pp1h_sched): admin_area, organizations, title"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "무주반딩분국제",
+  "official": "무주반딩분국제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    105.0,
+    56.0,
+    333.0,
+    117.0
+   ],
+   "confidence": 0.7928447127342224
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    252.5,
+    459.0,
+    289.0,
+    474.0
+   ],
+   "confidence": 0.9964016079902649
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026. 9.4.- 9.12.",
+  "start": {
+   "iso": "2026-09-04",
+   "year": 2026,
+   "month": 9,
+   "day": 4,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-12",
+   "year": 2026,
+   "month": 9,
+   "day": 12,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    250.5,
+    459.0,
+    358.0,
+    498.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "absent",
+  "raw": null,
+  "items": [],
+  "evidence": null
+ },
+ "address": {
+  "status": "present",
+  "raw": "전록피법자지도우교위주용번표로36-17",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_014"
+   ],
+   "bbox": [
+    226.5,
+    590.5,
+    390.5,
+    599.0
+   ],
+   "confidence": 0.5450443029403687
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "주소:전북범지지도무주무주은민로326-17",
+  "region": "전북",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_011"
+   ],
+   "bbox": [
+    223.0,
+    590.0,
+    391.0,
+    600.0
+   ],
+   "confidence": 0.6400970816612244
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "문회제유관광부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_000"
+     ],
+     "bbox": [
+      35.0,
+      13.0,
+      83.0,
+      23.0
+     ],
+     "confidence": 0.7612300515174866
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "homepage",
+    "platform": null,
+    "raw": "www.firefly.or.kr",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_002"
+     ],
+     "bbox": [
+      366.0,
+      14.5,
+      429.0,
+      23.0
+     ],
+     "confidence": 0.8723177909851074
+    }
+   }
+  ]
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

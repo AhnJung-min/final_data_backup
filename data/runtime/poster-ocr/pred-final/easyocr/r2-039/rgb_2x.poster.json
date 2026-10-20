@@ -1,0 +1,199 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-0d5f7d267b60",
+ "image": {
+  "sha256": "0d5f7d267b60d1a355a7e10cdec541f0a75f512c523ebc20eeceecad0436d305",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:40+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "easyocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026 2나 축제 맛있는 문경사가 장터 다양한 문화예술 공연",
+  "official": "2나 축제 맛있는 문경사가 장터 다양한 문화예술 공연",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_011",
+    "easy_rgb_2x_013",
+    "easy_rgb_2x_014"
+   ],
+   "bbox": [
+    266.5,
+    287.0,
+    377.5,
+    356.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_003"
+   ],
+   "bbox": [
+    28.5,
+    58.5,
+    127.0,
+    100.5
+   ],
+   "confidence": 0.8607760397877016
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.17 @ ~ 11.1.",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-11-01",
+   "year": 2026,
+   "month": 11,
+   "day": 1,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": "16일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_015"
+   ],
+   "bbox": [
+    32.0,
+    352.0,
+    175.0,
+    378.0
+   ],
+   "confidence": 0.677354929641827
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "문경새재도립공원 일원",
+  "items": [
+   "문경새재도립공원 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_017"
+   ],
+   "bbox": [
+    32.5,
+    375.5,
+    193.5,
+    396.5
+   ],
+   "confidence": 0.741215993227114
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

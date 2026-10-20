@@ -1,0 +1,213 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-e8fc3fd52bc4",
+ "image": {
+  "sha256": "e8fc3fd52bc4002ccf798841c9d6cd0a2923735b527ec5f594c746d377fb69b3",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_contacts_h"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_contacts_h): contacts"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "DANCE FESTA",
+  "official": "DANCE FESTA",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004",
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    130.5,
+    12.5,
+    443.0,
+    272.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    379.5,
+    16.5,
+    423.5,
+    28.5
+   ],
+   "confidence": 0.9892747402191162
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "일정 2026.10.18.(일)15:00-20:30",
+  "start": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "15:00-20:30",
+    "start": "15:00",
+    "end": "20:30",
+    "applies_to": null
+   },
+   {
+    "raw": "15:00-17:30",
+    "start": "15:00",
+    "end": "17:30",
+    "applies_to": null
+   },
+   {
+    "raw": "17:50-20:20",
+    "start": "17:50",
+    "end": "20:20",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009",
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    243.5,
+    311.0,
+    392.5,
+    322.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "여수 종포해양공원 주무대(증회동 5",
+  "items": [
+   "여수 종포해양공원 주무대(증회동 5"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    243.5,
+    298.0,
+    414.5,
+    308.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

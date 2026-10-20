@@ -1,0 +1,231 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-9ada8523bd65",
+ "image": {
+  "sha256": "9ada8523bd65ffbc93da44df772baaa245e3682093b57f6424a2dfb9212dd176",
+  "width": 461,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:50+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "영도다리축제",
+  "official": "영도다리축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_001"
+   ],
+   "bbox": [
+    50.0,
+    45.0,
+    378.0,
+    153.0
+   ],
+   "confidence": 0.9988599419593811
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제34회",
+  "number": 34,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000"
+   ],
+   "bbox": [
+    62.0,
+    35.0,
+    130.0,
+    66.0
+   ],
+   "confidence": 0.9995300769805908
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_017"
+   ],
+   "bbox": [
+    73.0,
+    568.0,
+    387.0,
+    582.0
+   ],
+   "confidence": 0.952995777130127
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.30.금-11.1.일/봉래동물양장및아미르공원일원",
+  "start": {
+   "iso": "2026-10-30",
+   "year": 2026,
+   "month": 10,
+   "day": 30,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-01",
+   "year": 2026,
+   "month": 11,
+   "day": 1,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_017"
+   ],
+   "bbox": [
+    73.0,
+    568.0,
+    387.0,
+    582.0
+   ],
+   "confidence": 0.952995777130127
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "봉래동물양장및아미르공원일원",
+  "items": [
+   "봉래동물양장",
+   "아미르공원일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_017"
+   ],
+   "bbox": [
+    73.0,
+    568.0,
+    387.0,
+    582.0
+   ],
+   "confidence": 0.952995777130127
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "영도문화원",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019"
+     ],
+     "bbox": [
+      204.0,
+      596.0,
+      258.0,
+      609.0
+     ],
+     "confidence": 0.9897245168685913
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

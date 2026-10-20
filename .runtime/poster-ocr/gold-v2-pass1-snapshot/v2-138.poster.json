@@ -1,0 +1,252 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-f4d908f230c5",
+  "image": {
+    "sha256": "f4d908f230c50a1dd0a0e073fa47dbc480bab42205241252033dfcdb3541c97b",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:01:42+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목 블록 'NS푸드페스타 / 2026 익산'에서 연도를 뺀 'NS푸드페스타 익산'을 official로 기록. 하단 'NSFF' 로고는 브랜드 제목으로 variants에 기록함.",
+      "QR 아래 둘째 줄 작은 안내 문구는 판독되지 않아 label_raw에는 첫 줄만 기록함. 로고 2개에는 역할 표기가 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "NS푸드페스타 2026 익산",
+    "official": "NS푸드페스타 익산",
+    "variants": [
+      {
+        "kind": "brand",
+        "raw": "NSFF",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10.16 Fri – 17 Sat",
+    "start": {
+      "iso": "2026-10-16",
+      "year": 2026,
+      "month": 10,
+      "day": 16,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "poster_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "하림 퍼스트 키친 (익산 제4산업단지)",
+    "items": [
+      "하림 퍼스트 키친 (익산 제4산업단지)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "NS푸드페스타 2026 익산",
+    "region": null,
+    "district": "익산",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "NS홈쇼핑",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "익산시",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "축제정보 바로가기",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "아이소메트릭 일러스트",
+      "지도형 구성",
+      "평면 색면"
+    ],
+    "main_colors": [
+      "하늘색",
+      "파랑",
+      "흰색",
+      "검정",
+      "빨강",
+      "초록"
+    ],
+    "main_objects": [
+      "굽이진 길",
+      "푸드트럭",
+      "음식 부스",
+      "천막",
+      "야외 테이블",
+      "공연 무대",
+      "석탑",
+      "나무",
+      "사람들"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색 바탕에 굽이진 흰 길을 따라 푸드트럭·부스·무대·석탑을 아이소메트릭으로 그리고, 상단에 제목·일정·장소와 QR, 하단에 로고를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 장소 괄호 문구와 QR 아래 안내 문구가 작고 흐림. 영문 요일 Fri·Sat은 세로로 회전되어 인쇄됨."
+    ]
+  }
+}

@@ -1,0 +1,258 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-9efacb36c2e9",
+ "image": {
+  "sha256": "9efacb36c2e9023e046fe71f02d01e0e2bb912586b2b12378d9803b6aa64c2c9",
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:55+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "예산황새들의 제7회 예산황새축제",
+  "official": "예산황새들의 예산황새축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_008",
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    109.5,
+    44.0,
+    331.0,
+    152.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제7회",
+  "number": 7,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    181.5,
+    78.0,
+    256.0,
+    112.5
+   ],
+   "confidence": 0.9968819618225098
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    89.0,
+    533.0,
+    221.0,
+    550.0
+   ],
+   "confidence": 0.9017422199249268
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9. 5.(토) - 6.(일)",
+  "start": {
+   "iso": "2026-09-05",
+   "year": 2026,
+   "month": 9,
+   "day": 5,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-06",
+   "year": 2026,
+   "month": 9,
+   "day": 6,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    89.0,
+    533.0,
+    221.0,
+    550.0
+   ],
+   "confidence": 0.9017422199249268
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "예산황새공원 임원",
+  "items": [
+   "예산황새공원 임원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_013"
+   ],
+   "bbox": [
+    234.5,
+    530.5,
+    352.5,
+    550.5
+   ],
+   "confidence": 0.901183545589447
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "2예산활새",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_017",
+      "padd_rgb_2x_018"
+     ],
+     "bbox": [
+      32.5,
+      587.5,
+      166.5,
+      601.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "041) 339-8367",
+    "value": "041-339-8367",
+    "label_raw": null,
+    "department": "예산군 예산군의회 2",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_020",
+      "padd_rgb_2x_021",
+      "padd_rgb_2x_022"
+     ],
+     "bbox": [
+      221.0,
+      589.0,
+      407.0,
+      602.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,690 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-3166831a776e",
+  "image": {
+    "sha256": "3166831a776ee4287cdfbd56a7228d2b592ffc9557417176dd440c77f0566549",
+    "width": 441,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:22+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "포스터 어디에도 4자리 연도가 없어 일정 iso를 비움(year_basis=absent). 하루 행사라 end=null.",
+      "'후원' 뒤 해시태그(#…) 6개를 각각 후원 기관으로 기록. 좌측 상단 로고(기장군)는 역할 표기가 없어 roles를 비움.",
+      "QR 두 개 아래의 접수 안내 문구를 label_raw로 두고 purpose=registration으로 기록.",
+      "하단 카드의 반려견 수영장·반려견 놀이터·어질리티존·펫 포토존은 위 프로그램 목록과 겹치지만 인쇄된 대로 따로 기록. 'YouTube 생방송' 표기는 notices(other)에 둠.",
+      "K-pet 갓 텔런트 위 '재능 있는 강아지들 다모여라', 위드펫츠 걷기대회 위 '반려동물 동반'은 프로그램 설명이라 기록하지 않음.",
+      "pass2 검토: K-pet 갓 텔런트 QR 아래 접수 기한을 확대·대비 비교로 '8월 20일까지 접수'로 정정(qr_codes[1].label_raw, programs[1].registration_raw). 나머지 항목은 이미지와 일치."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제3회 기장 반려동물문화축제",
+    "official": "기장 반려동물문화축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제3회",
+    "number": 3,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "absent",
+    "raw": null,
+    "value": null,
+    "evidence": null
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "사람과 반려동물이 행복한 도시! 기장",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "9.19(토)",
+    "start": {
+      "iso": null,
+      "year": null,
+      "month": 9,
+      "day": 19,
+      "weekday": "sat",
+      "year_basis": "absent"
+    },
+    "end": null,
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "정관중앙공원",
+    "items": [
+      "정관중앙공원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "기장군",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "기장군",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "기장군의회",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최/주관",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "선착순 300명 사전접수",
+        "purpose": "registration",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "label_raw": "8월 20일까지 접수",
+        "purpose": "registration",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "위드펫츠 걷기대회",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": "선착순 300명",
+        "registration_raw": "사전접수",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "K-pet 갓 텔런트",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": "8월 20일까지 접수",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "위생미용",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "펫간식 만들기",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "펫목걸이 만들기",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "댕사인볼트 달리기",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "멍때리기",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "어질리티 경주",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "댕댕이 수영장",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "반려견 놀이터",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "포토존",
+        "category_raw": "다양한 축제프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "SNS 축제 알리기 이벤트",
+        "category_raw": "이벤트",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "반려동물동반 관광객 환영 이벤트",
+        "category_raw": "이벤트",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "행동교정 강의",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "이성진",
+            "role_raw": "교수"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "산책교실",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "이호상",
+            "role_raw": "훈련사범"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "반려견 수영장",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "반려견 놀이터",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "어질리티존",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "펫 포토존",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "경품행사",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "초대가수 공연",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "쏘군 부부",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "YouTube 생방송",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "사진 합성",
+      "카드형 정보 레이아웃",
+      "굵은 외곽선 타이포그래피"
+    ],
+    "main_colors": [
+      "하늘색",
+      "초록",
+      "흰색",
+      "남색",
+      "주황",
+      "노랑",
+      "빨강"
+    ],
+    "main_objects": [
+      "골든 리트리버",
+      "고양이",
+      "잔디 언덕",
+      "반려견 산책 일러스트",
+      "QR 코드 2개",
+      "강사 사진 2장"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색 배경 상단에 남색·흰색 큰 제목과 노란 일정·장소, 가운데 강아지와 고양이 사진, 아래 잔디 위에 프로그램·이벤트·강의 카드와 후원·주최 띠를 배치한 정보형 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "441×627 이미지. 하단 후원 해시태그 6개 중 앞의 두 개(기장군·기장군의회)만 흐리게 읽히고 나머지는 판독 불가.",
+      "맨 아래 주최/주관 기관명과 좌측 상단 로고 아래 글자는 확대해도 확정하지 못함. 경품행사 상자의 '반려견 유모차 외'도 흐림."
+    ]
+  }
+}

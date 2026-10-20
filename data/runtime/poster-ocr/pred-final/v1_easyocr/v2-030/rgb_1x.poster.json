@@ -1,0 +1,230 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-ab742fd2c392",
+ "image": {
+  "sha256": "ab742fd2c39224702db015dbb70d306af666705b969e1d59d33100b0fe548ed0",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:46+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "평화비상",
+  "official": "평화비상",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_004"
+   ],
+   "bbox": [
+    65.0,
+    107.0,
+    373.0,
+    199.0
+   ],
+   "confidence": 0.9944360852241516
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_008"
+   ],
+   "bbox": [
+    111.0,
+    314.0,
+    333.0,
+    335.0
+   ],
+   "confidence": 0.6030048678570776
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026년9월 1일 (금) ~ 10월 11일 (일)",
+  "start": {
+   "iso": "2026-09-01",
+   "year": 2026,
+   "month": 9,
+   "day": 1,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-11",
+   "year": 2026,
+   "month": 10,
+   "day": 11,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_008"
+   ],
+   "bbox": [
+    111.0,
+    314.0,
+    333.0,
+    335.0
+   ],
+   "confidence": 0.6030048678570776
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "강원특별자치도철원군 노동당사 철원역사문화공원 일대",
+  "items": [
+   "강원특별자치도철원군 노동당사 철원역사문화공원 일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_009"
+   ],
+   "bbox": [
+    83.0,
+    333.0,
+    359.0,
+    353.0
+   ],
+   "confidence": 0.3756060227569103
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "강원특별자치도철원군 노동당사 철원역사문화공원 일대",
+  "region": "강원특별자치도",
+  "district": "철원군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_009"
+   ],
+   "bbox": [
+    83.0,
+    333.0,
+    359.0,
+    353.0
+   ],
+   "confidence": 0.3756060227569103
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "010-2659-9728",
+    "value": "010-2659-9728",
+    "label_raw": "문의",
+    "department": null,
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_1x_011"
+     ],
+     "bbox": [
+      155.0,
+      393.0,
+      287.0,
+      413.0
+     ],
+     "confidence": 0.9771818409589053
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

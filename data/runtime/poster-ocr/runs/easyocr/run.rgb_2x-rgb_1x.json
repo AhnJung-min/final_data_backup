@@ -1,0 +1,43 @@
+{
+  "engine": "easyocr",
+  "identity": {
+    "engine": "easyocr",
+    "easyocr_version": "1.7.2",
+    "torch_version": "2.10.0+cpu",
+    "torch_threads": 4,
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "quantize": true,
+    "decoder": "greedy",
+    "models": {
+      "craft_mlt_25k.pth": "4a5efbfb48b4081100544e75e1e2b57f8de3d84f213004b14b85fd4b3748db17",
+      "korean_g2.pth": "ecdead53c909748aad74bc2f2beeab3e3ad751134db6335e97ea19f879ca407e"
+    }
+  },
+  "load_seconds": 20.145313699991675,
+  "variants": [
+    "rgb_2x",
+    "rgb_1x"
+  ],
+  "splits": [
+    "reserve"
+  ],
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "cpu_count": 8,
+  "started_at": "2026-10-19T15:54:04+0900",
+  "memory_after_load": {
+    "rss_bytes": 478633984,
+    "peak_bytes": 856440832
+  },
+  "finished_at": "2026-10-19T16:02:36+0900",
+  "succeeded": 104,
+  "failed": 0,
+  "memory_at_end": {
+    "rss_bytes": 1957584896,
+    "peak_bytes": 2030563328
+  }
+}

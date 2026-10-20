@@ -1,0 +1,330 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-cc4ae5743e3e",
+ "image": {
+  "sha256": "cc4ae5743e3e13b95946c23c2d14b978aecb6b4e888a8ab9b4022260b4ee0e95",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_orgs_p1"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_orgs_p1): organizations"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "사성 FO:8E3R",
+  "official": "사성 FO:8E3R",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003",
+    "padd_rgb_2x_004",
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    78.5,
+    39.5,
+    441.5,
+    148.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제1회",
+  "number": 1,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    33.0,
+    227.5,
+    117.5,
+    243.0
+   ],
+   "confidence": 0.9790205955505371
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_038"
+   ],
+   "bbox": [
+    24.5,
+    563.0,
+    213.0,
+    580.5
+   ],
+   "confidence": 0.9842231273651123
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.09.11(금)~09.13(일)",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [
+   {
+    "raw": "15:00~22:00",
+    "start": "15:00",
+    "end": "22:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_038"
+   ],
+   "bbox": [
+    24.5,
+    563.0,
+    213.0,
+    580.5
+   ],
+   "confidence": 0.9842231273651123
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "일산 라페스타 문화의 거리",
+  "items": [
+   "일산 라페스타 문화의 거리"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_037"
+   ],
+   "bbox": [
+    22.0,
+    538.5,
+    196.5,
+    557.5
+   ],
+   "confidence": 0.9790338277816772
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "사단법인 고영사관강의",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_000"
+     ],
+     "bbox": [
+      11.0,
+      8.0,
+      141.0,
+      15.0
+     ],
+     "confidence": 0.66744065284729
+    }
+   },
+   {
+    "name": "고양상공회의소",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_001"
+     ],
+     "bbox": [
+      157.0,
+      7.0,
+      342.0,
+      17.0
+     ],
+     "confidence": 0.8945232033729553
+    }
+   },
+   {
+    "name": "고양스테이업",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_001"
+     ],
+     "bbox": [
+      157.0,
+      7.0,
+      342.0,
+      17.0
+     ],
+     "confidence": 0.8945232033729553
+    }
+   },
+   {
+    "name": "라패스타",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_001"
+     ],
+     "bbox": [
+      157.0,
+      7.0,
+      342.0,
+      17.0
+     ],
+     "confidence": 0.8945232033729553
+    }
+   },
+   {
+    "name": "고양복래시",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_002"
+     ],
+     "bbox": [
+      359.0,
+      7.0,
+      429.0,
+      17.0
+     ],
+     "confidence": 0.7696579694747925
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-7c3f9c636f11",
+ "image": {
+  "sha256": "7c3f9c636f11fd0d087b1e74e14f1c0f82ed500e9a9940fbe4c94637bfc3f998",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+paddleocr(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026광명마당극축제",
+  "official": "광명마당극축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000"
+   ],
+   "bbox": [
+    272.0,
+    9.0,
+    433.0,
+    32.0
+   ],
+   "confidence": 0.9976289868354797
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제36회",
+  "number": 36,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_002"
+   ],
+   "bbox": [
+    232.0,
+    30.0,
+    433.0,
+    54.0
+   ],
+   "confidence": 0.9484897255897522
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000"
+   ],
+   "bbox": [
+    272.0,
+    9.0,
+    433.0,
+    32.0
+   ],
+   "confidence": 0.9976289868354797
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.11.~9.13.광명시민운동장 일대",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    10.0,
+    592.0,
+    362.0,
+    615.0
+   ],
+   "confidence": 0.9770025610923767
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "광명시민운동장 일대",
+  "items": [
+   "광명시민운동장 일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    10.0,
+    592.0,
+    362.0,
+    615.0
+   ],
+   "confidence": 0.9770025610923767
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

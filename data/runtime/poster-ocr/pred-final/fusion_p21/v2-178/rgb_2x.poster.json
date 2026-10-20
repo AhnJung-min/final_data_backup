@@ -1,0 +1,272 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-85f2aa72223e",
+ "image": {
+  "sha256": "85f2aa72223ed9310774deea3cee1b228d64db88802862a7b35476b1598723a1",
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:53+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr/rgb_2x+paddleocr/rgb_1x(paddle2x1x)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(paddle2x1x): 제목은 근거 판독 신뢰도가 높은 전처리, 회차·기관은 rgb_1x, 나머지 빈 슬롯은 rgb_1x로 채움. rgb_1x에서 가져온 슬롯: organizations."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "광주 김치축제",
+  "official": "광주 김치축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_001",
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    70.5,
+    82.0,
+    372.0,
+    260.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    74.5,
+    100.0,
+    210.0,
+    149.5
+   ],
+   "confidence": 0.9994052648544312
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.23.1금|-10.25.1일",
+  "start": {
+   "iso": "2026-10-23",
+   "year": 2026,
+   "month": 10,
+   "day": 23,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    78.5,
+    249.5,
+    362.5,
+    289.0
+   ],
+   "confidence": 0.9396877288818359
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "전남광주동합특별시 광주청사 광장 일원",
+  "items": [
+   "전남광주동합특별시 광주청사 광장 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    107.0,
+    278.5,
+    338.5,
+    308.5
+   ],
+   "confidence": 0.988785445690155
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "전남광주동합특별시 광주청사 광장 일원",
+  "region": "전남",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    107.0,
+    278.5,
+    338.5,
+    308.5
+   ],
+   "confidence": 0.988785445690155
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "광주립지축제위원회",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_008"
+     ],
+     "bbox": [
+      122.0,
+      591.0,
+      184.0,
+      606.0
+     ],
+     "confidence": 0.8129642009735107
+    }
+   },
+   {
+    "name": "문의재육관광부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_010"
+     ],
+     "bbox": [
+      293.0,
+      593.0,
+      339.0,
+      603.0
+     ],
+     "confidence": 0.6908987760543823
+    }
+   },
+   {
+    "name": "농립축신식품부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_009"
+     ],
+     "bbox": [
+      234.0,
+      594.0,
+      275.0,
+      603.0
+     ],
+     "confidence": 0.8088334202766418
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

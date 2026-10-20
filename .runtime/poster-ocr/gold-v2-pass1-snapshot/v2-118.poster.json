@@ -1,0 +1,419 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-e7a31a697e99",
+  "image": {
+    "sha256": "e7a31a697e991c614df3116e0da81070e3320f8debf12a9cd69d0c3dee8f4eae",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:18+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "축제명은 '제7회 안양 청년 축제'로 보고 크게 인쇄된 '청춘은 보라'는 headline 슬로건으로 기록함.",
+      "하단 '주최 주관' 표기 뒤에 안양시·안양청년축제기획단이 이어져 있어 기관별 역할을 나누지 않고 두 기관 모두 role_raw '주최 주관'으로 기록함.",
+      "부스 프로그램 둘째 줄 '○펜 꾸미기 등 체험부스'는 첫 글자를 확정하지 못해 넣지 않음. '총 41개 부스'는 부스 수 안내라 programs에 넣지 않음.",
+      "'안양'은 '시' 없이 인쇄되어 admin_area를 absent로 둠."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제7회 안양 청년 축제",
+    "official": "안양 청년 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제7회",
+    "number": 7,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "청춘은 보라",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.10.SAT",
+    "start": {
+      "iso": "2026-10-10",
+      "year": 2026,
+      "month": 10,
+      "day": 10,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "16:00-21:00",
+        "start": "16:00",
+        "end": "21:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "평촌중앙공원",
+    "items": [
+      "평촌중앙공원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "안양시",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최 주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "안양청년축제기획단",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최 주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "안양 청년 아티스트 버스킹 공연",
+        "category_raw": null,
+        "period": {
+          "raw": "17:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "17:00",
+              "start": "17:00",
+              "end": null,
+              "applies_to": "안양 청년 아티스트 버스킹 공연"
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "청년의 날 기념식",
+        "category_raw": null,
+        "period": {
+          "raw": "19:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "19:00",
+              "start": "19:00",
+              "end": null,
+              "applies_to": "청년의 날 기념식"
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축하공연",
+        "category_raw": null,
+        "period": {
+          "raw": "20:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "20:00",
+              "start": "20:00",
+              "end": null,
+              "applies_to": "가리보이 축하공연"
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "가리보이",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "DJ 공연",
+        "category_raw": null,
+        "period": {
+          "raw": "20:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "20:00",
+              "start": "20:00",
+              "end": null,
+              "applies_to": "DJ 공연"
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "화분 케이크 만들기",
+        "category_raw": "부스 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "청년 브랜드 쇼룸",
+        "category_raw": "부스 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "청년예술가 작품 전시 부스",
+        "category_raw": "부스 프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "총 사업비 80,000천원",
+    "total_krw": 80000000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "Any Way, Anyang! 모든 길은, 안양으로!",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "팝아트 일러스트",
+      "만화 말풍선",
+      "기하학 삼각 패턴"
+    ],
+    "main_colors": [
+      "하늘색",
+      "보라",
+      "분홍",
+      "노랑",
+      "청록",
+      "살구색"
+    ],
+    "main_objects": [
+      "보라색 머리의 얼굴",
+      "분홍 선글라스",
+      "선글라스에 비친 공연 장면",
+      "고깔모자·폭죽",
+      "말풍선",
+      "만국기"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색 바탕 상단에 회차 제목과 보라색 큰 '청춘은 보라'를 두고, 선글라스에 공연 장면이 비친 보라색 머리 얼굴을 중앙에, 좌우 말풍선에 시간별 공연·부스 프로그램, 하단에 곡선형 일정·장소와 주최·사업비를 배치한 팝아트 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "443×627 이미지. 말풍선·하단 띠의 작은 글자는 대부분 판독되나 부스 항목 한 글자가 흐림."
+    ]
+  }
+}

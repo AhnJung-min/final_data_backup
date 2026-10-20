@@ -1,0 +1,262 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-af8d975399aa",
+ "image": {
+  "sha256": "af8d975399aa4b0ae7816f0342143d0952113fc1c2135d4869d48599b8d156e7",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_edition_h"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_edition_h): edition"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "명성산 억새꽃축제",
+  "official": "명성산 억새꽃축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    72.5,
+    72.0,
+    368.5,
+    118.5
+   ],
+   "confidence": 0.9967053532600403
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제29회",
+  "number": 29,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_001"
+   ],
+   "bbox": [
+    128.5,
+    47.5,
+    312.0,
+    73.0
+   ],
+   "confidence": 0.8208928860963142
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    123.0,
+    131.5,
+    318.5,
+    150.0
+   ],
+   "confidence": 0.9672152400016785
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.16.(금)|18.(일) 개막식2026.10.17.(토)18:00|포천시 산정호수 명성산 일원",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003",
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    76.0,
+    131.5,
+    366.0,
+    169.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "개막식 18:00|포천시 산정호수 명성산 일원",
+  "items": [
+   "개막식 18:00|포천시 산정호수 명성산 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    76.0,
+    155.0,
+    366.0,
+    169.0
+   ],
+   "confidence": 0.9698220491409302
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "개막식2026.10.17.(토)18:00|포천시 산정호수 명성산 일원",
+  "region": null,
+  "district": "포천시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    76.0,
+    155.0,
+    366.0,
+    169.0
+   ],
+   "confidence": 0.9698220491409302
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "호전도시공사",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      326.0,
+      609.0,
+      360.5,
+      617.5
+     ],
+     "confidence": 0.9192875027656555
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "festival_designation",
+    "raw": "2026경기도 시·군 대표축제",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_000"
+     ],
+     "bbox": [
+      26.5,
+      19.5,
+      134.5,
+      31.5
+     ],
+     "confidence": 0.9607512354850769
+    }
+   }
+  ]
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

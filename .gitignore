@@ -1,0 +1,65 @@
+# 백업 저장소용 .gitignore
+# 팀 저장소의 규칙에서 실험 데이터 제외(data/runtime/, .runtime/, data/img-v2/)를 빼고, 로컬에서 다시 만들어지는 것만 무시한다.
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node.js / TypeScript
+node_modules/
+*.tsbuildinfo
+
+# Build and package output
+build/
+dist/
+
+# Logs and coverage
+*.log
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+
+# Secrets and local environment (API 키는 절대 올리지 않는다)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+
+# Local Docker volume data
+/docker-data/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 다른 PC에서 다시 만들어지는 것: 가상환경·모델·캐시·임시 결과
+/.runtime/*-env/
+/.runtime/*-models/
+/.runtime/uv-cache/
+/.runtime/paddlex/
+/.runtime/logs/
+/.runtime/pt-*/
+/.runtime/pytest-*/
+/.runtime/check/
+/.runtime/poster-ocr/backup-export/
+
+# 확대·잘라낸 포스터 이미지(공공누리 제3유형 변경금지: 공개하지 않음)
+/.runtime/poster-ocr/inputs/
+/.runtime/poster-ocr/hybrid-crops*/
+/.runtime/poster-ocr/zoom/
+/.runtime/poster-ocr/pilot-crops/
+
+# 업로드·수집 캐시
+/data/runtime/uploads/
+/data/runtime/festivals/*/cache/
+/data/runtime/festivals/*/images/

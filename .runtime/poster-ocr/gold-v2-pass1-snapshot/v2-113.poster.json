@@ -1,0 +1,354 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-ec8525f5f765",
+  "image": {
+    "sha256": "ec8525f5f7654dd8b4f2b26e31c35e0fe25a91a4e20c193757a6d262e0a94ad7",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:10+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "하단 프로그램 안내는 '기념식 및 공연'·'부스 및 부대행사' 두 묶음의 소제목만 programs에 기록함. 소제목 아래 세부 항목(작가명 등)은 글자 높이 약 5px라 일부 글자가 불확실해 넣지 않음.",
+      "문의 전화번호 앞 작은 표기는 '문의'로 읽었으나 확대해도 흐림.",
+      "제목의 '천안'은 '시' 없이 인쇄되어 admin_area를 absent로 둠."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 천안 북 페스티벌",
+    "official": "천안 북 페스티벌",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "북-돋움 축제, 가나다라-마당!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10. 9. 금",
+    "start": {
+      "iso": "2026-10-09",
+      "year": 2026,
+      "month": 10,
+      "day": 9,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "10:00~16:00",
+        "start": "10:00",
+        "end": "16:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "천안삼거리공원",
+    "items": [
+      "천안삼거리공원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "천안시도서관본부",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최 및 주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "문의 041-521-3786",
+        "value": "041-521-3786",
+        "label_raw": "문의",
+        "department": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "기념식",
+        "category_raw": "기념식 및 공연",
+        "period": {
+          "raw": "10:40~",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "10:40~",
+              "start": "10:40",
+              "end": null,
+              "applies_to": "기념식"
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "공연",
+        "category_raw": "기념식 및 공연",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "가을 체험 마당",
+        "category_raw": "부스 및 부대행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "라이브러리 마당",
+        "category_raw": "부스 및 부대행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "나만의 책방",
+        "category_raw": "부스 및 부대행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "작가 마당",
+        "category_raw": "부스 및 부대행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "다함께 부대행사",
+        "category_raw": "부스 및 부대행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "총 예산: 65,500,000원(시비100%)",
+    "total_krw": 65500000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "플랫 일러스트",
+      "흩날리는 자모 타이포그래피"
+    ],
+    "main_colors": [
+      "연분홍",
+      "갈색",
+      "주황",
+      "노랑",
+      "남색"
+    ],
+    "main_objects": [
+      "펼친 책",
+      "날아다니는 책",
+      "한글 자모 조각",
+      "책 읽는 아이"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "연분홍 바탕에 한글 자모와 책이 흩날리며 '천안 북 페스티벌' 제목이 세로로 쌓이고, 펼친 책 위 슬로건과 책 읽는 아이, 하단 갈색 띠에 프로그램 안내·예산·일정·장소·문의를 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 프로그램 세부 항목과 예산 표기는 글자가 작아 일부만 판독됨."
+    ]
+  }
+}

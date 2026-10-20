@@ -1,0 +1,240 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-87fb694a4cda",
+ "image": {
+  "sha256": "87fb694a4cda01abf22d449ce1605710a0898b70527f05254491cbae18a8be03",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:fb_h+vote_pp1h_title"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(fb_h+vote_pp1h_title): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "포은문화제",
+  "official": "포은문화제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    355.5,
+    57.5,
+    419.0,
+    424.0
+   ],
+   "confidence": 0.9988666772842407
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제22회",
+  "number": 22,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    358.5,
+    25.5,
+    419.0,
+    55.5
+   ],
+   "confidence": 0.9102379679679871
+  }
+ },
+ "year": {
+  "status": "absent",
+  "raw": null,
+  "value": null,
+  "evidence": null
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.10 10.11",
+  "start": {
+   "iso": null,
+   "year": null,
+   "month": 10,
+   "day": 10,
+   "weekday": null,
+   "year_basis": "absent"
+  },
+  "end": {
+   "iso": null,
+   "year": null,
+   "month": 10,
+   "day": 11,
+   "weekday": null,
+   "year_basis": "absent"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008",
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    356.5,
+    439.5,
+    423.5,
+    500.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "선생묘역",
+  "items": [
+   "선생묘역"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    362.5,
+    519.0,
+    408.0,
+    534.5
+   ],
+   "confidence": 0.988975465297699
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "제22지표본분피적주전민지",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_015"
+     ],
+     "bbox": [
+      95.5,
+      558.0,
+      182.5,
+      567.5
+     ],
+     "confidence": 0.5968477129936218
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "schedule_change",
+    "raw": "디재인그를 8원,누하검덕민연기념사업의,극리운마대,국개각여운스업적 국6-8자근 제지역",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_022"
+     ],
+     "bbox": [
+      51.5,
+      592.0,
+      271.5,
+      599.0
+     ],
+     "confidence": 0.5760332345962524
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

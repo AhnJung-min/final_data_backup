@@ -1,0 +1,224 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-207692e6440a",
+ "image": {
+  "sha256": "207692e6440a25556de05ba1e45fc5fc3dae4c0525d6f0f7561c95443830585d",
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:49+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr/rgb_2x+paddleocr/rgb_1x(paddle2x1x)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(paddle2x1x): 제목은 근거 판독 신뢰도가 높은 전처리, 회차·기관은 rgb_1x, 나머지 빈 슬롯은 rgb_1x로 채움. rgb_1x에서 가져온 슬롯: title, edition, organizations."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "강동 서사문화추제",
+  "official": "강동 서사문화추제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003",
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    119.0,
+    186.0,
+    327.0,
+    308.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제31회",
+  "number": 31,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_002"
+   ],
+   "bbox": [
+    173.0,
+    164.0,
+    249.0,
+    188.0
+   ],
+   "confidence": 0.9974006414413452
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    200.5,
+    320.0,
+    243.5,
+    338.0
+   ],
+   "confidence": 0.9946242570877075
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026. 10.16.(금)-18.(일)",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    157.0,
+    320.0,
+    286.5,
+    357.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "서울 암사동 유적",
+  "items": [
+   "서울 암사동 유적"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    173.0,
+    358.5,
+    270.0,
+    376.0
+   ],
+   "confidence": 0.9521041512489319
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "서울 암사동 유적",
+  "region": "서울",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    173.0,
+    358.5,
+    270.0,
+    376.0
+   ],
+   "confidence": 0.9521041512489319
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

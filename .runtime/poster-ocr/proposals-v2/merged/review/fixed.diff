@@ -1,0 +1,146 @@
+--- .runtime/poster-ocr/proposals-v2/merged/extract.py	2026-10-19 16:24:54.375909500 +0900
++++ .runtime/poster-ocr/proposals-v2/merged/review/fixed/extract.py	2026-10-19 17:01:34.296552000 +0900
+@@ -9,6 +9,7 @@
+ import copy
+ from datetime import date, datetime, timezone
+ import json
++import math
+ from pathlib import Path
+ import re
+ import unicodedata
+@@ -92,6 +93,12 @@
+                          r"|(?<![\d.])(\d{1,3})\s*주년")
+ 
+ 
++def edition_number(match):
++    """회차 match의 숫자(고유어 서수는 ORDINAL_KO). 표준 최소값은 1이라 '제0회'·'0주년'은 0을 돌려 버린다."""
++    value = next(g for g in match.groups() if g)
++    return ORDINAL_KO[value] if value in ORDINAL_KO else int(value)
++
++
+ def norm(text):
+     """판독 비교용 정규화: NFKC, 물결·대시·괄호·가운뎃점 통일. 원문은 따로 보존한다."""
+     text = unicodedata.normalize("NFKC", text)
+@@ -392,10 +399,14 @@
+         if len(c["members"]) == 1 and all(c["date_line"] is not l for l in single_lines):
+             single_lines.append(c["date_line"])
+ 
+-    def listed(line):
+-        near = [o for o in single_lines if o is not line and x_overlap(o, line) > 0 and .7 <= o["h"] / max(line["h"], 1e-6) <= 1.43
+-                and abs((o["box"][1] + o["box"][3]) / 2 - (line["box"][1] + line["box"][3]) / 2) <= 3 * max(o["h"], line["h"])]
+-        return len(near) >= 2
++    listed_cache = {}
++
++    def listed(line):  # 줄마다 한 번만 센다(짝 반복마다 다시 세면 날짜 줄 수의 세제곱이 된다).
++        if line["index"] not in listed_cache:
++            near = [o for o in single_lines if o is not line and x_overlap(o, line) > 0 and .7 <= o["h"] / max(line["h"], 1e-6) <= 1.43
++                    and abs((o["box"][1] + o["box"][3]) / 2 - (line["box"][1] + line["box"][3]) / 2) <= 3 * max(o["h"], line["h"])]
++            listed_cache[line["index"]] = len(near) >= 2
++        return listed_cache[line["index"]]
+     for a in singles:
+         for b in singles:
+             la, lb = a["date_line"], b["date_line"]
+@@ -423,8 +434,8 @@
+     for c in candidates:
+         assumed = c["sy"] or poster_year or DEFAULT_YEAR
+         start = point(c["sy"], c["sm"], c["sd"], c["sw"], "date_text")
+-        if start is None:
+-            continue
++        if start is None or ((c["sy"] or poster_year) and not _valid(assumed, c["sm"], c["sd"])):
++            continue  # 인쇄·포스터 연도로는 없는 날짜(평년 2월 29일)는 일정으로 쓰지 않는다.
+         end = None
+         if c["kind"] in ("range", "pair"):
+             ey = c["ey"] or (c["sy"] if c["sy"] else None)
+@@ -516,7 +527,7 @@
+                 lo, lo_pt = ds, point(d["sy"], d["sm"], d["sd"], d["sw"], "date_text")
+             if de > hi:
+                 hi = de
+-                hi_pt = (point(d["ey"] or d["sy"], d["em"], d["ed"], d["ew"], "date_text") if d["kind"] in ("range", "pair")
++                hi_pt = (point(de.year if (d["ey"] or d["sy"]) else None, d["em"], d["ed"], d["ew"], "date_text") if d["kind"] in ("range", "pair")
+                          else point(d["sy"], d["sm"], d["sd"], d["sw"], "date_text"))
+             block.extend(l for l in d["members"] if all(l is not b for b in block))
+             changed = True
+@@ -595,7 +606,7 @@
+ # v2: 장소 문구 뒤에 붙어 읽힌 문의·전화·누리집·역할 표기와 그 뒤는 장소가 아니다.
+ CONTACT_MARK = re.compile(r"문\s*의|전\s*화|TEL|Tel|tel|☎|홈\s*페\s*이\s*지|www\.|https?://")
+ # v2: 한글 장소 뒤에 띄어 쓴 영문 병기(낱말 2개 이상, 괄호 밖): '○○광장 일원 I ○○ Art Square'.
+-LATIN_TRAIL = re.compile(r"(?<=[가-힣)])\s*(?:[|/]|\s[Il])?\s+(?:[A-Za-z][A-Za-z.'\-]*\s*){2,}$")
++LATIN_TRAIL = re.compile(r"(?<=[가-힣)])\s*(?:[|/]|\s[Il])?\s+(?=[A-Za-z][^A-Za-z]*[A-Za-z])[A-Za-z][A-Za-z.'\-]*(?:\s+[A-Za-z][A-Za-z.'\-]*)*\s*$")
+ 
+ 
+ def cut_venue_tail(text):
+@@ -689,7 +700,8 @@
+                          "extractor": {"name": VERSION, "version": "1", "model": engine},
+                          "notes": ["OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+                                    "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."]}
+-    records = [r for r in records if r["bbox_xyxy"][2] > r["bbox_xyxy"][0] and r["bbox_xyxy"][3] > r["bbox_xyxy"][1]]
++    records = [r for r in records if all(math.isfinite(v) for v in r["bbox_xyxy"])
++               and r["bbox_xyxy"][2] > r["bbox_xyxy"][0] and r["bbox_xyxy"][3] > r["bbox_xyxy"][1]]
+     lines = build_lines(records)
+     used = set()  # 다른 필드가 쓴 줄은 제목 후보에서 뺀다.
+ 
+@@ -705,15 +717,17 @@
+     if chosen:
+         c, start, end = chosen
+         if start["year"] is None:
+-            basis = "poster_text" if poster_year else "absent"
+-            start = point(poster_year, start["month"], start["day"], start["weekday"], basis)
++            filled = point(poster_year, start["month"], start["day"], start["weekday"], "poster_text") if poster_year else None
++            basis = "poster_text" if filled else "absent"
++            start = filled or point(None, start["month"], start["day"], start["weekday"], "absent")
+             if end is not None:
+                 e_year = None
+-                if poster_year:
++                if filled:
+                     e_year = poster_year + 1 if (end["month"], end["day"]) < (start["month"], start["day"]) else poster_year
+                 end = point(e_year, end["month"], end["day"], end["weekday"], basis)
+         elif end is not None and end["year"] is None:
+-            end = point(start["year"], end["month"], end["day"], end["weekday"], "date_text")
++            e_year = start["year"] + 1 if (end["month"], end["day"]) < (start["month"], start["day"]) else start["year"]
++            end = point(e_year, end["month"], end["day"], end["weekday"], "date_text")
+         if end is not None and (end["month"], end["day"], end["year"]) == (start["month"], start["day"], start["year"]):
+             end = None
+         schedule_lines = c["members"]
+@@ -837,12 +851,11 @@
+         doc["address"]["status"] = "absent"
+ 
+     # 회차 ---------------------------------------------------------------
+-    editions = [(l, m) for l in lines for m in EDITION.finditer(l["norm"])]
+-    editions = editions or [(l, m) for l in lines for m in EDITION_ALT.finditer(l["norm"])]
++    editions = [(l, m) for l in lines for m in EDITION.finditer(l["norm"]) if edition_number(m) >= 1]
++    editions = editions or [(l, m) for l in lines for m in EDITION_ALT.finditer(l["norm"]) if edition_number(m) >= 1]
+     if editions:
+         l, m = max(editions, key=lambda pair: pair[0]["h"])
+-        value = next(g for g in m.groups() if g)
+-        number = ORDINAL_KO[value] if value in ORDINAL_KO else int(value)
++        number = edition_number(m)
+         doc["edition"].update(status="present", raw=m.group(0).strip(), number=number, evidence=evidence(l["members"]))
+     else:
+         doc["edition"]["status"] = "absent"
+@@ -1283,7 +1296,7 @@
+             continue
+         if DATE_LABEL.match(text) or VENUE_LABEL.match(text) or NOTICE.search(text) or PHONE.search(text):
+             continue
+-        candidates.append((l, stripped, sum(r["confidence"] for r in l["members"]) / len(l["members"])))
++        candidates.append((l, stripped, sum(.5 if r["confidence"] is None else r["confidence"] for r in l["members"]) / len(l["members"])))
+     if not candidates:
+         return []
+     max_h = max(l["h"] for l in lines)
+@@ -1409,7 +1422,7 @@
+             total += float(match.group("num2").replace(",", "")) * {"천만": 10_000_000, "백만": 1_000_000, "만": 10_000}[match.group("unit2")]
+     else:
+         total = number * {"천만": 10_000_000, "백만": 1_000_000, "만": 10_000, None: 1}[unit] * (1000 if match.group("thou") else 1)
+-    return int(round(total))
++    return int(round(total)) if math.isfinite(total) else None  # 숫자열이 너무 길면(inf) 금액을 읽지 않는다
+ 
+ 
+ def notice_kind(text):
+@@ -1566,7 +1579,7 @@
+                 if len(cell) > 1 and names:
+                     names = [" ".join(names)]
+                 for name in names:
+-                    add(name, current[0], [current[1], *ordered], min(r["confidence"] for r in ordered))
++                    add(name, current[0], [current[1], *ordered], min((r["confidence"] for r in ordered if r["confidence"] is not None), default=None))
+     return items, used_ids
+ 
+ 

@@ -1,0 +1,209 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-a8f4da4981a6",
+ "image": {
+  "sha256": "a8f4da4981a6dff84e8b58322303df2980664091e89aac95d2790b1a73fc899f",
+  "width": 502,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:12:01+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "영천한방축제",
+  "official": "영천한방축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_002"
+   ],
+   "bbox": [
+    67.0,
+    88.0,
+    438.0,
+    190.0
+   ],
+   "confidence": 0.990731954574585
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제24회",
+  "number": 24,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_001"
+   ],
+   "bbox": [
+    210.0,
+    52.0,
+    288.0,
+    84.0
+   ],
+   "confidence": 0.9992290139198303
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_003"
+   ],
+   "bbox": [
+    65.0,
+    471.0,
+    153.0,
+    507.0
+   ],
+   "confidence": 0.971975370224715
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "3.10.2.(금)~10.4.(2)",
+  "start": {
+   "iso": "2026-10-02",
+   "year": 2026,
+   "month": 10,
+   "day": 2,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-04",
+   "year": 2026,
+   "month": 10,
+   "day": 4,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_004"
+   ],
+   "bbox": [
+    135.0,
+    453.0,
+    442.0,
+    510.0
+   ],
+   "confidence": 0.8639674782752991
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "영천강변공원D구역",
+  "items": [
+   "영천강변공원D구역"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_005"
+   ],
+   "bbox": [
+    128.0,
+    508.0,
+    420.0,
+    556.0
+   ],
+   "confidence": 0.9989833831787109
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

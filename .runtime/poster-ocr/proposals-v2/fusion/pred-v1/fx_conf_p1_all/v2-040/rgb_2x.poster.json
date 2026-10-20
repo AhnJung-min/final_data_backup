@@ -1,0 +1,234 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-2eea0156f266",
+ "image": {
+  "sha256": "2eea0156f2666ab97f09bdcbe85bf4f206e2c69eaef894bca81b2cda54b566b2",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_all"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_all): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "제1회 영등포 북페스타",
+  "official": "영등포 북페스타",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003",
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    19.0,
+    37.0,
+    92.5,
+    73.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제1회",
+  "number": 1,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    19.5,
+    37.0,
+    92.5,
+    53.5
+   ],
+   "confidence": 0.9514078497886658
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_027"
+   ],
+   "bbox": [
+    97.5,
+    552.5,
+    139.5,
+    568.5
+   ],
+   "confidence": 0.9978213310241699
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026. 9.17.목요일- 9.20.일요일",
+  "start": {
+   "iso": "2026-09-17",
+   "year": 2026,
+   "month": 9,
+   "day": 17,
+   "weekday": "thu",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-20",
+   "year": 2026,
+   "month": 9,
+   "day": 20,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_027",
+    "padd_rgb_2x_028",
+    "padd_rgb_2x_029"
+   ],
+   "bbox": [
+    97.5,
+    552.5,
+    178.5,
+    607.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "근린공원",
+  "items": [
+   "근린공원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_021"
+   ],
+   "bbox": [
+    366.0,
+    428.5,
+    419.0,
+    448.0
+   ],
+   "confidence": 0.9921212196350098
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "영동포문화재단",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_005"
+     ],
+     "bbox": [
+      377.5,
+      39.5,
+      422.0,
+      48.5
+     ],
+     "confidence": 0.9447789788246155
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

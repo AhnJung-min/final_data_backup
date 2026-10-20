@@ -1,0 +1,217 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-06114c815cf1",
+ "image": {
+  "sha256": "06114c815cf1ac0ce49404d9bfbb8fc225e7c8837d0660dc98994c2b7742b651",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "서리풀 뮤직 페스티벌",
+  "official": "서리풀 뮤직 페스티벌",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000",
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    12.0,
+    24.0,
+    378.0,
+    153.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    20.0,
+    162.0,
+    358.0,
+    192.0
+   ],
+   "confidence": 0.9754114151000977
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "09.19SAT-09.20",
+  "start": {
+   "iso": "2026-09-19",
+   "year": 2026,
+   "month": 9,
+   "day": 19,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-20",
+   "year": 2026,
+   "month": 9,
+   "day": 20,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    18.0,
+    200.0,
+    272.0,
+    236.0
+   ],
+   "confidence": 0.9584963917732239
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "반포대로(서초역-서초3통 사거리)",
+  "items": [
+   "반포대로(서초역-서초3통 사거리)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    19.0,
+    241.0,
+    266.0,
+    268.0
+   ],
+   "confidence": 0.9474363327026367
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "※교제1안M|일시2026.9.19()00:00-9.21(월)04:00 참소반포대로 (서초액-서초3릉사거리)",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_014",
+      "padd_rgb_1x_015"
+     ],
+     "bbox": [
+      15.0,
+      605.0,
+      426.0,
+      615.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

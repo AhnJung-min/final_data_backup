@@ -1,0 +1,235 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-4cf7ba6f7ae5",
+ "image": {
+  "sha256": "4cf7ba6f7ae535fd6bc078cd6c8bd33191ef178e48528b867c88d040bc2f2bd8",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T00:00:00+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "자영산 전어꽃게 축제",
+  "official": "자영산 전어꽃게 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003",
+    "padd_rgb_1x_004",
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    41.0,
+    78.0,
+    381.0,
+    336.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제24회",
+  "number": 24,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_001"
+   ],
+   "bbox": [
+    159.0,
+    44.0,
+    246.0,
+    69.0
+   ],
+   "confidence": 0.9580942988395691
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    88.0,
+    336.0,
+    351.0,
+    366.0
+   ],
+   "confidence": 0.9840784668922424
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.8.22(토)-9.6(일)",
+  "start": {
+   "iso": "2026-08-22",
+   "year": 2026,
+   "month": 8,
+   "day": 22,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-06",
+   "year": 2026,
+   "month": 9,
+   "day": 6,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    88.0,
+    336.0,
+    351.0,
+    366.0
+   ],
+   "confidence": 0.9840784668922424
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "서천군 홍원항 일원 (서면 홍원길 88)",
+  "items": [
+   "서천군 홍원항 일원 (서면 홍원길 88)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007"
+   ],
+   "bbox": [
+    104.0,
+    379.0,
+    336.0,
+    396.0
+   ],
+   "confidence": 0.9765452742576599
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "서천군 홍원항 일원 (서면 홍원길 88",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007"
+   ],
+   "bbox": [
+    104.0,
+    379.0,
+    336.0,
+    396.0
+   ],
+   "confidence": 0.9765452742576599
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "서천군 홍원항 일원 (서면 홍원길 88)",
+  "region": null,
+  "district": "서천군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007"
+   ],
+   "bbox": [
+    104.0,
+    379.0,
+    336.0,
+    396.0
+   ],
+   "confidence": 0.9765452742576599
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

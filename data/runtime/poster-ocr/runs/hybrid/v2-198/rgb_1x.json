@@ -1,0 +1,245 @@
+{
+ "case_id": "v2-198",
+ "engine": "easyocr+paddleocr",
+ "variant": "rgb_1x",
+ "scale": 1,
+ "normalized_dimensions": [
+  432,
+  627
+ ],
+ "input_dimensions": [
+  432,
+  627
+ ],
+ "input_sha256": "95e2a080d05848182e5381f03fefe5656eccbd2b987edbe84fbe65743e5c2ca8",
+ "coordinate_space": "normalized_original_pixels",
+ "status": "success",
+ "records": [
+  {
+   "id": "easy_rgb_1x_000",
+   "text": "제러회",
+   "confidence": 0.9502089785599922,
+   "bbox_xyxy": [
+    30.0,
+    38.0,
+    88.0,
+    62.0
+   ],
+   "polygon": [
+    [
+     30.0,
+     38.0
+    ],
+    [
+     88.0,
+     38.0
+    ],
+    [
+     88.0,
+     62.0
+    ],
+    [
+     30.0,
+     62.0
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_1x_001",
+   "text": "부산불축제",
+   "confidence": 0.8484525680541992,
+   "bbox_xyxy": [
+    82.0,
+    26.0,
+    418.0,
+    80.0
+   ],
+   "polygon": [
+    [
+     82.0,
+     26.0
+    ],
+    [
+     418.0,
+     26.0
+    ],
+    [
+     418.0,
+     80.0
+    ],
+    [
+     82.0,
+     80.0
+    ]
+   ],
+   "baseline_text": "부산불꽃축제 품n유",
+   "baseline_confidence": 0.15290922449559996,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "부산불축제",
+     "confidence": 0.8484525680541992,
+     "bbox_xyxy": [
+      82.0,
+      26.0,
+      418.0,
+      80.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-198/rgb_1x/easy_rgb_1x_001"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_1x_002",
+   "text": "11.7.(토)",
+   "confidence": 0.9662902355194092,
+   "bbox_xyxy": [
+    367.0,
+    39.0,
+    415.0,
+    53.0
+   ],
+   "polygon": [
+    [
+     367.0,
+     39.0
+    ],
+    [
+     415.0,
+     39.0
+    ],
+    [
+     415.0,
+     53.0
+    ],
+    [
+     367.0,
+     53.0
+    ]
+   ],
+   "baseline_text": "11.7 ()",
+   "baseline_confidence": 0.5842561276193442,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "11.7.(토)",
+     "confidence": 0.9662902355194092,
+     "bbox_xyxy": [
+      367.0,
+      39.0,
+      415.0,
+      53.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-198/rgb_1x/easy_rgb_1x_002"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_1x_003",
+   "text": "BUSAN",
+   "confidence": 0.9881988763809204,
+   "bbox_xyxy": [
+    82.0,
+    444.0,
+    129.0,
+    464.0
+   ],
+   "polygon": [
+    [
+     82.0,
+     444.0
+    ],
+    [
+     129.0,
+     444.0
+    ],
+    [
+     129.0,
+     464.0
+    ],
+    [
+     82.0,
+     464.0
+    ]
+   ],
+   "baseline_text": "BUSAN",
+   "baseline_confidence": 0.33429945480198564,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "BUSAN",
+     "confidence": 0.9881988763809204,
+     "bbox_xyxy": [
+      82.0,
+      444.0,
+      129.0,
+      464.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-198/rgb_1x/easy_rgb_1x_003"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  }
+ ],
+ "inference_seconds": 2.39,
+ "memory": {
+  "rss_bytes": 1972908032,
+  "peak_bytes": 3280584704
+ },
+ "pipeline": "paddle_regions_v1",
+ "missing_core_fields": true,
+ "refinements": [
+  {
+   "record_id": "easy_rgb_1x_001",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    75,
+    19,
+    425,
+    87
+   ]
+  },
+  {
+   "record_id": "easy_rgb_1x_003",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    79,
+    441,
+    132,
+    467
+   ]
+  },
+  {
+   "record_id": "easy_rgb_1x_002",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    365,
+    37,
+    417,
+    55
+   ]
+  }
+ ],
+ "easyocr_inference_seconds": 1.72,
+ "paddle_rec_seconds": 0.67
+}

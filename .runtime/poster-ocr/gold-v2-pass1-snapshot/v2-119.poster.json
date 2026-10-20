@@ -1,0 +1,307 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-4af57f38e803",
+  "image": {
+    "sha256": "4af57f38e80358ae4d3b504234f766d10f72f017e9f2d0f31275208674f7f02b",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:20+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "포스터에 '야외도서관'(2026.09.12.~13.)과 '북페스티벌'(2026.10.10.~11.) 두 일정 블록이 있음. 제목과 같은 이름인 '북페스티벌' 블록을 schedule로 두고 '야외도서관'은 programs에 별도 기간으로 기록함.",
+      "북페스티벌 운영 시간은 요일별로 달라 applies_to에 '(토)'·'(일)'을 둠.",
+      "좌하단 입간판 '중구북페 / 책으로 이어진 골목, 이야기로 연결되는 중구'는 그림 속 간판이지만 홍보 문구라 slogans에 기록함. CAFE·체험&전시·중구북페스티벌 간판은 일러스트 장식이라 기록하지 않음.",
+      "하단 대전광역시 중구 로고는 역할 표기가 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 제3회 대전중구 북페스티벌",
+    "official": "대전중구 북페스티벌",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제3회",
+    "number": 3,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "중구에 책(冊)더하다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "제2장 서로의 연결",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "책으로 이어진 골목, 이야기로 연결되는 중구",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "북페스티벌 2026.10.10.(토)–11.(일)",
+    "start": {
+      "iso": "2026-10-10",
+      "year": 2026,
+      "month": 10,
+      "day": 10,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-11",
+      "year": 2026,
+      "month": 10,
+      "day": 11,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "(토) 14:00~20:00",
+        "start": "14:00",
+        "end": "20:00",
+        "applies_to": "(토)"
+      },
+      {
+        "raw": "(일) 11:00~17:00",
+        "start": "11:00",
+        "end": "17:00",
+        "applies_to": "(일)"
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "우리들공원 일대",
+    "items": [
+      "우리들공원 일대"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "대전중구",
+    "region": "대전",
+    "district": "중구",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "대전광역시 중구",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "야외도서관",
+        "category_raw": null,
+        "period": {
+          "raw": "2026.09.12.(토)–13.(일)",
+          "start": {
+            "iso": "2026-09-12",
+            "year": 2026,
+            "month": 9,
+            "day": 12,
+            "weekday": "sat",
+            "year_basis": "date_text"
+          },
+          "end": {
+            "iso": "2026-09-13",
+            "year": 2026,
+            "month": 9,
+            "day": 13,
+            "weekday": "sun",
+            "year_basis": "date_text"
+          },
+          "times": [
+            {
+              "raw": "15:00~21:00",
+              "start": "15:00",
+              "end": "21:00",
+              "applies_to": "야외도서관"
+            }
+          ]
+        },
+        "venue_raw": "천리단길 일대",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "선화 일러스트",
+      "플랫 채색",
+      "둥근 레터링"
+    ],
+    "main_colors": [
+      "연회색",
+      "연두",
+      "초록",
+      "주황",
+      "갈색",
+      "노랑",
+      "흰색"
+    ],
+    "main_objects": [
+      "책 읽는 사람들",
+      "푸드트럭",
+      "책 노점",
+      "카페",
+      "입간판",
+      "가로등 전구 줄",
+      "나무"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "hanja"
+    ],
+    "description": "연회색 바탕에 연두색 길을 따라 책을 읽고 부스를 둘러보는 사람들을 선화로 그리고, 좌상단에 녹색·주황 제목과 부제, 좌측에 야외도서관·북페스티벌 두 일정 블록을 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "443×627 이미지. 상단 말풍선 문구와 하단 로고 보조 영문을 제외한 글자는 확대하면 판독됨."
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-f25ef3f87e5e",
+  "image": {
+    "sha256": "f25ef3f87e5e52c05925f3de61619a08ff4d0117f70260f60d8c4609563d1be3",
+    "width": 431,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:12:41+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/blind",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "블라인드 독립 판독(일치도 검사용). 원본 431×627을 직접 보고 확대 크롭으로 하단 주최·주관·예산 줄을 확인함.",
+      "제목은 2줄 붓글씨(익산 천만송이 / 국화축제)이며 위의 '제23회'와 함께 제목 원문으로 기록함.",
+      "요일은 원 안에 인쇄되어 괄호 없이 적음. '익산'은 시·군·구 명칭(익산시)으로 장소·제목에 인쇄되지 않아 admin_area는 absent.",
+      "'행사운영비 11.16억(시비 100%)'을 예산 표기로 보고 11.16억 원을 1,116,000,000원으로 환산함."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제23회 익산 천만송이 국화축제",
+    "official": "익산 천만송이 국화축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제23회",
+    "number": 23,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.23 금 - 11.1 일 (10일간)",
+    "start": {
+      "iso": "2026-10-23",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-11-01",
+      "year": 2026,
+      "month": 11,
+      "day": 1,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": "10일간",
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "익산중앙체육공원",
+    "items": [
+      "익산중앙체육공원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "익산시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "익산시농업기술센터",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "행사운영비 11.16억(시비 100%)",
+    "total_krw": 1116000000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "Great. Iksan",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "수채화풍 일러스트",
+      "붓글씨 제목"
+    ],
+    "main_colors": [
+      "하늘색",
+      "노랑",
+      "분홍",
+      "빨강",
+      "초록",
+      "주황"
+    ],
+    "main_objects": [
+      "국화로 만든 탑",
+      "국화 꽃밭",
+      "국화 조형물",
+      "단풍잎",
+      "산책하는 사람들"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색 배경 상단에 회차와 검은 붓글씨 제목, 일정·장소를 두고, 아래에 국화 탑과 형형색색 국화밭 사이를 걷는 사람들을 그린 뒤 우측 하단에 주최·주관·행사운영비를 적은 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "431×627 이미지. 하단 주최·주관·행사운영비 줄은 꽃 배경 위 작은 글자로 확대하면 대부분 판독됨.",
+      "좌측 상단 'Great. Iksan' 로고 위 작은 한글은 판독 불가."
+    ]
+  }
+}

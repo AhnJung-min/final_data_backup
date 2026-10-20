@@ -1,0 +1,353 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-505578c9b9ff",
+ "image": {
+  "sha256": "505578c9b9ff6f2ac050bd15b927fb7c2865d4c28838b9ce6d874a275b7674ee",
+  "width": 424,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+hybrid(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "고극깜축제",
+  "official": "고극깜축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    14.5,
+    175.5,
+    199.0,
+    220.0
+   ],
+   "confidence": 0.8826127052307129
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "20th",
+  "number": 20,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    11.0,
+    12.0,
+    117.0,
+    68.0
+   ],
+   "confidence": 0.9869720935821533
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    14.5,
+    91.5,
+    136.0,
+    134.5
+   ],
+   "confidence": 0.998975396156311
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.7.(수)-25.(일)",
+  "start": {
+   "iso": "2026-10-07",
+   "year": 2026,
+   "month": 10,
+   "day": 7,
+   "weekday": "wed",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    15.0,
+    224.5,
+    150.5,
+    244.5
+   ],
+   "confidence": 0.9782437086105347
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "공간아울,후암스테이지.열린극장",
+  "items": [
+   "공간아울",
+   "후암스테이지.열린극장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    18.0,
+    245.5,
+    149.5,
+    259.0
+   ],
+   "confidence": 0.9048269987106323
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "present",
+  "raw": "15,000원 ~9/30(수)까지 예매 시 적용 조기예매 15,000원 21,000원 ※소극장공연 유료 티켓 지침 공연예술계종사자 15,000원 15,000원 15,000원 15,000원",
+  "free": null,
+  "prices": [],
+  "reservation_raw": "15,000원 ~9/30(수)까지 예매 시 적용",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_015",
+    "padd_rgb_2x_016",
+    "padd_rgb_2x_014",
+    "padd_rgb_2x_017",
+    "padd_rgb_2x_023",
+    "padd_rgb_2x_024",
+    "padd_rgb_2x_026",
+    "padd_rgb_2x_027",
+    "padd_rgb_2x_031",
+    "padd_rgb_2x_033",
+    "padd_rgb_2x_039"
+   ],
+   "bbox": [
+    29.0,
+    333.0,
+    260.5,
+    578.0
+   ],
+   "confidence": null
+  }
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "※출생년도 영시원 신분정(학생준,청소년준 여권,건강보험증,등본 등) 지청",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_020"
+     ],
+     "bbox": [
+      156.5,
+      382.0,
+      384.0,
+      393.5
+     ],
+     "confidence": 0.8689079284667969
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※소극장공연 유료 티켓 지침",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_024"
+     ],
+     "bbox": [
+      156.5,
+      420.5,
+      248.0,
+      432.5
+     ],
+     "confidence": 0.8878106474876404
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※신분증 및 예술인매스,명항 등 지침",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_028"
+     ],
+     "bbox": [
+      156.5,
+      459.5,
+      271.5,
+      472.0
+     ],
+     "confidence": 0.8413006067276001
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※신분증 및 소속 공무원증,재직증명서 지침",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_032"
+     ],
+     "bbox": [
+      156.0,
+      497.5,
+      289.0,
+      509.5
+     ],
+     "confidence": 0.9420096278190613
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※신분증 및 복지키드, 유공자증 등 지침 (K링보자는 1어년 이전 출생자)",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_036"
+     ],
+     "bbox": [
+      156.5,
+      537.0,
+      362.0,
+      548.5
+     ],
+     "confidence": 0.7895811200141907
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※문화누리키드 지참",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_040"
+     ],
+     "bbox": [
+      157.0,
+      574.5,
+      220.0,
+      585.5
+     ],
+     "confidence": 0.8691584467887878
+    }
+   },
+   {
+    "kind": "other",
+    "raw": "※할인 관중 예대 시,천정에서증방지르 학인 후 대켓 수령이 가능합니디 (이자험 시 정가 기준의 차역 지분)",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_041"
+     ],
+     "bbox": [
+      110.5,
+      596.5,
+      405.5,
+      609.0
+     ],
+     "confidence": 0.7948958277702332
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

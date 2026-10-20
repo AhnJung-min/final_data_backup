@@ -1,0 +1,212 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-65ca048a2221",
+ "image": {
+  "sha256": "65ca048a2221a8d1f34e3a4b118ab481cb3163303d99db4f80ed2551e8a829b4",
+  "width": 940,
+  "height": 673
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:12:07+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr+paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "콤백제문화제:",
+  "official": "콤백제문화제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_003"
+   ],
+   "bbox": [
+    486.0,
+    17.0,
+    765.0,
+    91.5
+   ],
+   "confidence": 0.15807122601065784
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "72nd",
+  "number": 72,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_000"
+   ],
+   "bbox": [
+    529.5,
+    20.5,
+    777.5,
+    39.5
+   ],
+   "confidence": 0.8413754756092561
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_004"
+   ],
+   "bbox": [
+    528.5,
+    85.5,
+    660.5,
+    107.5
+   ],
+   "confidence": 0.9876769781112671
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10. 11. (일) 2026.10.3.(토)",
+  "start": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-11",
+   "year": 2026,
+   "month": 10,
+   "day": 11,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_005",
+    "easy_rgb_2x_004"
+   ],
+   "bbox": [
+    528.5,
+    84.0,
+    765.0,
+    108.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "금강신관공원,공산성,왕도심일원",
+  "items": [
+   "금강신관공원",
+   "공산성",
+   "왕도심일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_006"
+   ],
+   "bbox": [
+    527.5,
+    111.0,
+    775.0,
+    137.0
+   ],
+   "confidence": 0.9461256265640259
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

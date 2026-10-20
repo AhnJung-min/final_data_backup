@@ -1,0 +1,220 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-6ef92355e7d6",
+ "image": {
+  "sha256": "6ef92355e7d6fc2c9cfaba749180d56d83290bb2532a7a76e3884c4e7512365c",
+  "width": 423,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:49+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "임실N치즈축제",
+  "official": "임실N치즈축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    143.0,
+    139.0,
+    358.0,
+    178.0
+   ],
+   "confidence": 0.9997026324272156
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "12th",
+  "number": 12,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    152.5,
+    28.5,
+    358.5,
+    83.5
+   ],
+   "confidence": 0.906916618347168
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    204.0,
+    12.5,
+    284.0,
+    35.5
+   ],
+   "confidence": 0.9985618591308594
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "absent",
+  "raw": null,
+  "start": null,
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": null
+ },
+ "venue": {
+  "status": "present",
+  "raw": "임실치즈테마파후 임실치즈마을임실읍일원",
+  "items": [
+   "임실치즈테마파후 임실치즈마을임실읍일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    117.0,
+    575.0,
+    318.0,
+    589.5
+   ],
+   "confidence": 0.8725196123123169
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "homepage",
+    "platform": null,
+    "raw": "WWW.IMSILFESTIVAL.COM",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      65.0,
+      598.0,
+      374.5,
+      616.5
+     ],
+     "confidence": 0.9921284914016724
+    }
+   }
+  ]
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "festival_designation",
+    "raw": "예비문화관광축제",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_007"
+     ],
+     "bbox": [
+      285.0,
+      179.0,
+      398.0,
+      208.5
+     ],
+     "confidence": 0.9985851049423218
+    }
+   }
+  ]
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

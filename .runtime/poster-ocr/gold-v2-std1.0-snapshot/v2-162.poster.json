@@ -1,0 +1,405 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-5d15a4fb593c",
+  "image": {
+    "sha256": "5d15a4fb593cff6b3e37d7534d5bede7b31e14dc97653249b5ff35274a7eb3fa",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:09:50+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "가운데 큰 영문 'TENSiON / TEN UP / FESTA'는 축제 브랜드명으로 보고 title.variants(brand)에 인쇄 순서대로 기록.",
+      "LINE UP 청소년 동아리 팀명은 확대해도 확실히 읽히는 것만 performers에 넣고 학교명은 기록하지 않음.",
+      "SMILE UP 마지막 줄(청소년들의 꿈을 적는 커뮤니티 아트 …)은 끝 단어를 확정하지 못해 programs에서 제외.",
+      "검토(pass2): 원본·확대 이미지와 전 항목 대조, 변경 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 동대문구 청소년 페스티벌",
+    "official": "동대문구 청소년 페스티벌",
+    "variants": [
+      {
+        "kind": "brand",
+        "raw": "TENSiON TEN UP FESTA",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "뻔한건 SKIP, 힙한건 PLAY",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.17.토",
+    "start": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "12:00 - 17:00",
+        "start": "12:00",
+        "end": "17:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "배봉산근린공원 열린광장",
+    "items": [
+      "배봉산근린공원 열린광장"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "동대문구",
+    "region": null,
+    "district": "동대문구",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "동대문구",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "아동청소년과 02-2127-4231",
+        "value": "02-2127-4231",
+        "label_raw": "문의",
+        "department": "아동청소년과",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "문화예술공연",
+        "category_raw": "POWER UP",
+        "period": {
+          "raw": "12:00~17:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "12:00~17:00",
+              "start": "12:00",
+              "end": "17:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "지혜준",
+            "role_raw": "국가대표 마술사"
+          },
+          {
+            "name": "허성현",
+            "role_raw": "래퍼"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "우리동네키움센터 청소년 축하공연",
+        "category_raw": "사전공연",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "청소년 동아리 공연",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "The Celeb",
+            "role_raw": null
+          },
+          {
+            "name": "히아신스",
+            "role_raw": null
+          },
+          {
+            "name": "동대문중학교 밴드부",
+            "role_raw": null
+          },
+          {
+            "name": "Sempre28기",
+            "role_raw": null
+          },
+          {
+            "name": "신설동역10번출구",
+            "role_raw": null
+          },
+          {
+            "name": "JURO",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "체험프로그램 운영",
+        "category_raw": "SMILE UP",
+        "period": {
+          "raw": "12:00~17:00",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "12:00~17:00",
+              "start": "12:00",
+              "end": "17:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "다양한 청소년 체험 부스(캐리커처, 페이스페인팅)",
+        "category_raw": "체험프로그램 운영",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "캔디맨을 이기자",
+        "category_raw": "체험프로그램 운영",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "※ 동대문구 행사 예산 공개에 관한 조례에 따라 총 예산 6천만원(구비)임을 알려드립니다.",
+    "total_krw": 60000000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "그라데이션 배경",
+      "입체 풍선형 영문 레터링",
+      "하프톤 패턴"
+    ],
+    "main_colors": [
+      "청록",
+      "파랑",
+      "남색",
+      "분홍",
+      "흰색",
+      "노랑"
+    ],
+    "main_objects": [
+      "TENSiON TEN UP FESTA 입체 글자",
+      "위로 향한 화살표",
+      "출연진 원형 인물 사진"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "청록·파랑 그라데이션 배경 위 상단에 제목·슬로건·일정·장소, 가운데 큰 입체 영문 'TENSiON TEN UP FESTA', 하단에 라인업·POWER UP·SMILE UP 프로그램과 주최·문의·예산 안내를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. LINE UP 학교·팀명과 SMILE UP 마지막 줄, 출연진 사진 아래 작은 소개 문구는 일부만 판독됨.",
+      "예산 금액의 첫 숫자는 6으로 판독했으나 작은 글자라 사람 확인 권장."
+    ]
+  }
+}

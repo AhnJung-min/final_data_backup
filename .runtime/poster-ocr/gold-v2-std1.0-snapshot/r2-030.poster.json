@@ -1,0 +1,499 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-207692e6440a",
+  "image": {
+    "sha256": "207692e6440a25556de05ba1e45fc5fc3dae4c0525d6f0f7561c95443830585d",
+    "width": 444,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:40:30+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "admin_area region은 장소 '서울 암사동 유적'의 '서울', district는 제목 '강동 선사문화축제'의 '강동'에서 기록.",
+      "제목은 '강동/선사문화축제' 두 줄을 공백으로 이음. 일정 문구 첫 줄에 '2026.'이 있어 date_text.",
+      "분류 표기(축하/공연, 체험/전시, 주요/행사, 부대/행사)는 두 글자씩 줄바꿈되어 공백으로 이어 category_raw로 기록.",
+      "'야간 빛 축제(16일~18일)'는 월이 생략되어 본 일정의 10월을 적용.",
+      "우측 하단 아주 작은 괄호 문구는 '…천원' 형태의 행사 예산 표기로 보이나 숫자를 읽지 못해 budget_disclosure를 illegible로 둠.",
+      "우측 상단 강동구 도시 브랜드 문구 마크의 작은 글자는 판독 불가.",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제31회 강동 선사문화축제",
+    "official": "강동 선사문화축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제31회",
+    "number": 31,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10.16.(금) — 18.(일)",
+    "start": {
+      "iso": "2026-10-16",
+      "year": 2026,
+      "month": 10,
+      "day": 16,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "서울 암사동 유적",
+    "items": [
+      "서울 암사동 유적"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "서울 암사동 유적",
+    "region": "서울",
+    "district": "강동",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "강동구",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "homepage",
+        "platform": null,
+        "raw": "gdsunsa.com",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "축하공연",
+        "category_raw": "축하 공연",
+        "period": {
+          "raw": "10.16.(금)",
+          "start": {
+            "iso": "2026-10-16",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "설운도",
+            "role_raw": null
+          },
+          {
+            "name": "왁스",
+            "role_raw": null
+          },
+          {
+            "name": "스페이스A",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축하공연",
+        "category_raw": "축하 공연",
+        "period": {
+          "raw": "10.18.(일)",
+          "start": {
+            "iso": "2026-10-18",
+            "year": 2026,
+            "month": 10,
+            "day": 18,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "남진",
+            "role_raw": null
+          },
+          {
+            "name": "소찬휘",
+            "role_raw": null
+          },
+          {
+            "name": "신효범",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "미디어파사드",
+        "category_raw": "체험 전시",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "선사바비큐 체험",
+        "category_raw": "체험 전시",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "신석기 고고학 체험스쿨",
+        "category_raw": "체험 전시",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "개·폐막식",
+        "category_raw": "주요 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "야간 빛 축제",
+        "category_raw": "주요 행사",
+        "period": {
+          "raw": "16일~18일",
+          "start": {
+            "iso": "2026-10-16",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "end": {
+            "iso": "2026-10-18",
+            "year": 2026,
+            "month": 10,
+            "day": 18,
+            "weekday": null,
+            "year_basis": "poster_text"
+          },
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "(개막)드론쇼",
+        "category_raw": "주요 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "(폐막)불꽃쇼",
+        "category_raw": "주요 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "강동선사노래자랑",
+        "category_raw": "부대 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "먹거리장터",
+        "category_raw": "부대 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "바위절마을 호상놀이",
+        "category_raw": "부대 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "illegible",
+    "raw": null,
+    "total_krw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "illegible",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "클레이 3D 일러스트",
+      "실사풍 합성"
+    ],
+    "main_colors": [
+      "하늘색",
+      "갈색",
+      "주황",
+      "베이지",
+      "흰색"
+    ],
+    "main_objects": [
+      "빗살무늬토기",
+      "선사시대 캐릭터 4종",
+      "매머드",
+      "원시인 아이들",
+      "움집",
+      "강변"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "하늘 배경 중앙에 거대한 빗살무늬토기를 두고 그 위에 클레이 캐릭터들, 토기 표면에 제목·일정·장소를 새기고, 하단 모래땅 위 매머드와 아이들 아래로 프로그램 4구역과 QR을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "444×627 이미지. 프로그램과 출연진은 판독되나 우측 하단 예산 괄호 문구와 우상단 브랜드 마크 작은 글자는 판독 불가."
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+ "case_id": "v2-022",
+ "engine": "easyocr+paddleocr",
+ "variant": "rgb_1x",
+ "scale": 1,
+ "normalized_dimensions": [
+  443,
+  627
+ ],
+ "input_dimensions": [
+  443,
+  627
+ ],
+ "input_sha256": "60c4ad5bfc8b6b3811570cc8dc73cf521c3ea06cd809c71a7b1c5ce139a2df53",
+ "coordinate_space": "normalized_original_pixels",
+ "status": "success",
+ "records": [
+  {
+   "id": "easy_rgb_1x_000",
+   "text": "덕수궁",
+   "confidence": 0.9800441488302087,
+   "bbox_xyxy": [
+    166.0,
+    72.0,
+    276.0,
+    120.0
+   ],
+   "polygon": [
+    [
+     166.0,
+     72.0
+    ],
+    [
+     276.0,
+     72.0
+    ],
+    [
+     276.0,
+     120.0
+    ],
+    [
+     166.0,
+     120.0
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_1x_001",
+   "text": "밤의 석조전",
+   "confidence": 0.8491110545740498,
+   "bbox_xyxy": [
+    75.0,
+    108.0,
+    366.0,
+    182.0
+   ],
+   "polygon": [
+    [
+     75.0,
+     108.0
+    ],
+    [
+     366.0,
+     108.0
+    ],
+    [
+     366.0,
+     182.0
+    ],
+    [
+     75.0,
+     182.0
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_1x_002",
+   "text": "2026.9.9. WE",
+   "confidence": 0.9111531376838684,
+   "bbox_xyxy": [
+    108.0,
+    182.0,
+    238.0,
+    208.0
+   ],
+   "polygon": [
+    [
+     108.0,
+     182.0
+    ],
+    [
+     238.0,
+     182.0
+    ],
+    [
+     238.0,
+     208.0
+    ],
+    [
+     108.0,
+     208.0
+    ]
+   ],
+   "baseline_text": "2026.9. 9 WEn",
+   "baseline_confidence": 0.4952444716664874,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "2026.9.9. WE",
+     "confidence": 0.9111531376838684,
+     "bbox_xyxy": [
+      108.0,
+      182.0,
+      238.0,
+      208.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-022/rgb_1x/easy_rgb_1x_002"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_1x_003",
+   "text": "10. 1B. SUN",
+   "confidence": 0.7775894403457642,
+   "bbox_xyxy": [
+    250.0,
+    182.0,
+    334.0,
+    208.0
+   ],
+   "polygon": [
+    [
+     250.0,
+     182.0
+    ],
+    [
+     334.0,
+     182.0
+    ],
+    [
+     334.0,
+     208.0
+    ],
+    [
+     250.0,
+     208.0
+    ]
+   ],
+   "baseline_text": "ID IB SUN",
+   "baseline_confidence": 0.3937875515908218,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "10. 1B. SUN",
+     "confidence": 0.7775894403457642,
+     "bbox_xyxy": [
+      250.0,
+      182.0,
+      334.0,
+      208.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-022/rgb_1x/easy_rgb_1x_003"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_1x_004",
+   "text": "NIGHT OF SEOKIOIEON AT DEOKSUGUNG PALACE",
+   "confidence": 0.9599488973617554,
+   "bbox_xyxy": [
+    79.0,
+    225.0,
+    367.0,
+    241.0
+   ],
+   "polygon": [
+    [
+     79.0,
+     225.0
+    ],
+    [
+     367.0,
+     225.0
+    ],
+    [
+     367.0,
+     241.0
+    ],
+    [
+     79.0,
+     241.0
+    ]
+   ],
+   "baseline_text": "NICHI 야 SONIOIEON 시I DFOSUGUNC PAIACP",
+   "baseline_confidence": 0.20936252558630164,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "NIGHT OF SEOKIOIEON AT DEOKSUGUNG PALACE",
+     "confidence": 0.9599488973617554,
+     "bbox_xyxy": [
+      79.0,
+      225.0,
+      367.0,
+      241.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-022/rgb_1x/easy_rgb_1x_004"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  }
+ ],
+ "inference_seconds": 3.064,
+ "memory": {
+  "rss_bytes": 3056480256,
+  "peak_bytes": 3280584704
+ },
+ "pipeline": "paddle_regions_v1",
+ "missing_core_fields": true,
+ "refinements": [
+  {
+   "record_id": "easy_rgb_1x_002",
+   "reasons": [
+    "core_field_verification",
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    104,
+    178,
+    242,
+    212
+   ]
+  },
+  {
+   "record_id": "easy_rgb_1x_003",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    246,
+    178,
+    338,
+    212
+   ]
+  },
+  {
+   "record_id": "easy_rgb_1x_004",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    77,
+    223,
+    369,
+    243
+   ]
+  }
+ ],
+ "easyocr_inference_seconds": 2.077,
+ "paddle_rec_seconds": 0.987
+}

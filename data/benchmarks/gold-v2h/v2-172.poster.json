@@ -1,0 +1,299 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-c15a684fbc7f",
+  "image": {
+    "sha256": "c15a684fbc7fb2db8dfcd6adb5e446ef5b367c25ae3cc44498b825226013132b",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:09:57+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목 위 '2026'은 제목 블록의 일부로 보고 title.raw에 포함. 일정 문구에는 연도가 없어 year_basis=poster_text.",
+      "제목 '울산중구'의 '중구'를 district로 기록. '울산'은 시·도 접미사 없이 인쇄되어 region=null.",
+      "하단 작은 문구 '울산 중구 국가유산야행은 국가유산청 … 이 함께 하고 있습니다.'는 가운데 로고 글자를 판독하지 못해 기록하지 않음. 그림 속 건물 현판 글자도 행사 정보가 아님.",
+      "로고 줄 끝 주황 '하다' 마크는 기관명인지 브랜드인지 포스터만으로 정할 수 없어 badges(other)로 둠.",
+      "검토(pass2): 최하단 안내 문구 속 기관 로고(빨간 원형 마크, 글자 판독 불가)를 organizations에 name=null·illegible·역할 없음으로 추가. 나머지 항목은 변경 없음.",
+      "표준 1.1 A1 적용: 시·군·구는 행정 접미사가 붙은 독립 낱말만, 시·도는 독립 낱말이거나 행정 단위만으로 된 붙은 낱말일 때 인정.",
+      "사람 검토(안정민, 2026-10-19T17:05:49+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 울산중구 국가유산야행",
+    "official": "울산중구 국가유산야행",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "동헌 달빛 한 조각, 병영 별빛 한 바퀴",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10. 23. 금 ~ 10. 25. 일",
+    "start": {
+      "iso": "2026-10-23",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-25",
+      "year": 2026,
+      "month": 10,
+      "day": 25,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "17:00 - 22:00",
+        "start": "17:00",
+        "end": "22:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "울산 동헌 및 내아, 울산 경상좌도병영성",
+    "items": [
+      "울산 동헌",
+      "내아",
+      "울산 경상좌도병영성"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "울산 동헌 및 내아, 울산 경상좌도병영성 / 2026 울산중구 국가유산야행",
+    "region": "울산",
+    "district": "중구",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "국가유산청",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "울산광역시",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "울산광역시중구",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "하다",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "플랫 일러스트",
+      "단청 문양 테두리"
+    ],
+    "main_colors": [
+      "남색",
+      "청록",
+      "초록",
+      "갈색",
+      "주황",
+      "분홍",
+      "흰색"
+    ],
+    "main_objects": [
+      "동헌 건물",
+      "성곽",
+      "웃는 보름달",
+      "한복 차림 인물들",
+      "장터 좌판",
+      "단청 꽃 문양"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "단청 문양 테두리 안 밤하늘에 흰 제목 '울산중구 국가유산야행'과 부제, 가운데 동헌 앞마당에서 한복 차림 사람들이 노는 그림, 하단 남색 띠에 일정·시간·장소와 기관 로고·QR을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 기관 로고 글자는 작아 일부만 또렷하고, 최하단 안내 문구 가운데 로고 글자는 판독 불가."
+    ]
+  }
+}

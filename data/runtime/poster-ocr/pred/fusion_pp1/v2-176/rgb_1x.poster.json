@@ -1,0 +1,269 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-4e3953374692",
+ "image": {
+  "sha256": "4e3953374692a5ba1eb100e0f2830f0fcc6eb409ab3c908692e008e1f032da7d",
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+paddleocr(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "강원한돈 페스타",
+  "official": "강원한돈 페스타",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_001",
+    "padd_rgb_1x_002"
+   ],
+   "bbox": [
+    114.0,
+    101.0,
+    354.0,
+    238.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007"
+   ],
+   "bbox": [
+    119.0,
+    284.0,
+    347.0,
+    308.0
+   ],
+   "confidence": 0.8411933183670044
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.24.(토)13:00",
+  "start": {
+   "iso": "2026-10-24",
+   "year": 2026,
+   "month": 10,
+   "day": 24,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_014"
+   ],
+   "bbox": [
+    340.0,
+    509.0,
+    439.0,
+    526.0
+   ],
+   "confidence": 0.9965878129005432
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "강릉 월화거리공원(경강로2111)",
+  "items": [
+   "강릉 월화거리공원(경강로2111)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    157.0,
+    314.0,
+    328.0,
+    333.0
+   ],
+   "confidence": 0.9320159554481506
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "경강로2111",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    157.0,
+    314.0,
+    328.0,
+    333.0
+   ],
+   "confidence": 0.9320159554481506
+  }
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "B강원양돈농업",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_016",
+      "padd_rgb_1x_017"
+     ],
+     "bbox": [
+      24.0,
+      581.0,
+      136.0,
+      592.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "한돈자조금관리위원회",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_016",
+      "padd_rgb_1x_018"
+     ],
+     "bbox": [
+      24.0,
+      581.0,
+      249.0,
+      592.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "※한돈협회 강원특별자치도협의회",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_022"
+     ],
+     "bbox": [
+      305.0,
+      601.0,
+      449.0,
+      613.0
+     ],
+     "confidence": 0.9576193690299988
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

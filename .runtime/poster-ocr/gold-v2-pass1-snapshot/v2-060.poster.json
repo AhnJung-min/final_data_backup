@@ -1,0 +1,779 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-dcad53d98917",
+  "image": {
+    "sha256": "dcad53d9891761334ade46fcce1ddef268151702712d71ddfe3c4a8a1d959496",
+    "width": 467,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:29+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "일정의 연도는 두 자리('26')뿐이고 4자리 연도가 포스터에 없어 year는 absent, 날짜 iso는 null(year_basis=absent).",
+      "회차 '제22회'는 장식 서체로 '2'가 'ㄹ'처럼 보이게 인쇄됨. 22로 판독.",
+      "시간표의 '10:00~13:00 준비'(양일)는 프로그램이 아닌 준비 시간이라 programs에 넣지 않음.",
+      "후원 '효돈동주민센터 및 효돈동 자생단체'는 '및'으로 나눠 두 기관으로 기록. 하단 'Jeju 제주특별자치도 지방보조금 지원 축제'는 지원 표기로 badges(other)에 둠(시·도명이 장소·제목 문구가 아니라 admin_area는 absent).",
+      "문의처 두 번호의 '사전접수' 안내를 해당 프로그램 registration_raw에 연결."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제22회 쇠소깍축제",
+    "official": "쇠소깍축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제22회",
+    "number": 22,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "absent",
+    "raw": null,
+    "value": null,
+    "evidence": null
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "26. 9. 19(토) - 9. 20(일)",
+    "start": {
+      "iso": null,
+      "year": null,
+      "month": 9,
+      "day": 19,
+      "weekday": "sat",
+      "year_basis": "absent"
+    },
+    "end": {
+      "iso": null,
+      "year": null,
+      "month": 9,
+      "day": 20,
+      "weekday": "sun",
+      "year_basis": "absent"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "하효항 및 쇠소깍 일원",
+    "items": [
+      "하효항",
+      "쇠소깍 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "효돈동연합청년회",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "효돈동주민센터",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "효돈동 자생단체",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "010-4614-4281(효돈동연합청년회장)",
+        "value": "010-4614-4281",
+        "label_raw": "문의처",
+        "department": "효돈동연합청년회장",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "phone",
+        "raw": "010-4242-2409(사무국장)",
+        "value": "010-4242-2409",
+        "label_raw": "문의처",
+        "department": "사무국장",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "현장참여대회(여자팔씨름)",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 19(토)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 19,
+            "weekday": "sat",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "13:00~13:30",
+              "start": "13:00",
+              "end": "13:30",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": "여자팔씨름대회, 림보대회 사전접수",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "청소년 페스티벌",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 19(토)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 19,
+            "weekday": "sat",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "13:30~17:30",
+              "start": "13:30",
+              "end": "17:30",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": "청소년 페스티벌 및 쇠소깍 가요제 사전접수",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "길트기 공연",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 19(토)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 19,
+            "weekday": "sat",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:30~18:00",
+              "start": "17:30",
+              "end": "18:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축하공연",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 19(토)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 19,
+            "weekday": "sat",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "18:00~19:00",
+              "start": "18:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "개회식",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 19(토)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 19,
+            "weekday": "sat",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "19:00~19:30",
+              "start": "19:00",
+              "end": "19:30",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "초대가수 공연 및 불꽃놀이",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 19(토)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 19,
+            "weekday": "sat",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "19:30~20:10",
+              "start": "19:30",
+              "end": "20:10",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "문희경",
+            "role_raw": "1일차 초대가수"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "검은해변 보물찾기",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 20(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "11:00~13:00",
+              "start": "11:00",
+              "end": "13:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "현장 참여 대회(림보)",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 20(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "13:00~13:30",
+              "start": "13:00",
+              "end": "13:30",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": "여자팔씨름대회, 림보대회 사전접수",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "쇠소깍 음악제",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 20(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "13:30~16:30",
+              "start": "13:30",
+              "end": "16:30",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축하공연",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 20(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "16:30~17:00",
+              "start": "16:30",
+              "end": "17:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "쇠소깍 가요제",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 20(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:00~19:00",
+              "start": "17:00",
+              "end": "19:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": "청소년 페스티벌 및 쇠소깍 가요제 사전접수",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "초대가수 공연",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 20(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "19:00~19:40",
+              "start": "19:00",
+              "end": "19:40",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "클레오",
+            "role_raw": "2일차 초대가수"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "경품추첨 및 폐회선언",
+        "category_raw": null,
+        "period": {
+          "raw": "26. 9. 20(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "19:40~20:30",
+              "start": "19:40",
+              "end": "20:30",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "어린이 야외수영장 운영",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "황토길 걷기 운영",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "각종 음식 및 체험부스 운영",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "제주특별자치도 지방보조금 지원 축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "플랫 풍경 일러스트",
+      "붓터치 타이포그래피",
+      "시간표 레이아웃"
+    ],
+    "main_colors": [
+      "분홍",
+      "청록",
+      "남색",
+      "흰색",
+      "빨강"
+    ],
+    "main_objects": [
+      "갈매기",
+      "구름",
+      "돛단배",
+      "야자수",
+      "해안 절벽",
+      "초대가수 사진 2장"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "상단 분홍 하늘에 흰 붓터치 제목과 이틀치 시간표, 하단 청록 바다에 돛단배·야자수·해안 절벽 일러스트와 부대행사·문의처 상자, 1·2일차 초대가수 사진을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "467×627 이미지. 시간표·문의처·하단 기관 띠 글자는 작지만 확대하면 판독됨."
+    ]
+  }
+}

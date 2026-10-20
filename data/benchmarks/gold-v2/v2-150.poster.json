@@ -1,0 +1,317 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-af9244249bfb",
+  "image": {
+    "sha256": "af9244249bfbd151438bd97c81878570506d187ad4ab45d23baca13d0410f1f2",
+    "width": 444,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:07:41+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목은 '대전'·장식된 '빵'·'축제' 사이가 띄어 인쇄되어 '대전 빵 축제'로 기록함. 좌상단 '빵의도시 대전' 로고는 도시 브랜드 표기로 badges에 둠.",
+      "'오픈시간 13:00'은 시작 시각만 있어 times.end=null. 제목의 '대전'은 시·도 약칭으로 보고 admin_area.region에 기록함.",
+      "하단 기관 띠에서 주최 뒤 기관과 주관 두 번째 기관이 모두 '대전관광공사'로 보이나 흐려 확실하지 않음(partial).",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 대전 빵 축제",
+    "official": "대전 빵 축제",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "DAEJEON BAKERY FESTIVAL",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10. 17.(토) ▸ 18.(일)",
+    "start": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "오픈시간 13:00",
+        "start": "13:00",
+        "end": null,
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "엑스포과학공원 일원",
+    "items": [
+      "엑스포과학공원 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "2026 대전 빵 축제",
+    "region": "대전",
+    "district": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "대전관광공사",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "대전광역시",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "대전관광공사",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "대한제과협회 대전광역시지회",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "성심당",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "대전빵축제 인스타그램",
+        "purpose": "sns",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "빵의도시 대전",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "3D 렌더링 일러스트",
+      "입체 제목"
+    ],
+    "main_colors": [
+      "하늘색",
+      "주황",
+      "갈색",
+      "베이지",
+      "흰색",
+      "남색"
+    ],
+    "main_objects": [
+      "제빵사 모자를 쓴 빵 캐릭터",
+      "도넛",
+      "프레첼",
+      "크루아상·바게트",
+      "팬케이크",
+      "탑 모양 빵"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색에서 주황으로 바뀌는 배경에 도넛 모양 '빵' 글자가 들어간 갈색 입체 제목을 두고, 가운데 제빵사 빵 캐릭터와 각종 빵을 3D로 그린 포스터. 하단에 일정·오픈시간·장소와 기관 띠, 우상단에 인스타그램 QR."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "444×627 이미지. 하단 기관 띠의 작은 글자는 확대해도 일부만 판독됨."
+    ]
+  }
+}

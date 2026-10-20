@@ -1,0 +1,285 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-0d5f7d267b60",
+ "image": {
+  "sha256": "0d5f7d267b60d1a355a7e10cdec541f0a75f512c523ebc20eeceecad0436d305",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:50+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr/rgb_2x+paddleocr/rgb_1x(paddle2x1x)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(paddle2x1x): 제목은 근거 판독 신뢰도가 높은 전처리, 회차·기관은 rgb_1x, 나머지 빈 슬롯은 rgb_1x로 채움. rgb_1x에서 가져온 슬롯: title, organizations."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026더나축제",
+  "official": "더나축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_012"
+   ],
+   "bbox": [
+    267.0,
+    289.0,
+    375.0,
+    306.0
+   ],
+   "confidence": 0.9119777083396912
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    29.5,
+    59.5,
+    124.0,
+    99.5
+   ],
+   "confidence": 0.9996159076690674
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.17.€ ~11.1.일",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-11-01",
+   "year": 2026,
+   "month": 11,
+   "day": 1,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": "16일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_022"
+   ],
+   "bbox": [
+    34.0,
+    354.5,
+    192.0,
+    377.0
+   ],
+   "confidence": 0.9260250926017761
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "문경새재도립공원 일원",
+  "items": [
+   "문경새재도립공원 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_025"
+   ],
+   "bbox": [
+    35.5,
+    379.0,
+    191.5,
+    394.5
+   ],
+   "confidence": 0.9818010926246643
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "문경시과축재추진위원회",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_020"
+     ],
+     "bbox": [
+      76.0,
+      588.0,
+      177.0,
+      601.0
+     ],
+     "confidence": 0.8107637166976929
+    }
+   },
+   {
+    "name": "1문경락랑공시",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_021"
+     ],
+     "bbox": [
+      189.0,
+      588.0,
+      283.0,
+      601.0
+     ],
+     "confidence": 0.5947210788726807
+    }
+   },
+   {
+    "name": "원1문경시",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_021",
+      "padd_rgb_1x_022"
+     ],
+     "bbox": [
+      189.0,
+      588.0,
+      365.0,
+      601.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "homepage",
+    "platform": null,
+    "raw": "www.mgapple.or.kr",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_001"
+     ],
+     "bbox": [
+      284.5,
+      14.5,
+      374.5,
+      24.5
+     ],
+     "confidence": 0.9906997680664062
+    }
+   }
+  ]
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-0fbaf839737b",
+ "image": {
+  "sha256": "0fbaf839737be1f258d10be9a4d6d683074f274e42382aceed45ed280e1c68c2",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:40+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "easyocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "청춘양구 편치불사과시래기축제",
+  "official": "청춘양구 편치불사과시래기축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_001",
+    "easy_rgb_1x_002"
+   ],
+   "bbox": [
+    38.0,
+    61.0,
+    398.0,
+    140.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_009"
+   ],
+   "bbox": [
+    72.0,
+    472.0,
+    270.0,
+    500.0
+   ],
+   "confidence": 0.8816997321270191
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.11.6(금) ~ 11.8(일)",
+  "start": {
+   "iso": "2026-11-06",
+   "year": 2026,
+   "month": 11,
+   "day": 6,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-08",
+   "year": 2026,
+   "month": 11,
+   "day": 8,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_009"
+   ],
+   "bbox": [
+    72.0,
+    472.0,
+    270.0,
+    500.0
+   ],
+   "confidence": 0.8816997321270191
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "양구군 해안면 편치볼 w렁하우스 앞 성황지",
+  "items": [
+   "양구군 해안면 편치볼 w렁하우스 앞 성황지"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_012"
+   ],
+   "bbox": [
+    72.0,
+    502.0,
+    312.0,
+    526.0
+   ],
+   "confidence": 0.1488658638161651
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "양구군 해안면 편치볼 w렁하우스 앞 성황지",
+  "region": null,
+  "district": "양구군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_012"
+   ],
+   "bbox": [
+    72.0,
+    502.0,
+    312.0,
+    526.0
+   ],
+   "confidence": 0.1488658638161651
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

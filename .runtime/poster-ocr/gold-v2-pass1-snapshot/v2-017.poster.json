@@ -1,0 +1,541 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-6d59baa85e89",
+  "image": {
+    "sha256": "6d59baa85e89c910c38eb9c498e07203c270810797016cd1932bf63f1bbe4fd9",
+    "width": 444,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:04+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "프로그램 목록 13개는 '·'로 나눈 이름 그대로 기록함.",
+      "출연진 카드는 인쇄된 날짜 라벨(9.4.(금) 등)을 프로그램 이름으로 두고 사진 아래 표기('가수', '마르치아노 신부')를 role_raw로 기록함.",
+      "좌측 상단 다색 로고는 도시 브랜드 표기로 보이나 글자를 읽지 못해 badges=illegible.",
+      "'왜관'은 읍 이름이고 칠곡군은 기관 로고에만 있어 admin_area는 absent."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 왜관 홀리페스티벌",
+    "official": "왜관 홀리페스티벌",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "HOLY FESTIVAL",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "Holy가 Holiday가 되는 순간",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "9. 4.(금) ~ 9. 6.(일)",
+    "start": {
+      "iso": "2026-09-04",
+      "year": 2026,
+      "month": 9,
+      "day": 4,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-09-06",
+      "year": 2026,
+      "month": 9,
+      "day": 6,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "왜관수도원",
+    "items": [
+      "왜관수도원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "칠곡군",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "경상북도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "빛의 성당",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "그레고리안 성가공연",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "파이프오르간 연주",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "수도원 투어",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "홀리데이스테이",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "감성버스킹",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "인생사진 스튜디오",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "마음쉼터",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "미사전시체험",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "홀리콘서트",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "MZ신부님과 함께하는 토크콘서트",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "체험부스",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "하늘성당 아빠스 특별미사",
+        "category_raw": "프로그램",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "9.4.(금)",
+        "category_raw": null,
+        "period": {
+          "raw": "9.4.(금)",
+          "start": {
+            "iso": "2026-09-04",
+            "year": 2026,
+            "month": 9,
+            "day": 4,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "린",
+            "role_raw": "가수"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "9.5.(토)",
+        "category_raw": null,
+        "period": {
+          "raw": "9.5.(토)",
+          "start": {
+            "iso": "2026-09-05",
+            "year": 2026,
+            "month": 9,
+            "day": 5,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "이창민",
+            "role_raw": "마르치아노 신부"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "9.6.(일)",
+        "category_raw": null,
+        "period": {
+          "raw": "9.6.(일)",
+          "start": {
+            "iso": "2026-09-06",
+            "year": 2026,
+            "month": 9,
+            "day": 6,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "안예은",
+            "role_raw": "가수"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "illegible",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "애니메이션풍 일러스트",
+      "노을 하늘"
+    ],
+    "main_colors": [
+      "보라",
+      "분홍",
+      "주황",
+      "초록",
+      "적갈색"
+    ],
+    "main_objects": [
+      "붉은 벽돌 성당",
+      "만국기와 전구 장식",
+      "배롱나무 꽃",
+      "천막 부스",
+      "신부와 가족 방문객",
+      "비둘기",
+      "출연진 원형 사진 3장"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "보랏빛 노을 하늘 아래 붉은 벽돌 성당과 꽃나무, 천막 부스와 방문객을 그린 일러스트 위에 보라색 큰 제목·영문 리본·일정·장소를 두고 하단에 프로그램 목록과 날짜별 출연진 사진을 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "444×627 이미지. 상단 주최·주관·후원 로고 글자는 작아 일부만 판독됨.",
+      "좌측 상단 다색 로고 글자와 이창민 사진의 노란 띠 문구는 확대해도 판독되지 않음."
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+diff --git a/app/poster_ocr/extract.py b/.runtime/poster-ocr/proposals/schedule/extract.py
+index 726b848..3e8a7c7 100644
+--- a/app/poster_ocr/extract.py
++++ b/.runtime/poster-ocr/proposals/schedule/extract.py
+@@ -13,7 +13,7 @@ from pathlib import Path
+ import re
+ import unicodedata
+ 
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = next((p for p in Path(__file__).resolve().parents if (p / "data/festivals/poster.template.json").exists()), Path(__file__).resolve().parents[2])  # PROPOSAL-SHIM
+ TEMPLATE = ROOT / "data/festivals/poster.template.json"
+ VERSION = "poster_rules_v1"
+ WEEKDAY_KO = {"월": "mon", "화": "tue", "수": "wed", "목": "thu", "금": "fri", "토": "sat", "일": "sun"}
+@@ -102,22 +102,50 @@ def build_lines(records):
+ 
+ 
+ # ---------------------------------------------------------------- dates
+-WD = r"\s*(?:[(\[]\s*)?(?P<{n}>[월화수목금토일](?:요일)?|(?i:mon|tue|wed|thu|fri|sat|sun))?(?:\s*[)\]])?"
+-POINT = (r"(?:(?P<{p}y>20[2-3]\d)\s*(?:년|[./-])\s*)?(?P<{p}m>\d{{1,2}})\s*(?:월|[./-])\s*(?P<{p}d>\d{{1,2}})(?!\d)\s*(?:일|\.)?" + WD)
+-END_POINT = (r"(?:(?P<ey>20[2-3]\d)\s*(?:년|[./-])\s*)?(?:(?P<em>\d{1,2})\s*(?:월|[./-])\s*)?(?P<ed>\d{1,2})(?!\d)\s*(?:일|\.)?" + WD.format(n="ew"))
+-RANGE_RE = re.compile(POINT.format(p="s", n="sw").replace("{{", "{").replace("}}", "}") + r"(?:\s*[A-Za-z]{1,3}(?![A-Za-z]))?\s*(?:~|-|=|부터|∼|to)\s*" + END_POINT)
+-# 범위 기호가 OCR에서 빠진 경우: 끝 날짜에 월과 인쇄 요일이 모두 있을 때만 받는다(시각 '12:00' 등과 혼동 방지).
+-RANGE_NOSEP_RE = re.compile(POINT.format(p="s", n="sw") + r"\s+(?:(?P<ey>20[2-3]\d)\s*(?:년|[./-])\s*)?(?P<em>\d{1,2})\s*(?:월|[./-])\s*(?P<ed>\d{1,2})(?!\d)\s*(?:일|\.)?"
+-                            + r"\s*(?:[(\[]\s*)?(?P<ew>[월화수목금토일](?:요일)?|(?i:mon|tue|wed|thu|fri|sat|sun))(?:\s*[)\]])?")
++# 요일: 한글 한 글자(요일), 영문 세 글자 이상(FRI·Friday) 또는 표준 두 글자 약어(MO TU WE TH FR SA SU).
++WD_EN = r"(?i:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]{0,6}(?![a-z])|(?:mo|tu|we|th|fr|sa|su)(?![a-z]))"
++WD_CHAR = r"(?:[월화수목금토일]|" + WD_EN + r")"
++# 월과 일 사이가 공백뿐인 판독('10 25 (일)')은 바로 뒤에 요일이 인쇄돼 있을 때만 날짜 후보로 본다(달력 검증은 후보 단계).
++SPACED_AHEAD = r"(?=\d{1,2}(?!\d)\s*[.,]?\s*(?:[(\[]\s*){0,2}" + WD_CHAR + r")"
++
++
++def _wd(name):
++    """요일 칸: 여는 괄호 0~2개('[(금]'), 요일, 닫는 괄호."""
++    return r"\s*(?:[(\[]\s*){0,2}(?P<" + name + r">[월화수목금토일](?:요일)?|" + WD_EN + r")?(?:\s*[)\]])?"
++
++
++def _point(p, weekday, month_optional=False):
++    """날짜 점. 연·월·일 구분은 년/월, 마침표·빗금·대시, OCR이 마침표를 쉼표로 읽은 경우('2026,9.18.', '09,.11')까지 받는다.
++    끝 날짜는 월을 생략할 수 있다('~ 25.(일)'). {p}x는 일 뒤 표기(일·마침표·쉼표): 월 표기 없이 '13일)'처럼 붙은 '일'은
++    후보 단계에서 일요일 여부를 달력으로 확인한다."""
++    month = (r"(?P<" + p + r"m>\d{1,2})(?:\s*(?P<" + p + r"sep>월|[./-]|[.,]{1,2})\s*|(?P<" + p + r"sp>\s+)" + SPACED_AHEAD + r")")
++    return (r"(?:(?P<" + p + r"y>20[2-3]\d)\s*(?:년|[./,-])\s*)?" + ("(?:" + month + ")?" if month_optional else month)
++            + r"(?P<" + p + r"d>\d{1,2})(?!\d)\s*(?P<" + p + r"x>일|[.,])?" + _wd(weekday))
++
++
++POINT_RE = _point("s", "sw")
++END_POINT = _point("e", "ew", month_optional=True)
++RANGE_SEP = r"\s*(?:~|-|=|부터|∼|to)(?:\s*[~=\-])*\s*"  # '--'처럼 겹쳐 읽힌 범위 기호도 하나로 본다.
++END_HAS_MONTH = r"(?:20[2-3]\d\s*(?:년|[./,-])\s*)?\d{1,2}\s*(?:월|[./,-])\s*\d"
++# 시작 날짜와 범위 기호 사이의 읽히지 않은 요일 칸: 영문 1~3자, 또는 한 글자 잡음(sn: '10.23.0~10.25', 끝 날짜에 월이 있을 때만).
++RANGE_GAP = r"(?:\s*(?:[A-Za-z]{1,3}(?![A-Za-z])|(?P<sn>[^\s~=\-A-Za-z])(?=" + RANGE_SEP + END_HAS_MONTH + r")))?"
++RANGE_RE = re.compile(POINT_RE + RANGE_GAP + RANGE_SEP + END_POINT)
++# 범위 기호가 OCR에서 빠진 경우(시각 '12:00' 등과 혼동 방지): 끝 날짜에 월이 있거나 바로 뒤에 요일이 있을 때만 맞추고,
++# 후보 단계에서 끝에 월과 인쇄 요일이 있거나, 끝 요일이 달력과 맞거나, 끝에 월과 마침표가 있고 시작 요일이 달력과 맞을 때만 받는다.
++NOSEP_AHEAD = (r"(?=" + END_HAS_MONTH + r"|\d{1,2}\s+" + SPACED_AHEAD + r"|\d{1,2}(?!\d)\s*[.,]?\s*(?:[(\[]\s*){0,2}" + WD_CHAR + r")")
++RANGE_NOSEP_RE = re.compile(POINT_RE + r"\s+" + NOSEP_AHEAD + END_POINT)
+ TIME_SPAN = re.compile(r"(?:오전|오후|AM|PM|am|pm)?\s*\d{1,2}\s*[:시]\s*\d{0,2}\s*(?:분)?\s*(?:~|-)\s*(?:오전|오후|AM|PM|am|pm)?\s*\d{1,2}\s*[:시]\s*\d{0,2}\s*(?:분)?")
+-SINGLE_RE = re.compile(POINT.format(p="s", n="sw").replace("{{", "{").replace("}}", "}"))
++SINGLE_RE = re.compile(POINT_RE)
++WEEKDAY_EN2 = {"mo": "mon", "tu": "tue", "we": "wed", "th": "thu", "fr": "fri", "sa": "sat", "su": "sun"}
+ 
+ 
+ def weekday_code(raw):
+     if not raw:
+         return None
+     raw = raw.strip()
+-    return WEEKDAY_KO.get(raw[0]) if raw[0] in WEEKDAY_KO else WEEKDAY_EN.get(raw[:3].lower())
++    if raw[0] in WEEKDAY_KO:
++        return WEEKDAY_KO[raw[0]]
++    return WEEKDAY_EN.get(raw[:3].lower()) or WEEKDAY_EN2.get(raw[:2].lower())
+ 
+ 
+ def point(year, month, day, weekday, basis):
+@@ -139,8 +167,31 @@ def weekday_ok(pt, assumed_year):
+         return False
+ 
+ 
+-def date_candidates(lines):
+-    """한 줄 또는 바로 아래 줄까지 이어 붙인 문구에서 일정 후보를 찾는다."""
++def _cal_ok(year, month, day, weekday):
++    if weekday is None:
++        return None
++    try:
++        return CAL[date(year, month, day).weekday()] == weekday
++    except ValueError:
++        return False
++
++
++def _read_weekday(g, p, year, month, day):
++    """(요일 코드, 달력 일치 여부). 월 뒤에 '월' 대신 기호·공백이 온 날짜에서 일 바로 뒤에 붙은 '일'('13일)', '10.18일')은
++    그날이 실제 일요일일 때만 요일로 읽고, 아니면 날짜 접미어로 둔다."""
++    weekday = weekday_code(g.get(p + "w"))
++    if weekday is None and g.get(p + "x") == "일":
++        sep = g.get(p + "sep") or (" " if g.get(p + "sp") else None)
++        if sep is None and p == "e" and not g.get("em"):
++            sep = g.get("ssep") or (" " if g.get("ssp") else None)  # 월을 생략한 끝 날짜는 시작 날짜 표기를 따른다.
++        if sep not in (None, "월") and _cal_ok(year, month, day, "sun"):
++            weekday = "sun"
++    return weekday, _cal_ok(year, month, day, weekday)
++
++
++def date_candidates(lines, poster_year=None):
++    """한 줄 또는 바로 아래 줄까지 이어 붙인 문구에서 일정 후보를 찾는다. 판독이 약한 형식(공백 구분 월·일, 범위 기호 누락,
++    요일 칸 잡음)은 인쇄 요일이 달력과 맞는 등 추가 근거가 있을 때만 후보로 둔다."""
+     found = []
+     for i, line in enumerate(lines):
+         first = re.sub(r"(\d)\s+(?=[./]\s*\d)", r"\1", line["norm"])
+@@ -148,7 +199,8 @@ def date_candidates(lines):
+         if i + 1 < len(lines):
+             windows.append(([line, lines[i + 1]], first + " " + re.sub(r"(\d)\s+(?=[./]\s*\d)", r"\1", lines[i + 1]["norm"]), len(first)))
+         for members, text, boundary in windows:
+-            for kind, pattern in (("range", RANGE_RE), ("range", RANGE_NOSEP_RE), ("single", SINGLE_RE)):
++            strong = False
++            for kind, pattern in (("range", RANGE_RE), ("nosep", RANGE_NOSEP_RE), ("single", SINGLE_RE)):
+                 for m in pattern.finditer(text):
+                     if boundary is not None and not (m.start() < boundary < m.end()):
+                         continue  # 두 줄 창에서는 줄 경계를 넘는 일정만 받는다(한 줄 안의 일정은 그 줄에서 찾는다).
+@@ -157,37 +209,98 @@ def date_candidates(lines):
+                     sm, sd = int(g["sm"]), int(g["sd"])
+                     if not (1 <= sm <= 12 and 1 <= sd <= 31):
+                         continue
+-                    if kind == "single" and not (g.get("sw") or sy):
+-                        continue  # 연도·요일 없는 단일 'M.D'는 숫자 잡음이 많아 쓰지 않는다.
+-                    cand = {"kind": kind, "members": members, "raw_span": m.group(0).strip(), "sy": sy, "sm": sm, "sd": sd,
+-                            "sw": weekday_code(g.get("sw")), "line_h": max(l["h"] for l in members)}
+-                    if kind == "range":
++                    assumed = sy or poster_year or 2026
++                    sw, s_ok = _read_weekday(g, "s", assumed, sm, sd)
++                    if g.get("ssp") and not s_ok:
++                        continue  # 공백으로만 나뉜 월·일은 인쇄 요일이 달력과 맞을 때만 날짜로 본다.
++                    weak = False
++                    rest = text[:m.start()] + text[m.end():] if boundary is None else None  # 한 줄 창에서 일정 밖 문구
++                    if kind == "single" and not (sw or sy):
++                        # 연도·요일 없는 단일 'M.D'는 숫자 잡음이 많아, 그 날짜만 적힌 줄(잡음 한 글자 허용)일 때만 약한 후보로 둔다.
++                        if rest is None or len(re.findall(r"[0-9A-Za-z가-힣]", rest)) > 1:
++                            continue
++                        weak = True
++                    cand = {"kind": "range" if kind == "nosep" else kind, "members": members, "raw_span": m.group(0).strip(),
++                            "sy": sy, "sm": sm, "sd": sd, "sw": sw, "line_h": max(l["h"] for l in members), "weak": weak,
++                            "noisy": False, "pos": m.start() if boundary is None else None, "rest": rest,
++                            "date_line": members[0] if boundary is None or m.start("sm") < boundary else members[1]}
++                    if kind in ("range", "nosep"):
+                         ey = int(g["ey"]) if g.get("ey") else None
+-                        em = int(g["em"]) if g.get("em") else sm
++                        has_month = bool(g.get("em"))
++                        em = int(g["em"]) if has_month else sm
+                         ed = int(g["ed"])
+                         if not (1 <= em <= 12 and 1 <= ed <= 31):
+                             continue
+-                        cand.update(ey=ey, em=em, ed=ed, ew=weekday_code(g.get("ew")))
++                        e_year = ey or (assumed + 1 if (em, ed) < (sm, sd) else assumed)
++                        ew, e_ok = _read_weekday(g, "e", e_year, em, ed)
++                        if g.get("esp") and not e_ok:
++                            continue
++                        if g.get("sn") and not has_month:
++                            continue  # 요일 칸 잡음을 건너뛴 범위는 끝 날짜에 월이 있어야 한다.
++                        slashed = g.get("ssep") == "/" and g.get("esep") == "/"  # 'M/D M/D'는 시각과 헷갈리지 않는 날짜 표기
++                        if kind == "nosep" and not ((has_month and g.get("ew")) or e_ok or (has_month and s_ok and g.get("ex")) or slashed):
++                            continue  # '10.17(토) 10.30'의 10.30은 시각일 수 있어, 요일 근거 없는 끝은 '10.18.'처럼 끝맺음이 있어야 한다.
++                        cand.update(ey=ey, em=em, ed=ed, ew=ew, noisy=bool(g.get("sn")))
+                     found.append(cand)
+-            if found and found[-1]["members"] == members and len(members) == 1:
+-                break  # 한 줄에서 찾았으면 다음 줄을 붙이지 않는다.
+-    # 보완: 범위로 묶이지 않은 날짜 점(연도 또는 요일 있음)이 가까운 줄에 두 개 있으면 시작·종료로 본다.
+-    singles = [c for c in found if c["kind"] == "single" and len(c["members"]) == 1]
++                    strong = strong or not weak
++            if strong and len(members) == 1:
++                break  # 한 줄에서 찾았으면 다음 줄을 붙이지 않는다(날짜만 적힌 약한 후보는 아래 줄과 이어 볼 수 있다).
++    # 보완: 범위로 묶이지 않은 날짜 점(연도 또는 요일 있음, 또는 날짜만 적힌 줄)이 가까운 줄에 두 개 있으면 시작·종료로 본다.
++    # 윗줄 연도와 이어 읽은 날짜 점('2026.' + '10.7.수')도 짝이 될 수 있으며, 거리·크기는 월·일이 적힌 줄로 잰다.
++    singles = [c for c in found if c["kind"] == "single"]
+     for a in singles:
+         for b in singles:
+-            la, lb = a["members"][0], b["members"][0]
+-            if la is lb or (b["sm"], b["sd"]) <= (a["sm"], a["sd"]) or (a["sy"] and b["sy"] and a["sy"] != b["sy"]):
++            la, lb = a["date_line"], b["date_line"]
++            if (la is lb or any(l is k for l in a["members"] for k in b["members"]) or (b["sm"], b["sd"]) <= (a["sm"], a["sd"])
++                    or (a["sy"] and b["sy"] and a["sy"] != b["sy"])):
+                 continue
+             gap = abs((la["box"][1] + la["box"][3]) / 2 - (lb["box"][1] + lb["box"][3]) / 2)
+             if gap > 3 * max(la["h"], lb["h"]):
+                 continue
+-            pair = {**a, "kind": "pair", "members": sorted([la, lb], key=lambda l: l["index"]), "ey": b["sy"], "em": b["sm"], "ed": b["sd"], "ew": b["sw"]}
++            if (a["weak"] or b["weak"]) and not .7 <= la["h"] / max(lb["h"], 1e-6) <= 1.43:
++                continue  # 날짜만 적힌 줄은 글자 크기가 비슷한 짝과만 묶는다.
++            pair = {**a, "kind": "pair", "members": sorted(a["members"] + b["members"], key=lambda l: l["index"]),
++                    "ey": b["sy"], "em": b["sm"], "ed": b["sd"], "ew": b["sw"], "weak": a["weak"] and b["weak"], "pos": None, "rest": None}
+             found.append(pair)
+     return found
+ 
+ 
++def extend_multi_period(best, candidates, lines, poster_year=None):
++    """선택한 범위 바로 아래 줄이 같은 크기의 다른 범위로 시작하면(주말마다 여는 축제 등) 끝 날짜를 마지막 기간 끝으로 늘린다."""
++    c, start, end = best
++    if c["kind"] != "range" or len(c["members"]) != 1 or end is None:
++        return best
++    line = c["members"][0]
++    if line["index"] + 1 >= len(lines):
++        return best
++    nxt = lines[line["index"] + 1]
++    gap = nxt["box"][1] - line["box"][3]
++    overlap = min(line["box"][2], nxt["box"][2]) - max(line["box"][0], nxt["box"][0])
++    if not (.75 <= nxt["h"] / line["h"] <= 1.33 and -.3 * line["h"] <= gap <= .8 * line["h"] and overlap > 0):
++        return best
++    year = start["year"] or poster_year or 2026
++    if not (_valid(year, start["month"], start["day"]) and _valid(end["year"] or year, end["month"], end["day"])):
++        return best
++    s_val = date(year, start["month"], start["day"])
++    e_val = date(end["year"] or year, end["month"], end["day"])
++    for o in candidates:
++        if (o["kind"] != "range" or len(o["members"]) != 1 or o["members"][0] is not nxt or o["pos"] is None or o["pos"] > 2
++                or (o["sy"] and start["year"] and o["sy"] != start["year"])
++                or re.search(r"[A-Za-z가-힣]", re.sub(r"매주|주말|매일|[월화수목금토일]", "", o["rest"]))):
++            # 아래 줄은 범위로 시작하고 나머지가 요일·'매주' 같은 일정 표기뿐이어야 한다('사전행사' 등 다른 행사 줄은 제외).
++            continue
++        oy = o["sy"] or year
++        if not (_valid(oy, o["sm"], o["sd"]) and _valid(o["ey"] or oy, o["em"], o["ed"])):
++            continue
++        o_start, o_end = date(oy, o["sm"], o["sd"]), date(o["ey"] or oy, o["em"], o["ed"])
++        if o_start > e_val and o_end >= o_start and (o_end - s_val).days <= 120:
++            merged = {**c, "members": [line, nxt]}
++            return merged, start, point(o["ey"] or o["sy"] or end["year"], o["em"], o["ed"], o["ew"], "date_text")
++    return best
++
++
+ def pick_schedule(lines, poster_year):
+-    candidates = date_candidates(lines)
++    candidates = date_candidates(lines, poster_year)
+     best, best_score = None, None
+     max_h = max((l["h"] for l in lines), default=1)
+     for c in candidates:
+@@ -214,11 +327,12 @@ def pick_schedule(lines, poster_year):
+         checks = [weekday_ok(start, assumed)] + ([weekday_ok(end, end["year"] or assumed)] if end else [])
+         score += sum(2 for v in checks if v) - sum(3 for v in checks if v is False)
+         score += 2 * c["line_h"] / max_h
++        score -= 1 if c["noisy"] else 0  # 요일 칸 잡음을 건너뛴 범위는 깨끗한 후보보다 뒤에 둔다.
+         if any(DATE_LABEL.search(l["norm"]) for l in c["members"]):
+             score += 1.5
+         if best_score is None or score > best_score:
+             best, best_score = (c, start, end), score
+-    return best
++    return extend_multi_period(best, candidates, lines, poster_year) if best else None
+ 
+ 
+ def _valid(y, m, d):
+@@ -307,9 +421,13 @@ def extract(records, image, engine, *, extracted_at=None):
+     # 운영 시간·기간 문구 -------------------------------------------------
+     times = []
+     for l in lines:
+-        for m in re.finditer(r"(오전|오후|AM|PM|am|pm|낮|저녁|밤)?\s*(\d{1,2})\s*(?::|시)\s*(\d{2})?\s*(?:분)?\s*(?:~|-|부터)\s*"
+-                             r"(오전|오후|AM|PM|am|pm|낮|저녁|밤)?\s*(\d{1,2})\s*(?::|시)\s*(\d{2})?", l["norm"]):
+-            start_c, end_c = clock(m.group(1), m.group(2), m.group(3)), clock(m.group(4) or m.group(1), m.group(5), m.group(6))
++        # 시·분 구분은 ':'·'시', 또는 분이 '00'일 때의 마침표·쉼표('12.00')다('M.00'은 날짜가 될 수 없다).
++        # 시작 시각이 분명하면 끝 시각은 구분 기호가 빠진 'HHMM'('12.00-1700')도 받는다.
++        for m in re.finditer(r"(오전|오후|AM|PM|am|pm|낮|저녁|밤)?\s*(\d{1,2})\s*(?::|시|[.,](?=00(?!\d)))\s*(\d{2})?\s*(?:분)?\s*(?:~|-|부터)\s*"
++                             r"(오전|오후|AM|PM|am|pm|낮|저녁|밤)?\s*(?:(\d{1,2})\s*(?::|시|[.,](?=00(?!\d)))\s*(\d{2})?|([01]\d|2[0-4])([0-5]\d)(?!\d))",
++                             l["norm"]):
++            start_c = clock(m.group(1), m.group(2), m.group(3))
++            end_c = clock(m.group(4) or m.group(1), m.group(5) or m.group(7), m.group(6) or m.group(8))
+             if start_c:
+                 times.append({"raw": m.group(0).strip(), "start": start_c, "end": end_c, "applies_to": None})
+     if doc["schedule"]["status"] == "present":

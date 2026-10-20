@@ -1,0 +1,258 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-725a2fc92d01",
+ "image": {
+  "sha256": "725a2fc92d01c3735141fc5e3048995a83127b89c1a4a16246f0a784e6e9f1a9",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:55+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "키즈존",
+  "official": "키즈존",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_001"
+   ],
+   "bbox": [
+    194.0,
+    84.0,
+    418.0,
+    202.0
+   ],
+   "confidence": 0.9920657277107239
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "absent",
+  "raw": null,
+  "value": null,
+  "evidence": null
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "26.10.17.(토)~ 10.18.(일)",
+  "start": {
+   "iso": null,
+   "year": null,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "absent"
+  },
+  "end": {
+   "iso": null,
+   "year": null,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "absent"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    17.0,
+    566.0,
+    210.0,
+    583.0
+   ],
+   "confidence": 0.9693915247917175
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "강정보디아크광장",
+  "items": [
+   "강정보디아크광장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_010"
+   ],
+   "bbox": [
+    272.0,
+    566.0,
+    388.0,
+    583.0
+   ],
+   "confidence": 0.9960188865661621
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "달성군",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최·주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_011",
+      "padd_rgb_1x_012"
+     ],
+     "bbox": [
+      87.0,
+      605.0,
+      200.0,
+      619.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "읽급달성문화재단",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최·주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_011",
+      "padd_rgb_1x_013"
+     ],
+     "bbox": [
+      87.0,
+      605.0,
+      276.0,
+      619.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "M 달성문화도시센터",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최·주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_011",
+      "padd_rgb_1x_014"
+     ],
+     "bbox": [
+      87.0,
+      604.0,
+      356.0,
+      619.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>포스터 데이터셋 v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+:root{--paper:#f6f7f8;--sheet:#ffffff;--paper-2:#eceef1;--ink:#1f2328;--ink-2:#5b616a;--muted:#686e77;--rule:#d9dde2;
+--grid:#e3e6ea;--axis:#b9bfc7;--accent:#1d5fb3;--accent-wash:rgba(29,95,179,.07);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;
+--seq:#2a78d6;--warn:#b26a00;--shadow:rgba(16,24,40,.12);
+--font-display:"Black Han Sans","IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+--font-body:"IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+--font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14171b;--sheet:#1b1f24;--paper-2:#1d2126;--ink:#e9ecef;
+--ink-2:#a9b0b9;--muted:#8b929c;--rule:#2e343b;--grid:#262b31;--axis:#4a515a;--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.09);
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--seq:#3987e5;--warn:#e0a030;--shadow:rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#14171b;--sheet:#1b1f24;--paper-2:#1d2126;--ink:#e9ecef;--ink-2:#a9b0b9;--muted:#8b929c;--rule:#2e343b;
+--grid:#262b31;--axis:#4a515a;--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.09);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--seq:#3987e5;
+--warn:#e0a030;--shadow:rgba(0,0,0,.45);color-scheme:dark}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.7 var(--font-body);padding:3rem 20px 4rem;word-break:keep-all;overflow-wrap:break-word}
+main{display:flex;flex-direction:column;gap:3.25rem;max-width:64rem;margin-inline:auto}
+.wrap{width:100%;max-width:46rem}.wide{width:100%}.wide>h2,.wide>.sub{max-width:46rem}
+h1,h2,h3{text-wrap:balance;margin:0}h1{font-family:var(--font-display);font-weight:400;font-size:clamp(2rem,5.5vw,3.1rem);line-height:1.15}
+h2{font-size:1.35rem;font-weight:600;line-height:1.35;margin-bottom:.6rem}h3{font-size:1.02rem;font-weight:600;margin:1.4rem 0 .4rem}
+p{margin:0}section>p+p,section>p+ul,section>ul+p,section>p+.scroll,section>.scroll+p{margin-top:.9rem}
+.sub{color:var(--ink-2);font-size:.95rem;margin-bottom:1.2rem}
+code{font-family:var(--font-mono);font-size:.86em;background:var(--paper-2);border-radius:4px;padding:.08em .35em;overflow-wrap:anywhere;word-break:normal}
+pre{margin:0;background:var(--paper-2);border-radius:6px;padding:1rem 1.1rem;overflow-x:auto;font-family:var(--font-mono);font-size:.8rem;line-height:1.6}
+pre code{background:none;padding:0;font-size:inherit}a{color:var(--accent)}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.intro{display:flex;flex-direction:column;gap:1rem}.eyebrow{display:flex;align-items:center;gap:.55rem;font-family:var(--font-mono);font-size:.8rem;letter-spacing:.05em;color:var(--accent)}
+.reg{width:15px;height:15px;flex:none;border:1.5px solid currentColor;border-radius:50%;background:linear-gradient(currentColor,currentColor) center/1.5px 100% no-repeat,linear-gradient(currentColor,currentColor) center/100% 1.5px no-repeat}
+.lead{font-size:1.06rem;max-width:42rem}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(10.5rem,1fr));gap:.75rem 1.5rem;margin:.5rem 0 0;padding-top:1rem;border-top:1px solid var(--rule)}
+.meta div{min-width:0}.meta dt{font-size:.78rem;color:var(--muted);letter-spacing:.03em}.meta dd{margin:.1rem 0 0;font-size:.92rem}
+.points,.plain{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:.55rem}.points li::marker,.plain li::marker{color:var(--accent)}
+.points strong,.plain strong{font-weight:600}
+.scroll{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--sheet)}
+table{width:100%;border-collapse:collapse;font-size:.86rem;line-height:1.5}
+th,td{text-align:left;vertical-align:top;padding:.5rem .7rem;border-bottom:1px solid var(--rule)}
+thead th{background:var(--paper-2);font-weight:600;font-size:.8rem;color:var(--ink-2);white-space:nowrap}tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.scroll code{white-space:nowrap;overflow-wrap:normal}
+td.ci{color:var(--muted);font-size:.8rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.chart{position:relative;margin:0}.chart-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;margin-bottom:1rem}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;list-style:none;margin:0;padding:0;font-size:.88rem;color:var(--ink-2)}
+.legend li{display:flex;align-items:center;gap:.4rem}.sw{display:inline-block;width:12px;height:12px;border-radius:50%;flex:none}
+.c1{background:var(--s1)}.c2{background:var(--s2)}.c3{background:var(--s3)}
+button{font:inherit;font-size:.85rem;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:.35rem .85rem;cursor:pointer}
+button:hover{border-color:var(--axis)}
+.dots{display:grid;gap:2px;--label-w:12rem}
+.drow{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr) 7.5rem;align-items:center;gap:.85rem;padding:4px 6px;border-radius:4px}
+.drow:hover,.drow:focus-visible{background:var(--accent-wash)}.dlabel{font-size:.9rem;min-width:0}
+.dtrack{position:relative;height:34px}.dtrack .g{position:absolute;top:0;bottom:0;width:1px;background:var(--grid)}
+.dmark{position:absolute;height:2px;border-radius:1px}.ddot{position:absolute;width:10px;height:10px;border-radius:50%;box-shadow:0 0 0 2px var(--sheet);transform:translate(-50%,-50%)}
+.dval{font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums;line-height:1.25}
+.daxis{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr) 7.5rem;gap:.85rem;padding:.3rem 6px 0}
+.ticks{position:relative;height:1.2rem;font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums}.ticks span{position:absolute;transform:translateX(-50%)}
+.ticks span:first-child{transform:none}.ticks span:last-child{transform:translateX(-100%)}
+.bars{display:grid;gap:4px;--label-w:7rem}.brow{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr) 3rem;align-items:center;gap:.85rem;padding:3px 6px;border-radius:4px}
+.brow:hover{background:var(--accent-wash)}.btrack{position:relative;height:14px;border-left:1px solid var(--axis)}.bfill{position:absolute;inset:0 auto 0 0;background:var(--seq);border-radius:0 4px 4px 0}
+.bval{font-size:.82rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tip{position:absolute;z-index:3;pointer-events:none;min-width:11rem;max-width:18rem;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;box-shadow:0 6px 20px var(--shadow);padding:.55rem .75rem;font-size:.82rem;line-height:1.45}
+.tip strong{display:block;font-size:.92rem;font-weight:600}
+figcaption{margin-top:1rem;font-size:.86rem;color:var(--ink-2);max-width:46rem}
+.note{border-left:3px solid var(--accent);background:var(--accent-wash);padding:.7rem .9rem;border-radius:0 6px 6px 0;font-size:.92rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem 2rem}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.9rem}
+.tile{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:.8rem .9rem}.tile .k{font-size:.78rem;color:var(--muted)}
+.tile .v{font-size:1.5rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.3}.tile .d{font-size:.8rem;color:var(--ink-2)}
+footer{font-size:.85rem;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+@media (max-width:640px){.drow,.daxis{grid-template-columns:7.2rem minmax(0,1fr) 5.6rem;gap:.5rem}.dots{--label-w:7.2rem}body{padding-block:2rem 3rem}}
+</style>
+</head>
+<body>
+<main>
+<header class="intro wrap"><p class="eyebrow"><span class="reg" aria-hidden="true"></span>posters-v2 · 데이터 전처리</p><h1>포스터 데이터셋 v2 수집·전처리</h1><p class="lead">OCR·VLM 실험용 최신 축제 포스터 200장을 어떻게 모으고, 어떤 상태로 보관하고, 무엇을 정답으로 삼았는지 정리했다.</p><dl class="meta"><div><dt>작성</dt><dd>2026-10-19</dd></div><div><dt>포스터</dt><dd>200장 (dev 60 · test 140)</dd></div><div><dt>예비</dt><dd>52장</dd></div><div><dt>정답</dt><dd>사람 검토 252장</dd></div></dl></header>
+<section class="wrap" id="summary"><h2>결론</h2><ul class="points">
+<li><strong>2026년 9~12월에 열리는 축제 포스터 200장을 TourAPI에서 자동 수집해 로컬에 보관했다.</strong> 조회 축제 439건 중 이름이 '포스터'인 상세 이미지가 있는 축제 252건에서 시·도 비례로 뽑았고, 나머지 52장은 예비분이다.</li>
+<li><strong>대부분 약 443×627 px 축소본이다.</strong> 세로 627 px가 199장, 가로 600 px 초과는 1장뿐이라 기관 띠·유의사항 같은 작은 글자는 원본으로도 판독이 어렵다.</li>
+<li><strong>전처리는 원본을 바꾸지 않고 실행 시점에 메모리·임시 파일로만 한다.</strong> EXIF 방향(전부 1)·투명도(전부 없음)를 확인한 뒤 RGB 원본(rgb_1x)과 LANCZOS 2배(rgb_2x) 두 입력을 만들었다.</li>
+<li><strong>정답은 포스터 추출 표준 형식으로 200장을 3단계로 만들었다.</strong> 1차 AI 판독 후 다른 판독자가 전 항목을 다시 검토했고(검토자 기록상 25장·39건 수정), 마지막으로 팀원이 예비분까지 252장의 핵심 8칸을 포스터와 직접 대조했다. 사람이 고친 칸은 14칸(0.7%)뿐이고, 그중 5칸은 띄어쓰기·구분 기호라 채점에 영향이 없다.</li>
+<li><strong>지역(시·군·구) 정답 규칙을 표준 1.1로 고쳤다.</strong> 사람마다 판단이 가장 크게 갈린 칸이라(블라인드 30장 중 8장 불일치), 행정 접미사가 붙은 독립 낱말만 인정하도록 스크립트로 일괄 적용했다. dev·test 0장, 예비분 0장이 바뀌었다.</li>
+<li><strong>77장은 팀이 main에 올린 기존 포스터와 바이트가 같다.</strong> 같은 축제 포스터를 다른 경로로 다시 모은 것이라 중복 실험이 아니라 동일 출처 확인으로 본다.</li></ul></section>
+<section class="wide" id="collect"><h2>수집 과정</h2><p>새로 만든 일괄 수집 명령으로 한 번에 받았다. 상세 이미지 조회 438건과 목록 조회 등 API 호출은 441건으로 개발계정 하루 한도(1,000건) 안에서 끝났다. 이미지 다운로드 실패는 0건이다.</p>
+<div class="scroll"><table><thead><tr><th>단계</th><th class="num">수</th><th>비고</th></tr></thead><tbody><tr><td>TourAPI 축제(9/1~12/31, 2026 시작)</td><td class="num">439</td><td></td></tr><tr><td>이름에 &#x27;포스터&#x27;가 있는 상세 이미지</td><td class="num">255</td><td>축제 3건은 포스터 이미지가 2장 이상</td></tr><tr><td>포스터가 있는 축제(축제당 1장)</td><td class="num">252</td><td></td></tr><tr><td>중복 제거 후(sha256·dHash ≤6bit)</td><td class="num">252</td><td>중복 0건</td></tr><tr><td>실험용 선정(dev 60 · test 140)</td><td class="num">200</td><td>시·도 비례 층화, seed 20261019</td></tr><tr><td>예비분</td><td class="num">52</td><td>포스터가 아니거나 사용할 수 없을 때 교체용</td></tr></tbody></table></div>
+<pre><code>.\.venv\Scripts\python.exe scripts\collect_festivals.py collect --year 2026 --start-date 2026-09-01 --end-date 2026-12-31 --tourapi --detail-images --download-images --poster-hints-only --max-calls 600 --output-dir data\runtime\festivals\run_posters_recent_2026-10-19
+.\.venv\Scripts\python.exe -m app.poster_ocr.dataset --run-dir data\runtime\festivals\run_posters_recent_2026-10-19</code></pre></section>
+<section class="wide" id="composition"><h2>구성</h2><div class="grid2"><div><h3>시·도</h3><figure class="chart"><div class="chart-bar"><span class="sub" style="margin:0">장 수</span><button type="button" data-toggle="sido-table" data-plot="sido-plot" aria-pressed="false">표로 보기</button></div><div id="sido-plot"><div class="bars"><div class="brow" data-tip="[&quot;경기&quot;, &quot;33장 (16.5%)&quot;]"><span class="dlabel">경기</span><span class="btrack"><span class="bfill" style="width:100.00%"></span></span><span class="bval">33</span></div><div class="brow" data-tip="[&quot;서울&quot;, &quot;31장 (15.5%)&quot;]"><span class="dlabel">서울</span><span class="btrack"><span class="bfill" style="width:93.94%"></span></span><span class="bval">31</span></div><div class="brow" data-tip="[&quot;경북&quot;, &quot;19장 (9.5%)&quot;]"><span class="dlabel">경북</span><span class="btrack"><span class="bfill" style="width:57.58%"></span></span><span class="bval">19</span></div><div class="brow" data-tip="[&quot;강원&quot;, &quot;17장 (8.5%)&quot;]"><span class="dlabel">강원</span><span class="btrack"><span class="bfill" style="width:51.52%"></span></span><span class="bval">17</span></div><div class="brow" data-tip="[&quot;충남&quot;, &quot;17장 (8.5%)&quot;]"><span class="dlabel">충남</span><span class="btrack"><span class="bfill" style="width:51.52%"></span></span><span class="bval">17</span></div><div class="brow" data-tip="[&quot;전남광주&quot;, &quot;16장 (8.0%)&quot;]"><span class="dlabel">전남광주</span><span class="btrack"><span class="bfill" style="width:48.48%"></span></span><span class="bval">16</span></div><div class="brow" data-tip="[&quot;전북&quot;, &quot;14장 (7.0%)&quot;]"><span class="dlabel">전북</span><span class="btrack"><span class="bfill" style="width:42.42%"></span></span><span class="bval">14</span></div><div class="brow" data-tip="[&quot;경남&quot;, &quot;13장 (6.5%)&quot;]"><span class="dlabel">경남</span><span class="btrack"><span class="bfill" style="width:39.39%"></span></span><span class="bval">13</span></div><div class="brow" data-tip="[&quot;부산&quot;, &quot;11장 (5.5%)&quot;]"><span class="dlabel">부산</span><span class="btrack"><span class="bfill" style="width:33.33%"></span></span><span class="bval">11</span></div><div class="brow" data-tip="[&quot;충북&quot;, &quot;6장 (3.0%)&quot;]"><span class="dlabel">충북</span><span class="btrack"><span class="bfill" style="width:18.18%"></span></span><span class="bval">6</span></div><div class="brow" data-tip="[&quot;제주&quot;, &quot;6장 (3.0%)&quot;]"><span class="dlabel">제주</span><span class="btrack"><span class="bfill" style="width:18.18%"></span></span><span class="bval">6</span></div><div class="brow" data-tip="[&quot;인천&quot;, &quot;5장 (2.5%)&quot;]"><span class="dlabel">인천</span><span class="btrack"><span class="bfill" style="width:15.15%"></span></span><span class="bval">5</span></div><div class="brow" data-tip="[&quot;대전&quot;, &quot;5장 (2.5%)&quot;]"><span class="dlabel">대전</span><span class="btrack"><span class="bfill" style="width:15.15%"></span></span><span class="bval">5</span></div><div class="brow" data-tip="[&quot;대구&quot;, &quot;3장 (1.5%)&quot;]"><span class="dlabel">대구</span><span class="btrack"><span class="bfill" style="width:9.09%"></span></span><span class="bval">3</span></div><div class="brow" data-tip="[&quot;울산&quot;, &quot;3장 (1.5%)&quot;]"><span class="dlabel">울산</span><span class="btrack"><span class="bfill" style="width:9.09%"></span></span><span class="bval">3</span></div><div class="brow" data-tip="[&quot;세종&quot;, &quot;1장 (0.5%)&quot;]"><span class="dlabel">세종</span><span class="btrack"><span class="bfill" style="width:3.03%"></span></span><span class="bval">1</span></div></div></div><div id="sido-table" hidden><div class="scroll"><table><thead><tr><th>시·도</th><th class="num">장</th></tr></thead><tbody><tr><td>경기</td><td class="num">33</td></tr><tr><td>서울</td><td class="num">31</td></tr><tr><td>경북</td><td class="num">19</td></tr><tr><td>강원</td><td class="num">17</td></tr><tr><td>충남</td><td class="num">17</td></tr><tr><td>전남광주</td><td class="num">16</td></tr><tr><td>전북</td><td class="num">14</td></tr><tr><td>경남</td><td class="num">13</td></tr><tr><td>부산</td><td class="num">11</td></tr><tr><td>충북</td><td class="num">6</td></tr><tr><td>제주</td><td class="num">6</td></tr><tr><td>인천</td><td class="num">5</td></tr><tr><td>대전</td><td class="num">5</td></tr><tr><td>대구</td><td class="num">3</td></tr><tr><td>울산</td><td class="num">3</td></tr><tr><td>세종</td><td class="num">1</td></tr></tbody></table></div></div><div class="tip" hidden></div></figure></div>
+<div><h3>행사 시작 월</h3><figure class="chart"><div class="chart-bar"><span class="sub" style="margin:0">장 수</span><button type="button" data-toggle="month-table" data-plot="month-plot" aria-pressed="false">표로 보기</button></div><div id="month-plot"><div class="bars"><div class="brow" data-tip="[&quot;2026-01&quot;, &quot;1장&quot;]"><span class="dlabel">2026-01</span><span class="btrack"><span class="bfill" style="width:0.79%"></span></span><span class="bval">1</span></div><div class="brow" data-tip="[&quot;2026-04&quot;, &quot;2장&quot;]"><span class="dlabel">2026-04</span><span class="btrack"><span class="bfill" style="width:1.57%"></span></span><span class="bval">2</span></div><div class="brow" data-tip="[&quot;2026-08&quot;, &quot;5장&quot;]"><span class="dlabel">2026-08</span><span class="btrack"><span class="bfill" style="width:3.94%"></span></span><span class="bval">5</span></div><div class="brow" data-tip="[&quot;2026-09&quot;, &quot;59장&quot;]"><span class="dlabel">2026-09</span><span class="btrack"><span class="bfill" style="width:46.46%"></span></span><span class="bval">59</span></div><div class="brow" data-tip="[&quot;2026-10&quot;, &quot;127장&quot;]"><span class="dlabel">2026-10</span><span class="btrack"><span class="bfill" style="width:100.00%"></span></span><span class="bval">127</span></div><div class="brow" data-tip="[&quot;2026-11&quot;, &quot;6장&quot;]"><span class="dlabel">2026-11</span><span class="btrack"><span class="bfill" style="width:4.72%"></span></span><span class="bval">6</span></div></div></div><div id="month-table" hidden><div class="scroll"><table><thead><tr><th>시작 월</th><th class="num">장</th></tr></thead><tbody><tr><td>2026-01</td><td class="num">1</td></tr><tr><td>2026-04</td><td class="num">2</td></tr><tr><td>2026-08</td><td class="num">5</td></tr><tr><td>2026-09</td><td class="num">59</td></tr><tr><td>2026-10</td><td class="num">127</td></tr><tr><td>2026-11</td><td class="num">6</td></tr></tbody></table></div></div><div class="tip" hidden></div></figure>
+<p class="sub" style="margin-top:.8rem">9월 이전에 시작한 8장은 9월 이후까지 이어지는 장기 행사다. 행사 기간 중앙값 3일, 하루 행사 21장, 한 달 넘는 행사 10장.</p></div></div></section>
+<section class="wide" id="images"><h2>이미지 품질</h2><p>TourAPI CMS가 세로 627 px로 줄여 제공한 이미지가 199장이다. 형식은 JPEG 126장, PNG 74장이며 모두 RGB이고 EXIF 방향 값은 1, 투명 채널은 없다.</p>
+<div class="scroll"><table><thead><tr><th>항목</th><th class="num">최소</th><th class="num">중앙값</th><th class="num">최대</th></tr></thead><tbody><tr><td>가로(px)</td><td class="num">418</td><td class="num">443</td><td class="num">940</td></tr><tr><td>세로(px)</td><td class="num">627</td><td class="num">627</td><td class="num">673</td></tr><tr><td>세로/가로</td><td class="num">0.72</td><td class="num">1.42</td><td class="num">1.50</td></tr><tr><td>용량(KB)</td><td class="num">20</td><td class="num">74</td><td class="num">1359</td></tr></tbody></table></div>
+<p class="note">작은 글자 판독(정답 작성자 기준): 읽힘 45장 · 일부 144장 · 판독 불가 10장. 같은 해상도에서 OCR이 읽을 수 있는 상한도 이 수준을 넘기 어렵다.</p></section>
+<section class="wrap" id="preprocess"><h2>전처리</h2><ul class="plain">
+<li><strong>정규화</strong>: EXIF 방향 적용 → 흰 배경 합성 → RGB. 이번 200장은 방향 1·투명도 없음이라 원본 픽셀과 같다. 좌표는 모두 이 정규화 원본 픽셀 기준이다.</li>
+<li><strong>rgb_1x</strong>: 정규화 원본 그대로(약 443×627).</li>
+<li><strong>rgb_2x</strong>: LANCZOS 2배 확대(약 886×1254). main 벤치마크의 기본 입력이며 작은 글자의 픽셀 수를 늘린다. 없는 정보를 만들지는 못한다.</li>
+<li><strong>혼합 경로 crop</strong>: EasyOCR 결과에서 고른 최대 8개 줄을 글자 높이 12% 여백으로 자르고 최대 2배 확대·회색조·autocontrast를 적용한다(main <code>prepare_crop</code>와 동일).</li>
+<li>gray_2x·CLAHE·이진화는 main의 기존 비교에서 이득이 작아 이번 실험에서 뺐다.</li>
+<li>변형 이미지는 <code>.runtime/poster-ocr/inputs/</code>에 해시와 함께 임시 저장하며 공개하지 않는다(공공누리 제3유형 변경금지).</li></ul></section>
+<section class="wide" id="labels"><h2>정답 라벨</h2><p>정답은 팀 표준 <code>festival-poster 1.0</code> 문서로 포스터마다 1개씩 <code>data/benchmarks/gold-v2/</code>에 있다. 작성 규칙은 표준 문서와 같고, 모든 항목을 present·illegible·absent 중 하나로 확정했다. TourAPI 목록값·파일명·OCR 결과는 보지 않았다.</p>
+<ol class="plain"><li><strong>1차 작성</strong>: AI 보조 판독(원본 + 3배 확대 띠)으로 초안 작성, 스키마·논리 검증 통과까지 수정.</li>
+<li><strong>2차 검토</strong>: 다른 판독자가 원본을 직접 보며 전 항목을 대조해 고쳤다. 검토자 기록으로 25장에서 39건을 고쳤고, 검토 전 사본이 완성본으로 남은 185장을 직접 비교하면 39장이 달라졌다.</li>
+<li><strong>블라인드 일치도</strong>: test에서 무작위 30장을 1차·2차 결과를 보지 않고 새로 라벨링해 최종 정답과 비교했다.</li>
+<li><strong>사람 검토</strong>: 팀원 1명이 검토 화면(<code>/review</code>)에서 포스터 원본을 보며 AI 정답의 핵심 8칸(축제명·연도·회차·시작일·시작 요일·종료일·종료 요일·장소)을 252장 전부 확인했다. 한 장에 걸린 시간 중앙값은 15초다.</li>
+<li><strong>표준 1.1 변환</strong>: 지역 규칙 A1(아래)을 스크립트로 적용했다. 사람 검토 칸은 건드리지 않는다.</li></ol>
+<h3>사람 검토 결과</h3><div class="grid2"><div><div class="scroll"><table><thead><tr><th>분할</th><th class="num">검토</th><th class="num">고친 포스터</th><th class="num">고친 칸</th></tr></thead><tbody><tr><td>dev</td><td class="num">60</td><td class="num">3</td><td class="num">3</td></tr><tr><td>test</td><td class="num">140</td><td class="num">7</td><td class="num">10</td></tr><tr><td>예비</td><td class="num">52</td><td class="num">1</td><td class="num">1</td></tr></tbody></table></div>
+<div class="scroll"><table><thead><tr><th>수정 종류</th><th class="num">칸</th></tr></thead><tbody><tr><td>띄어쓰기·구분 기호만 다름(채점 영향 없음)</td><td class="num">5</td></tr><tr><td>AI가 '없음'·'판독 불가'로 둔 칸을 사람이 읽음</td><td class="num">9</td></tr><tr><td>값 자체를 고침</td><td class="num">0</td></tr></tbody></table></div></div><div><div class="scroll"><table><thead><tr><th>칸</th><th class="num">고친 수</th><th class="num">AI 정답 유지율</th></tr></thead><tbody><tr><td>축제명</td><td class="num">1</td><td class="num">99.6%</td></tr><tr><td>연도</td><td class="num">2</td><td class="num">99.2%</td></tr><tr><td>회차</td><td class="num">0</td><td class="num">100.0%</td></tr><tr><td>시작일</td><td class="num">0</td><td class="num">100.0%</td></tr><tr><td>시작 요일</td><td class="num">2</td><td class="num">99.2%</td></tr><tr><td>종료일</td><td class="num">0</td><td class="num">100.0%</td></tr><tr><td>종료 요일</td><td class="num">2</td><td class="num">99.2%</td></tr><tr><td>장소</td><td class="num">7</td><td class="num">97.2%</td></tr></tbody></table></div></div></div>
+<p class="sub" style="margin-top:.6rem">사람이 채운 칸은 대부분 AI가 작은 글자를 '없음'·'판독 불가'로 둔 경우였다. 이런 칸은 OCR도 대개 읽지 못해, AI 정답과 사람 정답으로 채점한 결과 차이는 분모가 몇 칸 늘어나는 정도였다.</p>
+<h3>지역 규칙 A1 (표준 1.1)</h3>
+<p>표준 1.0은 '포스터에 쓰인 시·도와 시·군·구'라고만 정해, 접미사 없는 지명(포천)이나 다른 낱말에 붙은 지명(예산사과축제)을 판독자마다 다르게 적었다. 추출기는 지명 사전을 쓰지 않으므로 이런 정답은 원리상 맞힐 수 없다. 1.1에서는 시·군·구는 '○○시·군·구'처럼 접미사가 붙은 독립 낱말일 때만, 시·도는 독립 낱말이거나 행정 단위만으로 된 붙은 낱말(대전중구)일 때만 인정한다. 접미사 없는 지명은 축제명에 그대로 남아 있어 TourAPI 지역 코드와 맞추는 매칭 단계에서 쓴다. 변환은 정답의 장소·주소·축제명 원문과 행정구역 목록만 보고 결정적으로 했고, 이미지 확인으로 근거가 원문 밖에 있는 2장은 현행대로 두었다.</p>
+<div class="scroll"><table><thead><tr><th>분할</th><th class="num">정답 수</th><th class="num">바뀐 수</th></tr></thead><tbody><tr><td>dev</td><td class="num">60</td><td class="num">0</td></tr><tr><td>test</td><td class="num">140</td><td class="num">0</td></tr><tr><td>예비</td><td class="num">52</td><td class="num">0</td></tr></tbody></table></div>
+<div class="scroll"><table><thead><tr><th>항목</th><th class="num">인쇄 포스터 수</th><th class="num">비율</th><th class="num">판독 불가</th><th class="num">38장 조사 비율</th></tr></thead><tbody><tr><td>축제명</td><td class="num">200</td><td class="num">100%</td><td class="num">0</td><td class="num">100%</td></tr><tr><td>행사 기간</td><td class="num">197</td><td class="num">98%</td><td class="num">0</td><td class="num">100%</td></tr><tr><td>행사 장소</td><td class="num">190</td><td class="num">95%</td><td class="num">0</td><td class="num">100%</td></tr><tr><td>개최 연도</td><td class="num">189</td><td class="num">94%</td><td class="num">1</td><td class="num">92%</td></tr><tr><td>기관</td><td class="num">187</td><td class="num">94%</td><td class="num">3</td><td class="num">66%</td></tr><tr><td>슬로건</td><td class="num">140</td><td class="num">70%</td><td class="num">2</td><td class="num">50%</td></tr><tr><td>회차</td><td class="num">79</td><td class="num">40%</td><td class="num">0</td><td class="num">47%</td></tr><tr><td>프로그램</td><td class="num">75</td><td class="num">38%</td><td class="num">2</td><td class="num">32%</td></tr><tr><td>QR 코드</td><td class="num">69</td><td class="num">34%</td><td class="num">0</td><td class="num">24%</td></tr><tr><td>문의처</td><td class="num">20</td><td class="num">10%</td><td class="num">7</td><td class="num">13%</td></tr><tr><td>홈페이지·SNS</td><td class="num">9</td><td class="num">4%</td><td class="num">4</td><td class="num">11%</td></tr><tr><td>공지·유의사항</td><td class="num">11</td><td class="num">6%</td><td class="num">3</td><td class="num">11%</td></tr><tr><td>예산 표기</td><td class="num">13</td><td class="num">6%</td><td class="num">5</td><td class="num">11%</td></tr><tr><td>주소</td><td class="num">12</td><td class="num">6%</td><td class="num">1</td><td class="num">5%</td></tr><tr><td>요금·예매</td><td class="num">6</td><td class="num">3%</td><td class="num">0</td><td class="num">0%</td></tr><tr><td>지정·브랜드 표기</td><td class="num">65</td><td class="num">32%</td><td class="num">14</td><td class="num">50%</td></tr></tbody></table></div>
+<p class="sub" style="margin-top:.8rem">38장 조사는 2026-10-14 표준 설계 때의 표본이다. 지정·브랜드 표기는 조사에서 지정 5·브랜드 14를 합친 값이다.</p>
+<h3>블라인드 일치도 (30장)</h3><div class="scroll"><table><thead><tr><th>비교</th><th class="num">일치</th><th class="num">비율</th></tr></thead><tbody><tr><td>축제명 일치</td><td class="num">28/30</td><td class="num">93.3%</td></tr><tr><td>일정(시작·종료) 일치</td><td class="num">30/30</td><td class="num">100.0%</td></tr><tr><td>장소 원문 일치</td><td class="num">27/27</td><td class="num">100.0%</td></tr><tr><td>장소 문자 일치율 ≥0.8</td><td class="num">27/27</td><td class="num">100.0%</td></tr><tr><td>연도 일치</td><td class="num">30/30</td><td class="num">100.0%</td></tr><tr><td>회차 일치</td><td class="num">9/10</td><td class="num">90.0%</td></tr><tr><td>인쇄 요일 일치</td><td class="num">27/28</td><td class="num">96.4%</td></tr><tr><td>기관 존재 판정 일치</td><td class="num">28/28</td><td class="num">100.0%</td></tr><tr><td>문의처 존재 판정 일치</td><td class="num">29/29</td><td class="num">100.0%</td></tr><tr><td>지정·브랜드 표기 존재 판정 일치</td><td class="num">24/27</td><td class="num">88.9%</td></tr><tr><td>공지·유의사항 존재 판정 일치</td><td class="num">30/30</td><td class="num">100.0%</td></tr><tr><td>기관 항목 F1(역할·이름 / 번호)</td><td class="num">43 일치 · 5 불일치</td><td class="num">94.5%</td></tr><tr><td>문의처 항목 F1(역할·이름 / 번호)</td><td class="num">1 일치 · 0 불일치</td><td class="num">100.0%</td></tr></tbody></table></div>
+<p class="sub" style="margin-top:.6rem">블라인드 라벨에도 같은 A1 변환을 적용한 뒤 비교했다.</p></section>
+<section class="wrap" id="schema-notes"><h2>검토 메모에서 나온 스키마 개선점</h2><p>사람 검토 메모 10건 중 7건은 '주말마다', '각각 하루씩', '두 차례 더'처럼 <strong>기간 안에서 일부 날짜만 열리는 일정</strong>이었다. 지금 표준은 시작·종료일 한 쌍만 채점하므로 이런 포스터에서는 정답 기간과 실제 운영일이 다르다. 규칙 검토에서도 같은 문제가 나와(표준 1.1 S5) 다음과 같이 정했다.</p>
+<ul class="plain"><li>시작·종료일은 지금처럼 가장 이른 날과 가장 늦은 날로 둔다(채점 변화 없음).</li>
+<li>떨어진 구간·날짜는 인쇄된 그대로 <code>schedule.operating_raw</code>에 적는다. 묶인 기간을 매일 운영으로 오해하지 않게 한다.</li>
+<li>추천·일정 서비스에서 회차별 날짜가 필요하면 다음 표준에서 <code>schedule.sessions[]</code>(구간 목록)를 추가한다. 이번 실험에서는 채점하지 않는다.</li></ul>
+<p class="sub">나머지 메모는 포스터 안의 부대 행사 일정·명칭과 상시 운영 표기였다.</p></section>
+<section class="wide" id="files"><h2>파일과 재현</h2><pre><code>data/img-v2/originals/v2-001.jpg …   실험용 200장 원본 바이트 (Git 제외)
+data/img-v2/reserve/r2-001.jpg …     예비 52장
+data/img-v2/index.csv · gallery.html 로컬 확인용 목록(축제명·기간·출처)
+data/img-v2/SHA256SUMS               원본 해시
+data/benchmarks/posters-v2.json      매니페스트: 분할·층·출처·라이선스·이미지 정보
+data/benchmarks/gold-v2/*.poster.json        정답(AI 2차 검토본, 표준 1.1 지역 규칙 적용)
+data/benchmarks/human-review/*.json          사람 검토 기록(칸별 확인·수정·메모)
+data/benchmarks/gold-v2h/*.poster.json       최종 정답 = gold-v2 + 사람 검토 반영 (채점 기준)
+data/benchmarks/gold-v2-blind/*.poster.json  블라인드 30장
+.\.venv\Scripts\python.exe -m app.poster_ocr.human_review apply   # gold-v2h 다시 만들기</code></pre></section>
+<section class="wrap" id="limits"><h2>한계</h2><ul class="plain"><li>이름에 '포스터'가 붙은 이미지만 모았으므로 그렇지 않은 축제 포스터는 빠졌다(선택 편향).</li>
+<li>해상도가 낮아 작은 글자의 정답도 '판독 불가'로 남은 항목이 많다. 고해상도 원본 성능은 따로 확인해야 한다.</li>
+<li>사람 검토는 핵심 8칸만 했다. 기관·문의처·슬로건 같은 목록 칸은 AI 2차 검토본 그대로라 그 지표는 참고용이다.</li>
+<li>사람 검토자는 1명이다. 검토자 간 일치도는 재지 않았다.</li></ul></section>
+<footer class="wrap"><p>포스터 원본: ⓒ한국관광공사 TourAPI, 공공누리 제3유형(출처표시·변경금지). 원본은 로컬 <code>data/img-v2/</code>에만 두고 Git과 이 보고서에 넣지 않았다.</p><p>정답 라벨은 AI 보조 판독 2단계 결과를 팀원이 핵심 8칸에 대해 직접 검토한 것이다. 나머지 칸은 AI 2차 검토본 그대로다.</p></footer>
+</main>
+<script>
+(function(){
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var plot=document.getElementById(btn.dataset.plot), table=document.getElementById(btn.dataset.toggle);
+      var asTable=btn.getAttribute('aria-pressed')!=='true';
+      btn.setAttribute('aria-pressed',String(asTable)); btn.textContent=asTable?'차트로 보기':'표로 보기';
+      plot.hidden=asTable; table.hidden=!asTable;
+    });
+  });
+  document.querySelectorAll('.chart').forEach(function(chart){
+    var tip=chart.querySelector('.tip'); if(!tip) return;
+    chart.querySelectorAll('[data-tip]').forEach(function(row){
+      function show(){ tip.replaceChildren(); var lines=JSON.parse(row.dataset.tip);
+        lines.forEach(function(t,i){ var el=document.createElement(i===0?'strong':'div'); el.textContent=t; tip.appendChild(el); });
+        tip.hidden=false; var box=chart.getBoundingClientRect(), r=row.getBoundingClientRect();
+        tip.style.left=Math.max(0,Math.min(r.left-box.left+r.width*0.35,box.width-tip.offsetWidth))+'px';
+        var top=r.top-box.top-tip.offsetHeight-6; tip.style.top=(top<0?r.bottom-box.top+6:top)+'px'; }
+      function hide(){ tip.hidden=true; }
+      row.addEventListener('pointerenter',show); row.addEventListener('pointerleave',hide);
+      row.addEventListener('focus',show); row.addEventListener('blur',hide);
+    });
+  });
+})();
+</script>
+</body>
+</html>

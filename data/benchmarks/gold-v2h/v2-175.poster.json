@@ -1,0 +1,268 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-4b2ded267513",
+  "image": {
+    "sha256": "4b2ded2675132d51f47e08f3230522a4a79fcba2d2ccc44bfbfbae29b73bd5bb",
+    "width": 454,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:10:01+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목 블록 '2026 원주 만두 축제'의 연도는 제목에만 있어 일정 year_basis=poster_text.",
+      "장소의 '및'은 괄호 설명 안에 있어 괄호를 유지하려고 items를 나누지 않음.",
+      "하단 역할 표기(주최·주관·후원)와 예산 문구는 매우 작은 글자를 확대해 읽은 값이라 사람 확인 권장. 주관 로고의 기관명은 판독 불가.",
+      "'원주'는 시 접미사 없이 인쇄되고 '원주시'는 로고에만 있어 admin_area는 absent.",
+      "검토(pass2): 원본·확대 이미지와 전 항목 대조, 변경 없음.",
+      "사람 검토(안정민, 2026-10-19T17:06:28+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 원주 만두 축제",
+    "official": "원주 만두 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "시장에서 한 판, 즐거울 만두!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10.23.(금) - 10.25.(일)",
+    "start": {
+      "iso": "2026-10-23",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-25",
+      "year": 2026,
+      "month": 10,
+      "day": 25,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "중앙동 전통시장 일원 (원주천 및 문화의거리 일원)",
+    "items": [
+      "중앙동 전통시장 일원 (원주천",
+      "문화의거리 일원)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "원주시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "신한은행",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "NH농협은행",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "총예산 800,000천원 (시비 100%)",
+    "total_krw": 800000000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "손글씨 레터링",
+      "단순한 캐릭터 일러스트"
+    ],
+    "main_colors": [
+      "노랑",
+      "진녹색",
+      "흰색",
+      "분홍"
+    ],
+    "main_objects": [
+      "젓가락에 집힌 웃는 만두",
+      "포크에 꽂힌 작은 만두",
+      "리본 띠"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "노란 배경 상단에 진녹색 손글씨 제목 '2026 원주 만두 축제'와 리본 슬로건, 가운데 큰 젓가락에 집힌 웃는 만두, 하단에 일정·장소와 주최·주관·후원·예산 표기를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "454×627 이미지. 하단 역할 표기·예산 글자는 매우 작아 확대해도 흐리고, 주관 로고 글자는 판독 불가."
+    ]
+  }
+}

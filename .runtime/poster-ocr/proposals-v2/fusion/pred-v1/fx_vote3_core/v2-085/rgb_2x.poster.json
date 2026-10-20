@@ -1,0 +1,253 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-62050ac62a16",
+ "image": {
+  "sha256": "62050ac62a1684b3e943da8cf2c28f8298edfae7a45e8ce14cc52fc7ac236a50",
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:51+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote3_core"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote3_core): schedule, title"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "삼랑성 역사금 문화축제",
+  "official": "삼랑성 역사금 문화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_005",
+    "easy_rgb_2x_006",
+    "easy_rgb_2x_009"
+   ],
+   "bbox": [
+    3.0,
+    155.5,
+    267.5,
+    388.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "26th",
+  "number": 26,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000",
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    38.5,
+    20.0,
+    113.0,
+    35.0
+   ],
+   "confidence": null
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_008"
+   ],
+   "bbox": [
+    273.5,
+    327.5,
+    350.5,
+    345.5
+   ],
+   "confidence": 0.9849017858505249
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026 10. 9 금 2026.10.10.토",
+  "start": {
+   "iso": "2026-10-09",
+   "year": 2026,
+   "month": 10,
+   "day": 9,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-10",
+   "year": 2026,
+   "month": 10,
+   "day": 10,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_030",
+    "easy_rgb_2x_034"
+   ],
+   "bbox": [
+    152.0,
+    502.0,
+    213.5,
+    543.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "전등사 일원",
+  "items": [
+   "전등사 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    313.5,
+    63.5,
+    365.0,
+    75.5
+   ],
+   "confidence": 0.8831706047058105
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "장확경 사원문확민 인천장장공사",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_048"
+     ],
+     "bbox": [
+      21.5,
+      601.0,
+      111.5,
+      608.0
+     ],
+     "confidence": 0.5307430028915405
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "불고사진참리'원년의 시간을 건다'※",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_025"
+     ],
+     "bbox": [
+      274.5,
+      443.0,
+      366.0,
+      451.5
+     ],
+     "confidence": 0.7448557019233704
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

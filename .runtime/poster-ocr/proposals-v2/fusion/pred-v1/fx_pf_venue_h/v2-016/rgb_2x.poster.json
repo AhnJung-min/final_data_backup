@@ -1,0 +1,222 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-667043efc7c8",
+ "image": {
+  "sha256": "667043efc7c80f86a4e52b6b395ce6be7118b0016153b0c77eda98b6a1df5f2c",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:50+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_venue_h"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_venue_h): venue"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "화적연",
+  "official": "화적연",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    37.0,
+    88.0,
+    277.0,
+    185.0
+   ],
+   "confidence": 0.9626432061195374
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    32.0,
+    68.0,
+    201.5,
+    87.0
+   ],
+   "confidence": 0.9288901686668396
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.4(금)-5.(퇴)19:30/총2회공연",
+  "start": {
+   "iso": "2026-09-04",
+   "year": 2026,
+   "month": 9,
+   "day": 4,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-05",
+   "year": 2026,
+   "month": 9,
+   "day": 5,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    36.0,
+    265.0,
+    252.0,
+    280.5
+   ],
+   "confidence": 0.9075103402137756
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "대한민국 명승 포천 화적연 특설무대(관인면 사정리 66)",
+  "items": [
+   "대한민국 명승 포천 화적연 특설무대(관인면 사정리 66)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_008"
+   ],
+   "bbox": [
+    36.0,
+    285.0,
+    298.0,
+    301.0
+   ],
+   "confidence": 0.9412628412246704
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "관인면 사정리 66",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    36.0,
+    284.5,
+    295.0,
+    301.0
+   ],
+   "confidence": 0.9574704766273499
+  }
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "present",
+  "raw": "전석 무료관람",
+  "free": true,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    47.0,
+    234.0,
+    136.5,
+    254.5
+   ],
+   "confidence": 0.931212306022644
+  }
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

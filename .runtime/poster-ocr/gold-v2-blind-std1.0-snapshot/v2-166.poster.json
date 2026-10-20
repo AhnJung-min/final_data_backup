@@ -1,0 +1,269 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-5ca4d6ebf1e1",
+  "image": {
+    "sha256": "5ca4d6ebf1e10c8b2ac3bd2eb607d70aebb2b26789c590f2fec62a4f07c5059f",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:12:39+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/blind",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "블라인드 독립 판독(일치도 검사용). 원본 443×627을 직접 보고 확대 크롭으로 세로 제목과 하단 로고 띠를 확인함.",
+      "세로쓰기 제목 열을 오른쪽부터(2026 / 여주 / 오곡나루축제) 읽어 제목 원문으로 기록하고, 크게 쓴 붓글씨 '오곡나루'는 brand 변형으로 둠.",
+      "하단 로고 띠 각 묶음 앞에 작은 역할 표기가 있으나 확대해도 읽히지 않아 role_raw를 비우고 roles를 붙이지 않음.",
+      "'여주'는 시·군·구 명칭(○○시)으로 인쇄되지 않아 admin_area는 absent로 둠."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 여주 오곡나루축제",
+    "official": "여주 오곡나루축제",
+    "variants": [
+      {
+        "kind": "brand",
+        "raw": "오곡나루",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.23.금 -10.25.일",
+    "start": {
+      "iso": "2026-10-23",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-25",
+      "year": 2026,
+      "month": 10,
+      "day": 25,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "신륵사 관광지 일원",
+    "items": [
+      "신륵사 관광지 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "여주",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "여주세종문화관광재단",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "문화체육관광부",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한국관광공사",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "festival_designation",
+        "raw": "문화체육관광부 2026-2027 문화관광축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "동양화풍 일러스트",
+      "붓글씨 제목",
+      "세로쓰기"
+    ],
+    "main_colors": [
+      "파랑",
+      "보라",
+      "주황",
+      "노랑",
+      "초록",
+      "검정"
+    ],
+    "main_objects": [
+      "보름달",
+      "돛단배(황포돛배)",
+      "벼 이삭",
+      "초록 산수",
+      "탑"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": true,
+    "scripts": [
+      "ko"
+    ],
+    "description": "보랏빛·주황빛 하늘의 큰 보름달 위에 검은 붓글씨 '오곡나루'와 세로 제목·연도를 두고, 아래에 일정·장소 한 줄, 강 위 돛단배와 산수, 앞쪽 벼 이삭을 그린 포스터."
+  },
+  "quality": {
+    "small_text": "illegible",
+    "notes": [
+      "443×627 이미지. 하단 로고 띠의 역할 표기와 기관명이 매우 작고 배경과 섞여 확대해도 대부분 판독되지 않음.",
+      "좌측 상단 문화관광축제 배지는 두 줄 모두 읽힘."
+    ]
+  }
+}

@@ -1,0 +1,278 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-07ee536b42dd",
+ "image": {
+  "sha256": "07ee536b42dd320eb2637c6a73ec1064bf1f8a4844e2fc6d77d594356b7cefcf",
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+easyocr(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "부안 공소 젓갈과 왕새우가함께 FOOD FESTA",
+  "official": "부안 공소 젓갈과 왕새우가함께 FOOD FESTA",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    108.5,
+    257.5,
+    327.0,
+    271.5
+   ],
+   "confidence": 0.9201016426086426
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    171.0,
+    239.0,
+    328.0,
+    254.5
+   ],
+   "confidence": 0.9988617897033691
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.2(금)~10.4(일)",
+  "start": {
+   "iso": "2026-10-02",
+   "year": 2026,
+   "month": 10,
+   "day": 2,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-04",
+   "year": 2026,
+   "month": 10,
+   "day": 4,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    171.0,
+    239.0,
+    328.0,
+    254.5
+   ],
+   "confidence": 0.9988617897033691
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "부안군 진서면 곰소다용도부지 일원",
+  "items": [
+   "부안군 진서면 곰소다용도부지 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    145.5,
+    275.0,
+    290.5,
+    286.5
+   ],
+   "confidence": 0.9520261287689209
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "부안군 진서면 곰소다용도부지 일원",
+  "region": null,
+  "district": "부안군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    145.5,
+    275.0,
+    290.5,
+    286.5
+   ],
+   "confidence": 0.9520261287689209
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "공소젓갈축제추진위원회",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      56.0,
+      607.0,
+      274.5,
+      619.0
+     ],
+     "confidence": 0.9638212323188782
+    }
+   },
+   {
+    "name": "부안양식어민협회",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      56.0,
+      607.0,
+      274.5,
+      619.0
+     ],
+     "confidence": 0.9638212323188782
+    }
+   },
+   {
+    "name": "부안군",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_014",
+      "padd_rgb_2x_015"
+     ],
+     "bbox": [
+      307.0,
+      606.5,
+      388.5,
+      619.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

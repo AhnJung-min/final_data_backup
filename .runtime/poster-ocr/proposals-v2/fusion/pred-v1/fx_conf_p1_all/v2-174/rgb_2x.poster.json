@@ -1,0 +1,218 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-98482c010784",
+ "image": {
+  "sha256": "98482c010784d39fb86c01c13972d2b96cdf0e9a1ac91d4a26976674d6514d31",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_all"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_all): schedule, title"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "D 걸리 축제",
+  "official": "D 걸리 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_008",
+    "padd_rgb_1x_007",
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    124.0,
+    181.0,
+    304.0,
+    310.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_010"
+   ],
+   "bbox": [
+    115.0,
+    325.0,
+    326.0,
+    349.0
+   ],
+   "confidence": 0.9769881963729858
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.23.()10.24.(토)",
+  "start": {
+   "iso": "2026-10-23",
+   "year": 2026,
+   "month": 10,
+   "day": 23,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_010"
+   ],
+   "bbox": [
+    115.0,
+    325.0,
+    326.0,
+    349.0
+   ],
+   "confidence": 0.9769881963729858
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "전주비전대학교 대운동장 (전주시 완산구 천장로 235)",
+  "items": [
+   "전주비전대학교 대운동장 (전주시 완산구 천장로 235)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009",
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    155.0,
+    355.5,
+    302.5,
+    384.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "전주시 완산구 천장로 235",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    183.5,
+    373.5,
+    274.0,
+    384.0
+   ],
+   "confidence": 0.957314670085907
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "(전주시 완산구 천장로 235)",
+  "region": null,
+  "district": "전주시 완산구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    183.5,
+    373.5,
+    274.0,
+    384.0
+   ],
+   "confidence": 0.957314670085907
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

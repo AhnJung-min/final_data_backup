@@ -1,0 +1,282 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-e83b311a3ebf",
+ "image": {
+  "sha256": "e83b311a3ebf64754bb9566633484d400c03a4698b6c6d95fe4cbd66a78367ff",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_orgs_p1"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_orgs_p1): organizations"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "부평풍물대축제",
+  "official": "부평풍물대축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    56.5,
+    18.5,
+    129.5,
+    30.5
+   ],
+   "confidence": 0.9962466955184937
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_017"
+   ],
+   "bbox": [
+    289.0,
+    393.5,
+    388.0,
+    415.5
+   ],
+   "confidence": 0.9593629837036133
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.2.(금) 2026.10.3.(토)4.(일)",
+  "start": {
+   "iso": "2026-10-02",
+   "year": 2026,
+   "month": 10,
+   "day": 2,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_017",
+    "padd_rgb_2x_019"
+   ],
+   "bbox": [
+    261.0,
+    393.5,
+    389.0,
+    454.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "부평대로일대",
+  "items": [
+   "부평대로일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_020"
+   ],
+   "bbox": [
+    289.5,
+    452.5,
+    389.5,
+    475.5
+   ],
+   "confidence": 0.993859052658081
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "인천광이시 부정구",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_019",
+      "padd_rgb_1x_020"
+     ],
+     "bbox": [
+      73.0,
+      582.0,
+      159.0,
+      593.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "문화체육관광부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_001"
+     ],
+     "bbox": [
+      351.0,
+      17.0,
+      423.0,
+      30.0
+     ],
+     "confidence": 0.9911991357803345
+    }
+   },
+   {
+    "name": "인전당역시교육청",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_028"
+     ],
+     "bbox": [
+      211.0,
+      599.0,
+      262.0,
+      608.0
+     ],
+     "confidence": 0.6524269580841064
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "※인전합시 부정구 주관",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_022",
+      "padd_rgb_2x_023"
+     ],
+     "bbox": [
+      102.0,
+      580.0,
+      192.5,
+      594.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

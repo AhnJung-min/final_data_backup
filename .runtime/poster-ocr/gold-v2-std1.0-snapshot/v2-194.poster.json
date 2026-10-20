@@ -1,0 +1,280 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-ffed700fe736",
+  "image": {
+    "sha256": "ffed700fe7360b21159bb57c2ecca56791924b44dfbdedadc3241fc8968e2921",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:10:52+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "상단 영문 줄 'THE 26TH MASAN GAGOPA CHRYSANTHEMUM FESTIVAL'을 회차 포함 원문 그대로 english variant로 기록함.",
+      "장소는 '/'로 나뉘어 규칙상 items를 쪼개지 않음. '3·15'의 가운뎃점은 장소 구분이 아님.",
+      "제목의 '마산'은 현재 시·군·구 명칭이 아니어서 admin_area를 absent로 둠(창원특례시는 기관 표기에만 있음).",
+      "둘째 QR 라벨 '고향사랑기부제' 아래 괄호 줄은 판독하지 못해 label_raw에 넣지 않음.",
+      "검토(pass2): 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제26회 마산가고파 국화축제",
+    "official": "마산가고파 국화축제",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "THE 26TH MASAN GAGOPA CHRYSANTHEMUM FESTIVAL",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제26회",
+    "number": 26,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "국화, 가을 바다를 품다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.31.(토) ~ 11.08.(일)",
+    "start": {
+      "iso": "2026-10-31",
+      "year": 2026,
+      "month": 10,
+      "day": 31,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-11-08",
+      "year": 2026,
+      "month": 11,
+      "day": 8,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "3·15해양누리공원/ 함포수변공원/해양신도시",
+    "items": [
+      "3·15해양누리공원/ 함포수변공원/해양신도시"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "창원특례시",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "마산국화축제위원회",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "국화축제 홈페이지",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "label_raw": "고향사랑기부제",
+        "purpose": "other",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "플랫 일러스트",
+      "그라데이션 노을 배경"
+    ],
+    "main_colors": [
+      "주황",
+      "살구색",
+      "노랑",
+      "파랑",
+      "빨강",
+      "크림색"
+    ],
+    "main_objects": [
+      "노란 국화 꽃밭",
+      "바다 파도",
+      "빨간 등대",
+      "현수교",
+      "앉아 있는 두 사람",
+      "QR 코드 2개"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "주황 노을 하늘과 바다를 배경으로 중앙 크림색 아치 안에 슬로건·회차·제목·일정·장소를 두고, 아래 노란 국화밭에 앉은 두 사람, 좌상단 QR 2개, 하단 주최·주관 표기를 둔 일러스트 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. QR 라벨 글자는 작아 둘째 QR의 괄호 줄을 판독하지 못함."
+    ]
+  }
+}

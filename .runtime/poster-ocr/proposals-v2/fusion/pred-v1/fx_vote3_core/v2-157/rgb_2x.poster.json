@@ -1,0 +1,260 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-4a8692fe64c0",
+ "image": {
+  "sha256": "4a8692fe64c01256b121d87d6e675bcb2adb8ea49ea668f59fe6410d02787400",
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote3_core"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote3_core): venue"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "축제 고구마",
+  "official": "축제 고구마",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002",
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    55.5,
+    55.0,
+    379.5,
+    218.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제5회",
+  "number": 5,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    73.5,
+    29.5,
+    194.0,
+    54.0
+   ],
+   "confidence": 0.9973801374435425
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    45.5,
+    239.0,
+    92.5,
+    259.0
+   ],
+   "confidence": 0.9954310655593872
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "~10.18. 10.17.",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010",
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    46.0,
+    260.5,
+    218.5,
+    290.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "이간현관광지 주차장",
+  "items": [
+   "이간현관광지 주차장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_012"
+   ],
+   "bbox": [
+    48.0,
+    293.0,
+    228.0,
+    308.0
+   ],
+   "confidence": 0.30690802807797796
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "지정면소금산길12",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_013"
+   ],
+   "bbox": [
+    48.5,
+    293.5,
+    227.0,
+    306.5
+   ],
+   "confidence": 0.9308516383171082
+  }
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "operating_rule",
+    "raw": "간현관광지주차장원주시 지정면소금산길12",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      48.5,
+      293.5,
+      227.0,
+      306.5
+     ],
+     "confidence": 0.9308516383171082
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "고구마 판매활성화 지원사업",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_004"
+     ],
+     "bbox": [
+      66.0,
+      217.0,
+      210.0,
+      230.5
+     ],
+     "confidence": 0.9921643137931824
+    }
+   }
+  ]
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

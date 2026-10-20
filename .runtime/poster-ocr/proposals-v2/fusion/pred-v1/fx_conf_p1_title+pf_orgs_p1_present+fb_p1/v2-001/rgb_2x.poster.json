@@ -1,0 +1,208 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-48bfcef9917a",
+ "image": {
+  "sha256": "48bfcef9917a2335adde97c62b942efe2ad2f02d671c3c6be38389230810d47b",
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_title+pf_orgs_p1_present+fb_p1"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_title+pf_orgs_p1_present+fb_p1): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "신연",
+  "official": "신연",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    43.5,
+    416.5,
+    229.0,
+    529.0
+   ],
+   "confidence": 0.9803480505943298
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "absent",
+  "raw": null,
+  "value": null,
+  "evidence": null
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "absent",
+  "raw": null,
+  "start": null,
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": null
+ },
+ "venue": {
+  "status": "present",
+  "raw": "대한민국 전통에술의 다채로움을 한 무대에서 경험하다",
+  "items": [
+   "대한민국 전통에술의 다채로움을 한 무대에서 경험하다"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    84.5,
+    33.0,
+    363.0,
+    46.5
+   ],
+   "confidence": 0.9378592371940613
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "서울시동로구 인사동5",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011",
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    54.0,
+    543.5,
+    176.5,
+    554.0
+   ],
+   "confidence": null
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "92 서울시동로구 인사동5결 10.2층",
+  "region": "서울",
+  "district": "동로구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011",
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    54.0,
+    543.5,
+    176.5,
+    554.0
+   ],
+   "confidence": null
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "02-953.0515",
+    "value": "02-953-0515",
+    "label_raw": null,
+    "department": "Cantact",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_019",
+      "padd_rgb_2x_020"
+     ],
+     "bbox": [
+      209.5,
+      562.5,
+      290.5,
+      571.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,271 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-67181f8ad763",
+ "image": {
+  "sha256": "67181f8ad76334f19ea9b464f9b497c6b15e7532d67803a43e35e350605ceff2",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_all"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_all): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "미추를 미디어 문화축제",
+  "official": "미추를 미디어 문화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005",
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    21.0,
+    79.0,
+    268.0,
+    307.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제23회",
+  "number": 23,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    32.0,
+    62.0,
+    163.0,
+    88.0
+   ],
+   "confidence": 0.9739543199539185
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    32.0,
+    62.0,
+    163.0,
+    88.0
+   ],
+   "confidence": 0.9739543199539185
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.12.(토)-9.13.(일)",
+  "start": {
+   "iso": "2026-09-12",
+   "year": 2026,
+   "month": 9,
+   "day": 12,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    27.5,
+    316.5,
+    166.0,
+    335.0
+   ],
+   "confidence": 0.9970787167549133
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "인천대학교 제물포캠퍼스 평생교육원 옆 광장",
+  "items": [
+   "인천대학교 제물포캠퍼스 평생교육원 옆 광장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    28.5,
+    339.0,
+    227.5,
+    351.0
+   ],
+   "confidence": 0.9976910352706909
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "인천대학교 제물포캠퍼스 평생교육원 옆 광장",
+  "region": "인천",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    28.5,
+    339.0,
+    227.5,
+    351.0
+   ],
+   "confidence": 0.9976910352706909
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "6 인천대학교",
+    "roles": [
+     "partner"
+    ],
+    "role_raw": "협력",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_001",
+      "padd_rgb_2x_002"
+     ],
+     "bbox": [
+      301.0,
+      26.0,
+      376.0,
+      36.5
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "청운대학교",
+    "roles": [
+     "partner"
+    ],
+    "role_raw": "협력",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_001",
+      "padd_rgb_2x_003"
+     ],
+     "bbox": [
+      301.0,
+      26.0,
+      427.0,
+      36.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

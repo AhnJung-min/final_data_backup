@@ -1,0 +1,250 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-780e11893a51",
+  "image": {
+    "sha256": "780e11893a51d1fb6664bf803ec8fcd0014c531a4c88d3651f3b63f9b3c47e9b",
+    "width": 442,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:12:43+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/blind",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "블라인드 독립 판독(일치도 검사용). 원본 442×627을 직접 보고 확대 크롭으로 하단 기관 띠를 확인함.",
+      "제목은 연도 아래 3줄(구미 / 라면 / 축제)로 인쇄되어 한 칸씩 띄어 이음.",
+      "하단 띠의 역할 표기 '주최·주관'·'후원'은 아주 작은 글자라 글자 모양으로 판단함. '농심'은 기업 로고지만 '후원' 표기 뒤에 있어 sponsor로 기록함.",
+      "'구미'는 시·군·구 명칭(구미시)으로 장소·제목에 인쇄되지 않아 admin_area는 absent."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 구미 라면 축제",
+    "official": "구미 라면 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "세상에서 가장 \"긴\" 라면 스트릿!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 11.6(금)~8(일)",
+    "start": {
+      "iso": "2026-11-06",
+      "year": 2026,
+      "month": 11,
+      "day": 6,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-11-08",
+      "year": 2026,
+      "month": 11,
+      "day": 8,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "구미역일원",
+    "items": [
+      "구미역일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "구미시",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "경상북도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "농심",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "카툰 일러스트",
+      "굵은 손글씨풍 타이포그래피",
+      "종이 질감"
+    ],
+    "main_colors": [
+      "크림색",
+      "주황",
+      "노랑",
+      "검정",
+      "남색",
+      "빨강"
+    ],
+    "main_objects": [
+      "세로로 길게 늘어진 라면 면발",
+      "나무 젓가락",
+      "면발 양옆에 줄지어 선 사람들",
+      "어묵·새우 고명"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "크림색 배경 위 젓가락에서 아래로 길게 늘어진 라면 면발 가운데에 연도와 3줄 제목을 두고, 양옆에 면을 먹는 사람들을 빼곡히 그린 뒤 상단에 슬로건, 하단에 일정·장소와 기관 띠를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "442×627 이미지. 하단 기관 띠의 역할 표기는 매우 작아 글자 모양으로만 확인했고 기관명은 판독됨."
+    ]
+  }
+}

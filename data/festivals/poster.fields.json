@@ -1,0 +1,428 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "survey": {
+    "file": "docs/reports/poster-schema/poster-element-survey.json",
+    "posters": 38,
+    "note": "TourAPI 2026 축제 813건에서 지역 층화로 뽑은 실제 포스터 37장과 강남 포스터 1장. AI 1차 코딩이며 사람 검토 전."
+  },
+  "tiers": {
+    "core": "모든 포스터에서 추출. 검수·API 매칭의 기준값.",
+    "recommended": "인쇄되어 있으면 추출. 조사 빈도가 높거나 검수 가치가 큰 항목.",
+    "conditional": "드물지만 특정 발주·공공행사에서 필수. 발주 기준에 있으면 반드시 추출.",
+    "reference": "시각·품질·홍보 표기. 검수 판정에 직접 쓰지 않음."
+  },
+  "fields": [
+    {
+      "path": "title.official",
+      "label": "축제명",
+      "tier": "core",
+      "survey_key": "title",
+      "survey_count": 38,
+      "criteria_labels": [
+        "행사명",
+        "행사 이름"
+      ],
+      "proposed_criteria_labels": [],
+      "data_go_kr": "fstvlNm",
+      "tourapi": "title",
+      "common_2_1": "poster.event.title",
+      "rule": "연도·회차를 뺀 대표 제목. 글자 크기가 아니라 의미로 정한다(슬로건이 제목보다 큰 포스터 4/38)."
+    },
+    {
+      "path": "title.raw",
+      "label": "제목 원문",
+      "tier": "core",
+      "survey_key": "title",
+      "survey_count": 38,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.details.title_text",
+      "rule": "연도·회차가 붙은 인쇄 원문 그대로."
+    },
+    {
+      "path": "title.variants",
+      "label": "영문·브랜드 제목",
+      "tier": "recommended",
+      "survey_key": "title_english",
+      "survey_count": 16,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": "title",
+      "common_2_1": null,
+      "rule": "API 제목과 표기가 다를 때 개최 건 매칭에 사용. 제목 정규화만으로 API와 어긋난 포스터 6/38."
+    },
+    {
+      "path": "year.value",
+      "label": "개최 연도",
+      "tier": "core",
+      "survey_key": "year_printed",
+      "survey_count": 35,
+      "criteria_labels": [
+        "행사 날짜"
+      ],
+      "proposed_criteria_labels": [],
+      "data_go_kr": "fstvlStartDate",
+      "tourapi": "eventstartdate",
+      "common_2_1": "poster.details.year",
+      "rule": "시작일 기준 연도. 포스터에 없으면(3/38) absent로 두고 API·파일명으로 채우지 않는다."
+    },
+    {
+      "path": "schedule.start, schedule.end",
+      "label": "행사 기간",
+      "tier": "core",
+      "survey_key": "schedule",
+      "survey_count": 38,
+      "criteria_labels": [
+        "행사 날짜",
+        "날짜"
+      ],
+      "proposed_criteria_labels": [],
+      "data_go_kr": "fstvlStartDate, fstvlEndDate",
+      "tourapi": "eventstartdate, eventenddate",
+      "common_2_1": "poster.event.start_date, poster.event.end_date",
+      "rule": "date_point로 연·월·일·요일·연도 근거를 따로 저장. 일정 문구에 연도가 없는 포스터 10/38은 year_basis=poster_text 또는 absent."
+    },
+    {
+      "path": "schedule.start.weekday",
+      "label": "인쇄 요일",
+      "tier": "core",
+      "survey_key": "weekday_printed",
+      "survey_count": 37,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": null,
+      "rule": "인쇄된 요일만 기록. 달력 요일과 대조해 날짜 판독 오류와 포스터 오기를 찾는다."
+    },
+    {
+      "path": "schedule.times",
+      "label": "운영 시간",
+      "tier": "recommended",
+      "survey_key": "time",
+      "survey_count": 8,
+      "criteria_labels": [
+        "운영 시간",
+        "시간",
+        "행사 시간"
+      ],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.event.time",
+      "rule": "원문과 24시간제 HH:MM을 함께 저장(AM 10:00 - PM 9:00 → 10:00-21:00). 시작 시각만 있으면 end=null."
+    },
+    {
+      "path": "schedule.duration_raw, schedule.operating_raw",
+      "label": "기간·운영일 문구",
+      "tier": "conditional",
+      "survey_key": "duration_text",
+      "survey_count": 4,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": null,
+      "rule": "'3일간'은 날짜 범위와 대조. '주말·공휴일만 운영' 같은 규칙은 원문으로 보존."
+    },
+    {
+      "path": "venue.raw, venue.items",
+      "label": "행사 장소",
+      "tier": "core",
+      "survey_key": "venue",
+      "survey_count": 38,
+      "criteria_labels": [
+        "행사 장소",
+        "장소"
+      ],
+      "proposed_criteria_labels": [],
+      "data_go_kr": "opar",
+      "tourapi": null,
+      "common_2_1": "poster.event.venue",
+      "rule": "원문 유지. '및'·'·'로 이어진 여러 장소(4/38)는 items로 나누고 괄호 설명과 '일원'은 남긴다."
+    },
+    {
+      "path": "address",
+      "label": "주소",
+      "tier": "conditional",
+      "survey_key": "address",
+      "survey_count": 2,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": "rdnmadr, lnmadr",
+      "tourapi": "addr1",
+      "common_2_1": "poster.event.road_address, poster.event.jibun_address, poster.event.address",
+      "rule": "번지·도로명이 인쇄된 경우만. kind로 도로명·지번을 구분."
+    },
+    {
+      "path": "admin_area",
+      "label": "시·도, 시·군·구",
+      "tier": "recommended",
+      "survey_key": null,
+      "survey_count": null,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": "lDongRegnCd, lDongSignguCd",
+      "common_2_1": "poster.event.region, poster.event.district",
+      "rule": "장소·제목 문구에 직접 쓰인 지역명만. 상위 지역을 외부 지식으로 보충하지 않는다."
+    },
+    {
+      "path": "edition",
+      "label": "회차",
+      "tier": "recommended",
+      "survey_key": "edition",
+      "survey_count": 18,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "회차"
+      ],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.details.edition",
+      "rule": "제30회·15TH·57th 원문과 숫자. 같은 이름의 다른 연도 행사와 구별하는 단서."
+    },
+    {
+      "path": "slogans",
+      "label": "슬로건",
+      "tier": "recommended",
+      "survey_key": "slogan",
+      "survey_count": 19,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "슬로건"
+      ],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.details.slogans",
+      "rule": "제목보다 크게 배치된 문구는 headline=true(4/38). 제목으로 오인하지 않게 분리."
+    },
+    {
+      "path": "organizations",
+      "label": "주최·주관·후원·협찬",
+      "tier": "recommended",
+      "survey_key": "org_role_labels_any",
+      "survey_count": 25,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "주최",
+        "주관",
+        "후원"
+      ],
+      "data_go_kr": "auspcInsttNm, mnnstNm, suprtInsttNm",
+      "tourapi": null,
+      "common_2_1": "poster.event.host, poster.event.organizer, poster.event.sponsor, poster.details.logos",
+      "rule": "역할 표기 25/38, 로고만 13/38, '주최·주관' 결합 11/38. 역할 표기가 없으면 roles를 비우고, 판독 불가 로고는 name=null로 개수만 남긴다."
+    },
+    {
+      "path": "contacts",
+      "label": "문의처",
+      "tier": "recommended",
+      "survey_key": "phone",
+      "survey_count": 5,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "문의처",
+        "연락처"
+      ],
+      "data_go_kr": "phoneNumber",
+      "tourapi": "tel",
+      "common_2_1": "poster.event.contact",
+      "rule": "원문과 숫자-하이픈 value(041)332-3506 → 041-332-3506), 부서명을 분리."
+    },
+    {
+      "path": "qr_codes",
+      "label": "QR 코드",
+      "tier": "recommended",
+      "survey_key": "qr_any",
+      "survey_count": 9,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "QR"
+      ],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.details.qr_urls",
+      "rule": "안내 문구·용도·해독 상태를 기록. QR이 있는 9장 중 해독 성공은 940px 포스터 1장뿐이라 실패 시 URL을 추정하지 않는다."
+    },
+    {
+      "path": "programs",
+      "label": "프로그램",
+      "tier": "recommended",
+      "survey_key": "programs",
+      "survey_count": 12,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "프로그램"
+      ],
+      "data_go_kr": "fstvlCo",
+      "tourapi": null,
+      "common_2_1": "poster.event.program, poster.details.program_details",
+      "rule": "프로그램명과 포스터의 분류 표기(무대공연·부대행사 등)를 그대로."
+    },
+    {
+      "path": "programs.period",
+      "label": "프로그램 일정",
+      "tier": "recommended",
+      "survey_key": "program_schedule",
+      "survey_count": 10,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.details.program_details[].date, time",
+      "rule": "개막공연·부대행사처럼 전체 기간과 다른 날짜·시간·장소를 따로 기록(별도 기간 4/38)."
+    },
+    {
+      "path": "programs.performers",
+      "label": "출연진",
+      "tier": "recommended",
+      "survey_key": "performers",
+      "survey_count": 9,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "출연진"
+      ],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.details.program_details[].performers",
+      "rule": "이름과 MC·사회자 등 역할 표기. 판독이 불확실한 이름은 기록하지 않는다."
+    },
+    {
+      "path": "links",
+      "label": "홈페이지·SNS",
+      "tier": "conditional",
+      "survey_key": "homepage",
+      "survey_count": 1,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "홈페이지"
+      ],
+      "data_go_kr": "homepageUrl",
+      "tourapi": null,
+      "common_2_1": "poster.event.homepage",
+      "rule": "인쇄된 주소 그대로(프로토콜 추정 금지). SNS 표기는 3/38."
+    },
+    {
+      "path": "admission",
+      "label": "요금·예매",
+      "tier": "conditional",
+      "survey_key": "price",
+      "survey_count": 0,
+      "criteria_labels": [
+        "얼리버드 가격",
+        "가격",
+        "입장료"
+      ],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.event.price",
+      "rule": "공공축제 실물 포스터에서는 0/38이지만 유료 공연·광고 발주(festival-v1 C05)의 핵심 항목. 미표기를 무료로 해석하지 않는다."
+    },
+    {
+      "path": "programs.capacity_raw, programs.registration_raw",
+      "label": "정원·사전접수",
+      "tier": "conditional",
+      "survey_key": "capacity",
+      "survey_count": 2,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": null,
+      "rule": "선착순 인원·접수 방법 원문. 사전접수 표기는 1/38."
+    },
+    {
+      "path": "notices",
+      "label": "공지·유의사항",
+      "tier": "conditional",
+      "survey_key": "notice",
+      "survey_count": 4,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "유의사항"
+      ],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": null,
+      "rule": "일정 변경 공지(1/38)가 있으면 schedule에는 변경 후 일정을 기록하고 변경 전 일정은 공지 원문으로만 남긴다."
+    },
+    {
+      "path": "budget_disclosure",
+      "label": "예산 표기",
+      "tier": "conditional",
+      "survey_key": "budget_disclosure",
+      "survey_count": 4,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [
+        "예산 표기"
+      ],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": null,
+      "rule": "행사예산 공개 조례에 따른 총예산 표기. 원문과 원 단위 금액."
+    },
+    {
+      "path": "badges",
+      "label": "지정·인증·브랜드 표기",
+      "tier": "reference",
+      "survey_key": "brand_campaign_mark",
+      "survey_count": 14,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": null,
+      "rule": "문화관광축제 등 지정(5/38)과 방문의 해·도시 슬로건 등 홍보 표기(14/38). 기관 역할과 섞지 않는다."
+    },
+    {
+      "path": "visual",
+      "label": "시각 정보",
+      "tier": "reference",
+      "survey_key": "character",
+      "survey_count": 15,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": "poster.details.visual_design",
+      "rule": "캐릭터 15/38, 세로쓰기 4/38, 그림 속 간판 글자 9/38. 세로쓰기·장면 글자는 OCR 오추출 경고로 활용."
+    },
+    {
+      "path": "quality.small_text",
+      "label": "작은 글자 판독",
+      "tier": "reference",
+      "survey_key": "org_names_all_legible",
+      "survey_count": 15,
+      "criteria_labels": [],
+      "proposed_criteria_labels": [],
+      "data_go_kr": null,
+      "tourapi": null,
+      "common_2_1": null,
+      "rule": "기관명을 모두 읽은 포스터는 15/38. 판독 불가 항목이 많으면 고해상도 원본을 다시 수집한다."
+    }
+  ],
+  "not_extracted_from_poster": [
+    {
+      "common_2_1": "poster.event.gps.lat, poster.event.gps.lng",
+      "reason": "좌표를 인쇄한 포스터 0/38. API 전용 값으로 reference.event에만 둔다."
+    },
+    {
+      "common_2_1": "poster.event.related_info",
+      "reason": "표준데이터 relateInfo 대응 항목. 포스터의 홈페이지·SNS는 links로 기록한다."
+    },
+    {
+      "common_2_1": "poster.event.service, poster.event.category",
+      "reason": "기존 데이터 분류이며 포스터에 인쇄되지 않는다. 분류가 필요하면 TourAPI lclsSystm을 쓴다."
+    },
+    {
+      "common_2_1": "poster.event.venue_url",
+      "reason": "장소 웹주소를 인쇄한 포스터 0/38. 인쇄된 주소는 links로 기록한다."
+    }
+  ]
+}

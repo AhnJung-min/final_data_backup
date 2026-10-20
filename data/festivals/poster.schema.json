@@ -1,0 +1,1328 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "축제 포스터 추출 표준 1.0",
+  "description": "실제 축제 포스터 38장 조사로 정한 포스터 관찰값의 팀 표준. 포스터에 인쇄된 정보만 기록하고 API·파일명 값으로 채우지 않는다. 모든 항목은 status·원문(raw)·정규화값·근거를 함께 가진다. 공통 레코드 2.1의 poster 블록은 이 문서에서 투영해 만든다.",
+  "type": "object",
+  "properties": {
+    "standard": {
+      "const": "festival-poster"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "연결할 공통 레코드 id. 관례: festival-<원본 SHA-256 앞 12자>."
+    },
+    "image": {
+      "type": "object",
+      "description": "근거 좌표의 기준 이미지. 공통 레코드 image(원본)와 같은 파일이어야 한다. 추출 전 템플릿에서만 null 허용.",
+      "properties": {
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "width": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "height": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      },
+      "required": [
+        "sha256",
+        "width",
+        "height"
+      ],
+      "additionalProperties": false
+    },
+    "coordinate_space": {
+      "const": "original_pixels",
+      "description": "evidence.bbox는 원본 이미지 픽셀 [x1,y1,x2,y2]. OCR 표시 좌표는 ocr_ids로만 참조한다."
+    },
+    "extraction": {
+      "$ref": "#/$defs/extraction"
+    },
+    "title": {
+      "$ref": "#/$defs/title"
+    },
+    "edition": {
+      "$ref": "#/$defs/edition"
+    },
+    "year": {
+      "$ref": "#/$defs/year"
+    },
+    "slogans": {
+      "$ref": "#/$defs/slogans"
+    },
+    "schedule": {
+      "$ref": "#/$defs/schedule"
+    },
+    "venue": {
+      "$ref": "#/$defs/venue"
+    },
+    "address": {
+      "$ref": "#/$defs/address"
+    },
+    "admin_area": {
+      "$ref": "#/$defs/admin_area"
+    },
+    "organizations": {
+      "$ref": "#/$defs/organizations"
+    },
+    "contacts": {
+      "$ref": "#/$defs/contacts"
+    },
+    "links": {
+      "$ref": "#/$defs/links"
+    },
+    "qr_codes": {
+      "$ref": "#/$defs/qr_codes"
+    },
+    "programs": {
+      "$ref": "#/$defs/programs"
+    },
+    "admission": {
+      "$ref": "#/$defs/admission"
+    },
+    "notices": {
+      "$ref": "#/$defs/notices"
+    },
+    "budget_disclosure": {
+      "$ref": "#/$defs/budget_disclosure"
+    },
+    "badges": {
+      "$ref": "#/$defs/badges"
+    },
+    "visual": {
+      "$ref": "#/$defs/visual"
+    },
+    "quality": {
+      "$ref": "#/$defs/quality"
+    }
+  },
+  "required": [
+    "standard",
+    "schema_version",
+    "record_id",
+    "image",
+    "coordinate_space",
+    "extraction",
+    "title",
+    "edition",
+    "year",
+    "slogans",
+    "schedule",
+    "venue",
+    "address",
+    "admin_area",
+    "organizations",
+    "contacts",
+    "links",
+    "qr_codes",
+    "programs",
+    "admission",
+    "notices",
+    "budget_disclosure",
+    "badges",
+    "visual",
+    "quality"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "present",
+        "illegible",
+        "absent",
+        "not_checked"
+      ],
+      "description": "present 읽음 / illegible 표기는 있으나 판독 불가 / absent 포스터에 없음 / not_checked 이번 추출에서 확인하지 않음. 없음과 판독 불가를 구분해 검수의 '미충족'과 '확인 필요'를 나눈다."
+    },
+    "bbox": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "number",
+        "minimum": 0
+      },
+      "description": "[x1,y1,x2,y2] 원본 픽셀. 범위·양의 면적은 검증 함수로 확인."
+    },
+    "evidence": {
+      "type": "object",
+      "description": "값을 읽은 근거. 좌표·confidence는 실제로 측정한 값만 기록하고 임의로 만들지 않는다.",
+      "properties": {
+        "method": {
+          "enum": [
+            "manual",
+            "ocr",
+            "model"
+          ],
+          "description": "manual 이미지를 직접 판독 / ocr OCR 결과에 규칙 적용 / model 학습 모델·VLM 추출"
+        },
+        "ocr_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "근거로 사용한 OCR 결과 texts[].id. ocr 방식은 1개 이상 필요."
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/bbox"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "method",
+        "ocr_ids",
+        "bbox",
+        "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "evidence_or_null": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/evidence"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "date_point": {
+      "type": "object",
+      "description": "포스터에 인쇄된 하루. 생략된 연·월은 같은 일정 문구의 앞부분에서 이어받는다(예: 11.14.(토)-15.(일)).",
+      "properties": {
+        "iso": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date",
+          "description": "연도가 포스터에서 확인될 때만 YYYY-MM-DD. 연도가 없으면 null."
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900,
+          "maximum": 2200
+        },
+        "month": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 31
+        },
+        "weekday": {
+          "enum": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri",
+            "sat",
+            "sun",
+            null
+          ],
+          "description": "포스터에 인쇄된 요일을 정규화한 값. 달력으로 계산해 채우지 않는다. 계산 요일과의 차이는 검사 결과로 보고."
+        },
+        "year_basis": {
+          "enum": [
+            "date_text",
+            "poster_text",
+            "absent"
+          ],
+          "description": "date_text 일정 문구에 연도 인쇄 / poster_text 제목 등 같은 포스터의 다른 문구에서 확인 / absent 포스터에 연도 없음"
+        }
+      },
+      "required": [
+        "iso",
+        "year",
+        "month",
+        "day",
+        "weekday",
+        "year_basis"
+      ],
+      "additionalProperties": false
+    },
+    "date_point_or_null": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_point"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "clock": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(?:(?:[01][0-9]|2[0-3]):[0-5][0-9]|24:00)$",
+      "description": "24시간제 HH:MM. 'PM 9:00'은 21:00, '저녁 6시'는 18:00."
+    },
+    "time_range": {
+      "type": "object",
+      "properties": {
+        "raw": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start": {
+          "$ref": "#/$defs/clock"
+        },
+        "end": {
+          "$ref": "#/$defs/clock"
+        },
+        "applies_to": {
+          "$ref": "#/$defs/text",
+          "description": "특정 날짜·프로그램에만 해당하면 원문 범위. 전체 기간이면 null."
+        }
+      },
+      "required": [
+        "raw",
+        "start",
+        "end",
+        "applies_to"
+      ],
+      "additionalProperties": false
+    },
+    "period": {
+      "type": "object",
+      "description": "프로그램·부대행사의 별도 일정.",
+      "properties": {
+        "raw": {
+          "$ref": "#/$defs/text"
+        },
+        "start": {
+          "$ref": "#/$defs/date_point_or_null"
+        },
+        "end": {
+          "$ref": "#/$defs/date_point_or_null"
+        },
+        "times": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/time_range"
+          }
+        }
+      },
+      "required": [
+        "raw",
+        "start",
+        "end",
+        "times"
+      ],
+      "additionalProperties": false
+    },
+    "extraction": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "not_extracted",
+            "partial",
+            "completed"
+          ],
+          "description": "partial은 일부 항목을 not_checked로 남긴 추출."
+        },
+        "method": {
+          "enum": [
+            "manual",
+            "ocr",
+            "model",
+            "mixed",
+            null
+          ],
+          "description": "레코드 전체 방식. 항목별 방식은 evidence.method. not_extracted에서만 null."
+        },
+        "extracted_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "extractor": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "$ref": "#/$defs/text"
+            },
+            "version": {
+              "$ref": "#/$defs/text"
+            },
+            "model": {
+              "$ref": "#/$defs/text"
+            }
+          },
+          "required": [
+            "name",
+            "version",
+            "model"
+          ],
+          "additionalProperties": false
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "status",
+        "method",
+        "extracted_at",
+        "extractor",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "title": {
+      "type": "object",
+      "description": "축제명. 슬로건이 제목보다 크게 인쇄되는 경우가 있어 크기로 정하지 않는다.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text",
+          "description": "제목 영역 원문. 연도·회차 포함 가능."
+        },
+        "official": {
+          "$ref": "#/$defs/text",
+          "description": "연도·회차를 뺀 대표 제목. 인쇄된 언어와 표기를 유지하며 API 비교 기준이다."
+        },
+        "variants": {
+          "type": "array",
+          "description": "영문 병기·브랜드명·별칭. 개최 건 매칭에 사용.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "english",
+                  "brand",
+                  "alias"
+                ]
+              },
+              "raw": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "kind",
+              "raw",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "official",
+        "variants",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "edition": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text",
+          "description": "제30회, 15TH, 57th 등 원문."
+        },
+        "number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "number",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "year": {
+      "type": "object",
+      "description": "포스터에 인쇄된 개최 연도(시작일 기준). 파일명·API로 채우지 않는다.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text"
+        },
+        "value": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900,
+          "maximum": 2200
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "value",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "slogans": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "raw": {
+                "type": "string",
+                "minLength": 1
+              },
+              "headline": {
+                "type": "boolean",
+                "description": "제목보다 크게 배치된 대표 문구인지."
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "raw",
+              "headline",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "schedule": {
+      "type": "object",
+      "description": "전체 행사 기간. 프로그램별 일정은 programs[].period.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text"
+        },
+        "start": {
+          "$ref": "#/$defs/date_point_or_null"
+        },
+        "end": {
+          "$ref": "#/$defs/date_point_or_null",
+          "description": "하루 행사는 null."
+        },
+        "times": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/time_range"
+          }
+        },
+        "duration_raw": {
+          "$ref": "#/$defs/text",
+          "description": "3일간·2주간 등 기간 문구."
+        },
+        "operating_raw": {
+          "$ref": "#/$defs/text",
+          "description": "주말·공휴일만 운영 등 실제 운영일 규칙 원문."
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "start",
+        "end",
+        "times",
+        "duration_raw",
+        "operating_raw",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "venue": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text",
+          "description": "장소 문구 원문. API opar와 비교하는 값."
+        },
+        "items": {
+          "type": "array",
+          "description": "'및'·'·'·쉼표 등으로 나뉜 장소 조각. 괄호 설명과 '일원' 같은 범위어는 유지.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "items",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "address": {
+      "type": "object",
+      "description": "포스터에 인쇄된 번지·도로명 주소. 장소명과 구별.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text"
+        },
+        "kind": {
+          "enum": [
+            "road",
+            "jibun",
+            "unknown",
+            null
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "kind",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "admin_area": {
+      "type": "object",
+      "description": "포스터 문구에 직접 쓰인 시·도와 시·군·구. 외부 지식으로 상위 지역을 보충하지 않는다.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text",
+          "description": "지역명을 읽은 문구."
+        },
+        "region": {
+          "$ref": "#/$defs/text"
+        },
+        "district": {
+          "$ref": "#/$defs/text"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "region",
+        "district",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "organizations": {
+      "type": "object",
+      "description": "주최·주관·후원·협찬 기관. 역할 표기 없는 로고는 roles를 비운다.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "$ref": "#/$defs/text",
+                "description": "판독 불가 로고는 null."
+              },
+              "roles": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "enum": [
+                    "host",
+                    "organizer",
+                    "sponsor",
+                    "corporate_sponsor",
+                    "partner",
+                    "other"
+                  ]
+                },
+                "description": "host 주최 / organizer 주관 / sponsor 후원 / corporate_sponsor 협찬 / partner 협력. '주최·주관'은 host와 organizer 둘 다."
+              },
+              "role_raw": {
+                "$ref": "#/$defs/text",
+                "description": "인쇄된 역할 표기 원문. 없으면 null."
+              },
+              "form": {
+                "enum": [
+                  "text",
+                  "logo"
+                ]
+              },
+              "legibility": {
+                "enum": [
+                  "legible",
+                  "partial",
+                  "illegible"
+                ],
+                "description": "partial은 읽었으나 일부 글자가 불확실한 경우."
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "name",
+              "roles",
+              "role_raw",
+              "form",
+              "legibility",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "contacts": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "phone",
+                  "email",
+                  "other"
+                ]
+              },
+              "raw": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "$ref": "#/$defs/text",
+                "description": "전화번호는 숫자와 하이픈(033-439-5800), 이메일은 원문."
+              },
+              "label_raw": {
+                "$ref": "#/$defs/text",
+                "description": "문의·예약 등 표기."
+              },
+              "department": {
+                "$ref": "#/$defs/text"
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "kind",
+              "raw",
+              "value",
+              "label_raw",
+              "department",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "links": {
+      "type": "object",
+      "description": "인쇄된 웹 주소·SNS 계정. 프로토콜을 추정해 붙이지 않는다.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "homepage",
+                  "sns",
+                  "booking",
+                  "other"
+                ]
+              },
+              "platform": {
+                "$ref": "#/$defs/text",
+                "description": "instagram, youtube 등. 모르면 null."
+              },
+              "raw": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "kind",
+              "platform",
+              "raw",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "qr_codes": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label_raw": {
+                "$ref": "#/$defs/text",
+                "description": "QR 옆 안내 문구(행사안내·인스타그램 등)."
+              },
+              "purpose": {
+                "enum": [
+                  "event_info",
+                  "sns",
+                  "registration",
+                  "booking",
+                  "other",
+                  "unknown"
+                ]
+              },
+              "decode_status": {
+                "enum": [
+                  "not_attempted",
+                  "decoded",
+                  "failed"
+                ]
+              },
+              "decoded_url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "uri",
+                "description": "실제로 해독한 값만 저장. 해독 실패 시 추정 금지."
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "label_raw",
+              "purpose",
+              "decode_status",
+              "decoded_url",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "programs": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "category_raw": {
+                "$ref": "#/$defs/text",
+                "description": "무대공연·체험행사·부대행사 등 포스터의 분류 표기."
+              },
+              "period": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/period"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "venue_raw": {
+                "$ref": "#/$defs/text"
+              },
+              "performers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "role_raw": {
+                      "$ref": "#/$defs/text",
+                      "description": "MC·사회자·초대가수 등."
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "role_raw"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "capacity_raw": {
+                "$ref": "#/$defs/text",
+                "description": "선착순 300명 등."
+              },
+              "registration_raw": {
+                "$ref": "#/$defs/text",
+                "description": "사전접수·신청 방법 원문."
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "name",
+              "category_raw",
+              "period",
+              "venue_raw",
+              "performers",
+              "capacity_raw",
+              "registration_raw",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "admission": {
+      "type": "object",
+      "description": "요금·예매. 인쇄되지 않았으면 absent이며 무료로 해석하지 않는다.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text"
+        },
+        "free": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "'무료'가 인쇄된 경우만 true."
+        },
+        "prices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label_raw": {
+                "$ref": "#/$defs/text",
+                "description": "얼리버드·일반·현장 등."
+              },
+              "amount": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "currency": {
+                "enum": [
+                  "KRW",
+                  null
+                ]
+              },
+              "raw": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "label_raw",
+              "amount",
+              "currency",
+              "raw"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "reservation_raw": {
+          "$ref": "#/$defs/text",
+          "description": "예매처·예매 기간 원문."
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "free",
+        "prices",
+        "reservation_raw",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "notices": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "schedule_change",
+                  "subject_to_change",
+                  "operating_rule",
+                  "safety",
+                  "other"
+                ],
+                "description": "schedule_change가 있으면 schedule에는 변경 후 일정을 기록한다."
+              },
+              "raw": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "kind",
+              "raw",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "budget_disclosure": {
+      "type": "object",
+      "description": "행사예산 공개 조례 등에 따른 예산 표기.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "raw": {
+          "$ref": "#/$defs/text"
+        },
+        "total_krw": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence_or_null"
+        }
+      },
+      "required": [
+        "status",
+        "raw",
+        "total_krw",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "badges": {
+      "type": "object",
+      "description": "행사 사실이 아닌 지정·인증·도시 브랜드 표기. 기관 역할과 구별.",
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "festival_designation",
+                  "certification",
+                  "brand_campaign",
+                  "other"
+                ],
+                "description": "문화관광축제 등 지정 / 지리적표시 등 인증 / 방문의 해·도시 슬로건 등 홍보 표기"
+              },
+              "raw": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "$ref": "#/$defs/evidence"
+              }
+            },
+            "required": [
+              "kind",
+              "raw",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "visual": {
+      "type": "object",
+      "description": "행사 사실과 구별되는 시각 정보. 검수 판정에 직접 쓰지 않는다.",
+      "properties": {
+        "styles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "main_colors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "main_objects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "has_character": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "has_photo": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "vertical_text": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "세로쓰기 글자가 있는지. OCR 읽기 순서 확인용."
+        },
+        "scripts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ko",
+              "en",
+              "hanja",
+              "ja",
+              "zh",
+              "other"
+            ]
+          }
+        },
+        "description": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "styles",
+        "main_colors",
+        "main_objects",
+        "has_character",
+        "has_photo",
+        "vertical_text",
+        "scripts",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "small_text": {
+          "enum": [
+            "legible",
+            "partial",
+            "illegible",
+            null
+          ],
+          "description": "기관 띠·유의사항 등 작은 글자의 판독 정도."
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "small_text",
+        "notes"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

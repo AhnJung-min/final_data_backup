@@ -1,0 +1,270 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-f8a5b113f04e",
+  "image": {
+    "sha256": "f8a5b113f04e6b6ccab300e78157fe9eb9fd5d0d0d388c7bc69703e55102b69e",
+    "width": 444,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:31:52+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "장소 아래 작은 보조 줄('해오름광장 및 소래포구 …'로 보임)은 끝부분을 확정하지 못해 venue에 넣지 않고 주 장소 줄만 기록함.",
+      "우측 상단 따옴표 안 작은 안내 문구는 일정·프로그램 변경 안내로 보이나 판독 불가라 notices를 illegible로 둠.",
+      "중앙의 큰 '소래에서 놀래'는 제목보다 크게 인쇄된 슬로건(headline)으로 기록함.",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제26회 소래포구축제",
+    "official": "소래포구축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제26회",
+    "number": 26,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "소래에서 놀래",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "소래에서 놀자, 모두가 놀랄거야~",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.2.(금) ~ 10.4.(일)",
+    "start": {
+      "iso": "2026-10-02",
+      "year": 2026,
+      "month": 10,
+      "day": 2,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-04",
+      "year": 2026,
+      "month": 10,
+      "day": 4,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "소래포구 일원",
+    "items": [
+      "소래포구 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "남동구",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "남동문화재단",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "인천광역시",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "illegible",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "소요예산: 600백만원(시비33% 구비67%)",
+    "total_krw": 600000000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "카툰 일러스트",
+      "버블 레터링"
+    ],
+    "main_colors": [
+      "하늘색",
+      "보라",
+      "주황",
+      "남색",
+      "산호색",
+      "베이지"
+    ],
+    "main_objects": [
+      "'소래에서 놀래' 대형 레터링",
+      "눈 달린 꽃게",
+      "파도",
+      "모래사장",
+      "어선",
+      "물고기 모양 등"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "하늘·노을빛 배경 상단에 회차·제목·일정·장소를 두고, 중앙에 꽃게 캐릭터가 섞인 '소래에서 놀래' 버블 레터링과 아래에 파도·해변을 그린 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "444×627 이미지. 장소 아래 작은 보조 문구, 우측 상단 따옴표 안 안내 문구, 하단 기관 로고 글자는 확대해도 일부만 판독됨."
+    ]
+  }
+}

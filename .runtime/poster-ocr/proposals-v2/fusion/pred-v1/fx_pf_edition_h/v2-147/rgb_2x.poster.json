@@ -1,0 +1,223 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-5fd3123d8950",
+ "image": {
+  "sha256": "5fd3123d8950d4f18f18fcf0aa5704cdeae4cc8a5d6f325cca069a023df4b9b8",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_edition_h"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_edition_h): edition"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "문위제",
+  "official": "문위제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    121.0,
+    98.0,
+    327.0,
+    197.5
+   ],
+   "confidence": 0.8947768807411194
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제65회",
+  "number": 65,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_000"
+   ],
+   "bbox": [
+    191.0,
+    16.0,
+    265.5,
+    43.5
+   ],
+   "confidence": 0.9888703398056788
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    128.0,
+    192.5,
+    330.0,
+    220.0
+   ],
+   "confidence": 0.9769086241722107
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.17.(토)-21.(수)",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-21",
+   "year": 2026,
+   "month": 10,
+   "day": 21,
+   "weekday": "wed",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    128.0,
+    192.5,
+    330.0,
+    220.0
+   ],
+   "confidence": 0.9769086241722107
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "제주도 일원(제주 시민복지타운광장 일대) 사전행자 퇴) 서귀포 칠십리야외공연장",
+  "items": [
+   "제주도 일원(제주 시민복지타운광장 일대) 사전행자 퇴) 서귀포 칠십리야외공연장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004",
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    129.5,
+    221.5,
+    326.0,
+    253.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "제주도 일원(제주 시민복지타운광장 일대)",
+  "region": "제주도",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    130.0,
+    221.5,
+    326.0,
+    236.5
+   ],
+   "confidence": 0.9927860498428345
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

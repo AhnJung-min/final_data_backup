@@ -1,0 +1,258 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-84cb8402227a",
+ "image": {
+  "sha256": "84cb8402227a71539730271cdfc7e14f50f22d288f7bd964f767e21506af549f",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:49+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr/rgb_2x+paddleocr/rgb_1x(paddle2x1x)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(paddle2x1x): 제목은 근거 판독 신뢰도가 높은 전처리, 회차·기관은 rgb_1x, 나머지 빈 슬롯은 rgb_1x로 채움. rgb_1x에서 가져온 슬롯: organizations."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026 국가유산 미디어아트 사비박사",
+  "official": "국가유산 미디어아트 사비박사",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_008",
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    48.5,
+    63.0,
+    360.5,
+    225.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    113.0,
+    63.0,
+    359.5,
+    105.0
+   ],
+   "confidence": null
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9. 7.(월) 9.27.(일)",
+  "start": {
+   "iso": "2026-09-07",
+   "year": 2026,
+   "month": 9,
+   "day": 7,
+   "weekday": "mon",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-27",
+   "year": 2026,
+   "month": 9,
+   "day": 27,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [
+   {
+    "raw": "19:00~22:00",
+    "start": "19:00",
+    "end": "22:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011",
+    "padd_rgb_2x_012",
+    "padd_rgb_2x_013"
+   ],
+   "bbox": [
+    45.5,
+    316.5,
+    140.0,
+    402.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "absent",
+  "raw": null,
+  "items": [],
+  "evidence": null
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "국가유산청",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_012"
+     ],
+     "bbox": [
+      72.0,
+      582.0,
+      113.0,
+      593.0
+     ],
+     "confidence": 0.9885069727897644
+    }
+   },
+   {
+    "name": "백제문화재단",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_015"
+     ],
+     "bbox": [
+      335.0,
+      584.0,
+      394.0,
+      594.0
+     ],
+     "confidence": 0.9675061106681824
+    }
+   },
+   {
+    "name": "국가유산진흥원",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_014"
+     ],
+     "bbox": [
+      240.0,
+      586.0,
+      304.0,
+      603.0
+     ],
+     "confidence": 0.9951567053794861
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

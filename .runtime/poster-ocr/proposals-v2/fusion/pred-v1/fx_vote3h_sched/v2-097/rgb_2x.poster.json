@@ -1,0 +1,301 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-65ca048a2221",
+ "image": {
+  "sha256": "65ca048a2221a8d1f34e3a4b118ab481cb3163303d99db4f80ed2551e8a829b4",
+  "width": 940,
+  "height": 673
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:51+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote3h_sched"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote3h_sched): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "백제문화제",
+  "official": "백제문화제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_020"
+   ],
+   "bbox": [
+    135.0,
+    297.5,
+    334.0,
+    333.0
+   ],
+   "confidence": 0.9996172189712524
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제72회",
+  "number": 72,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_019"
+   ],
+   "bbox": [
+    211.5,
+    279.0,
+    256.5,
+    295.0
+   ],
+   "confidence": 0.9996964931488037
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    529.5,
+    86.5,
+    761.5,
+    106.0
+   ],
+   "confidence": 0.9535647630691528
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.3.(토) ~ 10.11. (일)",
+  "start": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-11",
+   "year": 2026,
+   "month": 10,
+   "day": 11,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    529.5,
+    86.5,
+    761.5,
+    106.0
+   ],
+   "confidence": 0.9535647630691528
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "금강신관공원,공산성,왕도심 일원",
+  "items": [
+   "금강신관공원",
+   "공산성",
+   "왕도심 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005",
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    481.0,
+    103.5,
+    771.0,
+    133.5
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "교공시",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_034",
+      "padd_rgb_2x_035"
+     ],
+     "bbox": [
+      487.5,
+      639.5,
+      537.5,
+      650.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "출정주시제문의산상위피 요공지원",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_036"
+     ],
+     "bbox": [
+      552.0,
+      638.0,
+      681.0,
+      649.0
+     ],
+     "confidence": 0.5321752429008484
+    }
+   },
+   {
+    "name": "©재 증정도 버 청아에진 휘선정소주 능업",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_037",
+      "padd_rgb_2x_038"
+     ],
+     "bbox": [
+      697.5,
+      638.0,
+      918.5,
+      649.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "homepage",
+    "platform": null,
+    "raw": "gongju.baekjo.org",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_007"
+     ],
+     "bbox": [
+      838.5,
+      126.0,
+      920.0,
+      135.5
+     ],
+     "confidence": 0.9069440960884094
+    }
+   }
+  ]
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

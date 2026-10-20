@@ -1,0 +1,273 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-f4ffe060c9cd",
+ "image": {
+  "sha256": "f4ffe060c9cd28f01786760f632313b7f0c1523f996b7899d26bf7782564294e",
+  "width": 438,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:51+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026 성주가야산 황금들녁 메뚜기 축제",
+  "official": "성주가야산 황금들녁 메뚜기 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003",
+    "padd_rgb_1x_004",
+    "padd_rgb_1x_005",
+    "padd_rgb_1x_006"
+   ],
+   "bbox": [
+    113.0,
+    81.0,
+    325.0,
+    311.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007",
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    78.0,
+    312.0,
+    317.0,
+    335.0
+   ],
+   "confidence": null
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "H 2026.10.3토~10.4일",
+  "start": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-04",
+   "year": 2026,
+   "month": 10,
+   "day": 4,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007",
+    "padd_rgb_1x_008"
+   ],
+   "bbox": [
+    78.0,
+    312.0,
+    317.0,
+    335.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "섬주군 수륜면 수성리104 일원 (어물림마당)",
+  "items": [
+   "섬주군 수륜면 수성리104 일원 (어물림마당)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_009",
+    "padd_rgb_1x_010"
+   ],
+   "bbox": [
+    115.0,
+    338.0,
+    317.0,
+    376.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "섬주군 수륜면 수성리104",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    115.0,
+    338.0,
+    317.0,
+    358.0
+   ],
+   "confidence": 0.9036581516265869
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "섬주군 수륜면 수성리104 일원",
+  "region": null,
+  "district": "섬주군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    115.0,
+    338.0,
+    317.0,
+    358.0
+   ],
+   "confidence": 0.9036581516265869
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "성주가야산 활금들널 메뚜기축제추진위원회",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최 주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_012"
+     ],
+     "bbox": [
+      27.0,
+      594.0,
+      262.0,
+      606.0
+     ],
+     "confidence": 0.9254498481750488
+    }
+   },
+   {
+    "name": "성주군성주군의회",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_013"
+     ],
+     "bbox": [
+      269.0,
+      591.0,
+      410.0,
+      606.0
+     ],
+     "confidence": 0.9339638948440552
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

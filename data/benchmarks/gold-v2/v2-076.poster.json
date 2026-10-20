@@ -1,0 +1,293 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-f324d3bc9be6",
+  "image": {
+    "sha256": "f324d3bc9be67fefbfdd486eeb06e13dd0290cbf50bb74db2b7b722ebd4a87fb",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:34+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "일정은 '10.2.금'과 '10.5.월'이 세로로 놓이고 사이에 세로 막대가 있어 raw에 '|'로 기록. 요일은 원 안 글자.",
+      "장소 '구·시청광장'의 '·'은 장소 구분이 아니라 '구(옛) 시청광장' 표기라 나누지 않음.",
+      "QR 아래 작은 안내 문구(6자)는 흐려 확정하지 못해 label_raw를 비움.",
+      "'TIME RECORD', 'ARCHIVE 1930 GUNSAN' 도장과 시계 숫자는 장식이라 기록하지 않음. 우상단 'Hello, Modern' 아래 작은 세 줄은 판독 불가.",
+      "검토: 변경 없음",
+      "표준 1.1 A1 적용: 시·군·구는 행정 접미사가 붙은 독립 낱말만, 시·도는 독립 낱말이거나 행정 단위만으로 된 붙은 낱말일 때 인정."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 14th 군산 시간여행축제",
+    "official": "군산 시간여행축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "14th",
+    "number": 14,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "항구로 들어온 근대, 골목에 남은 기억, 축제가 된 시간",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10.2.금 | 10.5.월",
+    "start": {
+      "iso": "2026-10-02",
+      "year": 2026,
+      "month": 10,
+      "day": 2,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-05",
+      "year": 2026,
+      "month": 10,
+      "day": 5,
+      "weekday": "mon",
+      "year_basis": "poster_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "구·시청광장 및 시간여행마을 일원",
+    "items": [
+      "구·시청광장",
+      "시간여행마을 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "군산시",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전북특별자치도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "이성당",
+        "roles": [
+          "corporate_sponsor"
+        ],
+        "role_raw": "협찬",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "군산",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand_campaign",
+        "raw": "Hello, Modern",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "빈티지 종이 질감",
+      "붓글씨 제목",
+      "하프톤 사진"
+    ],
+    "main_colors": [
+      "베이지",
+      "갈색",
+      "빨강",
+      "검정"
+    ],
+    "main_objects": [
+      "낡은 종이 문서",
+      "회중시계",
+      "지구본 그림",
+      "붉은 무대 커튼",
+      "클립",
+      "도장"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "붉은 커튼 사이 낡은 종이 위에 갈색 붓글씨 제목과 연도·회차, 왼쪽에 세로 일정·장소·QR, 오른쪽에 손글씨 슬로건과 도장, 하단에 하프톤 회중시계와 주최·후원·협찬 띠를 둔 복고풍 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 기관 띠는 판독되나 QR 안내문과 우상단 브랜드 아래 작은 글자는 판독 불가."
+    ]
+  }
+}

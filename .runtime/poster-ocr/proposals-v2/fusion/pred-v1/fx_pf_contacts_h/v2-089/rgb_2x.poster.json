@@ -1,0 +1,247 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-05a68ec0a400",
+ "image": {
+  "sha256": "05a68ec0a4005565e2b906bb13533f9fb8a66bde55a0a408962844858a6bf6e7",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:51+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_contacts_h"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_contacts_h): contacts"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "WHAT'S ON 포천청년축제",
+  "official": "WHAT'S ON 포천청년축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_021"
+   ],
+   "bbox": [
+    50.5,
+    509.5,
+    162.0,
+    520.0
+   ],
+   "confidence": 0.9501246213912964
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    31.0,
+    17.5,
+    115.5,
+    56.0
+   ],
+   "confidence": 0.9898369312286377
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.3.토 1:00~21:00",
+  "start": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "1:00~21:00",
+    "start": "01:00",
+    "end": "21:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009",
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    228.0,
+    161.0,
+    413.0,
+    193.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "소을읍 태봄공원",
+  "items": [
+   "소을읍 태봄공원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    197.5,
+    193.0,
+    348.0,
+    220.5
+   ],
+   "confidence": 0.7361874580383301
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "포천시 태봉로 216",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_013"
+   ],
+   "bbox": [
+    199.0,
+    224.0,
+    286.5,
+    236.0
+   ],
+   "confidence": 0.9686384797096252
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "(포천시 태봉로 216)",
+  "region": null,
+  "district": "포천시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_013"
+   ],
+   "bbox": [
+    199.0,
+    224.0,
+    286.5,
+    236.0
+   ],
+   "confidence": 0.9686384797096252
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "#포천시",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최/주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_023"
+     ],
+     "bbox": [
+      175.0,
+      601.0,
+      270.0,
+      617.5
+     ],
+     "confidence": 0.990826427936554
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

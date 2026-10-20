@@ -1,0 +1,266 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-3331d1b307b3",
+ "image": {
+  "sha256": "3331d1b307b3cc26ed15ab683d04a937b25498cf2c48eeb1e7a11818daf3260f",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_sched"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_sched): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "강릉커피축제",
+  "official": "강릉커피축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_000"
+   ],
+   "bbox": [
+    94.0,
+    32.5,
+    403.0,
+    72.0
+   ],
+   "confidence": 0.9746963381767273
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제18회",
+  "number": 18,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_001"
+   ],
+   "bbox": [
+    28.5,
+    44.0,
+    86.0,
+    60.0
+   ],
+   "confidence": 0.9974136352539062
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    274.0,
+    122.5,
+    407.0,
+    137.5
+   ],
+   "confidence": 0.9937108159065247
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.21.수 10.25.일",
+  "start": {
+   "iso": "2026-10-21",
+   "year": 2026,
+   "month": 10,
+   "day": 21,
+   "weekday": "wed",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003",
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    274.0,
+    122.5,
+    407.5,
+    156.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "강룡커피거리 및 강릉시 일원",
+  "items": [
+   "강룡커피거리",
+   "강릉시 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005",
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    314.0,
+    161.5,
+    407.5,
+    188.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "강릉시 일원",
+  "region": null,
+  "district": "강릉시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    339.0,
+    174.5,
+    407.5,
+    188.0
+   ],
+   "confidence": 0.9284718036651611
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "문회대관장부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_008"
+     ],
+     "bbox": [
+      394.0,
+      554.5,
+      432.0,
+      561.5
+     ],
+     "confidence": 0.5689587593078613
+    }
+   },
+   {
+    "name": "강생문회재단",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      400.0,
+      601.5,
+      433.5,
+      610.0
+     ],
+     "confidence": 0.6478438973426819
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

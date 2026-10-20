@@ -1,0 +1,582 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-6ba0c6fbcf5d",
+  "image": {
+    "sha256": "6ba0c6fbcf5d8d8756a303e88064fb9ecaea6e8550cc5dcb684c722b39bf45c7",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:07:49+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'2026 노원 야외도서관'과 큰 글씨 '낭만보장'을 하나의 제목 블록으로 보고 이어 기록함. 'AI 시대 결국, 사람.'은 슬로건.",
+      "'노원북페스티벌 10. 17.(토)' 아래 '노원 야외도서관 개막식 17:20', '오페라 갈라쇼 18:?0'은 각각 프로그램으로 기록. 갈라쇼 시각은 둘째 자리를 확정하지 못해 times를 비움.",
+      "하단 프로그램 목록 중 두 번째 항목('북?' 인문학 콘서트)은 첫 글자를 확정하지 못해 넣지 않음. '북콘서트'는 상세 항목(AI시대, 사람을 읽다)의 분류로 기록함.",
+      "QR 아래 작은 안내 문구와 좌측 '*' 유의사항 2줄은 확대해도 글자를 확정하지 못해 notices를 illegible로 둠. 문의 전화번호도 한 자리(2116/2118)가 불확실해 contacts를 illegible로 둠.",
+      "'후원·협력' 표기 뒤 로고 2개는 roles=[sponsor, partner]로 기록함(어느 쪽인지 구분 표기 없음)."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 노원 야외도서관 낭만보장",
+    "official": "노원 야외도서관 낭만보장",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "AI 시대 결국, 사람.",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10. 17.(토) ~ 18.(일)",
+    "start": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "12:00 ~ 20:00",
+        "start": "12:00",
+        "end": "20:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "경춘선 숲길 일대(하계2동 주민센터 앞)",
+    "items": [
+      "경춘선 숲길 일대(하계2동 주민센터 앞)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "노원구",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "노원구립도서관",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor",
+          "partner"
+        ],
+        "role_raw": "후원·협력",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "우리은행",
+        "roles": [
+          "sponsor",
+          "partner"
+        ],
+        "role_raw": "후원·협력",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "illegible",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "노원북페스티벌",
+        "category_raw": null,
+        "period": {
+          "raw": "10. 17.(토)",
+          "start": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "노원 야외도서관 개막식",
+        "category_raw": "노원북페스티벌",
+        "period": {
+          "raw": "17:20",
+          "start": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:20",
+              "start": "17:20",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "오페라 갈라쇼",
+        "category_raw": "노원북페스티벌",
+        "period": {
+          "raw": "10. 17.(토)",
+          "start": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "AI시대, 사람을 읽다",
+        "category_raw": "북콘서트",
+        "period": {
+          "raw": "10. 17.(토) 15:00",
+          "start": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "15:00",
+              "start": "15:00",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "김상근",
+            "role_raw": "교수"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "이탈리아 명화 속 이야기로 만나는 위로와 낭만",
+        "category_raw": "인문학 콘서트",
+        "period": {
+          "raw": "10. 18.(일) 15:00",
+          "start": {
+            "iso": "2026-10-18",
+            "year": 2026,
+            "month": 10,
+            "day": 18,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "15:00",
+              "start": "15:00",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "이지안",
+            "role_raw": "도슨트"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "낭만극장",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "가족공연",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "북큐레이션",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전시",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "체험",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "로컬마켓",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "먹거리",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "illegible",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "책 읽는 노원",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "other",
+        "raw": "서울 야외도서관 Seoul Outdoor Library",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "디지털 페인팅 일러스트",
+      "노을 풍경"
+    ],
+    "main_colors": [
+      "보라",
+      "주황",
+      "분홍",
+      "초록",
+      "노랑",
+      "흰색"
+    ],
+    "main_objects": [
+      "노을 하늘",
+      "숲길의 책 부스 천막",
+      "기찻길과 꼬마기차",
+      "잔디에서 책 읽고 기타 치는 사람들",
+      "전구 조명",
+      "프로그램 아이콘"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "보랏빛 노을 아래 전구가 걸린 숲길에 책 부스와 기찻길, 책 읽는 사람들을 그린 일러스트 포스터. 상단에 흰 큰 제목과 일정·장소, 중단 좌우에 북페스티벌·북콘서트·인문학 콘서트 안내, 하단에 프로그램 아이콘과 기관 띠."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 프로그램 안내의 작은 글자는 대부분 판독되나 유의사항·QR 안내·문의 번호·일부 로고는 확대해도 확정하지 못함."
+    ]
+  }
+}

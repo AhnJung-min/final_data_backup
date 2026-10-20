@@ -1,0 +1,280 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-8186d3bd6543",
+  "image": {
+    "sha256": "8186d3bd6543e92329c35f5e8f3c1180b87ec6028cb8b14efd4c86a48bf48038",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:31:53+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "연도는 일정 문구에 없고 우측 하단 '2026년 市 대표축제' 표기에서만 확인되어 year_basis=poster_text.",
+      "좌측 세로쓰기 '대전효문화뿌리축제'는 띄어쓰기 없는 별도 표기라 alias로 기록함.",
+      "우측 하단 대전광역시 로고는 역할 표기가 없어 roles를 비우고, 함께 인쇄된 '2026년 市 대표축제'는 badges에 기록함.",
+      "제목의 '대전'은 시·도 접미어 없는 약칭이라 admin_area를 absent로 둠."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제17회 대전 효문화 뿌리 축제",
+    "official": "대전 효문화 뿌리 축제",
+    "variants": [
+      {
+        "kind": "alias",
+        "raw": "대전효문화뿌리축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제17회",
+    "number": 17,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "함께 내딛는 새로운 뿌리",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10. 2.(금)~10. 4.(일)",
+    "start": {
+      "iso": "2026-10-02",
+      "year": 2026,
+      "month": 10,
+      "day": 2,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-04",
+      "year": 2026,
+      "month": 10,
+      "day": 4,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "뿌리공원 일원",
+    "items": [
+      "뿌리공원 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "대전광역시 중구",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "대전효문화뿌리축제 추진위원회",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "대전광역시",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "festival_designation",
+        "raw": "대전광역시 2026년 市 대표축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand_campaign",
+        "raw": "주민과 함께 주민속으로",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "사진을 채운 대형 타이포그래피",
+      "세로쓰기 레이아웃"
+    ],
+    "main_colors": [
+      "회청색",
+      "청록",
+      "초록",
+      "흰색"
+    ],
+    "main_objects": [
+      "깃발이 늘어선 공원 사진",
+      "공원 항공 사진 배경"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "hanja"
+    ],
+    "description": "흐린 공원 항공 사진 위에 깃발 사진을 채운 청록색 대형 글자로 '효문화 뿌리 축제'를 세로로 쌓고, 좌우에 세로쓰기로 축제명·슬로건과 일정·장소를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "443×627 이미지. 일정·장소와 좌측 문구가 세로쓰기라 OCR 읽기 순서에 주의. 하단 기관명은 판독됨."
+    ]
+  }
+}

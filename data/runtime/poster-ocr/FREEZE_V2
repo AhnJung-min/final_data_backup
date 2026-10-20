@@ -1,0 +1,24 @@
+{
+  "rules": "poster_rules_v2",
+  "frozen_at": "2026-10-19T18:11:26+09:00",
+  "extract_sha256": "79b9ffdbeb6223551f5ec1dc42bf3090073bb23fd3e1c0b08cafbc22e7e9e284",
+  "extract_v1_sha256": "1d754cd81457daaeb4135be8d0dfcd73a3e72975f9c1978ced6eff5b699200e0",
+  "fusion_sha256": "67ea83c5a018cdec75fe374efa2a00c373d5fce7a56447bd6b4edbf24b1e1ee3",
+  "evaluate_sha256": "113c4fa3888f8cee3d68a0cdab930bfaa6a56d1cf98f4a6641dfea149f3859b0",
+  "gold": {
+    "gold-v2h": {
+      "files": 252,
+      "sha256": "92728eafdcc2063d5bb0434576ca88208caf906b74ed39792440c9d2606443a7"
+    },
+    "gold-v2": {
+      "files": 252,
+      "sha256": "b65d16cf75c609caa62abc5a536634b85d5073d2057c5174ad001cba0f99d0fb"
+    }
+  },
+  "developed_on": [
+    "dev",
+    "test"
+  ],
+  "acceptance": "규칙마다 dev와 test에서 각각 좋아질 때만 채택(PaddleOCR rgb_2x 기준), 한 장짜리 규칙은 검토에서 제거",
+  "note": "이 기록 이후 예비분(r2-*)을 v1·v2·결합 경로로 한 번 채점한다. 이후 규칙을 바꾸면 새 확인용 포스터가 필요하다."
+}

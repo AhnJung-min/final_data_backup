@@ -1,0 +1,231 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-edfbc3048057",
+ "image": {
+  "sha256": "edfbc30480579e6ca80f84d8a1b5711385c05de5f6fd1ab3cd04ba437227d9fc",
+  "width": 353,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:49+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "제7회 양평 부추육",
+  "official": "양평 부추육",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_004",
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    78.0,
+    27.5,
+    281.5,
+    146.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제7회",
+  "number": 7,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006",
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    112.5,
+    27.5,
+    224.0,
+    64.0
+   ],
+   "confidence": null
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_026"
+   ],
+   "bbox": [
+    62.0,
+    345.0,
+    101.0,
+    361.5
+   ],
+   "confidence": 0.9969223141670227
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.10.(토) 10.9.(금)~1 2026.",
+  "start": {
+   "iso": "2026-10-09",
+   "year": 2026,
+   "month": 10,
+   "day": 9,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-10",
+   "year": 2026,
+   "month": 10,
+   "day": 10,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_025",
+    "padd_rgb_2x_024",
+    "padd_rgb_2x_026"
+   ],
+   "bbox": [
+    62.0,
+    339.5,
+    295.0,
+    363.5
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "양평군 양동역 일원 (인무대 부추극밤존,농복산물 판마장 등)",
+  "items": [
+   "양평군 양동역 일원 (인무대 부추극밤존",
+   "농복산물 판마장 등)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_027",
+    "padd_rgb_2x_028",
+    "padd_rgb_2x_029",
+    "padd_rgb_2x_030",
+    "padd_rgb_2x_031"
+   ],
+   "bbox": [
+    130.0,
+    364.5,
+    258.0,
+    386.5
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "양평군",
+  "region": null,
+  "district": "양평군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_027"
+   ],
+   "bbox": [
+    130.5,
+    365.0,
+    161.5,
+    376.5
+   ],
+   "confidence": 0.9705953001976013
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

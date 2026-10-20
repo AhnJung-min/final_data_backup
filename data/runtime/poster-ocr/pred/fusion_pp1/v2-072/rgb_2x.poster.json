@@ -1,0 +1,250 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-55ba9e20c04e",
+ "image": {
+  "sha256": "55ba9e20c04e5f3bcb8b4a7be4e61748a0358afaf1e96d61d9901fa917cc2ca4",
+  "width": 440,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+paddleocr(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "천안흥타령춤축제 2026",
+  "official": "천안흥타령춤축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    58.5,
+    476.0,
+    382.0,
+    513.5
+   ],
+   "confidence": 0.982340931892395
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    150.0,
+    325.0,
+    291.0,
+    390.0
+   ],
+   "confidence": 0.9895262718200684
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.1(목)-10.5(월)천안종합운동장 및 천안시 일원",
+  "start": {
+   "iso": "2026-10-01",
+   "year": 2026,
+   "month": 10,
+   "day": 1,
+   "weekday": "thu",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-05",
+   "year": 2026,
+   "month": 10,
+   "day": 5,
+   "weekday": "mon",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    58.0,
+    519.0,
+    382.0,
+    540.5
+   ],
+   "confidence": 0.9705916047096252
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "천안종합운동장 및 천안시 일원",
+  "items": [
+   "천안종합운동장",
+   "천안시 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    58.0,
+    519.0,
+    382.0,
+    540.5
+   ],
+   "confidence": 0.9705916047096252
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "10.1(목)-10.5(월)천안종합운동장 및 천안시 일원",
+  "region": null,
+  "district": "천안시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    58.0,
+    519.0,
+    382.0,
+    540.5
+   ],
+   "confidence": 0.9705916047096252
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "문화저관광부",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_015"
+     ],
+     "bbox": [
+      189.0,
+      577.5,
+      236.5,
+      588.0
+     ],
+     "confidence": 0.6588318347930908
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "festival_designation",
+    "raw": "충요남도 1시크 1품 축제 선정",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_002"
+     ],
+     "bbox": [
+      332.0,
+      15.0,
+      428.0,
+      28.5
+     ],
+     "confidence": 0.753157377243042
+    }
+   }
+  ]
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

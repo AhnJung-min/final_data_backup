@@ -1,0 +1,323 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-f53785fe3da4",
+  "image": {
+    "sha256": "f53785fe3da4f934d94edd6c194f1a645c2c599012cf7e5b1c4552154c8b0de2",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:10:49+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'BROADWAY IN ANJEONG-RI'·'브로드웨이 인 안정리'는 제목 아래 주제 문구라 slogans로 기록함.",
+      "CAST 카드 3장(뮤지컬 배우 손준호·뮤지컬 배우 리사·뮤지컬 갈라 어쏘티드)은 'CAST' 프로그램의 출연진으로 기록하고 특정 공연과 임의 연결하지 않음.",
+      "일정 상자 아래 작은 프로그램 줄 중 둘째·셋째 항목(…가요제, …천 프로그램)은 앞 글자를 확정하지 못해 기록하지 않음.",
+      "장소 뒤 영문 병기 'Anjeong-ri Art Square'는 venue.raw에 넣지 않음.",
+      "우상단 QR 위 작은 예산 문구와 하단 중앙 기관 로고는 판독 불가.",
+      "검토(pass2): 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 마토 예술제",
+    "official": "마토 예술제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "BROADWAY IN ANJEONG-RI",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "브로드웨이 인 안정리",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10. 31. (SAT)",
+    "start": {
+      "iso": "2026-10-31",
+      "year": 2026,
+      "month": 10,
+      "day": 31,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "16:00~20:00",
+        "start": "16:00",
+        "end": "20:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "안정리예술인광장 일원",
+    "items": [
+      "안정리예술인광장 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": null,
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "행사정보 Information",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "CAST",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "손준호",
+            "role_raw": "뮤지컬 배우"
+          },
+          {
+            "name": "리사",
+            "role_raw": "뮤지컬 배우"
+          },
+          {
+            "name": "어쏘티드",
+            "role_raw": "뮤지컬 갈라"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "뮤지컬 갈라 공연",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "포토존",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "이벤트",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "illegible",
+    "raw": null,
+    "total_krw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "디지털 일러스트",
+      "브로드웨이 극장 테마",
+      "굵은 입체 제목"
+    ],
+    "main_colors": [
+      "남색",
+      "빨강",
+      "주황",
+      "금색",
+      "흰색"
+    ],
+    "main_objects": [
+      "붉은 극장 커튼",
+      "MATO 무대와 공연자",
+      "할로윈 호박과 유령",
+      "근대풍 거리 건물",
+      "출연진 사진 3장",
+      "QR 코드"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "붉은 커튼이 걷힌 밤의 극장 거리 일러스트 위에 연도·제목·영문 주제 문구를 두고, 중앙 MATO 무대, 아래 CAST 카드 3장과 일정·시간·장소 상자, 우상단 QR을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 일정 상자 아래 프로그램 줄은 일부만 판독되고 우상단 예산 문구와 하단 기관 로고는 판독되지 않음."
+    ]
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-dcfb2b128f7f",
+  "image": {
+    "sha256": "dcfb2b128f7f1955445bf98c24602c3aed4b30c0e6018c07c374ad77b3e0b5e3",
+    "width": 445,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:12:36+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/blind",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "블라인드 독립 판독(일치도 검사용). 원본 445×627을 직접 보고 확대 크롭으로 상단 표기·일정·로고 띠를 확인함.",
+      "하단 로고 띠에는 주최·주관 등 역할 표기가 없어 roles를 비움. '청정원 순창'은 기업 브랜드 로고로 보고 기관 목록에 넣음.",
+      "장소 문구의 '순창'은 시·군·구 명칭(○○군)으로 인쇄되지 않아 admin_area는 absent로 둠.",
+      "그림 속 사람들이 든 깃발·팻말 글자는 판독 불가라 기록하지 않음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제21회 순창장류축제",
+    "official": "순창장류축제",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "Sunchang Jangryu Festival",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제21회",
+    "number": 21,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "세계인의 입맛, 순창에 반하다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10.15 목 ~ 10.18 일",
+    "start": {
+      "iso": "2026-10-15",
+      "year": 2026,
+      "month": 10,
+      "day": 15,
+      "weekday": "thu",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": "4일간",
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "순창전통고추장민속마을, 순창발효테마파크 일원",
+    "items": [
+      "순창전통고추장민속마을",
+      "순창발효테마파크 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "순창군",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "순창장류축제추진위원회",
+        "roles": [],
+        "role_raw": null,
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "문화체육관광부",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전북특별자치도",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한국관광공사",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "청정원 순창",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "certification",
+        "raw": "유네스코 등재 - 한국의 장 담그기 문화",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "festival_designation",
+        "raw": "예비글로벌축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "festival_designation",
+        "raw": "2026 문화관광축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "플랫 일러스트",
+      "붓글씨 제목",
+      "축제 군중 장면"
+    ],
+    "main_colors": [
+      "하늘색",
+      "초록",
+      "노랑",
+      "빨강",
+      "검정"
+    ],
+    "main_objects": [
+      "얼굴이 그려진 장독 캐릭터",
+      "풍물놀이 하는 사람들",
+      "한옥 마을",
+      "세계 지도",
+      "불꽃놀이"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색 세계 지도 배경에 붓글씨 제목과 영문 제목을 두고, 가운데 웃는 장독 캐릭터와 고추·콩이 튀어 오르는 장면, 아래 한옥 마을 앞 풍물놀이 군중을 그린 뒤 하단에 일정·장소와 로고 띠를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "445×627 이미지. 우측 상단 지정 배지의 영문과 로고 아래 영문 작은 글자, 한국관광공사 로고 글자는 일부만 판독됨.",
+      "좌측 상단 UNESCO 영문 문구(List of Unesco - ...)는 흐려 badges에 한글 줄만 기록함."
+    ]
+  }
+}

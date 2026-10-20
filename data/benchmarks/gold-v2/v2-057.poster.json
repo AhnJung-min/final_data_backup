@@ -1,0 +1,329 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-bacf24f6cb15",
+  "image": {
+    "sha256": "bacf24f6cb15568a88de404d4757dce813bad12730004f29595171815a2f6beb",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:25+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'2026 강남청년축제'를 제목으로, 그 아래 더 크게 인쇄된 '웰니스 소셜링'은 올해 행사 콘셉트명으로 보고 variants(brand)에 기록. 사람 검토 시 headline 슬로건으로 볼지 확인 필요.",
+      "장소 앞 '@'는 위치 표시 기호로 보고 venue.raw에서 뺌(인쇄: '@강남 스퀘어 광장').",
+      "좌측 하단 사진의 '한요한'은 공연 표기 없이 이름만 있어 이름 그대로 프로그램 항목과 출연자로 기록.",
+      "pass2 검토: '웰니스 소셜링'은 축제의 다른 이름이 아니라 제목보다 크게 인쇄된 올해 콘셉트 문구라 title.variants(brand)에서 빼고 headline 슬로건으로 옮김. 우측 상단 손글씨 문구는 여전히 판독 불가라 기록하지 않음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 강남청년축제",
+    "official": "강남청년축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "웰니스 소셜링",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 09. 19 (토)",
+    "start": {
+      "iso": "2026-09-19",
+      "year": 2026,
+      "month": 9,
+      "day": 19,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "15:00 - 20:00",
+        "start": "15:00",
+        "end": "20:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "강남 스퀘어 광장",
+    "items": [
+      "강남 스퀘어 광장"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "강남구",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "자세히 보기",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "SAUNA BUS",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "ICE BATH",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "BODY JAM",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "One - Day CLASS",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "ANIMAL FLOW",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한요한",
+        "category_raw": null,
+        "period": null,
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "한요한",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "칠판 질감 배경",
+      "분필 낙서 일러스트",
+      "손글씨 타이포그래피"
+    ],
+    "main_colors": [
+      "검정",
+      "짙은 초록",
+      "연두",
+      "흰색"
+    ],
+    "main_objects": [
+      "버스 낙서",
+      "손잡은 사람 낙서",
+      "빌딩 낙서",
+      "야자수",
+      "온천 표시",
+      "출연자 사진",
+      "QR 코드"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "검은 칠판 질감 배경에 연두색 분필 낙서(버스·사람·빌딩·야자수)를 두르고 가운데 '웰니스 소셜링'을 크게 쓴 포스터. 아래에 영문 프로그램명·일정·장소, 좌측 하단 출연자 사진, 우측 하단 QR."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 우측 상단 3줄 손글씨 문구(빨강·하늘색)는 확대해도 글자를 확정하지 못해 기록하지 않음(슬로건 후보).",
+      "강남구 로고 아래 영문 글자는 작지만 나머지 본문은 판독됨."
+    ]
+  }
+}

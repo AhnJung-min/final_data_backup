@@ -1,0 +1,294 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-f4ffe060c9cd",
+ "image": {
+  "sha256": "f4ffe060c9cd28f01786760f632313b7f0c1523f996b7899d26bf7782564294e",
+  "width": 438,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:51+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:fb_h_e"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(fb_h_e): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "메뚜기 축제",
+  "official": "메뚜기 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    111.5,
+    153.5,
+    325.5,
+    318.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    114.0,
+    313.5,
+    319.0,
+    336.5
+   ],
+   "confidence": 0.9937604665756226
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.3~10.4일",
+  "start": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-04",
+   "year": 2026,
+   "month": 10,
+   "day": 4,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    114.0,
+    313.5,
+    319.0,
+    336.5
+   ],
+   "confidence": 0.9937604665756226
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "섬주군 수륜면 수섬리104 일원 (어물림마당)",
+  "items": [
+   "섬주군 수륜면 수섬리104 일원 (어물림마당)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010",
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    114.0,
+    338.5,
+    316.5,
+    377.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "섬주군 수륜면 수섬리104",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    114.0,
+    338.5,
+    316.5,
+    359.0
+   ],
+   "confidence": 0.9515987634658813
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "섬주군 수륜면 수섬리104 일원",
+  "region": null,
+  "district": "섬주군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    114.0,
+    338.5,
+    316.5,
+    359.0
+   ],
+   "confidence": 0.9515987634658813
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "성주가야산 활금들널 메뚜기 축제추진위원회",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최 주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_013"
+     ],
+     "bbox": [
+      27.5,
+      593.5,
+      260.5,
+      607.0
+     ],
+     "confidence": 0.9193218946456909
+    }
+   },
+   {
+    "name": "의성주군",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_014",
+      "padd_rgb_2x_015"
+     ],
+     "bbox": [
+      275.5,
+      593.5,
+      344.0,
+      606.5
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "성주군의회",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_014",
+      "padd_rgb_2x_017"
+     ],
+     "bbox": [
+      275.5,
+      593.5,
+      410.5,
+      606.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

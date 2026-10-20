@@ -1,0 +1,535 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-35c0d7affe64",
+  "image": {
+    "sha256": "35c0d7affe64d50110d0e946fc6d3a2f270e4b38ccc111618cd8664ee5a635ee",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:03+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'제76주년'은 춘천지구전투의 주년 표기라 축제 회차로 보지 않고 edition을 absent로 둠. 상단 '제76주년 춘천지구전투 전승행사'는 별칭으로 기록함.",
+      "4자리 연도는 육군 간부 모집 안내 상자의 마감일(2026. 10. 16. 등)에만 있어 일정 year_basis를 poster_text로 둠.",
+      "육군 간부 모집 안내(모집기간)·국방헬프콜 신고 안내·사진 설명(소양1교)은 축제 정보가 아니어서 programs·notices에 넣지 않음. 전화번호는 contacts에 기록함. 1588-6953·1303 같은 대표번호는 검증기의 지역번호 형식(NN-NNN-NNNN)에 맞지 않아 kind=other로 둠.",
+      "10.10. 축하공연 출연 '육군 ○병 등'은 둘째 글자가 불확실해 performers에 넣지 않음.",
+      "검토(pass2): 10.10.(토) 축하공연 출연 '육군 장병 등'이 확대 시 판독되어 performers에 '육군 장병'을 추가함('등' 제외, 위 pass1 메모의 미판독 판단을 대체). 그 외 항목은 이미지와 일치함."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "K-밀리터리 페스티벌 춘천대첩",
+    "official": "K-밀리터리 페스티벌 춘천대첩",
+    "variants": [
+      {
+        "kind": "alias",
+        "raw": "제76주년 춘천지구전투 전승행사",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10.09.(금) - 10.11.(일)",
+    "start": {
+      "iso": "2026-10-09",
+      "year": 2026,
+      "month": 10,
+      "day": 9,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-11",
+      "year": 2026,
+      "month": 10,
+      "day": 11,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "춘천 수변공원 일원 (베어스호텔 맞은편)",
+    "items": [
+      "춘천 수변공원 일원 (베어스호텔 맞은편)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "대한민국 국방부",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "2군단",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "춘천시",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "강원특별자치도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "육군 간부 모집 1588-6953",
+        "value": "1588-6953",
+        "label_raw": null,
+        "department": "육군 간부 모집",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "other",
+        "raw": "국방헬프콜 1303",
+        "value": "1303",
+        "label_raw": null,
+        "department": "국방헬프콜",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "육군 간부 모집 안내",
+        "purpose": "other",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "군악연주회",
+        "category_raw": null,
+        "period": {
+          "raw": "10.09.(금)",
+          "start": {
+            "iso": "2026-10-09",
+            "year": 2026,
+            "month": 10,
+            "day": 9,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축하공연",
+        "category_raw": null,
+        "period": {
+          "raw": "10.09.(금)",
+          "start": {
+            "iso": "2026-10-09",
+            "year": 2026,
+            "month": 10,
+            "day": 9,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전승기념 및 추모 행사",
+        "category_raw": null,
+        "period": {
+          "raw": "10.10.(토)",
+          "start": {
+            "iso": "2026-10-10",
+            "year": 2026,
+            "month": 10,
+            "day": 10,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "군 문화공연(의장대, 태권도)",
+        "category_raw": null,
+        "period": {
+          "raw": "10.10.(토)",
+          "start": {
+            "iso": "2026-10-10",
+            "year": 2026,
+            "month": 10,
+            "day": 10,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축하공연",
+        "category_raw": null,
+        "period": {
+          "raw": "10.10.(토)",
+          "start": {
+            "iso": "2026-10-10",
+            "year": 2026,
+            "month": 10,
+            "day": 10,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "이소나",
+            "role_raw": null
+          },
+          {
+            "name": "신동",
+            "role_raw": null
+          },
+          {
+            "name": "육군 장병",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "군 문화공연(의장대, 태권도)",
+        "category_raw": null,
+        "period": {
+          "raw": "10.11.(일)",
+          "start": {
+            "iso": "2026-10-11",
+            "year": 2026,
+            "month": 10,
+            "day": 11,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "축하공연",
+        "category_raw": null,
+        "period": {
+          "raw": "10.11.(일)",
+          "start": {
+            "iso": "2026-10-11",
+            "year": 2026,
+            "month": 10,
+            "day": 11,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "씨네파크 무료영화 상영",
+        "category_raw": null,
+        "period": {
+          "raw": "10.11.(일)",
+          "start": {
+            "iso": "2026-10-11",
+            "year": 2026,
+            "month": 10,
+            "day": 11,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "수채화 번짐 배경",
+      "사진 합성",
+      "붓글씨 제목"
+    ],
+    "main_colors": [
+      "미색",
+      "빨강",
+      "파랑",
+      "남색",
+      "검정"
+    ],
+    "main_objects": [
+      "경례하는 군인 실루엣",
+      "소양1교와 강변 풍경 사진",
+      "태극 문양",
+      "QR 코드"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "빨강·파랑 수채화 번짐 배경에 검정 제목과 남색 붓글씨 '춘천대첩', 경례하는 군인 실루엣 속 강변 사진을 두고 하단에 날짜별 프로그램·육군 간부 모집 안내·국방헬프콜·주최 띠를 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 프로그램 상자와 모집 안내 상자의 작은 글자는 대부분 판독되나 일부 글자가 흐림."
+    ]
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-2eb99ed0da62",
+  "image": {
+    "sha256": "2eb99ed0da623d018bb9e9c260737f21a317609ecf8e2b9ceca788eac94f6590",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:01:35+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "장소는 세로줄(|)로 구분된 네 곳이라 구분자 기준으로 items를 나눔.",
+      "좌측 상단 '문화관광축제' 로고는 badges에 기록함. '32nd' 옆 작은 글자는 판독되지 않아 기록하지 않음.",
+      "검토(pass2): 장소 구분자 '|'는 분할 기준(및·가운뎃점·쉼표)이 아니어서 venue.items를 네 개에서 원문 한 개로 합침. 나머지 항목은 이미지와 일치.",
+      "표준 1.1 A1 적용: 시·군·구는 행정 접미사가 붙은 독립 낱말만, 시·도는 독립 낱말이거나 행정 단위만으로 된 붙은 낱말일 때 인정."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "32nd 동래읍성역사축제",
+    "official": "동래읍성역사축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "32nd",
+    "number": 32,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "동래성 사람들, 역사와 미래를 잇다!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10. 16.(금)~10. 18.(일)",
+    "start": {
+      "iso": "2026-10-16",
+      "year": 2026,
+      "month": 10,
+      "day": 16,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "동래문화회관 | 동래읍성지 북문광장 | 명륜1번가 | 온천장 일원",
+    "items": [
+      "동래문화회관 | 동래읍성지 북문광장 | 명륜1번가 | 온천장 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "부산광역시 동래구",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "동래읍성역사축제추진위원회",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "동래문화원",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "부산광역시",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한국관광공사",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "부산관광공사",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "festival_designation",
+        "raw": "문화관광축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "야경 사진 합성",
+      "손글씨 제목"
+    ],
+    "main_colors": [
+      "남색",
+      "검정",
+      "분홍",
+      "파랑",
+      "노랑",
+      "초록"
+    ],
+    "main_objects": [
+      "불꽃놀이",
+      "은하수 밤하늘",
+      "동래읍성 성곽과 문루",
+      "깃발",
+      "갓 쓴 캐릭터와 염소 캐릭터 뒷모습",
+      "나무"
+    ],
+    "has_character": true,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "은하수가 보이는 밤하늘과 성곽 위 불꽃놀이 사진에 손글씨 제목과 슬로건을 얹고, 앞쪽 언덕에 캐릭터 둘의 뒷모습, 하단에 일정·장소·기관 띠와 QR을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 기관 띠는 대부분 판독되나 후원 로고 일부 글자와 좌측 상단 로고 작은 글자는 흐림."
+    ]
+  }
+}

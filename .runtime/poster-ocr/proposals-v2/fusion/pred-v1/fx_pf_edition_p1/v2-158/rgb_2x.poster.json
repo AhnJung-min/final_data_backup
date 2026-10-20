@@ -1,0 +1,242 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-69e1f27ff960",
+ "image": {
+  "sha256": "69e1f27ff960336b696c6d637fbb1ebe6feb7864f6bb690ee8351e81aa662df8",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:pf_edition_p1"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(pf_edition_p1): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "어울림 한마당",
+  "official": "어울림 한마당",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005",
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    96.0,
+    96.0,
+    345.0,
+    285.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    43.0,
+    387.5,
+    181.0,
+    407.5
+   ],
+   "confidence": 0.9635230898857117
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "일시 2026.10.17.토",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "10:00~10:30",
+    "start": "10:00",
+    "end": "10:30",
+    "applies_to": null
+   },
+   {
+    "raw": "10:30~14:00",
+    "start": "10:30",
+    "end": "14:00",
+    "applies_to": null
+   },
+   {
+    "raw": "17:00~19:00",
+    "start": "17:00",
+    "end": "19:00",
+    "applies_to": null
+   },
+   {
+    "raw": "19:00~21:00",
+    "start": "19:00",
+    "end": "21:00",
+    "applies_to": null
+   },
+   {
+    "raw": "21:00-21:15",
+    "start": "21:00",
+    "end": "21:15",
+    "applies_to": null
+   },
+   {
+    "raw": "10:00~17:00",
+    "start": "10:00",
+    "end": "17:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    43.0,
+    387.5,
+    181.0,
+    407.5
+   ],
+   "confidence": 0.9635230898857117
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "동구 율하체육공원",
+  "items": [
+   "동구 율하체육공원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008",
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    45.5,
+    408.5,
+    172.5,
+    425.5
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "동구 율하체육공원",
+  "region": null,
+  "district": "동구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_009"
+   ],
+   "bbox": [
+    63.0,
+    408.5,
+    172.5,
+    425.5
+   ],
+   "confidence": 0.972168505191803
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

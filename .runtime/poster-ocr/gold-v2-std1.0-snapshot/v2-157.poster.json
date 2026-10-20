@@ -1,0 +1,333 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-4a8692fe64c0",
+  "image": {
+    "sha256": "4a8692fe64c01256b121d87d6e675bcb2adb8ea49ea668f59fe6410d02787400",
+    "width": 444,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:08:03+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목 블록 '제5회 원주농협 / 치악산 / 고구마 축제'를 읽는 순서대로 기록함. '원주농협'은 제목 안 문구일 뿐 역할 표기·로고 띠가 없어 organizations는 absent로 둠.",
+      "장소 줄 '간현관광지 주차장 | 원주시 지정면 소금산길 12'에서 앞은 venue, 뒤는 도로명 address로 나눔.",
+      "'고구마 판매활성화 지원사업'은 사업 표기로 badges(other)에 기록. 오른쪽 프로그램 3개의 요일은 날짜 옆 작은 원 안에 인쇄되어 확대해 확인함.",
+      "pass2 검토: 일정과 프로그램 3개의 요일은 괄호 없이 작은 원 안에 인쇄되어 schedule.raw와 programs[].period.raw에서 괄호를 뺌. 나머지 항목은 이미지와 일치."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제5회 원주농협 치악산 고구마 축제",
+    "official": "원주농협 치악산 고구마 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제5회",
+    "number": 5,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10.17.토 ~ 10.18.일",
+    "start": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "간현관광지 주차장",
+    "items": [
+      "간현관광지 주차장"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "present",
+    "raw": "원주시 지정면 소금산길 12",
+    "kind": "road",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "원주시 지정면 소금산길 12",
+    "region": null,
+    "district": "원주시",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "absent",
+    "items": []
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "동신사 행차 재현 행사",
+        "category_raw": null,
+        "period": {
+          "raw": "10.17.토 오전 10:30",
+          "start": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "오전 10:30",
+              "start": "10:30",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "조명섭 가수 공연",
+        "category_raw": null,
+        "period": {
+          "raw": "10.17.토 오후 02:00",
+          "start": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "오후 02:00",
+              "start": "14:00",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "조명섭",
+            "role_raw": "가수"
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "평양예술공연단 공연",
+        "category_raw": null,
+        "period": {
+          "raw": "10.18.일 오전 11:00",
+          "start": {
+            "iso": "2026-10-18",
+            "year": 2026,
+            "month": 10,
+            "day": 18,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "오전 11:00",
+              "start": "11:00",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [
+          {
+            "name": "평양예술공연단",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "고구마 판매활성화 지원사업",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "사진 합성",
+      "캐릭터 일러스트",
+      "굵은 손글씨 제목"
+    ],
+    "main_colors": [
+      "흰색",
+      "보라",
+      "자주",
+      "분홍",
+      "초록",
+      "노랑",
+      "검정"
+    ],
+    "main_objects": [
+      "가마솥에 찐 고구마",
+      "행차 재현 행렬 항공 사진",
+      "고구마 캐릭터",
+      "가수 인물 사진",
+      "공연단 사진"
+    ],
+    "has_character": true,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "흰 배경 상단에 보라·자주 손글씨 제목과 고구마 캐릭터, 왼쪽에 일정·장소, 오른쪽 분홍 테두리 상자에 공연 3개 일정과 사진을 두고, 하단에 행렬 항공 사진과 김이 나는 고구마 가마솥 사진을 합성한 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "444×627 이미지. 프로그램 시간과 주소 글자는 확대 시 판독됨."
+    ]
+  }
+}

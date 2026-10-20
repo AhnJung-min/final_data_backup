@@ -1,0 +1,368 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-50bb767dd66a",
+  "image": {
+    "sha256": "50bb767dd66a7551555a8010bcace4ba7665fb4bb603871db94b498c4aff719c",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:06+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "축제 전체 기간이 아니라 1일차 공연만 알리는 라인업 포스터. 인쇄된 날짜 '10.9(금)'만 schedule로 두고(end null) '1일차' 출연진은 programs에 기록함.",
+      "'× PEAKMUSIC'은 제목 블록에 함께 인쇄되어 title.raw에 포함함.",
+      "출연진 이름 옆 '부산'·'경남'·'전북' 검은 꼬리표는 지역 표기라 role_raw로 쓰지 않음.",
+      "중앙의 4개 로고(광주음악창작소 × 부산 음악창작소 × 뮤지시스 × REDCON)는 역할 표기가 없어 roles를 비움. 그림 속 무대 간판 SOUNDPARK FESTIVAL은 일러스트라 기록하지 않음.",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+    "official": "GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10.9(금)",
+    "start": {
+      "iso": "2026-10-09",
+      "year": 2026,
+      "month": 10,
+      "day": 9,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "end": null,
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "광주음악창작소 피크뮤직홀",
+    "items": [
+      "광주음악창작소 피크뮤직홀"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "광주음악창작소",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "부산 음악창작소",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "뮤지시스",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "REDCON",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "문화체육관광부",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전남광주통합특별시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "광주정보문화산업진흥원",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "광주음악창작소",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "우선입장 예매페이지",
+        "purpose": "booking",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "1일차",
+        "category_raw": null,
+        "period": {
+          "raw": "10.9(금) 1일차",
+          "start": {
+            "iso": "2026-10-09",
+            "year": 2026,
+            "month": 10,
+            "day": 9,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": "광주음악창작소 피크뮤직홀",
+        "performers": [
+          {
+            "name": "세이수미",
+            "role_raw": null
+          },
+          {
+            "name": "더티라콘",
+            "role_raw": null
+          },
+          {
+            "name": "잔물결",
+            "role_raw": null
+          },
+          {
+            "name": "테이퍼드",
+            "role_raw": null
+          },
+          {
+            "name": "커런트무드",
+            "role_raw": null
+          }
+        ],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "present",
+    "raw": "우선입장 예매페이지",
+    "free": null,
+    "prices": [],
+    "reservation_raw": "우선입장 예매페이지",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "회화풍 일러스트",
+      "손글씨 영문 타이포",
+      "마스킹테이프 라벨"
+    ],
+    "main_colors": [
+      "남보라",
+      "주황",
+      "분홍",
+      "연두",
+      "흰색"
+    ],
+    "main_objects": [
+      "노을 하늘",
+      "트러스 무대 구조물",
+      "조명 빔",
+      "나무",
+      "출연진 이름 테이프 라벨",
+      "QR 코드"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "보랏빛에서 주황으로 물드는 노을 하늘에 흰 손글씨 영문 제목, 장소·날짜·1일차 출연진을 색 테이프 라벨로 두고, 아래에 협업 로고와 트러스 무대 일러스트, 주최·주관 띠를 배치한 공연 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 주최·주관 띠와 협업 로고의 보조 글자는 흐려 일부만 판독됨."
+    ]
+  }
+}

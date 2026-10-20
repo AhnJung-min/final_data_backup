@@ -1,0 +1,265 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-2e5df0c34312",
+  "image": {
+    "sha256": "2e5df0c343126cf4a36b5cd644c5f4a71771b21cfde76b6902bf3e47c2703026",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:16+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "일정은 연속 기간이 아니라 '10. 09. /금', '10. 10. /토', '10. 17. /토' 세 날짜가 줄마다 인쇄됨. start는 첫 날짜, end는 마지막 날짜로 두고 실제 운영일 목록은 operating_raw에 원문으로 기록함.",
+      "'2026'은 날짜 목록 바로 위 같은 일정 블록에 인쇄되어 year_basis를 date_text로 둠.",
+      "세로쓰기 슬로건은 오른쪽 줄부터 읽음. 좌상단 'All Good POHANG'은 도시 브랜드로 badges에 기록하고, 우상단 붉은 로고 문구는 판독하지 못해 넣지 않음.",
+      "'포항'은 '시' 없이 인쇄되어 admin_area를 absent로 둠. 하단 pohang 포항시 로고는 역할 표기가 없음.",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "포항 낙화의 밤",
+    "official": "포항 낙화의 밤",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "물위에 피는 불꽃, 도시를 밝히는 밤",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026 10. 09. /금 10. 10. /토 10. 17. /토",
+    "start": {
+      "iso": "2026-10-09",
+      "year": 2026,
+      "month": 10,
+      "day": 9,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "17:00 - 21:00",
+        "start": "17:00",
+        "end": "21:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": "10. 09. /금 10. 10. /토 10. 17. /토",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "포항운하일원",
+    "items": [
+      "포항운하일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "포항시",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "낙화놀이 퍼포먼스",
+        "category_raw": null,
+        "period": {
+          "raw": "19:30 ~ 20:30",
+          "start": null,
+          "end": null,
+          "times": [
+            {
+              "raw": "19:30 ~ 20:30",
+              "start": "19:30",
+              "end": "20:30",
+              "applies_to": "낙화놀이 퍼포먼스"
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "All Good POHANG",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "야경 사진 합성",
+      "금빛 붓글씨 제목",
+      "세로쓰기"
+    ],
+    "main_colors": [
+      "검정",
+      "짙은 갈색",
+      "금색",
+      "주황",
+      "파랑",
+      "흰색"
+    ],
+    "main_objects": [
+      "떨어지는 낙화 불꽃",
+      "포항운하 야경",
+      "다리와 조명",
+      "수면 반사"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "불꽃이 비처럼 떨어지는 어두운 배경에 금빛 세로 붓글씨 '낙화의 밤'과 흰 세로 슬로건을 두고, 좌측에 연도·운영 날짜·시간·장소·퍼포먼스 시간, 하단에 포항운하 야경 사진을 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 상단 좌우 로고와 하단 포항시 로고의 작은 글자는 흐림."
+    ]
+  }
+}

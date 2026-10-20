@@ -1,0 +1,320 @@
+## L10_badge_more  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: badges(tp+1,fp+0,fn-1)
+     gains(1): v2-157:pres.badges
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: badges(tp+1,fp+0,fn-1)
+     gains(1): v2-157:pres.badges
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: - | presence: badges(tp+1,fp+0,fn-1)
+     gains(1): v2-072:pres.badges
+     losses(0): 
+## L11a_budget_label  invalid with=0 without=0
+  NO CHANGE on any pipeline
+## L11b_krw_dot  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: budget+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-113:budget
+     losses(0): 
+## L1_org_rows  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: organizations(tp+1,fp+1,fn-1) | presence: organizations(tp+14,fp+0,fn-14)
+     gains(15): v2-033:pres.organizations, v2-041:pres.organizations, v2-047:pres.organizations, v2-084:pres.organizations, v2-086:pres.organizations, v2-113:pres.organizations, v2-154:pres.organizations, v2-158:pres.organizations, v2-162:pres.organizations, v2-169:pres.organizations, v2-175:pres.organizations, v2-185:pres.organizations, v2-187:pres.organizations, v2-199:organizations[0/0/1>1/0/0], v2-199:pres.organizations
+     losses(1): v2-154:organizations[0/0/1>0/1/1]
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: organizations(tp+1,fp+1,fn-1) | presence: organizations(tp+13,fp+0,fn-13)
+     gains(14): v2-031:pres.organizations, v2-033:pres.organizations, v2-041:pres.organizations, v2-047:pres.organizations, v2-072:pres.organizations, v2-081:pres.organizations, v2-084:pres.organizations, v2-113:pres.organizations, v2-144:pres.organizations, v2-172:pres.organizations, v2-185:pres.organizations, v2-187:pres.organizations, v2-199:organizations[0/0/1>1/0/0], v2-199:pres.organizations
+     losses(1): v2-136:organizations[1/0/1>1/1/1]
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: organizations(tp+1,fp+10,fn-1) | presence: organizations(tp+14,fp+0,fn-14) admin_area(tp+1,fp+0,fn-1)
+     gains(15): v2-018:pres.organizations, v2-030:pres.organizations, v2-031:pres.organizations, v2-033:pres.organizations, v2-041:pres.organizations, v2-047:pres.organizations, v2-066:pres.organizations, v2-072:pres.organizations, v2-081:pres.organizations, v2-084:pres.admin_area, v2-086:pres.organizations, v2-094:pres.organizations, v2-100:pres.organizations, v2-113:pres.organizations, v2-132:pres.organizations
+     losses(6): v2-045:organizations[0/1/4>1/2/3], v2-081:organizations[0/0/2>0/1/2], v2-083:organizations[0/1/3>0/2/3], v2-084:organizations[0/1/2>0/2/2], v2-113:organizations[0/0/1>0/1/1], v2-132:organizations[0/0/6>0/5/6]
+## L2_role_mark  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: organizations(tp+0,fp-1,fn+0) | presence: -
+     gains(1): v2-070:organizations[0/2/1>0/1/1]
+     losses(0): 
+## L3_org_clean  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: organizations(tp+1,fp+0,fn-1) | presence: organizations(tp+1,fp+0,fn-1)
+     gains(2): v2-199:organizations[0/0/1>1/0/0], v2-199:pres.organizations
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: organizations(tp+1,fp+0,fn-1) | presence: organizations(tp+1,fp+0,fn-1)
+     gains(2): v2-199:organizations[0/0/1>1/0/0], v2-199:pres.organizations
+     losses(0): 
+## L4_unlabeled  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: organizations(tp+12,fp+0,fn-12)
+     gains(12): v2-033:pres.organizations, v2-041:pres.organizations, v2-047:pres.organizations, v2-084:pres.organizations, v2-086:pres.organizations, v2-113:pres.organizations, v2-158:pres.organizations, v2-162:pres.organizations, v2-169:pres.organizations, v2-175:pres.organizations, v2-185:pres.organizations, v2-187:pres.organizations
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: organizations(tp+12,fp+0,fn-12)
+     gains(12): v2-031:pres.organizations, v2-033:pres.organizations, v2-041:pres.organizations, v2-047:pres.organizations, v2-072:pres.organizations, v2-081:pres.organizations, v2-084:pres.organizations, v2-113:pres.organizations, v2-144:pres.organizations, v2-172:pres.organizations, v2-185:pres.organizations, v2-187:pres.organizations
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: - | presence: organizations(tp+11,fp+0,fn-11)
+     gains(11): v2-018:pres.organizations, v2-030:pres.organizations, v2-031:pres.organizations, v2-033:pres.organizations, v2-041:pres.organizations, v2-047:pres.organizations, v2-066:pres.organizations, v2-072:pres.organizations, v2-086:pres.organizations, v2-094:pres.organizations, v2-100:pres.organizations
+     losses(0): 
+## L5_phone_run  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: contacts(tp+1,fp+0,fn-1) | presence: contacts(tp+1,fp+0,fn-1)
+     gains(2): v2-162:contacts[0/0/1>1/0/0], v2-162:pres.contacts
+     losses(0): 
+## L6_clock_span  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: contacts(tp+0,fp-1,fn+0) | presence: contacts(tp+0,fp-1,fn+0)
+     gains(2): v2-094:contacts[0/1/0>0/0/0], v2-094:pres.contacts
+     losses(0): 
+## L7_sns_handle  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: links(tp+0,fp-2,fn+0) | presence: links(tp+0,fp-1,fn+0)
+     gains(3): v2-072:links[0/1/0>0/0/0], v2-196:links[0/1/0>0/0/0], v2-196:pres.links
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: links(tp+0,fp-2,fn+0) | presence: links(tp-1,fp-1,fn+1)
+     gains(3): v2-018:links[0/1/1>0/0/1], v2-196:links[0/1/0>0/0/0], v2-196:pres.links
+     losses(1): v2-018:pres.links
+## L8_link_spaced  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: links(tp+0,fp+1,fn+0) | presence: links(tp+1,fp+0,fn-1)
+     gains(1): v2-095:pres.links
+     losses(1): v2-095:links[0/0/1>0/1/1]
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: links(tp+0,fp+1,fn+0) | presence: links(tp+1,fp+0,fn-1)
+     gains(1): v2-095:pres.links
+     losses(1): v2-095:links[0/0/1>0/1/1]
+## L9a_notice_frag  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: - | presence: notices(tp+0,fp-3,fn+0)
+     gains(3): v2-027:pres.notices, v2-041:pres.notices, v2-097:pres.notices
+     losses(0): 
+## L9b_notice_parking  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: notices(tp+0,fp-2,fn+0)
+     gains(2): v2-144:pres.notices, v2-157:pres.notices
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: notices(tp+0,fp-2,fn+0)
+     gains(2): v2-144:pres.notices, v2-157:pres.notices
+     losses(0): 
+## L9c_notice_more  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: notices(tp+1,fp+0,fn-1)
+     gains(1): v2-136:pres.notices
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: notices(tp+1,fp+0,fn-1)
+     gains(1): v2-136:pres.notices
+     losses(0): 
+## S1a_comma  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: schedule_end+1 schedule_start+2 start_weekday+1 start_year+3 | cer_sum +0.000 | lists: - | presence: schedule(tp+3,fp+0,fn-3)
+     gains(10): v2-031:schedule_start, v2-031:start_year, v2-031:start_weekday, v2-031:pres.schedule, v2-041:schedule_start, v2-041:start_year, v2-041:pres.schedule, v2-070:schedule_end, v2-070:start_year, v2-070:pres.schedule
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: schedule_pair-1 schedule_start-1 start_weekday-1 | cer_sum +0.000 | lists: - | presence: -
+     gains(0): 
+     losses(3): v2-187:schedule_start, v2-187:schedule_pair, v2-187:start_weekday
+  paddleocr/rgb_2x [n=34] fields: core_all+1 schedule_end+1 schedule_pair+1 start_weekday+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(4): v2-083:schedule_end, v2-083:core_all, v2-083:schedule_pair, v2-083:start_weekday
+     losses(0): 
+## S1b_double_sep  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: schedule_end+1 schedule_pair+1 schedule_start+1 start_year+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+1,fp+0,fn-1)
+     gains(5): v2-151:schedule_end, v2-151:schedule_start, v2-151:start_year, v2-151:schedule_pair, v2-151:pres.schedule
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: schedule_end+1 schedule_pair+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-151:schedule_end, v2-151:schedule_pair
+     losses(0): 
+## S1c_brackets  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: schedule_pair+1 schedule_start+1 start_weekday+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(3): v2-084:schedule_start, v2-084:start_weekday, v2-084:schedule_pair
+     losses(0): 
+## S2a_weekday_en  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: start_weekday+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-041:start_weekday
+     losses(0): 
+## S2b_il_sunday  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: schedule_end+2 schedule_pair+2 | cer_sum +0.000 | lists: - | presence: -
+     gains(4): v2-015:schedule_end, v2-015:schedule_pair, v2-123:schedule_end, v2-123:schedule_pair
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: schedule_end+2 schedule_pair+2 | cer_sum +0.000 | lists: - | presence: -
+     gains(4): v2-015:schedule_end, v2-015:schedule_pair, v2-123:schedule_end, v2-123:schedule_pair
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: schedule_end+1 schedule_pair+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-123:schedule_end, v2-123:schedule_pair
+     losses(0): 
+## S3_spaced  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: core_all+1 schedule_end+4 schedule_pair+3 schedule_start+1 start_weekday+1 start_year+2 | cer_sum +0.000 | lists: - | presence: schedule(tp+2,fp+0,fn-2)
+     gains(14): v2-015:schedule_pair, v2-015:schedule_end, v2-070:start_year, v2-070:schedule_end, v2-070:pres.schedule, v2-072:start_weekday, v2-072:schedule_start, v2-072:schedule_pair, v2-072:start_year, v2-072:core_all, v2-072:schedule_end, v2-072:pres.schedule, v2-175:schedule_pair, v2-175:schedule_end
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: schedule_end+3 schedule_pair+3 schedule_start+2 start_weekday+2 start_year+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+1,fp+0,fn-1)
+     gains(12): v2-015:schedule_pair, v2-015:schedule_end, v2-070:schedule_pair, v2-070:schedule_end, v2-095:start_weekday, v2-095:schedule_start, v2-095:schedule_pair, v2-132:start_weekday, v2-132:schedule_start, v2-132:start_year, v2-132:pres.schedule, v2-187:schedule_end
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: schedule_start+1 start_weekday+1 start_year+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+1,fp+0,fn-1)
+     gains(4): v2-047:start_weekday, v2-047:start_year, v2-047:schedule_start, v2-047:pres.schedule
+     losses(0): 
+## S4_nosep  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: schedule_end+3 schedule_pair+3 schedule_start+1 start_year+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+1,fp+0,fn-1)
+     gains(9): v2-045:schedule_pair, v2-045:schedule_end, v2-081:schedule_pair, v2-081:schedule_end, v2-160:schedule_pair, v2-160:start_year, v2-160:schedule_end, v2-160:schedule_start, v2-160:pres.schedule
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: schedule_end+4 schedule_pair+4 schedule_start+1 start_year+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+1,fp+0,fn-1)
+     gains(11): v2-015:schedule_pair, v2-015:schedule_end, v2-027:schedule_pair, v2-027:schedule_end, v2-157:schedule_pair, v2-157:schedule_end, v2-160:schedule_pair, v2-160:start_year, v2-160:schedule_end, v2-160:schedule_start, v2-160:pres.schedule
+     losses(0): 
+## S5_noise  invalid with=0 without=0
+  easyocr/rgb_1x [n=60] fields: schedule_end+3 schedule_pair+3 schedule_start+1 start_year+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+1,fp+0,fn-1)
+     gains(9): v2-135:schedule_end, v2-135:schedule_pair, v2-169:schedule_start, v2-169:schedule_end, v2-169:schedule_pair, v2-169:start_year, v2-169:pres.schedule, v2-186:schedule_end, v2-186:schedule_pair
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: core_all+1 schedule_pair+1 schedule_start+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(3): v2-110:core_all, v2-110:schedule_start, v2-110:schedule_pair
+     losses(0): 
+## S6a_weak_single  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: schedule_end+4 schedule_pair+5 schedule_start+4 start_year+2 | cer_sum +0.000 | lists: - | presence: schedule(tp+3,fp+0,fn-3)
+     gains(18): v2-034:schedule_start, v2-034:schedule_pair, v2-034:schedule_end, v2-034:pres.schedule, v2-113:start_year, v2-113:schedule_start, v2-113:schedule_pair, v2-113:schedule_end, v2-113:pres.schedule, v2-123:schedule_start, v2-123:schedule_pair, v2-135:schedule_pair, v2-135:schedule_end, v2-138:start_year, v2-138:schedule_start, v2-138:pres.schedule, v2-157:schedule_pair, v2-157:schedule_end
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: schedule_end+2 schedule_pair+2 schedule_start+3 start_year+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+3,fp+0,fn-3)
+     gains(11): v2-034:schedule_start, v2-034:schedule_pair, v2-034:schedule_end, v2-034:pres.schedule, v2-138:start_year, v2-138:schedule_start, v2-138:pres.schedule, v2-198:schedule_start, v2-198:schedule_pair, v2-198:schedule_end, v2-198:pres.schedule
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: core_all+1 schedule_end+2 schedule_pair+2 schedule_start+1 | cer_sum +0.000 | lists: - | presence: schedule(tp+1,fp+0,fn-1)
+     gains(7): v2-034:core_all, v2-034:schedule_start, v2-034:schedule_pair, v2-034:schedule_end, v2-034:pres.schedule, v2-100:schedule_pair, v2-100:schedule_end
+     losses(0): 
+## S6b_twoline_pair  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: schedule_end+1 schedule_pair+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-100:schedule_end, v2-100:schedule_pair
+     losses(0): 
+## S7_multi_period  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: schedule_end+1 schedule_pair+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-079:schedule_pair, v2-079:schedule_end
+     losses(0): 
+## S8_times  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: times(tp+2,fp+0,fn-2) | presence: -
+     gains(2): v2-162:times[0/0/1>1/0/0], v2-196:times[0/0/1>1/0/0]
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: times(tp+3,fp+0,fn-3) | presence: -
+     gains(3): v2-027:times[0/0/1>1/0/0], v2-162:times[0/0/1>1/0/0], v2-192:times[0/0/1>1/0/0]
+     losses(0): 
+## T1_column  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum -1.220 | lists: - | presence: -
+     gains(6): v2-007:cer0.62>0.12, v2-047:cer0.71>0.43, v2-079:cer1.00>0.83, v2-084:cer0.78>0.67, v2-123:cer0.88>0.75, v2-174:cer0.71>0.57
+     losses(1): v2-086:cer0.67>0.78
+  easyocr/rgb_1x [n=60] fields: - | cer_sum -0.647 | lists: - | presence: -
+     gains(3): v2-007:cer0.62>0.12, v2-047:cer0.71>0.43, v2-084:cer0.78>0.67
+     losses(1): v2-165:cer0.75>1.00
+  paddleocr/rgb_2x [n=34] fields: core_all+2 title+2 | cer_sum -0.789 | lists: - | presence: -
+     gains(7): v2-007:cer0.75>0.25, v2-066:cer0.40>0.00, v2-066:core_all, v2-066:title, v2-086:cer0.56>0.00, v2-086:core_all, v2-086:title
+     losses(1): v2-084:cer0.33>1.00
+## T2_latin_tail  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: title+1 | cer_sum -1.000 | lists: - | presence: -
+     gains(2): v2-001:title, v2-001:cer1.00>0.00
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: title+1 | cer_sum -1.000 | lists: - | presence: -
+     gains(2): v2-001:title, v2-001:cer1.00>0.00
+     losses(0): 
+## T3_suffix  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.321 | lists: - | presence: -
+     gains(1): v2-099:cer1.00>0.75
+     losses(1): v2-113:cer0.43>1.00
+## T4_year  invalid with=0 without=0
+  easyocr/rgb_1x [n=60] fields: start_year+1 year+1 | cer_sum +0.000 | lists: - | presence: year(tp+1,fp+0,fn-1)
+     gains(3): v2-047:year, v2-047:start_year, v2-047:pres.year
+     losses(0): 
+## T5_edition_word  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: edition+1 | cer_sum +0.000 | lists: - | presence: edition(tp+1,fp+0,fn-1)
+     gains(2): v2-144:edition, v2-144:pres.edition
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: edition+1 | cer_sum +0.000 | lists: - | presence: edition(tp+1,fp+0,fn-1)
+     gains(2): v2-144:edition, v2-144:pres.edition
+     losses(0): 
+## V10_address  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: address(tp+0,fp-3,fn+0)
+     gains(3): v2-041:pres.address, v2-081:pres.address, v2-186:pres.address
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: address(tp+0,fp-2,fn+0)
+     gains(2): v2-030:pres.address, v2-140:pres.address
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: - | presence: address(tp+0,fp-1,fn+0)
+     gains(1): v2-132:pres.address
+     losses(0): 
+## V11a_title_fallback  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: admin_district+1 | cer_sum +0.000 | lists: - | presence: admin_area(tp+2,fp+0,fn-2)
+     gains(3): v2-172:admin_district, v2-172:pres.admin_area, v2-198:pres.admin_area
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: admin_district+1 | cer_sum +0.000 | lists: - | presence: admin_area(tp+3,fp+0,fn-3)
+     gains(4): v2-033:pres.admin_area, v2-172:admin_district, v2-172:pres.admin_area, v2-198:pres.admin_area
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: - | presence: admin_area(tp+1,fp+0,fn-1)
+     gains(1): v2-084:pres.admin_area
+     losses(0): 
+## V11b_not_tail  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: admin_area(tp-1,fp-1,fn+1)
+     gains(1): v2-083:pres.admin_area
+     losses(1): v2-122:pres.admin_area
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: admin_area(tp+0,fp-1,fn+0)
+     gains(1): v2-083:pres.admin_area
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: - | cer_sum +0.000 | lists: - | presence: admin_area(tp-1,fp-1,fn+1)
+     gains(1): v2-083:pres.admin_area
+     losses(1): v2-122:pres.admin_area
+## V11c_sido_strip  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: admin_district+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-172:admin_district
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: admin_district+2 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-030:admin_district, v2-172:admin_district
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: admin_district+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-070:admin_district
+     losses(0): 
+## V11d_multi_district  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: admin_district+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-031:admin_district
+     losses(0): 
+## V11e_district_ilwon  invalid with=0 without=0
+  easyocr/rgb_1x [n=60] fields: - | cer_sum +0.000 | lists: - | presence: admin_area(tp+1,fp+0,fn-1)
+     gains(1): v2-070:pres.admin_area
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: admin_district+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-070:admin_district
+     losses(0): 
+## V1_label_mid  invalid with=0 without=0
+  NO CHANGE on any pipeline
+## V2_same_row  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: admin_district+1 venue_partial+1 | cer_sum +0.000 | lists: - | presence: admin_area(tp+1,fp+0,fn-1)
+     gains(3): v2-081:admin_district, v2-081:venue_partial, v2-081:pres.admin_area
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: admin_district+1 core_all+1 venue+1 venue_partial+1 | cer_sum +0.000 | lists: - | presence: admin_area(tp+1,fp+0,fn-1)
+     gains(5): v2-081:admin_district, v2-081:venue_partial, v2-081:venue, v2-081:core_all, v2-081:pres.admin_area
+     losses(0): 
+## V3a_segment_sched  invalid with=0 without=0
+  NO CHANGE on any pipeline
+## V3b_segment_kw  invalid with=0 without=0
+  easyocr/rgb_1x [n=60] fields: venue+1 venue_partial+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-029:venue, v2-029:venue_partial
+     losses(0): 
+## V4_clean  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: core_all+1 venue+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-072:core_all, v2-072:venue
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: core_all+1 venue+3 venue_partial+2 | cer_sum +0.000 | lists: - | presence: -
+     gains(6): v2-029:venue, v2-072:venue, v2-110:core_all, v2-110:venue_partial, v2-110:venue, v2-186:venue_partial
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: core_all+1 venue+1 venue_partial+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(3): v2-110:core_all, v2-110:venue_partial, v2-110:venue
+     losses(0): 
+## V5_date_guard  invalid with=0 without=0
+  NO CHANGE on any pipeline
+## V6a_5digits  invalid with=0 without=0
+  paddleocr/rgb_2x [n=34] fields: core_all+1 venue+1 venue_partial+1 | cer_sum +0.000 | lists: - | presence: admin_area(tp+0,fp-1,fn+0)
+     gains(4): v2-045:venue_partial, v2-045:core_all, v2-045:venue, v2-045:pres.admin_area
+     losses(0): 
+## V6b_date_anchor  invalid with=0 without=0
+  NO CHANGE on any pipeline
+## V7a_join_above  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: venue_partial+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-066:venue_partial
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: venue_partial+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-066:venue_partial
+     losses(0): 
+## V7b_join_multi  invalid with=0 without=0
+  NO CHANGE on any pipeline
+## V7c_neg_gap  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: venue_partial+2 | cer_sum +0.000 | lists: - | presence: admin_area(tp+1,fp+0,fn-1)
+     gains(3): v2-066:venue_partial, v2-081:venue_partial, v2-164:pres.admin_area
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: venue_partial+2 | cer_sum +0.000 | lists: - | presence: admin_area(tp+1,fp+0,fn-1)
+     gains(3): v2-066:venue_partial, v2-081:venue_partial, v2-164:pres.admin_area
+     losses(0): 
+  paddleocr/rgb_2x [n=34] fields: core_all+1 venue+1 venue_partial+2 | cer_sum +0.000 | lists: - | presence: -
+     gains(4): v2-033:venue_partial, v2-033:venue, v2-033:core_all, v2-094:venue_partial
+     losses(0): 
+## V8_words  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: venue_partial+2 | cer_sum +0.000 | lists: - | presence: venue(tp+1,fp+0,fn-1)
+     gains(3): v2-066:venue_partial, v2-154:venue_partial, v2-154:pres.venue
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: venue_partial+2 | cer_sum +0.000 | lists: - | presence: venue(tp+1,fp+0,fn-1)
+     gains(3): v2-066:venue_partial, v2-154:venue_partial, v2-154:pres.venue
+     losses(0): 
+## V9_addr_cut  invalid with=0 without=0
+  easyocr/rgb_2x [n=60] fields: venue_partial+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(1): v2-157:venue_partial
+     losses(0): 
+  easyocr/rgb_1x [n=60] fields: venue+1 venue_partial+1 | cer_sum +0.000 | lists: - | presence: -
+     gains(2): v2-157:venue, v2-157:venue_partial
+     losses(0): 

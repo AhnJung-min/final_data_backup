@@ -1,0 +1,233 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-5923c81ed1a6",
+  "image": {
+    "sha256": "5923c81ed1a68d9d2b4d0a93d7a7b9cbae8fa9bfd03bd7f8adc412a9d6f7ea4e",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:27+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "원본 해상도가 낮고 압축이 심함. 날짜 뒤 위첨자 요일 두 글자는 확대해도 판독되지 않아 weekday를 비우고 raw에서 뺌.",
+      "제목 오른쪽 붉은 세로 도장 '제51회'를 회차로 기록하고 제목 원문 끝에 둠.",
+      "하단 흰 띠의 기관 로고 약 9개(역할 표기 3개 포함)는 확대해도 글자를 읽을 수 없어 organizations를 illegible로 둠.",
+      "산 능선을 따라 쓰인 작은 글귀와 좌상단 사각 도장형 로고 글자는 판독 불가라 기록하지 않음.",
+      "검토: 변경 없음",
+      "표준 1.1 A1 적용: 시·군·구는 행정 접미사가 붙은 독립 낱말만, 시·도는 독립 낱말이거나 행정 단위만으로 된 붙은 낱말일 때 인정."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 정선 아리랑제 제51회",
+    "official": "정선 아리랑제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제51회",
+    "number": 51,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "Since 1976, 반세기의 새로운 시작!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "정선의 소리 끝없는 비상",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.1~4",
+    "start": {
+      "iso": "2026-10-01",
+      "year": 2026,
+      "month": 10,
+      "day": 1,
+      "weekday": null,
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-04",
+      "year": 2026,
+      "month": 10,
+      "day": 4,
+      "weekday": null,
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "정선공설운동장 일대",
+    "items": [
+      "정선공설운동장 일대"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "illegible",
+    "items": []
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "festival_designation",
+        "raw": "2026-2027 문화관광축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "사진 합성",
+      "붓글씨 캘리그래피 제목",
+      "실루엣 풍경"
+    ],
+    "main_colors": [
+      "남보라",
+      "보라",
+      "분홍",
+      "검정",
+      "흰색",
+      "주황"
+    ],
+    "main_objects": [
+      "풍등",
+      "기와 처마",
+      "불꽃놀이",
+      "산 능선 실루엣",
+      "강 위 나룻배"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "보랏빛 밤하늘에 풍등과 기와 처마, 불꽃을 두고 흰 붓글씨 제목·붉은 회차 도장·슬로건·일정·장소를 중앙에, 하단에 산과 강 실루엣과 흰 기관 로고 띠를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "illegible",
+    "notes": [
+      "443×627 저해상도·압축 이미지. 하단 기관 로고 띠, 위첨자 요일, 능선 글귀 모두 판독 불가."
+    ]
+  }
+}

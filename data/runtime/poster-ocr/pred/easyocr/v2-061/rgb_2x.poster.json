@@ -1,0 +1,251 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-48647c73c9b0",
+ "image": {
+  "sha256": "48647c73c9b0b42f26ed8ce3b3d84e60544e040b2d997e9aeb0bc1d44c7fa860",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:44+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "공통세계예스포",
+  "official": "공통세계예스포",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_002"
+   ],
+   "bbox": [
+    69.5,
+    108.5,
+    376.5,
+    175.5
+   ],
+   "confidence": 0.27541032424960793
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_003"
+   ],
+   "bbox": [
+    80.5,
+    173.5,
+    362.5,
+    204.5
+   ],
+   "confidence": 0.8755638791337617
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.22 (화) ~ 11.1 (일)",
+  "start": {
+   "iso": "2026-09-22",
+   "year": 2026,
+   "month": 9,
+   "day": 22,
+   "weekday": "tue",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-01",
+   "year": 2026,
+   "month": 11,
+   "day": 1,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_003"
+   ],
+   "bbox": [
+    80.5,
+    173.5,
+    362.5,
+    204.5
+   ],
+   "confidence": 0.8755638791337617
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "경남 고성당장포관광지 문의: 055-670-7400",
+  "items": [
+   "경남 고성당장포관광지 문의: 055-670-7400"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_005"
+   ],
+   "bbox": [
+    166.0,
+    590.0,
+    374.0,
+    604.0
+   ],
+   "confidence": 0.4112052924777481
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "장소: 경남 고성당장포관광지 문의: 055-670-7400",
+  "region": "경남",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_005"
+   ],
+   "bbox": [
+    166.0,
+    590.0,
+    374.0,
+    604.0
+   ],
+   "confidence": 0.4112052924777481
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "고성문화관광재단",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_2x_006"
+     ],
+     "bbox": [
+      46.0,
+      592.5,
+      155.5,
+      613.5
+     ],
+     "confidence": 0.979935091530571
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "055-670-7400",
+    "value": "055-670-7400",
+    "label_raw": "문의",
+    "department": "장소 경남 고성당장포관광지",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "easy_rgb_2x_005"
+     ],
+     "bbox": [
+      166.0,
+      590.0,
+      374.0,
+      604.0
+     ],
+     "confidence": 0.4112052924777481
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

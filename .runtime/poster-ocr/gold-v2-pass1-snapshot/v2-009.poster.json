@@ -1,0 +1,286 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-6ffadbfd9df9",
+  "image": {
+    "sha256": "6ffadbfd9df9a1139bd78a29ebc7e1c597283881f550063ac6a4be4cc9d2ea45",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:31:52+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "상단 작은 문구 '2026 남구청년예술제'를 행사명으로, 큰 문구 '청년작가 ART CONNECT'를 전시 제목(alias)으로 기록함.",
+      "장소 아래 '계명대학교 미술대학 | 동아대학교 미술학과 | 부산대학교 미술학과'는 역할 표기 없는 참여 기관으로 organizations에 roles 없이 기록함.",
+      "'*매주 월요일 휴관'은 운영일 규칙으로 schedule.operating_raw에 기록함. 지역은 제목의 '남구'만 인정(대구는 기관명에만 있음)."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 남구청년예술제",
+    "official": "남구청년예술제",
+    "variants": [
+      {
+        "kind": "alias",
+        "raw": "청년작가 ART CONNECT",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "8. 18.(Tue) - 9. 18.(Fri)",
+    "start": {
+      "iso": "2026-08-18",
+      "year": 2026,
+      "month": 8,
+      "day": 18,
+      "weekday": "tue",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-09-18",
+      "year": 2026,
+      "month": 9,
+      "day": 18,
+      "weekday": "fri",
+      "year_basis": "poster_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": "*매주 월요일 휴관",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "대덕문화전당 제1~3전시실",
+    "items": [
+      "대덕문화전당 제1~3전시실"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "2026 남구청년예술제",
+    "region": null,
+    "district": "남구",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "대구 남구 대덕문화전당",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최·주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "계명대학교 미술대학",
+        "roles": [],
+        "role_raw": null,
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "동아대학교 미술학과",
+        "roles": [],
+        "role_raw": null,
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "부산대학교 미술학과",
+        "roles": [],
+        "role_raw": null,
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "053-664-3118",
+        "value": "053-664-3118",
+        "label_raw": "문의",
+        "department": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "활기찬 행복도시 열정의 명품남구",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "그래픽 패턴",
+      "타이포그래피 중심"
+    ],
+    "main_colors": [
+      "산호색",
+      "빨강",
+      "보라",
+      "흰색",
+      "노랑"
+    ],
+    "main_objects": [
+      "점과 선 네트워크 그래픽",
+      "ART CONNECT 대형 글자"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "산호색 배경에 점·선 네트워크 그래픽을 깔고 중앙에 흰색 대형 'ART CONNECT'와 노란 일정, 하단에 장소·참여 학교·주최·문의를 둔 전시 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 참여 대학 3곳 이름과 우측 상단 손글씨 로고는 작아 일부만 판독됨.",
+      "우측 상단 손글씨 로고(문화… 예술… 로 보임)는 글자를 확정하지 못해 기록하지 않음."
+    ]
+  }
+}

@@ -1,0 +1,266 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-865fe41fb15e",
+ "image": {
+  "sha256": "865fe41fb15eb4e2ddf35e1a37dbc87f018908d0aaf70e31170977ba7e10d650",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:53+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote5_core_w35"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote5_core_w35): title, venue"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "모두가 즐거문 서대공감 한마당",
+  "official": "모두가 즐거문 서대공감 한마당",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_012",
+    "easy_rgb_2x_013"
+   ],
+   "bbox": [
+    128.0,
+    534.5,
+    310.0,
+    590.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제3회",
+  "number": 3,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    72.5,
+    94.0,
+    142.0,
+    128.0
+   ],
+   "confidence": 0.9992494583129883
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007"
+   ],
+   "bbox": [
+    102.5,
+    283.0,
+    338.0,
+    303.0
+   ],
+   "confidence": 0.9567875862121582
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.25. (일) 10:30 - 21:00 교통통제 안내:2026.10.24.(토)22:00~10.26.(월)04:00",
+  "start": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-26",
+   "year": 2026,
+   "month": 10,
+   "day": 26,
+   "weekday": "mon",
+   "year_basis": "date_text"
+  },
+  "times": [
+   {
+    "raw": "10:30 - 21:00",
+    "start": "10:30",
+    "end": "21:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_007",
+    "padd_rgb_2x_010"
+   ],
+   "bbox": [
+    101.5,
+    283.0,
+    339.5,
+    344.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "신정네거리억 일대",
+  "items": [
+   "신정네거리억 일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_2x_008"
+   ],
+   "bbox": [
+    161.5,
+    309.5,
+    280.5,
+    329.5
+   ],
+   "confidence": 0.8347577280117738
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "영천구",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_017",
+      "padd_rgb_2x_018"
+     ],
+     "bbox": [
+      148.0,
+      605.0,
+      213.5,
+      614.5
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "주라 으스양청출화재단",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_017",
+      "padd_rgb_2x_019"
+     ],
+     "bbox": [
+      148.0,
+      603.0,
+      296.5,
+      615.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

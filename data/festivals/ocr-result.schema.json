@@ -1,0 +1,920 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OCR·정보 추출 담당 인계 JSON 2.1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ocr": {
+      "$ref": "#/$defs/ocr"
+    },
+    "poster": {
+      "$ref": "#/$defs/poster"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "ocr",
+    "poster"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "event": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "축제명. 포스터와 API에 같은 키 사용. data.go.kr 응답: fstvlNm."
+        },
+        "venue": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "개최장소. 포스터와 API에 같은 키 사용. data.go.kr 응답: opar. 여러 장소는 원문 문자열로 보존. 상세 분리는 별도 가공 단계에서 수행."
+        },
+        "start_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "축제시작일자. 포스터와 API에 같은 키 사용. data.go.kr 응답: fstvlStartDate.",
+          "format": "date"
+        },
+        "end_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "축제종료일자. 포스터와 API에 같은 키 사용. data.go.kr 응답: fstvlEndDate.",
+          "format": "date"
+        },
+        "program": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "축제내용. 포스터와 API에 같은 키 사용. data.go.kr 응답: fstvlCo. 축제 설명 또는 프로그램 소개 원문. 공연별 시간표와 구별."
+        },
+        "organizer": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "주관기관명. 포스터와 API에 같은 키 사용. data.go.kr 응답: mnnstNm. 주관. 역할 표시 없는 로고만으로 추정하지 않음."
+        },
+        "host": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "주최기관명. 포스터와 API에 같은 키 사용. data.go.kr 응답: auspcInsttNm. 주최. 주관 및 후원과 구별."
+        },
+        "sponsor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "후원기관명. 포스터와 API에 같은 키 사용. data.go.kr 응답: suprtInsttNm. 후원. 주최 및 주관과 구별."
+        },
+        "contact": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "전화번호. 포스터와 API에 같은 키 사용. data.go.kr 응답: phoneNumber. 전화번호는 선행 0과 복수 번호를 보존하는 문자열."
+        },
+        "homepage": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "홈페이지주소. 포스터와 API에 같은 키 사용. data.go.kr 응답: homepageUrl. 홈페이지 URL 또는 원문 도메인. 임의로 프로토콜을 추정하지 않음."
+        },
+        "related_info": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "관련정보. 포스터와 API에 같은 키 사용. data.go.kr 응답: relateInfo."
+        },
+        "road_address": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "소재지도로명주소. 포스터와 API에 같은 키 사용. data.go.kr 응답: rdnmadr."
+        },
+        "jibun_address": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "소재지지번주소. 포스터와 API에 같은 키 사용. data.go.kr 응답: lnmadr."
+        },
+        "address": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "주소 종류가 확인되지 않은 원문. 도로명/지번이 확인되면 해당 필드에 저장. 개최장소와 구별."
+        },
+        "time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "포스터 등에 명시된 축제 운영 시간. 전국문화축제표준데이터에는 직접 대응 항목 없음."
+        },
+        "price": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "포스터 등에 명시된 입장료 또는 요금 안내. 표준데이터에는 직접 대응 항목 없음. 미기재를 무료로 해석하지 않음."
+        },
+        "region": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "시·도 이름. 포스터나 주소에 명시된 경우 저장. 지역코드와 구별."
+        },
+        "district": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "시·군·구 이름. 포스터나 주소에 명시된 경우 저장."
+        },
+        "service": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "기존 데이터의 서비스 분류. 표준데이터에 직접 대응 항목 없음."
+        },
+        "category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "기존 데이터의 행사 분류. 시각 요소만으로 추정한 값은 별도 근거 필요."
+        },
+        "venue_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "개최장소의 웹 주소. 축제 홈페이지 homepage와 구별."
+        },
+        "gps": {
+          "type": "object",
+          "properties": {
+            "lat": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": -90,
+              "maximum": 90,
+              "description": "위도. API latitude. 포스터에 없으면 null."
+            },
+            "lng": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": -180,
+              "maximum": 180,
+              "description": "경도. API longitude. 포스터에 없으면 null."
+            }
+          },
+          "required": [
+            "lat",
+            "lng"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "title",
+        "venue",
+        "start_date",
+        "end_date",
+        "program",
+        "organizer",
+        "host",
+        "sponsor",
+        "contact",
+        "homepage",
+        "related_info",
+        "road_address",
+        "jibun_address",
+        "address",
+        "time",
+        "price",
+        "region",
+        "district",
+        "service",
+        "category",
+        "venue_url",
+        "gps"
+      ],
+      "additionalProperties": false,
+      "description": "event, poster.event, reference.event가 공유하는 동일한 행사 스키마. 모든 키를 유지하고 모르는 값은 null로 저장."
+    },
+    "poster": {
+      "type": "object",
+      "properties": {
+        "event": {
+          "$ref": "#/$defs/event"
+        },
+        "extraction_status": {
+          "enum": [
+            "not_extracted",
+            "ocr",
+            "manual",
+            "verified"
+          ]
+        },
+        "extracted_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "포스터 정보 추출 시각.",
+          "format": "date-time"
+        },
+        "ocr_text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "추출한 포스터 전체 텍스트. API 값으로 채우지 않음."
+        },
+        "evidence": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "title",
+              "venue",
+              "start_date",
+              "end_date",
+              "program",
+              "organizer",
+              "host",
+              "sponsor",
+              "contact",
+              "homepage",
+              "related_info",
+              "road_address",
+              "jibun_address",
+              "address",
+              "time",
+              "price",
+              "region",
+              "district",
+              "service",
+              "category",
+              "venue_url",
+              "gps.lat",
+              "gps.lng"
+            ]
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "details": {
+          "$ref": "#/$defs/poster_details"
+        }
+      },
+      "required": [
+        "event",
+        "extraction_status",
+        "extracted_at",
+        "ocr_text",
+        "evidence",
+        "details"
+      ],
+      "additionalProperties": false
+    },
+    "poster_details": {
+      "type": "object",
+      "properties": {
+        "title_text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "연도·회차를 포함한 제목 원문. event.title의 검색용 정규화와 구별."
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1900,
+          "maximum": 2200,
+          "description": "포스터에 명시된 행사 연도. 연도를 넘는 일정은 시작일 연도. 파일명만으로 OCR 값에 입력하지 않음."
+        },
+        "edition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "포스터에 명시된 회차."
+        },
+        "slogans": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "program_details": {
+          "type": "array",
+          "description": "포스터에 명시된 개별 프로그램과 공연 정보. event.program과 구별.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1,
+                "description": "프로그램명"
+              },
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1,
+                "description": "프로그램 날짜",
+                "format": "date"
+              },
+              "time": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1,
+                "description": "프로그램 시간 원문"
+              },
+              "venue": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1,
+                "description": "프로그램 장소"
+              },
+              "performers": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "title",
+              "date",
+              "time",
+              "venue",
+              "performers"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "logos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1,
+                "description": "로고에서 읽은 기관·브랜드 이름"
+              },
+              "role": {
+                "enum": [
+                  "host",
+                  "organizer",
+                  "sponsor",
+                  "unknown"
+                ],
+                "description": "포스터에 역할 표시가 있을 때만 host/organizer/sponsor 선택."
+              }
+            },
+            "required": [
+              "text",
+              "role"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "qr_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "QR 코드를 실제로 판독한 목적지 URL만 저장."
+        },
+        "visual_design": {
+          "type": "object",
+          "properties": {
+            "styles": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "main_colors": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "main_objects": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1,
+              "description": "일러스트·배치 등 시각 요소 설명. 행사 사실 정보와 구별."
+            }
+          },
+          "required": [
+            "styles",
+            "main_colors",
+            "main_objects",
+            "description"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "title_text",
+        "year",
+        "edition",
+        "slogans",
+        "program_details",
+        "logos",
+        "qr_urls",
+        "visual_design"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "description": "포스터에서 직접 읽은 근거 문구."
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "측정 또는 사람이 판단한 값만 저장. 임의 고정값 금지."
+        },
+        "method": {
+          "enum": [
+            "ocr",
+            "manual",
+            "verified",
+            null
+          ]
+        },
+        "ocr_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "근거로 사용한 ocr.texts[].id. 수동 관찰은 빈 배열."
+        }
+      },
+      "required": [
+        "text",
+        "confidence",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "ocr": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "not_run",
+            "completed",
+            "failed"
+          ]
+        },
+        "tracking": {
+          "type": "object",
+          "properties": {
+            "review_id": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "attempt_id": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "request_id": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            }
+          },
+          "required": [
+            "review_id",
+            "attempt_id",
+            "request_id"
+          ],
+          "additionalProperties": false
+        },
+        "input_image": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/image_identity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "coordinate_space": {
+          "const": "display_pixels"
+        },
+        "engine": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "version": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "model": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "device": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "settings": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "name",
+            "version",
+            "model",
+            "device",
+            "settings"
+          ],
+          "additionalProperties": false
+        },
+        "started_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "format": "date-time"
+        },
+        "completed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "format": "date-time"
+        },
+        "duration_ms": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "texts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ocr_text"
+          }
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "message": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "code",
+                "message"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "tracking",
+        "input_image",
+        "coordinate_space",
+        "engine",
+        "started_at",
+        "completed_at",
+        "duration_ms",
+        "texts",
+        "error"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "completed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "input_image": {
+                "$ref": "#/$defs/image_identity"
+              },
+              "completed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "engine": {
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "version": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "device": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "error": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not_run"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "texts": {
+                "maxItems": 0
+              },
+              "error": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "failed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "error": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ocr_text": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/bbox"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "polygon": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/polygon"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "confidence",
+        "bbox",
+        "polygon"
+      ],
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "properties": {
+            "bbox": {
+              "$ref": "#/$defs/bbox"
+            }
+          }
+        },
+        {
+          "properties": {
+            "polygon": {
+              "$ref": "#/$defs/polygon"
+            }
+          }
+        }
+      ]
+    },
+    "image_identity": {
+      "type": "object",
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "sha256",
+        "width",
+        "height"
+      ],
+      "additionalProperties": false
+    },
+    "bbox": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "number",
+        "minimum": 0
+      },
+      "description": "[x1,y1,x2,y2] 픽셀. 유효 범위·양의 면적은 검증 함수로 확인."
+    },
+    "polygon": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

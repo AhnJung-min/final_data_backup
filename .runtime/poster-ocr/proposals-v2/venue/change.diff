@@ -1,0 +1,451 @@
+diff --git a/app/poster_ocr/extract_v1.py b/.runtime/poster-ocr/proposals-v2/venue/extract.py
+index c551207..db17972 100644
+--- a/app/poster_ocr/extract_v1.py
++++ b/.runtime/poster-ocr/proposals-v2/venue/extract.py
+@@ -13,7 +13,7 @@ from pathlib import Path
+ import re
+ import unicodedata
+ 
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = next((p for p in Path(__file__).resolve().parents if (p / "data/festivals/poster.template.json").exists()), Path(__file__).resolve().parents[2])  # PROPOSAL-SHIM
+ TEMPLATE = ROOT / "data/festivals/poster.template.json"
+ VERSION = "poster_rules_v1"
+ # 연도가 인쇄되지 않은 포스터에서 인쇄 요일을 달력과 대조할 때 쓰는 기준 연도(수집 연도). 값으로 채우지는 않는다.
+@@ -27,12 +27,15 @@ ROLE = re.compile(r"(주\s*최\s*[·∙・/,]?\s*주\s*관|주\s*최|주\s*관|
+ ROLE_MAP = {"주최": ["host"], "주관": ["organizer"], "후원": ["sponsor"], "협찬": ["corporate_sponsor"], "협력": ["partner"]}
+ VENUE_LABEL = re.compile(r"^\s*[\[【<〈(]?\s*(?:개최\s*장소|행사\s*장소|축제\s*장소|장\s*소|PLACE|Place|VENUE|Venue|LOCATION|Location|위\s*치)\s*[\]】>〉)]?\s*[:：|ㅣ]?\s*")
+ DATE_LABEL = re.compile(r"(?:일\s*시|일\s*정|기\s*간|축제\s*기간|행사\s*기간|개최\s*기간|DATE|Date|PERIOD|Period|SCHEDULE|Schedule)")
+-VENUE_WORD = re.compile(r"(공원|광장|일원|일대|센터|회관|체육관|운동장|경기장|해수욕장|해변|해안|시장|거리|천변|강변|호수|저수지|유원지|박물관|미술관|"
+-                        r"캠핑장|마을|포구|항구|선착장|성곽|산성|궁|사찰|홀|극장|아트|스퀘어|야외|무대|정원|수목원|농원|단지|타운|파크|"
+-                        r"테마파크|월드|랜드|섬|숲|문화관|기념관|도서관|청사|역\s*광장|일대|앞\s*마당|잔디마당|특설|스타디움|유적|읍성|성지|터미널|컨벤션|"
+-                        r"전시장|리조트|캠퍼스|학교|대학|체육공원|생태공원|네거리|사거리|삼거리|대교|축구장|야구장|천$|강$|관광지|관광단지|휴양림|국악당|공연장|"
+-                        r"아트홀|문화원|예술회관|전당|항$|해변|해수욕장|저잣거리|장터|시장$|(?:시|군|구|도)청(?![가-힣])|"
+-                        r"(?<![가-힣])(?!(?:지|구|영|전)역$)[가-힣]+역$)")
++# 장소 낱말. 다른 낱말 속에 흔히 들어가는 짧은 낱말(홀리데이·브랜드·궁금·한마당)은 낱말 끝일 때만 받고 '아트'만으로는 받지 않는다(v2).
++# 영문 장소 낱말(PARK·Hall·Center·Square 등)은 낱말 경계에서만 받는다.
++VENUE_WORD = re.compile(r"(공원|광장|일원|일대|전역|센터|회관|체육관|운동장|경기장|해수욕장|해변|해안|시장|거리|천변|강변|호수|저수지|유원지|박물관|미술관|"
++                        r"캠핑장|야영장|마을|포구|항구|선착장|성곽|산성|사찰|극장|스퀘어|야외|무대|정원|수목원|농원|단지|"
++                        r"테마파크|타운|파크|(?:궁|홀|섬|숲|월드|랜드|마당)(?![가-힣])|문화관|기념관|도서관|청사|역\s*광장|앞\s*마당|잔디마당|특설|스타디움|유적|읍성|성지|터미널|컨벤션|"
++                        r"전시장|리조트|캠퍼스|학교|대학|체육공원|생태공원|네거리|사거리|삼거리|대교|축구장|야구장|천$|강$|관광지|관광단지|휴양림|국악당|공연장|축제장|행사장|주차장|"
++                        r"아트홀|문화원|예술회관|전당|항$|저잣거리|장터|시네마|영화관|(?:시|군|구|도)청(?=$|[^가-힣]|앞|광장|일원|일대)|"
++                        r"(?<![가-힣])(?!(?:지|구|영|전)역$)[가-힣]+역$|"
++                        r"(?<![A-Za-z])(?i:park|hall|center|centre|square|stadium|plaza|arena|museum|theater|theatre)(?![A-Za-z]))")
+ # 줄 가운데에 있는 장소 표기('일정: … / 장 소: …'). 문장 속 '장소'와 구별하려고 쌍점이 있을 때만 받는다.
+ VENUE_LABEL_MID = re.compile(r"(?<=[\s/|·,)\]])(?:개최\s*장소|행사\s*장소|축제\s*장소|장\s*소|PLACE|Place|VENUE|Venue|LOCATION|Location)\s*[:：]\s*")
+ VENUE_JOINER = re.compile(r"(?:,|및|·|/|\||&)\s*$")  # 줄 끝이 이 기호면 다음 줄로 장소가 이어진다.
+@@ -351,11 +354,46 @@ def hangul_or_latin(text):
+ # 일정 표기 낱말은 낱말 경계에서만 지운다('제일시장'의 '일시'는 남긴다).
+ DATE_LABEL_WORD = re.compile(r"(?:^|(?<=[\s/|]))(?:일\s*시|일\s*정|기\s*간|축제\s*기간|행사\s*기간|개최\s*기간|DATE|Date|PERIOD|Period|SCHEDULE|Schedule)"
+                              r"\s*(?:[:：|ㅣ]|(?=\s|$|\d))")
+-DATE_RESIDUE = [RANGE_RE, RANGE_NOSEP_RE, SINGLE_RE, TIME_SPAN, DATE_LABEL_WORD, re.compile(r"\d+\s*일\s*간"), re.compile(r"(?:주말|평일|매주[^0-9]{0,8})\s*(?:집중\s*)?운영")]
+ 
+ 
+-def strip_dates(text):
+-    return remove_tokens(text, [RANGE_RE, RANGE_NOSEP_RE, SINGLE_RE, TIME_SPAN])
++# v2: 장소 문구 안의 날짜·시각 구간. 번지('526-7')·출구 번호('1.2번')·기념일 이름('5.18민주광장')처럼 숫자에 붙은 조각은
++# 날짜가 아니다: 연도·요일 없는 'M.D'의 앞이 숫자·대시·마침표이거나, 숫자로 끝난 뒤에 '번·호·층·동·길·로' 또는 요일이 아닌
++# 한글이 바로 붙으면 건너뛴다.
++LONE_TIME = re.compile(r"(?<![\d:])(?:오전|오후|AM|PM|am|pm)?\s*\d{1,2}\s*:\s*\d{2}(?![\d:])")
++KO_DATE = re.compile(r"(?<!\d)\d{1,2}\s*월\s*\d{1,2}\s*일(?:\s*[(\[]?\s*[월화수목금토일](?:요일)?\s*[)\]]?)?")
++NOT_DATE_AFTER = re.compile(r"(?:번|호|층|동|길|로)")
++
++
++def date_spans(text):
++    spans = []
++    for pattern in (RANGE_RE, RANGE_NOSEP_RE, KO_DATE, TIME_SPAN, LONE_TIME, SINGLE_RE):
++        for m in pattern.finditer(text):
++            start, end = m.start(), m.end()
++            while end > start and text[end - 1].isspace():
++                end -= 1
++            while start < end and text[start].isspace():
++                start += 1
++            if end <= start or any(start < b and a < end for a, b in spans):
++                continue
++            if pattern is SINGLE_RE and not (m.group("sw") or m.group("sy")):
++                # 연도·요일 없는 'M.D'만 숫자 조각인지 본다(범위·요일·연도가 있으면 날짜).
++                after = text[end:end + 1]
++                if start > 0 and re.match(r"[\d\-.]", text[start - 1]):
++                    continue
++                if text[end - 1].isdigit() and (NOT_DATE_AFTER.match(after) or (
++                        re.match(r"[가-힣]", after) and after not in "월화수목금토일" and not text[end:].startswith(("부터", "까지")))):
++                    continue
++            spans.append((start, end))
++    return sorted(spans)
++
++
++def strip_dates_safe(text):
++    out, last = [], 0
++    for a, b in date_spans(text):
++        out.append(text[last:a] + " ")
++        last = b
++    out.append(text[last:])
++    return re.sub(r"\s+", " ", "".join(out)).strip(" -·:|,")
+ 
+ 
+ def is_junk_token(token):
+@@ -364,30 +402,65 @@ def is_junk_token(token):
+             and bool(re.search(r"[^가-힣]", token)))
+ 
+ 
++# v2: 장소 문구 뒤에 붙어 읽힌 문의·전화·누리집·역할 표기와 그 뒤는 장소가 아니다.
++CONTACT_MARK = re.compile(r"문\s*의|전\s*화|TEL|Tel|tel|☎|홈\s*페\s*이\s*지|www\.|https?://")
++# v2: 한글 장소 뒤에 띄어 쓴 영문 병기(낱말 2개 이상, 괄호 밖): '○○광장 일원 I ○○ Art Square'.
++LATIN_TRAIL = re.compile(r"(?<=[가-힣)])\s*(?:[|/]|\s[Il])?\s+(?:[A-Za-z][A-Za-z.'\-]*\s*){2,}$")
++
++
++def cut_venue_tail(text):
++    cuts = [m.start() for m in PHONE.finditer(text)] + [m.start() for m in CONTACT_MARK.finditer(text)] \
++        + [m.start() for m in ROLE_MARK.finditer(text)]
++    cuts = [c for c in cuts if hangul_or_latin(text[:c]) >= 2]
++    if cuts:
++        text = text[:min(cuts)]
++    m = LATIN_TRAIL.search(text)
++    if m and len(re.findall(r"[가-힣]", text[:m.start()])) >= 2 and text[:m.start()].count("(") == text[:m.start()].count(")"):
++        text = text[:m.start()]
++    return text.strip(" -·:|,/")
++
++
+ def clean_venue(text):
+     """앞쪽 날짜 잔여 조각·글머리표, 뒤쪽 '※' 안내문·해시태그를 떼어 낸다(문자는 고치지 않는다)."""
+     text = re.sub(r"^[•○●◎■□▶►◆◇※*ㆍ·\-]+\s*", "", text.strip())
+     text = re.sub(r"\s*※.*$", "", text)  # '… ※월요일 휴관' 같은 안내는 장소가 아니다(notices에서 따로 읽는다).
++    text = re.sub(r"^[Il|]\s+(?=[A-Z가-힣])", "", text)  # v2: 맨 앞의 홀로 선 구분 기호('|'를 'I'로 읽은 조각)
+     tokens = text.split()
+     while len(tokens) > 1 and is_junk_token(tokens[0]):
+         tokens.pop(0)
+     text = " ".join(tokens)
+     text = re.sub(r"(?:\s+#\S*)+$", "", text)
+-    return text.strip(" -·:|,/")
++    return cut_venue_tail(text.strip(" -·:|,/"))
++
++
++# v2: 요일 칸이 비어 읽힌 날짜 끝('25.()')도 일정 잔여물로 본다.
++EXTRA_RESIDUE = [DATE_LABEL_WORD, re.compile(r"\d+\s*일\s*간"), re.compile(r"(?:주말|평일|매주[^0-9]{0,8})\s*(?:집중\s*)?운영"),
++                 re.compile(r"(?<![\d.])\d{1,2}\s*\.?\s*[(\[]\s*[)\]]")]
+ 
+ 
+-def venue_segment(text):
+-    """날짜·시각 표기로 나뉜 조각 가운데 장소 낱말이 있는 조각을 고른다(일정과 장소가 한 줄에 있을 때)."""
++def date_segments(text):
++    """날짜·시각·일정 표기로 나눈 조각(빈 조각 포함, 순서 유지)."""
+     marked = text
+-    for pattern in DATE_RESIDUE:
++    for a, b in reversed(date_spans(text)):
++        marked = marked[:a] + "\x00" + marked[b:]
++    for pattern in EXTRA_RESIDUE:
+         marked = pattern.sub("\x00", marked)
+-    parts = [re.sub(r"\s+", " ", p).strip(" -·:|,~") for p in marked.split("\x00")]
+-    parts = [p for p in parts if p]
++    return [re.sub(r"\s+", " ", p).strip(" -·:|,~") for p in marked.split("\x00")]
++
++
++def venue_segment(text, with_position=False):
++    """날짜·시각 표기로 나뉜 조각 가운데 장소 낱말이 있는 조각을 고른다(일정과 장소가 한 줄에 있을 때).
++    with_position=True면 (조각, 첫 조각인가, 마지막 조각인가)를 돌려준다(같은 줄 옆 기록을 이을 수 있는지 판단)."""
++    segments = date_segments(text)
++    parts = [(i, p) for i, p in enumerate(segments) if p]
+     if not parts:
+-        return ""
+-    venue_parts = [p for p in parts if VENUE_WORD.search(p)]
+-    chosen = max(venue_parts or parts, key=lambda p: len(re.findall(r"[가-힣]", p)))
+-    return clean_venue(chosen)
++        return ("", False, False) if with_position else ""
++    venue_parts = [(i, p) for i, p in parts if VENUE_WORD.search(p)]
++    index, chosen = max(venue_parts or parts, key=lambda ip: len(re.findall(r"[가-힣]", ip[1])))
++    chosen = clean_venue(chosen)
++    if with_position:
++        return chosen, index == parts[0][0] and not any(segments[:index]), index == parts[-1][0]
++    return chosen
+ 
+ 
+ def districts_in(text):
+@@ -498,7 +571,7 @@ def extract(records, image, engine, *, extracted_at=None):
+         doc["schedule"]["duration_raw"] = duration
+ 
+     # 장소 ---------------------------------------------------------------
+-    venue_lines, venue_text = pick_venue(lines, used, schedule_lines)
++    venue_lines, venue_text = pick_venue(lines, used, schedule_lines, image.get("height"))
+     if venue_text:
+         items = [part.strip() for part in re.split(r"\s*(?:및|·|,)\s*", venue_text) if part.strip()]
+         doc["venue"].update(status="present", raw=venue_text, items=items or [venue_text],
+@@ -615,7 +688,7 @@ def extract(records, image, engine, *, extracted_at=None):
+         doc["title"]["status"] = "absent"
+ 
+     # 지역(시·도, 시·군·구): 장소·주소 줄에서 찾고, 없으면 제목 줄에서 찾는다 ---------------------
+-    region, district, area_lines = admin_area(venue_lines + ([address[0]] if address else []), title_lines)
++    region, district, area_lines = admin_area(venue_lines + ([address[0]] if address else []), title_lines, lines)
+     if region or district:
+         doc["admin_area"].update(status="present", raw=" ".join(l["text"] for l in area_lines), region=region, district=district,
+                                  evidence=evidence([r for l in area_lines for r in l["members"]]))
+@@ -624,8 +697,34 @@ def extract(records, image, engine, *, extracted_at=None):
+     return doc
+ 
+ 
+-def admin_area(sources, fallback):
+-    """시·도는 첫 표기, 시·군·구는 처음 찾은 줄의 서로 다른 이름을 모두(붙어 있으면 공백, 떨어져 있으면 쉼표로) 잇는다."""
++def district_stems(lines):
++    """v2: 포스터 어디든(기관 띠 '주최: ○○군' 등) 시·군·구 접미어와 함께 인쇄된 이름의 어간(두 글자 이상) → 접미어 형태."""
++    stems = {}
++    for l in lines:
++        for _, _, name in districts_in(l["norm"]):
++            if len(name) >= 3:
++                stems.setdefault(name[:-1], name)
++    return stems
++
++
++def bare_district(group, stems, word=False):
++    """v2: 접미어 없이 인쇄된 시·군·구 이름('영천한방축제', '목포 근대역사 문화공간'). 같은 포스터에 접미어 붙은 형태('○○시',
++    기관 띠의 '주최: ○○군' 등)가 따로 인쇄돼 있을 때만, 낱말 머리에 있는 그 어간을 인쇄된 그대로 받는다(외부 지명 목록은 쓰지 않는다).
++    word=True(장소 문구)면 띄어 쓴 낱말일 때만 받는다: '진주성'·'원주종합운동장'처럼 시설 이름 속에 붙은 지명은 지역 표기가 아니다."""
++    tail = r"(?=\s|$)" if word else ""
++    for l in group:
++        spaced = SIDO_CITY.sub(lambda m: " " * len(m.group(0)), l["norm"])
++        hits = [(m.start(), -len(stem), stem) for stem in stems
++                for m in re.finditer(r"(?<![가-힣])" + re.escape(stem) + tail, spaced)]
++        if hits:
++            return min(hits)[2], l
++    return None, None
++
++
++def admin_area(sources, fallback, all_lines=()):
++    """시·도는 첫 표기, 시·군·구는 처음 찾은 줄의 서로 다른 이름을 모두(붙어 있으면 공백, 떨어져 있으면 쉼표로) 잇는다.
++    v2: 장소·제목에 접미어 붙은 시·군·구가 없으면, 같은 포스터에 접미어와 함께 인쇄된 이름이 제목 낱말 머리(다음은 장소의
++    띄어 쓴 낱말)에 접미어 없이 있을 때 그 이름을 받는다."""
+     def scan(group):
+         region = district = None
+         region_line = district_line = None
+@@ -653,6 +752,12 @@ def admin_area(sources, fallback):
+             region, region_line = r2, rl2
+         if district is None and d2:
+             district, district_line = d2, dl2
++    if district is None and all_lines:
++        stems = district_stems(all_lines)
++        for group, word in ((fallback or [], False), (sources, True)):
++            district, district_line = bare_district(group, stems, word)
++            if district:
++                break
+     area_lines = []
+     for l in (region_line, district_line):
+         if l is not None and all(l is not x for x in area_lines):
+@@ -680,10 +785,132 @@ def plain_line(line):
+         and not VENUE_LABEL.match(line["norm"])
+ 
+ 
+-def pick_venue(lines, used, schedule_lines):
++def key_text(text):
++    return re.sub(r"[^0-9A-Za-z가-힣]", "", text)
++
++
++def is_address_line(text):
++    """v2: 줄 글자 대부분이 주소인 줄('(전주시 완산구 천장로 235)'). 장소에 잇지 않고 address 슬롯에 둔다."""
++    found = address_in(text, "road") or address_in(text, "jibun")
++    return bool(found) and len(key_text(found)) >= .6 * len(key_text(text))
++
++
++def records_text(records):
++    ordered = sorted(records, key=lambda r: r["bbox_xyxy"][0])
++    return re.sub(r"\s+", " ", norm(" ".join(unicodedata.normalize("NFC", r["text"]).strip() for r in ordered))).strip()
++
++
++def row_neighbors(group, lines, used, sides, exclude):
++    """v2: 같은 높이대(세로 겹침 ≥ 60%)에서 기록 사이 간격이 좁은 옆 줄. build_lines는 오른쪽에만 기록을 붙이므로
++    중심이 조금 낮은 왼쪽 기록('서천군 홍원항' + '일원 (…)')이나 기록 사이에 낀 조각이 따로 줄이 된다."""
++    added = []
++    for _ in range(2):
++        base = group + added
++        members = [r for l in base for r in l["members"]]
++        h = base[0]["h"]
++        top, bottom = min(l["box"][1] for l in base), max(l["box"][3] for l in base)
++        centre_x = (min(l["box"][0] for l in base) + max(l["box"][2] for l in base)) / 2
++        found = None
++        for o in lines:
++            if o["index"] in used or o["index"] in exclude or any(o["index"] == b["index"] for b in base):
++                continue
++            oh = o["h"]
++            if min(bottom, o["box"][3]) - max(top, o["box"][1]) < .6 * min(h, oh):
++                continue
++            side = -1 if (o["box"][0] + o["box"][2]) / 2 < centre_x else 1
++            text = o["norm"].strip()
++            loose = text.startswith("(") or bool(VENUE_WORD.search(text))
++            ratio = oh / max(h, 1e-6)
++            if side not in sides or not (.75 <= ratio <= 1.33 or (loose and .5 <= ratio <= 1.5)):
++                continue
++            dists = [max(r["bbox_xyxy"][0] - o["box"][2], o["box"][0] - r["bbox_xyxy"][2]) for r in members]
++            if min(dists) > 1.2 * max(h, oh) or min(dists) < -.6 * min(h, oh):
++                continue
++            if (not plain_line(o) or date_spans(text) or YEAR.search(text) or hangul_or_latin(text) < 1 or TITLE_SUFFIX.search(text)
++                    or is_address_line(text)):
++                continue
++            found = o
++            break
++        if found is None:
++            break
++        added.append(found)
++    return added
++
++
++def logo_strip_institution(line, lines, height_px):
++    """v2: 하단 15% 로고 띠에서 같은 높이대에 다른 줄이 나란히 있는, 기관 유형 이름만 있는 줄('국가유산청 … ○○문화원')."""
++    if line["box"][1] < .85 * height_px or not INSTITUTION_BODY.fullmatch(line["norm"].strip(" ·,")):
++        return False
++    return any(o["index"] != line["index"] and min(o["box"][3], line["box"][3]) - max(o["box"][1], line["box"][1]) >= .5 * min(o["h"], line["h"])
++               and x_overlap(o, line) <= 0 for o in lines)
++
++
++def column_line(lines, box, direction, exclude):
++    """v2: box와 가로로 겹치는 줄 가운데 위(-1)·아래(+1)로 가장 가까운 줄(옆 단의 줄이 읽기 순서 사이에 끼어도 건너뛴다)."""
++    centre = (box[1] + box[3]) / 2
++    best = None
++    for l in lines:
++        if l["index"] in exclude or min(box[2], l["box"][2]) - max(box[0], l["box"][0]) <= 0:
++            continue
++        if ((l["box"][1] + l["box"][3]) / 2 - centre) * direction <= 0:
++            continue
++        gap = (box[1] - l["box"][3]) if direction < 0 else (l["box"][1] - box[3])
++        if gap < -.5 * (box[3] - box[1]):
++            continue  # 세로로 크게 겹치는 줄(옆 단의 큰 제목 글자)은 위아래 이웃이 아니다.
++        if best is None or gap < best[0]:
++            best = (gap, l)
++    return best[1] if best else None
++
++
++def union_box(group):
++    return [min(l["box"][0] for l in group), min(l["box"][1] for l in group),
++            max(l["box"][2] for l in group), max(l["box"][3] for l in group)]
++
++
++def continuation(other, box, h, text, direction, used):
++    """v2: 장소 줄 위(-1)·아래(+1)의 줄을 이어 붙일지와 붙일 문구. 붙이지 않으면 None.
++    이음 기호(',·및'), 괄호 설명, 장소 낱말 줄(같은 단·비슷한 크기·맞붙음)을 잇는다. 장소 낱말이 없는 짧은 줄(한글 10자·세 낱말
++    이하)은 근거가 약하므로 같은 글자 크기(0.85~1.18배)·줄 간격 0.3줄 이하로 바짝 붙었을 때만 잇는다.
++    날짜가 들어 있으면 줄 앞쪽 문구가 장소일 때만 그 문구를 잇고, 주소 줄·영문만 있는 병기 줄은 잇지 않는다."""
++    if other is None or other["index"] in used:
++        return None
++    t = other["norm"].strip()
++    gap = (box[1] - other["box"][3]) if direction < 0 else (other["box"][1] - box[3])
++    ratio = other["h"] / max(h, 1e-6)
++    if not (-.35 * h <= gap <= .8 * h and .6 <= ratio <= 1.4) or not plain_line(other) or TITLE_SUFFIX.search(t):
++        return None
++    if re.search(r"\d{5,}", t) or is_address_line(t):
++        return None
++    if re.search(r"[가-힣]", text) and not re.search(r"[가-힣]", t):
++        return None  # 한글 장소 아래·위의 영문만 있는 줄은 병기
++    if date_spans(t):
++        head = date_segments(t)[0]
++        if not head or not VENUE_WORD.search(head):
++            return None
++        t = head
++    left_al = abs(other["box"][0] - box[0]) <= .6 * h
++    right_al = abs(other["box"][2] - box[2]) <= .6 * h
++    centre_al = abs((other["box"][0] + other["box"][2]) - (box[0] + box[2])) / 2 <= .6 * h
++    aligned = left_al or right_al or centre_al
++    joiner = re.search(r"(,|및|·)\s*$", t) if direction < 0 else VENUE_JOINER.search(text)
++    if joiner:
++        return t
++    if direction > 0 and t.startswith("("):
++        return t
++    if aligned and .75 <= ratio <= 1.33 and VENUE_WORD.search(t):
++        return t
++    hangul = len(re.findall(r"[가-힣]", t))
++    short = 2 <= hangul <= 10 and len(t.split()) <= 3
++    if aligned and .85 <= ratio <= 1.18 and gap <= .3 * h and short and not re.search(r"\d{3,}", t):
++        return t
++    return None
++
++
++def pick_venue(lines, used, schedule_lines, height_px=None):
+     """장소: ① '장소' 표기(줄 머리·줄 가운데·같은 줄 오른쪽 값·다음 줄) ② 일정 줄의 날짜 밖 문구 ③ 장소 낱말 줄(일정에 가까운 줄).
+-    고른 줄 위아래로 이어지는 장소 줄(이음 기호·괄호 설명·장소 낱말, 같은 크기·맞붙음)을 붙인다."""
+-    label_lines, value_lines, text, labelled = [], [], None, False
++    v2: 고른 줄의 같은 높이대 옆 기록을 잇고, 같은 단에서 위아래로 이어지는 장소 줄(이음 기호·괄호 설명·장소 낱말·짧은 줄,
++    같은 크기·맞붙음)을 한 줄씩 붙인다. 문의·전화·역할 표기와 영문 병기는 떼어 낸다."""
++    label_lines, value_lines, text, labelled, sides = [], [], None, False, (1,)
+     for l in lines:
+         m = VENUE_LABEL.match(l["norm"]) or VENUE_LABEL_MID.search(l["norm"])
+         if not m:
+@@ -701,42 +928,56 @@ def pick_venue(lines, used, schedule_lines):
+         break
+     if not text and schedule_lines:
+         last = schedule_lines[-1]
+-        rest = remove_tokens(last["norm"], [RANGE_RE, RANGE_NOSEP_RE, SINGLE_RE, TIME_SPAN, DATE_LABEL,
+-                                            re.compile(r"\d+\s*일\s*간"), re.compile(r"(?:주말|평일|매주[^0-9]{0,8})\s*(?:집중\s*)?운영")])
++        rest, _, at_end = venue_segment(last["norm"], with_position=True)
+         if VENUE_WORD.search(rest) and hangul_or_latin(rest) >= 3 and not TITLE_SUFFIX.search(rest):
+-            value_lines, text, labelled = [last], rest, False
++            value_lines, text, labelled, sides = [last], rest, False, ((1,) if at_end else ())
+     if not text:
+         anchor = schedule_lines[-1]["box"][3] if schedule_lines else None
+-        options = [l for l in lines if l["index"] not in used and VENUE_WORD.search(strip_dates(l["norm"]))
+-                   and not ROLE.search(l["norm"]) and not PHONE.search(l["norm"]) and hangul_or_latin(l["norm"]) >= 3
+-                   and not TITLE_SUFFIX.search(l["norm"]) and not re.search(r"\d{5,}", l["norm"])]  # 긴 숫자열은 전화·계좌 조각
++        height_px = height_px or max((l["box"][3] for l in lines), default=1)
++        # v2: 날짜를 지우고 문의·전화·역할 표기 앞까지 자른 문구로 본다('합천 대장경테마파크 #… 주관'). 하단 로고 띠
++        # (아래 15%에서 같은 높이대에 다른 기록이 나란히 있는 줄)에 기관 이름만 있는 줄('○○문화원')은 장소가 아니다.
++        options = [l for l in lines if l["index"] not in used
++                   for head in [cut_venue_tail(strip_dates_safe(l["norm"]))]
++                   if VENUE_WORD.search(head) and not ROLE.search(head) and not PHONE.search(head) and hangul_or_latin(l["norm"]) >= 3
++                   and not TITLE_SUFFIX.search(l["norm"]) and not re.search(r"\d{5,}", head)  # 긴 숫자열은 전화·계좌 조각
++                   and not logo_strip_institution(l, lines, height_px)]
+         if options:
+-            prefer = [l for l in options if re.search(r"일원|일대", l["norm"])] or options
++            prefer = [l for l in options if re.search(r"일원|일대|전역", l["norm"])] or options
++            prefer = [l for l in prefer if len(re.findall(r"[가-힣]", l["norm"])) >= 2] or prefer  # 한글 줄을 영문 병기보다 먼저
+             best = min(prefer, key=lambda l: (abs(l["box"][1] - anchor) if anchor is not None else l["index"]))
+-            value_lines, text, labelled = [best], venue_segment(best["norm"]) or best["norm"].strip(), False
++            seg, at_start, at_end = venue_segment(best["norm"], with_position=True)
++            value_lines, text, labelled = [best], seg or best["norm"].strip(), False
++            sides = tuple(s for s, ok in ((-1, at_start), (1, at_end)) if ok)
+     if not text:
+         return [], None
+-    first = value_lines[0]
+-    if not labelled and first["index"] > 0:
+-        prev = lines[first["index"] - 1]
+-        gap = first["box"][1] - prev["box"][3]
+-        ratio = prev["h"] / first["h"]
+-        aligned = min(abs(prev["box"][0] - first["box"][0]), abs(prev["box"][2] - first["box"][2])) <= .6 * first["h"]
+-        if (prev["index"] not in used and -.35 * first["h"] <= gap <= .8 * first["h"] and .6 <= ratio <= 1.4
+-                and not DATE_LABEL.match(prev["norm"])
+-                and (re.search(r"(,|및|·)\s*$", prev["norm"])
+-                     or (aligned and .75 <= ratio <= 1.33 and x_overlap(prev, first) > 0 and VENUE_WORD.search(prev["norm"])
+-                         and plain_line(prev) and not TITLE_SUFFIX.search(prev["norm"]) and not re.search(r"\d{5,}", prev["norm"])))):
+-            value_lines, text = [prev] + value_lines, prev["norm"].strip() + " " + text
+-    if len(value_lines) == 1:
+-        last = value_lines[0]
+-        following = [o for o in lines[last["index"] + 1:last["index"] + 3] if all(o is not x for x in label_lines)]
+-        nxt = following[0] if following else None  # 같은 줄 왼쪽의 '장소' 표기는 건너뛴다.
+-        if (nxt is not None and nxt["index"] not in used and -.35 * last["h"] <= nxt["box"][1] - last["box"][3] <= .8 * last["h"]
+-                and .6 <= nxt["h"] / last["h"] <= 1.4 and x_overlap(last, nxt) > 0 and plain_line(nxt)
+-                and (nxt["norm"].lstrip().startswith("(") or VENUE_WORD.search(nxt["norm"]) or VENUE_JOINER.search(text))):
+-            value_lines, text = value_lines + [nxt], text + " " + nxt["norm"].strip()
+-    text = clean_venue(strip_dates(VENUE_LABEL.sub(" ", text, count=1)))
++    exclude = {l["index"] for l in label_lines}
++    # 같은 높이대 옆 기록(왼쪽 지역명·오른쪽 구역 표기·괄호 설명)
++    if sides:
++        extra = row_neighbors(value_lines, lines, used, sides, exclude)
++        if extra:
++            x0 = value_lines[0]["box"][0]
++            left = [r for o in extra if o["box"][0] < x0 for r in o["members"]]
++            right = [r for o in extra if o["box"][0] >= x0 for r in o["members"]]
++            if len(value_lines) == 1 and not labelled and value_lines[0]["index"] not in used:
++                merged = records_text([r for l in value_lines + extra for r in l["members"]])
++                text = venue_segment(merged) or merged
++            else:
++                text = " ".join(([records_text(left)] if left else []) + [text] + ([records_text(right)] if right else []))
++            value_lines = sorted(value_lines + extra, key=lambda l: l["box"][0])
++    group_exclude = exclude | {l["index"] for l in value_lines}
++    box, h = union_box(value_lines), value_lines[0]["h"]
++    if not labelled:
++        prev = column_line(lines, box, -1, group_exclude)
++        joined = continuation(prev, box, h, text, -1, used)
++        if joined:
++            value_lines, text = [prev] + value_lines, joined + " " + text
++            group_exclude.add(prev["index"])
++            box = union_box(value_lines)
++    nxt = column_line(lines, box, 1, group_exclude)
++    joined = continuation(nxt, box, h, text, 1, used)
++    if joined:
++        value_lines, text = value_lines + [nxt], text + " " + joined
++    text = clean_venue(strip_dates_safe(VENUE_LABEL.sub(" ", text, count=1)))
+     # '장소명 | 주소'로 인쇄됐으면 주소 앞까지만 장소로 둔다(주소는 address 슬롯).
+     for sep in re.finditer(r"\s+[|/]\s+", text):
+         tail = text[sep.end():]

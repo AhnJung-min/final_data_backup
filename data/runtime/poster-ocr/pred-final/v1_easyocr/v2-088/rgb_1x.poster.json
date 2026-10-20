@@ -1,0 +1,224 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-f4ffe060c9cd",
+ "image": {
+  "sha256": "f4ffe060c9cd28f01786760f632313b7f0c1523f996b7899d26bf7782564294e",
+  "width": 438,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:46+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "easyocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "항금들녁 예뚜기 출제_",
+  "official": "항금들녁 예뚜기 출제_",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_003",
+    "easy_rgb_1x_004",
+    "easy_rgb_1x_005"
+   ],
+   "bbox": [
+    112.0,
+    101.0,
+    330.0,
+    310.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_006"
+   ],
+   "bbox": [
+    112.0,
+    310.0,
+    318.0,
+    338.0
+   ],
+   "confidence": 0.32363349812121983
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.3로-10.4@",
+  "start": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-04",
+   "year": 2026,
+   "month": 10,
+   "day": 4,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_006"
+   ],
+   "bbox": [
+    112.0,
+    310.0,
+    318.0,
+    338.0
+   ],
+   "confidence": 0.32363349812121983
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "섬주군 수표면 수성리 104 일원 (어불림마당)",
+  "items": [
+   "섬주군 수표면 수성리 104 일원 (어불림마당)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_007",
+    "easy_rgb_1x_008"
+   ],
+   "bbox": [
+    112.0,
+    336.0,
+    318.0,
+    380.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "섬주군 수표면 수성리 104",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_007"
+   ],
+   "bbox": [
+    112.0,
+    336.0,
+    318.0,
+    360.0
+   ],
+   "confidence": 0.8122039841402539
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "섬주군 수표면 수성리 104 일원",
+  "region": null,
+  "district": "섬주군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "easy_rgb_1x_007"
+   ],
+   "bbox": [
+    112.0,
+    336.0,
+    318.0,
+    360.0
+   ],
+   "confidence": 0.8122039841402539
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

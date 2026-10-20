@@ -1,0 +1,526 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-018a8c46e8dc",
+  "image": {
+    "sha256": "018a8c46e8dcd4437c10800be6d58d9c01bfe581f263dd77333c218e885f4339",
+    "width": 446,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:12:31+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/blind",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "블라인드 독립 판독(일치도 검사용). 원본 446×627을 직접 보고 확대 크롭으로 프로그램 목록과 하단 띠를 확인함.",
+      "'청년? 너도용? 나도용!'은 제목보다 크게 인쇄된 대표 문구라 slogans(headline)로, 그 위 '제 6회 용인 청년 페스티벌'을 제목으로 기록함.",
+      "'2026년 청년의 날 기념'은 기념 표기로 badges(other)에 둠. 연도 근거는 이 문구(poster_text).",
+      "'기획' 표기 기관은 표준 역할 대응이 없어 roles=[other]로 기록함.",
+      "프로그램명 중 '낫맥모임'의 받침(ㅅ/ㅈ)과 '삼푸바'의 모음(ㅏ/ㅑ)은 확대해도 확실하지 않아 보이는 대로 적음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제 6회 용인 청년 페스티벌",
+    "official": "용인 청년 페스티벌",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제 6회",
+    "number": 6,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "청년? 너도용? 나도용!",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10. 3.(토) ~ 10. 4.(일)",
+    "start": {
+      "iso": "2026-10-03",
+      "year": 2026,
+      "month": 10,
+      "day": 3,
+      "weekday": "sat",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-10-04",
+      "year": 2026,
+      "month": 10,
+      "day": 4,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "10:00 ~17:00",
+        "start": "10:00",
+        "end": "17:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "용인미르스타디움",
+    "items": [
+      "용인미르스타디움"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "용인특례시",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최 · 주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "용인시청년정책네트워크 축제기획TF단",
+        "roles": [
+          "other"
+        ],
+        "role_raw": "기획",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "와랄랄라 낫맥모임",
+        "category_raw": "미리 신청하고 모여용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "얼레벌레 보드게임",
+        "category_raw": "미리 신청하고 모여용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "우당탕탕 가짜찾기",
+        "category_raw": "언제든지 즐겨용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "요리조리 축제탐방 챌린지",
+        "category_raw": "언제든지 즐겨용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "SNS 구독 이벤트",
+        "category_raw": "언제든지 즐겨용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "360도 포토존",
+        "category_raw": "언제든지 즐겨용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "와리가리 스피드 OX 퀴즈",
+        "category_raw": "시간 맞춰 만나용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "청년 LAB 프로그램",
+        "category_raw": "시간 맞춰 만나용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "플라워벌룬 DIY",
+        "category_raw": "청년 LAB 프로그램",
+        "period": {
+          "raw": "(토)",
+          "start": null,
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "도토리 캐리커쳐",
+        "category_raw": "청년 LAB 프로그램",
+        "period": {
+          "raw": "(일)",
+          "start": null,
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "이달의 청년강사 클래스",
+        "category_raw": "시간 맞춰 만나용!",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "삼푸바 만들기",
+        "category_raw": "이달의 청년강사 클래스",
+        "period": {
+          "raw": "(토)",
+          "start": null,
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "펫푸드 만들기",
+        "category_raw": "이달의 청년강사 클래스",
+        "period": {
+          "raw": "(토)",
+          "start": null,
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "비즈 스트랩 만들기",
+        "category_raw": "이달의 청년강사 클래스",
+        "period": {
+          "raw": "(일)",
+          "start": null,
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "분갈이의 정석",
+        "category_raw": "이달의 청년강사 클래스",
+        "period": {
+          "raw": "(일)",
+          "start": null,
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "2026년 청년의 날 기념",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand_campaign",
+        "raw": "용인 르네상스2.0",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "카툰 일러스트",
+      "서커스 무대 콘셉트",
+      "입체 그림자 레터링"
+    ],
+    "main_colors": [
+      "노랑",
+      "분홍",
+      "갈색",
+      "빨강",
+      "초록"
+    ],
+    "main_objects": [
+      "무대 위 공룡(용) 캐릭터 2마리",
+      "서커스 커튼과 깃발",
+      "미러볼",
+      "풍선"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "분홍 테두리의 노란 배경에 서커스 무대 위 초록 용 캐릭터를 그리고, 상단에 회차·제목과 큰 '청년? 너도용? 나도용!' 문구, 하단 종이 모양 박스에 프로그램과 일정·시간·장소·주최를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "446×627 이미지. 프로그램 목록과 하단 띠 글자는 대부분 읽히나 일부 글자(받침·모음)는 확실하지 않음.",
+      "우측 상단 빨간 사각 로고 안의 작은 글자는 판독 불가."
+    ]
+  }
+}

@@ -1,0 +1,303 @@
+diff --git a/app/poster_ocr/extract_v1.py b/.runtime/poster-ocr/proposals-v2/lists/extract.py
+index c551207..9372be7 100644
+--- a/app/poster_ocr/extract_v1.py
++++ b/.runtime/poster-ocr/proposals-v2/lists/extract.py
+@@ -13,7 +13,7 @@ from pathlib import Path
+ import re
+ import unicodedata
+ 
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = next((p for p in Path(__file__).resolve().parents if (p / "data/festivals/poster.template.json").exists()), Path(__file__).resolve().parents[2])  # PROPOSAL-SHIM
+ TEMPLATE = ROOT / "data/festivals/poster.template.json"
+ VERSION = "poster_rules_v1"
+ # 연도가 인쇄되지 않은 포스터에서 인쇄 요일을 달력과 대조할 때 쓰는 기준 연도(수집 연도). 값으로 채우지는 않는다.
+@@ -40,15 +40,35 @@ PHONE = re.compile(r"(?<![\d-])(0\d{1,2})\s*[-.)]?\s*(\d{3,4})\s*[-.]\s*(\d{4})(
+ # 두 번째 구분 기호가 OCR에서 빠진 번호(02-1234567 꼴): 지역번호 뒤 7~8자리 숫자를 국번·번호로 나눈다(숫자는 그대로).
+ PHONE_RUN = re.compile(r"(?<![\d-])(0\d{1,2})\s*[-.)]\s*(\d{3,4})(\d{4})(?!\d)")
+ LINK = re.compile(r"(?:https?://)?(?:www\.)?[A-Za-z0-9][A-Za-z0-9\-]*(?:\.[A-Za-z0-9\-]+)*\.(?:com|net|org|kr|io|me|site|info)(?:/[^\s,]*)?|@[A-Za-z0-9_.]{3,}", re.I)
+-BUDGET = re.compile(r"(?:총\s*)?(?:행사\s*|축제\s*)?예\s*산\s*[:：]?\s*(?:금\s*)?(\d[\d,]*(?:\.\d+)?)\s*(억|천만|백만|만)?\s*(천)?\s*원")
++# 실제 지역번호(02, 031~064, 010~019, 070, 080). 아래 두 보완 규칙에서만 쓰며, 국번은 0으로 시작하지 않는다(숫자는 그대로).
++AREA_CODE = r"(?:02|0[3-6][1-5]|01[016-9]|070|080)"
++# 지역번호 앞에 로고·기호 조각이 붙어 읽힌 번호('E3033-460-8900', '#2041-521-3786'), 지역번호 뒤 괄호가 '}'·']'로 읽힌 번호.
++PHONE_GLUED = re.compile(r"(?<![-.])(" + AREA_CODE + r")\s*[-.)\]}]?\s*([1-9]\d{2,3})\s*[-.]\s*(\d{4})(?!\d)")
++# 구분 기호가 모두 빠진 번호('0413323506'): 지역번호로 시작하는 9~11자리 숫자열 전체일 때만.
++PHONE_BARE = re.compile(r"(?<![\d-])(" + AREA_CODE + r")([1-9]\d{2,3})(\d{4})(?!\d)")
++# 예산 금액: '6천만원', '80,000천원', '600백만원', '1억 4천만 원', '5억 3천만원', '11.16억'(억 뒤 '원' 생략).
++BUDGET_AMOUNT = (r"(?P<num>\d[\d,.]*\d|\d)\s*(?:(?P<eok>억)(?:\s*(?P<num2>\d[\d,]*)\s*(?P<unit2>천만|백만|만))?\s*원?"
++                 r"|(?P<unit>천만|백만|만)?\s*(?P<thou>천)?\s*원)")
++# 예산 표기: '예산'·'사업비'·'운영비' 뒤 금액(행사예산 공개 조례 표기). '총'·'행사'·'축제'·'소요'는 앞에 붙을 수 있다.
++BUDGET = re.compile(r"(?:총\s*)?(?:행사\s*|축제\s*|소요\s*)?(?:예\s*산|사\s*업\s*비|운\s*영\s*비)\s*[:：]?\s*(?:금\s*)?" + BUDGET_AMOUNT)
++# 표기 낱말이 읽히지 않아도 금액 바로 뒤에 재원 구분('(시비 100%)', '(전액 군비)', '(도비 …)')이 있으면 예산 공개 표기다.
++BUDGET_FUNDED = re.compile(BUDGET_AMOUNT + r"\s*[(\[]\s*[^)\]]{0,8}?(?:국|도|시|군|구)\s*비")
+ ADMISSION = re.compile(r"무료|입장료|관람료|참가비|체험비|유료|얼리버드|예매|(?<![\d.])\d{1,3}(?:,\d{3})+\s*원|(?<!\d)\d{1,2}\s*천\s*원")
+ NOTICE = re.compile(r"우천|변경될\s*수|변경\s*될\s*수|사정에\s*따라|취소|연기|주차|유의\s*사항|안내\s*사항|금지|※")
+ BADGE = re.compile(r"문화관광축제|대표\s*축제|유망\s*축제|명예\s*축제|글로벌\s*축제|방문의\s*해|지리적\s*표시|K-?축제|우수\s*축제|최우수\s*축제|올해의\s*관광")
+ BADGE_MORE = re.compile(r"(?:축제|사업)\s*선정|선정\s*(?:축제|사업)|지원\s*사업|공모\s*사업")  # 지정·선정·지원사업 표기
+ # 기관 역할 표기: 앞이 한글이면 단어 속 글자(낱말 속의 '주관'·'협력')로 보고 표기로 쓰지 않는다('공동주관'은 표기).
+ ROLE_MARK = re.compile(r"(?<![가-힣])(?:공\s*동\s*)?(주\s*최\s*(?:[·/,&\-\u119e]|및)?\s*주\s*관|주\s*최|주\s*관|후\s*원|협\s*찬|협\s*력)")  # \u119e: NFKC 'ㆍ'
+-ORG_STRIP = " :：|ㅣ\u1175\u119e·,/~-"  # \u1175·\u119e: NFKC가 'ㅣ'·'ㆍ'를 바꾼 글자
++ORG_STRIP = " :：|ㅣ\u1175\u119e·,/~-※#*•●○◎■□▶►◆◇"  # \u1175·\u119e: NFKC가 'ㅣ'·'ㆍ'를 바꾼 글자. 글머리표·※도 이름 가장자리에서 뗀다.
+ CONTACT_TAIL = re.compile(r"\s*(?:문\s*의|전\s*화|TEL|Tel|tel|☎)\s*[:：]?\s*$")
++CONTACT_WORD = re.compile(r"문\s*의|전\s*화|TEL|Tel|tel|☎")  # 연락처 칸: 역할 표기의 기관명 목록이 여기서 끝난다.
++# 기관명 판독 신뢰도 하한(엔진 공통). 이보다 낮은 OCR 기록에서 온 이름은 글자가 틀린 경우가 대부분이라
++# 이름을 비우고(name=null, legibility=illegible) 역할 표기만 남긴다(사람 확인 대상). 문자는 고치지 않는다.
++ORG_MIN_CONF = 0.5
++ORG_FIRST_GAP = 4.5  # 역할 표기 바로 뒤 첫 이름 칸은 로고 그림만큼 더 떨어질 수 있다(표기 높이 배수, 그 밖은 2.5).
++ORG_TALL = 3.0  # 역할 표기 바로 뒤 첫 이름 칸은 표기보다 큰 로고 글자(표기 높이의 3배까지)일 수 있다(그 밖은 1.8).
++# 낱자모(초·중·종성 자모, 호환 자모)는 로고 그림이 글자로 읽힌 잡음이라 기관명 사이의 구분으로 본다.
++ORG_SPLIT = re.compile(r"\s*[,/·、|\u1100-\u11ff\u3130-\u318f]\s*|\s{2,}")
+ # 역할 표기 없는 기관명(상·하단 로고 띠): 기관 유형 접미어로 끝나는 한글 이름일 때만(행정구역 이름만 있는 기록은 제외).
+ INSTITUTION_BODY = re.compile(r"[가-힣][가-힣()·\s]{1,24}(?:재단|공사|공단|문화원|위원회|협의회|진흥원|센터|은행|본부|협회|조합|일보|청|부)")
+ NOT_INSTITUTION_END = ("신청", "요청", "일부", "전부", "내부", "외부")
+@@ -511,25 +531,28 @@ def extract(records, image, engine, *, extracted_at=None):
+     orgs, org_ids = organization_items(records)
+     line_of = {r["id"]: l["index"] for l in lines for r in l["members"]}
+     used.update(line_of[i] for i in org_ids if i in line_of)
+-    orgs += unlabeled_institutions(records, image, used, line_of, {re.sub(r"\s+", "", o["name"]) for o in orgs})
++    orgs += unlabeled_institutions(records, image, used, line_of, {re.sub(r"\s+", "", o["name"]) for o in orgs if o["name"]})
+     doc["organizations"].update(status="present" if orgs else "absent", items=orgs)
+ 
+     # 연락처 -------------------------------------------------------------
+     contacts = []
+     for l in lines:
+         found = list(PHONE.finditer(l["norm"]))
+-        found += [m for m in PHONE_RUN.finditer(l["norm"]) if not any(m.start() < f.end() and f.start() < m.end() for f in found)]
++        for extra in (PHONE_RUN, PHONE_GLUED, PHONE_BARE):
++            found += [m for m in extra.finditer(l["norm"]) if not any(m.start() < f.end() and f.start() < m.end() for f in found)]
+         for m in sorted(found, key=lambda m: m.start()):
++            kind = "phone"
+             if m.group(1):
+                 value = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+             elif clock_span(m.group(4), m.group(5)):
+                 continue  # 'HHMM-HHMM' 꼴은 시각 범위이지 대표번호가 아니다.
+             else:
+-                value = None  # 1588-0000형은 표준 value 형식(지역번호 포함 3단)이 아니므로 원문만 둔다.
++                # 1588-0000형 대표번호는 지역번호가 없어 phone value 형식(033-439-5800)이 아니므로 kind=other로 둔다(표준 라벨 규칙).
++                kind, value = "other", f"{m.group(4)}-{m.group(5)}"
+             label = re.search(r"문\s*의|전\s*화|TEL|Tel|tel|☎|예\s*약|접\s*수", l["norm"])
+             before = l["norm"][:m.start()]
+-            department = remove_tokens(before, [re.compile(r"문\s*의|전\s*화|TEL|Tel|tel|☎|[:：|()]")]) or None
+-            contacts.append({"kind": "phone", "raw": m.group(0).strip(), "value": value, "label_raw": label.group(0) if label else None,
++            department = remove_tokens(before, [re.compile(r"문\s*의|전\s*화|TEL|Tel|tel|☎|[:：|()/]")]) or None
++            contacts.append({"kind": kind, "raw": m.group(0).strip(), "value": value, "label_raw": label.group(0) if label else None,
+                              "department": department if department and hangul_or_latin(department) >= 2 else None,
+                              "evidence": evidence(l["members"])})
+             used.add(l["index"])
+@@ -552,14 +575,14 @@ def extract(records, image, engine, *, extracted_at=None):
+     doc["links"].update(status="present" if links else "absent", items=links)
+ 
+     # 예산·요금·공지·지정 표기 ---------------------------------------------
+-    budget = next(((l, m) for l in lines for m in BUDGET.finditer(l["norm"])), None)
++    budget = next(((l, m) for l in lines for m in [budget_match(l["norm"])] if m), None)
+     if budget:
+         l, m = budget
+         doc["budget_disclosure"].update(status="present", raw=l["text"], total_krw=krw(m), evidence=evidence(l["members"]))
+         used.add(l["index"])
+     else:
+         doc["budget_disclosure"]["status"] = "absent"
+-    admission = [l for l in lines if ADMISSION.search(l["norm"]) and not BUDGET.search(l["norm"])]
++    admission = [l for l in lines if ADMISSION.search(l["norm"]) and not budget_match(l["norm"])]
+     if admission:
+         text = " ".join(l["text"] for l in admission)
+         doc["admission"].update(status="present", raw=text, free=True if "무료" in text else None,
+@@ -568,7 +591,7 @@ def extract(records, image, engine, *, extracted_at=None):
+     else:
+         doc["admission"]["status"] = "absent"
+     notices = [{"kind": notice_kind(l["norm"]), "raw": l["text"], "evidence": evidence(l["members"])}
+-               for l in lines if is_notice(l["norm"])]
++               for l in lines if notice_line(l["norm"])]
+     doc["notices"].update(status="present" if notices else "absent", items=notices)
+     badges = [{"kind": badge_kind(m.group(0)), "raw": l["text"], "evidence": evidence(l["members"])}
+               for l in lines for m in [BADGE.search(l["norm"]) or BADGE_MORE.search(l["norm"])] if m]
+@@ -833,12 +856,38 @@ def clock(meridiem, hour, minute):
+     return f"{hour:02d}:{minute:02d}"
+ 
+ 
++def budget_number(raw, big_unit):
++    """금액 숫자. 쉼표는 천 단위 구분이다. 마침표는 억·만 단위가 붙으면 소수점('11.16억'), 단위 없이 '원'만 붙고
++    세 자리씩 끊기면 천 단위 구분으로 본다('65,500.000원' = 65,500,000원). 그 밖의 숫자열은 읽지 않는다(None)."""
++    if not big_unit and re.fullmatch(r"\d{1,3}(?:[,.]\d{3})+", raw):
++        return float(re.sub(r"[,.]", "", raw))
++    try:
++        return float(raw.replace(",", ""))
++    except ValueError:
++        return None
++
++
++def budget_match(text):
++    """예산 표기 match(금액을 읽을 수 있는 첫 표기). 표기 낱말 규칙(BUDGET)을 먼저, 재원 구분 규칙(BUDGET_FUNDED)을 다음에 본다."""
++    for pattern in (BUDGET, BUDGET_FUNDED):
++        for m in pattern.finditer(text):
++            if krw(m) is not None:
++                return m
++    return None
++
++
+ def krw(match):
+-    number = float(match.group(1).replace(",", ""))
+-    unit = {"억": 100_000_000, "천만": 10_000_000, "백만": 1_000_000, "만": 10_000, None: 1}[match.group(2)]
+-    if match.group(3):
+-        unit *= 1000
+-    return int(round(number * unit))
++    unit = match.group("unit")
++    number = budget_number(match.group("num"), match.group("eok") or unit)
++    if number is None:
++        return None
++    if match.group("eok"):
++        total = number * 100_000_000
++        if match.group("num2"):
++            total += float(match.group("num2").replace(",", "")) * {"천만": 10_000_000, "백만": 1_000_000, "만": 10_000}[match.group("unit2")]
++    else:
++        total = number * {"천만": 10_000_000, "백만": 1_000_000, "만": 10_000, None: 1}[unit] * (1000 if match.group("thou") else 1)
++    return int(round(total))
+ 
+ 
+ def notice_kind(text):
+@@ -870,6 +919,28 @@ def is_notice(text):
+     return bool(NOTICE.search(text))
+ 
+ 
++# notices 슬롯 전용 공지 낱말(제목 후보 제외에 쓰는 NOTICE는 그대로 둔다). '○○ 주차장 일대'처럼 장소 이름인 '주차장'은 공지가 아니고
++# '주차장 운영·이용·안내…'처럼 운영 낱말이 뒤따를 때만 주차 안내로 본다.
++# '취소·연기'는 낱말 속 글자('…민연기념…')가 아니라 앞이 한글이 아닐 때만 받는다. '※'는 notice_line에서 따로 본다.
++NOTICE_WORD = re.compile(r"우천|변경될\s*수|변경\s*될\s*수|사정에\s*따라|(?<![가-힣])(?:취소|연기)|주차(?!장)|주차장\s*(?:운영|이용|안내|협소|만차|부족|혼잡|없|유료|무료)|유의\s*사항|안내\s*사항|금지"
++                         r"|교통\s*통제|셔틀\s*버스|휴관")  # 교통 통제·셔틀버스·휴관 안내도 공지(표준 라벨 규칙)
++NOTE_MARK = re.compile(r"(?:^|(?<=\s))[\-·•*]*※\s*(?P<rest>.*)$")  # 줄 머리나 띄어쓰기 뒤의 ※와 그 뒤 문구
++
++
++def notice_line(text):
++    """공지 줄. 기관 역할 표기가 있는 줄(로고 띠·주최 문구)은 공지가 아니다. '※'는 줄 머리나 띄어쓰기 뒤에 있고 뒤 문구가 한글·영문
++    3자 이상이며 기관명 하나('※○○협의회'처럼 로고 기호가 ※로 읽힌 경우)가 아닐 때만 공지 표시로 본다(낱말에 붙은 ※는 잡음일 수 있다)."""
++    if ROLE.search(text):
++        return False
++    if NOTICE_WORD.search(text):
++        return True
++    m = NOTE_MARK.search(text)
++    if not m:
++        return False
++    rest = m.group("rest").strip()
++    return hangul_or_latin(rest) >= 3 and not INSTITUTION_BODY.fullmatch(rest)
++
++
+ def clock_span(first, second):
+     """'HHMM-HHMM'처럼 두 쪽이 모두 정각·30분 시각이고 앞이 더 이르면 시각 범위로 본다."""
+     return all(int(x[:2]) <= 24 and x[2:] in ("00", "30") for x in (first, second)) and first < second
+@@ -888,8 +959,8 @@ def org_names(segment, separate):
+     segment = PHONE.sub(" ", segment)
+     segment = re.sub(r"\(\s*\)|\[\s*\]", " ", segment)
+     names = []
+-    for part in re.split(r"\s*[,/·、|\u1175\u119e]\s*|\s{2,}", segment):
+-        part = CONTACT_TAIL.sub("", part).strip(ORG_STRIP)
++    for part in ORG_SPLIT.split(segment):
++        part = trim_edge_junk(CONTACT_TAIL.sub("", part).strip(ORG_STRIP))
+         if hangul_or_latin(part) < 2 or is_mostly_digits(part):
+             continue
+         if separate and len(re.findall(r"[가-힣]", part)) < 2:
+@@ -898,11 +969,31 @@ def org_names(segment, separate):
+     return names
+ 
+ 
++def trim_edge_junk(text):
++    """기관명 앞뒤에 띄어 쓴 잡음 조각('6 인천대학교'의 '6', 'i 한국관광공사'의 'i')을 뗀다. 조각은 한글이 없고 숫자·기호뿐이거나
++    라틴 문자 한 글자인 경우만이며, 남는 이름에 한글이 2자 이상 있을 때만 뗀다('CJ 제일제당'·'K water'는 그대로)."""
++    tokens = text.split()
++
++    def junk(token):
++        return not re.search(r"[가-힣]", token) and (not re.search(r"[A-Za-z]", token) or len(token) == 1)
++
++    def hangul(parts):
++        return len(re.findall(r"[가-힣]", "".join(parts)))
++
++    while len(tokens) > 1 and junk(tokens[0]) and hangul(tokens[1:]) >= 2:
++        tokens.pop(0)
++    while len(tokens) > 1 and junk(tokens[-1]) and hangul(tokens[:-1]) >= 2:
++        tokens.pop()
++    return " ".join(tokens).strip(ORG_STRIP)
++
++
+ def organization_items(records):
+     """역할 표기(주최·주관·후원·협찬·협력)와 기관명. 로고 띠는 '주최 [이름] [이름] 주관 [이름]'처럼 기록이 따로 나뉘고,
+     build_lines는 오른쪽에만 기록을 붙이므로 왼쪽 표기를 나중에 만나면 한 줄로 묶지 못한다. 그래서 표기 기록마다 같은 높이대
+     (세로 겹침 ≥ 50%, 높이비 0.55~1.8) 기록을 왼→오로 읽는다. 가로로 겹쳐 위아래로 쌓인 기록은 한 칸(두 줄 기관명)으로 잇고,
+-    표기 높이의 2.5배보다 먼 간격 뒤의 기록은 다음 표기가 나올 때까지 이름으로 받지 않는다. 반환: (항목, 사용한 OCR ID)."""
++    표기 높이의 2.5배보다 먼 간격 뒤의 기록은 다음 표기가 나올 때까지 이름으로 받지 않는다. 다만 표기 바로 뒤 첫 이름 칸은
++    로고 그림이 사이에 끼므로 4.5배까지, 표기보다 큰 로고 글자(높이비 3까지)도 받는다. 연락처 칸('문의 …')에서 이름 목록이
++    끝난다. 신뢰도가 ORG_MIN_CONF보다 낮은 기록의 이름은 비우고 판독 불가로 둔다. 반환: (항목, 사용한 OCR ID)."""
+     def box(r):
+         return r["bbox_xyxy"]
+ 
+@@ -913,11 +1004,12 @@ def organization_items(records):
+     marked = sorted((r for r in records if ROLE_MARK.search(texts[r["id"]])), key=lambda r: (box(r)[1], box(r)[0]))
+     items, used_ids, taken = [], set(), set()
+ 
+-    def add(name, mark, sources):
++    def add(name, mark, sources, confidence):
+         label = re.sub(r"\s+", "", mark.group(1))
+         roles = ["host", "organizer"] if "주최" in label and "주관" in label else ROLE_MAP.get(label, [])
+-        items.append({"name": name, "roles": roles, "role_raw": mark.group(0).strip(), "form": "text", "legibility": "legible",
+-                      "evidence": evidence(sources)})
++        legible = confidence is None or confidence >= ORG_MIN_CONF
++        items.append({"name": name if legible else None, "roles": roles, "role_raw": mark.group(0).strip(), "form": "text",
++                      "legibility": "legible" if legible else "illegible", "evidence": evidence(sources)})
+         used_ids.update(r["id"] for r in sources)
+ 
+     for label_record in marked:
+@@ -927,7 +1019,13 @@ def organization_items(records):
+         h = height(lb)
+         row = sorted((r for r in records if r["id"] not in taken
+                       and min(lb[3], box(r)[3]) - max(lb[1], box(r)[1]) >= .5 * min(h, height(box(r)))
+-                      and .55 <= height(box(r)) / max(h, 1e-6) <= 1.8), key=lambda r: box(r)[0])
++                      and .55 <= height(box(r)) / max(h, 1e-6) <= ORG_TALL), key=lambda r: box(r)[0])
++        kept = []
++        for r in row:  # 표기보다 훨씬 큰 기록(높이비 1.8 초과)은 표기 바로 오른쪽 칸일 때만 남긴다.
++            if height(box(r)) / max(h, 1e-6) > 1.8 and not (kept and ROLE_MARK.search(texts[kept[-1]["id"]])):
++                continue
++            kept.append(r)
++        row = kept
+         taken.update(r["id"] for r in row)
+         cells = []
+         first = next((i for i, r in enumerate(row) if ROLE_MARK.search(texts[r["id"]])), None)
+@@ -939,31 +1037,37 @@ def organization_items(records):
+                 cells[-1].append(r)
+             else:
+                 cells.append([r])
+-        current, right = None, None  # current = (표기 match, 표기 기록)
++        current, right, bare = None, None, False  # current = (표기 match, 표기 기록), bare = 직전 칸이 이름 없는 표기
+         for cell in cells:
+             left = min(box(r)[0] for r in cell)
+             marks = list(ROLE_MARK.finditer(texts[cell[0]["id"]]))
+-            if right is not None and left - right > 2.5 * h:
++            if right is not None and left - right > (ORG_FIRST_GAP if bare else 2.5) * h:
+                 current = None  # 먼 간격 뒤의 기록은 앞 표기의 이름이 아니다(뒤에 새 표기가 오면 다시 읽는다).
+             right = max([box(r)[2] for r in cell] + ([right] if right is not None else []))
++            bare = False
+             if marks:
+                 record, text = cell[0], texts[cell[0]["id"]]
+                 used_ids.add(record["id"])
+                 if current:  # 표기 앞에 붙은 문구는 앞 표기의 이름
+                     for name in org_names(text[:marks[0].start()], separate=False):
+-                        add(name, current[0], [current[1], record])
++                        add(name, current[0], [current[1], record], record["confidence"])
+                 for i, m in enumerate(marks):
+                     segment = text[m.end(): marks[i + 1].start() if i + 1 < len(marks) else len(text)]
+                     for name in org_names(segment, separate=False):
+-                        add(name, m, [record])
++                        add(name, m, [record], record["confidence"])
+                 current = (marks[-1], record)
++                bare = not org_names(text[marks[-1].end():], separate=False)
+             elif current is not None:
+                 ordered = sorted(cell, key=lambda r: box(r)[1])
+-                names = org_names(" ".join(texts[r["id"]] for r in ordered), separate=True)
++                joined = " ".join(texts[r["id"]] for r in ordered)
++                if CONTACT_WORD.search(joined):
++                    current = None  # '안내·문의 055-…' 같은 연락처 칸은 기관명이 아니며, 뒤 기록도 앞 표기의 이름이 아니다.
++                    continue
++                names = org_names(joined, separate=True)
+                 if len(cell) > 1 and names:
+                     names = [" ".join(names)]
+                 for name in names:
+-                    add(name, current[0], [current[1], *ordered])
++                    add(name, current[0], [current[1], *ordered], min(r["confidence"] for r in ordered))
+     return items, used_ids
+ 
+ 

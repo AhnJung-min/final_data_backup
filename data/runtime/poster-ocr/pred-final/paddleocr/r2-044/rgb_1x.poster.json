@@ -1,0 +1,261 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-7826fc71c594",
+ "image": {
+  "sha256": "7826fc71c594cc7ca9936222058b20081f1f2d6bef3ea3e211e766c40dbab0f2",
+  "width": 527,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T18:11:50+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "paddleocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "20월출산국화축제",
+  "official": "20월출산국화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000"
+   ],
+   "bbox": [
+    50.0,
+    25.0,
+    471.0,
+    82.0
+   ],
+   "confidence": 0.9634376168251038
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003"
+   ],
+   "bbox": [
+    27.0,
+    566.0,
+    330.0,
+    597.0
+   ],
+   "confidence": 0.9414494633674622
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026 10.30.–11.15.",
+  "start": {
+   "iso": "2026-10-30",
+   "year": 2026,
+   "month": 10,
+   "day": 30,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-11-15",
+   "year": 2026,
+   "month": 11,
+   "day": 15,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_003"
+   ],
+   "bbox": [
+    27.0,
+    566.0,
+    330.0,
+    597.0
+   ],
+   "confidence": 0.9414494633674622
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "월출산기찬랜드 일원",
+  "items": [
+   "월출산기찬랜드 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    97.0,
+    595.0,
+    256.0,
+    617.0
+   ],
+   "confidence": 0.9722382426261902
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "영암군",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최·주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_006",
+      "padd_rgb_1x_007"
+     ],
+     "bbox": [
+      407.0,
+      596.0,
+      494.0,
+      606.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "061-470-2259",
+    "value": "061-470-2259",
+    "label_raw": "문의",
+    "department": null,
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_004"
+     ],
+     "bbox": [
+      406.0,
+      580.0,
+      494.0,
+      590.0
+     ],
+     "confidence": 0.9866989254951477
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "brand_campaign",
+    "raw": "영암방문의해",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_002"
+     ],
+     "bbox": [
+      92.0,
+      363.0,
+      157.0,
+      374.0
+     ],
+     "confidence": 0.9714467525482178
+    }
+   }
+  ]
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

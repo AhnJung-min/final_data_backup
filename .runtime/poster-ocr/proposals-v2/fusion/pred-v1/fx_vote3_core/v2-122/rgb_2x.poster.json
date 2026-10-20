@@ -1,0 +1,207 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-916a83fac20b",
+ "image": {
+  "sha256": "916a83fac20b98e5c45c8e23ba85c833d18f17d3e8381a5e1117f1157c033523",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T14:54:52+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote3_core"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote3_core): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "제T3호 CHILGOK NAKDONG RIVER PEACE FESTIVAL 칠곡낙동강평화숙제 제17회 낙동강지구 전투 전승행사 & 205 칠곡 문화거리페스타",
+  "official": "제T3호 CHILGOK NAKDONG RIVER PEACE FESTIVAL 칠곡낙동강평화숙제 낙동강지구 전투 전승행사 & 205 칠곡 문화거리페스타",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002",
+    "padd_rgb_2x_003",
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    55.0,
+    83.5,
+    389.5,
+    168.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제17회",
+  "number": 17,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_004"
+   ],
+   "bbox": [
+    58.5,
+    151.5,
+    387.0,
+    168.5
+   ],
+   "confidence": 0.9711036682128906
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    138.0,
+    182.0,
+    303.5,
+    202.5
+   ],
+   "confidence": 0.93488609790802
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.15 @~18 ©",
+  "start": {
+   "iso": "2026-10-15",
+   "year": 2026,
+   "month": 10,
+   "day": 15,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    138.0,
+    182.0,
+    303.5,
+    202.5
+   ],
+   "confidence": 0.93488609790802
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "칠곡보생태공원·칠곡보오토캠핑장·왜관읍 중앙로 명원",
+  "items": [
+   "칠곡보생태공원",
+   "칠곡보오토캠핑장",
+   "왜관읍 중앙로 명원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    82.0,
+    214.0,
+    360.5,
+    230.0
+   ],
+   "confidence": 0.9239760041236877
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

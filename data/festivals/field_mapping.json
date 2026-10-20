@@ -1,0 +1,219 @@
+{
+  "schema_version": "2.1.0",
+  "baseline_file": "2026_강남페스티벌_포스터.json",
+  "strategy": "원천 API 키는 raw_response_item에 보존하고, 정규화된 event·poster.event·reference.event에는 동일한 snake_case 키 사용",
+  "event_fields": [
+    {
+      "canonical_path": "event.title",
+      "poster_path": "poster.event.title",
+      "reference_path": "reference.event.title",
+      "label": "축제명",
+      "data_go_kr_response_field": "fstvlNm",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.venue",
+      "poster_path": "poster.event.venue",
+      "reference_path": "reference.event.venue",
+      "label": "개최장소",
+      "data_go_kr_response_field": "opar",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.start_date",
+      "poster_path": "poster.event.start_date",
+      "reference_path": "reference.event.start_date",
+      "label": "축제시작일자",
+      "data_go_kr_response_field": "fstvlStartDate",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.end_date",
+      "poster_path": "poster.event.end_date",
+      "reference_path": "reference.event.end_date",
+      "label": "축제종료일자",
+      "data_go_kr_response_field": "fstvlEndDate",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.program",
+      "poster_path": "poster.event.program",
+      "reference_path": "reference.event.program",
+      "label": "축제내용",
+      "data_go_kr_response_field": "fstvlCo",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.organizer",
+      "poster_path": "poster.event.organizer",
+      "reference_path": "reference.event.organizer",
+      "label": "주관기관명",
+      "data_go_kr_response_field": "mnnstNm",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.host",
+      "poster_path": "poster.event.host",
+      "reference_path": "reference.event.host",
+      "label": "주최기관명",
+      "data_go_kr_response_field": "auspcInsttNm",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.sponsor",
+      "poster_path": "poster.event.sponsor",
+      "reference_path": "reference.event.sponsor",
+      "label": "후원기관명",
+      "data_go_kr_response_field": "suprtInsttNm",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.contact",
+      "poster_path": "poster.event.contact",
+      "reference_path": "reference.event.contact",
+      "label": "전화번호",
+      "data_go_kr_response_field": "phoneNumber",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.homepage",
+      "poster_path": "poster.event.homepage",
+      "reference_path": "reference.event.homepage",
+      "label": "홈페이지주소",
+      "data_go_kr_response_field": "homepageUrl",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.related_info",
+      "poster_path": "poster.event.related_info",
+      "reference_path": "reference.event.related_info",
+      "label": "관련정보",
+      "data_go_kr_response_field": "relateInfo",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.road_address",
+      "poster_path": "poster.event.road_address",
+      "reference_path": "reference.event.road_address",
+      "label": "소재지도로명주소",
+      "data_go_kr_response_field": "rdnmadr",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.jibun_address",
+      "poster_path": "poster.event.jibun_address",
+      "reference_path": "reference.event.jibun_address",
+      "label": "소재지지번주소",
+      "data_go_kr_response_field": "lnmadr",
+      "type": "string|null",
+      "poster_rule": "포스터에 실제로 표시된 경우만 추출. 없거나 판독 불가면 null"
+    },
+    {
+      "canonical_path": "event.gps.lat",
+      "poster_path": "poster.event.gps.lat",
+      "reference_path": "reference.event.gps.lat",
+      "label": "위도",
+      "data_go_kr_response_field": "latitude",
+      "type": "number|null",
+      "poster_rule": "포스터에 좌표가 직접 기재되지 않으면 null. 지오코딩 값은 포스터 추출값에 넣지 않음"
+    },
+    {
+      "canonical_path": "event.gps.lng",
+      "poster_path": "poster.event.gps.lng",
+      "reference_path": "reference.event.gps.lng",
+      "label": "경도",
+      "data_go_kr_response_field": "longitude",
+      "type": "number|null",
+      "poster_rule": "포스터에 좌표가 직접 기재되지 않으면 null"
+    }
+  ],
+  "api_metadata_fields": {
+    "referenceDate": "source.reference_date",
+    "insttCode": "source.institution_code",
+    "insttNm": "source.institution_name"
+  },
+  "api_metadata_aliases": {
+    "instt_code": "insttCode",
+    "instt_nm": "insttNm"
+  },
+  "legacy_aliases": {
+    "reference.event.name": "reference.event.title",
+    "reference.event.venues": "reference.event.venue",
+    "reference.event.url": "reference.event.homepage",
+    "name": "title",
+    "venues": "venue",
+    "url": "homepage"
+  },
+  "legacy_alias_rules": {
+    "venues": "기존 배열 요소의 원문을 유지해 ' / '로 연결. 공통 venue는 API opar와 같은 문자열. 원래 배열은 import_metadata.original_record에 보존",
+    "address": "기존 address는 주소 종류가 불명확해 유지. rdnmadr/lnmadr 원본이 확인되면 road_address/jibun_address에 매핑"
+  },
+  "extension_fields_without_direct_standard_api_mapping": [
+    "address",
+    "time",
+    "price",
+    "region",
+    "district",
+    "service",
+    "category",
+    "venue_url"
+  ],
+  "image_source": {
+    "provider": "tourapi",
+    "url_target": "image.source_url",
+    "content_id_target": "image.source.content_id",
+    "endpoint_target": "image.source.endpoint",
+    "api_field_target": "image.source.api_field",
+    "copyright_type_target": "image.source.copyright_type",
+    "endpoint": "searchFestival2",
+    "url_field": "firstimage",
+    "detail_endpoint": "detailImage2",
+    "detail_url_field": "originimgurl",
+    "note": "이미지는 TourAPI, 행사 참고 데이터는 전국문화축제표준데이터. searchFestival2와 detailImage2의 실제 응답을 확인함. 이미지명은 포스터 후보를 찾는 단서이며 이미지를 검토한 뒤 사용. 이미지 수집 출처만으로 event에 TourAPI 행사 값을 채우지 않음"
+  },
+  "normalization_rules": [
+    "정보 없음은 null. 빈 문자열을 null로 변환. 숫자 0이나 문자열 '무료'는 명시된 사실일 때만 저장",
+    "날짜는 실제 연도가 확인된 경우 YYYY-MM-DD. API 기준일 referenceDate를 행사 날짜나 이미지 수집일로 사용하지 않음",
+    "전화번호, 기관 코드, 콘텐츠 ID는 문자열. 위도/경도는 숫자",
+    "표준데이터 기관/장소 값의 '+'는 원문에 보존. 문자열 내용으로 자동 분할하거나 의미를 변경하지 않음",
+    "주최 host, 주관 organizer, 후원 sponsor를 따로 매핑. 기관 로고만으로 역할을 추정하지 않음",
+    "홈페이지 homepage와 장소 URL venue_url, 이미지 source_url, QR 목적지 URL은 의미가 다르므로 합치지 않음",
+    "API 연결은 같은 개최 건을 확인. 이름만 같은 2025년 API 레코드를 2026년 포스터의 reference로 채택하지 않음",
+    "포스터와 API 필드가 다르면 둘 다 보존하고 comparison에 different 기록. 결과 event는 검토 후 선택하며 field_sources에 출처 기록",
+    "포스터에만 정보가 있으면 poster_only, API에만 있으면 api_only, 둘 다 없으면 missing. 아직 추출/비교 전이면 not_compared",
+    "공통 키를 통일해도 해당 필드가 매번 두 출처에서 제공되는 것은 아님. 포스터에 주소·좌표·기관 역할이 없으면 해당 추출값은 null"
+  ],
+  "official_sources": [
+    {
+      "name": "전국문화축제표준데이터 출력결과 명세",
+      "url": "https://www.data.go.kr/data/15013104/standard.do",
+      "verified_on": "2026-10-13"
+    },
+    {
+      "name": "한국관광공사 국문 관광정보 서비스 공식 안내",
+      "url": "https://www.data.go.kr/data/15101578/openapi.do",
+      "verified_on": "2026-10-13"
+    }
+  ],
+  "common_record_sections": {
+    "image": "C가 수집한 원본 및 A가 생성한 실제 표시 이미지 메타데이터",
+    "ocr": "B의 실제 OCR 원문·confidence·표시 이미지 좌표·실행 정보",
+    "poster.event": "B 추출기의 포스터 관찰값. 샘플은 수동 관찰을 명시",
+    "reference.event": "C가 수집한 표준데이터 API 참고값",
+    "event": "비교·선택한 결과. 관찰값이나 평가 정답을 대체하지 않음",
+    "labels": "B/C와 사람 검토자가 관리하는 독립 정답·승인·수정 이력",
+    "dataset": "C가 관리하는 원본 그룹·분할·학습/평가 사용 상태"
+  }
+}

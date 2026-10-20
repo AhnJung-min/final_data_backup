@@ -1,0 +1,299 @@
+{
+ "case_id": "v2-010",
+ "engine": "easyocr+paddleocr",
+ "variant": "rgb_2x",
+ "scale": 2,
+ "normalized_dimensions": [
+  502,
+  627
+ ],
+ "input_dimensions": [
+  1004,
+  1254
+ ],
+ "input_sha256": "c90182d97b733ab474aea33fedbddd8d8806e4f743c6af016ad1e54e944cf19f",
+ "coordinate_space": "normalized_original_pixels",
+ "status": "success",
+ "records": [
+  {
+   "id": "easy_rgb_2x_000",
+   "text": "물과 꽃의 정원",
+   "confidence": 0.8770674467086792,
+   "bbox_xyxy": [
+    422.0,
+    26.0,
+    475.0,
+    38.0
+   ],
+   "polygon": [
+    [
+     422.0,
+     26.0
+    ],
+    [
+     475.0,
+     26.0
+    ],
+    [
+     475.0,
+     38.0
+    ],
+    [
+     422.0,
+     38.0
+    ]
+   ],
+   "baseline_text": "둘과 #의 성현",
+   "baseline_confidence": 0.11916770387283826,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "물과 꽃의 정원",
+     "confidence": 0.8770674467086792,
+     "bbox_xyxy": [
+      422.0,
+      26.0,
+      475.0,
+      38.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-010/rgb_2x/easy_rgb_2x_000"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_2x_001",
+   "text": "세미원",
+   "confidence": 0.9829312562942505,
+   "bbox_xyxy": [
+    419.0,
+    36.5,
+    476.0,
+    61.5
+   ],
+   "polygon": [
+    [
+     419.0,
+     36.5
+    ],
+    [
+     476.0,
+     36.5
+    ],
+    [
+     476.0,
+     61.5
+    ],
+    [
+     419.0,
+     61.5
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_2x_002",
+   "text": "2026 세미원",
+   "confidence": 0.9855145882439483,
+   "bbox_xyxy": [
+    34.5,
+    72.5,
+    224.5,
+    115.5
+   ],
+   "polygon": [
+    [
+     34.5,
+     72.5
+    ],
+    [
+     224.5,
+     72.5
+    ],
+    [
+     224.5,
+     115.5
+    ],
+    [
+     34.5,
+     115.5
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_2x_003",
+   "text": "수련문화제",
+   "confidence": 0.8337234616013234,
+   "bbox_xyxy": [
+    26.5,
+    118.5,
+    436.5,
+    222.5
+   ],
+   "polygon": [
+    [
+     26.5,
+     118.5
+    ],
+    [
+     436.5,
+     118.5
+    ],
+    [
+     436.5,
+     222.5
+    ],
+    [
+     26.5,
+     222.5
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_2x_004",
+   "text": "가을따라 흐르는 풍류, 수련올 깨우다",
+   "confidence": 0.771904924267235,
+   "bbox_xyxy": [
+    32.5,
+    224.5,
+    412.5,
+    258.5
+   ],
+   "polygon": [
+    [
+     32.5,
+     224.5
+    ],
+    [
+     412.5,
+     224.5
+    ],
+    [
+     412.5,
+     258.5
+    ],
+    [
+     32.5,
+     258.5
+    ]
+   ]
+  },
+  {
+   "id": "easy_rgb_2x_005",
+   "text": "09.01(화)",
+   "confidence": 0.8945766687393188,
+   "bbox_xyxy": [
+    35.0,
+    285.0,
+    156.0,
+    322.0
+   ],
+   "polygon": [
+    [
+     35.0,
+     285.0
+    ],
+    [
+     156.0,
+     285.0
+    ],
+    [
+     156.0,
+     322.0
+    ],
+    [
+     35.0,
+     322.0
+    ]
+   ],
+   "baseline_text": "09,UI(화)",
+   "baseline_confidence": 0.47054403853451304,
+   "baseline_recognition_engine": "easyocr",
+   "requires_review": true,
+   "alternatives": [
+    {
+     "text": "09.01(화)",
+     "confidence": 0.8945766687393188,
+     "bbox_xyxy": [
+      35.0,
+      285.0,
+      156.0,
+      322.0
+     ],
+     "engine": "paddleocr",
+     "attempt_id": "v2-010/rgb_2x/easy_rgb_2x_005"
+    }
+   ],
+   "recognition_engine": "paddleocr",
+   "selection_reason": "new_model_candidate_unverified"
+  },
+  {
+   "id": "easy_rgb_2x_007",
+   "text": "10,31(토)",
+   "confidence": 0.9682132157385226,
+   "bbox_xyxy": [
+    175.5,
+    282.5,
+    295.0,
+    322.5
+   ],
+   "polygon": [
+    [
+     175.5,
+     282.5
+    ],
+    [
+     295.0,
+     282.5
+    ],
+    [
+     295.0,
+     322.5
+    ],
+    [
+     175.5,
+     322.5
+    ]
+   ]
+  }
+ ],
+ "inference_seconds": 31.281,
+ "memory": {
+  "rss_bytes": 1427169280,
+  "peak_bytes": 1968771072
+ },
+ "pipeline": "paddle_regions_v1",
+ "missing_core_fields": true,
+ "refinements": [
+  {
+   "record_id": "easy_rgb_2x_005",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    61,
+    561,
+    321,
+    653
+   ]
+  },
+  {
+   "record_id": "easy_rgb_2x_000",
+   "reasons": [
+    "low_confidence",
+    "missing_or_conflicting_fields"
+   ],
+   "crop_box_input": [
+    841,
+    49,
+    953,
+    79
+   ]
+  }
+ ],
+ "easyocr_inference_seconds": 30.808,
+ "paddle_rec_seconds": 0.473
+}

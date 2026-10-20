@@ -1,0 +1,308 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-e97e53a56e34",
+  "image": {
+    "sha256": "e97e53a56e34aba54bd8619ef8e2d1125c5d16c38c82e2707f6846168e8c2fd4",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:23+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목은 '광명시' 아래 큰 '책'과 작은 '축제'가 나란히 배치되어 '광명시 책 축제'로 이음.",
+      "주최 기관명 뒤에 붙은 전화번호를 contacts에 기록하고 기관명을 department로 둠('문의' 라벨 없음).",
+      "admin_area는 제목의 '광명시'에서 읽음(장소의 '광명시민체육관'은 시설명).",
+      "검토: 변경 없음"
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 광명시 책 축제",
+    "official": "광명시 책 축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "무한한 탐험의 시작 다정한 도서 여행",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 9. 19. SAT",
+    "start": {
+      "iso": "2026-09-19",
+      "year": 2026,
+      "month": 9,
+      "day": 19,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "10:00 - 17:00",
+        "start": "10:00",
+        "end": "17:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "광명시민체육관 야외 잔디광장",
+    "items": [
+      "광명시민체육관 야외 잔디광장"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "광명시 책 축제",
+    "region": null,
+    "district": "광명시",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "광명시도서관정책과",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "광명시도서관",
+        "roles": [
+          "partner"
+        ],
+        "role_raw": "협력",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "경기도광명교육지원청",
+        "roles": [
+          "partner"
+        ],
+        "role_raw": "협력",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "광명시",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "광명시도서관정책과 02-2680-5442",
+        "value": "02-2680-5442",
+        "label_raw": null,
+        "department": "광명시도서관정책과",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "사전신청 바로가기",
+        "purpose": "registration",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "다함께 광명해요",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "플랫 일러스트",
+      "캐릭터 일러스트"
+    ],
+    "main_colors": [
+      "초록",
+      "연두",
+      "흰색",
+      "분홍",
+      "갈색"
+    ],
+    "main_objects": [
+      "펼쳐진 큰 책",
+      "탐험가 복장 캐릭터 4개",
+      "쌍안경",
+      "나침반",
+      "비행기",
+      "지도",
+      "책 더미",
+      "QR 코드"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "초록 배경에 펼쳐진 큰 책과 탐험가 모자를 쓴 캐릭터들, 쌍안경·나침반·지도 등 여행 소품을 그린 일러스트 포스터. 좌측 상단에 연도·제목, 우측 상단에 일정·시간·장소, 하단에 주최·협력 띠와 QR."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "443×627 이미지. 하단 주최·협력 띠와 QR 아래 안내 글자는 작지만 판독됨. 광명시 로고 위 아주 작은 글자만 판독 불가."
+    ]
+  }
+}

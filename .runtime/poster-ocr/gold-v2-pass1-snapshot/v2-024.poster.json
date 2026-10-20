@@ -1,0 +1,306 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-868022683e29",
+  "image": {
+    "sha256": "868022683e2950adbb11d2a8175aec1b505bd010cb7ea24717f2fc36c72d77ce",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:02+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'K-Miracle!' 아래 작은 두 줄 문구('? — 바다를 잇다')는 첫 글자를 확정하지 못해 slogans에 넣지 않음.",
+      "장소 아래 작은 주소 줄('충남 보령시 웅천읍 ?리 805-4 일원'으로 보임)은 리 이름을 확정하지 못해 address를 illegible로 둠. admin_area는 판독되는 '충남 보령시'만 기록.",
+      "하단 예산 표기('*???: 3.5억원(도비 0.8, 시비 2.7/ ???)'로 보임)는 앞 표기어와 괄호 끝 글자를 확정하지 못해 illegible로 둠.",
+      "좌상단 '희망찬 내일 즐거운 일상 건강한 보령' 손글씨는 줄 끝 문장부호를 확정하지 못해 부호 없이 기록. 그림 속 지명 '석대도 Sukdaedo'는 행사 정보가 아니라 기록하지 않음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제26회 무창포 2026 신비의 바닷길축제",
+    "official": "무창포 신비의 바닷길축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제26회",
+    "number": 26,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "K-Miracle!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 9. 11.(금) ~ 13.(일) 3일간",
+    "start": {
+      "iso": "2026-09-11",
+      "year": 2026,
+      "month": 9,
+      "day": 11,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-09-13",
+      "year": 2026,
+      "month": 9,
+      "day": 13,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": "3일간",
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "무창포해수욕장 일원",
+    "items": [
+      "무창포해수욕장 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "illegible",
+    "raw": null,
+    "kind": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "충남 보령시",
+    "region": "충남",
+    "district": "보령시",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "보령시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "충청남도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "illegible",
+    "raw": null,
+    "total_krw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "festival_designation",
+        "raw": "충청남도 1시군 1품 축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand_campaign",
+        "raw": "희망찬 내일 즐거운 일상 건강한 보령",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand_campaign",
+        "raw": "와wow!",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "플랫 일러스트",
+      "캘리그라피 영문",
+      "굵은 마젠타 제목"
+    ],
+    "main_colors": [
+      "하늘색",
+      "마젠타",
+      "남색",
+      "초록",
+      "회색",
+      "주황"
+    ],
+    "main_objects": [
+      "문어 캐릭터",
+      "새우",
+      "가자미",
+      "횃불을 든 손",
+      "소라껍데기",
+      "섬(석대도)",
+      "포옹하는 석상",
+      "바닷길"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색 바탕에 마젠타 굵은 글씨로 2026 신비의 바닷길축제를 크게 쓰고 문어 캐릭터·새우·가자미·횃불을 둘러 배치했으며, 하단에 섬과 바닷길·석상 일러스트, 일정·장소·주소·기관 로고·예산 표기를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 주소 줄과 예산 표기, 주관 로고 글자는 확대해도 일부 글자를 확정하지 못함.",
+      "우상단 '와wow!' 로고의 위·아래 작은 글자는 판독 불가."
+    ]
+  }
+}

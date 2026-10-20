@@ -1,0 +1,651 @@
+{
+ "proposals": [
+  {
+   "field_group": "title.raw/official selection, plus edition (year checked, left unchanged)",
+   "candidate_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\title\\extract.py",
+   "diff_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\title\\change.diff",
+   "changes": [
+    "Marginal numbers below come from ablation: the full candidate minus a copy with that one rule switched off. P = PaddleOCR rgb_2x title exact-match count, given as dev/test. Ablation copies are in .runtime/poster-ocr/proposals-v2/title/ablate/<rule>/.",
+    "R1 name-prefix join (pattern a). A small name line directly above the title block is joined to it. It qualifies if (1) it has a year or edition marker plus 1-3 Hangul words, such as '2026 포천', '제29회 포천 산정호수' or '2026 노원 야외도서관', or (2) it is a single Hangul word of 2-6 characters, such as '경남고성', '양양' or '양천가족'. It must also have no festival suffix and no punctuation, height at least 0.2x the line below (with a marker) or 0.3x (without), sit inside that line's horizontal span, and touch it vertically. A line with a marker counts as the top of the block, so the climb stops there. The block may now hold 4 lines, with at most 3 same-size lines. Marginal P +1/+11; hybrid +1/+10; EasyOCR 2x 0/+5 (dev CER better).",
+    "R2 transparent marker and symbol lines. When the neighbour search hits a line that holds only a year or edition ('2026', '제3회'), or only symbols ('*'), it skips past it instead of stopping. Example: the '2026' next to '송이연어' no longer cuts off '양양'. Marginal P +1/+1.",
+    "R3 digit ratio on the stripped text. The 'mostly digits' filter is now measured after the year and edition are removed, so '2026 예천' and '2026포천' are no longer thrown out as number lines. Marginal P +1/+3.",
+    "R4 below-line policy (pattern b). A line ending in a suffix with at least 2 name letters in front of it ('강남청년축제', '제7회 안양 청년 축제') counts as a complete title. Nothing below it is appended, which stops slogans like '윗니스 소셜링', '청춘은 보라' and '첨년?너도용?'. Two exceptions: (1) a continuation line starting with & or × in the same script ('& 농산물 한마당'), and (2) a same-size line with a year and a place name ('NS푸드페스타 / 2026 익산'). A line that is only a suffix ('페스티벌') can still continue downward ('K-밀리터리 / 페스티벌 / 춘천대첩' is kept). As one group: P +1/+4, hybrid 0/+6. On its own the block is P 0/+4 (dev CER better), the joiner exception +1/0 (test CER better), the year+place exception +1/0.",
+    "R6 Korean over Latin (pattern c). If any Hangul candidate line ends in a festival suffix, Latin-only lines take a penalty of -2.7 instead of -1.2. Fixes 'TENSiON TIENUP FESTA' -> '동대문구 청소년 페스티벌' (dev v2-162). Marginal P +1 dev / 0 test exact. Test CER improves (v2-188 goes from the English variant to the Korean official, which OCR misread, '고등어죽제'), but title_any loses 1 on test. Hybrid +1 dev.",
+    "R7 misread edition marker. A token at the start of a word of the form 제 + 0-2 characters + 회 ('제크회', '제도회', '제근근회', '제회') is treated as an edition marker. It is removed from title.official, counts as a marker for R1/R2, and the edition number is not filled in. A guard keeps words like '제주회관'. title.official now goes through a single title_core(), which also strips '2026년' before the bare year. In v1 that order left a stray '년' in the title. Marginal P 0 dev / +3 test; hybrid 0/+2; EasyOCR 0/+1 (dev CER better).",
+    "R10 other edition forms. Native Korean ordinals ('첫 번째 이야기' = 1 ... '열 번째') and 'N주년' are read only when no 제N회, Nth or N번째 is present. An ordinal followed by 날, 일, 밤, 주 or 시간 is not an edition: '두 번째 날 공연' stays absent, as the existing test requires. Marginal edition P +1 dev / +2 test, and +1/+1 or +1/+2 on every other pipeline.",
+    "Infrastructure: ROOT now looks upward for data/festivals/poster.template.json. Without this the copy under .runtime cannot find the template. It has no effect when the file sits in app/poster_ocr.",
+    "Group results, P dev/test: assembly (R1-R4) +3/+16; edition handling (R7+R10) title 0/+3 and edition +1/+2. Full candidate against v1: P title +4/+18, edition +1/+2, core +2/+6. No title, edition, year, venue, schedule or list-field case got worse in exact match on any pipeline.",
+    "Tried and NOT included, because they do not improve both PaddleOCR splits. (1) More suffix words: (예술|영화|가요|음악|연극|국악|무용|아리랑|단오)제, 대전 after 2+ Hangul characters, 도서전. Test +1 on all 4 pipelines (v2-009), P dev 0. (2) Bonus for a title right after a year or edition line, plus excluding badge lines like '경기도 대표축제'. P 0/0 (test CER -0.0006); EasyOCR 2x title +1/+1 with dev CER 0.504 -> 0.470; hybrid dev +1. (3) A size reference that ignores short, low-confidence Latin noise: P 0/+1 (v2-025). (4) A confidence floor on joined lines (0.3 or 0.1): it broke EasyOCR, whose correct title lines often score 0.02-0.08, so it was dropped."
+   ],
+   "dev_before": "Rules v1 (app/poster_ocr/extract_v1.py), shown as dev | test. Counts are correct/n; CER = mean title_cer.\npaddleocr/rgb_2x: title 23/60 (0.3833) | 35/140 (0.25); title_any 24 | 41; edition 16/25 (0.64) | 41/54 (0.7593); year 52/53 (0.9811) | 129/134 (0.9627); core_all 18/55 (0.3273) | 7/131 (0.0534); CER 0.4166 | 0.4583.\nhybrid/rgb_2x: title 20/60 (0.3333) | 27/140 (0.1929); title_any 21 | 28; edition 18/25 (0.72) | 31/54 (0.5741); year 48/53 | 128/134; core 10/55 | 4/131; CER 0.4478 | 0.4975.\neasyocr/rgb_2x: title 12/60 (0.20) | 14/140 (0.10); title_any 12 | 15; edition 11/25 (0.44) | 21/54 (0.3889); year 49/53 | 117/134; core 3/55 | 0/131; CER 0.5202 | 0.6048.\neasyocr/rgb_1x: title 11/60 (0.1833) | 14/140 (0.10); title_any 11 | 16; edition 11/25 | 19/54 (0.3519); year 48/53 | 113/134; core 1/55 | 1/131; CER 0.5433 | 0.5975.",
+   "dev_after": "Candidate (.runtime/poster-ocr/proposals-v2/title/extract.py), shown as dev | test. Schema-invalid documents: 0. tests/test_poster_ocr.py: 17 passed on the original, and 17 passed with the candidate swapped in for app.poster_ocr.extract.\npaddleocr/rgb_2x: title 27/60 (0.45) | 53/140 (0.3786); title_any 28 | 56; edition 17/25 (0.68) | 43/54 (0.7963); year 52/53 | 129/134 (unchanged); core_all 20/55 (0.3636) | 13/131 (0.0992); CER 0.3692 | 0.3504.\nhybrid/rgb_2x: title 22/60 (0.3667) | 45/140 (0.3214); title_any 22 | 45; edition 19/25 (0.76) | 33/54 (0.6111); year unchanged; core 11/55 | 7/131; CER 0.4147 | 0.4037.\neasyocr/rgb_2x: title 12/60 | 22/140 (0.1571); title_any 12 | 25; edition 12/25 (0.48) | 22/54 (0.4074); year unchanged; core 3/55 | 0/131; CER 0.5038 | 0.5309.\neasyocr/rgb_1x: title 11/60 | 19/140 (0.1357); title_any 11 | 22; edition 12/25 (0.48) | 20/54 (0.3704); year unchanged; core 1/55 | 2/131; CER 0.517 | 0.549.\nOther fields: venue, schedule_pair, start_year, weekday and the organization, contact, link and time F1 are identical. admin_district moves +1 on some splits, because the title fallback lines changed.\nStrict variant without R6 and R7 (each fails the two-split test on its own): PaddleOCR title 26/60 | 50/140, hybrid 21/60 | 43/140, EasyOCR 2x 12/60 | 21/140.",
+   "regressions": "No case lost an exact title, edition or year match against v1 on any of the 4 pipelines or either split. Smaller costs:\n(1) Edition presence: one new false positive per pipeline on test, from v2-109 '제76주년 춘천지구전투 전승행사'. That is a battle anniversary; gold edition is absent. Edition precision drops by that one case.\n(2) title_any: PaddleOCR test loses v2-188. The English variant 'BUSAN MACKEREL FESTIVAL' gives way to the Korean line, which OCR misread as '부산 고등어죽제' (CER 1.00 -> 0.14). Hybrid dev loses v2-144, where '정선야행 걷는밤물관' (a gold variant) is now cut to '정선야행' by R4. Both are offset in the totals: PaddleOCR title_any +4/+15, hybrid +1/+17.\n(3) Title CER worse in one case: PaddleOCR dev v2-027, '사성 FO:8E3R' -> '사성'. Both are garbage readings of an English title.\n(4) Acceptance caveat: R6 (PaddleOCR dev +1, test exact 0 but CER better) and R7 (dev 0, test +3) each fail the strict 'improve dev AND test on PaddleOCR' check alone. They pass inside their groups and have no regressions anywhere. The strict variant without them is PaddleOCR 26/60 | 50/140.",
+   "remaining_errors": "PaddleOCR, all 200 dev+test cases with a gold title: 80 correct, 120 wrong. In 78 of the wrong ones the gold title words never appear in the OCR output, so no rule can fix them. Examples: 신연/진연, 전어꾸게, 홍성남당향, 아해/야행, 들론, 미추를, 과전, 일싸, 믿야, '202b세계문화유산'.\nFor hybrid the split is 67 correct, 27 wrong but readable, 106 not read. EasyOCR 2x: 34 / 14 / 152.\nThe remaining errors where the text was readable are mostly beyond simple line rules:\n(a) The venue rule takes the prefix line before title selection runs: v2-022 '덕수궁' and v2-062 '제20회 하동북천' end up as the venue. The fix belongs in venue: refuse lines that carry an edition marker, or lines stacked directly on the title.\n(b) Vertical text and stacked or column layouts, where box height is not font size: v2-004, v2-115, v2-064, v2-134.\n(c) The title appears only inside a sentence or in small text: v2-030, v2-008, v2-029.\n(d) The real title sits low on the poster and loses to a large slogan on position: v2-159.\n(e) A Latin year+place prefix ('2026 GWANGJU', v2-111). R1 accepts Hangul prefixes only.\n(f) The gold title ends in a word that is not a festival suffix, or includes a subtitle: v2-016 '화적연 천년의 약속', v2-121 '장항 1931 밤의 기행' (the '1931' line breaks the chain as a digit line).\n(g) A misread edition number cannot be filled without correcting characters ('제6희', '제1회' for 17, '제회'). Gold 'Nth' forms are often missing from OCR entirely.\nYear: every remaining error is OCR. Either no 20xx is printed or read (v2-118, v2-134, v2-141 '2 0 26', v2-159), or the poster year is misread or crowded out by a badge line ('2025-2025한국…', v2-043). Year rules were left unchanged."
+  },
+  {
+   "field_group": "schedule: start/end dates, printed weekday, year basis, cross-line date ranges, operating times (schedule.times), duration_raw",
+   "candidate_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\schedule\\extract.py",
+   "diff_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\schedule\\change.diff",
+   "changes": [
+    "G0 (no effect on outputs): ROOT line replaced by the same PROPOSAL-SHIM the other proposals use, so the copy finds data/festivals/poster.template.json from .runtime/. Drop this line when merging into app/. The file is LF like extract_v1.py. change.diff was checked: applied to extract_v1.py it reproduces the candidate.",
+    "G1, read garbled date expressions (new D_* patterns; the v1 RANGE_RE/RANGE_NOSEP_RE/SINGLE_RE are kept unchanged for the venue code). (a) Unreadable weekday slot between the start date and the range sign: 2-3 mixed letter/digit chars ('5R1', '5at'), up to 4 chars in brackets ('(S00)', '(퇴)', '()'), or one symbol ('@', '©', '*', '°', '≠'). The slot is skipped and the weekday stays null. A legible Korean weekday char inside the noise is read ('1금|'). A bracketed weekday beats a bare char glued to the day ('16월(금)' -> fri). (b) The end-date weekday slot eats bracket noise ('8(입)'). (c) '/금' slash weekday. (d) An end month is read only if it is 1-12 ('~31.0' -> day 31). (e) New range signs: '→ ▶ ▸ _'. (f) Circled digits ①② are treated as a symbol '○', for date search only. NFKC had turned '12⑤' into '125'. (g) No-separator ranges also accept '|' and a date right after ')' ('3.(토)4.(일)'). Two dot-terminated dates ('09.18. 09.20.') are accepted with a noisy penalty. No characters are corrected and the calendar never fills a weekday. Group effect on pair (with vs without): PaddleOCR dev +1, test +13 (the later '|'/')' addition gave PaddleOCR test another +2); hybrid dev +4, test +4 (+3 from the '|'/')' addition); EasyOCR 2x test +4; EasyOCR 1x dev +1, test +5.",
+    "G2, date ranges split across lines. Two-line windows now also use the same-row right neighbour (a line split into two OCR records in swapped reading order) and the nearest line below in the same column. A strong one-line date no longer blocks the two-line window when the line ends with a range sign or the next line starts with one (up to 4 noise chars allowed before it: '2026.9.25.~' + '27.', '2026,9.18.' + 'FAI _ 20.'). Effect: PaddleOCR test pair +4, start_year +1, year +1. PaddleOCR dev pair unchanged, but year_basis improves 52 -> 55 of 58 (the year line is now joined to the date text). EasyOCR and hybrid dev pair +1 each (v2-041); all other pipelines improve on test.",
+    "G3, pairing consistency. (a) A single date that already sits inside a range on the same line is not paired ('10.16 (금)' + '10.17(토)-10.25'). (b) All pairs need similar text height (0.7-1.43); v1 required this only for weak pairs. This drops small notice dates such as a traffic-control '10.26'. (c) No pairs are formed inside a stacked list of 3 or more same-size date lines in one column (timetables, session lists). Effect: PaddleOCR pair dev +1, test +1; hybrid dev +1, test +2; EasyOCR test +2 (2x) and +2 (1x).",
+    "G4, multi-session union (extend_sessions). When the chosen schedule lines contain only dates, the period is widened to adjacent same-size date-only lines (within 1.5 line heights vertically and 6 horizontally, 120 days at most). Date-only means that after removing dates, weekdays, date labels and operating-day phrases ('매주 토,일', '주말', '평일', '매일') at most 2 letters remain. Effect: PaddleOCR pair dev +1 (v2-079), test +2; hybrid test +4; EasyOCR test +3 (2x) and +2 (1x).",
+    "G5, operating times (operating_times). (1) Time ranges on the schedule lines, plus a single 'HH:MM' on the start-date line ('5.(퇴)19:30'). Two 'HH:MM' separated only by a space count as one range. (2) Otherwise, time-only lines directly below or right of the schedule (chained down through further time-only lines), or lines with a time label (운영/관람/개방/오픈/입장/행사/축제 시간, OPEN, TIME, HOURS). (3) Otherwise all poster time ranges, but only if there are at most 2. This replaces 'every time range on the poster, first 6'. Effect on times F1: PaddleOCR dev 0.828 -> 1.000, test 0.730 -> 0.866; hybrid dev 0.500 -> 0.737, test 0.632 -> 0.702; EasyOCR 2x test 0.383 -> 0.408; EasyOCR 1x unchanged.",
+    "G6, schedule-line remainder used as the venue (pick_venue step 2). Dates are stripped with the D_* patterns, and time spans before dates ('10:00-21:00' used to leave '10: :00'). This stops the new schedule lines from leaking date or time fragments into the venue. Effect on venue: PaddleOCR dev +1, test +1. Without it, hybrid dev venue dropped by 1 (v2-196).",
+    "Rejected after testing: (a) pairs only between date-only lines: hurt EasyOCR and hybrid dev and test (date lines that carry a venue). (b) Height bonus relative to the largest date candidate: PaddleOCR dev 0, test pair +1 but weekday -1. (c) No calendar bonus for a '일' suffix read as Sunday: no effect anywhere. (d) Filling weekday from the calendar: the schema says it must not be computed."
+   ],
+   "dev_before": "v1 extract_v1.py, counts correct/n. DEV and TEST shown together. PaddleOCR rgb_2x: DEV pair 51/58, start 56/58, end 52/58, start_weekday 39/56, start_year 51/53, year 52/53, duration 1/4, times tp12/fp5/fn0 (F1 0.828), schedule presence recall 57/58, venue 37/56, core 18/55; TEST pair 104/139, start 117, end 109, weekday 83/129, start_year 118/133, year 129/134, duration 6/7, times tp27/fp10/fn10 (F1 0.730), presence 125/139, venue 59/131, core 7/131. Hybrid rgb_2x: DEV pair 39/58, start 46, end 43, weekday 27/56, start_year 44/53, times F1 0.500; TEST pair 83/139, start 108, end 86, weekday 65/129, start_year 108/133, times F1 0.632, core 4/131. EasyOCR rgb_2x: DEV pair 34/58, end 36, weekday 30/56, times F1 0.286; TEST pair 58/139, start 79, end 65, weekday 54/129, start_year 82/133, times F1 0.383. EasyOCR rgb_1x: DEV pair 35/58, start 41; TEST pair 58/139, start 78, end 67, weekday 45/129, start_year 81/133, times F1 0.238. Extra metrics (not in evaluate.py), start.year_basis agreement: PaddleOCR 52/58 dev, 105/139 test; hybrid 41/58, 92/139; EasyOCR 2x 34/58, 72/139.",
+   "dev_after": "Candidate, same units, 0 schema-invalid documents. PaddleOCR rgb_2x: DEV pair 54/58 (+3), start 56, end 55 (+3), weekday 39/56 (=), start_year 51/53 (=), year 52/53 (=), duration 1/4 (=), times tp12/fp0/fn0 (F1 1.000), presence 57/58, venue 38/56 (+1), core 18/55 (=); TEST pair 125/139 (+21), start 130 (+13), end 126 (+17), weekday 89/129 (+6), start_year 124/133 (+6), year 130/134 (+1), duration 7/7 (+1), times tp29/fp1/fn8 (F1 0.866), presence 131/139 (+6), venue 60/131 (+1), core 9/131 (+2). Hybrid rgb_2x: DEV pair 45/58 (+6), start 49 (+3), end 48 (+5), weekday 28/56 (+1), start_year 44 (=), times F1 0.737; TEST pair 100/139 (+17), start 114 (+6), end 101 (+15), weekday 69 (+4), start_year 111 (+3), times F1 0.702, core 5/131 (+1). EasyOCR rgb_2x: DEV pair 35/58 (+1), end 37 (+1), weekday 30 (=), times F1 0.286 (=); TEST pair 69/139 (+11), start 87 (+8), end 75 (+10), weekday 57 (+3), start_year 88 (+6), times F1 0.408. EasyOCR rgb_1x: DEV pair 36/58 (+1), start 42 (+1); TEST pair 67/139 (+9), start 84 (+6), end 75 (+8), weekday 49 (+4), start_year 84 (+3), times F1 0.238 (=). Extra metrics, year_basis: PaddleOCR 55/58 dev, 119/139 test; hybrid 44/58, 102/139; EasyOCR 2x 37/58, 80/139. End-weekday and schedule.raw similarity of at least 0.8 also rose on every pipeline in both splits. Tests: pytest tests/test_poster_ocr.py gives 17 passed. The same 17 tests also pass when run against the candidate extractor; I called the test functions directly, because pytest cannot collect a copied test file from the Windows temp directory.",
+   "regressions": "No metric got worse. I compared every field, list (organizations, contacts, links, times) and presence slot reported by evaluate.summarize, before and after, for all 4 pipelines and both splits. Every count is equal or better: title, title_cer, edition, address, admin_district, budget, organizations, contacts and links are unchanged, and venue only went up (PaddleOCR dev +1, test +1). At case level, one prediction got worse but its score did not change (v2-109 PaddleOCR test: the start weekday was right only by chance, read from a program-table pair). During development I saw and removed two regressions before the final version: hybrid dev v2-169 start (fixed by giving dot-only no-separator ranges the noisy penalty) and hybrid dev v2-196 venue (fixed by G6). Acceptance rule: G1, G3, G4, G5 and G6 improve PaddleOCR dev and test separately on evaluate.py fields. G2 leaves PaddleOCR dev pair unchanged (no dev case was fixable). On dev it improves year_basis 52 -> 55 of 58, which is in this field group but is not scored by evaluate.py, and it fixes v2-041 on EasyOCR and hybrid dev. G2 is a separate block (date_neighbors plus RANGE_TAIL/RANGE_HEAD in date_candidates) if you prefer to judge it on evaluate.py fields alone. The reserve (r2-*) gold, OCR and predictions were never opened.",
+   "remaining_errors": "PaddleOCR dev pair errors: 4. All are OCR misreads: v2-047 '10.71', v2-094 '10.03(10.24토)', v2-138 (only '17' was read for the end), v2-181 '2026.10.240~25.2일간'.\n\nPaddleOCR test pair errors: 14.\n- About 10 are OCR: v2-019 '9.4563', v2-048 ':' read for the separator plus a garbled weekday, v2-073 '10.017', v2-098 '10.II', v2-118 date not read, v2-121 list merged into '10.30.010.31.', v2-130, v2-133 '16.1-18.5.v', v2-134, v2-176 '10.232)', v2-191 '10.30.0-31.0'.\n- Rule errors still open:\n  - v2-006: a second range on the same line has no separator ('9.4.()5,').\n  - v2-012: English month name ('September 2(Wed) - 6(Sun)'); 1 poster, also fails on the other engines.\n  - v2-109: a program-table pair with read weekdays beats the main range whose start weekday is '()'. Relative-height scoring fixes it but was dev-neutral, so I dropped it.\n\nWeekday: most remaining start_weekday errors are the weekday glyph misread by OCR ('0', '3', '9', '②', '@', '*', 's', 'e'). The schema says weekday must not be computed from the calendar, so these are not fixable by rule.\n\nYear: remaining errors are OCR artifacts: spaced '2 0 26' (v2-141), split '0 2 6' + '2' (v2-159), '12026' (hybrid v2-158), '202640' (v2-084), and a '2020' elsewhere on hybrid v2-154. A spaced-digit year rule would fix 1 PaddleOCR case, so I did not add it.\n\nTimes false negatives: v2-150 lone '13:00' (its '오픈시간' label not read, not adjacent); v2-176 'AM.10 ~ PM.7' format; v2-059 '14:00~-2000' garbled; v2-089 '1:00' OCR misread for 11:00.\n\nduration_raw: PaddleOCR dev 1/4. The other 3 are OCR ('(4일2)', '3일간' never read) or the schedule was not detected (v2-181).\n\nNo schema change was needed. evaluate.py does not score year_basis, end weekday or schedule.raw; I measured these with a separate script, extra.py, in the scratchpad sched/ folder."
+  },
+  {
+   "field_group": "venue raw/items, address, admin_area (scored as venue, venue_partial, address, admin_district, plus presence of venue/address/admin_area)",
+   "candidate_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\venue\\extract.py",
+   "diff_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\venue\\change.diff",
+   "changes": [
+    "Row-neighbour merge (row_neighbors). build_lines only attaches records to the right, so a left record with a slightly lower centre ('서천군 홍원항' + '일원 (…)'), or a fragment sitting between two records, ended up as a separate line. A line is now joined to the chosen venue line when they overlap vertically by at least 60%, have similar height (0.75-1.33, or 0.5-1.5 for a '(' line or a line with a venue word) and sit close together horizontally, and the neighbour has no date, year, role, phone, title suffix or address. Ablation on PaddleOCR: dev venue +1, test venue +8 and admin +2.",
+    "Column-based up/down continuation (column_line + continuation). This replaces v1's index±1 neighbour, which picked lines from a parallel column that fell between the two in reading order. A line that overlaps vertically with the venue box by more than half its height (for example a giant title) is not a neighbour. A neighbour is joined if it ends with a joiner, is a '(' caption, or contains a venue word (0.75-1.33 height, aligned). It is not joined if it is an address line, a Latin-only translation, or contains a date; when a line contains a date, only its leading segment is joined, and only if that segment has a venue word. The VENUE_WORD path now needs a height ratio of at least 0.75. Fixes trailing junk such as v2-009/024/147/174 and two-line venues such as v2-128/190/056/021.",
+    "Short prefix/suffix lines without a venue word (for example '영동 레인보우' / '힐링관광지 일원', '벽골제 중심') are joined only when they are tightly stacked: 0.85-1.18 height ratio, a gap of at most 0.3 line, at most 10 Hangul characters and 3 words, aligned left, right or centre. Ablation on PaddleOCR: dev venue_partial +1, test venue +6, core_all +3.",
+    "VENUE_WORD refinement. Short words that often sit inside other words (궁, 홀, 섬, 숲, 월드, 랜드, 마당) now count only at the end of a word, and '아트' alone no longer counts; this removes 홀리데이, 브랜드, 미디어아트 and 궁금 false hits. Added 전역, 축제장, 행사장, 주차장, 야영장, 시네마, 영화관 and '(시|군|구)청 앞'. Latin words PARK, Hall, Center, Square, Stadium, Plaza, Arena, Museum and Theater count at word boundaries. Hangul options are preferred over Latin-only ones, and 일원/일대/전역 lines over others. Ablation on PaddleOCR: dev 0, test venue +7 and admin +2; positive on every pipeline.",
+    "Tail cut (cut_venue_tail inside clean_venue). The text is cut at a phone number, at contact marks (문의, 전화, TEL, ☎, 홈페이지, www, http) and at role marks (주최, 주관, …), and a trailing Latin translation of 2 or more words outside parentheses is dropped. A leading lone 'I', 'l' or '|' separator token is also stripped. Ablation: PaddleOCR dev venue_partial +1, test venue +1; hybrid dev venue +1 and core +1.",
+    "Safe date stripping in venue text (date_spans, strip_dates_safe, date_segments). This replaces v1's strip_dates and DATE_RESIDUE. A bare M.D with no year or weekday is not treated as a date when it is glued to a number ('526-7' was being eaten as '26-7'), followed by 번/호/층/동/길/로 ('1.2번 출구'), or followed directly by a Hangul syllable that is not a weekday ('5.18민주광장'). Added a lone time 'HH:MM', Korean 'M월 D일' and empty weekday boxes ('25.()') as residue. In the schedule-line-rest step, venue_segment is now used instead of remove_tokens, so 'X | 포천시 …' after a lone time is split cleanly. Ablation: PaddleOCR test venue_partial +2, hybrid test venue +1.",
+    "Venue options are judged on the text cut before contacts and roles ('합천 대장경테마파크 #… 주관' is now a candidate). Institution-only names that sit in a bottom-15% logo strip next to other entries ('국가유산청 … 경주문화원') are not venues. Ablation: hybrid dev venue +1 and core +1 for each rule; PaddleOCR neutral.",
+    "admin_area: names printed without a suffix, with evidence (district_stems, bare_district). If no suffixed 시/군/구 is found in the venue, address or title, and the same poster prints NAME+시/군/구 somewhere else (for example '주최: ○○군'), then NAME is taken as printed when it begins a word in the title, or when it is a separate word in the venue ('목포 근대역사 …', '영천한방축제'). Names glued inside facility names ('진주성', '원주종합운동장') are not used. This uses no external list. Ablation on PaddleOCR: admin_district dev +1, test +4; easyocr 2x dev +1/test +5, hybrid dev +1/test +6.",
+    "Plumbing: pick_venue receives the image height, and admin_area receives all lines (for the evidence check). The PROPOSAL-SHIM ROOT line is only there so the copy runs from .runtime; drop it when merging.",
+    "Tried and DROPPED under the acceptance rule. (1) Allowing '청' after a district name (성북구청 -> 성북구): PaddleOCR dev -1 (v2-154, gold uses the title's bare '구미'), test +2. (2) Excluding edition, organization-ending and sentence-like lines from venue options: zero accuracy effect, and venue presence -1 on dev. (3) English month-name dates (one case). (4) A '(' caption joined at height ratio 0.35 (one case; easyocr test venue_partial -1). (5) Keeping only same-size records within the venue line (one case). (6) Jibun address without a region prefix ('종화동 526-7'; one hybrid case). (7) Stripping a leading ')' fragment and (8) a leading glued digit ('0평화공원'): PaddleOCR 0/0 on dev, test-only on other pipelines."
+   ],
+   "dev_before": "Original app/poster_ocr/extract_v1.py (correct/n). Run in .runtime/poster-ocr/proposals-v2/venue/before; re-run after evaluate.py changed on disk, numbers identical.\npaddleocr/rgb_2x  DEV venue 37/56 (.661), venue80 40/56 (.714), address 1/5, admin_district 11/25, core 18/55 | TEST venue 59/131 (.450), venue80 75/131 (.573), address 4/7, admin_district 14/63, core 7/131\neasyocr/rgb_2x    DEV venue 14/56, venue80 30/56, address 0/5, admin 8/25, core 3/55 | TEST venue 18/131, venue80 57/131, address 0/7, admin 5/63, core 0/131\neasyocr/rgb_1x    DEV venue 17/56, venue80 30/56, address 0/5, admin 8/25, core 1/55 | TEST venue 19/131, venue80 50/131, address 0/7, admin 3/63, core 1/131\nhybrid/rgb_2x     DEV venue 28/56, venue80 37/56, address 1/5, admin 6/25, core 10/55 | TEST venue 48/131, venue80 81/131, address 2/7, admin 7/63, core 4/131\nPresence (tp/fp/fn), PaddleOCR: venue dev 55/0/1, test 117/5/14; admin_area dev 17/0/15, test 25/4/46; address dev 5/0/0, test 6/0/1.",
+   "dev_after": "Candidate (correct/n). Run in .runtime/poster-ocr/proposals-v2/venue/after; schema-invalid documents: 0.\npaddleocr/rgb_2x  DEV venue 41/56 (.732, +4), venue80 47/56 (.839, +7), address 1/5 (0), admin_district 12/25 (+1), core 18/55 (0) | TEST venue 85/131 (.649, +26), venue80 105/131 (.802, +30), address 4/7 (0), admin_district 21/63 (+7), core 12/131 (+5)\neasyocr/rgb_2x    DEV venue 14/56 (0), venue80 30/56 (0), address 0/5, admin 9/25 (+1), core 3/55 | TEST venue 20/131 (+2), venue80 62/131 (+5), address 0/7, admin 10/63 (+5), core 0/131\neasyocr/rgb_1x    DEV venue 17/56 (0), venue80 30/56 (0), address 0/5, admin 8/25 (0), core 1/55 | TEST venue 20/131 (+1), venue80 52/131 (+2), address 0/7, admin 8/63 (+5), core 1/131\nhybrid/rgb_2x     DEV venue 32/56 (+4), venue80 42/56 (+5), address 1/5, admin 7/25 (+1), core 12/55 (+2) | TEST venue 55/131 (+7), venue80 94/131 (+13), address 2/7, admin 14/63 (+7), core 4/131\nPresence (tp/fp/fn), PaddleOCR: venue dev 54/0/2, test 121/4/10; admin_area dev 17/2/15, test 33/11/38; address dev 5/0/0, test 6/0/1.\nThe acceptance rule holds for the change set. PaddleOCR improves on dev and on test separately for venue, venue80 and admin_district (address unchanged). No split on any pipeline drops on venue, venue80, address, admin_district or core.\ntests/test_poster_ocr.py: 17 passed. The candidate copy of that test file (.runtime/poster-ocr/proposals-v2/venue/test_venue.py), with 5 added v2 synthetic tests: 22 passed.\nPer-family ablations are in .runtime/poster-ocr/proposals-v2/venue/ablate/*/out.",
+   "regressions": "None on the scored value fields: venue, venue_partial, address, admin_district and core_all are equal or better on every pipeline and split. title, schedule, year, edition, weekday and the organization/contact/link/time lists are unchanged everywhere. Side effects:\n(1) admin_area presence false positives rise: PaddleOCR dev fp 0 -> 2, test 4 -> 11; hybrid dev 0 -> 1, test 4 -> 6; easyocr 2x test 2 -> 4; easyocr 1x test 4 -> 7. The new outputs are city names actually printed in the title or venue that the gold left absent: dev v2-045 '경주국가유산야행' -> 경주, v2-094 '청주의보물' -> 청주; test 부천국제만화축제, 강남청년축제, '포천 화적연', 서귀포, 안산, 진주성도. The gold is inconsistent here: v2-190 '목포 …' -> 목포 and v2-078 '영천한방축제' -> 영천 are labelled present.\n(2) Venue presence on dev drops by 1 TP on PaddleOCR (v2-099: the garbage '궁문화속진' is no longer emitted because 궁 now needs a word end). The value was wrong either way.\n(3) easyocr/rgb_2x test organizations presence: tp 17 -> 16, because a venue line is now in `used` and unlabeled_institutions skips it. The org list F1 is unchanged.\n(4) Note on the ablate/ variants: they were generated from the file just before the final pruning step, which still had the leading-digit rule (it affected only easyocr/hybrid test). The other family numbers are unaffected.",
+   "remaining_errors": "PaddleOCR test has 46 venue errors left. Most are OCR misreads, where gold was read but with wrong characters (no rule may fix these): 명송/명승, 광기/경기, 금왕을/금왕읍, 반포다트/반포대로, 피크뮤직홀 참작소, 칠곡 '명원'/일원, 꽃들/꽃뜰, 강룡/강릉, 전남광주동합, 일내/일대, 걸고싶은/걷고싶은, 안징리/안정리, 증회동/종화동, 응산/용산; dev v2-079/094/122/132/138/164/192.\nRule-level errors that remain:\n- v2-157: an address glued to the venue with no space ('간현관광지주차장원주시 지정면…'). No boundary can be found without a place-name list.\n- v2-163 ('왜관시가지 1번도로'), v2-069 ('계룡대 활주로'), v2-149 ('조선왕릉 12곳'), v2-017 ('수왜관수도원수'): no general venue word, or garbled.\n- v2-065 and v2-123: interleaved date/venue layouts where the venue sits on a different schedule line.\n- v2-085 and v2-097: several venue blocks; gold picked a different one than the line nearest the schedule.\n- v2-023: the venue sits inside the merged giant title record.\n- v2-185: the prefix line 'K-55 정문앞' is 1.6x taller than the venue line.\n- v2-001: a slogan with '무대' is still chosen (dropping the sentence filter cost nothing measurable).\n- v2-012 (English month-name date) and v2-087 ('원)' prefix): the fixes were dropped as single-case.\nAddress: the remaining errors are OCR misreads (v2-001/018/088/174/200), apart from v2-137, which needs the dropped jibun rule, and v2-157 (glued address).\nadmin_district: 42/63 test cases still wrong. Most are bare names in the title with no suffixed form readable anywhere on the poster: the footer logos are tiny and misread ('포전시', '예진군', '공감평군'). They could only be fixed with an external place-name list, which the principles forbid. A few remain wrong because the title line chosen by the extractor is not the one holding the name (v2-138 '2026 익산')."
+  },
+  {
+   "field_group": "lists: organizations (roles + names), contacts, links, budget_disclosure, admission, notices, badges",
+   "candidate_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\lists\\extract.py",
+   "diff_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\lists\\change.diff",
+   "changes": [
+    "How changes were accepted: a change is kept only if, at the level of its field, it improves PaddleOCR dev AND test separately. Every sub-rule inside a kept field also has to be >= 0 on all 4 pipelines x 2 splits (checked by leave-one-out ablation). Sub-rules whose own effect falls on only one split are marked below so the merger can drop them if it wants per-rule strictness.",
+    "ORG-1 (first name cell after a bare role label): the gap allowed after a label with no name in the same record goes from 2.5x to ORG_FIRST_GAP=4.5x the label height, because a logo sits in between (e.g. '후원 [logo]영천시 주관 [logo]대구한의대학교'). That cell may also be a taller logo text, up to ORG_TALL=3.0x the label height (old limit 1.8). The gap part alone gives Paddle test +4 TP; the tall part alone gives Paddle dev +1 TP. The result is flat for gap 4-6 and tall 2.6-3.5.",
+    "ORG-2 (low-confidence names): a name whose own OCR records have confidence < ORG_MIN_CONF=0.5 (same threshold for every engine) is output as name=null, legibility=illegible, with role and role_raw kept. The schema and validator already allow this, and poster.py flags it as role_name_unclear for human review. No characters are changed. This removes garbled names: Paddle FP dev 31->28, test 54->47 (counted with ORG-1 on); EasyOCR 2x test 19->4; hybrid test 26->11. No TP lost on any pipeline. A threshold of 0.6 or 0.7 was rejected because EasyOCR dev then loses its only TP.",
+    "ORG-3 (name cleanup; each part's own effect is test-only, dev-neutral, never negative): (a) lone hangul jamo (U+1100-11FF, U+3130-318F, e.g. logo icons read as 'ㅅ') split names; (b) trim_edge_junk drops a separate leading/trailing token that is digits or symbols only, or a single Latin letter, when >= 2 hangul remain ('6 인천대학교'; 'CJ 제일제당' and 'K water' are kept); (c) a cell containing 문의/전화/TEL/☎ ends the label's name list; (d) ※ # * and bullets are stripped from name edges. Together they give Paddle test +2 TP / -2 FP.",
+    "CON-1: 15xx-xxxx numbers become kind='other', value='1566-3333', matching the gold convention and the schema (a phone value needs an area code). Before, they were kind=phone and counted as FP in both splits (v2-181 dev, v2-109 test).",
+    "CON-2 (PHONE_GLUED): a valid Korean area code (02, 0[3-6][1-5], 01[016-9], 070, 080) is matched even when logo or symbol characters are glued in front ('E3033-460-8900', '#2041-521-3786', '80041332-3506'), or when ')' after the area code was read as '}' or ']'. The exchange part must not start with 0, which removed the only false match found ('14052003-1100'). Paddle dev +1, test +3. Used only in the contacts loop; PHONE is unchanged for venue and title.",
+    "CON-3 (PHONE_BARE): a run of 9-11 digits that is a whole token and starts with a valid area code ('0413323506') is read as a phone. EasyOCR 2x test +1, hybrid test +1, 0 FP across all dev/test OCR. It does not change Paddle numbers (helps other engines only).",
+    "BUD-1: the budget keywords now include 사업비, 운영비 and 소요 in addition to 예산. Amount parsing handles compound units ('1억 4천만 원', '5억 3천만원'), '억' without '원' ('11.16억'), and '.' as a thousands separator when there is no 억/만 unit and the digits come in 3-digit groups ('65,500.000원' = 65,500,000). Paddle budget value dev 2/6->3/6 (thousands separator, v2-113) and test 1/7->2/7 (사업비, v2-118).",
+    "BUD-2 (BUDGET_FUNDED): an amount directly followed by a funding-source bracket ('(시비 100%)', '(전액군비)', '(도비…)') counts as a budget disclosure. Hybrid test budget presence 0->2, value 0/7->1/7, and hybrid admission FP 3->1, since budget lines are excluded from admission. It does not change Paddle numbers.",
+    "NOT-1 (notice_line, used only for the notices slot): NOTICE and is_notice stay unchanged for title and unlabeled-institution filtering. Lines with a role label (주최/주관/후원/협찬/협력) are not notices. '주차장' counts only when followed by an operating word (운영/이용/안내/협소/만차/부족/혼잡/없/유료/무료), so '○○ 주차장 일대' is not a notice and the existing test '임시주차장 운영' still is. 취소/연기 need a non-hangul character before them ('…민연기념…' no longer matches). ※ counts only at line start or after a space, with >= 3 letters after it that are not a single institution name. Added words 교통통제/셔틀버스/휴관 (attested in gold notices of both splits). Paddle notices dev 2/3/4->4/1/2, test 2/9/3->2/2/3 (tp/fp/fn); notice FPs drop on every pipeline.",
+    "Support: the ROOT PROPOSAL-SHIM line (identical to the schedule and venue proposals) so the copy finds data/ when run from .runtime; unlabeled_institutions skips None names; contact department also strips '/'.",
+    "Tested and rejected under the acceptance rule: badge vocabulary '(지원|육성)\\s*(사업|축제)' (optionally plus 유네스코 등재 / 1시군1품 / 한국관광100선). It raised Paddle test badge presence TP 1->3 (or 1->4) and hybrid test 1->2, but dev did not change on any pipeline. Notice word '하차' was dev-only. Badges are mostly city brand slogans with no general vocabulary, and adding strings like 'SEOUL MY SOUL' would be city-specific."
+   ],
+   "dev_before": "rule_dev, extract_v1.py, dev split (n=60). Org/contacts are list F1 with tp/fp/fn; presence is tp/fp/fn. PaddleOCR rgb_2x: org_f1 0.0758 (5/31/91), tel_f1 0.5882 (5/2/5), link_f1 0.4444, budget value 2/6; presence org 27/0/29, contacts 7/0/3, notices 2/3/4, budget 3/0/3, admission 1/1/0, badges 2/0/19. EasyOCR rgb_2x: org 0.0200 (1/3/95), tel 0.5333 (4/1/6), link None; presence org 4/0/52, notices 0/2/6, badges 1/0/20. EasyOCR rgb_1x: org 0.0404 (2/1/94), tel 0.4286 (3/1/7); notices 0/2/6. Hybrid rgb_2x: org 0.0196 (1/5/95), tel 0.6667 (5/0/5), link 0.25; presence org 11/0/45, notices 0/2/6, budget 0/0/6. TEST split (n=140): Paddle org 0.0724 (13/49/284), tel 0.5556 (5/3/5), link 0.25, budget 1/7; presence org 62/0/69, contacts 7/0/3, notices 2/9/3, budget 1/0/6, admission 3/1/2, badges 1/0/43. Easy 2x org 0.0126 (2/19/295), tel 0.5882 (5/2/5), notices 0/2/5. Easy 1x org 0.0 (0/14/297), tel 0.3077, presence org 18/0/113, notices 0/1/5. Hybrid org 0.0424 (7/26/290), tel 0.5882 (5/2/5), budget 0/7, presence budget 0/0/7, admission 2/3/3, notices 0/2/5. Core (Paddle): dev core 0.3273, title 0.3833, venue 0.6607; test core 0.0534, title 0.25, venue 0.4504.",
+   "dev_after": "rule_dev, candidate extract.py. DEV: Paddle org_f1 0.0923 (6/28/90, precision 0.139->0.176), tel_f1 0.7059 (6/1/4), link 0.4444 (=), budget 3/6; presence org 28/0/28, contacts 8/0/2, notices 4/1/2, budget 3/0/3 (=), admission 1/1/0 (=), badges 2/0/19 (=). Easy 2x org 0.0206 (1/0/95), tel 0.5333 (=), presence org 5/0/51, notices 0/0/6. Easy 1x org 0.0408 (2/0/94), notices 0/0/6. Hybrid org 0.0206 (1/0/95), tel 0.6667 (=), presence org 12/0/44, notices 0/0/6. TEST: Paddle org_f1 0.1047 (19/47/278, precision 0.210->0.288), tel_f1 0.8000 (8/2/2), link 0.25 (=), budget 2/7; presence org 65/0/66, contacts 10/0/0, notices 2/2/3, budget 3/0/4, admission 3/1/2 (=), badges 1/0/43 (=). Easy 2x org 0.0132 (2/4/295), tel 0.7059 (6/1/4), notices 0/1/5. Easy 1x org 0.0 (0/3/297), presence org 20/0/111, notices 0/0/5. Hybrid org 0.0444 (7/11/290), tel 0.6667 (6/2/4), budget 1/7, presence budget 2/0/5, admission 2/1/3, notices 0/1/5. Schema-invalid documents: 0 (before 0). All non-list fields (core_all, title, title_any, schedule_*, venue, venue_partial, year, edition, weekday, address, admin_district, duration, times) are identical before and after on all 4 pipelines x 2 splits, checked by diffing the dev-summary.json files. tests/test_poster_ocr.py: 17 passed on the unmodified app, and 17 passed with app.poster_ocr.extract replaced by the candidate through a scratch pytest plugin.",
+   "regressions": "None found. No field in my group got worse on any pipeline or split, and no field outside my group changed. One planned rule broke an existing unit test: excluding '주차장' from notices made the expected notice '임시주차장 운영' disappear. I fixed this by still counting '주차장' when an operating word follows. Remaining notice FPs: Paddle dev 1, test 2. Remaining org FPs (Paddle dev 28, test 47) are mostly OCR character errors in names with confidence >= 0.5.",
+   "remaining_errors": "Organizations (PaddleOCR): most gold role-labelled names never appear exactly anywhere in the OCR text (dev 77/96, test 229/297). They are logos or tiny print, so OCR misreads them and no rule can fix them. Among names OCR did read, the remaining misses are mostly role labels OCR misread ('주죄', '주희', '추최', '주간', '후천', '후형', '주광', '추원'); attaching them to a role would need character correction, which is not allowed. Others are logo strips where no label was read at all (gold roles were assigned visually), or Latin/jamo prefixes glued to names ('busanjin부산진구', 'G한돈…'). Remaining FPs are OCR misreads with confidence >= 0.5 ('고양싱공회의소', '포전시'). Contacts: remaining misses are OCR digit errors (684 vs 664, '0411331-0615', '041330-4317', '0631834') and '|' separators read as digits ('경주문화원10547437182'); recovering those would mean guessing. Links: all misses are OCR character errors ('choonwonfigtc.oom', 'SIWEOR.KR', 'baekjo') or EasyOCR reading dots as spaces ('WWW YUDEUNG com'); fixing them needs character correction. Budget: misses are garbled OCR ('출시법비90,000번원', '190.000전원' with 천 read as 전, '타천만원'). v2-179 is detected but its value is wrong because OCR dropped the decimal point ('1116억' instead of '11.16억'). Badges: 53 of 84 gold badges are city brand slogans with no general vocabulary, so recall stays about 5-10%. Suggestion only (evaluate.py was not modified): organizations F1 needs exact name match and is capped by OCR. A CER-based partial organization score, like venue_partial, would show rule quality more fairly."
+  }
+ ],
+ "merged": {
+  "merged_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\merged\\extract.py",
+  "diff_path": "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\merged\\change.diff",
+  "included": [
+   "Method. I three-way merged the four candidates onto extract_v1.py with git merge-file. Three conflicts were resolved by hand: (1) the ROOT line; (2) operating_times and the admin_area helpers, both kept; (3) the venue schedule-line step, which now uses venue_segment. I then ran three ablation rounds, switching one rule off at a time through env flags in scratch copies whose no-flag output was checked identical to the merged file: round 1 on the all-in merge, rounds 2 and 3 on the reduced files. Every number below is the final-state marginal (final minus that rule off), given as PaddleOCR rgb_2x dev/test unless marked. Unit = one specialist bullet. Keep rule: PaddleOCR improves on dev and on test in at least one scored value metric with none worse, and other pipelines are net >= 0. Presence counts are reported but do not decide. Results are in merged/ablate3/marginals.txt.",
+   "R1 name-prefix join (title). Title +1/+11, core +1/+7. Hybrid +1/+10, EasyOCR 2x 0/+5, EasyOCR 1x 0/+4. Costs: admin_area presence fp +3 on test. Loses v2-060 on test (PaddleOCR and hybrid): the misread edition line '제근근회' is now joined into the title. Loses title_any on v2-167 (title CER improves).",
+   "R2 skip marker-only and symbol-only lines in the title neighbour search. Title +1/+1, core +1/+1. Hybrid test title +1. No losses.",
+   "R3 digit ratio measured after year and edition are stripped. Title +1/+3 and admin +1 on dev. Hybrid and EasyOCR 2x test title +3 each. Loses title_any on v2-152 test (CER improves).",
+   "R4 below-line policy, including the &/× joiner and year+place exceptions. Title +1/+4, core +1/+2. Hybrid test +6, but hybrid dev title_any -1 (v2-144). EasyOCR test +1 on each variant.",
+   "R10 other edition forms (native ordinals, N주년). Edition +1/+2. Hybrid +1/+2, EasyOCR +1/+1. Cost: one test false positive per pipeline (v2-109 '제76주년').",
+   "Title support code kept from the title proposal: the title_core/has_suffix/name_prefix helpers and the ROOT line that searches upward for the template (no effect inside app/poster_ocr). title_core uses the v1 token order.",
+   "G1 garbled date expressions (D_* patterns, circled-digit dnorm, dotted pairs, '|' and ')' no-separator ranges). Pair +1/+15, start 0/+10, end +1/+10, start weekday 0/+4, start_year 0/+4, duration 0/+1, times tp +2. Hybrid pair +5/+8, EasyOCR 2x +1/+4, EasyOCR 1x +1/+5. Cost: PaddleOCR test venue -1 (v2-042: the venue moved onto a schedule line and lost '삼덕공원').",
+   "G2 cross-line date ranges (date_neighbors, RANGE_TAIL/RANGE_HEAD). Test pair +4, end +5, year +1, start_year +1, core +3. PaddleOCR dev evaluate.py fields do not change; the dev gain is on schema fields evaluate.py does not score: start.year_basis 52->55/58 and end weekday 32->34/50 (my own extra.py, dev/test only). Test year_basis 110->119. Hybrid +1/+3, EasyOCR 2x +1/+2, EasyOCR 1x 0/+1. Kept because of that dev year_basis gain; drop it if only evaluate.py fields count.",
+   "G3 pairing consistency, (a)+(b)+(c) judged as one bullet. Pair +1/+1. Hybrid +1/+2, EasyOCR 0/+2. On their own: (a) gives 0/0 on PaddleOCR and helps only hybrid and EasyOCR test; (b) is dev-only (+1); (c) is test-only (+1).",
+   "G4 extend_sessions (multi-session union). Pair +1/+4 and start weekday 0/+2. Hybrid test +5, EasyOCR test +3 (2x) and +2 (1x).",
+   "G5 operating_times. times F1 +0.172/+0.119 (fp -5/-9). Hybrid +0.165/+0.070. EasyOCR 2x test +0.025 (tp +1, fp +1).",
+   "V1 row-neighbour merge. Venue +1/+8, core 0/+4, admin 0/+2. No change on other pipelines.",
+   "V2 column-based up/down continuation, replacing v1's index±1 neighbour. venue80 +1 on dev; venue +5 and venue80 +6 on test, core 0/+3. Hybrid dev venue80 +1. Costs: hybrid and EasyOCR 2x test venue80 -1, both v2-159 (a garbage '시장 …' line is joined).",
+   "V3 short prefix/suffix lines. venue80 +1 on dev; venue +6 on test, core 0/+3. Hybrid +1/+2, EasyOCR test +1. Cost: admin_area presence fp +1.",
+   "V4 VENUE_WORD refinement (short words only at word end, no bare '아트', new words, Latin words at word boundaries). This is the weakest kept change. Its only PaddleOCR dev effect is one case: v2-099 no longer outputs the wrong venue '궁문화속진', so title CER improves 1.0->0.625, and venue presence tp drops by 1. Test: venue +7, venue80 +8, title +1, core +2. Positive on every pipeline's test split. Its 'Hangul-first / 전역' option preference had no effect anywhere and was dropped.",
+   "V5 venue tail cut (phone, contact and role marks; trailing Latin translation; leading I/l/|). venue80 +1 on dev; venue +1 on test. Hybrid test venue +1 and core +1.",
+   "V8 bare district name with suffixed evidence elsewhere on the poster. admin_district +2/+6. Hybrid +1/+7, EasyOCR 2x +1/+6, EasyOCR 1x 0/+3. Cost: admin_area presence fp +2 dev and +9 test on PaddleOCR. These are names printed in the title or venue, which the field rule allows ('장소·제목 문구에 직접 쓰인 지역명만'), and the gold is inconsistent on such cases.",
+   "ORG-1 wider first gap (4.5x) and taller first name cell (3.0x) after a bare role label. Org tp +1/+4, F1 +0.015/+0.020. Cost: test org fp +7. EasyOCR 1x test fp +1.",
+   "ORG-2 names with confidence < 0.5 become illegible (name=null). Org fp -3/-7 on PaddleOCR, -6/-15 hybrid, -4/-15 EasyOCR 2x, -1/-13 EasyOCR 1x. No tp lost.",
+   "CON-1 15xx-xxxx numbers become kind=other. Contacts fp -1/-1, and EasyOCR 2x test -1.",
+   "CON-2 PHONE_GLUED (logo glyphs glued to the area code, '}' or ']' read for ')'). Contacts tp +1/+3.",
+   "BUD-1 budget keywords 사업비/운영비/소요 plus compound and '.'-thousands amounts. Budget +1/+1, budget presence 0/+2.",
+   "NOT-1 notice_line for the notices slot. Notices dev tp +2 and fp -2; test fp -7. Notice fp also drops on every other pipeline."
+  ],
+  "excluded": [
+   "R6 Korean over Latin (title penalty -2.7). Dev title +1 (v2-162). Test exact title 0 and title_any -1 (v2-188 goes from the English variant to the misread Korean '부산 고등어죽제'); test CER is better by 0.006. Test is mixed rather than improved.",
+   "R7 misread edition marker (EDITION_NOISY). Dev 0, test title +3. It does nothing on PaddleOCR dev. Interaction: without R7, R1 joins '제근근회' onto v2-060, which costs that test case on PaddleOCR and hybrid.",
+   "R7 sub-change: stripping '2026년' before the bare year inside title_core. No effect on any pipeline or split, so title_core keeps the v1 token order.",
+   "The widened Latin-only regex LATIN_ONLY (adds × + : in the score and neighbour checks). PaddleOCR dev title CER 0.003 worse, test 0. Reverted to the v1 regexes.",
+   "G6 schedule-aware (D_*) date stripping in the venue schedule-line step. Dev 0, test venue +1. Other pipelines 0.",
+   "V6 safe date stripping. The guard ('526-7', '1.2번', '5.18민주광장' are not dates) gives dev 0 and test venue80 +2. The extra residue patterns ('M월 D일', lone HH:MM, empty weekday box '25.()') give dev 0 and test venue +2 (hybrid test +2). Venue text now uses the v1 date patterns through date_spans, and v1's '10: :00' ordering bug fix is gone with the residue revert.",
+   "V7 venue options judged on cut text, plus the bottom logo-strip institution filter. PaddleOCR dev 0, test venue presence -1. It helps only hybrid dev (venue +2, core +2).",
+   "V4 sub-part: Hangul-first and 전역 preference among venue-word options. No effect anywhere.",
+   "ORG-3 name cleanup (jamo split, trim_edge_junk, contact-cell stop, extra ORG_STRIP characters). Dev 0, test org tp +2 and fp -2.",
+   "CON-3 PHONE_BARE (bare 9-11 digit runs). PaddleOCR 0/0. Only hybrid and EasyOCR 2x test, +1 tp each.",
+   "BUD-2 BUDGET_FUNDED (amount followed by a funding bracket). PaddleOCR 0/0. Only hybrid test: budget +1, admission fp -2.",
+   "For reference, the all-in merge with nothing excluded is in merged/extract_all.py, with results in merged/after_all. It scores PaddleOCR title 27/60 | 54/140, core 21/55 | 28/131, venue 41/56 | 85/131. The final file scores title 26/60 | 51/140, core 20/55 | 24/131, venue 41/56 | 82/131. The difference is the cost of applying the per-change two-split rule strictly."
+  ],
+  "dev_before": "v1 (app/poster_ocr/extract_v1.py), out = .runtime/poster-ocr/proposals-v2/merged/before. Counts are correct/n. Lists are F1(tp/fp/fn). Presence is tp/fp/fn.\npaddleocr/rgb_2x DEV: core 18/55, title 23/60, title_any 24/60, title_cer 0.4166, edition 16/25, year 52/53, pair 51/58, start 56/58, end 52/58, start_weekday 39/56, start_year 51/53, duration 1/4, venue 37/56, venue80 40/56, address 1/5, admin_district 11/25, budget 2/6, org 0.0758(5/31/91), contacts 0.5882(5/2/5), links 0.4444(2/1/4), times 0.8276(12/5/0), P.admin 17/0/15, P.notices 2/3/4, P.venue 55/0/1, P.edition 18/1/7. Extra (not evaluate.py): year_basis 52/58, end weekday 31/50.\npaddleocr/rgb_2x TEST: core 7/131, title 35/140, title_any 41/140, title_cer 0.4583, edition 41/54, year 129/134, pair 104/139, start 117/139, end 109/139, start_weekday 83/129, start_year 118/133, duration 6/7, venue 59/131, venue80 75/131, address 4/7, admin_district 14/63, budget 1/7, org 0.0724(13/49/284), contacts 0.5556(5/3/5), links 0.25(1/1/5), times 0.7297(27/10/10), P.admin 25/4/46, P.notices 2/9/3, P.venue 117/5/14, P.edition 41/1/13. Extra: year_basis 105/139, end weekday 63/112.\nhybrid/rgb_2x DEV: core 10/55, title 20/60, title_any 21/60, title_cer 0.4478, edition 18/25, year 48/53, pair 39/58, start 46/58, end 43/58, start_weekday 27/56, start_year 44/53, duration 1/4, venue 28/56, venue80 37/56, address 1/5, admin_district 6/25, budget 0/6, org 0.0196(1/5/95), contacts 0.6667(5/0/5), links 0.25, times 0.5(5/3/7), P.admin 11/0/21, P.notices 0/2/6.\nhybrid/rgb_2x TEST: core 4/131, title 27/140, title_any 28/140, title_cer 0.4975, edition 31/54, year 128/134, pair 83/139, start 108/139, end 86/139, start_weekday 65/129, start_year 108/133, duration 2/7, venue 48/131, venue80 81/131, address 2/7, admin_district 7/63, budget 0/7, org 0.0424(7/26/290), contacts 0.5882(5/2/5), links 0.0, times 0.6316(18/2/19), P.admin 18/4/53, P.notices 0/2/5.\neasyocr/rgb_2x DEV: core 3/55, title 12/60, title_any 12/60, title_cer 0.5202, edition 11/25, year 49/53, pair 34/58, start 42/58, end 36/58, start_weekday 30/56, start_year 40/53, duration 1/4, venue 14/56, venue80 30/56, address 0/5, admin_district 8/25, budget 0/6, org 0.02(1/3/95), contacts 0.5333(4/1/6), links None, times 0.2857(2/0/10), P.admin 14/0/18, P.notices 0/2/6.\neasyocr/rgb_2x TEST: core 0/131, title 14/140, title_any 15/140, title_cer 0.6048, edition 21/54, year 117/134, pair 58/139, start 79/139, end 65/139, start_weekday 54/129, start_year 82/133, duration 1/7, venue 18/131, venue80 57/131, address 0/7, admin_district 5/63, budget 0/7, org 0.0126(2/19/295), contacts 0.5882(5/2/5), links 0.0, times 0.383(9/1/28), P.admin 17/2/54, P.notices 0/2/5.\neasyocr/rgb_1x DEV: core 1/55, title 11/60, title_any 11/60, title_cer 0.5433, edition 11/25, year 48/53, pair 35/58, start 41/58, end 39/58, start_weekday 27/56, start_year 41/53, duration 1/4, venue 17/56, venue80 30/56, address 0/5, admin_district 8/25, budget 0/6, org 0.0404(2/1/94), contacts 0.4286(3/1/7), links None, times 0.4(3/0/9), P.admin 15/0/17, P.notices 0/2/6.\neasyocr/rgb_1x TEST: core 1/131, title 14/140, title_any 16/140, title_cer 0.5975, edition 19/54, year 113/134, pair 58/139, start 78/139, end 67/139, start_weekday 45/129, start_year 81/133, duration 1/7, venue 19/131, venue80 50/131, address 0/7, admin_district 3/63, budget 0/7, org 0.0(0/14/297), contacts 0.3077(2/1/8), links 0.0, times 0.2381(5/0/32), P.admin 13/4/58, P.notices 0/1/5.",
+  "dev_after": "Final merged candidate (.runtime/poster-ocr/proposals-v2/merged/extract.py), out = merged/after, schema-invalid 0. Same units as before.\npaddleocr/rgb_2x DEV: core 20/55 (+2), title 26/60 (+3), title_any 27/60, title_cer 0.3766, edition 17/25 (+1), year 52/53, pair 54/58 (+3), start 56/58, end 55/58 (+3), start_weekday 39/56, start_year 51/53, duration 1/4, venue 41/56 (+4), venue80 47/56 (+7), address 1/5, admin_district 13/25 (+2), budget 3/6 (+1), org 0.0923(6/28/90), contacts 0.7059(6/1/4), links 0.4444, times 1.0(12/0/0), P.admin 18/2/14, P.notices 4/1/2, P.venue 54/0/2, P.edition 19/1/6. Extra: year_basis 55/58, end weekday 34/50.\npaddleocr/rgb_2x TEST: core 24/131 (+17), title 51/140 (+16), title_any 55/140 (+14), title_cer 0.3622, edition 43/54 (+2), year 130/134 (+1), pair 125/139 (+21), start 130/139 (+13), end 126/139 (+17), start_weekday 89/129 (+6), start_year 124/133 (+6), duration 7/7 (+1), venue 82/131 (+23), venue80 100/131 (+25), address 4/7, admin_district 23/63 (+9), budget 2/7 (+1), org 0.0937(17/49/280), contacts 0.8(8/2/2), links 0.25, times 0.8657(29/1/8), P.admin 34/14/37 (fp +10), P.notices 2/2/3, P.venue 122/4/9, P.edition 43/2/11. Extra: year_basis 119/139, end weekday 72/112.\nhybrid/rgb_2x DEV: core 10/55 (=), title 21/60 (+1), title_any 21/60, title_cer 0.4313, edition 19/25, year 48/53, pair 45/58 (+6), start 49/58, end 48/58, start_weekday 28/56, start_year 44/53, duration 1/4, venue 30/56 (+2), venue80 40/56 (+3), address 1/5, admin_district 7/25, budget 0/6, org 0.0206(1/0/95), contacts 0.6667, links 0.25, times 0.7368(7/0/5), P.admin 12/1/20, P.notices 0/0/6. Extra: year_basis 44/58.\nhybrid/rgb_2x TEST: core 10/131 (+6), title 44/140 (+17), title_any 44/140, title_cer 0.4057, edition 33/54, year 128/134, pair 100/139 (+17), start 114/139, end 101/139, start_weekday 69/129, start_year 111/133, duration 2/7, venue 52/131 (+4), venue80 90/131 (+9), address 2/7, admin_district 16/63 (+9), budget 0/7, org 0.0444(7/11/290), contacts 0.5882, links 0.0, times 0.7018(20/0/17), P.admin 30/8/41, P.notices 0/1/5. Extra: year_basis 102/139.\neasyocr/rgb_2x DEV: core 3/55, title 12/60, title_any 12/60, title_cer 0.5121, edition 12/25, year 49/53, pair 35/58, start 42/58, end 37/58, start_weekday 30/56, start_year 40/53, duration 1/4, venue 14/56, venue80 30/56, address 0/5, admin_district 9/25, budget 0/6, org 0.0206(1/0/95), contacts 0.5333, times 0.2857, P.admin 16/0/16, P.notices 0/0/6.\neasyocr/rgb_2x TEST: core 1/131, title 21/140 (+7), title_any 24/140, title_cer 0.5373, edition 22/54, year 117/134, pair 69/139 (+11), start 87/139, end 75/139, start_weekday 57/129, start_year 88/133, duration 1/7, venue 20/131 (+2), venue80 61/131 (+4), address 0/7, admin_district 12/63 (+7), budget 0/7, org 0.0132(2/4/295), contacts 0.625(5/1/5), links 0.0, times 0.4082(10/2/27), P.admin 26/4/45, P.notices 0/1/5.\neasyocr/rgb_1x DEV: core 1/55, title 11/60, title_any 11/60, title_cer 0.5253, edition 12/25, year 48/53, pair 36/58, start 42/58, end 39/58, start_weekday 27/56, start_year 41/53, duration 1/4, venue 17/56, venue80 30/56, address 0/5, admin_district 8/25, budget 0/6, org 0.0408(2/0/94), contacts 0.4286, times 0.4, P.admin 16/0/16, P.notices 0/0/6.\neasyocr/rgb_1x TEST: core 2/131, title 19/140 (+5), title_any 22/140, title_cer 0.5556, edition 20/54, year 113/134, pair 67/139 (+9), start 84/139, end 75/139, start_weekday 49/129, start_year 84/133, duration 1/7, venue 20/131, venue80 52/131, address 0/7, admin_district 8/63 (+5), budget 0/7, org 0.0(0/3/297), contacts 0.3077, times 0.2381, P.admin 21/7/50, P.notices 0/0/5.\nCase-level losses against v1 on any scored field, all pipelines: v2-060 test title and core on PaddleOCR and hybrid (R1 joins '제근근회'); title_any only on v2-152 and v2-167 (PaddleOCR test, CER improves) and v2-144 (hybrid dev); venue80 on v2-159 (hybrid and EasyOCR 2x test). No other case lost a field. Not done: VERSION is still 'poster_rules_v1'. The reserve set (r2-*) was never opened; extra.py reads only the dev/test cases listed in the manifest.",
+  "schema_invalid": 0,
+  "tests": "Required run: tests/test_poster_ocr.py copied to .runtime/poster-ocr/proposals-v2/merged/test_merged.py, with the import of app.poster_ocr.extract replaced by an importlib load of merged/extract.py (checked: the loaded module is merged/extract.py). Result: 17 passed (pytest -q --basetemp .runtime/pt-m<random>). The unmodified tests/test_poster_ocr.py also gives 17 passed; nothing in app/ or tests/ was modified. Optional extra: the venue specialist's synthetic tests, copied to merged/test_venue_v2.py so they load merged/extract.py, give 20 passed and 2 failed. Both failures come from rules excluded here: test_v2_venue_joins_left_record_and_cuts_contact_tail needs V7 (options judged on cut text; checked: the all-in merge passes it, and V7-off reproduces the failure), and test_v2_address_number_is_not_a_date needs the V6 guard for '526-7'. change.diff (git diff --no-index against app/poster_ocr/extract_v1.py, 1240 lines) was applied with patch to a copy of extract_v1.py and reproduces merged/extract.py byte for byte."
+ },
+ "reviews": [
+  {
+   "verdict": "accept_with_fixes",
+   "issues": [
+    {
+     "severity": "major",
+     "location": "Overall evidence: candidate vs extract_v1, all hunks",
+     "problem": "Gains are lopsided toward test, which suggests most v2 rules were derived from test failures, so test is no longer a held-out estimate. PaddleOCR v1->cand: dev core 18->20/55, title 23->26/60, pair 51->54/58, venue 37->41/56. Test core 7->24/131, title 35->51/140, pair 104->125/139, venue 59->82/131. Dev core is unchanged on hybrid (10->10) and EasyOCR (3->3); EasyOCR dev title and venue are also unchanged. The relative dev gain is about 1/3 to 1/2 of the test gain on every core field. Several hunks have zero PaddleOCR dev effect (see S2, V4, S3a/S3c and the single-case items below).",
+     "fix": "Report test numbers as development numbers, not generalization. Treat the r2-* reserve as the only unbiased number and expect reserve gains closer to the dev-sized deltas. Freeze VERSION and rules before running the reserve once."
+    },
+    {
+     "severity": "major",
+     "location": "pick_title: dated_place exception ('NS푸드페스타 / 2026 익산' comment)",
+     "problem": "This rule fires on exactly one poster, dev v2-138 (PaddleOCR and hybrid). Disabling it alone changes only v2-138 (title and admin_district). It is a case patch inside the otherwise general 'stop below a complete ○○축제 title' rule.",
+     "fix": "Drop dated_place and keep complete_name/joiner. Keeping the joiner is fine: it fires on 3 posters (dev v2-135, test v2-087, v2-111)."
+    },
+    {
+     "severity": "major",
+     "location": "D_RANGE_GAP (?P<gb>…(?P<gbw>…)) branch + _read_weekday gbw override",
+     "problem": "This rule fires on one poster, test v2-145 ('10월 16월(금)~ 18일(일)'). Disabling it changes only that case. It also overrides an already-read weekday char ('월') with the bracketed one, which in effect encodes the OCR misread 일->월. That is borderline character correction.",
+     "fix": "Remove the gb/gbw alternative and the gbw override in _read_weekday. Keep gw/ga/gs: they fire on 2-3 posters across engines."
+    },
+    {
+     "severity": "major",
+     "location": "EDITION_ALT / ORDINAL_KO (extract: editions fallback)",
+     "problem": "The native-ordinal part ('첫 번째') fires only on dev v2-144. The 'N주년' part has no dev evidence; on test it gives 2 tp (v2-126, v2-133) and 1 fp on every engine (v2-109 '제76주년 춘천지구전투 전승행사' -> edition 76). An anniversary is not an edition: N주년 is usually edition N+1, or an unrelated anniversary (battle, founding).",
+     "fix": "Drop EDITION_ALT entirely (net effect: dev -1, test -2+1 fp per engine). If kept, restrict 주년 to lines that also contain a TITLE_SUFFIX, and document the 회차 label convention in the poster standard first."
+    },
+    {
+     "severity": "major",
+     "location": "ORG_FIRST_GAP=4.5 / ORG_TALL=3.0 (organization_items)",
+     "problem": "These thresholds were tuned on a single dev poster: dev evidence is only v2-162 (ORG_TALL, '동대문구'). On PaddleOCR test the first-gap rule adds 4 tp and 7 fp (v2-051 '민구경역시', v2-105 '주권' x2, v2-109 '대한민국 국명무'/'2군단', v2-121 '시리오', v2-194). Precision of the new items is 36%. Org F1 only rises because base precision is very low.",
+     "fix": "Revert to 2.5 and 1.8 (drop both constants). If logo-gap handling is wanted, require the far cell to pass INSTITUTION_BODY or a district suffix rather than widening the gap."
+    },
+    {
+     "severity": "major",
+     "location": "district_stems / bare_district (admin_area v2 fallback, V8)",
+     "problem": "Presence precision regresses. PaddleOCR admin_area fp: dev 0->2, test 4->14 (V8 alone: test tp +8, fp +9; dev tp +2, fp +2). Hybrid test fp 4->8, EasyOCR 2x test 2->4. The gold is inconsistent for bare city names in titles. Labelled present: 영천한방축제, 정선야행, 화순고인돌, '2026 익산'. Labelled absent: 부천국제만화축제, 강남청년축제, 경주국가유산야행, 청주의보물, '2026대덕', 안산, 서산, 서귀포. No geometric or token restriction separates the two groups; I checked spaced vs glued. Also '제주레저' gives district=제주 where gold has region=제주.",
+     "fix": "Settle the label rule first ('장소·제목 문구에 직접 쓰인 지역명만' arguably covers bare stems) and relabel the inconsistent gold. Until then, drop V8 or report the admin_area precision loss explicitly next to the admin_district gain (+2 dev, +6 test). It is not acceptable under the 'does not regress by more than it helps' rule on presence."
+    },
+    {
+     "severity": "minor",
+     "location": "D_RANGE_NOSEP_RE '\\s*\\|\\s*' separator",
+     "problem": "This rule fires on one poster (test v2-146 '(금)|18.(일)'). Disabling it changes only that case.",
+     "fix": "Drop the '|' alternative. Keep the '(?<=[)\\]])' adjacency alternative."
+    },
+    {
+     "severity": "minor",
+     "location": "_wd(slash=True) lead '/금'",
+     "problem": "This rule fires on one poster (test v2-116 '10.09./금'), and the only effect is start_weekday on that poster in all 4 pipelines.",
+     "fix": "Drop the slash lead. Keep the swn 'eat' part: it fires on 4-6 test and 1-2 dev posters per engine."
+    },
+    {
+     "severity": "minor",
+     "location": "budget_number '.' as thousands separator; BUDGET '운영비'",
+     "problem": "The '.'-thousands rule fires only on dev v2-113 ('65,500.000원') and reinterprets an OCR '.' as ','. '운영비' (test v2-179) produces total_krw=111,600,000,000 from '운영비1116억' (the decimal point of 11.16억 was lost). Presence improves but the value is absurd; the comment cites the gold value 11.16억. The '사업비' keyword (v2-118) and '소요' prefix are fine; 소요 is redundant because the regex searches.",
+     "fix": "Drop the [,.] thousands branch (use (?:,\\d{3})+). Set total_krw=None when an 억 amount has 4+ unseparated digits before 억, or exceeds a fixed cap. Keep raw."
+    },
+    {
+     "severity": "minor",
+     "location": "VENUE_WORD rewrite (V4)",
+     "problem": "On PaddleOCR dev, venue accuracy is unchanged (41->41), and presence tp drops 1 (v2-099, which was a garbage v1 hit '궁문화속진'). Test gains +7. Most added words fire on one test poster each: 축제장 v2-062, 전역 v2-096, PARK v2-075, 시네마 v2-125, 구청앞 v2-021, Hall v2-012. MUSEUM fires on an English title line (dev v2-144). 주차장, 야영장 and 영화관 never fire. The word-end restriction for 궁/홀/섬/숲/월드/랜드 and dropping bare '아트' are good general precision fixes (removes 미추홀구, 홀리데이, 브랜드, 궁중 hits).",
+     "fix": "Keep the word-end restrictions and the generic Korean nouns (축제장, 행사장, 마당$, 전역). Drop or justify dead entries and the English list. Do not cite V4 as dev-validated."
+    },
+    {
+     "severity": "minor",
+     "location": "name_prefix height floor (.2 if marked else .3)",
+     "problem": "The .2 floor for year/edition-marked prefix lines sits right at the observed minimum (0.21-0.23 on v2-084, v2-005, v2-153, v2-167, v2-017). Raising it to .3 changes no PaddleOCR dev case; on test it changes v2-035 and v2-153 (+title) and v2-167 (-title_any). So the floor was tuned on test. Also, garbled edition markers are accepted as names: '제근근회' causes the v2-060 title loss and '제회' affects v2-038. Otherwise T1 is a sound general layout rule: 27 PaddleOCR firings with CER improvement almost everywhere.",
+     "fix": "Use one floor (.3), or document why marked lines may be smaller. Treat tokens shaped like 제\\S{0,3}회 as markers, not name tokens, in name_tokens/has_marker. Ignoring a token is not character correction."
+    },
+    {
+     "severity": "minor",
+     "location": "date_candidates S3 guards (inside/listed/size ratio for all pairs)",
+     "problem": "S3b (pair size ratio for non-weak pairs) changes only dev v2-187. S3c (listed) changes one test case per pipeline (v2-059 or v2-065) and nothing on dev. S3a (inside) changes only easyocr/hybrid test (v2-149, v2-065), with no PaddleOCR effect. S2 (date_neighbors / RANGE_TAIL continuation) has 0 PaddleOCR dev effect and +6 test (+1 dev on hybrid and easyocr). None regress anything.",
+     "fix": "These are acceptable as principled guards but are single-case evidenced. Keep them, label them 'no cross-split evidence' in the report, and do not count them as generalization."
+    },
+    {
+     "severity": "minor",
+     "location": "clean_venue '^[Il|]\\s+' strip; LATIN_TRAIL '\\s[Il]' alternative",
+     "problem": "The leading-I strip has zero effect on all 200 dev/test posters (my R8 ablation: no case changes). The LATIN_TRAIL '\\s[Il]' alternative is redundant, since a lone 'I' already counts as a Latin word. Both encode the I<->| OCR misread.",
+     "fix": "Remove both. Keep CONTACT_MARK/PHONE/ROLE tail cutting (test v2-061) and the general LATIN_TRAIL (dev v2-192)."
+    },
+    {
+     "severity": "minor",
+     "location": "date_spans (venue date stripping) / stale .runtime/.../merged/test_venue_v2.py",
+     "problem": "The merged candidate fails 2 of the venue proposal's own unit tests. One is a real defect: date_spans uses v1 SINGLE_RE (month \\d{1,2}, no 1-12 check), so an address number like '526-7' is stripped as a date and the venue is truncated to '…(…동 5'. The left-record join test also fails. The copy of the main suite (test_merged.py) passes 17/17.",
+     "fix": "Use the strict D_* point forms (month 1-12) in date_spans, or delete or update the stale tests. Do not promote test_venue_v2.py as is."
+    },
+    {
+     "severity": "minor",
+     "location": "ORG_MIN_CONF=0.5 -> legibility='illegible'",
+     "problem": "There is no overfitting (fp drops on every engine and split, no tp loss). But it conflates OCR confidence with the label meaning of illegible (a logo humans cannot read). The metric gain is purely mechanical, because null names are excluded from org scoring.",
+     "fix": "Keep the threshold, but drop the item or mark it with an extractor note instead of claiming a human-legibility status, or document this convention in the standard."
+    },
+    {
+     "severity": "minor",
+     "location": "Comments/docstrings across the diff; VERSION constant",
+     "problem": "Code comments quote dev/test poster strings: 서천군 홍원항, 영천한방축제, NS푸드페스타/2026 익산, K-밀리터리/춘천대첩, 하동북천, 덕수궁, 진주성, 원주종합운동장, '(전주시 완산구 천장로 235)', '…민연기념…', E3033-460-8900, #2041-521-3786, 65,500.000원, 11.16억. I verified that none of these appear in any regex or word list, but they leak benchmark content into the code and document that rules were designed per poster. VERSION is still 'poster_rules_v1' although the docstring says v2.",
+     "fix": "Replace quoted examples with synthetic ○○ forms. Bump VERSION to 'poster_rules_v2' before the reserve run so outputs can be told apart."
+    }
+   ],
+   "summary": "Verdict: accept with fixes. I found no leakage and no hard overfitting. The extractor reads only OCR records plus the template; ROOT detection only looks for the template file. No festival names, venue names or case ids appear in any regex or word list. Case-specific strings appear only in comments and docstrings. I found no direct character substitution (ENCLOSED -> '○' only stops NFKC from turning ① into a digit). Schema-invalid documents: 0.\n\nReproduction: my rule_dev run of the candidate equals after.log, and v1 equals before.log. The main test suite copy (merged/test_merged.py) passes 17/17. merged/test_venue_v2.py fails 2 tests against the merged candidate. Aggregate fields regress nowhere against v1. Presence regresses in three places:\n- admin_area false positives: PaddleOCR dev 0->2 and test 4->14; hybrid test 4->8.\n- edition: +1 false positive per engine on test (v2-109, from '주년').\n- PaddleOCR dev venue: −1 presence true positive (v2-099, a garbage v1 hit).\n\nPaddleOCR numbers, v1 -> candidate -> candidate with my single-case drops (R1–R7):\n\n| Field | Dev | Test |\n|---|---|---|\n| core | 18 -> 20 -> 20 /55 | 7 -> 24 -> 23 /131 |\n| title | 23 -> 26 -> 25 /60 | 35 -> 51 -> 51 /140 |\n| pair | 51 -> 54 -> 54 /58 | 104 -> 125 -> 123 /139 |\n| venue | 37 -> 41 -> 41 /56 | 59 -> 82 -> 82 /131 |\n| edition | 16 -> 17 -> 16 /25 | 41 -> 43 -> 41 /54 |\n| admin_district | 11 -> 13 -> 12 /25 | 14 -> 23 -> 23 /63 |\n\nOther pipelines on dev: hybrid core 10 -> 10, title 20 -> 21, venue 28 -> 30, pair 39 -> 45. EasyOCR 2x core 3 -> 3, title and venue unchanged, pair 34 -> 35.\n\nDev moves much less than test, so v2 was largely shaped on test. Test is no longer held out; only the r2 reserve is unbiased.\n\nWhat each hunk did (from ablate3 plus my own per-case runs):\n\nGeneral and kept, with both splits improving or neutral:\n- T1 name_prefix: 27 PaddleOCR firings, title better or CER lower almost everywhere; one loss (v2-060, garbled '제근근회').\n- T2 and T3.\n- T4 complete-title stop and joiner.\n- S1 D_* date forms in general.\n- S4 extend_sessions and S5 operating times.\n- V1 row_neighbors, V2 column continuation, V3 short continuation (its thresholds sit close to observed values).\n- L2 confidence floor, L4 1588-type numbers as 'other', L5 PHONE_GLUED (4/4 correct), L9 notices.\n\nSingle-poster patches to drop (removing each changes only the named case):\n- R1, the dated_place exception: dev v2-138.\n- R2, the gb/gbw bracketed-weekday override: test v2-145.\n- R3, the '|' between dates with no range sign: test v2-146.\n- R4, the '/금' slash weekday: test v2-116.\n- R5b, the '첫 번째' ordinal: dev v2-144.\n- R7, '.' read as thousands separator in budgets: dev v2-113.\n- R8, the leading-I strip: changes no case at all.\n\nWeak or net-negative:\n- R5a, 'N주년': 2 tp and 1 fp on test, no dev evidence, and an anniversary is not an edition.\n- L1/R6, ORG_FIRST_GAP/ORG_TALL: dev evidence is one poster; on test 4 tp vs 7 fp.\n- V8, bare district: presence is a coin flip against inconsistent gold (test +8 tp / +9 fp, dev +2 / +2).\n- V4 VENUE_WORD rewrite: zero PaddleOCR dev gain; most new words fire on one test poster each.\n- S2 and S3a/S3c: zero PaddleOCR dev effect. S3b: dev-only, one case.\n\nDropping R1–R7 together costs PaddleOCR −1 title, −1 edition and −1 district on dev, and −1 core, −2 pair, −2 edition and −2 weekday on test. On test it also removes 4 org true positives and 7 org false positives. The bulk of v2's gains stays.\n\nFiles are in C:\\Users\\PLAYDA~1\\AppData\\Local\\Temp\\claude\\C--Users-playdata2-Desktop-SKN33-Final-1Team-SKN33-Final-1Team\\706bfb83-e854-4f76-979c-034618e49ac3\\scratchpad\\rev\\:\n- instrument.py and hits.json: which sub-rule fires on which dev/test case.\n- casediff.py: per-case differences between two runs.\n- fix\\extract_rev.py: the candidate with switches R1–R9 (env REV_ABLATE); results and logs in fix\\<flag>\\ and fix\\<flag>.log; ALL = R1–R7 removed together.\n- cand\\ and v1\\: reproduced runs of the candidate and v1.\n\nI opened no reserve (r2-*) gold, OCR or predictions."
+  },
+  {
+   "verdict": "accept_with_fixes",
+   "issues": [
+    {
+     "severity": "blocker",
+     "location": "merged/extract.py:598 LATIN_TRAIL (used by cut_venue_tail <- clean_venue <- pick_venue/venue_segment); new in v2",
+     "problem": "Catastrophic backtracking. In `(?:[A-Za-z][A-Za-z.'\\-]*\\s*){2,}$` the `\\s*` can be empty, so any run of N Latin letters can be split 2^(N-1) ways. When `$` then fails (a digit, Korean text or '(' after the English), the time doubles with each extra letter: 22 letters take 0.28 s. The realistic venue line '장소: 올림픽공원 Olympic Park Seoul Korea Main Stadium Hall 1층' took 148.6 s in extract(), and a few more letters would hang it for hours. Bilingual venue lines like this are common, so the reserve set or production could stall even though dev/test did not.",
+     "fix": "Use a linear form that accepts the same strings: `(?<=[가-힣)])\\s*(?:[|/]|\\s[Il])?\\s+(?=[A-Za-z][^A-Za-z]*[A-Za-z])[A-Za-z][A-Za-z.'\\-]*(?:\\s+[A-Za-z][A-Za-z.'\\-]*)*\\s*$`. On 300k random strings its match spans equal the old pattern's (0 mismatches). It now runs in 0.0 ms, and all dev/test predictions are byte-identical to the merged candidate. Applied in review/fixed/extract.py."
+    },
+    {
+     "severity": "major",
+     "location": "merged/extract.py:715-716 (extract) and extend_sessions hi_pt (line ~519); new path in v2",
+     "problem": "Cross-year session blocks end before they start. For '2026.12.20.(일)~12.24.(목)' followed by '12.30.(수)~1.3.(일)', extend_sessions builds an end point with no year (or, when that line has a year, with the start year). extract then fills `end = point(start[\"year\"], ...)` without moving to the next year, so the output is start 2026-12-20, end 2026-01-03. The document is schema-valid but wrong, and poster_findings would raise date_order. v1 did not extend sessions, so it did not hit this.",
+     "fix": "In extend_sessions use `point(de.year if (d[\"ey\"] or d[\"sy\"]) else None, ...)` for hi_pt. In extract's `elif end[\"year\"] is None` branch use `e_year = start[\"year\"] + 1 if (end month, day) < (start month, day) else start[\"year\"]`. The synthetic case now gives 2027-01-03, with 0 prediction changes on dev/test."
+    },
+    {
+     "severity": "major",
+     "location": "merged/extract.py:428 pick_schedule / 707-709 extract (also in v1)",
+     "problem": "Crash: TypeError 'NoneType' object is not subscriptable when the poster year is a common year and the chosen date is a 2.29 with no year printed (e.g. '2026' plus '2.29(일)'). pick_schedule only checks that the date exists for ranges; for a single date, extract's point(poster_year, 2, 29) returns None, and line 728 then reads start['year'].",
+     "fix": "In pick_schedule skip the candidate when `(c[\"sy\"] or poster_year) and not _valid(assumed, sm, sd)`. In extract, when point(poster_year, ...) returns None, fall back to point(None, ..., 'absent'). Both applied in review/fixed."
+    },
+    {
+     "severity": "major",
+     "location": "merged/extract.py:1569 organization_items (new) and 1286 pick_title (also in v1)",
+     "problem": "Crash on confidence=null. The OCR result schema (ocr-result.schema.json) allows null confidence. `min(r[\"confidence\"] for r in ordered)` raises TypeError when a stacked organization cell mixes null and float (new in v2), and pick_title's sum() raises on any null. No current run has a null confidence, but a VLM or hybrid source could produce one.",
+     "fix": "Use `min((c for c in ... if c is not None), default=None)` for organizations, and treat null as 0.5 (a neutral score) in pick_title. Applied; no prediction changes."
+    },
+    {
+     "severity": "major",
+     "location": "merged/extract.py:840-846 edition (EDITION in v1, EDITION_ALT '0주년' new)",
+     "problem": "Schema-invalid output: 'edition.number' has minimum 1, but '제0회', '000번째' and '0주년' produce number 0, and validate_poster rejects the document. This happens whenever OCR reads a stray 0 in that position.",
+     "fix": "Add an `edition_number(m)` helper and keep only matches whose number is >= 1. Applied."
+    },
+    {
+     "severity": "major",
+     "location": "merged/extract.py:1412 krw (BUDGET in v1, eok+num2 path new)",
+     "problem": "Crash: OverflowError 'cannot convert float infinity to integer' when a very long digit run follows 예산/사업비 ('예산 999…(400 digits)원', or '예산 1억 999…만원'). The regex `\\d[\\d,.]*\\d` has no length limit.",
+     "fix": "`return int(round(total)) if math.isfinite(total) else None`. budget_match then moves on to the next match. Applied."
+    },
+    {
+     "severity": "major",
+     "location": "merged/extract.py:395-406 date_candidates.listed()",
+     "problem": "Cubic slowdown. listed() rescans every single date line for every (a, b) pair, so the cost grows with the cube of the number of date lines. With stacked date-only lines (programme tables), 100 lines took 1.1 s, 200 took 21.7 s and 400 took 185 s. v1 on the same input took 0.05 s for 100 and 0.14 s for 200.",
+     "fix": "Cache the listed() result per line index. Output is identical (0 prediction diffs) and the times drop to 0.26 s, 1.4 s and 15 s. The remaining roughly quadratic cost is in extend_sessions and operating_times, which is acceptable for real posters."
+    },
+    {
+     "severity": "major",
+     "location": "merged/extract.py:20 VERSION",
+     "problem": "The candidate still writes extraction.extractor name 'poster_rules_v1', version '1'. Once it is promoted, v2 output cannot be told apart from v1 output in stored documents or in report_experiment.",
+     "fix": "Set VERSION = 'poster_rules_v2' (and extractor version '2') when promoting it to app/poster_ocr/extract.py."
+    },
+    {
+     "severity": "minor",
+     "location": "merged/extract.py:91-92 EDITION_ALT '(\\d{1,3})\\s*주년'",
+     "problem": "Over-general anniversary rule. On test case v2-109 the line '제76주년 춘천지구전투 전승행사' (a battle commemoration) becomes edition 76 on all 4 pipelines, while gold edition is absent. Score: 2 correct (v2-126, v2-133) and 1 false positive on test, nothing on dev. The summary 'edition' rate hides this because it counts only cases where gold has an edition.",
+     "fix": "Optional (variant review/var_anniv): accept 'N주년' only when the rest of the line, after removing the match and '기념', has at most 2 Hangul or Latin letters (a standalone badge). This removes the v2-109 false positive on all 4 pipelines, and every printed per-split number stays identical."
+    },
+    {
+     "severity": "minor",
+     "location": "merged/extract.py:597 LATIN_TRAIL comment vs behaviour",
+     "problem": "The comment says 'two or more English words', but because of the empty `\\s*` a single word of 2+ letters also matches. So '광장 Ab' becomes '광장', '올림픽공원 KSPO' becomes '올림픽공원', and '/ S.E.D' is dropped.",
+     "fix": "Optional (variant review/var_words): require whitespace between at least two words: `\\s+[A-Za-z][A-Za-z.'\\-]*(?:\\s+[A-Za-z][A-Za-z.'\\-]*)+\\s*$`. This changes only easyocr v2-185 (dev), which keeps '/ S.E.D' as in gold. All printed per-split numbers stay identical. Either form is fine once it is linear."
+    },
+    {
+     "severity": "minor",
+     "location": "merged/extract.py:596 CONTACT_MARK '문\\s*의'",
+     "problem": "cut_venue_tail treats any '문의' as a contact label, which also cuts real place names: '청주 문의면 청남대 일원' becomes '청주'. This does not occur in dev/test.",
+     "fix": "Only cut when '문의' is followed by a contact token, e.g. `문\\s*의(?=\\s*(?:처|사항|전화|[:：☎(]|\\d|$))`, or exclude a following 면/동/리."
+    },
+    {
+     "severity": "minor",
+     "location": "merged/extract.py:32-36 VENUE_WORD '마당(?![가-힣])'",
+     "problem": "The comment says '한마당' is not accepted as a venue word, but the regex matches it ('주민 한마당' hits VENUE_WORD). The TITLE_SUFFIX filters currently hide this.",
+     "fix": "Use `(?<!한)마당(?![가-힣])`, or correct the comment."
+    },
+    {
+     "severity": "minor",
+     "location": "merged/extract.py:516 extend_sessions lo_pt / extract 707",
+     "problem": "When the earliest session line has no year but the block's year comes from date text, start.year_basis becomes 'poster_text' instead of 'date_text'. Example: '10.2.(금)' + '2026.10.3.(토)~4.(일)'. Schema-valid, but the provenance is wrong.",
+     "fix": "Carry c['sy'] into lo_pt/hi_pt when the extending line has no year (basis 'date_text')."
+    },
+    {
+     "severity": "minor",
+     "location": "ROAD/JIBUN/LINK/TIME_RANGE/CONTACT_TAIL (same as v1)",
+     "problem": "These patterns are quadratic on very long single lines because they have no left anchor. A 20k-character line takes 3–15 s each. Real OCR lines are under 300 characters, and v1 behaves the same.",
+     "fix": "Optional: add left boundaries (e.g. `(?<![가-힣0-9])` for ROAD/JIBUN, which does not change the first match) or cap line length before matching."
+    },
+    {
+     "severity": "minor",
+     "location": "merged/extract.py:692 record filter",
+     "problem": "Records with inf coordinates passed the positive-area filter and produced schema-invalid evidence. Boxes outside the image or image.height=None still produce invalid documents; that is an input-contract problem, not an extractor bug.",
+     "fix": "Filter records with non-finite bbox values (`math.isfinite`). Applied. Optionally clip boxes to the image size."
+    }
+   ],
+   "summary": "I reviewed .runtime/poster-ocr/proposals-v2/merged/extract.py.\n\n**Evaluation on dev and test.** The rule_dev run reproduces merged/after.log exactly, with 0 schema-invalid documents. Changes against v1 (before.log):\n\n| PaddleOCR rgb_2x | dev (v1 → v2) | test (v1 → v2) |\n|---|---|---|\n| core | .327 → .364 | .053 → .183 |\n| title | .383 → .433 | .250 → .364 |\n| venue | .661 → .732 | .450 → .626 |\n| pair | .879 → .931 | .748 → .899 |\n\n- **Hybrid:** test core goes from .031 to .076 and title from .193 to .314; dev core is flat at .182.\n- **EasyOCR rgb_2x:** test title goes from .10 to .15 and pair from .417 to .496; dev is flat or slightly up.\n- **Regressions:** I saw none in the printed numbers.\n\n**Tests.** test_merged.py passes 17/17 and tests/test_poster_ocr.py passes 17/17. The principles hold: no character substitution (circled numbers become '○' only in the copy used for date search), no case ids or gold or TourAPI reads, and inputs are limited to OCR text, boxes and the template.\n\n**Synthetic records (54 cases).** These covered empty and odd input, very long text, rotated or vertical boxes, and date edge cases:\n- **Blocker, new in v2:** catastrophic backtracking in LATIN_TRAIL. One realistic bilingual venue line took 148.6 s.\n- **Wrong date, new in v2:** a cross-year session block got an end date before its start (2026-12-20 to 2026-01-03).\n- **Crash, new in v2:** null confidence in an organization cell.\n- **Crashes, also in v1:** a 2.29 date in a common year with only the poster year, null confidence in titles, and a budget number long enough to overflow.\n- **Schema-invalid, also in v1:** edition 0 ('제0회', '0주년').\n- **Slow, new in v2:** listed() makes the date-pair step cubic (200 stacked date lines: 21.7 s versus 0.14 s in v1).\n- **Provenance:** VERSION still says poster_rules_v1.\n\n**Patched copy.** All of these are fixed in C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\merged\\review\\fixed\\extract.py (diff in review\\fixed.diff). On dev and test it gives 0 differing prediction files and identical per-split numbers. In the synthetic set, only inputs that break the contract (a box outside the image, image.height=None) still fail validation. The unit tests pass on it.\n\n**Two optional variants.** Every printed per-split number is unchanged for both:\n- **var_anniv:** removes the false positive where '제76주년 …' became edition 76 on test v2-109, on all 4 pipelines.\n- **var_words:** makes LATIN_TRAIL require two English words, as its comment says. It keeps '/ S.E.D' for easyocr dev case v2-185, matching gold.\n\nI recommend promoting the fixed copy, setting VERSION to poster_rules_v2, and optionally adding var_anniv."
+  }
+ ],
+ "extras": [
+  {
+   "key": "fusion",
+   "recommendation": "Yes, ship v2 as a fused pipeline, but only a same-engine one: PaddleOCR rgb_2x as primary plus PaddleOCR rgb_1x as secondary. It uses four general slot rules and no gold, file names or character edits:\n1. Title: keep whichever variant's cited OCR lines have the higher mean recognition confidence. Confidence is comparable here because both readings come from the same engine.\n2. Edition: take rgb_1x's edition when rgb_1x has one.\n3. Organisations: take the whole list from rgb_1x.\n4. Any other slot that rgb_2x left absent: fill it from rgb_1x (this is what fusion.py already does).\n\nOn both splits it improves core_all, title, title_any, edition, organisations F1 and contacts F1. No field drops on either split: venue and year are unchanged, and schedule_pair is unchanged on dev and up 1 on test. Average OCR time per poster rises by 44% (39.9 s to 57.6 s). It uses the same model, needs no second engine or model load, and peak memory stays at the rgb_2x level when the two runs are sequential.\n\nDo not fuse with EasyOCR or the hybrid pipeline as override voters or per-field sources. They lose many more cases than they gain:\n- 3-way vote: dev core drops 18 to 15.\n- Venue taken from hybrid: dev venue drops 37 to 31.\n- Organisations taken from EasyOCR or hybrid: F1 falls.\n- Edition taken from hybrid: dev +3, test -1.\n\nHybrid as an absent-slot fallback (fusion_ph) never loses a case, but it gains only 7 field-cases. For that it adds a second engine, about 1.5 GB of memory, 13 s of model load and +33% time. Not worth it. The one hybrid use that improves both splits is a schedule vote among Paddle 2x, Paddle 1x and hybrid 2x: dev +2/-0 and test +6/-2 on schedule_pair, but test year drops by 1. Keep that only as an option if the product already runs hybrid.\n\nCaveats:\n- None of the gains is significant on its own.\n- About 50 policies were tried on dev+test, so the chosen one should be confirmed once on reserve together with the frozen v2 rules.\n- Rebuild it as a per-slot policy in app/poster_ocr/fusion.py and re-measure after rule v2 is fixed. These numbers are with v1 rules, and several title gains come from region-prefix line grouping that v2 rules might absorb.\n- Fusion adds at most +2 to +3 points. The v1 dev-to-test drop is far larger (title 38% to 25%, core 33% to 5%), so generalising the rules matters much more than fusion.",
+   "results": "Setup and checks\n- v1 rules only, no rule edits. The tasked combinations are paddle+easyocr, paddle+hybrid, Paddle rgb_2x+rgb_1x and per-field engine choice. Pipelines were built with app.poster_ocr.fusion where its absent-slot fallback fits; voting, confidence picks and per-field choices used a scratch experimenter that follows the same logic and validation. Everything was scored with app.poster_ocr.evaluate on dev and test only.\n- No reserve (r2-*) gold, OCR output or predictions exist under pred/ or runs/, and none were opened.\n- The PaddleOCR rgb_1x OCR run finished during this task (15:53, 200/200 succeeded).\n- Regenerating every prediction with extract_v1.py reproduced all 1200 shared prediction files exactly (only extracted_at differs).\n- Every fused document is schema-valid, checked with validate_poster against the union of both runs' OCR ids: fusion.py 400/400, experimenter 200/200 per policy.\n- tests/test_poster_ocr.py: 17 passed. No app/ files were modified, and fusion.py needed no fix.\n\nPer-split results (n: dev 60 / test 140; core n = 55/131, schedule_pair n = 58/139, venue n = 56/131, year n = 53/134, edition n = 25/54)\n\n| Pipeline | Split | core_all | title | title_any | schedule_pair | venue | year | edition | org F1 | contacts F1 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| paddleocr/rgb_2x (baseline) | dev | 18 (32.7%) | 23 (38.3%) | 24 | 51 (87.9%) | 37 (66.1%) | 52 | 16 (64%) | .076 | .588 |\n| | test | 7 (5.3%) | 35 (25.0%) | 41 | 104 (74.8%) | 59 (45.0%) | 129 | 41 (75.9%) | .072 | .556 |\n| fusion_pe (easyocr 2x fallback) | dev | 18 | 23 | 24 | 51 | 37 | 52 | 16 | .076 | .667 |\n| | test | 7 | 35 | 41 | 104 | 59 | 129 | 41 | .078 | .600 (links .250 to .222) |\n| fusion_pe1 (easyocr 1x fallback) | dev | 18 | 23 | 24 | 51 | 37 | 52 | 16 | .076 | .556 (down, fails) |\n| | test | 7 | 35 | 41 | 105 | 59 | 129 | 41 | .072 | .556 |\n| fusion_ph (hybrid 2x fallback) | dev | 18 | 23 | 24 | 51 | 37 | 52 | 18 | .076 | .667 |\n| | test | 7 | 35 | 41 | 106 | 59 | 129 | 42 | .078 | .600 |\n| fusion_ph1 (hybrid 1x fallback) | dev | 18 | 23 | 24 | 51 | 37 | 52 | 16 | .076 | .556 (down, fails) |\n| | test | 7 | 35 | 41 | 106 | 59 | 129 | 42 | .072 | .556 |\n| fusion_pp1 (paddle 1x fallback) | dev | 18 | 23 | 24 | 51 | 37 | 52 | 17 | .075 | .667 |\n| | test | 7 | 35 | 41 | 105 | 59 | 129 | 43 | .082 | .632 |\n| **Recommended: Paddle 2x+1x** (title by confidence + edition and orgs from 1x + 1x fallback) | dev | **19 (34.5%)** | **25 (41.7%)** | 25 | 51 | 37 | 52 | **18 (72%)** | **.116** | **.667** |\n| | test | **9 (6.9%)** | **37 (26.4%)** | **44** | 105 (75.5%) | 59 | 129 | **43 (79.6%)** | **.091** | **.632** |\n| Recommended + schedule vote (Paddle 2x, Paddle 1x, hybrid 2x) | dev | 19 | 25 | 25 | 53 (91.4%) | 37 | 52 | 18 | .116 | .667 |\n| | test | 10 (7.6%) | 37 | 44 | 108 (77.7%) | 59 | 128 (-1) | 43 | .091 | .632 |\n| paddleocr/rgb_1x alone (reference) | dev | 16 | 22 | 22 | 49 | 35 | 52 | 18 | .116 | .706 |\n| | test | 11 | 37 | 44 | 104 | 50 (-9) | 129 | 40 | .091 | .556 |\n\nCase flips for the recommended pipeline against the baseline:\n- Dev: title +2/-0, core +1/-0, edition +2/-0, organisations TP 5 to 7 and FP 31 to 18.\n- Test: title +4/-2, title_any +5/-2, core +2/-0, edition +2/-0, schedule_pair +1/-0, organisations TP 13 to 16 and FP 49 to 38. Contacts TP 5 to 6 on both splits.\n- Smallest McNemar p is 0.25 to 0.5, so no single field is significant on its own.\n\nWhy absent-slot fallback does little: Paddle almost always fills title, venue and schedule. Over 200 cases, fusion_ph took venue 3 times, schedule 2, edition 3, organisations 4 and contacts 3.\n\nOracle upper bound (Paddle wrong while any EasyOCR-family run is right): title +2 dev / +9 test, schedule_pair +3 / +18, venue +4 / +12. Used as overrides, these runs lose far more than that. Policies rejected because a split regressed:\n- vote3_core (Paddle, hybrid 2x, easyocr 2x): dev core 15, test core 6.\n- vote with weight 3.5 over 5 runs: dev venue -2.\n- vote3h_title: test title_any 41 to 40.\n- vote3h_venue: dev venue -3.\n- vote3h_sched: test schedule_pair -3.\n- Venue taken from hybrid: dev venue 31, test 50.\n- Organisations from hybrid or EasyOCR: F1 .031/.061 and .046/.039.\n- Edition from hybrid: dev 19, test 40.\n- Contacts from hybrid or EasyOCR: contacts-only changes, mixed.\n- Confidence pick between Paddle 2x and 1x for venue: test venue +1/-2. For schedule: dev schedule_pair +1/-3.\n\nHow fragile the title confidence pick is: 5 of its 8 flips are near ties where both confidences are 0.99 or higher. The 1x title often includes a region prefix, for example 김제 지평선축제 against 지평선축제. Requiring the 1x reading to beat the 2x reading by a margin gives:\n- Margin 0: dev +2, test +4/-2.\n- Margin 0.01: dev +1, test +2/-0 (title_any +3/-0).\n- Margin 0.05: dev 0, test +1.\nIt is never net negative, but the gain is small.\n\nCost (mean / median / p90 seconds per poster, CPU, 4 threads, sequential runs)\n\n| Pipeline | Mean | Median | p90 | Notes |\n|---|---|---|---|---|\n| Paddle 2x | 39.9 | 37.8 | 46.9 | peak 7.3 GB |\n| Paddle 2x+1x | 57.6 | 54.2 | 71.5 | +44%; 1x alone 17.8 s, peak 3.6 GB; no new model |\n| Paddle 2x + hybrid 2x | 53.1 | 49.6 | 67.4 | +33%; hybrid is 13.2 s; adds EasyOCR (torch), 13.4 s load, about 1.5 GB RSS, plus a separate paddle-env worker |\n| Paddle 2x+1x + hybrid 2x | 70.8 | 66.3 | 91.7 | +77% |\n| Paddle 2x + easyocr 1x | ~43.2 | | | +8%, but no gain |\n| Paddle 2x + hybrid 1x | ~44.9 | | | +13%, but no gain |\n\nTraceability notes:\n- Paddle 2x and 1x record ids (padd_rgb_2x_* and padd_rgb_1x_*) do not overlap, so production must keep both runs' OCR records for evidence.\n- Hybrid and EasyOCR share the easy_rgb_2x_* id prefix, so one document drawing from both would have ambiguous evidence ids. Avoid that combination.\n- fusion.py with the same engine as primary and secondary (fusion_pp1) also writes harmless self-fused rgb_1x documents.",
+   "files": [
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\policies_round2.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\policies_final.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\final_check.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\policies_round1.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\policies_round3.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\policies_margin.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\fallback_all.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\fusion_ph1.json",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\pred-v1",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\scripts\\fuse_exp.py",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\scripts\\flips.py",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\scripts\\table.py",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\fusion\\scripts\\build_root.py",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\runtime\\poster-ocr\\pred\\fusion_pe",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\runtime\\poster-ocr\\pred\\fusion_ph",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\runtime\\poster-ocr\\pred\\fusion_pe1",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\runtime\\poster-ocr\\pred\\fusion_ph1",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\data\\runtime\\poster-ocr\\pred\\fusion_pp1",
+    "C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\app\\poster_ocr\\fusion.py"
+   ]
+  },
+  {
+   "key": "schema",
+   "summary": "I reviewed the labelling conventions for all 200 dev+test gold labels, the 30 blind second labels and the pass-1 snapshot. I edited no gold files or extractor code and opened no reserve (r2-*) files; tests/test_poster_ocr.py still passes (17/17). To measure how each convention moves the metrics, I re-ran the current extract.py with rule_dev (dev+test; same numbers as the brief, e.g. PaddleOCR test title 0.25 / venue 0.45 / core 0.053) and scored rewritten gold kept in memory only. The proposal is at C:\\Users\\playdata2\\Desktop\\SKN33-Final-1Team\\SKN33-Final-1Team\\.runtime\\poster-ocr\\proposals-v2\\schema\\proposal.md. The scripts that reproduce it (load.py, gaz.py, admin.py, sim.py) are in the same folder; gaz.py's district list is for labelling and scoring only, never the extractor.\n\nFindings:\n(1) admin_area is the worst offender. Labellers used two conventions: 25 notes require an administrative suffix, while 13 notes accept bare names (pass 2 switched only some files). Bare city/district names also inside compound words split the same way (예산사과축제 is labelled present, 예산장터 absent). The blind labels disagree on 8/30 cases (27%). Rule A1 counts a district only when it is a standalone token carrying the 시/군/구 suffix, and a 시·도 only from a closed list. It can be applied by script and changes 53 files (dev 13, test 40); 2 files (v2-002, v2-024) need an image check and should stay as they are. With the current extractor, PaddleOCR district accuracy goes from 11/25 to 11/15 on dev and from 14/63 to 14/26 on test. The number of correct answers does not change: the removed labels were ones a dictionary-free extractor could never reach. Presence recall rises (0.53→0.75 dev, 0.35→0.65 test) and precision falls (1.00→0.88 dev, 0.86→0.76 test), because the extractor's 시·도 regex has no word boundary.\n(2) title.official already follows \"raw minus year and edition\" in 200/200 files, and region prefixes are included consistently. Titles starting with a region name make up 20% of dev but 42% of test, which explains part of the v1 title drop. I propose an extra score, title_core (also accepts a match once the leading region/place word is removed), with title staying the main score. PaddleOCR title_any goes 24→25 on dev and 41→49 on test; hybrid 21→21 and 28→33. The two blind title disagreements both concern lines above the title (genre or event-type labels), so rule T1 needs to be written down.\n(3) In 12 files the English/brand variants keep the year or edition. Scoring should strip them; this has no effect on current predictions.\n(4) venue.raw: an address in parentheses after the place name is included in 4 files and excluded in 3, depending on print layout; English translations in parentheses are also inconsistent. Rule V1 drops the address part and the English translation, changing 5 test files. With the current extractor, PaddleOCR and hybrid each lose 1 test case. Simulated together with a small extractor rule (drop a trailing parenthesis that matches the detected address), PaddleOCR goes 37→38 dev and 59→59 test, hybrid 28→29 and 48→49, so V1 should only be adopted together with that rule.\n(5) organizations: 239 of 395 named, role-labelled gold items are marked partial (some characters uncertain), and no pipeline matches any of them. Scoring F1 on legible items only raises PaddleOCR F1 from 0.076 to 0.128 on dev and 0.072 to 0.148 on test. I also propose written rules for name granularity (blind v2-156), role inheritance across wrapped lines, and an optional role_status field for 4 files where a role label is printed but unreadable.\n(6) schedule: across the 16 multi-period files the gold applies an unwritten priority order with no exceptions: labelled overall period first, then the sub-event whose name matches the title, then the full span, with pre-events going to programs. No gold changes are needed; PaddleOCR misses 6 of these (dev 1, test 5) by picking the first interval. I propose recording the separate intervals in operating_raw for 3 files (v2-006, v2-121, v2-143); v2-079 is partly done.\nThe rule-based gold changes (57 files including the overlap) can also be applied to the reserve set by script without anyone opening it.",
+   "proposals": [
+    {
+     "field": "admin_area",
+     "problem": "Two conventions are mixed across the gold. 25 labeller notes require a 시/군/구 suffix ('진안' has no suffix → absent); 13 notes, including some pass-2 edits, accept bare names (포천, 양양) or names inside compounds (예산사과축제 present but 예산장터 absent). Region short forms inside compounds are also split: 부산불꽃축제 and 광주서창 are labelled present, 세종한글축제 and 서울어린이대공원 absent; '울산 야외도서관' is absent while '대전 빵 축제' is present. Blind disagreement is 8/30 (27%). A dictionary-free extractor cannot reach bare-name labels: PaddleOCR gets 0 of them right.",
+     "rule": "A1 (standard 1.1): sources are the title block, venue block and address line only (not organisations, logos or slogans). Region comes from a closed 시·도 list (full name, short form, ○○시/○○도, 전남광주통합특별시; Hangul only). District requires a full name with 시/군/구/특례시 suffix. Each must be a standalone token, or part of a token made only of admin units (대전중구); a trailing 일원/일대/전역 is allowed. Bare names (포천) and names inside compounds (예산사과축제, 남구청년예술제, 성북구청, 태백시청, 부산불꽃축제) do not count. Values are written as printed, sources checked in order venue → address → title; multiple districts are joined by a space when adjacent and by ', ' when separate. Script-applicable from title.raw, venue.raw, address.raw plus the official district list (labelling only). v2-002 and v2-024 need an image check and should stay present. PaddleOCR rgb_2x district accuracy: dev 11/25→11/15, test 14/63→14/26; presence recall 0.53→0.75 (dev) and 0.35→0.65 (test); precision 1.00→0.88 and 0.86→0.76.",
+     "deterministic": true,
+     "affected_cases": [
+      "v2-028",
+      "v2-035",
+      "v2-036",
+      "v2-037",
+      "v2-038",
+      "v2-039",
+      "v2-040",
+      "v2-065",
+      "v2-067",
+      "v2-071",
+      "v2-074",
+      "v2-076",
+      "v2-124",
+      "v2-125",
+      "v2-127",
+      "v2-129",
+      "v2-137",
+      "v2-138",
+      "v2-139",
+      "v2-142",
+      "v2-144",
+      "v2-145",
+      "v2-153",
+      "v2-154",
+      "v2-184",
+      "v2-186",
+      "v2-190",
+      "v2-193",
+      "v2-195",
+      "v2-196",
+      "v2-066",
+      "v2-068",
+      "v2-077",
+      "v2-078",
+      "v2-122",
+      "v2-126",
+      "v2-128",
+      "v2-132",
+      "v2-133",
+      "v2-135",
+      "v2-159",
+      "v2-187",
+      "v2-189",
+      "v2-191",
+      "v2-009",
+      "v2-021",
+      "v2-123",
+      "v2-143",
+      "v2-198",
+      "v2-075",
+      "v2-059",
+      "v2-061",
+      "v2-172"
+     ]
+    },
+    {
+     "field": "title.official (title block scope)",
+     "problem": "official = raw minus year and edition holds in 200/200 files, and region prefixes attached to the title are included consistently (71 titles: dev 12, test 59). Which lines above the title belong to it is not specified, though: genre, event-type and occasion lines. Both blind title disagreements are of this kind (v2-016 '창작 실경뮤지컬', v2-052 '청년 STREET페스티벌'). Related cases: v2-001, v2-025, v2-090.",
+     "rule": "T1 (labelling, needs human judgement): title.raw holds every line printed as part of the title lockup, in reading order. Include region/place prefixes (small, speech-bubble or vertical text too), qualifiers (세계문화유산, 가을) and continuations with &, in or × in the same block. Exclude genre/format-only lines, '…기념' occasion lines and region tags printed apart from the title; record an excluded line that contains the festival name as variants[alias]. official stays raw minus year minus edition. No gold changes.",
+     "deterministic": false,
+     "affected_cases": [
+      "v2-016",
+      "v2-052",
+      "v2-001",
+      "v2-002",
+      "v2-025",
+      "v2-090"
+     ]
+    },
+    {
+     "field": "title (evaluation: title_core)",
+     "problem": "The extractor drops a leading region prefix in 9 PaddleOCR cases (dev 1, test 8). These are scored the same as completely wrong titles, and prefixed titles are twice as common in test as in dev.",
+     "rule": "T3 (evaluate.py, extra score; keep title as the main score): title_core counts as correct when title_any matches, or when gold official/variants and the prediction match after removing a leading standalone admin word (시·도, suffixed 시·군·구 or bare 시·군·구 name; the list is used only in scoring). PaddleOCR rgb_2x title_any → title_core: dev 24→25, test 41→49. Hybrid 21→21 / 28→33; easyocr rgb_2x 12→12 / 15→18; easyocr rgb_1x 11→11 / 16→19. No gold changes.",
+     "deterministic": true,
+     "affected_cases": [
+      "v2-035",
+      "v2-044",
+      "v2-067",
+      "v2-073",
+      "v2-106",
+      "v2-127",
+      "v2-145",
+      "v2-160",
+      "v2-166",
+      "v2-170",
+      "v2-178",
+      "v2-195"
+     ]
+    },
+    {
+     "field": "title.variants",
+     "problem": "official strips year and edition, but 13 variants in 12 files keep them ('Hyoseok Cultural Festival 2026', 'The 12th Muan …'), while v2-041's note strips them. title_any could therefore reject an English title extracted correctly without the year.",
+     "rule": "T4 (evaluate.py): before comparing title_any/title_core, remove 4-digit years (2026, 2026년) and edition tokens (제N회, The Nth, Nst/nd/rd/th) from the variants. variants[].raw stays the printed text. No effect on current predictions; no gold changes.",
+     "deterministic": true,
+     "affected_cases": [
+      "v2-007",
+      "v2-019",
+      "v2-068",
+      "v2-072",
+      "v2-073",
+      "v2-097",
+      "v2-102",
+      "v2-105",
+      "v2-142",
+      "v2-143",
+      "v2-160",
+      "v2-194"
+     ]
+    },
+    {
+     "field": "title.official (English-only posters)",
+     "problem": "7 files have only a Latin-script title and keep it as official, which is consistent. Bilingual posters use the Korean title as official (v2-020 note). v2-125 keeps the large English title because its Korean name is printed in scattered pieces.",
+     "rule": "T2: if Korean and English festival names are both printed as a single block, official is the Korean one and the English goes to variants[english]. If the Korean name is scattered or there is no Korean, official is the Latin text as printed. No changes; v2-125 needs a team decision.",
+     "deterministic": false,
+     "affected_cases": [
+      "v2-003",
+      "v2-012",
+      "v2-027",
+      "v2-075",
+      "v2-111",
+      "v2-125",
+      "v2-137"
+     ]
+    },
+    {
+     "field": "venue.raw",
+     "problem": "An address in parentheses or after a separator is part of venue.raw in 4 files (v2-005, 016, 137, 176) and excluded in 3 (v2-089, 157, 174); the deciding factor was print layout, which the gold does not record. English translations in parentheses are kept in v2-023 but dropped in v2-125 and v2-192.",
+     "rule": "V1: venue.raw is the venue phrase (region prefix, 일원/일대 and descriptive parentheses kept) minus the venue label (장소/위치/Venue/@/pin), minus any address part attached by parentheses or a separator (the address goes in address.raw only), minus a Latin-only translation in parentheses when the main text is Korean. If the venue text is only an address, keep it whole. Script-applicable: 5 test files change. With the current extractor PaddleOCR goes dev 37→37 and test 59→58, hybrid 28→28 and 48→47, easyocr unchanged. Combined with an extractor rule that drops a trailing parenthesis equal to the detected address (simulated on saved predictions, not implemented): PaddleOCR 38 / 59, hybrid 29 / 49. Adopt only together with that extractor rule.",
+     "deterministic": true,
+     "affected_cases": [
+      "v2-005",
+      "v2-016",
+      "v2-023",
+      "v2-137",
+      "v2-176"
+     ]
+    },
+    {
+     "field": "organizations (evaluation)",
+     "problem": "239 of 395 named, role-labelled gold items (dev 56/98, test 183/297, in 70 files) are marked partial (some characters uncertain). The exact-match F1 counts all of them as misses, and no pipeline matches any of them (PaddleOCR 0/204 partial logos, 0/35 partial text), so org recall mostly measures labeller uncertainty.",
+     "rule": "O1 (evaluate.py; keep the current score alongside): org F1 uses gold items that have a name, roles and legibility == legible. Partial items are ignored: a prediction matching one is neither a hit nor a false positive (optionally reported separately with a character-error-rate match). F1 current → O1: PaddleOCR dev 0.076→0.128, test 0.072→0.148 (FN 91→37 and 284→101); hybrid 0.020→0.042 and 0.042→0.095; easyocr rgb_2x 0.020→0.043 and 0.013→0.030; easyocr rgb_1x 0.040→0.089 and 0.000→0.000. No gold changes.",
+     "deterministic": true,
+     "affected_cases": [
+      "v2-002",
+      "v2-004",
+      "v2-005",
+      "v2-012",
+      "v2-013",
+      "v2-014",
+      "v2-015",
+      "v2-017",
+      "v2-018",
+      "v2-019",
+      "v2-021",
+      "v2-031",
+      "v2-038",
+      "v2-043",
+      "v2-044",
+      "v2-045",
+      "v2-046",
+      "v2-049",
+      "v2-050",
+      "v2-051",
+      "v2-055",
+      "v2-058",
+      "v2-063",
+      "v2-066",
+      "v2-070",
+      "v2-073",
+      "v2-074",
+      "v2-082",
+      "v2-083",
+      "v2-085",
+      "v2-095",
+      "v2-097",
+      "v2-099",
+      "v2-103",
+      "v2-104",
+      "v2-105",
+      "v2-106",
+      "v2-109",
+      "v2-111",
+      "v2-114",
+      "v2-115",
+      "v2-117",
+      "v2-121",
+      "v2-122",
+      "v2-124",
+      "v2-125",
+      "v2-130",
+      "v2-132",
+      "v2-133",
+      "v2-135",
+      "v2-139",
+      "v2-140",
+      "v2-141",
+      "v2-148",
+      "v2-150",
+      "v2-152",
+      "v2-167",
+      "v2-170",
+      "v2-175",
+      "v2-177",
+      "v2-178",
+      "v2-179",
+      "v2-180",
+      "v2-187",
+      "v2-188",
+      "v2-191",
+      "v2-193",
+      "v2-197",
+      "v2-198",
+      "v2-200"
+     ]
+    },
+    {
+     "field": "organizations (name granularity, role inheritance, unlabelled logos)",
+     "problem": "Mapping from printed role label to roles is 100% consistent, and the 220 items without a role label (84 files) correctly have roles=[]. But there is no rule for splitting names: gold keeps '합천군 황매산축제위원회' as one organisation while the blind label split it into two (v2-156), and there are 8 similar plus 12 '시·도 + district' names. Role inheritance across wrapped lines (v2-019, 130, 147) is unwritten. A role label that is printed but unreadable (v2-077, 146, 152, 166) looks the same as no label, so the 'roles_unlabeled' check reports it wrongly.",
+     "rule": "O2: one item per printed organisation. A region/district name and an institution name on one logo or line without a separator form one name; split only on ·, /, comma, 및, |, × or separate logos; the same organisation printed under different roles becomes separate items. O3: a role label applies to its line and to wrapped continuation lines of the same list, until the next role label or band; logos in a separate unlabelled band keep roles=[]. O4 (optional schema change): role_status = labeled | unlabeled | illegible, set to illegible in 4 files. No metric effect; no current gold changes except O4.",
+     "deterministic": false,
+     "affected_cases": [
+      "v2-156",
+      "v2-009",
+      "v2-103",
+      "v2-111",
+      "v2-112",
+      "v2-123",
+      "v2-135",
+      "v2-161",
+      "v2-019",
+      "v2-130",
+      "v2-147",
+      "v2-077",
+      "v2-146",
+      "v2-152",
+      "v2-166"
+     ]
+    },
+    {
+     "field": "schedule (multi-period events)",
+     "problem": "The standard does not say how to choose the main period when several date blocks are printed. The 16 gold files with multiple blocks follow an unwritten priority order with no exceptions. PaddleOCR predictions follow a different choice (first interval or a sub-block) in 6 of them (dev v2-079; test v2-006, 098, 116, 119, 143): these are extractor errors, not gold inconsistency.",
+     "rule": "S1: a labelled overall period (축제기간, 행사기간, 기간, 일시, 본행사, 운영기간, 운영일정) wins. S2: otherwise, if the blocks are named sub-events and one name equals or is contained in title.official (ignoring spaces and punctuation), use that block. S3: otherwise use the full span (first start to last end) of all date phrases of the same event. S4: eve/pre-events printed outside the main period (전야제, 개막제, 사전행사, 추모제) and co-held separate events go to programs[].period. Exceptions: composite image v2-097, lineup poster v2-111. No gold changes.",
+     "deterministic": true,
+     "affected_cases": [
+      "v2-013",
+      "v2-065",
+      "v2-121",
+      "v2-136",
+      "v2-149",
+      "v2-119",
+      "v2-079",
+      "v2-006",
+      "v2-074",
+      "v2-098",
+      "v2-116",
+      "v2-143",
+      "v2-082",
+      "v2-104",
+      "v2-147",
+      "v2-169"
+     ]
+    },
+    {
+     "field": "schedule.operating_raw",
+     "problem": "When separate intervals or dates are merged into one span, only v2-116 records the printed date list in operating_raw. v2-006, v2-121 and v2-143 leave it empty and v2-079 has only '매주 토,일', so the span can be mistaken for daily operation. The field is not scored.",
+     "rule": "S5: whenever schedule is an S3 span over separate intervals or dates, operating_raw holds the printed interval/date list (labels removed). Optional schema addition: schedule.basis = labeled | title_block | span | single, so span cases can be scored separately. No metric effect.",
+     "deterministic": true,
+     "affected_cases": [
+      "v2-006",
+      "v2-121",
+      "v2-143",
+      "v2-079"
+     ]
+    }
+   ]
+  }
+ ]
+}

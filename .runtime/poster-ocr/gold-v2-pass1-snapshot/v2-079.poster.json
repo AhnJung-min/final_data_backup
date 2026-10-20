@@ -1,0 +1,312 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-c808e0b05290",
+  "image": {
+    "sha256": "c808e0b05290d44416d98f05ccdfdbb1316046888387823efcab6a9356261eb7",
+    "width": 441,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:37+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "포스터에 '양재아트살롱_가을마켓'과 '서리풀아트살롱' 두 행사가 일정·장소와 함께 인쇄됨. 제목 '양재 아트살롱'에 맞는 가을마켓 일정을 schedule로, 두 행사를 programs로 기록.",
+      "가을마켓 일정은 두 구간(10.2~3, 10.10~25 매주 토,일)이라 schedule은 첫 시작일~마지막 종료일, 운영 규칙은 operating_raw로 둠.",
+      "그림 속 무대 현수막에 4자리 숫자(연도로 보임)가 있으나 2025/2026을 확정할 수 없어 year를 illegible로 두고 날짜 iso는 비움.",
+      "우측 상단 로고 4개 중 'YANGJAE' 마크는 badges, 맨 아래 '살롱of양재천'으로 보이는 로고는 글자를 확정하지 못해 기록하지 않음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "양재 아트살롱",
+    "official": "양재 아트살롱",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "illegible",
+    "raw": null,
+    "value": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "일상과 문화가 만나는 아트마켓",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "10.2.(금) ~ 3.(토) 10.10.(토) ~ 25.(일) / 매주 토,일",
+    "start": {
+      "iso": null,
+      "year": null,
+      "month": 10,
+      "day": 2,
+      "weekday": "fri",
+      "year_basis": "absent"
+    },
+    "end": {
+      "iso": null,
+      "year": null,
+      "month": 10,
+      "day": 25,
+      "weekday": "sun",
+      "year_basis": "absent"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": "매주 토,일",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "양재천길 살롱스트림 (영동1교 ~ 수변무대)",
+    "items": [
+      "양재천길 살롱스트림 (영동1교 ~ 수변무대)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "서초",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "양재아트살롱_가을마켓",
+        "category_raw": null,
+        "period": {
+          "raw": "10.2.(금) ~ 3.(토) 10.10.(토) ~ 25.(일) / 매주 토,일",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 10,
+            "day": 2,
+            "weekday": "fri",
+            "year_basis": "absent"
+          },
+          "end": {
+            "iso": null,
+            "year": null,
+            "month": 10,
+            "day": 25,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "times": []
+        },
+        "venue_raw": "양재천길 살롱스트림 (영동1교 ~ 수변무대)",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "서리풀아트살롱",
+        "category_raw": null,
+        "period": {
+          "raw": "9.19.(토) ~ 20.(일)",
+          "start": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 19,
+            "weekday": "sat",
+            "year_basis": "absent"
+          },
+          "end": {
+            "iso": null,
+            "year": null,
+            "month": 9,
+            "day": 20,
+            "weekday": "sun",
+            "year_basis": "absent"
+          },
+          "times": []
+        },
+        "venue_raw": "반포대로 (서리풀뮤직페스티벌 행사장)",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "YANGJAE",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "플랫 일러스트",
+      "가을 풍경"
+    ],
+    "main_colors": [
+      "주황",
+      "하늘색",
+      "파랑",
+      "노랑",
+      "초록",
+      "빨강"
+    ],
+    "main_objects": [
+      "단풍 메타세쿼이아 길",
+      "양재천 물길",
+      "야외 무대 공연",
+      "그림 그리는 사람",
+      "마켓 천막",
+      "낙엽"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "하늘색 배경 아래 주황 단풍 가로수가 늘어선 양재천과 무대·마켓 천막·그림 그리는 사람들을 플랫 일러스트로 그리고, 좌상단에 두 행사 일정·장소, 상단 중앙에 슬로건과 주황 제목, 우상단에 로고를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "441×627 이미지. 일정·장소는 판독, 우상단 로고의 작은 글자와 무대 현수막 숫자는 판독 불가."
+    ]
+  }
+}

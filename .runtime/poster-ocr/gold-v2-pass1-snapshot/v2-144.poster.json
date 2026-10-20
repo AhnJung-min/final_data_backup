@@ -1,0 +1,323 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-12be8f9df3ac",
+  "image": {
+    "sha256": "12be8f9df3ac90cdc40806d99e37ab79aa50398bfec0c39a65edd3697a83824a",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:07:21+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "좌상단 '2026 정선 국가유산 야행'을 축제명으로 봄(QR 안내 '정선 국가유산 야행 홈페이지'와 일치). 가운데 큰 '정선야행 걷는 밤물관'은 같은 행사의 브랜드명으로 title.variants(brand)에, 우상단 영문은 그 영문판으로 기록.",
+      "'첫 번째 이야기'는 연작 회차 표기(N번째)로 보고 edition=1로 기록함.",
+      "'매일 17:00-23:00, 정선읍 일대' 줄에서 시간은 times, '매일'은 operating_raw, '정선읍 일대'는 venue로 나눔.",
+      "하단 일러스트 아래 작은 글자(정선아리랑·정선향교 등)는 그림 속 유산 이름 설명이라 기록하지 않음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 정선 국가유산 야행",
+    "official": "정선 국가유산 야행",
+    "variants": [
+      {
+        "kind": "brand",
+        "raw": "정선야행 걷는 밤물관",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "english",
+        "raw": "THE WALKING NIGHT-MUSEUM OF JEONGSEON",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "첫 번째 이야기",
+    "number": 1,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 10. 16.(금) - 10. 18.(일)",
+    "start": {
+      "iso": "2026-10-16",
+      "year": 2026,
+      "month": 10,
+      "day": 16,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-18",
+      "year": 2026,
+      "month": 10,
+      "day": 18,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "매일 17:00-23:00",
+        "start": "17:00",
+        "end": "23:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": "매일",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "정선읍 일대",
+    "items": [
+      "정선읍 일대"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "국가유산청",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "강원특별자치도",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "정선군",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "정선군관광협의회",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "정선 국가유산 야행 홈페이지",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "개막식",
+        "category_raw": null,
+        "period": {
+          "raw": "일시: 2026. 10. 16. (금). 17:30",
+          "start": {
+            "iso": "2026-10-16",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+            "weekday": "fri",
+            "year_basis": "date_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "17:30",
+              "start": "17:30",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": "아리광장 (정선읍행정복지센터 뒷편 주차장)",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "금색 선화 일러스트",
+      "어두운 남색 배경"
+    ],
+    "main_colors": [
+      "남색",
+      "금색",
+      "회녹색"
+    ],
+    "main_objects": [
+      "한복 차림 인물 선화",
+      "한옥 건물",
+      "노거수",
+      "QR 코드"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "짙은 남색 배경에 회녹색 큰 글씨 '정선야행 걷는 밤물관'과 금색 일정·개막식 안내를 두고, 아래에 한옥과 나무, 노래하는 인물을 금색 선화로 그린 야행 포스터."
+  },
+  "quality": {
+    "small_text": "legible",
+    "notes": [
+      "443×627 이미지. 하단 기관 로고와 QR 안내 문구는 확대 시 판독됨. 일러스트 아래 유산 이름 캡션은 흐림."
+    ]
+  }
+}

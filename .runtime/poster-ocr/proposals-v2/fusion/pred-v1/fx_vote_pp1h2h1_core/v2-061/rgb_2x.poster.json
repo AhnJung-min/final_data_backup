@@ -1,0 +1,272 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-48647c73c9b0",
+ "image": {
+  "sha256": "48647c73c9b0b42f26ed8ce3b3d84e60544e040b2d997e9aeb0bc1d44c7fa860",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:36+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:vote_pp1h2h1_core"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(vote_pp1h2h1_core): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "공룡세계엑스포",
+  "official": "공룡세계엑스포",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    69.5,
+    110.5,
+    373.5,
+    173.5
+   ],
+   "confidence": 0.9988728761672974
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    83.5,
+    177.0,
+    358.0,
+    201.0
+   ],
+   "confidence": 0.9984058141708374
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.22.(화)~11.1.(일)",
+  "start": {
+   "iso": "2026-09-22",
+   "year": 2026,
+   "month": 9,
+   "day": 22,
+   "weekday": "tue",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-01",
+   "year": 2026,
+   "month": 11,
+   "day": 1,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    83.5,
+    177.0,
+    358.0,
+    201.0
+   ],
+   "confidence": 0.9984058141708374
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "경남고성당항포관광지 문의:055-670-7400",
+  "items": [
+   "경남고성당항포관광지 문의:055-670-7400"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    167.5,
+    590.5,
+    373.0,
+    602.5
+   ],
+   "confidence": 0.9881975650787354
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "장소:경남고성당항포관광지 문의:055-670-7400",
+  "region": "경남",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    167.5,
+    590.5,
+    373.0,
+    602.5
+   ],
+   "confidence": 0.9881975650787354
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "고성문화관광재단",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_007"
+     ],
+     "bbox": [
+      46.5,
+      593.5,
+      153.0,
+      611.5
+     ],
+     "confidence": 0.9987931251525879
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "055-670-7400",
+    "value": "055-670-7400",
+    "label_raw": "문의",
+    "department": "장소 경남고성당항포관광지",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_008"
+     ],
+     "bbox": [
+      167.5,
+      590.5,
+      373.0,
+      602.5
+     ],
+     "confidence": 0.9881975650787354
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "homepage",
+    "platform": null,
+    "raw": "www.gngsctf.or.kr/dinoexpo",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_007",
+      "padd_rgb_2x_009"
+     ],
+     "bbox": [
+      46.5,
+      593.5,
+      334.5,
+      615.5
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

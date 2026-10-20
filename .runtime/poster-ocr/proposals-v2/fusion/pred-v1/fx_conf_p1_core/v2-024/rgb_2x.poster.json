@@ -1,0 +1,237 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-868022683e29",
+ "image": {
+  "sha256": "868022683e2950adbb11d2a8175aec1b505bd010cb7ea24717f2fc36c72d77ce",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:35+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_core"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_core): title"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "신비의 바닷길축제 K-mracle!",
+  "official": "신비의 바닷길축제 K-mracle!",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_007",
+    "padd_rgb_1x_008",
+    "padd_rgb_1x_009"
+   ],
+   "bbox": [
+    29.0,
+    192.0,
+    431.0,
+    505.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제26회",
+  "number": 26,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    44.0,
+    103.5,
+    130.5,
+    135.0
+   ],
+   "confidence": 0.9975683689117432
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_015"
+   ],
+   "bbox": [
+    183.0,
+    511.5,
+    418.0,
+    530.0
+   ],
+   "confidence": 0.9932324886322021
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.11.(금)~13.(일)3일간",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": "3일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_015"
+   ],
+   "bbox": [
+    183.0,
+    511.5,
+    418.0,
+    530.0
+   ],
+   "confidence": 0.9932324886322021
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "무창포해수욕장 일원 증남 보성시 움권을관리 8054일원",
+  "items": [
+   "무창포해수욕장 일원 증남 보성시 움권을관리 8054일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_016",
+    "padd_rgb_2x_017"
+   ],
+   "bbox": [
+    304.5,
+    532.5,
+    417.0,
+    556.5
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "보성시 움권을관리 8054",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_017"
+   ],
+   "bbox": [
+    304.5,
+    548.0,
+    415.5,
+    556.5
+   ],
+   "confidence": 0.7092450857162476
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "증남 보성시 움권을관리 8054일원",
+  "region": null,
+  "district": "보성시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_017"
+   ],
+   "bbox": [
+    304.5,
+    548.0,
+    415.5,
+    556.5
+   ],
+   "confidence": 0.7092450857162476
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

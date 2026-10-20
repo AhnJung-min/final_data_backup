@@ -1,0 +1,384 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-983e18b6610e",
+  "image": {
+    "sha256": "983e18b6610e48671ab8256c24ecb143180725a780591929ef9ac5998e81288a",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:08+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass1",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "대형 영문 레터링 'CHEMiSTREET FESTiVAL'(i는 소문자형으로 인쇄)보다 국문 정식 명칭 '2026 케미스트릿 강남역 페스티벌'을 제목으로 두고 영문을 variants(english)에 기록함. 영문 위 '2026'은 연도로만 반영함.",
+      "일정은 '09.05. SAT & 09.06. SUN' 이틀이며 날짜별 시간과 행사명(MIDNIGHT EDM FESTIVAL, CHEMISTREET FESTIVAL)을 times와 programs에 각각 기록함.",
+      "스포트라이트 속 'SHOWKASE', 'K-STYLE', 'K-TASTE'는 테마 문구로 slogans에 기록함(프로그램 구역일 가능성은 사람 검토 필요).",
+      "하단 로고 4개는 역할 표기가 없어 roles를 비움. 장소 문구에 시·군·구 이름이 없어 admin_area는 absent."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 케미스트릿 강남역 페스티벌",
+    "official": "케미스트릿 강남역 페스티벌",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "CHEMiSTREET FESTiVAL",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "SHOWKASE",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "K-STYLE",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "K-TASTE",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "09.05. SAT & 09.06. SUN",
+    "start": {
+      "iso": "2026-09-05",
+      "year": 2026,
+      "month": 9,
+      "day": 5,
+      "weekday": "sat",
+      "year_basis": "poster_text"
+    },
+    "end": {
+      "iso": "2026-09-06",
+      "year": 2026,
+      "month": 9,
+      "day": 6,
+      "weekday": "sun",
+      "year_basis": "poster_text"
+    },
+    "times": [
+      {
+        "raw": "19:00-24:00",
+        "start": "19:00",
+        "end": "24:00",
+        "applies_to": "09.05. SAT"
+      },
+      {
+        "raw": "08:00-21:00",
+        "start": "08:00",
+        "end": "21:00",
+        "applies_to": "09.06. SUN"
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "케미스트릿 강남역 상권 일대",
+    "items": [
+      "케미스트릿 강남역 상권 일대"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "CHEMI STREET",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "서울특별시",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "서초",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "서초여성일자리주식회사",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "MIDNIGHT EDM FESTIVAL",
+        "category_raw": null,
+        "period": {
+          "raw": "09.05. SAT 19:00-24:00",
+          "start": {
+            "iso": "2026-09-05",
+            "year": 2026,
+            "month": 9,
+            "day": 5,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "19:00-24:00",
+              "start": "19:00",
+              "end": "24:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "CHEMISTREET FESTIVAL",
+        "category_raw": null,
+        "period": {
+          "raw": "09.06. SUN 08:00-21:00",
+          "start": {
+            "iso": "2026-09-06",
+            "year": 2026,
+            "month": 9,
+            "day": 6,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "08:00-21:00",
+              "start": "08:00",
+              "end": "21:00",
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "brand_campaign",
+        "raw": "오늘 행복하고 내일이 기대되는 서초",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "아이소메트릭 일러스트",
+      "레터링 타이틀"
+    ],
+    "main_colors": [
+      "분홍",
+      "핫핑크",
+      "흰색",
+      "청록",
+      "노랑",
+      "보라"
+    ],
+    "main_objects": [
+      "도시 건물 스카이라인",
+      "만국기 가랜드",
+      "웃는 해 캐릭터",
+      "기타·드럼·첼로 악기",
+      "푸드트럭",
+      "포토존",
+      "횡단보도"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "분홍·청록 그라데이션 하늘과 도시 건물 일러스트 위에 흰색·분홍 입체 레터링 영문 제목을 크게 두고, 중앙 흰 상자에 국문 제목·날짜별 시간·장소, 하단에 악기·푸드트럭 일러스트와 기관 로고를 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 로고의 작은 국문·영문 소문구(케미스트릿 로고 위·옆, 서초여성일자리주식회사 아래)는 일부만 판독됨.",
+      "그림 속 간판 글자(CHEMI MARKET, K-BBQ, PHOTO 등)는 장식으로 보고 기록하지 않음."
+    ]
+  }
+}

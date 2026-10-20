@@ -1,0 +1,551 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-cc4ae5743e3e",
+  "image": {
+    "sha256": "cc4ae5743e3e13b95946c23c2d14b978aecb6b4e888a8ab9b4022260b4ee0e95",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:07+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "DAY1~3 프로그램은 상자 위 날짜 표기를 period로 기록. 먹거리·체험·이벤트·GOYANG NIGHT MARKET 상자의 항목은 상자 제목을 category_raw로 기록.",
+      "먹거리 상자 세 번째 항목('맥주 ?매존'으로 보임)은 둘째 단어를 확정하지 못해 programs에 넣지 않음.",
+      "'3일간'은 리본 슬로건('먹고 즐기고 힐링하는 3일간의 축제') 안에 인쇄된 기간 문구라 duration_raw에도 기록. 하단 반복 띠 'FOOD&BEER FESTIVAL'과 사진 속 글자는 기록하지 않음.",
+      "검토: 변경 없음",
+      "사람 검토(안정민, 2026-10-19T16:44:26+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 GOYANG FOOD&BEER FESTIVAL",
+    "official": "GOYANG FOOD&BEER FESTIVAL",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "먹고 즐기고 힐링하는 3일간의 축제",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.09.11(금) ~ 09.13(일)",
+    "start": {
+      "iso": "2026-09-11",
+      "year": 2026,
+      "month": 9,
+      "day": 11,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-09-13",
+      "year": 2026,
+      "month": 9,
+      "day": 13,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "15:00 ~ 22:00",
+        "start": "15:00",
+        "end": "22:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": "3일간",
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "일산 라페스타 문화의 거리",
+    "items": [
+      "일산 라페스타 문화의 거리"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "사단법인 고양시관광협의회",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "고양상공회의소",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "고양스테이업",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "라페스타",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "고양특례시",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": "프로그램 및 일정",
+        "purpose": "event_info",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "제1회 대한민국 자유로가요제",
+        "category_raw": null,
+        "period": {
+          "raw": "DAY1 9.11(금)",
+          "start": {
+            "iso": "2026-09-11",
+            "year": 2026,
+            "month": 9,
+            "day": 11,
+            "weekday": "fri",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한여름밤의 클래식 음악회",
+        "category_raw": null,
+        "period": {
+          "raw": "DAY2 9.12(토)",
+          "start": {
+            "iso": "2026-09-12",
+            "year": 2026,
+            "month": 9,
+            "day": 12,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "시민랜덤댄스 & 힐링 노래경연",
+        "category_raw": null,
+        "period": {
+          "raw": "DAY3 9.13(일)",
+          "start": {
+            "iso": "2026-09-13",
+            "year": 2026,
+            "month": 9,
+            "day": 13,
+            "weekday": "sun",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "다양한 먹거리 부스",
+        "category_raw": "먹거리",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "푸드트럭",
+        "category_raw": "먹거리",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "가족 체험 프로그램",
+        "category_raw": "체험",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "플리마켓 체험",
+        "category_raw": "체험",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "다양한 참여 프로그램",
+        "category_raw": "체험",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "시민 참여 이벤트",
+        "category_raw": "이벤트",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "SNS 인증 이벤트",
+        "category_raw": "이벤트",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "경품 행사등",
+        "category_raw": "이벤트",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "시민 나눔마켓",
+        "category_raw": "GOYANG NIGHT MARKET",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "리유즈 플리마켓",
+        "category_raw": "GOYANG NIGHT MARKET",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "야시장 콘텐츠 운영",
+        "category_raw": "GOYANG NIGHT MARKET",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "버블 레터링",
+      "사진 카드 레이아웃",
+      "플랫 일러스트"
+    ],
+    "main_colors": [
+      "노랑",
+      "연두",
+      "주황",
+      "흰색",
+      "분홍",
+      "파랑"
+    ],
+    "main_objects": [
+      "삼각 깃발 가랜드",
+      "웃는 해 캐릭터",
+      "맥주잔",
+      "푸드트럭",
+      "공연·음악회 사진",
+      "야시장 사진",
+      "QR 코드"
+    ],
+    "has_character": true,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "노란 바탕 상단에 기관 표기와 버블 글자 영문 제목, 가운데 DAY1~3 프로그램 사진 카드와 먹거리·체험·이벤트·야시장 상자, 하단에 장소·일정·시간과 푸드트럭 일러스트·QR을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 상단 기관 줄과 프로그램 상자 글자는 대부분 판독되나 일부 항목 글자는 확정하지 못함."
+    ]
+  }
+}

@@ -1,0 +1,257 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-08dc6e9b62a7",
+ "image": {
+  "sha256": "08dc6e9b62a77c14fe6acea7d5f0d6d8f3b8ef3825fd9c6b8a2cacb233c8c434",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:37+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_title_m05"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_title_m05): 없음"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "경산대추축제",
+  "official": "경산대추축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_003"
+   ],
+   "bbox": [
+    58.0,
+    143.0,
+    384.5,
+    227.5
+   ],
+   "confidence": 0.9794504046440125
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제15회",
+  "number": 15,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_002"
+   ],
+   "bbox": [
+    68.0,
+    136.0,
+    116.5,
+    157.0
+   ],
+   "confidence": 0.9996422529220581
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    114.5,
+    289.5,
+    328.0,
+    308.0
+   ],
+   "confidence": 0.9508891701698303
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.16.② - 10.18.일",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_005"
+   ],
+   "bbox": [
+    114.5,
+    289.5,
+    328.0,
+    308.0
+   ],
+   "confidence": 0.9508891701698303
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "경산생활체육공원 온마루광장(구 어귀마당)",
+  "items": [
+   "경산생활체육공원 온마루광장(구 어귀마당)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_006"
+   ],
+   "bbox": [
+    114.0,
+    314.5,
+    328.0,
+    329.5
+   ],
+   "confidence": 0.9918119311332703
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "검신문자관경제단",
+    "roles": [
+     "host",
+     "organizer"
+    ],
+    "role_raw": "주최·주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_008",
+      "padd_rgb_2x_009"
+     ],
+     "bbox": [
+      105.5,
+      593.5,
+      207.0,
+      604.5
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "경산대추축제주진위원회",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "공동주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_010"
+     ],
+     "bbox": [
+      224.5,
+      594.0,
+      336.0,
+      604.0
+     ],
+     "confidence": 0.9736985564231873
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

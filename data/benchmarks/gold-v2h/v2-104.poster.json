@@ -1,0 +1,379 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-c8e271fb81d0",
+  "image": {
+    "sha256": "c8e271fb81d0a65332214661b4f3bbfca51a7ed5957354d466ac1b8149ed68e0",
+    "width": 445,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:31:56+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "제목은 큰 '우륵'과 말풍선 속 '문화제'가 떨어져 인쇄되어 한 칸 띄어 기록함. 좌상단 '우륵문화제' 로고는 brand 변형으로 둠.",
+      "일정의 시작일과 종료일 사이는 긴 가로선 그래픽이라 raw에서 '—'로 표기함.",
+      "장소 두 줄은 구분 기호 없이 줄바꿈만 있어 items를 나누지 않음.",
+      "우측 VHS·MONO·PCM·N.R.·STEREO·HQ 글자는 비디오테이프 디자인 장식이라 기록하지 않음.",
+      "전야제 '26.10.07.'의 26은 일정 문구 안의 두 자리 연도로 보고 year_basis=date_text로 둠.",
+      "검토: 변경 없음",
+      "사람 검토(안정민, 2026-10-19T16:04:42+09:00): 핵심 필드 확인. 수정 venue."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "제54회 우륵 문화제",
+    "official": "우륵 문화제",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "UREUK ART CULTURE FESTIVAL",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "brand",
+        "raw": "우륵문화제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제54회",
+    "number": 54,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "우륵의 울림 속에 내일의 충주를 담다",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "BACK IN THE 8090's",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.08.목 — 10.11.일",
+    "start": {
+      "iso": "2026-10-08",
+      "year": 2026,
+      "month": 10,
+      "day": 8,
+      "weekday": "thu",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-11",
+      "year": 2026,
+      "month": 10,
+      "day": 11,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "충주탄금공원, 충주문화회관",
+    "items": [
+      "충주탄금공원",
+      "충주문화회관"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "(사)충주예총",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "우륵문화제 추진위원회",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "충주시",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "충청북도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "충청북도교육청",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "충청북도충주교육지원청",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "전야제",
+        "category_raw": null,
+        "period": {
+          "raw": "전야제 26.10.07.",
+          "start": {
+            "iso": "2026-10-07",
+            "year": 2026,
+            "month": 10,
+            "day": 7,
+            "weekday": null,
+            "year_basis": "date_text"
+          },
+          "end": null,
+          "times": []
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "레트로 비디오테이프 디자인",
+      "대형 타이포그래피",
+      "사선 컬러 스트라이프"
+    ],
+    "main_colors": [
+      "미색",
+      "짙은 녹색",
+      "회녹색",
+      "노랑",
+      "주황",
+      "청록",
+      "갈색"
+    ],
+    "main_objects": [
+      "VHS 테이프 케이스",
+      "사선 색띠",
+      "BACK IN THE 8090's 스티커",
+      "위치 핀 아이콘"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "낡은 VHS 테이프 케이스 콘셉트로 미색 바탕에 짙은 녹색의 큰 '우륵' 글자와 회차·영문 제목·전야제, 하단에 일정·장소와 사선 컬러 띠, 기관 띠를 배치한 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "445×627 이미지. 하단 주최·주관·후원 띠는 글자 높이가 약 5px라 기관명 일부가 불확실하고 마지막 후원 로고는 판독 불가."
+    ]
+  }
+}

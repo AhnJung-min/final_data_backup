@@ -1,0 +1,338 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-d92b7b5307bf",
+  "image": {
+    "sha256": "d92b7b5307bfbc78bc2d332f5d12606532808f768588b59ead49ad7c212bacc9",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:40:18+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'책력장'은 제목보다 크게 인쇄된 테마 문구로 slogans(headline=true)에 기록.",
+      "주최주관은 '주최주관'으로 붙어 인쇄되어 role_raw를 그대로 두고 host·organizer로 기록.",
+      "'*다목적 강당 운영시간: 13:00~17:00'은 다목적 강당에만 해당하는 시간으로 times[1].applies_to에 기록.",
+      "admin_area는 제목의 '동대문구'에서 읽음.",
+      "검토(pass2): 원본·확대 이미지로 모든 항목 대조, 값 변경 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 동대문구 북 페스티벌",
+    "official": "동대문구 북 페스티벌",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "책력장",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "펼쳐라 책, 뛰어라 몸!",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 09.12.(토)",
+    "start": {
+      "iso": "2026-09-12",
+      "year": 2026,
+      "month": 9,
+      "day": 12,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "end": null,
+    "times": [
+      {
+        "raw": "12:00~17:00",
+        "start": "12:00",
+        "end": "17:00",
+        "applies_to": null
+      },
+      {
+        "raw": "*다목적 강당 운영시간: 13:00~17:00",
+        "start": "13:00",
+        "end": "17:00",
+        "applies_to": "다목적 강당"
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "동대문구청 미래광장 및 다목적 강당",
+    "items": [
+      "동대문구청 미래광장",
+      "다목적 강당"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "2026 동대문구 북 페스티벌",
+    "region": null,
+    "district": "동대문구",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": null,
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최주관",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "동대문구",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "partner"
+        ],
+        "role_raw": "협력",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "동대문구시설관리공단",
+        "roles": [
+          "partner"
+        ],
+        "role_raw": "협력",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "partner"
+        ],
+        "role_raw": "협력",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "partner"
+        ],
+        "role_raw": "협력",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "present",
+    "raw": "총 예산: 49,952천원(전액 구비, 서울특별시 동대문구 행사 예산 공개에 관한 조례에 의거)",
+    "total_krw": 49952000,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "badges": {
+    "status": "illegible",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "캐릭터 일러스트",
+      "만화풍 굵은 레터링"
+    ],
+    "main_colors": [
+      "연두",
+      "노랑",
+      "검정",
+      "하늘색",
+      "초록",
+      "흰색"
+    ],
+    "main_objects": [
+      "결승선 테이프를 끊는 책 캐릭터",
+      "응원 수술을 든 책 캐릭터",
+      "메달을 단 펼친 책 캐릭터",
+      "네잎클로버를 든 책 캐릭터"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "연두색 방사형 줄무늬 배경에 체육대회처럼 달리고 응원하는 책 캐릭터들을 그리고, 상단에 검정 제목과 노란 만화풍 '책력장', 하단 좌우에 장소·일정, 맨 아래 기관 로고와 예산을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 주최주관 로고와 후원·협력 로고 대부분의 작은 기관명은 판독 불가, '동대문구'(후원)와 '동대문구시설관리공단'(협력)만 일부 판독.",
+      "우상단 작은 로고 2개는 판독 불가."
+    ]
+  }
+}

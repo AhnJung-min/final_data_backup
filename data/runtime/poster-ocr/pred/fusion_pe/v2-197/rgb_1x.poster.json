@@ -1,0 +1,265 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-3606626accb5",
+ "image": {
+  "sha256": "3606626accb53d3deccda5ab2c60878e5fec102c96c54198bb90ffbe17af1868",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:38+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "paddleocr+easyocr(fallback)"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합: 기본 경로에서 찾지 못한 없음을 보조 경로에서 가져옴."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "이좋은 횡제축세",
+  "official": "이좋은 횡제축세",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_000",
+    "padd_rgb_1x_002"
+   ],
+   "bbox": [
+    104.0,
+    42.0,
+    332.0,
+    215.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    91.0,
+    260.0,
+    360.0,
+    294.0
+   ],
+   "confidence": 0.9603079557418823
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.11.07.(토)~08.(일)",
+  "start": {
+   "iso": "2026-11-07",
+   "year": 2026,
+   "month": 11,
+   "day": 7,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-08",
+   "year": 2026,
+   "month": 11,
+   "day": 8,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_004"
+   ],
+   "bbox": [
+    91.0,
+    260.0,
+    360.0,
+    294.0
+   ],
+   "confidence": 0.9603079557418823
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "의종은 형제 공원 일원[충남 예산군 대)",
+  "items": [
+   "의종은 형제 공원 일원[충남 예산군 대)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    91.0,
+    298.0,
+    359.0,
+    323.0
+   ],
+   "confidence": 0.8186720013618469
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "의종은 형제 공원 일원[충남 예산군 대)",
+  "region": "충남",
+  "district": "예산군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_005"
+   ],
+   "bbox": [
+    91.0,
+    298.0,
+    359.0,
+    323.0
+   ],
+   "confidence": 0.8186720013618469
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "문점폐계주진위원회",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_015"
+     ],
+     "bbox": [
+      135.0,
+      610.0,
+      215.0,
+      620.0
+     ],
+     "confidence": 0.5998404026031494
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "0411331-0615",
+    "value": "041-1331-0615",
+    "label_raw": null,
+    "department": null,
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_1x_018"
+     ],
+     "bbox": [
+      374.0,
+      610.0,
+      432.0,
+      620.0
+     ],
+     "confidence": 0.9390895366668701
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "present",
+  "raw": "예산:200,000,000원(전액군비)",
+  "total_krw": 200000000,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_012"
+   ],
+   "bbox": [
+    309.0,
+    585.0,
+    434.0,
+    598.0
+   ],
+   "confidence": 0.9632723927497864
+  }
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

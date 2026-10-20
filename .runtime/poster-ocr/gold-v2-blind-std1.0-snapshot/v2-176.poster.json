@@ -1,0 +1,429 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-4e3953374692",
+  "image": {
+    "sha256": "4e3953374692a5ba1eb100e0f2830f0fcc6eb409ab3c908692e008e1f032da7d",
+    "width": 470,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:12:40+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/blind",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "블라인드 독립 판독(일치도 검사용). 원본 470×627을 직접 보고 확대 크롭으로 천막 안내문과 하단 기관 띠를 확인함.",
+      "역할 표기는 '주관·주최' 순서로 인쇄되어 role_raw에 그대로 두고 roles는 host·organizer로 기록함.",
+      "장소 괄호 안 '경강로2111'을 도로명 주소로 address에도 기록함. '강릉'·'강원'은 시·군·구/시·도 명칭(접미어 포함)으로 인쇄되지 않아 admin_area는 absent.",
+      "판매 행사 문구의 '(20~40%)' 할인율은 프로그램명에서 제외함. 판촉 행사 끝의 '등'은 목록에 넣지 않음.",
+      "후원 줄의 사람 모양 로고 1개는 글자를 읽지 못해 이름 없이 기록함."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "강원한돈 페스타",
+    "official": "강원한돈 페스타",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "우리가 키운 맛, 강원의 자부심",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "raw": "신선한 강원 · 건강한 한돈 · 행복한 미식",
+        "headline": false,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026년 10.23(금) ~ 10.25(일) (3일간)",
+    "start": {
+      "iso": "2026-10-23",
+      "year": 2026,
+      "month": 10,
+      "day": 23,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-25",
+      "year": 2026,
+      "month": 10,
+      "day": 25,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "AM.10 ~ PM.7",
+        "start": "10:00",
+        "end": "19:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": "3일간",
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "강릉 월화거리 공원(경강로2111)",
+    "items": [
+      "강릉 월화거리 공원(경강로2111)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "present",
+    "raw": "경강로2111",
+    "kind": "road",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "강원양돈농협",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주관·주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한돈자조금관리위원회",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주관·주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "강원특별자치도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후 원",
+        "form": "text",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "강릉시",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후 원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "농협경제지주",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후 원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후 원",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한돈협회 강원특별자치도협의회",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후 원",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "강원한돈 브랜드육 할인판매 행사",
+        "category_raw": "판매 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한돈 소비촉진 행사추진",
+        "category_raw": "판촉 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "한돈핫도그 나눔 행사",
+        "category_raw": "판촉 행사",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "반짝반짝 달님이 어린이 캐릭터 공연!",
+        "category_raw": null,
+        "period": {
+          "raw": "10.24.(토) 13:00",
+          "start": {
+            "iso": "2026-10-24",
+            "year": 2026,
+            "month": 10,
+            "day": 24,
+            "weekday": "sat",
+            "year_basis": "poster_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "13:00",
+              "start": "13:00",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "certification",
+        "raw": "100% 강원도산 한돈 GANGWON HANDON",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "사진 합성",
+      "3D 캐릭터",
+      "굵은 3색 타이포그래피"
+    ],
+    "main_colors": [
+      "하늘색",
+      "초록",
+      "빨강",
+      "남색",
+      "분홍",
+      "갈색"
+    ],
+    "main_objects": [
+      "멜빵바지 입은 돼지 캐릭터",
+      "도마 위 돼지고기 덩어리",
+      "삼각 깃발",
+      "숲",
+      "달님이 어린이 캐릭터",
+      "천막 모양 안내판"
+    ],
+    "has_character": true,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "푸른 하늘과 숲 사진 위에 초록·빨강·남색 제목과 슬로건 리본, 일정·장소·시간을 두고, 왼쪽에 돼지 캐릭터, 가운데 도마 위 생고기, 오른쪽에 천막형 행사 안내와 달님이 캐릭터 공연, 하단에 주관·주최·후원 띠를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "470×627 이미지. 하단 기관 띠는 대부분 읽히나 후원 줄 로고 1개와 저작권 표기는 판독 불가.",
+      "천막 안내판 흰 글자는 흐려 확대해 읽었으며 일부 글자는 확실하지 않음."
+    ]
+  }
+}

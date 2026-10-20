@@ -1,0 +1,246 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-ffed700fe736",
+ "image": {
+  "sha256": "ffed700fe7360b21159bb57c2ecca56791924b44dfbdedadc3241fc8968e2921",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-19T15:53:38+09:00",
+  "extractor": {
+   "name": "poster_rules_v1",
+   "version": "1",
+   "model": "fusion:conf_p1_all"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked).",
+   "필드 단위 결합(conf_p1_all): venue"
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "국화 축제",
+  "official": "국화 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_010",
+    "padd_rgb_2x_011"
+   ],
+   "bbox": [
+    133.0,
+    187.0,
+    310.0,
+    365.5
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제26회",
+  "number": 26,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_008"
+   ],
+   "bbox": [
+    190.5,
+    127.0,
+    253.0,
+    150.5
+   ],
+   "confidence": 0.9976770281791687
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    121.5,
+    385.0,
+    320.0,
+    409.5
+   ],
+   "confidence": 0.950884997844696
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.31(토)~11.08.(일)",
+  "start": {
+   "iso": "2026-10-31",
+   "year": 2026,
+   "month": 10,
+   "day": 31,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-11-08",
+   "year": 2026,
+   "month": 11,
+   "day": 8,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_012"
+   ],
+   "bbox": [
+    121.5,
+    385.0,
+    320.0,
+    409.5
+   ],
+   "confidence": 0.950884997844696
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "3·15해양누리공원 합포수변공원/해양신도시",
+  "items": [
+   "3",
+   "15해양누리공원 합포수변공원/해양신도시"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_1x_010",
+    "padd_rgb_1x_011"
+   ],
+   "bbox": [
+    168.0,
+    414.0,
+    274.0,
+    442.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "함포수변공원/해양신도시",
+  "region": null,
+  "district": "해양신도시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "padd_rgb_2x_014"
+   ],
+   "bbox": [
+    169.0,
+    430.0,
+    274.0,
+    442.0
+   ],
+   "confidence": 0.9815173745155334
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "창원득례시·마산국화축제위원회",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "padd_rgb_2x_016"
+     ],
+     "bbox": [
+      191.0,
+      606.5,
+      333.5,
+      619.0
+     ],
+     "confidence": 0.9558776021003723
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

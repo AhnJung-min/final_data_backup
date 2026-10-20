@@ -1,0 +1,488 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-7e1ae5e814b8",
+  "image": {
+    "sha256": "7e1ae5e814b8f024418ce58c3d7a300c995091be9eb28d3dd611a23d828b5ad0",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:40:36+09:00",
+    "extractor": {
+      "name": "assistant-direct-reading",
+      "version": "gold-v2/pass2-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'광명동굴'은 장소 고유명이라 admin_area를 absent로 둠.",
+      "축제명은 상단 작은 줄 '2026년 제4회 광명동굴 빛축제'. 아래 큰 '빛의 숲, 깨어나는 생명'은 제목보다 크게 인쇄된 슬로건(headline).",
+      "드론쇼는 '(1일 2회)'로 표기된 회차별 시작 시각만 있어 times의 end를 비움. 개막식 하위 항목 3개는 category_raw '개막식'으로 기록.",
+      "하단 안내문(주차·셔틀버스)과 '※ 행사 기간은 내부 사정에 따라 변경될 수 있음.'은 notices로 기록.",
+      "검토(pass2): 주차 안내 notices[0]의 '이용하여주시기'를 인쇄 글자 수대로 '이용해주시기'로 수정. 나머지 항목은 이미지와 일치."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026년 제4회 광명동굴 빛축제",
+    "official": "광명동굴 빛축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "제4회",
+    "number": 4,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "빛의 숲, 깨어나는 생명",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.16.(금)~10.17.(토)",
+    "start": {
+      "iso": "2026-10-16",
+      "year": 2026,
+      "month": 10,
+      "day": 16,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-17",
+      "year": 2026,
+      "month": 10,
+      "day": 17,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "11:00~21:00",
+        "start": "11:00",
+        "end": "21:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "광명동굴 일원",
+    "items": [
+      "광명동굴 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "광명동굴",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "광명도시공사",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "label_raw": "▲ 셔틀버스 정보",
+        "purpose": "other",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "present",
+    "items": [
+      {
+        "name": "개막식",
+        "category_raw": null,
+        "period": {
+          "raw": "10.16.(금) 19:00",
+          "start": {
+            "iso": "2026-10-16",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+            "weekday": "fri",
+            "year_basis": "date_text"
+          },
+          "end": null,
+          "times": [
+            {
+              "raw": "19:00",
+              "start": "19:00",
+              "end": null,
+              "applies_to": null
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "오프닝 공연 '숲의 울림, 희망의 노래'",
+        "category_raw": "개막식",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "환경서약 세리머니",
+        "category_raw": "개막식",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "멀티미디어 퍼포먼스 & DJ쇼",
+        "category_raw": "개막식",
+        "period": null,
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "드론쇼",
+        "category_raw": null,
+        "period": {
+          "raw": "10.16.(금) 19:30 | 21:00 10.17.(토) 19:00 | 20:40",
+          "start": {
+            "iso": "2026-10-16",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+            "weekday": "fri",
+            "year_basis": "date_text"
+          },
+          "end": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "date_text"
+          },
+          "times": [
+            {
+              "raw": "19:30",
+              "start": "19:30",
+              "end": null,
+              "applies_to": "10.16.(금)"
+            },
+            {
+              "raw": "21:00",
+              "start": "21:00",
+              "end": null,
+              "applies_to": "10.16.(금)"
+            },
+            {
+              "raw": "19:00",
+              "start": "19:00",
+              "end": null,
+              "applies_to": "10.17.(토)"
+            },
+            {
+              "raw": "20:40",
+              "start": "20:40",
+              "end": null,
+              "applies_to": "10.17.(토)"
+            }
+          ]
+        },
+        "venue_raw": null,
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "ZERO-WASTE 푸드존",
+        "category_raw": null,
+        "period": {
+          "raw": "10.16.(금) 12:00 - 21:00 | 10.17.(토) 11:00 - 21:00",
+          "start": {
+            "iso": "2026-10-16",
+            "year": 2026,
+            "month": 10,
+            "day": 16,
+            "weekday": "fri",
+            "year_basis": "date_text"
+          },
+          "end": {
+            "iso": "2026-10-17",
+            "year": 2026,
+            "month": 10,
+            "day": 17,
+            "weekday": "sat",
+            "year_basis": "date_text"
+          },
+          "times": [
+            {
+              "raw": "12:00 - 21:00",
+              "start": "12:00",
+              "end": "21:00",
+              "applies_to": "10.16.(금)"
+            },
+            {
+              "raw": "11:00 - 21:00",
+              "start": "11:00",
+              "end": "21:00",
+              "applies_to": "10.17.(토)"
+            }
+          ]
+        },
+        "venue_raw": "제2주차장",
+        "performers": [],
+        "capacity_raw": null,
+        "registration_raw": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "operating_rule",
+        "raw": "행사장 주변 주차 공간이 협소하오니 셔틀버스를 이용해주시기 바랍니다.",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "other",
+        "raw": "셔틀버스 운행 정보는 QR코드로 확인하실 수 있습니다.",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "subject_to_change",
+        "raw": "※ 행사 기간은 내부 사정에 따라 변경될 수 있음.",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "3D 캐릭터 일러스트",
+      "판타지 숲 배경"
+    ],
+    "main_colors": [
+      "남색",
+      "검정",
+      "청록",
+      "금색",
+      "흰색",
+      "주황"
+    ],
+    "main_objects": [
+      "불빛을 든 아이 캐릭터",
+      "요정 캐릭터들",
+      "흰 사슴",
+      "흰 여우",
+      "동굴과 숲",
+      "버섯"
+    ],
+    "has_character": true,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "어두운 동굴 숲 배경에 불빛을 든 아이와 요정·흰 사슴·여우 3D 캐릭터를 두고, 상단에 제목과 금색 큰 슬로건·일정·시간·장소, 하단 검은 띠에 프로그램 표·QR·안내문·로고를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 프로그램 표와 안내문은 작아 확대 시 대체로 읽히나 오프닝 공연 제목·드론쇼 설명 등 일부 글자가 불확실함.",
+      "드론쇼 설명 '1,000여대 드론이 하늘을 수놓는 화려한 라이트 쇼 (총 4회)'는 일부 글자가 불확실해 프로그램 필드에 넣지 않음."
+    ]
+  }
+}
