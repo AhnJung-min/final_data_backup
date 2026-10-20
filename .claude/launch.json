@@ -14,6 +14,17 @@
         "C:/Users/playdata2/.claude/projects/C--Users-playdata2-Desktop-SKN33-Final-1Team-SKN33-Final-1Team/706bfb83-e854-4f76-979c-034618e49ac3/subagents/workflows/wf_3d7e6c9b-432/journal.jsonl"
       ],
       "port": 8765
+    },
+    {
+      "name": "sim-check-dashboard",
+      "runtimeExecutable": ".venv/Scripts/python.exe",
+      "runtimeArgs": [
+        "-m",
+        "app.poster_ocr.sim_dashboard",
+        "--port",
+        "8766"
+      ],
+      "port": 8766
     }
   ]
 }

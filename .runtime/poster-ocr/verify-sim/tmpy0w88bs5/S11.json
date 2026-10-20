@@ -1,0 +1,595 @@
+{
+ "set": "S11",
+ "checked_at": "2026-10-20T17:55:57+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r2",
+ "document": {
+  "ocr_seconds": 58.323,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 37.928,
+  "lines": 19,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "한빛 국화향 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "한빛 / 국화향 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "한빛",
+     "confidence": 0.9995,
+     "bbox": [
+      329.0,
+      160.0,
+      550.0,
+      293.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "국화향",
+     "confidence": 1.0,
+     "bbox": [
+      165.0,
+      300.0,
+      489.0,
+      433.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9995,
+     "bbox": [
+      494.0,
+      298.0,
+      714.0,
+      435.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    165.0,
+    160.0,
+    714.0,
+    435.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제24회 한빛 국화향 축제",
+     "confidence": 0.9687,
+     "bbox": [
+      307.0,
+      674.0,
+      569.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    569.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제24회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제24회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.9988,
+     "bbox": [
+      346.0,
+      94.0,
+      435.0,
+      127.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제24회",
+     "confidence": 0.9999,
+     "bbox": [
+      431.0,
+      92.0,
+      537.0,
+      129.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    346.0,
+    92.0,
+    537.0,
+    129.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제24회 한빛 국화향 축제",
+     "confidence": 0.9687,
+     "bbox": [
+      307.0,
+      674.0,
+      569.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    569.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.9.20.(일)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.9.20.(일)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      106.0,
+      577.0,
+      165.0,
+      616.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "2026.9.20.(일)",
+     "confidence": 0.9992,
+     "bbox": [
+      205.0,
+      580.0,
+      420.0,
+      618.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    106.0,
+    577.0,
+    420.0,
+    618.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026.9.20.(일)",
+     "confidence": 0.9985,
+     "bbox": [
+      307.0,
+      734.0,
+      472.0,
+      763.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    472.0,
+    765.0
+   ],
+   "method": "포스터 9.20(일)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "11:00~20:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 11:00~20:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "시간",
+     "confidence": 1.0,
+     "bbox": [
+      106.0,
+      639.0,
+      167.0,
+      678.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "11:00~20:00",
+     "confidence": 0.9966,
+     "bbox": [
+      209.0,
+      644.0,
+      397.0,
+      675.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    106.0,
+    639.0,
+    397.0,
+    678.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "11:00~20:00",
+     "confidence": 0.9973,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "한빛강변공원 일원",
+   "status": "fail",
+   "reason": "포스터의 '장소' 표기가 기준 문서와 다릅니다.",
+   "observed": "한빛시청 앞 광장",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "장소",
+     "confidence": 0.9993,
+     "bbox": [
+      104.0,
+      700.0,
+      168.0,
+      742.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "한빛시청 앞 광장",
+     "confidence": 0.9855,
+     "bbox": [
+      208.0,
+      704.0,
+      421.0,
+      740.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    104.0,
+    700.0,
+    421.0,
+    742.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "한빛강변공원 일원",
+     "confidence": 0.9956,
+     "bbox": [
+      309.0,
+      850.0,
+      505.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    505.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 25% · 판독 신뢰도 99%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "한빛시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "한빛시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_018",
+     "text": "주최 한빛시 | 주관 한빛축제위원회 | 문의 031-000-2715",
+     "confidence": 0.9401,
+     "bbox": [
+      156.0,
+      1190.0,
+      728.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    156.0,
+    1190.0,
+    728.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "한빛시",
+     "confidence": 0.9957,
+     "bbox": [
+      306.0,
+      904.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    88.0,
+    900.0,
+    385.0,
+    944.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "한빛축제위원회",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "한빛축제위원회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_018",
+     "text": "주최 한빛시 | 주관 한빛축제위원회 | 문의 031-000-2715",
+     "confidence": 0.9401,
+     "bbox": [
+      156.0,
+      1190.0,
+      728.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    156.0,
+    1190.0,
+    728.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "한빛축제위원회",
+     "confidence": 0.9996,
+     "bbox": [
+      309.0,
+      966.0,
+      473.0,
+      995.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    473.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "031-000-2715",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "031-000-2715",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_018",
+     "text": "주최 한빛시 | 주관 한빛축제위원회 | 문의 031-000-2715",
+     "confidence": 0.9401,
+     "bbox": [
+      156.0,
+      1190.0,
+      728.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    156.0,
+    1190.0,
+    728.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "031-000-2715",
+     "confidence": 0.9997,
+     "bbox": [
+      307.0,
+      1025.0,
+      461.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    88.0,
+    1018.0,
+    461.0,
+    1058.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "가을 향기 가득한 하루",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가을 향기 가득한 하루",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "가을",
+     "confidence": 0.9996,
+     "bbox": [
+      277.0,
+      458.0,
+      351.0,
+      501.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "향기",
+     "confidence": 1.0,
+     "bbox": [
+      350.0,
+      456.0,
+      426.0,
+      502.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "가득한",
+     "confidence": 0.9998,
+     "bbox": [
+      425.0,
+      457.0,
+      536.0,
+      501.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "하루",
+     "confidence": 0.9999,
+     "bbox": [
+      534.0,
+      460.0,
+      605.0,
+      499.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    277.0,
+    456.0,
+    605.0,
+    502.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "가을 향기 가득한 하루",
+     "confidence": 0.9719,
+     "bbox": [
+      310.0,
+      1081.0,
+      544.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    544.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.967,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 1,
+  "review": 1
+ },
+ "verdict": "fail",
+ "predicted_mismatch": true,
+ "check_seconds": 0.007
+}

@@ -1,0 +1,551 @@
+{
+ "set": "S36",
+ "checked_at": "2026-10-20T18:08:46+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r3",
+ "document": {
+  "ocr_seconds": 55.112,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 37.991,
+  "lines": 15,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "새봄 가을 책 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄 / 가을 책 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "새봄",
+     "confidence": 0.9998,
+     "bbox": [
+      329.0,
+      161.0,
+      552.0,
+      294.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "가을 책 축제",
+     "confidence": 0.9949,
+     "bbox": [
+      149.0,
+      299.0,
+      727.0,
+      436.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    149.0,
+    161.0,
+    727.0,
+    436.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제3회 새봄 가을 책 축제",
+     "confidence": 0.9612,
+     "bbox": [
+      307.0,
+      674.0,
+      565.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    565.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제3회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제3회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.9988,
+     "bbox": [
+      356.0,
+      94.0,
+      442.0,
+      128.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제3회",
+     "confidence": 0.9997,
+     "bbox": [
+      442.0,
+      90.0,
+      529.0,
+      131.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    356.0,
+    90.0,
+    529.0,
+    131.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제3회 새봄 가을 책 축제",
+     "confidence": 0.9612,
+     "bbox": [
+      307.0,
+      674.0,
+      565.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    565.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026. 9. 7.(월) ~ 9. 8.(화)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.9.7.(월)~9.8.(화)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      106.0,
+      577.0,
+      166.0,
+      616.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "2026.9.7.(월)~9.8.(화)",
+     "confidence": 0.9978,
+     "bbox": [
+      206.0,
+      579.0,
+      543.0,
+      616.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    106.0,
+    577.0,
+    543.0,
+    616.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026. 9. 7.(월) ~ 9. 8.(화)",
+     "confidence": 0.8929,
+     "bbox": [
+      309.0,
+      734.0,
+      572.0,
+      762.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    572.0,
+    765.0
+   ],
+   "method": "포스터 9.7(월) ~ 9.8(화)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "13:00~22:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 13:00~22:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "시간",
+     "confidence": 0.9999,
+     "bbox": [
+      106.0,
+      638.0,
+      167.0,
+      678.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "13:00~22:00",
+     "confidence": 0.978,
+     "bbox": [
+      209.0,
+      644.0,
+      397.0,
+      675.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    106.0,
+    638.0,
+    397.0,
+    678.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "13:00~22:00",
+     "confidence": 0.9987,
+     "bbox": [
+      307.0,
+      791.0,
+      459.0,
+      819.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "새봄강변공원 일원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄강변공원 일원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "장소",
+     "confidence": 0.9993,
+     "bbox": [
+      107.0,
+      702.0,
+      166.0,
+      739.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "새봄강변공원 일원",
+     "confidence": 0.9983,
+     "bbox": [
+      207.0,
+      703.0,
+      441.0,
+      741.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    107.0,
+    702.0,
+    441.0,
+    741.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "새봄강변공원 일원",
+     "confidence": 0.9994,
+     "bbox": [
+      310.0,
+      850.0,
+      504.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    504.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "새봄군",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄군",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "주최 새봄군 | 주관 새봄축제위원회 | 문의 054-000-1954",
+     "confidence": 0.9259,
+     "bbox": [
+      158.0,
+      1193.0,
+      729.0,
+      1217.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    158.0,
+    1193.0,
+    729.0,
+    1217.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "새봄군",
+     "confidence": 0.998,
+     "bbox": [
+      305.0,
+      901.0,
+      385.0,
+      942.0
+     ]
+    }
+   ],
+   "source_box": [
+    88.0,
+    900.0,
+    385.0,
+    944.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 93%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "새봄축제위원회",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄축제위원회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "주최 새봄군 | 주관 새봄축제위원회 | 문의 054-000-1954",
+     "confidence": 0.9259,
+     "bbox": [
+      158.0,
+      1193.0,
+      729.0,
+      1217.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    158.0,
+    1193.0,
+    729.0,
+    1217.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "새봄축제위원회",
+     "confidence": 0.9997,
+     "bbox": [
+      310.0,
+      966.0,
+      473.0,
+      995.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    473.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 93%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "054-000-1954",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "054-000-1954",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "주최 새봄군 | 주관 새봄축제위원회 | 문의 054-000-1954",
+     "confidence": 0.9259,
+     "bbox": [
+      158.0,
+      1193.0,
+      729.0,
+      1217.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    158.0,
+    1193.0,
+    729.0,
+    1217.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "054-000-1954",
+     "confidence": 0.9997,
+     "bbox": [
+      307.0,
+      1025.0,
+      462.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "책장을 넘기는 가을",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "책장을 넘기는 가을",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "책장을 넘기는 가을",
+     "confidence": 0.9661,
+     "bbox": [
+      299.0,
+      456.0,
+      586.0,
+      501.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    299.0,
+    456.0,
+    586.0,
+    501.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "책장을 넘기는 가을",
+     "confidence": 0.989,
+     "bbox": [
+      307.0,
+      1077.0,
+      514.0,
+      1113.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1077.0,
+    514.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9684,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.007
+}

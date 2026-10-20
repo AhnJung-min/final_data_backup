@@ -1,0 +1,551 @@
+{
+ "set": "S13",
+ "checked_at": "2026-10-20T18:23:59+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r3",
+ "document": {
+  "ocr_seconds": 59.847,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 37.8,
+  "lines": 13,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "가람 해맞이 불꽃 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람 / 해맞이 불꽃 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "가람",
+     "confidence": 0.9998,
+     "bbox": [
+      329.0,
+      381.0,
+      562.0,
+      522.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "해맞이",
+     "confidence": 0.9999,
+     "bbox": [
+      53.0,
+      537.0,
+      368.0,
+      668.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "불꽃",
+     "confidence": 0.9994,
+     "bbox": [
+      380.0,
+      536.0,
+      611.0,
+      671.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9993,
+     "bbox": [
+      607.0,
+      532.0,
+      832.0,
+      673.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    53.0,
+    381.0,
+    832.0,
+    673.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제21회 가람 해맞이 불꽃 축제",
+     "confidence": 0.9952,
+     "bbox": [
+      307.0,
+      674.0,
+      623.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    623.0,
+    707.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제21회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제21회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026 제21회",
+     "confidence": 0.9441,
+     "bbox": [
+      342.0,
+      304.0,
+      539.0,
+      350.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    342.0,
+    304.0,
+    539.0,
+    350.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제21회 가람 해맞이 불꽃 축제",
+     "confidence": 0.9952,
+     "bbox": [
+      307.0,
+      674.0,
+      623.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    623.0,
+    707.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.10.25.(일) ~ 10.28.(수)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "10월 25일(일)~28일(수)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "10월 25일(일)~28일(수)",
+     "confidence": 0.9724,
+     "bbox": [
+      218.0,
+      792.0,
+      664.0,
+      849.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    218.0,
+    792.0,
+    664.0,
+    849.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026.10.25.(일) ~ 10.28.(수)",
+     "confidence": 0.9768,
+     "bbox": [
+      309.0,
+      734.0,
+      623.0,
+      762.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    730.0,
+    623.0,
+    765.0
+   ],
+   "method": "포스터 10.25(일) ~ 10.28(수)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "13:00~22:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "13:00~22:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "13:00~22:00",
+     "confidence": 0.9989,
+     "bbox": [
+      343.0,
+      869.0,
+      542.0,
+      903.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    343.0,
+    869.0,
+    542.0,
+    903.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "13:00~22:00",
+     "confidence": 0.999,
+     "bbox": [
+      306.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "가람 문화예술회관 야외광장",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람 문화예술회관 야외광장",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "가람 문화예술회관 야외광장",
+     "confidence": 0.9981,
+     "bbox": [
+      246.0,
+      921.0,
+      639.0,
+      963.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    246.0,
+    921.0,
+    639.0,
+    963.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "가람 문화예술회관 야외광장",
+     "confidence": 0.999,
+     "bbox": [
+      309.0,
+      850.0,
+      605.0,
+      877.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    605.0,
+    881.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "가람시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069",
+     "confidence": 0.9612,
+     "bbox": [
+      168.0,
+      1196.0,
+      717.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1196.0,
+    717.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "가람시",
+     "confidence": 0.9989,
+     "bbox": [
+      304.0,
+      900.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    900.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "가람문화재단",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람문화재단",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069",
+     "confidence": 0.9612,
+     "bbox": [
+      168.0,
+      1196.0,
+      717.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1196.0,
+    717.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "가람문화재단",
+     "confidence": 0.9998,
+     "bbox": [
+      307.0,
+      963.0,
+      453.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    453.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "041-000-7069",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "041-000-7069",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069",
+     "confidence": 0.9612,
+     "bbox": [
+      168.0,
+      1196.0,
+      717.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1196.0,
+    717.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "041-000-7069",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1024.0,
+      462.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "밤하늘을 수놓는 불꽃",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "밤하늘을 수놓는 불꽃",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "밤하늘을",
+     "confidence": 0.9999,
+     "bbox": [
+      304.0,
+      690.0,
+      427.0,
+      729.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "수놓는",
+     "confidence": 0.9885,
+     "bbox": [
+      422.0,
+      689.0,
+      525.0,
+      733.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "불꽃",
+     "confidence": 0.999,
+     "bbox": [
+      516.0,
+      690.0,
+      582.0,
+      729.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    304.0,
+    689.0,
+    582.0,
+    733.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "밤하늘을 수놓는 불꽃",
+     "confidence": 0.9994,
+     "bbox": [
+      310.0,
+      1081.0,
+      536.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    536.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9686,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.031
+}

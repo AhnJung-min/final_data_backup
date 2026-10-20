@@ -1,0 +1,562 @@
+{
+ "set": "S39",
+ "checked_at": "2026-10-20T18:08:46+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r3",
+ "document": {
+  "ocr_seconds": 58.16,
+  "lines": 54,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 38.76,
+  "lines": 14,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "미르 해맞이 불꽃 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르 / 해맞이 불꽃 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "미르",
+     "confidence": 0.9999,
+     "bbox": [
+      335.0,
+      129.0,
+      552.0,
+      262.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "해맞이",
+     "confidence": 1.0,
+     "bbox": [
+      58.0,
+      265.0,
+      370.0,
+      394.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "불꽃",
+     "confidence": 0.9989,
+     "bbox": [
+      385.0,
+      266.0,
+      602.0,
+      395.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9988,
+     "bbox": [
+      610.0,
+      264.0,
+      827.0,
+      397.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    58.0,
+    129.0,
+    827.0,
+    397.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제14회 미르 해맞이 불꽃 축제",
+     "confidence": 0.9787,
+     "bbox": [
+      307.0,
+      674.0,
+      623.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    623.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제14회",
+   "status": "fail",
+   "reason": "포스터 회차(제41회)가 기준(제14회)과 다릅니다.",
+   "observed": "2026 제41회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026 제41회",
+     "confidence": 0.9566,
+     "bbox": [
+      344.0,
+      71.0,
+      538.0,
+      110.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    344.0,
+    71.0,
+    538.0,
+    110.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제14회 미르 해맞이 불꽃 축제",
+     "confidence": 0.9787,
+     "bbox": [
+      307.0,
+      674.0,
+      623.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    623.0,
+    708.0
+   ],
+   "method": "숫자 비교"
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.9.25.(금) ~ 9.26.(토)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.9.25.(금)~9.26.(토)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      87.0,
+      815.0,
+      143.0,
+      850.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "2026.9.25.(금)~9.26.(토)",
+     "confidence": 0.9994,
+     "bbox": [
+      195.0,
+      816.0,
+      579.0,
+      851.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    87.0,
+    815.0,
+    579.0,
+    851.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026.9.25.(금) ~ 9.26.(토)",
+     "confidence": 0.9596,
+     "bbox": [
+      307.0,
+      733.0,
+      598.0,
+      763.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    598.0,
+    765.0
+   ],
+   "method": "포스터 9.25(금) ~ 9.26(토)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00~18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "시간",
+     "confidence": 0.9999,
+     "bbox": [
+      86.0,
+      888.0,
+      145.0,
+      924.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "10:00~18:00",
+     "confidence": 0.999,
+     "bbox": [
+      198.0,
+      891.0,
+      396.0,
+      925.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    86.0,
+    888.0,
+    396.0,
+    925.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "10:00~18:00",
+     "confidence": 0.9965,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "미르 전통시장 일대",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르 전통시장 일대",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "장소",
+     "confidence": 0.9997,
+     "bbox": [
+      87.0,
+      964.0,
+      145.0,
+      999.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "미르 전통시장 일대",
+     "confidence": 0.9915,
+     "bbox": [
+      199.0,
+      967.0,
+      445.0,
+      998.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    87.0,
+    964.0,
+    445.0,
+    999.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "미르 전통시장 일대",
+     "confidence": 0.9985,
+     "bbox": [
+      309.0,
+      850.0,
+      512.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    512.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 99%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "미르시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 미르시 | 주관 미르관광재단 | 문의 063-000-7043",
+     "confidence": 0.923,
+     "bbox": [
+      168.0,
+      1197.0,
+      715.0,
+      1221.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1197.0,
+    715.0,
+    1221.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "미르시",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      903.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    902.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 92%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "미르관광재단",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르관광재단",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 미르시 | 주관 미르관광재단 | 문의 063-000-7043",
+     "confidence": 0.923,
+     "bbox": [
+      168.0,
+      1197.0,
+      715.0,
+      1221.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1197.0,
+    715.0,
+    1221.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "미르관광재단",
+     "confidence": 0.9998,
+     "bbox": [
+      307.0,
+      963.0,
+      453.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    453.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 92%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "063-000-7043",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "063-000-7043",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 미르시 | 주관 미르관광재단 | 문의 063-000-7043",
+     "confidence": 0.923,
+     "bbox": [
+      168.0,
+      1197.0,
+      715.0,
+      1221.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1197.0,
+    715.0,
+    1221.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "063-000-7043",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1025.0,
+      462.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "밤하늘을 수놓는 불꽃",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "밤하늘을 수놓는 불꽃",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "밤하늘을 수놓는 불꽃",
+     "confidence": 0.9775,
+     "bbox": [
+      293.0,
+      413.0,
+      593.0,
+      456.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    293.0,
+    413.0,
+    593.0,
+    456.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "밤하늘을 수놓는 불꽃",
+     "confidence": 0.9994,
+     "bbox": [
+      310.0,
+      1081.0,
+      536.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    536.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9686,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 1,
+  "review": 1
+ },
+ "verdict": "fail",
+ "predicted_mismatch": true,
+ "check_seconds": 0.006
+}

@@ -1,0 +1,588 @@
+{
+ "set": "S05",
+ "checked_at": "2026-10-20T17:39:38+0900",
+ "variant": "rgb_1x",
+ "document": {
+  "ocr_seconds": 59.593,
+  "lines": 56,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 36.084,
+  "lines": 15,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "바다울 강변 재즈 페스티벌",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "바다울 / 강변 / 재즈 / 페스티벌",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "바다울",
+     "confidence": 0.9995,
+     "bbox": [
+      57.0,
+      421.0,
+      407.0,
+      570.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "강변",
+     "confidence": 0.9999,
+     "bbox": [
+      55.0,
+      562.0,
+      291.0,
+      706.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "재즈",
+     "confidence": 0.9998,
+     "bbox": [
+      55.0,
+      703.0,
+      294.0,
+      843.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "페스티벌",
+     "confidence": 0.966,
+     "bbox": [
+      58.0,
+      843.0,
+      506.0,
+      979.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    55.0,
+    421.0,
+    506.0,
+    979.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "제30회 바다울 강변 재즈 페스티벌",
+     "confidence": 0.9583,
+     "bbox": [
+      307.0,
+      674.0,
+      668.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    668.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제30회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제30회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "2026 제30회",
+     "confidence": 0.9637,
+     "bbox": [
+      66.0,
+      120.0,
+      270.0,
+      162.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    66.0,
+    120.0,
+    270.0,
+    162.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "제30회 바다울 강변 재즈 페스티벌",
+     "confidence": 0.9583,
+     "bbox": [
+      307.0,
+      674.0,
+      668.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    668.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.11.13.(금)~11.14.(토)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.11.13(금)-11.14(토)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "일시 2026.11.13(금)-11.14(토)",
+     "confidence": 0.9971,
+     "bbox": [
+      367.0,
+      1069.0,
+      813.0,
+      1109.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    367.0,
+    1069.0,
+    813.0,
+    1109.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_029",
+     "text": "2026.11.13.(금)~11.14.(토)",
+     "confidence": 0.9981,
+     "bbox": [
+      309.0,
+      733.0,
+      623.0,
+      761.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    730.0,
+    623.0,
+    765.0
+   ],
+   "method": "포스터 11.13(금) ~ 11.14(토)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "13:00~22:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 t 13:00-22:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "시간",
+     "confidence": 1.0,
+     "bbox": [
+      552.0,
+      1123.0,
+      618.0,
+      1162.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "t 13:00-22:00",
+     "confidence": 0.9586,
+     "bbox": [
+      602.0,
+      1128.0,
+      814.0,
+      1157.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    552.0,
+    1123.0,
+    814.0,
+    1162.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "13:00~22:00",
+     "confidence": 0.999,
+     "bbox": [
+      306.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "바다울 전통시장 일대",
+   "status": "review",
+   "reason": "포스터에서 기준 문구를 찾지 못했습니다.",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "바다울 전통시장 일대",
+     "confidence": 0.9976,
+     "bbox": [
+      309.0,
+      850.0,
+      536.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    536.0,
+    881.0
+   ],
+   "method": "최대 문자 일치율 44%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "바다울시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "주최 바다울시 | 주관 바다울축제위원회 문의 051-000-4593",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 바다울시 | 주관 바다울축제위원회",
+     "confidence": 0.9486,
+     "bbox": [
+      136.0,
+      1196.0,
+      520.0,
+      1223.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "문의 051-000-4593",
+     "confidence": 0.9809,
+     "bbox": [
+      546.0,
+      1196.0,
+      748.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    136.0,
+    1196.0,
+    748.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "바다울시",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      904.0,
+      407.0,
+      939.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    903.0,
+    407.0,
+    941.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "바다울축제위원회",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "주최 바다울시 | 주관 바다울축제위원회 문의 051-000-4593",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 바다울시 | 주관 바다울축제위원회",
+     "confidence": 0.9486,
+     "bbox": [
+      136.0,
+      1196.0,
+      520.0,
+      1223.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "문의 051-000-4593",
+     "confidence": 0.9809,
+     "bbox": [
+      546.0,
+      1196.0,
+      748.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    136.0,
+    1196.0,
+    748.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "바다울축제위원회",
+     "confidence": 0.999,
+     "bbox": [
+      310.0,
+      966.0,
+      495.0,
+      995.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    495.0,
+    999.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "051-000-4593",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "051-000-4593",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 바다울시 | 주관 바다울축제위원회",
+     "confidence": 0.9486,
+     "bbox": [
+      136.0,
+      1196.0,
+      520.0,
+      1223.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "문의 051-000-4593",
+     "confidence": 0.9809,
+     "bbox": [
+      546.0,
+      1196.0,
+      748.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    136.0,
+    1196.0,
+    748.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_040",
+     "text": "051-000-4593",
+     "confidence": 0.9997,
+     "bbox": [
+      307.0,
+      1024.0,
+      462.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "강바람에 실려 오는 선율",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "강바람에 실려 오는 선율",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "강바람에",
+     "confidence": 0.9999,
+     "bbox": [
+      69.0,
+      997.0,
+      187.0,
+      1035.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "실려",
+     "confidence": 0.9997,
+     "bbox": [
+      188.0,
+      999.0,
+      248.0,
+      1034.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "오는",
+     "confidence": 1.0,
+     "bbox": [
+      250.0,
+      1000.0,
+      312.0,
+      1034.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "선율",
+     "confidence": 0.9999,
+     "bbox": [
+      313.0,
+      1000.0,
+      374.0,
+      1034.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    69.0,
+    997.0,
+    374.0,
+    1035.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_043",
+     "text": "강바람에 실려 오는 선율",
+     "confidence": 0.9822,
+     "bbox": [
+      310.0,
+      1081.0,
+      567.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    567.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_046",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.963,
+     "bbox": [
+      310.0,
+      1140.0,
+      627.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    627.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 0,
+  "review": 2
+ },
+ "verdict": "review",
+ "predicted_mismatch": false,
+ "check_seconds": 0.011
+}

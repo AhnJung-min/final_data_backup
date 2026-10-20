@@ -163,12 +163,12 @@ def main():
                 "platform": platform.platform(), "processor": platform.processor(), "cpu_count": os.cpu_count(),
                 "started_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "memory_after_load": memory()}
     (args.out / "run.json").write_text(json.dumps(run_info, ensure_ascii=False, indent=2), encoding="utf-8")
-    done = failed = 0
+    with (args.out / "runs.jsonl").open("a", encoding="utf-8") as log:  # 실행마다 덮어쓰지 않는 기록
+        log.write(json.dumps({"event": "start", **run_info}, ensure_ascii=False) + "\n")
+    done = failed = skipped = 0
     for variant in args.variants:
         for case in cases:
             target = args.out / case["id"] / f"{variant}.json"
-            if target.exists():
-                continue
             source = ROOT / case["image"]
             if sha256_file(source) != case["sha256"]:
                 raise SystemExit(f"{case['id']}: 원본 해시가 매니페스트와 다릅니다.")
@@ -176,11 +176,20 @@ def main():
             image, scale = prepare_variant(rgb, variant)
             input_path = inputs_dir / case["id"] / f"{variant}.png"
             input_path.parent.mkdir(parents=True, exist_ok=True)
-            if not input_path.exists():
-                image.save(input_path)
+            image.save(input_path)  # 원본이 바뀌었을 수 있으므로 캐시를 재사용하지 않고 매번 새로 만든다
+            if target.exists():
+                try:
+                    old = json.loads(target.read_text(encoding="utf-8"))
+                except ValueError:
+                    old = {}
+                same_source = old.get("source_sha256") == case["sha256"] or (
+                    old.get("source_sha256") is None and old.get("input_sha256") == sha256_file(input_path))  # 원본 해시가 없는 예전 결과는 입력 해시로 확인
+                if old.get("status") == "success" and same_source:
+                    skipped += 1
+                    continue  # 같은 원본을 이미 읽었다. 실패했거나 원본이 바뀐 결과는 다시 읽는다
             payload = {"case_id": case["id"], "engine": args.engine, "variant": variant, "scale": scale,
                        "normalized_dimensions": [rgb.width, rgb.height], "input_dimensions": [image.width, image.height],
-                       "input_sha256": sha256_file(input_path), "coordinate_space": "normalized_original_pixels"}
+                       "source_sha256": case["sha256"], "input_sha256": sha256_file(input_path), "coordinate_space": "normalized_original_pixels"}
             started = time.perf_counter()
             try:
                 raw = engine.run(image, input_path)
@@ -192,10 +201,14 @@ def main():
             payload["inference_seconds"] = round(time.perf_counter() - started, 3)
             payload["memory"] = memory()
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+            partial = target.with_suffix(".json.tmp")  # 대시보드가 쓰는 도중의 파일을 읽지 않도록 다 쓴 뒤 바꿔 넣는다
+            partial.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+            os.replace(partial, target)
             print(f"{variant} {case['id']} {payload['status']} {payload['inference_seconds']}s lines={len(payload['records'])}", flush=True)
-    run_info.update(finished_at=time.strftime("%Y-%m-%dT%H:%M:%S%z"), succeeded=done, failed=failed, memory_at_end=memory())
+    run_info.update(finished_at=time.strftime("%Y-%m-%dT%H:%M:%S%z"), succeeded=done, failed=failed, skipped=skipped, memory_at_end=memory())
     (args.out / f"run.{'-'.join(args.variants)}.json").write_text(json.dumps(run_info, ensure_ascii=False, indent=2), encoding="utf-8")
+    with (args.out / "runs.jsonl").open("a", encoding="utf-8") as log:
+        log.write(json.dumps({"event": "finish", **run_info}, ensure_ascii=False) + "\n")
 
 
 if __name__ == "__main__":

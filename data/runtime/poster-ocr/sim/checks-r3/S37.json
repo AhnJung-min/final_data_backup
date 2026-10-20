@@ -1,0 +1,573 @@
+{
+ "set": "S37",
+ "checked_at": "2026-10-20T18:08:46+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r3",
+ "document": {
+  "ocr_seconds": 56.012,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 36.305,
+  "lines": 17,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "은하 국화향 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "은하 국화향 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "은하",
+     "confidence": 0.9997,
+     "bbox": [
+      78.0,
+      175.0,
+      287.0,
+      298.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "국화향",
+     "confidence": 1.0,
+     "bbox": [
+      297.0,
+      175.0,
+      595.0,
+      296.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "축제",
+     "confidence": 0.9995,
+     "bbox": [
+      606.0,
+      173.0,
+      808.0,
+      298.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    78.0,
+    173.0,
+    808.0,
+    298.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제22회 은하 국화향 축제",
+     "confidence": 0.9811,
+     "bbox": [
+      307.0,
+      674.0,
+      569.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    569.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제22회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제22회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026 제22회",
+     "confidence": 0.9782,
+     "bbox": [
+      86.0,
+      111.0,
+      291.0,
+      153.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    86.0,
+    111.0,
+    291.0,
+    153.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제22회 은하 국화향 축제",
+     "confidence": 0.9811,
+     "bbox": [
+      307.0,
+      674.0,
+      569.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    569.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026. 9. 6.(일) ~ 9. 8.(화)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.09.06(일)-09.08(화)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      102.0,
+      454.0,
+      158.0,
+      490.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "2026.09.06(일)-09.08(화)",
+     "confidence": 0.9993,
+     "bbox": [
+      196.0,
+      454.0,
+      594.0,
+      494.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    102.0,
+    454.0,
+    594.0,
+    494.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026. 9. 6.(일) ~ 9. 8.(화)",
+     "confidence": 0.9177,
+     "bbox": [
+      309.0,
+      734.0,
+      572.0,
+      762.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    572.0,
+    765.0
+   ],
+   "method": "포스터 9.6(일) ~ 9.8(화)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00-18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "시간",
+     "confidence": 1.0,
+     "bbox": [
+      99.0,
+      522.0,
+      158.0,
+      562.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "10:00-18:00",
+     "confidence": 0.9992,
+     "bbox": [
+      198.0,
+      526.0,
+      400.0,
+      561.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    99.0,
+    522.0,
+    400.0,
+    562.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "10:00~18:00",
+     "confidence": 0.9965,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "은하 전통시장 일대",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "은하 전통시장 일대",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "장소",
+     "confidence": 0.9993,
+     "bbox": [
+      99.0,
+      592.0,
+      159.0,
+      631.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "은하 전통시장 일대",
+     "confidence": 0.9987,
+     "bbox": [
+      196.0,
+      593.0,
+      449.0,
+      634.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    99.0,
+    592.0,
+    449.0,
+    634.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "은하 전통시장 일대",
+     "confidence": 0.9911,
+     "bbox": [
+      309.0,
+      850.0,
+      512.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    512.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "은하시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "은하시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 은하시 | 주관 은하축제위원회 | 문의 055-000-1271",
+     "confidence": 0.93,
+     "bbox": [
+      158.0,
+      1195.0,
+      726.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    158.0,
+    1195.0,
+    726.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "은하시",
+     "confidence": 0.9984,
+     "bbox": [
+      304.0,
+      904.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    902.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 93%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "은하축제위원회",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "은하축제위원회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 은하시 | 주관 은하축제위원회 | 문의 055-000-1271",
+     "confidence": 0.93,
+     "bbox": [
+      158.0,
+      1195.0,
+      726.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    158.0,
+    1195.0,
+    726.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "은하축제위원회",
+     "confidence": 0.9996,
+     "bbox": [
+      309.0,
+      966.0,
+      473.0,
+      995.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    473.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 93%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "055-000-1271",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "055-000-1271",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 은하시 | 주관 은하축제위원회 | 문의 055-000-1271",
+     "confidence": 0.93,
+     "bbox": [
+      158.0,
+      1195.0,
+      726.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    158.0,
+    1195.0,
+    726.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "055-000-1271",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      1025.0,
+      459.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    88.0,
+    1018.0,
+    459.0,
+    1058.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "가을 향기 가득한 하루",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가을 향기 가득한 하루",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "가을",
+     "confidence": 0.998,
+     "bbox": [
+      89.0,
+      323.0,
+      152.0,
+      358.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "향기 가득한",
+     "confidence": 0.9903,
+     "bbox": [
+      147.0,
+      321.0,
+      314.0,
+      360.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "하루",
+     "confidence": 0.9999,
+     "bbox": [
+      308.0,
+      321.0,
+      375.0,
+      360.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    89.0,
+    321.0,
+    375.0,
+    360.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "가을 향기 가득한 하루",
+     "confidence": 0.9755,
+     "bbox": [
+      310.0,
+      1081.0,
+      544.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    544.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9649,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.006
+}

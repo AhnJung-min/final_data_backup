@@ -1,0 +1,21 @@
+가상 대조 실험: 기준 문서 ↔ 포스터 40세트, 대시보드, 비교 보고서
+
+가상 축제 40세트(일치 20 · 불일치 20)의 기준 문서(디자인 용역 표준계약서 +
+첨부 표)와 포스터를 PaddleOCR로 읽어 항목별로 대조했다.
+
+- 데이터: data/synthetic/poster-check-v1(포스터·문서 PNG 각 40장, sets.json,
+  manifest.json), OCR 결과·대조 결과·규칙별 채점(data/runtime/poster-ocr/sim)
+- 코드: sim_data(세트 생성), sim_check(대조 규칙 r4·채점), sim_dashboard(팀
+  서비스 화면 구성을 따른 실험 대시보드 :8766), report_sim(report sim)
+- ocr_worker: 같은 원본(해시)을 성공적으로 읽은 결과만 건너뜀, 결과를 다 쓴 뒤
+  바꿔 넣음, 실행 기록 runs.jsonl
+- 결과: 세트 판정 정확도 r1 90.0% → r4 97.5%(r2부터 같은 40세트로 조정해
+  낙관적), 불일치 20/20 탐지, 오탐 1건(문서 OCR이 '걷기'를 '겉기'로 읽음)
+- 비교 보고서 docs/reports/sim-check-v1/report.html: 같은 OCR 결과에서 규칙
+  v2로 뽑으면 행사명 19/40, 기준과 대조하면 일치 세트 18/20 충족
+- README 6.3절, README_BACKUP, CLAUDE.md에 실험 내용·재현 명령 추가
+- 테스트 271개(tests/test_sim_check.py 13개 추가)
+- 내보내기: 검증용 브라우저 프로필(chrome/) 제외, 비밀값 검사식이 줄바꿈을 넘지
+  않게 수정, Django 로컬 비밀 키(data/runtime/.django-secret-key)를 .gitignore에 추가
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

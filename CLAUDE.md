@@ -1,6 +1,6 @@
 # CLAUDE.md — 축제 포스터 OCR 실험 맥락 (final_data_backup)
 
-다른 PC에서 Claude Code로 이 작업을 이어 가기 위한 압축 맥락이다. 2026-10-19 한 세션(포스터 수집 → 정답 → OCR 3경로 → 규칙 v1·v2 → 예비분 확인 → 보고서)의 결정과 상태를 담았고, 10-20 후속 작업(README 재작성, 2쪽 요약, 정답 정정)을 더했다. 설치는 `README_BACKUP.md`, 결과 상세는 통합 보고서 `docs/reports/poster-ocr-v2/report.html`(데이터 + OCR 실험, OCR 성능 비교표)을 본다.
+다른 PC에서 Claude Code로 이 작업을 이어 가기 위한 압축 맥락이다. 2026-10-19 한 세션(포스터 수집 → 정답 → OCR 3경로 → 규칙 v1·v2 → 예비분 확인 → 보고서)의 결정과 상태를 담았고, 10-20 후속 작업(README 재작성, 2쪽 요약, 정답 정정, 가상 기준 문서 ↔ 포스터 대조 실험)을 더했다. 설치는 `README_BACKUP.md`, 결과 상세는 통합 보고서 `docs/reports/poster-ocr-v2/report.html`(데이터 + OCR 실험, OCR 성능 비교표)과 가상 대조 실험 비교 보고서 `docs/reports/sim-check-v1/report.html`을 본다.
 
 ## 사용자와 일하는 방식
 
@@ -12,7 +12,7 @@
 ## 절대 규칙
 
 1. **API 키**(`.env`의 `DATA_GO_KR_SERVICE_KEY`, `TOURAPI_SERVICE_KEY`)는 출력·커밋·업로드하지 않는다. TourAPI 개발계정은 하루 1,000건 한도다.
-2. **포스터 이미지**는 ⓒ한국관광공사 TourAPI, 공공누리 제3유형(출처표시·변경금지). 원본은 변경 없이 출처와 함께만 배포한다. 확대·잘라낸·변형 이미지는 공개 저장소에 올리지 않는다. 보고서에는 포스터 이미지를 넣지 않는다.
+2. **포스터 이미지**는 ⓒ한국관광공사 TourAPI, 공공누리 제3유형(출처표시·변경금지). 원본은 변경 없이 출처와 함께만 배포한다. 확대·잘라낸·변형 이미지는 공개 저장소에 올리지 않는다. 보고서에는 포스터 이미지를 넣지 않는다. (`data/synthetic/`의 가상 포스터·문서는 직접 만든 것이라 해당 없음.)
 3. **규칙 추출기 원칙**: OCR 글자를 고치지 않는다(위치·크기·낱말 규칙만). 코드·주석에 특정 축제 문구나 사례 ID를 넣지 않는다(예시는 ○○ 합성). 입력은 OCR 줄과 박스뿐이다.
 4. **평가 절차(과적합 방지)**: v1은 dev 60장으로만 만들고 고정(`FREEZE`) → test 140장 1회 평가. v2는 dev+test로 만들되 **두 분할 각각에서 좋아지는 규칙만 채택**, 고정(`FREEZE_V2`, 2026-10-19 18:11) → 예비 52장 1회 평가(완료). **예비분은 이제 썼다.** 규칙을 또 바꾸면 새 확인용 포스터(TourAPI 신규 50~100장)로 재야 한다. 고정 이후 정답을 고칠 때는 FREEZE 파일을 건드리지 않고 `data/runtime/poster-ocr/GOLD_CORRECTIONS.json`에 내역·전후 해시를 남긴다(`.runtime/poster-ocr/record_gold_correction.py`).
 5. 대시보드·사람 검토 서버는 localhost 전용(쓰기 API는 Origin 검사).
@@ -43,6 +43,10 @@
 | `rule_dev.py` | 후보 추출기를 분할별로 평가(규칙 개발용, 예비분 금지) |
 | `report.py`, `report_experiment.py`, `report_style.py` | 데이터 전처리·실험 보고서와 둘을 합친 통합 보고서(`report combined`) HTML 생성. 섹션은 `dataset_parts`·`experiment_parts`가 만들고 세 보고서가 같이 쓴다 |
 | `dashboard.py`, `review_page.py`, `human_review.py` | 실시간 대시보드(`:8765`), 사람 검토 화면(`/review`) |
+| `sim_data.py` | 가상 대조 실험 세트 생성(seed 20261020, 지역 10 × 주제 10에서 40세트, 디자인 틀 5종, 기준 문서 = 디자인 용역 표준계약서 + 첨부 표). 정답 `sets.json`, 매니페스트 `manifest.json`(split `sim`) |
+| `sim_check.py` | 대조 규칙(`sim_check r4`): 문서 OCR 표에서 조건 9~10개 추출 → 포스터 OCR 줄에서 기준 값 찾기 → 충족·위반·확인 필요 + 근거 박스. `--all`로 40세트 대조·채점(정답 파일은 채점에만 씀) |
+| `sim_dashboard.py` + `static/sim_dashboard.html` | 가상 대조 실험 대시보드(`:8766`, 팀 서비스 '크리에이티브체커' 화면 구성을 따름). OCR이 끝난 세트는 바로 대조하고, 실패·원본 변경 결과는 '완료'로 세지 않는다 |
+| `report_sim.py` | 가상 대조 실험 ↔ 기존 OCR 실험 비교 보고서(`report sim`). 같은 데이터 기준선으로 규칙 v2를 가상 포스터 OCR에 다시 돌린다 |
 
 결과 폴더: `data/runtime/poster-ocr/runs/<engine>/<case>/<variant>.json`(OCR), `pred-final/`(최종 추출: v2는 `easyocr·paddleocr·hybrid·fusion_p21`, v1은 `v1_*`), `eval/final.json`(최종 채점), `timing/`(단독 속도 측정). 최종 재현은 `.runtime/poster-ocr/final_eval.sh`.
 
@@ -61,6 +65,16 @@
 - `docs/reports/poster-dataset-v2/summary.html`: 데이터 전처리·사람 검수 2쪽 요약(1280×720 두 쪽, 인쇄 두 장).
 - 백업 저장소는 사용자가 GitHub에서 직접 고치기도 한다. 푸시 전에 fetch하고 강제 푸시하지 않는다.
 
+## 10-20 가상 기준 문서 ↔ 포스터 대조 실험
+
+- 목적: 서비스 흐름(기준 문서 → 표기 기준 → 포스터 항목별 대조)을 시험. 실제 계약서·포스터 짝이 없어 가상 40세트(일치 20 · 불일치 20, 불일치는 포스터 한 칸만 다름)를 만들었다. 기준 문서는 디자인 용역 표준계약서(산업통상부 고시 제2025-033호, 사용자가 준 고시 PDF) 전문 + 첨부 표를 그린 PNG이고, 이미지 문서에서 표를 뽑는 기능이 아직 없어 PaddleOCR로 읽는다(사용자 지시, 텍스트용 `app/documents.py`는 안 씀).
+- 판정 원칙: 확실히 다르게 읽힌 경우만 '위반'(판독 신뢰도: 라벨 옆 문구·기간·운영 시간·문의처·회차 0.90 이상, 라벨 없이 찾은 문구(행사명·필수 문구, 라벨 없는 장소·주최·주관) 0.93 이상). 못 읽은 낱말, 낮은 신뢰도, 기준 문서 안에서 행사명이 서로 다르게 읽힌 경우는 '확인 필요'. 로고(시각)는 늘 '확인 필요'.
+- 규칙 기록: r1 90.0% → r2 95.0% → r3 97.5% → r4 97.5%. r2 이후는 **같은 40세트를 보고 고쳐 낙관적**이다. 독립 검증 2회에서 찾은 결함(낡은 입력 캐시로 읽힌 포스터 3장, 항상 참이던 줄 묶기 조건, 문장부호 박스가 섞인 신뢰도, 글자 없는 줄, 라벨 경로 낱말 누락, 겹친 OCR 박스의 중복 글자)을 r3·r4에서 고쳤다. 규칙별 대조 결과는 `checks-r1`~`r4`, 채점은 `eval-r1`~`r4.json`에 보관(r4 = 현재 규칙 사본). r1~r3은 코드 없이 결과만 남아 있다. r1·r2는 포스터 3장(S03·S05·S08)이 낡은 입력으로 읽힌 OCR로 채점했다.
+- 남은 오답: S09 오탐 하나. 문서 OCR이 '걷기'를 '겉기'로 읽은 체계적 오독(맑은 고딕 23px의 '걷', 신뢰도로 못 거름)이다. 기준 확인 단계에서 사람이 기준을 확정해야 한다는 근거다.
+- 같은 OCR 결과로 규칙 v2(기준 없이 뽑기)를 돌리면 행사명 19/40, 대조하면 일치 세트 18/20 충족. 차이는 줄 고르기 단계이고 판독 한계는 그대로다(실제 예비 52장 축제명 상한 18/52).
+- `ocr_worker.py` 변경: 결과에 `source_sha256`을 남기고, 같은 원본을 성공적으로 읽은 결과만 건너뛴다. 결과는 `.json.tmp`에 쓴 뒤 바꿔 넣고, 실행마다 `runs.jsonl`에 기록한다. 기존 가상 결과 77건에는 입력 해시를 확인한 뒤 원본 해시를 채웠다(`source_sha256_backfilled`). `sim/runs/paddleocr/run*.json`은 S03·S05·S08 포스터를 다시 읽은 실행의 기록이고, 이 백업의 결과에는 `runs.jsonl`이 없다(변경 전 실행).
+- 원래 PC에서는 새 시드(20261021) 세트로 r4를 고치지 않고 다시 재는 작업을 진행 중이었다(이 백업에는 없음).
+
 ## 남은 일 / 다음 단계
 
 1. **VLM 실험**: 같은 정답·지표·분할로 소형 로컬 VLM, RunPod 중형(설계 `docs/poster-ocr-vlm-testbed.md`). 규칙을 만들지 않으므로 전 분할을 평가에 쓸 수 있다.
@@ -68,6 +82,7 @@
 3. 검수 화면에 항목별 신뢰 등급(자동 입력/확인 필요) 적용, 운영 중 수정 기록을 `human-review` 형식으로 축적.
 4. v3 후보(검증에서 나온 남은 위험): '65,500.000원' 꼴 금액은 `total_krw=None`, 로·길·동·리 뒤 'N-N' 번지는 날짜로 지우지 않기, 축제명 지역 접두 보조 지표(`title_core`).
 5. 팀 결정: 라벨링 규칙 1.1 승인, 공통 계약 3.0(`poster` 블록 교체), main 저장소에 포스터 이미지 둘지.
+6. 가상 대조 실험: 새 시드 세트로 r4 재측정, 실제 계약서·포스터 짝으로 같은 대조, 기준 문서를 텍스트 PDF·DOCX로 받아 `app/documents.py`로 읽는 경로와 문서 OCR 오독 비교.
 
 ## 자주 쓰는 명령 (Windows PowerShell, 저장소 루트)
 
@@ -79,6 +94,9 @@
 .\.venv\Scripts\python.exe -m app.poster_ocr.report experiment --eval data\runtime\poster-ocr\eval\final.json
 .\.venv\Scripts\python.exe -m app.poster_ocr.report combined
 .\.venv\Scripts\python.exe -m app.poster_ocr.dashboard --port 8765
+.\.venv\Scripts\python.exe -m app.poster_ocr.sim_check --all          # 가상 대조·채점(checks/*.json 다시 씀, 확인만 할 때는 --out <폴더>)
+.\.venv\Scripts\python.exe -m app.poster_ocr.report sim               # 비교 보고서
+.\.venv\Scripts\python.exe -m app.poster_ocr.sim_dashboard --port 8766
 ```
 
-주의: `rule_dev --extract`로 돌릴 후보 사본은 저장소 루트에서 두 단계 깊이(예: `.runtime/poster-ocr/<이름>.py`)에 둔다(`ROOT = parents[2]`). Windows 콘솔 한글은 `PYTHONIOENCODING=utf-8`로 출력한다. Bash heredoc 안의 한글·백슬래시 치환은 깨지기 쉬우니 패치 스크립트는 파일로 써서 실행한다.
+주의: `rule_dev --extract`로 돌릴 후보 사본은 저장소 루트에서 두 단계 깊이(예: `.runtime/poster-ocr/<이름>.py`)에 둔다(`ROOT = parents[2]`). Windows 콘솔 한글은 `PYTHONIOENCODING=utf-8`로 출력한다. pytest는 임시 폴더 권한 문제로 `-p no:cacheprovider --basetemp=<쓰기 가능한 폴더>`를 붙인다. 테스트·Django는 `data/runtime/.django-secret-key`를 만든다(백업 .gitignore에서 제외). 내보내기 폴더 안에서는 테스트를 돌리지 않는다. Bash heredoc 안의 한글·백슬래시 치환은 깨지기 쉬우니 패치 스크립트는 파일로 써서 실행한다.

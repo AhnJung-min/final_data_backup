@@ -1,0 +1,529 @@
+{
+ "set": "S30",
+ "checked_at": "2026-10-20T18:35:13+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 58.295,
+  "lines": 54,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 37.725,
+  "lines": 11,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "하람 갯벌 생태 체험축제",
+   "status": "fail",
+   "reason": "포스터 표기가 기준 문서와 다릅니다('벌'→'벙').",
+   "observed": "하람 / 갯벙 / 생태 / 체험축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "하람",
+     "confidence": 0.9995,
+     "bbox": [
+      52.0,
+      297.0,
+      285.0,
+      438.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "갯벙",
+     "confidence": 0.9795,
+     "bbox": [
+      53.0,
+      430.0,
+      279.0,
+      569.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "생태",
+     "confidence": 0.9997,
+     "bbox": [
+      53.0,
+      559.0,
+      279.0,
+      695.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "체험축제",
+     "confidence": 0.9999,
+     "bbox": [
+      56.0,
+      690.0,
+      481.0,
+      826.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    52.0,
+    297.0,
+    481.0,
+    826.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제4회 하람 갯벌 생태 체험축제",
+     "confidence": 0.9976,
+     "bbox": [
+      309.0,
+      676.0,
+      632.0,
+      703.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    632.0,
+    707.0
+   ],
+   "method": "문자 일치율 90% · 판독 신뢰도 98%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제4회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제4회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "2026 제4회",
+     "confidence": 0.9673,
+     "bbox": [
+      65.0,
+      119.0,
+      248.0,
+      161.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    65.0,
+    119.0,
+    248.0,
+    161.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제4회 하람 갯벌 생태 체험축제",
+     "confidence": 0.9976,
+     "bbox": [
+      309.0,
+      676.0,
+      632.0,
+      703.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    632.0,
+    707.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.9.9.(수)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.09.09(수)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "일시 2026.09.09(수)",
+     "confidence": 0.9844,
+     "bbox": [
+      526.0,
+      967.0,
+      815.0,
+      1006.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    526.0,
+    967.0,
+    815.0,
+    1006.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "2026.9.9.(수)",
+     "confidence": 0.996,
+     "bbox": [
+      307.0,
+      734.0,
+      458.0,
+      763.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    458.0,
+    765.0
+   ],
+   "method": "포스터 9.9(수)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간10:00-18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "시간10:00-18:00",
+     "confidence": 0.9996,
+     "bbox": [
+      552.0,
+      1020.0,
+      817.0,
+      1057.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    552.0,
+    1020.0,
+    817.0,
+    1057.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_029",
+     "text": "10:00~18:00",
+     "confidence": 0.9965,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "하람 전통시장 일대",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "하람 전통시장 일대",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "장소 하람 전통시장 일대",
+     "confidence": 0.9497,
+     "bbox": [
+      502.0,
+      1071.0,
+      816.0,
+      1109.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    502.0,
+    1071.0,
+    816.0,
+    1109.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "하람 전통시장 일대",
+     "confidence": 0.9851,
+     "bbox": [
+      309.0,
+      850.0,
+      512.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    512.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "하람군",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "하람군",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "주최 하람군 | 주관 하람문화원 | 문의 064-000-1294",
+     "confidence": 0.9484,
+     "bbox": [
+      176.0,
+      1195.0,
+      710.0,
+      1225.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    176.0,
+    1195.0,
+    710.0,
+    1225.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "하람군",
+     "confidence": 0.9977,
+     "bbox": [
+      304.0,
+      901.0,
+      385.0,
+      942.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    901.0,
+    385.0,
+    942.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "하람문화원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "하람문화원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "주최 하람군 | 주관 하람문화원 | 문의 064-000-1294",
+     "confidence": 0.9484,
+     "bbox": [
+      176.0,
+      1195.0,
+      710.0,
+      1225.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    176.0,
+    1195.0,
+    710.0,
+    1225.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "하람문화원",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      963.0,
+      429.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    429.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "064-000-1294",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "064-000-1294",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "주최 하람군 | 주관 하람문화원 | 문의 064-000-1294",
+     "confidence": 0.9484,
+     "bbox": [
+      176.0,
+      1195.0,
+      710.0,
+      1225.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    176.0,
+    1195.0,
+    710.0,
+    1225.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "064-000-1294",
+     "confidence": 0.9728,
+     "bbox": [
+      307.0,
+      1024.0,
+      462.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "바다가 준 선물",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "바다가 준 선물",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "바다가 준 선물",
+     "confidence": 0.9172,
+     "bbox": [
+      68.0,
+      893.0,
+      256.0,
+      931.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    68.0,
+    893.0,
+    256.0,
+    931.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_040",
+     "text": "바다가 준 선물",
+     "confidence": 0.973,
+     "bbox": [
+      309.0,
+      1081.0,
+      468.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    468.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_043",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9588,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 1,
+  "review": 1
+ },
+ "verdict": "fail",
+ "predicted_mismatch": true,
+ "check_seconds": 0.007
+}

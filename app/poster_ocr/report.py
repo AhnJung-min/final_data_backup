@@ -3,6 +3,7 @@
   .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report dataset
   .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report experiment --eval data/runtime/poster-ocr/eval/final.json
   .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report combined   # docs/reports/poster-ocr-v2/report.html
+  .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report sim        # 가상 대조 실험 비교 docs/reports/sim-check-v1/report.html
 보고서에는 포스터 이미지를 넣지 않는다(공공누리 제3유형, 저장소가 공개 상태). 수치는 모두 파일에서 다시 계산한다.
 """
 from __future__ import annotations
@@ -379,13 +380,16 @@ def section(anchor, title, inner, wide=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("kind", choices=["dataset", "experiment", "combined"])
+    parser.add_argument("kind", choices=["dataset", "experiment", "combined", "sim"])
     parser.add_argument("--run-dir", type=Path, default=ROOT / "data/runtime/festivals/run_posters_recent_2026-10-19")
     parser.add_argument("--eval", type=Path)
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
     if args.kind == "dataset":
         print(dataset_report(args.out or ROOT / "docs/reports/poster-dataset-v2/report.html", args.run_dir))
+    elif args.kind == "sim":
+        from .report_sim import sim_report
+        print(sim_report(args.out or ROOT / "docs/reports/sim-check-v1/report.html"))
     elif args.kind == "combined":
         print(combined_report(args.out or ROOT / "docs/reports/poster-ocr-v2/report.html", args.run_dir,
                               args.eval or ROOT / "data/runtime/poster-ocr/eval/final.json"))

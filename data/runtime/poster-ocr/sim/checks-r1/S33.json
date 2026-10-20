@@ -1,0 +1,616 @@
+{
+ "set": "S33",
+ "checked_at": "2026-10-20T17:39:38+0900",
+ "variant": "rgb_1x",
+ "document": {
+  "ocr_seconds": 58.198,
+  "lines": 56,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 37.505,
+  "lines": 25,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "가람 갯벌 생태 체험축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람 / 갯벌 생태 체험축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "가람",
+     "confidence": 0.9999,
+     "bbox": [
+      346.0,
+      382.0,
+      543.0,
+      497.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "갯벌",
+     "confidence": 0.9733,
+     "bbox": [
+      58.0,
+      517.0,
+      246.0,
+      630.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "생태",
+     "confidence": 0.9998,
+     "bbox": [
+      258.0,
+      515.0,
+      445.0,
+      631.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "체험축제",
+     "confidence": 0.9999,
+     "bbox": [
+      460.0,
+      517.0,
+      823.0,
+      628.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    58.0,
+    382.0,
+    823.0,
+    631.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_025",
+     "text": "제14회 가람 갯벌 생태 체험축제",
+     "confidence": 0.9858,
+     "bbox": [
+      307.0,
+      674.0,
+      646.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    646.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제14회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 '제14회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.9995,
+     "bbox": [
+      346.0,
+      308.0,
+      432.0,
+      345.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "'제14회",
+     "confidence": 0.9845,
+     "bbox": [
+      429.0,
+      306.0,
+      537.0,
+      347.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    346.0,
+    306.0,
+    537.0,
+    347.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_025",
+     "text": "제14회 가람 갯벌 생태 체험축제",
+     "confidence": 0.9858,
+     "bbox": [
+      307.0,
+      674.0,
+      646.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    646.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.11.16.(월) ~11.19.(목)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "11월 16일(월) 19일(목)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "11월",
+     "confidence": 0.9985,
+     "bbox": [
+      221.0,
+      762.0,
+      309.0,
+      807.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "16일(월)",
+     "confidence": 0.9998,
+     "bbox": [
+      313.0,
+      760.0,
+      471.0,
+      814.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "19일(목)",
+     "confidence": 0.9998,
+     "bbox": [
+      509.0,
+      759.0,
+      664.0,
+      813.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    221.0,
+    759.0,
+    664.0,
+    814.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_028",
+     "text": "2026.11.16.(월) ~11.19.(목)",
+     "confidence": 0.9819,
+     "bbox": [
+      309.0,
+      733.0,
+      623.0,
+      761.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    729.0,
+    623.0,
+    767.0
+   ],
+   "method": "포스터 11.16(월) ~ 11.19(목)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "10:00 ~ 18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "10:00",
+     "confidence": 0.9991,
+     "bbox": [
+      346.0,
+      834.0,
+      429.0,
+      866.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "~",
+     "confidence": 0.9927,
+     "bbox": [
+      433.0,
+      838.0,
+      454.0,
+      862.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_015",
+     "text": "18:00",
+     "confidence": 0.9994,
+     "bbox": [
+      457.0,
+      834.0,
+      541.0,
+      867.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    346.0,
+    834.0,
+    541.0,
+    867.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "10:00~18:00",
+     "confidence": 0.9965,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "가람강변공원 일원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람강변공원 일원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "가람강변공원",
+     "confidence": 0.9999,
+     "bbox": [
+      312.0,
+      886.0,
+      501.0,
+      927.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_017",
+     "text": "일원",
+     "confidence": 0.9998,
+     "bbox": [
+      505.0,
+      884.0,
+      573.0,
+      927.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    312.0,
+    884.0,
+    573.0,
+    927.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "가람강변공원 일원",
+     "confidence": 0.9921,
+     "bbox": [
+      309.0,
+      850.0,
+      504.0,
+      877.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    504.0,
+    881.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "가람시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "주최 가람시 |주관 가람문화원 |문의 041-000-1421",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "주최 가람시 |주관 가람문화원 |문의 041-000-1421",
+     "confidence": 0.9383,
+     "bbox": [
+      178.0,
+      1197.0,
+      709.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1197.0,
+    709.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "가람시",
+     "confidence": 0.9989,
+     "bbox": [
+      304.0,
+      900.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    900.0,
+    385.0,
+    941.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "가람문화원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "주최 가람시 |주관 가람문화원 |문의 041-000-1421",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "주최 가람시 |주관 가람문화원 |문의 041-000-1421",
+     "confidence": 0.9383,
+     "bbox": [
+      178.0,
+      1197.0,
+      709.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1197.0,
+    709.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "가람문화원",
+     "confidence": 0.9999,
+     "bbox": [
+      307.0,
+      963.0,
+      429.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    429.0,
+    999.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "041-000-1421",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "041-000-1421",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "주최 가람시 |주관 가람문화원 |문의 041-000-1421",
+     "confidence": 0.9383,
+     "bbox": [
+      178.0,
+      1197.0,
+      709.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1197.0,
+    709.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_039",
+     "text": "041-000-1421",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1025.0,
+      459.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    459.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "바다가 준 선물",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "바다가 준 선물",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "바다가",
+     "confidence": 0.9994,
+     "bbox": [
+      347.0,
+      655.0,
+      439.0,
+      695.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "준",
+     "confidence": 0.9472,
+     "bbox": [
+      439.0,
+      646.0,
+      475.0,
+      695.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "선물",
+     "confidence": 0.9989,
+     "bbox": [
+      476.0,
+      654.0,
+      541.0,
+      697.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    347.0,
+    646.0,
+    541.0,
+    697.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_042",
+     "text": "바다가 준 선물",
+     "confidence": 0.981,
+     "bbox": [
+      309.0,
+      1081.0,
+      468.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    468.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_045",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9684,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.01
+}

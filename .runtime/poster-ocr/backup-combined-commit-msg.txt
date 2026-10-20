@@ -1,0 +1,14 @@
+통합 보고서: 데이터 전처리 + OCR 실험, OCR 성능 비교표
+
+데이터 전처리 보고서와 OCR 실험 보고서를 한 문서로 합쳤다
+(docs/reports/poster-ocr-v2/report.html, report combined).
+
+- 목차 → 결론 → OCR 성능 비교 → 1부 데이터 → 2부 OCR 실험 → 한계·재현 순서
+- OCR 성능 비교 표 3개: 예비 52장 경로별(판독률·필드 정확도·속도·메모리),
+  test 140장 입력 크기별, 팀 main 5장 비교(참고)
+- 두 보고서의 섹션을 dataset_parts·experiment_parts로 나눠 세 보고서가 같이 씀
+- 결론 문구 수정: 문의처는 F1 0.71~1.00로 잘 뽑음, v2가 나빠지지 않은 것은
+  PaddleOCR 기준, 9월 이전 시작 행사·seed·API 호출 구성 표현
+- README·설치 안내·CLAUDE.md에 통합 보고서 경로와 생성 명령 추가
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

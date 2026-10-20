@@ -1,0 +1,547 @@
+{
+ "set": "S23",
+ "checked_at": "2026-10-20T17:55:58+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r2",
+ "document": {
+  "ocr_seconds": 54.589,
+  "lines": 56,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 9
+ },
+ "poster": {
+  "ocr_seconds": 41.331,
+  "lines": 23,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "가람 가을 책 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람 / 가을책 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "가람",
+     "confidence": 0.9999,
+     "bbox": [
+      318.0,
+      379.0,
+      569.0,
+      531.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "가을책",
+     "confidence": 0.9997,
+     "bbox": [
+      123.0,
+      543.0,
+      513.0,
+      695.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9994,
+     "bbox": [
+      514.0,
+      549.0,
+      757.0,
+      692.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    123.0,
+    379.0,
+    757.0,
+    695.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "가람 가을 책 축제",
+     "confidence": 0.9683,
+     "bbox": [
+      310.0,
+      676.0,
+      497.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    497.0,
+    707.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.10.16.(금)~ 10.17.(토)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "10월 16일(금) 17일(토)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "10월",
+     "confidence": 0.9998,
+     "bbox": [
+      222.0,
+      820.0,
+      309.0,
+      865.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "16일(금)",
+     "confidence": 0.9926,
+     "bbox": [
+      311.0,
+      818.0,
+      470.0,
+      872.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "17일(토)",
+     "confidence": 0.9979,
+     "bbox": [
+      510.0,
+      820.0,
+      664.0,
+      870.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    222.0,
+    818.0,
+    664.0,
+    872.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_029",
+     "text": "2026.10.16.(금)~ 10.17.(토)",
+     "confidence": 0.9707,
+     "bbox": [
+      307.0,
+      733.0,
+      624.0,
+      763.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    624.0,
+    765.0
+   ],
+   "method": "포스터 10.16(금) ~ 10.17(토)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "10:00 18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "10:00",
+     "confidence": 0.9991,
+     "bbox": [
+      344.0,
+      890.0,
+      428.0,
+      926.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "18:00",
+     "confidence": 0.9993,
+     "bbox": [
+      458.0,
+      893.0,
+      541.0,
+      925.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    344.0,
+    890.0,
+    541.0,
+    926.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "10:00~18:00",
+     "confidence": 0.9965,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "가람 문화예술회관 야외광장",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람 문화예술회관 야외광장",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "가람",
+     "confidence": 0.9997,
+     "bbox": [
+      244.0,
+      941.0,
+      314.0,
+      987.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "문화예술회관",
+     "confidence": 0.9999,
+     "bbox": [
+      317.0,
+      946.0,
+      504.0,
+      984.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_015",
+     "text": "야외광장",
+     "confidence": 0.9992,
+     "bbox": [
+      510.0,
+      944.0,
+      639.0,
+      986.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    244.0,
+    941.0,
+    639.0,
+    987.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "가람 문화예술회관 야외광장",
+     "confidence": 0.9991,
+     "bbox": [
+      309.0,
+      850.0,
+      603.0,
+      877.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    603.0,
+    881.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "가람시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_022",
+     "text": "주최 가람시 |주관 가람문화원 |문의 041-000-1308",
+     "confidence": 0.9456,
+     "bbox": [
+      178.0,
+      1196.0,
+      707.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1196.0,
+    707.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "가람시",
+     "confidence": 0.9989,
+     "bbox": [
+      304.0,
+      900.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    900.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "가람문화원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람문화원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_022",
+     "text": "주최 가람시 |주관 가람문화원 |문의 041-000-1308",
+     "confidence": 0.9456,
+     "bbox": [
+      178.0,
+      1196.0,
+      707.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1196.0,
+    707.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "가람문화원",
+     "confidence": 0.9999,
+     "bbox": [
+      307.0,
+      963.0,
+      429.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    429.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "041-000-1308",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "041-000-1308",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_022",
+     "text": "주최 가람시 |주관 가람문화원 |문의 041-000-1308",
+     "confidence": 0.9456,
+     "bbox": [
+      178.0,
+      1196.0,
+      707.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1196.0,
+    707.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_040",
+     "text": "041-000-1308",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1025.0,
+      462.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "책장을 넘기는 가을",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "책장을 넘기는 가을",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "책장을",
+     "confidence": 0.9999,
+     "bbox": [
+      317.0,
+      713.0,
+      409.0,
+      754.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "넘기는",
+     "confidence": 0.9855,
+     "bbox": [
+      411.0,
+      713.0,
+      503.0,
+      755.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "가을",
+     "confidence": 0.9966,
+     "bbox": [
+      504.0,
+      713.0,
+      569.0,
+      754.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    317.0,
+    713.0,
+    569.0,
+    755.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_043",
+     "text": "책장을 넘기는 가을",
+     "confidence": 0.984,
+     "bbox": [
+      310.0,
+      1081.0,
+      512.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    512.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_046",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9656,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.008
+}

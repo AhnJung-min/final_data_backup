@@ -11,7 +11,7 @@ SK네트웍스 Family AI 33기 1팀 체크메이트 · 팀 문서와 앱 화면�
 > - 이 저장소의 주력은 축제 데이터 수집(`app/festival_data`)과 포스터 OCR 실험(`app/poster_ocr`, 포스터 252장, 핵심 8칸은 사람이 검토한 정답)이다.
 > - 설치와 재현: [README_BACKUP.md](README_BACKUP.md) · Claude Code 작업 맥락: [CLAUDE.md](CLAUDE.md)
 
-시점 표기: 기획 내용은 **2026-10-16 중간 발표 기준**, 팀 코드 상태는 **2026-10-20 main(`fbd6596`) 기준**, 실험 결과는 2026-10-19 기준이다.
+시점 표기: 기획 내용은 **2026-10-16 중간 발표 기준**, 팀 코드 상태는 **2026-10-20 main(`fbd6596`) 기준**, 실험 결과는 2026-10-19 기준이다(6.3 가상 대조 실험은 2026-10-20).
 
 ## 1. 왜 만드나
 
@@ -223,6 +223,7 @@ OCR·VLM 실험용으로, 기간이 2026-09-01~12-31에 걸치는 2026년 시작
 
 | 경로 | 내용 |
 | --- | --- |
+| `data/synthetic/poster-check-v1/` | 가상 대조 실험(6.3절) 세트 40개: 포스터·기준 문서 PNG 각 40장(직접 생성, 축제·기관·전화번호는 지어낸 값), 정답 `sets.json`, OCR 매니페스트 `manifest.json` |
 | `data/samples/`, `data/topics/`, `data/criteria.json` | 구 시제품 샘플. AI로 만든 가상 광고 3주제(딸기라떼·페스티벌·크루아상 v2) × 6장 = 18장(1254×1254 PNG), 주제별 규칙 C01–C05 |
 | `data/collection/` | 2026-10-06 합성 접수 자료. 기준 문서 10건, 요청 문장 250개(의도 5종 × 50), 광고 이미지 12장. 사람 승인 0건, 권리 검토 전 |
 | `data/festivals/` | 공통 JSON 2.1·포스터 추출 표준 1.0·OCR 인계 스키마, 예시 10개, 2026–2027 문화관광축제 27건 목록 |
@@ -302,6 +303,27 @@ OCR·VLM 실험용으로, 기간이 2026-09-01~12-31에 걸치는 2026년 시작
 
 6.1과 6.2는 포스터 수, 지표(CER 대 필드 완전 일치), 정답 상태, 장비가 모두 달라 수치를 직접 비교하지 않는다. 상세 보고서는 9절에 있다.
 
+### 6.3 가상 기준 문서 ↔ 포스터 대조 실험 (2026-10-20)
+
+서비스의 핵심 흐름(기준 문서에서 표기 기준을 뽑고, 포스터와 항목별로 대조)을 시험했다. 실제 의뢰서·계약서와 포스터 짝이 없어 가상 축제 40세트를 만들었다.
+
+- **데이터**: 가상 축제 40세트(seed 20261020). 포스터는 886×1254 px(디자인 틀 5종 × 8장), 기준 문서는 디자인 용역 표준계약서(산업통상부 고시 제2025-033호, 사용자가 받은 고시 원문 PDF 기준) 전문에 '첨부 1. 개발 세부내역 - 포스터 필수 표기 사항' 표를 붙인 A4 이미지(1240×1754 px PNG)다. 일치 20세트, 불일치 20세트(포스터 한 칸만 다르게: 날짜 하루 밀림 4 · 회차 3 · 장소 3 · 행사명 한 글자 3 · 주관 3 · 문의처 2 · 운영 시간 2).
+- **방법**: 이미지 문서에서 표를 뽑는 기능이 아직 없어 기준 문서도 PaddleOCR(6.2와 같은 엔진·설정, 원본 입력)로 읽는다(텍스트 PDF·DOCX용 `app/documents.py`는 쓰지 않았다). 표의 '항목' 칸 옆 문구를 조건 9~10개로 삼고, 포스터 OCR에서 기준 값을 찾아 충족·위반·확인 필요로 판정한다. 확실히 다르게 읽힌 경우만 '위반'(판독 신뢰도 0.90 이상, 라벨 없이 찾은 행사명·문구는 0.93 이상), 못 읽었거나 신뢰도가 낮으면 '확인 필요'다. 로고 같은 시각 조건은 자동 판정하지 않고 항상 '확인 필요'로 넘긴다.
+
+| 지표 | 값 |
+| --- | --- |
+| 세트 판정 정확도(대조 규칙 r1 → r2 → r3 → r4) | 90.0% → 95.0% → 97.5% → 97.5%(r1·r2는 포스터 3장이 낡은 입력으로 읽힌 OCR 결과, r3부터 다시 읽음) |
+| 불일치 탐지(r4) | 20/20, 틀린 항목까지 맞힘 20/20 |
+| 일치 세트를 잘못 '위반'(r4) | 1/20 (문서 OCR이 행사명 '걷기'를 '겉기'로 읽음) |
+| 같은 OCR 결과로 기준 없이 뽑기(6.2의 규칙 v2) | 행사명 19/40 · 장소 39/40 · 기간 36/40 |
+| 같은 OCR 결과로 기준과 대조(일치 세트 '충족') | 행사명 18/20 · 회차 14/14 · 그 밖의 정보 항목 20/20 |
+| 처리 시간(CPU, 중앙값) | 기준 문서 58초 + 포스터 39초 = 세트당 약 97초 |
+
+- r2~r4는 이 40세트를 보면서 고친 규칙이라 점수가 낙관적이다. 다른 시드로 만든 새 가상 세트로 다시 재야 한다.
+- 기준 값이 있으면 '어느 줄이 행사명인가'를 고르는 규칙 오류가 사라진다. OCR이 못 읽는 글자는 그대로다. 실제 예비 52장에서 OCR이 축제명을 온전히 읽은 포스터는 18장(34.6%)뿐이라, 실제 포스터에서는 '확인 필요'가 많이 남는다.
+- 기준 문서 오독이 새 위험이다. 문서 OCR이 행사명을 3/40건 잘못 읽었고(모두 같은 글자 '걷'), 그대로 기준이 되면 맞는 포스터도 '위반'이 된다. 담당자가 기준을 확정하는 '기준 확인' 단계가 꼭 필요하다.
+- 진행 상황을 보는 실험용 대시보드(팀 서비스 화면 구성을 따름): `.\.venv\Scripts\python.exe -m app.poster_ocr.sim_dashboard --port 8766`. 상세는 9절의 비교 보고서.
+
 ## 7. 이 저장소 구성
 
 | 경로 | 구분 | 내용 |
@@ -314,14 +336,15 @@ OCR·VLM 실험용으로, 기간이 2026-09-01~12-31에 걸치는 2026년 시작
 | `.github/`, `tmp/pdfs/` | 구 시제품 | 이슈·PR 양식, OCR 호환성 CI(`ocr-compatibility.yml`), 2026-10-06 합성 자료 보고서 페이지 렌더 11장과 합성 광고 이미지 모음 1장(PNG) |
 | `app/festival_data/`, `scripts/collect_festivals.py` | 데이터 파이프라인 | 축제 수집 CLI(웹 서버 불필요). 명령 9개: collect · normalize · compare · validate · attach-ocr · attach-poster · worklist · review · ingest |
 | `data/festivals/`, `docs/festival-*.md`, `requirements-collection.txt` | 데이터 파이프라인 | 스키마·예시·설명 문서 |
-| `app/poster_ocr/` | 포스터 OCR | 데이터셋 생성, OCR 실행(별도 가상환경), 혼합 경로, 규칙 v1·v2, 결합, 채점, 보고서, 대시보드·사람 검토 화면 |
+| `app/poster_ocr/` | 포스터 OCR | 데이터셋 생성, OCR 실행(별도 가상환경), 혼합 경로, 규칙 v1·v2, 결합, 채점, 보고서, 대시보드·사람 검토 화면, 가상 대조 실험(`sim_*`, `report_sim.py`) |
 | `data/benchmarks/`, `data/img-v2/` | 포스터 OCR | 매니페스트·정답, 포스터 원본 252장 |
 | `data/runtime/poster-ocr/` | 포스터 OCR | OCR 결과(3경로 × 2입력), 최종 추출, 채점 `eval/final.json`, `FREEZE`·`FREEZE_V2`, 정답 정정 기록 `GOLD_CORRECTIONS.json` |
 | `.runtime/poster-ocr/` | 포스터 OCR | 실험 작업 스크립트와 검토 기록 |
-| `.claude/launch.json` | 포스터 OCR | 대시보드 실행 설정(Claude Code용) |
+| `data/synthetic/poster-check-v1/`, `data/runtime/poster-ocr/sim/` | 가상 대조 실험 | 가상 세트 40개, 문서·포스터 OCR 결과, 대조 결과(`checks/` = 현재 규칙 r4, `checks-r1`~`r4`), 규칙별 채점 `eval-r*.json` |
+| `.claude/launch.json` | 포스터 OCR | 대시보드 실행 설정(Claude Code용, 실험 대시보드 `:8765`·가상 대조 대시보드 `:8766`) |
 | `requirements-ocr-easyocr.txt`, `requirements-ocr-paddle.txt` | 포스터 OCR | OCR 전용 가상환경 2개의 고정 패키지 목록 |
 | `docs/reports/` | 보고서 | 9절 참고 |
-| `tests/` | 공통 | 13개 파일, 테스트 258개(2026-10-20 수집 기준) |
+| `tests/` | 공통 | 14개 파일, 테스트 271개(2026-10-20 수집 기준) |
 
 ### 시작하기 (Windows PowerShell, Python 3.12)
 
@@ -358,7 +381,8 @@ py -3.12 -m venv .venv; .\.venv\Scripts\python.exe -m pip install -r requirement
 1. **VLM 실험**: 같은 정답·지표·분할로 소형 로컬 VLM과 RunPod 중형 모델을 비교한다. 규칙을 만들지 않으므로 모든 분할을 평가에 쓸 수 있다. 가장 먼저 볼 항목은 축제명(장식 글꼴 제목) 판독이다. main에는 이미 소형 VLM 재인식 경로(qwen, Qwen3-VL 4B)가 있고, 팀 5장 비교(2026-10-13)에서 CER 59.8%였다. 설계는 [docs/poster-ocr-vlm-testbed.md](docs/poster-ocr-vlm-testbed.md)(데이터 분할은 posters-v2 이전 계획이고, 실제 분할은 5.2절).
 2. **새 확인용 포스터**: 예비 52장은 이미 한 번 썼다. 규칙을 또 고치면 TourAPI 새 포스터 50~100장으로 다시 잰다.
 3. **검수 화면 분류**: 값을 냈을 때 맞을 확률이 높은 칸(연도·시작일·회차)은 자동 입력 후 확인만 하고, 낮은 칸(축제명·장소)은 '확인 필요'로 표시한다. 수정 기록은 `human-review` 형식으로 쌓아 정답셋을 늘린다.
-4. **팀 결정 필요**: 라벨링 규칙 1.1 승인, 공통 JSON 3.0(2.1의 `poster` 블록을 포스터 추출 표준으로 바꿀지), posters-v2 252장 원본을 팀 저장소에 올릴지.
+4. **가상 대조 실험**: 규칙 r4를 고치지 않고 다른 시드의 새 가상 세트로 다시 잰다. 실제 계약서·포스터 짝으로 같은 대조를 해 보고, 기준 문서를 텍스트 PDF·DOCX로 받는 경로(`app/documents.py`)와 문서 OCR 오독을 비교한다.
+5. **팀 결정 필요**: 라벨링 규칙 1.1 승인, 공통 JSON 3.0(2.1의 `poster` 블록을 포스터 추출 표준으로 바꿀지), posters-v2 252장 원본을 팀 저장소에 올릴지.
 
 ## 9. 관련 문서
 
@@ -370,6 +394,7 @@ py -3.12 -m venv .venv; .\.venv\Scripts\python.exe -m pip install -r requirement
 | [poster-dataset-v2/report.html](docs/reports/poster-dataset-v2/report.html) | 포스터 데이터셋 수집·전처리·정답 |
 | [poster-dataset-v2/summary.html](docs/reports/poster-dataset-v2/summary.html) | 데이터 전처리·사람 검수 2쪽 요약(인쇄용) |
 | [ocr-experiment-v2/report.html](docs/reports/ocr-experiment-v2/report.html) | 포스터 OCR 실험(통합 보고서 2부와 같은 내용) |
+| [sim-check-v1/report.html](docs/reports/sim-check-v1/report.html) | 가상 기준 문서 ↔ 포스터 대조 실험(6.3절)과 기존 OCR 실험의 비교 |
 | [data-collection/report.html](docs/reports/data-collection/report.html) | 구 시제품 합성 자료 수집 보고서(2026-10-06 스냅샷). 팀 산출물 '수집 데이터 보고서 v05'와 다른 문서다 |
 | [poster-schema](docs/reports/poster-schema/포스터%20표준%20통합%20데이터%20스키마.html) | 축제 포스터 추출 표준(HTML) |
 | [ml-dl/ml-dl-candidates.html](docs/reports/ml-dl/ml-dl-candidates.html) | ML·DL 적용 후보 비교 |

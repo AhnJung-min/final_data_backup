@@ -46,7 +46,8 @@ def walk(rel, images_ok=False, top_only=False):
 def work_records():
     """.runtime/poster-ocr의 작업 기록: 스크립트·제안 diff·문서·요약 JSON만(후보 예측 수만 개와 이미지는 뺀다)."""
     base = ROOT / ".runtime/poster-ocr"
-    skip = {"pred", "zoom", "pilot-crops", "inputs", "hybrid-crops", "hybrid-crops-reserve", "backup-export", "verify-summary", "__pycache__"}
+    skip = {"pred", "zoom", "pilot-crops", "inputs", "hybrid-crops", "hybrid-crops-reserve", "backup-export", "verify-summary", "__pycache__",
+            "chrome"}  # chrome: 검증용 헤드리스 브라우저 프로필
     keep_suffix = {".py", ".md", ".diff", ".sh", ".txt", ".json", ".html"}
     out = []
     for dirpath, dirnames, filenames in os.walk(base):
@@ -69,13 +70,14 @@ def main():
     for run in sorted((ROOT / "data/runtime/festivals").glob("*/")):
         files |= set(walk(run.relative_to(ROOT).as_posix(), top_only=True))
     files |= set(work_records())
-    env_like = lambda f: Path(f).name.startswith(".env") and not Path(f).name.endswith((".example", ".sample", ".template"))
+    env_like = lambda f: (Path(f).name.startswith(".env") and not Path(f).name.endswith((".example", ".sample", ".template"))
+                          or Path(f).name.startswith(".django-secret-key"))  # Django가 실행될 때 만드는 로컬 비밀 키
     files = {f for f in files if not f.startswith(".runtime/poster-ocr/backup-export") and not env_like(f)}
     # Git이 관리하는 파일은 이미지라도 그대로 둔다(팀 저장소에 이미 공개된 파일). 그 밖의 이미지는 포스터 원본만.
     git_files = set(tracked())
     files = {f for f in files if Path(f).suffix.lower() not in IMAGE or f in git_files or f.startswith("data/img-v2/")}
     # .env는 읽지 않는다. 키가 들어가는 형태(URL 쿼리, 설정 대입)만 찾는다.
-    pattern = re.compile(r"(?i)(?:service_?key|api_?key|access_?token|secret)[\"']?\s*[=:]\s*[\"']?([A-Za-z0-9%+/=_\-]{20,})")
+    pattern = re.compile(r"(?i)(?:service_?key|api_?key|access_?token|secret)[\"']?[ \t]*[=:][ \t]*[\"']?([A-Za-z0-9%+/=_\-]{20,})")  # 값이 빈 변수 이름 줄에서 다음 줄로 넘어가지 않게 공백만 허용
     leaks = []
     total = 0
     for rel in sorted(files):

@@ -3,7 +3,7 @@
 팀 저장소 [SKN33-Final-1Team](https://github.com/20260528-skn-family-ai-33/SKN33-Final-1Team)의 `data/festival-data-pipeline` 브랜치(기준 커밋 `48a585b`) 작업 트리에, 로컬에만 있던 실험 데이터·결과를 더해 다른 PC에서도 그대로 이어서 테스트할 수 있게 올린 백업이다. 팀 저장소의 Git 기록은 포함하지 않았다.
 
 - Claude Code로 이어서 작업한다면 저장소 루트의 [`CLAUDE.md`](CLAUDE.md)가 프로젝트 맥락·규칙·현재 상태를 담고 있다(Claude Code가 자동으로 읽는다).
-- 결과는 통합 보고서 [`docs/reports/poster-ocr-v2/report.html`](docs/reports/poster-ocr-v2/report.html)(데이터 전처리 + OCR 실험, OCR 성능 비교표)에 있다. 나눠 본 판: [데이터 전처리](docs/reports/poster-dataset-v2/report.html), [OCR 실험](docs/reports/ocr-experiment-v2/report.html). 브라우저로 열면 된다.
+- 결과는 통합 보고서 [`docs/reports/poster-ocr-v2/report.html`](docs/reports/poster-ocr-v2/report.html)(데이터 전처리 + OCR 실험, OCR 성능 비교표)에 있다. 나눠 본 판: [데이터 전처리](docs/reports/poster-dataset-v2/report.html), [OCR 실험](docs/reports/ocr-experiment-v2/report.html). 가상 기준 문서 ↔ 포스터 대조 실험은 [`docs/reports/sim-check-v1/report.html`](docs/reports/sim-check-v1/report.html)(기존 OCR 실험과 비교)에 있다. 브라우저로 열면 된다.
 
 ## 무엇이 들어 있나
 
@@ -21,6 +21,8 @@
 | `data/runtime/poster-ocr/FREEZE`, `FREEZE_V2` | 규칙 v1·v2 고정 기록(해시) |
 | `data/runtime/poster-ocr/GOLD_CORRECTIONS.json` | 고정 뒤 정답 정정 내역과 전후 해시(10-20, 규칙·채점 코드는 그대로) |
 | `data/runtime/festivals/*/` | TourAPI 수집 실행의 JSON(캐시·이미지 제외) |
+| `data/synthetic/poster-check-v1/` | 가상 대조 실험 세트 40개: 포스터·기준 문서 PNG 각 40장(직접 생성), 정답 `sets.json`, OCR 매니페스트 `manifest.json` |
+| `data/runtime/poster-ocr/sim/` | 가상 세트 PaddleOCR 결과(80건, `runs/paddleocr/<세트>-doc·-poster/rgb_1x.json`), 대조 결과(`checks/` = 현재 규칙 r4, `checks-r1`~`r4`), 규칙별 채점 `eval-r*.json` |
 | `.runtime/poster-ocr/` | 실험 작업 기록: 스크립트, 규칙 제안 diff, 검토 결과 JSON, 정답 변환 전 사본 |
 | `requirements-ocr-easyocr.txt`, `requirements-ocr-paddle.txt` | OCR 전용 가상환경 2개의 고정 패키지 목록 |
 
@@ -52,6 +54,11 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m app.poster_ocr.report combined   # 통합 보고서
 # 대시보드·사람 검토 화면 (http://127.0.0.1:8765, /review)
 .\.venv\Scripts\python.exe -m app.poster_ocr.dashboard --port 8765
+# 가상 대조 실험: 저장된 OCR 결과로 다시 대조·채점(점수는 화면에 출력) → 비교 보고서 → 대시보드 (http://127.0.0.1:8766)
+# --out을 빼면 checks/*.json을 다시 쓴다(결과는 같고 대조 시각만 바뀐다). eval-r*.json은 규칙별 보관 사본이다.
+.\.venv\Scripts\python.exe -m app.poster_ocr.sim_check --all --out .runtime\check\sim-checks
+.\.venv\Scripts\python.exe -m app.poster_ocr.report sim
+.\.venv\Scripts\python.exe -m app.poster_ocr.sim_dashboard --port 8766
 ```
 
 ### 2. OCR까지 다시 돌리기 (CPU 기준 수 시간)
@@ -64,7 +71,15 @@ py -3.12 -m venv .runtime\paddle-env
 .\.venv\Scripts\python.exe -m app.poster_ocr.prepare_models     # 고정 revision·SHA-256으로 모델 내려받기
 .\.runtime\easyocr-env\Scripts\python.exe app\poster_ocr\ocr_worker.py --engine easyocr --splits dev test reserve --out data\runtime\poster-ocr\runs\easyocr --model-dir .runtime\easyocr-models
 .\.runtime\paddle-env\Scripts\python.exe app\poster_ocr\ocr_worker.py --engine paddleocr --splits dev test reserve --out data\runtime\poster-ocr\runs\paddleocr --model-dir .runtime\paddle-models
+# 가상 대조 실험: 문서·포스터 80장을 새 폴더에 다시 읽기(약 65분). 저장된 결과 폴더로 돌리면 80장을 모두 건너뛴다.
+.\.runtime\paddle-env\Scripts\python.exe app\poster_ocr\ocr_worker.py --engine paddleocr --manifest data\synthetic\poster-check-v1\manifest.json --splits sim --variants rgb_1x --out .runtime\check\sim-paddleocr --model-dir .runtime\paddle-models
+# (선택) 세트 이미지·정답 다시 만들기: data/synthetic/poster-check-v1을 덮어쓴다
+.\.venv\Scripts\python.exe -m app.poster_ocr.sim_data
 ```
+
+가상 세트 PNG는 저장된 파일이 기준이다. `sim_data`는 Windows 글꼴(Noto Sans KR·Noto Serif KR 가변 글꼴, 맑은 고딕)로 글자를 그리므로, 글꼴이 없으면 실패하고 글꼴·Pillow 판이 다르면 PNG 해시가 바뀌어 OCR 결과를 다시 만들어야 한다.
+
+`ocr_worker.py`는 이미 있는 결과 중 같은 원본(해시)을 성공적으로 읽은 것만 건너뛴다. 실패했거나 원본이 바뀐 결과는 다시 읽는다.
 
 혼합 경로·최종 채점까지의 전체 명령은 실험 보고서의 「재현 명령」과 `.runtime/poster-ocr/final_eval.sh`에 있다.
 
@@ -72,4 +87,5 @@ py -3.12 -m venv .runtime\paddle-env
 
 - **예비분(r2-*)은 이미 한 번 썼다.** 규칙을 또 고치면 예비분 점수는 더 이상 '처음 보는 포스터' 성능이 아니다. 새 확인용 포스터를 모아 따로 재야 한다.
 - **API 키**는 `.env`에만 두고 커밋하지 않는다.
-- 포스터 원본 출처: ⓒ한국관광공사 TourAPI(공공데이터포털), 공공누리 제3유형(출처표시·변경금지). 원본은 변경 없이 출처와 함께만 배포한다.
+- 포스터 원본 출처: ⓒ한국관광공사 TourAPI(공공데이터포털), 공공누리 제3유형(출처표시·변경금지). 원본은 변경 없이 출처와 함께만 배포한다. `data/synthetic/`의 가상 포스터·문서는 직접 만든 이미지라 이 제한과 무관하다.
+- **가상 대조 실험의 r2~r4 점수는 같은 40세트를 보고 고친 값이다.** 규칙을 더 고치려면 다른 시드의 새 가상 세트로 재야 한다.

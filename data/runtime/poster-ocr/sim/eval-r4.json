@@ -1,0 +1,509 @@
+{
+ "n": 40,
+ "confusion": {
+  "tp": 20,
+  "fn": 0,
+  "fp": 1,
+  "tn": 19
+ },
+ "accuracy": 0.975,
+ "recall": 1.0,
+ "precision": 0.9523809523809523,
+ "by_type": {
+  "date_shift_stale_weekday": {
+   "label": "행사 기간 하루 밀림(요일은 그대로 → 달력과 어긋남)",
+   "n": 2,
+   "caught": 2,
+   "caught_field": 2
+  },
+  "venue_diff": {
+   "label": "행사 장소 다름",
+   "n": 3,
+   "caught": 3,
+   "caught_field": 3
+  },
+  "organizer_diff": {
+   "label": "주관 기관 다름",
+   "n": 3,
+   "caught": 3,
+   "caught_field": 3
+  },
+  "date_shift": {
+   "label": "행사 기간 하루 밀림(요일도 다시 계산)",
+   "n": 2,
+   "caught": 2,
+   "caught_field": 2
+  },
+  "title_typo": {
+   "label": "행사명 한 글자 오타",
+   "n": 3,
+   "caught": 3,
+   "caught_field": 3
+  },
+  "time_diff": {
+   "label": "운영 시간 다름",
+   "n": 2,
+   "caught": 2,
+   "caught_field": 2
+  },
+  "contact_diff": {
+   "label": "문의 전화번호 한 자리 다름",
+   "n": 2,
+   "caught": 2,
+   "caught_field": 2
+  },
+  "edition_swap": {
+   "label": "회차 숫자 뒤바뀜",
+   "n": 3,
+   "caught": 3,
+   "caught_field": 3
+  }
+ },
+ "field_false_alarms": {
+  "title": 1
+ },
+ "document_read": {
+  "title": {
+   "n": 40,
+   "ok": 37
+  },
+  "edition": {
+   "n": 31,
+   "ok": 31
+  },
+  "schedule": {
+   "n": 40,
+   "ok": 40
+  },
+  "time": {
+   "n": 40,
+   "ok": 40
+  },
+  "venue": {
+   "n": 40,
+   "ok": 40
+  },
+  "host": {
+   "n": 40,
+   "ok": 40
+  },
+  "organizer": {
+   "n": 40,
+   "ok": 40
+  },
+  "contact": {
+   "n": 40,
+   "ok": 40
+  },
+  "slogan": {
+   "n": 40,
+   "ok": 40
+  }
+ },
+ "rows": [
+  {
+   "set": "S01",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S02",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S03",
+   "truth": "mismatch",
+   "type": "date_shift_stale_weekday",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "schedule"
+   ]
+  },
+  {
+   "set": "S04",
+   "truth": "mismatch",
+   "type": "venue_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "venue"
+   ]
+  },
+  {
+   "set": "S05",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S06",
+   "truth": "mismatch",
+   "type": "organizer_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "organizer"
+   ]
+  },
+  {
+   "set": "S07",
+   "truth": "mismatch",
+   "type": "date_shift",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "schedule"
+   ]
+  },
+  {
+   "set": "S08",
+   "truth": "mismatch",
+   "type": "title_typo",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "title"
+   ]
+  },
+  {
+   "set": "S09",
+   "truth": "match",
+   "type": null,
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": false,
+   "fails": [
+    "title"
+   ]
+  },
+  {
+   "set": "S10",
+   "truth": "mismatch",
+   "type": "organizer_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "organizer"
+   ]
+  },
+  {
+   "set": "S11",
+   "truth": "mismatch",
+   "type": "venue_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "venue"
+   ]
+  },
+  {
+   "set": "S12",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S13",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S14",
+   "truth": "mismatch",
+   "type": "date_shift_stale_weekday",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "schedule"
+   ]
+  },
+  {
+   "set": "S15",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S16",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S17",
+   "truth": "mismatch",
+   "type": "title_typo",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "title"
+   ]
+  },
+  {
+   "set": "S18",
+   "truth": "mismatch",
+   "type": "time_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "time"
+   ]
+  },
+  {
+   "set": "S19",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S20",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S21",
+   "truth": "mismatch",
+   "type": "venue_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "venue"
+   ]
+  },
+  {
+   "set": "S22",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S23",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S24",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S25",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "review",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S26",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S27",
+   "truth": "mismatch",
+   "type": "time_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "time"
+   ]
+  },
+  {
+   "set": "S28",
+   "truth": "mismatch",
+   "type": "organizer_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "organizer"
+   ]
+  },
+  {
+   "set": "S29",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S30",
+   "truth": "mismatch",
+   "type": "title_typo",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "title"
+   ]
+  },
+  {
+   "set": "S31",
+   "truth": "mismatch",
+   "type": "contact_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "contact"
+   ]
+  },
+  {
+   "set": "S32",
+   "truth": "mismatch",
+   "type": "edition_swap",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "edition"
+   ]
+  },
+  {
+   "set": "S33",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S34",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S35",
+   "truth": "mismatch",
+   "type": "contact_diff",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "contact"
+   ]
+  },
+  {
+   "set": "S36",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S37",
+   "truth": "match",
+   "type": null,
+   "predicted": "match",
+   "verdict": "pass",
+   "field_hit": false,
+   "fails": []
+  },
+  {
+   "set": "S38",
+   "truth": "mismatch",
+   "type": "date_shift",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "schedule"
+   ]
+  },
+  {
+   "set": "S39",
+   "truth": "mismatch",
+   "type": "edition_swap",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "edition"
+   ]
+  },
+  {
+   "set": "S40",
+   "truth": "mismatch",
+   "type": "edition_swap",
+   "predicted": "mismatch",
+   "verdict": "fail",
+   "field_hit": true,
+   "fails": [
+    "edition"
+   ]
+  }
+ ],
+ "rules": "sim_check r4",
+ "note": "r3 + 글자 없는 줄 제외, 라벨 경로의 못 읽은 낱말은 확인 필요, 기간·회차 위반 신뢰도 기준, 겹친 OCR 박스 중복 글자 제거. 같은 40세트를 보고 고침(낙관적)"
+}

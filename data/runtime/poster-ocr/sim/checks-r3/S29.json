@@ -1,0 +1,595 @@
+{
+ "set": "S29",
+ "checked_at": "2026-10-20T18:08:46+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r3",
+ "document": {
+  "ocr_seconds": 59.327,
+  "lines": 54,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 41.399,
+  "lines": 17,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "미르 한지 공예 문화제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르 / 한지 공예 문화제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "미르",
+     "confidence": 0.9999,
+     "bbox": [
+      338.0,
+      134.0,
+      549.0,
+      257.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "한지",
+     "confidence": 0.9999,
+     "bbox": [
+      58.0,
+      264.0,
+      268.0,
+      393.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "공예",
+     "confidence": 0.9999,
+     "bbox": [
+      285.0,
+      266.0,
+      497.0,
+      391.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "문화제",
+     "confidence": 1.0,
+     "bbox": [
+      513.0,
+      267.0,
+      823.0,
+      392.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    58.0,
+    134.0,
+    823.0,
+    393.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제23회 미르 한지 공예 문화제",
+     "confidence": 0.9889,
+     "bbox": [
+      307.0,
+      674.0,
+      621.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    621.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제23회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제23회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.9994,
+     "bbox": [
+      346.0,
+      74.0,
+      435.0,
+      108.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제23회",
+     "confidence": 0.9999,
+     "bbox": [
+      431.0,
+      72.0,
+      536.0,
+      109.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    346.0,
+    72.0,
+    536.0,
+    109.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제23회 미르 한지 공예 문화제",
+     "confidence": 0.9889,
+     "bbox": [
+      307.0,
+      674.0,
+      621.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    621.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026. 9. 28.(월) ~9. 30.(수)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.9.28.(월)~9.30.(수)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "일시",
+     "confidence": 1.0,
+     "bbox": [
+      86.0,
+      815.0,
+      144.0,
+      850.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "2026.9.28.(월)~9.30.(수)",
+     "confidence": 0.9993,
+     "bbox": [
+      197.0,
+      817.0,
+      579.0,
+      851.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    86.0,
+    815.0,
+    579.0,
+    851.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026. 9. 28.(월) ~9. 30.(수)",
+     "confidence": 0.9399,
+     "bbox": [
+      309.0,
+      734.0,
+      596.0,
+      763.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    596.0,
+    765.0
+   ],
+   "method": "포스터 9.28(월) ~ 9.30(수)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00~18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "시간",
+     "confidence": 1.0,
+     "bbox": [
+      85.0,
+      887.0,
+      146.0,
+      926.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "10:00~18:00",
+     "confidence": 0.9981,
+     "bbox": [
+      199.0,
+      892.0,
+      396.0,
+      923.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    85.0,
+    887.0,
+    396.0,
+    926.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "10:00~18:00",
+     "confidence": 0.9965,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "미르시청 앞 광장",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르시청 앞 광장",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "장소",
+     "confidence": 0.9989,
+     "bbox": [
+      85.0,
+      962.0,
+      147.0,
+      1000.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "미르시청 앞 광장",
+     "confidence": 0.9602,
+     "bbox": [
+      199.0,
+      965.0,
+      418.0,
+      999.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    85.0,
+    962.0,
+    418.0,
+    1000.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "미르시청 앞 광장",
+     "confidence": 0.997,
+     "bbox": [
+      309.0,
+      848.0,
+      490.0,
+      877.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    490.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "미르시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 미르시 ㅣ 주관 미르문화재단ㅣ 문의 063-000-5635",
+     "confidence": 0.9437,
+     "bbox": [
+      166.0,
+      1195.0,
+      717.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    166.0,
+    1195.0,
+    717.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "미르시",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      903.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    902.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "미르문화재단",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르문화재단",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 미르시 ㅣ 주관 미르문화재단ㅣ 문의 063-000-5635",
+     "confidence": 0.9437,
+     "bbox": [
+      166.0,
+      1195.0,
+      717.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    166.0,
+    1195.0,
+    717.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "미르문화재단",
+     "confidence": 0.9998,
+     "bbox": [
+      307.0,
+      963.0,
+      453.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    453.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "063-000-5635",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "063-000-5635",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 미르시 ㅣ 주관 미르문화재단ㅣ 문의 063-000-5635",
+     "confidence": 0.9437,
+     "bbox": [
+      166.0,
+      1195.0,
+      717.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    166.0,
+    1195.0,
+    717.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "063-000-5635",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1024.0,
+      461.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    461.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "손끝에서 피어나는 전통",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "손끝에서 피어나는 전통",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "손끝에서",
+     "confidence": 1.0,
+     "bbox": [
+      277.0,
+      414.0,
+      404.0,
+      453.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "피어나는",
+     "confidence": 1.0,
+     "bbox": [
+      410.0,
+      416.0,
+      537.0,
+      452.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "전통",
+     "confidence": 0.9998,
+     "bbox": [
+      541.0,
+      415.0,
+      609.0,
+      454.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    277.0,
+    414.0,
+    609.0,
+    454.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "손끝에서 피어나는 전통",
+     "confidence": 0.9976,
+     "bbox": [
+      309.0,
+      1081.0,
+      559.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    559.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9668,
+     "bbox": [
+      310.0,
+      1140.0,
+      627.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    627.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.006
+}

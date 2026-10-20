@@ -1,0 +1,573 @@
+{
+ "set": "S26",
+ "checked_at": "2026-10-20T18:08:46+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r3",
+ "document": {
+  "ocr_seconds": 56.418,
+  "lines": 54,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 38.311,
+  "lines": 17,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "새봄 해맞이 불꽃 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄 / 해맞이 불꽃 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "새봄",
+     "confidence": 0.9996,
+     "bbox": [
+      332.0,
+      164.0,
+      550.0,
+      292.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "해맞이",
+     "confidence": 1.0,
+     "bbox": [
+      51.0,
+      295.0,
+      371.0,
+      432.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "불꽃",
+     "confidence": 0.9987,
+     "bbox": [
+      381.0,
+      297.0,
+      601.0,
+      431.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9986,
+     "bbox": [
+      606.0,
+      297.0,
+      824.0,
+      431.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    51.0,
+    164.0,
+    824.0,
+    432.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제17회 새봄 해맞이 불꽃 축제",
+     "confidence": 0.9893,
+     "bbox": [
+      307.0,
+      674.0,
+      623.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    623.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제17회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제17회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026 제17회",
+     "confidence": 0.9676,
+     "bbox": [
+      346.0,
+      92.0,
+      537.0,
+      128.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    346.0,
+    92.0,
+    537.0,
+    128.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제17회 새봄 해맞이 불꽃 축제",
+     "confidence": 0.9893,
+     "bbox": [
+      307.0,
+      674.0,
+      623.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    623.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.10.3.(토) ~ 10.5.(월)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.10.3.(토) ~10.5.(월)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      105.0,
+      573.0,
+      166.0,
+      613.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "2026.10.3.(토) ~10.5.(월)",
+     "confidence": 0.967,
+     "bbox": [
+      205.0,
+      575.0,
+      575.0,
+      612.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    105.0,
+    573.0,
+    575.0,
+    613.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "2026.10.3.(토) ~ 10.5.(월)",
+     "confidence": 0.9176,
+     "bbox": [
+      309.0,
+      734.0,
+      596.0,
+      762.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    596.0,
+    765.0
+   ],
+   "method": "포스터 10.3(토) ~ 10.5(월)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00~18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "시간",
+     "confidence": 0.9999,
+     "bbox": [
+      105.0,
+      635.0,
+      167.0,
+      674.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "10:00~18:00",
+     "confidence": 0.9985,
+     "bbox": [
+      208.0,
+      639.0,
+      398.0,
+      673.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    105.0,
+    635.0,
+    398.0,
+    674.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_029",
+     "text": "10:00~18:00",
+     "confidence": 0.9965,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "새봄강변공원 일원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄강변공원 일원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "장소",
+     "confidence": 0.9991,
+     "bbox": [
+      105.0,
+      697.0,
+      167.0,
+      737.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "새봄강변공원 일원",
+     "confidence": 0.9993,
+     "bbox": [
+      207.0,
+      699.0,
+      441.0,
+      738.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    105.0,
+    697.0,
+    441.0,
+    738.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "새봄강변공원 일원",
+     "confidence": 0.9994,
+     "bbox": [
+      310.0,
+      850.0,
+      504.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    504.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "새봄군",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄군",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 새봄군 |주관 새봄관광재단 |문의 054-000-9472",
+     "confidence": 0.9419,
+     "bbox": [
+      168.0,
+      1194.0,
+      716.0,
+      1217.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1194.0,
+    716.0,
+    1217.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "새봄군",
+     "confidence": 0.998,
+     "bbox": [
+      305.0,
+      901.0,
+      385.0,
+      942.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    901.0,
+    385.0,
+    942.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "새봄관광재단",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "새봄관광재단",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 새봄군 |주관 새봄관광재단 |문의 054-000-9472",
+     "confidence": 0.9419,
+     "bbox": [
+      168.0,
+      1194.0,
+      716.0,
+      1217.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1194.0,
+    716.0,
+    1217.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "새봄관광재단",
+     "confidence": 0.9991,
+     "bbox": [
+      307.0,
+      962.0,
+      453.0,
+      995.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    453.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "054-000-9472",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "054-000-9472",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 새봄군 |주관 새봄관광재단 |문의 054-000-9472",
+     "confidence": 0.9419,
+     "bbox": [
+      168.0,
+      1194.0,
+      716.0,
+      1217.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1194.0,
+    716.0,
+    1217.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "054-000-9472",
+     "confidence": 0.9987,
+     "bbox": [
+      307.0,
+      1024.0,
+      461.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    461.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "밤하늘을 수놓는 불꽃",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "밤하늘을 수놓는 불꽃",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "밤하늘을",
+     "confidence": 0.9999,
+     "bbox": [
+      283.0,
+      454.0,
+      423.0,
+      497.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "수놓는 불꽃",
+     "confidence": 0.9783,
+     "bbox": [
+      419.0,
+      453.0,
+      604.0,
+      499.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    283.0,
+    453.0,
+    604.0,
+    499.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_040",
+     "text": "밤하늘을 수놓는 불꽃",
+     "confidence": 0.9994,
+     "bbox": [
+      310.0,
+      1081.0,
+      536.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    536.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_043",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9588,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.008
+}
