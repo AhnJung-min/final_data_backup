@@ -90,6 +90,9 @@ def save(payload):
               "reviewed_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
               "fields": clean, "changed": [n for n in FIELDS if not same(ai[n], clean[n])],
               "note": str(payload.get("note") or "").strip()[:1000] or None}
+    old = REVIEW / f"{case_id}.json"
+    if old.exists() and load(old).get("revisions"):
+        record["revisions"] = load(old)["revisions"]  # 검토 뒤 정정 이력은 다시 저장해도 남긴다
     REVIEW.mkdir(parents=True, exist_ok=True)
     (REVIEW / f"{case_id}.json").write_text(json.dumps(record, ensure_ascii=False, indent=1), encoding="utf-8")
     return record
@@ -99,6 +102,29 @@ def same(ai, human):
     """AI 정답 칸과 사람 검토 칸이 같은가(상태가 같고, 있음이면 값도 같음)."""
     status = ai["status"] if ai["status"] in ("present", "absent", "illegible") else "absent"
     return status == human["status"] and (status != "present" or str(ai["value"]).strip() == human["value"])
+
+
+def split_venue(text):
+    """장소 원문 → items. 표준대로 '및'·'·'·쉼표에서만 나누고 괄호 설명은 남긴다. 괄호 안과 숫자 사이 '·'(3·15)는 나누지 않는다."""
+    parts, buf, depth, i = [], "", 0, 0
+    while i < len(text):
+        ch = text[i]
+        if ch in "([（":
+            depth += 1
+        elif ch in ")]）" and depth:
+            depth -= 1
+        if depth == 0 and text.startswith(" 및 ", i):
+            parts.append(buf)
+            buf, i = "", i + 3
+            continue
+        if depth == 0 and (ch == "," or (ch == "·" and not (text[i - 1:i].isdigit() and text[i + 1:i + 2].isdigit()))):
+            parts.append(buf)
+            buf, i = "", i + 1
+            continue
+        buf += ch
+        i += 1
+    parts.append(buf)
+    return [x.strip() for x in parts if x.strip()]
 
 
 def parse_point(text, weekday, basis_year):
@@ -147,7 +173,9 @@ def apply_review(doc, review):
         s.update(status=f["start"]["status"], raw=None, start=None, end=None, times=[], duration_raw=None, operating_raw=None,
                  evidence=manual if f["start"]["status"] == "illegible" else None)
     if f["venue"]["status"] == "present":
-        items = [p.strip() for p in re.split(r"\s*(?:및|·|,)\s*", f["venue"]["value"]) if p.strip()]
+        # 고치지 않은 장소는 AI 정답의 items를 그대로 둔다. 사람이 고친 장소만 다시 나눈다.
+        kept = "venue" not in review["changed"] and doc["venue"]["status"] == "present" and doc["venue"]["items"]
+        items = doc["venue"]["items"] if kept else split_venue(f["venue"]["value"])
         doc["venue"].update(status="present", raw=f["venue"]["value"], items=items or [f["venue"]["value"]], evidence=doc["venue"]["evidence"] or manual)
     else:
         doc["venue"].update(status=f["venue"]["status"], raw=None, items=[], evidence=manual if f["venue"]["status"] == "illegible" else None)

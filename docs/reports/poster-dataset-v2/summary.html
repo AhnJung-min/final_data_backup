@@ -330,7 +330,7 @@ td.id{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowr
       <div class="pa" aria-hidden="true">→</div>
       <div class="step"><span class="no">STEP 2</span><b>AI 2차 검토</b><p>같은 모델의 별도 세션이 원본을 보며 모든 항목을 다시 대조</p><span class="r">252장 재검토, 39장·53건 수정</span></div>
       <div class="pa" aria-hidden="true">→</div>
-      <div class="step me"><span class="no">STEP 3</span><b>사람 검수<span class="tag">직접</span></b><p>검토 화면에서 원본과 핵심 8칸 대조. 장당 중앙값 15초</p><span class="r">252장 전부, 11장·14칸 수정</span></div>
+      <div class="step me"><span class="no">STEP 3</span><b>사람 검수<span class="tag">직접</span></b><p>검토 화면에서 원본과 핵심 8칸 대조. 장당 중앙값 15초</p><span class="r">252장 전부, 11장·12칸 수정</span></div>
       <div class="pa" aria-hidden="true">→</div>
       <div class="step"><span class="no">STEP 4</span><b>지역 규칙 A1 적용</b><p>표준 1.1 지역 규칙을 스크립트로 일괄 적용. 검수한 칸은 그대로</p><span class="r">dev·test 53장, 예비 16장 변경</span></div>
       <div class="pa" aria-hidden="true">→</div>
@@ -340,16 +340,16 @@ td.id{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowr
     <div class="cols">
       <section class="blk" aria-labelledby="h-res">
         <h2 id="h-res"><span class="n">01</span>사람 검수 결과</h2>
-        <div class="hero"><span class="big">99.3%</span><p>AI 정답을 그대로 둔 칸<br><span class="num">2,016칸</span>(252장×8칸) 중 <span class="num">2,002칸</span></p></div>
-        <div class="kind" aria-label="고친 14칸의 종류">
-          <h3>고친 14칸은 무엇이었나</h3>
-          <div class="krow"><span class="kv">9</span><span class="kl">AI가 '없음'·'판독 불가'로 둔 칸을 채움 <small>작은 글자 4 · 두 자리 연도 '26'→2026 2 · 주소 줄을 장소로 1 · 인쇄되지 않은 요일 2</small></span><span class="kbar"><i style="width:100%"></i></span></div>
-          <div class="krow"><span class="kv">5</span><span class="kl">띄어쓰기·구분 기호만 다름 <small>채점은 공백·문장부호를 빼고 비교해 영향 없음</small></span><span class="kbar"><i class="g" style="width:55.6%"></i></span></div>
+        <div class="hero"><span class="big">99.4%</span><p>AI 정답을 그대로 둔 칸<br><span class="num">2,016칸</span>(252장×8칸) 중 <span class="num">2,004칸</span></p></div>
+        <div class="kind" aria-label="고친 12칸의 종류">
+          <h3>고친 12칸은 무엇이었나</h3>
+          <div class="krow"><span class="kv">7</span><span class="kl">AI가 '없음'·'판독 불가'로 둔 칸을 채움 <small>작은 글자·위첨자 4 · 두 자리 연도 '26'→2026 2 · 주소 줄을 장소로 1</small></span><span class="kbar"><i style="width:100%"></i></span></div>
+          <div class="krow"><span class="kv">5</span><span class="kl">띄어쓰기·구분 기호만 다름 <small>채점은 공백·문장부호를 빼고 비교해 영향 없음</small></span><span class="kbar"><i class="g" style="width:71.4%"></i></span></div>
           <div class="krow"><span class="kv">0</span><span class="kl">AI가 읽은 값 자체가 틀림</span></div>
         </div>
         <div>
           <ul class="fields">
-            <li class="fl-k">칸별</li><li class="chip">장소 <b>7</b></li><li class="chip">요일 <b>4</b></li><li class="chip">연도 <b>2</b></li><li class="chip">축제명 <b>1</b></li>
+            <li class="fl-k">칸별</li><li class="chip">장소 <b>7</b></li><li class="chip">요일 <b>2</b></li><li class="chip">연도 <b>2</b></li><li class="chip">축제명 <b>1</b></li>
           </ul>
         </div>
         <p class="lim">한계: 검수자 1명이라 검수자 간 일치도는 재지 않았다. 기관·문의처 같은 목록 칸은 AI 2차 검토본 그대로다.</p>
@@ -395,8 +395,8 @@ td.id{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowr
   </div>
 
   <footer class="foot">
-    <span>근거 <code>data/benchmarks/gold-v2h/</code> · <code>human-review/</code>(252건) · <code>gold-v2-blind/</code>(30장) · <code>docs/festival-poster-standard.md</code>(라벨링 규칙 1.1)</span>
-    <span>검수 2026-10-19 15:27~17:08 · 검수자 안정민</span>
+    <span>근거 <code>data/benchmarks/gold-v2h/</code> · <code>human-review/</code> · <code>gold-v2-blind/</code> · <code>GOLD_CORRECTIONS.json</code> · 라벨링 규칙 1.1</span>
+    <span>검수 10-19 15:27~17:08 · 안정민 · 10-20 정정: v2-058 인쇄 안 된 요일 2칸</span>
   </footer>
 </section>
 

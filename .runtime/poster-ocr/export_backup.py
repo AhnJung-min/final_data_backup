@@ -55,6 +55,8 @@ def work_records():
             path = Path(dirpath) / name
             if path.suffix.lower() not in keep_suffix or path.stat().st_size > 3 * 2**20:
                 continue
+            if path.relative_to(base).parts[0].startswith("proposals") and name.endswith("-summary.json"):
+                continue  # 규칙 후보별 채점 요약(행 전체 포함, 개당 최대 2MB)은 다시 만들 수 있어 뺀다
             out.append(path.relative_to(ROOT).as_posix())
     return out
 
@@ -95,7 +97,7 @@ def main():
                          ("gitignore.backup", ".gitignore")):
         if (docs / name).exists():
             shutil.copy2(docs / name, out / target)
-    (out / ".gitattributes").write_text("# 파일 바이트를 그대로 보관한다(FREEZE와 SHA256SUMS 해시가 다른 PC에서도 맞도록 줄바꿈 변환 끔)\n* -text\n", encoding="utf-8")
+    (out / ".gitattributes").write_text("# 파일 바이트를 그대로 보관한다(FREEZE와 SHA256SUMS 해시가 다른 PC에서도 맞도록 줄바꿈 변환 끔)\n* -text\n", encoding="utf-8", newline="\n")
     (out / ".env.example").unlink(missing_ok=True)  # 키 이름만 있는 예시도 넣지 않는다(설치 안내에 변수 이름을 적음)
     shutil.rmtree(out / ".runtime/poster-ocr/backup-docs", ignore_errors=True)
     big = sorted(((ROOT / f).stat().st_size, f) for f in files if (ROOT / f).is_file() and (ROOT / f).stat().st_size > 50 * 2**20)

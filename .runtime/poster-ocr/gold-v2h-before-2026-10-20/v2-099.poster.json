@@ -1,0 +1,238 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-cec8e590116c",
+  "image": {
+    "sha256": "cec8e590116c4e86be736c6ec8e10879aff54a28e3c612f021a28650580d0be7",
+    "width": 434,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:15+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "장소 라벨이 없고 그림 곳곳에 궁궐 이름표 5개(경복궁·창경궁·종묘·창덕궁·덕수궁)만 인쇄되어, 위에서 아래 순서로 공백으로 이어 venue.raw에 두고 items로 나눔.",
+      "제목 위 원 안의 '가을'은 축제명의 일부로 보아 title.raw·official에 포함하고, 제목 아래 '2026'은 연도로 처리함.",
+      "궁궐 이름표의 영문(Gyeongbokgung Palace 등)과 한자 표기는 장소 보조 표기라 별도 항목으로 기록하지 않음.",
+      "검토: 변경 없음",
+      "사람 검토(안정민, 2026-10-19T16:52:54+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "가을 궁중문화축전 2026",
+    "official": "가을 궁중문화축전",
+    "variants": [
+      {
+        "kind": "english",
+        "raw": "K-Royal Culture Festival",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.10.7.(수)-10.11.(일)",
+    "start": {
+      "iso": "2026-10-07",
+      "year": 2026,
+      "month": 10,
+      "day": 7,
+      "weekday": "wed",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-10-11",
+      "year": 2026,
+      "month": 10,
+      "day": 11,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "경복궁 창경궁 종묘 창덕궁 덕수궁",
+    "items": [
+      "경복궁 창경궁 종묘 창덕궁 덕수궁"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "국가유산청 궁능유적본부",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "국가유산진흥원",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "원색 기하학 패턴 일러스트",
+      "콜라주"
+    ],
+    "main_colors": [
+      "분홍",
+      "보라",
+      "노랑",
+      "초록",
+      "파랑",
+      "주황",
+      "베이지"
+    ],
+    "main_objects": [
+      "궁궐 건축 요소를 쌓은 패턴 조형물",
+      "북",
+      "찻주전자",
+      "꽃",
+      "궁궐 이름 표지"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": true,
+    "scripts": [
+      "ko",
+      "en",
+      "hanja"
+    ],
+    "description": "베이지 배경 위에 원색 기하학 패턴으로 궁궐 건축·북·꽃 등을 쌓아 올린 조형 일러스트를 두고 곳곳에 다섯 궁궐 이름표를 붙였으며, 하단에 '가을' 원형 표시·제목·연도·영문명·일정과 주최·주관 표기를 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "434×627 이미지. 궁궐 이름표의 영문·한자 소문자와 하단 주최·주관 로고 글자가 작아 일부만 판독됨. 덕수궁 표지는 세로쓰기."
+    ]
+  }
+}

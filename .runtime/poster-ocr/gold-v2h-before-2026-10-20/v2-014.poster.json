@@ -1,0 +1,284 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-16ec7791cf4e",
+  "image": {
+    "sha256": "16ec7791cf4e2d6e3c56fbaacd14e522775a15d43a644a3536ca3662ea1180d8",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:31:59+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'1926 공주 낭만연회'는 제목 아래 상자에 든 올해 주제명으로 title.variants(alias)에 기록함.",
+      "우측 상단 '국가유산 야행' 로고는 사업 브랜드 표기로 badges(other)에 기록함.",
+      "'공주'는 행정구역 접미사 없이 쓰여 admin_area는 absent(공주시는 기관 로고에만 있음).",
+      "검토(pass2): 변경 없음",
+      "사람 검토(안정민, 2026-10-19T15:34:03+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 공주국가유산야행",
+    "official": "공주국가유산야행",
+    "variants": [
+      {
+        "kind": "alias",
+        "raw": "1926 공주 낭만연회",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 9. 4.(금) ~ 9. 6.(일)",
+    "start": {
+      "iso": "2026-09-04",
+      "year": 2026,
+      "month": 9,
+      "day": 4,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-09-06",
+      "year": 2026,
+      "month": 9,
+      "day": 6,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [
+      {
+        "raw": "18:00 ~ 22:00",
+        "start": "18:00",
+        "end": "22:00",
+        "applies_to": null
+      }
+    ],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "공주 왕도심 일원 근대 국가유산 (옛 공주읍사무소 등)",
+    "items": [
+      "공주 왕도심 일원 근대 국가유산 (옛 공주읍사무소 등)"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "absent",
+    "raw": null,
+    "kind": null,
+    "evidence": null
+  },
+  "admin_area": {
+    "status": "absent",
+    "raw": null,
+    "region": null,
+    "district": null,
+    "evidence": null
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "국가유산청",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "충청남도",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "공주시",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "공주문화관광재단",
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "other",
+        "raw": "국가유산 야행",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "빈티지 펜화 일러스트",
+      "한지 질감"
+    ],
+    "main_colors": [
+      "베이지",
+      "갈색",
+      "적갈색",
+      "회청색"
+    ],
+    "main_objects": [
+      "근대 거리 풍경",
+      "첨탑 교회",
+      "붉은 벽돌 건물",
+      "한옥 누각",
+      "노점",
+      "근대 복장 사람들",
+      "현수교"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "누런 종이 질감 배경 상단에 붓글씨 제목·부제·일정·장소를 두고, 아래에 1920년대풍 근대 거리와 교회·벽돌 건물·누각을 내려다본 빈티지 일러스트를 채운 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 하단 주최·주관 로고 글자와 장소 둘째 줄은 확대 시 대체로 판독되나 일부 글자가 불확실.",
+      "좌측 상단 손글씨 로고('wow!' 포함)는 글자를 확정하지 못해 기록하지 않음. 그림 속 간판·현수막 글자는 행사 정보가 아니어서 기록하지 않음."
+    ]
+  }
+}

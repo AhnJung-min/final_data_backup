@@ -1,0 +1,262 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-672b3f901a2f",
+  "image": {
+    "sha256": "672b3f901a2f4fe09d41d191b63654b132b0f2097e3ad73850d35e90aada7feb",
+    "width": 443,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T12:11:00+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "상단의 큰 손글씨 '감기없는 대한민국'은 제목보다 크게 인쇄된 캐치프레이즈라 slogans(headline=true)로 기록함.",
+      "일정 요일은 원 안에 '목'·'일'로 인쇄되어 괄호 없이 기록함.",
+      "장소 줄은 지번 주소 형태라 venue와 address(jibun)에 함께 기록함. '풍양면 한동리'는 글자 높이 약 6px로 확신도 중간.",
+      "하단 주최|주관·후원 기관명은 약 4px 글자로 확대해 판독했으나 확신도가 낮아 partial.",
+      "검토(pass2): 변경 없음",
+      "사람 검토(안정민, 2026-10-19T16:26:41+09:00): 핵심 필드 확인. 수정 없음."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "2026 고흥유자축제",
+    "official": "고흥유자축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "absent",
+    "raw": null,
+    "number": null,
+    "evidence": null
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "present",
+    "items": [
+      {
+        "raw": "감기없는 대한민국",
+        "headline": true,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026.11.12.목 -15.일",
+    "start": {
+      "iso": "2026-11-12",
+      "year": 2026,
+      "month": 11,
+      "day": 12,
+      "weekday": "thu",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-11-15",
+      "year": 2026,
+      "month": 11,
+      "day": 15,
+      "weekday": "sun",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지 일원",
+    "items": [
+      "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지 일원"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "present",
+    "raw": "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지",
+    "kind": "jibun",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지 일원",
+    "region": "전남광주통합특별시",
+    "district": "고흥군",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "고흥군",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최|주관",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "고흥군축제추진위원회",
+        "roles": [
+          "host",
+          "organizer"
+        ],
+        "role_raw": "주최|주관",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전남광주통합특별시",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "text",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "absent",
+    "items": []
+  },
+  "links": {
+    "status": "absent",
+    "items": []
+  },
+  "qr_codes": {
+    "status": "absent",
+    "items": []
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "absent",
+    "items": []
+  },
+  "visual": {
+    "styles": [
+      "실사 사진",
+      "부감 구도",
+      "캘리그라피 제목"
+    ],
+    "main_colors": [
+      "흰색",
+      "베이지",
+      "노랑",
+      "검정",
+      "회색"
+    ],
+    "main_objects": [
+      "눈 내린 거리",
+      "유자를 든 엄마와 딸",
+      "기침하는 행인들",
+      "목도리"
+    ],
+    "has_character": false,
+    "has_photo": true,
+    "vertical_text": false,
+    "scripts": [
+      "ko"
+    ],
+    "description": "눈 내린 거리를 위에서 내려다본 사진으로, 중앙에 유자를 두 손에 든 엄마와 딸, 주변에 기침하는 행인들을 배치하고 상단에 큰 흰 손글씨 캐치프레이즈, 좌하단 노란 캘리그라피 제목, 우하단 일정·장소·기관을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "443×627 이미지. 장소 줄과 하단 기관 줄은 사진 위 작은 흰 글자라 확대해도 일부 확신도가 낮음."
+    ]
+  }
+}

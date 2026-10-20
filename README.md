@@ -215,8 +215,8 @@ OCR·VLM 실험용으로, 기간이 2026-09-01~12-31에 걸치는 2026년 시작
 | 폴더 | 내용 | 수 |
 | --- | --- | --- |
 | `data/benchmarks/gold-v2/` | AI 1차 판독 → 같은 모델의 별도 AI 세션이 2차 검토(dev·test 200장 중 25장·39건, 예비 52장 중 14장·14건 수정) → 지역 규칙 A1 일괄 적용 | 252 |
-| `data/benchmarks/human-review/` | 팀원 1명이 252장 전부의 핵심 8칸(축제명·연도·회차·시작일·시작 요일·종료일·종료 요일·장소)을 포스터와 대조한 기록. 11장·14칸(0.7%) 수정: 띄어쓰기·구분 기호 5칸, AI가 '없음'·'판독 불가'로 둔 칸 채움 9칸(작은 글자 4 · 두 자리 연도 '26'→2026 2 · 주소 줄을 장소로 1 · 인쇄되지 않은 요일 2) | 252 |
-| `data/benchmarks/gold-v2h/` | **최종 정답** = gold-v2 + 사람 검토. 채점 기본값. 핵심 8칸 밖(기관·문의처 등)은 AI 2차 검토본 그대로다 | 252 |
+| `data/benchmarks/human-review/` | 팀원 1명이 252장 전부의 핵심 8칸(축제명·연도·회차·시작일·시작 요일·종료일·종료 요일·장소)을 포스터와 대조한 기록. 11장·12칸(0.6%) 수정: 띄어쓰기·구분 기호 5칸, AI가 '없음'·'판독 불가'로 둔 칸 채움 7칸(못 읽은 글자 4 · 두 자리 연도 '26'→2026 2 · 주소 줄을 장소로 1). 달력으로 채웠던 인쇄되지 않은 요일 2칸은 10-20에 되돌렸다 | 252 |
+| `data/benchmarks/gold-v2h/` | **최종 정답** = gold-v2 + 사람 검토. 채점 기본값. 핵심 8칸 밖(기관·문의처 등)은 AI 2차 검토본 그대로다. 규칙 고정(`FREEZE_V2`) 뒤 고친 내역과 전후 해시는 `data/runtime/poster-ocr/GOLD_CORRECTIONS.json`에 있다(10-20: 위 요일 2칸, 잘못 쪼개진 장소 목록 10장. 바뀐 점수는 test 인쇄 요일 분모 1칸) | 252 |
 | `data/benchmarks/gold-v2-blind/` | test 30장을 AI가 gold-v2를 보지 않고 따로 판독한 블라인드 라벨(일치도 측정용). gold-v2와 지역이 다른 포스터가 8장에서 0장으로 줄었다(A1 적용 후) | 30 |
 
 ### 5.3 이 저장소의 다른 데이터
@@ -316,7 +316,7 @@ OCR·VLM 실험용으로, 기간이 2026-09-01~12-31에 걸치는 2026년 시작
 | `data/festivals/`, `docs/festival-*.md`, `requirements-collection.txt` | 데이터 파이프라인 | 스키마·예시·설명 문서 |
 | `app/poster_ocr/` | 포스터 OCR | 데이터셋 생성, OCR 실행(별도 가상환경), 혼합 경로, 규칙 v1·v2, 결합, 채점, 보고서, 대시보드·사람 검토 화면 |
 | `data/benchmarks/`, `data/img-v2/` | 포스터 OCR | 매니페스트·정답, 포스터 원본 252장 |
-| `data/runtime/poster-ocr/` | 포스터 OCR | OCR 결과(3경로 × 2입력), 최종 추출, 채점 `eval/final.json`, `FREEZE`·`FREEZE_V2` |
+| `data/runtime/poster-ocr/` | 포스터 OCR | OCR 결과(3경로 × 2입력), 최종 추출, 채점 `eval/final.json`, `FREEZE`·`FREEZE_V2`, 정답 정정 기록 `GOLD_CORRECTIONS.json` |
 | `.runtime/poster-ocr/` | 포스터 OCR | 실험 작업 스크립트와 검토 기록 |
 | `.claude/launch.json` | 포스터 OCR | 대시보드 실행 설정(Claude Code용) |
 | `requirements-ocr-easyocr.txt`, `requirements-ocr-paddle.txt` | 포스터 OCR | OCR 전용 가상환경 2개의 고정 패키지 목록 |

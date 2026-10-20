@@ -1,0 +1,349 @@
+{
+  "standard": "festival-poster",
+  "schema_version": "1.0.0",
+  "record_id": "festival-287b64dce822",
+  "image": {
+    "sha256": "287b64dce822ff1b9ad0797aaf706f3a91ba27cd0fc2b0d0624d7d4643ece12f",
+    "width": 445,
+    "height": 627
+  },
+  "coordinate_space": "original_pixels",
+  "extraction": {
+    "status": "completed",
+    "method": "manual",
+    "extracted_at": "2026-10-19T11:32:05+09:00",
+    "extractor": {
+      "name": "human-review",
+      "version": "gold-v2/human-reviewed",
+      "model": "claude-opus-5-5"
+    },
+    "notes": [
+      "AI 보조 판독 초안(gold-v2). 사람 검토 전이며 학습 정답으로 쓰지 않는다.",
+      "'30TH ANNIVERSARY' 엠블럼을 회차(30TH)로 기록하고 엠블럼 자체도 badges(other)에 둠.",
+      "장소 라벨 없이 '주소 :'만 인쇄되어 venue는 absent, 주소는 address(road)로 기록함.",
+      "상단 '대한민국 명예문화관광축제'는 지정 표기로 badges에, 함께 있는 문화체육관광부 로고는 역할 표기 없는 기관으로 기록함.",
+      "중앙 입체 알파벳 블록은 장식 그래픽으로 보고 텍스트 항목에 넣지 않음.",
+      "검토(pass2): 변경 없음",
+      "사람 검토(안정민, 2026-10-19T16:44:15+09:00): 핵심 필드 확인. 수정 venue."
+    ]
+  },
+  "title": {
+    "status": "present",
+    "raw": "무주 반딧불축제",
+    "official": "무주 반딧불축제",
+    "variants": [],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "edition": {
+    "status": "present",
+    "raw": "30TH",
+    "number": 30,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "year": {
+    "status": "present",
+    "raw": "2026",
+    "value": 2026,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "slogans": {
+    "status": "absent",
+    "items": []
+  },
+  "schedule": {
+    "status": "present",
+    "raw": "2026. 9.4.금 - 9.12.토",
+    "start": {
+      "iso": "2026-09-04",
+      "year": 2026,
+      "month": 9,
+      "day": 4,
+      "weekday": "fri",
+      "year_basis": "date_text"
+    },
+    "end": {
+      "iso": "2026-09-12",
+      "year": 2026,
+      "month": 9,
+      "day": 12,
+      "weekday": "sat",
+      "year_basis": "date_text"
+    },
+    "times": [],
+    "duration_raw": null,
+    "operating_raw": null,
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "venue": {
+    "status": "present",
+    "raw": "전북특별자치도 무주군 무주읍 한풍루로 326-17",
+    "items": [
+      "전북특별자치도 무주군 무주읍 한풍루로 326-17"
+    ],
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "address": {
+    "status": "present",
+    "raw": "전북특별자치도 무주군 무주읍 한풍루로 326-17",
+    "kind": "road",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "admin_area": {
+    "status": "present",
+    "raw": "전북특별자치도 무주군 무주읍 한풍루로 326-17",
+    "region": "전북특별자치도",
+    "district": "무주군",
+    "evidence": {
+      "method": "manual",
+      "ocr_ids": [],
+      "bbox": null,
+      "confidence": null
+    }
+  },
+  "organizations": {
+    "status": "present",
+    "items": [
+      {
+        "name": "문화체육관광부",
+        "roles": [],
+        "role_raw": null,
+        "form": "logo",
+        "legibility": "legible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "무주군",
+        "roles": [
+          "host"
+        ],
+        "role_raw": "주최",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": null,
+        "roles": [
+          "organizer"
+        ],
+        "role_raw": "주관",
+        "form": "logo",
+        "legibility": "illegible",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "문화체육관광부",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "name": "전북특별자치도",
+        "roles": [
+          "sponsor"
+        ],
+        "role_raw": "후원",
+        "form": "logo",
+        "legibility": "partial",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "phone",
+        "raw": "063)324-2440",
+        "value": "063-324-2440",
+        "label_raw": "문의",
+        "department": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "links": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "homepage",
+        "platform": null,
+        "raw": "www.firefly.or.kr",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "qr_codes": {
+    "status": "present",
+    "items": [
+      {
+        "label_raw": null,
+        "purpose": "unknown",
+        "decode_status": "not_attempted",
+        "decoded_url": null,
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "programs": {
+    "status": "absent",
+    "items": []
+  },
+  "admission": {
+    "status": "absent",
+    "raw": null,
+    "free": null,
+    "prices": [],
+    "reservation_raw": null,
+    "evidence": null
+  },
+  "notices": {
+    "status": "absent",
+    "items": []
+  },
+  "budget_disclosure": {
+    "status": "absent",
+    "raw": null,
+    "total_krw": null,
+    "evidence": null
+  },
+  "badges": {
+    "status": "present",
+    "items": [
+      {
+        "kind": "festival_designation",
+        "raw": "대한민국 명예문화관광축제",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      },
+      {
+        "kind": "other",
+        "raw": "30TH ANNIVERSARY",
+        "evidence": {
+          "method": "manual",
+          "ocr_ids": [],
+          "bbox": null,
+          "confidence": null
+        }
+      }
+    ]
+  },
+  "visual": {
+    "styles": [
+      "입체 일러스트",
+      "아이소메트릭 지도",
+      "붓글씨 제목"
+    ],
+    "main_colors": [
+      "남색",
+      "초록",
+      "연두",
+      "노랑",
+      "빨강",
+      "파랑",
+      "베이지"
+    ],
+    "main_objects": [
+      "숲과 강이 있는 섬 모양 지도",
+      "알록달록한 입체 알파벳 블록",
+      "반딧불이",
+      "불꽃놀이",
+      "열기구",
+      "캠핑카와 텐트",
+      "공연하는 사람들"
+    ],
+    "has_character": false,
+    "has_photo": false,
+    "vertical_text": false,
+    "scripts": [
+      "ko",
+      "en"
+    ],
+    "description": "별과 불꽃이 있는 밤하늘 상단에 흰 붓글씨 제목과 30주년 엠블럼을 두고, 중앙에 숲·강·캠핑장이 있는 입체 지도와 알록달록한 알파벳 블록, 반딧불이를 배치한 뒤 하단 초록 띠에 기관·주소·문의·QR을 둔 포스터."
+  },
+  "quality": {
+    "small_text": "partial",
+    "notes": [
+      "445×627 이미지. 하단 주최·주관·후원 로고 글자는 작아 일부만 판독되고 주관 로고는 판독 불가.",
+      "일정의 요일은 날짜 옆 작은 원 안 글자(금·토)로 인쇄되어 확대해 판독함. 상단 문화체육관광부 로고 아래 영문 소문구는 판독 불가."
+    ]
+  }
+}

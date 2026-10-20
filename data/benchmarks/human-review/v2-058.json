@@ -20,16 +20,16 @@
    "value": "09-19"
   },
   "start_weekday": {
-   "status": "present",
-   "value": "sat"
+   "status": "absent",
+   "value": ""
   },
   "end": {
    "status": "present",
    "value": "09-20"
   },
   "end_weekday": {
-   "status": "present",
-   "value": "sun"
+   "status": "absent",
+   "value": ""
   },
   "venue": {
    "status": "present",
@@ -37,9 +37,26 @@
   }
  },
  "changed": [
-  "year",
-  "start_weekday",
-  "end_weekday"
+  "year"
  ],
- "note": null
+ "note": null,
+ "revisions": [
+  {
+   "at": "2026-10-20T15:30:00+09:00",
+   "by": "안정민 요청, Claude Code 반영",
+   "fields": [
+    "start_weekday",
+    "end_weekday"
+   ],
+   "from": [
+    "sat",
+    "sun"
+   ],
+   "to": [
+    "absent",
+    "absent"
+   ],
+   "reason": "포스터에 요일이 인쇄되지 않았다(일정 문구 '26.9.19-9.20'뿐). 표준: 요일은 인쇄된 것만 적는다. 달력으로 채운 값을 되돌림."
+  }
+ ]
 }

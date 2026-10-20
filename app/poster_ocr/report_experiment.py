@@ -269,7 +269,14 @@ def experiment_report(out_path, eval_path):
     # ---------------- 정답 검토 영향
     from .report import human_review_stats
     hs = human_review_stats({c["id"]: c["split"] for c in load(ROOT / "data/benchmarks/posters-v2.json")["cases"]})
-    body.append(sec("gold", "사람 검토가 결과를 바꿨나", f"""<p>팀원이 {hs['n']}장의 핵심 8칸을 검토해 {hs['changed']}장·{hs['fields']}칸을 고쳤다. 그중 {hs['kinds']['spacing']}칸은 띄어쓰기·구분 기호라 채점에 영향이 없고, {hs['kinds']['filled']}칸은 AI가 '없음'·'판독 불가'로 둔 작은 글자를 사람이 읽어 채운 경우다. 규칙 v1 결과를 AI 정답과 사람 정답으로 각각 채점해 보면 세 경로·dev·test 모두 맞힌 수는 같고 분모만 0~2칸 늘었다. 사람이 채운 칸은 OCR도 읽지 못한 칸이었다는 뜻이다. 자세한 수치는 데이터 전처리 보고서에 있다.</p>"""))
+    shift = gold_shift()
+    scored = (f"세 경로·dev·test 모두 맞힌 수는 같고 분모만 0~{shift['max_extra']}칸 늘었다. 사람이 채운 칸은 규칙 v1도 맞히지 못한 칸이었다는 뜻이다."
+              if shift["same_correct"] else f"맞힌 수가 달라진 지표가 {shift['changed_correct']}개 있다(분모 차이는 최대 {shift['max_extra']}칸).")
+    corrections = load(ROOT / "data/runtime/poster-ocr/GOLD_CORRECTIONS.json") if (ROOT / "data/runtime/poster-ocr/GOLD_CORRECTIONS.json").exists() else None
+    corrected = ("" if not corrections else f"""<p class="sub" style="margin-top:.6rem">{esc(corrections['corrected_at'][:10])}에 FREEZE_V2 이후 정답을 고치고 채점을 다시 계산했다(규칙·채점 코드는 그대로). """
+                 + " ".join(f"{esc(', '.join(c['cases'][:3]))}{' 등' if len(c['cases']) > 3 else ''} {esc('·'.join(c['fields']))}: {esc(c['scoring'])}" for c in corrections["corrections"])
+                 + " 기록: <code>data/runtime/poster-ocr/GOLD_CORRECTIONS.json</code></p>")
+    body.append(sec("gold", "사람 검토가 결과를 바꿨나", f"""<p>팀원이 {hs['n']}장의 핵심 8칸을 검토해 {hs['changed']}장·{hs['fields']}칸을 고쳤다. 그중 {hs['kinds']['spacing']}칸은 띄어쓰기·구분 기호라 채점에 영향이 없고, {hs['kinds']['filled']}칸은 AI가 '없음'·'판독 불가'로 둔 칸을 사람이 채운 경우다(AI가 못 읽은 글자 {hs['filled']['read']}칸, 두 자리 연도를 4자리로 {hs['filled']['year2']}칸, 주소 줄을 장소로 {hs['filled']['address']}칸). 규칙 v1 결과를 AI 정답과 사람 정답으로 각각 채점해 보면 {scored} 자세한 수치는 데이터 전처리 보고서에 있다.</p>{corrected}"""))
     # ---------------- 한계·다음
     body.append(sec("next", "한계와 다음 단계", """<ul class="plain"><li><strong>해상도</strong>: 대부분 443×627 px라 작은 글자 결과는 엔진 성능보다 해상도 한계를 반영한다. 고해상도 원본 일부로 같은 비교를 다시 해야 한다.</li>
 <li><strong>표본</strong>: 최종 확인용 예비분이 52장이라 필드별 95% 구간이 ±10~15%p로 넓다. 경로 순위는 test 140장과 함께 본다.</li>
@@ -362,6 +369,26 @@ def hybrid_stats(split_ids):
             stats["reasons"].update(item["reasons"])
         stats["changed"] += sum(1 for r in payload["records"] if r.get("baseline_text") is not None and r["text"] != r["baseline_text"])
     return stats
+
+
+def gold_shift():
+    """규칙 v1 결과(dev·test)를 AI 정답(gold-v2)과 사람 검토 정답(gold-v2h)으로 각각 채점해 맞힌 수·분모 차이를 센다."""
+    from .evaluate import evaluate
+    pipelines = {f"v1_{e}": e for e in ("easyocr", "paddleocr", "hybrid")}
+    counts = {}
+    for gold in ("gold-v2", "gold-v2h"):
+        results, _ = evaluate(ROOT / "data/benchmarks/posters-v2.json", ROOT / "data/benchmarks" / gold, ROOT / "data/runtime/poster-ocr/runs",
+                              ROOT / "data/runtime/poster-ocr/pred-final", splits=("dev", "test"), pipelines=pipelines)
+        for name, rows in results.items():
+            for r in rows:
+                for field, value in r["fields"].items():
+                    if isinstance(value, bool):
+                        c = counts.setdefault((name, r["split"], field), {}).setdefault(gold, [0, 0])
+                        c[0] += value
+                        c[1] += 1
+    pairs = [(v.get("gold-v2", [0, 0]), v.get("gold-v2h", [0, 0])) for v in counts.values()]
+    changed = sum(a[0] != b[0] for a, b in pairs)
+    return {"same_correct": changed == 0, "changed_correct": changed, "max_extra": max(b[1] - a[1] for a, b in pairs)}
 
 
 def timing_summary():

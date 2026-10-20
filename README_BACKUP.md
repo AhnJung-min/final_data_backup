@@ -19,6 +19,7 @@
 | `data/runtime/poster-ocr/pred-final/` | 최종 추출 결과(v2: `easyocr`·`paddleocr`·`hybrid`·`fusion_p21`, v1: `v1_*`) |
 | `data/runtime/poster-ocr/eval/final.json` | 최종 채점(dev·test·예비) |
 | `data/runtime/poster-ocr/FREEZE`, `FREEZE_V2` | 규칙 v1·v2 고정 기록(해시) |
+| `data/runtime/poster-ocr/GOLD_CORRECTIONS.json` | 고정 뒤 정답 정정 내역과 전후 해시(10-20, 규칙·채점 코드는 그대로) |
 | `data/runtime/festivals/*/` | TourAPI 수집 실행의 JSON(캐시·이미지 제외) |
 | `.runtime/poster-ocr/` | 실험 작업 기록: 스크립트, 규칙 제안 diff, 검토 결과 JSON, 정답 변환 전 사본 |
 | `requirements-ocr-easyocr.txt`, `requirements-ocr-paddle.txt` | OCR 전용 가상환경 2개의 고정 패키지 목록 |

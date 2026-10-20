@@ -23,7 +23,7 @@ GOLD = ROOT / "data/benchmarks/gold-v2"
 HUMAN_GOLD = ROOT / "data/benchmarks/gold-v2h"
 HUMAN = ROOT / "data/benchmarks/human-review"
 STD10 = ROOT / ".runtime/poster-ocr/gold-v2-std1.0-snapshot"
-MULTI_NOTE = re.compile(r"매주|주말|각각|차례|주간|개막")
+MULTI_NOTE = re.compile(r"매주|주말|주마다|각각|차례|주간")
 BLIND = ROOT / "data/benchmarks/gold-v2-blind"
 PASS1 = ROOT / ".runtime/poster-ocr/gold-v2-pass1-snapshot"
 SURVEY = {"title": 38, "schedule": 38, "venue": 38, "year": 35, "organizations": 25, "slogans": 19, "edition": 18, "programs": 12,
@@ -90,7 +90,7 @@ def dataset_report(out_path, run_dir):
 <li><strong>2026년 9~12월에 열리는 축제 포스터 {len(chosen)}장을 TourAPI에서 자동 수집해 로컬에 보관했다.</strong> 조회 축제 {f['tourapi_rows']}건 중 이름이 '포스터'인 상세 이미지가 있는 축제 {f['festivals_with_poster']}건에서 시·도 비례로 뽑았고, 나머지 {f['reserve']}장은 예비분이다.</li>
 <li><strong>대부분 약 443×627 px 축소본이다.</strong> 세로 627 px가 {heights.count(627)}장, 가로 600 px 초과는 {sum(w > 600 for w in widths)}장뿐이라 기관 띠·유의사항 같은 작은 글자는 원본으로도 판독이 어렵다.</li>
 <li><strong>전처리는 원본을 바꾸지 않고 실행 시점에 메모리·임시 파일로만 한다.</strong> EXIF 방향(전부 1)·투명도(전부 없음)를 확인한 뒤 RGB 원본(rgb_1x)과 LANCZOS 2배(rgb_2x) 두 입력을 만들었다.</li>
-<li><strong>정답은 포스터 추출 표준 형식으로 {len(done)}장을 3단계로 만들었다.</strong> 1차 AI 판독 후 다른 판독자가 전 항목을 다시 검토했고(검토자 기록상 {review_log['cases']}장·{review_log['edits']}건 수정), 마지막으로 팀원이 예비분까지 {human['n']}장의 핵심 8칸을 포스터와 직접 대조했다. 사람이 고친 칸은 {human['fields']}칸({pct(human['fields'] / (human['n'] * 8))})뿐이고, 그중 {human['kinds']['spacing']}칸은 띄어쓰기·구분 기호라 채점에 영향이 없다.</li>
+<li><strong>정답은 포스터 추출 표준 형식으로 {len(done)}장을 3단계로 만들었다.</strong> 1차 AI 판독 후 같은 모델의 별도 AI 세션이 전 항목을 다시 검토했고(검토 기록상 {review_log['cases']}장·{review_log['edits']}건 수정), 마지막으로 팀원이 예비분까지 {human['n']}장의 핵심 8칸을 포스터와 직접 대조했다. 사람이 고친 칸은 {human['fields']}칸({pct(human['fields'] / (human['n'] * 8))})뿐이고, 그중 {human['kinds']['spacing']}칸은 띄어쓰기·구분 기호라 채점에 영향이 없다.</li>
 <li><strong>지역(시·군·구) 정답 규칙을 표준 1.1로 고쳤다.</strong> 사람마다 판단이 가장 크게 갈린 칸이라, 행정 접미사가 붙은 독립 낱말만 인정하도록 스크립트로 일괄 적용했다. 블라인드 30장과의 지역 불일치가 {admin_before[1] - admin_before[0] if admin_before else '—'}장에서 {admin_after[1] - admin_after[0]}장으로 줄었다. dev·test {a1['main']}장, 예비분 {a1['reserve']}장이 바뀌었다.</li>
 <li><strong>{team}장은 팀이 main에 올린 기존 포스터와 바이트가 같다.</strong> 같은 축제 포스터를 다른 경로로 다시 모은 것이라 중복 실험이 아니라 동일 출처 확인으로 본다.</li></ul>"""))
     funnel_rows = [("TourAPI 축제(9/1~12/31, 2026 시작)", f["tourapi_rows"], ""), ("이름에 '포스터'가 있는 상세 이미지", f["poster_named_images"], "축제 3건은 포스터 이미지가 2장 이상"),
@@ -110,7 +110,7 @@ def dataset_report(out_path, run_dir):
                   ("용량(KB)", f"{min(kb):.0f}", f"{statistics.median(kb):.0f}", f"{max(kb):.0f}")]
     body.append(section("images", "이미지 품질", f"""<p>TourAPI CMS가 세로 627 px로 줄여 제공한 이미지가 {heights.count(627)}장이다. 형식은 JPEG {fmt.get('jpeg', 0)}장, PNG {fmt.get('png', 0)}장이며 모두 RGB이고 EXIF 방향 값은 1, 투명 채널은 없다.</p>
 {table(["항목", "최소", "중앙값", "최대"], image_rows, num_cols=(1, 2, 3))}
-<p class="note">작은 글자 판독(정답 작성자 기준): 읽힘 {small.get('legible', 0)}장 · 일부 {small.get('partial', 0)}장 · 판독 불가 {small.get('illegible', 0)}장. 같은 해상도에서 OCR이 읽을 수 있는 상한도 이 수준을 넘기 어렵다.</p>""", wide=True))
+<p class="note">작은 글자 판독(AI 정답 기준, 사람 검수 항목 아님): 읽힘 {small.get('legible', 0)}장 · 일부 {small.get('partial', 0)}장 · 판독 불가 {small.get('illegible', 0)}장 · 작은 글자 없음 {small.get(None, 0)}장. 같은 해상도에서 OCR이 읽을 수 있는 상한도 이 수준을 넘기 어렵다.</p>""", wide=True))
     body.append(section("preprocess", "전처리", f"""<ul class="plain">
 <li><strong>정규화</strong>: EXIF 방향 적용 → 흰 배경 합성 → RGB. 이번 200장은 방향 1·투명도 없음이라 원본 픽셀과 같다. 좌표는 모두 이 정규화 원본 픽셀 기준이다.</li>
 <li><strong>rgb_1x</strong>: 정규화 원본 그대로(약 443×627).</li>
@@ -128,8 +128,8 @@ def dataset_report(out_path, run_dir):
                           f"{survey / 38 * 100:.0f}%" if survey is not None else "—"))
     body.append(section("labels", "정답 라벨", f"""<p>정답은 팀 표준 <code>festival-poster 1.0</code> 문서로 포스터마다 1개씩 <code>data/benchmarks/gold-v2/</code>에 있다. 작성 규칙은 표준 문서와 같고, 모든 항목을 present·illegible·absent 중 하나로 확정했다. TourAPI 목록값·파일명·OCR 결과는 보지 않았다.</p>
 <ol class="plain"><li><strong>1차 작성</strong>: AI 보조 판독(원본 + 3배 확대 띠)으로 초안 작성, 스키마·논리 검증 통과까지 수정.</li>
-<li><strong>2차 검토</strong>: 다른 판독자가 원본을 직접 보며 전 항목을 대조해 고쳤다. 검토자 기록으로 {review_log['cases']}장에서 {review_log['edits']}건을 고쳤고, 검토 전 사본이 완성본으로 남은 {len(compared)}장을 직접 비교하면 {changed}장이 달라졌다.</li>
-<li><strong>블라인드 일치도</strong>: test에서 무작위 30장을 1차·2차 결과를 보지 않고 새로 라벨링해 최종 정답과 비교했다.</li>
+<li><strong>2차 검토</strong>: 같은 모델의 별도 AI 세션이 원본을 직접 보며 전 항목을 대조해 고쳤다. 검토 기록으로 {review_log['cases']}장에서 {review_log['edits']}건을 고쳤고(예비분은 {review_log['reserve_cases']}장·{review_log['reserve_edits']}건), 검토 전 사본이 완성본으로 남은 {len(compared)}장을 직접 비교하면 {changed}장이 달라졌다.</li>
+<li><strong>블라인드 일치도</strong>: test에서 무작위 30장을 AI가 1차·2차 결과를 보지 않고 새로 라벨링해 최종 정답과 비교했다.</li>
 <li><strong>사람 검토</strong>: 팀원 1명이 검토 화면(<code>/review</code>)에서 포스터 원본을 보며 AI 정답의 핵심 8칸(축제명·연도·회차·시작일·시작 요일·종료일·종료 요일·장소)을 {human['n']}장 전부 확인했다. 한 장에 걸린 시간 중앙값은 {human['median_seconds']:.0f}초다.</li>
 <li><strong>표준 1.1 변환</strong>: 지역 규칙 A1(아래)을 스크립트로 적용했다. 사람 검토 칸은 건드리지 않는다.</li></ol>
 {human_table(human)}
@@ -174,13 +174,15 @@ def human_review_stats(split_of):
     rows = [load(p) for p in sorted(HUMAN.glob("*.json"))]
     by = {}
     kinds = Counter({"spacing": 0, "filled": 0, "value": 0})
+    filled = Counter({"read": 0, "year2": 0, "address": 0})
     fields = Counter()
     for r in rows:
         b = by.setdefault(split_of.get(r["case_id"], "?"), {"n": 0, "changed": 0, "fields": 0})
         b["n"] += 1
         b["changed"] += bool(r["changed"])
         b["fields"] += len(r["changed"])
-        ai = core_fields(load(GOLD / f"{r['case_id']}.poster.json"))
+        doc = load(GOLD / f"{r['case_id']}.poster.json")
+        ai = core_fields(doc)
         for name in r["changed"]:
             fields[name] += 1
             a, h = ai[name], r["fields"][name]
@@ -188,14 +190,26 @@ def human_review_stats(split_of):
                 kinds["spacing"] += 1
             elif a["status"] != "present" and h["status"] == "present":
                 kinds["filled"] += 1
+                filled[filled_kind(doc, name, h["value"])] += 1
             else:
                 kinds["value"] += 1
     times = sorted(datetime.fromisoformat(r["reviewed_at"]) for r in rows)
     gaps = [(b - a).total_seconds() for a, b in zip(times, times[1:]) if (b - a).total_seconds() < 600]
     notes = [r["note"] for r in rows if r["note"]]
+    revisions = [(r["case_id"], x) for r in rows for x in r.get("revisions", [])]
     return {"n": len(rows), "changed": sum(bool(r["changed"]) for r in rows), "fields": sum(len(r["changed"]) for r in rows),
-            "by": by, "kinds": kinds, "per_field": fields, "field_names": FIELDS, "notes": len(notes),
+            "by": by, "kinds": kinds, "filled": filled, "revisions": revisions, "per_field": fields, "field_names": FIELDS, "notes": len(notes),
             "multi_notes": sum(bool(MULTI_NOTE.search(n)) for n in notes), "median_seconds": statistics.median(gaps) if gaps else 0}
+
+
+def filled_kind(doc, name, value):
+    """AI가 '없음'·'판독 불가'로 둔 칸을 사람이 채운 경우의 종류."""
+    raw = (doc["schedule"].get("raw") or "") if doc["schedule"]["status"] == "present" else ""
+    if name == "year" and re.search(rf"(?<!\d){value[2:]}[.\-/]", raw) and not re.search(rf"(?<!\d){value}(?!\d)", raw):
+        return "year2"  # 일정에 두 자리 연도('26.9.19')만 인쇄
+    if name == "venue" and doc["address"]["status"] == "present" and key(doc["address"]["raw"] or "") == key(value):
+        return "address"  # AI가 주소로 읽은 줄을 장소로 옮김(표준: 장소 문구가 주소뿐이면 주소 전체가 장소)
+    return "read"
 
 
 def human_table(h):
@@ -203,11 +217,16 @@ def human_table(h):
              "end_weekday": "종료 요일", "venue": "장소"}
     split_rows = [(s if s != "reserve" else "예비", h["by"][s]["n"], h["by"][s]["changed"], h["by"][s]["fields"]) for s in ("dev", "test", "reserve") if s in h["by"]]
     field_rows = [(label[n], h["per_field"].get(n, 0), pct(1 - h["per_field"].get(n, 0) / h["n"])) for n in h["field_names"]]
-    kind_rows = [("띄어쓰기·구분 기호만 다름(채점 영향 없음)", h["kinds"]["spacing"]), ("AI가 '없음'·'판독 불가'로 둔 칸을 사람이 읽음", h["kinds"]["filled"]),
+    kind_rows = [("띄어쓰기·구분 기호만 다름(채점 영향 없음)", h["kinds"]["spacing"]),
+                 ("AI가 '없음'·'판독 불가'로 둔 칸을 채움: AI가 못 읽은 글자를 읽음", h["filled"]["read"]),
+                 ("같은 경우: 두 자리 연도('26')를 4자리로 적음", h["filled"]["year2"]),
+                 ("같은 경우: AI가 주소로 읽은 줄을 장소로 옮김", h["filled"]["address"]),
                  ("값 자체를 고침", h["kinds"]["value"])]
+    revised = "".join(f"<li><code>{esc(case)}</code> {esc('·'.join(label.get(n, n) for n in x['fields']))}: {esc(x['reason'])} ({esc(x['at'][:10])})</li>" for case, x in h["revisions"])
+    revised_html = f'<p class="sub">검토 뒤 정정</p><ul class="plain">{revised}</ul>' if revised else ""
     return f"""<h3>사람 검토 결과</h3><div class="grid2"><div>{table(["분할", "검토", "고친 포스터", "고친 칸"], split_rows, num_cols=(1, 2, 3))}
 {table(["수정 종류", "칸"], kind_rows, num_cols=(1,))}</div><div>{table(["칸", "고친 수", "AI 정답 유지율"], field_rows, num_cols=(1, 2))}</div></div>
-<p class="sub" style="margin-top:.6rem">사람이 채운 칸은 대부분 AI가 작은 글자를 '없음'·'판독 불가'로 둔 경우였다. 이런 칸은 OCR도 대개 읽지 못해, AI 정답과 사람 정답으로 채점한 결과 차이는 분모가 몇 칸 늘어나는 정도였다.</p>"""
+<p class="sub" style="margin-top:.6rem">사람이 채운 {h['kinds']['filled']}칸 중 AI가 못 읽은 글자(작은 글자·위첨자)를 읽은 칸은 {h['filled']['read']}칸이다. 나머지는 두 자리 연도를 4자리로 적거나 주소 줄을 장소로 옮긴 칸이다. 규칙 v1도 이 칸들을 맞히지 못해, AI 정답과 사람 정답으로 채점한 결과 차이는 분모가 몇 칸 늘어나는 정도였다(실험 보고서).</p>{revised_html}"""
 
 
 def a1_changes(split_of):
@@ -225,18 +244,18 @@ def a1_changes(split_of):
 
 
 def review_changes():
-    """라벨 워크플로 결과(검토자 보고)의 수정 건수."""
-    path = ROOT / ".runtime/poster-ocr/label-workflow-result.json"
-    if not path.exists():
-        return {"cases": 0, "edits": 0}
-    result = load(path)
-    cases = edits = 0
-    for batch in result["batches"]:
-        for case in (batch.get("second") or {}).get("cases", []):
-            items = [x for x in case.get("changes", []) if x and "변경 없음" not in x]
-            cases += bool(items)
-            edits += len(items)
-    return {"cases": cases, "edits": edits}
+    """라벨 워크플로 결과(2차 검토 보고)의 수정 건수: 실험용 200장, 예비분."""
+    out = {}
+    for prefix, name in (("", "label-workflow-result.json"), ("reserve_", "label-workflow-reserve-result.json")):
+        path = ROOT / ".runtime/poster-ocr" / name
+        cases = edits = 0
+        for batch in (load(path)["batches"] if path.exists() else []):
+            for case in (batch.get("second") or {}).get("cases", []):
+                items = [x for x in case.get("changes", []) if x and "변경 없음" not in x]
+                cases += bool(items)
+                edits += len(items)
+        out.update({f"{prefix}cases": cases, f"{prefix}edits": edits})
+    return out
 
 
 def strip(doc):
