@@ -68,6 +68,12 @@ figcaption{margin-top:1rem;font-size:.86rem;color:var(--ink-2);max-width:46rem}
 .tile{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:.8rem .9rem}.tile .k{font-size:.78rem;color:var(--muted)}
 .tile .v{font-size:1.5rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.3}.tile .d{font-size:.8rem;color:var(--ink-2)}
 footer{font-size:.85rem;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+.toc{box-sizing:border-box;border:1px solid var(--rule);border-radius:8px;background:var(--sheet);padding:1rem 1.25rem 1.1rem}.toc h2{font-size:1rem;margin-bottom:.7rem}
+.toc .groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem 2rem}.toc h3{margin:0 0 .35rem;font-size:.84rem;color:var(--ink-2)}
+.toc ol{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:.2rem;font-size:.9rem}.toc li::marker{color:var(--muted)}
+.part{display:flex;align-items:baseline;gap:.85rem;border-top:2px solid var(--ink);padding-top:1rem;margin-bottom:-1.5rem}
+.part b{font-family:var(--font-mono);font-size:.85rem;font-weight:500;color:var(--accent);white-space:nowrap}.part span{font-size:1.55rem;font-weight:600;line-height:1.3}
+td .k{display:block;font-size:.74rem;color:var(--muted);font-weight:400}
 @media (max-width:640px){.drow,.daxis{grid-template-columns:7.2rem minmax(0,1fr) 5.6rem;gap:.5rem}.dots{--label-w:7.2rem}body{padding-block:2rem 3rem}}
 """
 

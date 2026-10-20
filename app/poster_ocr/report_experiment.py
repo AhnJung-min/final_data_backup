@@ -59,6 +59,20 @@ def pstr(p):
 
 
 def experiment_report(out_path, eval_path):
+    parts = experiment_parts(eval_path)
+    body = [sec("summary", "결론", f"<ul class='points'>{parts['points']}</ul>"), parts["comparison"], *parts["sections"]]
+    footer = ("<p>포스터 원본: ⓒ한국관광공사 TourAPI, 공공누리 제3유형. 이 보고서에는 포스터 이미지를 넣지 않았다.</p>"
+              f"<p>원자료: <code>{esc(parts['eval_rel'])}</code> · 데이터셋: <code>data/benchmarks/posters-v2.json</code> · 정답: <code>data/benchmarks/gold-v2h</code></p>")
+    html_text = page("포스터 OCR 실험 보고서", "posters-v2 · OCR 실험", "포스터 요소 추출 OCR 실험",
+                     "EasyOCR, PaddleOCR, 그리고 EasyOCR가 읽기 어려운 줄만 Paddle로 다시 읽는 혼합 방식이 포스터 표준 스키마의 요소를 얼마나 뽑아내는지 같은 조건에서 비교했다.",
+                     parts["meta"], "\n".join(body), footer)
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(out_path).write_text(html_text, encoding="utf-8")
+    return out_path
+
+
+def experiment_parts(eval_path, combined=False):
+    """실험 보고서의 결론 항목·OCR 비교 섹션·본문 섹션. combined=True면 데이터 보고서와 합친 문서의 참조 문구를 쓴다."""
     data = load(eval_path)
     summary, rows_all = data["summary"], data["rows"]
     S = lambda pipe, split, variant="rgb_2x": summary.get(f"{pipe}/{variant}", {}).get(split)
@@ -95,6 +109,9 @@ def experiment_report(out_path, eval_path):
     timing = timing_summary()
     tq = lambda e: f"{timing[(e, 'quiet')]['median']:.1f}초" if (e, "quiet") in timing else "—"
     tm = lambda e, v: f"{timing[(e, 'main_' + v)]['median']:.1f}초" if (e, "main_" + v) in timing else "—"
+    lst = lambda pipe, split, name: (S(pipe, split) or {}).get("lists", {}).get(name) or {}
+    f2 = lambda x: "—" if x.get("f1") is None else f"{x['f1']:.2f}"
+    contacts = [(x["tp"] + x["fn"], x["f1"]) for sp in ("dev", "test", "reserve") if (x := lst("paddleocr", sp, "contacts")).get("f1") is not None]
     v2_never_worse = all((c := comp("paddleocr/rgb_2x", "v1_paddleocr/rgb_2x", "reserve", f)) is None or c["only_b"] == 0
                          for f in ("core_all", "title", "schedule_pair", "venue"))
     conclusions = [
@@ -105,7 +122,7 @@ def experiment_report(out_path, eval_path):
         f"test에서도 순서가 같다({pct(read('paddleocr', 'test'))} · {pct(read('hybrid', 'test'))} · {pct(read('easyocr', 'test'))}). 같은 규칙에서 PaddleOCR는 EasyOCR보다 장소를 test {pv('paddleocr/rgb_2x', 'easyocr/rgb_2x', 'test', 'venue')}, 예비 {pv('paddleocr/rgb_2x', 'easyocr/rgb_2x', 'reserve', 'venue')}로 더 맞혔다(앞쪽만 정답:뒤쪽만 정답).",
         f"<strong>규칙 v1은 dev에 과적합했고, v2는 처음 보는 포스터에서도 대체로 유지됐다.</strong> v1은 PaddleOCR 핵심 4필드가 dev {pct(r('v1_paddleocr', 'core_all', 'dev'))}에서 test {pct(r('v1_paddleocr', 'core_all', 'test'))}로 떨어졌다(판독률은 같음). "
         f"v2는 test {pct(r('paddleocr', 'core_all', 'test'))}·예비 {pct(r('paddleocr', 'core_all', 'reserve'))}, 장소 test {pct(r('paddleocr', 'venue', 'test'))}·예비 {pct(r('paddleocr', 'venue', 'reserve'))}로 두 분할이 비슷했다. "
-        f"예비분에서 v2는 v1보다 {'핵심 네 필드 모두 한 장도 나빠지지 않았고' if v2_never_worse else '대체로 나았고'}, 장소가 {pv('paddleocr/rgb_2x', 'v1_paddleocr/rgb_2x', 'reserve', 'venue')}로 가장 크게 좋아졌다. 축제명은 test {pct(r('paddleocr', 'title', 'test'))}보다 예비 {pct(r('paddleocr', 'title', 'reserve'))}가 낮아 아직 일반화 여지가 남았다.",
+        f"예비분 PaddleOCR에서 v2는 v1보다 {'핵심 네 필드 모두 한 장도 나빠지지 않았고' if v2_never_worse else '대체로 나았고'}, 장소가 {pv('paddleocr/rgb_2x', 'v1_paddleocr/rgb_2x', 'reserve', 'venue')}로 가장 크게 좋아졌다. 축제명은 test {pct(r('paddleocr', 'title', 'test'))}보다 예비 {pct(r('paddleocr', 'title', 'reserve'))}가 낮아 아직 일반화 여지가 남았다.",
         f"<strong>축제명이 가장 큰 병목이고, 원인은 대부분 판독이다.</strong> 예비분 PaddleOCR 축제명 오답 {title_wrong}건 중 규칙이 잘못 고른 경우는 {title_dec['rule']}건뿐이고, "
         f"{title_dec['partial'] + title_dec['unread']}건은 OCR 결과에서 정답 제목을 온전히 찾을 수 없었다(문자 80% 이상 {title_dec['partial']}건, 그 미만 {title_dec['unread']}건). 장식 글꼴 제목 판독은 규칙으로 고칠 수 없으므로, 다음 단계인 VLM 실험에서 가장 먼저 볼 항목이다.",
         f"<strong>EasyOCR가 읽기 어려운 줄만 Paddle로 다시 읽는 혼합 방식은 EasyOCR보다 낫지만 Paddle 단독에 못 미친다.</strong> test에서 Paddle 대 혼합은 핵심 4필드 {pv('paddleocr/rgb_2x', 'hybrid/rgb_2x', 'test', 'core_all')}, "
@@ -113,9 +130,12 @@ def experiment_report(out_path, eval_path):
         f"<strong>2배 확대와 두 입력 결합의 이득은 작다.</strong> PaddleOCR 2배 대 원본은 test 장소({pv('paddleocr/rgb_2x', 'paddleocr/rgb_1x', 'test', 'venue')})에서만 차이가 났고 다른 필드와 예비분은 비슷했다. "
         f"2배·원본 결과를 칸 단위로 합치면 예비분 축제명 {rate('fusion_p21', 'title', 'reserve')}, 회차 {rate('fusion_p21', 'edition', 'reserve')}로 단일 입력보다 1장씩 늘었을 뿐이고 OCR을 두 번 돌려야 해 기본값으로는 권하지 않는다.",
         f"<strong>정확도의 대가는 속도다.</strong> CPU 단독 측정에서 PaddleOCR는 2배 입력 장당 {tq('paddleocr')}, EasyOCR {tq('easyocr')}, 혼합 {tq('hybrid')}다. 같은 조건의 본 실행에서 PaddleOCR 원본 입력은 {tm('paddleocr', 'rgb_1x')}로 2배 입력({tm('paddleocr', 'rgb_2x')})보다 빨랐고, 정확도 차이는 장소(test {pct(r('paddleocr', 'venue', 'test', 'rgb_1x'))} 대 {pct(r('paddleocr', 'venue', 'test'))})에서만 컸다. 처리량이 중요하면 원본 입력이 대안이다.",
-        "<strong>기관·문의처·프로그램 같은 작은 글자는 세 경로 모두 거의 뽑지 못했다.</strong> 이미지 대부분이 약 443×627 px 축소본이라 엔진보다 해상도 한계가 먼저 온다. 검수에 이 항목이 필요하면 주최 측 원본 파일을 받는 것이 가장 효과가 크다.",
+        f"<strong>기관 목록 같은 작은 글자는 세 경로 모두 거의 뽑지 못했다.</strong> 기관(역할·이름) F1은 예비분 PaddleOCR 기준 {f2(lst('paddleocr', 'reserve', 'organizations'))}(판독 확실 기관만 세면 {f2(lst('paddleocr', 'reserve', 'organizations_legible'))})에 그쳤다. "
+        "이미지 대부분이 약 443×627 px 축소본이라 엔진보다 해상도 한계가 먼저 온다. 검수에 이 항목이 필요하면 주최 측 원본 파일을 받는 것이 가장 효과가 크다. "
+        + (f"문의처 전화번호는 표본이 적지만(분할당 {min(k for k, _ in contacts)}~{max(k for k, _ in contacts)}건) 비교적 잘 뽑았다(PaddleOCR F1 {min(v for _, v in contacts):.2f}~{max(v for _, v in contacts):.2f})." if contacts else ""),
     ]
-    body.append(sec("summary", "결론", "<ul class='points'>" + "".join(f"<li>{c}</li>" for c in conclusions) + "</ul>"))
+    points = "".join(f"<li>{c}</li>" for c in conclusions)
+    comparison = ocr_comparison(summary, timing, n)
     # ---------------- 설계
     design_rows = [
         ("EasyOCR", "EasyOCR 1.7.2 · ko+en · CPU quantize · greedy", "main <code>baseline</code>과 같은 설정"),
@@ -276,7 +296,7 @@ def experiment_report(out_path, eval_path):
     corrected = ("" if not corrections else f"""<p class="sub" style="margin-top:.6rem">{esc(corrections['corrected_at'][:10])}에 FREEZE_V2 이후 정답을 고치고 채점을 다시 계산했다(규칙·채점 코드는 그대로). """
                  + " ".join(f"{esc(', '.join(c['cases'][:3]))}{' 등' if len(c['cases']) > 3 else ''} {esc('·'.join(c['fields']))}: {esc(c['scoring'])}" for c in corrections["corrections"])
                  + " 기록: <code>data/runtime/poster-ocr/GOLD_CORRECTIONS.json</code></p>")
-    body.append(sec("gold", "사람 검토가 결과를 바꿨나", f"""<p>팀원이 {hs['n']}장의 핵심 8칸을 검토해 {hs['changed']}장·{hs['fields']}칸을 고쳤다. 그중 {hs['kinds']['spacing']}칸은 띄어쓰기·구분 기호라 채점에 영향이 없고, {hs['kinds']['filled']}칸은 AI가 '없음'·'판독 불가'로 둔 칸을 사람이 채운 경우다(AI가 못 읽은 글자 {hs['filled']['read']}칸, 두 자리 연도를 4자리로 {hs['filled']['year2']}칸, 주소 줄을 장소로 {hs['filled']['address']}칸). 규칙 v1 결과를 AI 정답과 사람 정답으로 각각 채점해 보면 {scored} 자세한 수치는 데이터 전처리 보고서에 있다.</p>{corrected}"""))
+    body.append(sec("gold", "사람 검토가 결과를 바꿨나", f"""<p>팀원이 {hs['n']}장의 핵심 8칸을 검토해 {hs['changed']}장·{hs['fields']}칸을 고쳤다. 그중 {hs['kinds']['spacing']}칸은 띄어쓰기·구분 기호라 채점에 영향이 없고, {hs['kinds']['filled']}칸은 AI가 '없음'·'판독 불가'로 둔 칸을 사람이 채운 경우다(AI가 못 읽은 글자 {hs['filled']['read']}칸, 두 자리 연도를 4자리로 {hs['filled']['year2']}칸, 주소 줄을 장소로 {hs['filled']['address']}칸). 규칙 v1 결과를 AI 정답과 사람 정답으로 각각 채점해 보면 {scored} 자세한 수치는 {"1부 '정답 라벨'" if combined else "데이터 전처리 보고서"}에 있다.</p>{corrected}"""))
     # ---------------- 한계·다음
     body.append(sec("next", "한계와 다음 단계", """<ul class="plain"><li><strong>해상도</strong>: 대부분 443×627 px라 작은 글자 결과는 엔진 성능보다 해상도 한계를 반영한다. 고해상도 원본 일부로 같은 비교를 다시 해야 한다.</li>
 <li><strong>표본</strong>: 최종 확인용 예비분이 52장이라 필드별 95% 구간이 ±10~15%p로 넓다. 경로 순위는 test 140장과 함께 본다.</li>
@@ -295,14 +315,71 @@ def experiment_report(out_path, eval_path):
 .\\.venv\\Scripts\\python.exe -m app.poster_ocr.evaluate --gold data\\benchmarks\\gold-v2h --pred data\\runtime\\poster-ocr\\pred-final --splits dev test reserve --pipeline v1_easyocr=easyocr --pipeline v1_paddleocr=paddleocr --pipeline v1_hybrid=hybrid --pipeline fusion_p21=paddleocr --out data\\runtime\\poster-ocr\\eval\\final.json
 .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report experiment --eval data\\runtime\\poster-ocr\\eval\\final.json</code></pre>"""))
     meta = [("작성", "2026-10-19"), ("평가", f"dev {n['dev']} · test {n['test']} · 예비 {n['reserve']}"), ("경로", "3개 × 전처리 2종 + 결합"), ("장비", "CPU 노트북")]
-    footer = ("<p>포스터 원본: ⓒ한국관광공사 TourAPI, 공공누리 제3유형. 이 보고서에는 포스터 이미지를 넣지 않았다.</p>"
-              f"<p>원자료: <code>{esc(Path(eval_path).resolve().relative_to(ROOT).as_posix())}</code> · 데이터셋: <code>data/benchmarks/posters-v2.json</code> · 정답: <code>data/benchmarks/gold-v2h</code></p>")
-    html_text = page("포스터 OCR 실험 보고서", "posters-v2 · OCR 실험", "포스터 요소 추출 OCR 실험",
-                     "EasyOCR, PaddleOCR, 그리고 EasyOCR가 읽기 어려운 줄만 Paddle로 다시 읽는 혼합 방식이 포스터 표준 스키마의 요소를 얼마나 뽑아내는지 같은 조건에서 비교했다.",
-                     meta, "\n".join(body), footer)
-    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
-    Path(out_path).write_text(html_text, encoding="utf-8")
-    return out_path
+    return {"points": points, "comparison": comparison, "sections": body, "meta": meta, "n": n,
+            "eval_rel": Path(eval_path).resolve().relative_to(ROOT).as_posix()}
+
+
+# 팀 main docs/ocr-paddle-only-2026-10-13.md의 5장 비교(Mac M4 Pro CPU, RGB 2배 입력, 사람 검토 전 초안 라벨)
+TEAM_FIVE = [("EasyOCR", "22.1% (44/199)", "1/19", "1/14", "3.63초", "6.23 GiB"),
+             ("EasyOCR+Paddle 재인식", "6.0% (12/199)", "9/19", "2/14", "5.47초", "6.23 GiB"),
+             ("PaddleOCR", "3.5% (7/199)", "12/19", "11/14", "6.90초", "8.15 GiB")]
+
+
+def ocr_comparison(summary, timing, n):
+    """OCR 경로별 성능을 한곳에 모은 표: 예비분(규칙 v2, rgb_2x), test 입력 크기별, 팀 main 5장 비교."""
+    def cell(pipe, split, variant, field):
+        s = summary.get(f"{pipe}/{variant}", {}).get(split) or {}
+        if field == "reads":
+            x = s.get("reads", {}).get("all")
+            return (x["mean_char_accuracy"], pct(x["mean_char_accuracy"])) if x else (None, "—")
+        f = s.get("fields", {}).get(field)
+        return (f["rate"], f'{pct(f["rate"])}<span class="k">{f["correct"]}/{f["n"]}</span>') if f and f["n"] else (None, "—")
+
+    def bold_best(rows, cols, lower=()):
+        """열마다 가장 좋은 값(비율은 높을수록, lower 열은 낮을수록)을 굵게."""
+        out = [list(r) for r in rows]
+        for c in cols:
+            values = [r[c][0] for r in rows if r[c][0] is not None]
+            if not values:
+                continue
+            best = min(values) if c in lower else max(values)
+            for r, o in zip(rows, out):
+                o[c] = f"<strong>{r[c][1]}</strong>" if r[c][0] is not None and round(r[c][0], 4) == round(best, 4) else r[c][1]
+        return [[x[1] if isinstance(x, tuple) else x for x in o] for o in out]
+
+    fields = ["reads", "title", "schedule_pair", "venue", "year", "edition", "core_all"]
+    sec_t = lambda e, src: (timing[(e, src)]["median"], f"{timing[(e, src)]['median']:.1f}초") if (e, src) in timing else (None, "—")
+    mem = lambda e: (timing[(e, "quiet")]["peak_gb"], f"{timing[(e, 'quiet')]['peak_gb']:.1f} GB") if (e, "quiet") in timing and timing[(e, "quiet")]["peak_gb"] else (None, "—")
+    main_rows = []
+    for pipe in ("easyocr", "hybrid", "paddleocr", "fusion_p21"):
+        if not summary.get(f"{pipe}/rgb_2x", {}).get("reserve"):
+            continue
+        engine = "paddleocr" if pipe == "fusion_p21" else pipe
+        speed = (None, "PaddleOCR 2회") if pipe == "fusion_p21" else sec_t(engine, "quiet")
+        main_rows.append([esc(NAMES[pipe]), *[cell(pipe, "reserve", "rgb_2x", f) for f in fields], speed, mem(engine)])
+    main_table = table(["경로", "판독률", "축제명", "일정", "장소", "연도", "회차", "핵심 4필드", "장당 시간", "최대 메모리"],
+                       bold_best(main_rows, range(1, 10), lower=(8, 9)), num_cols=tuple(range(1, 10)))
+    size_rows = []
+    for engine in ("easyocr", "hybrid", "paddleocr"):
+        for variant in ("rgb_2x", "rgb_1x"):
+            if summary.get(f"{engine}/{variant}", {}).get("test"):
+                size_rows.append([esc(f"{NAMES[engine]} {variant}"), *[cell(engine, "test", variant, f) for f in ("reads", "title", "schedule_pair", "venue", "core_all")],
+                                  sec_t(engine, f"main_{variant}")])
+    size_table = table(["경로·입력", "판독률", "축제명", "일정", "장소", "핵심 4필드", "장당 시간(본 실행)"],
+                       bold_best(size_rows, range(1, 7), lower=(6,)), num_cols=tuple(range(1, 7)))
+    team_table = table(["경로", "핵심 문자 오류율(낮을수록 좋음)", "필드 완전 일치", "올바른 충족(정상 기준)", "처리 시간 중앙값", "최대 메모리(RSS)"],
+                       [[esc(a), *row] for a, *row in TEAM_FIVE], num_cols=(1, 2, 3, 4, 5))
+    venue = lambda variant: cell("paddleocr", "test", variant, "venue")[0]
+    t2, t1 = timing.get(("paddleocr", "main_rgb_2x")), timing.get(("paddleocr", "main_rgb_1x"))
+    size_note = (f"PaddleOCR에서 2배 확대는 장소({pct(venue('rgb_2x'))} 대 {pct(venue('rgb_1x'))})를 가장 크게 올렸고, 원본 입력은 장당 시간이 2배 입력의 약 {t1['median'] / t2['median'] * 100:.0f}%다."
+                 if t1 and t2 and venue("rgb_2x") is not None and venue("rgb_1x") is not None else "")
+    return sec("ocr-compare", "OCR 성능 비교", f"""<p>세 OCR 경로와 PaddleOCR 두 입력 결합을 <strong>같은 정답(gold-v2h)과 같은 규칙 추출기(v2)</strong>로 채점했다. 그래서 경로 간 차이는 OCR이 글자를 얼마나 읽었느냐에서 온다. 판독률은 규칙과 무관한 정답 문구 문자 일치율이고, 나머지는 완전 일치 정확도다(작은 글씨는 맞힌 수/분모). 굵은 글씨가 열마다 가장 좋은 값이다.</p>
+<h3>처음 보는 포스터 {n['reserve']}장 (예비분, rgb_2x, 규칙 v2)</h3>{main_table}
+<p class="sub" style="margin-top:.6rem">장당 시간·최대 메모리는 다른 작업 없이 test 25장(rgb_2x)을 다시 돌려 잰 CPU 단독 측정값이다. 결합 경로는 PaddleOCR를 2배·원본 입력에 한 번씩 돌린다. 권장 경로는 PaddleOCR rgb_2x + 규칙 v2이고, 속도가 중요하면 PaddleOCR 원본 입력이 대안이다(아래 표).</p>
+<h3>입력 크기별 (test {n['test']}장, 규칙 v2)</h3>{size_table}
+<p class="sub" style="margin-top:.6rem">장당 시간은 252장 본 실행의 중앙값이다. 라벨 작업 등과 CPU를 나눠 쓴 상태라 같은 표 안의 상대 비교로만 본다. {size_note}</p>
+<h3>참고: 팀 main 5장 비교 (2026-10-13)</h3>{team_table}
+<p class="sub" style="margin-top:.6rem">팀이 기본 OCR을 PaddleOCR 단독으로 정한 근거(<code>docs/ocr-paddle-only-2026-10-13.md</code>, main). Mac M4 Pro CPU, 포스터 5장, 핵심 문자 199자·필드 19개·정상 기준 14개, 사람 검토 전 초안 라벨이다. 포스터 수·지표·장비가 달라 위 표와 수치를 직접 비교하지 않지만, 경로 순위는 같다.</p>""", wide=True)
 
 
 CHECK_ITEMS = (("title", "title"), ("schedule_start", "schedule"), ("schedule_end", "schedule"), ("venue", "venue"), ("year", "year"), ("edition", "edition"))

@@ -1,6 +1,6 @@
 # CLAUDE.md — 축제 포스터 OCR 실험 맥락 (final_data_backup)
 
-다른 PC에서 Claude Code로 이 작업을 이어 가기 위한 압축 맥락이다. 2026-10-19 한 세션(포스터 수집 → 정답 → OCR 3경로 → 규칙 v1·v2 → 예비분 확인 → 보고서)의 결정과 상태를 담았고, 10-20 후속 작업(README 재작성, 2쪽 요약, 정답 정정)을 더했다. 설치는 `README_BACKUP.md`, 결과 상세는 `docs/reports/`의 두 보고서를 본다.
+다른 PC에서 Claude Code로 이 작업을 이어 가기 위한 압축 맥락이다. 2026-10-19 한 세션(포스터 수집 → 정답 → OCR 3경로 → 규칙 v1·v2 → 예비분 확인 → 보고서)의 결정과 상태를 담았고, 10-20 후속 작업(README 재작성, 2쪽 요약, 정답 정정)을 더했다. 설치는 `README_BACKUP.md`, 결과 상세는 통합 보고서 `docs/reports/poster-ocr-v2/report.html`(데이터 + OCR 실험, OCR 성능 비교표)을 본다.
 
 ## 사용자와 일하는 방식
 
@@ -41,7 +41,7 @@
 | `fusion.py` | 칸 단위 결합. `--policy paddle2x1x`(축제명은 근거 신뢰도 높은 쪽, 회차·기관은 원본, 빈 칸 보충) |
 | `evaluate.py` | 판독률(준전역 편집거리), 필드 정확도, 목록 P/R/F1(`organizations_legible` 포함), 존재 탐지, Wilson CI, 부트스트랩, 정확 McNemar |
 | `rule_dev.py` | 후보 추출기를 분할별로 평가(규칙 개발용, 예비분 금지) |
-| `report.py`, `report_experiment.py`, `report_style.py` | 데이터 전처리 보고서·실험 보고서 HTML 생성 |
+| `report.py`, `report_experiment.py`, `report_style.py` | 데이터 전처리·실험 보고서와 둘을 합친 통합 보고서(`report combined`) HTML 생성. 섹션은 `dataset_parts`·`experiment_parts`가 만들고 세 보고서가 같이 쓴다 |
 | `dashboard.py`, `review_page.py`, `human_review.py` | 실시간 대시보드(`:8765`), 사람 검토 화면(`/review`) |
 
 결과 폴더: `data/runtime/poster-ocr/runs/<engine>/<case>/<variant>.json`(OCR), `pred-final/`(최종 추출: v2는 `easyocr·paddleocr·hybrid·fusion_p21`, v1은 `v1_*`), `eval/final.json`(최종 채점), `timing/`(단독 속도 측정). 최종 재현은 `.runtime/poster-ocr/final_eval.sh`.
@@ -77,6 +77,7 @@
 .\.venv\Scripts\python.exe -m app.poster_ocr.evaluate --pred data\runtime\poster-ocr\pred-final --splits dev test --out .runtime\poster-ocr\eval-try.json
 .\.venv\Scripts\python.exe -m app.poster_ocr.report dataset
 .\.venv\Scripts\python.exe -m app.poster_ocr.report experiment --eval data\runtime\poster-ocr\eval\final.json
+.\.venv\Scripts\python.exe -m app.poster_ocr.report combined
 .\.venv\Scripts\python.exe -m app.poster_ocr.dashboard --port 8765
 ```
 

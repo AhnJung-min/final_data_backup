@@ -3,7 +3,7 @@
 팀 저장소 [SKN33-Final-1Team](https://github.com/20260528-skn-family-ai-33/SKN33-Final-1Team)의 `data/festival-data-pipeline` 브랜치(기준 커밋 `48a585b`) 작업 트리에, 로컬에만 있던 실험 데이터·결과를 더해 다른 PC에서도 그대로 이어서 테스트할 수 있게 올린 백업이다. 팀 저장소의 Git 기록은 포함하지 않았다.
 
 - Claude Code로 이어서 작업한다면 저장소 루트의 [`CLAUDE.md`](CLAUDE.md)가 프로젝트 맥락·규칙·현재 상태를 담고 있다(Claude Code가 자동으로 읽는다).
-- 실험 결과 요약: [`docs/reports/ocr-experiment-v2/report.html`](docs/reports/ocr-experiment-v2/report.html), 데이터 전처리: [`docs/reports/poster-dataset-v2/report.html`](docs/reports/poster-dataset-v2/report.html). 브라우저로 열면 된다.
+- 결과는 통합 보고서 [`docs/reports/poster-ocr-v2/report.html`](docs/reports/poster-ocr-v2/report.html)(데이터 전처리 + OCR 실험, OCR 성능 비교표)에 있다. 나눠 본 판: [데이터 전처리](docs/reports/poster-dataset-v2/report.html), [OCR 실험](docs/reports/ocr-experiment-v2/report.html). 브라우저로 열면 된다.
 
 ## 무엇이 들어 있나
 
@@ -49,6 +49,7 @@ py -3.12 -m venv .venv
 # 보고서 다시 만들기
 .\.venv\Scripts\python.exe -m app.poster_ocr.report dataset
 .\.venv\Scripts\python.exe -m app.poster_ocr.report experiment --eval data\runtime\poster-ocr\eval\final.json
+.\.venv\Scripts\python.exe -m app.poster_ocr.report combined   # 통합 보고서
 # 대시보드·사람 검토 화면 (http://127.0.0.1:8765, /review)
 .\.venv\Scripts\python.exe -m app.poster_ocr.dashboard --port 8765
 ```

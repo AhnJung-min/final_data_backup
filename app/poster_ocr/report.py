@@ -1,7 +1,8 @@
-"""데이터 전처리 보고서와 OCR 실험 보고서(HTML)를 실제 산출물에서 생성한다.
+"""데이터 전처리 보고서와 OCR 실험 보고서(HTML), 둘을 합친 통합 보고서를 실제 산출물에서 생성한다.
 
   .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report dataset
   .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report experiment --eval data/runtime/poster-ocr/eval/final.json
+  .\\.venv\\Scripts\\python.exe -m app.poster_ocr.report combined   # docs/reports/poster-ocr-v2/report.html
 보고서에는 포스터 이미지를 넣지 않는다(공공누리 제3유형, 저장소가 공개 상태). 수치는 모두 파일에서 다시 계산한다.
 """
 from __future__ import annotations
@@ -53,6 +54,18 @@ def reviewed(doc):
 
 # ------------------------------------------------------------------ dataset report
 def dataset_report(out_path, run_dir):
+    parts = dataset_parts(run_dir)
+    body = [section("summary", "결론", f'<ul class="points">{parts["points"]}</ul>'), *parts["sections"]]
+    html_text = page("포스터 데이터셋 v2", "posters-v2 · 데이터 전처리", "포스터 데이터셋 v2 수집·전처리",
+                     "OCR·VLM 실험용 최신 축제 포스터 200장을 어떻게 모으고, 어떤 상태로 보관하고, 무엇을 정답으로 삼았는지 정리했다.",
+                     parts["meta"], "\n".join(body), FOOTER)
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(out_path).write_text(html_text, encoding="utf-8")
+    return out_path
+
+
+def dataset_parts(run_dir, combined=False):
+    """데이터 보고서의 결론 항목·본문 섹션. combined=True면 실험 보고서와 합친 문서의 참조 문구를 쓴다."""
     manifest = load(MANIFEST)
     cases = manifest["cases"]
     chosen = [c for c in cases if c["split"] in ("dev", "test")]
@@ -72,6 +85,7 @@ def dataset_report(out_path, run_dir):
     kb = [c["image_meta"]["bytes"] / 1024 for c in chosen]
     fmt = Counter(c["image_meta"]["format"] for c in chosen)
     durations = [(date.fromisoformat(c["listing"]["end"]) - date.fromisoformat(c["listing"]["start"])).days + 1 for c in chosen]
+    early = [d for c, d in zip(chosen, durations) if c["listing"]["start"] < "2026-09"]  # 9월 이전 시작 행사의 기간
     team = sum(1 for c in chosen if c["source"]["in_team_data_img"])
     # 라벨 통계
     status = {slot: Counter(d[slot]["status"] for d in done) for slot in SLOT_LABEL}
@@ -86,17 +100,17 @@ def dataset_report(out_path, run_dir):
     agreement = blind_agreement(done and {k: v for k, v in gold.items() if reviewed(v)}, blind)
     # ---------- sections
     body = []
-    body.append(section("summary", "결론", f"""<ul class="points">
+    points = f"""
 <li><strong>2026년 9~12월에 열리는 축제 포스터 {len(chosen)}장을 TourAPI에서 자동 수집해 로컬에 보관했다.</strong> 조회 축제 {f['tourapi_rows']}건 중 이름이 '포스터'인 상세 이미지가 있는 축제 {f['festivals_with_poster']}건에서 시·도 비례로 뽑았고, 나머지 {f['reserve']}장은 예비분이다.</li>
 <li><strong>대부분 약 443×627 px 축소본이다.</strong> 세로 627 px가 {heights.count(627)}장, 가로 600 px 초과는 {sum(w > 600 for w in widths)}장뿐이라 기관 띠·유의사항 같은 작은 글자는 원본으로도 판독이 어렵다.</li>
 <li><strong>전처리는 원본을 바꾸지 않고 실행 시점에 메모리·임시 파일로만 한다.</strong> EXIF 방향(전부 1)·투명도(전부 없음)를 확인한 뒤 RGB 원본(rgb_1x)과 LANCZOS 2배(rgb_2x) 두 입력을 만들었다.</li>
 <li><strong>정답은 포스터 추출 표준 형식으로 {len(done)}장을 3단계로 만들었다.</strong> 1차 AI 판독 후 같은 모델의 별도 AI 세션이 전 항목을 다시 검토했고(검토 기록상 {review_log['cases']}장·{review_log['edits']}건 수정), 마지막으로 팀원이 예비분까지 {human['n']}장의 핵심 8칸을 포스터와 직접 대조했다. 사람이 고친 칸은 {human['fields']}칸({pct(human['fields'] / (human['n'] * 8))})뿐이고, 그중 {human['kinds']['spacing']}칸은 띄어쓰기·구분 기호라 채점에 영향이 없다.</li>
 <li><strong>지역(시·군·구) 정답 규칙을 표준 1.1로 고쳤다.</strong> 사람마다 판단이 가장 크게 갈린 칸이라, 행정 접미사가 붙은 독립 낱말만 인정하도록 스크립트로 일괄 적용했다. 블라인드 30장과의 지역 불일치가 {admin_before[1] - admin_before[0] if admin_before else '—'}장에서 {admin_after[1] - admin_after[0]}장으로 줄었다. dev·test {a1['main']}장, 예비분 {a1['reserve']}장이 바뀌었다.</li>
-<li><strong>{team}장은 팀이 main에 올린 기존 포스터와 바이트가 같다.</strong> 같은 축제 포스터를 다른 경로로 다시 모은 것이라 중복 실험이 아니라 동일 출처 확인으로 본다.</li></ul>"""))
+<li><strong>{team}장은 팀이 main에 올린 기존 포스터와 바이트가 같다.</strong> 같은 축제 포스터를 다른 경로로 다시 모은 것이라 중복 실험이 아니라 동일 출처 확인으로 본다.</li>"""
     funnel_rows = [("TourAPI 축제(9/1~12/31, 2026 시작)", f["tourapi_rows"], ""), ("이름에 '포스터'가 있는 상세 이미지", f["poster_named_images"], "축제 3건은 포스터 이미지가 2장 이상"),
                    ("포스터가 있는 축제(축제당 1장)", f["festivals_with_poster"], ""), ("중복 제거 후(sha256·dHash ≤6bit)", f["after_dedup"], "중복 0건"),
-                   ("실험용 선정(dev 60 · test 140)", f["selected"], "시·도 비례 층화, seed 20261019"), ("예비분", f["reserve"], "포스터가 아니거나 사용할 수 없을 때 교체용")]
-    body.append(section("collect", "수집 과정", f"""<p>새로 만든 일괄 수집 명령으로 한 번에 받았다. 상세 이미지 조회 438건과 목록 조회 등 API 호출은 {api_calls}건으로 개발계정 하루 한도(1,000건) 안에서 끝났다. 이미지 다운로드 실패는 0건이다.</p>
+                   ("실험용 선정(dev 60 · test 140)", f["selected"], "시·도 비례 층화, seed 20261019(그 안의 dev 60은 seed 20261020)"), ("예비분", f["reserve"], "포스터가 아니거나 사용할 수 없을 때 교체용")]
+    body.append(section("collect", "수집 과정", f"""<p>새로 만든 일괄 수집 명령으로 한 번에 받았다. API 호출은 {api_calls}건(TourAPI 목록 1건·상세 이미지 438건, 공공데이터포털 표준데이터 2건)으로 TourAPI 개발계정 하루 한도(1,000건) 안에서 끝났다. 이미지 다운로드 실패는 0건이다.</p>
 {table(["단계", "수", "비고"], [(esc(a), b, esc(c)) for a, b, c in funnel_rows], num_cols=(1,))}
 <pre><code>.\\.venv\\Scripts\\python.exe scripts\\collect_festivals.py collect --year 2026 --start-date 2026-09-01 --end-date 2026-12-31 --tourapi --detail-images --download-images --poster-hints-only --max-calls 600 --output-dir data\\runtime\\festivals\\run_posters_recent_2026-10-19
 .\\.venv\\Scripts\\python.exe -m app.poster_ocr.dataset --run-dir data\\runtime\\festivals\\run_posters_recent_2026-10-19</code></pre>""", wide=True))
@@ -104,7 +118,7 @@ def dataset_report(out_path, run_dir):
     month_rows = sorted(month.items())
     body.append(section("composition", "구성", f"""<div class="grid2"><div><h3>시·도</h3>{bar_chart("sido", [(k, v, f"{v}장 ({v / len(chosen) * 100:.1f}%)") for k, v in sido_rows], table_html=table(["시·도", "장"], sido_rows, num_cols=(1,)))}</div>
 <div><h3>행사 시작 월</h3>{bar_chart("month", [(k, v, f"{v}장") for k, v in month_rows], table_html=table(["시작 월", "장"], month_rows, num_cols=(1,)))}
-<p class="sub" style="margin-top:.8rem">9월 이전에 시작한 {sum(v for k, v in month.items() if k < '2026-09')}장은 9월 이후까지 이어지는 장기 행사다. 행사 기간 중앙값 {statistics.median(durations):.0f}일, 하루 행사 {durations.count(1)}장, 한 달 넘는 행사 {sum(d > 31 for d in durations)}장.</p></div></div>""", wide=True))
+<p class="sub" style="margin-top:.8rem">9월 이전에 시작한 {len(early)}장도 모두 9월 이후에 끝나는 행사다(그중 한 달 넘는 행사 {sum(d > 31 for d in early)}장). 행사 기간 중앙값 {statistics.median(durations):.0f}일, 하루 행사 {durations.count(1)}장, 한 달 넘는 행사 {sum(d > 31 for d in durations)}장.</p></div></div>""", wide=True))
     image_rows = [("가로(px)", min(widths), f"{statistics.median(widths):.0f}", max(widths)), ("세로(px)", min(heights), f"{statistics.median(heights):.0f}", max(heights)),
                   ("세로/가로", f"{min(c['image_meta']['aspect_hw'] for c in chosen):.2f}", f"{statistics.median(c['image_meta']['aspect_hw'] for c in chosen):.2f}", f"{max(c['image_meta']['aspect_hw'] for c in chosen):.2f}"),
                   ("용량(KB)", f"{min(kb):.0f}", f"{statistics.median(kb):.0f}", f"{max(kb):.0f}")]
@@ -132,7 +146,7 @@ def dataset_report(out_path, run_dir):
 <li><strong>블라인드 일치도</strong>: test에서 무작위 30장을 AI가 1차·2차 결과를 보지 않고 새로 라벨링해 최종 정답과 비교했다.</li>
 <li><strong>사람 검토</strong>: 팀원 1명이 검토 화면(<code>/review</code>)에서 포스터 원본을 보며 AI 정답의 핵심 8칸(축제명·연도·회차·시작일·시작 요일·종료일·종료 요일·장소)을 {human['n']}장 전부 확인했다. 한 장에 걸린 시간 중앙값은 {human['median_seconds']:.0f}초다.</li>
 <li><strong>표준 1.1 변환</strong>: 지역 규칙 A1(아래)을 스크립트로 적용했다. 사람 검토 칸은 건드리지 않는다.</li></ol>
-{human_table(human)}
+{human_table(human, "2부 '사람 검토가 결과를 바꿨나'" if combined else "실험 보고서")}
 <h3>지역 규칙 A1 (표준 1.1)</h3>
 <p>표준 1.0은 '포스터에 쓰인 시·도와 시·군·구'라고만 정해, 접미사 없는 지명(포천)이나 다른 낱말에 붙은 지명(예산사과축제)을 판독자마다 다르게 적었다. 추출기는 지명 사전을 쓰지 않으므로 이런 정답은 원리상 맞힐 수 없다. 1.1에서는 시·군·구는 '○○시·군·구'처럼 접미사가 붙은 독립 낱말일 때만, 시·도는 독립 낱말이거나 행정 단위만으로 된 붙은 낱말(대전중구)일 때만 인정한다. 접미사 없는 지명은 축제명에 그대로 남아 있어 TourAPI 지역 코드와 맞추는 매칭 단계에서 쓴다. 변환은 정답의 장소·주소·축제명 원문과 행정구역 목록만 보고 결정적으로 했고, 이미지 확인으로 근거가 원문 밖에 있는 2장은 현행대로 두었다.</p>
 {table(["분할", "정답 수", "바뀐 수"], [(s if s != "reserve" else "예비", a1['files'][s], a1['by'][s]) for s in ("dev", "test", "reserve") if a1['files'].get(s)], num_cols=(1, 2))}
@@ -160,9 +174,52 @@ data/benchmarks/gold-v2-blind/*.poster.json  블라인드 30장
 <li>사람 검토는 핵심 8칸만 했다. 기관·문의처·슬로건 같은 목록 칸은 AI 2차 검토본 그대로라 그 지표는 참고용이다.</li>
 <li>사람 검토자는 1명이다. 검토자 간 일치도는 재지 않았다.</li></ul>"""))
     meta = [("작성", "2026-10-19"), ("포스터", f"{len(chosen)}장 (dev 60 · test 140)"), ("예비", f"{f['reserve']}장"), ("정답", f"사람 검토 {human['n']}장")]
-    html_text = page("포스터 데이터셋 v2", "posters-v2 · 데이터 전처리", "포스터 데이터셋 v2 수집·전처리",
-                     "OCR·VLM 실험용 최신 축제 포스터 200장을 어떻게 모으고, 어떤 상태로 보관하고, 무엇을 정답으로 삼았는지 정리했다.",
-                     meta, "\n".join(body), FOOTER)
+    return {"points": points, "sections": body, "meta": meta, "human": human, "funnel": f, "chosen": len(chosen)}
+
+
+# ------------------------------------------------------------------ combined report
+COMBINED_FOOTER = (FOOTER + "<p>원자료: <code>data/benchmarks/posters-v2.json</code> · 정답 <code>data/benchmarks/gold-v2h</code> · 최종 채점 <code>{eval_rel}</code>. "
+                   "데이터·실험을 나눠 본 판은 <code>docs/reports/poster-dataset-v2/report.html</code>, <code>docs/reports/ocr-experiment-v2/report.html</code>에 있다.</p>")
+
+
+def by_anchor(sections):
+    """섹션 HTML 목록 → {앵커: HTML}(순서 유지)."""
+    return {re.match(r'<section class="\w+" id="([^"]+)"', s).group(1): s for s in sections}
+
+
+def inner(section_html):
+    """섹션 HTML에서 제목(h2) 뒤 본문만 꺼낸다."""
+    return section_html.split("</h2>", 1)[1].rsplit("</section>", 1)[0]
+
+
+def title_of(section_html):
+    return re.search(r"<h2>(.*?)</h2>", section_html).group(1)
+
+
+def combined_report(out_path, run_dir, eval_path):
+    """데이터 전처리 보고서와 OCR 실험 보고서를 한 문서로: 결론 → OCR 성능 비교 → 1부 데이터 → 2부 실험 → 한계·재현."""
+    from .report_experiment import experiment_parts
+    d, e = dataset_parts(run_dir, combined=True), experiment_parts(eval_path, combined=True)
+    ds, es = by_anchor(d["sections"]), by_anchor(e["sections"])
+    top = [section("summary", "결론", f'<h3>데이터</h3><ul class="points">{d["points"]}</ul><h3>OCR 실험</h3><ul class="points">{e["points"]}</ul>'),
+           e["comparison"]]
+    part1 = [s for k, s in ds.items() if k not in ("files", "limits")]
+    part2 = [s for k, s in es.items() if k not in ("next", "reproduce")]
+    closing = [section("limits", "한계와 다음 단계", f'<h3>데이터</h3>{inner(ds["limits"])}<h3>OCR 실험</h3>{inner(es["next"])}'),
+               section("files", "파일과 재현", f'<h3>데이터</h3>{inner(ds["files"])}<h3>OCR 실험</h3>{inner(es["reproduce"])}', wide=True)]
+    groups = [("요약", top), ("1부 · 데이터 수집·전처리·정답", part1), ("2부 · OCR 실험", part2), ("마무리", closing)]
+    toc = "".join(f'<div><h3>{esc(name)}</h3><ol>' + "".join(f'<li><a href="#{a}">{title_of(s)}</a></li>' for a, s in by_anchor(items).items()) + "</ol></div>"
+                  for name, items in groups)
+    divider = lambda anchor, no, name: f'<div class="part wide" id="{anchor}"><b>{no}</b><span>{esc(name)}</span></div>'
+    body = [f'<nav class="toc wide" aria-label="목차"><h2>목차</h2><div class="groups">{toc}</div></nav>', *top,
+            divider("part1", "1부", "데이터 수집·전처리·정답"), *part1, divider("part2", "2부", "OCR 실험"), *part2,
+            divider("closing", "마무리", "한계·재현"), *closing]
+    n = e["n"]
+    meta = [("작성", "2026-10-19 (정답 정정 10-20)"), ("포스터", f"{n['dev'] + n['test'] + n['reserve']}장 (dev {n['dev']} · test {n['test']} · 예비 {n['reserve']})"),
+            ("정답", f"사람 검토 {d['human']['n']}장"), ("OCR 경로", "3개 × 전처리 2종 + 결합"), ("장비", "CPU 노트북")]
+    html_text = page("포스터 OCR 데이터·실험 보고서", "posters-v2 · 데이터 전처리 + OCR 실험", "축제 포스터 OCR: 데이터셋과 실험",
+                     "TourAPI에서 모은 2026년 9~12월 축제 포스터 252장의 수집·전처리·정답 작업과, 그 정답으로 EasyOCR·PaddleOCR·혼합 방식이 포스터 표준 스키마의 요소를 얼마나 뽑아내는지 비교한 실험을 한 문서에 담았다.",
+                     meta, "\n".join(body), COMBINED_FOOTER.format(eval_rel=esc(e["eval_rel"])))
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)
     Path(out_path).write_text(html_text, encoding="utf-8")
     return out_path
@@ -212,7 +269,7 @@ def filled_kind(doc, name, value):
     return "read"
 
 
-def human_table(h):
+def human_table(h, ref="실험 보고서"):
     label = {"title": "축제명", "year": "연도", "edition": "회차", "start": "시작일", "start_weekday": "시작 요일", "end": "종료일",
              "end_weekday": "종료 요일", "venue": "장소"}
     split_rows = [(s if s != "reserve" else "예비", h["by"][s]["n"], h["by"][s]["changed"], h["by"][s]["fields"]) for s in ("dev", "test", "reserve") if s in h["by"]]
@@ -226,7 +283,7 @@ def human_table(h):
     revised_html = f'<p class="sub">검토 뒤 정정</p><ul class="plain">{revised}</ul>' if revised else ""
     return f"""<h3>사람 검토 결과</h3><div class="grid2"><div>{table(["분할", "검토", "고친 포스터", "고친 칸"], split_rows, num_cols=(1, 2, 3))}
 {table(["수정 종류", "칸"], kind_rows, num_cols=(1,))}</div><div>{table(["칸", "고친 수", "AI 정답 유지율"], field_rows, num_cols=(1, 2))}</div></div>
-<p class="sub" style="margin-top:.6rem">사람이 채운 {h['kinds']['filled']}칸 중 AI가 못 읽은 글자(작은 글자·위첨자)를 읽은 칸은 {h['filled']['read']}칸이다. 나머지는 두 자리 연도를 4자리로 적거나 주소 줄을 장소로 옮긴 칸이다. 규칙 v1도 이 칸들을 맞히지 못해, AI 정답과 사람 정답으로 채점한 결과 차이는 분모가 몇 칸 늘어나는 정도였다(실험 보고서).</p>{revised_html}"""
+<p class="sub" style="margin-top:.6rem">사람이 채운 {h['kinds']['filled']}칸 중 AI가 못 읽은 글자(작은 글자·위첨자)를 읽은 칸은 {h['filled']['read']}칸이다. 나머지는 두 자리 연도를 4자리로 적거나 주소 줄을 장소로 옮긴 칸이다. 규칙 v1도 이 칸들을 맞히지 못해, AI 정답과 사람 정답으로 채점한 결과 차이는 분모가 몇 칸 늘어나는 정도였다({ref}).</p>{revised_html}"""
 
 
 def a1_changes(split_of):
@@ -322,13 +379,16 @@ def section(anchor, title, inner, wide=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("kind", choices=["dataset", "experiment"])
+    parser.add_argument("kind", choices=["dataset", "experiment", "combined"])
     parser.add_argument("--run-dir", type=Path, default=ROOT / "data/runtime/festivals/run_posters_recent_2026-10-19")
     parser.add_argument("--eval", type=Path)
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
     if args.kind == "dataset":
         print(dataset_report(args.out or ROOT / "docs/reports/poster-dataset-v2/report.html", args.run_dir))
+    elif args.kind == "combined":
+        print(combined_report(args.out or ROOT / "docs/reports/poster-ocr-v2/report.html", args.run_dir,
+                              args.eval or ROOT / "data/runtime/poster-ocr/eval/final.json"))
     else:
         from .report_experiment import experiment_report
         print(experiment_report(args.out or ROOT / "docs/reports/ocr-experiment-v2/report.html", args.eval))

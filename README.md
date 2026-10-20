@@ -366,9 +366,10 @@ py -3.12 -m venv .venv; .\.venv\Scripts\python.exe -m pip install -r requirement
 
 | 문서 | 내용 |
 | --- | --- |
+| [poster-ocr-v2/report.html](docs/reports/poster-ocr-v2/report.html) | **통합 보고서**: 데이터 수집·전처리·정답 + OCR 실험, 맨 앞에 OCR 경로별 성능 비교표 |
 | [poster-dataset-v2/report.html](docs/reports/poster-dataset-v2/report.html) | 포스터 데이터셋 수집·전처리·정답 |
 | [poster-dataset-v2/summary.html](docs/reports/poster-dataset-v2/summary.html) | 데이터 전처리·사람 검수 2쪽 요약(인쇄용) |
-| [ocr-experiment-v2/report.html](docs/reports/ocr-experiment-v2/report.html) | 포스터 OCR 실험 |
+| [ocr-experiment-v2/report.html](docs/reports/ocr-experiment-v2/report.html) | 포스터 OCR 실험(통합 보고서 2부와 같은 내용) |
 | [data-collection/report.html](docs/reports/data-collection/report.html) | 구 시제품 합성 자료 수집 보고서(2026-10-06 스냅샷). 팀 산출물 '수집 데이터 보고서 v05'와 다른 문서다 |
 | [poster-schema](docs/reports/poster-schema/포스터%20표준%20통합%20데이터%20스키마.html) | 축제 포스터 추출 표준(HTML) |
 | [ml-dl/ml-dl-candidates.html](docs/reports/ml-dl/ml-dl-candidates.html) | ML·DL 적용 후보 비교 |
