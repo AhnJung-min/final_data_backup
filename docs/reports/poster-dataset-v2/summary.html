@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>포스터 전처리·검수 요약</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--desk:#e7eaee;--sheet:#ffffff;--soft:#f4f6f8;--ink:#1f2328;--ink-2:#545b64;--muted:#6b717a;--rule:#d9dde2;--track:#eceff3;
+--accent:#1d5fb3;--accent-wash:rgba(29,95,179,.07);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--seq1:#1d5fb3;--seq2:#86acdf;--seq3:#c9d3df;
+--on-accent:#ffffff;--shadow:rgba(16,24,40,.12);--font:"IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+--mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--desk:#0f1215;--sheet:#1b1f24;--soft:#22272d;--ink:#e9ecef;--ink-2:#b0b7c0;
+--muted:#8d949d;--rule:#2f353c;--track:#272c33;--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;
+--seq1:#5b9be8;--seq2:#3d6aa3;--seq3:#38414c;--on-accent:#0f1215;--shadow:rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme="dark"]{--desk:#0f1215;--sheet:#1b1f24;--soft:#22272d;--ink:#e9ecef;--ink-2:#b0b7c0;--muted:#8d949d;--rule:#2f353c;--track:#272c33;
+--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--seq1:#5b9be8;--seq2:#3d6aa3;--seq3:#38414c;
+--on-accent:#0f1215;--shadow:rgba(0,0,0,.45);color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--desk);color:var(--ink);font:400 13.5px/1.55 var(--font);word-break:keep-all;overflow-wrap:break-word;padding:24px 16px 40px}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul{padding:0;list-style:none}
+b,strong{font-weight:600}
+code{font-family:var(--mono);font-size:.88em;background:var(--soft);border-radius:3px;padding:.05em .3em;word-break:normal}
+.deck{display:flex;flex-direction:column;align-items:center;gap:24px}
+.page{width:1280px;height:720px;background:var(--sheet);border-radius:6px;box-shadow:0 2px 14px var(--shadow);padding:34px 48px 24px;
+display:grid;grid-template-rows:auto 1fr auto;gap:20px;overflow:hidden;zoom:var(--fit,1)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--accent)}
+h1{font-size:27px;font-weight:700;line-height:1.25;margin:4px 0 6px;letter-spacing:-.01em}
+.lead{font-size:14.5px;color:var(--ink-2)}
+.pg{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap;padding-top:2px}
+.foot{font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--rule);padding-top:8px}
+.foot code{background:none;padding:0;font-size:10.5px}
+.cols{display:grid;gap:36px;min-height:0}
+.p1{grid-template-columns:360px 290px 1fr}
+.p2{grid-template-rows:auto 1fr;gap:22px}
+.p2 .cols{grid-template-columns:300px 440px 1fr}
+.p2 .blk{gap:10px}
+.blk{display:flex;flex-direction:column;gap:14px;min-width:0}
+h2{font-size:15px;font-weight:600;display:flex;align-items:baseline;gap:8px}
+h2 .n{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:500}
+h3{font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.small{font-size:12px;color:var(--ink-2)}
+.muted{color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+/* 수집 깔때기 */
+.fun{display:flex;flex-direction:column;gap:10px}
+.frow{display:grid;grid-template-columns:1fr auto;column-gap:10px;row-gap:4px;align-items:baseline}
+.fl{font-size:13px}.fl small{display:block;font-size:11.5px;color:var(--muted)}
+.fv{font-size:15px;font-variant-numeric:tabular-nums}
+.ft{grid-column:1/-1;height:9px;background:var(--track);border-radius:0 4px 4px 0;position:relative}
+.ft i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:0 4px 4px 0}
+.split{display:flex;flex-direction:column;gap:6px;margin-top:2px}
+.sbar{display:flex;gap:2px;height:22px}
+.sbar i{border-radius:0}.sbar i:first-child{border-radius:4px 0 0 4px}.sbar i:last-child{border-radius:0 4px 4px 0}
+.sd{background:var(--s1)}.st{background:var(--s3)}.sr{background:var(--s2)}
+.slab{display:flex;gap:2px;font-size:12px}
+.slab span{min-width:0}.slab b{display:block;font-size:13px}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12px;background:var(--soft);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.chip b{font-variant-numeric:tabular-nums}
+
+/* 막대 */
+.bars{display:grid;gap:2px}
+.brow{display:grid;grid-template-columns:58px minmax(0,1fr) 24px;align-items:center;gap:8px;font-size:12px;line-height:1.2}
+.btrack{height:10px;position:relative}
+.btrack i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:0 4px 4px 0;min-width:3px}
+.bv{font-size:12px;color:var(--ink-2);text-align:right;font-variant-numeric:tabular-nums}
+.colchart{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:end;height:92px;border-bottom:1px solid var(--rule);padding:0 4px}
+.cc{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:3px}
+.cc b{font-size:12.5px;font-variant-numeric:tabular-nums}
+.cc i{display:block;width:34px;background:var(--accent);border-radius:4px 4px 0 0;min-height:3px}
+.ccx{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:4px 4px 0;font-size:12px;color:var(--ink-2);text-align:center}
+
+/* 이미지 상태 */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tile{background:var(--soft);border-radius:6px;padding:8px 10px}
+.tile .v{font-size:19px;font-weight:600;line-height:1.25;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tile .v small{font-size:12px;font-weight:500;color:var(--ink-2)}
+.tile .k{font-size:11.5px;color:var(--ink-2);line-height:1.4;margin-top:2px}
+.stack{display:flex;gap:2px;height:14px}
+.stack i:first-child{border-radius:4px 0 0 4px}.stack i:last-child{border-radius:0 4px 4px 0}
+.q1{background:var(--seq1)}.q2{background:var(--seq2)}.q3{background:var(--seq3)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--ink-2)}
+.legend li{display:flex;align-items:center;gap:5px}
+.sw{width:10px;height:10px;border-radius:50%;flex:none}
+
+/* 전처리 흐름 */
+.flow{display:flex;flex-direction:column;gap:0}
+.node{border:1px solid var(--rule);border-radius:6px;padding:7px 11px;display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:baseline}
+.node b{font-size:13px}.node span{font-size:12.5px;color:var(--ink-2)}
+.arrow{height:14px;position:relative}
+.arrow::before{content:"";position:absolute;left:30px;top:2px;bottom:2px;width:1.5px;background:var(--muted)}
+.arrow::after{content:"";position:absolute;left:26.5px;bottom:1px;border:4px solid transparent;border-top:5px solid var(--muted);border-bottom:0}
+.branch{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.out{border-radius:6px;padding:8px 10px;background:var(--accent-wash);border:1px solid transparent}
+.out b{display:block;font-family:var(--mono);font-size:12.5px;font-weight:500;color:var(--accent)}
+.out span{display:block;font-size:12px;color:var(--ink-2);line-height:1.45;margin-top:2px}
+.out.off{background:none;border:1px dashed var(--rule)}
+.out.off b{color:var(--muted)}
+
+/* 2쪽: 정답 파이프라인 */
+.pipe{display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr 18px 1fr 18px 176px;align-items:stretch}
+.step{border:1px solid var(--rule);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:4px}
+.step .no{font-family:var(--mono);font-size:11px;color:var(--accent)}
+.step b{font-size:14px}
+.step p{font-size:12px;color:var(--ink-2);line-height:1.45}
+.step .r{margin-top:auto;padding-top:4px;font-size:12.5px;font-weight:600;color:var(--ink)}
+.step.me{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.step.me .tag{font-size:11px;font-weight:600;color:var(--sheet);background:var(--accent);border-radius:3px;padding:0 5px;margin-left:6px;vertical-align:1px}
+.pa{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
+.final{background:var(--accent);color:var(--on-accent);border-radius:8px;padding:10px 13px;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.final .no{font-family:var(--mono);font-size:11px;opacity:.85}
+.final b{font-size:15px}.final p{font-size:12px;opacity:.92;line-height:1.45}
+
+
+/* 2쪽: 검수 결과 */
+.hero{display:flex;align-items:baseline;gap:12px}
+.hero .big{font-size:34px;font-weight:700;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.hero p{font-size:12.5px;color:var(--ink-2);line-height:1.45}
+.kind{display:grid;gap:6px}
+.krow{display:grid;grid-template-columns:22px 1fr;column-gap:10px;align-items:center}
+.krow .kv{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+.krow .kl{font-size:12.5px;line-height:1.35}
+.krow .kl small{display:block;font-size:11.5px;color:var(--muted)}
+.kbar{grid-column:2;height:7px;background:var(--track);border-radius:0 4px 4px 0;position:relative;margin-top:3px}
+.kbar i{position:absolute;inset:0 auto 0 0;border-radius:0 4px 4px 0;background:var(--accent)}
+.kbar i.g{background:var(--seq2)}
+.fields{display:flex;flex-wrap:wrap;gap:5px}
+.fields .chip.z{color:var(--muted)}
+.fields{align-items:center}.fl-k{font-size:12.5px;font-weight:600;color:var(--ink-2);margin-right:2px}
+.lim{font-size:11.5px;color:var(--muted);line-height:1.5;border-top:1px solid var(--rule);padding-top:8px;margin-top:auto}
+
+table{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.35}
+td.to,td.was{white-space:nowrap}
+th,td{text-align:left;vertical-align:top;padding:6px 9px;border-bottom:1px solid var(--rule)}
+thead th{font-size:11.5px;font-weight:600;color:var(--ink-2);background:var(--soft);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.f{white-space:nowrap;font-weight:600}
+td.id{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.was{color:var(--muted)}
+.was.empty{font-style:normal;background:var(--soft);border-radius:3px;padding:0 5px;font-size:11.5px;white-space:nowrap}
+.to{font-weight:500}
+.tblwrap{border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.impact{background:var(--accent-wash);border-radius:6px;padding:9px 12px;font-size:12.5px;line-height:1.5}
+.impact b{display:block;font-size:13px;margin-bottom:2px}
+
+.rule{border:1px solid var(--rule);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:4px}
+.rule .hd{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.rule .hd b{font-size:13.5px}
+.rule .hd .code{font-family:var(--mono);font-size:11px;color:var(--accent)}
+.rule p{font-size:12px;color:var(--ink-2);line-height:1.5}
+.delta{display:flex;align-items:baseline;gap:6px;font-size:12px;color:var(--ink-2)}
+.delta .a{font-size:17px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;text-decoration:line-through;text-decoration-thickness:1px}
+.delta .b{font-size:20px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.blind{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;text-align:center}
+.blind div{background:var(--soft);border-radius:5px;padding:4px 2px}
+.blind b{display:block;font-size:13.5px;font-variant-numeric:tabular-nums}
+.blind span{font-size:11px;color:var(--ink-2)}
+.status{font-size:11px;font-weight:500;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:0 7px;white-space:nowrap}
+
+@page{size:1280px 720px;margin:0}
+@media print{
+  :root:not([data-theme="__"]),:root[data-theme]{--desk:#fff;--sheet:#fff;--soft:#f4f6f8;--ink:#1f2328;--ink-2:#545b64;--muted:#6b717a;--rule:#d9dde2;
+  --track:#eceff3;--accent:#1d5fb3;--accent-wash:rgba(29,95,179,.07);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--seq1:#1d5fb3;--seq2:#86acdf;--seq3:#c9d3df;--on-accent:#fff;color-scheme:light}
+  body{padding:0;background:#fff}
+  .deck{gap:0;display:block}
+  .page{zoom:1!important;border-radius:0;box-shadow:none;break-after:page;break-inside:avoid}
+  .page:last-child{break-after:auto}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+@media screen and (max-width:760px){
+  body{padding:12px 0 24px}
+  .deck{gap:14px}
+  .page{width:auto;height:auto;zoom:1;border-radius:0;padding:22px 16px 16px;margin:0}
+  .top{flex-direction:column;gap:6px}
+  .pg{order:-1}
+  h1{font-size:23px}
+  .p1,.p2 .cols{grid-template-columns:1fr;gap:28px}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .branch{grid-template-columns:1fr}
+  .pipe{grid-template-columns:1fr;gap:6px}
+  .pa{transform:rotate(90deg);height:12px}
+  .blind{grid-template-columns:repeat(3,1fr)}
+  .foot{flex-direction:column;gap:4px}
+  .tblwrap{overflow-x:auto}
+  td.to,td.was{white-space:normal}
+}
+</style>
+</head>
+<body>
+<main class="deck">
+
+<!-- 1쪽: 수집과 전처리 -->
+<section class="page" aria-labelledby="p1-title">
+  <header class="top">
+    <div>
+      <p class="eyebrow">축제 포스터 OCR · 데이터셋 v2 · 2026-10-19 작업</p>
+      <h1 id="p1-title">수집과 전처리: 포스터 252장, 원본은 그대로</h1>
+      <p class="lead">2026년 9~12월 축제 포스터를 TourAPI에서 자동으로 모아 dev·test·예비로 나눴다. 원본 파일은 바꾸지 않고, OCR에 넣을 입력은 실행할 때만 만든다.</p>
+    </div>
+    <p class="pg">1 / 2</p>
+  </header>
+
+  <div class="cols p1">
+    <section class="blk" aria-labelledby="h-fun">
+      <h2 id="h-fun"><span class="n">01</span>수집 깔때기</h2>
+      <div class="fun">
+        <div class="frow" title="TourAPI searchFestival2, 2026-09-01~12-31">
+          <span class="fl">TourAPI 축제 검색 <small>2026-09-01 ~ 12-31에 열리는 축제</small></span><b class="fv">439</b>
+          <span class="ft"><i style="width:100%"></i></span>
+        </div>
+        <div class="frow" title="detailImage2에서 이미지 이름에 '포스터'가 든 것">
+          <span class="fl">이름에 '포스터'가 든 상세 이미지 <small>축제 3건은 포스터가 2장 이상</small></span><b class="fv">255</b>
+          <span class="ft"><i style="width:58.1%"></i></span>
+        </div>
+        <div class="frow" title="축제당 1장">
+          <span class="fl">포스터가 있는 축제 <small>축제당 1장, 중복(sha256·dHash) 0건</small></span><b class="fv">252</b>
+          <span class="ft"><i style="width:57.4%"></i></span>
+        </div>
+      </div>
+      <div class="split" aria-label="분할: dev 60, test 140, 예비 52">
+        <h3>분할 · 시·도 비례 층화(seed 20261019·20261020)</h3>
+        <div class="sbar"><i class="sd" style="flex:60" title="dev 60장"></i><i class="st" style="flex:140" title="test 140장"></i><i class="sr" style="flex:52" title="예비 52장"></i></div>
+        <div class="slab">
+          <span style="flex:60"><b>dev 60</b>규칙 개발</span>
+          <span style="flex:140"><b>test 140</b>v1 고정 후 평가, v2 개발</span>
+          <span style="flex:52"><b>예비 52</b>v2 고정 후 1회 평가</span>
+        </div>
+      </div>
+      <ul class="facts">
+        <li class="chip">TourAPI 호출 <b>439</b>건 / 하루 한도 1,000</li>
+        <li class="chip">다운로드 실패 <b>0</b>건</li>
+      </ul>
+      <p class="small muted">이름에 '포스터'가 든 이미지만 모았으므로, 이름이 다른 축제 포스터는 빠졌다(선택 편향).</p>
+    </section>
+
+    <section class="blk" aria-labelledby="h-mix">
+      <h2 id="h-mix"><span class="n">02</span>실험용 200장 구성</h2>
+      <div class="bars" role="img" aria-label="시·도별 장 수: 경기 33, 서울 31, 경북 19, 강원 17, 충남 17, 전남광주 16, 전북 14, 경남 13, 부산 11, 충북 6, 제주 6, 인천 5, 대전 5, 대구 3, 울산 3, 세종 1">
+        <div class="brow"><span>경기</span><span class="btrack"><i style="width:100%"></i></span><span class="bv">33</span></div>
+        <div class="brow"><span>서울</span><span class="btrack"><i style="width:93.9%"></i></span><span class="bv">31</span></div>
+        <div class="brow"><span>경북</span><span class="btrack"><i style="width:57.6%"></i></span><span class="bv">19</span></div>
+        <div class="brow"><span>강원</span><span class="btrack"><i style="width:51.5%"></i></span><span class="bv">17</span></div>
+        <div class="brow"><span>충남</span><span class="btrack"><i style="width:51.5%"></i></span><span class="bv">17</span></div>
+        <div class="brow"><span>전남광주</span><span class="btrack"><i style="width:48.5%"></i></span><span class="bv">16</span></div>
+        <div class="brow"><span>전북</span><span class="btrack"><i style="width:42.4%"></i></span><span class="bv">14</span></div>
+        <div class="brow"><span>경남</span><span class="btrack"><i style="width:39.4%"></i></span><span class="bv">13</span></div>
+        <div class="brow"><span>부산</span><span class="btrack"><i style="width:33.3%"></i></span><span class="bv">11</span></div>
+        <div class="brow"><span>충북</span><span class="btrack"><i style="width:18.2%"></i></span><span class="bv">6</span></div>
+        <div class="brow"><span>제주</span><span class="btrack"><i style="width:18.2%"></i></span><span class="bv">6</span></div>
+        <div class="brow"><span>인천</span><span class="btrack"><i style="width:15.2%"></i></span><span class="bv">5</span></div>
+        <div class="brow"><span>대전</span><span class="btrack"><i style="width:15.2%"></i></span><span class="bv">5</span></div>
+        <div class="brow"><span>대구</span><span class="btrack"><i style="width:9.1%"></i></span><span class="bv">3</span></div>
+        <div class="brow"><span>울산</span><span class="btrack"><i style="width:9.1%"></i></span><span class="bv">3</span></div>
+        <div class="brow"><span>세종</span><span class="btrack"><i style="width:3%"></i></span><span class="bv">1</span></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:8px">행사 시작 월</h3>
+        <div class="colchart" role="img" aria-label="시작 월: 8월 이전 8장, 9월 59장, 10월 127장, 11월 6장">
+          <div class="cc"><b>8</b><i style="height:4.9%"></i></div>
+          <div class="cc"><b>59</b><i style="height:36.2%"></i></div>
+          <div class="cc"><b>127</b><i style="height:78%"></i></div>
+          <div class="cc"><b>6</b><i style="height:3.7%"></i></div>
+        </div>
+        <div class="ccx"><span>~8월</span><span>9월</span><span>10월</span><span>11월</span></div>
+      </div>
+      <p class="small">~8월 시작 8장도 모두 9월 이후에 끝난다(3장은 반년 이상). 기간 중앙값 3일.</p>
+    </section>
+
+    <section class="blk" aria-labelledby="h-img">
+      <h2 id="h-img"><span class="n">03</span>이미지 상태 <span class="small muted" style="font-weight:400">실험용 200장</span></h2>
+      <div class="tiles">
+        <div class="tile"><p class="v">443×627</p><p class="k">중앙 크기(px)</p></div>
+        <div class="tile"><p class="v">199<small>장</small></p><p class="k">세로 627 px 축소본</p></div>
+        <div class="tile"><p class="v">126<small>·</small>74</p><p class="k">JPEG·PNG, 모두 RGB</p></div>
+        <div class="tile"><p class="v">0<small>장</small></p><p class="k">EXIF 회전·투명 채널</p></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <h3>작은 글자(기관 띠·유의사항) 판독, AI 정답 기준</h3>
+        <div class="stack" role="img" aria-label="읽힘 45장, 일부 144장, 판독 불가 10장">
+          <i class="q1" style="flex:45" title="읽힘 45장"></i><i class="q2" style="flex:144" title="일부 144장"></i><i class="q3" style="flex:10" title="판독 불가 10장"></i>
+        </div>
+        <ul class="legend">
+          <li><span class="sw q1"></span>읽힘 45</li><li><span class="sw q2"></span>일부만 144</li><li><span class="sw q3"></span>판독 불가 10</li><li class="muted">작은 글자 없음 1</li>
+        </ul>
+      </div>
+
+      <h2><span class="n">04</span>전처리</h2>
+      <div class="flow">
+        <div class="node"><b>원본 파일</b><span>바이트 그대로 보관, <code>SHA256SUMS</code>로 고정</span></div>
+        <div class="arrow" aria-hidden="true"></div>
+        <div class="node"><b>정규화</b><span>EXIF 방향 → 흰 배경 합성 → RGB. 이번 포스터는 원본 픽셀과 같다</span></div>
+        <div class="arrow" aria-hidden="true"></div>
+        <div class="branch">
+          <div class="out"><b>rgb_1x</b><span>원본 크기 그대로<br>약 443×627</span></div>
+          <div class="out"><b>rgb_2x</b><span>LANCZOS 2배, 약 886×1254. 없는 글자는 못 만든다</span></div>
+          <div class="out"><b>crop</b><span>혼합 경로용. 줄 최대 8개, 여백 12%, 회색조·autocontrast</span></div>
+        </div>
+      </div>
+      <p class="small">gray_2x·CLAHE·이진화는 팀 main 비교에서 이득이 작아 뺐다. 변형 이미지는 임시 폴더에만 두고 공개하지 않는다(공공누리 제3유형 변경금지).</p>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <span>근거 <code>data/benchmarks/posters-v2.json</code> · <code>data/img-v2/SHA256SUMS</code> · 데이터 전처리 보고서 <code>docs/reports/poster-dataset-v2/report.html</code></span>
+    <span>포스터 원본 ⓒ한국관광공사 TourAPI · 공공누리 제3유형. 이 문서에는 이미지를 넣지 않았다.</span>
+  </footer>
+</section>
+
+<!-- 2쪽: 정답과 사람 검수 -->
+<section class="page" aria-labelledby="p2-title">
+  <header class="top">
+    <div>
+      <p class="eyebrow">축제 포스터 OCR · 데이터셋 v2 · 2026-10-19 작업</p>
+      <h1 id="p2-title">정답과 검수: AI가 두 번 읽고, 사람이 252장을 확인</h1>
+      <p class="lead">정답은 팀 표준 <code>festival-poster 1.0</code> 형식이다. 핵심 8칸(축제명·연도·회차·시작일·종료일·두 요일·장소)은 사람이 원본과 대조했다.</p>
+    </div>
+    <p class="pg">2 / 2</p>
+  </header>
+
+  <div class="cols p2" style="display:grid">
+    <div class="pipe" aria-label="정답 만드는 순서">
+      <div class="step"><span class="no">STEP 1</span><b>AI 1차 판독</b><p>원본과 3배 확대 띠로 전 항목 작성. 목록값·파일명·OCR 결과는 안 봄</p><span class="r">252장, 스키마·논리 검증 통과</span></div>
+      <div class="pa" aria-hidden="true">→</div>
+      <div class="step"><span class="no">STEP 2</span><b>AI 2차 검토</b><p>같은 모델의 별도 세션이 원본을 보며 모든 항목을 다시 대조</p><span class="r">252장 재검토, 39장·53건 수정</span></div>
+      <div class="pa" aria-hidden="true">→</div>
+      <div class="step me"><span class="no">STEP 3</span><b>사람 검수<span class="tag">직접</span></b><p>검토 화면에서 원본과 핵심 8칸 대조. 장당 중앙값 15초</p><span class="r">252장 전부, 11장·14칸 수정</span></div>
+      <div class="pa" aria-hidden="true">→</div>
+      <div class="step"><span class="no">STEP 4</span><b>지역 규칙 A1 적용</b><p>표준 1.1 지역 규칙을 스크립트로 일괄 적용. 검수한 칸은 그대로</p><span class="r">dev·test 53장, 예비 16장 변경</span></div>
+      <div class="pa" aria-hidden="true">→</div>
+      <div class="final"><span class="no">FINAL</span><b>gold-v2h</b><p>최종 정답. 모든 채점의 기준</p></div>
+    </div>
+
+    <div class="cols">
+      <section class="blk" aria-labelledby="h-res">
+        <h2 id="h-res"><span class="n">01</span>사람 검수 결과</h2>
+        <div class="hero"><span class="big">99.3%</span><p>AI 정답을 그대로 둔 칸<br><span class="num">2,016칸</span>(252장×8칸) 중 <span class="num">2,002칸</span></p></div>
+        <div class="kind" aria-label="고친 14칸의 종류">
+          <h3>고친 14칸은 무엇이었나</h3>
+          <div class="krow"><span class="kv">9</span><span class="kl">AI가 '없음'·'판독 불가'로 둔 칸을 채움 <small>작은 글자 4 · 두 자리 연도 '26'→2026 2 · 주소 줄을 장소로 1 · 인쇄되지 않은 요일 2</small></span><span class="kbar"><i style="width:100%"></i></span></div>
+          <div class="krow"><span class="kv">5</span><span class="kl">띄어쓰기·구분 기호만 다름 <small>채점은 공백·문장부호를 빼고 비교해 영향 없음</small></span><span class="kbar"><i class="g" style="width:55.6%"></i></span></div>
+          <div class="krow"><span class="kv">0</span><span class="kl">AI가 읽은 값 자체가 틀림</span></div>
+        </div>
+        <div>
+          <ul class="fields">
+            <li class="fl-k">칸별</li><li class="chip">장소 <b>7</b></li><li class="chip">요일 <b>4</b></li><li class="chip">연도 <b>2</b></li><li class="chip">축제명 <b>1</b></li>
+          </ul>
+        </div>
+        <p class="lim">한계: 검수자 1명이라 검수자 간 일치도는 재지 않았다. 기관·문의처 같은 목록 칸은 AI 2차 검토본 그대로다.</p>
+      </section>
+
+      <section class="blk" aria-labelledby="h-ex">
+        <h2 id="h-ex"><span class="n">02</span>실제로 고친 칸</h2>
+        <div class="tblwrap">
+          <table>
+            <thead><tr><th>칸</th><th>AI 정답</th><th>사람 검수</th></tr></thead>
+            <tbody>
+              <tr><td class="f">장소</td><td><span class="was empty">판독 불가</span></td><td class="to">안성맞춤랜드, 안성천일원</td></tr>
+              <tr><td class="f">장소</td><td><span class="was empty">판독 불가</span></td><td class="to">슬도아트 일원</td></tr>
+              <tr><td class="f">요일</td><td><span class="was empty">없음</span></td><td class="to">목·일 (작은 위첨자, 2칸)</td></tr>
+              <tr><td class="f">축제명</td><td class="was">어부장터 X포트빌리지통영</td><td class="to">어부장터 X 포트빌리지통영</td></tr>
+              <tr><td class="f">장소</td><td class="was">충주탄금공원 충주문화회관</td><td class="to">충주탄금공원, 충주문화회관</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">포스터 v2-082 · v2-059 · v2-071 · v2-196 · v2-104 (위에서부터)</p>
+        <div class="impact"><b>채점에 미친 영향은 작다</b>규칙 v1 결과를 두 정답으로 각각 채점해도 세 OCR 경로·dev·test 모두 맞힌 수가 같고, 분모만 0~2칸 늘었다. 사람이 채운 칸은 v1도 맞히지 못한 칸이었다.</div>
+      </section>
+
+      <section class="blk" aria-labelledby="h-std">
+        <h2 id="h-std"><span class="n">03</span>정답 작업에서 나온 표준 1.1 <span class="status">팀 승인 전</span></h2>
+        <div class="rule">
+          <div class="hd"><b>지역은 접미사 붙은 낱말만</b><span class="code">A1</span></div>
+          <p>'○○군'처럼 행정 접미사가 붙은 독립 낱말만 시·군·구로 적는다. 포천(접미사 없음)·예산사과축제(다른 낱말에 붙음)는 비우고, 축제명 속 지명은 지역 코드 매칭에 쓴다.</p>
+          <p class="delta">판독자마다 가장 갈린 칸 · 블라인드 지역 일치 <span class="a">22</span>→<span class="b">30</span>장</p>
+        </div>
+        <div class="rule">
+          <div class="hd"><b>떨어진 일정은 원문 그대로</b><span class="code">S5</span></div>
+          <p>'각 주말마다'처럼 기간 중 일부 날만 여는 일정이다(검수 메모 10건 중 6건). 시작·종료일은 그대로 두고, 떨어진 날짜는 <code>schedule.operating_raw</code>에 인쇄된 대로 적는다.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:6px">블라인드 일치도 · test 30장을 새로 라벨링해 비교</h3>
+          <div class="blind">
+            <div><b>28/30</b><span>축제명</span></div><div><b>30/30</b><span>일정</span></div><div><b>30/30</b><span>연도</span></div><div><b>27/27</b><span>장소</span></div><div><b>9/10</b><span>회차</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span>근거 <code>data/benchmarks/gold-v2h/</code> · <code>human-review/</code>(252건) · <code>gold-v2-blind/</code>(30장) · <code>docs/festival-poster-standard.md</code>(라벨링 규칙 1.1)</span>
+    <span>검수 2026-10-19 15:27~17:08 · 검수자 안정민</span>
+  </footer>
+</section>
+
+</main>
+<script>
+(function(){
+  var root=document.documentElement;
+  function fit(){
+    var w=root.clientWidth-32;
+    root.style.setProperty('--fit', window.innerWidth>760 && w<1280 ? (w/1280).toFixed(4) : '1');
+  }
+  fit(); window.addEventListener('resize', fit);
+})();
+</script>
+</body>
+</html>

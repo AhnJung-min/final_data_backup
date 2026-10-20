@@ -23,7 +23,7 @@
 | `.runtime/poster-ocr/` | 실험 작업 기록: 스크립트, 규칙 제안 diff, 검토 결과 JSON, 정답 변환 전 사본 |
 | `requirements-ocr-easyocr.txt`, `requirements-ocr-paddle.txt` | OCR 전용 가상환경 2개의 고정 패키지 목록 |
 
-넣지 않은 것: `.env`(API 키)와 `.env.example`, 가상환경(`.venv`, `.runtime/*-env`), 모델 가중치(`.runtime/*-models`, 아래 명령으로 받음), 캐시·로그·업로드 파일, 확대·잘라낸 포스터 이미지(다시 만들 수 있고, 공공누리 제3유형 변경금지라 공개하지 않음), 규칙 후보별 예측 사본(약 12만 개 파일).
+넣지 않은 것: `.env`(API 키)와 `.env.example`, 가상환경(`.venv`, `.runtime/*-env`), 모델 가중치(`.runtime/*-models`, 아래 명령으로 받음), 캐시·로그·업로드 파일, 확대·잘라낸 포스터 이미지(다시 만들 수 있고, 공공누리 제3유형 변경금지라 공개하지 않음), 규칙 후보별 예측 사본(약 11만 개 파일. 결합 후보 `proposals-v2/fusion`의 예측 약 1만 1천 개는 들어 있다).
 
 ## 다른 PC에서 시작하기 (Windows, Python 3.12)
 

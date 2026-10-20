@@ -46,7 +46,7 @@ def walk(rel, images_ok=False, top_only=False):
 def work_records():
     """.runtime/poster-ocr의 작업 기록: 스크립트·제안 diff·문서·요약 JSON만(후보 예측 수만 개와 이미지는 뺀다)."""
     base = ROOT / ".runtime/poster-ocr"
-    skip = {"pred", "zoom", "pilot-crops", "inputs", "hybrid-crops", "hybrid-crops-reserve", "backup-export", "__pycache__"}
+    skip = {"pred", "zoom", "pilot-crops", "inputs", "hybrid-crops", "hybrid-crops-reserve", "backup-export", "verify-summary", "__pycache__"}
     keep_suffix = {".py", ".md", ".diff", ".sh", ".txt", ".json", ".html"}
     out = []
     for dirpath, dirnames, filenames in os.walk(base):
@@ -89,6 +89,15 @@ def main():
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
         total += len(data)
+    # 백업 저장소 전용 문서: 루트 README(팀 브랜치의 옛 README 대신), 설치 안내, Claude Code 맥락, .gitignore, .gitattributes
+    docs = ROOT / ".runtime/poster-ocr/backup-docs"
+    for name, target in (("README.md", "README.md"), ("README_BACKUP.md", "README_BACKUP.md"), ("CLAUDE.md", "CLAUDE.md"),
+                         ("gitignore.backup", ".gitignore")):
+        if (docs / name).exists():
+            shutil.copy2(docs / name, out / target)
+    (out / ".gitattributes").write_text("# 파일 바이트를 그대로 보관한다(FREEZE와 SHA256SUMS 해시가 다른 PC에서도 맞도록 줄바꿈 변환 끔)\n* -text\n", encoding="utf-8")
+    (out / ".env.example").unlink(missing_ok=True)  # 키 이름만 있는 예시도 넣지 않는다(설치 안내에 변수 이름을 적음)
+    shutil.rmtree(out / ".runtime/poster-ocr/backup-docs", ignore_errors=True)
     big = sorted(((ROOT / f).stat().st_size, f) for f in files if (ROOT / f).is_file() and (ROOT / f).stat().st_size > 50 * 2**20)
     print(f"copied files: {len(files) - len(leaks)}, bytes: {total / 2**20:.1f} MiB")
     print(f"skipped for secret match: {len(leaks)}")
