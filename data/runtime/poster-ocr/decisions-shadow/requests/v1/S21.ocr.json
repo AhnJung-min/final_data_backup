@@ -1,0 +1,1581 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 144,
+  "image_tokens": 3281,
+  "text_tokens": 6162,
+  "input_tokens": 9443,
+  "cost_usd": 0.0009443
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S21",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S21.png",
+    "sha256": "dfbf216e0321fefbd9ccff7b7ef5c083b00d8d00a5fac63dacb89889b4a734dd",
+    "bytes": 122661,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S21.png",
+    "sha256": "86e3cc5d9542f0b6c89168c745521ccaa0d4782d1ab83f0e48009f217d88bb2a",
+    "bytes": 107988,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "한빛 강변 재즈 페스티벌",
+     "doc_variants": []
+    },
+    "doc_raw": "제30회 한빛 강변 재즈 페스티벌"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제30회",
+     "number": 30
+    },
+    "doc_raw": "제30회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.9.12.(토)",
+     "points": [
+      [
+       2026,
+       9,
+       12,
+       "토"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.9.12.(토)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "11:00~20:00"
+    },
+    "doc_raw": "11:00~20:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "한빛종합운동장"
+    },
+    "doc_raw": "한빛종합운동장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "한빛시"
+    },
+    "doc_raw": "한빛시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "한빛관광재단"
+    },
+    "doc_raw": "한빛관광재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "031-000-7626"
+    },
+    "doc_raw": "031-000-7626"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "강바람에 실려 오는 선율"
+    },
+    "doc_raw": "강바람에 실려 오는 선율"
+   }
+  },
+  "rows": [
+   {
+    "value": "L536",
+    "index": 0,
+    "text": "2026 제30회",
+    "conf": 0.951,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026 제30회",
+      "confidence": 0.9510328769683838,
+      "bbox_xyxy": [
+       346.0,
+       92.0,
+       535.0,
+       127.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L186",
+    "index": 1,
+    "text": "한빛",
+    "conf": 0.9999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "한빛",
+      "confidence": 0.9998642206192017,
+      "bbox_xyxy": [
+       344.0,
+       160.0,
+       536.0,
+       277.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L210",
+    "index": 2,
+    "text": "강변 재즈 페스티벌",
+    "conf": 0.9961,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "강변",
+      "confidence": 0.999848484992981,
+      "bbox_xyxy": [
+       48.0,
+       280.0,
+       246.0,
+       402.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "재즈",
+      "confidence": 0.9999129176139832,
+      "bbox_xyxy": [
+       251.0,
+       282.0,
+       450.0,
+       400.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "페스티벌",
+      "confidence": 0.996110200881958,
+      "bbox_xyxy": [
+       456.0,
+       284.0,
+       823.0,
+       399.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L953",
+    "index": 3,
+    "text": "강바람에 실려 오는 선율",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "강바람에",
+      "confidence": 0.9998862147331238,
+      "bbox_xyxy": [
+       261.0,
+       427.0,
+       400.0,
+       470.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "실려",
+      "confidence": 0.9996384978294373,
+      "bbox_xyxy": [
+       400.0,
+       426.0,
+       477.0,
+       472.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "오는",
+      "confidence": 0.9999865293502808,
+      "bbox_xyxy": [
+       477.0,
+       428.0,
+       551.0,
+       470.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "선율",
+      "confidence": 0.9998559355735779,
+      "bbox_xyxy": [
+       553.0,
+       427.0,
+       624.0,
+       470.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L600",
+    "index": 4,
+    "text": "일시 2026.9.12.(토)",
+    "conf": 0.9994,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "일시",
+      "confidence": 0.9999285340309143,
+      "bbox_xyxy": [
+       106.0,
+       545.0,
+       166.0,
+       584.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "2026.9.12.(토)",
+      "confidence": 0.9994462728500366,
+      "bbox_xyxy": [
+       206.0,
+       549.0,
+       419.0,
+       584.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L279",
+    "index": 5,
+    "text": "시간 11:00~20:00",
+    "conf": 0.9992,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "시간",
+      "confidence": 0.9999515414237976,
+      "bbox_xyxy": [
+       105.0,
+       607.0,
+       167.0,
+       647.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "11:00~20:00",
+      "confidence": 0.999176561832428,
+      "bbox_xyxy": [
+       209.0,
+       613.0,
+       397.0,
+       644.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L250",
+    "index": 6,
+    "text": "장소 한빛시청 앞 광장",
+    "conf": 0.9618,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "장소",
+      "confidence": 0.9993486404418945,
+      "bbox_xyxy": [
+       106.0,
+       671.0,
+       166.0,
+       706.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "한빛시청 앞 광장",
+      "confidence": 0.9618114829063416,
+      "bbox_xyxy": [
+       208.0,
+       671.0,
+       421.0,
+       706.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L323",
+    "index": 7,
+    "text": "재즈 빅밴드 공연",
+    "conf": 0.962,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "재즈 빅밴드 공연",
+      "confidence": 0.9619863033294678,
+      "bbox_xyxy": [
+       356.0,
+       790.0,
+       528.0,
+       824.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L568",
+    "index": 8,
+    "text": "강변 피크닉존",
+    "conf": 0.995,
+    "records": [
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "강변 피크닉존",
+      "confidence": 0.9949873685836792,
+      "bbox_xyxy": [
+       370.0,
+       850.0,
+       513.0,
+       881.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L319",
+    "index": 9,
+    "text": "버스킹 무대",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "버스킹 무대",
+      "confidence": 0.9993394017219543,
+      "bbox_xyxy": [
+       382.0,
+       907.0,
+       503.0,
+       939.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L911",
+    "index": 10,
+    "text": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626",
+    "conf": 0.9366,
+    "records": [
+     {
+      "id": "padd_rgb_1x_018",
+      "text": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626",
+      "confidence": 0.936616063117981,
+      "bbox_xyxy": [
+       167.0,
+       1191.0,
+       718.0,
+       1218.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제30회 한빛 강변 재즈 페스티벌"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.9.12.(토)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "11:00~20:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "한빛종합운동장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "한빛시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "한빛관광재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "031-000-7626"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "강바람에 실려 오는 선율"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "한빛 강변 재즈 페스티벌"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제30회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.9.12.(토)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "11:00~20:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "한빛종합운동장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "한빛시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "한빛관광재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "031-000-7626"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "강바람에 실려 오는 선율"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_edition": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_time": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_venue": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_host": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_contact": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L536",
+    "L186",
+    "L210",
+    "L953",
+    "L600",
+    "L279",
+    "L250",
+    "L323",
+    "L568",
+    "L319",
+    "L911",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 122,661 bytes, sha256 dfbf216e0321fefb…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 107,988 bytes, sha256 86e3cc5d9542f0b6…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제30회 한빛 강변 재즈 페스티벌'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.9.12.(토)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '11:00~20:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '한빛종합운동장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '한빛시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '한빛관광재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '031-000-7626'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '강바람에 실려 오는 선율'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L536",
+      "description": "2026 제30회"
+     },
+     {
+      "value": "L186",
+      "description": "한빛"
+     },
+     {
+      "value": "L210",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L953",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L600",
+      "description": "일시 2026.9.12.(토)"
+     },
+     {
+      "value": "L279",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L250",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L323",
+      "description": "재즈 빅밴드 공연"
+     },
+     {
+      "value": "L568",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L319",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L911",
+      "description": "주최 한빛시 | 주관 한빛관광재단 | 문의 031-000-7626"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '한빛 강변 재즈 페스티벌'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제30회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.9.12.(토)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '11:00~20:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '한빛종합운동장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '한빛시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '한빛관광재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '031-000-7626'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '강바람에 실려 오는 선율'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

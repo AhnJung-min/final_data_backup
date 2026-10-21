@@ -1,0 +1,181 @@
+{
+ "case_id": "v2-166",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-166.rapi_product_003",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     228.0,
+     75.0
+    ],
+    [
+     252.0,
+     75.0
+    ],
+    [
+     254.0,
+     174.0
+    ],
+    [
+     229.0,
+     175.0
+    ]
+   ],
+   "bbox": [
+    228.0,
+    75.0,
+    254.0,
+    175.0
+   ],
+   "height": 99.51,
+   "small_text": false,
+   "text": "오곡나루축제",
+   "text_key": "오곡나루축제",
+   "ocr_text": "오곡나루축제",
+   "confidence": 0.9926,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "여주 오곡나루축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-166.rapi_product_004",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     247.0,
+     77.0
+    ],
+    [
+     268.0,
+     77.0
+    ],
+    [
+     268.0,
+     114.0
+    ],
+    [
+     247.0,
+     114.0
+    ]
+   ],
+   "bbox": [
+    247.0,
+    77.0,
+    268.0,
+    114.0
+   ],
+   "height": 37.0,
+   "small_text": false,
+   "text": "여주",
+   "text_key": "여주",
+   "ocr_text": "여주",
+   "confidence": 0.91546,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "여주 오곡나루축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-166.rapi_product_008",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     81.0,
+     391.0
+    ],
+    [
+     361.0,
+     391.0
+    ],
+    [
+     361.0,
+     411.0
+    ],
+    [
+     81.0,
+     411.0
+    ]
+   ],
+   "bbox": [
+    81.0,
+    391.0,
+    361.0,
+    411.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026.10.23.금 -10.25.일",
+   "text_key": "20261023금1025일",
+   "ocr_text": "2026.10.23.금-10.25.일|신특사관광지일원",
+   "confidence": 0.97431,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.23.금 -10.25.일",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,399 @@
+{
+ "case_id": "v2-153",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 30,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-153.easy_rgb_2x_001",
+   "case_id": "v2-153",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     137.0,
+     88.0
+    ],
+    [
+     306.0,
+     88.0
+    ],
+    [
+     306.0,
+     112.0
+    ],
+    [
+     137.0,
+     112.0
+    ]
+   ],
+   "bbox": [
+    137.0,
+    88.0,
+    306.0,
+    112.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026 노원 야외도서관",
+   "text_key": "2026노원야외도서관",
+   "ocr_text": "2026 노원 야외도서관",
+   "confidence": 0.9628766350958217,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "organizations.logo",
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 노원 야외도서관 낭만보장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-153.easy_rgb_2x_002",
+   "case_id": "v2-153",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     71.5,
+     103.5
+    ],
+    [
+     368.0,
+     103.5
+    ],
+    [
+     368.0,
+     192.0
+    ],
+    [
+     71.5,
+     192.0
+    ]
+   ],
+   "bbox": [
+    71.5,
+    103.5,
+    368.0,
+    192.0
+   ],
+   "height": 88.5,
+   "small_text": false,
+   "text": "낭만보장",
+   "text_key": "낭만보장",
+   "ocr_text": "낭만보장",
+   "confidence": 0.85151606798172,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 노원 야외도서관 낭만보장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-153.easy_rgb_2x_003",
+   "case_id": "v2-153",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     139.5,
+     189.0
+    ],
+    [
+     300.0,
+     189.0
+    ],
+    [
+     300.0,
+     216.0
+    ],
+    [
+     139.5,
+     216.0
+    ]
+   ],
+   "bbox": [
+    139.5,
+    189.0,
+    300.0,
+    216.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "AI 시대 결국, 사람.",
+   "text_key": "ai시대결국사람",
+   "ocr_text": "AI시대결국,사람",
+   "confidence": 0.9252617955207825,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "AI 시대 결국, 사람.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-153.easy_rgb_2x_004",
+   "case_id": "v2-153",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     111.0,
+     240.0
+    ],
+    [
+     334.0,
+     240.0
+    ],
+    [
+     334.0,
+     266.5
+    ],
+    [
+     111.0,
+     266.5
+    ]
+   ],
+   "bbox": [
+    111.0,
+    240.0,
+    334.0,
+    266.5
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "10. 17.(토) ~ 18.(일)",
+   "text_key": "1017토18일",
+   "ocr_text": "10.17.(토)18.(일)12:00-20:00",
+   "confidence": 0.8732512593269348,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 17.(토) ~ 18.(일)",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-153.easy_rgb_2x_005",
+   "case_id": "v2-153",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     133.0,
+     267.0
+    ],
+    [
+     313.0,
+     267.0
+    ],
+    [
+     313.0,
+     283.0
+    ],
+    [
+     133.0,
+     283.0
+    ]
+   ],
+   "bbox": [
+    133.0,
+    267.0,
+    313.0,
+    283.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "경춘선 숲길 일대(하계2동 주민센터 앞)",
+   "text_key": "경춘선숲길일대하계2동주민센터앞",
+   "ocr_text": "경춘선 술길 일대(하계2동 주민센터 앞)",
+   "confidence": 0.9126200079917908,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0625,
+   "gold_value": "경춘선 숲길 일대(하계2동 주민센터 앞)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-153.easy_rgb_2x_008",
+   "case_id": "v2-153",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     284.0,
+     393.0
+    ],
+    [
+     411.0,
+     393.0
+    ],
+    [
+     411.0,
+     406.0
+    ],
+    [
+     284.0,
+     406.0
+    ]
+   ],
+   "bbox": [
+    284.0,
+    393.0,
+    411.0,
+    406.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "AI시대, 사람을 읽다",
+   "text_key": "ai시대사람을읽다",
+   "ocr_text": "[복론서트]\"AI시대, 사람을 읽다\"",
+   "confidence": 0.8615676164627075,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "AI시대, 사람을 읽다",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-153.easy_rgb_2x_029",
+   "case_id": "v2-153",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_029"
+   },
+   "polygon": [
+    [
+     55.89,
+     365.0
+    ],
+    [
+     127.95,
+     358.61
+    ],
+    [
+     128.61,
+     371.5
+    ],
+    [
+     56.55,
+     377.89
+    ]
+   ],
+   "bbox": [
+    55.89,
+    358.61,
+    128.61,
+    377.89
+   ],
+   "height": 12.91,
+   "small_text": false,
+   "text": "노원북페스티벌",
+   "text_key": "노원북페스티벌",
+   "ocr_text": "노원북테스티벌",
+   "confidence": 0.8004196882247925,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "노원북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

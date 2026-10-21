@@ -1,0 +1,506 @@
+{
+ "case_id": "v2-179",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 431,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-179.padd_rgb_2x_000",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     23.0,
+     25.5
+    ],
+    [
+     60.0,
+     26.5
+    ],
+    [
+     59.5,
+     38.0
+    ],
+    [
+     23.0,
+     36.5
+    ]
+   ],
+   "bbox": [
+    23.0,
+    25.5,
+    60.0,
+    38.0
+   ],
+   "height": 11.26,
+   "small_text": false,
+   "text": "Great.",
+   "text_key": "great",
+   "ocr_text": "Great,",
+   "confidence": 0.9792857766151428,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "Great. Iksan",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_001",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     32.0,
+     35.5
+    ],
+    [
+     64.5,
+     37.0
+    ],
+    [
+     64.0,
+     46.0
+    ],
+    [
+     32.0,
+     44.5
+    ]
+   ],
+   "bbox": [
+    32.0,
+    35.5,
+    64.5,
+    46.0
+   ],
+   "height": 9.01,
+   "small_text": true,
+   "text": "Iksan",
+   "text_key": "iksan",
+   "ocr_text": "IKsan",
+   "confidence": 0.8813759684562683,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "Great. Iksan",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_002",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     180.5,
+     105.5
+    ],
+    [
+     241.0,
+     105.5
+    ],
+    [
+     241.0,
+     127.5
+    ],
+    [
+     180.5,
+     127.5
+    ]
+   ],
+   "bbox": [
+    180.5,
+    105.5,
+    241.0,
+    127.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "제23회",
+   "text_key": "제23회",
+   "ocr_text": "제23회",
+   "confidence": 0.9994287490844727,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "제23회 익산 천만송이 국화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_003",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     81.0,
+     124.5
+    ],
+    [
+     331.5,
+     123.5
+    ],
+    [
+     332.0,
+     204.5
+    ],
+    [
+     81.5,
+     205.5
+    ]
+   ],
+   "bbox": [
+    81.0,
+    123.5,
+    332.0,
+    205.5
+   ],
+   "height": 81.0,
+   "small_text": false,
+   "text": "익산 천만송이",
+   "text_key": "익산천만송이",
+   "ocr_text": "일싸천만송이",
+   "confidence": 0.8755859732627869,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "익산 천만송이 국화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_004",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     63.0,
+     179.0
+    ],
+    [
+     350.0,
+     173.5
+    ],
+    [
+     352.5,
+     299.5
+    ],
+    [
+     65.5,
+     304.5
+    ]
+   ],
+   "bbox": [
+    63.0,
+    173.5,
+    352.5,
+    304.5
+   ],
+   "height": 125.77,
+   "small_text": false,
+   "text": "국화축제",
+   "text_key": "국화축제",
+   "ocr_text": "국화축제",
+   "confidence": 0.9913670420646667,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "익산 천만송이 국화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_005",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     78.5,
+     300.0
+    ],
+    [
+     348.0,
+     299.0
+    ],
+    [
+     348.0,
+     333.0
+    ],
+    [
+     78.5,
+     334.0
+    ]
+   ],
+   "bbox": [
+    78.5,
+    299.0,
+    348.0,
+    334.0
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "2026.10.23 금 – 11.1 일 (10일간)",
+   "text_key": "20261023금111일10일간",
+   "ocr_text": "2026.10.23②-11.1②(10일간)",
+   "confidence": 0.9219957590103149,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1176,
+   "gold_value": "2026.10.23 금 – 11.1 일 (10일간)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_006",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     147.0,
+     341.5
+    ],
+    [
+     282.0,
+     341.5
+    ],
+    [
+     282.0,
+     365.5
+    ],
+    [
+     147.0,
+     365.5
+    ]
+   ],
+   "bbox": [
+    147.0,
+    341.5,
+    282.0,
+    365.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "익산중앙체육공원",
+   "text_key": "익산중앙체육공원",
+   "ocr_text": "익산중앙체육공원",
+   "confidence": 0.9959089756011963,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "익산중앙체육공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_007",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     238.0,
+     569.5
+    ],
+    [
+     406.0,
+     570.0
+    ],
+    [
+     406.0,
+     582.5
+    ],
+    [
+     238.0,
+     582.0
+    ]
+   ],
+   "bbox": [
+    238.0,
+    569.5,
+    406.0,
+    582.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "익산시농업기술센터",
+   "text_key": "익산시농업기술센터",
+   "ocr_text": "1주최의산시 미 주관의산시농업기술센터",
+   "confidence": 0.8262913823127747,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "익산시농업기술센터",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-179.padd_rgb_2x_008",
+   "case_id": "v2-179",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     241.0,
+     590.0
+    ],
+    [
+     347.5,
+     590.0
+    ],
+    [
+     347.5,
+     600.0
+    ],
+    [
+     241.0,
+     600.0
+    ]
+   ],
+   "bbox": [
+    241.0,
+    590.0,
+    347.5,
+    600.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "행사운영비 11.16억(시비 100%)",
+   "text_key": "행사운영비1116억시비100",
+   "ocr_text": "형사운영비1116억(시비100%)",
+   "confidence": 0.92781001329422,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0667,
+   "gold_value": "행사운영비 11.16억(시비 100%)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,1287 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 32,
+  "by_probe": {
+   "a": 8,
+   "b": 8,
+   "c": 8,
+   "d": 8
+  },
+  "options": 104,
+  "image_tokens": 3281,
+  "text_tokens": 5367,
+  "input_tokens": 8648,
+  "cost_usd": 0.0008648
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S24",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S24.png",
+    "sha256": "d5b814ea745b17a8a9b7dd40fae07a88573b1d35bffe0f37f331a72eaca133fb",
+    "bytes": 116698,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S24.png",
+    "sha256": "39736b4341f91d545a6de92a108f73e8a7ce33c7df152b16f7564ecda97672f4",
+    "bytes": 51882,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "누리 국화향 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "누리 국화향 축제"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.9.13.(일) ~ 9.16.(수)",
+     "points": [
+      [
+       2026,
+       9,
+       13,
+       "일"
+      ],
+      [
+       2026,
+       9,
+       16,
+       "수"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.9.13.(일) ~ 9.16.(수)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "11:00~20:00"
+    },
+    "doc_raw": "11:00~20:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "누리군청 앞 광장"
+    },
+    "doc_raw": "누리군청 앞 광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "누리군"
+    },
+    "doc_raw": "누리군"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "누리문화재단"
+    },
+    "doc_raw": "누리문화재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "043-000-7449"
+    },
+    "doc_raw": "043-000-7449"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "가을 향기 가득한 하루"
+    },
+    "doc_raw": "가을 향기 가득한 하루"
+   }
+  },
+  "rows": [
+   {
+    "value": "L251",
+    "index": 0,
+    "text": "2026",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026",
+      "confidence": 0.9995914697647095,
+      "bbox_xyxy": [
+       400.0,
+       74.0,
+       485.0,
+       108.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L262",
+    "index": 1,
+    "text": "누리 국화향 축제",
+    "conf": 0.9991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "누리",
+      "confidence": 0.9996751546859741,
+      "bbox_xyxy": [
+       56.0,
+       131.0,
+       267.0,
+       259.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "국화향",
+      "confidence": 0.9999677538871765,
+      "bbox_xyxy": [
+       286.0,
+       130.0,
+       600.0,
+       258.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "축제",
+      "confidence": 0.9991089701652527,
+      "bbox_xyxy": [
+       611.0,
+       128.0,
+       825.0,
+       259.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L391",
+    "index": 2,
+    "text": "가을 향기 가득한 하루",
+    "conf": 0.9991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "가을",
+      "confidence": 0.9995002746582031,
+      "bbox_xyxy": [
+       288.0,
+       277.0,
+       358.0,
+       320.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "향기",
+      "confidence": 0.9999848008155823,
+      "bbox_xyxy": [
+       359.0,
+       278.0,
+       428.0,
+       318.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "가득한",
+      "confidence": 0.9991133809089661,
+      "bbox_xyxy": [
+       429.0,
+       280.0,
+       528.0,
+       317.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "하루",
+      "confidence": 0.9999217987060547,
+      "bbox_xyxy": [
+       528.0,
+       279.0,
+       595.0,
+       318.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L233",
+    "index": 3,
+    "text": "일시 2026.9.13.(일) ~9.16.(수)",
+    "conf": 0.9773,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "일시",
+      "confidence": 0.9999268054962158,
+      "bbox_xyxy": [
+       87.0,
+       814.0,
+       144.0,
+       850.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "2026.9.13.(일) ~9.16.(수)",
+      "confidence": 0.9773410558700562,
+      "bbox_xyxy": [
+       195.0,
+       815.0,
+       580.0,
+       851.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L935",
+    "index": 4,
+    "text": "시간 11:00~20:00",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "시간",
+      "confidence": 0.9999617338180542,
+      "bbox_xyxy": [
+       85.0,
+       887.0,
+       146.0,
+       926.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "11:00~20:00",
+      "confidence": 0.998972475528717,
+      "bbox_xyxy": [
+       198.0,
+       891.0,
+       395.0,
+       925.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L453",
+    "index": 5,
+    "text": "장소 누리군청 앞 광장",
+    "conf": 0.9666,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "장소",
+      "confidence": 0.9994601011276245,
+      "bbox_xyxy": [
+       85.0,
+       961.0,
+       147.0,
+       1000.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "누리군청 앞 광장",
+      "confidence": 0.9666066765785217,
+      "bbox_xyxy": [
+       199.0,
+       967.0,
+       417.0,
+       998.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L301",
+    "index": 6,
+    "text": "국화 분재 전시| 꽃차 시음 | 가을 음악회",
+    "conf": 0.9489,
+    "records": [
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "국화 분재 전시| 꽃차 시음 | 가을 음악회",
+      "confidence": 0.9488849639892578,
+      "bbox_xyxy": [
+       242.0,
+       1054.0,
+       642.0,
+       1078.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L224",
+    "index": 7,
+    "text": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449",
+    "conf": 0.9495,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449",
+      "confidence": 0.9494807720184326,
+      "bbox_xyxy": [
+       169.0,
+       1198.0,
+       716.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "누리 국화향 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.9.13.(일) ~ 9.16.(수)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "11:00~20:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "누리군청 앞 광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "누리문화재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "043-000-7449"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "가을 향기 가득한 하루"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "누리 국화향 축제"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.9.13.(일) ~ 9.16.(수)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "11:00~20:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "누리군청 앞 광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "누리문화재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "043-000-7449"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "가을 향기 가득한 하루"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ],
+   "b_line_time": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ],
+   "b_line_venue": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ],
+   "b_line_host": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ],
+   "b_line_contact": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L251",
+    "L262",
+    "L391",
+    "L233",
+    "L935",
+    "L453",
+    "L301",
+    "L224",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 116,698 bytes, sha256 d5b814ea745b17a8…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 51,882 bytes, sha256 39736b4341f91d54…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '누리 국화향 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.9.13.(일) ~ 9.16.(수)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '11:00~20:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '누리군청 앞 광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '누리군'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '누리문화재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '043-000-7449'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '가을 향기 가득한 하루'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "2026"
+     },
+     {
+      "value": "L262",
+      "description": "누리 국화향 축제"
+     },
+     {
+      "value": "L391",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L233",
+      "description": "일시 2026.9.13.(일) ~9.16.(수)"
+     },
+     {
+      "value": "L935",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L453",
+      "description": "장소 누리군청 앞 광장"
+     },
+     {
+      "value": "L301",
+      "description": "국화 분재 전시| 꽃차 시음 | 가을 음악회"
+     },
+     {
+      "value": "L224",
+      "description": "주최 누리군 ㅣ 주관 누리문화재단 ㅣ 문의 043-000-7449"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '누리 국화향 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.9.13.(일) ~ 9.16.(수)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '11:00~20:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '누리군청 앞 광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '누리군'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '누리문화재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '043-000-7449'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '가을 향기 가득한 하루'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

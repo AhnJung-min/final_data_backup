@@ -1,0 +1,341 @@
+{
+ "case_id": "v2-197",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-197.padd_rgb_1x_004",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     92.0,
+     260.0
+    ],
+    [
+     360.0,
+     264.0
+    ],
+    [
+     359.0,
+     294.0
+    ],
+    [
+     91.0,
+     291.0
+    ]
+   ],
+   "bbox": [
+    91.0,
+    260.0,
+    360.0,
+    294.0
+   ],
+   "height": 30.52,
+   "small_text": false,
+   "text": "2026.11.07.(토) ~ 08.(일)",
+   "text_key": "20261107토08일",
+   "ocr_text": "2026.11.07.(토)~08.(일)",
+   "confidence": 0.9603079557418823,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.07.(토) ~ 08.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_1x_005",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     92.0,
+     298.0
+    ],
+    [
+     359.0,
+     300.0
+    ],
+    [
+     358.0,
+     323.0
+    ],
+    [
+     91.0,
+     321.0
+    ]
+   ],
+   "bbox": [
+    91.0,
+    298.0,
+    359.0,
+    323.0
+   ],
+   "height": 23.02,
+   "small_text": false,
+   "text": "의좋은 형제 공원 일원 (충남 예산군 대흥면)",
+   "text_key": "의좋은형제공원일원충남예산군대흥면",
+   "ocr_text": "의종은 형제 공원 일원[충남 예산군 대)",
+   "confidence": 0.8186720013618469,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1765,
+   "gold_value": "의좋은 형제 공원 일원 (충남 예산군 대흥면)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_1x_010",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     210.0,
+     354.0
+    ],
+    [
+     275.0,
+     354.0
+    ],
+    [
+     275.0,
+     364.0
+    ],
+    [
+     210.0,
+     364.0
+    ]
+   ],
+   "bbox": [
+    210.0,
+    354.0,
+    275.0,
+    364.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "황금쌀을 찾아라",
+   "text_key": "황금쌀을찾아라",
+   "ocr_text": "1광금쌀을 찾아라",
+   "confidence": 0.6099449992179871,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "황금쌀을 찾아라",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_1x_012",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     309.0,
+     585.0
+    ],
+    [
+     434.0,
+     585.0
+    ],
+    [
+     434.0,
+     598.0
+    ],
+    [
+     309.0,
+     598.0
+    ]
+   ],
+   "bbox": [
+    309.0,
+    585.0,
+    434.0,
+    598.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "총 예산 : 200,000,000원(전액군비)",
+   "text_key": "총예산200000000원전액군비",
+   "ocr_text": "예산:200,000,000원(전액군비)",
+   "confidence": 0.9632723927497864,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0588,
+   "gold_value": "총 예산 : 200,000,000원(전액군비)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_1x_016",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     267.0,
+     609.0
+    ],
+    [
+     295.0,
+     609.0
+    ],
+    [
+     295.0,
+     622.0
+    ],
+    [
+     267.0,
+     622.0
+    ]
+   ],
+   "bbox": [
+    267.0,
+    609.0,
+    295.0,
+    622.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "예산군",
+   "text_key": "예산군",
+   "ocr_text": "예산군",
+   "confidence": 0.8859002590179443,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예산군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_1x_018",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     374.0,
+     610.0
+    ],
+    [
+     432.0,
+     610.0
+    ],
+    [
+     432.0,
+     620.0
+    ],
+    [
+     374.0,
+     620.0
+    ]
+   ],
+   "bbox": [
+    374.0,
+    610.0,
+    432.0,
+    620.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "041) 331 - 0619",
+   "text_key": "0413310619",
+   "ocr_text": "0411331-0615",
+   "confidence": 0.9390895366668701,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "041) 331 - 0619",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

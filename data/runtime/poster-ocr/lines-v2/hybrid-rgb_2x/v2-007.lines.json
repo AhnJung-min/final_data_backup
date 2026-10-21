@@ -1,0 +1,344 @@
+{
+ "case_id": "v2-007",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-007.easy_rgb_2x_000",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     168.5,
+     14.5
+    ],
+    [
+     273.0,
+     14.5
+    ],
+    [
+     273.0,
+     50.5
+    ],
+    [
+     168.5,
+     50.5
+    ]
+   ],
+   "bbox": [
+    168.5,
+    14.5,
+    273.0,
+    50.5
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "제12회",
+   "text_key": "제12회",
+   "ocr_text": "제12회",
+   "confidence": 0.8060523271560669,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "제12회 무안황토 갯벌축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.easy_rgb_2x_002",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     33.0,
+     42.0
+    ],
+    [
+     340.0,
+     42.0
+    ],
+    [
+     340.0,
+     178.0
+    ],
+    [
+     33.0,
+     178.0
+    ]
+   ],
+   "bbox": [
+    33.0,
+    42.0,
+    340.0,
+    178.0
+   ],
+   "height": 136.0,
+   "small_text": false,
+   "text": "무안황",
+   "text_key": "무안황",
+   "ocr_text": "무안황도",
+   "confidence": 0.8845654726028442,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "무안황토 갯벌축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.easy_rgb_2x_004",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     50.0,
+     142.0
+    ],
+    [
+     403.0,
+     142.0
+    ],
+    [
+     403.0,
+     277.0
+    ],
+    [
+     50.0,
+     277.0
+    ]
+   ],
+   "bbox": [
+    50.0,
+    142.0,
+    403.0,
+    277.0
+   ],
+   "height": 135.0,
+   "small_text": false,
+   "text": "갯벌축제",
+   "text_key": "갯벌축제",
+   "ocr_text": "것벌축제",
+   "confidence": 0.8120009899139404,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "무안황토 갯벌축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.easy_rgb_2x_005",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     81.5,
+     279.0
+    ],
+    [
+     360.5,
+     279.0
+    ],
+    [
+     360.5,
+     299.0
+    ],
+    [
+     81.5,
+     299.0
+    ]
+   ],
+   "bbox": [
+    81.5,
+    279.0,
+    360.5,
+    299.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "text_key": "무안갯벌유네스코세계자연유산등재기념식",
+   "ocr_text": "with 무안것번 유네스코 세계자연유산 동재 기념식",
+   "confidence": 0.4025861096477013,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1579,
+   "gold_value": "무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.easy_rgb_2x_006",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     76.0,
+     303.0
+    ],
+    [
+     368.0,
+     303.0
+    ],
+    [
+     368.0,
+     327.0
+    ],
+    [
+     76.0,
+     327.0
+    ]
+   ],
+   "bbox": [
+    76.0,
+    303.0,
+    368.0,
+    327.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026. 8. 29.(토) ~ 9. 6.(일)",
+   "text_key": "2026829토96일",
+   "ocr_text": "2026.8.29.(토)~9.6.(일)주말집중운영",
+   "confidence": 0.9460444450378418,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 8. 29.(토) ~ 9. 6.(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.easy_rgb_2x_007",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     132.5,
+     325.5
+    ],
+    [
+     310.0,
+     325.5
+    ],
+    [
+     310.0,
+     351.0
+    ],
+    [
+     132.5,
+     351.0
+    ]
+   ],
+   "bbox": [
+    132.5,
+    325.5,
+    310.0,
+    351.0
+   ],
+   "height": 25.5,
+   "small_text": false,
+   "text": "무안황토갯벌랜드 일원",
+   "text_key": "무안황토갯벌랜드일원",
+   "ocr_text": "무안황도것벌랜드일원",
+   "confidence": 0.7949075698852539,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "무안황토갯벌랜드 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

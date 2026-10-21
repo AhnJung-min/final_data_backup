@@ -1,0 +1,233 @@
+{
+ "case_id": "r2-015",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-015.padd_rgb_1x_000",
+   "case_id": "r2-015",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     16.0,
+     16.0
+    ],
+    [
+     306.0,
+     19.0
+    ],
+    [
+     305.0,
+     92.0
+    ],
+    [
+     16.0,
+     90.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    16.0,
+    306.0,
+    92.0
+   ],
+   "height": 73.5,
+   "small_text": false,
+   "text": "언제나 청춘!",
+   "text_key": "언제나청춘",
+   "ocr_text": "언제나 청춘!",
+   "confidence": 0.9650236368179321,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "언제나 청춘!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-015.padd_rgb_1x_001",
+   "case_id": "r2-015",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     192.0,
+     99.0
+    ],
+    [
+     297.0,
+     157.0
+    ],
+    [
+     272.0,
+     201.0
+    ],
+    [
+     167.0,
+     143.0
+    ]
+   ],
+   "bbox": [
+    167.0,
+    99.0,
+    297.0,
+    201.0
+   ],
+   "height": 50.61,
+   "small_text": false,
+   "text": "제44회",
+   "text_key": "제44회",
+   "ocr_text": "제44S",
+   "confidence": 0.7435390949249268,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제44회",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-015.padd_rgb_1x_005",
+   "case_id": "r2-015",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     14.0,
+     539.0
+    ],
+    [
+     40.0,
+     539.0
+    ],
+    [
+     40.0,
+     554.0
+    ],
+    [
+     14.0,
+     554.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    539.0,
+    40.0,
+    554.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9873862862586975,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 10.2 금 ~10.11 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-015.padd_rgb_1x_006",
+   "case_id": "r2-015",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     12.0,
+     550.0
+    ],
+    [
+     152.0,
+     553.0
+    ],
+    [
+     152.0,
+     576.0
+    ],
+    [
+     12.0,
+     574.0
+    ]
+   ],
+   "bbox": [
+    12.0,
+    550.0,
+    152.0,
+    576.0
+   ],
+   "height": 23.5,
+   "small_text": false,
+   "text": "10.2 금 ~10.11 일",
+   "text_key": "102금1011일",
+   "ocr_text": "10.2금~10.111일",
+   "confidence": 0.9476863145828247,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 10.2 금 ~10.11 일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

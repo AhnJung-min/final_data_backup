@@ -1,0 +1,180 @@
+{
+ "case_id": "v2-002",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-002.easy_rgb_2x_000",
+   "case_id": "v2-002",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     44.5,
+     47.5
+    ],
+    [
+     241.5,
+     47.5
+    ],
+    [
+     241.5,
+     80.5
+    ],
+    [
+     44.5,
+     80.5
+    ]
+   ],
+   "bbox": [
+    44.5,
+    47.5,
+    241.5,
+    80.5
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "2026 선명상 축제",
+   "text_key": "2026선명상축제",
+   "ocr_text": "2026 선명상 축제",
+   "confidence": 0.9479490518569946,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 선명상 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-002.easy_rgb_2x_007",
+   "case_id": "v2-002",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     62.0,
+     171.0
+    ],
+    [
+     102.0,
+     171.0
+    ],
+    [
+     102.0,
+     184.0
+    ],
+    [
+     62.0,
+     184.0
+    ]
+   ],
+   "bbox": [
+    62.0,
+    171.0,
+    102.0,
+    184.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "4일(Sat)",
+   "text_key": "4일sat",
+   "ocr_text": "4일(Sat)",
+   "confidence": 0.7884330749511719,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2143,
+   "gold_value": "4월 4일(Sat) - 4월 5일(Sun)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-002.easy_rgb_2x_008",
+   "case_id": "v2-002",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     106.0,
+     171.0
+    ],
+    [
+     162.0,
+     171.0
+    ],
+    [
+     162.0,
+     184.0
+    ],
+    [
+     106.0,
+     184.0
+    ]
+   ],
+   "bbox": [
+    106.0,
+    171.0,
+    162.0,
+    184.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "4월 5일(Sun)",
+   "text_key": "4월5일sun",
+   "ocr_text": "4월59(Sun)",
+   "confidence": 0.8599202036857605,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2143,
+   "gold_value": "4월 4일(Sat) - 4월 5일(Sun)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "case_id": "v2-137",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-137.easy_rgb_2x_006",
+   "case_id": "v2-137",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     243.0,
+     309.5
+    ],
+    [
+     394.0,
+     309.5
+    ],
+    [
+     394.0,
+     323.0
+    ],
+    [
+     243.0,
+     323.0
+    ]
+   ],
+   "bbox": [
+    243.0,
+    309.5,
+    394.0,
+    323.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "2026.10.18.(일) 15:00~20:30",
+   "text_key": "20261018일15002030",
+   "ocr_text": "의정 2026.10.18 (인; 15 00-20330",
+   "confidence": 0.31063320389910015,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1176,
+   "gold_value": "2026.10.18.(일) 15:00~20:30",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-137.easy_rgb_2x_007",
+   "case_id": "v2-137",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     257.5,
+     325.5
+    ],
+    [
+     292.0,
+     325.5
+    ],
+    [
+     292.0,
+     339.5
+    ],
+    [
+     257.5,
+     339.5
+    ]
+   ],
+   "bbox": [
+    257.5,
+    325.5,
+    292.0,
+    339.5
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "청소년부",
+   "text_key": "청소년부",
+   "ocr_text": "청소년부",
+   "confidence": 0.9624118208885193,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "청소년부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-137.easy_rgb_2x_009",
+   "case_id": "v2-137",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     259.0,
+     360.0
+    ],
+    [
+     285.0,
+     360.0
+    ],
+    [
+     285.0,
+     373.0
+    ],
+    [
+     259.0,
+     373.0
+    ]
+   ],
+   "bbox": [
+    259.0,
+    360.0,
+    285.0,
+    373.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "성인부",
+   "text_key": "성인부",
+   "ocr_text": "성인부",
+   "confidence": 0.9006649527410406,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성인부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,397 @@
+{
+ "case_id": "v2-139",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-139.padd_rgb_2x_001",
+   "case_id": "v2-139",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     177.5,
+     148.5
+    ],
+    [
+     263.5,
+     148.5
+    ],
+    [
+     263.5,
+     179.5
+    ],
+    [
+     177.5,
+     179.5
+    ]
+   ],
+   "bbox": [
+    177.5,
+    148.5,
+    263.5,
+    179.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9995095729827881,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 영덕 웰니스페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-139.padd_rgb_2x_002",
+   "case_id": "v2-139",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     63.5,
+     179.0
+    ],
+    [
+     167.0,
+     179.0
+    ],
+    [
+     167.0,
+     227.0
+    ],
+    [
+     63.5,
+     227.0
+    ]
+   ],
+   "bbox": [
+    63.5,
+    179.0,
+    167.0,
+    227.0
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "영덕",
+   "text_key": "영덕",
+   "ocr_text": "영덕을",
+   "confidence": 0.9905457496643066,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "영덕 웰니스페스타",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-139.padd_rgb_2x_003",
+   "case_id": "v2-139",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     147.0,
+     181.5
+    ],
+    [
+     376.0,
+     181.5
+    ],
+    [
+     376.0,
+     223.0
+    ],
+    [
+     147.0,
+     223.0
+    ]
+   ],
+   "bbox": [
+    147.0,
+    181.5,
+    376.0,
+    223.0
+   ],
+   "height": 41.5,
+   "small_text": false,
+   "text": "웰니스페스타",
+   "text_key": "웰니스페스타",
+   "ocr_text": "웰니스페스타",
+   "confidence": 0.9990935325622559,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "영덕 웰니스페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-139.padd_rgb_2x_004",
+   "case_id": "v2-139",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     117.5,
+     234.0
+    ],
+    [
+     326.5,
+     235.0
+    ],
+    [
+     326.0,
+     261.0
+    ],
+    [
+     117.0,
+     259.5
+    ]
+   ],
+   "bbox": [
+    117.0,
+    234.0,
+    326.5,
+    261.0
+   ],
+   "height": 25.75,
+   "small_text": false,
+   "text": "WELLNESSpia영덕",
+   "text_key": "wellnesspia영덕",
+   "ocr_text": "WELLNESSpia영덕",
+   "confidence": 0.98447585105896,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "WELLNESSpia영덕",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-139.padd_rgb_2x_005",
+   "case_id": "v2-139",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     133.0,
+     260.5
+    ],
+    [
+     308.5,
+     260.5
+    ],
+    [
+     308.5,
+     278.0
+    ],
+    [
+     133.0,
+     278.0
+    ]
+   ],
+   "bbox": [
+    133.0,
+    260.5,
+    308.5,
+    278.0
+   ],
+   "height": 17.5,
+   "small_text": false,
+   "text": "가장 완벽한 휴식을 만나다.",
+   "text_key": "가장완벽한휴식을만나다",
+   "ocr_text": "가장 완벽한 휴식을 만나다.",
+   "confidence": 0.9595789313316345,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "가장 완벽한 휴식을 만나다.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-139.padd_rgb_2x_006",
+   "case_id": "v2-139",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     129.5,
+     302.0
+    ],
+    [
+     313.0,
+     303.0
+    ],
+    [
+     313.0,
+     325.0
+    ],
+    [
+     129.5,
+     324.0
+    ]
+   ],
+   "bbox": [
+    129.5,
+    302.0,
+    313.0,
+    325.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "10.16.금 - 10.18.일",
+   "text_key": "1016금1018일",
+   "ocr_text": "10.16.금-10.18.일",
+   "confidence": 0.9972334504127502,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.16.금 - 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-139.padd_rgb_2x_007",
+   "case_id": "v2-139",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     136.0,
+     328.0
+    ],
+    [
+     307.0,
+     328.0
+    ],
+    [
+     307.0,
+     345.0
+    ],
+    [
+     136.0,
+     345.0
+    ]
+   ],
+   "bbox": [
+    136.0,
+    328.0,
+    307.0,
+    345.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "영덕고래불국민야영장 일원",
+   "text_key": "영덕고래불국민야영장일원",
+   "ocr_text": "영덕고래불국민야영장 일원",
+   "confidence": 0.9987929463386536,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영덕고래불국민야영장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

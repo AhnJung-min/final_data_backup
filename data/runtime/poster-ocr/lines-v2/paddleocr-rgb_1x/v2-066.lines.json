@@ -1,0 +1,399 @@
+{
+ "case_id": "v2-066",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-066.padd_rgb_1x_000",
+   "case_id": "v2-066",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     17.0,
+     465.0
+    ],
+    [
+     100.0,
+     465.0
+    ],
+    [
+     100.0,
+     501.0
+    ],
+    [
+     17.0,
+     501.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    465.0,
+    100.0,
+    501.0
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9995255470275879,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 안동국제 탈춤페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-066.padd_rgb_1x_001",
+   "case_id": "v2-066",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     15.0,
+     500.0
+    ],
+    [
+     151.0,
+     496.0
+    ],
+    [
+     152.0,
+     541.0
+    ],
+    [
+     16.0,
+     545.0
+    ]
+   ],
+   "bbox": [
+    15.0,
+    496.0,
+    152.0,
+    545.0
+   ],
+   "height": 45.01,
+   "small_text": false,
+   "text": "안동국제",
+   "text_key": "안동국제",
+   "ocr_text": "안동국제",
+   "confidence": 0.9996230006217957,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "안동국제 탈춤페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-066.padd_rgb_1x_002",
+   "case_id": "v2-066",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     294.0,
+     511.0
+    ],
+    [
+     420.0,
+     511.0
+    ],
+    [
+     420.0,
+     535.0
+    ],
+    [
+     294.0,
+     535.0
+    ]
+   ],
+   "bbox": [
+    294.0,
+    511.0,
+    420.0,
+    535.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "중앙선 1942 안동역",
+   "text_key": "중앙선1942안동역",
+   "ocr_text": "중앙선1942 안동역,",
+   "confidence": 0.9548671245574951,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "중앙선 1942 안동역",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-066.padd_rgb_1x_003",
+   "case_id": "v2-066",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     16.0,
+     541.0
+    ],
+    [
+     205.0,
+     539.0
+    ],
+    [
+     206.0,
+     583.0
+    ],
+    [
+     16.0,
+     585.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    539.0,
+    206.0,
+    585.0
+   ],
+   "height": 44.01,
+   "small_text": false,
+   "text": "탈춤페스티벌",
+   "text_key": "탈춤페스티벌",
+   "ocr_text": "탈춤페스티벌",
+   "confidence": 0.9852290749549866,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "안동국제 탈춤페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-066.padd_rgb_1x_004",
+   "case_id": "v2-066",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     289.0,
+     537.0
+    ],
+    [
+     420.0,
+     537.0
+    ],
+    [
+     420.0,
+     556.0
+    ],
+    [
+     289.0,
+     556.0
+    ]
+   ],
+   "bbox": [
+    289.0,
+    537.0,
+    420.0,
+    556.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "원도심, 탈춤공원 일원",
+   "text_key": "원도심탈춤공원일원",
+   "ocr_text": "원도심탈춤공원일원",
+   "confidence": 0.9826527833938599,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "중앙선 1942 안동역, 원도심, 탈춤공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-066.padd_rgb_1x_005",
+   "case_id": "v2-066",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     235.0,
+     558.0
+    ],
+    [
+     418.0,
+     559.0
+    ],
+    [
+     418.0,
+     580.0
+    ],
+    [
+     235.0,
+     579.0
+    ]
+   ],
+   "bbox": [
+    235.0,
+    558.0,
+    418.0,
+    580.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "2026. 9. 24 (목) - 10.4 (일)",
+   "text_key": "2026924목104일",
+   "ocr_text": "2026.9. 24 (목) = 10.4 (일)",
+   "confidence": 0.9076586365699768,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 24 (목) - 10.4 (일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-066.padd_rgb_1x_006",
+   "case_id": "v2-066",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     72.0,
+     599.0
+    ],
+    [
+     125.0,
+     599.0
+    ],
+    [
+     125.0,
+     608.0
+    ],
+    [
+     72.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    72.0,
+    599.0,
+    125.0,
+    608.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "한국정신문화재단",
+   "text_key": "한국정신문화재단",
+   "ocr_text": "1국정신문화재단",
+   "confidence": 0.9107615947723389,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "한국정신문화재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

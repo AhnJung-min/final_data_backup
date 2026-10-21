@@ -1,0 +1,234 @@
+{
+ "case_id": "r2-020",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 438,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-020.padd_rgb_1x_008",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     20.0,
+     297.0
+    ],
+    [
+     214.0,
+     297.0
+    ],
+    [
+     214.0,
+     317.0
+    ],
+    [
+     20.0,
+     317.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    297.0,
+    214.0,
+    317.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026.10.9(금)~10.11(일)",
+   "text_key": "2026109금1011일",
+   "ocr_text": "2026.10.9(금)~10.11(일)",
+   "confidence": 0.973198652267456,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.9(금)~10.11(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-020.padd_rgb_1x_009",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     37.0,
+     321.0
+    ],
+    [
+     199.0,
+     321.0
+    ],
+    [
+     199.0,
+     338.0
+    ],
+    [
+     37.0,
+     338.0
+    ]
+   ],
+   "bbox": [
+    37.0,
+    321.0,
+    199.0,
+    338.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "광한루원 일원 및 원도심 연계",
+   "text_key": "광한루원일원및원도심연계",
+   "ocr_text": "광한루원일원및원도심연계",
+   "confidence": 0.9879834651947021,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광한루원 일원 및 원도심 연계",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-020.padd_rgb_1x_010",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     64.0,
+     350.0
+    ],
+    [
+     185.0,
+     349.0
+    ],
+    [
+     185.0,
+     362.0
+    ],
+    [
+     65.0,
+     364.0
+    ]
+   ],
+   "bbox": [
+    64.0,
+    349.0,
+    185.0,
+    364.0
+   ],
+   "height": 13.52,
+   "small_text": false,
+   "text": "흥부제전위원회",
+   "text_key": "흥부제전위원회",
+   "ocr_text": "©님원시때총부제전위원회",
+   "confidence": 0.7765963077545166,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "흥부제전위원회",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-020.padd_rgb_1x_011",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     81.0,
+     365.0
+    ],
+    [
+     140.0,
+     365.0
+    ],
+    [
+     140.0,
+     379.0
+    ],
+    [
+     81.0,
+     379.0
+    ]
+   ],
+   "bbox": [
+    81.0,
+    365.0,
+    140.0,
+    379.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "전북특별자치도",
+   "text_key": "전북특별자치도",
+   "ocr_text": "전북특별지치도",
+   "confidence": 0.8544588088989258,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "전북특별자치도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

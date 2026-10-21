@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-155",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-155.rapi_product_001",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     135.0,
+     67.0
+    ],
+    [
+     312.0,
+     67.0
+    ],
+    [
+     312.0,
+     137.0
+    ],
+    [
+     135.0,
+     137.0
+    ]
+   ],
+   "bbox": [
+    135.0,
+    67.0,
+    312.0,
+    137.0
+   ],
+   "height": 70.0,
+   "small_text": false,
+   "text": "제10회",
+   "text_key": "제10회",
+   "ocr_text": "제10회",
+   "confidence": 0.99882,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제10회 전포커피축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.rapi_product_002",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     34.0,
+     124.0
+    ],
+    [
+     414.0,
+     125.0
+    ],
+    [
+     414.0,
+     221.0
+    ],
+    [
+     34.0,
+     220.0
+    ]
+   ],
+   "bbox": [
+    34.0,
+    124.0,
+    414.0,
+    221.0
+   ],
+   "height": 96.0,
+   "small_text": false,
+   "text": "전포커피축제",
+   "text_key": "전포커피축제",
+   "ocr_text": "전포커피축제",
+   "confidence": 0.8957,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "전포커피축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.rapi_product_003",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     82.0,
+     213.0
+    ],
+    [
+     239.0,
+     209.0
+    ],
+    [
+     240.0,
+     240.0
+    ],
+    [
+     82.0,
+     243.0
+    ]
+   ],
+   "bbox": [
+    82.0,
+    209.0,
+    240.0,
+    243.0
+   ],
+   "height": 30.51,
+   "small_text": false,
+   "text": "2026. 10. 17. Sat",
+   "text_key": "20261017sat",
+   "ocr_text": "2026.10.17.Sat",
+   "confidence": 0.99122,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.rapi_product_004",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     232.0,
+     212.0
+    ],
+    [
+     323.0,
+     212.0
+    ],
+    [
+     323.0,
+     240.0
+    ],
+    [
+     232.0,
+     240.0
+    ]
+   ],
+   "bbox": [
+    232.0,
+    212.0,
+    323.0,
+    240.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "- 10. 18.",
+   "text_key": "1018",
+   "ocr_text": "-10.18.",
+   "confidence": 0.99297,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.rapi_product_005",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     326.0,
+     214.0
+    ],
+    [
+     360.0,
+     214.0
+    ],
+    [
+     360.0,
+     232.0
+    ],
+    [
+     326.0,
+     232.0
+    ]
+   ],
+   "bbox": [
+    326.0,
+    214.0,
+    360.0,
+    232.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "Sun",
+   "text_key": "sun",
+   "ocr_text": "Sun",
+   "confidence": 0.98732,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.rapi_product_006",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     113.0,
+     242.0
+    ],
+    [
+     331.0,
+     242.0
+    ],
+    [
+     331.0,
+     260.0
+    ],
+    [
+     113.0,
+     260.0
+    ]
+   ],
+   "bbox": [
+    113.0,
+    242.0,
+    331.0,
+    260.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "전포카페거리 (전포 놀이마루 일원)",
+   "text_key": "전포카페거리전포놀이마루일원",
+   "ocr_text": "맨포카페거리(맨포 놀이마루 일원)",
+   "confidence": 0.85467,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "전포카페거리 (전포 놀이마루 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.rapi_product_007",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     147.0,
+     266.0
+    ],
+    [
+     299.0,
+     266.0
+    ],
+    [
+     299.0,
+     277.0
+    ],
+    [
+     147.0,
+     277.0
+    ]
+   ],
+   "bbox": [
+    147.0,
+    266.0,
+    299.0,
+    277.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "(토) 12:00 ~ 20:00",
+   "text_key": "토12002000",
+   "ocr_text": "(토112:00-20:00/1월)12:00-18:00",
+   "confidence": 0.94648,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "(토) 12:00 ~ 20:00",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.rapi_product_015",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_015"
+   },
+   "polygon": [
+    [
+     238.0,
+     601.0
+    ],
+    [
+     361.0,
+     601.0
+    ],
+    [
+     361.0,
+     611.0
+    ],
+    [
+     238.0,
+     611.0
+    ]
+   ],
+   "bbox": [
+    238.0,
+    601.0,
+    361.0,
+    611.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "전포카페거리 · 전포공구길 · 전포사잇길 상인회",
+   "text_key": "전포카페거리전포공구길전포사잇길상인회",
+   "ocr_text": "전모카배거라·전포공구릴·전포사잇길 상인회",
+   "confidence": 0.81334,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2105,
+   "gold_value": "전포카페거리 · 전포공구길 · 전포사잇길 상인회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

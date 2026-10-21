@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-124",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-124.easy_rgb_2x_012",
+   "case_id": "v2-124",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     23.5,
+     307.5
+    ],
+    [
+     68.5,
+     307.5
+    ],
+    [
+     68.5,
+     328.5
+    ],
+    [
+     23.5,
+     328.5
+    ]
+   ],
+   "bbox": [
+    23.5,
+    307.5,
+    68.5,
+    328.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9987369609884497,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.15.목 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-124.easy_rgb_2x_013",
+   "case_id": "v2-124",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     24.5,
+     333.5
+    ],
+    [
+     73.5,
+     333.5
+    ],
+    [
+     73.5,
+     351.5
+    ],
+    [
+     24.5,
+     351.5
+    ]
+   ],
+   "bbox": [
+    24.5,
+    333.5,
+    73.5,
+    351.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "10.15.",
+   "text_key": "1015",
+   "ocr_text": "10.15.",
+   "confidence": 0.9931440949440002,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.15.목 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-124.easy_rgb_2x_014",
+   "case_id": "v2-124",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     49.5,
+     356.5
+    ],
+    [
+     112.5,
+     356.5
+    ],
+    [
+     112.5,
+     375.5
+    ],
+    [
+     49.5,
+     375.5
+    ]
+   ],
+   "bbox": [
+    49.5,
+    356.5,
+    112.5,
+    375.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "10.18.",
+   "text_key": "1018",
+   "ocr_text": "10.18 잎",
+   "confidence": 0.8417464909263194,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.15.목 10.18.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-124.easy_rgb_2x_015",
+   "case_id": "v2-124",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     25.5,
+     381.5
+    ],
+    [
+     100.5,
+     381.5
+    ],
+    [
+     100.5,
+     400.5
+    ],
+    [
+     25.5,
+     400.5
+    ]
+   ],
+   "bbox": [
+    25.5,
+    381.5,
+    100.5,
+    400.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "영동 레인보우",
+   "text_key": "영동레인보우",
+   "ocr_text": "영동레인보우",
+   "confidence": 0.9909518361091614,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "영동 레인보우 힐링관광지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-124.easy_rgb_2x_016",
+   "case_id": "v2-124",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     24.5,
+     398.5
+    ],
+    [
+     112.5,
+     398.5
+    ],
+    [
+     112.5,
+     418.5
+    ],
+    [
+     24.5,
+     418.5
+    ]
+   ],
+   "bbox": [
+    24.5,
+    398.5,
+    112.5,
+    418.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "힐링관광지 일원",
+   "text_key": "힐링관광지일원",
+   "ocr_text": "혈링관광지일원",
+   "confidence": 0.9201958775520325,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "영동 레인보우 힐링관광지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,291 @@
+{
+ "case_id": "v2-073",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 462,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-073.easy_rgb_2x_000",
+   "case_id": "v2-073",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     43.5,
+     69.5
+    ],
+    [
+     112.0,
+     69.5
+    ],
+    [
+     112.0,
+     103.0
+    ],
+    [
+     43.5,
+     103.0
+    ]
+   ],
+   "bbox": [
+    43.5,
+    69.5,
+    112.0,
+    103.0
+   ],
+   "height": 33.5,
+   "small_text": false,
+   "text": "28th",
+   "text_key": "28th",
+   "ocr_text": "28+h",
+   "confidence": 0.6201306581497192,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "28th",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-073.easy_rgb_2x_001",
+   "case_id": "v2-073",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     105.0,
+     38.0
+    ],
+    [
+     222.0,
+     38.0
+    ],
+    [
+     222.0,
+     111.0
+    ],
+    [
+     105.0,
+     111.0
+    ]
+   ],
+   "bbox": [
+    105.0,
+    38.0,
+    222.0,
+    111.0
+   ],
+   "height": 73.0,
+   "small_text": false,
+   "text": "김제",
+   "text_key": "김제",
+   "ocr_text": "김제",
+   "confidence": 0.9735620730860509,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "김제 지평선축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-073.easy_rgb_2x_002",
+   "case_id": "v2-073",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     33.5,
+     98.5
+    ],
+    [
+     338.5,
+     98.5
+    ],
+    [
+     338.5,
+     202.5
+    ],
+    [
+     33.5,
+     202.5
+    ]
+   ],
+   "bbox": [
+    33.5,
+    98.5,
+    338.5,
+    202.5
+   ],
+   "height": 104.0,
+   "small_text": false,
+   "text": "지평선축제",
+   "text_key": "지평선축제",
+   "ocr_text": "지평선축제",
+   "confidence": 0.954928461671686,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "김제 지평선축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-073.easy_rgb_2x_006",
+   "case_id": "v2-073",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     49.0,
+     298.0
+    ],
+    [
+     190.0,
+     298.0
+    ],
+    [
+     190.0,
+     314.0
+    ],
+    [
+     49.0,
+     314.0
+    ]
+   ],
+   "bbox": [
+    49.0,
+    298.0,
+    190.0,
+    314.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "전북특별자치도 김제시 일원",
+   "text_key": "전북특별자치도김제시일원",
+   "ocr_text": "전부특번자지도 김제시 일원",
+   "confidence": 0.17872250628938763,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "전북특별자치도 김제시 일원 벽골제 중심",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-073.easy_rgb_2x_007",
+   "case_id": "v2-073",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     47.5,
+     313.0
+    ],
+    [
+     110.5,
+     313.0
+    ],
+    [
+     110.5,
+     331.0
+    ],
+    [
+     47.5,
+     331.0
+    ]
+   ],
+   "bbox": [
+    47.5,
+    313.0,
+    110.5,
+    331.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "벽골제 중심",
+   "text_key": "벽골제중심",
+   "ocr_text": "벽글제 중심",
+   "confidence": 0.36078081151408853,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "전북특별자치도 김제시 일원 벽골제 중심",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

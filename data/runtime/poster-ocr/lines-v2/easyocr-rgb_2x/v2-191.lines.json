@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-191",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-191.easy_rgb_2x_002",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     184.0,
+     44.0
+    ],
+    [
+     259.0,
+     44.0
+    ],
+    [
+     259.0,
+     71.0
+    ],
+    [
+     184.0,
+     71.0
+    ]
+   ],
+   "bbox": [
+    184.0,
+    44.0,
+    259.0,
+    71.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "제23회",
+   "text_key": "제23회",
+   "ocr_text": "제23회",
+   "confidence": 0.9989685416221619,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제23회 예산사과축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.easy_rgb_2x_003",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     67.0,
+     63.5
+    ],
+    [
+     376.5,
+     63.5
+    ],
+    [
+     376.5,
+     143.0
+    ],
+    [
+     67.0,
+     143.0
+    ]
+   ],
+   "bbox": [
+    67.0,
+    63.5,
+    376.5,
+    143.0
+   ],
+   "height": 79.5,
+   "small_text": false,
+   "text": "예산사과축제",
+   "text_key": "예산사과축제",
+   "ocr_text": "예산사과축제",
+   "confidence": 0.9896904137536459,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예산사과축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.easy_rgb_2x_004",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     155.5,
+     138.0
+    ],
+    [
+     288.5,
+     138.0
+    ],
+    [
+     288.5,
+     168.0
+    ],
+    [
+     155.5,
+     168.0
+    ]
+   ],
+   "bbox": [
+    155.5,
+    138.0,
+    288.5,
+    168.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "사과를 품은 예당호",
+   "text_key": "사과를품은예당호",
+   "ocr_text": "사과루 품은 예당호",
+   "confidence": 0.7347309810849965,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "사과를 품은 예당호",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.easy_rgb_2x_005",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     116.5,
+     172.5
+    ],
+    [
+     328.5,
+     172.5
+    ],
+    [
+     328.5,
+     190.5
+    ],
+    [
+     116.5,
+     190.5
+    ]
+   ],
+   "bbox": [
+    116.5,
+    172.5,
+    328.5,
+    190.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "10.30.금 - 31.토",
+   "text_key": "1030금31토",
+   "ocr_text": "10.30.0- 31.6 예당호 축럽다리 익원",
+   "confidence": 0.15903902206608256,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "10.30.금 - 31.토",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.easy_rgb_2x_011",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     323.0,
+     595.0
+    ],
+    [
+     395.0,
+     595.0
+    ],
+    [
+     395.0,
+     608.0
+    ],
+    [
+     323.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    323.0,
+    595.0,
+    395.0,
+    608.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "041)332-3506",
+   "text_key": "0413323506",
+   "ocr_text": "0413323506",
+   "confidence": 0.7562076299619046,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "041)332-3506",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

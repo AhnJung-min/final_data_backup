@@ -1,0 +1,882 @@
+{
+ "case_id": "v2-056",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 16,
+ "records": [
+  {
+   "id": "v2-056.easy_rgb_2x_000",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     339.5,
+     11.5
+    ],
+    [
+     372.5,
+     11.5
+    ],
+    [
+     372.5,
+     20.5
+    ],
+    [
+     339.5,
+     20.5
+    ]
+   ],
+   "bbox": [
+    339.5,
+    11.5,
+    372.5,
+    20.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "다함께",
+   "text_key": "다함께",
+   "ocr_text": "다아께",
+   "confidence": 0.8684527650432369,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "다함께 광명해요",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_001",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     338.5,
+     23.5
+    ],
+    [
+     380.0,
+     23.5
+    ],
+    [
+     380.0,
+     41.5
+    ],
+    [
+     338.5,
+     41.5
+    ]
+   ],
+   "bbox": [
+    338.5,
+    23.5,
+    380.0,
+    41.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "광명해요",
+   "text_key": "광명해요",
+   "ocr_text": "광명해요",
+   "confidence": 0.27811670303344727,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "다함께 광명해요",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_003",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     34.5,
+     35.5
+    ],
+    [
+     143.5,
+     35.5
+    ],
+    [
+     143.5,
+     79.5
+    ],
+    [
+     34.5,
+     79.5
+    ]
+   ],
+   "bbox": [
+    34.5,
+    35.5,
+    143.5,
+    79.5
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9999878406524658,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "2026 광명시 책 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_004",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     293.5,
+     51.5
+    ],
+    [
+     425.5,
+     51.5
+    ],
+    [
+     425.5,
+     73.5
+    ],
+    [
+     293.5,
+     73.5
+    ]
+   ],
+   "bbox": [
+    293.5,
+    51.5,
+    425.5,
+    73.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026. 9. 19. SAT",
+   "text_key": "2026919sat",
+   "ocr_text": "2026. 9. 19. SAT",
+   "confidence": 0.9419604684265519,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. SAT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_005",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     292.0,
+     74.0
+    ],
+    [
+     354.0,
+     74.0
+    ],
+    [
+     354.0,
+     96.0
+    ],
+    [
+     292.0,
+     96.0
+    ]
+   ],
+   "bbox": [
+    292.0,
+    74.0,
+    354.0,
+    96.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "10:0",
+   "text_key": "100",
+   "ocr_text": "1O:00",
+   "confidence": 0.752848081586092,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "10:00 - 17:00",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_006",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     366.0,
+     74.0
+    ],
+    [
+     427.0,
+     74.0
+    ],
+    [
+     427.0,
+     98.0
+    ],
+    [
+     366.0,
+     98.0
+    ]
+   ],
+   "bbox": [
+    366.0,
+    74.0,
+    427.0,
+    98.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "17:00",
+   "text_key": "1700",
+   "ocr_text": "17:00",
+   "confidence": 0.7055518958772198,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "10:00 - 17:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_007",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     31.5,
+     79.5
+    ],
+    [
+     204.0,
+     79.5
+    ],
+    [
+     204.0,
+     147.0
+    ],
+    [
+     31.5,
+     147.0
+    ]
+   ],
+   "bbox": [
+    31.5,
+    79.5,
+    204.0,
+    147.0
+   ],
+   "height": 67.5,
+   "small_text": false,
+   "text": "광명시",
+   "text_key": "광명시",
+   "ocr_text": "광명시",
+   "confidence": 0.9384086704858164,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광명시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_010",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     115.5,
+     454.5
+    ],
+    [
+     159.5,
+     454.5
+    ],
+    [
+     159.5,
+     472.5
+    ],
+    [
+     115.5,
+     472.5
+    ]
+   ],
+   "bbox": [
+    115.5,
+    454.5,
+    159.5,
+    472.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "무한",
+   "text_key": "무한",
+   "ocr_text": "무한하",
+   "confidence": 0.08498845692266437,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_011",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     199.0,
+     449.0
+    ],
+    [
+     229.0,
+     449.0
+    ],
+    [
+     229.0,
+     465.0
+    ],
+    [
+     199.0,
+     465.0
+    ]
+   ],
+   "bbox": [
+    199.0,
+    449.0,
+    229.0,
+    465.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "시작",
+   "text_key": "시작",
+   "ocr_text": "시작",
+   "confidence": 0.9911672059434539,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_012",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     117.5,
+     468.5
+    ],
+    [
+     165.0,
+     468.5
+    ],
+    [
+     165.0,
+     489.0
+    ],
+    [
+     117.5,
+     489.0
+    ]
+   ],
+   "bbox": [
+    117.5,
+    468.5,
+    165.0,
+    489.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "다정한",
+   "text_key": "다정한",
+   "ocr_text": "다정한",
+   "confidence": 0.2669412169491051,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_013",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     192.0,
+     464.0
+    ],
+    [
+     222.0,
+     464.0
+    ],
+    [
+     222.0,
+     480.0
+    ],
+    [
+     192.0,
+     480.0
+    ]
+   ],
+   "bbox": [
+    192.0,
+    464.0,
+    222.0,
+    480.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "여행",
+   "text_key": "여행",
+   "ocr_text": "여행",
+   "confidence": 0.998001476107871,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_016",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     25.0,
+     609.5
+    ],
+    [
+     214.0,
+     609.5
+    ],
+    [
+     214.0,
+     623.0
+    ],
+    [
+     25.0,
+     623.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    609.5,
+    214.0,
+    623.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "광명시도서관정책과 02-2680-5442",
+   "text_key": "광명시도서관정책과0226805442",
+   "ocr_text": "주집: 감업 시도서관경버과 02-2680-5442",
+   "confidence": 0.19933350472639688,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2105,
+   "gold_value": "광명시도서관정책과 02-2680-5442",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_017",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     235.0,
+     610.0
+    ],
+    [
+     318.0,
+     610.0
+    ],
+    [
+     318.0,
+     623.0
+    ],
+    [
+     235.0,
+     623.0
+    ]
+   ],
+   "bbox": [
+    235.0,
+    610.0,
+    318.0,
+    623.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "광명시도서관",
+   "text_key": "광명시도서관",
+   "ocr_text": "성리: 광영시도서관",
+   "confidence": 0.3798104027594913,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "광명시도서관",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_018",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     324.0,
+     610.0
+    ],
+    [
+     418.0,
+     610.0
+    ],
+    [
+     418.0,
+     623.0
+    ],
+    [
+     324.0,
+     623.0
+    ]
+   ],
+   "bbox": [
+    324.0,
+    610.0,
+    418.0,
+    623.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "경기도광명교육지원청",
+   "text_key": "경기도광명교육지원청",
+   "ocr_text": "경기도굉터 교육지인청",
+   "confidence": 0.3504764086806377,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "경기도광명교육지원청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_019",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     155.03,
+     452.75
+    ],
+    [
+     200.76,
+     447.05
+    ],
+    [
+     202.47,
+     465.25
+    ],
+    [
+     156.74,
+     470.95
+    ]
+   ],
+   "bbox": [
+    155.03,
+    447.05,
+    202.47,
+    470.95
+   ],
+   "height": 18.28,
+   "small_text": false,
+   "text": "탐험의",
+   "text_key": "탐험의",
+   "ocr_text": "'광험의",
+   "confidence": 0.10382184386253357,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.easy_rgb_2x_020",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     161.14,
+     466.69
+    ],
+    [
+     192.61,
+     462.81
+    ],
+    [
+     194.36,
+     480.81
+    ],
+    [
+     162.89,
+     484.69
+    ]
+   ],
+   "bbox": [
+    161.14,
+    462.81,
+    194.36,
+    484.69
+   ],
+   "height": 18.08,
+   "small_text": false,
+   "text": "도서",
+   "text_key": "도서",
+   "ocr_text": "도서",
+   "confidence": 0.9991710721523513,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

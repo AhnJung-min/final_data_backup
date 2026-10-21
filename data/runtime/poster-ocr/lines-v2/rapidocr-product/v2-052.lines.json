@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-052",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-052.rapi_product_001",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     389.0,
+     15.0
+    ],
+    [
+     430.0,
+     15.0
+    ],
+    [
+     430.0,
+     30.0
+    ],
+    [
+     389.0,
+     30.0
+    ]
+   ],
+   "bbox": [
+    389.0,
+    15.0,
+    430.0,
+    30.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "광진구",
+   "text_key": "광진구",
+   "ocr_text": "광진구",
+   "confidence": 0.99616,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광진구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.rapi_product_004",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     259.0,
+     527.0
+    ],
+    [
+     385.0,
+     527.0
+    ],
+    [
+     385.0,
+     555.0
+    ],
+    [
+     259.0,
+     555.0
+    ]
+   ],
+   "bbox": [
+    259.0,
+    527.0,
+    385.0,
+    555.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026. 9. 19. 토",
+   "text_key": "2026919토",
+   "ocr_text": "2026. 9.19. 토",
+   "confidence": 0.91963,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. 토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.rapi_product_005",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     238.0,
+     555.0
+    ],
+    [
+     403.0,
+     554.0
+    ],
+    [
+     403.0,
+     580.0
+    ],
+    [
+     239.0,
+     581.0
+    ]
+   ],
+   "bbox": [
+    238.0,
+    554.0,
+    403.0,
+    581.0
+   ],
+   "height": 26.01,
+   "small_text": false,
+   "text": "서울어린이대공원 일대",
+   "text_key": "서울어린이대공원일대",
+   "ocr_text": "서울어린이대공원일대",
+   "confidence": 0.91578,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서울어린이대공원 일대 (어린이대공원역 1.2번 출구)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.rapi_product_006",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     267.0,
+     581.0
+    ],
+    [
+     374.0,
+     581.0
+    ],
+    [
+     374.0,
+     594.0
+    ],
+    [
+     267.0,
+     594.0
+    ]
+   ],
+   "bbox": [
+    267.0,
+    581.0,
+    374.0,
+    594.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "(어린이대공원역 1.2번 출구)",
+   "text_key": "어린이대공원역12번출구",
+   "ocr_text": "(어린이대공원역1.2번 출구)",
+   "confidence": 0.97324,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서울어린이대공원 일대 (어린이대공원역 1.2번 출구)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

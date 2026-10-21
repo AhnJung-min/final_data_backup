@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-088",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 438,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-088.easy_rgb_2x_000",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     13.0,
+     32.5
+    ],
+    [
+     64.5,
+     32.5
+    ],
+    [
+     64.5,
+     52.5
+    ],
+    [
+     13.0,
+     52.5
+    ]
+   ],
+   "bbox": [
+    13.0,
+    32.5,
+    64.5,
+    52.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "메뚜기와",
+   "text_key": "메뚜기와",
+   "ocr_text": "메뚜기와",
+   "confidence": 0.2615513205528259,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "메뚜기와 함께 폴짝!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-088.easy_rgb_2x_007",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     112.5,
+     310.0
+    ],
+    [
+     319.0,
+     310.0
+    ],
+    [
+     319.0,
+     338.5
+    ],
+    [
+     112.5,
+     338.5
+    ]
+   ],
+   "bbox": [
+    112.5,
+    310.0,
+    319.0,
+    338.5
+   ],
+   "height": 28.5,
+   "small_text": false,
+   "text": "2026.10.3 토 ~10.4 일",
+   "text_key": "2026103토104일",
+   "ocr_text": "2026.10.3e ~10.4일",
+   "confidence": 0.2757820193880698,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "2026.10.3 토 ~10.4 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-088.easy_rgb_2x_008",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     113.0,
+     336.5
+    ],
+    [
+     317.0,
+     336.5
+    ],
+    [
+     317.0,
+     360.5
+    ],
+    [
+     113.0,
+     360.5
+    ]
+   ],
+   "bbox": [
+    113.0,
+    336.5,
+    317.0,
+    360.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "성주군 수륜면 수성리 104 일원",
+   "text_key": "성주군수륜면수성리104일원",
+   "ocr_text": "섬주군 수표면 수성리 104 일원",
+   "confidence": 0.7419959832009069,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "address.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1579,
+   "gold_value": "성주군 수륜면 수성리 104 일원 (어울림마당)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-088.easy_rgb_2x_009",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     170.5,
+     357.5
+    ],
+    [
+     258.5,
+     357.5
+    ],
+    [
+     258.5,
+     378.5
+    ],
+    [
+     170.5,
+     378.5
+    ]
+   ],
+   "bbox": [
+    170.5,
+    357.5,
+    258.5,
+    378.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "(어울림마당)",
+   "text_key": "어울림마당",
+   "ocr_text": "(어불림마당)",
+   "confidence": 0.6764673543877744,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1579,
+   "gold_value": "성주군 수륜면 수성리 104 일원 (어울림마당)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-088.easy_rgb_2x_010",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     27.0,
+     593.0
+    ],
+    [
+     262.0,
+     593.0
+    ],
+    [
+     262.0,
+     608.0
+    ],
+    [
+     27.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    593.0,
+    262.0,
+    608.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "성주가야산 황금들녘 메뚜기 축제",
+   "text_key": "성주가야산황금들녘메뚜기축제",
+   "ocr_text": "주소 주간_성주가야산 환금글년 메뚜기 축제주진위언회",
+   "confidence": 0.213202137622869,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2143,
+   "gold_value": "성주가야산 황금들녘 메뚜기 축제",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-088.easy_rgb_2x_011",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     315.0,
+     593.0
+    ],
+    [
+     345.0,
+     593.0
+    ],
+    [
+     345.0,
+     606.0
+    ],
+    [
+     315.0,
+     606.0
+    ]
+   ],
+   "bbox": [
+    315.0,
+    593.0,
+    345.0,
+    606.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "성주군",
+   "text_key": "성주군",
+   "ocr_text": "성주군",
+   "confidence": 0.8642926630363663,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성주군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-088.easy_rgb_2x_012",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     364.5,
+     591.0
+    ],
+    [
+     412.0,
+     591.0
+    ],
+    [
+     412.0,
+     606.5
+    ],
+    [
+     364.5,
+     606.5
+    ]
+   ],
+   "bbox": [
+    364.5,
+    591.0,
+    412.0,
+    606.5
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "성주군의회",
+   "text_key": "성주군의회",
+   "ocr_text": "성주균의회",
+   "confidence": 0.6605057444162745,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "성주군의회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-088.easy_rgb_2x_014",
+   "case_id": "v2-088",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     62.07,
+     36.55
+    ],
+    [
+     90.44,
+     45.51
+    ],
+    [
+     84.43,
+     62.95
+    ],
+    [
+     56.56,
+     53.99
+    ]
+   ],
+   "bbox": [
+    56.56,
+    36.55,
+    90.44,
+    62.95
+   ],
+   "height": 18.37,
+   "small_text": false,
+   "text": "함께",
+   "text_key": "함께",
+   "ocr_text": "'함께 =",
+   "confidence": 0.2093849269003359,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "메뚜기와 함께 폴짝!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

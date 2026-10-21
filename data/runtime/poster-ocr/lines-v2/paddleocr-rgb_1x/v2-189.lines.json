@@ -1,0 +1,504 @@
+{
+ "case_id": "v2-189",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 456,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-189.padd_rgb_1x_003",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     66.0,
+     161.0
+    ],
+    [
+     146.0,
+     161.0
+    ],
+    [
+     146.0,
+     178.0
+    ],
+    [
+     66.0,
+     178.0
+    ]
+   ],
+   "bbox": [
+    66.0,
+    161.0,
+    146.0,
+    178.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "활로 잇는 예천,",
+   "text_key": "활로잇는예천",
+   "ocr_text": "활로잇는 예천",
+   "confidence": 0.8980764746665955,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "활로 잇는 예천, 미래를 쏘다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_004",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     64.0,
+     178.0
+    ],
+    [
+     130.0,
+     177.0
+    ],
+    [
+     130.0,
+     195.0
+    ],
+    [
+     64.0,
+     196.0
+    ]
+   ],
+   "bbox": [
+    64.0,
+    177.0,
+    130.0,
+    196.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "미래를 쏘다",
+   "text_key": "미래를쏘다",
+   "ocr_text": "미래를쏘다",
+   "confidence": 0.9111851453781128,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "활로 잇는 예천, 미래를 쏘다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_005",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     32.0,
+     205.0
+    ],
+    [
+     265.0,
+     203.0
+    ],
+    [
+     266.0,
+     240.0
+    ],
+    [
+     33.0,
+     242.0
+    ]
+   ],
+   "bbox": [
+    32.0,
+    203.0,
+    266.0,
+    242.0
+   ],
+   "height": 37.01,
+   "small_text": false,
+   "text": "10. 30.금 - 11. 01.일",
+   "text_key": "1030금1101일",
+   "ocr_text": "10.30.- 11.01.9",
+   "confidence": 0.9350029826164246,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "10. 30.금 - 11. 01.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_006",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     36.0,
+     250.0
+    ],
+    [
+     167.0,
+     250.0
+    ],
+    [
+     167.0,
+     270.0
+    ],
+    [
+     36.0,
+     270.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    250.0,
+    167.0,
+    270.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "한천체육공원 일원",
+   "text_key": "한천체육공원일원",
+   "ocr_text": "한천체육공원 일원",
+   "confidence": 0.981602132320404,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "한천체육공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_007",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     383.0,
+     481.0
+    ],
+    [
+     439.0,
+     481.0
+    ],
+    [
+     439.0,
+     495.0
+    ],
+    [
+     383.0,
+     495.0
+    ]
+   ],
+   "bbox": [
+    383.0,
+    481.0,
+    439.0,
+    495.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "풍성한 가을,",
+   "text_key": "풍성한가을",
+   "ocr_text": "풍성한 가을",
+   "confidence": 0.8704149723052979,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "풍성한 가을, 예천의 활과 맛, 그리고 배움이 하나로 어우러집니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_008",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     372.0,
+     498.0
+    ],
+    [
+     439.0,
+     498.0
+    ],
+    [
+     439.0,
+     511.0
+    ],
+    [
+     372.0,
+     511.0
+    ]
+   ],
+   "bbox": [
+    372.0,
+    498.0,
+    439.0,
+    511.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "예천의 활과 맛,",
+   "text_key": "예천의활과맛",
+   "ocr_text": "예천의활과맛",
+   "confidence": 0.9926285743713379,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "풍성한 가을, 예천의 활과 맛, 그리고 배움이 하나로 어우러집니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_009",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     378.0,
+     517.0
+    ],
+    [
+     439.0,
+     517.0
+    ],
+    [
+     439.0,
+     528.0
+    ],
+    [
+     378.0,
+     528.0
+    ]
+   ],
+   "bbox": [
+    378.0,
+    517.0,
+    439.0,
+    528.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "그리고 배움이",
+   "text_key": "그리고배움이",
+   "ocr_text": "그리고 배움이",
+   "confidence": 0.921978771686554,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "풍성한 가을, 예천의 활과 맛, 그리고 배움이 하나로 어우러집니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_010",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     347.0,
+     534.0
+    ],
+    [
+     440.0,
+     534.0
+    ],
+    [
+     440.0,
+     547.0
+    ],
+    [
+     347.0,
+     547.0
+    ]
+   ],
+   "bbox": [
+    347.0,
+    534.0,
+    440.0,
+    547.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "하나로 어우러집니다!",
+   "text_key": "하나로어우러집니다",
+   "ocr_text": "하나로어우러집니다!",
+   "confidence": 0.9697621464729309,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "풍성한 가을, 예천의 활과 맛, 그리고 배움이 하나로 어우러집니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-189.padd_rgb_1x_014",
+   "case_id": "v2-189",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     99.0,
+     603.0
+    ],
+    [
+     352.0,
+     603.0
+    ],
+    [
+     352.0,
+     617.0
+    ],
+    [
+     99.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    99.0,
+    603.0,
+    352.0,
+    617.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "경상북도",
+   "text_key": "경상북도",
+   "ocr_text": "예천농산물축제와 경상북도 평생학습박람회가 함께합니다",
+   "confidence": 0.9178203344345093,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경상북도",
+   "extra_chars": 21,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

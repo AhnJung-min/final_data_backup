@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-084",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-084.padd_rgb_1x_000",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     339.0,
+     23.0
+    ],
+    [
+     368.0,
+     23.0
+    ],
+    [
+     368.0,
+     37.0
+    ],
+    [
+     339.0,
+     37.0
+    ]
+   ],
+   "bbox": [
+    339.0,
+    23.0,
+    368.0,
+    37.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "주민과",
+   "text_key": "주민과",
+   "ocr_text": "주민과",
+   "confidence": 0.9892311096191406,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "주민과 함께 주민속으로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.padd_rgb_1x_001",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     374.0,
+     29.0
+    ],
+    [
+     422.0,
+     29.0
+    ],
+    [
+     422.0,
+     48.0
+    ],
+    [
+     374.0,
+     48.0
+    ]
+   ],
+   "bbox": [
+    374.0,
+    29.0,
+    422.0,
+    48.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "주민속으로",
+   "text_key": "주민속으로",
+   "ocr_text": "주민속으로",
+   "confidence": 0.8612073063850403,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "주민과 함께 주민속으로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.padd_rgb_1x_002",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     378.0,
+     25.0
+    ],
+    [
+     390.0,
+     25.0
+    ],
+    [
+     390.0,
+     33.0
+    ],
+    [
+     378.0,
+     33.0
+    ]
+   ],
+   "bbox": [
+    378.0,
+    25.0,
+    390.0,
+    33.0
+   ],
+   "height": 8.0,
+   "small_text": true,
+   "text": "께",
+   "text_key": "께",
+   "ocr_text": "께",
+   "confidence": 0.6491034626960754,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "주민과 함께 주민속으로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.padd_rgb_1x_003",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     24.0,
+     37.0
+    ],
+    [
+     47.0,
+     37.0
+    ],
+    [
+     47.0,
+     233.0
+    ],
+    [
+     24.0,
+     233.0
+    ]
+   ],
+   "bbox": [
+    24.0,
+    37.0,
+    47.0,
+    233.0
+   ],
+   "height": 196.0,
+   "small_text": false,
+   "text": "대전 효문화 뿌리 축제",
+   "text_key": "대전효문화뿌리축제",
+   "ocr_text": "대전효문화뿌리축제",
+   "confidence": 0.9992275238037109,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전 효문화 뿌리 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.padd_rgb_1x_004",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     112.0,
+     71.0
+    ],
+    [
+     245.0,
+     71.0
+    ],
+    [
+     245.0,
+     98.0
+    ],
+    [
+     112.0,
+     98.0
+    ]
+   ],
+   "bbox": [
+    112.0,
+    71.0,
+    245.0,
+    98.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "제17회 대전",
+   "text_key": "제17회대전",
+   "ocr_text": "제17회 대전",
+   "confidence": 0.991176187992096,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "제17회 대전 효문화 뿌리 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.padd_rgb_1x_006",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     378.0,
+     112.0
+    ],
+    [
+     401.0,
+     112.0
+    ],
+    [
+     401.0,
+     403.0
+    ],
+    [
+     378.0,
+     403.0
+    ]
+   ],
+   "bbox": [
+    378.0,
+    112.0,
+    401.0,
+    403.0
+   ],
+   "height": 291.0,
+   "small_text": false,
+   "text": "10. 2.(금)~10. 4.(일)",
+   "text_key": "102금104일",
+   "ocr_text": "10.2.[금]~10. 4.[일]| 뿌리공원 일원",
+   "confidence": 0.9029154181480408,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 2.(금)~10. 4.(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.padd_rgb_1x_008",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     24.0,
+     324.0
+    ],
+    [
+     47.0,
+     324.0
+    ],
+    [
+     47.0,
+     559.0
+    ],
+    [
+     24.0,
+     559.0
+    ]
+   ],
+   "bbox": [
+    24.0,
+    324.0,
+    47.0,
+    559.0
+   ],
+   "height": 235.0,
+   "small_text": false,
+   "text": "함께 내딛는 새로운 뿌리",
+   "text_key": "함께내딛는새로운뿌리",
+   "ocr_text": "함께 내딛는 새로운 뿌리",
+   "confidence": 0.8789682984352112,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "함께 내딛는 새로운 뿌리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.padd_rgb_1x_013",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     299.0,
+     582.0
+    ],
+    [
+     342.0,
+     582.0
+    ],
+    [
+     342.0,
+     593.0
+    ],
+    [
+     299.0,
+     593.0
+    ]
+   ],
+   "bbox": [
+    299.0,
+    582.0,
+    342.0,
+    593.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "대전광역시",
+   "text_key": "대전광역시",
+   "ocr_text": "대전광역시",
+   "confidence": 0.9946807026863098,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

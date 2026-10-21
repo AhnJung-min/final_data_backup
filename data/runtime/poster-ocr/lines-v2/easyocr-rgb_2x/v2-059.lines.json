@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-059",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 53,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-059.easy_rgb_2x_004",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     259.0,
+     112.5
+    ],
+    [
+     422.5,
+     112.5
+    ],
+    [
+     422.5,
+     144.5
+    ],
+    [
+     259.0,
+     144.5
+    ]
+   ],
+   "bbox": [
+    259.0,
+    112.5,
+    422.5,
+    144.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "울산, 슬독讀에 빠지다",
+   "text_key": "울산슬독讀에빠지다",
+   "ocr_text": "울산 슬독;에 빠지다",
+   "confidence": 0.4036263370603725,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "울산, 슬독讀에 빠지다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_005",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     307.0,
+     212.0
+    ],
+    [
+     377.0,
+     212.0
+    ],
+    [
+     377.0,
+     228.0
+    ],
+    [
+     307.0,
+     228.0
+    ]
+   ],
+   "bbox": [
+    307.0,
+    212.0,
+    377.0,
+    228.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "9.19-10.18",
+   "text_key": "9191018",
+   "ocr_text": "9.19-10,18",
+   "confidence": 0.35989657372329553,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9.19-10.18",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_006",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     308.0,
+     230.0
+    ],
+    [
+     427.0,
+     230.0
+    ],
+    [
+     427.0,
+     245.0
+    ],
+    [
+     308.0,
+     245.0
+    ]
+   ],
+   "bbox": [
+    308.0,
+    230.0,
+    427.0,
+    245.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "14:00~20:00",
+   "text_key": "14002000",
+   "ocr_text": "II; $ 얻어 00~2000 I04",
+   "confidence": 0.07528633025347874,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "14:00~20:00",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_026",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_026"
+   },
+   "polygon": [
+    [
+     111.5,
+     427.5
+    ],
+    [
+     215.5,
+     427.5
+    ],
+    [
+     215.5,
+     437.5
+    ],
+    [
+     111.5,
+     437.5
+    ]
+   ],
+   "bbox": [
+    111.5,
+    427.5,
+    215.5,
+    437.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "DJ",
+   "text_key": "dj",
+   "ocr_text": "MU버스리여!리다 DJ 샌골기",
+   "confidence": 0.015586596920997672,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "DJ",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

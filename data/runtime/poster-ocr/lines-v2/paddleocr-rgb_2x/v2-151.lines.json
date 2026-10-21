@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-151",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 448,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-151.padd_rgb_2x_002",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     396.5,
+     15.0
+    ],
+    [
+     426.5,
+     15.0
+    ],
+    [
+     426.5,
+     30.0
+    ],
+    [
+     396.5,
+     30.0
+    ]
+   ],
+   "bbox": [
+    396.5,
+    15.0,
+    426.5,
+    30.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "SEOUL",
+   "text_key": "seoul",
+   "ocr_text": "SEOUL",
+   "confidence": 0.9516468048095703,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "SEOUL MY SOUL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-151.padd_rgb_2x_004",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     390.5,
+     27.0
+    ],
+    [
+     432.0,
+     27.0
+    ],
+    [
+     432.0,
+     43.0
+    ],
+    [
+     390.5,
+     43.0
+    ]
+   ],
+   "bbox": [
+    390.5,
+    27.0,
+    432.0,
+    43.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "MY SOUL",
+   "text_key": "mysoul",
+   "ocr_text": "MTSOUL",
+   "confidence": 0.8331616520881653,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "SEOUL MY SOUL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-151.padd_rgb_2x_009",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     51.0,
+     583.5
+    ],
+    [
+     275.5,
+     584.5
+    ],
+    [
+     275.5,
+     612.0
+    ],
+    [
+     51.0,
+     611.0
+    ]
+   ],
+   "bbox": [
+    51.0,
+    583.5,
+    275.5,
+    612.0
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "2026.10.17.토-10.25.",
+   "text_key": "20261017토1025",
+   "ocr_text": "2026.10.17.*-10.25.",
+   "confidence": 0.9472795724868774,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026.10.17.토-10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-151.padd_rgb_2x_010",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     273.5,
+     589.5
+    ],
+    [
+     280.0,
+     589.5
+    ],
+    [
+     280.0,
+     597.5
+    ],
+    [
+     273.5,
+     597.5
+    ]
+   ],
+   "bbox": [
+    273.5,
+    589.5,
+    280.0,
+    597.5
+   ],
+   "height": 8.0,
+   "small_text": true,
+   "text": "일",
+   "text_key": "일",
+   "ocr_text": "일",
+   "confidence": 0.6492151021957397,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026.10.17.토-10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

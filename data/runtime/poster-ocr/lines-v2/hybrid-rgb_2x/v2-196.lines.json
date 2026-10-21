@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-196",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-196.easy_rgb_2x_002",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     18.0,
+     598.5
+    ],
+    [
+     129.5,
+     598.5
+    ],
+    [
+     129.5,
+     615.0
+    ],
+    [
+     18.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    598.5,
+    129.5,
+    615.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "통영 트라이애슬론광장",
+   "text_key": "통영트라이애슬론광장",
+   "ocr_text": "통영트라이애슬론광장",
+   "confidence": 0.8986750841140747,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "통영 트라이애슬론광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.easy_rgb_2x_003",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     135.0,
+     600.0
+    ],
+    [
+     280.0,
+     600.0
+    ],
+    [
+     280.0,
+     614.0
+    ],
+    [
+     135.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    135.0,
+    600.0,
+    280.0,
+    614.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "10:00~21:00",
+   "text_key": "10002100",
+   "ocr_text": "11.6(급)-8(입) 10:00-21:00",
+   "confidence": 0.9354516863822937,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10:00~21:00",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.easy_rgb_2x_004",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     343.0,
+     598.0
+    ],
+    [
+     426.0,
+     598.0
+    ],
+    [
+     426.0,
+     612.0
+    ],
+    [
+     343.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    343.0,
+    598.0,
+    426.0,
+    612.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "FOOD TRAVEL",
+   "text_key": "foodtravel",
+   "ocr_text": "영시 FO TRAVEL",
+   "confidence": 0.7431761622428894,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "FOOD TRAVEL",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

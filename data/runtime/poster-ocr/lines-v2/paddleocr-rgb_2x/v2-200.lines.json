@@ -1,0 +1,235 @@
+{
+ "case_id": "v2-200",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-200.padd_rgb_2x_000",
+   "case_id": "v2-200",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     55.0,
+     23.5
+    ],
+    [
+     350.5,
+     37.5
+    ],
+    [
+     346.0,
+     134.0
+    ],
+    [
+     50.5,
+     120.0
+    ]
+   ],
+   "bbox": [
+    50.5,
+    23.5,
+    350.5,
+    134.0
+   ],
+   "height": 96.6,
+   "small_text": false,
+   "text": "감기없는",
+   "text_key": "감기없는",
+   "ocr_text": "감기없는",
+   "confidence": 0.9984249472618103,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "감기없는 대한민국",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-200.padd_rgb_2x_001",
+   "case_id": "v2-200",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     91.0,
+     102.5
+    ],
+    [
+     395.5,
+     110.0
+    ],
+    [
+     393.0,
+     218.5
+    ],
+    [
+     88.5,
+     211.0
+    ]
+   ],
+   "bbox": [
+    88.5,
+    102.5,
+    395.5,
+    218.5
+   ],
+   "height": 108.53,
+   "small_text": false,
+   "text": "대한민국",
+   "text_key": "대한민국",
+   "ocr_text": "대한민국이",
+   "confidence": 0.8858283758163452,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "감기없는 대한민국",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-200.padd_rgb_2x_004",
+   "case_id": "v2-200",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     255.5,
+     555.0
+    ],
+    [
+     424.0,
+     556.0
+    ],
+    [
+     423.5,
+     573.5
+    ],
+    [
+     255.5,
+     572.0
+    ]
+   ],
+   "bbox": [
+    255.5,
+    555.0,
+    424.0,
+    573.5
+   ],
+   "height": 17.25,
+   "small_text": false,
+   "text": "2026.11.12.목 -15.일",
+   "text_key": "20261112목15일",
+   "ocr_text": "2026.11.12.목-15.일",
+   "confidence": 0.992787778377533,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.12.목 -15.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-200.padd_rgb_2x_005",
+   "case_id": "v2-200",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     255.5,
+     576.5
+    ],
+    [
+     428.0,
+     576.5
+    ],
+    [
+     428.0,
+     586.5
+    ],
+    [
+     255.5,
+     586.5
+    ]
+   ],
+   "bbox": [
+    255.5,
+    576.5,
+    428.0,
+    586.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지 일원",
+   "text_key": "전남광주통합특별시고흥군풍양면한동리7017번지일원",
+   "ocr_text": "전남광주통합록법시 고홀군 풍영면 한동리 701-7번지 일원",
+   "confidence": 0.8827233910560608,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "address.raw",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

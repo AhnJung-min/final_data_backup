@@ -1,0 +1,294 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-9ddd88504cc0",
+ "image": {
+  "sha256": "9ddd88504cc0ca90814fde061b5980f077c7684b3e30af5063a6f30fb4c60fb3",
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:43+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "억새 가을로의산책 축제",
+  "official": "억새 가을로의산책 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006",
+    "rapi_product_007",
+    "rapi_product_008"
+   ],
+   "bbox": [
+    21.0,
+    102.0,
+    388.0,
+    333.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제11회",
+  "number": 11,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    40.0,
+    81.0,
+    115.0,
+    109.0
+   ],
+   "confidence": 0.99869
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_009"
+   ],
+   "bbox": [
+    32.0,
+    345.0,
+    81.0,
+    369.0
+   ],
+   "confidence": 0.98635
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.15목 10.18일 서창교 나늄누리숲",
+  "start": {
+   "iso": "2026-10-15",
+   "year": 2026,
+   "month": 10,
+   "day": 15,
+   "weekday": "thu",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010",
+    "rapi_product_013",
+    "rapi_product_014"
+   ],
+   "bbox": [
+    33.0,
+    368.0,
+    263.0,
+    445.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "서창교 나늄누리숲",
+  "items": [
+   "서창교 나늄누리숲"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_013",
+    "rapi_product_014"
+   ],
+   "bbox": [
+    34.0,
+    412.0,
+    263.0,
+    445.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "주길",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_015"
+     ],
+     "bbox": [
+      35.0,
+      603.0,
+      68.0,
+      614.0
+     ],
+     "confidence": 0.85207
+    }
+   },
+   {
+    "name": "전녕광주동합특생시",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_015",
+      "rapi_product_016"
+     ],
+     "bbox": [
+      35.0,
+      603.0,
+      154.0,
+      614.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "전님광주통암특별시 순 전남광주통합특법시 서구의회",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_017"
+     ],
+     "bbox": [
+      191.0,
+      602.0,
+      401.0,
+      614.0
+     ],
+     "confidence": 0.78901
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "present",
+  "raw": "소요예산:425백만원",
+  "total_krw": 425000000,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001"
+   ],
+   "bbox": [
+    342.0,
+    16.0,
+    426.0,
+    30.0
+   ],
+   "confidence": 0.96611
+  }
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

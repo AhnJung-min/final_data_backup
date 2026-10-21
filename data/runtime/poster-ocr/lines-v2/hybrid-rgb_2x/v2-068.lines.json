@@ -1,0 +1,341 @@
+{
+ "case_id": "v2-068",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-068.easy_rgb_2x_000",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     20.0,
+     16.0
+    ],
+    [
+     78.0,
+     16.0
+    ],
+    [
+     78.0,
+     32.0
+    ],
+    [
+     20.0,
+     32.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    16.0,
+    78.0,
+    32.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "고양특례시",
+   "text_key": "고양특례시",
+   "ocr_text": "고양특례시",
+   "confidence": 0.9508451223373413,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고양특례시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.easy_rgb_2x_001",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     352.5,
+     14.0
+    ],
+    [
+     433.5,
+     14.0
+    ],
+    [
+     433.5,
+     29.0
+    ],
+    [
+     352.5,
+     29.0
+    ]
+   ],
+   "bbox": [
+    352.5,
+    14.0,
+    433.5,
+    29.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "고양국제박람회재단",
+   "text_key": "고양국제박람회재단",
+   "ocr_text": "고양국제박당 회재단",
+   "confidence": 0.7128362557031536,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "고양국제박람회재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.easy_rgb_2x_005",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     41.0,
+     245.0
+    ],
+    [
+     134.0,
+     245.0
+    ],
+    [
+     134.0,
+     272.0
+    ],
+    [
+     41.0,
+     272.0
+    ]
+   ],
+   "bbox": [
+    41.0,
+    245.0,
+    134.0,
+    272.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "10.01.",
+   "text_key": "1001",
+   "ocr_text": "10.01.",
+   "confidence": 0.9963407516479492,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "10.01.목 ~ 10.11.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.easy_rgb_2x_007",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     151.5,
+     245.0
+    ],
+    [
+     223.5,
+     245.0
+    ],
+    [
+     223.5,
+     272.0
+    ],
+    [
+     151.5,
+     272.0
+    ]
+   ],
+   "bbox": [
+    151.5,
+    245.0,
+    223.5,
+    272.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "10.11.",
+   "text_key": "1011",
+   "ocr_text": "10.11.",
+   "confidence": 0.9187119603157043,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "10.01.목 ~ 10.11.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.easy_rgb_2x_008",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     222.0,
+     248.0
+    ],
+    [
+     234.0,
+     248.0
+    ],
+    [
+     234.0,
+     261.0
+    ],
+    [
+     222.0,
+     261.0
+    ]
+   ],
+   "bbox": [
+    222.0,
+    248.0,
+    234.0,
+    261.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "일",
+   "text_key": "일",
+   "ocr_text": "일",
+   "confidence": 0.998072481051512,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "10.01.목 ~ 10.11.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.easy_rgb_2x_009",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     42.5,
+     273.5
+    ],
+    [
+     216.5,
+     273.5
+    ],
+    [
+     216.5,
+     295.5
+    ],
+    [
+     42.5,
+     295.5
+    ]
+   ],
+   "bbox": [
+    42.5,
+    273.5,
+    216.5,
+    295.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "일산호수공원 주제광장 일원",
+   "text_key": "일산호수공원주제광장일원",
+   "ocr_text": "일산호수공원주제광장일원",
+   "confidence": 0.8954717516899109,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일산호수공원 주제광장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

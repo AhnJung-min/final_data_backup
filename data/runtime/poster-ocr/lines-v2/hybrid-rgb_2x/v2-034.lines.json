@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-034",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-034.easy_rgb_2x_006",
+   "case_id": "v2-034",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     357.5,
+     442.5
+    ],
+    [
+     403.5,
+     442.5
+    ],
+    [
+     403.5,
+     464.5
+    ],
+    [
+     357.5,
+     464.5
+    ]
+   ],
+   "bbox": [
+    357.5,
+    442.5,
+    403.5,
+    464.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "9.12",
+   "text_key": "912",
+   "ocr_text": "9.12",
+   "confidence": 0.8982976078987122,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "9.12 토 - 9.13 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-034.easy_rgb_2x_007",
+   "case_id": "v2-034",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     358.5,
+     477.5
+    ],
+    [
+     405.5,
+     477.5
+    ],
+    [
+     405.5,
+     499.5
+    ],
+    [
+     358.5,
+     499.5
+    ]
+   ],
+   "bbox": [
+    358.5,
+    477.5,
+    405.5,
+    499.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "9.13",
+   "text_key": "913",
+   "ocr_text": "9.13",
+   "confidence": 0.9798505033842709,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "9.12 토 - 9.13 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-034.easy_rgb_2x_012",
+   "case_id": "v2-034",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     302.5,
+     563.5
+    ],
+    [
+     345.5,
+     563.5
+    ],
+    [
+     345.5,
+     573.5
+    ],
+    [
+     302.5,
+     573.5
+    ]
+   ],
+   "bbox": [
+    302.5,
+    563.5,
+    345.5,
+    573.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "RE-BORN 미션",
+   "text_key": "reborn미션",
+   "ocr_text": "RE-BORNI",
+   "confidence": 0.8976589441299438,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "RE-BORN 미션",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

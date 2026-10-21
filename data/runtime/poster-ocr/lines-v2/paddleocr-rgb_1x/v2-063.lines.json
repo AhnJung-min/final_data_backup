@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-063",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-063.padd_rgb_1x_003",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     158.0,
+     86.0
+    ],
+    [
+     284.0,
+     86.0
+    ],
+    [
+     284.0,
+     124.0
+    ],
+    [
+     158.0,
+     124.0
+    ]
+   ],
+   "bbox": [
+    158.0,
+    86.0,
+    284.0,
+    124.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "인제",
+   "text_key": "인제",
+   "ocr_text": "인제에서",
+   "confidence": 0.9093937277793884,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "인제",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_1x_004",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     125.0,
+     209.0
+    ],
+    [
+     318.0,
+     209.0
+    ],
+    [
+     318.0,
+     235.0
+    ],
+    [
+     125.0,
+     235.0
+    ]
+   ],
+   "bbox": [
+    125.0,
+    209.0,
+    318.0,
+    235.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "2026.9.24.(목) ~ 10.18.(일)",
+   "text_key": "2026924목1018일",
+   "ocr_text": "2026.9.24.(목)~10.18.(일)",
+   "confidence": 0.9534986615180969,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.9.24.(목) ~ 10.18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_1x_005",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     126.0,
+     233.0
+    ],
+    [
+     317.0,
+     232.0
+    ],
+    [
+     317.0,
+     249.0
+    ],
+    [
+     126.0,
+     250.0
+    ]
+   ],
+   "bbox": [
+    126.0,
+    232.0,
+    317.0,
+    250.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "강원특별자치도 인제군 용대 관광지 일원",
+   "text_key": "강원특별자치도인제군용대관광지일원",
+   "ocr_text": "강원특별자치도인께군용대관광지일원",
+   "confidence": 0.9296510219573975,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0588,
+   "gold_value": "강원특별자치도 인제군 용대 관광지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_1x_010",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     250.0,
+     591.0
+    ],
+    [
+     351.0,
+     591.0
+    ],
+    [
+     351.0,
+     601.0
+    ],
+    [
+     250.0,
+     601.0
+    ]
+   ],
+   "bbox": [
+    250.0,
+    591.0,
+    351.0,
+    601.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "033-460-8900",
+   "text_key": "0334608900",
+   "ocr_text": "20223-03033-460-8900",
+   "confidence": 0.7488226890563965,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "033-460-8900",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

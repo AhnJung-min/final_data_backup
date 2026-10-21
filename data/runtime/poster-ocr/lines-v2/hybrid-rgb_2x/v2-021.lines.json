@@ -1,0 +1,345 @@
+{
+ "case_id": "v2-021",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 19,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-021.easy_rgb_2x_000",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     41.5,
+     27.5
+    ],
+    [
+     148.5,
+     27.5
+    ],
+    [
+     148.5,
+     47.5
+    ],
+    [
+     41.5,
+     47.5
+    ]
+   ],
+   "bbox": [
+    41.5,
+    27.5,
+    148.5,
+    47.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026 책모꼬지",
+   "text_key": "2026책모꼬지",
+   "ocr_text": "2026 책모고지",
+   "confidence": 0.8026032291649747,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "2026 책모꼬지 성북 북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.easy_rgb_2x_002",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     16.5,
+     27.0
+    ],
+    [
+     430.5,
+     27.0
+    ],
+    [
+     430.5,
+     157.5
+    ],
+    [
+     16.5,
+     157.5
+    ]
+   ],
+   "bbox": [
+    16.5,
+    27.0,
+    430.5,
+    157.5
+   ],
+   "height": 130.5,
+   "small_text": false,
+   "text": "성북 북페스티벌",
+   "text_key": "성북북페스티벌",
+   "ocr_text": "성물북페스티벌",
+   "confidence": 0.7587298154830933,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "2026 책모꼬지 성북 북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.easy_rgb_2x_003",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     304.0,
+     151.5
+    ],
+    [
+     417.5,
+     151.5
+    ],
+    [
+     417.5,
+     168.0
+    ],
+    [
+     304.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    304.0,
+    151.5,
+    417.5,
+    168.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "9월 6일(일)",
+   "text_key": "9월6일일",
+   "ocr_text": "9월 6일(일)15시~20시",
+   "confidence": 0.9562884569168091,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9월 6일(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.easy_rgb_2x_004",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     305.0,
+     173.0
+    ],
+    [
+     409.0,
+     173.0
+    ],
+    [
+     409.0,
+     189.0
+    ],
+    [
+     305.0,
+     189.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    173.0,
+    409.0,
+    189.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "성북구청 앞 바람마당교",
+   "text_key": "성북구청앞바람마당교",
+   "ocr_text": "성북구청앞 바람미당교",
+   "confidence": 0.806132388036662,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "성북구청 앞 바람마당교",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.easy_rgb_2x_005",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     304.0,
+     190.0
+    ],
+    [
+     418.0,
+     190.0
+    ],
+    [
+     418.0,
+     205.0
+    ],
+    [
+     304.0,
+     205.0
+    ]
+   ],
+   "bbox": [
+    304.0,
+    190.0,
+    418.0,
+    205.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "성북천 수변활력거점 일대",
+   "text_key": "성북천수변활력거점일대",
+   "ocr_text": "성북천수변활력거점일대",
+   "confidence": 0.951646089553833,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성북천 수변활력거점 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.easy_rgb_2x_006",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     304.0,
+     225.0
+    ],
+    [
+     402.0,
+     225.0
+    ],
+    [
+     402.0,
+     241.0
+    ],
+    [
+     304.0,
+     241.0
+    ]
+   ],
+   "bbox": [
+    304.0,
+    225.0,
+    402.0,
+    241.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "18시 30분축하공연",
+   "confidence": 0.9482256174087524,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

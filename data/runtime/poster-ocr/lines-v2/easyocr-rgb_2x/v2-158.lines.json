@@ -1,0 +1,341 @@
+{
+ "case_id": "v2-158",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 19,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-158.easy_rgb_2x_000",
+   "case_id": "v2-158",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     21.5,
+     9.0
+    ],
+    [
+     61.0,
+     9.0
+    ],
+    [
+     61.0,
+     28.0
+    ],
+    [
+     21.5,
+     28.0
+    ]
+   ],
+   "bbox": [
+    21.5,
+    9.0,
+    61.0,
+    28.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "동구미래",
+   "text_key": "동구미래",
+   "ocr_text": "동구미래:",
+   "confidence": 0.8037620327936534,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "동구미래 제대로 다르게",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-158.easy_rgb_2x_002",
+   "case_id": "v2-158",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     30.0,
+     21.0
+    ],
+    [
+     90.0,
+     21.0
+    ],
+    [
+     90.0,
+     36.0
+    ],
+    [
+     30.0,
+     36.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    21.0,
+    90.0,
+    36.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "제대로 다르게",
+   "text_key": "제대로다르게",
+   "ocr_text": "제대로 다로게",
+   "confidence": 0.4280409820575319,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "동구미래 제대로 다르게",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-158.easy_rgb_2x_007",
+   "case_id": "v2-158",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     63.5,
+     386.5
+    ],
+    [
+     181.5,
+     386.5
+    ],
+    [
+     181.5,
+     408.5
+    ],
+    [
+     63.5,
+     408.5
+    ]
+   ],
+   "bbox": [
+    63.5,
+    386.5,
+    181.5,
+    408.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026.10.17.토",
+   "text_key": "20261017토",
+   "ocr_text": "2026.10.17 토",
+   "confidence": 0.9443158410897544,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.17.토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-158.easy_rgb_2x_008",
+   "case_id": "v2-158",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     63.5,
+     406.5
+    ],
+    [
+     174.5,
+     406.5
+    ],
+    [
+     174.5,
+     427.5
+    ],
+    [
+     63.5,
+     427.5
+    ]
+   ],
+   "bbox": [
+    63.5,
+    406.5,
+    174.5,
+    427.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "동구 율하체육공원",
+   "text_key": "동구율하체육공원",
+   "ocr_text": "동구 운하체육공원",
+   "confidence": 0.6541814769692831,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "동구 율하체육공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-158.easy_rgb_2x_012",
+   "case_id": "v2-158",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     62.0,
+     455.0
+    ],
+    [
+     180.0,
+     455.0
+    ],
+    [
+     180.0,
+     468.0
+    ],
+    [
+     62.0,
+     468.0
+    ]
+   ],
+   "bbox": [
+    62.0,
+    455.0,
+    180.0,
+    468.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "전국 트롯 가요제",
+   "text_key": "전국트롯가요제",
+   "ocr_text": "130-19 C 전국 트봇 가요제",
+   "confidence": 0.4999976494890893,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "전국 트롯 가요제",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-158.easy_rgb_2x_015",
+   "case_id": "v2-158",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     63.0,
+     467.0
+    ],
+    [
+     209.0,
+     467.0
+    ],
+    [
+     209.0,
+     480.0
+    ],
+    [
+     63.0,
+     480.0
+    ]
+   ],
+   "bbox": [
+    63.0,
+    467.0,
+    209.0,
+    480.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "어울림 콘서트(초대가수)",
+   "text_key": "어울림콘서트초대가수",
+   "ocr_text": "1 C-210C 어느짐 근서트(초대가수)",
+   "confidence": 0.1473027531513015,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "어울림 콘서트(초대가수)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

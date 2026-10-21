@@ -1,0 +1,73 @@
+{
+ "case_id": "v2-054",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 460,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 28,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-054.easy_rgb_2x_010",
+   "case_id": "v2-054",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     46.0,
+     392.0
+    ],
+    [
+     363.0,
+     392.0
+    ],
+    [
+     363.0,
+     416.0
+    ],
+    [
+     46.0,
+     416.0
+    ]
+   ],
+   "bbox": [
+    46.0,
+    392.0,
+    363.0,
+    416.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026. 9. 19.(토)",
+   "text_key": "2026919토",
+   "ocr_text": "2026.9.19.(토)14:00~21:00 작천정 다목적광장",
+   "confidence": 0.9446282386779785,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19.(토)",
+   "extra_chars": 16,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

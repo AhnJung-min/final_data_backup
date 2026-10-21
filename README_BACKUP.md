@@ -23,6 +23,9 @@
 | `data/runtime/festivals/*/` | TourAPI 수집 실행의 JSON(캐시·이미지 제외) |
 | `data/synthetic/poster-check-v1/` | 가상 대조 실험 세트 40개: 포스터·기준 문서 PNG 각 40장(직접 생성), 정답 `sets.json`, OCR 매니페스트 `manifest.json` |
 | `data/runtime/poster-ocr/sim/` | 가상 세트 PaddleOCR 결과(80건, `runs/paddleocr/<세트>-doc·-poster/rgb_1x.json`), 대조 결과(`checks/` = 현재 규칙 r4, `checks-r1`~`r4`), 규칙별 채점 `eval-r*.json` |
+| `data/runtime/poster-ocr/lines-v2/`, `calib/`, `synth-boxes/` | 줄 정답 초안(OCR 줄 ↔ 정답 값, 사람 승인 전), 신뢰도 보정(진단용), 가상 세트 글자 박스·검출 재현율 |
+| `data/runtime/poster-ocr/runs/rapidocr/`, `pred-rapidocr/`, `eval/rapidocr-product.json` | 서비스 OCR(RapidOCR) 252장 기준선 |
+| `data/collection/evidence/request-split.v1.json`, `request-baseline.draft.json` | 요청 의도 250문장 그룹 분할과 초안 라벨 기준 모델 결과 |
 | `.runtime/poster-ocr/` | 실험 작업 기록: 스크립트, 규칙 제안 diff, 검토 결과 JSON, 정답 변환 전 사본 |
 | `requirements-ocr-easyocr.txt`, `requirements-ocr-paddle.txt` | OCR 전용 가상환경 2개의 고정 패키지 목록 |
 
@@ -59,6 +62,9 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m app.poster_ocr.sim_check --all --out .runtime\check\sim-checks
 .\.venv\Scripts\python.exe -m app.poster_ocr.report sim
 .\.venv\Scripts\python.exe -m app.poster_ocr.sim_dashboard --port 8766
+# 데이터 준비 대시보드(줄 정답·검토, 신뢰도 보정, 가상 박스, 요청 의도) (http://127.0.0.1:8767)
+# 로고 카탈로그 탭은 로고 원본이 이 백업에 없어 비어 있다. 줄 검토 큐(정답표 포함)도 공개하지 않으므로 먼저 만든다: python -m app.poster_ocr.line_labels queue --source paddleocr-rgb_2x
+.\.venv\Scripts\python.exe -m app.poster_ocr.prep_dashboard --port 8767
 ```
 
 ### 2. OCR까지 다시 돌리기 (CPU 기준 수 시간)

@@ -1,0 +1,183 @@
+{
+ "case_id": "v2-012",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 442,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-012.padd_rgb_1x_004",
+   "case_id": "v2-012",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     157.0,
+     431.0
+    ],
+    [
+     288.0,
+     431.0
+    ],
+    [
+     288.0,
+     458.0
+    ],
+    [
+     157.0,
+     458.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    431.0,
+    288.0,
+    458.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "CHEONAN",
+   "text_key": "cheonan",
+   "ocr_text": "CHEONAN",
+   "confidence": 0.96233069896698,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2105,
+   "gold_value": "CHEONAN K-CULTURE EXPO",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-012.padd_rgb_1x_005",
+   "case_id": "v2-012",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     63.0,
+     460.0
+    ],
+    [
+     377.0,
+     460.0
+    ],
+    [
+     377.0,
+     490.0
+    ],
+    [
+     63.0,
+     490.0
+    ]
+   ],
+   "bbox": [
+    63.0,
+    460.0,
+    377.0,
+    490.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "K-CULTURE EXPO 2026",
+   "text_key": "kcultureexpo2026",
+   "ocr_text": "K-CULTURE EXPO 2026",
+   "confidence": 0.9772255420684814,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "CHEONAN K-CULTURE EXPO 2026",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-012.padd_rgb_1x_006",
+   "case_id": "v2-012",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     48.0,
+     497.0
+    ],
+    [
+     391.0,
+     496.0
+    ],
+    [
+     391.0,
+     509.0
+    ],
+    [
+     48.0,
+     510.0
+    ]
+   ],
+   "bbox": [
+    48.0,
+    496.0,
+    391.0,
+    510.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "September 2(Wed) - 6(Sun) 2026",
+   "text_key": "september2wed6sun2026",
+   "ocr_text": "September 2(Wed)- 6(5un) 2026 I The Independence Hall of Korea",
+   "confidence": 0.9446942806243896,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0476,
+   "gold_value": "September 2(Wed) - 6(Sun) 2026",
+   "extra_chars": 27,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

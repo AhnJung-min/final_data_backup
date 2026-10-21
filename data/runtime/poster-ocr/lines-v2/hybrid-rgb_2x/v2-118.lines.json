@@ -1,0 +1,397 @@
+{
+ "case_id": "v2-118",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 22,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-118.easy_rgb_2x_001",
+   "case_id": "v2-118",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     142.5,
+     22.0
+    ],
+    [
+     298.5,
+     22.0
+    ],
+    [
+     298.5,
+     44.0
+    ],
+    [
+     142.5,
+     44.0
+    ]
+   ],
+   "bbox": [
+    142.5,
+    22.0,
+    298.5,
+    44.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "제7회 안양 청년 축제",
+   "text_key": "제7회안양청년축제",
+   "ocr_text": "제7회안양청년축제",
+   "confidence": 0.9608847498893738,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제7회 안양 청년 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-118.easy_rgb_2x_013",
+   "case_id": "v2-118",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     26.0,
+     146.0
+    ],
+    [
+     93.0,
+     146.0
+    ],
+    [
+     93.0,
+     158.0
+    ],
+    [
+     26.0,
+     158.0
+    ]
+   ],
+   "bbox": [
+    26.0,
+    146.0,
+    93.0,
+    158.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "'가리보이 숙하공연",
+   "confidence": 0.4059414217099509,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "축하공연",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-118.easy_rgb_2x_014",
+   "case_id": "v2-118",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     43.0,
+     156.0
+    ],
+    [
+     75.0,
+     156.0
+    ],
+    [
+     75.0,
+     168.0
+    ],
+    [
+     43.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    43.0,
+    156.0,
+    75.0,
+    168.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "DJ 공연",
+   "text_key": "dj공연",
+   "ocr_text": "DJ공연",
+   "confidence": 0.9989669919013977,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "DJ 공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-118.easy_rgb_2x_018",
+   "case_id": "v2-118",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     125.25,
+     501.01
+    ],
+    [
+     237.88,
+     563.96
+    ],
+    [
+     217.75,
+     599.49
+    ],
+    [
+     105.12,
+     536.54
+    ]
+   ],
+   "bbox": [
+    105.12,
+    501.01,
+    237.88,
+    599.49
+   ],
+   "height": 40.84,
+   "small_text": false,
+   "text": "2026.10.10.S",
+   "text_key": "20261010s",
+   "ocr_text": "2o26.1010SK'",
+   "confidence": 0.286231203988567,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026.10.10.SAT",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-118.easy_rgb_2x_019",
+   "case_id": "v2-118",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     222.26,
+     559.07
+    ],
+    [
+     314.81,
+     509.15
+    ],
+    [
+     326.74,
+     540.43
+    ],
+    [
+     234.19,
+     590.85
+    ]
+   ],
+   "bbox": [
+    222.26,
+    509.15,
+    326.74,
+    590.85
+   ],
+   "height": 33.71,
+   "small_text": false,
+   "text": "T",
+   "text_key": "t",
+   "ocr_text": "T",
+   "confidence": 0.5719682574272156,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026.10.10.SAT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-118.easy_rgb_2x_020",
+   "case_id": "v2-118",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     204.18,
+     589.88
+    ],
+    [
+     267.17,
+     578.77
+    ],
+    [
+     269.82,
+     602.12
+    ],
+    [
+     207.33,
+     612.73
+    ]
+   ],
+   "bbox": [
+    204.18,
+    578.77,
+    269.82,
+    612.73
+   ],
+   "height": 23.28,
+   "small_text": false,
+   "text": "중앙공원",
+   "text_key": "중앙공원",
+   "ocr_text": "중앙공원",
+   "confidence": 0.6353728771209717,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "평촌중앙공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-118.easy_rgb_2x_021",
+   "case_id": "v2-118",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     180.01,
+     583.06
+    ],
+    [
+     210.91,
+     589.91
+    ],
+    [
+     206.99,
+     606.94
+    ],
+    [
+     176.09,
+     600.59
+    ]
+   ],
+   "bbox": [
+    176.09,
+    583.06,
+    210.91,
+    606.94
+   ],
+   "height": 17.72,
+   "small_text": false,
+   "text": "평촌",
+   "text_key": "평촌",
+   "ocr_text": "평촌",
+   "confidence": 0.7641513698292344,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "평촌중앙공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

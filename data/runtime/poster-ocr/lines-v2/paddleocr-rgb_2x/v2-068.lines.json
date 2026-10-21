@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-068",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-068.padd_rgb_2x_000",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     20.0,
+     15.5
+    ],
+    [
+     76.5,
+     15.5
+    ],
+    [
+     76.5,
+     31.0
+    ],
+    [
+     20.0,
+     31.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    15.5,
+    76.5,
+    31.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "고양특례시",
+   "text_key": "고양특례시",
+   "ocr_text": "고양특례시",
+   "confidence": 0.9982697367668152,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고양특례시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_2x_001",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     344.5,
+     15.0
+    ],
+    [
+     431.5,
+     15.0
+    ],
+    [
+     431.5,
+     25.5
+    ],
+    [
+     344.5,
+     25.5
+    ]
+   ],
+   "bbox": [
+    344.5,
+    15.0,
+    431.5,
+    25.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "고양국제박람회재단",
+   "text_key": "고양국제박람회재단",
+   "ocr_text": "#고양국제박람회재단",
+   "confidence": 0.8120232820510864,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고양국제박람회재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_2x_002",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     42.5,
+     57.0
+    ],
+    [
+     131.0,
+     57.0
+    ],
+    [
+     131.0,
+     91.0
+    ],
+    [
+     42.5,
+     91.0
+    ]
+   ],
+   "bbox": [
+    42.5,
+    57.0,
+    131.0,
+    91.0
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9991804361343384,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "2026 고양가을 꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_2x_003",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     40.0,
+     91.5
+    ],
+    [
+     209.5,
+     89.0
+    ],
+    [
+     210.5,
+     139.0
+    ],
+    [
+     41.0,
+     141.5
+    ]
+   ],
+   "bbox": [
+    40.0,
+    89.0,
+    210.5,
+    141.5
+   ],
+   "height": 50.01,
+   "small_text": false,
+   "text": "고양",
+   "text_key": "고양",
+   "ocr_text": "고양을",
+   "confidence": 0.9889577031135559,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "2026 고양가을 꽃축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_2x_007",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     193.5,
+     162.0
+    ],
+    [
+     259.5,
+     150.5
+    ],
+    [
+     266.0,
+     189.0
+    ],
+    [
+     200.5,
+     200.5
+    ]
+   ],
+   "bbox": [
+    193.5,
+    150.5,
+    266.0,
+    200.5
+   ],
+   "height": 39.09,
+   "small_text": false,
+   "text": "제",
+   "text_key": "제",
+   "ocr_text": "제",
+   "confidence": 0.9500012397766113,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "2026 고양가을 꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_2x_009",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     42.5,
+     246.0
+    ],
+    [
+     237.0,
+     244.5
+    ],
+    [
+     237.0,
+     270.5
+    ],
+    [
+     43.0,
+     272.5
+    ]
+   ],
+   "bbox": [
+    42.5,
+    244.5,
+    237.0,
+    272.5
+   ],
+   "height": 26.25,
+   "small_text": false,
+   "text": "10.01.목 ~ 10.11.일",
+   "text_key": "1001목1011일",
+   "ocr_text": "10.01. ~10.11.일",
+   "confidence": 0.9596130847930908,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "10.01.목 ~ 10.11.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_2x_010",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     44.5,
+     275.5
+    ],
+    [
+     214.5,
+     275.0
+    ],
+    [
+     214.5,
+     294.0
+    ],
+    [
+     44.5,
+     294.5
+    ]
+   ],
+   "bbox": [
+    44.5,
+    275.0,
+    214.5,
+    294.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "일산호수공원 주제광장 일원",
+   "text_key": "일산호수공원주제광장일원",
+   "ocr_text": "일산호수공원 주제광장 일원",
+   "confidence": 0.9666398167610168,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일산호수공원 주제광장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

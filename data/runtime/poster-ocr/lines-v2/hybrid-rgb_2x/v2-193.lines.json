@@ -1,0 +1,398 @@
+{
+ "case_id": "v2-193",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 460,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-193.easy_rgb_2x_000",
+   "case_id": "v2-193",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     87.5,
+     14.5
+    ],
+    [
+     371.5,
+     14.5
+    ],
+    [
+     371.5,
+     50.5
+    ],
+    [
+     87.5,
+     50.5
+    ]
+   ],
+   "bbox": [
+    87.5,
+    14.5,
+    371.5,
+    50.5
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "도전하라! 한계를 넘는 극강의 매운맛!",
+   "text_key": "도전하라한계를넘는극강의매운맛",
+   "ocr_text": "도전하라 한계를넘는 극강의 매운맛!",
+   "confidence": 0.8628653287887573,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "도전하라! 한계를 넘는 극강의 매운맛!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-193.easy_rgb_2x_001",
+   "case_id": "v2-193",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     42.5,
+     64.5
+    ],
+    [
+     103.5,
+     64.5
+    ],
+    [
+     103.5,
+     96.5
+    ],
+    [
+     42.5,
+     96.5
+    ]
+   ],
+   "bbox": [
+    42.5,
+    64.5,
+    103.5,
+    96.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "밀양",
+   "text_key": "밀양",
+   "ocr_text": "밀양",
+   "confidence": 0.9465587804933344,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "밀양 매운맛 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-193.easy_rgb_2x_002",
+   "case_id": "v2-193",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     36.0,
+     63.0
+    ],
+    [
+     426.0,
+     63.0
+    ],
+    [
+     426.0,
+     233.0
+    ],
+    [
+     36.0,
+     233.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    63.0,
+    426.0,
+    233.0
+   ],
+   "height": 170.0,
+   "small_text": false,
+   "text": "매운",
+   "text_key": "매운",
+   "ocr_text": "매운마",
+   "confidence": 0.8317626118659973,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "밀양 매운맛 축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-193.easy_rgb_2x_003",
+   "case_id": "v2-193",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     160.0,
+     216.0
+    ],
+    [
+     296.0,
+     216.0
+    ],
+    [
+     296.0,
+     290.0
+    ],
+    [
+     160.0,
+     290.0
+    ]
+   ],
+   "bbox": [
+    160.0,
+    216.0,
+    296.0,
+    290.0
+   ],
+   "height": 74.0,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.9796156883239746,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "밀양 매운맛 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-193.easy_rgb_2x_004",
+   "case_id": "v2-193",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     117.0,
+     302.0
+    ],
+    [
+     343.0,
+     302.0
+    ],
+    [
+     343.0,
+     329.0
+    ],
+    [
+     117.0,
+     329.0
+    ]
+   ],
+   "bbox": [
+    117.0,
+    302.0,
+    343.0,
+    329.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "2026.10.31.(토)-11.1.(일)",
+   "text_key": "20261031토111일",
+   "ocr_text": "2026.10.31.(토)-11.1.(일)",
+   "confidence": 0.9610981345176697,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.31.(토)-11.1.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-193.easy_rgb_2x_005",
+   "case_id": "v2-193",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     168.5,
+     334.5
+    ],
+    [
+     314.5,
+     334.5
+    ],
+    [
+     314.5,
+     370.5
+    ],
+    [
+     168.5,
+     370.5
+    ]
+   ],
+   "bbox": [
+    168.5,
+    334.5,
+    314.5,
+    370.5
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "밀양강변일원",
+   "text_key": "밀양강변일원",
+   "ocr_text": "밀양감변일원",
+   "confidence": 0.9171204566955566,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "밀양강변일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-193.easy_rgb_2x_008",
+   "case_id": "v2-193",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     200.5,
+     609.5
+    ],
+    [
+     226.5,
+     609.5
+    ],
+    [
+     226.5,
+     619.5
+    ],
+    [
+     200.5,
+     619.5
+    ]
+   ],
+   "bbox": [
+    200.5,
+    609.5,
+    226.5,
+    619.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "삼양식품",
+   "text_key": "삼양식품",
+   "ocr_text": "삼영식품",
+   "confidence": 0.5978672504425049,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "삼양식품",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

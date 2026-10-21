@@ -1,0 +1,990 @@
+{
+ "case_id": "v2-027",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 41,
+ "lines_matched": 18,
+ "records": [
+  {
+   "id": "v2-027.padd_rgb_1x_001",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     157.0,
+     7.0
+    ],
+    [
+     342.0,
+     7.0
+    ],
+    [
+     342.0,
+     17.0
+    ],
+    [
+     157.0,
+     17.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    7.0,
+    342.0,
+    17.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "고양상공회의소",
+   "text_key": "고양상공회의소",
+   "ocr_text": "주관|고양상공회의소·고양스테이업·라패스타",
+   "confidence": 0.8945232033729553,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고양상공회의소",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_011",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     34.0,
+     228.0
+    ],
+    [
+     117.0,
+     228.0
+    ],
+    [
+     117.0,
+     242.0
+    ],
+    [
+     34.0,
+     242.0
+    ]
+   ],
+   "bbox": [
+    34.0,
+    228.0,
+    117.0,
+    242.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "제1회 대한민국",
+   "text_key": "제1회대한민국",
+   "ocr_text": "제1회 대한민국",
+   "confidence": 0.9679206013679504,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제1회 대한민국 자유로가요제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_012",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     186.0,
+     228.0
+    ],
+    [
+     246.0,
+     228.0
+    ],
+    [
+     246.0,
+     242.0
+    ],
+    [
+     186.0,
+     242.0
+    ]
+   ],
+   "bbox": [
+    186.0,
+    228.0,
+    246.0,
+    242.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "한여름밤의",
+   "text_key": "한여름밤의",
+   "ocr_text": "한여를밤의",
+   "confidence": 0.855913519859314,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "한여름밤의 클래식 음악회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_013",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     332.0,
+     227.0
+    ],
+    [
+     405.0,
+     227.0
+    ],
+    [
+     405.0,
+     244.0
+    ],
+    [
+     332.0,
+     244.0
+    ]
+   ],
+   "bbox": [
+    332.0,
+    227.0,
+    405.0,
+    244.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "시민랜덤댄스",
+   "text_key": "시민랜덤댄스",
+   "ocr_text": "시민랜덤댄스",
+   "confidence": 0.9589927792549133,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "시민랜덤댄스 & 힐링 노래경연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_014",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     41.0,
+     246.0
+    ],
+    [
+     113.0,
+     246.0
+    ],
+    [
+     113.0,
+     260.0
+    ],
+    [
+     41.0,
+     260.0
+    ]
+   ],
+   "bbox": [
+    41.0,
+    246.0,
+    113.0,
+    260.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "자유로가요제",
+   "text_key": "자유로가요제",
+   "ocr_text": "자유로가요제",
+   "confidence": 0.9985580444335938,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제1회 대한민국 자유로가요제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_015",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     179.0,
+     245.0
+    ],
+    [
+     256.0,
+     243.0
+    ],
+    [
+     256.0,
+     259.0
+    ],
+    [
+     179.0,
+     262.0
+    ]
+   ],
+   "bbox": [
+    179.0,
+    243.0,
+    256.0,
+    262.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "클래식 음악회",
+   "text_key": "클래식음악회",
+   "ocr_text": "클래식음악회",
+   "confidence": 0.9742026925086975,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "한여름밤의 클래식 음악회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_016",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     324.0,
+     245.0
+    ],
+    [
+     416.0,
+     245.0
+    ],
+    [
+     416.0,
+     262.0
+    ],
+    [
+     324.0,
+     262.0
+    ]
+   ],
+   "bbox": [
+    324.0,
+    245.0,
+    416.0,
+    262.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "& 힐링 노래경연",
+   "text_key": "힐링노래경연",
+   "ocr_text": "&릴링 노래경연",
+   "confidence": 0.763157308101654,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "시민랜덤댄스 & 힐링 노래경연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_025",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_025"
+   },
+   "polygon": [
+    [
+     124.0,
+     463.0
+    ],
+    [
+     189.0,
+     463.0
+    ],
+    [
+     189.0,
+     474.0
+    ],
+    [
+     124.0,
+     474.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    463.0,
+    189.0,
+    474.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "가족 체험 프로그램",
+   "text_key": "가족체험프로그램",
+   "ocr_text": "·가족체한프로그램",
+   "confidence": 0.744247555732727,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "가족 체험 프로그램",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_026",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_026"
+   },
+   "polygon": [
+    [
+     233.0,
+     464.0
+    ],
+    [
+     293.0,
+     464.0
+    ],
+    [
+     293.0,
+     474.0
+    ],
+    [
+     233.0,
+     474.0
+    ]
+   ],
+   "bbox": [
+    233.0,
+    464.0,
+    293.0,
+    474.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "시민 참여 이벤트",
+   "text_key": "시민참여이벤트",
+   "ocr_text": "·시변 참이 이벤트",
+   "confidence": 0.8354473114013672,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "시민 참여 이벤트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_028",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_028"
+   },
+   "polygon": [
+    [
+     15.0,
+     474.0
+    ],
+    [
+     50.0,
+     474.0
+    ],
+    [
+     50.0,
+     484.0
+    ],
+    [
+     15.0,
+     484.0
+    ]
+   ],
+   "bbox": [
+    15.0,
+    474.0,
+    50.0,
+    484.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "푸드트럭",
+   "text_key": "푸드트럭",
+   "ocr_text": "·푸드트럭",
+   "confidence": 0.8133014440536499,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "푸드트럭",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_029",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_029"
+   },
+   "polygon": [
+    [
+     234.0,
+     473.0
+    ],
+    [
+     293.0,
+     472.0
+    ],
+    [
+     293.0,
+     483.0
+    ],
+    [
+     234.0,
+     484.0
+    ]
+   ],
+   "bbox": [
+    234.0,
+    472.0,
+    293.0,
+    484.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "SNS 인증 이벤트",
+   "text_key": "sns인증이벤트",
+   "ocr_text": "-SNS 인증 이벤트",
+   "confidence": 0.8446719646453857,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "SNS 인증 이벤트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_030",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_030"
+   },
+   "polygon": [
+    [
+     342.0,
+     473.0
+    ],
+    [
+     399.0,
+     473.0
+    ],
+    [
+     399.0,
+     484.0
+    ],
+    [
+     342.0,
+     484.0
+    ]
+   ],
+   "bbox": [
+    342.0,
+    473.0,
+    399.0,
+    484.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "리유즈 플리마켓",
+   "text_key": "리유즈플리마켓",
+   "ocr_text": "·리유즈 플리마켓",
+   "confidence": 0.7572613954544067,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "리유즈 플리마켓",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_032",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_032"
+   },
+   "polygon": [
+    [
+     125.0,
+     485.0
+    ],
+    [
+     197.0,
+     485.0
+    ],
+    [
+     197.0,
+     495.0
+    ],
+    [
+     125.0,
+     495.0
+    ]
+   ],
+   "bbox": [
+    125.0,
+    485.0,
+    197.0,
+    495.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "다양한 참여 프로그램",
+   "text_key": "다양한참여프로그램",
+   "ocr_text": "·다업한 참여 프로그램",
+   "confidence": 0.788585901260376,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "다양한 참여 프로그램",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_033",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_033"
+   },
+   "polygon": [
+    [
+     234.0,
+     484.0
+    ],
+    [
+     277.0,
+     484.0
+    ],
+    [
+     277.0,
+     495.0
+    ],
+    [
+     234.0,
+     495.0
+    ]
+   ],
+   "bbox": [
+    234.0,
+    484.0,
+    277.0,
+    495.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "경품 행사등",
+   "text_key": "경품행사등",
+   "ocr_text": "·경품행사동",
+   "confidence": 0.7850112318992615,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "경품 행사등",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_037",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_037"
+   },
+   "polygon": [
+    [
+     24.0,
+     540.0
+    ],
+    [
+     195.0,
+     540.0
+    ],
+    [
+     195.0,
+     556.0
+    ],
+    [
+     24.0,
+     556.0
+    ]
+   ],
+   "bbox": [
+    24.0,
+    540.0,
+    195.0,
+    556.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "일산 라페스타 문화의 거리",
+   "text_key": "일산라페스타문화의거리",
+   "ocr_text": "일산 라페스타 문화의 거리",
+   "confidence": 0.9845675230026245,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일산 라페스타 문화의 거리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_038",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_038"
+   },
+   "polygon": [
+    [
+     23.0,
+     563.0
+    ],
+    [
+     212.0,
+     563.0
+    ],
+    [
+     212.0,
+     580.0
+    ],
+    [
+     23.0,
+     580.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    563.0,
+    212.0,
+    580.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "2026.09.11(금) ~ 09.13(일)",
+   "text_key": "20260911금0913일",
+   "ocr_text": "2026.09.11(금)~09.13(일)",
+   "confidence": 0.9458145499229431,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.09.11(금) ~ 09.13(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_039",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_039"
+   },
+   "polygon": [
+    [
+     22.0,
+     586.0
+    ],
+    [
+     129.0,
+     586.0
+    ],
+    [
+     129.0,
+     603.0
+    ],
+    [
+     22.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    586.0,
+    129.0,
+    603.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "15:00 ~ 22:00",
+   "text_key": "15002200",
+   "ocr_text": "15:00~22:00",
+   "confidence": 0.9598068594932556,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "15:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.padd_rgb_1x_040",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_040"
+   },
+   "polygon": [
+    [
+     1.0,
+     610.0
+    ],
+    [
+     439.0,
+     610.0
+    ],
+    [
+     439.0,
+     623.0
+    ],
+    [
+     1.0,
+     623.0
+    ]
+   ],
+   "bbox": [
+    1.0,
+    610.0,
+    439.0,
+    623.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "GOYANG FOOD&BEER FESTIVAL",
+   "text_key": "goyangfoodbeerfestival",
+   "ocr_text": "FOODEBEER.FESTIMAL FOODSBEER FESTIVAL FOOOSBEER FESTIVAL FOOINSBEER FESTIVAL",
+   "confidence": 0.8961367607116699,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "GOYANG FOOD&BEER FESTIVAL",
+   "extra_chars": 47,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

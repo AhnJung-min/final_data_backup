@@ -1,0 +1,449 @@
+{
+ "case_id": "v2-078",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 502,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-078.easy_rgb_2x_000",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     204.5,
+     15.5
+    ],
+    [
+     338.0,
+     15.5
+    ],
+    [
+     338.0,
+     56.0
+    ],
+    [
+     204.5,
+     56.0
+    ]
+   ],
+   "bbox": [
+    204.5,
+    15.5,
+    338.0,
+    56.0
+   ],
+   "height": 40.5,
+   "small_text": false,
+   "text": "가장 빛나는 순간",
+   "text_key": "가장빛나는순간",
+   "ocr_text": "[가장 빛나는 순간",
+   "confidence": 0.6963637937213427,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "영천이 가장 빛나는 순간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-078.easy_rgb_2x_001",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     209.5,
+     52.5
+    ],
+    [
+     285.5,
+     52.5
+    ],
+    [
+     285.5,
+     82.5
+    ],
+    [
+     209.5,
+     82.5
+    ]
+   ],
+   "bbox": [
+    209.5,
+    52.5,
+    285.5,
+    82.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "제24회",
+   "text_key": "제24회",
+   "ocr_text": "제24회",
+   "confidence": 0.9995360970497131,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제24회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-078.easy_rgb_2x_003",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     64.5,
+     471.5
+    ],
+    [
+     150.5,
+     471.5
+    ],
+    [
+     150.5,
+     504.5
+    ],
+    [
+     64.5,
+     504.5
+    ]
+   ],
+   "bbox": [
+    64.5,
+    471.5,
+    150.5,
+    504.5
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.6052589560754493,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026.10.2.(금) ~ 10.4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-078.easy_rgb_2x_004",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     134.5,
+     454.5
+    ],
+    [
+     442.0,
+     454.5
+    ],
+    [
+     442.0,
+     508.5
+    ],
+    [
+     134.5,
+     508.5
+    ]
+   ],
+   "bbox": [
+    134.5,
+    454.5,
+    442.0,
+    508.5
+   ],
+   "height": 54.0,
+   "small_text": false,
+   "text": "10.2.(금) ~ 10.4.(일)",
+   "text_key": "102금104일",
+   "ocr_text": "10.2 ()~104 (일)",
+   "confidence": 0.5463844182488439,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026.10.2.(금) ~ 10.4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-078.easy_rgb_2x_005",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     128.5,
+     508.5
+    ],
+    [
+     419.0,
+     508.5
+    ],
+    [
+     419.0,
+     556.5
+    ],
+    [
+     128.5,
+     556.5
+    ]
+   ],
+   "bbox": [
+    128.5,
+    508.5,
+    419.0,
+    556.5
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "영천강변공원 D구역",
+   "text_key": "영천강변공원d구역",
+   "ocr_text": "영천강변공원 D구역",
+   "confidence": 0.975722746268881,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영천강변공원 D구역",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-078.easy_rgb_2x_006",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     175.5,
+     577.5
+    ],
+    [
+     229.5,
+     577.5
+    ],
+    [
+     229.5,
+     601.5
+    ],
+    [
+     175.5,
+     601.5
+    ]
+   ],
+   "bbox": [
+    175.5,
+    577.5,
+    229.5,
+    601.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "영천시",
+   "text_key": "영천시",
+   "ocr_text": "영천시",
+   "confidence": 0.9936030073221674,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영천시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-078.easy_rgb_2x_008",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     315.5,
+     580.5
+    ],
+    [
+     398.5,
+     580.5
+    ],
+    [
+     398.5,
+     599.5
+    ],
+    [
+     315.5,
+     599.5
+    ]
+   ],
+   "bbox": [
+    315.5,
+    580.5,
+    398.5,
+    599.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "대구한의대학교",
+   "text_key": "대구한의대학교",
+   "ocr_text": "대구한의대학교",
+   "confidence": 0.7854044609328432,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대구한의대학교",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-078.easy_rgb_2x_009",
+   "case_id": "v2-078",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     157.26,
+     30.27
+    ],
+    [
+     210.44,
+     20.76
+    ],
+    [
+     213.74,
+     46.73
+    ],
+    [
+     160.56,
+     56.24
+    ]
+   ],
+   "bbox": [
+    157.26,
+    20.76,
+    213.74,
+    56.24
+   ],
+   "height": 26.18,
+   "small_text": false,
+   "text": "영천이",
+   "text_key": "영천이",
+   "ocr_text": "영천이",
+   "confidence": 0.9761021937913513,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "영천이 가장 빛나는 순간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

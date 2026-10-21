@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-160",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 502,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-160.padd_rgb_1x_001",
+   "case_id": "v2-160",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     442.0,
+     14.0
+    ],
+    [
+     481.0,
+     14.0
+    ],
+    [
+     481.0,
+     31.0
+    ],
+    [
+     442.0,
+     31.0
+    ]
+   ],
+   "bbox": [
+    442.0,
+    14.0,
+    481.0,
+    31.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "SEOUL",
+   "text_key": "seoul",
+   "ocr_text": "SEOUL",
+   "confidence": 0.8733078837394714,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "SEOUL MY SOUL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-160.padd_rgb_1x_003",
+   "case_id": "v2-160",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     437.0,
+     29.0
+    ],
+    [
+     487.0,
+     29.0
+    ],
+    [
+     487.0,
+     47.0
+    ],
+    [
+     437.0,
+     47.0
+    ]
+   ],
+   "bbox": [
+    437.0,
+    29.0,
+    487.0,
+    47.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "MY SOUL",
+   "text_key": "mysoul",
+   "ocr_text": "MYSOUL",
+   "confidence": 0.8871982097625732,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "SEOUL MY SOUL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-160.padd_rgb_1x_011",
+   "case_id": "v2-160",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     215.0,
+     167.0
+    ],
+    [
+     286.0,
+     167.0
+    ],
+    [
+     286.0,
+     177.0
+    ],
+    [
+     215.0,
+     177.0
+    ]
+   ],
+   "bbox": [
+    215.0,
+    167.0,
+    286.0,
+    177.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "10/17 - 10/18",
+   "text_key": "10171018",
+   "ocr_text": "10/17-10/18",
+   "confidence": 0.998317539691925,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10/17 - 10/18",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-160.padd_rgb_1x_012",
+   "case_id": "v2-160",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     174.0,
+     181.0
+    ],
+    [
+     326.0,
+     181.0
+    ],
+    [
+     326.0,
+     195.0
+    ],
+    [
+     174.0,
+     195.0
+    ]
+   ],
+   "bbox": [
+    174.0,
+    181.0,
+    326.0,
+    195.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "여의도한강공원 물빛무대 앞 광장",
+   "text_key": "여의도한강공원물빛무대앞광장",
+   "ocr_text": "여의도한강공원물빛무대 앞광장",
+   "confidence": 0.9130233526229858,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "여의도한강공원 물빛무대 앞 광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-160.padd_rgb_1x_013",
+   "case_id": "v2-160",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     212.0,
+     598.0
+    ],
+    [
+     242.0,
+     598.0
+    ],
+    [
+     242.0,
+     607.0
+    ],
+    [
+     212.0,
+     607.0
+    ]
+   ],
+   "bbox": [
+    212.0,
+    598.0,
+    242.0,
+    607.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "서울특별시",
+   "text_key": "서울특별시",
+   "ocr_text": "서울특별시",
+   "confidence": 0.7488141655921936,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서울특별시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

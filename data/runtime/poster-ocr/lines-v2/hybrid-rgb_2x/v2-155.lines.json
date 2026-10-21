@@ -1,0 +1,343 @@
+{
+ "case_id": "v2-155",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-155.easy_rgb_2x_001",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     133.5,
+     66.5
+    ],
+    [
+     310.0,
+     66.5
+    ],
+    [
+     310.0,
+     136.0
+    ],
+    [
+     133.5,
+     136.0
+    ]
+   ],
+   "bbox": [
+    133.5,
+    66.5,
+    310.0,
+    136.0
+   ],
+   "height": 69.5,
+   "small_text": false,
+   "text": "제10회",
+   "text_key": "제10회",
+   "ocr_text": "제10회",
+   "confidence": 0.9539223313331604,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "제10회 전포커피축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.easy_rgb_2x_002",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     37.0,
+     129.0
+    ],
+    [
+     410.0,
+     129.0
+    ],
+    [
+     410.0,
+     216.0
+    ],
+    [
+     37.0,
+     216.0
+    ]
+   ],
+   "bbox": [
+    37.0,
+    129.0,
+    410.0,
+    216.0
+   ],
+   "height": 87.0,
+   "small_text": false,
+   "text": "전포커피축제",
+   "text_key": "전포커피축제",
+   "ocr_text": "전포키피축제",
+   "confidence": 0.7281113266944885,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "전포커피축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.easy_rgb_2x_003",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     85.5,
+     221.5
+    ],
+    [
+     132.5,
+     221.5
+    ],
+    [
+     132.5,
+     239.5
+    ],
+    [
+     85.5,
+     239.5
+    ]
+   ],
+   "bbox": [
+    85.5,
+    221.5,
+    132.5,
+    239.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9915143847465515,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.easy_rgb_2x_004",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     129.5,
+     211.5
+    ],
+    [
+     360.5,
+     211.5
+    ],
+    [
+     360.5,
+     241.5
+    ],
+    [
+     129.5,
+     241.5
+    ]
+   ],
+   "bbox": [
+    129.5,
+    211.5,
+    360.5,
+    241.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "10. 17. Sat - 10. 18. Sun",
+   "text_key": "1017sat1018sun",
+   "ocr_text": "10.17.Sat -10.18.Sun",
+   "confidence": 0.9578776359558105,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.easy_rgb_2x_005",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     110.5,
+     240.5
+    ],
+    [
+     332.5,
+     240.5
+    ],
+    [
+     332.5,
+     261.5
+    ],
+    [
+     110.5,
+     261.5
+    ]
+   ],
+   "bbox": [
+    110.5,
+    240.5,
+    332.5,
+    261.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "전포카페거리 (전포 놀이마루 일원)",
+   "text_key": "전포카페거리전포놀이마루일원",
+   "ocr_text": "맨포카페거리 (견포놓이마루일원)",
+   "confidence": 0.8366568088531494,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2143,
+   "gold_value": "전포카페거리 (전포 놀이마루 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.easy_rgb_2x_014",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     126.5,
+     596.5
+    ],
+    [
+     201.0,
+     596.5
+    ],
+    [
+     201.0,
+     611.5
+    ],
+    [
+     126.5,
+     611.5
+    ]
+   ],
+   "bbox": [
+    126.5,
+    596.5,
+    201.0,
+    611.5
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "부산진구",
+   "text_key": "부산진구",
+   "ocr_text": "busanjin부산전구",
+   "confidence": 0.8484732508659363,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "부산진구",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

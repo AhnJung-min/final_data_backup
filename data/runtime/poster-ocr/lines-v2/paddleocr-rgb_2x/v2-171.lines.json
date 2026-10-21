@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-171",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 489,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-171.padd_rgb_2x_000",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     177.0,
+     141.5
+    ],
+    [
+     311.0,
+     140.0
+    ],
+    [
+     311.5,
+     189.0
+    ],
+    [
+     177.5,
+     190.0
+    ]
+   ],
+   "bbox": [
+    177.0,
+    140.0,
+    311.5,
+    190.0
+   ],
+   "height": 48.75,
+   "small_text": false,
+   "text": "제28회",
+   "text_key": "제28회",
+   "ocr_text": "제28회",
+   "confidence": 0.9990558624267578,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "제28회 UN 평화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-171.padd_rgb_2x_001",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     149.0,
+     184.5
+    ],
+    [
+     261.5,
+     191.0
+    ],
+    [
+     254.5,
+     323.0
+    ],
+    [
+     141.5,
+     316.5
+    ]
+   ],
+   "bbox": [
+    141.5,
+    184.5,
+    261.5,
+    323.0
+   ],
+   "height": 132.2,
+   "small_text": false,
+   "text": "U",
+   "text_key": "u",
+   "ocr_text": "U",
+   "confidence": 0.5998694896697998,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "UN 평화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-171.padd_rgb_2x_002",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     137.5,
+     325.0
+    ],
+    [
+     351.5,
+     325.0
+    ],
+    [
+     351.5,
+     391.0
+    ],
+    [
+     137.5,
+     391.0
+    ]
+   ],
+   "bbox": [
+    137.5,
+    325.0,
+    351.5,
+    391.0
+   ],
+   "height": 66.0,
+   "small_text": false,
+   "text": "평화축제",
+   "text_key": "평화축제",
+   "ocr_text": "평화축제",
+   "confidence": 0.9837668538093567,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "UN 평화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-171.padd_rgb_2x_003",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     331.5,
+     396.0
+    ],
+    [
+     342.5,
+     396.0
+    ],
+    [
+     342.5,
+     408.0
+    ],
+    [
+     331.5,
+     408.0
+    ]
+   ],
+   "bbox": [
+    331.5,
+    396.0,
+    342.5,
+    408.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "일",
+   "text_key": "일",
+   "ocr_text": "일",
+   "confidence": 0.9236056804656982,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 10. 23 금 ~ 10. 25 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-171.padd_rgb_2x_004",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     140.5,
+     407.5
+    ],
+    [
+     332.5,
+     406.0
+    ],
+    [
+     333.0,
+     426.5
+    ],
+    [
+     140.5,
+     428.0
+    ]
+   ],
+   "bbox": [
+    140.5,
+    406.0,
+    333.0,
+    428.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "2026. 10. 23 금 ~ 10. 25",
+   "text_key": "20261023금1025",
+   "ocr_text": "2026.10.23~10.25",
+   "confidence": 0.9990411400794983,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 10. 23 금 ~ 10. 25 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-171.padd_rgb_2x_006",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     193.0,
+     432.5
+    ],
+    [
+     309.0,
+     432.5
+    ],
+    [
+     309.0,
+     457.0
+    ],
+    [
+     193.0,
+     457.0
+    ]
+   ],
+   "bbox": [
+    193.0,
+    432.5,
+    309.0,
+    457.0
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "평화공원 일원",
+   "text_key": "평화공원일원",
+   "ocr_text": "평화공원일원",
+   "confidence": 0.9964773654937744,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "평화공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-171.padd_rgb_2x_008",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     169.0,
+     580.5
+    ],
+    [
+     240.5,
+     582.0
+    ],
+    [
+     240.5,
+     596.0
+    ],
+    [
+     169.0,
+     595.0
+    ]
+   ],
+   "bbox": [
+    169.0,
+    580.5,
+    240.5,
+    596.0
+   ],
+   "height": 14.25,
+   "small_text": false,
+   "text": "부산광역시 남구",
+   "text_key": "부산광역시남구",
+   "ocr_text": "부산광역시남구",
+   "confidence": 0.8700422644615173,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부산광역시 남구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-171.padd_rgb_2x_009",
+   "case_id": "v2-171",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     284.5,
+     580.5
+    ],
+    [
+     362.5,
+     582.0
+    ],
+    [
+     362.0,
+     596.0
+    ],
+    [
+     284.5,
+     595.0
+    ]
+   ],
+   "bbox": [
+    284.5,
+    580.5,
+    362.5,
+    596.0
+   ],
+   "height": 14.25,
+   "small_text": false,
+   "text": "부산남구문화재단",
+   "text_key": "부산남구문화재단",
+   "ocr_text": "부산남구문화재단",
+   "confidence": 0.9634000062942505,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부산남구문화재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

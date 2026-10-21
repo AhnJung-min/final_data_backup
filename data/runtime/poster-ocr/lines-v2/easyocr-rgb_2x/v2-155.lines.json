@@ -1,0 +1,71 @@
+{
+ "case_id": "v2-155",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-155.easy_rgb_2x_005",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     110.5,
+     240.5
+    ],
+    [
+     332.5,
+     240.5
+    ],
+    [
+     332.5,
+     261.5
+    ],
+    [
+     110.5,
+     261.5
+    ]
+   ],
+   "bbox": [
+    110.5,
+    240.5,
+    332.5,
+    261.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "전포카페거리 (전포 놀이마루 일원)",
+   "text_key": "전포카페거리전포놀이마루일원",
+   "ocr_text": "전포카페거리 (건포 놓이마루 일원)",
+   "confidence": 0.6296426782337028,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "전포카페거리 (전포 놀이마루 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-009",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-009.padd_rgb_2x_002",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     144.5,
+     84.5
+    ],
+    [
+     296.0,
+     84.5
+    ],
+    [
+     296.0,
+     103.0
+    ],
+    [
+     144.5,
+     103.0
+    ]
+   ],
+   "bbox": [
+    144.5,
+    84.5,
+    296.0,
+    103.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "2026 남구청년예술제",
+   "text_key": "2026남구청년예술제",
+   "ocr_text": "2026 남구청년예술제",
+   "confidence": 0.9538227915763855,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 남구청년예술제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_2x_006",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     79.5,
+     407.0
+    ],
+    [
+     354.0,
+     406.0
+    ],
+    [
+     354.0,
+     433.5
+    ],
+    [
+     79.5,
+     434.5
+    ]
+   ],
+   "bbox": [
+    79.5,
+    406.0,
+    354.0,
+    434.5
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "8. 18.(Tue) - 9. 18.(Fri)",
+   "text_key": "818tue918fri",
+   "ocr_text": "8.18.(rue) –9.18.(ri)",
+   "confidence": 0.9071211218833923,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "8. 18.(Tue) - 9. 18.(Fri)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_2x_008",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     134.5,
+     479.5
+    ],
+    [
+     309.5,
+     479.5
+    ],
+    [
+     309.5,
+     498.0
+    ],
+    [
+     134.5,
+     498.0
+    ]
+   ],
+   "bbox": [
+    134.5,
+    479.5,
+    309.5,
+    498.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "대덕문화전당 제1~3전시실",
+   "text_key": "대덕문화전당제13전시실",
+   "ocr_text": "대덕문화전당 제1~3전시실",
+   "confidence": 0.9734317660331726,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대덕문화전당 제1~3전시실",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_2x_011",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     153.5,
+     567.0
+    ],
+    [
+     252.0,
+     567.0
+    ],
+    [
+     252.0,
+     581.0
+    ],
+    [
+     153.5,
+     581.0
+    ]
+   ],
+   "bbox": [
+    153.5,
+    567.0,
+    252.0,
+    581.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "대구 남구 대덕문화전당",
+   "text_key": "대구남구대덕문화전당",
+   "ocr_text": "대꾸 남구 대덕문화전당",
+   "confidence": 0.8208988308906555,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "대구 남구 대덕문화전당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_2x_012",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     251.5,
+     567.0
+    ],
+    [
+     353.0,
+     567.0
+    ],
+    [
+     353.0,
+     581.0
+    ],
+    [
+     251.5,
+     581.0
+    ]
+   ],
+   "bbox": [
+    251.5,
+    567.0,
+    353.0,
+    581.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "053-664-3118",
+   "text_key": "0536643118",
+   "ocr_text": "억053-684-3118",
+   "confidence": 0.9406359791755676,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "053-664-3118",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

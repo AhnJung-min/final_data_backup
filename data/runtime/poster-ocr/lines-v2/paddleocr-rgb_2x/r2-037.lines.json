@@ -1,0 +1,667 @@
+{
+ "case_id": "r2-037",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 23,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "r2-037.padd_rgb_2x_000",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     166.0,
+     59.5
+    ],
+    [
+     276.5,
+     59.5
+    ],
+    [
+     276.5,
+     103.0
+    ],
+    [
+     166.0,
+     103.0
+    ]
+   ],
+   "bbox": [
+    166.0,
+    59.5,
+    276.5,
+    103.0
+   ],
+   "height": 43.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9989640712738037,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "2026 수봉산 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_001",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     83.5,
+     101.0
+    ],
+    [
+     361.5,
+     101.0
+    ],
+    [
+     361.5,
+     198.0
+    ],
+    [
+     83.5,
+     198.0
+    ]
+   ],
+   "bbox": [
+    83.5,
+    101.0,
+    361.5,
+    198.0
+   ],
+   "height": 97.0,
+   "small_text": false,
+   "text": "수봉산",
+   "text_key": "수봉산",
+   "ocr_text": "수봉산",
+   "confidence": 0.9954627156257629,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "수봉산 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_002",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     86.0,
+     192.0
+    ],
+    [
+     360.0,
+     194.0
+    ],
+    [
+     359.5,
+     263.0
+    ],
+    [
+     85.5,
+     260.5
+    ]
+   ],
+   "bbox": [
+    85.5,
+    192.0,
+    360.0,
+    263.0
+   ],
+   "height": 68.75,
+   "small_text": false,
+   "text": "페스티",
+   "text_key": "페스티",
+   "ocr_text": "페스티벨",
+   "confidence": 0.9165676236152649,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "수봉산 페스티벌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_003",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     120.0,
+     307.5
+    ],
+    [
+     159.5,
+     307.5
+    ],
+    [
+     159.5,
+     322.0
+    ],
+    [
+     120.0,
+     322.0
+    ]
+   ],
+   "bbox": [
+    120.0,
+    307.5,
+    159.5,
+    322.0
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9966523051261902,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17. (토) ~ 10. 18. (일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_004",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     158.5,
+     303.5
+    ],
+    [
+     325.5,
+     303.5
+    ],
+    [
+     325.5,
+     322.5
+    ],
+    [
+     158.5,
+     322.5
+    ]
+   ],
+   "bbox": [
+    158.5,
+    303.5,
+    325.5,
+    322.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "10. 17. (토) ~ 10. 18. (일)",
+   "text_key": "1017토1018일",
+   "ocr_text": "10.17.(토)~10.18.(일)",
+   "confidence": 0.9832662343978882,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17. (토) ~ 10. 18. (일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_005",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     145.5,
+     331.0
+    ],
+    [
+     205.0,
+     331.0
+    ],
+    [
+     205.0,
+     348.5
+    ],
+    [
+     145.5,
+     348.5
+    ]
+   ],
+   "bbox": [
+    145.5,
+    331.0,
+    205.0,
+    348.5
+   ],
+   "height": 17.5,
+   "small_text": false,
+   "text": "수봉공원",
+   "text_key": "수봉공원",
+   "ocr_text": "수동공원",
+   "confidence": 0.8090801239013672,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "수봉공원 인공폭포 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_006",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     206.0,
+     331.0
+    ],
+    [
+     299.5,
+     331.0
+    ],
+    [
+     299.5,
+     348.5
+    ],
+    [
+     206.0,
+     348.5
+    ]
+   ],
+   "bbox": [
+    206.0,
+    331.0,
+    299.5,
+    348.5
+   ],
+   "height": 17.5,
+   "small_text": false,
+   "text": "인공폭포 일대",
+   "text_key": "인공폭포일대",
+   "ocr_text": "인공폭포일대",
+   "confidence": 0.9807834625244141,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "수봉공원 인공폭포 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_008",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     111.0,
+     505.0
+    ],
+    [
+     150.0,
+     505.0
+    ],
+    [
+     150.0,
+     515.5
+    ],
+    [
+     111.0,
+     515.5
+    ]
+   ],
+   "bbox": [
+    111.0,
+    505.0,
+    150.0,
+    515.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "축하공연",
+   "confidence": 0.9962384104728699,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_012",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     111.0,
+     517.0
+    ],
+    [
+     391.5,
+     517.0
+    ],
+    [
+     391.5,
+     528.5
+    ],
+    [
+     111.0,
+     528.5
+    ]
+   ],
+   "bbox": [
+    111.0,
+    517.0,
+    391.5,
+    528.5
+   ],
+   "height": 11.5,
+   "small_text": false,
+   "text": "우리동네 예술공연",
+   "text_key": "우리동네예술공연",
+   "ocr_text": "우리동네 예술공연 /수봉산 라이브 스테이지 /인천 대학 스테이지",
+   "confidence": 0.9515199661254883,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "우리동네 예술공연",
+   "extra_chars": 18,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_014",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     111.0,
+     538.0
+    ],
+    [
+     264.0,
+     538.0
+    ],
+    [
+     264.0,
+     548.0
+    ],
+    [
+     111.0,
+     548.0
+    ]
+   ],
+   "bbox": [
+    111.0,
+    538.0,
+    264.0,
+    548.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "부서(기관) 연계 체험·홍보 부스 운영",
+   "text_key": "부서기관연계체험홍보부스운영",
+   "ocr_text": "부서(기관) 연계 체험·홍보 부스 운영",
+   "confidence": 0.9664877653121948,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부서(기관) 연계 체험·홍보 부스 운영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_016",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     110.0,
+     560.5
+    ],
+    [
+     331.0,
+     560.0
+    ],
+    [
+     331.0,
+     572.0
+    ],
+    [
+     110.5,
+     572.5
+    ]
+   ],
+   "bbox": [
+    110.0,
+    560.0,
+    331.0,
+    572.5
+   ],
+   "height": 12.01,
+   "small_text": false,
+   "text": "숲속영화관",
+   "text_key": "숲속영화관",
+   "ocr_text": "숲속영화관,아트프리마켓,거리예술,포토존,푸드존",
+   "confidence": 0.9732269048690796,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "숲속영화관",
+   "extra_chars": 16,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-037.padd_rgb_2x_019",
+   "case_id": "r2-037",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     178.5,
+     597.0
+    ],
+    [
+     252.0,
+     598.0
+    ],
+    [
+     251.5,
+     608.5
+    ],
+    [
+     178.0,
+     607.5
+    ]
+   ],
+   "bbox": [
+    178.0,
+    597.0,
+    252.0,
+    608.5
+   ],
+   "height": 10.51,
+   "small_text": false,
+   "text": "인천광역시",
+   "text_key": "인천광역시",
+   "ocr_text": "인천광역시 의수구",
+   "confidence": 0.5094845294952393,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "인천광역시",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,726 @@
+{
+ "case_id": "v2-182",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 13,
+ "records": [
+  {
+   "id": "v2-182.padd_rgb_2x_003",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     160.0,
+     73.0
+    ],
+    [
+     282.0,
+     73.0
+    ],
+    [
+     282.0,
+     83.0
+    ],
+    [
+     160.0,
+     83.0
+    ]
+   ],
+   "bbox": [
+    160.0,
+    73.0,
+    282.0,
+    83.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "도곡메타세쿼이아 축제추진위원회",
+   "text_key": "도곡메타세쿼이아축제추진위원회",
+   "ocr_text": "주의| 도곡데타세귀이아 측제주진위원회",
+   "confidence": 0.9245988130569458,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2667,
+   "gold_value": "도곡메타세쿼이아 축제추진위원회",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_005",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     225.5,
+     85.0
+    ],
+    [
+     247.0,
+     85.0
+    ],
+    [
+     247.0,
+     92.5
+    ],
+    [
+     225.5,
+     92.5
+    ]
+   ],
+   "bbox": [
+    225.5,
+    85.0,
+    247.0,
+    92.5
+   ],
+   "height": 7.5,
+   "small_text": true,
+   "text": "도곡2동",
+   "text_key": "도곡2동",
+   "ocr_text": "도곡2등",
+   "confidence": 0.9381675720214844,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "도곡2동",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_006",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     80.5,
+     109.0
+    ],
+    [
+     153.0,
+     110.0
+    ],
+    [
+     152.0,
+     150.0
+    ],
+    [
+     80.0,
+     148.5
+    ]
+   ],
+   "bbox": [
+    80.0,
+    109.0,
+    153.0,
+    150.0
+   ],
+   "height": 39.76,
+   "small_text": false,
+   "text": "도곡",
+   "text_key": "도곡",
+   "ocr_text": "도곡",
+   "confidence": 0.9998043775558472,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "도곡 메타세쿼이아 로드 페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_007",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     158.0,
+     110.0
+    ],
+    [
+     361.5,
+     111.0
+    ],
+    [
+     361.5,
+     149.5
+    ],
+    [
+     157.5,
+     148.0
+    ]
+   ],
+   "bbox": [
+    157.5,
+    110.0,
+    361.5,
+    149.5
+   ],
+   "height": 38.25,
+   "small_text": false,
+   "text": "메타세쿼이아",
+   "text_key": "메타세쿼이아",
+   "ocr_text": "메타세쿼이아",
+   "confidence": 0.9651626944541931,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "도곡 메타세쿼이아 로드 페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_008",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     131.5,
+     150.0
+    ],
+    [
+     203.0,
+     151.5
+    ],
+    [
+     202.0,
+     189.0
+    ],
+    [
+     131.0,
+     187.5
+    ]
+   ],
+   "bbox": [
+    131.0,
+    150.0,
+    203.0,
+    189.0
+   ],
+   "height": 37.51,
+   "small_text": false,
+   "text": "로드",
+   "text_key": "로드",
+   "ocr_text": "로드",
+   "confidence": 0.9999948740005493,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "도곡 메타세쿼이아 로드 페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_009",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     206.5,
+     151.0
+    ],
+    [
+     311.5,
+     149.5
+    ],
+    [
+     312.0,
+     190.0
+    ],
+    [
+     207.0,
+     191.0
+    ]
+   ],
+   "bbox": [
+    206.5,
+    149.5,
+    312.0,
+    191.0
+   ],
+   "height": 40.25,
+   "small_text": false,
+   "text": "페스타",
+   "text_key": "페스타",
+   "ocr_text": "페스타",
+   "confidence": 0.9661869406700134,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "도곡 메타세쿼이아 로드 페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_010",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     178.5,
+     197.5
+    ],
+    [
+     251.5,
+     198.5
+    ],
+    [
+     251.5,
+     214.0
+    ],
+    [
+     178.5,
+     213.0
+    ]
+   ],
+   "bbox": [
+    178.5,
+    197.5,
+    251.5,
+    214.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "Season 3",
+   "text_key": "season3",
+   "ocr_text": "+ Season 3",
+   "confidence": 0.9538168907165527,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "도곡 메타세쿼이아 로드 페스타 Season 3",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_012",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     64.5,
+     212.0
+    ],
+    [
+     114.5,
+     212.0
+    ],
+    [
+     114.5,
+     230.0
+    ],
+    [
+     64.5,
+     230.0
+    ]
+   ],
+   "bbox": [
+    64.5,
+    212.0,
+    114.5,
+    230.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.998017430305481,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.24. SAT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_013",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     314.0,
+     220.0
+    ],
+    [
+     381.5,
+     220.0
+    ],
+    [
+     381.5,
+     228.5
+    ],
+    [
+     314.0,
+     228.5
+    ]
+   ],
+   "bbox": [
+    314.0,
+    220.0,
+    381.5,
+    228.5
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "플리마켓",
+   "text_key": "플리마켓",
+   "ocr_text": "플리마켓· 억기억·공업",
+   "confidence": 0.7017550468444824,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "플리마켓",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_014",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     64.5,
+     231.0
+    ],
+    [
+     140.5,
+     231.0
+    ],
+    [
+     140.5,
+     248.0
+    ],
+    [
+     64.5,
+     248.0
+    ]
+   ],
+   "bbox": [
+    64.5,
+    231.0,
+    140.5,
+    248.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "10.24. SAT",
+   "text_key": "1024sat",
+   "ocr_text": "10.24.SAT",
+   "confidence": 0.9698752164840698,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.24. SAT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_016",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     65.5,
+     250.0
+    ],
+    [
+     140.5,
+     250.0
+    ],
+    [
+     140.5,
+     262.5
+    ],
+    [
+     65.5,
+     262.5
+    ]
+   ],
+   "bbox": [
+    65.5,
+    250.0,
+    140.5,
+    262.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "11:00~18:00",
+   "text_key": "11001800",
+   "ocr_text": "11:00~18:00",
+   "confidence": 0.9979890584945679,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "11:00~18:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_018",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     65.0,
+     270.0
+    ],
+    [
+     141.5,
+     270.0
+    ],
+    [
+     141.5,
+     280.0
+    ],
+    [
+     65.0,
+     280.0
+    ]
+   ],
+   "bbox": [
+    65.0,
+    270.0,
+    141.5,
+    280.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "서울 강남구 양재천로 및",
+   "text_key": "서울강남구양재천로및",
+   "ocr_text": "서울 강남구 양재천로 및",
+   "confidence": 0.9199835062026978,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0455,
+   "gold_value": "서울 강남구 양재천로 및 강남수도사업소 삼거리 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-182.padd_rgb_2x_019",
+   "case_id": "v2-182",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     65.0,
+     280.5
+    ],
+    [
+     153.5,
+     280.5
+    ],
+    [
+     153.5,
+     290.5
+    ],
+    [
+     65.0,
+     290.5
+    ]
+   ],
+   "bbox": [
+    65.0,
+    280.5,
+    153.5,
+    290.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "강남수도사업소 삼거리 일대",
+   "text_key": "강남수도사업소삼거리일대",
+   "ocr_text": "강남수도사업소 삼거리 일내",
+   "confidence": 0.9306708574295044,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "강남수도사업소 삼거리 일대",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-cab83d84f491",
+ "image": {
+  "sha256": "cab83d84f491d1ea44b4511bd1259ee680606f128a6ca7feed0492125c6d0aac",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "축제",
+  "official": "축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006"
+   ],
+   "bbox": [
+    267.0,
+    296.0,
+    420.0,
+    402.0
+   ],
+   "confidence": 0.99919
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    254.0,
+    155.0,
+    413.0,
+    207.0
+   ],
+   "confidence": 0.99566
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.03.토~10.11.e (9일간)",
+  "start": {
+   "iso": "2026-10-03",
+   "year": 2026,
+   "month": 10,
+   "day": 3,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-11",
+   "year": 2026,
+   "month": 10,
+   "day": 11,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": "9일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    190.0,
+    399.0,
+    412.0,
+    427.0
+   ],
+   "confidence": 0.93995
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "영주시풍기읍남원천및풍기인삼공원일원",
+  "items": [
+   "영주시풍기읍남원천",
+   "풍기인삼공원일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_011"
+   ],
+   "bbox": [
+    192.0,
+    431.0,
+    408.0,
+    447.0
+   ],
+   "confidence": 0.88479
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

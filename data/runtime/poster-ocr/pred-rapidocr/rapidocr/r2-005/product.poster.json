@@ -1,0 +1,201 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-e6bfc7ef6bd8",
+ "image": {
+  "sha256": "e6bfc7ef6bd8d9f104a32ddce263a6595751920f07112c279b29ef5511db1fe0",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "신촌글로벌 대학문화축제",
+  "official": "신촌글로벌 대학문화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_002",
+    "rapi_product_003"
+   ],
+   "bbox": [
+    23.0,
+    50.0,
+    295.0,
+    154.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    29.0,
+    22.0,
+    104.0,
+    51.0
+   ],
+   "confidence": 0.99929
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "09.11 FRI 09.13 SUN",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_025",
+    "rapi_product_029",
+    "rapi_product_028",
+    "rapi_product_032"
+   ],
+   "bbox": [
+    12.0,
+    490.0,
+    133.0,
+    568.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "신촌연세로일대",
+  "items": [
+   "신촌연세로일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_033"
+   ],
+   "bbox": [
+    18.0,
+    569.0,
+    132.0,
+    590.0
+   ],
+   "confidence": 0.98836
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

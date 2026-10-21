@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-052",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-052.padd_rgb_1x_001",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     372.0,
+     12.0
+    ],
+    [
+     432.0,
+     10.0
+    ],
+    [
+     432.0,
+     30.0
+    ],
+    [
+     372.0,
+     33.0
+    ]
+   ],
+   "bbox": [
+    372.0,
+    10.0,
+    432.0,
+    33.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "광진구",
+   "text_key": "광진구",
+   "ocr_text": "$광진구",
+   "confidence": 0.779644250869751,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광진구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.padd_rgb_1x_006",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     257.0,
+     525.0
+    ],
+    [
+     384.0,
+     527.0
+    ],
+    [
+     383.0,
+     556.0
+    ],
+    [
+     257.0,
+     553.0
+    ]
+   ],
+   "bbox": [
+    257.0,
+    525.0,
+    384.0,
+    556.0
+   ],
+   "height": 28.51,
+   "small_text": false,
+   "text": "2026. 9. 19. 토",
+   "text_key": "2026919토",
+   "ocr_text": "2026. 9.19.토",
+   "confidence": 0.9302728772163391,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. 토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.padd_rgb_1x_007",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     239.0,
+     555.0
+    ],
+    [
+     402.0,
+     555.0
+    ],
+    [
+     402.0,
+     581.0
+    ],
+    [
+     239.0,
+     581.0
+    ]
+   ],
+   "bbox": [
+    239.0,
+    555.0,
+    402.0,
+    581.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "서울어린이대공원 일대",
+   "text_key": "서울어린이대공원일대",
+   "ocr_text": "서울어린이대공원일대",
+   "confidence": 0.9449986219406128,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서울어린이대공원 일대 (어린이대공원역 1.2번 출구)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.padd_rgb_1x_008",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     268.0,
+     582.0
+    ],
+    [
+     373.0,
+     582.0
+    ],
+    [
+     373.0,
+     592.0
+    ],
+    [
+     268.0,
+     592.0
+    ]
+   ],
+   "bbox": [
+    268.0,
+    582.0,
+    373.0,
+    592.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "(어린이대공원역 1.2번 출구)",
+   "text_key": "어린이대공원역12번출구",
+   "ocr_text": "(어린이대공원역1.2번 출구)",
+   "confidence": 0.9773796796798706,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서울어린이대공원 일대 (어린이대공원역 1.2번 출구)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.padd_rgb_1x_009",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     75.0,
+     608.0
+    ],
+    [
+     367.0,
+     608.0
+    ],
+    [
+     367.0,
+     618.0
+    ],
+    [
+     75.0,
+     618.0
+    ]
+   ],
+   "bbox": [
+    75.0,
+    608.0,
+    367.0,
+    618.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "청춘대로",
+   "text_key": "청춘대로",
+   "ocr_text": "2026 청대로 천인 원(시,6천만 원(구비)총 1의 4천만 원 서을특범시광한구 행사에신공개에관한 조계기",
+   "confidence": 0.5864710211753845,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "청춘대로",
+   "extra_chars": 41,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

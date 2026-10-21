@@ -1,0 +1,125 @@
+{
+ "case_id": "v2-163",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-163.easy_rgb_2x_010",
+   "case_id": "v2-163",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     83.5,
+     525.5
+    ],
+    [
+     360.5,
+     525.5
+    ],
+    [
+     360.5,
+     559.5
+    ],
+    [
+     83.5,
+     559.5
+    ]
+   ],
+   "bbox": [
+    83.5,
+    525.5,
+    360.5,
+    559.5
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "2026. 10.17.(토) - 18.(일)",
+   "text_key": "20261017토18일",
+   "ocr_text": "8026. 10.17(토) -78. (일)",
+   "confidence": 0.2905309560219495,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "2026. 10.17.(토) - 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-163.easy_rgb_2x_011",
+   "case_id": "v2-163",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     144.0,
+     559.0
+    ],
+    [
+     298.0,
+     559.0
+    ],
+    [
+     298.0,
+     583.0
+    ],
+    [
+     144.0,
+     583.0
+    ]
+   ],
+   "bbox": [
+    144.0,
+    559.0,
+    298.0,
+    583.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "왜관시가지 1번도로",
+   "text_key": "왜관시가지1번도로",
+   "ocr_text": "외관시가지 1번도로",
+   "confidence": 0.47761281444323606,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "왜관시가지 1번도로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

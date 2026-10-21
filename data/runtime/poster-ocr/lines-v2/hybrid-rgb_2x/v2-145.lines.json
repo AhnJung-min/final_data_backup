@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-145",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-145.easy_rgb_2x_001",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     362.5,
+     6.5
+    ],
+    [
+     439.5,
+     6.5
+    ],
+    [
+     439.5,
+     25.5
+    ],
+    [
+     362.5,
+     25.5
+    ]
+   ],
+   "bbox": [
+    362.5,
+    6.5,
+    439.5,
+    25.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "양양문화재단",
+   "text_key": "양양문화재단",
+   "ocr_text": "양양문화재단",
+   "confidence": 0.9701809992132409,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "양양문화재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.easy_rgb_2x_005",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     344.5,
+     89.5
+    ],
+    [
+     432.5,
+     89.5
+    ],
+    [
+     432.5,
+     108.5
+    ],
+    [
+     344.5,
+     108.5
+    ]
+   ],
+   "bbox": [
+    344.5,
+    89.5,
+    432.5,
+    108.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "오전 10시 ~ 오후 9시",
+   "text_key": "오전10시오후9시",
+   "ocr_text": "오전 10시 ~오9시",
+   "confidence": 0.8786421418190002,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "오전 10시 ~ 오후 9시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.easy_rgb_2x_009",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     154.0,
+     407.0
+    ],
+    [
+     215.0,
+     407.0
+    ],
+    [
+     215.0,
+     431.0
+    ],
+    [
+     154.0,
+     431.0
+    ]
+   ],
+   "bbox": [
+    154.0,
+    407.0,
+    215.0,
+    431.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "청정자연이",
+   "text_key": "청정자연이",
+   "ocr_text": "'청정자연이",
+   "confidence": 0.8230990886498513,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "청정자연이 차린 가장 깊은 식탁!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.easy_rgb_2x_012",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     160.0,
+     554.0
+    ],
+    [
+     267.0,
+     554.0
+    ],
+    [
+     267.0,
+     578.0
+    ],
+    [
+     160.0,
+     578.0
+    ]
+   ],
+   "bbox": [
+    160.0,
+    554.0,
+    267.0,
+    578.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "남대천 둔치 일원",
+   "text_key": "남대천둔치일원",
+   "ocr_text": "남대천둔치일원",
+   "confidence": 0.8782604932785034,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "남대천 둔치 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.easy_rgb_2x_014",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     241.5,
+     399.21
+    ],
+    [
+     325.35,
+     392.15
+    ],
+    [
+     326.0,
+     415.29
+    ],
+    [
+     242.15,
+     422.35
+    ]
+   ],
+   "bbox": [
+    241.5,
+    392.15,
+    326.0,
+    422.35
+   ],
+   "height": 23.15,
+   "small_text": false,
+   "text": "가장 깊은 식탁!",
+   "text_key": "가장깊은식탁",
+   "ocr_text": "가장 깊은 식탁!",
+   "confidence": 0.768528163433075,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "청정자연이 차린 가장 깊은 식탁!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

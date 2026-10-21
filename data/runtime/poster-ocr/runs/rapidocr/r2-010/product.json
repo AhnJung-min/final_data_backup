@@ -1,0 +1,233 @@
+{
+ "case_id": "r2-010",
+ "engine": "rapidocr",
+ "variant": "product",
+ "scale": 1,
+ "normalized_dimensions": [
+  443,
+  627
+ ],
+ "input_dimensions": [
+  443,
+  627
+ ],
+ "source_sha256": "67b91c36fd15f4cb20eb2554a023eb98f452361acb6b3ab29c1ef8db4626a12f",
+ "input_sha256": "67b91c36fd15f4cb20eb2554a023eb98f452361acb6b3ab29c1ef8db4626a12f",
+ "coordinate_space": "normalized_original_pixels",
+ "input": "original_bytes",
+ "device": "cpu",
+ "method": "rapidocr-ppocrv5-korean/onnx-cpu-v1",
+ "engine_fingerprint": "254c127b2e7f36f9",
+ "status": "success",
+ "records": [
+  {
+   "id": "rapi_product_000",
+   "text": "시호",
+   "confidence": 0.36398,
+   "bbox_xyxy": [
+    17.0,
+    10.0,
+    60.0,
+    34.0
+   ],
+   "polygon": [
+    [
+     17.0,
+     10.0
+    ],
+    [
+     60.0,
+     10.0
+    ],
+    [
+     60.0,
+     34.0
+    ],
+    [
+     17.0,
+     34.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_001",
+   "text": "품화관광추제",
+   "confidence": 0.65584,
+   "bbox_xyxy": [
+    359.0,
+    28.0,
+    403.0,
+    43.0
+   ],
+   "polygon": [
+    [
+     359.0,
+     28.0
+    ],
+    [
+     403.0,
+     28.0
+    ],
+    [
+     403.0,
+     43.0
+    ],
+    [
+     359.0,
+     43.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_002",
+   "text": "제21회",
+   "confidence": 0.9995,
+   "bbox_xyxy": [
+    280.0,
+    103.0,
+    344.0,
+    131.0
+   ],
+   "polygon": [
+    [
+     280.0,
+     103.0
+    ],
+    [
+     344.0,
+     103.0
+    ],
+    [
+     344.0,
+     131.0
+    ],
+    [
+     280.0,
+     131.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_003",
+   "text": "시록겠국축지",
+   "confidence": 0.48434,
+   "bbox_xyxy": [
+    86.0,
+    118.0,
+    353.0,
+    229.0
+   ],
+   "polygon": [
+    [
+     92.0,
+     118.0
+    ],
+    [
+     353.0,
+     133.0
+    ],
+    [
+     348.0,
+     229.0
+    ],
+    [
+     86.0,
+     214.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_004",
+   "text": "2026.9.18.(금)~9.20.(일)",
+   "confidence": 0.97724,
+   "bbox_xyxy": [
+    102.0,
+    276.0,
+    343.0,
+    304.0
+   ],
+   "polygon": [
+    [
+     102.0,
+     276.0
+    ],
+    [
+     343.0,
+     276.0
+    ],
+    [
+     343.0,
+     304.0
+    ],
+    [
+     102.0,
+     304.0
+    ]
+   ]
+  }
+ ],
+ "raw_detections": 5,
+ "stage_seconds": {
+  "det": 0.482,
+  "cls": null,
+  "rec": 0.39
+ },
+ "service_status": "succeeded",
+ "service_lines": [
+  {
+   "text": "시호",
+   "confidence": 0.36398,
+   "bbox": [
+    0.038375,
+    0.015949,
+    0.097065,
+    0.038278
+   ]
+  },
+  {
+   "text": "품화관광추제",
+   "confidence": 0.65584,
+   "bbox": [
+    0.810384,
+    0.044657,
+    0.099323,
+    0.023923
+   ]
+  },
+  {
+   "text": "제21회",
+   "confidence": 0.9995,
+   "bbox": [
+    0.632054,
+    0.164274,
+    0.14447,
+    0.044657
+   ]
+  },
+  {
+   "text": "시록겠국축지",
+   "confidence": 0.48434,
+   "bbox": [
+    0.194131,
+    0.188198,
+    0.602709,
+    0.177033
+   ]
+  },
+  {
+   "text": "2026.9.18.(금)~9.20.(일)",
+   "confidence": 0.97724,
+   "bbox": [
+    0.230248,
+    0.440191,
+    0.544018,
+    0.044657
+   ]
+  }
+ ],
+ "inference_seconds": 0.884,
+ "memory": {
+  "rss_bytes": 158838784,
+  "peak_bytes": 306663424
+ }
+}

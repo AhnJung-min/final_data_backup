@@ -1,0 +1,449 @@
+{
+ "case_id": "r2-040",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "r2-040.padd_rgb_2x_000",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     34.5,
+     15.5
+    ],
+    [
+     93.0,
+     17.5
+    ],
+    [
+     92.5,
+     32.0
+    ],
+    [
+     34.0,
+     29.5
+    ]
+   ],
+   "bbox": [
+    34.0,
+    15.5,
+    93.0,
+    32.0
+   ],
+   "height": 14.26,
+   "small_text": false,
+   "text": "We♥Songpa",
+   "text_key": "wesongpa",
+   "ocr_text": "Wesonape",
+   "confidence": 0.7252787351608276,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "We♥Songpa",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.padd_rgb_2x_001",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     364.0,
+     17.0
+    ],
+    [
+     407.5,
+     17.0
+    ],
+    [
+     407.5,
+     33.0
+    ],
+    [
+     364.0,
+     33.0
+    ]
+   ],
+   "bbox": [
+    364.0,
+    17.0,
+    407.5,
+    33.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "송파구",
+   "text_key": "송파구",
+   "ocr_text": "총송파구",
+   "confidence": 0.8197381496429443,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "송파구",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.padd_rgb_2x_002",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     220.0,
+     200.0
+    ],
+    [
+     270.0,
+     201.0
+    ],
+    [
+     269.5,
+     221.0
+    ],
+    [
+     219.5,
+     220.0
+    ]
+   ],
+   "bbox": [
+    219.5,
+    200.0,
+    270.0,
+    221.0
+   ],
+   "height": 20.01,
+   "small_text": false,
+   "text": "제26회",
+   "text_key": "제26회",
+   "ocr_text": "제26회",
+   "confidence": 0.9989482164382935,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제26회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.padd_rgb_2x_003",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     103.0,
+     219.5
+    ],
+    [
+     123.5,
+     219.0
+    ],
+    [
+     124.5,
+     304.5
+    ],
+    [
+     104.0,
+     304.5
+    ]
+   ],
+   "bbox": [
+    103.0,
+    219.0,
+    124.5,
+    304.5
+   ],
+   "height": 85.26,
+   "small_text": false,
+   "text": "찬란한 문화,",
+   "text_key": "찬란한문화",
+   "ocr_text": "찬란한문화",
+   "confidence": 0.9838361740112305,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "찬란한 문화, 깊은 울림, 하나된 우리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.padd_rgb_2x_004",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     125.0,
+     227.0
+    ],
+    [
+     145.5,
+     227.0
+    ],
+    [
+     145.5,
+     383.5
+    ],
+    [
+     125.0,
+     383.5
+    ]
+   ],
+   "bbox": [
+    125.0,
+    227.0,
+    145.5,
+    383.5
+   ],
+   "height": 156.5,
+   "small_text": false,
+   "text": "깊은 울림, 하나된 우리",
+   "text_key": "깊은울림하나된우리",
+   "ocr_text": "깊은올림하나된우리",
+   "confidence": 0.9387319087982178,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "찬란한 문화, 깊은 울림, 하나된 우리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.padd_rgb_2x_014",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     225.0,
+     413.0
+    ],
+    [
+     341.0,
+     408.5
+    ],
+    [
+     342.0,
+     437.0
+    ],
+    [
+     226.0,
+     441.0
+    ]
+   ],
+   "bbox": [
+    225.0,
+    408.5,
+    342.0,
+    441.0
+   ],
+   "height": 28.27,
+   "small_text": false,
+   "text": "10.23.금 - 25.일",
+   "text_key": "1023금25일",
+   "ocr_text": "10.230-250",
+   "confidence": 0.9028188586235046,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "10.23.금 - 25.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.padd_rgb_2x_015",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     160.0,
+     439.5
+    ],
+    [
+     340.0,
+     439.5
+    ],
+    [
+     340.0,
+     458.0
+    ],
+    [
+     160.0,
+     458.0
+    ]
+   ],
+   "bbox": [
+    160.0,
+    439.5,
+    340.0,
+    458.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "올림픽공원 88잔디마당 일대",
+   "text_key": "올림픽공원88잔디마당일대",
+   "ocr_text": "올림픽공원 88잔디마당 일대",
+   "confidence": 0.9421404600143433,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "올림픽공원 88잔디마당 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.padd_rgb_2x_019",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     255.0,
+     589.0
+    ],
+    [
+     429.0,
+     589.5
+    ],
+    [
+     429.0,
+     604.5
+    ],
+    [
+     255.0,
+     604.0
+    ]
+   ],
+   "bbox": [
+    255.0,
+    589.0,
+    429.0,
+    604.5
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "KSPO",
+   "text_key": "kspo",
+   "ocr_text": "원 KPO",
+   "confidence": 0.6967480778694153,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "KSPO",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

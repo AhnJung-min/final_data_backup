@@ -1,0 +1,237 @@
+{
+ "case_id": "v2-098",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-098.easy_rgb_2x_002",
+   "case_id": "v2-098",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     190.0,
+     230.0
+    ],
+    [
+     252.0,
+     230.0
+    ],
+    [
+     252.0,
+     254.0
+    ],
+    [
+     190.0,
+     254.0
+    ]
+   ],
+   "bbox": [
+    190.0,
+    230.0,
+    252.0,
+    254.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "제63회",
+   "text_key": "제63회",
+   "ocr_text": "제63회",
+   "confidence": 0.9717590808868408,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제63회 수원 화성 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-098.easy_rgb_2x_003",
+   "case_id": "v2-098",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     179.5,
+     255.5
+    ],
+    [
+     269.5,
+     255.5
+    ],
+    [
+     269.5,
+     313.5
+    ],
+    [
+     179.5,
+     313.5
+    ]
+   ],
+   "bbox": [
+    179.5,
+    255.5,
+    269.5,
+    313.5
+   ],
+   "height": 58.0,
+   "small_text": false,
+   "text": "수원",
+   "text_key": "수원",
+   "ocr_text": "수원",
+   "confidence": 0.9999819611964912,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "수원 화성 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-098.easy_rgb_2x_004",
+   "case_id": "v2-098",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     176.0,
+     306.0
+    ],
+    [
+     269.0,
+     306.0
+    ],
+    [
+     269.0,
+     366.0
+    ],
+    [
+     176.0,
+     366.0
+    ]
+   ],
+   "bbox": [
+    176.0,
+    306.0,
+    269.0,
+    366.0
+   ],
+   "height": 60.0,
+   "small_text": false,
+   "text": "화성",
+   "text_key": "화성",
+   "ocr_text": "화성",
+   "confidence": 0.9997649129733315,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "수원 화성 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-098.easy_rgb_2x_006",
+   "case_id": "v2-098",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     156.5,
+     358.5
+    ],
+    [
+     291.0,
+     358.5
+    ],
+    [
+     291.0,
+     420.0
+    ],
+    [
+     156.5,
+     420.0
+    ]
+   ],
+   "bbox": [
+    156.5,
+    358.5,
+    291.0,
+    420.0
+   ],
+   "height": 61.5,
+   "small_text": false,
+   "text": "문화제",
+   "text_key": "문화제",
+   "ocr_text": "문화제",
+   "confidence": 0.786710798740387,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "수원 화성 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

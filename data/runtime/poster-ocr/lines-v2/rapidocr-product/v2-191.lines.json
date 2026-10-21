@@ -1,0 +1,290 @@
+{
+ "case_id": "v2-191",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-191.rapi_product_002",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     166.0,
+     45.0
+    ],
+    [
+     277.0,
+     44.0
+    ],
+    [
+     277.0,
+     71.0
+    ],
+    [
+     166.0,
+     72.0
+    ]
+   ],
+   "bbox": [
+    166.0,
+    44.0,
+    277.0,
+    72.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "제23회",
+   "text_key": "제23회",
+   "ocr_text": "↓제23회 스",
+   "confidence": 0.7951,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "제23회 예산사과축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.rapi_product_003",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     62.0,
+     57.0
+    ],
+    [
+     383.0,
+     61.0
+    ],
+    [
+     382.0,
+     148.0
+    ],
+    [
+     61.0,
+     145.0
+    ]
+   ],
+   "bbox": [
+    61.0,
+    57.0,
+    383.0,
+    148.0
+   ],
+   "height": 87.51,
+   "small_text": false,
+   "text": "예산사과축제",
+   "text_key": "예산사과축제",
+   "ocr_text": "예산사과축제",
+   "confidence": 0.99954,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예산사과축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.rapi_product_004",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     144.0,
+     140.0
+    ],
+    [
+     291.0,
+     140.0
+    ],
+    [
+     291.0,
+     166.0
+    ],
+    [
+     144.0,
+     166.0
+    ]
+   ],
+   "bbox": [
+    144.0,
+    140.0,
+    291.0,
+    166.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "사과를 품은 예당호",
+   "text_key": "사과를품은예당호",
+   "ocr_text": "·사과를 품은 예당호",
+   "confidence": 0.96818,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "사과를 품은 예당호",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.rapi_product_005",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     118.0,
+     172.0
+    ],
+    [
+     328.0,
+     172.0
+    ],
+    [
+     328.0,
+     191.0
+    ],
+    [
+     118.0,
+     191.0
+    ]
+   ],
+   "bbox": [
+    118.0,
+    172.0,
+    328.0,
+    191.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "10.30.금 - 31.토",
+   "text_key": "1030금31토",
+   "ocr_text": "10.30.0-31.0 예당호 출령다리일원",
+   "confidence": 0.88063,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "10.30.금 - 31.토",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-191.rapi_product_010",
+   "case_id": "v2-191",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_010"
+   },
+   "polygon": [
+    [
+     305.0,
+     596.0
+    ],
+    [
+     394.0,
+     596.0
+    ],
+    [
+     394.0,
+     608.0
+    ],
+    [
+     305.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    596.0,
+    394.0,
+    608.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "041)332-3506",
+   "text_key": "0413323506",
+   "ocr_text": "20041332-3506",
+   "confidence": 0.90713,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "041)332-3506",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-cc4ae5743e3e",
+ "image": {
+  "sha256": "cc4ae5743e3e13b95946c23c2d14b978aecb6b4e888a8ab9b4022260b4ee0e95",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:40+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "DAY3 9.13(일)",
+  "official": "DAY3 9.13(일)",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    350.0,
+    195.0,
+    437.0,
+    241.0
+   ],
+   "confidence": 0.94668
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제1회",
+  "number": 1,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_012"
+   ],
+   "bbox": [
+    34.0,
+    227.0,
+    119.0,
+    243.0
+   ],
+   "confidence": 0.94482
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_041"
+   ],
+   "bbox": [
+    23.0,
+    562.0,
+    213.0,
+    582.0
+   ],
+   "confidence": 0.97059
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.09.11(금)~09.13(일)",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [
+   {
+    "raw": "15:00~22:00",
+    "start": "15:00",
+    "end": "22:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_041"
+   ],
+   "bbox": [
+    23.0,
+    562.0,
+    213.0,
+    582.0
+   ],
+   "confidence": 0.97059
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "일산 라페스타 문화의 거리",
+  "items": [
+   "일산 라페스타 문화의 거리"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_039"
+   ],
+   "bbox": [
+    22.0,
+    539.0,
+    196.0,
+    559.0
+   ],
+   "confidence": 0.98447
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "1사단법인 고양시관광협의회",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_000"
+     ],
+     "bbox": [
+      11.0,
+      7.0,
+      144.0,
+      18.0
+     ],
+     "confidence": 0.91264
+    }
+   },
+   {
+    "name": "고양상공회의소",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_001"
+     ],
+     "bbox": [
+      158.0,
+      7.0,
+      343.0,
+      18.0
+     ],
+     "confidence": 0.90157
+    }
+   },
+   {
+    "name": "고양스테이업",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_001"
+     ],
+     "bbox": [
+      158.0,
+      7.0,
+      343.0,
+      18.0
+     ],
+     "confidence": 0.90157
+    }
+   },
+   {
+    "name": "라패스타",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_001"
+     ],
+     "bbox": [
+      158.0,
+      7.0,
+      343.0,
+      18.0
+     ],
+     "confidence": 0.90157
+    }
+   },
+   {
+    "name": "1고양독레시",
+    "roles": [
+     "sponsor"
+    ],
+    "role_raw": "후원",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_002"
+     ],
+     "bbox": [
+      359.0,
+      5.0,
+      430.0,
+      19.0
+     ],
+     "confidence": 0.68931
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

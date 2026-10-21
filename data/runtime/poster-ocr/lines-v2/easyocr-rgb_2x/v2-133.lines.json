@@ -1,0 +1,397 @@
+{
+ "case_id": "v2-133",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-133.easy_rgb_2x_001",
+   "case_id": "v2-133",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     18.5,
+     42.5
+    ],
+    [
+     228.5,
+     42.5
+    ],
+    [
+     228.5,
+     86.5
+    ],
+    [
+     18.5,
+     86.5
+    ]
+   ],
+   "bbox": [
+    18.5,
+    42.5,
+    228.5,
+    86.5
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "관악강감찬축제",
+   "text_key": "관악강감찬축제",
+   "ocr_text": "관악강감찬축제",
+   "confidence": 0.9776423214527953,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "관악강감찬축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-133.easy_rgb_2x_002",
+   "case_id": "v2-133",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     225.5,
+     47.5
+    ],
+    [
+     270.0,
+     47.5
+    ],
+    [
+     270.0,
+     67.5
+    ],
+    [
+     225.5,
+     67.5
+    ]
+   ],
+   "bbox": [
+    225.5,
+    47.5,
+    270.0,
+    67.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "10주년",
+   "text_key": "10주년",
+   "ocr_text": "10주년",
+   "confidence": 0.9643192887306213,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "2026 관악강감찬축제 10주년",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-133.easy_rgb_2x_003",
+   "case_id": "v2-133",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     314.5,
+     402.5
+    ],
+    [
+     431.5,
+     402.5
+    ],
+    [
+     431.5,
+     433.5
+    ],
+    [
+     314.5,
+     433.5
+    ]
+   ],
+   "bbox": [
+    314.5,
+    402.5,
+    431.5,
+    433.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "투모로우",
+   "text_key": "투모로우",
+   "ocr_text": "투 모로우",
+   "confidence": 0.7875305267775738,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "투모로우 TOMORROW",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-133.easy_rgb_2x_004",
+   "case_id": "v2-133",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     7.5,
+     422.0
+    ],
+    [
+     435.0,
+     422.0
+    ],
+    [
+     435.0,
+     524.5
+    ],
+    [
+     7.5,
+     524.5
+    ]
+   ],
+   "bbox": [
+    7.5,
+    422.0,
+    435.0,
+    524.5
+   ],
+   "height": 102.5,
+   "small_text": false,
+   "text": "TOMORROW",
+   "text_key": "tomorrow",
+   "ocr_text": "TOMORINOW",
+   "confidence": 0.23919682416190508,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "투모로우 TOMORROW",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-133.easy_rgb_2x_008",
+   "case_id": "v2-133",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     21.5,
+     552.5
+    ],
+    [
+     177.5,
+     552.5
+    ],
+    [
+     177.5,
+     570.5
+    ],
+    [
+     21.5,
+     570.5
+    ]
+   ],
+   "bbox": [
+    21.5,
+    552.5,
+    177.5,
+    570.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "낙성대공원",
+   "text_key": "낙성대공원",
+   "ocr_text": "뇌성대공원-포플집원 인국사",
+   "confidence": 0.06876780122322874,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.items"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "낙성대공원",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-133.easy_rgb_2x_010",
+   "case_id": "v2-133",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     74.0,
+     598.0
+    ],
+    [
+     111.0,
+     598.0
+    ],
+    [
+     111.0,
+     613.0
+    ],
+    [
+     74.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    74.0,
+    598.0,
+    111.0,
+    613.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "관악구",
+   "text_key": "관악구",
+   "ocr_text": "관악구",
+   "confidence": 0.784851087353617,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "관악구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-133.easy_rgb_2x_014",
+   "case_id": "v2-133",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     330.0,
+     598.0
+    ],
+    [
+     371.0,
+     598.0
+    ],
+    [
+     371.0,
+     614.0
+    ],
+    [
+     330.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    330.0,
+    598.0,
+    371.0,
+    614.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "우리은행",
+   "text_key": "우리은행",
+   "ocr_text": "'우리은망",
+   "confidence": 0.20371049951148926,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "우리은행",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

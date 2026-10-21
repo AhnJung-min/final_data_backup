@@ -1,0 +1,398 @@
+{
+ "case_id": "v2-177",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-177.padd_rgb_1x_001",
+   "case_id": "v2-177",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     165.0,
+     33.0
+    ],
+    [
+     275.0,
+     33.0
+    ],
+    [
+     275.0,
+     72.0
+    ],
+    [
+     165.0,
+     72.0
+    ]
+   ],
+   "bbox": [
+    165.0,
+    33.0,
+    275.0,
+    72.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "제32회",
+   "text_key": "제32회",
+   "ocr_text": "제32회",
+   "confidence": 0.9988737106323242,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "제32회 서귀포 칠십리축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-177.padd_rgb_1x_002",
+   "case_id": "v2-177",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     96.0,
+     72.0
+    ],
+    [
+     335.0,
+     72.0
+    ],
+    [
+     335.0,
+     168.0
+    ],
+    [
+     96.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    96.0,
+    72.0,
+    335.0,
+    168.0
+   ],
+   "height": 96.0,
+   "small_text": false,
+   "text": "서귀포",
+   "text_key": "서귀포",
+   "ocr_text": "서귀포",
+   "confidence": 0.999941349029541,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "서귀포 칠십리축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-177.padd_rgb_1x_005",
+   "case_id": "v2-177",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     21.0,
+     169.0
+    ],
+    [
+     415.0,
+     166.0
+    ],
+    [
+     415.0,
+     265.0
+    ],
+    [
+     21.0,
+     268.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    166.0,
+    415.0,
+    268.0
+   ],
+   "height": 99.0,
+   "small_text": false,
+   "text": "칠십리축",
+   "text_key": "칠십리축",
+   "ocr_text": "칠십리축체",
+   "confidence": 0.9445293545722961,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "서귀포 칠십리축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-177.padd_rgb_1x_006",
+   "case_id": "v2-177",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     27.0,
+     269.0
+    ],
+    [
+     147.0,
+     269.0
+    ],
+    [
+     147.0,
+     300.0
+    ],
+    [
+     27.0,
+     300.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    269.0,
+    147.0,
+    300.0
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "동GO동",
+   "text_key": "동go동",
+   "ocr_text": "동G0동",
+   "confidence": 0.9691808819770813,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "동GO동樂 볼거인, 놀거인, 재미인",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-177.padd_rgb_1x_007",
+   "case_id": "v2-177",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     154.0,
+     269.0
+    ],
+    [
+     410.0,
+     269.0
+    ],
+    [
+     410.0,
+     300.0
+    ],
+    [
+     154.0,
+     300.0
+    ]
+   ],
+   "bbox": [
+    154.0,
+    269.0,
+    410.0,
+    300.0
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "볼거인, 놀거인, 재미인",
+   "text_key": "볼거인놀거인재미인",
+   "ocr_text": "볼거인,놀거인,재미인",
+   "confidence": 0.9824461340904236,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "동GO동樂 볼거인, 놀거인, 재미인",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-177.padd_rgb_1x_013",
+   "case_id": "v2-177",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     107.0,
+     438.0
+    ],
+    [
+     333.0,
+     440.0
+    ],
+    [
+     333.0,
+     464.0
+    ],
+    [
+     107.0,
+     462.0
+    ]
+   ],
+   "bbox": [
+    107.0,
+    438.0,
+    333.0,
+    464.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026.10. 23(금) ~ 25(일)",
+   "text_key": "20261023금25일",
+   "ocr_text": "2026.10.23(금)~25(일)",
+   "confidence": 0.9706739187240601,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10. 23(금) ~ 25(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-177.padd_rgb_1x_014",
+   "case_id": "v2-177",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     121.0,
+     466.0
+    ],
+    [
+     321.0,
+     468.0
+    ],
+    [
+     321.0,
+     492.0
+    ],
+    [
+     121.0,
+     490.0
+    ]
+   ],
+   "bbox": [
+    121.0,
+    466.0,
+    321.0,
+    492.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "천지연폭포 주차장 일대",
+   "text_key": "천지연폭포주차장일대",
+   "ocr_text": "천지연폭포 주차장 일대",
+   "confidence": 0.9917274117469788,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "천지연폭포 주차장 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

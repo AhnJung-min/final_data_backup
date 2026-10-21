@@ -1,0 +1,558 @@
+{
+ "case_id": "v2-041",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 458,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-041.rapi_product_000",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     356.0,
+     13.0
+    ],
+    [
+     449.0,
+     13.0
+    ],
+    [
+     449.0,
+     26.0
+    ],
+    [
+     356.0,
+     26.0
+    ]
+   ],
+   "bbox": [
+    356.0,
+    13.0,
+    449.0,
+    26.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "고양문화재단",
+   "text_key": "고양문화재단",
+   "ocr_text": "고양복래시 고양문회재단",
+   "confidence": 0.8951,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "고양문화재단",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_005",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     233.0,
+     304.0
+    ],
+    [
+     351.0,
+     304.0
+    ],
+    [
+     351.0,
+     325.0
+    ],
+    [
+     233.0,
+     325.0
+    ]
+   ],
+   "bbox": [
+    233.0,
+    304.0,
+    351.0,
+    325.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "예술, 거리에서 놀다!",
+   "text_key": "예술거리에서놀다",
+   "ocr_text": "예술, 거리에서놀다!",
+   "confidence": 0.90155,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예술, 거리에서 놀다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_006",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     233.0,
+     322.0
+    ],
+    [
+     350.0,
+     322.0
+    ],
+    [
+     350.0,
+     339.0
+    ],
+    [
+     233.0,
+     339.0
+    ]
+   ],
+   "bbox": [
+    233.0,
+    322.0,
+    350.0,
+    339.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "Rhythm of the Street",
+   "text_key": "rhythmofthestreet",
+   "ocr_text": "Rhythm of the Street",
+   "confidence": 0.9862,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "Rhythm of the Street",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_007",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     124.0,
+     348.0
+    ],
+    [
+     314.0,
+     348.0
+    ],
+    [
+     314.0,
+     377.0
+    ],
+    [
+     124.0,
+     377.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    348.0,
+    314.0,
+    377.0
+   ],
+   "height": 29.0,
+   "small_text": false,
+   "text": "2026. 9. 18. FRI - 20.",
+   "text_key": "2026918fri20",
+   "ocr_text": "2026.9.18.FR -20.",
+   "confidence": 0.86863,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "2026. 9. 18. FRI - 20. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_008",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     311.0,
+     351.0
+    ],
+    [
+     336.0,
+     351.0
+    ],
+    [
+     336.0,
+     367.0
+    ],
+    [
+     311.0,
+     367.0
+    ]
+   ],
+   "bbox": [
+    311.0,
+    351.0,
+    336.0,
+    367.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "SUN",
+   "text_key": "sun",
+   "ocr_text": "SUN",
+   "confidence": 0.99101,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "2026. 9. 18. FRI - 20. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_009",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_009"
+   },
+   "polygon": [
+    [
+     162.0,
+     377.0
+    ],
+    [
+     299.0,
+     377.0
+    ],
+    [
+     299.0,
+     405.0
+    ],
+    [
+     162.0,
+     405.0
+    ]
+   ],
+   "bbox": [
+    162.0,
+    377.0,
+    299.0,
+    405.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "일산호수공원 일원",
+   "text_key": "일산호수공원일원",
+   "ocr_text": "일산호수공원일원",
+   "confidence": 0.98781,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일산호수공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_014",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_014"
+   },
+   "polygon": [
+    [
+     20.0,
+     502.0
+    ],
+    [
+     84.0,
+     502.0
+    ],
+    [
+     84.0,
+     520.0
+    ],
+    [
+     20.0,
+     520.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    502.0,
+    84.0,
+    520.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "Hey. Listen",
+   "text_key": "heylisten",
+   "ocr_text": "Hey. Listen",
+   "confidence": 0.91177,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "Hey. Listen",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_015",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_015"
+   },
+   "polygon": [
+    [
+     334.0,
+     502.0
+    ],
+    [
+     446.0,
+     502.0
+    ],
+    [
+     446.0,
+     516.0
+    ],
+    [
+     334.0,
+     516.0
+    ]
+   ],
+   "bbox": [
+    334.0,
+    502.0,
+    446.0,
+    516.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "불꽃드론쇼 & 불꽃놀이",
+   "text_key": "불꽃드론쇼불꽃놀이",
+   "ocr_text": "불꽃드톤쇼 & 불꽃놀이",
+   "confidence": 0.87251,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "불꽃드론쇼 & 불꽃놀이",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_019",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_019"
+   },
+   "polygon": [
+    [
+     350.0,
+     539.0
+    ],
+    [
+     431.0,
+     539.0
+    ],
+    [
+     431.0,
+     553.0
+    ],
+    [
+     350.0,
+     553.0
+    ]
+   ],
+   "bbox": [
+    350.0,
+    539.0,
+    431.0,
+    553.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "왁자지껄 유랑단",
+   "text_key": "왁자지껄유랑단",
+   "ocr_text": "왁자지걸 유람단",
+   "confidence": 0.97495,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "왁자지껄 유랑단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.rapi_product_020",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_020"
+   },
+   "polygon": [
+    [
+     20.0,
+     605.0
+    ],
+    [
+     440.0,
+     605.0
+    ],
+    [
+     440.0,
+     617.0
+    ],
+    [
+     20.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    605.0,
+    440.0,
+    617.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "고양호수 예술축제",
+   "text_key": "고양호수예술축제",
+   "ocr_text": "세계가 주목한 데외 거리매술 6개 팀,국내 40개 팀의 피포면수 100이 최와.고양호수매술축제에세만 만널 수 있는 목발한 참여형 곤번츠",
+   "confidence": 0.85319,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "고양호수 예술축제",
+   "extra_chars": 49,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,1481 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 6113,
+  "input_tokens": 9394,
+  "cost_usd": 0.0009394
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S09",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S09.png",
+    "sha256": "c8ab789be6b2b6bac9fbd385452beac6def5127a44ce41b51d7eff3a9d426505",
+    "bytes": 120009,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S09.png",
+    "sha256": "6ad7448f093ca363bd7a6ff53d178dae12220dcd5348bc217616ce8132f65ae4",
+    "bytes": 59087,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "미르 단풍 겉기 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제31회 미르 단풍 겉기 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제31회",
+     "number": 31
+    },
+    "doc_raw": "제31회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.30.(월)~12.2.(수)",
+     "points": [
+      [
+       2026,
+       11,
+       30,
+       "월"
+      ],
+      [
+       2026,
+       12,
+       2,
+       "수"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.30.(월)~12.2.(수)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "10:00~18:00"
+    },
+    "doc_raw": "10:00~18:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "미르 문화예술회관 야외광장"
+    },
+    "doc_raw": "미르 문화예술회관 야외광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "미르시"
+    },
+    "doc_raw": "미르시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "미르문화원"
+    },
+    "doc_raw": "미르문화원"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "063-000-7910"
+    },
+    "doc_raw": "063-000-7910"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "붉게 물든 길을 함께 걸어요"
+    },
+    "doc_raw": "붉게 물든 길을 함께 걸어요"
+   }
+  },
+  "rows": [
+   {
+    "value": "L590",
+    "index": 0,
+    "text": "2026 제31회",
+    "conf": 0.9991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026",
+      "confidence": 0.9991073608398438,
+      "bbox_xyxy": [
+       346.0,
+       74.0,
+       435.0,
+       108.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "제31회",
+      "confidence": 0.9997991919517517,
+      "bbox_xyxy": [
+       431.0,
+       71.0,
+       537.0,
+       108.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L918",
+    "index": 1,
+    "text": "미르",
+    "conf": 0.9995,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "미르",
+      "confidence": 0.999517560005188,
+      "bbox_xyxy": [
+       336.0,
+       131.0,
+       549.0,
+       259.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L245",
+    "index": 2,
+    "text": "단풍 걷기 축제",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "단풍",
+      "confidence": 0.9997080564498901,
+      "bbox_xyxy": [
+       112.0,
+       267.0,
+       322.0,
+       393.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "걷기",
+      "confidence": 0.99900221824646,
+      "bbox_xyxy": [
+       336.0,
+       265.0,
+       547.0,
+       396.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "축제",
+      "confidence": 0.9992401003837585,
+      "bbox_xyxy": [
+       559.0,
+       263.0,
+       774.0,
+       396.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L844",
+    "index": 3,
+    "text": "붉게 물든 길을 함께 걸어요",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "붉게",
+      "confidence": 0.9998914003372192,
+      "bbox_xyxy": [
+       254.0,
+       415.0,
+       318.0,
+       453.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "물든",
+      "confidence": 0.9998339414596558,
+      "bbox_xyxy": [
+       322.0,
+       415.0,
+       391.0,
+       454.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "길을",
+      "confidence": 0.9999747276306152,
+      "bbox_xyxy": [
+       393.0,
+       413.0,
+       462.0,
+       455.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "함께",
+      "confidence": 0.9999819397926331,
+      "bbox_xyxy": [
+       463.0,
+       411.0,
+       532.0,
+       455.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "걸어요",
+      "confidence": 0.9998461604118347,
+      "bbox_xyxy": [
+       534.0,
+       413.0,
+       633.0,
+       454.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L115",
+    "index": 4,
+    "text": "일시 2026.11.30.(월)~12.2.(수)",
+    "conf": 0.9777,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "일시",
+      "confidence": 0.9999581575393677,
+      "bbox_xyxy": [
+       86.0,
+       814.0,
+       144.0,
+       850.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "2026.11.30.(월)~12.2.(수)",
+      "confidence": 0.9777243137359619,
+      "bbox_xyxy": [
+       197.0,
+       819.0,
+       596.0,
+       850.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L956",
+    "index": 5,
+    "text": "시간 10:00~18:00",
+    "conf": 0.9987,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "시간",
+      "confidence": 0.9999542832374573,
+      "bbox_xyxy": [
+       85.0,
+       887.0,
+       147.0,
+       926.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "10:00~18:00",
+      "confidence": 0.9986754059791565,
+      "bbox_xyxy": [
+       199.0,
+       892.0,
+       396.0,
+       923.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L848",
+    "index": 6,
+    "text": "장소 미르 문화예술회관 야외광장",
+    "conf": 0.9913,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "장소",
+      "confidence": 0.9995822906494141,
+      "bbox_xyxy": [
+       85.0,
+       961.0,
+       147.0,
+       1000.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "미르 문화예술회관 야외광장",
+      "confidence": 0.9912963509559631,
+      "bbox_xyxy": [
+       200.0,
+       967.0,
+       562.0,
+       997.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L242",
+    "index": 7,
+    "text": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모",
+    "conf": 0.9477,
+    "records": [
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모",
+      "confidence": 0.9476844072341919,
+      "bbox_xyxy": [
+       230.0,
+       1055.0,
+       657.0,
+       1078.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L732",
+    "index": 8,
+    "text": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910",
+    "conf": 0.9644,
+    "records": [
+     {
+      "id": "padd_rgb_1x_018",
+      "text": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910",
+      "confidence": 0.9643621444702148,
+      "bbox_xyxy": [
+       179.0,
+       1198.0,
+       707.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제31회 미르 단풍 겉기 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.30.(월)~12.2.(수)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "미르 문화예술회관 야외광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "미르시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "미르문화원"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "063-000-7910"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "붉게 물든 길을 함께 걸어요"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "미르 단풍 겉기 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제31회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.30.(월)~12.2.(수)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "미르 문화예술회관 야외광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "미르시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "미르문화원"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "063-000-7910"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "붉게 물든 길을 함께 걸어요"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_edition": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_time": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_venue": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_host": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_contact": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L590",
+    "L918",
+    "L245",
+    "L844",
+    "L115",
+    "L956",
+    "L848",
+    "L242",
+    "L732",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 120,009 bytes, sha256 c8ab789be6b2b6ba…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 59,087 bytes, sha256 6ad7448f093ca363…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제31회 미르 단풍 겉기 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.30.(월)~12.2.(수)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '10:00~18:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '미르 문화예술회관 야외광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '미르시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '미르문화원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '063-000-7910'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '붉게 물든 길을 함께 걸어요'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L590",
+      "description": "2026 제31회"
+     },
+     {
+      "value": "L918",
+      "description": "미르"
+     },
+     {
+      "value": "L245",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L844",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L115",
+      "description": "일시 2026.11.30.(월)~12.2.(수)"
+     },
+     {
+      "value": "L956",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L848",
+      "description": "장소 미르 문화예술회관 야외광장"
+     },
+     {
+      "value": "L242",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L732",
+      "description": "주최 미르시 ㅣ 주관 미르문화원 ㅣ 문의 063-000-7910"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '미르 단풍 겉기 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제31회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.30.(월)~12.2.(수)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '10:00~18:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '미르 문화예술회관 야외광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '미르시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '미르문화원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '063-000-7910'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '붉게 물든 길을 함께 걸어요'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

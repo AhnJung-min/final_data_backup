@@ -1,0 +1,507 @@
+{
+ "case_id": "v2-120",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-120.padd_rgb_1x_000",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     15.0,
+     12.0
+    ],
+    [
+     120.0,
+     12.0
+    ],
+    [
+     120.0,
+     24.0
+    ],
+    [
+     15.0,
+     24.0
+    ]
+   ],
+   "bbox": [
+    15.0,
+    12.0,
+    120.0,
+    24.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "서초",
+   "text_key": "서초",
+   "ocr_text": "서초 서초문의재단주",
+   "confidence": 0.7747079730033875,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서초",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_003",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     75.0,
+     75.0
+    ],
+    [
+     368.0,
+     71.0
+    ],
+    [
+     369.0,
+     166.0
+    ],
+    [
+     76.0,
+     170.0
+    ]
+   ],
+   "bbox": [
+    75.0,
+    71.0,
+    369.0,
+    170.0
+   ],
+   "height": 95.01,
+   "small_text": false,
+   "text": "물길따라",
+   "text_key": "물길따라",
+   "ocr_text": "물길따라",
+   "confidence": 0.9995956420898438,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "물길따라 그림책 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_004",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     31.0,
+     160.0
+    ],
+    [
+     256.0,
+     160.0
+    ],
+    [
+     256.0,
+     258.0
+    ],
+    [
+     31.0,
+     258.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    160.0,
+    256.0,
+    258.0
+   ],
+   "height": 98.0,
+   "small_text": false,
+   "text": "그림책",
+   "text_key": "그림책",
+   "ocr_text": "그림책",
+   "confidence": 0.9985146522521973,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "물길따라 그림책 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_005",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     262.0,
+     161.0
+    ],
+    [
+     415.0,
+     161.0
+    ],
+    [
+     415.0,
+     259.0
+    ],
+    [
+     262.0,
+     259.0
+    ]
+   ],
+   "bbox": [
+    262.0,
+    161.0,
+    415.0,
+    259.0
+   ],
+   "height": 98.0,
+   "small_text": false,
+   "text": "여행",
+   "text_key": "여행",
+   "ocr_text": "여행",
+   "confidence": 0.999832034111023,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "물길따라 그림책 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_006",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     145.0,
+     257.0
+    ],
+    [
+     311.0,
+     257.0
+    ],
+    [
+     311.0,
+     277.0
+    ],
+    [
+     145.0,
+     277.0
+    ]
+   ],
+   "bbox": [
+    145.0,
+    257.0,
+    311.0,
+    277.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "양재천 품은 양재도서관",
+   "text_key": "양재천품은양재도서관",
+   "ocr_text": "양재천 품은양재도서관",
+   "confidence": 0.9516124725341797,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo",
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "양재천 품은 양재도서관",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_007",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     14.0,
+     578.0
+    ],
+    [
+     160.0,
+     578.0
+    ],
+    [
+     160.0,
+     595.0
+    ],
+    [
+     14.0,
+     595.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    578.0,
+    160.0,
+    595.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "일시: 10.10.(토) ~ 11.8.(일)",
+   "text_key": "일시1010토118일",
+   "ocr_text": "일시:10.10.(토)~11.8.(일)",
+   "confidence": 0.9642941355705261,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일시: 10.10.(토) ~ 11.8.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_008",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     262.0,
+     580.0
+    ],
+    [
+     427.0,
+     580.0
+    ],
+    [
+     427.0,
+     594.0
+    ],
+    [
+     262.0,
+     594.0
+    ]
+   ],
+   "bbox": [
+    262.0,
+    580.0,
+    427.0,
+    594.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "양재도서관 야외도서관 일대",
+   "text_key": "양재도서관야외도서관일대",
+   "ocr_text": "장소:양재도서관 야외도서관 일대",
+   "confidence": 0.9585187435150146,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "양재도서관 야외도서관 일대",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_009",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     13.0,
+     598.0
+    ],
+    [
+     91.0,
+     598.0
+    ],
+    [
+     91.0,
+     610.0
+    ],
+    [
+     13.0,
+     610.0
+    ]
+   ],
+   "bbox": [
+    13.0,
+    598.0,
+    91.0,
+    610.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "11시~17시",
+   "text_key": "11시17시",
+   "ocr_text": "매주추말11시~17시",
+   "confidence": 0.8389968276023865,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "11시~17시",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-120.padd_rgb_1x_010",
+   "case_id": "v2-120",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     335.0,
+     598.0
+    ],
+    [
+     428.0,
+     598.0
+    ],
+    [
+     428.0,
+     610.0
+    ],
+    [
+     335.0,
+     610.0
+    ]
+   ],
+   "bbox": [
+    335.0,
+    598.0,
+    428.0,
+    610.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "문의:02-3486-4043",
+   "text_key": "문의0234864043",
+   "ocr_text": "문의:02-3486-4043",
+   "confidence": 0.9982544183731079,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "문의:02-3486-4043",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-063",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-063.rapi_product_001",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     157.0,
+     84.0
+    ],
+    [
+     284.0,
+     84.0
+    ],
+    [
+     284.0,
+     127.0
+    ],
+    [
+     157.0,
+     127.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    84.0,
+    284.0,
+    127.0
+   ],
+   "height": 43.0,
+   "small_text": false,
+   "text": "인제",
+   "text_key": "인제",
+   "ocr_text": "인제에서",
+   "confidence": 0.99167,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "인제",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.rapi_product_004",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     124.0,
+     208.0
+    ],
+    [
+     321.0,
+     209.0
+    ],
+    [
+     321.0,
+     238.0
+    ],
+    [
+     124.0,
+     236.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    208.0,
+    321.0,
+    238.0
+   ],
+   "height": 28.5,
+   "small_text": false,
+   "text": "2026.9.24.(목) ~ 10.18.(일)",
+   "text_key": "2026924목1018일",
+   "ocr_text": "2026.9.24.(목)~10.18.(일)",
+   "confidence": 0.97752,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.9.24.(목) ~ 10.18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.rapi_product_005",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     128.0,
+     234.0
+    ],
+    [
+     317.0,
+     234.0
+    ],
+    [
+     317.0,
+     250.0
+    ],
+    [
+     128.0,
+     250.0
+    ]
+   ],
+   "bbox": [
+    128.0,
+    234.0,
+    317.0,
+    250.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "강원특별자치도 인제군 용대 관광지 일원",
+   "text_key": "강원특별자치도인제군용대관광지일원",
+   "ocr_text": "강원특별자치도 인께군 용대 관광지 일원",
+   "confidence": 0.92201,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0588,
+   "gold_value": "강원특별자치도 인제군 용대 관광지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.rapi_product_010",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_010"
+   },
+   "polygon": [
+    [
+     279.0,
+     589.0
+    ],
+    [
+     353.0,
+     589.0
+    ],
+    [
+     353.0,
+     603.0
+    ],
+    [
+     279.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    279.0,
+    589.0,
+    353.0,
+    603.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "033-460-8900",
+   "text_key": "0334608900",
+   "ocr_text": "E9 033-450-8100",
+   "confidence": 0.6919,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "033-460-8900",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

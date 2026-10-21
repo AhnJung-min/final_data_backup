@@ -1,0 +1,506 @@
+{
+ "case_id": "v2-076",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 24,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-076.padd_rgb_2x_000",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     22.0,
+     20.0
+    ],
+    [
+     49.0,
+     18.5
+    ],
+    [
+     50.0,
+     36.0
+    ],
+    [
+     23.0,
+     37.5
+    ]
+   ],
+   "bbox": [
+    22.0,
+    18.5,
+    50.0,
+    37.5
+   ],
+   "height": 17.53,
+   "small_text": false,
+   "text": "군산",
+   "text_key": "군산",
+   "ocr_text": "군산",
+   "confidence": 0.7131117582321167,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "군산 시간여행축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_001",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     392.0,
+     21.0
+    ],
+    [
+     422.5,
+     21.0
+    ],
+    [
+     422.5,
+     29.5
+    ],
+    [
+     392.0,
+     29.5
+    ]
+   ],
+   "bbox": [
+    392.0,
+    21.0,
+    422.5,
+    29.5
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "Hello,",
+   "text_key": "hello",
+   "ocr_text": "Hello.5",
+   "confidence": 0.8251730799674988,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "Hello, Modern",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_002",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     393.0,
+     27.0
+    ],
+    [
+     423.0,
+     28.0
+    ],
+    [
+     422.5,
+     37.0
+    ],
+    [
+     392.5,
+     35.5
+    ]
+   ],
+   "bbox": [
+    392.5,
+    27.0,
+    423.0,
+    37.0
+   ],
+   "height": 8.76,
+   "small_text": true,
+   "text": "Modern",
+   "text_key": "modern",
+   "ocr_text": "Modorn",
+   "confidence": 0.9467060565948486,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "Hello, Modern",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_007",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     38.5,
+     196.0
+    ],
+    [
+     410.5,
+     196.0
+    ],
+    [
+     410.5,
+     327.0
+    ],
+    [
+     38.5,
+     327.0
+    ]
+   ],
+   "bbox": [
+    38.5,
+    196.0,
+    410.5,
+    327.0
+   ],
+   "height": 131.0,
+   "small_text": false,
+   "text": "시간여행",
+   "text_key": "시간여행",
+   "ocr_text": "시간여행제",
+   "confidence": 0.9019430875778198,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "군산 시간여행축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_008",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     39.5,
+     331.5
+    ],
+    [
+     133.5,
+     334.0
+    ],
+    [
+     133.0,
+     368.5
+    ],
+    [
+     39.0,
+     366.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    331.5,
+    133.5,
+    368.5
+   ],
+   "height": 34.5,
+   "small_text": false,
+   "text": "10.2.",
+   "text_key": "102",
+   "ocr_text": "10.2.@",
+   "confidence": 0.8680477142333984,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "10.2.금 | 10.5.월",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_013",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     39.5,
+     385.5
+    ],
+    [
+     133.0,
+     387.5
+    ],
+    [
+     132.5,
+     423.5
+    ],
+    [
+     39.0,
+     422.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    385.5,
+    133.0,
+    423.5
+   ],
+   "height": 36.25,
+   "small_text": false,
+   "text": "10.5.",
+   "text_key": "105",
+   "ocr_text": "10.5.",
+   "confidence": 0.9970235824584961,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "10.2.금 | 10.5.월",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_015",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     42.0,
+     426.5
+    ],
+    [
+     102.0,
+     427.5
+    ],
+    [
+     101.5,
+     440.0
+    ],
+    [
+     42.0,
+     439.0
+    ]
+   ],
+   "bbox": [
+    42.0,
+    426.5,
+    102.0,
+    440.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "구·시청광장 및",
+   "text_key": "구시청광장및",
+   "ocr_text": "구·시청광장 및",
+   "confidence": 0.9959940910339355,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "구·시청광장 및 시간여행마을 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_017",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     42.5,
+     441.0
+    ],
+    [
+     115.5,
+     441.0
+    ],
+    [
+     115.5,
+     453.0
+    ],
+    [
+     42.5,
+     453.0
+    ]
+   ],
+   "bbox": [
+    42.5,
+    441.0,
+    115.5,
+    453.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "시간여행마을 일원",
+   "text_key": "시간여행마을일원",
+   "ocr_text": "시간여행마을 일원",
+   "confidence": 0.9965553283691406,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "시간여행마을 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_2x_021",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     136.5,
+     596.5
+    ],
+    [
+     286.5,
+     595.5
+    ],
+    [
+     287.0,
+     612.0
+    ],
+    [
+     136.5,
+     613.0
+    ]
+   ],
+   "bbox": [
+    136.5,
+    595.5,
+    287.0,
+    613.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "전북특별자치도",
+   "text_key": "전북특별자치도",
+   "ocr_text": "©군산서 추원  전복록별자치도",
+   "confidence": 0.803695797920227,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "전북특별자치도",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

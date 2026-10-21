@@ -1,0 +1,179 @@
+{
+ "case_id": "r2-001",
+ "split": "reserve",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "r2-001.easy_rgb_2x_000",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     114.5,
+     19.0
+    ],
+    [
+     331.5,
+     19.0
+    ],
+    [
+     331.5,
+     39.0
+    ],
+    [
+     114.5,
+     39.0
+    ]
+   ],
+   "bbox": [
+    114.5,
+    19.0,
+    331.5,
+    39.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "원주 관찰사(史): 원주의 역사를 관찰하다",
+   "text_key": "원주관찰사史원주의역사를관찰하다",
+   "ocr_text": "왼주 관찰사(): 원주의 여사물 관찰하다",
+   "confidence": 0.33065671725557927,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "원주 관찰사(史): 원주의 역사를 관찰하다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.easy_rgb_2x_008",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     24.0,
+     551.0
+    ],
+    [
+     203.0,
+     551.0
+    ],
+    [
+     203.0,
+     565.0
+    ],
+    [
+     24.0,
+     565.0
+    ]
+   ],
+   "bbox": [
+    24.0,
+    551.0,
+    203.0,
+    565.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "17:00~22:00",
+   "text_key": "17002200",
+   "ocr_text": "2026.09.04/3)-08(입) 17.00-2200",
+   "confidence": 0.26439604436564146,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "17:00~22:00",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.easy_rgb_2x_009",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     230.0,
+     553.0
+    ],
+    [
+     310.0,
+     553.0
+    ],
+    [
+     310.0,
+     566.0
+    ],
+    [
+     230.0,
+     566.0
+    ]
+   ],
+   "bbox": [
+    230.0,
+    553.0,
+    310.0,
+    566.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "2026.09.04.(금)~06.(일)",
+   "text_key": "20260904금06일",
+   "ocr_text": "2026,09.0463)",
+   "confidence": 0.22314889682364178,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "2026.09.04.(금)~06.(일)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,1497 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 5990,
+  "input_tokens": 9271,
+  "cost_usd": 0.0009271
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S33",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S33.png",
+    "sha256": "f46468ff020fbed6986b1b7702f21a30f87550233e82d2aa39bf19eec59e1749",
+    "bytes": 123519,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S33.png",
+    "sha256": "a6cce38ebcb6ed195c33ab34d73f0fa7e2205e16b3da2292b031b165742aa040",
+    "bytes": 111135,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "은하 한지 공예 문화제",
+     "doc_variants": []
+    },
+    "doc_raw": "제25회 은하 한지 공예 문화제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제25회",
+     "number": 25
+    },
+    "doc_raw": "제25회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.30.(월)",
+     "points": [
+      [
+       2026,
+       11,
+       30,
+       "월"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.30.(월)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "10:00~18:00"
+    },
+    "doc_raw": "10:00~18:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "은하시청 앞 광장"
+    },
+    "doc_raw": "은하시청 앞 광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "은하시"
+    },
+    "doc_raw": "은하시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "은하관광재단"
+    },
+    "doc_raw": "은하관광재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "055-000-5478"
+    },
+    "doc_raw": "055-000-5478"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "손끝에서 피어나는 전통"
+    },
+    "doc_raw": "손끝에서 피어나는 전통"
+   }
+  },
+  "rows": [
+   {
+    "value": "L111",
+    "index": 0,
+    "text": "2026 제25회",
+    "conf": 0.9677,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "2026 제25회",
+      "confidence": 0.9677215218544006,
+      "bbox_xyxy": [
+       342.0,
+       305.0,
+       541.0,
+       348.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L337",
+    "index": 1,
+    "text": "은하",
+    "conf": 0.9992,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "은하",
+      "confidence": 0.9992226958274841,
+      "bbox_xyxy": [
+       328.0,
+       385.0,
+       558.0,
+       515.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L983",
+    "index": 2,
+    "text": "한지 공예 문화제",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "한지",
+      "confidence": 0.9999494552612305,
+      "bbox_xyxy": [
+       49.0,
+       534.0,
+       265.0,
+       667.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "공예",
+      "confidence": 0.9997657537460327,
+      "bbox_xyxy": [
+       282.0,
+       538.0,
+       500.0,
+       666.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "문화제",
+      "confidence": 0.999921977519989,
+      "bbox_xyxy": [
+       512.0,
+       537.0,
+       829.0,
+       664.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L370",
+    "index": 3,
+    "text": "손끝에서 피어나는 전통",
+    "conf": 0.9995,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "손끝에서",
+      "confidence": 0.9998002052307129,
+      "bbox_xyxy": [
+       289.0,
+       688.0,
+       407.0,
+       727.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "피어나는",
+      "confidence": 0.9997140765190125,
+      "bbox_xyxy": [
+       408.0,
+       687.0,
+       531.0,
+       730.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "전통",
+      "confidence": 0.9995406866073608,
+      "bbox_xyxy": [
+       534.0,
+       689.0,
+       597.0,
+       728.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L960",
+    "index": 4,
+    "text": "11월 30일(월)",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "11월",
+      "confidence": 0.9989779591560364,
+      "bbox_xyxy": [
+       317.0,
+       795.0,
+       406.0,
+       840.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "30일(월)",
+      "confidence": 0.999522864818573,
+      "bbox_xyxy": [
+       408.0,
+       793.0,
+       569.0,
+       845.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L822",
+    "index": 5,
+    "text": "10:00 ~ 18:00",
+    "conf": 0.9987,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "10:00",
+      "confidence": 0.9987204670906067,
+      "bbox_xyxy": [
+       347.0,
+       869.0,
+       429.0,
+       898.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "~",
+      "confidence": 0.986223042011261,
+      "bbox_xyxy": [
+       434.0,
+       873.0,
+       453.0,
+       894.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "18:00",
+      "confidence": 0.9991971850395203,
+      "bbox_xyxy": [
+       458.0,
+       869.0,
+       540.0,
+       898.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L307",
+    "index": 6,
+    "text": "은하시청 앞 광장",
+    "conf": 0.9999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "은하시청",
+      "confidence": 0.9999048709869385,
+      "bbox_xyxy": [
+       324.0,
+       916.0,
+       453.0,
+       963.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "앞",
+      "confidence": 0.9999860525131226,
+      "bbox_xyxy": [
+       457.0,
+       919.0,
+       491.0,
+       960.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "광장",
+      "confidence": 0.9998864531517029,
+      "bbox_xyxy": [
+       494.0,
+       918.0,
+       564.0,
+       962.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L813",
+    "index": 7,
+    "text": "한지 등 만들기 공예 장인시연 전통 놀이 마당",
+    "conf": 0.9449,
+    "records": [
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "한지 등 만들기",
+      "confidence": 0.9825812578201294,
+      "bbox_xyxy": [
+       196.0,
+       1007.0,
+       339.0,
+       1034.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_018",
+      "text": "공예",
+      "confidence": 0.9998515844345093,
+      "bbox_xyxy": [
+       370.0,
+       1007.0,
+       417.0,
+       1034.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_019",
+      "text": "장인시연",
+      "confidence": 0.999545156955719,
+      "bbox_xyxy": [
+       416.0,
+       1006.0,
+       515.0,
+       1035.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_020",
+      "text": "전통 놀이 마당",
+      "confidence": 0.9448825716972351,
+      "bbox_xyxy": [
+       545.0,
+       1007.0,
+       688.0,
+       1034.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L326",
+    "index": 8,
+    "text": "주최 은하시|주관 은하관광재단 |문의 055-000-5478",
+    "conf": 0.9654,
+    "records": [
+     {
+      "id": "padd_rgb_1x_021",
+      "text": "주최 은하시|주관 은하관광재단 |문의 055-000-5478",
+      "confidence": 0.9654147624969482,
+      "bbox_xyxy": [
+       168.0,
+       1196.0,
+       717.0,
+       1220.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제25회 은하 한지 공예 문화제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.30.(월)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "은하시청 앞 광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "은하시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "은하관광재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "055-000-5478"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "손끝에서 피어나는 전통"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "은하 한지 공예 문화제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제25회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.30.(월)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "은하시청 앞 광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "은하시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "은하관광재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "055-000-5478"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "손끝에서 피어나는 전통"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_edition": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_time": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_venue": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_host": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_contact": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L111",
+    "L337",
+    "L983",
+    "L370",
+    "L960",
+    "L822",
+    "L307",
+    "L813",
+    "L326",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 123,519 bytes, sha256 f46468ff020fbed6…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 111,135 bytes, sha256 a6cce38ebcb6ed19…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제25회 은하 한지 공예 문화제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.30.(월)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '10:00~18:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '은하시청 앞 광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '은하시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '은하관광재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '055-000-5478'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '손끝에서 피어나는 전통'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L111",
+      "description": "2026 제25회"
+     },
+     {
+      "value": "L337",
+      "description": "은하"
+     },
+     {
+      "value": "L983",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L370",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L960",
+      "description": "11월 30일(월)"
+     },
+     {
+      "value": "L822",
+      "description": "10:00 ~ 18:00"
+     },
+     {
+      "value": "L307",
+      "description": "은하시청 앞 광장"
+     },
+     {
+      "value": "L813",
+      "description": "한지 등 만들기 공예 장인시연 전통 놀이 마당"
+     },
+     {
+      "value": "L326",
+      "description": "주최 은하시|주관 은하관광재단 |문의 055-000-5478"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '은하 한지 공예 문화제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제25회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.30.(월)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '10:00~18:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '은하시청 앞 광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '은하시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '은하관광재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '055-000-5478'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '손끝에서 피어나는 전통'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

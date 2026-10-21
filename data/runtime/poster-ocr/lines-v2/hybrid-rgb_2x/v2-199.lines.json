@@ -1,0 +1,128 @@
+{
+ "case_id": "v2-199",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-199.easy_rgb_2x_010",
+   "case_id": "v2-199",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     133.5,
+     579.5
+    ],
+    [
+     435.5,
+     579.5
+    ],
+    [
+     435.5,
+     600.5
+    ],
+    [
+     133.5,
+     600.5
+    ]
+   ],
+   "bbox": [
+    133.5,
+    579.5,
+    435.5,
+    600.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "26.11.07~08",
+   "text_key": "26110708",
+   "ocr_text": "일정:26.11.07~08/장소:여주시산북면체육공원",
+   "confidence": 0.9758589863777161,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "26.11.07~08",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-199.easy_rgb_2x_011",
+   "case_id": "v2-199",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     151.5,
+     600.0
+    ],
+    [
+     411.5,
+     600.0
+    ],
+    [
+     411.5,
+     620.5
+    ],
+    [
+     151.5,
+     620.5
+    ]
+   ],
+   "bbox": [
+    151.5,
+    600.0,
+    411.5,
+    620.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "031.883.0031",
+   "text_key": "0318830031",
+   "ocr_text": "주관:산북품실축제위원회(031.883.0031)",
+   "confidence": 0.9845203161239624,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "031.883.0031",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

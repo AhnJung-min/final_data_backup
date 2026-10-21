@@ -1,0 +1,504 @@
+{
+ "case_id": "v2-017",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 22,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-017.padd_rgb_1x_004",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     59.0,
+     69.0
+    ],
+    [
+     395.0,
+     93.0
+    ],
+    [
+     387.0,
+     202.0
+    ],
+    [
+     51.0,
+     178.0
+    ]
+   ],
+   "bbox": [
+    51.0,
+    69.0,
+    395.0,
+    202.0
+   ],
+   "height": 109.29,
+   "small_text": false,
+   "text": "홀리페스티벌",
+   "text_key": "홀리페스티벌",
+   "ocr_text": "흘리페스티벌",
+   "confidence": 0.9274797439575195,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 왜관 홀리페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_005",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     165.0,
+     67.0
+    ],
+    [
+     278.0,
+     70.0
+    ],
+    [
+     277.0,
+     101.0
+    ],
+    [
+     164.0,
+     99.0
+    ]
+   ],
+   "bbox": [
+    164.0,
+    67.0,
+    278.0,
+    101.0
+   ],
+   "height": 31.52,
+   "small_text": false,
+   "text": "2026 왜관",
+   "text_key": "2026왜관",
+   "ocr_text": "2026 왜관",
+   "confidence": 0.9645005464553833,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 왜관 홀리페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_007",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     139.0,
+     200.0
+    ],
+    [
+     303.0,
+     202.0
+    ],
+    [
+     303.0,
+     225.0
+    ],
+    [
+     139.0,
+     223.0
+    ]
+   ],
+   "bbox": [
+    139.0,
+    200.0,
+    303.0,
+    225.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "9. 4.(금) ~ 9. 6.(일)",
+   "text_key": "94금96일",
+   "ocr_text": "9.4.[금]~9.6.([일]",
+   "confidence": 0.9210824370384216,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 4.(금) ~ 9. 6.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_008",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     168.0,
+     225.0
+    ],
+    [
+     275.0,
+     223.0
+    ],
+    [
+     276.0,
+     243.0
+    ],
+    [
+     169.0,
+     245.0
+    ]
+   ],
+   "bbox": [
+    168.0,
+    223.0,
+    276.0,
+    245.0
+   ],
+   "height": 20.02,
+   "small_text": false,
+   "text": "왜관수도원",
+   "text_key": "왜관수도원",
+   "ocr_text": "수왜관수도원",
+   "confidence": 0.8942379951477051,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "왜관수도원",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_013",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     22.0,
+     539.0
+    ],
+    [
+     176.0,
+     539.0
+    ],
+    [
+     176.0,
+     549.0
+    ],
+    [
+     22.0,
+     549.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    539.0,
+    176.0,
+    549.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "빛의 성당",
+   "text_key": "빛의성당",
+   "ocr_text": "빛의 성당·그레고리인 성가공연·파이프오르라연주",
+   "confidence": 0.870637834072113,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "빛의 성당",
+   "extra_chars": 17,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_014",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     21.0,
+     551.0
+    ],
+    [
+     149.0,
+     551.0
+    ],
+    [
+     149.0,
+     563.0
+    ],
+    [
+     21.0,
+     563.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    551.0,
+    149.0,
+    563.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "수도원 투어",
+   "text_key": "수도원투어",
+   "ocr_text": "수도원투어·플리테이스테이·컴성버스임",
+   "confidence": 0.8425797820091248,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "수도원 투어",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_015",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     21.0,
+     563.0
+    ],
+    [
+     156.0,
+     563.0
+    ],
+    [
+     156.0,
+     576.0
+    ],
+    [
+     21.0,
+     576.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    563.0,
+    156.0,
+    576.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "인생사진 스튜디오",
+   "text_key": "인생사진스튜디오",
+   "ocr_text": "인생사진스류디오·마용심터·미사전시채일",
+   "confidence": 0.8418935537338257,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "인생사진 스튜디오",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_016",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     20.0,
+     575.0
+    ],
+    [
+     167.0,
+     576.0
+    ],
+    [
+     166.0,
+     590.0
+    ],
+    [
+     20.0,
+     589.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    575.0,
+    167.0,
+    590.0
+   ],
+   "height": 14.02,
+   "small_text": false,
+   "text": "MZ신부님과 함께하는 토크콘서트",
+   "text_key": "mz신부님과함께하는토크콘서트",
+   "ocr_text": "플리콘세트-MZ신부과링매하는토크콘서트",
+   "confidence": 0.8194096684455872,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "MZ신부님과 함께하는 토크콘서트",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.padd_rgb_1x_017",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     22.0,
+     590.0
+    ],
+    [
+     132.0,
+     590.0
+    ],
+    [
+     132.0,
+     603.0
+    ],
+    [
+     22.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    590.0,
+    132.0,
+    603.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "체험부스",
+   "text_key": "체험부스",
+   "ocr_text": "재험부스·하놀성당이배스 특법미사",
+   "confidence": 0.841708242893219,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "체험부스",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

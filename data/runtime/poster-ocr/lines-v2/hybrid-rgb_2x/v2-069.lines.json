@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-069",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-069.easy_rgb_2x_003",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     34.0,
+     49.5
+    ],
+    [
+     231.5,
+     49.5
+    ],
+    [
+     231.5,
+     69.5
+    ],
+    [
+     34.0,
+     69.5
+    ]
+   ],
+   "bbox": [
+    34.0,
+    49.5,
+    231.5,
+    69.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "하나로 ONE! 세계로 RUN!",
+   "text_key": "하나로one세계로run",
+   "ocr_text": "하나로ONE! 세계로RUN!",
+   "confidence": 0.4838334003607288,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "하나로 ONE! 세계로 RUN!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.easy_rgb_2x_004",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     35.0,
+     70.0
+    ],
+    [
+     105.0,
+     70.0
+    ],
+    [
+     105.0,
+     95.0
+    ],
+    [
+     35.0,
+     95.0
+    ]
+   ],
+   "bbox": [
+    35.0,
+    70.0,
+    105.0,
+    95.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "제16회",
+   "text_key": "제16회",
+   "ocr_text": "제16회",
+   "confidence": 0.9605370163917542,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "제16회 계룡軍문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.easy_rgb_2x_005",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     31.0,
+     93.0
+    ],
+    [
+     247.0,
+     93.0
+    ],
+    [
+     247.0,
+     133.0
+    ],
+    [
+     31.0,
+     133.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    93.0,
+    247.0,
+    133.0
+   ],
+   "height": 40.0,
+   "small_text": false,
+   "text": "계룡軍문화축제",
+   "text_key": "계룡軍문화축제",
+   "ocr_text": "계룡문화축제",
+   "confidence": 0.898216187953949,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "계룡軍문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.easy_rgb_2x_012",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     112.0,
+     544.0
+    ],
+    [
+     331.0,
+     544.0
+    ],
+    [
+     331.0,
+     568.0
+    ],
+    [
+     112.0,
+     568.0
+    ]
+   ],
+   "bbox": [
+    112.0,
+    544.0,
+    331.0,
+    568.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026. 10. 1.(목) ~ 5.(월)",
+   "text_key": "2026101목5월",
+   "ocr_text": "2026.10.1.()~5.(월)",
+   "confidence": 0.9148199558258057,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "2026. 10. 1.(목) ~ 5.(월)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.easy_rgb_2x_013",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     147.0,
+     570.0
+    ],
+    [
+     295.0,
+     570.0
+    ],
+    [
+     295.0,
+     594.0
+    ],
+    [
+     147.0,
+     594.0
+    ]
+   ],
+   "bbox": [
+    147.0,
+    570.0,
+    295.0,
+    594.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "충남 계룡대 활주로",
+   "text_key": "충남계룡대활주로",
+   "ocr_text": "충남계룡대활주로",
+   "confidence": 0.9326592087745667,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "충남 계룡대 활주로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

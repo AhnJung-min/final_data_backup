@@ -73,6 +73,10 @@ def main():
     env_like = lambda f: (Path(f).name.startswith(".env") and not Path(f).name.endswith((".example", ".sample", ".template"))
                           or Path(f).name.startswith(".django-secret-key"))  # Django가 실행될 때 만드는 로컬 비밀 키
     files = {f for f in files if not f.startswith(".runtime/poster-ocr/backup-export") and not env_like(f)}
+    # 사람 검토 기록(검토자 이름 포함)과 줄 검토의 심은 오류 정답표는 공개 백업에 넣지 않는다.
+    private = lambda f: (f.endswith(("/review.jsonl", "/queue.json")) and f.startswith("data/runtime/poster-ocr/lines-v2/")
+                         or Path(f).name == "request-label-review.jsonl")
+    files = {f for f in files if not private(f)}
     # Git이 관리하는 파일은 이미지라도 그대로 둔다(팀 저장소에 이미 공개된 파일). 그 밖의 이미지는 포스터 원본만.
     git_files = set(tracked())
     files = {f for f in files if Path(f).suffix.lower() not in IMAGE or f in git_files or f.startswith("data/img-v2/")}

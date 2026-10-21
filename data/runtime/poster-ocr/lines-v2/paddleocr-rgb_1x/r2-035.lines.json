@@ -1,0 +1,885 @@
+{
+ "case_id": "r2-035",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 23,
+ "lines_matched": 16,
+ "records": [
+  {
+   "id": "r2-035.padd_rgb_1x_002",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     130.0,
+     51.0
+    ],
+    [
+     222.0,
+     51.0
+    ],
+    [
+     222.0,
+     79.0
+    ],
+    [
+     130.0,
+     79.0
+    ]
+   ],
+   "bbox": [
+    130.0,
+    51.0,
+    222.0,
+    79.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026년",
+   "text_key": "2026년",
+   "ocr_text": "2026년",
+   "confidence": 0.998963475227356,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "2026년 제11회 구로 청소년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_003",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     222.0,
+     47.0
+    ],
+    [
+     311.0,
+     47.0
+    ],
+    [
+     311.0,
+     79.0
+    ],
+    [
+     222.0,
+     79.0
+    ]
+   ],
+   "bbox": [
+    222.0,
+    47.0,
+    311.0,
+    79.0
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "제11회",
+   "text_key": "제11회",
+   "ocr_text": "제11회",
+   "confidence": 0.8705239295959473,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "2026년 제11회 구로 청소년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_004",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     65.0,
+     82.0
+    ],
+    [
+     158.0,
+     82.0
+    ],
+    [
+     158.0,
+     130.0
+    ],
+    [
+     65.0,
+     130.0
+    ]
+   ],
+   "bbox": [
+    65.0,
+    82.0,
+    158.0,
+    130.0
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "구로",
+   "text_key": "구로",
+   "ocr_text": "구로",
+   "confidence": 0.9999302625656128,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "구로 청소년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_005",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     156.0,
+     83.0
+    ],
+    [
+     373.0,
+     83.0
+    ],
+    [
+     373.0,
+     130.0
+    ],
+    [
+     156.0,
+     130.0
+    ]
+   ],
+   "bbox": [
+    156.0,
+    83.0,
+    373.0,
+    130.0
+   ],
+   "height": 47.0,
+   "small_text": false,
+   "text": "청소년축제",
+   "text_key": "청소년축제",
+   "ocr_text": "청고년축제",
+   "confidence": 0.9005014300346375,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "구로 청소년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_006",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     124.0,
+     138.0
+    ],
+    [
+     226.0,
+     141.0
+    ],
+    [
+     225.0,
+     162.0
+    ],
+    [
+     123.0,
+     159.0
+    ]
+   ],
+   "bbox": [
+    123.0,
+    138.0,
+    226.0,
+    162.0
+   ],
+   "height": 21.02,
+   "small_text": false,
+   "text": "일상에서 이륙,",
+   "text_key": "일상에서이륙",
+   "ocr_text": "일상에서 이륙",
+   "confidence": 0.914863109588623,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "일상에서 이륙, 힐링으로 착륙",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_007",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     219.0,
+     139.0
+    ],
+    [
+     316.0,
+     139.0
+    ],
+    [
+     316.0,
+     164.0
+    ],
+    [
+     219.0,
+     164.0
+    ]
+   ],
+   "bbox": [
+    219.0,
+    139.0,
+    316.0,
+    164.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "힐링으로 착륙",
+   "text_key": "힐링으로착륙",
+   "ocr_text": "힐링으로 착륙",
+   "confidence": 0.9897474050521851,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "일상에서 이륙, 힐링으로 착륙",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_008",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     28.0,
+     184.0
+    ],
+    [
+     140.0,
+     184.0
+    ],
+    [
+     140.0,
+     204.0
+    ],
+    [
+     28.0,
+     204.0
+    ]
+   ],
+   "bbox": [
+    28.0,
+    184.0,
+    140.0,
+    204.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026. 10. 17.(토)",
+   "text_key": "20261017토",
+   "ocr_text": "2026.10.17.(토)",
+   "confidence": 0.9862985610961914,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_010",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     30.0,
+     207.0
+    ],
+    [
+     109.0,
+     207.0
+    ],
+    [
+     109.0,
+     220.0
+    ],
+    [
+     30.0,
+     220.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    207.0,
+    109.0,
+    220.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "11:00 ~ 18:00",
+   "text_key": "11001800",
+   "ocr_text": "11:00~18:00",
+   "confidence": 0.9565230011940002,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "11:00 ~ 18:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_011",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     310.0,
+     211.0
+    ],
+    [
+     380.0,
+     211.0
+    ],
+    [
+     380.0,
+     224.0
+    ],
+    [
+     310.0,
+     224.0
+    ]
+   ],
+   "bbox": [
+    310.0,
+    211.0,
+    380.0,
+    224.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "학생 과학축전",
+   "text_key": "학생과학축전",
+   "ocr_text": "학생 과학측전",
+   "confidence": 0.8463090062141418,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "학생 과학축전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_012",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     31.0,
+     227.0
+    ],
+    [
+     137.0,
+     227.0
+    ],
+    [
+     137.0,
+     241.0
+    ],
+    [
+     31.0,
+     241.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    227.0,
+    137.0,
+    241.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "우신고등학교 운동장",
+   "text_key": "우신고등학교운동장",
+   "ocr_text": "우신고등학교 운동장",
+   "confidence": 0.9966486096382141,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "우신고등학교 운동장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_013",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     310.0,
+     235.0
+    ],
+    [
+     394.0,
+     235.0
+    ],
+    [
+     394.0,
+     248.0
+    ],
+    [
+     310.0,
+     248.0
+    ]
+   ],
+   "bbox": [
+    310.0,
+    235.0,
+    394.0,
+    248.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "진로 체험 박람회",
+   "text_key": "진로체험박람회",
+   "ocr_text": "민로 체험 박람회",
+   "confidence": 0.8339434266090393,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "진로 체험 박람회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_014",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     66.0,
+     253.0
+    ],
+    [
+     106.0,
+     253.0
+    ],
+    [
+     106.0,
+     266.0
+    ],
+    [
+     66.0,
+     266.0
+    ]
+   ],
+   "bbox": [
+    66.0,
+    253.0,
+    106.0,
+    266.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "축하공연",
+   "confidence": 0.9943130016326904,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_015",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     309.0,
+     259.0
+    ],
+    [
+     400.0,
+     259.0
+    ],
+    [
+     400.0,
+     272.0
+    ],
+    [
+     309.0,
+     272.0
+    ]
+   ],
+   "bbox": [
+    309.0,
+    259.0,
+    400.0,
+    272.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "마을교육기관 부스",
+   "text_key": "마을교육기관부스",
+   "ocr_text": "마을교육기관 부스",
+   "confidence": 0.8640556335449219,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "마을교육기관 부스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_016",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     310.0,
+     285.0
+    ],
+    [
+     394.0,
+     285.0
+    ],
+    [
+     394.0,
+     298.0
+    ],
+    [
+     310.0,
+     298.0
+    ]
+   ],
+   "bbox": [
+    310.0,
+    285.0,
+    394.0,
+    298.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "이벤트·체험 부스",
+   "text_key": "이벤트체험부스",
+   "ocr_text": "이벤트·헤형 부스",
+   "confidence": 0.9393733143806458,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "이벤트·체험 부스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_018",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     310.0,
+     310.0
+    ],
+    [
+     417.0,
+     310.0
+    ],
+    [
+     417.0,
+     322.0
+    ],
+    [
+     310.0,
+     322.0
+    ]
+   ],
+   "bbox": [
+    310.0,
+    310.0,
+    417.0,
+    322.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "밴드·댄스·보컬 페스티벌",
+   "text_key": "밴드댄스보컬페스티벌",
+   "ocr_text": "밴드·덴스·보컬 페스티벌",
+   "confidence": 0.9782057404518127,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "밴드·댄스·보컬 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-035.padd_rgb_1x_019",
+   "case_id": "r2-035",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     17.0,
+     583.0
+    ],
+    [
+     158.0,
+     583.0
+    ],
+    [
+     158.0,
+     596.0
+    ],
+    [
+     17.0,
+     596.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    583.0,
+    158.0,
+    596.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "구로교육협력특화지구",
+   "text_key": "구로교육협력특화지구",
+   "ocr_text": "주리 하o 구로구 추간 구로교육협력특화자구",
+   "confidence": 0.5959784984588623,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "구로교육협력특화지구",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

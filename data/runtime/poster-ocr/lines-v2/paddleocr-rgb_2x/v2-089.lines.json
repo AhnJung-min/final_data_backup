@@ -1,0 +1,558 @@
+{
+ "case_id": "v2-089",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 23,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-089.padd_rgb_2x_002",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     208.5,
+     28.0
+    ],
+    [
+     236.5,
+     28.0
+    ],
+    [
+     236.5,
+     41.0
+    ],
+    [
+     208.5,
+     41.0
+    ]
+   ],
+   "bbox": [
+    208.5,
+    28.0,
+    236.5,
+    41.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "출연진",
+   "text_key": "출연진",
+   "ocr_text": "출연진",
+   "confidence": 0.9932195544242859,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "출연진",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_009",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     228.0,
+     161.0
+    ],
+    [
+     324.5,
+     161.0
+    ],
+    [
+     324.5,
+     193.0
+    ],
+    [
+     228.0,
+     193.0
+    ]
+   ],
+   "bbox": [
+    228.0,
+    161.0,
+    324.5,
+    193.0
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "10.3. 토",
+   "text_key": "103토",
+   "ocr_text": "10.3.토",
+   "confidence": 0.8050720691680908,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.3. 토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_010",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     198.0,
+     176.0
+    ],
+    [
+     235.5,
+     174.5
+    ],
+    [
+     236.0,
+     189.0
+    ],
+    [
+     198.5,
+     190.0
+    ]
+   ],
+   "bbox": [
+    198.0,
+    174.5,
+    236.0,
+    190.0
+   ],
+   "height": 14.26,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9695471525192261,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.3. 토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_011",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     329.0,
+     172.5
+    ],
+    [
+     413.0,
+     173.5
+    ],
+    [
+     412.5,
+     191.0
+    ],
+    [
+     328.5,
+     190.0
+    ]
+   ],
+   "bbox": [
+    328.5,
+    172.5,
+    413.0,
+    191.0
+   ],
+   "height": 17.51,
+   "small_text": false,
+   "text": "11:00 ~ 21:00",
+   "text_key": "11002100",
+   "ocr_text": "1:00~21:00",
+   "confidence": 0.9692481756210327,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "11:00 ~ 21:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_012",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     197.5,
+     193.0
+    ],
+    [
+     348.0,
+     193.0
+    ],
+    [
+     348.0,
+     220.5
+    ],
+    [
+     197.5,
+     220.5
+    ]
+   ],
+   "bbox": [
+    197.5,
+    193.0,
+    348.0,
+    220.5
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "소흘읍 태봉공원",
+   "text_key": "소흘읍태봉공원",
+   "ocr_text": "소을읍 태봄공원",
+   "confidence": 0.7361874580383301,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "소흘읍 태봉공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_013",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     199.0,
+     224.0
+    ],
+    [
+     286.5,
+     224.0
+    ],
+    [
+     286.5,
+     236.0
+    ],
+    [
+     199.0,
+     236.0
+    ]
+   ],
+   "bbox": [
+    199.0,
+    224.0,
+    286.5,
+    236.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "포천시 태봉로 216",
+   "text_key": "포천시태봉로216",
+   "ocr_text": "(포천시 태봉로 216)",
+   "confidence": 0.9686384797096252,
+   "field": "address.raw",
+   "field_group": "address",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "address.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "포천시 태봉로 216",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_015",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     50.5,
+     284.5
+    ],
+    [
+     270.0,
+     284.5
+    ],
+    [
+     270.0,
+     299.5
+    ],
+    [
+     50.5,
+     299.5
+    ]
+   ],
+   "bbox": [
+    50.5,
+    284.5,
+    270.0,
+    299.5
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "포천愛로그인×BGM은 청년, 배경은 포천",
+   "text_key": "포천愛로그인bgm은청년배경은포천",
+   "ocr_text": "포천로그인XBGM은 청년,배경은 포천",
+   "confidence": 0.9678365588188171,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1176,
+   "gold_value": "포천愛로그인×BGM은 청년, 배경은 포천",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_021",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     50.5,
+     509.5
+    ],
+    [
+     162.0,
+     509.5
+    ],
+    [
+     162.0,
+     520.0
+    ],
+    [
+     50.5,
+     520.0
+    ]
+   ],
+   "bbox": [
+    50.5,
+    509.5,
+    162.0,
+    520.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "WHAT'S ON 포천청년축제!",
+   "text_key": "whatson포천청년축제",
+   "ocr_text": "WHAT'S ON 포천청년축제",
+   "confidence": 0.9501246213912964,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "WHAT'S ON 포천청년축제!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_022",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     92.0,
+     539.0
+    ],
+    [
+     366.5,
+     539.0
+    ],
+    [
+     366.5,
+     555.5
+    ],
+    [
+     92.0,
+     555.5
+    ]
+   ],
+   "bbox": [
+    92.0,
+    539.0,
+    366.5,
+    555.5
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "청년축제 기념식",
+   "text_key": "청년축제기념식",
+   "ocr_text": "청년축제기념식|⑥18:30|태봉공원특설무대",
+   "confidence": 0.9390373826026917,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "청년축제 기념식",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-089.padd_rgb_2x_023",
+   "case_id": "v2-089",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_023"
+   },
+   "polygon": [
+    [
+     175.0,
+     601.0
+    ],
+    [
+     270.0,
+     602.0
+    ],
+    [
+     270.0,
+     617.5
+    ],
+    [
+     175.0,
+     616.5
+    ]
+   ],
+   "bbox": [
+    175.0,
+    601.0,
+    270.0,
+    617.5
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "포천시",
+   "text_key": "포천시",
+   "ocr_text": "주최/주관:#포천시",
+   "confidence": 0.990826427936554,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "포천시",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

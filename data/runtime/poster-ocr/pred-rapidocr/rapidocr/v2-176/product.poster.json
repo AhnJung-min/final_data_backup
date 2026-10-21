@@ -1,0 +1,279 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-4e3953374692",
+ "image": {
+  "sha256": "4e3953374692a5ba1eb100e0f2830f0fcc6eb409ab3c908692e008e1f032da7d",
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:45+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "강원한돈 페스타",
+  "official": "강원한돈 페스타",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001",
+    "rapi_product_002"
+   ],
+   "bbox": [
+    108.0,
+    95.0,
+    359.0,
+    239.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    117.0,
+    283.0,
+    349.0,
+    310.0
+   ],
+   "confidence": 0.81553
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026년10.23)-10.25인)(3일2)",
+  "start": {
+   "iso": "2026-10-23",
+   "year": 2026,
+   "month": 10,
+   "day": 23,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    117.0,
+    283.0,
+    349.0,
+    310.0
+   ],
+   "confidence": 0.81553
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "강릉 월화거리 공원(경강로2111)",
+  "items": [
+   "강릉 월화거리 공원(경강로2111)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_011"
+   ],
+   "bbox": [
+    156.0,
+    313.0,
+    330.0,
+    334.0
+   ],
+   "confidence": 0.90744
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "경강로2111",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_011"
+   ],
+   "bbox": [
+    156.0,
+    313.0,
+    330.0,
+    334.0
+   ],
+   "confidence": 0.90744
+  }
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "주개",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_021"
+     ],
+     "bbox": [
+      22.0,
+      581.0,
+      57.0,
+      594.0
+     ],
+     "confidence": 0.77984
+    }
+   },
+   {
+    "name": "강원영논농업",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_021",
+      "rapi_product_023"
+     ],
+     "bbox": [
+      22.0,
+      581.0,
+      139.0,
+      594.0
+     ],
+     "confidence": null
+    }
+   },
+   {
+    "name": "S한돈자조금관리위원회",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_021",
+      "rapi_product_024"
+     ],
+     "bbox": [
+      22.0,
+      581.0,
+      250.0,
+      594.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,396 @@
+{
+ "case_id": "v2-025",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-025.padd_rgb_2x_001",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     0.0,
+     79.5
+    ],
+    [
+     445.0,
+     78.0
+    ],
+    [
+     445.0,
+     461.5
+    ],
+    [
+     0.0,
+     463.0
+    ]
+   ],
+   "bbox": [
+    0.0,
+    78.0,
+    445.0,
+    463.0
+   ],
+   "height": 383.5,
+   "small_text": false,
+   "text": "THER",
+   "text_key": "ther",
+   "ocr_text": "THER",
+   "confidence": 0.6299379467964172,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "보고, 먹고, 즐기는 TOGETHER",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.padd_rgb_2x_002",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     51.0,
+     79.0
+    ],
+    [
+     391.5,
+     78.0
+    ],
+    [
+     392.0,
+     133.0
+    ],
+    [
+     51.5,
+     134.0
+    ]
+   ],
+   "bbox": [
+    51.0,
+    78.0,
+    392.0,
+    134.0
+   ],
+   "height": 55.0,
+   "small_text": false,
+   "text": "보고, 먹고, 즐기는",
+   "text_key": "보고먹고즐기는",
+   "ocr_text": "보고, 먹고,즐기는",
+   "confidence": 0.9332180023193359,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "보고, 먹고, 즐기는 TOGETHER",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.padd_rgb_2x_003",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     30.0,
+     403.0
+    ],
+    [
+     415.5,
+     403.0
+    ],
+    [
+     415.5,
+     492.0
+    ],
+    [
+     30.0,
+     492.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    403.0,
+    415.5,
+    492.0
+   ],
+   "height": 89.0,
+   "small_text": false,
+   "text": "삼토페스티벌",
+   "text_key": "삼토페스티벌",
+   "ocr_text": "삼토페스티벌",
+   "confidence": 0.8689436316490173,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "삼토페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.padd_rgb_2x_004",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     37.0,
+     496.0
+    ],
+    [
+     318.0,
+     494.5
+    ],
+    [
+     318.5,
+     528.5
+    ],
+    [
+     37.5,
+     530.0
+    ]
+   ],
+   "bbox": [
+    37.0,
+    494.5,
+    318.5,
+    530.0
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "2026. 9. 11. 금 ~ 9. 13. 일",
+   "text_key": "2026911금913일",
+   "ocr_text": "2026.9.11. ~9.13.",
+   "confidence": 0.951615035533905,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "2026. 9. 11. 금 ~ 9. 13. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.padd_rgb_2x_005",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     38.0,
+     535.5
+    ],
+    [
+     210.5,
+     535.5
+    ],
+    [
+     210.5,
+     563.0
+    ],
+    [
+     38.0,
+     563.0
+    ]
+   ],
+   "bbox": [
+    38.0,
+    535.5,
+    210.5,
+    563.0
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "원주종합운동장 일원",
+   "text_key": "원주종합운동장일원",
+   "ocr_text": "원주종합운동장일원",
+   "confidence": 0.9974222183227539,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주종합운동장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.padd_rgb_2x_011",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     112.5,
+     584.5
+    ],
+    [
+     170.5,
+     582.0
+    ],
+    [
+     171.0,
+     601.5
+    ],
+    [
+     113.5,
+     604.0
+    ]
+   ],
+   "bbox": [
+    112.5,
+    582.0,
+    171.0,
+    604.0
+   ],
+   "height": 19.52,
+   "small_text": false,
+   "text": "원주시",
+   "text_key": "원주시",
+   "ocr_text": "원주시",
+   "confidence": 0.9982734322547913,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.padd_rgb_2x_013",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     247.5,
+     589.0
+    ],
+    [
+     368.5,
+     589.0
+    ],
+    [
+     368.5,
+     601.0
+    ],
+    [
+     247.5,
+     601.0
+    ]
+   ],
+   "bbox": [
+    247.5,
+    589.0,
+    368.5,
+    601.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "한국농촌지도자원주시연합회",
+   "text_key": "한국농촌지도자원주시연합회",
+   "ocr_text": "S5 한국농촌지도자원주사연항회",
+   "confidence": 0.8682220578193665,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "한국농촌지도자원주시연합회",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

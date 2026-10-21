@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-188",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-188.easy_rgb_2x_004",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     99.5,
+     360.5
+    ],
+    [
+     366.5,
+     360.5
+    ],
+    [
+     366.5,
+     417.5
+    ],
+    [
+     99.5,
+     417.5
+    ]
+   ],
+   "bbox": [
+    99.5,
+    360.5,
+    366.5,
+    417.5
+   ],
+   "height": 57.0,
+   "small_text": false,
+   "text": "제17회",
+   "text_key": "제17회",
+   "ocr_text": "제고7회 부관",
+   "confidence": 0.3989100653506021,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제17회",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.easy_rgb_2x_006",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     74.5,
+     485.5
+    ],
+    [
+     259.0,
+     485.5
+    ],
+    [
+     259.0,
+     512.0
+    ],
+    [
+     74.5,
+     512.0
+    ]
+   ],
+   "bbox": [
+    74.5,
+    485.5,
+    259.0,
+    512.0
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "2026. 10. 30.",
+   "text_key": "20261030",
+   "ocr_text": "2026.10.30.0",
+   "confidence": 0.44870299981051237,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026. 10. 30.금 ~ 11. 1.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.easy_rgb_2x_008",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     283.0,
+     487.0
+    ],
+    [
+     369.0,
+     487.0
+    ],
+    [
+     369.0,
+     512.0
+    ],
+    [
+     283.0,
+     512.0
+    ]
+   ],
+   "bbox": [
+    283.0,
+    487.0,
+    369.0,
+    512.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "11. 1.",
+   "text_key": "111",
+   "ocr_text": "11.1.@",
+   "confidence": 0.8340192682402374,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026. 10. 30.금 ~ 11. 1.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.easy_rgb_2x_009",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     144.0,
+     513.0
+    ],
+    [
+     299.0,
+     513.0
+    ],
+    [
+     299.0,
+     537.0
+    ],
+    [
+     144.0,
+     537.0
+    ]
+   ],
+   "bbox": [
+    144.0,
+    513.0,
+    299.0,
+    537.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "송도해수욕장 일원",
+   "text_key": "송도해수욕장일원",
+   "ocr_text": "용도해수록장 일원",
+   "confidence": 0.13213959709484846,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "송도해수욕장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.easy_rgb_2x_012",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     123.0,
+     597.0
+    ],
+    [
+     193.0,
+     597.0
+    ],
+    [
+     193.0,
+     610.0
+    ],
+    [
+     123.0,
+     610.0
+    ]
+   ],
+   "bbox": [
+    123.0,
+    597.0,
+    193.0,
+    610.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "서구",
+   "text_key": "서구",
+   "ocr_text": "수 | 심 주한서 구요편1",
+   "confidence": 0.011791904645572514,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서구",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

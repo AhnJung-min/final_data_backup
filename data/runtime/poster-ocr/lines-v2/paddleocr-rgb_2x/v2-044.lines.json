@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-044",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-044.padd_rgb_2x_001",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     8.0,
+     273.5
+    ],
+    [
+     60.5,
+     273.5
+    ],
+    [
+     60.5,
+     307.0
+    ],
+    [
+     8.0,
+     307.0
+    ]
+   ],
+   "bbox": [
+    8.0,
+    273.5,
+    60.5,
+    307.0
+   ],
+   "height": 33.5,
+   "small_text": false,
+   "text": "9.18.",
+   "text_key": "918",
+   "ocr_text": "9.18.",
+   "confidence": 0.9927711486816406,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_2x_003",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     7.0,
+     304.0
+    ],
+    [
+     48.0,
+     304.0
+    ],
+    [
+     48.0,
+     337.5
+    ],
+    [
+     7.0,
+     337.5
+    ]
+   ],
+   "bbox": [
+    7.0,
+    304.0,
+    48.0,
+    337.5
+   ],
+   "height": 33.5,
+   "small_text": false,
+   "text": "FRI.",
+   "text_key": "fri",
+   "ocr_text": "FRI.",
+   "confidence": 0.9717938899993896,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_2x_004",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     7.5,
+     364.0
+    ],
+    [
+     60.0,
+     364.0
+    ],
+    [
+     60.0,
+     397.5
+    ],
+    [
+     7.5,
+     397.5
+    ]
+   ],
+   "bbox": [
+    7.5,
+    364.0,
+    60.0,
+    397.5
+   ],
+   "height": 33.5,
+   "small_text": false,
+   "text": "9.20.",
+   "text_key": "920",
+   "ocr_text": "9.20.",
+   "confidence": 0.9936894178390503,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_2x_005",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     394.5,
+     359.5
+    ],
+    [
+     434.0,
+     359.5
+    ],
+    [
+     434.0,
+     385.5
+    ],
+    [
+     394.5,
+     385.5
+    ]
+   ],
+   "bbox": [
+    394.5,
+    359.5,
+    434.0,
+    385.5
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "과천",
+   "text_key": "과천",
+   "ocr_text": "과천",
+   "confidence": 0.999704897403717,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_2x_007",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     8.0,
+     395.0
+    ],
+    [
+     55.0,
+     395.0
+    ],
+    [
+     55.0,
+     427.5
+    ],
+    [
+     8.0,
+     427.5
+    ]
+   ],
+   "bbox": [
+    8.0,
+    395.0,
+    55.0,
+    427.5
+   ],
+   "height": 32.5,
+   "small_text": false,
+   "text": "SUN.",
+   "text_key": "sun",
+   "ocr_text": "SUN.",
+   "confidence": 0.9900782704353333,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_2x_009",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     68.0,
+     416.5
+    ],
+    [
+     253.0,
+     434.0
+    ],
+    [
+     245.0,
+     517.0
+    ],
+    [
+     60.0,
+     499.5
+    ]
+   ],
+   "bbox": [
+    60.0,
+    416.5,
+    253.0,
+    517.0
+   ],
+   "height": 83.38,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9996417760848999,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_2x_011",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     2.5,
+     471.0
+    ],
+    [
+     443.0,
+     466.0
+    ],
+    [
+     443.0,
+     593.5
+    ],
+    [
+     4.0,
+     599.0
+    ]
+   ],
+   "bbox": [
+    2.5,
+    466.0,
+    443.0,
+    599.0
+   ],
+   "height": 127.75,
+   "small_text": false,
+   "text": "공연예술축제",
+   "text_key": "공연예술축제",
+   "ocr_text": "공연예술축제",
+   "confidence": 0.8398796916007996,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_2x_018",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     304.0,
+     607.0
+    ],
+    [
+     350.0,
+     607.0
+    ],
+    [
+     350.0,
+     616.0
+    ],
+    [
+     304.0,
+     616.0
+    ]
+   ],
+   "bbox": [
+    304.0,
+    607.0,
+    350.0,
+    616.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "KTR",
+   "text_key": "ktr",
+   "ocr_text": "BmWKTR",
+   "confidence": 0.5622538924217224,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "KTR",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

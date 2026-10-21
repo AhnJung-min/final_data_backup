@@ -1,0 +1,723 @@
+{
+ "case_id": "v2-074",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 30,
+ "lines_matched": 13,
+ "records": [
+  {
+   "id": "v2-074.padd_rgb_1x_000",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     54.0,
+     16.0
+    ],
+    [
+     132.0,
+     16.0
+    ],
+    [
+     132.0,
+     32.0
+    ],
+    [
+     54.0,
+     32.0
+    ]
+   ],
+   "bbox": [
+    54.0,
+    16.0,
+    132.0,
+    32.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "부평 풍물 대축제",
+   "text_key": "부평풍물대축제",
+   "ocr_text": "부평품물대축제",
+   "confidence": 0.9337615966796875,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "부평 풍물 대축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_001",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     351.0,
+     17.0
+    ],
+    [
+     423.0,
+     17.0
+    ],
+    [
+     423.0,
+     30.0
+    ],
+    [
+     351.0,
+     30.0
+    ]
+   ],
+   "bbox": [
+    351.0,
+    17.0,
+    423.0,
+    30.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "문화체육관광부",
+   "text_key": "문화체육관광부",
+   "ocr_text": "문화체육관광부",
+   "confidence": 0.9911991357803345,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo",
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "문화체육관광부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_003",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     350.0,
+     27.0
+    ],
+    [
+     423.0,
+     28.0
+    ],
+    [
+     423.0,
+     39.0
+    ],
+    [
+     350.0,
+     38.0
+    ]
+   ],
+   "bbox": [
+    350.0,
+    27.0,
+    423.0,
+    39.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "2026-2027",
+   "text_key": "20262027",
+   "ocr_text": "2028-2027화제",
+   "confidence": 0.9138404726982117,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2381,
+   "gold_value": "문화체육관광부 2026-2027 문화관광축제",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_004",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     124.0,
+     63.0
+    ],
+    [
+     319.0,
+     63.0
+    ],
+    [
+     319.0,
+     108.0
+    ],
+    [
+     124.0,
+     108.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    63.0,
+    319.0,
+    108.0
+   ],
+   "height": 45.0,
+   "small_text": false,
+   "text": "30년의 울림",
+   "text_key": "30년의울림",
+   "ocr_text": "30년의 울림",
+   "confidence": 0.976189136505127,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 울림 세계의 어울림",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_005",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     118.0,
+     110.0
+    ],
+    [
+     222.0,
+     110.0
+    ],
+    [
+     222.0,
+     149.0
+    ],
+    [
+     118.0,
+     149.0
+    ]
+   ],
+   "bbox": [
+    118.0,
+    110.0,
+    222.0,
+    149.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "세계의",
+   "text_key": "세계의",
+   "ocr_text": "세계의",
+   "confidence": 0.999748945236206,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 울림 세계의 어울림",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_006",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     203.0,
+     111.0
+    ],
+    [
+     323.0,
+     111.0
+    ],
+    [
+     323.0,
+     150.0
+    ],
+    [
+     203.0,
+     150.0
+    ]
+   ],
+   "bbox": [
+    203.0,
+    111.0,
+    323.0,
+    150.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "어울림",
+   "text_key": "어울림",
+   "ocr_text": "어울림",
+   "confidence": 0.9985646605491638,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 울림 세계의 어울림",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_015",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     287.0,
+     395.0
+    ],
+    [
+     386.0,
+     393.0
+    ],
+    [
+     387.0,
+     413.0
+    ],
+    [
+     287.0,
+     416.0
+    ]
+   ],
+   "bbox": [
+    287.0,
+    393.0,
+    387.0,
+    416.0
+   ],
+   "height": 20.51,
+   "small_text": false,
+   "text": "2026.10.2.(금)",
+   "text_key": "2026102금",
+   "ocr_text": "2026.10.2.(금)",
+   "confidence": 0.9872020483016968,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "2026.10.2.(금) 2026.10.3.(토) 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_016",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     314.0,
+     415.0
+    ],
+    [
+     388.0,
+     415.0
+    ],
+    [
+     388.0,
+     433.0
+    ],
+    [
+     314.0,
+     433.0
+    ]
+   ],
+   "bbox": [
+    314.0,
+    415.0,
+    388.0,
+    433.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "신트리공원",
+   "text_key": "신트리공원",
+   "ocr_text": "신트리공원",
+   "confidence": 0.996483325958252,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "신트리공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_017",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     260.0,
+     436.0
+    ],
+    [
+     388.0,
+     434.0
+    ],
+    [
+     389.0,
+     453.0
+    ],
+    [
+     260.0,
+     456.0
+    ]
+   ],
+   "bbox": [
+    260.0,
+    434.0,
+    389.0,
+    456.0
+   ],
+   "height": 19.51,
+   "small_text": false,
+   "text": "2026.10.3.(토) 4.(일)",
+   "text_key": "2026103토4일",
+   "ocr_text": "2026.10.3.()4.(일)",
+   "confidence": 0.9468106627464294,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "2026.10.2.(금) 2026.10.3.(토) 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_018",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     292.0,
+     456.0
+    ],
+    [
+     388.0,
+     456.0
+    ],
+    [
+     388.0,
+     473.0
+    ],
+    [
+     292.0,
+     473.0
+    ]
+   ],
+   "bbox": [
+    292.0,
+    456.0,
+    388.0,
+    473.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "부평대로 일대",
+   "text_key": "부평대로일대",
+   "ocr_text": "부평대로일대",
+   "confidence": 0.9943831562995911,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부평대로 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_020",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     112.0,
+     583.0
+    ],
+    [
+     159.0,
+     583.0
+    ],
+    [
+     159.0,
+     593.0
+    ],
+    [
+     112.0,
+     593.0
+    ]
+   ],
+   "bbox": [
+    112.0,
+    583.0,
+    159.0,
+    593.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "인천광역시 부평구",
+   "text_key": "인천광역시부평구",
+   "ocr_text": "인천광이시 부정구",
+   "confidence": 0.7021520137786865,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "인천광역시 부평구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_028",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_028"
+   },
+   "polygon": [
+    [
+     211.0,
+     599.0
+    ],
+    [
+     262.0,
+     599.0
+    ],
+    [
+     262.0,
+     608.0
+    ],
+    [
+     211.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    211.0,
+    599.0,
+    262.0,
+    608.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "인천광역시교육청",
+   "text_key": "인천광역시교육청",
+   "ocr_text": "인전당역시교육청",
+   "confidence": 0.6524269580841064,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "인천광역시교육청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-074.padd_rgb_1x_029",
+   "case_id": "v2-074",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_029"
+   },
+   "polygon": [
+    [
+     285.0,
+     599.0
+    ],
+    [
+     335.0,
+     599.0
+    ],
+    [
+     335.0,
+     608.0
+    ],
+    [
+     285.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    285.0,
+    599.0,
+    335.0,
+    608.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "인천광역시",
+   "text_key": "인천광역시",
+   "ocr_text": "인천방역시역피",
+   "confidence": 0.6419802904129028,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "인천광역시",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

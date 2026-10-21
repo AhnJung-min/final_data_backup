@@ -1,0 +1,400 @@
+{
+ "case_id": "v2-037",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 31,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-037.easy_rgb_2x_004",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     29.5,
+     58.5
+    ],
+    [
+     167.0,
+     58.5
+    ],
+    [
+     167.0,
+     90.0
+    ],
+    [
+     29.5,
+     90.0
+    ]
+   ],
+   "bbox": [
+    29.5,
+    58.5,
+    167.0,
+    90.0
+   ],
+   "height": 31.5,
+   "small_text": false,
+   "text": "2026 제23회",
+   "text_key": "2026제23회",
+   "ocr_text": "2026 제33회",
+   "confidence": 0.42322342047136463,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026 제23회 미추홀 미디어 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.easy_rgb_2x_005",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     22.0,
+     80.0
+    ],
+    [
+     229.0,
+     80.0
+    ],
+    [
+     229.0,
+     167.0
+    ],
+    [
+     22.0,
+     167.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    80.0,
+    229.0,
+    167.0
+   ],
+   "height": 87.0,
+   "small_text": false,
+   "text": "미추",
+   "text_key": "미추",
+   "ocr_text": "미추i",
+   "confidence": 0.0892815259362879,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "미추홀 미디어 문화축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.easy_rgb_2x_006",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     22.5,
+     158.5
+    ],
+    [
+     226.0,
+     158.5
+    ],
+    [
+     226.0,
+     240.0
+    ],
+    [
+     22.5,
+     240.0
+    ]
+   ],
+   "bbox": [
+    22.5,
+    158.5,
+    226.0,
+    240.0
+   ],
+   "height": 81.5,
+   "small_text": false,
+   "text": "미디어",
+   "text_key": "미디어",
+   "ocr_text": "매디어",
+   "confidence": 0.514672117541375,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "미추홀 미디어 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.easy_rgb_2x_007",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     22.5,
+     231.0
+    ],
+    [
+     266.0,
+     231.0
+    ],
+    [
+     266.0,
+     307.0
+    ],
+    [
+     22.5,
+     307.0
+    ]
+   ],
+   "bbox": [
+    22.5,
+    231.0,
+    266.0,
+    307.0
+   ],
+   "height": 76.0,
+   "small_text": false,
+   "text": "문화축제",
+   "text_key": "문화축제",
+   "ocr_text": "문화축제",
+   "confidence": 0.7122279565429875,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "미추홀 미디어 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.easy_rgb_2x_008",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     26.5,
+     315.5
+    ],
+    [
+     168.5,
+     315.5
+    ],
+    [
+     168.5,
+     336.5
+    ],
+    [
+     26.5,
+     336.5
+    ]
+   ],
+   "bbox": [
+    26.5,
+    315.5,
+    168.5,
+    336.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "9. 12.(토) - 9. 13.(일)",
+   "text_key": "912토913일",
+   "ocr_text": "9.12 (토) - 9.13 (일)",
+   "confidence": 0.353002753365698,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 12.(토) - 9. 13.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.easy_rgb_2x_009",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     26.5,
+     336.0
+    ],
+    [
+     231.5,
+     336.0
+    ],
+    [
+     231.5,
+     354.5
+    ],
+    [
+     26.5,
+     354.5
+    ]
+   ],
+   "bbox": [
+    26.5,
+    336.0,
+    231.5,
+    354.5
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "인천대학교 제물포캠퍼스 평생교육원 옆 광장",
+   "text_key": "인천대학교제물포캠퍼스평생교육원옆광장",
+   "ocr_text": "인전대학교제물포캠퍼스 평생교육원 옆 광장",
+   "confidence": 0.4473819629447858,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0526,
+   "gold_value": "인천대학교 제물포캠퍼스 평생교육원 옆 광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.easy_rgb_2x_020",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     251.0,
+     557.0
+    ],
+    [
+     296.0,
+     557.0
+    ],
+    [
+     296.0,
+     569.0
+    ],
+    [
+     251.0,
+     569.0
+    ]
+   ],
+   "bbox": [
+    251.0,
+    557.0,
+    296.0,
+    569.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "드론 라이트쇼",
+   "text_key": "드론라이트쇼",
+   "ocr_text": "드르라이트쇼",
+   "confidence": 0.13395357831024132,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "드론 라이트쇼",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

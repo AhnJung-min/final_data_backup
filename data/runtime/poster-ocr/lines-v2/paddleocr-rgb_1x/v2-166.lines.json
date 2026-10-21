@@ -1,0 +1,126 @@
+{
+ "case_id": "v2-166",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 6,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-166.padd_rgb_1x_002",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     231.0,
+     74.0
+    ],
+    [
+     251.0,
+     75.0
+    ],
+    [
+     249.0,
+     172.0
+    ],
+    [
+     228.0,
+     171.0
+    ]
+   ],
+   "bbox": [
+    228.0,
+    74.0,
+    251.0,
+    172.0
+   ],
+   "height": 97.03,
+   "small_text": false,
+   "text": "여주 오곡나루축제",
+   "text_key": "여주오곡나루축제",
+   "ocr_text": "오곡나루축제",
+   "confidence": 0.9996518492698669,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "여주 오곡나루축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-166.padd_rgb_1x_005",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     83.0,
+     393.0
+    ],
+    [
+     360.0,
+     393.0
+    ],
+    [
+     360.0,
+     410.0
+    ],
+    [
+     83.0,
+     410.0
+    ]
+   ],
+   "bbox": [
+    83.0,
+    393.0,
+    360.0,
+    410.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "2026.10.23.금 -10.25.일",
+   "text_key": "20261023금1025일",
+   "ocr_text": "2026.10.23.금-10.25.일|신특사관광지일원",
+   "confidence": 0.9805194139480591,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.23.금 -10.25.일",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

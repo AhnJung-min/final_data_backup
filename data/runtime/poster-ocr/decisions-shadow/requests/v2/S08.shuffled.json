@@ -1,0 +1,1464 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 5920,
+  "input_tokens": 9201,
+  "cost_usd": 0.0009201000000000001
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S08",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S08.png",
+    "sha256": "4a86781ca740ede22f4467fe10fc1d0026c09ed277ccec8fc95dcbf66b0967f4",
+    "bytes": 118546,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S08.png",
+    "sha256": "d6f7879cdd169d56b08ee830a8954e4354446ec0622b359d9a2717839a851c40",
+    "bytes": 102434,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "새봄 가을 책 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제4회 새봄 가을 책 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제4회",
+     "number": 4
+    },
+    "doc_raw": "제4회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.10.7.(수)",
+     "points": [
+      [
+       2026,
+       10,
+       7,
+       "수"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.10.7.(수)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "18:00~22:00"
+    },
+    "doc_raw": "18:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "새봄 전통시장 일대"
+    },
+    "doc_raw": "새봄 전통시장 일대"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "새봄군"
+    },
+    "doc_raw": "새봄군"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "새봄관광재단"
+    },
+    "doc_raw": "새봄관광재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "054-000-9150"
+    },
+    "doc_raw": "054-000-9150"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "책장을 넘기는 가을"
+    },
+    "doc_raw": "책장을 넘기는 가을"
+   }
+  },
+  "rows": [
+   {
+    "value": "L728",
+    "index": 0,
+    "text": "'20.26 제4회",
+    "conf": 0.928,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "'20.26 제4회",
+      "confidence": 0.928046703338623,
+      "bbox_xyxy": [
+       350.0,
+       302.0,
+       533.0,
+       352.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L897",
+    "index": 1,
+    "text": "새봄",
+    "conf": 0.9964,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "새봄",
+      "confidence": 0.9963878393173218,
+      "bbox_xyxy": [
+       318.0,
+       381.0,
+       572.0,
+       536.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L251",
+    "index": 2,
+    "text": "가을책축제",
+    "conf": 0.9995,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "가을책축제",
+      "confidence": 0.9995083808898926,
+      "bbox_xyxy": [
+       116.0,
+       537.0,
+       770.0,
+       706.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L203",
+    "index": 3,
+    "text": "책장을 넘기는 가을",
+    "conf": 0.9973,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "책장을",
+      "confidence": 0.9998836517333984,
+      "bbox_xyxy": [
+       317.0,
+       716.0,
+       410.0,
+       757.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "넘기는",
+      "confidence": 0.9998350143432617,
+      "bbox_xyxy": [
+       410.0,
+       716.0,
+       504.0,
+       758.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "가을",
+      "confidence": 0.9973385334014893,
+      "bbox_xyxy": [
+       505.0,
+       716.0,
+       569.0,
+       757.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L277",
+    "index": 4,
+    "text": "10월 7일(수)",
+    "conf": 0.9718,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "10월",
+      "confidence": 0.9998509287834167,
+      "bbox_xyxy": [
+       330.0,
+       823.0,
+       418.0,
+       869.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "7일(수)",
+      "confidence": 0.9718214273452759,
+      "bbox_xyxy": [
+       420.0,
+       819.0,
+       556.0,
+       874.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L803",
+    "index": 5,
+    "text": "18:00 ~ 22:00",
+    "conf": 0.9989,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "18:00",
+      "confidence": 0.9989144206047058,
+      "bbox_xyxy": [
+       345.0,
+       895.0,
+       430.0,
+       928.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "~",
+      "confidence": 0.9798583984375,
+      "bbox_xyxy": [
+       432.0,
+       899.0,
+       453.0,
+       923.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "22:00",
+      "confidence": 0.9989719390869141,
+      "bbox_xyxy": [
+       455.0,
+       895.0,
+       541.0,
+       927.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L781",
+    "index": 6,
+    "text": "새봄군청 앞 광장",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "새봄군청",
+      "confidence": 0.9993221163749695,
+      "bbox_xyxy": [
+       324.0,
+       946.0,
+       454.0,
+       989.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "앞",
+      "confidence": 0.9999874830245972,
+      "bbox_xyxy": [
+       457.0,
+       948.0,
+       491.0,
+       987.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "광장",
+      "confidence": 0.9998434782028198,
+      "bbox_xyxy": [
+       494.0,
+       946.0,
+       563.0,
+       989.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L983",
+    "index": 7,
+    "text": "작가와의 만남 헌책 장터 어린이 낭독회",
+    "conf": 0.9724,
+    "records": [
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "작가와의 만남",
+      "confidence": 0.9972706437110901,
+      "bbox_xyxy": [
+       226.0,
+       1034.0,
+       367.0,
+       1062.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "헌책 장터",
+      "confidence": 0.974622905254364,
+      "bbox_xyxy": [
+       393.0,
+       1034.0,
+       492.0,
+       1062.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "어린이 낭독회",
+      "confidence": 0.9723864197731018,
+      "bbox_xyxy": [
+       521.0,
+       1034.0,
+       660.0,
+       1062.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L231",
+    "index": 8,
+    "text": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150",
+    "conf": 0.9384,
+    "records": [
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150",
+      "confidence": 0.9384025931358337,
+      "bbox_xyxy": [
+       168.0,
+       1196.0,
+       717.0,
+       1220.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제4회 새봄 가을 책 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.10.7.(수)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "새봄 전통시장 일대"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "새봄군"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "새봄관광재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "054-000-9150"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "책장을 넘기는 가을"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "새봄 가을 책 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제4회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.10.7.(수)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "새봄 전통시장 일대"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "새봄군"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "새봄관광재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "054-000-9150"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "책장을 넘기는 가을"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L803",
+    "L251",
+    "L231",
+    "L203",
+    "L983",
+    "L781",
+    "L728",
+    "L277",
+    "L897",
+    "none"
+   ],
+   "b_line_edition": [
+    "L251",
+    "L231",
+    "L803",
+    "L728",
+    "L277",
+    "L897",
+    "L781",
+    "L983",
+    "L203",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L781",
+    "L983",
+    "L231",
+    "L203",
+    "L897",
+    "L251",
+    "L277",
+    "L728",
+    "L803",
+    "none"
+   ],
+   "b_line_time": [
+    "L781",
+    "L203",
+    "L983",
+    "L803",
+    "L231",
+    "L277",
+    "L897",
+    "L728",
+    "L251",
+    "none"
+   ],
+   "b_line_venue": [
+    "L781",
+    "L728",
+    "L983",
+    "L203",
+    "L897",
+    "L277",
+    "L231",
+    "L251",
+    "L803",
+    "none"
+   ],
+   "b_line_host": [
+    "L897",
+    "L203",
+    "L781",
+    "L277",
+    "L231",
+    "L251",
+    "L983",
+    "L803",
+    "L728",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L277",
+    "L251",
+    "L231",
+    "L781",
+    "L983",
+    "L728",
+    "L897",
+    "L803",
+    "L203",
+    "none"
+   ],
+   "b_line_contact": [
+    "L203",
+    "L251",
+    "L231",
+    "L803",
+    "L897",
+    "L728",
+    "L277",
+    "L983",
+    "L781",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L231",
+    "L897",
+    "L803",
+    "L983",
+    "L251",
+    "L203",
+    "L728",
+    "L277",
+    "L781",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 118,546 bytes, sha256 4a86781ca740ede2…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 102,434 bytes, sha256 d6f7879cdd169d56…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제4회 새봄 가을 책 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.10.7.(수)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '18:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '새봄 전통시장 일대'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '새봄군'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '새봄관광재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '054-000-9150'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '책장을 넘기는 가을'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L231",
+      "description": "주최 새봄군 |주관새봄관광재단 |문의 054-000-9150"
+     },
+     {
+      "value": "L897",
+      "description": "새봄"
+     },
+     {
+      "value": "L803",
+      "description": "18:00 ~ 22:00"
+     },
+     {
+      "value": "L983",
+      "description": "작가와의 만남 헌책 장터 어린이 낭독회"
+     },
+     {
+      "value": "L251",
+      "description": "가을책축제"
+     },
+     {
+      "value": "L203",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L728",
+      "description": "'20.26 제4회"
+     },
+     {
+      "value": "L277",
+      "description": "10월 7일(수)"
+     },
+     {
+      "value": "L781",
+      "description": "새봄군청 앞 광장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '새봄 가을 책 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제4회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.10.7.(수)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '18:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '새봄 전통시장 일대'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '새봄군'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '새봄관광재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '054-000-9150'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '책장을 넘기는 가을'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "case_id": "v2-023",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-023.easy_rgb_2x_000",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     6.5,
+     0.0
+    ],
+    [
+     456.5,
+     0.0
+    ],
+    [
+     456.5,
+     108.5
+    ],
+    [
+     6.5,
+     108.5
+    ]
+   ],
+   "bbox": [
+    6.5,
+    0.0,
+    456.5,
+    108.5
+   ],
+   "height": 108.5,
+   "small_text": false,
+   "text": "누구세요?",
+   "text_key": "누구세요",
+   "ocr_text": "누구세요",
+   "confidence": 0.9880911327513404,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "누구세요?",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.easy_rgb_2x_005",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     13.0,
+     521.0
+    ],
+    [
+     466.0,
+     521.0
+    ],
+    [
+     466.0,
+     627.0
+    ],
+    [
+     13.0,
+     627.0
+    ]
+   ],
+   "bbox": [
+    13.0,
+    521.0,
+    466.0,
+    627.0
+   ],
+   "height": 106.0,
+   "small_text": false,
+   "text": "WHO ARE WE?",
+   "text_key": "whoarewe",
+   "ocr_text": "WHOTHE WE",
+   "confidence": 0.5922507047653198,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "WHO ARE WE?",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

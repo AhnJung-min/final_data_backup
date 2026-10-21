@@ -1,0 +1,558 @@
+{
+ "case_id": "v2-169",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-169.padd_rgb_1x_000",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     27.0,
+     24.0
+    ],
+    [
+     83.0,
+     24.0
+    ],
+    [
+     83.0,
+     50.0
+    ],
+    [
+     27.0,
+     50.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    24.0,
+    83.0,
+    50.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "남토북수",
+   "text_key": "남토북수",
+   "ocr_text": "남토북수",
+   "confidence": 0.8937578201293945,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "남토북수",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_001",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     364.0,
+     23.0
+    ],
+    [
+     412.0,
+     23.0
+    ],
+    [
+     412.0,
+     33.0
+    ],
+    [
+     364.0,
+     33.0
+    ]
+   ],
+   "bbox": [
+    364.0,
+    23.0,
+    412.0,
+    33.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "다함께 미래로",
+   "text_key": "다함께미래로",
+   "ocr_text": "다함께 이래로",
+   "confidence": 0.8069093823432922,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "다함께 미래로 Yes.연천!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_002",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     359.0,
+     33.0
+    ],
+    [
+     423.0,
+     33.0
+    ],
+    [
+     423.0,
+     51.0
+    ],
+    [
+     359.0,
+     51.0
+    ]
+   ],
+   "bbox": [
+    359.0,
+    33.0,
+    423.0,
+    51.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "Yes.연천!",
+   "text_key": "yes연천",
+   "ocr_text": "Yes.연천!s",
+   "confidence": 0.921161949634552,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "다함께 미래로 Yes.연천!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_003",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     104.0,
+     70.0
+    ],
+    [
+     125.0,
+     70.0
+    ],
+    [
+     126.0,
+     378.0
+    ],
+    [
+     105.0,
+     378.0
+    ]
+   ],
+   "bbox": [
+    104.0,
+    70.0,
+    126.0,
+    378.0
+   ],
+   "height": 308.0,
+   "small_text": false,
+   "text": "제5회 연천율무축제 농특산물 큰장터",
+   "text_key": "제5회연천율무축제농특산물큰장터",
+   "ocr_text": "제S회연천율무축제농특산물큰장터",
+   "confidence": 0.9379959106445312,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0625,
+   "gold_value": "제5회 연천율무축제 농특산물 큰장터",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_011",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     200.0,
+     419.0
+    ],
+    [
+     241.0,
+     419.0
+    ],
+    [
+     241.0,
+     434.0
+    ],
+    [
+     200.0,
+     434.0
+    ]
+   ],
+   "bbox": [
+    200.0,
+    419.0,
+    241.0,
+    434.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9937373995780945,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.23.금 ~ 10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_012",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     91.0,
+     439.0
+    ],
+    [
+     347.0,
+     439.0
+    ],
+    [
+     347.0,
+     468.0
+    ],
+    [
+     91.0,
+     468.0
+    ]
+   ],
+   "bbox": [
+    91.0,
+    439.0,
+    347.0,
+    468.0
+   ],
+   "height": 29.0,
+   "small_text": false,
+   "text": "10.23.금 ~ 10.25.",
+   "text_key": "1023금1025",
+   "ocr_text": "10.23.3~10.25.9",
+   "confidence": 0.9449856281280518,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.23.금 ~ 10.25.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_013",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     120.0,
+     473.0
+    ],
+    [
+     317.0,
+     473.0
+    ],
+    [
+     317.0,
+     500.0
+    ],
+    [
+     120.0,
+     500.0
+    ]
+   ],
+   "bbox": [
+    120.0,
+    473.0,
+    317.0,
+    500.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "연천전곡리 유적 일원",
+   "text_key": "연천전곡리유적일원",
+   "ocr_text": "연천전곡리 유적 일원",
+   "confidence": 0.9409465193748474,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "연천전곡리 유적 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_014",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     19.0,
+     531.0
+    ],
+    [
+     76.0,
+     531.0
+    ],
+    [
+     76.0,
+     549.0
+    ],
+    [
+     19.0,
+     549.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    531.0,
+    76.0,
+    549.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "연천한우",
+   "text_key": "연천한우",
+   "ocr_text": "연천한우",
+   "confidence": 0.9986429810523987,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "연천한우 특별판매",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_017",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     19.0,
+     557.0
+    ],
+    [
+     77.0,
+     557.0
+    ],
+    [
+     77.0,
+     574.0
+    ],
+    [
+     19.0,
+     574.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    557.0,
+    77.0,
+    574.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "특별판매",
+   "text_key": "특별판매",
+   "ocr_text": "특별판매",
+   "confidence": 0.9971123337745667,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "연천한우 특별판매",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-169.padd_rgb_1x_018",
+   "case_id": "v2-169",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     206.0,
+     565.0
+    ],
+    [
+     263.0,
+     565.0
+    ],
+    [
+     263.0,
+     590.0
+    ],
+    [
+     206.0,
+     590.0
+    ]
+   ],
+   "bbox": [
+    206.0,
+    565.0,
+    263.0,
+    590.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "연천군",
+   "text_key": "연천군",
+   "ocr_text": "연천군",
+   "confidence": 0.9154305458068848,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "연천군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

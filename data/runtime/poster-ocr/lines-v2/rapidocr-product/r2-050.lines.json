@@ -1,0 +1,234 @@
+{
+ "case_id": "r2-050",
+ "split": "reserve",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 439,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 7,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-050.rapi_product_001",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     63.0,
+     16.0
+    ],
+    [
+     101.0,
+     16.0
+    ],
+    [
+     101.0,
+     28.0
+    ],
+    [
+     63.0,
+     28.0
+    ]
+   ],
+   "bbox": [
+    63.0,
+    16.0,
+    101.0,
+    28.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "익산시",
+   "text_key": "익산시",
+   "ocr_text": "소익산시",
+   "confidence": 0.58932,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "익산시",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.rapi_product_003",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     354.0,
+     17.0
+    ],
+    [
+     416.0,
+     17.0
+    ],
+    [
+     416.0,
+     28.0
+    ],
+    [
+     354.0,
+     28.0
+    ]
+   ],
+   "bbox": [
+    354.0,
+    17.0,
+    416.0,
+    28.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "보석문화도시 익산,",
+   "text_key": "보석문화도시익산",
+   "ocr_text": "보석문화도시 익산",
+   "confidence": 0.90689,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "보석문화도시 익산, 익산의 역사는 보석이다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.rapi_product_004",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     341.0,
+     28.0
+    ],
+    [
+     417.0,
+     28.0
+    ],
+    [
+     417.0,
+     40.0
+    ],
+    [
+     341.0,
+     40.0
+    ]
+   ],
+   "bbox": [
+    341.0,
+    28.0,
+    417.0,
+    40.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "익산의 역사는 보석이다",
+   "text_key": "익산의역사는보석이다",
+   "ocr_text": "익산의 역사는 보석이다",
+   "confidence": 0.94094,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "보석문화도시 익산, 익산의 역사는 보석이다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.rapi_product_005",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     177.0,
+     57.0
+    ],
+    [
+     264.0,
+     57.0
+    ],
+    [
+     264.0,
+     71.0
+    ],
+    [
+     177.0,
+     71.0
+    ]
+   ],
+   "bbox": [
+    177.0,
+    57.0,
+    264.0,
+    71.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "제4회 보물찾기 축제",
+   "text_key": "제4회보물찾기축제",
+   "ocr_text": "제4회 보물활기 하제",
+   "confidence": 0.72148,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2222,
+   "gold_value": "제4회 보물찾기 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

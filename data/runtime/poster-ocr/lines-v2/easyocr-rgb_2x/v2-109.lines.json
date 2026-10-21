@@ -1,0 +1,341 @@
+{
+ "case_id": "v2-109",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 29,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-109.easy_rgb_2x_004",
+   "case_id": "v2-109",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     18.5,
+     253.5
+    ],
+    [
+     198.5,
+     253.5
+    ],
+    [
+     198.5,
+     283.5
+    ],
+    [
+     18.5,
+     283.5
+    ]
+   ],
+   "bbox": [
+    18.5,
+    253.5,
+    198.5,
+    283.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "10.09.(금) - 10.11.(일)",
+   "text_key": "1009금1011일",
+   "ocr_text": "1O.O9.(금) - 10.11.(일)",
+   "confidence": 0.5116906652274402,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "10.09.(금) - 10.11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-109.easy_rgb_2x_005",
+   "case_id": "v2-109",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     19.0,
+     285.0
+    ],
+    [
+     160.0,
+     285.0
+    ],
+    [
+     160.0,
+     309.0
+    ],
+    [
+     19.0,
+     309.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    285.0,
+    160.0,
+    309.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "춘천 수변공원 일원",
+   "text_key": "춘천수변공원일원",
+   "ocr_text": "초천 수변공원 일원",
+   "confidence": 0.6019669479180452,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "춘천 수변공원 일원 (베어스호텔 맞은편)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-109.easy_rgb_2x_006",
+   "case_id": "v2-109",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     18.5,
+     309.5
+    ],
+    [
+     142.5,
+     309.5
+    ],
+    [
+     142.5,
+     331.5
+    ],
+    [
+     18.5,
+     331.5
+    ]
+   ],
+   "bbox": [
+    18.5,
+    309.5,
+    142.5,
+    331.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "(베어스호텔 맞은편)",
+   "text_key": "베어스호텔맞은편",
+   "ocr_text": "(베어스호텔 맞은편)",
+   "confidence": 0.7584156576287359,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "춘천 수변공원 일원 (베어스호텔 맞은편)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-109.easy_rgb_2x_016",
+   "case_id": "v2-109",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     67.0,
+     515.0
+    ],
+    [
+     188.0,
+     515.0
+    ],
+    [
+     188.0,
+     528.0
+    ],
+    [
+     67.0,
+     528.0
+    ]
+   ],
+   "bbox": [
+    67.0,
+    515.0,
+    188.0,
+    528.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "속하공연(이소나 신동 유군장님등)",
+   "confidence": 0.08970993789785306,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "축하공연",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-109.easy_rgb_2x_022",
+   "case_id": "v2-109",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     47.0,
+     565.0
+    ],
+    [
+     154.5,
+     565.0
+    ],
+    [
+     154.5,
+     585.0
+    ],
+    [
+     47.0,
+     585.0
+    ]
+   ],
+   "bbox": [
+    47.0,
+    565.0,
+    154.5,
+    585.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "국방헬프콜 1303",
+   "text_key": "국방헬프콜1303",
+   "ocr_text": "국방렉프로 ) 1303",
+   "confidence": 0.2351096584172585,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2222,
+   "gold_value": "국방헬프콜 1303",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-109.easy_rgb_2x_025",
+   "case_id": "v2-109",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_025"
+   },
+   "polygon": [
+    [
+     219.0,
+     606.0
+    ],
+    [
+     244.0,
+     606.0
+    ],
+    [
+     244.0,
+     619.0
+    ],
+    [
+     219.0,
+     619.0
+    ]
+   ],
+   "bbox": [
+    219.0,
+    606.0,
+    244.0,
+    619.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "2군단",
+   "text_key": "2군단",
+   "ocr_text": "?2군단",
+   "confidence": 0.09733349829912186,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2군단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

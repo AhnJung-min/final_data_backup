@@ -1,0 +1,628 @@
+{
+ "set": "S32",
+ "checked_at": "2026-10-20T19:59:09+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 57.339,
+  "lines": 54,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 47.617,
+  "lines": 22,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "미르 단풍 겉기 축제",
+   "status": "fail",
+   "reason": "포스터 표기가 기준 문서와 다릅니다('풍겉'→'풀걷').",
+   "observed": "미르 / 단풀 걷기 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "미르",
+     "confidence": 0.9996,
+     "bbox": [
+      79.0,
+      172.0,
+      285.0,
+      297.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "단풀",
+     "confidence": 0.993,
+     "bbox": [
+      81.0,
+      305.0,
+      284.0,
+      426.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "걷기",
+     "confidence": 0.9986,
+     "bbox": [
+      296.0,
+      303.0,
+      506.0,
+      428.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "축제",
+     "confidence": 0.9994,
+     "bbox": [
+      508.0,
+      303.0,
+      714.0,
+      428.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    79.0,
+    172.0,
+    714.0,
+    428.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제26회 미르 단풍 겉기 축제",
+     "confidence": 0.9305,
+     "bbox": [
+      307.0,
+      674.0,
+      599.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    599.0,
+    708.0
+   ],
+   "method": "문자 일치율 75% · 판독 신뢰도 99%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제26회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제26회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.9991,
+     "bbox": [
+      89.0,
+      116.0,
+      179.0,
+      149.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제26회",
+     "confidence": 0.9996,
+     "bbox": [
+      178.0,
+      112.0,
+      290.0,
+      152.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    89.0,
+    112.0,
+    290.0,
+    152.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제26회 미르 단풍 겉기 축제",
+     "confidence": 0.9305,
+     "bbox": [
+      307.0,
+      674.0,
+      599.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    599.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.9.16.(수)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.09.16(수)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      100.0,
+      581.0,
+      158.0,
+      621.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "2026.09.16(수)",
+     "confidence": 0.9968,
+     "bbox": [
+      195.0,
+      583.0,
+      427.0,
+      624.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    100.0,
+    581.0,
+    427.0,
+    624.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "2026.9.16.(수)",
+     "confidence": 0.9989,
+     "bbox": [
+      307.0,
+      734.0,
+      472.0,
+      763.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    472.0,
+    765.0
+   ],
+   "method": "포스터 9.16(수)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~21:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00-21:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "시간",
+     "confidence": 1.0,
+     "bbox": [
+      101.0,
+      653.0,
+      157.0,
+      689.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "10:00-21:00",
+     "confidence": 0.9993,
+     "bbox": [
+      198.0,
+      655.0,
+      400.0,
+      689.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    101.0,
+    653.0,
+    400.0,
+    689.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_029",
+     "text": "10:00~21:00",
+     "confidence": 0.9975,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "미르강변공원 일원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르강변공원 일원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_015",
+     "text": "장소",
+     "confidence": 0.9995,
+     "bbox": [
+      101.0,
+      723.0,
+      157.0,
+      760.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "미르강변공원",
+     "confidence": 0.9999,
+     "bbox": [
+      198.0,
+      723.0,
+      378.0,
+      762.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_017",
+     "text": "일원",
+     "confidence": 0.9998,
+     "bbox": [
+      377.0,
+      723.0,
+      440.0,
+      762.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    101.0,
+    723.0,
+    440.0,
+    762.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "미르강변공원 일원",
+     "confidence": 0.9987,
+     "bbox": [
+      309.0,
+      848.0,
+      504.0,
+      877.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    504.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "미르시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_021",
+     "text": "주최 미르시 | 주관 미르문화재단 | 문의 063-000-8364",
+     "confidence": 0.948,
+     "bbox": [
+      168.0,
+      1193.0,
+      719.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1193.0,
+    719.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "미르시",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      903.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    902.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "미르문화재단",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "미르문화재단",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_021",
+     "text": "주최 미르시 | 주관 미르문화재단 | 문의 063-000-8364",
+     "confidence": 0.948,
+     "bbox": [
+      168.0,
+      1193.0,
+      719.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1193.0,
+    719.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "미르문화재단",
+     "confidence": 0.9998,
+     "bbox": [
+      307.0,
+      963.0,
+      453.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    453.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "063-000-8364",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "063-000-8364",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_021",
+     "text": "주최 미르시 | 주관 미르문화재단 | 문의 063-000-8364",
+     "confidence": 0.948,
+     "bbox": [
+      168.0,
+      1193.0,
+      719.0,
+      1220.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1193.0,
+    719.0,
+    1220.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "063-000-8364",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      1024.0,
+      461.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    461.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "붉게 물든 길을 함께 걸어요",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "붉게 물든 길을 함께 걸어요",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "붉게",
+     "confidence": 0.9994,
+     "bbox": [
+      89.0,
+      452.0,
+      153.0,
+      487.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "물든",
+     "confidence": 0.9994,
+     "bbox": [
+      146.0,
+      450.0,
+      215.0,
+      488.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "길을",
+     "confidence": 0.9999,
+     "bbox": [
+      217.0,
+      449.0,
+      282.0,
+      489.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "함께",
+     "confidence": 1.0,
+     "bbox": [
+      280.0,
+      449.0,
+      345.0,
+      488.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "걸어요",
+     "confidence": 0.9999,
+     "bbox": [
+      346.0,
+      449.0,
+      439.0,
+      489.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    89.0,
+    449.0,
+    439.0,
+    489.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_040",
+     "text": "붉게 물든 길을 함께 걸어요",
+     "confidence": 0.9669,
+     "bbox": [
+      310.0,
+      1081.0,
+      598.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    598.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_043",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9598,
+     "bbox": [
+      310.0,
+      1140.0,
+      627.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    627.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 1,
+  "review": 1
+ },
+ "verdict": "fail",
+ "predicted_mismatch": true,
+ "check_seconds": 0.01
+}

@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-114",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 442,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-114.padd_rgb_1x_000",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     283.0,
+     32.0
+    ],
+    [
+     429.0,
+     32.0
+    ],
+    [
+     429.0,
+     132.0
+    ],
+    [
+     283.0,
+     132.0
+    ]
+   ],
+   "bbox": [
+    283.0,
+    32.0,
+    429.0,
+    132.0
+   ],
+   "height": 100.0,
+   "small_text": false,
+   "text": "오죽",
+   "text_key": "오죽",
+   "ocr_text": "오죽",
+   "confidence": 0.9284456968307495,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "강릉오죽한옥마을",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-114.padd_rgb_1x_002",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     155.0,
+     92.0
+    ],
+    [
+     271.0,
+     92.0
+    ],
+    [
+     271.0,
+     112.0
+    ],
+    [
+     155.0,
+     112.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    92.0,
+    271.0,
+    112.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "제2회 강릉 빵 축제",
+   "text_key": "제2회강릉빵축제",
+   "ocr_text": "제2회강릉빵축제",
+   "confidence": 0.92719566822052,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제2회 강릉 빵 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-114.padd_rgb_1x_003",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     89.0,
+     112.0
+    ],
+    [
+     149.0,
+     155.0
+    ],
+    [
+     136.0,
+     173.0
+    ],
+    [
+     76.0,
+     130.0
+    ]
+   ],
+   "bbox": [
+    76.0,
+    112.0,
+    149.0,
+    173.0
+   ],
+   "height": 22.2,
+   "small_text": false,
+   "text": "빵내음따라",
+   "text_key": "빵내음따라",
+   "ocr_text": "빵내음따라",
+   "confidence": 0.9334793090820312,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "빵내음따라 한옥마을 한바퀴",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-114.padd_rgb_1x_004",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     84.0,
+     129.0
+    ],
+    [
+     134.0,
+     164.0
+    ],
+    [
+     119.0,
+     184.0
+    ],
+    [
+     70.0,
+     149.0
+    ]
+   ],
+   "bbox": [
+    70.0,
+    129.0,
+    134.0,
+    184.0
+   ],
+   "height": 24.71,
+   "small_text": false,
+   "text": "한옥마을",
+   "text_key": "한옥마을",
+   "ocr_text": "한옥마을",
+   "confidence": 0.9494220018386841,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "강릉오죽한옥마을",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-114.padd_rgb_1x_005",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     76.0,
+     150.0
+    ],
+    [
+     114.0,
+     175.0
+    ],
+    [
+     102.0,
+     192.0
+    ],
+    [
+     65.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    65.0,
+    150.0,
+    114.0,
+    192.0
+   ],
+   "height": 20.95,
+   "small_text": false,
+   "text": "한바퀴",
+   "text_key": "한바퀴",
+   "ocr_text": "한바퀴",
+   "confidence": 0.9115343689918518,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "빵내음따라 한옥마을 한바퀴",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-114.padd_rgb_1x_007",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     188.0,
+     175.0
+    ],
+    [
+     404.0,
+     175.0
+    ],
+    [
+     404.0,
+     189.0
+    ],
+    [
+     188.0,
+     189.0
+    ]
+   ],
+   "bbox": [
+    188.0,
+    175.0,
+    404.0,
+    189.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "유명 베이커리 부스",
+   "text_key": "유명베이커리부스",
+   "ocr_text": "유명베이커리부스/개막세레모니/베이커리포럼",
+   "confidence": 0.9808234572410583,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "유명 베이커리 부스",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-114.padd_rgb_1x_008",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     188.0,
+     192.0
+    ],
+    [
+     389.0,
+     192.0
+    ],
+    [
+     389.0,
+     206.0
+    ],
+    [
+     188.0,
+     206.0
+    ]
+   ],
+   "bbox": [
+    188.0,
+    192.0,
+    389.0,
+    206.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "빵만들기 체험",
+   "text_key": "빵만들기체험",
+   "ocr_text": "빵만들기체험/시그니처빵어워즈/버스킹 공연",
+   "confidence": 0.9454477429389954,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "빵만들기 체험",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-114.padd_rgb_1x_010",
+   "case_id": "v2-114",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     20.0,
+     526.0
+    ],
+    [
+     182.0,
+     528.0
+    ],
+    [
+     181.0,
+     549.0
+    ],
+    [
+     20.0,
+     547.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    526.0,
+    182.0,
+    549.0
+   ],
+   "height": 21.01,
+   "small_text": false,
+   "text": "일시 2026. 10. 9.(금)–11.(일)",
+   "text_key": "일시2026109금11일",
+   "ocr_text": "원시2026.10.9.(금)-11.(일)",
+   "confidence": 0.9229525923728943,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0769,
+   "gold_value": "일시 2026. 10. 9.(금)–11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

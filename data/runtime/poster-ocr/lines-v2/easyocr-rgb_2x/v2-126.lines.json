@@ -1,0 +1,396 @@
+{
+ "case_id": "v2-126",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-126.easy_rgb_2x_001",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     201.0,
+     120.5
+    ],
+    [
+     425.5,
+     120.5
+    ],
+    [
+     425.5,
+     166.0
+    ],
+    [
+     201.0,
+     166.0
+    ]
+   ],
+   "bbox": [
+    201.0,
+    120.5,
+    425.5,
+    166.0
+   ],
+   "height": 45.5,
+   "small_text": false,
+   "text": "2026.10.15.목 ~ 18.일",
+   "text_key": "20261015목18일",
+   "ocr_text": "{2026.10.153~의일",
+   "confidence": 0.052453038769692255,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "2026.10.15.목 ~ 18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.easy_rgb_2x_002",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     76.0,
+     138.5
+    ],
+    [
+     208.5,
+     138.5
+    ],
+    [
+     208.5,
+     173.0
+    ],
+    [
+     76.0,
+     173.0
+    ]
+   ],
+   "bbox": [
+    76.0,
+    138.5,
+    208.5,
+    173.0
+   ],
+   "height": 34.5,
+   "small_text": false,
+   "text": "봉화읍 내성천 일원",
+   "text_key": "봉화읍내성천일원",
+   "ocr_text": "봉화움내성전 일원",
+   "confidence": 0.15920852073564834,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "봉화읍 내성천 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.easy_rgb_2x_003",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     79.5,
+     304.5
+    ],
+    [
+     100.5,
+     304.5
+    ],
+    [
+     100.5,
+     325.5
+    ],
+    [
+     79.5,
+     325.5
+    ]
+   ],
+   "bbox": [
+    79.5,
+    304.5,
+    100.5,
+    325.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "향",
+   "text_key": "향",
+   "ocr_text": "향",
+   "confidence": 0.770401184665289,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 깊은 향",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.easy_rgb_2x_004",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     337.0,
+     359.0
+    ],
+    [
+     394.5,
+     359.0
+    ],
+    [
+     394.5,
+     389.5
+    ],
+    [
+     337.0,
+     389.5
+    ]
+   ],
+   "bbox": [
+    337.0,
+    359.0,
+    394.5,
+    389.5
+   ],
+   "height": 30.5,
+   "small_text": false,
+   "text": "봉화",
+   "text_key": "봉화",
+   "ocr_text": "봉화루",
+   "confidence": 0.1384032517671585,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "봉화를 물들이다!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.easy_rgb_2x_008",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     36.88,
+     289.26
+    ],
+    [
+     100.19,
+     279.8
+    ],
+    [
+     102.62,
+     303.74
+    ],
+    [
+     39.31,
+     313.2
+    ]
+   ],
+   "bbox": [
+    36.88,
+    279.8,
+    102.62,
+    313.2
+   ],
+   "height": 24.06,
+   "small_text": false,
+   "text": "30년의",
+   "text_key": "30년의",
+   "ocr_text": "30년의",
+   "confidence": 0.9888182878494263,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw",
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 깊은 향",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.easy_rgb_2x_009",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     42.13,
+     306.63
+    ],
+    [
+     80.38,
+     303.67
+    ],
+    [
+     81.37,
+     328.87
+    ],
+    [
+     43.12,
+     332.33
+    ]
+   ],
+   "bbox": [
+    42.13,
+    303.67,
+    81.37,
+    332.33
+   ],
+   "height": 25.47,
+   "small_text": false,
+   "text": "깊은",
+   "text_key": "깊은",
+   "ocr_text": "깊은",
+   "confidence": 0.942078273795891,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 깊은 향",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.easy_rgb_2x_010",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     329.13,
+     385.66
+    ],
+    [
+     406.83,
+     379.6
+    ],
+    [
+     407.37,
+     403.84
+    ],
+    [
+     329.67,
+     409.4
+    ]
+   ],
+   "bbox": [
+    329.13,
+    379.6,
+    407.37,
+    409.4
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "물들이다!",
+   "text_key": "물들이다",
+   "ocr_text": "붙들이다!",
+   "confidence": 0.7430515230625617,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "봉화를 물들이다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

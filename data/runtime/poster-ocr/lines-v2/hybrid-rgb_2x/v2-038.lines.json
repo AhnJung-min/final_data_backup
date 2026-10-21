@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-038",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 434,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-038.easy_rgb_2x_000",
+   "case_id": "v2-038",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     29.0,
+     32.0
+    ],
+    [
+     65.0,
+     32.0
+    ],
+    [
+     65.0,
+     47.0
+    ],
+    [
+     29.0,
+     47.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    32.0,
+    65.0,
+    47.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9992345571517944,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 9.16.(수)-9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-038.easy_rgb_2x_001",
+   "case_id": "v2-038",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     27.5,
+     48.5
+    ],
+    [
+     181.5,
+     48.5
+    ],
+    [
+     181.5,
+     70.5
+    ],
+    [
+     27.5,
+     70.5
+    ]
+   ],
+   "bbox": [
+    27.5,
+    48.5,
+    181.5,
+    70.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "9.16.(수)-9.20.(일)",
+   "text_key": "916수920일",
+   "ocr_text": "9.16.(수)-9.20.(일)",
+   "confidence": 0.8911327123641968,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 9.16.(수)-9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-038.easy_rgb_2x_004",
+   "case_id": "v2-038",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     27.0,
+     72.0
+    ],
+    [
+     180.0,
+     72.0
+    ],
+    [
+     180.0,
+     97.0
+    ],
+    [
+     27.0,
+     97.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    72.0,
+    180.0,
+    97.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "용천사 꽃무릇 공원",
+   "text_key": "용천사꽃무릇공원",
+   "ocr_text": "용천사꽃무롯공원",
+   "confidence": 0.8848000764846802,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "용천사 꽃무릇 공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-038.easy_rgb_2x_013",
+   "case_id": "v2-038",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     374.0,
+     599.0
+    ],
+    [
+     408.0,
+     599.0
+    ],
+    [
+     408.0,
+     614.0
+    ],
+    [
+     374.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    374.0,
+    599.0,
+    408.0,
+    614.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "KORAIL",
+   "text_key": "korail",
+   "ocr_text": "KORAL",
+   "confidence": 0.8329830169677734,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "KORAIL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-d92b7b5307bf",
+ "image": {
+  "sha256": "d92b7b5307bfbc78bc2d332f5d12606532808f768588b59ead49ad7c212bacc9",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026 동대문구 북 페스티벌 색력",
+  "official": "동대문구 북 페스티벌 색력",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001",
+    "rapi_product_002",
+    "rapi_product_003"
+   ],
+   "bbox": [
+    20.0,
+    21.0,
+    301.0,
+    250.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001"
+   ],
+   "bbox": [
+    22.0,
+    21.0,
+    220.0,
+    57.0
+   ],
+   "confidence": 0.98075
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026. 09.12.(토)",
+  "start": {
+   "iso": "2026-09-12",
+   "year": 2026,
+   "month": 9,
+   "day": 12,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "12:00~17:00",
+    "start": "12:00",
+    "end": "17:00",
+    "applies_to": null
+   },
+   {
+    "raw": "13:00-17:00",
+    "start": "13:00",
+    "end": "17:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_008",
+    "rapi_product_011"
+   ],
+   "bbox": [
+    351.0,
+    490.0,
+    434.0,
+    529.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "동대문구청 미래광장및 다목적 강당",
+  "items": [
+   "동대문구청 미래광장",
+   "다목적 강당"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_009",
+    "rapi_product_012",
+    "rapi_product_014"
+   ],
+   "bbox": [
+    9.0,
+    501.0,
+    98.0,
+    562.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "2026 동대문구",
+  "region": null,
+  "district": "동대문구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001"
+   ],
+   "bbox": [
+    22.0,
+    21.0,
+    220.0,
+    57.0
+   ],
+   "confidence": 0.98075
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "present",
+  "raw": "총 예산: 49,952천원(전익 구비,서물복별시 동대문구 행사 예산 공개에 관한 조레에 의게)",
+  "total_krw": 49952000,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_022"
+   ],
+   "bbox": [
+    70.0,
+    607.0,
+    382.0,
+    619.0
+   ],
+   "confidence": 0.92435
+  }
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

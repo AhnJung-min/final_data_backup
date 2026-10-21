@@ -1,0 +1,236 @@
+{
+ "case_id": "v2-072",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 440,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-072.padd_rgb_1x_010",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     58.0,
+     475.0
+    ],
+    [
+     382.0,
+     475.0
+    ],
+    [
+     382.0,
+     512.0
+    ],
+    [
+     58.0,
+     512.0
+    ]
+   ],
+   "bbox": [
+    58.0,
+    475.0,
+    382.0,
+    512.0
+   ],
+   "height": 37.0,
+   "small_text": false,
+   "text": "천안흥타령춤축제 2026",
+   "text_key": "천안흥타령춤축제2026",
+   "ocr_text": "천안흥타령춤축제2026",
+   "confidence": 0.9991023540496826,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "천안흥타령춤축제 2026",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_1x_011",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     57.0,
+     520.0
+    ],
+    [
+     383.0,
+     520.0
+    ],
+    [
+     383.0,
+     540.0
+    ],
+    [
+     57.0,
+     540.0
+    ]
+   ],
+   "bbox": [
+    57.0,
+    520.0,
+    383.0,
+    540.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "10.1(목) - 10.5(월)",
+   "text_key": "101목105월",
+   "ocr_text": "10.1(목)-10.5(월)천안종합운동장및 천안시 일원",
+   "confidence": 0.9456538558006287,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.1(목) - 10.5(월)",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_1x_013",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     127.0,
+     575.0
+    ],
+    [
+     170.0,
+     575.0
+    ],
+    [
+     170.0,
+     589.0
+    ],
+    [
+     127.0,
+     589.0
+    ]
+   ],
+   "bbox": [
+    127.0,
+    575.0,
+    170.0,
+    589.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "천안시",
+   "text_key": "천안시",
+   "ocr_text": "오천안시",
+   "confidence": 0.6776335835456848,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "천안시",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_1x_015",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     300.0,
+     576.0
+    ],
+    [
+     345.0,
+     576.0
+    ],
+    [
+     345.0,
+     587.0
+    ],
+    [
+     300.0,
+     587.0
+    ]
+   ],
+   "bbox": [
+    300.0,
+    576.0,
+    345.0,
+    587.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "FIDAF",
+   "text_key": "fidaf",
+   "ocr_text": "BFIDRF",
+   "confidence": 0.7906343340873718,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "FIDAF",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

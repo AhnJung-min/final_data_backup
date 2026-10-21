@@ -1,0 +1,560 @@
+{
+ "case_id": "v2-061",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-061.padd_rgb_2x_000",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     192.0,
+     42.0
+    ],
+    [
+     250.5,
+     42.0
+    ],
+    [
+     250.5,
+     64.5
+    ],
+    [
+     192.0,
+     64.5
+    ]
+   ],
+   "bbox": [
+    192.0,
+    42.0,
+    250.5,
+    64.5
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9994707703590393,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_001",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     169.0,
+     75.0
+    ],
+    [
+     275.0,
+     75.0
+    ],
+    [
+     275.0,
+     107.0
+    ],
+    [
+     169.0,
+     107.0
+    ]
+   ],
+   "bbox": [
+    169.0,
+    75.0,
+    275.0,
+    107.0
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "경남고성",
+   "text_key": "경남고성",
+   "ocr_text": "경남고성",
+   "confidence": 0.9993284940719604,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_002",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     69.5,
+     110.5
+    ],
+    [
+     373.5,
+     110.5
+    ],
+    [
+     373.5,
+     173.5
+    ],
+    [
+     69.5,
+     173.5
+    ]
+   ],
+   "bbox": [
+    69.5,
+    110.5,
+    373.5,
+    173.5
+   ],
+   "height": 63.0,
+   "small_text": false,
+   "text": "공룡세계엑스포",
+   "text_key": "공룡세계엑스포",
+   "ocr_text": "공룡세계엑스포",
+   "confidence": 0.9988728761672974,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_003",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     83.5,
+     177.0
+    ],
+    [
+     358.0,
+     177.0
+    ],
+    [
+     358.0,
+     201.0
+    ],
+    [
+     83.5,
+     201.0
+    ]
+   ],
+   "bbox": [
+    83.5,
+    177.0,
+    358.0,
+    201.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026. 9. 22.(화) ~ 11. 1.(일)",
+   "text_key": "2026922화111일",
+   "ocr_text": "2026.9.22.(화)~11.1.(일)",
+   "confidence": 0.9984058141708374,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 22.(화) ~ 11. 1.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_004",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     126.5,
+     210.5
+    ],
+    [
+     230.0,
+     210.5
+    ],
+    [
+     230.0,
+     234.5
+    ],
+    [
+     126.5,
+     234.5
+    ]
+   ],
+   "bbox": [
+    126.5,
+    210.5,
+    230.0,
+    234.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "공룡과 떠나는",
+   "text_key": "공룡과떠나는",
+   "ocr_text": "공룡과 떠나는",
+   "confidence": 0.9229704737663269,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "공룡과 떠나는 신나는 모험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_005",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     228.5,
+     211.5
+    ],
+    [
+     281.0,
+     211.5
+    ],
+    [
+     281.0,
+     233.5
+    ],
+    [
+     228.5,
+     233.5
+    ]
+   ],
+   "bbox": [
+    228.5,
+    211.5,
+    281.0,
+    233.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "신나는",
+   "text_key": "신나는",
+   "ocr_text": "신나는",
+   "confidence": 0.9993646144866943,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "공룡과 떠나는 신나는 모험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_006",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     281.0,
+     211.5
+    ],
+    [
+     315.0,
+     211.5
+    ],
+    [
+     315.0,
+     233.0
+    ],
+    [
+     281.0,
+     233.0
+    ]
+   ],
+   "bbox": [
+    281.0,
+    211.5,
+    315.0,
+    233.0
+   ],
+   "height": 21.5,
+   "small_text": false,
+   "text": "모험",
+   "text_key": "모험",
+   "ocr_text": "모험",
+   "confidence": 0.9995133280754089,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "공룡과 떠나는 신나는 모험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_007",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     46.5,
+     594.5
+    ],
+    [
+     152.5,
+     593.5
+    ],
+    [
+     153.0,
+     610.5
+    ],
+    [
+     46.5,
+     611.5
+    ]
+   ],
+   "bbox": [
+    46.5,
+    593.5,
+    153.0,
+    611.5
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "고성문화관광재단",
+   "text_key": "고성문화관광재단",
+   "ocr_text": "고성문화관광재단",
+   "confidence": 0.9987931251525879,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고성문화관광재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_008",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     167.5,
+     590.5
+    ],
+    [
+     373.0,
+     590.5
+    ],
+    [
+     373.0,
+     602.5
+    ],
+    [
+     167.5,
+     602.5
+    ]
+   ],
+   "bbox": [
+    167.5,
+    590.5,
+    373.0,
+    602.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "경남 고성 당항포관광지",
+   "text_key": "경남고성당항포관광지",
+   "ocr_text": "장소:경남고성당항포관광지 문의:055-670-7400",
+   "confidence": 0.9881975650787354,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경남 고성 당항포관광지",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.padd_rgb_2x_009",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     166.5,
+     602.0
+    ],
+    [
+     334.5,
+     603.0
+    ],
+    [
+     334.5,
+     615.5
+    ],
+    [
+     166.5,
+     614.5
+    ]
+   ],
+   "bbox": [
+    166.5,
+    602.0,
+    334.5,
+    615.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "www.gngsctf.or.kr/dinoexpo",
+   "text_key": "wwwgngsctforkrdinoexpo",
+   "ocr_text": "홈페o지:www.gngsctf.or.kr/dinoexpo",
+   "confidence": 0.9573849439620972,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "www.gngsctf.or.kr/dinoexpo",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

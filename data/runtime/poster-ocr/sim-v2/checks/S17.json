@@ -1,0 +1,573 @@
+{
+ "set": "S17",
+ "checked_at": "2026-10-20T19:59:09+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 58.296,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 37.632,
+  "lines": 17,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "다온 별빛정원 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "다온 / 별빛정원 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "다온",
+     "confidence": 0.9999,
+     "bbox": [
+      80.0,
+      173.0,
+      284.0,
+      298.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "별빛정원",
+     "confidence": 0.9996,
+     "bbox": [
+      84.0,
+      305.0,
+      474.0,
+      427.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9994,
+     "bbox": [
+      484.0,
+      302.0,
+      693.0,
+      431.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    80.0,
+    173.0,
+    693.0,
+    431.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_025",
+     "text": "제13회 다온 별빛정원 축제",
+     "confidence": 0.9864,
+     "bbox": [
+      309.0,
+      676.0,
+      592.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    592.0,
+    707.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제13회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제13회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.999,
+     "bbox": [
+      89.0,
+      117.0,
+      181.0,
+      149.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제13회",
+     "confidence": 0.9995,
+     "bbox": [
+      177.0,
+      112.0,
+      290.0,
+      152.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    89.0,
+    112.0,
+    290.0,
+    152.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_025",
+     "text": "제13회 다온 별빛정원 축제",
+     "confidence": 0.9864,
+     "bbox": [
+      309.0,
+      676.0,
+      592.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    592.0,
+    707.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026. 9. 20.(일) ~ 9. 23.(수)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.09.20(일) - 09.23(수)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      102.0,
+      585.0,
+      158.0,
+      621.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "2026.09.20(일) - 09.23(수)",
+     "confidence": 0.9609,
+     "bbox": [
+      196.0,
+      584.0,
+      594.0,
+      624.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    102.0,
+    584.0,
+    594.0,
+    624.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_028",
+     "text": "2026. 9. 20.(일) ~ 9. 23.(수)",
+     "confidence": 0.9109,
+     "bbox": [
+      309.0,
+      734.0,
+      598.0,
+      762.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    598.0,
+    765.0
+   ],
+   "method": "포스터 9.20(일) ~ 9.23(수)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00-18:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "시간",
+     "confidence": 1.0,
+     "bbox": [
+      101.0,
+      654.0,
+      157.0,
+      690.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "10:00-18:00",
+     "confidence": 0.9991,
+     "bbox": [
+      199.0,
+      657.0,
+      399.0,
+      688.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    101.0,
+    654.0,
+    399.0,
+    690.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "10:00~18:00",
+     "confidence": 0.9976,
+     "bbox": [
+      307.0,
+      791.0,
+      459.0,
+      819.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "다온강변공원 일원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "다온강변공원 일원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "장소",
+     "confidence": 0.9994,
+     "bbox": [
+      101.0,
+      724.0,
+      158.0,
+      761.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "다온강변공원",
+     "confidence": 0.9999,
+     "bbox": [
+      198.0,
+      724.0,
+      379.0,
+      763.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "월 일원",
+     "confidence": 0.8186,
+     "bbox": [
+      361.0,
+      722.0,
+      441.0,
+      764.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    101.0,
+    722.0,
+    441.0,
+    764.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "다온강변공원 일원",
+     "confidence": 0.997,
+     "bbox": [
+      309.0,
+      848.0,
+      505.0,
+      877.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    505.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 82%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "다온군",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "다온군",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 다온군 |주관다온축제위원회|문의 061-000-8505",
+     "confidence": 0.9638,
+     "bbox": [
+      155.0,
+      1191.0,
+      728.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    155.0,
+    1191.0,
+    728.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "다온군",
+     "confidence": 0.998,
+     "bbox": [
+      304.0,
+      901.0,
+      385.0,
+      942.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    901.0,
+    385.0,
+    942.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "다온축제위원회",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "다온축제위원회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 다온군 |주관다온축제위원회|문의 061-000-8505",
+     "confidence": 0.9638,
+     "bbox": [
+      155.0,
+      1191.0,
+      728.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    155.0,
+    1191.0,
+    728.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "다온축제위원회",
+     "confidence": 0.9993,
+     "bbox": [
+      309.0,
+      963.0,
+      475.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    475.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "061-000-8505",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "061-000-8505",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 다온군 |주관다온축제위원회|문의 061-000-8505",
+     "confidence": 0.9638,
+     "bbox": [
+      155.0,
+      1191.0,
+      728.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    155.0,
+    1191.0,
+    728.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_039",
+     "text": "061-000-8505",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1024.0,
+      461.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    461.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "빛으로 물드는 가을밤",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "빛으로 물드는 가을밤",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "빛으로 물드는 가을밤",
+     "confidence": 0.9928,
+     "bbox": [
+      86.0,
+      448.0,
+      370.0,
+      492.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    86.0,
+    448.0,
+    370.0,
+    492.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_042",
+     "text": "빛으로 물드는 가을밤",
+     "confidence": 0.9977,
+     "bbox": [
+      310.0,
+      1081.0,
+      537.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    537.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_045",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9672,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.006
+}

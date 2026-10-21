@@ -1,0 +1,510 @@
+{
+ "case_id": "r2-004",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "r2-004.padd_rgb_1x_000",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     205.0,
+     4.0
+    ],
+    [
+     350.0,
+     27.0
+    ],
+    [
+     342.0,
+     81.0
+    ],
+    [
+     196.0,
+     57.0
+    ]
+   ],
+   "bbox": [
+    196.0,
+    4.0,
+    350.0,
+    81.0
+   ],
+   "height": 54.17,
+   "small_text": false,
+   "text": "제20회",
+   "text_key": "제20회",
+   "ocr_text": "제20회",
+   "confidence": 0.9476219415664673,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "제20회 장수 한우랑 사과랑 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_002",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     16.0,
+     49.0
+    ],
+    [
+     125.0,
+     49.0
+    ],
+    [
+     125.0,
+     80.0
+    ],
+    [
+     16.0,
+     80.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    49.0,
+    125.0,
+    80.0
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "9.10.(목)~",
+   "text_key": "910목",
+   "ocr_text": "9.10.(목)~",
+   "confidence": 0.983740508556366,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "2026. 9.10.(목)~ 9.13.(일), 4일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_003",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     208.0,
+     51.0
+    ],
+    [
+     328.0,
+     71.0
+    ],
+    [
+     317.0,
+     135.0
+    ],
+    [
+     197.0,
+     115.0
+    ]
+   ],
+   "bbox": [
+    197.0,
+    51.0,
+    328.0,
+    135.0
+   ],
+   "height": 64.94,
+   "small_text": false,
+   "text": "장수",
+   "text_key": "장수",
+   "ocr_text": "장수",
+   "confidence": 0.9943950176239014,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "장수 한우랑 사과랑 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_004",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     14.0,
+     78.0
+    ],
+    [
+     162.0,
+     80.0
+    ],
+    [
+     162.0,
+     115.0
+    ],
+    [
+     14.0,
+     113.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    78.0,
+    162.0,
+    115.0
+   ],
+   "height": 35.0,
+   "small_text": false,
+   "text": "9.13.(일), 4일간",
+   "text_key": "913일4일간",
+   "ocr_text": "9.13.(일).4일간",
+   "confidence": 0.9422772526741028,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "2026. 9.10.(목)~ 9.13.(일), 4일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_005",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     20.0,
+     114.0
+    ],
+    [
+     125.0,
+     114.0
+    ],
+    [
+     125.0,
+     130.0
+    ],
+    [
+     20.0,
+     130.0
+    ]
+   ],
+   "bbox": [
+    20.0,
+    114.0,
+    125.0,
+    130.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "장수읍 의암공원 및",
+   "text_key": "장수읍의암공원및",
+   "ocr_text": "장수읍 의암공원 및",
+   "confidence": 0.8497114181518555,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "장수읍 의암공원 및 누리파크 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_006",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     211.0,
+     107.0
+    ],
+    [
+     385.0,
+     144.0
+    ],
+    [
+     371.0,
+     205.0
+    ],
+    [
+     198.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    198.0,
+    107.0,
+    385.0,
+    205.0
+   ],
+   "height": 62.48,
+   "small_text": false,
+   "text": "한우랑",
+   "text_key": "한우랑",
+   "ocr_text": "한우랑",
+   "confidence": 0.812067985534668,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "장수 한우랑 사과랑 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_007",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     19.0,
+     134.0
+    ],
+    [
+     97.0,
+     134.0
+    ],
+    [
+     97.0,
+     151.0
+    ],
+    [
+     19.0,
+     151.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    134.0,
+    97.0,
+    151.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "누리파크 일원",
+   "text_key": "누리파크일원",
+   "ocr_text": "누리파크일원",
+   "confidence": 0.994009792804718,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "누리파크 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_008",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     210.0,
+     161.0
+    ],
+    [
+     383.0,
+     202.0
+    ],
+    [
+     368.0,
+     263.0
+    ],
+    [
+     195.0,
+     221.0
+    ]
+   ],
+   "bbox": [
+    195.0,
+    161.0,
+    383.0,
+    263.0
+   ],
+   "height": 62.33,
+   "small_text": false,
+   "text": "사과",
+   "text_key": "사과",
+   "ocr_text": "사과량",
+   "confidence": 0.6716765761375427,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "장수 한우랑 사과랑 축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.padd_rgb_1x_009",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     209.0,
+     218.0
+    ],
+    [
+     309.0,
+     242.0
+    ],
+    [
+     296.0,
+     294.0
+    ],
+    [
+     196.0,
+     270.0
+    ]
+   ],
+   "bbox": [
+    196.0,
+    218.0,
+    309.0,
+    294.0
+   ],
+   "height": 53.6,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.7598990797996521,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "장수 한우랑 사과랑 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

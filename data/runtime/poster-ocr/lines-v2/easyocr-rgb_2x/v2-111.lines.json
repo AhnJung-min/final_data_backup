@@ -1,0 +1,345 @@
+{
+ "case_id": "v2-111",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-111.easy_rgb_2x_002",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     132.0,
+     52.0
+    ],
+    [
+     311.5,
+     52.0
+    ],
+    [
+     311.5,
+     83.5
+    ],
+    [
+     132.0,
+     83.5
+    ]
+   ],
+   "bbox": [
+    132.0,
+    52.0,
+    311.5,
+    83.5
+   ],
+   "height": 31.5,
+   "small_text": false,
+   "text": "2026 GWANGJU",
+   "text_key": "2026gwangju",
+   "ocr_text": "2026 GWANGJU",
+   "confidence": 0.9470641363865937,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.027,
+   "gold_value": "2026 GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.easy_rgb_2x_003",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     29.5,
+     72.5
+    ],
+    [
+     418.5,
+     72.5
+    ],
+    [
+     418.5,
+     140.0
+    ],
+    [
+     29.5,
+     140.0
+    ]
+   ],
+   "bbox": [
+    29.5,
+    72.5,
+    418.5,
+    140.0
+   ],
+   "height": 67.5,
+   "small_text": false,
+   "text": "SOUNDPARK FESTIVAL",
+   "text_key": "soundparkfestival",
+   "ocr_text": "SOUNDPARK FLSTIVAL",
+   "confidence": 0.5974683330891633,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.027,
+   "gold_value": "2026 GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.easy_rgb_2x_005",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     145.5,
+     130.5
+    ],
+    [
+     290.0,
+     130.5
+    ],
+    [
+     290.0,
+     170.5
+    ],
+    [
+     145.5,
+     170.5
+    ]
+   ],
+   "bbox": [
+    145.5,
+    130.5,
+    290.0,
+    170.5
+   ],
+   "height": 40.0,
+   "small_text": false,
+   "text": "PEAKMUSIC",
+   "text_key": "peakmusic",
+   "ocr_text": "PEAkMUSIC",
+   "confidence": 0.9619676871830726,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2424,
+   "gold_value": "GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.easy_rgb_2x_006",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     121.0,
+     210.0
+    ],
+    [
+     304.0,
+     210.0
+    ],
+    [
+     304.0,
+     235.0
+    ],
+    [
+     121.0,
+     235.0
+    ]
+   ],
+   "bbox": [
+    121.0,
+    210.0,
+    304.0,
+    235.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "광주음악창작소 피크뮤직홀",
+   "text_key": "광주음악창작소피크뮤직홀",
+   "ocr_text": "광주음악창작소 피크묶직홀",
+   "confidence": 0.34337741459540944,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "광주음악창작소 피크뮤직홀",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.easy_rgb_2x_007",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     101.0,
+     237.0
+    ],
+    [
+     324.0,
+     237.0
+    ],
+    [
+     324.0,
+     277.0
+    ],
+    [
+     101.0,
+     277.0
+    ]
+   ],
+   "bbox": [
+    101.0,
+    237.0,
+    324.0,
+    277.0
+   ],
+   "height": 40.0,
+   "small_text": false,
+   "text": "10.9(금)",
+   "text_key": "109금",
+   "ocr_text": "10,9금) 1일차",
+   "confidence": 0.7841525207606354,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.9(금)",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.easy_rgb_2x_017",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     212.5,
+     415.5
+    ],
+    [
+     403.5,
+     415.5
+    ],
+    [
+     403.5,
+     448.5
+    ],
+    [
+     212.5,
+     448.5
+    ]
+   ],
+   "bbox": [
+    212.5,
+    415.5,
+    403.5,
+    448.5
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "REDCON",
+   "text_key": "redcon",
+   "ocr_text": "선 문: x REDSCON",
+   "confidence": 0.01552974667369223,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "REDCON",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

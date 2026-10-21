@@ -1,0 +1,611 @@
+{
+ "case_id": "v2-094",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 11,
+ "records": [
+  {
+   "id": "v2-094.padd_rgb_2x_000",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     17.0,
+     21.5
+    ],
+    [
+     142.5,
+     22.5
+    ],
+    [
+     142.5,
+     41.0
+    ],
+    [
+     17.0,
+     40.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    21.5,
+    142.5,
+    41.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "10.03(토) - 10.24(토)",
+   "text_key": "1003토1024토",
+   "ocr_text": "10.03(10.24토)",
+   "confidence": 0.9462974071502686,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "10.03(토) - 10.24(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_001",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     18.5,
+     45.5
+    ],
+    [
+     87.5,
+     45.5
+    ],
+    [
+     87.5,
+     58.0
+    ],
+    [
+     18.5,
+     58.0
+    ]
+   ],
+   "bbox": [
+    18.5,
+    45.5,
+    87.5,
+    58.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "19:00 - 22:00",
+   "text_key": "19002200",
+   "ocr_text": "19:00-22:00",
+   "confidence": 0.9991515874862671,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "19:00 - 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_002",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     19.0,
+     58.5
+    ],
+    [
+     90.5,
+     58.5
+    ],
+    [
+     90.5,
+     70.5
+    ],
+    [
+     19.0,
+     70.5
+    ]
+   ],
+   "bbox": [
+    19.0,
+    58.5,
+    90.5,
+    70.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "청주 원도심 일원",
+   "text_key": "청주원도심일원",
+   "ocr_text": "청주 원도심 일원",
+   "confidence": 0.9311468601226807,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "청주 원도심 일원 (철당간, 망선루, 압각수, 충청도병마절도사영문)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_003",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     19.0,
+     69.5
+    ],
+    [
+     154.5,
+     69.0
+    ],
+    [
+     155.0,
+     79.5
+    ],
+    [
+     19.0,
+     80.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    69.0,
+    155.0,
+    80.0
+   ],
+   "height": 10.51,
+   "small_text": false,
+   "text": "(철당간, 망선루, 압각수, 충청도병마절도사영문)",
+   "text_key": "철당간망선루압각수충청도병마절도사영문",
+   "ocr_text": "(철당간,양선루,압각수,총청도병마절도사영문)",
+   "confidence": 0.8299190402030945,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "청주 원도심 일원 (철당간, 망선루, 압각수, 충청도병마절도사영문)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_004",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     188.0,
+     417.0
+    ],
+    [
+     275.0,
+     417.0
+    ],
+    [
+     275.0,
+     434.5
+    ],
+    [
+     188.0,
+     434.5
+    ]
+   ],
+   "bbox": [
+    188.0,
+    417.0,
+    275.0,
+    434.5
+   ],
+   "height": 17.5,
+   "small_text": false,
+   "text": "2026 국가유산",
+   "text_key": "2026국가유산",
+   "ocr_text": "2026 국가유산",
+   "confidence": 0.9388462901115417,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2174,
+   "gold_value": "2026 국가유산 미디어아트 청주 용두사지 철당간 등",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_005",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     189.0,
+     455.5
+    ],
+    [
+     265.0,
+     455.5
+    ],
+    [
+     265.0,
+     466.0
+    ],
+    [
+     189.0,
+     466.0
+    ]
+   ],
+   "bbox": [
+    189.0,
+    455.5,
+    265.0,
+    466.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "청주 용두사지 철당간 등",
+   "text_key": "청주용두사지철당간등",
+   "ocr_text": "청주 용두사지 철당간 등",
+   "confidence": 0.8903986811637878,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2174,
+   "gold_value": "2026 국가유산 미디어아트 청주 용두사지 철당간 등",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_006",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     179.5,
+     479.0
+    ],
+    [
+     268.0,
+     479.0
+    ],
+    [
+     268.0,
+     502.0
+    ],
+    [
+     179.5,
+     502.0
+    ]
+   ],
+   "bbox": [
+    179.5,
+    479.0,
+    268.0,
+    502.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "빛으로 여는",
+   "text_key": "빛으로여는",
+   "ocr_text": "빛으로 여는",
+   "confidence": 0.9569854736328125,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "빛으로 여는 청주의 보물",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_007",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     101.0,
+     497.5
+    ],
+    [
+     338.5,
+     494.5
+    ],
+    [
+     339.5,
+     564.5
+    ],
+    [
+     102.0,
+     567.5
+    ]
+   ],
+   "bbox": [
+    101.0,
+    494.5,
+    339.5,
+    567.5
+   ],
+   "height": 70.01,
+   "small_text": false,
+   "text": "청주의 보물",
+   "text_key": "청주의보물",
+   "ocr_text": "청주의보물",
+   "confidence": 0.9995759725570679,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "빛으로 여는 청주의 보물",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_008",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     81.5,
+     591.5
+    ],
+    [
+     121.5,
+     591.5
+    ],
+    [
+     121.5,
+     603.5
+    ],
+    [
+     81.5,
+     603.5
+    ]
+   ],
+   "bbox": [
+    81.5,
+    591.5,
+    121.5,
+    603.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유산청",
+   "confidence": 0.9541395902633667,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "국가유산청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_009",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     147.0,
+     590.0
+    ],
+    [
+     178.0,
+     588.5
+    ],
+    [
+     178.5,
+     601.0
+    ],
+    [
+     147.5,
+     602.5
+    ]
+   ],
+   "bbox": [
+    147.0,
+    588.5,
+    178.5,
+    602.5
+   ],
+   "height": 12.51,
+   "small_text": false,
+   "text": "충청북도",
+   "text_key": "충청북도",
+   "ocr_text": "충청북도",
+   "confidence": 0.6422673463821411,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "충청북도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.padd_rgb_2x_010",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     192.5,
+     589.5
+    ],
+    [
+     214.5,
+     589.5
+    ],
+    [
+     214.5,
+     599.0
+    ],
+    [
+     192.5,
+     599.0
+    ]
+   ],
+   "bbox": [
+    192.5,
+    589.5,
+    214.5,
+    599.0
+   ],
+   "height": 9.5,
+   "small_text": true,
+   "text": "청주시",
+   "text_key": "청주시",
+   "ocr_text": "청주시",
+   "confidence": 0.9979972243309021,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "청주시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

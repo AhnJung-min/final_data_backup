@@ -1,0 +1,504 @@
+{
+ "case_id": "r2-007",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "r2-007.padd_rgb_1x_000",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     19.0,
+     15.0
+    ],
+    [
+     79.0,
+     15.0
+    ],
+    [
+     79.0,
+     28.0
+    ],
+    [
+     19.0,
+     28.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    15.0,
+    79.0,
+    28.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "©국가유산청",
+   "confidence": 0.9191239476203918,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "국가유산청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_001",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     86.0,
+     15.0
+    ],
+    [
+     242.0,
+     15.0
+    ],
+    [
+     242.0,
+     28.0
+    ],
+    [
+     86.0,
+     28.0
+    ]
+   ],
+   "bbox": [
+    86.0,
+    15.0,
+    242.0,
+    28.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "대전광역시",
+   "text_key": "대전광역시",
+   "ocr_text": "대전광역시  대전광역시중구",
+   "confidence": 0.9320679903030396,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_003",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     128.0,
+     92.0
+    ],
+    [
+     299.0,
+     90.0
+    ],
+    [
+     300.0,
+     111.0
+    ],
+    [
+     129.0,
+     113.0
+    ]
+   ],
+   "bbox": [
+    128.0,
+    90.0,
+    300.0,
+    113.0
+   ],
+   "height": 21.02,
+   "small_text": false,
+   "text": "2026 국가유산 야행",
+   "text_key": "2026국가유산야행",
+   "ocr_text": "2026 국가유산 야행",
+   "confidence": 0.9842884540557861,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "2026 국가유산 야행 근대 도시 대전 중구 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_004",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     126.0,
+     118.0
+    ],
+    [
+     303.0,
+     118.0
+    ],
+    [
+     303.0,
+     162.0
+    ],
+    [
+     126.0,
+     162.0
+    ]
+   ],
+   "bbox": [
+    126.0,
+    118.0,
+    303.0,
+    162.0
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "근대 도시",
+   "text_key": "근대도시",
+   "ocr_text": "근대 도시",
+   "confidence": 0.9565203785896301,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "2026 국가유산 야행 근대 도시 대전 중구 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_005",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     125.0,
+     163.0
+    ],
+    [
+     307.0,
+     163.0
+    ],
+    [
+     307.0,
+     211.0
+    ],
+    [
+     125.0,
+     211.0
+    ]
+   ],
+   "bbox": [
+    125.0,
+    163.0,
+    307.0,
+    211.0
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "대전 중구",
+   "text_key": "대전중구",
+   "ocr_text": "대전 중구",
+   "confidence": 0.94384765625,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "2026 국가유산 야행 근대 도시 대전 중구 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_007",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     222.0,
+     213.0
+    ],
+    [
+     345.0,
+     213.0
+    ],
+    [
+     345.0,
+     233.0
+    ],
+    [
+     222.0,
+     233.0
+    ]
+   ],
+   "bbox": [
+    222.0,
+    213.0,
+    345.0,
+    233.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "9. 11.(금) ~ 13.(일)",
+   "text_key": "911금13일",
+   "ocr_text": "9.11.(금)~13.(일)",
+   "confidence": 0.9962807297706604,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 11.(금) ~ 13.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_008",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     222.0,
+     235.0
+    ],
+    [
+     328.0,
+     235.0
+    ],
+    [
+     328.0,
+     255.0
+    ],
+    [
+     222.0,
+     255.0
+    ]
+   ],
+   "bbox": [
+    222.0,
+    235.0,
+    328.0,
+    255.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "18:00 ~ 22:00",
+   "text_key": "18002200",
+   "ocr_text": "18:00~22:00",
+   "confidence": 0.9985330700874329,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "18:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_009",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     178.0,
+     265.0
+    ],
+    [
+     254.0,
+     265.0
+    ],
+    [
+     254.0,
+     286.0
+    ],
+    [
+     178.0,
+     286.0
+    ]
+   ],
+   "bbox": [
+    178.0,
+    265.0,
+    254.0,
+    286.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "우리들공원",
+   "text_key": "우리들공원",
+   "ocr_text": "우리들공원",
+   "confidence": 0.9247170686721802,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "우리들공원 중구 원도심 국가유산 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-007.padd_rgb_1x_010",
+   "case_id": "r2-007",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     149.0,
+     288.0
+    ],
+    [
+     280.0,
+     288.0
+    ],
+    [
+     280.0,
+     302.0
+    ],
+    [
+     149.0,
+     302.0
+    ]
+   ],
+   "bbox": [
+    149.0,
+    288.0,
+    280.0,
+    302.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "중구 원도심 국가유산 일원",
+   "text_key": "중구원도심국가유산일원",
+   "ocr_text": "중구원도심국가유산일원",
+   "confidence": 0.993537187576294,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "우리들공원 중구 원도심 국가유산 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

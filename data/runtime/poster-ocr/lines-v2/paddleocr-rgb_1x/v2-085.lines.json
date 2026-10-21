@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-085",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 43,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-085.padd_rgb_1x_000",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     39.0,
+     16.0
+    ],
+    [
+     113.0,
+     21.0
+    ],
+    [
+     112.0,
+     35.0
+    ],
+    [
+     38.0,
+     30.0
+    ]
+   ],
+   "bbox": [
+    38.0,
+    16.0,
+    113.0,
+    35.0
+   ],
+   "height": 14.04,
+   "small_text": false,
+   "text": "26th",
+   "text_key": "26th",
+   "ocr_text": "26h",
+   "confidence": 0.8127829432487488,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "26th",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.padd_rgb_1x_012",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     274.0,
+     327.0
+    ],
+    [
+     352.0,
+     327.0
+    ],
+    [
+     352.0,
+     344.0
+    ],
+    [
+     274.0,
+     344.0
+    ]
+   ],
+   "bbox": [
+    274.0,
+    327.0,
+    352.0,
+    344.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "2026.10.3 -",
+   "text_key": "2026103",
+   "ocr_text": "2026.10.3-",
+   "confidence": 0.9778718948364258,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.3 - 2026.10.11",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.padd_rgb_1x_013",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     273.0,
+     346.0
+    ],
+    [
+     354.0,
+     346.0
+    ],
+    [
+     354.0,
+     362.0
+    ],
+    [
+     273.0,
+     362.0
+    ]
+   ],
+   "bbox": [
+    273.0,
+    346.0,
+    354.0,
+    362.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "2026.10.11",
+   "text_key": "20261011",
+   "ocr_text": "2026.10.11",
+   "confidence": 0.9989441633224487,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.3 - 2026.10.11",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.padd_rgb_1x_014",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     272.0,
+     363.0
+    ],
+    [
+     324.0,
+     363.0
+    ],
+    [
+     324.0,
+     377.0
+    ],
+    [
+     272.0,
+     377.0
+    ]
+   ],
+   "bbox": [
+    272.0,
+    363.0,
+    324.0,
+    377.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "강화 전등사",
+   "text_key": "강화전등사",
+   "ocr_text": "강화전등사",
+   "confidence": 0.8432999849319458,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강화 전등사",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.padd_rgb_1x_019",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     273.0,
+     433.0
+    ],
+    [
+     316.0,
+     433.0
+    ],
+    [
+     316.0,
+     443.0
+    ],
+    [
+     273.0,
+     443.0
+    ]
+   ],
+   "bbox": [
+    273.0,
+    433.0,
+    316.0,
+    443.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "현대작가 '길'展",
+   "text_key": "현대작가길展",
+   "ocr_text": "현대작가 길",
+   "confidence": 0.5951143503189087,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "현대작가 '길'展",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.padd_rgb_1x_034",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_034"
+   },
+   "polygon": [
+    [
+     153.0,
+     515.0
+    ],
+    [
+     231.0,
+     515.0
+    ],
+    [
+     231.0,
+     525.0
+    ],
+    [
+     153.0,
+     525.0
+    ]
+   ],
+   "bbox": [
+    153.0,
+    515.0,
+    231.0,
+    525.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "영산대재",
+   "text_key": "영산대재",
+   "ocr_text": "13:00국의회전영신대재",
+   "confidence": 0.7198958992958069,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "영산대재",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.padd_rgb_1x_035",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_035"
+   },
+   "polygon": [
+    [
+     272.0,
+     514.0
+    ],
+    [
+     304.0,
+     514.0
+    ],
+    [
+     304.0,
+     524.0
+    ],
+    [
+     272.0,
+     524.0
+    ]
+   ],
+   "bbox": [
+    272.0,
+    514.0,
+    304.0,
+    524.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "먹거리 장터",
+   "text_key": "먹거리장터",
+   "ocr_text": "먹거리장터",
+   "confidence": 0.7028554677963257,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "먹거리 장터",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

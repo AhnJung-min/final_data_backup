@@ -1,0 +1,213 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-2833c34f0bcc",
+ "image": {
+  "sha256": "2833c34f0bcc3448242e9b0a52df1a031db278510d43250b4a875b8bc25e97a3",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "-(일),4일간",
+  "official": "(일),4일간",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_005"
+   ],
+   "bbox": [
+    84.0,
+    89.0,
+    160.0,
+    112.0
+   ],
+   "confidence": 0.90364
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제20회",
+  "number": 20,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    206.0,
+    11.0,
+    349.0,
+    81.0
+   ],
+   "confidence": 0.97884
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001"
+   ],
+   "bbox": [
+    16.0,
+    21.0,
+    138.0,
+    48.0
+   ],
+   "confidence": 0.97327
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "제20회 2026. 9.10.(목)~ 9.13.(",
+  "start": {
+   "iso": "2026-09-10",
+   "year": 2026,
+   "month": 9,
+   "day": 10,
+   "weekday": "thu",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": "4일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001",
+    "rapi_product_002",
+    "rapi_product_004"
+   ],
+   "bbox": [
+    15.0,
+    21.0,
+    138.0,
+    113.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "장수읍의암공원및 누리파크일원",
+  "items": [
+   "장수읍의암공원",
+   "누리파크일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_007",
+    "rapi_product_008"
+   ],
+   "bbox": [
+    19.0,
+    114.0,
+    126.0,
+    151.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

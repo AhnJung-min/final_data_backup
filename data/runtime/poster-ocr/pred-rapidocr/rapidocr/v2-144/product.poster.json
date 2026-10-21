@@ -1,0 +1,246 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-12be8f9df3ac",
+ "image": {
+  "sha256": "12be8f9df3ac90cdc40806d99e37ab79aa50398bfec0c39a65edd3697a83824a",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:44+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "정선야행",
+  "official": "정선야행",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_007"
+   ],
+   "bbox": [
+    105.0,
+    176.0,
+    336.0,
+    250.0
+   ],
+   "confidence": 0.99966
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    66.0,
+    362.0,
+    377.0,
+    388.0
+   ],
+   "confidence": 0.96133
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.16.(금) -10.18.(일)",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [
+   {
+    "raw": "17:00-23:00",
+    "start": "17:00",
+    "end": "23:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    66.0,
+    362.0,
+    377.0,
+    388.0
+   ],
+   "confidence": 0.96133
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "아리광장 (정선읍행정복지센터 뒷편 주차장)",
+  "items": [
+   "아리광장 (정선읍행정복지센터 뒷편 주차장)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_014",
+    "rapi_product_015"
+   ],
+   "bbox": [
+    96.0,
+    466.0,
+    346.0,
+    509.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "정선군관광협의회",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_024"
+     ],
+     "bbox": [
+      336.0,
+      591.0,
+      424.0,
+      607.0
+     ],
+     "confidence": 0.98226
+    }
+   },
+   {
+    "name": "국가유산청",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_020"
+     ],
+     "bbox": [
+      35.0,
+      592.0,
+      79.0,
+      607.0
+     ],
+     "confidence": 0.9816
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

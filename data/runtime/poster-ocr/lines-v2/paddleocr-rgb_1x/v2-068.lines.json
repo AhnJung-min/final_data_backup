@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-068",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-068.padd_rgb_1x_000",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     19.0,
+     15.0
+    ],
+    [
+     78.0,
+     15.0
+    ],
+    [
+     78.0,
+     31.0
+    ],
+    [
+     19.0,
+     31.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    15.0,
+    78.0,
+    31.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "고양특례시",
+   "text_key": "고양특례시",
+   "ocr_text": "고양특례시",
+   "confidence": 0.959996223449707,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고양특례시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_1x_001",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     344.0,
+     15.0
+    ],
+    [
+     432.0,
+     15.0
+    ],
+    [
+     432.0,
+     27.0
+    ],
+    [
+     344.0,
+     27.0
+    ]
+   ],
+   "bbox": [
+    344.0,
+    15.0,
+    432.0,
+    27.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "고양국제박람회재단",
+   "text_key": "고양국제박람회재단",
+   "ocr_text": "유고양국제박랑회재단",
+   "confidence": 0.830085277557373,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "고양국제박람회재단",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_1x_010",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     43.0,
+     245.0
+    ],
+    [
+     222.0,
+     245.0
+    ],
+    [
+     222.0,
+     271.0
+    ],
+    [
+     43.0,
+     271.0
+    ]
+   ],
+   "bbox": [
+    43.0,
+    245.0,
+    222.0,
+    271.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "10.01.목 ~ 10.11.일",
+   "text_key": "1001목1011일",
+   "ocr_text": "10.01.~10.11.",
+   "confidence": 0.9971762299537659,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "10.01.목 ~ 10.11.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-068.padd_rgb_1x_011",
+   "case_id": "v2-068",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     45.0,
+     275.0
+    ],
+    [
+     215.0,
+     275.0
+    ],
+    [
+     215.0,
+     295.0
+    ],
+    [
+     45.0,
+     295.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    275.0,
+    215.0,
+    295.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "일산호수공원 주제광장 일원",
+   "text_key": "일산호수공원주제광장일원",
+   "ocr_text": "인산호수공원 주제광장 일원",
+   "confidence": 0.8874885439872742,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "일산호수공원 주제광장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

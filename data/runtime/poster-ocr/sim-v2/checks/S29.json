@@ -1,0 +1,551 @@
+{
+ "set": "S29",
+ "checked_at": "2026-10-20T19:59:09+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 57.565,
+  "lines": 54,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 36.601,
+  "lines": 13,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "한빛 가을 책 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "한빛 / 가을 책 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "한빛",
+     "confidence": 0.9995,
+     "bbox": [
+      334.0,
+      132.0,
+      550.0,
+      260.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "가을 책 축제",
+     "confidence": 0.9691,
+     "bbox": [
+      159.0,
+      265.0,
+      721.0,
+      394.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    159.0,
+    132.0,
+    721.0,
+    394.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제13회 한빛 가을 책 축제",
+     "confidence": 0.9955,
+     "bbox": [
+      307.0,
+      674.0,
+      577.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    577.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제13회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제13회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.999,
+     "bbox": [
+      346.0,
+      74.0,
+      433.0,
+      108.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제13회",
+     "confidence": 0.9998,
+     "bbox": [
+      432.0,
+      72.0,
+      537.0,
+      109.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    346.0,
+    72.0,
+    537.0,
+    109.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제13회 한빛 가을 책 축제",
+     "confidence": 0.9955,
+     "bbox": [
+      307.0,
+      674.0,
+      577.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    577.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.10.20.(화) ~10.21.(수)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.10.20.(화)~10.21.(수)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      85.0,
+      813.0,
+      146.0,
+      852.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "2026.10.20.(화)~10.21.(수)",
+     "confidence": 0.9995,
+     "bbox": [
+      195.0,
+      815.0,
+      615.0,
+      852.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    85.0,
+    813.0,
+    615.0,
+    852.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "2026.10.20.(화) ~10.21.(수)",
+     "confidence": 0.9853,
+     "bbox": [
+      309.0,
+      733.0,
+      623.0,
+      761.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    623.0,
+    765.0
+   ],
+   "method": "포스터 10.20(화) ~ 10.21(수)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~18:00",
+   "status": "fail",
+   "reason": "운영 시간이 기준(10:00 ~ 18:00)과 다릅니다.",
+   "observed": "시간 10:00~19:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "시간",
+     "confidence": 0.9999,
+     "bbox": [
+      85.0,
+      886.0,
+      147.0,
+      926.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "10:00~19:00",
+     "confidence": 0.9995,
+     "bbox": [
+      199.0,
+      892.0,
+      396.0,
+      923.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    85.0,
+    886.0,
+    396.0,
+    926.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_029",
+     "text": "10:00~18:00",
+     "confidence": 0.9976,
+     "bbox": [
+      307.0,
+      791.0,
+      459.0,
+      819.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": "시각 비교"
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "한빛종합운동장",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "한빛종합운동장",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "장소",
+     "confidence": 0.9988,
+     "bbox": [
+      85.0,
+      962.0,
+      148.0,
+      1000.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "한빛종합운동장",
+     "confidence": 0.9998,
+     "bbox": [
+      200.0,
+      967.0,
+      403.0,
+      998.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    85.0,
+    962.0,
+    403.0,
+    1000.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "한빛종합운동장",
+     "confidence": 0.9996,
+     "bbox": [
+      309.0,
+      850.0,
+      473.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    473.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "한빛시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "한빛시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "주최 한빛시 ㅣ 주관 한빛문화원 ㅣ 문의 031-000-7691",
+     "confidence": 0.9476,
+     "bbox": [
+      178.0,
+      1197.0,
+      707.0,
+      1221.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1197.0,
+    707.0,
+    1221.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "한빛시",
+     "confidence": 0.9987,
+     "bbox": [
+      306.0,
+      903.0,
+      385.0,
+      937.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    902.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "한빛문화원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "한빛문화원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "주최 한빛시 ㅣ 주관 한빛문화원 ㅣ 문의 031-000-7691",
+     "confidence": 0.9476,
+     "bbox": [
+      178.0,
+      1197.0,
+      707.0,
+      1221.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1197.0,
+    707.0,
+    1221.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "한빛문화원",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      963.0,
+      429.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    429.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "031-000-7691",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "031-000-7691",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "주최 한빛시 ㅣ 주관 한빛문화원 ㅣ 문의 031-000-7691",
+     "confidence": 0.9476,
+     "bbox": [
+      178.0,
+      1197.0,
+      707.0,
+      1221.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    178.0,
+    1197.0,
+    707.0,
+    1221.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "031-000-7691",
+     "confidence": 0.9996,
+     "bbox": [
+      307.0,
+      1025.0,
+      459.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    459.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "책장을 넘기는 가을",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "책장을 넘기는 가을",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "책장을 넘기는 가을",
+     "confidence": 0.9805,
+     "bbox": [
+      307.0,
+      411.0,
+      578.0,
+      455.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    307.0,
+    411.0,
+    578.0,
+    455.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_040",
+     "text": "책장을 넘기는 가을",
+     "confidence": 0.9855,
+     "bbox": [
+      310.0,
+      1081.0,
+      512.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    512.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_043",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9617,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 1,
+  "review": 1
+ },
+ "verdict": "fail",
+ "predicted_mismatch": true,
+ "check_seconds": 0.005
+}

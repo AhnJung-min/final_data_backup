@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-043",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-043.easy_rgb_2x_005",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     23.5,
+     175.5
+    ],
+    [
+     144.5,
+     175.5
+    ],
+    [
+     144.5,
+     209.5
+    ],
+    [
+     23.5,
+     209.5
+    ]
+   ],
+   "bbox": [
+    23.5,
+    175.5,
+    144.5,
+    209.5
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "홍삼의 매력에",
+   "text_key": "홍삼의매력에",
+   "ocr_text": "홍삼의 매력에",
+   "confidence": 0.8830592308835669,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "홍삼의 매력에 삼며들다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_007",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     21.0,
+     206.0
+    ],
+    [
+     119.5,
+     206.0
+    ],
+    [
+     119.5,
+     240.5
+    ],
+    [
+     21.0,
+     240.5
+    ]
+   ],
+   "bbox": [
+    21.0,
+    206.0,
+    119.5,
+    240.5
+   ],
+   "height": 34.5,
+   "small_text": false,
+   "text": "삼며들다!",
+   "text_key": "삼며들다",
+   "ocr_text": "삼려들다!",
+   "confidence": 0.4656465410093479,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "홍삼의 매력에 삼며들다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_013",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     15.0,
+     598.0
+    ],
+    [
+     55.0,
+     598.0
+    ],
+    [
+     55.0,
+     613.0
+    ],
+    [
+     15.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    15.0,
+    598.0,
+    55.0,
+    613.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "진안고원",
+   "text_key": "진안고원",
+   "ocr_text": "진안고원",
+   "confidence": 0.8801277961285292,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "진안고원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

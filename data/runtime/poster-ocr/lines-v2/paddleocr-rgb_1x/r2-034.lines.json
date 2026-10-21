@@ -1,0 +1,396 @@
+{
+ "case_id": "r2-034",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-034.padd_rgb_1x_000",
+   "case_id": "r2-034",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     179.0,
+     177.0
+    ],
+    [
+     265.0,
+     177.0
+    ],
+    [
+     265.0,
+     230.0
+    ],
+    [
+     179.0,
+     230.0
+    ]
+   ],
+   "bbox": [
+    179.0,
+    177.0,
+    265.0,
+    230.0
+   ],
+   "height": 53.0,
+   "small_text": false,
+   "text": "목포",
+   "text_key": "목포",
+   "ocr_text": "목포",
+   "confidence": 0.9149322509765625,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "목포 항구축제 2026",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-034.padd_rgb_1x_001",
+   "case_id": "r2-034",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     126.0,
+     214.0
+    ],
+    [
+     242.0,
+     217.0
+    ],
+    [
+     240.0,
+     296.0
+    ],
+    [
+     124.0,
+     293.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    214.0,
+    242.0,
+    296.0
+   ],
+   "height": 79.03,
+   "small_text": false,
+   "text": "항구",
+   "text_key": "항구",
+   "ocr_text": "항구를",
+   "confidence": 0.8382322192192078,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "목포 항구축제 2026",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-034.padd_rgb_1x_004",
+   "case_id": "r2-034",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     166.0,
+     298.0
+    ],
+    [
+     278.0,
+     298.0
+    ],
+    [
+     278.0,
+     336.0
+    ],
+    [
+     166.0,
+     336.0
+    ]
+   ],
+   "bbox": [
+    166.0,
+    298.0,
+    278.0,
+    336.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9991257190704346,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "목포 항구축제 2026",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-034.padd_rgb_1x_005",
+   "case_id": "r2-034",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     174.0,
+     336.0
+    ],
+    [
+     268.0,
+     336.0
+    ],
+    [
+     268.0,
+     353.0
+    ],
+    [
+     174.0,
+     353.0
+    ]
+   ],
+   "bbox": [
+    174.0,
+    336.0,
+    268.0,
+    353.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "10.16-10.18",
+   "text_key": "10161018",
+   "ocr_text": "10.16-10.18",
+   "confidence": 0.9993231296539307,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.16-10.18",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-034.padd_rgb_1x_006",
+   "case_id": "r2-034",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     168.0,
+     359.0
+    ],
+    [
+     275.0,
+     359.0
+    ],
+    [
+     275.0,
+     371.0
+    ],
+    [
+     168.0,
+     371.0
+    ]
+   ],
+   "bbox": [
+    168.0,
+    359.0,
+    275.0,
+    371.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "목포항 및 삼학도 일원",
+   "text_key": "목포항및삼학도일원",
+   "ocr_text": "목포항및 삼학도 일원",
+   "confidence": 0.9021799564361572,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "목포항 및 삼학도 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-034.padd_rgb_1x_007",
+   "case_id": "r2-034",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     68.0,
+     601.0
+    ],
+    [
+     98.0,
+     601.0
+    ],
+    [
+     98.0,
+     611.0
+    ],
+    [
+     68.0,
+     611.0
+    ]
+   ],
+   "bbox": [
+    68.0,
+    601.0,
+    98.0,
+    611.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "목포시",
+   "text_key": "목포시",
+   "ocr_text": "목포시",
+   "confidence": 0.9294535517692566,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "목포시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-034.padd_rgb_1x_008",
+   "case_id": "r2-034",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     125.0,
+     600.0
+    ],
+    [
+     212.0,
+     600.0
+    ],
+    [
+     212.0,
+     612.0
+    ],
+    [
+     125.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    125.0,
+    600.0,
+    212.0,
+    612.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "목포시축제추진위원회",
+   "text_key": "목포시축제추진위원회",
+   "ocr_text": "목포시축제추진위원회",
+   "confidence": 0.9834338426589966,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "목포시축제추진위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

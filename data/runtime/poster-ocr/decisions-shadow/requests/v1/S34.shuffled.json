@@ -1,0 +1,1459 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 6099,
+  "input_tokens": 9380,
+  "cost_usd": 0.000938
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S34",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S34.png",
+    "sha256": "a73bdf1d22f1b7a91e364a4d267677863b507da5a9eb3db67d38bb5e81c57393",
+    "bytes": 119779,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S34.png",
+    "sha256": "52a10ede053a2fbd544d94c36680032b7683d918ae76fabf2d056479f58f1b0e",
+    "bytes": 52352,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "누리 강변 재즈 페스티벌",
+     "doc_variants": []
+    },
+    "doc_raw": "제20회 누리 강변 재즈 페스티벌"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제20회",
+     "number": 20
+    },
+    "doc_raw": "제20회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.9.17.(목) ~ 9.19.(토)",
+     "points": [
+      [
+       2026,
+       9,
+       17,
+       "목"
+      ],
+      [
+       2026,
+       9,
+       19,
+       "토"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.9.17.(목) ~ 9.19.(토)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "10:00~18:00"
+    },
+    "doc_raw": "10:00~18:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "누리강변공원 일원"
+    },
+    "doc_raw": "누리강변공원 일원"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "누리군"
+    },
+    "doc_raw": "누리군"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "누리관광재단"
+    },
+    "doc_raw": "누리관광재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "043-000-3352"
+    },
+    "doc_raw": "043-000-3352"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "강바람에 실려 오는 선율"
+    },
+    "doc_raw": "강바람에 실려 오는 선율"
+   }
+  },
+  "rows": [
+   {
+    "value": "L748",
+    "index": 0,
+    "text": "2026 제20회",
+    "conf": 0.9543,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026 제20회",
+      "confidence": 0.9542958736419678,
+      "bbox_xyxy": [
+       344.0,
+       70.0,
+       537.0,
+       111.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L409",
+    "index": 1,
+    "text": "누리",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "누리",
+      "confidence": 0.9997140169143677,
+      "bbox_xyxy": [
+       347.0,
+       130.0,
+       536.0,
+       247.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L767",
+    "index": 2,
+    "text": "강변 재즈 페스티벌",
+    "conf": 0.988,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "강변",
+      "confidence": 0.9997924566268921,
+      "bbox_xyxy": [
+       53.0,
+       250.0,
+       245.0,
+       367.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "재즈",
+      "confidence": 0.9998452663421631,
+      "bbox_xyxy": [
+       254.0,
+       249.0,
+       449.0,
+       366.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "페스티벌",
+      "confidence": 0.9880339503288269,
+      "bbox_xyxy": [
+       459.0,
+       253.0,
+       826.0,
+       364.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L843",
+    "index": 3,
+    "text": "강바람에 실려 오는 선율",
+    "conf": 0.9991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "강바람에",
+      "confidence": 0.999946653842926,
+      "bbox_xyxy": [
+       272.0,
+       387.0,
+       400.0,
+       429.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "실려",
+      "confidence": 0.9990549683570862,
+      "bbox_xyxy": [
+       405.0,
+       386.0,
+       473.0,
+       429.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "오는",
+      "confidence": 0.999959409236908,
+      "bbox_xyxy": [
+       475.0,
+       389.0,
+       542.0,
+       427.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "선율",
+      "confidence": 0.9996026754379272,
+      "bbox_xyxy": [
+       546.0,
+       388.0,
+       612.0,
+       427.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L817",
+    "index": 4,
+    "text": "일시 2026.9.17.(목)~9.19.(토)",
+    "conf": 0.9992,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "일시",
+      "confidence": 0.9999382495880127,
+      "bbox_xyxy": [
+       87.0,
+       816.0,
+       143.0,
+       850.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "2026.9.17.(목)~9.19.(토)",
+      "confidence": 0.9992061257362366,
+      "bbox_xyxy": [
+       196.0,
+       817.0,
+       579.0,
+       851.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L626",
+    "index": 5,
+    "text": "시간 10:00~18:00",
+    "conf": 0.998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "시간",
+      "confidence": 0.9998923540115356,
+      "bbox_xyxy": [
+       86.0,
+       888.0,
+       144.0,
+       924.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "10:00~18:00",
+      "confidence": 0.9979730248451233,
+      "bbox_xyxy": [
+       199.0,
+       892.0,
+       396.0,
+       923.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L305",
+    "index": 6,
+    "text": "장소 누리강변공원 일원",
+    "conf": 0.9991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "장소",
+      "confidence": 0.9996669292449951,
+      "bbox_xyxy": [
+       87.0,
+       964.0,
+       145.0,
+       999.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "누리강변공원 일원",
+      "confidence": 0.9991231560707092,
+      "bbox_xyxy": [
+       198.0,
+       965.0,
+       438.0,
+       999.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L392",
+    "index": 7,
+    "text": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다",
+    "conf": 0.9374,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다",
+      "confidence": 0.9374221563339233,
+      "bbox_xyxy": [
+       209.0,
+       1053.0,
+       674.0,
+       1077.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L405",
+    "index": 8,
+    "text": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352",
+    "conf": 0.9375,
+    "records": [
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352",
+      "confidence": 0.9374972581863403,
+      "bbox_xyxy": [
+       168.0,
+       1198.0,
+       716.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제20회 누리 강변 재즈 페스티벌"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.9.17.(목) ~ 9.19.(토)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "누리강변공원 일원"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "누리관광재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "043-000-3352"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "강바람에 실려 오는 선율"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "누리 강변 재즈 페스티벌"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제20회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.9.17.(목) ~ 9.19.(토)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "누리강변공원 일원"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "누리관광재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "043-000-3352"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "강바람에 실려 오는 선율"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L405",
+    "L767",
+    "L626",
+    "L409",
+    "L817",
+    "L305",
+    "L843",
+    "L748",
+    "L392",
+    "none"
+   ],
+   "b_line_edition": [
+    "L626",
+    "L405",
+    "L817",
+    "L409",
+    "L748",
+    "L767",
+    "L305",
+    "L392",
+    "L843",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L405",
+    "L843",
+    "L409",
+    "L748",
+    "L392",
+    "L305",
+    "L817",
+    "L626",
+    "L767",
+    "none"
+   ],
+   "b_line_time": [
+    "L748",
+    "L817",
+    "L409",
+    "L305",
+    "L392",
+    "L767",
+    "L843",
+    "L405",
+    "L626",
+    "none"
+   ],
+   "b_line_venue": [
+    "L843",
+    "L817",
+    "L405",
+    "L305",
+    "L767",
+    "L409",
+    "L392",
+    "L748",
+    "L626",
+    "none"
+   ],
+   "b_line_host": [
+    "L626",
+    "L405",
+    "L817",
+    "L392",
+    "L767",
+    "L843",
+    "L409",
+    "L748",
+    "L305",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L843",
+    "L767",
+    "L392",
+    "L305",
+    "L817",
+    "L409",
+    "L405",
+    "L626",
+    "L748",
+    "none"
+   ],
+   "b_line_contact": [
+    "L626",
+    "L767",
+    "L409",
+    "L748",
+    "L405",
+    "L305",
+    "L392",
+    "L817",
+    "L843",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L409",
+    "L405",
+    "L392",
+    "L817",
+    "L626",
+    "L305",
+    "L767",
+    "L748",
+    "L843",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 119,779 bytes, sha256 a73bdf1d22f1b7a9…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 52,352 bytes, sha256 52a10ede053a2fbd…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제20회 누리 강변 재즈 페스티벌'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.9.17.(목) ~ 9.19.(토)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '10:00~18:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '누리강변공원 일원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '누리군'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '누리관광재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '043-000-3352'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '강바람에 실려 오는 선율'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L409",
+      "description": "누리"
+     },
+     {
+      "value": "L405",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3352"
+     },
+     {
+      "value": "L392",
+      "description": "재즈 빅밴드 공연|강변 피크닉존 | 버스킹 무다"
+     },
+     {
+      "value": "L817",
+      "description": "일시 2026.9.17.(목)~9.19.(토)"
+     },
+     {
+      "value": "L626",
+      "description": "시간 10:00~18:00"
+     },
+     {
+      "value": "L305",
+      "description": "장소 누리강변공원 일원"
+     },
+     {
+      "value": "L767",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L748",
+      "description": "2026 제20회"
+     },
+     {
+      "value": "L843",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '누리 강변 재즈 페스티벌'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제20회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.9.17.(목) ~ 9.19.(토)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '10:00~18:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '누리강변공원 일원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '누리군'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '누리관광재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '043-000-3352'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '강바람에 실려 오는 선율'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

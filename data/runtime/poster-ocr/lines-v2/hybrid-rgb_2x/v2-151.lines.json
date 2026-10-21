@@ -1,0 +1,125 @@
+{
+ "case_id": "v2-151",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 448,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-151.easy_rgb_2x_010",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     49.5,
+     583.5
+    ],
+    [
+     112.5,
+     583.5
+    ],
+    [
+     112.5,
+     613.5
+    ],
+    [
+     49.5,
+     613.5
+    ]
+   ],
+   "bbox": [
+    49.5,
+    583.5,
+    112.5,
+    613.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.999968409538269,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026.10.17.토-10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-151.easy_rgb_2x_011",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     113.5,
+     583.5
+    ],
+    [
+     270.5,
+     583.5
+    ],
+    [
+     270.5,
+     613.5
+    ],
+    [
+     113.5,
+     613.5
+    ]
+   ],
+   "bbox": [
+    113.5,
+    583.5,
+    270.5,
+    613.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "10.17.토-10.25.",
+   "text_key": "1017토1025",
+   "ocr_text": "10.17.-10.25.",
+   "confidence": 0.9814106225967407,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026.10.17.토-10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

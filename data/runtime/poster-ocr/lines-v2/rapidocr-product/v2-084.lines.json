@@ -1,0 +1,560 @@
+{
+ "case_id": "v2-084",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-084.rapi_product_000",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     25.0,
+     38.0
+    ],
+    [
+     48.0,
+     38.0
+    ],
+    [
+     48.0,
+     234.0
+    ],
+    [
+     25.0,
+     234.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    38.0,
+    48.0,
+    234.0
+   ],
+   "height": 196.0,
+   "small_text": false,
+   "text": "대전 효문화 뿌리 축제",
+   "text_key": "대전효문화뿌리축제",
+   "ocr_text": "대전효문화뿌리축제",
+   "confidence": 0.99624,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전 효문화 뿌리 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_001",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     341.0,
+     24.0
+    ],
+    [
+     369.0,
+     24.0
+    ],
+    [
+     369.0,
+     37.0
+    ],
+    [
+     341.0,
+     37.0
+    ]
+   ],
+   "bbox": [
+    341.0,
+    24.0,
+    369.0,
+    37.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "주민과",
+   "text_key": "주민과",
+   "ocr_text": "주민과",
+   "confidence": 0.97761,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "주민과 함께 주민속으로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_002",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     374.0,
+     32.0
+    ],
+    [
+     420.0,
+     30.0
+    ],
+    [
+     421.0,
+     47.0
+    ],
+    [
+     375.0,
+     49.0
+    ]
+   ],
+   "bbox": [
+    374.0,
+    30.0,
+    421.0,
+    49.0
+   ],
+   "height": 17.03,
+   "small_text": false,
+   "text": "주민속으로",
+   "text_key": "주민속으로",
+   "ocr_text": "주민솔으로",
+   "confidence": 0.95016,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "주민과 함께 주민속으로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_004",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     110.0,
+     70.0
+    ],
+    [
+     248.0,
+     70.0
+    ],
+    [
+     248.0,
+     103.0
+    ],
+    [
+     110.0,
+     103.0
+    ]
+   ],
+   "bbox": [
+    110.0,
+    70.0,
+    248.0,
+    103.0
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "제17회 대전",
+   "text_key": "제17회대전",
+   "ocr_text": "제17회 대전",
+   "confidence": 0.99035,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "제17회 대전 효문화 뿌리 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_005",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     374.0,
+     110.0
+    ],
+    [
+     403.0,
+     110.0
+    ],
+    [
+     404.0,
+     405.0
+    ],
+    [
+     376.0,
+     405.0
+    ]
+   ],
+   "bbox": [
+    374.0,
+    110.0,
+    404.0,
+    405.0
+   ],
+   "height": 295.0,
+   "small_text": false,
+   "text": "10. 2.(금)~10. 4.(일)",
+   "text_key": "102금104일",
+   "ocr_text": "10.2.[금]~10.4.[일)| 뿌리공원일원",
+   "confidence": 0.88575,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 2.(금)~10. 4.(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_008",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     23.0,
+     323.0
+    ],
+    [
+     49.0,
+     323.0
+    ],
+    [
+     49.0,
+     562.0
+    ],
+    [
+     23.0,
+     562.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    323.0,
+    49.0,
+    562.0
+   ],
+   "height": 239.0,
+   "small_text": false,
+   "text": "함께 내딛는 새로운 뿌리",
+   "text_key": "함께내딛는새로운뿌리",
+   "ocr_text": "함께 내딛는새로운뿌리",
+   "confidence": 0.90946,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "함께 내딛는 새로운 뿌리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_009",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_009"
+   },
+   "polygon": [
+    [
+     118.0,
+     585.0
+    ],
+    [
+     175.0,
+     585.0
+    ],
+    [
+     175.0,
+     597.0
+    ],
+    [
+     118.0,
+     597.0
+    ]
+   ],
+   "bbox": [
+    118.0,
+    585.0,
+    175.0,
+    597.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "대전광역시 중구",
+   "text_key": "대전광역시중구",
+   "ocr_text": "대전광역시 중구",
+   "confidence": 0.88077,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_011",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_011"
+   },
+   "polygon": [
+    [
+     198.0,
+     582.0
+    ],
+    [
+     267.0,
+     582.0
+    ],
+    [
+     267.0,
+     594.0
+    ],
+    [
+     198.0,
+     594.0
+    ]
+   ],
+   "bbox": [
+    198.0,
+    582.0,
+    267.0,
+    594.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "전효문화뿌리축제",
+   "text_key": "전효문화뿌리축제",
+   "ocr_text": "대진문화뿌리축제",
+   "confidence": 0.86532,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2143,
+   "gold_value": "대전효문화뿌리축제 추진위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_012",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_012"
+   },
+   "polygon": [
+    [
+     199.0,
+     591.0
+    ],
+    [
+     238.0,
+     591.0
+    ],
+    [
+     238.0,
+     603.0
+    ],
+    [
+     199.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    199.0,
+    591.0,
+    238.0,
+    603.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "추진위원",
+   "text_key": "추진위원",
+   "ocr_text": "추진위원호",
+   "confidence": 0.92889,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2143,
+   "gold_value": "대전효문화뿌리축제 추진위원회",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-084.rapi_product_013",
+   "case_id": "v2-084",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_013"
+   },
+   "polygon": [
+    [
+     299.0,
+     583.0
+    ],
+    [
+     342.0,
+     583.0
+    ],
+    [
+     342.0,
+     593.0
+    ],
+    [
+     299.0,
+     593.0
+    ]
+   ],
+   "bbox": [
+    299.0,
+    583.0,
+    342.0,
+    593.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "대전광역시",
+   "text_key": "대전광역시",
+   "ocr_text": "대전광역시",
+   "confidence": 0.99518,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

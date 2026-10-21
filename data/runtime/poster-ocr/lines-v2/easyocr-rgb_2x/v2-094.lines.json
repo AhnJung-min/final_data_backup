@@ -1,0 +1,341 @@
+{
+ "case_id": "v2-094",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-094.easy_rgb_2x_000",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     18.0,
+     24.0
+    ],
+    [
+     77.0,
+     24.0
+    ],
+    [
+     77.0,
+     40.0
+    ],
+    [
+     18.0,
+     40.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    24.0,
+    77.0,
+    40.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "10.03(",
+   "text_key": "1003",
+   "ocr_text": "10.03t",
+   "confidence": 0.28340264259895037,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "10.03(토) - 10.24(토)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.easy_rgb_2x_001",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     84.0,
+     24.0
+    ],
+    [
+     143.0,
+     24.0
+    ],
+    [
+     143.0,
+     40.0
+    ],
+    [
+     84.0,
+     40.0
+    ]
+   ],
+   "bbox": [
+    84.0,
+    24.0,
+    143.0,
+    40.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "10.24(",
+   "text_key": "1024",
+   "ocr_text": "10.2415",
+   "confidence": 0.6663051354302265,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "10.03(토) - 10.24(토)",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.easy_rgb_2x_002",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     18.0,
+     46.0
+    ],
+    [
+     88.0,
+     46.0
+    ],
+    [
+     88.0,
+     58.0
+    ],
+    [
+     18.0,
+     58.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    46.0,
+    88.0,
+    58.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "19:00 - 22:00",
+   "text_key": "19002200",
+   "ocr_text": "1900-2200",
+   "confidence": 0.860413358071707,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "19:00 - 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.easy_rgb_2x_005",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     187.5,
+     415.5
+    ],
+    [
+     277.5,
+     415.5
+    ],
+    [
+     277.5,
+     435.5
+    ],
+    [
+     187.5,
+     435.5
+    ]
+   ],
+   "bbox": [
+    187.5,
+    415.5,
+    277.5,
+    435.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "2026 국가유산",
+   "confidence": 0.9929768609743207,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "국가유산청",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.easy_rgb_2x_008",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     180.0,
+     479.0
+    ],
+    [
+     269.0,
+     479.0
+    ],
+    [
+     269.0,
+     505.0
+    ],
+    [
+     180.0,
+     505.0
+    ]
+   ],
+   "bbox": [
+    180.0,
+    479.0,
+    269.0,
+    505.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "빛으로 여는",
+   "text_key": "빛으로여는",
+   "ocr_text": "빛으로 여는",
+   "confidence": 0.60673622662629,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "빛으로 여는 청주의 보물",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-094.easy_rgb_2x_009",
+   "case_id": "v2-094",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     100.5,
+     495.5
+    ],
+    [
+     340.5,
+     495.5
+    ],
+    [
+     340.5,
+     563.5
+    ],
+    [
+     100.5,
+     563.5
+    ]
+   ],
+   "bbox": [
+    100.5,
+    495.5,
+    340.5,
+    563.5
+   ],
+   "height": 68.0,
+   "small_text": false,
+   "text": "청주의 보물",
+   "text_key": "청주의보물",
+   "ocr_text": "청주의 보물",
+   "confidence": 0.8232826142838137,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "빛으로 여는 청주의 보물",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

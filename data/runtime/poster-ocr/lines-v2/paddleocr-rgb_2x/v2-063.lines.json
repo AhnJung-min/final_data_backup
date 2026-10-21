@@ -1,0 +1,396 @@
+{
+ "case_id": "v2-063",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-063.padd_rgb_2x_001",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     288.0,
+     15.5
+    ],
+    [
+     323.0,
+     15.5
+    ],
+    [
+     323.0,
+     26.0
+    ],
+    [
+     288.0,
+     26.0
+    ]
+   ],
+   "bbox": [
+    288.0,
+    15.5,
+    323.0,
+    26.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "박인환 시인",
+   "text_key": "박인환시인",
+   "ocr_text": "박인한시인",
+   "confidence": 0.7488591074943542,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2143,
+   "gold_value": "박인환 시인 탄생 100주년 기념",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_2x_002",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     322.0,
+     12.0
+    ],
+    [
+     353.5,
+     11.0
+    ],
+    [
+     354.5,
+     31.0
+    ],
+    [
+     323.0,
+     32.5
+    ]
+   ],
+   "bbox": [
+    322.0,
+    11.0,
+    354.5,
+    32.5
+   ],
+   "height": 20.27,
+   "small_text": false,
+   "text": "100",
+   "text_key": "100",
+   "ocr_text": "100",
+   "confidence": 0.9991887211799622,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2143,
+   "gold_value": "박인환 시인 탄생 100주년 기념",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_2x_003",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     352.5,
+     13.0
+    ],
+    [
+     379.0,
+     13.0
+    ],
+    [
+     379.0,
+     22.0
+    ],
+    [
+     352.5,
+     22.0
+    ]
+   ],
+   "bbox": [
+    352.5,
+    13.0,
+    379.0,
+    22.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "주년 기념",
+   "text_key": "주년기념",
+   "ocr_text": "주년기념",
+   "confidence": 0.9547922611236572,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2143,
+   "gold_value": "박인환 시인 탄생 100주년 기념",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_2x_007",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     125.5,
+     210.0
+    ],
+    [
+     317.0,
+     210.0
+    ],
+    [
+     317.0,
+     234.0
+    ],
+    [
+     125.5,
+     234.0
+    ]
+   ],
+   "bbox": [
+    125.5,
+    210.0,
+    317.0,
+    234.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026.9.24.(목) ~ 10.18.(일)",
+   "text_key": "2026924목1018일",
+   "ocr_text": "2026.9.24.(목)~10.18.(일)",
+   "confidence": 0.9859731197357178,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.9.24.(목) ~ 10.18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_2x_008",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     127.5,
+     234.0
+    ],
+    [
+     315.5,
+     234.0
+    ],
+    [
+     315.5,
+     249.0
+    ],
+    [
+     127.5,
+     249.0
+    ]
+   ],
+   "bbox": [
+    127.5,
+    234.0,
+    315.5,
+    249.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "강원특별자치도 인제군 용대 관광지 일원",
+   "text_key": "강원특별자치도인제군용대관광지일원",
+   "ocr_text": "강원특별자치도 인제군 용대 관광지 일원",
+   "confidence": 0.9596201777458191,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강원특별자치도 인제군 용대 관광지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_2x_019",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     212.0,
+     590.0
+    ],
+    [
+     235.5,
+     590.0
+    ],
+    [
+     235.5,
+     601.0
+    ],
+    [
+     212.0,
+     601.0
+    ]
+   ],
+   "bbox": [
+    212.0,
+    590.0,
+    235.5,
+    601.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "인제",
+   "text_key": "인제",
+   "ocr_text": "인제2",
+   "confidence": 0.513427734375,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "인제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-063.padd_rgb_2x_021",
+   "case_id": "v2-063",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     282.0,
+     590.0
+    ],
+    [
+     351.5,
+     591.0
+    ],
+    [
+     351.5,
+     601.5
+    ],
+    [
+     282.0,
+     600.5
+    ]
+   ],
+   "bbox": [
+    282.0,
+    590.0,
+    351.5,
+    601.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "033-460-8900",
+   "text_key": "0334608900",
+   "ocr_text": "E3033-460-8900",
+   "confidence": 0.9122357964515686,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "033-460-8900",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

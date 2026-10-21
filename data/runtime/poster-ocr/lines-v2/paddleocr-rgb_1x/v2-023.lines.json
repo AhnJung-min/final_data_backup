@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-023",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-023.padd_rgb_1x_000",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     9.0,
+     0.0
+    ],
+    [
+     461.0,
+     0.0
+    ],
+    [
+     461.0,
+     106.0
+    ],
+    [
+     9.0,
+     106.0
+    ]
+   ],
+   "bbox": [
+    9.0,
+    0.0,
+    461.0,
+    106.0
+   ],
+   "height": 106.0,
+   "small_text": false,
+   "text": "누구세요?",
+   "text_key": "누구세요",
+   "ocr_text": "누구세요",
+   "confidence": 0.9988884329795837,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "누구세요?",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_1x_002",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     132.0,
+     95.0
+    ],
+    [
+     202.0,
+     319.0
+    ],
+    [
+     175.0,
+     327.0
+    ],
+    [
+     104.0,
+     104.0
+    ]
+   ],
+   "bbox": [
+    104.0,
+    95.0,
+    202.0,
+    327.0
+   ],
+   "height": 28.79,
+   "small_text": false,
+   "text": "2026 서울국제작가축제",
+   "text_key": "2026서울국제작가축제",
+   "ocr_text": "2026서울국제작가축제",
+   "confidence": 0.9969967007637024,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 서울국제작가축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_1x_003",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     62.0,
+     118.0
+    ],
+    [
+     152.0,
+     403.0
+    ],
+    [
+     129.0,
+     411.0
+    ],
+    [
+     39.0,
+     126.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    118.0,
+    152.0,
+    411.0
+   ],
+   "height": 24.35,
+   "small_text": false,
+   "text": "아라아트센터(Ara Art Center)",
+   "text_key": "아라아트센터araartcenter",
+   "ocr_text": "아라아트센터(AraArt Center)",
+   "confidence": 0.9793593287467957,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "아라아트센터(Ara Art Center)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_1x_004",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     84.0,
+     110.0
+    ],
+    [
+     123.0,
+     237.0
+    ],
+    [
+     100.0,
+     244.0
+    ],
+    [
+     60.0,
+     118.0
+    ]
+   ],
+   "bbox": [
+    60.0,
+    110.0,
+    123.0,
+    244.0
+   ],
+   "height": 24.67,
+   "small_text": false,
+   "text": "9. 11. - 9. 16.",
+   "text_key": "911916",
+   "ocr_text": "9.11.-9.16.",
+   "confidence": 0.9755796790122986,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 11. - 9. 16.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_1x_005",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     432.0,
+     297.0
+    ],
+    [
+     448.0,
+     297.0
+    ],
+    [
+     448.0,
+     367.0
+    ],
+    [
+     432.0,
+     367.0
+    ]
+   ],
+   "bbox": [
+    432.0,
+    297.0,
+    448.0,
+    367.0
+   ],
+   "height": 70.0,
+   "small_text": false,
+   "text": "SIWF.OR.KR",
+   "text_key": "siwforkr",
+   "ocr_text": "SIWEOR.KR",
+   "confidence": 0.9833422899246216,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "SIWF.OR.KR",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

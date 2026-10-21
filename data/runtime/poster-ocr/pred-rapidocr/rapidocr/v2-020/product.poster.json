@@ -1,0 +1,211 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-983e18b6610e",
+ "image": {
+  "sha256": "983e18b6610e48671ab8256c24ecb143180725a780591929ef9ac5998e81288a",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:40+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "케미스트릿 강남역 페스티벌",
+  "official": "케미스트릿 강남역 페스티벌",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_008"
+   ],
+   "bbox": [
+    123.0,
+    359.0,
+    318.0,
+    382.0
+   ],
+   "confidence": 0.94284
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003"
+   ],
+   "bbox": [
+    152.0,
+    126.0,
+    284.0,
+    185.0
+   ],
+   "confidence": 0.98673
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "09.05.SAT 09.06. SUN",
+  "start": {
+   "iso": "2026-09-05",
+   "year": 2026,
+   "month": 9,
+   "day": 5,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-06",
+   "year": 2026,
+   "month": 9,
+   "day": 6,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [
+   {
+    "raw": "19:00-24:00",
+    "start": "19:00",
+    "end": "24:00",
+    "applies_to": null
+   },
+   {
+    "raw": "08:00-21:00",
+    "start": "08:00",
+    "end": "21:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010",
+    "rapi_product_011"
+   ],
+   "bbox": [
+    125.0,
+    392.0,
+    318.0,
+    411.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "유케미스트릿 강남역 상권 일대",
+  "items": [
+   "유케미스트릿 강남역 상권 일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_017"
+   ],
+   "bbox": [
+    172.0,
+    445.0,
+    269.0,
+    457.0
+   ],
+   "confidence": 0.88803
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

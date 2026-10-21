@@ -1,0 +1,397 @@
+{
+ "case_id": "r2-052",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-052.padd_rgb_2x_001",
+   "case_id": "r2-052",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     350.5,
+     23.0
+    ],
+    [
+     373.5,
+     24.5
+    ],
+    [
+     373.0,
+     36.0
+    ],
+    [
+     350.0,
+     34.5
+    ]
+   ],
+   "bbox": [
+    350.0,
+    23.0,
+    373.5,
+    36.0
+   ],
+   "height": 11.51,
+   "small_text": false,
+   "text": "위대한",
+   "text_key": "위대한",
+   "ocr_text": "위대한",
+   "confidence": 0.8274419903755188,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "위대한 포항 더 나은 내일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-052.padd_rgb_2x_002",
+   "case_id": "r2-052",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     363.5,
+     34.0
+    ],
+    [
+     395.0,
+     37.0
+    ],
+    [
+     394.0,
+     47.5
+    ],
+    [
+     362.5,
+     44.5
+    ]
+   ],
+   "bbox": [
+    362.5,
+    34.0,
+    395.0,
+    47.5
+   ],
+   "height": 10.55,
+   "small_text": false,
+   "text": "더 나",
+   "text_key": "더나",
+   "ocr_text": "\"더나온",
+   "confidence": 0.7156446576118469,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "위대한 포항 더 나은 내일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-052.padd_rgb_2x_003",
+   "case_id": "r2-052",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     394.5,
+     32.5
+    ],
+    [
+     418.0,
+     32.5
+    ],
+    [
+     418.0,
+     46.0
+    ],
+    [
+     394.5,
+     46.0
+    ]
+   ],
+   "bbox": [
+    394.5,
+    32.5,
+    418.0,
+    46.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "내일",
+   "text_key": "내일",
+   "ocr_text": "내일",
+   "confidence": 0.9488565921783447,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "위대한 포항 더 나은 내일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-052.padd_rgb_2x_005",
+   "case_id": "r2-052",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     98.5,
+     213.5
+    ],
+    [
+     341.0,
+     213.5
+    ],
+    [
+     341.0,
+     273.5
+    ],
+    [
+     98.5,
+     273.5
+    ]
+   ],
+   "bbox": [
+    98.5,
+    213.5,
+    341.0,
+    273.5
+   ],
+   "height": 60.0,
+   "small_text": false,
+   "text": "2026 포항",
+   "text_key": "2026포항",
+   "ocr_text": "2026포항",
+   "confidence": 0.9970951080322266,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 포항 해병대문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-052.padd_rgb_2x_006",
+   "case_id": "r2-052",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     51.0,
+     272.5
+    ],
+    [
+     392.0,
+     272.5
+    ],
+    [
+     392.0,
+     329.0
+    ],
+    [
+     51.0,
+     329.0
+    ]
+   ],
+   "bbox": [
+    51.0,
+    272.5,
+    392.0,
+    329.0
+   ],
+   "height": 56.5,
+   "small_text": false,
+   "text": "해병대문화축제",
+   "text_key": "해병대문화축제",
+   "ocr_text": "해병대문화축제",
+   "confidence": 0.9994978308677673,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 포항 해병대문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-052.padd_rgb_2x_008",
+   "case_id": "r2-052",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     127.0,
+     369.5
+    ],
+    [
+     314.5,
+     369.5
+    ],
+    [
+     314.5,
+     388.0
+    ],
+    [
+     127.0,
+     388.0
+    ]
+   ],
+   "bbox": [
+    127.0,
+    369.5,
+    314.5,
+    388.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "2026.11.14.(토) - 15.(일)",
+   "text_key": "20261114토15일",
+   "ocr_text": "2026.11.14.(토)-15.(일)",
+   "confidence": 0.9961370825767517,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.14.(토) - 15.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-052.padd_rgb_2x_009",
+   "case_id": "r2-052",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     74.5,
+     394.0
+    ],
+    [
+     368.0,
+     394.0
+    ],
+    [
+     368.0,
+     409.0
+    ],
+    [
+     74.5,
+     409.0
+    ]
+   ],
+   "bbox": [
+    74.5,
+    394.0,
+    368.0,
+    409.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "오천읍 해병의거리(서문사거리) 및 해병대 제1사단 일원",
+   "text_key": "오천읍해병의거리서문사거리및해병대제1사단일원",
+   "ocr_text": "오천읍 해병의거리(서문사거리) 및 해병대 제 1사단 일원",
+   "confidence": 0.9380261898040771,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "오천읍 해병의거리(서문사거리) 및 해병대 제1사단 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

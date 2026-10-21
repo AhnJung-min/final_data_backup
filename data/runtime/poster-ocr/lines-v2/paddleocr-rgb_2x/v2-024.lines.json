@@ -1,0 +1,723 @@
+{
+ "case_id": "v2-024",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 24,
+ "lines_matched": 13,
+ "records": [
+  {
+   "id": "v2-024.padd_rgb_2x_001",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     16.0,
+     15.5
+    ],
+    [
+     69.5,
+     15.5
+    ],
+    [
+     69.5,
+     31.5
+    ],
+    [
+     16.0,
+     31.5
+    ]
+   ],
+   "bbox": [
+    16.0,
+    15.5,
+    69.5,
+    31.5
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "희망찬 내일",
+   "text_key": "희망찬내일",
+   "ocr_text": "희망찬내일",
+   "confidence": 0.8655579686164856,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "희망찬 내일 즐거운 일상 건강한 보령",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_002",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     14.0,
+     28.5
+    ],
+    [
+     71.0,
+     27.0
+    ],
+    [
+     71.5,
+     47.0
+    ],
+    [
+     14.5,
+     48.5
+    ]
+   ],
+   "bbox": [
+    14.0,
+    27.0,
+    71.5,
+    48.5
+   ],
+   "height": 20.01,
+   "small_text": false,
+   "text": "즐거운 일상",
+   "text_key": "즐거운일상",
+   "ocr_text": "즐거운일상",
+   "confidence": 0.780453085899353,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "희망찬 내일 즐거운 일상 건강한 보령",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_003",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     15.0,
+     45.5
+    ],
+    [
+     70.5,
+     43.5
+    ],
+    [
+     71.0,
+     61.5
+    ],
+    [
+     15.5,
+     63.5
+    ]
+   ],
+   "bbox": [
+    15.0,
+    43.5,
+    71.0,
+    63.5
+   ],
+   "height": 18.01,
+   "small_text": false,
+   "text": "건강한 보령",
+   "text_key": "건강한보령",
+   "ocr_text": "건강환보령",
+   "confidence": 0.8516556620597839,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "희망찬 내일 즐거운 일상 건강한 보령",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_004",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     247.5,
+     46.5
+    ],
+    [
+     278.0,
+     36.5
+    ],
+    [
+     283.0,
+     52.0
+    ],
+    [
+     252.5,
+     62.0
+    ]
+   ],
+   "bbox": [
+    247.5,
+    36.5,
+    283.0,
+    62.0
+   ],
+   "height": 16.29,
+   "small_text": false,
+   "text": "충청남도",
+   "text_key": "충청남도",
+   "ocr_text": "청남도",
+   "confidence": 0.9353575706481934,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "충청남도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_005",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     44.0,
+     103.5
+    ],
+    [
+     130.5,
+     103.5
+    ],
+    [
+     130.5,
+     135.0
+    ],
+    [
+     44.0,
+     135.0
+    ]
+   ],
+   "bbox": [
+    44.0,
+    103.5,
+    130.5,
+    135.0
+   ],
+   "height": 31.5,
+   "small_text": false,
+   "text": "제26회",
+   "text_key": "제26회",
+   "ocr_text": "제26회",
+   "confidence": 0.9975683689117432,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1053,
+   "gold_value": "제26회 무창포 2026 신비의 바닷길축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_006",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     33.5,
+     130.5
+    ],
+    [
+     141.5,
+     132.5
+    ],
+    [
+     140.5,
+     185.5
+    ],
+    [
+     32.5,
+     183.5
+    ]
+   ],
+   "bbox": [
+    32.5,
+    130.5,
+    141.5,
+    185.5
+   ],
+   "height": 53.01,
+   "small_text": false,
+   "text": "무창포",
+   "text_key": "무창포",
+   "ocr_text": "무창포",
+   "confidence": 0.9989047646522522,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "무창포 신비의 바닷길축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_007",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     133.5,
+     126.0
+    ],
+    [
+     341.0,
+     115.0
+    ],
+    [
+     346.0,
+     218.0
+    ],
+    [
+     139.0,
+     229.0
+    ]
+   ],
+   "bbox": [
+    133.5,
+    115.0,
+    346.0,
+    229.0
+   ],
+   "height": 103.13,
+   "small_text": false,
+   "text": "202",
+   "text_key": "202",
+   "ocr_text": "2020",
+   "confidence": 0.9958462119102478,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1053,
+   "gold_value": "제26회 무창포 2026 신비의 바닷길축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_008",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     53.0,
+     196.0
+    ],
+    [
+     408.5,
+     189.5
+    ],
+    [
+     411.0,
+     328.0
+    ],
+    [
+     55.5,
+     334.5
+    ]
+   ],
+   "bbox": [
+    53.0,
+    189.5,
+    411.0,
+    334.5
+   ],
+   "height": 138.52,
+   "small_text": false,
+   "text": "신비의",
+   "text_key": "신비의",
+   "ocr_text": "신비의",
+   "confidence": 0.9776970744132996,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "무창포 신비의 바닷길축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_009",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     16.5,
+     316.0
+    ],
+    [
+     426.5,
+     270.0
+    ],
+    [
+     442.5,
+     416.5
+    ],
+    [
+     32.5,
+     462.5
+    ]
+   ],
+   "bbox": [
+    16.5,
+    270.0,
+    442.5,
+    462.5
+   ],
+   "height": 147.37,
+   "small_text": false,
+   "text": "바닷길축제",
+   "text_key": "바닷길축제",
+   "ocr_text": "바닷결축제",
+   "confidence": 0.8927402496337891,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "무창포 신비의 바닷길축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_010",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     114.5,
+     418.0
+    ],
+    [
+     425.0,
+     377.0
+    ],
+    [
+     436.5,
+     468.0
+    ],
+    [
+     126.0,
+     509.0
+    ]
+   ],
+   "bbox": [
+    114.5,
+    377.0,
+    436.5,
+    509.0
+   ],
+   "height": 91.72,
+   "small_text": false,
+   "text": "K-Miracle!",
+   "text_key": "kmiracle",
+   "ocr_text": "K-miracle!",
+   "confidence": 0.9307325482368469,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "K-Miracle!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_015",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     183.0,
+     511.5
+    ],
+    [
+     418.0,
+     511.5
+    ],
+    [
+     418.0,
+     530.0
+    ],
+    [
+     183.0,
+     530.0
+    ]
+   ],
+   "bbox": [
+    183.0,
+    511.5,
+    418.0,
+    530.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "2026. 9. 11.(금) ~ 13.(일) 3일간",
+   "text_key": "2026911금13일3일간",
+   "ocr_text": "2026.9.11.(금)~13.(일)3일간",
+   "confidence": 0.9932324886322021,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 11.(금) ~ 13.(일) 3일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_016",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     305.0,
+     532.5
+    ],
+    [
+     417.0,
+     532.5
+    ],
+    [
+     417.0,
+     546.0
+    ],
+    [
+     305.0,
+     546.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    532.5,
+    417.0,
+    546.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "무창포해수욕장 일원",
+   "text_key": "무창포해수욕장일원",
+   "ocr_text": "무창포해수욕장 일원",
+   "confidence": 0.9962652921676636,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "무창포해수욕장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-024.padd_rgb_2x_019",
+   "case_id": "v2-024",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     251.5,
+     585.5
+    ],
+    [
+     279.5,
+     585.5
+    ],
+    [
+     279.5,
+     596.0
+    ],
+    [
+     251.5,
+     596.0
+    ]
+   ],
+   "bbox": [
+    251.5,
+    585.5,
+    279.5,
+    596.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "보령시",
+   "text_key": "보령시",
+   "ocr_text": "보령시",
+   "confidence": 0.9800798296928406,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "보령시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

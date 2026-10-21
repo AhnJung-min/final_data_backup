@@ -1,0 +1,1484 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 6070,
+  "input_tokens": 9351,
+  "cost_usd": 0.0009351
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S19",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S19.png",
+    "sha256": "13dee0a9e288157a9a16c02850a38a61a23bc01da38a32a4f44ee1516350912a",
+    "bytes": 118075,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S19.png",
+    "sha256": "a9cc8d971bef436c9b891e65c672c317fb042541d5f12b434ed9a321f76ae27a",
+    "bytes": 57486,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "누리 단풍 걷기 축제",
+     "doc_variants": [
+      "누리 단풍 걷기 축제",
+      "누리 단풍 겉기 축제"
+     ]
+    },
+    "doc_raw": "제19회 누리 단풍 걷기 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제19회",
+     "number": 19
+    },
+    "doc_raw": "제19회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.12.(목)~ 11.14.(토)",
+     "points": [
+      [
+       2026,
+       11,
+       12,
+       "목"
+      ],
+      [
+       2026,
+       11,
+       14,
+       "토"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.12.(목)~ 11.14.(토)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "18:00~22:00"
+    },
+    "doc_raw": "18:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "누리종합운동장"
+    },
+    "doc_raw": "누리종합운동장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "누리군"
+    },
+    "doc_raw": "누리군"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "누리관광재단"
+    },
+    "doc_raw": "누리관광재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "043-000-3474"
+    },
+    "doc_raw": "043-000-3474"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "붉게 물든 길을 함께 걸어요"
+    },
+    "doc_raw": "붉게 물든 길을 함께 걸어요"
+   }
+  },
+  "rows": [
+   {
+    "value": "L533",
+    "index": 0,
+    "text": "2026 제19회",
+    "conf": 0.9988,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026",
+      "confidence": 0.9988362193107605,
+      "bbox_xyxy": [
+       346.0,
+       74.0,
+       434.0,
+       108.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "제19회",
+      "confidence": 0.9996789693832397,
+      "bbox_xyxy": [
+       431.0,
+       71.0,
+       538.0,
+       111.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L926",
+    "index": 1,
+    "text": "누리",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "누리",
+      "confidence": 0.9997769594192505,
+      "bbox_xyxy": [
+       333.0,
+       131.0,
+       545.0,
+       263.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L741",
+    "index": 2,
+    "text": "단풍 걷기 축제",
+    "conf": 0.9978,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "단풍",
+      "confidence": 0.9997080564498901,
+      "bbox_xyxy": [
+       112.0,
+       267.0,
+       322.0,
+       393.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "걷기",
+      "confidence": 0.9977691769599915,
+      "bbox_xyxy": [
+       336.0,
+       265.0,
+       546.0,
+       396.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "축제",
+      "confidence": 0.9995962381362915,
+      "bbox_xyxy": [
+       560.0,
+       263.0,
+       774.0,
+       396.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L972",
+    "index": 3,
+    "text": "붉게 물든 길을 함께 걸어요",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "붉게",
+      "confidence": 0.9997380375862122,
+      "bbox_xyxy": [
+       255.0,
+       415.0,
+       319.0,
+       453.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "물든",
+      "confidence": 0.9998077750205994,
+      "bbox_xyxy": [
+       322.0,
+       415.0,
+       391.0,
+       454.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "길을",
+      "confidence": 0.9999747276306152,
+      "bbox_xyxy": [
+       393.0,
+       413.0,
+       462.0,
+       455.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "함께",
+      "confidence": 0.9999819397926331,
+      "bbox_xyxy": [
+       463.0,
+       411.0,
+       532.0,
+       455.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "걸어요",
+      "confidence": 0.9998648166656494,
+      "bbox_xyxy": [
+       534.0,
+       413.0,
+       633.0,
+       454.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L633",
+    "index": 4,
+    "text": "일시 2026.11.13.(금)~11.15.(일)",
+    "conf": 0.9953,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "일시",
+      "confidence": 0.9999581575393677,
+      "bbox_xyxy": [
+       86.0,
+       814.0,
+       144.0,
+       850.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "2026.11.13.(금)~11.15.(일)",
+      "confidence": 0.9953342080116272,
+      "bbox_xyxy": [
+       195.0,
+       816.0,
+       616.0,
+       853.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L225",
+    "index": 5,
+    "text": "시간 18:00~22:00",
+    "conf": 0.9994,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "시간",
+      "confidence": 0.9999542832374573,
+      "bbox_xyxy": [
+       85.0,
+       887.0,
+       147.0,
+       926.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "18:00~22:00",
+      "confidence": 0.9993773102760315,
+      "bbox_xyxy": [
+       199.0,
+       892.0,
+       395.0,
+       923.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L843",
+    "index": 6,
+    "text": "장소 누리종합운동장",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "장소",
+      "confidence": 0.9990370273590088,
+      "bbox_xyxy": [
+       85.0,
+       962.0,
+       147.0,
+       1000.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "누리종합운동장",
+      "confidence": 0.9997912049293518,
+      "bbox_xyxy": [
+       198.0,
+       966.0,
+       404.0,
+       1000.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L507",
+    "index": 7,
+    "text": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모",
+    "conf": 0.9595,
+    "records": [
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모",
+      "confidence": 0.9595334529876709,
+      "bbox_xyxy": [
+       229.0,
+       1054.0,
+       657.0,
+       1078.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L374",
+    "index": 8,
+    "text": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474",
+    "conf": 0.9492,
+    "records": [
+     {
+      "id": "padd_rgb_1x_018",
+      "text": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474",
+      "confidence": 0.9492314457893372,
+      "bbox_xyxy": [
+       169.0,
+       1198.0,
+       718.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제19회 누리 단풍 걷기 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.12.(목)~ 11.14.(토)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "누리종합운동장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "누리관광재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "043-000-3474"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "붉게 물든 길을 함께 걸어요"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "누리 단풍 걷기 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제19회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.12.(목)~ 11.14.(토)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "누리종합운동장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "누리관광재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "043-000-3474"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "붉게 물든 길을 함께 걸어요"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L926",
+    "L374",
+    "L633",
+    "L507",
+    "L225",
+    "L972",
+    "L741",
+    "L843",
+    "L533",
+    "none"
+   ],
+   "b_line_edition": [
+    "L533",
+    "L225",
+    "L926",
+    "L633",
+    "L507",
+    "L972",
+    "L741",
+    "L843",
+    "L374",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L633",
+    "L843",
+    "L972",
+    "L741",
+    "L507",
+    "L926",
+    "L374",
+    "L225",
+    "L533",
+    "none"
+   ],
+   "b_line_time": [
+    "L843",
+    "L533",
+    "L926",
+    "L972",
+    "L633",
+    "L374",
+    "L225",
+    "L507",
+    "L741",
+    "none"
+   ],
+   "b_line_venue": [
+    "L972",
+    "L225",
+    "L374",
+    "L741",
+    "L843",
+    "L633",
+    "L533",
+    "L926",
+    "L507",
+    "none"
+   ],
+   "b_line_host": [
+    "L926",
+    "L225",
+    "L507",
+    "L972",
+    "L533",
+    "L374",
+    "L843",
+    "L741",
+    "L633",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L741",
+    "L533",
+    "L225",
+    "L843",
+    "L633",
+    "L972",
+    "L507",
+    "L926",
+    "L374",
+    "none"
+   ],
+   "b_line_contact": [
+    "L926",
+    "L843",
+    "L972",
+    "L225",
+    "L374",
+    "L741",
+    "L533",
+    "L507",
+    "L633",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L533",
+    "L507",
+    "L741",
+    "L225",
+    "L972",
+    "L843",
+    "L374",
+    "L633",
+    "L926",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 118,075 bytes, sha256 13dee0a9e288157a…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 57,486 bytes, sha256 a9cc8d971bef436c…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제19회 누리 단풍 걷기 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.12.(목)~ 11.14.(토)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '18:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '누리종합운동장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '누리군'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '누리관광재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '043-000-3474'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '붉게 물든 길을 함께 걸어요'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L533",
+      "description": "2026 제19회"
+     },
+     {
+      "value": "L507",
+      "description": "단풍길 걷기| 숲 해설 투어| 가족 사진 공모"
+     },
+     {
+      "value": "L741",
+      "description": "단풍 걷기 축제"
+     },
+     {
+      "value": "L225",
+      "description": "시간 18:00~22:00"
+     },
+     {
+      "value": "L972",
+      "description": "붉게 물든 길을 함께 걸어요"
+     },
+     {
+      "value": "L843",
+      "description": "장소 누리종합운동장"
+     },
+     {
+      "value": "L374",
+      "description": "주최 누리군 ㅣ 주관 누리관광재단 ㅣ 문의 043-000-3474"
+     },
+     {
+      "value": "L633",
+      "description": "일시 2026.11.13.(금)~11.15.(일)"
+     },
+     {
+      "value": "L926",
+      "description": "누리"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '누리 단풍 걷기 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제19회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.12.(목)~ 11.14.(토)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '18:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '누리종합운동장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '누리군'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '누리관광재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '043-000-3474'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '붉게 물든 길을 함께 걸어요'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

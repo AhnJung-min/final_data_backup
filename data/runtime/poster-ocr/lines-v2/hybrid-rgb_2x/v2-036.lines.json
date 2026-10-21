@@ -1,0 +1,290 @@
+{
+ "case_id": "v2-036",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-036.easy_rgb_2x_001",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     52.0,
+     25.0
+    ],
+    [
+     158.0,
+     25.0
+    ],
+    [
+     158.0,
+     75.0
+    ],
+    [
+     52.0,
+     75.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    25.0,
+    158.0,
+    75.0
+   ],
+   "height": 50.0,
+   "small_text": false,
+   "text": "파주",
+   "text_key": "파주",
+   "ocr_text": "파주",
+   "confidence": 0.7913060725781551,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.easy_rgb_2x_002",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     54.5,
+     69.5
+    ],
+    [
+     251.5,
+     69.5
+    ],
+    [
+     251.5,
+     123.5
+    ],
+    [
+     54.5,
+     123.5
+    ]
+   ],
+   "bbox": [
+    54.5,
+    69.5,
+    251.5,
+    123.5
+   ],
+   "height": 54.0,
+   "small_text": false,
+   "text": "K - 컬",
+   "text_key": "k컬",
+   "ocr_text": "K-컬저",
+   "confidence": 0.8378844857215881,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.easy_rgb_2x_003",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     273.5,
+     116.5
+    ],
+    [
+     394.5,
+     116.5
+    ],
+    [
+     394.5,
+     137.5
+    ],
+    [
+     273.5,
+     137.5
+    ]
+   ],
+   "bbox": [
+    273.5,
+    116.5,
+    394.5,
+    137.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "2026. 9. 12.(토)",
+   "text_key": "2026912토",
+   "ocr_text": "2026.9.12.(토)",
+   "confidence": 0.9947163462638855,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 12.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.easy_rgb_2x_004",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     55.0,
+     119.0
+    ],
+    [
+     256.5,
+     119.0
+    ],
+    [
+     256.5,
+     170.0
+    ],
+    [
+     55.0,
+     170.0
+    ]
+   ],
+   "bbox": [
+    55.0,
+    119.0,
+    256.5,
+    170.0
+   ],
+   "height": 51.0,
+   "small_text": false,
+   "text": "페스티벌",
+   "text_key": "페스티벌",
+   "ocr_text": "페스티벌",
+   "confidence": 0.9715480208396912,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.easy_rgb_2x_005",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     278.0,
+     145.0
+    ],
+    [
+     384.0,
+     145.0
+    ],
+    [
+     384.0,
+     159.0
+    ],
+    [
+     278.0,
+     159.0
+    ]
+   ],
+   "bbox": [
+    278.0,
+    145.0,
+    384.0,
+    159.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "경기미래교육파주캠퍼스",
+   "text_key": "경기미래교육파주캠퍼스",
+   "ocr_text": "경기미래교육파주램스",
+   "confidence": 0.8295337557792664,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1818,
+   "gold_value": "경기미래교육파주캠퍼스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

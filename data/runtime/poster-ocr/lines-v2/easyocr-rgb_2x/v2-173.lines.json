@@ -1,0 +1,73 @@
+{
+ "case_id": "v2-173",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-173.easy_rgb_2x_007",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     76.5,
+     204.5
+    ],
+    [
+     369.0,
+     204.5
+    ],
+    [
+     369.0,
+     224.0
+    ],
+    [
+     76.5,
+     224.0
+    ]
+   ],
+   "bbox": [
+    76.5,
+    204.5,
+    369.0,
+    224.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "김천시 직지문화공원, 사명대사공원, 친환경생태공원 일원",
+   "text_key": "김천시직지문화공원사명대사공원친환경생태공원일원",
+   "ocr_text": "김천시 직지문화공원 사명대사공원 친환경생대공원 일원",
+   "confidence": 0.4807546719188498,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0417,
+   "gold_value": "김천시 직지문화공원, 사명대사공원, 친환경생태공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

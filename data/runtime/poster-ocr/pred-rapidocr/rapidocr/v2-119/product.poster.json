@@ -1,0 +1,235 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-4af57f38e803",
+ "image": {
+  "sha256": "4af57f38e80358ae4d3b504234f766d10f72f017e9f2d0f31275208674f7f02b",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:43+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "대전중구 국페스티벌",
+  "official": "대전중구 국페스티벌",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003",
+    "rapi_product_004"
+   ],
+   "bbox": [
+    23.0,
+    36.0,
+    215.0,
+    145.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제3회",
+  "number": 3,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_002"
+   ],
+   "bbox": [
+    26.0,
+    54.0,
+    69.0,
+    78.0
+   ],
+   "confidence": 0.9463
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001"
+   ],
+   "bbox": [
+    26.0,
+    44.0,
+    67.0,
+    63.0
+   ],
+   "confidence": 0.99362
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.10.()-11.(일)",
+  "start": {
+   "iso": "2026-10-10",
+   "year": 2026,
+   "month": 10,
+   "day": 10,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-11",
+   "year": 2026,
+   "month": 10,
+   "day": 11,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [
+   {
+    "raw": "14:00-20:00",
+    "start": "14:00",
+    "end": "20:00",
+    "applies_to": null
+   },
+   {
+    "raw": "11:00-17:00",
+    "start": "11:00",
+    "end": "17:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_012"
+   ],
+   "bbox": [
+    24.0,
+    299.0,
+    167.0,
+    317.0
+   ],
+   "confidence": 0.891
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "ᄋ우리들공원 일대",
+  "items": [
+   "ᄋ우리들공원 일대"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_015"
+   ],
+   "bbox": [
+    27.0,
+    347.0,
+    114.0,
+    361.0
+   ],
+   "confidence": 0.9451
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "대전중구",
+  "region": "대전",
+  "district": "중구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003"
+   ],
+   "bbox": [
+    64.0,
+    36.0,
+    210.0,
+    97.0
+   ],
+   "confidence": 0.99336
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

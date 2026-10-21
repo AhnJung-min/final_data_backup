@@ -1,0 +1,456 @@
+{
+ "case_id": "v2-005",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-005.padd_rgb_1x_000",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     58.0,
+     30.0
+    ],
+    [
+     95.0,
+     30.0
+    ],
+    [
+     95.0,
+     41.0
+    ],
+    [
+     58.0,
+     41.0
+    ]
+   ],
+   "bbox": [
+    58.0,
+    30.0,
+    95.0,
+    41.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "서천군",
+   "text_key": "서천군",
+   "ocr_text": "서천군",
+   "confidence": 0.8583458065986633,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서천군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_1x_001",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     159.0,
+     47.0
+    ],
+    [
+     246.0,
+     44.0
+    ],
+    [
+     246.0,
+     65.0
+    ],
+    [
+     160.0,
+     69.0
+    ]
+   ],
+   "bbox": [
+    159.0,
+    44.0,
+    246.0,
+    69.0
+   ],
+   "height": 21.51,
+   "small_text": false,
+   "text": "제24회 서천",
+   "text_key": "제24회서천",
+   "ocr_text": "제24회 서천",
+   "confidence": 0.9580942988395691,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "제24회 서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_1x_002",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     239.0,
+     45.0
+    ],
+    [
+     289.0,
+     47.0
+    ],
+    [
+     288.0,
+     69.0
+    ],
+    [
+     238.0,
+     66.0
+    ]
+   ],
+   "bbox": [
+    238.0,
+    45.0,
+    289.0,
+    69.0
+   ],
+   "height": 21.52,
+   "small_text": false,
+   "text": "홍원항",
+   "text_key": "홍원항",
+   "ocr_text": "홍원항",
+   "confidence": 0.8168983459472656,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_1x_003",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     104.0,
+     97.0
+    ],
+    [
+     338.0,
+     78.0
+    ],
+    [
+     344.0,
+     165.0
+    ],
+    [
+     111.0,
+     183.0
+    ]
+   ],
+   "bbox": [
+    104.0,
+    78.0,
+    344.0,
+    183.0
+   ],
+   "height": 86.75,
+   "small_text": false,
+   "text": "자연산",
+   "text_key": "자연산",
+   "ocr_text": "자영산",
+   "confidence": 0.839712917804718,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_1x_004",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     41.0,
+     158.0
+    ],
+    [
+     376.0,
+     141.0
+    ],
+    [
+     381.0,
+     250.0
+    ],
+    [
+     46.0,
+     267.0
+    ]
+   ],
+   "bbox": [
+    41.0,
+    141.0,
+    381.0,
+    267.0
+   ],
+   "height": 109.11,
+   "small_text": false,
+   "text": "전어꽃게",
+   "text_key": "전어꽃게",
+   "ocr_text": "전어꽃게",
+   "confidence": 0.992224931716919,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_1x_005",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     129.0,
+     239.0
+    ],
+    [
+     329.0,
+     227.0
+    ],
+    [
+     335.0,
+     323.0
+    ],
+    [
+     135.0,
+     336.0
+    ]
+   ],
+   "bbox": [
+    129.0,
+    227.0,
+    335.0,
+    336.0
+   ],
+   "height": 96.69,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.9727414846420288,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_1x_006",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     88.0,
+     336.0
+    ],
+    [
+     351.0,
+     336.0
+    ],
+    [
+     351.0,
+     366.0
+    ],
+    [
+     88.0,
+     366.0
+    ]
+   ],
+   "bbox": [
+    88.0,
+    336.0,
+    351.0,
+    366.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "2026.8.22(토)-9.6(일)",
+   "text_key": "2026822토96일",
+   "ocr_text": "2026.8.22(토)-9.6(일)",
+   "confidence": 0.9840784668922424,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.8.22(토)-9.6(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_1x_007",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     104.0,
+     379.0
+    ],
+    [
+     336.0,
+     379.0
+    ],
+    [
+     336.0,
+     396.0
+    ],
+    [
+     104.0,
+     396.0
+    ]
+   ],
+   "bbox": [
+    104.0,
+    379.0,
+    336.0,
+    396.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "서천군 홍원항 일원 (서면 홍원길 88)",
+   "text_key": "서천군홍원항일원서면홍원길88",
+   "ocr_text": "서천군 홍원항 일원 (서면 홍원길 88)",
+   "confidence": 0.9765452742576599,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "address.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서천군 홍원항 일원 (서면 홍원길 88)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

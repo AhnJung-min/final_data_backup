@@ -1,0 +1,344 @@
+{
+ "case_id": "v2-095",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-095.padd_rgb_1x_001",
+   "case_id": "v2-095",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     189.0,
+     34.0
+    ],
+    [
+     259.0,
+     34.0
+    ],
+    [
+     259.0,
+     64.0
+    ],
+    [
+     189.0,
+     64.0
+    ]
+   ],
+   "bbox": [
+    189.0,
+    34.0,
+    259.0,
+    64.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9995319843292236,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 진주남강 유등축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-095.padd_rgb_1x_002",
+   "case_id": "v2-095",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     126.0,
+     54.0
+    ],
+    [
+     320.0,
+     59.0
+    ],
+    [
+     318.0,
+     131.0
+    ],
+    [
+     124.0,
+     126.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    54.0,
+    320.0,
+    131.0
+   ],
+   "height": 72.03,
+   "small_text": false,
+   "text": "진주남강",
+   "text_key": "진주남강",
+   "ocr_text": "진주남강",
+   "confidence": 0.9658066630363464,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "진주남강 유등축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-095.padd_rgb_1x_003",
+   "case_id": "v2-095",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     132.0,
+     125.0
+    ],
+    [
+     324.0,
+     133.0
+    ],
+    [
+     322.0,
+     185.0
+    ],
+    [
+     130.0,
+     177.0
+    ]
+   ],
+   "bbox": [
+    130.0,
+    125.0,
+    324.0,
+    185.0
+   ],
+   "height": 52.04,
+   "small_text": false,
+   "text": "유등축제",
+   "text_key": "유등축제",
+   "ocr_text": "유등추제",
+   "confidence": 0.9650923013687134,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "진주남강 유등축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-095.padd_rgb_1x_005",
+   "case_id": "v2-095",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     134.0,
+     214.0
+    ],
+    [
+     314.0,
+     217.0
+    ],
+    [
+     313.0,
+     238.0
+    ],
+    [
+     133.0,
+     236.0
+    ]
+   ],
+   "bbox": [
+    133.0,
+    214.0,
+    314.0,
+    238.0
+   ],
+   "height": 21.52,
+   "small_text": false,
+   "text": "2026.10. 3. 토 - 10.18. 일",
+   "text_key": "2026103토1018일",
+   "ocr_text": "2026.10.3.토 - 10.18.일",
+   "confidence": 0.960250973701477,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10. 3. 토 - 10.18. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-095.padd_rgb_1x_006",
+   "case_id": "v2-095",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     155.0,
+     241.0
+    ],
+    [
+     290.0,
+     241.0
+    ],
+    [
+     290.0,
+     258.0
+    ],
+    [
+     155.0,
+     258.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    241.0,
+    290.0,
+    258.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "진주성 및 진주남강 일원",
+   "text_key": "진주성및진주남강일원",
+   "ocr_text": "진주성 및 진주남강 일원",
+   "confidence": 0.9547286629676819,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "진주성 및 진주남강 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-095.padd_rgb_1x_007",
+   "case_id": "v2-095",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     61.0,
+     576.0
+    ],
+    [
+     180.0,
+     575.0
+    ],
+    [
+     180.0,
+     589.0
+    ],
+    [
+     61.0,
+     590.0
+    ]
+   ],
+   "bbox": [
+    61.0,
+    575.0,
+    180.0,
+    590.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "www.YUDEUNG.com",
+   "text_key": "wwwyudeungcom",
+   "ocr_text": "www.YUDEUNG.com",
+   "confidence": 0.9464982151985168,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "www.YUDEUNG.com",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

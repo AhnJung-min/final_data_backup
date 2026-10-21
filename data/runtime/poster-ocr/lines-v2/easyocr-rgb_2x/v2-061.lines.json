@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-061",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-061.easy_rgb_2x_000",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     191.0,
+     41.0
+    ],
+    [
+     252.0,
+     41.0
+    ],
+    [
+     252.0,
+     65.0
+    ],
+    [
+     191.0,
+     65.0
+    ]
+   ],
+   "bbox": [
+    191.0,
+    41.0,
+    252.0,
+    65.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.6541630178113471,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "2026 경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.easy_rgb_2x_001",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     166.5,
+     71.5
+    ],
+    [
+     275.5,
+     71.5
+    ],
+    [
+     275.5,
+     108.5
+    ],
+    [
+     166.5,
+     108.5
+    ]
+   ],
+   "bbox": [
+    166.5,
+    71.5,
+    275.5,
+    108.5
+   ],
+   "height": 37.0,
+   "small_text": false,
+   "text": "경남고성",
+   "text_key": "경남고성",
+   "ocr_text": "경남고성",
+   "confidence": 0.9962263703346252,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.easy_rgb_2x_002",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     69.5,
+     108.5
+    ],
+    [
+     376.5,
+     108.5
+    ],
+    [
+     376.5,
+     175.5
+    ],
+    [
+     69.5,
+     175.5
+    ]
+   ],
+   "bbox": [
+    69.5,
+    108.5,
+    376.5,
+    175.5
+   ],
+   "height": 67.0,
+   "small_text": false,
+   "text": "공룡세계엑스포",
+   "text_key": "공룡세계엑스포",
+   "ocr_text": "공통세계예스포",
+   "confidence": 0.27541032424960793,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.easy_rgb_2x_003",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     80.5,
+     173.5
+    ],
+    [
+     362.5,
+     173.5
+    ],
+    [
+     362.5,
+     204.5
+    ],
+    [
+     80.5,
+     204.5
+    ]
+   ],
+   "bbox": [
+    80.5,
+    173.5,
+    362.5,
+    204.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "2026. 9. 22.(화) ~ 11. 1.(일)",
+   "text_key": "2026922화111일",
+   "ocr_text": "2026.9.22 (화) ~ 11.1 (일)",
+   "confidence": 0.8755638791337617,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 22.(화) ~ 11. 1.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.easy_rgb_2x_004",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     126.0,
+     210.0
+    ],
+    [
+     318.0,
+     210.0
+    ],
+    [
+     318.0,
+     236.0
+    ],
+    [
+     126.0,
+     236.0
+    ]
+   ],
+   "bbox": [
+    126.0,
+    210.0,
+    318.0,
+    236.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "공룡과 떠나는 신나는 모험",
+   "text_key": "공룡과떠나는신나는모험",
+   "ocr_text": "공통과 떠나는 신나는 모험",
+   "confidence": 0.9119271151545634,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "공룡과 떠나는 신나는 모험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.easy_rgb_2x_005",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     166.0,
+     590.0
+    ],
+    [
+     374.0,
+     590.0
+    ],
+    [
+     374.0,
+     604.0
+    ],
+    [
+     166.0,
+     604.0
+    ]
+   ],
+   "bbox": [
+    166.0,
+    590.0,
+    374.0,
+    604.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "경남 고성 당항포관광지",
+   "text_key": "경남고성당항포관광지",
+   "ocr_text": "장소: 경남 고성당장포관광지 문의: 055-670-7400",
+   "confidence": 0.4112052924777481,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "경남 고성 당항포관광지",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.easy_rgb_2x_006",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     46.0,
+     592.5
+    ],
+    [
+     155.5,
+     592.5
+    ],
+    [
+     155.5,
+     613.5
+    ],
+    [
+     46.0,
+     613.5
+    ]
+   ],
+   "bbox": [
+    46.0,
+    592.5,
+    155.5,
+    613.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "고성문화관광재단",
+   "text_key": "고성문화관광재단",
+   "ocr_text": "고성문화관광재단",
+   "confidence": 0.979935091530571,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고성문화관광재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.easy_rgb_2x_007",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     166.0,
+     602.0
+    ],
+    [
+     336.0,
+     602.0
+    ],
+    [
+     336.0,
+     616.5
+    ],
+    [
+     166.0,
+     616.5
+    ]
+   ],
+   "bbox": [
+    166.0,
+    602.0,
+    336.0,
+    616.5
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "www.gngsctf.or.kr/dinoexpo",
+   "text_key": "wwwgngsctforkrdinoexpo",
+   "ocr_text": "딸데이지 vrvigngsct orkrldinoexpo",
+   "confidence": 0.1923819193782032,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2273,
+   "gold_value": "www.gngsctf.or.kr/dinoexpo",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

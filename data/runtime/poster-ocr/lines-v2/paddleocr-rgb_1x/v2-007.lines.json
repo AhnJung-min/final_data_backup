@@ -1,0 +1,398 @@
+{
+ "case_id": "v2-007",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-007.padd_rgb_1x_000",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     169.0,
+     13.0
+    ],
+    [
+     271.0,
+     11.0
+    ],
+    [
+     272.0,
+     50.0
+    ],
+    [
+     170.0,
+     52.0
+    ]
+   ],
+   "bbox": [
+    169.0,
+    11.0,
+    272.0,
+    52.0
+   ],
+   "height": 39.01,
+   "small_text": false,
+   "text": "제12회",
+   "text_key": "제12회",
+   "ocr_text": "제12회",
+   "confidence": 0.9964911341667175,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "제12회 무안황토 갯벌축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_1x_001",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     14.0,
+     50.0
+    ],
+    [
+     330.0,
+     21.0
+    ],
+    [
+     343.0,
+     166.0
+    ],
+    [
+     27.0,
+     195.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    21.0,
+    343.0,
+    195.0
+   ],
+   "height": 145.58,
+   "small_text": false,
+   "text": "무안황토",
+   "text_key": "무안황토",
+   "ocr_text": "무안황토",
+   "confidence": 0.9028329849243164,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "무안황토 갯벌축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_1x_002",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     45.0,
+     143.0
+    ],
+    [
+     404.0,
+     127.0
+    ],
+    [
+     410.0,
+     282.0
+    ],
+    [
+     51.0,
+     298.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    127.0,
+    410.0,
+    298.0
+   ],
+   "height": 155.12,
+   "small_text": false,
+   "text": "갯벌축제",
+   "text_key": "갯벌축제",
+   "ocr_text": "것벌축제",
+   "confidence": 0.937943696975708,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "무안황토 갯벌축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_1x_004",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     81.0,
+     278.0
+    ],
+    [
+     359.0,
+     278.0
+    ],
+    [
+     359.0,
+     298.0
+    ],
+    [
+     81.0,
+     298.0
+    ]
+   ],
+   "bbox": [
+    81.0,
+    278.0,
+    359.0,
+    298.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "text_key": "무안갯벌유네스코세계자연유산등재기념식",
+   "ocr_text": "with 무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "confidence": 0.9019447565078735,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_1x_005",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     77.0,
+     304.0
+    ],
+    [
+     366.0,
+     304.0
+    ],
+    [
+     366.0,
+     326.0
+    ],
+    [
+     77.0,
+     326.0
+    ]
+   ],
+   "bbox": [
+    77.0,
+    304.0,
+    366.0,
+    326.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026. 8. 29.(토) ~ 9. 6.(일)",
+   "text_key": "2026829토96일",
+   "ocr_text": "2026.8.29.(토)~9.6.(일)주말집중운영",
+   "confidence": 0.9624000191688538,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 8. 29.(토) ~ 9. 6.(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_1x_006",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     134.0,
+     329.0
+    ],
+    [
+     308.0,
+     329.0
+    ],
+    [
+     308.0,
+     350.0
+    ],
+    [
+     134.0,
+     350.0
+    ]
+   ],
+   "bbox": [
+    134.0,
+    329.0,
+    308.0,
+    350.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "무안황토갯벌랜드 일원",
+   "text_key": "무안황토갯벌랜드일원",
+   "ocr_text": "무안황토갯벌랜드 일원",
+   "confidence": 0.9244029521942139,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "무안황토갯벌랜드 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_1x_009",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     158.0,
+     602.0
+    ],
+    [
+     287.0,
+     602.0
+    ],
+    [
+     287.0,
+     615.0
+    ],
+    [
+     158.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    158.0,
+    602.0,
+    287.0,
+    615.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "무안군축제추진위원회",
+   "text_key": "무안군축제추진위원회",
+   "ocr_text": "교무인군/무인군축제추진위원회",
+   "confidence": 0.8958307504653931,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "무안군축제추진위원회",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-154",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 460,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-154.padd_rgb_2x_001",
+   "case_id": "v2-154",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     395.5,
+     11.5
+    ],
+    [
+     443.0,
+     12.5
+    ],
+    [
+     442.5,
+     31.0
+    ],
+    [
+     395.0,
+     29.5
+    ]
+   ],
+   "bbox": [
+    395.0,
+    11.5,
+    443.0,
+    31.0
+   ],
+   "height": 18.26,
+   "small_text": false,
+   "text": "Gumi",
+   "text_key": "gumi",
+   "ocr_text": "Gumi",
+   "confidence": 0.7981500029563904,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "Gumi",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-154.padd_rgb_2x_010",
+   "case_id": "v2-154",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     106.0,
+     522.0
+    ],
+    [
+     349.5,
+     521.0
+    ],
+    [
+     349.5,
+     544.5
+    ],
+    [
+     106.0,
+     545.5
+    ]
+   ],
+   "bbox": [
+    106.0,
+    521.0,
+    349.5,
+    545.5
+   ],
+   "height": 23.5,
+   "small_text": false,
+   "text": "2026. 10.17.토 ~ 10.18.일",
+   "text_key": "20261017토1018일",
+   "ocr_text": "2026.10.17.0~10.18.0",
+   "confidence": 0.9631047248840332,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.17.토 ~ 10.18.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-154.padd_rgb_2x_011",
+   "case_id": "v2-154",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     152.0,
+     551.0
+    ],
+    [
+     305.5,
+     551.0
+    ],
+    [
+     305.5,
+     571.5
+    ],
+    [
+     152.0,
+     571.5
+    ]
+   ],
+   "bbox": [
+    152.0,
+    551.0,
+    305.5,
+    571.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "구미시청 앞 송정맛길",
+   "text_key": "구미시청앞송정맛길",
+   "ocr_text": "구미시청 앞 송정맛길",
+   "confidence": 0.9522686004638672,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "구미시청 앞 송정맛길",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-154.padd_rgb_2x_013",
+   "case_id": "v2-154",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     244.0,
+     587.5
+    ],
+    [
+     284.5,
+     587.5
+    ],
+    [
+     284.5,
+     600.0
+    ],
+    [
+     244.0,
+     600.0
+    ]
+   ],
+   "bbox": [
+    244.0,
+    587.5,
+    284.5,
+    600.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "구미시",
+   "text_key": "구미시",
+   "ocr_text": "구미시",
+   "confidence": 0.906958281993866,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "구미시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

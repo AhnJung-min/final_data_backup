@@ -1,0 +1,942 @@
+{
+ "case_id": "r2-022",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 27,
+ "lines_matched": 17,
+ "records": [
+  {
+   "id": "r2-022.padd_rgb_1x_000",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     161.0,
+     24.0
+    ],
+    [
+     207.0,
+     24.0
+    ],
+    [
+     207.0,
+     35.0
+    ],
+    [
+     161.0,
+     35.0
+    ]
+   ],
+   "bbox": [
+    161.0,
+    24.0,
+    207.0,
+    35.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "©국가유산청",
+   "confidence": 0.8672807216644287,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "국가유산청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_008",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     178.0,
+     126.0
+    ],
+    [
+     240.0,
+     126.0
+    ],
+    [
+     240.0,
+     155.0
+    ],
+    [
+     178.0,
+     155.0
+    ]
+   ],
+   "bbox": [
+    178.0,
+    126.0,
+    240.0,
+    155.0
+   ],
+   "height": 29.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9988622069358826,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 함안 국가 유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_011",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     156.0,
+     155.0
+    ],
+    [
+     261.0,
+     155.0
+    ],
+    [
+     261.0,
+     223.0
+    ],
+    [
+     156.0,
+     223.0
+    ]
+   ],
+   "bbox": [
+    156.0,
+    155.0,
+    261.0,
+    223.0
+   ],
+   "height": 68.0,
+   "small_text": false,
+   "text": "함안",
+   "text_key": "함안",
+   "ocr_text": "함안",
+   "confidence": 0.9986324310302734,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "함안 국가 유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_012",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     155.0,
+     216.0
+    ],
+    [
+     260.0,
+     212.0
+    ],
+    [
+     263.0,
+     279.0
+    ],
+    [
+     157.0,
+     283.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    212.0,
+    263.0,
+    283.0
+   ],
+   "height": 67.05,
+   "small_text": false,
+   "text": "국가",
+   "text_key": "국가",
+   "ocr_text": "국가",
+   "confidence": 0.9999433755874634,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "함안 국가 유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_013",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     158.0,
+     276.0
+    ],
+    [
+     258.0,
+     276.0
+    ],
+    [
+     258.0,
+     339.0
+    ],
+    [
+     158.0,
+     339.0
+    ]
+   ],
+   "bbox": [
+    158.0,
+    276.0,
+    258.0,
+    339.0
+   ],
+   "height": 63.0,
+   "small_text": false,
+   "text": "유산",
+   "text_key": "유산",
+   "ocr_text": "유산",
+   "confidence": 0.9738372564315796,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "함안 국가 유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_014",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     157.0,
+     335.0
+    ],
+    [
+     257.0,
+     335.0
+    ],
+    [
+     257.0,
+     396.0
+    ],
+    [
+     157.0,
+     396.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    335.0,
+    257.0,
+    396.0
+   ],
+   "height": 61.0,
+   "small_text": false,
+   "text": "야행",
+   "text_key": "야행",
+   "ocr_text": "야행",
+   "confidence": 0.9995834827423096,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "함안 국가 유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_015",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     18.0,
+     505.0
+    ],
+    [
+     84.0,
+     505.0
+    ],
+    [
+     84.0,
+     530.0
+    ],
+    [
+     18.0,
+     530.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    505.0,
+    84.0,
+    530.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "10. 9.",
+   "text_key": "109",
+   "ocr_text": "10.9.",
+   "confidence": 0.9957315325737,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10. 9. 금요일 ~ 10. 11. 일요일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_016",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     356.0,
+     515.0
+    ],
+    [
+     395.0,
+     515.0
+    ],
+    [
+     395.0,
+     533.0
+    ],
+    [
+     356.0,
+     533.0
+    ]
+   ],
+   "bbox": [
+    356.0,
+    515.0,
+    395.0,
+    533.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "무진정",
+   "text_key": "무진정",
+   "ocr_text": "무진정",
+   "confidence": 0.9981535077095032,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무진정 성산산성 대산리 일원 외",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_017",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     22.0,
+     529.0
+    ],
+    [
+     46.0,
+     529.0
+    ],
+    [
+     46.0,
+     540.0
+    ],
+    [
+     22.0,
+     540.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    529.0,
+    46.0,
+    540.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "금요일",
+   "text_key": "금요일",
+   "ocr_text": "금요일",
+   "confidence": 0.9987554550170898,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10. 9. 금요일 ~ 10. 11. 일요일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_018",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     344.0,
+     534.0
+    ],
+    [
+     396.0,
+     534.0
+    ],
+    [
+     396.0,
+     555.0
+    ],
+    [
+     344.0,
+     555.0
+    ]
+   ],
+   "bbox": [
+    344.0,
+    534.0,
+    396.0,
+    555.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "성산산성",
+   "text_key": "성산산성",
+   "ocr_text": "성산산성",
+   "confidence": 0.9985629320144653,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무진정 성산산성 대산리 일원 외",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_020",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     315.0,
+     555.0
+    ],
+    [
+     395.0,
+     555.0
+    ],
+    [
+     395.0,
+     573.0
+    ],
+    [
+     315.0,
+     573.0
+    ]
+   ],
+   "bbox": [
+    315.0,
+    555.0,
+    395.0,
+    573.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "대산리 일원 외",
+   "text_key": "대산리일원외",
+   "ocr_text": "대산리일원외",
+   "confidence": 0.9883918166160583,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무진정 성산산성 대산리 일원 외",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_021",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_021"
+   },
+   "polygon": [
+    [
+     18.0,
+     566.0
+    ],
+    [
+     90.0,
+     566.0
+    ],
+    [
+     90.0,
+     591.0
+    ],
+    [
+     18.0,
+     591.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    566.0,
+    90.0,
+    591.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "10. 11.",
+   "text_key": "1011",
+   "ocr_text": "10.11.",
+   "confidence": 0.9904764294624329,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10. 9. 금요일 ~ 10. 11. 일요일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_022",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_022"
+   },
+   "polygon": [
+    [
+     93.0,
+     571.0
+    ],
+    [
+     193.0,
+     573.0
+    ],
+    [
+     193.0,
+     593.0
+    ],
+    [
+     92.0,
+     591.0
+    ]
+   ],
+   "bbox": [
+    92.0,
+    571.0,
+    193.0,
+    593.0
+   ],
+   "height": 20.01,
+   "small_text": false,
+   "text": "18:00~22:00",
+   "text_key": "18002200",
+   "ocr_text": "18:00-22:00",
+   "confidence": 0.9573854804039001,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "18:00~22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_023",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_023"
+   },
+   "polygon": [
+    [
+     253.0,
+     578.0
+    ],
+    [
+     344.0,
+     578.0
+    ],
+    [
+     344.0,
+     591.0
+    ],
+    [
+     253.0,
+     591.0
+    ]
+   ],
+   "bbox": [
+    253.0,
+    578.0,
+    344.0,
+    591.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "new.yahaeng.com",
+   "text_key": "newyahaengcom",
+   "ocr_text": "new.yahaeng.com",
+   "confidence": 0.9989694952964783,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "new.yahaeng.com",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_024",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_024"
+   },
+   "polygon": [
+    [
+     22.0,
+     590.0
+    ],
+    [
+     46.0,
+     590.0
+    ],
+    [
+     46.0,
+     602.0
+    ],
+    [
+     22.0,
+     602.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    590.0,
+    46.0,
+    602.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "일요일",
+   "text_key": "일요일",
+   "ocr_text": "일요일",
+   "confidence": 0.8139538764953613,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10. 9. 금요일 ~ 10. 11. 일요일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_025",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_025"
+   },
+   "polygon": [
+    [
+     254.0,
+     593.0
+    ],
+    [
+     329.0,
+     593.0
+    ],
+    [
+     329.0,
+     603.0
+    ],
+    [
+     254.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    254.0,
+    593.0,
+    329.0,
+    603.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "055-586-0979",
+   "text_key": "0555860979",
+   "ocr_text": "055-586-0979",
+   "confidence": 0.9996840953826904,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "055-586-0979",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-022.padd_rgb_1x_026",
+   "case_id": "r2-022",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_026"
+   },
+   "polygon": [
+    [
+     253.0,
+     605.0
+    ],
+    [
+     346.0,
+     605.0
+    ],
+    [
+     346.0,
+     618.0
+    ],
+    [
+     253.0,
+     618.0
+    ]
+   ],
+   "bbox": [
+    253.0,
+    605.0,
+    346.0,
+    618.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "사전예약 QR코드스캔",
+   "text_key": "사전예약qr코드스캔",
+   "ocr_text": "사전예약 QR코드스캔",
+   "confidence": 0.9507238864898682,
+   "field": "admission.raw",
+   "field_group": "admission",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "admission.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "사전예약 QR코드스캔",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

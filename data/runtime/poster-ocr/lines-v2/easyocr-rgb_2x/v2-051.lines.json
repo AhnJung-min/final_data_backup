@@ -1,0 +1,180 @@
+{
+ "case_id": "v2-051",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 447,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-051.easy_rgb_2x_001",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     63.5,
+     456.0
+    ],
+    [
+     122.5,
+     456.0
+    ],
+    [
+     122.5,
+     480.0
+    ],
+    [
+     63.5,
+     480.0
+    ]
+   ],
+   "bbox": [
+    63.5,
+    456.0,
+    122.5,
+    480.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9999977946281433,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 대구메이커페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.easy_rgb_2x_002",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     63.5,
+     475.5
+    ],
+    [
+     385.0,
+     475.5
+    ],
+    [
+     385.0,
+     531.5
+    ],
+    [
+     63.5,
+     531.5
+    ]
+   ],
+   "bbox": [
+    63.5,
+    475.5,
+    385.0,
+    531.5
+   ],
+   "height": 56.0,
+   "small_text": false,
+   "text": "대구메이커페스타",
+   "text_key": "대구메이커페스타",
+   "ocr_text": "대구메이커페스타",
+   "confidence": 0.07266411243977557,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대구메이커페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.easy_rgb_2x_004",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     170.0,
+     539.5
+    ],
+    [
+     365.5,
+     539.5
+    ],
+    [
+     365.5,
+     569.5
+    ],
+    [
+     170.0,
+     569.5
+    ]
+   ],
+   "bbox": [
+    170.0,
+    539.5,
+    365.5,
+    569.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "대구삼성창조캠퍼스 일원",
+   "text_key": "대구삼성창조캠퍼스일원",
+   "ocr_text": "2O() 대구상성창조캠퍼스 일원",
+   "confidence": 0.43417488912794266,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "대구삼성창조캠퍼스 일원",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

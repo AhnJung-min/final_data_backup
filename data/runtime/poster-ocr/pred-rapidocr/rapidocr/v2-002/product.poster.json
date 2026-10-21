@@ -1,0 +1,194 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-33360668e95c",
+ "image": {
+  "sha256": "33360668e95c043531d907a4419baf63303c98f7d0d6171fa828b6ebadfbe9da",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:40+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026 선명상 축제",
+  "official": "선명상 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    45.0,
+    48.0,
+    243.0,
+    80.0
+   ],
+   "confidence": 0.99703
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    45.0,
+    48.0,
+    243.0,
+    80.0
+   ],
+   "confidence": 0.99703
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "4월 4일(Sat)-4월 59(Sun) 봉은사,봉은문화최 Bongeunsa, Bongeun Cullunal Center",
+  "start": {
+   "iso": "2026-04-04",
+   "year": 2026,
+   "month": 4,
+   "day": 4,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006",
+    "rapi_product_007"
+   ],
+   "bbox": [
+    45.0,
+    169.0,
+    397.0,
+    186.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "59(Sun) 봉은사,봉은문화최 Bongeunsa, Bongeun Cullunal Center",
+  "items": [
+   "59(Sun) 봉은사",
+   "봉은문화최 Bongeunsa",
+   "Bongeun Cullunal Center"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006",
+    "rapi_product_007"
+   ],
+   "bbox": [
+    45.0,
+    169.0,
+    397.0,
+    186.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-d189a5376e97",
+ "image": {
+  "sha256": "d189a5376e97f751e62b5f251527a1ff58ab5c3e5004cd41150008db91fb3910",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:43+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026 서울시자치구축제 지원 및 육성사업 관악강감찬축제",
+  "official": "서울시자치구축제 지원 및 육성사업 관악강감찬축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_001",
+    "rapi_product_002"
+   ],
+   "bbox": [
+    20.0,
+    18.0,
+    225.0,
+    82.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_001"
+   ],
+   "bbox": [
+    20.0,
+    18.0,
+    225.0,
+    47.0
+   ],
+   "confidence": null
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.16.11-18.5un",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_007"
+   ],
+   "bbox": [
+    20.0,
+    532.0,
+    175.0,
+    552.0
+   ],
+   "confidence": 0.83491
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "낙성대공원·꽃품정원·안국사",
+  "items": [
+   "낙성대공원",
+   "꽃품정원",
+   "안국사"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_009"
+   ],
+   "bbox": [
+    20.0,
+    552.0,
+    175.0,
+    571.0
+   ],
+   "confidence": 0.87782
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "2026 서울시자치구축제 지원 및 육성사업",
+  "region": "서울",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_001"
+   ],
+   "bbox": [
+    20.0,
+    18.0,
+    225.0,
+    47.0
+   ],
+   "confidence": null
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

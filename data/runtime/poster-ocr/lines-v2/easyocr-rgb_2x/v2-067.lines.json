@@ -1,0 +1,343 @@
+{
+ "case_id": "v2-067",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 457,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-067.easy_rgb_2x_002",
+   "case_id": "v2-067",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     60.5,
+     56.5
+    ],
+    [
+     215.5,
+     56.5
+    ],
+    [
+     215.5,
+     100.5
+    ],
+    [
+     60.5,
+     100.5
+    ]
+   ],
+   "bbox": [
+    60.5,
+    56.5,
+    215.5,
+    100.5
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "2026 예천",
+   "text_key": "2026예천",
+   "ocr_text": "2026 예천",
+   "confidence": 0.7071128235242949,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 예천 삼강나루 주막축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-067.easy_rgb_2x_005",
+   "case_id": "v2-067",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     32.5,
+     92.5
+    ],
+    [
+     250.5,
+     92.5
+    ],
+    [
+     250.5,
+     186.5
+    ],
+    [
+     32.5,
+     186.5
+    ]
+   ],
+   "bbox": [
+    32.5,
+    92.5,
+    250.5,
+    186.5
+   ],
+   "height": 94.0,
+   "small_text": false,
+   "text": "삼강나루",
+   "text_key": "삼강나루",
+   "ocr_text": "삼강나루",
+   "confidence": 0.9053729176521301,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 예천 삼강나루 주막축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-067.easy_rgb_2x_006",
+   "case_id": "v2-067",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     44.5,
+     164.5
+    ],
+    [
+     238.5,
+     164.5
+    ],
+    [
+     238.5,
+     256.5
+    ],
+    [
+     44.5,
+     256.5
+    ]
+   ],
+   "bbox": [
+    44.5,
+    164.5,
+    238.5,
+    256.5
+   ],
+   "height": 92.0,
+   "small_text": false,
+   "text": "주막축제",
+   "text_key": "주막축제",
+   "ocr_text": "주막축제'",
+   "confidence": 0.7105897562899491,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "예천 삼강나루 주막축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-067.easy_rgb_2x_007",
+   "case_id": "v2-067",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     49.0,
+     264.5
+    ],
+    [
+     178.5,
+     264.5
+    ],
+    [
+     178.5,
+     296.0
+    ],
+    [
+     49.0,
+     296.0
+    ]
+   ],
+   "bbox": [
+    49.0,
+    264.5,
+    178.5,
+    296.0
+   ],
+   "height": 31.5,
+   "small_text": false,
+   "text": "2026. 9. 25.",
+   "text_key": "2026925",
+   "ocr_text": "2026.9.25.",
+   "confidence": 0.8343840031143248,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9. 25.금 ~ 27.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-067.easy_rgb_2x_008",
+   "case_id": "v2-067",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     212.5,
+     264.5
+    ],
+    [
+     253.5,
+     264.5
+    ],
+    [
+     253.5,
+     294.5
+    ],
+    [
+     212.5,
+     294.5
+    ]
+   ],
+   "bbox": [
+    212.5,
+    264.5,
+    253.5,
+    294.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "27.",
+   "text_key": "27",
+   "ocr_text": "27.",
+   "confidence": 0.8520497705754738,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9. 25.금 ~ 27.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-067.easy_rgb_2x_009",
+   "case_id": "v2-067",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     50.5,
+     298.5
+    ],
+    [
+     198.5,
+     298.5
+    ],
+    [
+     198.5,
+     319.5
+    ],
+    [
+     50.5,
+     319.5
+    ]
+   ],
+   "bbox": [
+    50.5,
+    298.5,
+    198.5,
+    319.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "예천 삼강문화단지 일원",
+   "text_key": "예천삼강문화단지일원",
+   "ocr_text": "예천 삼강문화단지 일원",
+   "confidence": 0.6988046909315495,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예천 삼강문화단지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

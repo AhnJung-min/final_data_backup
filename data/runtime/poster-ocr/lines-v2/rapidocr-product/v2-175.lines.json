@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-175",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 454,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-175.rapi_product_004",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     27.0,
+     503.0
+    ],
+    [
+     427.0,
+     503.0
+    ],
+    [
+     427.0,
+     552.0
+    ],
+    [
+     27.0,
+     552.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    503.0,
+    427.0,
+    552.0
+   ],
+   "height": 49.0,
+   "small_text": false,
+   "text": "10.23.(금) - 10.25.(일)",
+   "text_key": "1023금1025일",
+   "ocr_text": "10.23.(금)- 10.25.(일)",
+   "confidence": 0.98787,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.23.(금) - 10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.rapi_product_005",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     29.0,
+     551.0
+    ],
+    [
+     428.0,
+     554.0
+    ],
+    [
+     427.0,
+     586.0
+    ],
+    [
+     29.0,
+     583.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    551.0,
+    428.0,
+    586.0
+   ],
+   "height": 32.01,
+   "small_text": false,
+   "text": "중앙동 전통시장 일원 (원주천 및 문화의거리 일원)",
+   "text_key": "중앙동전통시장일원원주천및문화의거리일원",
+   "ocr_text": "중앙동 전통시장 일원(원주천 및 문화의거리 일원)",
+   "confidence": 0.97005,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "중앙동 전통시장 일원 (원주천 및 문화의거리 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.rapi_product_006",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     93.0,
+     595.0
+    ],
+    [
+     125.0,
+     595.0
+    ],
+    [
+     125.0,
+     609.0
+    ],
+    [
+     93.0,
+     609.0
+    ]
+   ],
+   "bbox": [
+    93.0,
+    595.0,
+    125.0,
+    609.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "원주시",
+   "text_key": "원주시",
+   "ocr_text": "원주시",
+   "confidence": 0.75208,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

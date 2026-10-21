@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-119",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 23,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-119.easy_rgb_2x_005",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     22.0,
+     186.0
+    ],
+    [
+     117.0,
+     186.0
+    ],
+    [
+     117.0,
+     210.0
+    ],
+    [
+     22.0,
+     210.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    186.0,
+    117.0,
+    210.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "야외도서관",
+   "text_key": "야외도서관",
+   "ocr_text": "야외도머관",
+   "confidence": 0.9092987846899142,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "야외도서관",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.easy_rgb_2x_012",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     39.0,
+     317.0
+    ],
+    [
+     123.0,
+     317.0
+    ],
+    [
+     123.0,
+     332.0
+    ],
+    [
+     39.0,
+     332.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    317.0,
+    123.0,
+    332.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "(토) 14:00~20:00",
+   "text_key": "토14002000",
+   "ocr_text": "(토) 14 00-20,00",
+   "confidence": 0.27500397939581606,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "(토) 14:00~20:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.easy_rgb_2x_014",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     38.0,
+     346.0
+    ],
+    [
+     115.0,
+     346.0
+    ],
+    [
+     115.0,
+     362.0
+    ],
+    [
+     38.0,
+     362.0
+    ]
+   ],
+   "bbox": [
+    38.0,
+    346.0,
+    115.0,
+    362.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "우리들공원 일대",
+   "text_key": "우리들공원일대",
+   "ocr_text": "우리-공임 일대",
+   "confidence": 0.22739237059679368,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "우리들공원 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.easy_rgb_2x_016",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     59.5,
+     514.5
+    ],
+    [
+     89.0,
+     514.5
+    ],
+    [
+     89.0,
+     528.5
+    ],
+    [
+     59.5,
+     528.5
+    ]
+   ],
+   "bbox": [
+    59.5,
+    514.5,
+    89.0,
+    528.5
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "책으로",
+   "text_key": "책으로",
+   "ocr_text": "똑으로",
+   "confidence": 0.1923010547689266,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.easy_rgb_2x_017",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     48.5,
+     529.5
+    ],
+    [
+     103.0,
+     529.5
+    ],
+    [
+     103.0,
+     548.0
+    ],
+    [
+     48.5,
+     548.0
+    ]
+   ],
+   "bbox": [
+    48.5,
+    529.5,
+    103.0,
+    548.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "이어진 골목,",
+   "text_key": "이어진골목",
+   "ocr_text": "이어진 골목",
+   "confidence": 0.6603285336236535,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.easy_rgb_2x_018",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     56.5,
+     548.5
+    ],
+    [
+     96.0,
+     548.5
+    ],
+    [
+     96.0,
+     562.5
+    ],
+    [
+     56.5,
+     562.5
+    ]
+   ],
+   "bbox": [
+    56.5,
+    548.5,
+    96.0,
+    562.5
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "이야기로",
+   "text_key": "이야기로",
+   "ocr_text": "'미야기로",
+   "confidence": 0.24244058618947636,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.easy_rgb_2x_019",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     48.0,
+     565.0
+    ],
+    [
+     109.0,
+     565.0
+    ],
+    [
+     109.0,
+     581.0
+    ],
+    [
+     48.0,
+     581.0
+    ]
+   ],
+   "bbox": [
+    48.0,
+    565.0,
+    109.0,
+    581.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "연결되는 중구",
+   "text_key": "연결되는중구",
+   "ocr_text": "연결되는 손구",
+   "confidence": 0.2607032199031632,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

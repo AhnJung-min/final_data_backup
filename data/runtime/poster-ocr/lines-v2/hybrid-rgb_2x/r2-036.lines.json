@@ -1,0 +1,395 @@
+{
+ "case_id": "r2-036",
+ "split": "reserve",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-036.easy_rgb_2x_000",
+   "case_id": "r2-036",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     16.5,
+     21.5
+    ],
+    [
+     123.5,
+     21.5
+    ],
+    [
+     123.5,
+     40.5
+    ],
+    [
+     16.5,
+     40.5
+    ]
+   ],
+   "bbox": [
+    16.5,
+    21.5,
+    123.5,
+    40.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "군민이 빛나는 달성",
+   "text_key": "군민이빛나는달성",
+   "ocr_text": "군민이넷나는달성",
+   "confidence": 0.8466656804084778,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "군민이 빛나는 달성",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-036.easy_rgb_2x_003",
+   "case_id": "r2-036",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     27.0,
+     480.0
+    ],
+    [
+     110.0,
+     480.0
+    ],
+    [
+     110.0,
+     504.0
+    ],
+    [
+     27.0,
+     504.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    480.0,
+    110.0,
+    504.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10. 17.(토)",
+   "text_key": "1017토",
+   "ocr_text": "10.17(토)",
+   "confidence": 0.8753175735473633,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 17.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-036.easy_rgb_2x_004",
+   "case_id": "r2-036",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     241.5,
+     480.5
+    ],
+    [
+     324.5,
+     480.5
+    ],
+    [
+     324.5,
+     502.5
+    ],
+    [
+     241.5,
+     502.5
+    ]
+   ],
+   "bbox": [
+    241.5,
+    480.5,
+    324.5,
+    502.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "10. 18.(일)",
+   "text_key": "1018일",
+   "ocr_text": "10.18 (일)",
+   "confidence": 0.8836722353734252,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-036.easy_rgb_2x_009",
+   "case_id": "r2-036",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     15.5,
+     563.5
+    ],
+    [
+     122.5,
+     563.5
+    ],
+    [
+     122.5,
+     584.5
+    ],
+    [
+     15.5,
+     584.5
+    ]
+   ],
+   "bbox": [
+    15.5,
+    563.5,
+    122.5,
+    584.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "26. 10. 17.(토)",
+   "text_key": "261017토",
+   "ocr_text": "26.10.17 (토)",
+   "confidence": 0.7341990956781759,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "26. 10. 17.(토) ~ 10. 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-036.easy_rgb_2x_011",
+   "case_id": "r2-036",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     133.5,
+     564.5
+    ],
+    [
+     211.5,
+     564.5
+    ],
+    [
+     211.5,
+     584.5
+    ],
+    [
+     133.5,
+     584.5
+    ]
+   ],
+   "bbox": [
+    133.5,
+    564.5,
+    211.5,
+    584.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "10. 18.(일)",
+   "text_key": "1018일",
+   "ocr_text": "10.18 (일)",
+   "confidence": 0.8875473752596374,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "26. 10. 17.(토) ~ 10. 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-036.easy_rgb_2x_012",
+   "case_id": "r2-036",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     269.0,
+     563.0
+    ],
+    [
+     390.0,
+     563.0
+    ],
+    [
+     390.0,
+     585.0
+    ],
+    [
+     269.0,
+     585.0
+    ]
+   ],
+   "bbox": [
+    269.0,
+    563.0,
+    390.0,
+    585.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "강정보디아크광장",
+   "text_key": "강정보디아크광장",
+   "ocr_text": "강정보디아크광장",
+   "confidence": 0.9818456172943115,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강정보디아크광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-036.easy_rgb_2x_013",
+   "case_id": "r2-036",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     86.5,
+     602.5
+    ],
+    [
+     269.5,
+     602.5
+    ],
+    [
+     269.5,
+     620.5
+    ],
+    [
+     86.5,
+     620.5
+    ]
+   ],
+   "bbox": [
+    86.5,
+    602.5,
+    269.5,
+    620.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "달성군",
+   "text_key": "달성군",
+   "ocr_text": "주최·주관| 달성군밝답성문화재단",
+   "confidence": 0.8363629579544067,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "달성군",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

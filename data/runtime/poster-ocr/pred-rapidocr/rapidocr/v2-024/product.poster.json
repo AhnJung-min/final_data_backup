@@ -1,0 +1,236 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-868022683e29",
+ "image": {
+  "sha256": "868022683e2950adbb11d2a8175aec1b505bd010cb7ea24717f2fc36c72d77ce",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:40+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "무창포 2020 비의 K-miracle!",
+  "official": "무창포 비의 K-miracle!",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_008",
+    "rapi_product_009",
+    "rapi_product_010",
+    "rapi_product_012"
+   ],
+   "bbox": [
+    31.0,
+    129.0,
+    434.0,
+    510.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제26회",
+  "number": 26,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_007"
+   ],
+   "bbox": [
+    43.0,
+    104.0,
+    131.0,
+    135.0
+   ],
+   "confidence": 0.99527
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_017"
+   ],
+   "bbox": [
+    183.0,
+    511.0,
+    418.0,
+    531.0
+   ],
+   "confidence": 0.94763
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.11.(금)~13.(일) 3일간",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": "3일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_017"
+   ],
+   "bbox": [
+    183.0,
+    511.0,
+    418.0,
+    531.0
+   ],
+   "confidence": 0.94763
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "무창포해수욕장 일원",
+  "items": [
+   "무창포해수욕장 일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_018"
+   ],
+   "bbox": [
+    304.0,
+    531.0,
+    417.0,
+    547.0
+   ],
+   "confidence": 0.94079
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "증남보시8건만은리8054",
+  "kind": "jibun",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_019"
+   ],
+   "bbox": [
+    305.0,
+    548.0,
+    417.0,
+    558.0
+   ],
+   "confidence": 0.62867
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "증남보시8건만은리8054일일",
+  "region": null,
+  "district": "증남보시",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_019"
+   ],
+   "bbox": [
+    305.0,
+    548.0,
+    417.0,
+    558.0
+   ],
+   "confidence": 0.62867
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

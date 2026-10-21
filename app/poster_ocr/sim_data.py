@@ -124,14 +124,19 @@ def typo(word, rng):
     return word[:i] + new + word[i + 1:]
 
 
-def build_specs():
-    rng = random.Random(SEED)
+def build_specs(seed=SEED, shuffle_pairs=False):
+    rng = random.Random(seed)
     pairs, seen = [], set()
     for s in range(40):
         r, t = s % 10, (s * 3 + s // 10) % 10
         assert (r, t) not in seen
         seen.add((r, t))
         pairs.append((r, t))
+    if shuffle_pairs:  # 지역·주제 짝과 세트 순서(→ 디자인 틀·날짜 표기)도 섞는다. 지역·주제·틀별 개수는 그대로, 값 난수(rng)는 건드리지 않는다
+        mix = random.Random(f"pairs-{seed}")
+        rmap, tmap = mix.sample(range(10), 10), mix.sample(range(10), 10)
+        pairs = [(rmap[r], tmap[t]) for r, t in pairs]
+        mix.shuffle(pairs)
     mismatched = sorted(rng.sample(range(40), 20))
     types = MISMATCH_TYPES[:]
     rng.shuffle(types)
@@ -471,20 +476,23 @@ def sha256(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, default=OUT)
+    parser.add_argument("--seed", type=int, default=SEED)
+    parser.add_argument("--shuffle-pairs", action="store_true", help="지역·주제·디자인 틀 조합도 시드로 섞는다(기본: v1과 같은 조합)")
     args = parser.parse_args()
-    sets = build_specs()
+    args.out = args.out.resolve()  # 상대 경로도 받는다(파일 경로는 저장소 기준으로 기록)
+    sets = build_specs(args.seed, args.shuffle_pairs)
     (args.out / "posters").mkdir(parents=True, exist_ok=True)
     (args.out / "documents").mkdir(parents=True, exist_ok=True)
     cases = []
     for k, s in enumerate(sets):
         poster_path, doc_path = args.out / "posters" / f"{s['id']}.png", args.out / "documents" / f"{s['id']}.png"
-        poster_image(s["poster"], SEED + k).save(poster_path, optimize=True)
+        poster_image(s["poster"], args.seed + k).save(poster_path, optimize=True)
         doc_image(s).save(doc_path, optimize=True)
         s["files"] = {"poster": poster_path.relative_to(ROOT).as_posix(), "document": doc_path.relative_to(ROOT).as_posix()}
         for kind, path in (("document", doc_path), ("poster", poster_path)):  # 세트마다 문서 → 포스터 순서로 읽는다
             cases.append({"id": f"{s['id']}-{'doc' if kind == 'document' else 'poster'}", "set": s["id"], "kind": kind, "split": "sim",
                           "image": path.relative_to(ROOT).as_posix(), "sha256": sha256(path)})
-    meta = {"dataset_id": "synthetic-poster-check-v1", "seed": SEED, "sets": len(sets),
+    meta = {"dataset_id": f"synthetic-{args.out.name}", "seed": args.seed, **({"shuffle_pairs": True} if args.shuffle_pairs else {}), "sets": len(sets),
             "match": sum(s["label"] == "match" for s in sets), "mismatch": sum(s["label"] == "mismatch" for s in sets),
             "note": "가상 축제·기관·전화번호(국번 000). 기준 문서는 디자인 용역 표준계약서(산업통상부 고시 제2025-033호) 전문 양식을 따른다."}
     (args.out / "sets.json").write_text(json.dumps({**meta, "sets": sets}, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -1,0 +1,343 @@
+{
+ "case_id": "v2-048",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-048.easy_rgb_2x_000",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     166.5,
+     428.5
+    ],
+    [
+     274.5,
+     428.5
+    ],
+    [
+     274.5,
+     459.5
+    ],
+    [
+     166.5,
+     459.5
+    ]
+   ],
+   "bbox": [
+    166.5,
+    428.5,
+    274.5,
+    459.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "만화.웹툰",
+   "text_key": "만화웹툰",
+   "ocr_text": "만화.원툰",
+   "confidence": 0.6354533433914185,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "만화.웹툰 만만합니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.easy_rgb_2x_001",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     154.5,
+     456.5
+    ],
+    [
+     287.5,
+     456.5
+    ],
+    [
+     287.5,
+     487.5
+    ],
+    [
+     154.5,
+     487.5
+    ]
+   ],
+   "bbox": [
+    154.5,
+    456.5,
+    287.5,
+    487.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "만만합니다!",
+   "text_key": "만만합니다",
+   "ocr_text": "만만합니다!",
+   "confidence": 0.978633463382721,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "만화.웹툰 만만합니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.easy_rgb_2x_003",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     97.0,
+     510.0
+    ],
+    [
+     356.5,
+     510.0
+    ],
+    [
+     356.5,
+     556.5
+    ],
+    [
+     97.0,
+     556.5
+    ]
+   ],
+   "bbox": [
+    97.0,
+    510.0,
+    356.5,
+    556.5
+   ],
+   "height": 46.5,
+   "small_text": false,
+   "text": "부천국제만화축제",
+   "text_key": "부천국제만화축제",
+   "ocr_text": "부천국제만화축제",
+   "confidence": 0.9886253476142883,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부천국제만화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.easy_rgb_2x_004",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     114.0,
+     557.0
+    ],
+    [
+     184.0,
+     557.0
+    ],
+    [
+     184.0,
+     570.0
+    ],
+    [
+     114.0,
+     570.0
+    ]
+   ],
+   "bbox": [
+    114.0,
+    557.0,
+    184.0,
+    570.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "2026.9.18(",
+   "text_key": "2026918",
+   "ocr_text": "2026.9.18()",
+   "confidence": 0.9745018482208252,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026.9.18(금) - 9.20(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.easy_rgb_2x_005",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     195.0,
+     557.0
+    ],
+    [
+     237.0,
+     557.0
+    ],
+    [
+     237.0,
+     570.0
+    ],
+    [
+     195.0,
+     570.0
+    ]
+   ],
+   "bbox": [
+    195.0,
+    557.0,
+    237.0,
+    570.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "9.20(",
+   "text_key": "920",
+   "ocr_text": "9.20(9)",
+   "confidence": 0.984015941619873,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026.9.18(금) - 9.20(일)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.easy_rgb_2x_006",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     242.0,
+     556.0
+    ],
+    [
+     339.0,
+     556.0
+    ],
+    [
+     339.0,
+     571.0
+    ],
+    [
+     242.0,
+     571.0
+    ]
+   ],
+   "bbox": [
+    242.0,
+    556.0,
+    339.0,
+    571.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "한국만화박물관 일대",
+   "text_key": "한국만화박물관일대",
+   "ocr_text": "한국민화박물관일대",
+   "confidence": 0.6537463665008545,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "한국만화박물관 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

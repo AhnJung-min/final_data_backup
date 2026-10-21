@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-197",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-197.rapi_product_003",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     92.0,
+     262.0
+    ],
+    [
+     279.0,
+     264.0
+    ],
+    [
+     279.0,
+     295.0
+    ],
+    [
+     92.0,
+     293.0
+    ]
+   ],
+   "bbox": [
+    92.0,
+    262.0,
+    279.0,
+    295.0
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "2026.11.07.(토)",
+   "text_key": "20261107토",
+   "ocr_text": "2026.11.07.(토)",
+   "confidence": 0.9804,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.07.(토) ~ 08.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.rapi_product_004",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     267.0,
+     261.0
+    ],
+    [
+     361.0,
+     264.0
+    ],
+    [
+     360.0,
+     296.0
+    ],
+    [
+     266.0,
+     293.0
+    ]
+   ],
+   "bbox": [
+    266.0,
+    261.0,
+    361.0,
+    296.0
+   ],
+   "height": 32.02,
+   "small_text": false,
+   "text": "~ 08.(일)",
+   "text_key": "08일",
+   "ocr_text": "~08.(일)",
+   "confidence": 0.90292,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.07.(토) ~ 08.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.rapi_product_005",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     93.0,
+     297.0
+    ],
+    [
+     254.0,
+     300.0
+    ],
+    [
+     254.0,
+     325.0
+    ],
+    [
+     93.0,
+     323.0
+    ]
+   ],
+   "bbox": [
+    93.0,
+    297.0,
+    254.0,
+    325.0
+   ],
+   "height": 25.5,
+   "small_text": false,
+   "text": "의좋은 형제축제",
+   "text_key": "의좋은형제축제",
+   "ocr_text": "의좋은 형제 공원 일원",
+   "confidence": 0.90172,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "의좋은 형제축제",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.rapi_product_010",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_010"
+   },
+   "polygon": [
+    [
+     161.0,
+     351.0
+    ],
+    [
+     276.0,
+     351.0
+    ],
+    [
+     276.0,
+     366.0
+    ],
+    [
+     161.0,
+     366.0
+    ]
+   ],
+   "bbox": [
+    161.0,
+    351.0,
+    276.0,
+    366.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "황금쌀을 찾아라",
+   "text_key": "황금쌀을찾아라",
+   "ocr_text": "민나면개업금을 찾아라",
+   "confidence": 0.55577,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "황금쌀을 찾아라",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.rapi_product_011",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_011"
+   },
+   "polygon": [
+    [
+     299.0,
+     582.0
+    ],
+    [
+     436.0,
+     584.0
+    ],
+    [
+     436.0,
+     599.0
+    ],
+    [
+     299.0,
+     598.0
+    ]
+   ],
+   "bbox": [
+    299.0,
+    582.0,
+    436.0,
+    599.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "총 예산 : 200,000,000원(전액군비)",
+   "text_key": "총예산200000000원전액군비",
+   "ocr_text": "예산:200,000,000원(전액군비)",
+   "confidence": 0.87765,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0588,
+   "gold_value": "총 예산 : 200,000,000원(전액군비)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.rapi_product_015",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_015"
+   },
+   "polygon": [
+    [
+     265.0,
+     610.0
+    ],
+    [
+     295.0,
+     610.0
+    ],
+    [
+     295.0,
+     623.0
+    ],
+    [
+     265.0,
+     623.0
+    ]
+   ],
+   "bbox": [
+    265.0,
+    610.0,
+    295.0,
+    623.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "예산군",
+   "text_key": "예산군",
+   "ocr_text": "예산군",
+   "confidence": 0.88451,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예산군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.rapi_product_017",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_017"
+   },
+   "polygon": [
+    [
+     357.0,
+     610.0
+    ],
+    [
+     434.0,
+     610.0
+    ],
+    [
+     434.0,
+     622.0
+    ],
+    [
+     357.0,
+     622.0
+    ]
+   ],
+   "bbox": [
+    357.0,
+    610.0,
+    434.0,
+    622.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "041) 331 - 0619",
+   "text_key": "0413310619",
+   "ocr_text": "041)331-0618",
+   "confidence": 0.86596,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "041) 331 - 0619",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

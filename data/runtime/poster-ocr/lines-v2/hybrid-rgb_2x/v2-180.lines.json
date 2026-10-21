@@ -1,0 +1,125 @@
+{
+ "case_id": "v2-180",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 437,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-180.easy_rgb_2x_001",
+   "case_id": "v2-180",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     156.5,
+     327.5
+    ],
+    [
+     283.5,
+     327.5
+    ],
+    [
+     283.5,
+     352.5
+    ],
+    [
+     156.5,
+     352.5
+    ]
+   ],
+   "bbox": [
+    156.5,
+    327.5,
+    283.5,
+    352.5
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "함평엑스포공원",
+   "text_key": "함평엑스포공원",
+   "ocr_text": "함평엑스포공원",
+   "confidence": 0.9911921620368958,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "함평엑스포공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-180.easy_rgb_2x_002",
+   "case_id": "v2-180",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     121.0,
+     354.0
+    ],
+    [
+     322.0,
+     354.0
+    ],
+    [
+     322.0,
+     378.0
+    ],
+    [
+     121.0,
+     378.0
+    ]
+   ],
+   "bbox": [
+    121.0,
+    354.0,
+    322.0,
+    378.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026.10.23(금)-11.8(일)",
+   "text_key": "20261023금118일",
+   "ocr_text": "2026.10.23(금)-11.8(일)",
+   "confidence": 0.928268313407898,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.23(금)-11.8(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,453 @@
+{
+ "case_id": "v2-013",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 26,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-013.rapi_product_000",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     159.0,
+     143.0
+    ],
+    [
+     403.0,
+     141.0
+    ],
+    [
+     404.0,
+     209.0
+    ],
+    [
+     159.0,
+     211.0
+    ]
+   ],
+   "bbox": [
+    159.0,
+    141.0,
+    404.0,
+    211.0
+   ],
+   "height": 68.0,
+   "small_text": false,
+   "text": "홍성남당",
+   "text_key": "홍성남당",
+   "ocr_text": "홍성남당향",
+   "confidence": 0.90764,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "홍성남당항 대하축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.rapi_product_001",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     44.0,
+     160.0
+    ],
+    [
+     158.0,
+     159.0
+    ],
+    [
+     158.0,
+     203.0
+    ],
+    [
+     44.0,
+     204.0
+    ]
+   ],
+   "bbox": [
+    44.0,
+    159.0,
+    158.0,
+    204.0
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "제31회",
+   "text_key": "제31회",
+   "ocr_text": "·제31회",
+   "confidence": 0.88838,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "제31회 홍성남당항 대하축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.rapi_product_002",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     47.0,
+     195.0
+    ],
+    [
+     398.0,
+     194.0
+    ],
+    [
+     398.0,
+     301.0
+    ],
+    [
+     47.0,
+     302.0
+    ]
+   ],
+   "bbox": [
+    47.0,
+    194.0,
+    398.0,
+    302.0
+   ],
+   "height": 107.0,
+   "small_text": false,
+   "text": "대하축제",
+   "text_key": "대하축제",
+   "ocr_text": "대하축제",
+   "confidence": 0.96515,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "홍성남당항 대하축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.rapi_product_003",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     120.0,
+     321.0
+    ],
+    [
+     370.0,
+     322.0
+    ],
+    [
+     370.0,
+     350.0
+    ],
+    [
+     120.0,
+     349.0
+    ]
+   ],
+   "bbox": [
+    120.0,
+    321.0,
+    370.0,
+    350.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "축제기간 [ 2026. 09.04.(금)~11.08.(일) ]",
+   "text_key": "축제기간20260904금1108일",
+   "ocr_text": "[2026.09.04.(금)~11.08.(일)]",
+   "confidence": 0.97061,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2222,
+   "gold_value": "축제기간 [ 2026. 09.04.(금)~11.08.(일) ]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.rapi_product_007",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     78.0,
+     382.0
+    ],
+    [
+     113.0,
+     382.0
+    ],
+    [
+     113.0,
+     397.0
+    ],
+    [
+     78.0,
+     397.0
+    ]
+   ],
+   "bbox": [
+    78.0,
+    382.0,
+    113.0,
+    397.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "추석공연",
+   "text_key": "추석공연",
+   "ocr_text": "추석공언",
+   "confidence": 0.83378,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "추석공연",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.rapi_product_009",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_009"
+   },
+   "polygon": [
+    [
+     170.0,
+     405.0
+    ],
+    [
+     305.0,
+     405.0
+    ],
+    [
+     305.0,
+     425.0
+    ],
+    [
+     170.0,
+     425.0
+    ]
+   ],
+   "bbox": [
+    170.0,
+    405.0,
+    305.0,
+    425.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "홍성군 남당항 특설무대",
+   "text_key": "홍성군남당항특설무대",
+   "ocr_text": "홍성군 남당항 특설무대",
+   "confidence": 0.97684,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "홍성군 남당항 특설무대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.rapi_product_010",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_010"
+   },
+   "polygon": [
+    [
+     45.0,
+     444.0
+    ],
+    [
+     88.0,
+     444.0
+    ],
+    [
+     88.0,
+     457.0
+    ],
+    [
+     45.0,
+     457.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    444.0,
+    88.0,
+    457.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "9월 4일 공연",
+   "text_key": "9월4일공연",
+   "ocr_text": "9월4일공업",
+   "confidence": 0.69034,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "9월 4일 공연",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.rapi_product_022",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_022"
+   },
+   "polygon": [
+    [
+     67.0,
+     594.0
+    ],
+    [
+     179.0,
+     594.0
+    ],
+    [
+     179.0,
+     610.0
+    ],
+    [
+     67.0,
+     610.0
+    ]
+   ],
+   "bbox": [
+    67.0,
+    594.0,
+    179.0,
+    610.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "홍성남당항축제추진위원회",
+   "text_key": "홍성남당항축제추진위원회",
+   "ocr_text": "충성남당향촉제추진위원회",
+   "confidence": 0.87066,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "홍성남당항축제추진위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

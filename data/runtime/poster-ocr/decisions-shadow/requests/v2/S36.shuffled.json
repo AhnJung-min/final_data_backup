@@ -1,0 +1,1453 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 32,
+  "by_probe": {
+   "a": 8,
+   "b": 8,
+   "c": 8,
+   "d": 8
+  },
+  "options": 128,
+  "image_tokens": 3281,
+  "text_tokens": 5574,
+  "input_tokens": 8855,
+  "cost_usd": 0.0008855
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S36",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S36.png",
+    "sha256": "4d3ec757fb8adcf41dbbac27c0ac68aaa122f2e989e3d99e36678245776081dc",
+    "bytes": 118037,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S36.png",
+    "sha256": "7d103b76f141b5ed1550d85d6371464aab73683cd2b21cf1919f649a75c32bdb",
+    "bytes": 87882,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "미르 한지 공예 문화제",
+     "doc_variants": []
+    },
+    "doc_raw": "미르 한지 공예 문화제"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026. 10. 8.(목) ~ 10. 10.(토)",
+     "points": [
+      [
+       2026,
+       10,
+       8,
+       "목"
+      ],
+      [
+       2026,
+       10,
+       10,
+       "토"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026. 10. 8.(목) ~ 10. 10.(토)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "10:00~21:00"
+    },
+    "doc_raw": "10:00~21:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "미르시청 앞 광장"
+    },
+    "doc_raw": "미르시청 앞 광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "미르시"
+    },
+    "doc_raw": "미르시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "미르문화재단"
+    },
+    "doc_raw": "미르문화재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "063-000-9039"
+    },
+    "doc_raw": "063-000-9039"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "손끝에서 피어나는 전통"
+    },
+    "doc_raw": "손끝에서 피어나는 전통"
+   }
+  },
+  "rows": [
+   {
+    "value": "L893",
+    "index": 0,
+    "text": "2026",
+    "conf": 0.9991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026",
+      "confidence": 0.9991062879562378,
+      "bbox_xyxy": [
+       400.0,
+       94.0,
+       485.0,
+       127.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L124",
+    "index": 1,
+    "text": "미르",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "미르",
+      "confidence": 0.9995559453964233,
+      "bbox_xyxy": [
+       333.0,
+       158.0,
+       548.0,
+       287.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L112",
+    "index": 2,
+    "text": "한지 공예 문화제",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "한지",
+      "confidence": 0.9998718500137329,
+      "bbox_xyxy": [
+       54.0,
+       292.0,
+       267.0,
+       426.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "공예",
+      "confidence": 0.9999259114265442,
+      "bbox_xyxy": [
+       282.0,
+       295.0,
+       498.0,
+       425.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "문화제",
+      "confidence": 0.999775230884552,
+      "bbox_xyxy": [
+       508.0,
+       295.0,
+       822.0,
+       423.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L241",
+    "index": 3,
+    "text": "손끝에서 피어나는 전통",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "손끝에서",
+      "confidence": 0.9999533891677856,
+      "bbox_xyxy": [
+       266.0,
+       451.0,
+       414.0,
+       493.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "피어나는",
+      "confidence": 0.9998733997344971,
+      "bbox_xyxy": [
+       401.0,
+       450.0,
+       544.0,
+       493.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "전통",
+      "confidence": 0.9997690320014954,
+      "bbox_xyxy": [
+       547.0,
+       451.0,
+       620.0,
+       494.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L993",
+    "index": 4,
+    "text": "일시 2026.10.8.(목) ~10.10.(토)",
+    "conf": 0.9815,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "일시",
+      "confidence": 0.9999525547027588,
+      "bbox_xyxy": [
+       107.0,
+       572.0,
+       164.0,
+       608.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "2026.10.8.(목) ~10.10.(토)",
+      "confidence": 0.9815041422843933,
+      "bbox_xyxy": [
+       206.0,
+       573.0,
+       593.0,
+       610.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L856",
+    "index": 5,
+    "text": "시간 10:00~21:00",
+    "conf": 0.9983,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "시간",
+      "confidence": 0.9999675750732422,
+      "bbox_xyxy": [
+       106.0,
+       632.0,
+       167.0,
+       671.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "10:00~21:00",
+      "confidence": 0.9983413219451904,
+      "bbox_xyxy": [
+       209.0,
+       637.0,
+       397.0,
+       668.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L373",
+    "index": 6,
+    "text": "장소 미르시청 앞 광장",
+    "conf": 0.9717,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "장소",
+      "confidence": 0.9990922212600708,
+      "bbox_xyxy": [
+       106.0,
+       694.0,
+       167.0,
+       734.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "미르시청 앞 광장",
+      "confidence": 0.9717124104499817,
+      "bbox_xyxy": [
+       208.0,
+       697.0,
+       421.0,
+       733.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L616",
+    "index": 7,
+    "text": "한지 등 만들기",
+    "conf": 0.9939,
+    "records": [
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "한지 등 만들기",
+      "confidence": 0.9939389228820801,
+      "bbox_xyxy": [
+       368.0,
+       816.0,
+       516.0,
+       848.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L782",
+    "index": 8,
+    "text": "공예 장인 시연",
+    "conf": 0.9161,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "공예 장인 시연",
+      "confidence": 0.9161351919174194,
+      "bbox_xyxy": [
+       365.0,
+       871.0,
+       517.0,
+       907.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L359",
+    "index": 9,
+    "text": "전통 놀이 마당",
+    "conf": 0.9112,
+    "records": [
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "전통 놀이 마당",
+      "confidence": 0.911232590675354,
+      "bbox_xyxy": [
+       369.0,
+       932.0,
+       517.0,
+       964.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L726",
+    "index": 10,
+    "text": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039",
+    "conf": 0.9317,
+    "records": [
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039",
+      "confidence": 0.9316640496253967,
+      "bbox_xyxy": [
+       167.0,
+       1191.0,
+       717.0,
+       1218.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "미르 한지 공예 문화제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026. 10. 8.(목) ~ 10. 10.(토)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "10:00~21:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "미르시청 앞 광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "미르시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "미르문화재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "063-000-9039"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "손끝에서 피어나는 전통"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "미르 한지 공예 문화제"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026. 10. 8.(목) ~ 10. 10.(토)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "10:00~21:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "미르시청 앞 광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "미르시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "미르문화재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "063-000-9039"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "손끝에서 피어나는 전통"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L241",
+    "L616",
+    "L124",
+    "L893",
+    "L782",
+    "L373",
+    "L359",
+    "L112",
+    "L993",
+    "L726",
+    "L856",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L616",
+    "L241",
+    "L993",
+    "L782",
+    "L856",
+    "L359",
+    "L893",
+    "L726",
+    "L112",
+    "L124",
+    "L373",
+    "none"
+   ],
+   "b_line_time": [
+    "L112",
+    "L616",
+    "L124",
+    "L856",
+    "L241",
+    "L726",
+    "L782",
+    "L993",
+    "L893",
+    "L359",
+    "L373",
+    "none"
+   ],
+   "b_line_venue": [
+    "L241",
+    "L112",
+    "L993",
+    "L359",
+    "L124",
+    "L373",
+    "L726",
+    "L856",
+    "L616",
+    "L782",
+    "L893",
+    "none"
+   ],
+   "b_line_host": [
+    "L359",
+    "L993",
+    "L782",
+    "L893",
+    "L124",
+    "L373",
+    "L112",
+    "L856",
+    "L241",
+    "L616",
+    "L726",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L241",
+    "L893",
+    "L373",
+    "L856",
+    "L124",
+    "L993",
+    "L616",
+    "L782",
+    "L359",
+    "L726",
+    "L112",
+    "none"
+   ],
+   "b_line_contact": [
+    "L241",
+    "L359",
+    "L726",
+    "L373",
+    "L893",
+    "L124",
+    "L782",
+    "L993",
+    "L616",
+    "L112",
+    "L856",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L782",
+    "L241",
+    "L993",
+    "L359",
+    "L373",
+    "L726",
+    "L112",
+    "L124",
+    "L856",
+    "L893",
+    "L616",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 118,037 bytes, sha256 4d3ec757fb8adcf4…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 87,882 bytes, sha256 7d103b76f141b5ed…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '미르 한지 공예 문화제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026. 10. 8.(목) ~ 10. 10.(토)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '10:00~21:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '미르시청 앞 광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '미르시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '미르문화재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '063-000-9039'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '손끝에서 피어나는 전통'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L782",
+      "description": "공예 장인 시연"
+     },
+     {
+      "value": "L241",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L993",
+      "description": "일시 2026.10.8.(목) ~10.10.(토)"
+     },
+     {
+      "value": "L359",
+      "description": "전통 놀이 마당"
+     },
+     {
+      "value": "L373",
+      "description": "장소 미르시청 앞 광장"
+     },
+     {
+      "value": "L726",
+      "description": "주최 미르시 ㅣ 주관 미르문화재단 | 문의 063-000-9039"
+     },
+     {
+      "value": "L112",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L124",
+      "description": "미르"
+     },
+     {
+      "value": "L856",
+      "description": "시간 10:00~21:00"
+     },
+     {
+      "value": "L893",
+      "description": "2026"
+     },
+     {
+      "value": "L616",
+      "description": "한지 등 만들기"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '미르 한지 공예 문화제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026. 10. 8.(목) ~ 10. 10.(토)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '10:00~21:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '미르시청 앞 광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '미르시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '미르문화재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '063-000-9039'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '손끝에서 피어나는 전통'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

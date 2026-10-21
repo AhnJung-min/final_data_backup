@@ -1,0 +1,399 @@
+{
+ "case_id": "r2-038",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 502,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-038.padd_rgb_2x_000",
+   "case_id": "r2-038",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     264.5,
+     46.5
+    ],
+    [
+     420.5,
+     64.5
+    ],
+    [
+     418.5,
+     80.0
+    ],
+    [
+     263.0,
+     62.5
+    ]
+   ],
+   "bbox": [
+    263.0,
+    46.5,
+    420.5,
+    80.0
+   ],
+   "height": 15.85,
+   "small_text": false,
+   "text": "2026 제주 원도심 야간여행",
+   "text_key": "2026제주원도심야간여행",
+   "ocr_text": "2026 제주 원도심 야간여행",
+   "confidence": 0.9378715753555298,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 제주 원도심 야간여행 나이트 워크",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-038.padd_rgb_2x_001",
+   "case_id": "r2-038",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     260.0,
+     74.0
+    ],
+    [
+     408.5,
+     89.5
+    ],
+    [
+     399.5,
+     172.5
+    ],
+    [
+     251.0,
+     157.0
+    ]
+   ],
+   "bbox": [
+    251.0,
+    74.0,
+    408.5,
+    172.5
+   ],
+   "height": 83.49,
+   "small_text": false,
+   "text": "워크",
+   "text_key": "워크",
+   "ocr_text": "워크",
+   "confidence": 0.9995213747024536,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "제주 원도심 야간여행 나이트 워크",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-038.padd_rgb_2x_002",
+   "case_id": "r2-038",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     77.5,
+     91.5
+    ],
+    [
+     249.0,
+     60.5
+    ],
+    [
+     264.0,
+     140.5
+    ],
+    [
+     92.0,
+     171.5
+    ]
+   ],
+   "bbox": [
+    77.5,
+    60.5,
+    264.0,
+    171.5
+   ],
+   "height": 81.35,
+   "small_text": false,
+   "text": "나이트",
+   "text_key": "나이트",
+   "ocr_text": "나이트",
+   "confidence": 0.9998604655265808,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "제주 원도심 야간여행 나이트 워크",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-038.padd_rgb_2x_003",
+   "case_id": "r2-038",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     142.0,
+     201.5
+    ],
+    [
+     360.5,
+     200.5
+    ],
+    [
+     361.0,
+     222.5
+    ],
+    [
+     142.5,
+     223.5
+    ]
+   ],
+   "bbox": [
+    142.0,
+    200.5,
+    361.0,
+    223.5
+   ],
+   "height": 22.01,
+   "small_text": false,
+   "text": "10.17(토) 18:30~19:30",
+   "text_key": "1017토18301930",
+   "ocr_text": "10.17(토)18:30~19:30",
+   "confidence": 0.9981490969657898,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.17(토) 18:30~19:30",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-038.padd_rgb_2x_005",
+   "case_id": "r2-038",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     157.5,
+     278.5
+    ],
+    [
+     344.5,
+     278.5
+    ],
+    [
+     344.5,
+     295.5
+    ],
+    [
+     157.5,
+     295.5
+    ]
+   ],
+   "bbox": [
+    157.5,
+    278.5,
+    344.5,
+    295.5
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "탑동광장 > 임항로 > 산지로",
+   "text_key": "탑동광장임항로산지로",
+   "ocr_text": "탑동광장>임항로>산지로",
+   "confidence": 0.9930452704429626,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "탑동광장 > 임항로 > 산지로 > 동문시장앞/탐라문화광장 > 칠성로상가/관덕로11길 > 탑동광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-038.padd_rgb_2x_006",
+   "case_id": "r2-038",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     74.5,
+     301.5
+    ],
+    [
+     427.5,
+     301.5
+    ],
+    [
+     427.5,
+     318.5
+    ],
+    [
+     74.5,
+     318.5
+    ]
+   ],
+   "bbox": [
+    74.5,
+    301.5,
+    427.5,
+    318.5
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "> 동문시장앞/탐라문화광장 > 칠성로상가/관덕로11길",
+   "text_key": "동문시장앞탐라문화광장칠성로상가관덕로11길",
+   "ocr_text": ">동문시장앞/탐라문화광장 >칠성로상가/관덕로11길",
+   "confidence": 0.9832552671432495,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "탑동광장 > 임항로 > 산지로 > 동문시장앞/탐라문화광장 > 칠성로상가/관덕로11길 > 탑동광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-038.padd_rgb_2x_012",
+   "case_id": "r2-038",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     140.5,
+     470.5
+    ],
+    [
+     359.5,
+     471.5
+    ],
+    [
+     359.5,
+     485.0
+    ],
+    [
+     140.5,
+     484.5
+    ]
+   ],
+   "bbox": [
+    140.5,
+    470.5,
+    359.5,
+    485.0
+   ],
+   "height": 13.75,
+   "small_text": false,
+   "text": "*기상 상황에 따라 행사 내용은 변경될 수 있습니다.",
+   "text_key": "기상상황에따라행사내용은변경될수있습니다",
+   "ocr_text": "*기상 상황에 따라 행사 내용은 변경될 수 있습니다.",
+   "confidence": 0.9716271758079529,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "*기상 상황에 따라 행사 내용은 변경될 수 있습니다.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

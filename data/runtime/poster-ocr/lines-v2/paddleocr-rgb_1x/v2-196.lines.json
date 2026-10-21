@@ -1,0 +1,345 @@
+{
+ "case_id": "v2-196",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-196.padd_rgb_1x_000",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     287.0,
+     6.0
+    ],
+    [
+     429.0,
+     43.0
+    ],
+    [
+     414.0,
+     100.0
+    ],
+    [
+     272.0,
+     62.0
+    ]
+   ],
+   "bbox": [
+    272.0,
+    6.0,
+    429.0,
+    100.0
+   ],
+   "height": 58.46,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9966352581977844,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "2026 어부장터 X포트빌리지통영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.padd_rgb_1x_001",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     43.0,
+     36.0
+    ],
+    [
+     387.0,
+     28.0
+    ],
+    [
+     390.0,
+     193.0
+    ],
+    [
+     47.0,
+     201.0
+    ]
+   ],
+   "bbox": [
+    43.0,
+    28.0,
+    390.0,
+    201.0
+   ],
+   "height": 165.04,
+   "small_text": false,
+   "text": "어부장터",
+   "text_key": "어부장터",
+   "ocr_text": "어부정터",
+   "confidence": 0.8455694317817688,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "어부장터 X 포트빌리지통영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.padd_rgb_1x_002",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     46.0,
+     161.0
+    ],
+    [
+     381.0,
+     161.0
+    ],
+    [
+     381.0,
+     246.0
+    ],
+    [
+     46.0,
+     246.0
+    ]
+   ],
+   "bbox": [
+    46.0,
+    161.0,
+    381.0,
+    246.0
+   ],
+   "height": 85.0,
+   "small_text": false,
+   "text": "X 포트빌리지통영",
+   "text_key": "x포트빌리지통영",
+   "ocr_text": "X포트빌리지동영",
+   "confidence": 0.8760477304458618,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "어부장터 X 포트빌리지통영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.padd_rgb_1x_007",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     19.0,
+     601.0
+    ],
+    [
+     279.0,
+     601.0
+    ],
+    [
+     279.0,
+     613.0
+    ],
+    [
+     19.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    601.0,
+    279.0,
+    613.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "11.6(금)-8(일)",
+   "text_key": "116금8일",
+   "ocr_text": "통영 트라이애슬론광장| 11.6(금)-8(입) 10:00-21:00",
+   "confidence": 0.9241530895233154,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "11.6(금)-8(일)",
+   "extra_chars": 19,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.padd_rgb_1x_008",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     342.0,
+     601.0
+    ],
+    [
+     374.0,
+     598.0
+    ],
+    [
+     375.0,
+     609.0
+    ],
+    [
+     343.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    342.0,
+    598.0,
+    375.0,
+    612.0
+   ],
+   "height": 11.05,
+   "small_text": false,
+   "text": "통영시",
+   "text_key": "통영시",
+   "ocr_text": "통영시",
+   "confidence": 0.6692459583282471,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "통영시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.padd_rgb_1x_009",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     374.0,
+     599.0
+    ],
+    [
+     422.0,
+     599.0
+    ],
+    [
+     422.0,
+     608.0
+    ],
+    [
+     374.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    374.0,
+    599.0,
+    422.0,
+    608.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "FOOD TRAVEL",
+   "text_key": "foodtravel",
+   "ocr_text": "FODOTRAVE",
+   "confidence": 0.9059883952140808,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "FOOD TRAVEL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

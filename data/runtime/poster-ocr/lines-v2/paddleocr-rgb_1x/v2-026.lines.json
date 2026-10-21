@@ -1,0 +1,399 @@
+{
+ "case_id": "v2-026",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-026.padd_rgb_1x_000",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     102.0,
+     27.0
+    ],
+    [
+     313.0,
+     24.0
+    ],
+    [
+     314.0,
+     99.0
+    ],
+    [
+     103.0,
+     101.0
+    ]
+   ],
+   "bbox": [
+    102.0,
+    24.0,
+    314.0,
+    101.0
+   ],
+   "height": 74.51,
+   "small_text": false,
+   "text": "거제에서",
+   "text_key": "거제에서",
+   "ocr_text": "거제에서",
+   "confidence": 0.9932451844215393,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "거제에서",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.padd_rgb_1x_001",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     162.0,
+     134.0
+    ],
+    [
+     255.0,
+     134.0
+    ],
+    [
+     255.0,
+     178.0
+    ],
+    [
+     162.0,
+     178.0
+    ]
+   ],
+   "bbox": [
+    162.0,
+    134.0,
+    255.0,
+    178.0
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9892475605010986,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 거제 맥주 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.padd_rgb_1x_002",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     155.0,
+     200.0
+    ],
+    [
+     266.0,
+     200.0
+    ],
+    [
+     266.0,
+     270.0
+    ],
+    [
+     155.0,
+     270.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    200.0,
+    266.0,
+    270.0
+   ],
+   "height": 70.0,
+   "small_text": false,
+   "text": "거제",
+   "text_key": "거제",
+   "ocr_text": "거제",
+   "confidence": 0.9981528520584106,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "거제 맥주 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.padd_rgb_1x_003",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     153.0,
+     259.0
+    ],
+    [
+     267.0,
+     262.0
+    ],
+    [
+     265.0,
+     336.0
+    ],
+    [
+     151.0,
+     333.0
+    ]
+   ],
+   "bbox": [
+    151.0,
+    259.0,
+    267.0,
+    336.0
+   ],
+   "height": 74.03,
+   "small_text": false,
+   "text": "맥주",
+   "text_key": "맥주",
+   "ocr_text": "맥주",
+   "confidence": 0.9610934257507324,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "거제 맥주 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.padd_rgb_1x_004",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     156.0,
+     321.0
+    ],
+    [
+     268.0,
+     324.0
+    ],
+    [
+     266.0,
+     394.0
+    ],
+    [
+     154.0,
+     391.0
+    ]
+   ],
+   "bbox": [
+    154.0,
+    321.0,
+    268.0,
+    394.0
+   ],
+   "height": 70.03,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.9933632612228394,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "거제 맥주 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.padd_rgb_1x_008",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     10.0,
+     573.0
+    ],
+    [
+     400.0,
+     573.0
+    ],
+    [
+     400.0,
+     596.0
+    ],
+    [
+     10.0,
+     596.0
+    ]
+   ],
+   "bbox": [
+    10.0,
+    573.0,
+    400.0,
+    596.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "9. 11.(금) - 12.(토)",
+   "text_key": "911금12토",
+   "ocr_text": "9.11.(금)-12.(토) 거제시 장승포항 수변공원",
+   "confidence": 0.9404248595237732,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 11.(금) - 12.(토)",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.padd_rgb_1x_009",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     10.0,
+     599.0
+    ],
+    [
+     123.0,
+     599.0
+    ],
+    [
+     123.0,
+     619.0
+    ],
+    [
+     10.0,
+     619.0
+    ]
+   ],
+   "bbox": [
+    10.0,
+    599.0,
+    123.0,
+    619.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "18:00 - 22:00",
+   "text_key": "18002200",
+   "ocr_text": "18:00-22:00",
+   "confidence": 0.9995088577270508,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "18:00 - 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

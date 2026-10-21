@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-101",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 424,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 44,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-101.easy_rgb_2x_000",
+   "case_id": "v2-101",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     13.5,
+     13.5
+    ],
+    [
+     117.5,
+     13.5
+    ],
+    [
+     117.5,
+     67.5
+    ],
+    [
+     13.5,
+     67.5
+    ]
+   ],
+   "bbox": [
+    13.5,
+    13.5,
+    117.5,
+    67.5
+   ],
+   "height": 54.0,
+   "small_text": false,
+   "text": "20th",
+   "text_key": "20th",
+   "ocr_text": "20th",
+   "confidence": 0.9914724230766296,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2632,
+   "gold_value": "20th 2026 D.FESTA 소극장축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-101.easy_rgb_2x_003",
+   "case_id": "v2-101",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     13.0,
+     89.0
+    ],
+    [
+     138.0,
+     89.0
+    ],
+    [
+     138.0,
+     138.0
+    ],
+    [
+     13.0,
+     138.0
+    ]
+   ],
+   "bbox": [
+    13.0,
+    89.0,
+    138.0,
+    138.0
+   ],
+   "height": 49.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.8128126462189909,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2632,
+   "gold_value": "20th 2026 D.FESTA 소극장축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-101.easy_rgb_2x_004",
+   "case_id": "v2-101",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     15.0,
+     131.5
+    ],
+    [
+     206.5,
+     131.5
+    ],
+    [
+     206.5,
+     179.5
+    ],
+    [
+     15.0,
+     179.5
+    ]
+   ],
+   "bbox": [
+    15.0,
+    131.5,
+    206.5,
+    179.5
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "D.FESTA",
+   "text_key": "dfesta",
+   "ocr_text": "D.FESTA",
+   "confidence": 0.9900893568992615,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2632,
+   "gold_value": "20th 2026 D.FESTA 소극장축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-101.easy_rgb_2x_006",
+   "case_id": "v2-101",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     16.5,
+     226.5
+    ],
+    [
+     151.5,
+     226.5
+    ],
+    [
+     151.5,
+     244.5
+    ],
+    [
+     16.5,
+     244.5
+    ]
+   ],
+   "bbox": [
+    16.5,
+    226.5,
+    151.5,
+    244.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026. 10. 7.(수) – 25.(일)",
+   "text_key": "2026107수25일",
+   "ocr_text": "2026.10.7.(수)-25.(일)",
+   "confidence": 0.9423025846481323,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 7.(수) – 25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-101.easy_rgb_2x_007",
+   "case_id": "v2-101",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     17.0,
+     246.0
+    ],
+    [
+     151.0,
+     246.0
+    ],
+    [
+     151.0,
+     261.0
+    ],
+    [
+     17.0,
+     261.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    246.0,
+    151.0,
+    261.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "공간아울, 후암스테이지, 열린극장",
+   "text_key": "공간아울후암스테이지열린극장",
+   "ocr_text": "공간이뭄. 후입스테이지 얼린극장",
+   "confidence": 0.14475733173340255,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "공간아울, 후암스테이지, 열린극장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

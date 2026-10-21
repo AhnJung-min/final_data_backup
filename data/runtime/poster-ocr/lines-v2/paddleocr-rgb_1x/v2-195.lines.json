@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-195",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 442,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-195.padd_rgb_1x_000",
+   "case_id": "v2-195",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     45.0,
+     12.0
+    ],
+    [
+     214.0,
+     12.0
+    ],
+    [
+     214.0,
+     45.0
+    ],
+    [
+     45.0,
+     45.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    12.0,
+    214.0,
+    45.0
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "세상에서 가장",
+   "text_key": "세상에서가장",
+   "ocr_text": "세상에서 가장",
+   "confidence": 0.9959465265274048,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "세상에서 가장 “긴” 라면 스트릿!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-195.padd_rgb_1x_001",
+   "case_id": "v2-195",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     264.0,
+     15.0
+    ],
+    [
+     323.0,
+     10.0
+    ],
+    [
+     325.0,
+     36.0
+    ],
+    [
+     266.0,
+     41.0
+    ]
+   ],
+   "bbox": [
+    264.0,
+    10.0,
+    325.0,
+    41.0
+   ],
+   "height": 26.08,
+   "small_text": false,
+   "text": "라면",
+   "text_key": "라면",
+   "ocr_text": "라면",
+   "confidence": 0.9991117119789124,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "세상에서 가장 “긴” 라면 스트릿!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-195.padd_rgb_1x_002",
+   "case_id": "v2-195",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     320.0,
+     8.0
+    ],
+    [
+     396.0,
+     12.0
+    ],
+    [
+     394.0,
+     45.0
+    ],
+    [
+     318.0,
+     41.0
+    ]
+   ],
+   "bbox": [
+    318.0,
+    8.0,
+    396.0,
+    45.0
+   ],
+   "height": 33.06,
+   "small_text": false,
+   "text": "스트릿!",
+   "text_key": "스트릿",
+   "ocr_text": "스트릿!",
+   "confidence": 0.9976809620857239,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "세상에서 가장 “긴” 라면 스트릿!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-195.padd_rgb_1x_006",
+   "case_id": "v2-195",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     132.0,
+     472.0
+    ],
+    [
+     308.0,
+     475.0
+    ],
+    [
+     307.0,
+     510.0
+    ],
+    [
+     131.0,
+     506.0
+    ]
+   ],
+   "bbox": [
+    131.0,
+    472.0,
+    308.0,
+    510.0
+   ],
+   "height": 34.51,
+   "small_text": false,
+   "text": "2026 . 11.6(금)~8(일)",
+   "text_key": "2026116금8일",
+   "ocr_text": "2026.11.6(금)~8(일)",
+   "confidence": 0.9288715124130249,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 . 11.6(금)~8(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-195.padd_rgb_1x_007",
+   "case_id": "v2-195",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     156.0,
+     503.0
+    ],
+    [
+     270.0,
+     506.0
+    ],
+    [
+     269.0,
+     544.0
+    ],
+    [
+     156.0,
+     542.0
+    ]
+   ],
+   "bbox": [
+    156.0,
+    503.0,
+    270.0,
+    544.0
+   ],
+   "height": 38.51,
+   "small_text": false,
+   "text": "구미역일원",
+   "text_key": "구미역일원",
+   "ocr_text": "구미역일원",
+   "confidence": 0.9958111643791199,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "구미역일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

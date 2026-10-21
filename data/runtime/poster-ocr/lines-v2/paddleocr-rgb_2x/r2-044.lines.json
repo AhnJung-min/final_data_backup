@@ -1,0 +1,396 @@
+{
+ "case_id": "r2-044",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 527,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-044.padd_rgb_2x_000",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     42.0,
+     18.5
+    ],
+    [
+     476.5,
+     18.5
+    ],
+    [
+     476.5,
+     91.0
+    ],
+    [
+     42.0,
+     91.0
+    ]
+   ],
+   "bbox": [
+    42.0,
+    18.5,
+    476.5,
+    91.0
+   ],
+   "height": 72.5,
+   "small_text": false,
+   "text": "2026 월출산국화축제",
+   "text_key": "2026월출산국화축제",
+   "ocr_text": "28월출산국화축제",
+   "confidence": 0.9523220062255859,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "2026 월출산국화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_2x_001",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     12.0,
+     362.0
+    ],
+    [
+     160.5,
+     362.0
+    ],
+    [
+     160.5,
+     378.0
+    ],
+    [
+     12.0,
+     378.0
+    ]
+   ],
+   "bbox": [
+    12.0,
+    362.0,
+    160.5,
+    378.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "2027-2028 영암방문의해",
+   "text_key": "20272028영암방문의해",
+   "ocr_text": "2027-2028 영암방문의해",
+   "confidence": 0.9665647149085999,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2027-2028 영암방문의해",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_2x_002",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     85.0,
+     564.5
+    ],
+    [
+     331.5,
+     564.5
+    ],
+    [
+     331.5,
+     599.0
+    ],
+    [
+     85.0,
+     599.0
+    ]
+   ],
+   "bbox": [
+    85.0,
+    564.5,
+    331.5,
+    599.0
+   ],
+   "height": 34.5,
+   "small_text": false,
+   "text": "10. 30. 금 - 11. 15.",
+   "text_key": "1030금1115",
+   "ocr_text": "10.30.@-11.15.",
+   "confidence": 0.8673081994056702,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026 10. 30. 금 - 11. 15. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_2x_003",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     30.0,
+     574.0
+    ],
+    [
+     80.5,
+     574.0
+    ],
+    [
+     80.5,
+     592.5
+    ],
+    [
+     30.0,
+     592.5
+    ]
+   ],
+   "bbox": [
+    30.0,
+    574.0,
+    80.5,
+    592.5
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9996870756149292,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026 10. 30. 금 - 11. 15. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_2x_004",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     406.0,
+     580.0
+    ],
+    [
+     493.5,
+     580.0
+    ],
+    [
+     493.5,
+     590.5
+    ],
+    [
+     406.0,
+     590.5
+    ]
+   ],
+   "bbox": [
+    406.0,
+    580.0,
+    493.5,
+    590.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "061-470-2259",
+   "text_key": "0614702259",
+   "ocr_text": "문의 061-470-2259",
+   "confidence": 0.9668446779251099,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "061-470-2259",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_2x_005",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     99.5,
+     598.0
+    ],
+    [
+     215.5,
+     598.0
+    ],
+    [
+     215.5,
+     617.0
+    ],
+    [
+     99.5,
+     617.0
+    ]
+   ],
+   "bbox": [
+    99.5,
+    598.0,
+    215.5,
+    617.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "월출산기찬랜드",
+   "text_key": "월출산기찬랜드",
+   "ocr_text": "월출산기찬랜드",
+   "confidence": 0.9903287887573242,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "월출산기찬랜드 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_2x_006",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     220.0,
+     597.5
+    ],
+    [
+     255.5,
+     597.5
+    ],
+    [
+     255.5,
+     617.0
+    ],
+    [
+     220.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    220.0,
+    597.5,
+    255.5,
+    617.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "일원",
+   "text_key": "일원",
+   "ocr_text": "일원",
+   "confidence": 0.9986608624458313,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "월출산기찬랜드 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

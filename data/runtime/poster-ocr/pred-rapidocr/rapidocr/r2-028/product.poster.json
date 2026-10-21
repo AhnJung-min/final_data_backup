@@ -1,0 +1,212 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-aa3a797fb337",
+ "image": {
+  "sha256": "aa3a797fb33713f2b2b785581ce70c81705de393089da82fb5355a9efff50ea3",
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "강경 짓갈 상월고구마 축지",
+  "official": "강경 짓갈 상월고구마 축지",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004",
+    "rapi_product_005",
+    "rapi_product_006",
+    "rapi_product_007"
+   ],
+   "bbox": [
+    152.0,
+    123.0,
+    309.0,
+    408.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제30회",
+  "number": 30,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003"
+   ],
+   "bbox": [
+    174.0,
+    101.0,
+    281.0,
+    130.0
+   ],
+   "confidence": 0.94907
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003"
+   ],
+   "bbox": [
+    174.0,
+    101.0,
+    281.0,
+    130.0
+   ],
+   "confidence": 0.94907
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.15.(목)~10.18.(일)",
+  "start": {
+   "iso": "2026-10-15",
+   "year": 2026,
+   "month": 10,
+   "day": 15,
+   "weekday": "thu",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_009"
+   ],
+   "bbox": [
+    134.0,
+    402.0,
+    316.0,
+    423.0
+   ],
+   "confidence": 0.97593
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "논산시강경을금강둔치일원",
+  "items": [
+   "논산시강경을금강둔치일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    159.0,
+    426.0,
+    293.0,
+    443.0
+   ],
+   "confidence": 0.86487
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

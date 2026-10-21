@@ -1,0 +1,509 @@
+{
+ "case_id": "v2-016",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-016.padd_rgb_2x_001",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     314.0,
+     19.5
+    ],
+    [
+     429.0,
+     23.5
+    ],
+    [
+     428.0,
+     44.0
+    ],
+    [
+     313.5,
+     40.0
+    ]
+   ],
+   "bbox": [
+    313.5,
+    19.5,
+    429.0,
+    44.0
+   ],
+   "height": 20.52,
+   "small_text": false,
+   "text": "포천시",
+   "text_key": "포천시",
+   "ocr_text": "#포천시 스브타",
+   "confidence": 0.7054871320724487,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "포천시",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_004",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     37.0,
+     88.0
+    ],
+    [
+     277.0,
+     88.0
+    ],
+    [
+     277.0,
+     185.0
+    ],
+    [
+     37.0,
+     185.0
+    ]
+   ],
+   "bbox": [
+    37.0,
+    88.0,
+    277.0,
+    185.0
+   ],
+   "height": 97.0,
+   "small_text": false,
+   "text": "화적연",
+   "text_key": "화적연",
+   "ocr_text": "화적연",
+   "confidence": 0.9626432061195374,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "화적연 천년의 약속",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_005",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     134.5,
+     180.5
+    ],
+    [
+     269.0,
+     180.5
+    ],
+    [
+     269.0,
+     208.5
+    ],
+    [
+     134.5,
+     208.5
+    ]
+   ],
+   "bbox": [
+    134.5,
+    180.5,
+    269.0,
+    208.5
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "천년의 약속",
+   "text_key": "천년의약속",
+   "ocr_text": "천년의 약속",
+   "confidence": 0.9948627352714539,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "화적연 천년의 약속",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_006",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     47.0,
+     234.0
+    ],
+    [
+     136.5,
+     234.0
+    ],
+    [
+     136.5,
+     254.5
+    ],
+    [
+     47.0,
+     254.5
+    ]
+   ],
+   "bbox": [
+    47.0,
+    234.0,
+    136.5,
+    254.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "전석 무료관람",
+   "text_key": "전석무료관람",
+   "ocr_text": "전석 무료관람",
+   "confidence": 0.931212306022644,
+   "field": "admission.raw",
+   "field_group": "admission",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "admission.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "전석 무료관람",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_007",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     36.0,
+     265.0
+    ],
+    [
+     252.0,
+     265.0
+    ],
+    [
+     252.0,
+     280.5
+    ],
+    [
+     36.0,
+     280.5
+    ]
+   ],
+   "bbox": [
+    36.0,
+    265.0,
+    252.0,
+    280.5
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "2026. 9. 4.(금) - 5.(토)",
+   "text_key": "202694금5토",
+   "ocr_text": "2026.9.4(금)-5.(퇴)19:30/총2회공연",
+   "confidence": 0.9075103402137756,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "2026. 9. 4.(금) - 5.(토)",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_008",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     36.0,
+     284.5
+    ],
+    [
+     295.0,
+     285.5
+    ],
+    [
+     295.0,
+     301.0
+    ],
+    [
+     36.0,
+     300.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    284.5,
+    295.0,
+    301.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "대한민국 명승 포천 화적연 특설무대(관인면 사정리 66)",
+   "text_key": "대한민국명승포천화적연특설무대관인면사정리66",
+   "ocr_text": "대한민국 명송 포천 화적연 특설무대(관인면 사정리 66)",
+   "confidence": 0.9574704766273499,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "address.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0435,
+   "gold_value": "대한민국 명승 포천 화적연 특설무대(관인면 사정리 66)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_010",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     30.0,
+     514.5
+    ],
+    [
+     239.5,
+     514.5
+    ],
+    [
+     239.5,
+     538.0
+    ],
+    [
+     30.0,
+     538.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    514.5,
+    239.5,
+    538.0
+   ],
+   "height": 23.5,
+   "small_text": false,
+   "text": "대한민국 대표 뮤지컬 배우",
+   "text_key": "대한민국대표뮤지컬배우",
+   "ocr_text": "대한민국 대표 뮤지컬 배우",
+   "confidence": 0.9495348930358887,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "대한민국 대표 뮤지컬 배우 홍지민과 함께하는 수도권 유일의 실경 뮤지컬!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_011",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     31.0,
+     544.0
+    ],
+    [
+     179.0,
+     544.0
+    ],
+    [
+     179.0,
+     566.5
+    ],
+    [
+     31.0,
+     566.5
+    ]
+   ],
+   "bbox": [
+    31.0,
+    544.0,
+    179.0,
+    566.5
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "홍지민과 함께하는",
+   "text_key": "홍지민과함께하는",
+   "ocr_text": "홍지민과 함께하는",
+   "confidence": 0.9478178024291992,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "대한민국 대표 뮤지컬 배우 홍지민과 함께하는 수도권 유일의 실경 뮤지컬!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.padd_rgb_2x_012",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     31.5,
+     572.5
+    ],
+    [
+     247.0,
+     572.5
+    ],
+    [
+     247.0,
+     595.0
+    ],
+    [
+     31.5,
+     595.0
+    ]
+   ],
+   "bbox": [
+    31.5,
+    572.5,
+    247.0,
+    595.0
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "수도권 유일의 실경 뮤지컬!",
+   "text_key": "수도권유일의실경뮤지컬",
+   "ocr_text": "수도권 유일의 실경 뮤지컬!",
+   "confidence": 0.9871528148651123,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "대한민국 대표 뮤지컬 배우 홍지민과 함께하는 수도권 유일의 실경 뮤지컬!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

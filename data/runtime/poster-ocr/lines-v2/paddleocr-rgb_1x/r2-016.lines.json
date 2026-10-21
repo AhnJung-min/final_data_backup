@@ -1,0 +1,344 @@
+{
+ "case_id": "r2-016",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "r2-016.padd_rgb_1x_000",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     22.0,
+     29.0
+    ],
+    [
+     135.0,
+     29.0
+    ],
+    [
+     135.0,
+     50.0
+    ],
+    [
+     22.0,
+     50.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    29.0,
+    135.0,
+    50.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "한방이 있는 산청,",
+   "text_key": "한방이있는산청",
+   "ocr_text": "한방이있는 산청,",
+   "confidence": 0.9859622120857239,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "한방이 있는 산청, K-웰니스를 열다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_1x_001",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     48.0,
+     49.0
+    ],
+    [
+     188.0,
+     51.0
+    ],
+    [
+     188.0,
+     74.0
+    ],
+    [
+     47.0,
+     71.0
+    ]
+   ],
+   "bbox": [
+    47.0,
+    49.0,
+    188.0,
+    74.0
+   ],
+   "height": 22.51,
+   "small_text": false,
+   "text": "청, K-웰니스를 열다",
+   "text_key": "청k웰니스를열다",
+   "ocr_text": "aK-웰니스를 열다",
+   "confidence": 0.9183281064033508,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "한방이 있는 산청, K-웰니스를 열다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_1x_002",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     48.0,
+     154.0
+    ],
+    [
+     96.0,
+     154.0
+    ],
+    [
+     96.0,
+     169.0
+    ],
+    [
+     48.0,
+     169.0
+    ]
+   ],
+   "bbox": [
+    48.0,
+    154.0,
+    96.0,
+    169.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "제26회",
+   "text_key": "제26회",
+   "ocr_text": "제26회",
+   "confidence": 0.9956581592559814,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제26회 산청한방약초축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_1x_004",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     31.0,
+     175.0
+    ],
+    [
+     401.0,
+     169.0
+    ],
+    [
+     402.0,
+     220.0
+    ],
+    [
+     32.0,
+     226.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    169.0,
+    402.0,
+    226.0
+   ],
+   "height": 51.01,
+   "small_text": false,
+   "text": "산청한방약초축제",
+   "text_key": "산청한방약초축제",
+   "ocr_text": "산청한방약초축제",
+   "confidence": 0.9947542548179626,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "산청한방약초축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_1x_005",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     133.0,
+     241.0
+    ],
+    [
+     321.0,
+     241.0
+    ],
+    [
+     321.0,
+     265.0
+    ],
+    [
+     133.0,
+     265.0
+    ]
+   ],
+   "bbox": [
+    133.0,
+    241.0,
+    321.0,
+    265.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10.02.(금) ~ 10.11.(일)",
+   "text_key": "1002금1011일",
+   "ocr_text": "10.02.()~10.11.(일",
+   "confidence": 0.8529250621795654,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "10.02.(금) ~ 10.11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_1x_006",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     142.0,
+     270.0
+    ],
+    [
+     307.0,
+     270.0
+    ],
+    [
+     307.0,
+     291.0
+    ],
+    [
+     142.0,
+     291.0
+    ]
+   ],
+   "bbox": [
+    142.0,
+    270.0,
+    307.0,
+    291.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "산청군 동의보감촌 일원",
+   "text_key": "산청군동의보감촌일원",
+   "ocr_text": "산청군동의보감촌일원",
+   "confidence": 0.9958614110946655,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "산청군 동의보감촌 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

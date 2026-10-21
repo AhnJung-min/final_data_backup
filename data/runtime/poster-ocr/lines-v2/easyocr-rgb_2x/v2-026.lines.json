@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-026",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-026.easy_rgb_2x_009",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     8.0,
+     572.0
+    ],
+    [
+     172.0,
+     572.0
+    ],
+    [
+     172.0,
+     597.0
+    ],
+    [
+     8.0,
+     597.0
+    ]
+   ],
+   "bbox": [
+    8.0,
+    572.0,
+    172.0,
+    597.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "9. 11.(금) - 12.(토)",
+   "text_key": "911금12토",
+   "ocr_text": "9.71 (금) - 12 (토)",
+   "confidence": 0.8229365651940808,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "9. 11.(금) - 12.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.easy_rgb_2x_010",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     184.5,
+     569.5
+    ],
+    [
+     404.0,
+     569.5
+    ],
+    [
+     404.0,
+     600.5
+    ],
+    [
+     184.5,
+     600.5
+    ]
+   ],
+   "bbox": [
+    184.5,
+    569.5,
+    404.0,
+    600.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "거제시 장승포항 수변공원",
+   "text_key": "거제시장승포항수변공원",
+   "ocr_text": "거제시 장승포항 수변공원",
+   "confidence": 0.9440450131445582,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "거제시 장승포항 수변공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-026.easy_rgb_2x_011",
+   "case_id": "v2-026",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     8.5,
+     598.5
+    ],
+    [
+     125.5,
+     598.5
+    ],
+    [
+     125.5,
+     620.5
+    ],
+    [
+     8.5,
+     620.5
+    ]
+   ],
+   "bbox": [
+    8.5,
+    598.5,
+    125.5,
+    620.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "18:00 - 22:00",
+   "text_key": "18002200",
+   "ocr_text": "1800-22.00",
+   "confidence": 0.8517498368487365,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "18:00 - 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

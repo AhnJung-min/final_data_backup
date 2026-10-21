@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-069",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-069.padd_rgb_1x_000",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     35.0,
+     47.0
+    ],
+    [
+     228.0,
+     49.0
+    ],
+    [
+     228.0,
+     69.0
+    ],
+    [
+     35.0,
+     67.0
+    ]
+   ],
+   "bbox": [
+    35.0,
+    47.0,
+    228.0,
+    69.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "하나로 ONE! 세계로 RUN!",
+   "text_key": "하나로one세계로run",
+   "ocr_text": "하나로 ONE!세계로 RUN!",
+   "confidence": 0.9347132444381714,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "하나로 ONE! 세계로 RUN!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.padd_rgb_1x_002",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     374.0,
+     41.0
+    ],
+    [
+     416.0,
+     39.0
+    ],
+    [
+     417.0,
+     54.0
+    ],
+    [
+     375.0,
+     56.0
+    ]
+   ],
+   "bbox": [
+    374.0,
+    39.0,
+    417.0,
+    56.0
+   ],
+   "height": 15.03,
+   "small_text": false,
+   "text": "육군본부",
+   "text_key": "육군본부",
+   "ocr_text": "육군본부",
+   "confidence": 0.9993629455566406,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "육군본부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.padd_rgb_1x_003",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     35.0,
+     72.0
+    ],
+    [
+     102.0,
+     72.0
+    ],
+    [
+     102.0,
+     93.0
+    ],
+    [
+     35.0,
+     93.0
+    ]
+   ],
+   "bbox": [
+    35.0,
+    72.0,
+    102.0,
+    93.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "제16회",
+   "text_key": "제16회",
+   "ocr_text": "제16회",
+   "confidence": 0.9745768904685974,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "제16회 계룡軍문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.padd_rgb_1x_004",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     30.0,
+     94.0
+    ],
+    [
+     242.0,
+     96.0
+    ],
+    [
+     242.0,
+     130.0
+    ],
+    [
+     30.0,
+     128.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    94.0,
+    242.0,
+    130.0
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "계룡軍문화축제",
+   "text_key": "계룡軍문화축제",
+   "ocr_text": "계룡문화축제",
+   "confidence": 0.9935896992683411,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "계룡軍문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.padd_rgb_1x_010",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     285.0,
+     469.0
+    ],
+    [
+     414.0,
+     471.0
+    ],
+    [
+     414.0,
+     492.0
+    ],
+    [
+     285.0,
+     490.0
+    ]
+   ],
+   "bbox": [
+    285.0,
+    469.0,
+    414.0,
+    492.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "국민의 일상을 지키는",
+   "text_key": "국민의일상을지키는",
+   "ocr_text": "국민의일성을지키는",
+   "confidence": 0.8656965494155884,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "국민의 일상을 지키는 대한민국 육군!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.padd_rgb_1x_011",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     323.0,
+     491.0
+    ],
+    [
+     414.0,
+     491.0
+    ],
+    [
+     414.0,
+     508.0
+    ],
+    [
+     323.0,
+     508.0
+    ]
+   ],
+   "bbox": [
+    323.0,
+    491.0,
+    414.0,
+    508.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "대한민국 육",
+   "text_key": "대한민국육",
+   "ocr_text": "대한민국육균",
+   "confidence": 0.8932135105133057,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "국민의 일상을 지키는 대한민국 육군!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.padd_rgb_1x_012",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     108.0,
+     545.0
+    ],
+    [
+     327.0,
+     543.0
+    ],
+    [
+     327.0,
+     566.0
+    ],
+    [
+     108.0,
+     568.0
+    ]
+   ],
+   "bbox": [
+    108.0,
+    543.0,
+    327.0,
+    568.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "2026. 10. 1.(목) ~ 5.(월)",
+   "text_key": "2026101목5월",
+   "ocr_text": "2026.10.1.(목)~5.(월)",
+   "confidence": 0.9456499814987183,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 1.(목) ~ 5.(월)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-069.padd_rgb_1x_013",
+   "case_id": "v2-069",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     149.0,
+     572.0
+    ],
+    [
+     293.0,
+     572.0
+    ],
+    [
+     293.0,
+     593.0
+    ],
+    [
+     149.0,
+     593.0
+    ]
+   ],
+   "bbox": [
+    149.0,
+    572.0,
+    293.0,
+    593.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "충남 계룡대 활주로",
+   "text_key": "충남계룡대활주로",
+   "ocr_text": "충남 계룡대 활주로",
+   "confidence": 0.9308045506477356,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "충남 계룡대 활주로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,937 @@
+{
+ "case_id": "v2-185",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 36,
+ "lines_matched": 17,
+ "records": [
+  {
+   "id": "v2-185.padd_rgb_1x_000",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     304.0,
+     1.0
+    ],
+    [
+     427.0,
+     2.0
+    ],
+    [
+     427.0,
+     15.0
+    ],
+    [
+     304.0,
+     14.0
+    ]
+   ],
+   "bbox": [
+    304.0,
+    1.0,
+    427.0,
+    15.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "사업비:190,000천원 (도비50%, 시비50%)",
+   "text_key": "사업비190000천원도비50시비50",
+   "ocr_text": "사업비:190.000(도비50%시50%)",
+   "confidence": 0.8593636155128479,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1579,
+   "gold_value": "사업비:190,000천원 (도비50%, 시비50%)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_001",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     44.0,
+     35.0
+    ],
+    [
+     186.0,
+     35.0
+    ],
+    [
+     186.0,
+     88.0
+    ],
+    [
+     44.0,
+     88.0
+    ]
+   ],
+   "bbox": [
+    44.0,
+    35.0,
+    186.0,
+    88.0
+   ],
+   "height": 53.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9996570944786072,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 한미친선 문화 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_002",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     186.0,
+     32.0
+    ],
+    [
+     398.0,
+     32.0
+    ],
+    [
+     398.0,
+     91.0
+    ],
+    [
+     186.0,
+     91.0
+    ]
+   ],
+   "bbox": [
+    186.0,
+    32.0,
+    398.0,
+    91.0
+   ],
+   "height": 59.0,
+   "small_text": false,
+   "text": "한미친선",
+   "text_key": "한미친선",
+   "ocr_text": "한미친선",
+   "confidence": 0.999703586101532,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "한미친선 문화 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_003",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     31.0,
+     87.0
+    ],
+    [
+     409.0,
+     87.0
+    ],
+    [
+     409.0,
+     172.0
+    ],
+    [
+     31.0,
+     172.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    87.0,
+    409.0,
+    172.0
+   ],
+   "height": 85.0,
+   "small_text": false,
+   "text": "문화 한마당",
+   "text_key": "문화한마당",
+   "ocr_text": "문화한마당",
+   "confidence": 0.9975619316101074,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "한미친선 문화 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_006",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     80.0,
+     217.0
+    ],
+    [
+     138.0,
+     217.0
+    ],
+    [
+     138.0,
+     243.0
+    ],
+    [
+     80.0,
+     243.0
+    ]
+   ],
+   "bbox": [
+    80.0,
+    217.0,
+    138.0,
+    243.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9968248605728149,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 24.[SAT] 10. 25.[SUN]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_007",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     309.0,
+     218.0
+    ],
+    [
+     414.0,
+     218.0
+    ],
+    [
+     414.0,
+     242.0
+    ],
+    [
+     309.0,
+     242.0
+    ]
+   ],
+   "bbox": [
+    309.0,
+    218.0,
+    414.0,
+    242.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "K-55 정문 앞",
+   "text_key": "k55정문앞",
+   "ocr_text": "K-SS 정문앞",
+   "confidence": 0.8531621694564819,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "K-55 정문 앞 신장쇼핑몰 일대 / S.E.D",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_008",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     39.0,
+     240.0
+    ],
+    [
+     139.0,
+     242.0
+    ],
+    [
+     138.0,
+     267.0
+    ],
+    [
+     38.0,
+     264.0
+    ]
+   ],
+   "bbox": [
+    38.0,
+    240.0,
+    139.0,
+    267.0
+   ],
+   "height": 24.52,
+   "small_text": false,
+   "text": "10. 24.[SAT]",
+   "text_key": "1024sat",
+   "ocr_text": "10.24.[SAT]",
+   "confidence": 0.9731312394142151,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 24.[SAT] 10. 25.[SUN]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_009",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     290.0,
+     246.0
+    ],
+    [
+     414.0,
+     246.0
+    ],
+    [
+     414.0,
+     260.0
+    ],
+    [
+     290.0,
+     260.0
+    ]
+   ],
+   "bbox": [
+    290.0,
+    246.0,
+    414.0,
+    260.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "신장쇼핑몰 일대 / S.E.D",
+   "text_key": "신장쇼핑몰일대sed",
+   "ocr_text": "신장쇼핑몰일대/S.E.D",
+   "confidence": 0.9749988317489624,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "K-55 정문 앞 신장쇼핑몰 일대 / S.E.D",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_010",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     40.0,
+     264.0
+    ],
+    [
+     140.0,
+     267.0
+    ],
+    [
+     139.0,
+     290.0
+    ],
+    [
+     39.0,
+     288.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    264.0,
+    140.0,
+    290.0
+   ],
+   "height": 23.52,
+   "small_text": false,
+   "text": "10. 25.[SUN]",
+   "text_key": "1025sun",
+   "ocr_text": "10.25.[sUN]",
+   "confidence": 0.9408994317054749,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 24.[SAT] 10. 25.[SUN]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_011",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     41.0,
+     292.0
+    ],
+    [
+     138.0,
+     292.0
+    ],
+    [
+     138.0,
+     309.0
+    ],
+    [
+     41.0,
+     309.0
+    ]
+   ],
+   "bbox": [
+    41.0,
+    292.0,
+    138.0,
+    309.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "13:00 - 20:00",
+   "text_key": "13002000",
+   "ocr_text": "13:00 -20:00",
+   "confidence": 0.9641801714897156,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "13:00 - 20:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_018",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     30.0,
+     467.0
+    ],
+    [
+     66.0,
+     467.0
+    ],
+    [
+     66.0,
+     482.0
+    ],
+    [
+     30.0,
+     482.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    467.0,
+    66.0,
+    482.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "개막식",
+   "text_key": "개막식",
+   "ocr_text": "개막식",
+   "confidence": 0.9994602203369141,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "개막식",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_019",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     339.0,
+     462.0
+    ],
+    [
+     410.0,
+     462.0
+    ],
+    [
+     410.0,
+     476.0
+    ],
+    [
+     339.0,
+     476.0
+    ]
+   ],
+   "bbox": [
+    339.0,
+    462.0,
+    410.0,
+    476.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "영어 페스타존",
+   "text_key": "영어페스타존",
+   "ocr_text": "영어 페스타존",
+   "confidence": 0.9640375375747681,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영어 페스타존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_022",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_022"
+   },
+   "polygon": [
+    [
+     31.0,
+     500.0
+    ],
+    [
+     77.0,
+     500.0
+    ],
+    [
+     77.0,
+     514.0
+    ],
+    [
+     31.0,
+     514.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    500.0,
+    77.0,
+    514.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "축하공연",
+   "confidence": 0.9594190120697021,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_023",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_023"
+   },
+   "polygon": [
+    [
+     320.0,
+     491.0
+    ],
+    [
+     410.0,
+     491.0
+    ],
+    [
+     410.0,
+     505.0
+    ],
+    [
+     320.0,
+     505.0
+    ]
+   ],
+   "bbox": [
+    320.0,
+    491.0,
+    410.0,
+    505.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "한·미 음식 체험존",
+   "text_key": "한미음식체험존",
+   "ocr_text": "한·미음식체험존",
+   "confidence": 0.9308594465255737,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "한·미 음식 체험존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_027",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_027"
+   },
+   "polygon": [
+    [
+     31.0,
+     532.0
+    ],
+    [
+     91.0,
+     532.0
+    ],
+    [
+     91.0,
+     546.0
+    ],
+    [
+     31.0,
+     546.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    532.0,
+    91.0,
+    546.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "무대 이벤트",
+   "text_key": "무대이벤트",
+   "ocr_text": "무대 이벤트",
+   "confidence": 0.9495379328727722,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "무대 이벤트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_028",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_028"
+   },
+   "polygon": [
+    [
+     326.0,
+     531.0
+    ],
+    [
+     410.0,
+     531.0
+    ],
+    [
+     410.0,
+     545.0
+    ],
+    [
+     326.0,
+     545.0
+    ]
+   ],
+   "bbox": [
+    326.0,
+    531.0,
+    410.0,
+    545.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "한·미 문화 체험존",
+   "text_key": "한미문화체험존",
+   "ocr_text": "한·미 문화체험존",
+   "confidence": 0.9655276536941528,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "한·미 문화 체험존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.padd_rgb_1x_032",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_032"
+   },
+   "polygon": [
+    [
+     168.0,
+     606.0
+    ],
+    [
+     201.0,
+     606.0
+    ],
+    [
+     201.0,
+     620.0
+    ],
+    [
+     168.0,
+     620.0
+    ]
+   ],
+   "bbox": [
+    168.0,
+    606.0,
+    201.0,
+    620.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "평택시",
+   "text_key": "평택시",
+   "ocr_text": "평택시",
+   "confidence": 0.9750664234161377,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "평택시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

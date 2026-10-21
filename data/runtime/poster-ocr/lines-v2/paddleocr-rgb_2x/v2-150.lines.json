@@ -1,0 +1,613 @@
+{
+ "case_id": "v2-150",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 11,
+ "records": [
+  {
+   "id": "v2-150.padd_rgb_2x_001",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     36.5,
+     36.0
+    ],
+    [
+     86.0,
+     36.0
+    ],
+    [
+     86.0,
+     50.0
+    ],
+    [
+     36.5,
+     50.0
+    ]
+   ],
+   "bbox": [
+    36.5,
+    36.0,
+    86.0,
+    50.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "빵의도시",
+   "text_key": "빵의도시",
+   "ocr_text": "방의도시",
+   "confidence": 0.7707769870758057,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "빵의도시 대전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_003",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     42.5,
+     48.5
+    ],
+    [
+     83.0,
+     50.0
+    ],
+    [
+     82.5,
+     65.0
+    ],
+    [
+     42.0,
+     63.5
+    ]
+   ],
+   "bbox": [
+    42.0,
+    48.5,
+    83.0,
+    65.0
+   ],
+   "height": 15.01,
+   "small_text": false,
+   "text": "대전",
+   "text_key": "대전",
+   "ocr_text": "대전술",
+   "confidence": 0.6711855530738831,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "2026 대전 빵 축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_006",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     31.5,
+     91.0
+    ],
+    [
+     99.5,
+     91.0
+    ],
+    [
+     99.5,
+     114.5
+    ],
+    [
+     31.5,
+     114.5
+    ]
+   ],
+   "bbox": [
+    31.5,
+    91.0,
+    99.5,
+    114.5
+   ],
+   "height": 23.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9992963671684265,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "2026 대전 빵 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_007",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     279.0,
+     100.5
+    ],
+    [
+     423.0,
+     100.5
+    ],
+    [
+     423.0,
+     198.0
+    ],
+    [
+     279.0,
+     198.0
+    ]
+   ],
+   "bbox": [
+    279.0,
+    100.5,
+    423.0,
+    198.0
+   ],
+   "height": 97.5,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.9981919527053833,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "대전 빵 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_008",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     21.5,
+     107.0
+    ],
+    [
+     172.5,
+     107.0
+    ],
+    [
+     172.5,
+     194.5
+    ],
+    [
+     21.5,
+     194.5
+    ]
+   ],
+   "bbox": [
+    21.5,
+    107.0,
+    172.5,
+    194.5
+   ],
+   "height": 87.5,
+   "small_text": false,
+   "text": "대전",
+   "text_key": "대전",
+   "ocr_text": "대전",
+   "confidence": 0.9973247051239014,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "빵의도시 대전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_009",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     172.5,
+     514.0
+    ],
+    [
+     401.0,
+     515.0
+    ],
+    [
+     401.0,
+     544.0
+    ],
+    [
+     172.5,
+     543.0
+    ]
+   ],
+   "bbox": [
+    172.5,
+    514.0,
+    401.0,
+    544.0
+   ],
+   "height": 29.0,
+   "small_text": false,
+   "text": "10. 17.(토) ▸ 18.(일)",
+   "text_key": "1017토18일",
+   "ocr_text": "10.17.(토) 18.(일)",
+   "confidence": 0.9411402940750122,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17.(토) ▸ 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_010",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     121.5,
+     523.5
+    ],
+    [
+     171.0,
+     522.5
+    ],
+    [
+     171.5,
+     541.0
+    ],
+    [
+     121.5,
+     542.0
+    ]
+   ],
+   "bbox": [
+    121.5,
+    522.5,
+    171.5,
+    542.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.996033787727356,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 17.(토) ▸ 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_011",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     31.5,
+     547.5
+    ],
+    [
+     81.0,
+     547.5
+    ],
+    [
+     81.0,
+     563.5
+    ],
+    [
+     31.5,
+     563.5
+    ]
+   ],
+   "bbox": [
+    31.5,
+    547.5,
+    81.0,
+    563.5
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "오픈시간",
+   "text_key": "오픈시간",
+   "ocr_text": "오픈시간",
+   "confidence": 0.998330295085907,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "오픈시간 13:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_012",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     160.0,
+     553.5
+    ],
+    [
+     362.0,
+     553.5
+    ],
+    [
+     362.0,
+     581.0
+    ],
+    [
+     160.0,
+     581.0
+    ]
+   ],
+   "bbox": [
+    160.0,
+    553.5,
+    362.0,
+    581.0
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "엑스포과학공원 일원",
+   "text_key": "엑스포과학공원일원",
+   "ocr_text": "엑스포과학공원 일원",
+   "confidence": 0.9946651458740234,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "엑스포과학공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_013",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     32.5,
+     571.5
+    ],
+    [
+     79.5,
+     571.5
+    ],
+    [
+     79.5,
+     588.0
+    ],
+    [
+     32.5,
+     588.0
+    ]
+   ],
+   "bbox": [
+    32.5,
+    571.5,
+    79.5,
+    588.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "13:00",
+   "text_key": "1300",
+   "ocr_text": "13:00",
+   "confidence": 0.9980736970901489,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "오픈시간 13:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-150.padd_rgb_2x_015",
+   "case_id": "v2-150",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     174.5,
+     591.5
+    ],
+    [
+     290.0,
+     591.5
+    ],
+    [
+     290.0,
+     602.0
+    ],
+    [
+     174.5,
+     602.0
+    ]
+   ],
+   "bbox": [
+    174.5,
+    591.5,
+    290.0,
+    602.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "대전관광공사",
+   "text_key": "대전관광공사",
+   "ocr_text": "주건 ※ 대표역신 기대전관광공사",
+   "confidence": 0.6975816488265991,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전관광공사",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

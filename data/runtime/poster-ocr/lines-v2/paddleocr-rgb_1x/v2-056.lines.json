@@ -1,0 +1,884 @@
+{
+ "case_id": "v2-056",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 16,
+ "records": [
+  {
+   "id": "v2-056.padd_rgb_1x_001",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     403.0,
+     25.0
+    ],
+    [
+     434.0,
+     25.0
+    ],
+    [
+     434.0,
+     39.0
+    ],
+    [
+     403.0,
+     39.0
+    ]
+   ],
+   "bbox": [
+    403.0,
+    25.0,
+    434.0,
+    39.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "광명시",
+   "text_key": "광명시",
+   "ocr_text": "광명시",
+   "confidence": 0.9924666285514832,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광명시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_002",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     35.0,
+     37.0
+    ],
+    [
+     140.0,
+     37.0
+    ],
+    [
+     140.0,
+     79.0
+    ],
+    [
+     35.0,
+     79.0
+    ]
+   ],
+   "bbox": [
+    35.0,
+    37.0,
+    140.0,
+    79.0
+   ],
+   "height": 42.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9996335506439209,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "2026 광명시 책 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_003",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     295.0,
+     52.0
+    ],
+    [
+     399.0,
+     52.0
+    ],
+    [
+     399.0,
+     72.0
+    ],
+    [
+     295.0,
+     72.0
+    ]
+   ],
+   "bbox": [
+    295.0,
+    52.0,
+    399.0,
+    72.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026. 9. 19.",
+   "text_key": "2026919",
+   "ocr_text": "2026. 9.19.",
+   "confidence": 0.9450972080230713,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. SAT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_004",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     399.0,
+     52.0
+    ],
+    [
+     424.0,
+     52.0
+    ],
+    [
+     424.0,
+     67.0
+    ],
+    [
+     399.0,
+     67.0
+    ]
+   ],
+   "bbox": [
+    399.0,
+    52.0,
+    424.0,
+    67.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "SAT",
+   "text_key": "sat",
+   "ocr_text": "SAT",
+   "confidence": 0.9970810413360596,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. SAT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_005",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     30.0,
+     82.0
+    ],
+    [
+     198.0,
+     80.0
+    ],
+    [
+     199.0,
+     141.0
+    ],
+    [
+     31.0,
+     143.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    80.0,
+    199.0,
+    143.0
+   ],
+   "height": 61.01,
+   "small_text": false,
+   "text": "광명시",
+   "text_key": "광명시",
+   "ocr_text": "광명시",
+   "confidence": 0.9998829960823059,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "광명시 책 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_006",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     293.0,
+     75.0
+    ],
+    [
+     424.0,
+     75.0
+    ],
+    [
+     424.0,
+     96.0
+    ],
+    [
+     293.0,
+     96.0
+    ]
+   ],
+   "bbox": [
+    293.0,
+    75.0,
+    424.0,
+    96.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "10:00 - 17:00",
+   "text_key": "10001700",
+   "ocr_text": "10:00-17:00",
+   "confidence": 0.9994192719459534,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10:00 - 17:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_007",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     322.0,
+     102.0
+    ],
+    [
+     424.0,
+     102.0
+    ],
+    [
+     424.0,
+     119.0
+    ],
+    [
+     322.0,
+     119.0
+    ]
+   ],
+   "bbox": [
+    322.0,
+    102.0,
+    424.0,
+    119.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "광명시민체육관",
+   "text_key": "광명시민체육관",
+   "ocr_text": "광명시민체육관",
+   "confidence": 0.9997656941413879,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "광명시민체육관 야외 잔디광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_008",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     332.0,
+     121.0
+    ],
+    [
+     424.0,
+     121.0
+    ],
+    [
+     424.0,
+     138.0
+    ],
+    [
+     332.0,
+     138.0
+    ]
+   ],
+   "bbox": [
+    332.0,
+    121.0,
+    424.0,
+    138.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "야외 잔디광장",
+   "text_key": "야외잔디광장",
+   "ocr_text": "야외 잔디광장",
+   "confidence": 0.9606528878211975,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "광명시민체육관 야외 잔디광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_010",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     131.0,
+     145.0
+    ],
+    [
+     248.0,
+     145.0
+    ],
+    [
+     248.0,
+     208.0
+    ],
+    [
+     131.0,
+     208.0
+    ]
+   ],
+   "bbox": [
+    131.0,
+    145.0,
+    248.0,
+    208.0
+   ],
+   "height": 63.0,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.9995535016059875,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "광명시 책 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_011",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     116.0,
+     456.0
+    ],
+    [
+     161.0,
+     453.0
+    ],
+    [
+     161.0,
+     468.0
+    ],
+    [
+     117.0,
+     470.0
+    ]
+   ],
+   "bbox": [
+    116.0,
+    453.0,
+    161.0,
+    470.0
+   ],
+   "height": 14.52,
+   "small_text": false,
+   "text": "무한한",
+   "text_key": "무한한",
+   "ocr_text": "무한한",
+   "confidence": 0.9940786957740784,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_012",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     156.0,
+     453.0
+    ],
+    [
+     197.0,
+     448.0
+    ],
+    [
+     198.0,
+     463.0
+    ],
+    [
+     158.0,
+     468.0
+    ]
+   ],
+   "bbox": [
+    156.0,
+    448.0,
+    198.0,
+    468.0
+   ],
+   "height": 15.08,
+   "small_text": false,
+   "text": "탐험의",
+   "text_key": "탐험의",
+   "ocr_text": "탐험의",
+   "confidence": 0.8687620759010315,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_013",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     197.0,
+     450.0
+    ],
+    [
+     226.0,
+     450.0
+    ],
+    [
+     226.0,
+     463.0
+    ],
+    [
+     197.0,
+     463.0
+    ]
+   ],
+   "bbox": [
+    197.0,
+    450.0,
+    226.0,
+    463.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "시작",
+   "text_key": "시작",
+   "ocr_text": "시작",
+   "confidence": 0.9981200695037842,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_014",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     118.0,
+     472.0
+    ],
+    [
+     160.0,
+     468.0
+    ],
+    [
+     162.0,
+     483.0
+    ],
+    [
+     120.0,
+     486.0
+    ]
+   ],
+   "bbox": [
+    118.0,
+    468.0,
+    162.0,
+    486.0
+   ],
+   "height": 14.64,
+   "small_text": false,
+   "text": "다정한",
+   "text_key": "다정한",
+   "ocr_text": "다정한",
+   "confidence": 0.9766645431518555,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_015",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     161.0,
+     467.0
+    ],
+    [
+     219.0,
+     461.0
+    ],
+    [
+     221.0,
+     478.0
+    ],
+    [
+     162.0,
+     483.0
+    ]
+   ],
+   "bbox": [
+    161.0,
+    461.0,
+    221.0,
+    483.0
+   ],
+   "height": 16.57,
+   "small_text": false,
+   "text": "도서 여행",
+   "text_key": "도서여행",
+   "ocr_text": "도서 여행",
+   "confidence": 0.9565561413764954,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "무한한 탐험의 시작 다정한 도서 여행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_018",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     27.0,
+     611.0
+    ],
+    [
+     215.0,
+     611.0
+    ],
+    [
+     215.0,
+     621.0
+    ],
+    [
+     27.0,
+     621.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    611.0,
+    215.0,
+    621.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "광명시도서관정책과 02-2680-5442",
+   "text_key": "광명시도서관정책과0226805442",
+   "ocr_text": "주최: 광명시도서관정책과 02-2680-5442",
+   "confidence": 0.9762599468231201,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광명시도서관정책과 02-2680-5442",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-056.padd_rgb_1x_020",
+   "case_id": "v2-056",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     323.0,
+     610.0
+    ],
+    [
+     416.0,
+     610.0
+    ],
+    [
+     416.0,
+     623.0
+    ],
+    [
+     323.0,
+     623.0
+    ]
+   ],
+   "bbox": [
+    323.0,
+    610.0,
+    416.0,
+    623.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "경기도광명교육지원청",
+   "text_key": "경기도광명교육지원청",
+   "ocr_text": "경기도광명교육지원청",
+   "confidence": 0.9540754556655884,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경기도광명교육지원청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

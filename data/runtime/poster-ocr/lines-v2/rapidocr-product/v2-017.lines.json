@@ -1,0 +1,450 @@
+{
+ "case_id": "v2-017",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-017.rapi_product_003",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     164.0,
+     67.0
+    ],
+    [
+     279.0,
+     67.0
+    ],
+    [
+     279.0,
+     101.0
+    ],
+    [
+     164.0,
+     101.0
+    ]
+   ],
+   "bbox": [
+    164.0,
+    67.0,
+    279.0,
+    101.0
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "2026 왜관",
+   "text_key": "2026왜관",
+   "ocr_text": "2026왜관",
+   "confidence": 0.99961,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026 왜관 홀리페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.rapi_product_004",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     56.0,
+     78.0
+    ],
+    [
+     388.0,
+     86.0
+    ],
+    [
+     385.0,
+     189.0
+    ],
+    [
+     54.0,
+     181.0
+    ]
+   ],
+   "bbox": [
+    54.0,
+    78.0,
+    388.0,
+    189.0
+   ],
+   "height": 103.03,
+   "small_text": false,
+   "text": "홀리페스티",
+   "text_key": "홀리페스티",
+   "ocr_text": "흘리페스티벨",
+   "confidence": 0.91253,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026 왜관 홀리페스티벌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.rapi_product_006",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     139.0,
+     201.0
+    ],
+    [
+     305.0,
+     201.0
+    ],
+    [
+     305.0,
+     225.0
+    ],
+    [
+     139.0,
+     225.0
+    ]
+   ],
+   "bbox": [
+    139.0,
+    201.0,
+    305.0,
+    225.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "9. 4.(금) ~ 9. 6.(일)",
+   "text_key": "94금96일",
+   "ocr_text": "9.4.[(금]~9.6.[일]",
+   "confidence": 0.86885,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 4.(금) ~ 9. 6.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.rapi_product_007",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     168.0,
+     223.0
+    ],
+    [
+     277.0,
+     223.0
+    ],
+    [
+     277.0,
+     244.0
+    ],
+    [
+     168.0,
+     244.0
+    ]
+   ],
+   "bbox": [
+    168.0,
+    223.0,
+    277.0,
+    244.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "왜관수도원",
+   "text_key": "왜관수도원",
+   "ocr_text": "수왜관수도원수",
+   "confidence": 0.97091,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "왜관수도원",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.rapi_product_013",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_013"
+   },
+   "polygon": [
+    [
+     22.0,
+     550.0
+    ],
+    [
+     150.0,
+     550.0
+    ],
+    [
+     150.0,
+     564.0
+    ],
+    [
+     22.0,
+     564.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    550.0,
+    150.0,
+    564.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "수도원 투어",
+   "text_key": "수도원투어",
+   "ocr_text": "수도원투어·플리테이스테이-컴성버스입",
+   "confidence": 0.8146,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "수도원 투어",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.rapi_product_014",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_014"
+   },
+   "polygon": [
+    [
+     21.0,
+     563.0
+    ],
+    [
+     156.0,
+     563.0
+    ],
+    [
+     156.0,
+     577.0
+    ],
+    [
+     21.0,
+     577.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    563.0,
+    156.0,
+    577.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "인생사진 스튜디오",
+   "text_key": "인생사진스튜디오",
+   "ocr_text": "인생사진스류디오·마움심터·미사전시채원",
+   "confidence": 0.76742,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "인생사진 스튜디오",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.rapi_product_015",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_015"
+   },
+   "polygon": [
+    [
+     21.0,
+     590.0
+    ],
+    [
+     133.0,
+     590.0
+    ],
+    [
+     133.0,
+     604.0
+    ],
+    [
+     21.0,
+     604.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    590.0,
+    133.0,
+    604.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "체험부스",
+   "text_key": "체험부스",
+   "ocr_text": "재험부스·하놀성당아배스특법미사",
+   "confidence": 0.79503,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "체험부스",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-017.rapi_product_016",
+   "case_id": "v2-017",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_016"
+   },
+   "polygon": [
+    [
+     22.0,
+     576.0
+    ],
+    [
+     168.0,
+     576.0
+    ],
+    [
+     168.0,
+     590.0
+    ],
+    [
+     22.0,
+     590.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    576.0,
+    168.0,
+    590.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "MZ신부님과 함께하는 토크콘서트",
+   "text_key": "mz신부님과함께하는토크콘서트",
+   "ocr_text": "플리콘세트-MZ신부과방매하는 토크콘세트",
+   "confidence": 0.82263,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2667,
+   "gold_value": "MZ신부님과 함께하는 토크콘서트",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

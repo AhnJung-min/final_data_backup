@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-181",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-181.easy_rgb_2x_003",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     131.5,
+     201.5
+    ],
+    [
+     313.5,
+     201.5
+    ],
+    [
+     313.5,
+     220.5
+    ],
+    [
+     131.5,
+     220.5
+    ]
+   ],
+   "bbox": [
+    131.5,
+    201.5,
+    313.5,
+    220.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026.10.24.토 ~ 25.일 2일간",
+   "text_key": "20261024토25일2일간",
+   "ocr_text": "2026.10.240~25.2일간",
+   "confidence": 0.9679129123687744,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1333,
+   "gold_value": "2026.10.24.토 ~ 25.일 2일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-181.easy_rgb_2x_004",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     169.5,
+     223.5
+    ],
+    [
+     273.5,
+     223.5
+    ],
+    [
+     273.5,
+     244.5
+    ],
+    [
+     169.5,
+     244.5
+    ]
+   ],
+   "bbox": [
+    169.5,
+    223.5,
+    273.5,
+    244.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "렛츠런파크 제주",
+   "text_key": "렛츠런파크제주",
+   "ocr_text": "렛츠런파크제주",
+   "confidence": 0.9373772740364075,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "렛츠런파크 제주",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-181.easy_rgb_2x_005",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     60.0,
+     605.0
+    ],
+    [
+     99.0,
+     605.0
+    ],
+    [
+     99.0,
+     617.0
+    ],
+    [
+     60.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    60.0,
+    605.0,
+    99.0,
+    617.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "한국마사회",
+   "text_key": "한국마사회",
+   "ocr_text": "한국아사회",
+   "confidence": 0.8693992495536804,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "한국마사회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-181.easy_rgb_2x_008",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     360.0,
+     605.0
+    ],
+    [
+     427.0,
+     605.0
+    ],
+    [
+     427.0,
+     617.0
+    ],
+    [
+     360.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    360.0,
+    605.0,
+    427.0,
+    617.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "1566-3333",
+   "text_key": "15663333",
+   "ocr_text": "문의11566-3333",
+   "confidence": 0.9753144383430481,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "1566-3333",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

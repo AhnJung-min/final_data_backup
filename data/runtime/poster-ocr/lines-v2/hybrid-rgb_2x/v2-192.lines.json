@@ -1,0 +1,342 @@
+{
+ "case_id": "v2-192",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 23,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-192.easy_rgb_2x_002",
+   "case_id": "v2-192",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     225.0,
+     224.0
+    ],
+    [
+     280.5,
+     224.0
+    ],
+    [
+     280.5,
+     248.0
+    ],
+    [
+     225.0,
+     248.0
+    ]
+   ],
+   "bbox": [
+    225.0,
+    224.0,
+    280.5,
+    248.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "인 안정리",
+   "text_key": "인안정리",
+   "ocr_text": "인안정리",
+   "confidence": 0.9832836985588074,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "브로드웨이 인 안정리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-192.easy_rgb_2x_004",
+   "case_id": "v2-192",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     198.5,
+     404.5
+    ],
+    [
+     245.5,
+     404.5
+    ],
+    [
+     245.5,
+     422.5
+    ],
+    [
+     198.5,
+     422.5
+    ]
+   ],
+   "bbox": [
+    198.5,
+    404.5,
+    245.5,
+    422.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "CAST",
+   "text_key": "cast",
+   "ocr_text": "CAST",
+   "confidence": 0.9999575614929199,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "CAST",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-192.easy_rgb_2x_012",
+   "case_id": "v2-192",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     43.5,
+     567.5
+    ],
+    [
+     237.5,
+     567.5
+    ],
+    [
+     237.5,
+     587.5
+    ],
+    [
+     43.5,
+     587.5
+    ]
+   ],
+   "bbox": [
+    43.5,
+    567.5,
+    237.5,
+    587.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026. 10. 31. (SAT)",
+   "text_key": "20261031sat",
+   "ocr_text": "2026.10.31. (SAT) 16:00-20:00",
+   "confidence": 0.952262282371521,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 31. (SAT)",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-192.easy_rgb_2x_019",
+   "case_id": "v2-192",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     227.48,
+     202.28
+    ],
+    [
+     382.9,
+     187.24
+    ],
+    [
+     384.52,
+     212.22
+    ],
+    [
+     229.1,
+     227.26
+    ]
+   ],
+   "bbox": [
+    227.48,
+    187.24,
+    384.52,
+    227.26
+   ],
+   "height": 25.03,
+   "small_text": false,
+   "text": "N ANJEONG-",
+   "text_key": "nanjeong",
+   "ocr_text": "IANJEONGT",
+   "confidence": 0.7833117246627808,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2632,
+   "gold_value": "BROADWAY IN ANJEONG-RI",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-192.easy_rgb_2x_020",
+   "case_id": "v2-192",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     62.06,
+     225.0
+    ],
+    [
+     203.74,
+     206.58
+    ],
+    [
+     206.44,
+     241.0
+    ],
+    [
+     64.76,
+     259.42
+    ]
+   ],
+   "bbox": [
+    62.06,
+    206.58,
+    206.44,
+    259.42
+   ],
+   "height": 34.53,
+   "small_text": false,
+   "text": "OADWAY I",
+   "text_key": "oadwayi",
+   "ocr_text": "RADWAYI",
+   "confidence": 0.6377701163291931,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2632,
+   "gold_value": "BROADWAY IN ANJEONG-RI",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-192.easy_rgb_2x_021",
+   "case_id": "v2-192",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     164.49,
+     236.28
+    ],
+    [
+     228.39,
+     230.83
+    ],
+    [
+     229.01,
+     248.22
+    ],
+    [
+     165.11,
+     253.17
+    ]
+   ],
+   "bbox": [
+    164.49,
+    230.83,
+    229.01,
+    253.17
+   ],
+   "height": 17.15,
+   "small_text": false,
+   "text": "브로드웨이",
+   "text_key": "브로드웨이",
+   "ocr_text": "브로드웨이 =",
+   "confidence": 0.7952221209881374,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "브로드웨이 인 안정리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

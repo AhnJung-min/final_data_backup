@@ -1,0 +1,666 @@
+{
+ "case_id": "v2-027",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 49,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "v2-027.easy_rgb_2x_002",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     181.5,
+     4.5
+    ],
+    [
+     301.0,
+     4.5
+    ],
+    [
+     301.0,
+     19.5
+    ],
+    [
+     181.5,
+     19.5
+    ]
+   ],
+   "bbox": [
+    181.5,
+    4.5,
+    301.0,
+    19.5
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "고양상공회의소",
+   "text_key": "고양상공회의소",
+   "ocr_text": "고양상금회의소 ' 고양스테이업",
+   "confidence": 0.279855424048387,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "고양상공회의소",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_008",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     31.5,
+     226.5
+    ],
+    [
+     119.5,
+     226.5
+    ],
+    [
+     119.5,
+     244.5
+    ],
+    [
+     31.5,
+     244.5
+    ]
+   ],
+   "bbox": [
+    31.5,
+    226.5,
+    119.5,
+    244.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "제1회 대한민국",
+   "text_key": "제1회대한민국",
+   "ocr_text": "제기회 대한민국",
+   "confidence": 0.48017925230280106,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "제1회 대한민국 자유로가요제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_009",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     184.0,
+     226.5
+    ],
+    [
+     249.0,
+     226.5
+    ],
+    [
+     249.0,
+     245.5
+    ],
+    [
+     184.0,
+     245.5
+    ]
+   ],
+   "bbox": [
+    184.0,
+    226.5,
+    249.0,
+    245.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "한여름밤의",
+   "text_key": "한여름밤의",
+   "ocr_text": "한여름밤의",
+   "confidence": 0.6904044051056312,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "한여름밤의 클래식 음악회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_010",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     331.5,
+     226.5
+    ],
+    [
+     407.5,
+     226.5
+    ],
+    [
+     407.5,
+     245.5
+    ],
+    [
+     331.5,
+     245.5
+    ]
+   ],
+   "bbox": [
+    331.5,
+    226.5,
+    407.5,
+    245.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "시민랜덤댄스",
+   "text_key": "시민랜덤댄스",
+   "ocr_text": "시민랜덤민스",
+   "confidence": 0.06615432752654453,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "시민랜덤댄스 & 힐링 노래경연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_011",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     39.5,
+     244.5
+    ],
+    [
+     115.5,
+     244.5
+    ],
+    [
+     115.5,
+     262.5
+    ],
+    [
+     39.5,
+     262.5
+    ]
+   ],
+   "bbox": [
+    39.5,
+    244.5,
+    115.5,
+    262.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "자유로가요제",
+   "text_key": "자유로가요제",
+   "ocr_text": "자유로가요제",
+   "confidence": 0.9863270971600606,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "제1회 대한민국 자유로가요제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_012",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     179.5,
+     245.5
+    ],
+    [
+     258.5,
+     245.5
+    ],
+    [
+     258.5,
+     263.5
+    ],
+    [
+     179.5,
+     263.5
+    ]
+   ],
+   "bbox": [
+    179.5,
+    245.5,
+    258.5,
+    263.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "클래식 음악회",
+   "text_key": "클래식음악회",
+   "ocr_text": "클래식 움악회",
+   "confidence": 0.3979867934761738,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "한여름밤의 클래식 음악회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_013",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     324.0,
+     244.0
+    ],
+    [
+     417.5,
+     244.0
+    ],
+    [
+     417.5,
+     264.0
+    ],
+    [
+     324.0,
+     264.0
+    ]
+   ],
+   "bbox": [
+    324.0,
+    244.0,
+    417.5,
+    264.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "& 힐링 노래경연",
+   "text_key": "힐링노래경연",
+   "ocr_text": "& 힘령 노래경연",
+   "confidence": 0.4483416091735544,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "시민랜덤댄스 & 힐링 노래경연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_035",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_035"
+   },
+   "polygon": [
+    [
+     21.5,
+     537.5
+    ],
+    [
+     197.5,
+     537.5
+    ],
+    [
+     197.5,
+     558.5
+    ],
+    [
+     21.5,
+     558.5
+    ]
+   ],
+   "bbox": [
+    21.5,
+    537.5,
+    197.5,
+    558.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "일산 라페스타 문화의 거리",
+   "text_key": "일산라페스타문화의거리",
+   "ocr_text": "일산 라페스타 문화의 거리",
+   "confidence": 0.9570284841474119,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일산 라페스타 문화의 거리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_036",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_036"
+   },
+   "polygon": [
+    [
+     20.5,
+     559.5
+    ],
+    [
+     136.0,
+     559.5
+    ],
+    [
+     136.0,
+     584.0
+    ],
+    [
+     20.5,
+     584.0
+    ]
+   ],
+   "bbox": [
+    20.5,
+    559.5,
+    136.0,
+    584.0
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "2026.09.11(금)",
+   "text_key": "20260911금",
+   "ocr_text": "2026.09.11금)",
+   "confidence": 0.9738508501223143,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.09.11(금) ~ 09.13(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_038",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_038"
+   },
+   "polygon": [
+    [
+     143.5,
+     560.5
+    ],
+    [
+     216.5,
+     560.5
+    ],
+    [
+     216.5,
+     582.5
+    ],
+    [
+     143.5,
+     582.5
+    ]
+   ],
+   "bbox": [
+    143.5,
+    560.5,
+    216.5,
+    582.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "09.13(일)",
+   "text_key": "0913일",
+   "ocr_text": "09.13일)",
+   "confidence": 0.9929933774046703,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.09.11(금) ~ 09.13(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_040",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_040"
+   },
+   "polygon": [
+    [
+     23.5,
+     584.0
+    ],
+    [
+     72.0,
+     584.0
+    ],
+    [
+     72.0,
+     603.0
+    ],
+    [
+     23.5,
+     603.0
+    ]
+   ],
+   "bbox": [
+    23.5,
+    584.0,
+    72.0,
+    603.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "15:00",
+   "text_key": "1500",
+   "ocr_text": "15.00",
+   "confidence": 0.8178191356886688,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "15:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-027.easy_rgb_2x_041",
+   "case_id": "v2-027",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_041"
+   },
+   "polygon": [
+    [
+     80.0,
+     583.0
+    ],
+    [
+     130.0,
+     583.0
+    ],
+    [
+     130.0,
+     603.0
+    ],
+    [
+     80.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    80.0,
+    583.0,
+    130.0,
+    603.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "22:00",
+   "text_key": "2200",
+   "ocr_text": "22.00",
+   "confidence": 0.758841291324451,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "15:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

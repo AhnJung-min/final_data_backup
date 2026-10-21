@@ -1,0 +1,233 @@
+{
+ "case_id": "r2-027",
+ "split": "reserve",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-027.easy_rgb_2x_001",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     129.0,
+     40.0
+    ],
+    [
+     216.0,
+     40.0
+    ],
+    [
+     216.0,
+     64.0
+    ],
+    [
+     129.0,
+     64.0
+    ]
+   ],
+   "bbox": [
+    129.0,
+    40.0,
+    216.0,
+    64.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10.15.(목)",
+   "text_key": "1015목",
+   "ocr_text": "10.15 (목)",
+   "confidence": 0.6924780746415609,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.15.(목) - 10.18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.easy_rgb_2x_002",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     228.0,
+     40.0
+    ],
+    [
+     314.0,
+     40.0
+    ],
+    [
+     314.0,
+     65.0
+    ],
+    [
+     228.0,
+     65.0
+    ]
+   ],
+   "bbox": [
+    228.0,
+    40.0,
+    314.0,
+    65.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "10.18.(일)",
+   "text_key": "1018일",
+   "ocr_text": "10.18.(일)",
+   "confidence": 0.7092006150382449,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.15.(목) - 10.18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.easy_rgb_2x_003",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     181.0,
+     65.0
+    ],
+    [
+     264.0,
+     65.0
+    ],
+    [
+     264.0,
+     89.0
+    ],
+    [
+     181.0,
+     89.0
+    ]
+   ],
+   "bbox": [
+    181.0,
+    65.0,
+    264.0,
+    89.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "월화거리",
+   "text_key": "월화거리",
+   "ocr_text": "월화거리",
+   "confidence": 0.9942879676818848,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "월화거리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.easy_rgb_2x_009",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     124.67,
+     119.85
+    ],
+    [
+     268.11,
+     87.78
+    ],
+    [
+     275.33,
+     120.65
+    ],
+    [
+     131.89,
+     152.72
+    ]
+   ],
+   "bbox": [
+    124.67,
+    87.78,
+    275.33,
+    152.72
+   ],
+   "height": 33.65,
+   "small_text": false,
+   "text": "제5회",
+   "text_key": "제5회",
+   "ocr_text": "2026제5회",
+   "confidence": 0.9643868278592277,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제5회",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

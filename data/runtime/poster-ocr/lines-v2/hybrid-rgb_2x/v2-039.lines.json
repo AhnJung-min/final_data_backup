@@ -1,0 +1,450 @@
+{
+ "case_id": "v2-039",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-039.easy_rgb_2x_000",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     69.5,
+     26.5
+    ],
+    [
+     185.5,
+     26.5
+    ],
+    [
+     185.5,
+     70.5
+    ],
+    [
+     69.5,
+     70.5
+    ]
+   ],
+   "bbox": [
+    69.5,
+    26.5,
+    185.5,
+    70.5
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.997844398021698,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026 9. 17. 목 - 9. 20. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_002",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     258.0,
+     69.0
+    ],
+    [
+     422.0,
+     69.0
+    ],
+    [
+     422.0,
+     94.0
+    ],
+    [
+     258.0,
+     94.0
+    ]
+   ],
+   "bbox": [
+    258.0,
+    69.0,
+    422.0,
+    94.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "9. 17. 목 - 9. 20.",
+   "text_key": "917목920",
+   "ocr_text": "9.17.-9.20.",
+   "confidence": 0.9929875731468201,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026 9. 17. 목 - 9. 20. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_003",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     262.5,
+     95.5
+    ],
+    [
+     421.5,
+     95.5
+    ],
+    [
+     421.5,
+     115.5
+    ],
+    [
+     262.5,
+     115.5
+    ]
+   ],
+   "bbox": [
+    262.5,
+    95.5,
+    421.5,
+    115.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "금왕읍 금빛근린공원일원",
+   "text_key": "금왕읍금빛근린공원일원",
+   "ocr_text": "금왕음금빛근린공원일원",
+   "confidence": 0.8794772624969482,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "금왕읍 금빛근린공원일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_005",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     322.5,
+     128.5
+    ],
+    [
+     420.5,
+     128.5
+    ],
+    [
+     420.5,
+     148.5
+    ],
+    [
+     322.5,
+     148.5
+    ]
+   ],
+   "bbox": [
+    322.5,
+    128.5,
+    420.5,
+    148.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "시간을 품은 맛!",
+   "text_key": "시간을품은맛",
+   "ocr_text": "시간을 품은 맛!",
+   "confidence": 0.8396862149238586,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "시간을 품은 맛! 상상을 넘는 음성명작!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_006",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     283.5,
+     148.5
+    ],
+    [
+     420.5,
+     148.5
+    ],
+    [
+     420.5,
+     167.5
+    ],
+    [
+     283.5,
+     167.5
+    ]
+   ],
+   "bbox": [
+    283.5,
+    148.5,
+    420.5,
+    167.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "상상을 넘는 음성명작!",
+   "text_key": "상상을넘는음성명작",
+   "ocr_text": "상상을 넘는 음성명작!",
+   "confidence": 0.9240192770957947,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "시간을 품은 맛! 상상을 넘는 음성명작!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_009",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     28.0,
+     598.0
+    ],
+    [
+     155.0,
+     598.0
+    ],
+    [
+     155.0,
+     614.0
+    ],
+    [
+     28.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    28.0,
+    598.0,
+    155.0,
+    614.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "음성군축제추진위원회",
+   "text_key": "음성군축제추진위원회",
+   "ocr_text": "주최|음성군축제추진위원회",
+   "confidence": 0.9522459506988525,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "음성군축제추진위원회",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_011",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     189.0,
+     597.5
+    ],
+    [
+     336.5,
+     597.5
+    ],
+    [
+     336.5,
+     614.0
+    ],
+    [
+     189.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    189.0,
+    597.5,
+    336.5,
+    614.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "음성명작페스티벌 기획실무위원회",
+   "text_key": "음성명작페스티벌기획실무위원회",
+   "ocr_text": "음성명작페스티벌 기획실무위원회",
+   "confidence": 0.8953881859779358,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "음성명작페스티벌 기획실무위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_013",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     382.0,
+     598.0
+    ],
+    [
+     418.0,
+     598.0
+    ],
+    [
+     418.0,
+     614.0
+    ],
+    [
+     382.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    382.0,
+    598.0,
+    418.0,
+    614.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "음성군",
+   "text_key": "음성군",
+   "ocr_text": "음성군",
+   "confidence": 0.9745121002197266,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "음성군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

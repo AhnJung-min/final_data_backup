@@ -1,0 +1,669 @@
+{
+ "case_id": "v2-170",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 22,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "v2-170.padd_rgb_2x_000",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     173.0,
+     30.0
+    ],
+    [
+     269.5,
+     30.0
+    ],
+    [
+     269.5,
+     55.0
+    ],
+    [
+     173.0,
+     55.0
+    ]
+   ],
+   "bbox": [
+    173.0,
+    30.0,
+    269.5,
+    55.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "2026 대덕",
+   "text_key": "2026대덕",
+   "ocr_text": "2026대덕",
+   "confidence": 0.9968064427375793,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 대덕 대청호 물결축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_001",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     376.5,
+     27.5
+    ],
+    [
+     414.5,
+     27.5
+    ],
+    [
+     414.5,
+     48.0
+    ],
+    [
+     376.5,
+     48.0
+    ]
+   ],
+   "bbox": [
+    376.5,
+    27.5,
+    414.5,
+    48.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "든든",
+   "text_key": "든든",
+   "ocr_text": "든든",
+   "confidence": 0.9403806924819946,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "든든대덕",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_002",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     375.5,
+     45.0
+    ],
+    [
+     415.5,
+     45.0
+    ],
+    [
+     415.5,
+     66.0
+    ],
+    [
+     375.5,
+     66.0
+    ]
+   ],
+   "bbox": [
+    375.5,
+    45.0,
+    415.5,
+    66.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "대덕",
+   "text_key": "대덕",
+   "ocr_text": "대덕",
+   "confidence": 0.8636379241943359,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "대덕 대청호 물결축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_003",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     120.5,
+     53.5
+    ],
+    [
+     320.5,
+     53.5
+    ],
+    [
+     320.5,
+     112.0
+    ],
+    [
+     120.5,
+     112.0
+    ]
+   ],
+   "bbox": [
+    120.5,
+    53.5,
+    320.5,
+    112.0
+   ],
+   "height": 58.5,
+   "small_text": false,
+   "text": "대청호",
+   "text_key": "대청호",
+   "ocr_text": "대정호",
+   "confidence": 0.9513190388679504,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "대덕 대청호 물결축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_005",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     79.5,
+     111.0
+    ],
+    [
+     343.5,
+     111.0
+    ],
+    [
+     343.5,
+     167.0
+    ],
+    [
+     79.5,
+     167.0
+    ]
+   ],
+   "bbox": [
+    79.5,
+    111.0,
+    343.5,
+    167.0
+   ],
+   "height": 56.0,
+   "small_text": false,
+   "text": "물결축제",
+   "text_key": "물결축제",
+   "ocr_text": "물결축제",
+   "confidence": 0.9987240433692932,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "대덕 대청호 물결축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_006",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     91.5,
+     178.5
+    ],
+    [
+     353.0,
+     176.5
+    ],
+    [
+     353.0,
+     197.0
+    ],
+    [
+     91.5,
+     199.0
+    ]
+   ],
+   "bbox": [
+    91.5,
+    176.5,
+    353.0,
+    199.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "2026. 10. 23.(금) - 25.(일)",
+   "text_key": "20261023금25일",
+   "ocr_text": "2026.10.23.(금)- 25.(일)| 대청공원",
+   "confidence": 0.9077869653701782,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 23.(금) - 25.(일)",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_007",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     329.5,
+     238.0
+    ],
+    [
+     380.5,
+     238.0
+    ],
+    [
+     380.5,
+     250.0
+    ],
+    [
+     329.5,
+     250.0
+    ]
+   ],
+   "bbox": [
+    329.5,
+    238.0,
+    380.5,
+    250.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "10. 23.(금)",
+   "text_key": "1023금",
+   "ocr_text": "10.23.(금)",
+   "confidence": 0.9837384819984436,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 23.(금)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_010",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     329.5,
+     285.0
+    ],
+    [
+     380.0,
+     285.0
+    ],
+    [
+     380.0,
+     295.5
+    ],
+    [
+     329.5,
+     295.5
+    ]
+   ],
+   "bbox": [
+    329.5,
+    285.0,
+    380.0,
+    295.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "10. 24.(토)",
+   "text_key": "1024토",
+   "ocr_text": "10.24.(토)",
+   "confidence": 0.9711984992027283,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 24.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_016",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     330.0,
+     344.0
+    ],
+    [
+     409.5,
+     344.0
+    ],
+    [
+     409.5,
+     354.5
+    ],
+    [
+     330.0,
+     354.5
+    ]
+   ],
+   "bbox": [
+    330.0,
+    344.0,
+    409.5,
+    354.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "든든노래자랑 결선",
+   "text_key": "든든노래자랑결선",
+   "ocr_text": "든든노래자랑 결선",
+   "confidence": 0.9297140836715698,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "든든노래자랑 결선",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_019",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     118.5,
+     586.5
+    ],
+    [
+     196.0,
+     585.0
+    ],
+    [
+     196.0,
+     599.0
+    ],
+    [
+     119.0,
+     600.0
+    ]
+   ],
+   "bbox": [
+    118.5,
+    585.0,
+    196.0,
+    600.0
+   ],
+   "height": 13.75,
+   "small_text": false,
+   "text": "대전광역시 대덕구",
+   "text_key": "대전광역시대덕구",
+   "ocr_text": "대전광역시 대덕구",
+   "confidence": 0.9914889931678772,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시 대덕구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_020",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     217.0,
+     586.0
+    ],
+    [
+     293.0,
+     586.0
+    ],
+    [
+     293.0,
+     598.0
+    ],
+    [
+     217.0,
+     598.0
+    ]
+   ],
+   "bbox": [
+    217.0,
+    586.0,
+    293.0,
+    598.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "대덕문화관광재단",
+   "text_key": "대덕문화관광재단",
+   "ocr_text": "대덕문화관광재탁",
+   "confidence": 0.8195525407791138,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "대덕문화관광재단",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.padd_rgb_2x_022",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     341.5,
+     586.5
+    ],
+    [
+     397.0,
+     586.5
+    ],
+    [
+     397.0,
+     599.0
+    ],
+    [
+     341.5,
+     599.0
+    ]
+   ],
+   "bbox": [
+    341.5,
+    586.5,
+    397.0,
+    599.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "대전광역시",
+   "text_key": "대전광역시",
+   "ocr_text": "대전광역시",
+   "confidence": 0.998415470123291,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

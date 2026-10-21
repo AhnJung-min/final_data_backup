@@ -1,0 +1,230 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-443b09ea2d16",
+ "image": {
+  "sha256": "443b09ea2d16bc574cbc93984ba678d9a45f471c99b25c73ffbb3d26dcfa21d2",
+  "width": 502,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "2026 제주원도심 야간여행 나이트 워크",
+  "official": "제주원도심 야간여행 나이트 워크",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_002",
+    "rapi_product_001"
+   ],
+   "bbox": [
+    75.0,
+    46.0,
+    422.0,
+    176.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    262.0,
+    46.0,
+    422.0,
+    82.0
+   ],
+   "confidence": 0.93493
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.17(토)18:30~19:30",
+  "start": {
+   "iso": "2026-10-17",
+   "year": 2026,
+   "month": 10,
+   "day": 17,
+   "weekday": "sat",
+   "year_basis": "poster_text"
+  },
+  "end": null,
+  "times": [
+   {
+    "raw": "18:30~19:30",
+    "start": "18:30",
+    "end": "19:30",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003"
+   ],
+   "bbox": [
+    142.0,
+    202.0,
+    361.0,
+    224.0
+   ],
+   "confidence": 0.99834
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "탑동광장>임항로>산지로 동문시장앞/탐라문화광장>칠성로상가/관덕로11길",
+  "items": [
+   "탑동광장>임항로>산지로 동문시장앞/탐라문화광장>칠성로상가/관덕로11길"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006",
+    "rapi_product_008"
+   ],
+   "bbox": [
+    83.0,
+    278.0,
+    429.0,
+    320.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "관덕로11",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_008"
+   ],
+   "bbox": [
+    83.0,
+    301.0,
+    429.0,
+    320.0
+   ],
+   "confidence": 0.98526
+  }
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "subject_to_change",
+    "raw": "*기상 상황에 따라행사 내용은 변경될 수 있습니다.",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_015"
+     ],
+     "bbox": [
+      141.0,
+      471.0,
+      361.0,
+      486.0
+     ],
+     "confidence": 0.92158
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

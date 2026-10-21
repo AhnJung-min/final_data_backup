@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-008",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-008.easy_rgb_2x_003",
+   "case_id": "v2-008",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     77.5,
+     89.0
+    ],
+    [
+     390.0,
+     89.0
+    ],
+    [
+     390.0,
+     128.0
+    ],
+    [
+     77.5,
+     128.0
+    ]
+   ],
+   "bbox": [
+    77.5,
+    89.0,
+    390.0,
+    128.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "눈으로 보는 여행은 끝났다.",
+   "text_key": "눈으로보는여행은끝났다",
+   "ocr_text": "눈으로 보는 여행은 끝쳐다",
+   "confidence": 0.64843362820223,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "눈으로 보는 여행은 끝났다.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-008.easy_rgb_2x_004",
+   "case_id": "v2-008",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     29.0,
+     128.5
+    ],
+    [
+     444.5,
+     128.5
+    ],
+    [
+     444.5,
+     172.5
+    ],
+    [
+     29.0,
+     172.5
+    ]
+   ],
+   "bbox": [
+    29.0,
+    128.5,
+    444.5,
+    172.5
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "직접 뛰고 찾는 '진짜' 보물찾기!",
+   "text_key": "직접뛰고찾는진짜보물찾기",
+   "ocr_text": "직접 뛰고 첫는 '진짜' 보물찾기]",
+   "confidence": 0.15246785404797447,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "직접 뛰고 찾는 '진짜' 보물찾기!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-008.easy_rgb_2x_011",
+   "case_id": "v2-008",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     249.5,
+     601.5
+    ],
+    [
+     343.5,
+     601.5
+    ],
+    [
+     343.5,
+     619.5
+    ],
+    [
+     249.5,
+     619.5
+    ]
+   ],
+   "bbox": [
+    249.5,
+    601.5,
+    343.5,
+    619.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "동아일보",
+   "text_key": "동아일보",
+   "ocr_text": "#아일보   5UiT",
+   "confidence": 0.20996513124605345,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "동아일보",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

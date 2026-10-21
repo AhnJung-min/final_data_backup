@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-129",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-129.easy_rgb_2x_004",
+   "case_id": "v2-129",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     16.5,
+     541.5
+    ],
+    [
+     90.5,
+     541.5
+    ],
+    [
+     90.5,
+     561.5
+    ],
+    [
+     16.5,
+     561.5
+    ]
+   ],
+   "bbox": [
+    16.5,
+    541.5,
+    90.5,
+    561.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "10.16.금",
+   "text_key": "1016금",
+   "ocr_text": "10.16.금",
+   "confidence": 0.9947384595870972,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.16.금 ~ 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-129.easy_rgb_2x_006",
+   "case_id": "v2-129",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     102.5,
+     541.5
+    ],
+    [
+     176.5,
+     541.5
+    ],
+    [
+     176.5,
+     561.5
+    ],
+    [
+     102.5,
+     561.5
+    ]
+   ],
+   "bbox": [
+    102.5,
+    541.5,
+    176.5,
+    561.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "10.18.일",
+   "text_key": "1018일",
+   "ocr_text": "10.18 일",
+   "confidence": 0.8000273281055188,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.16.금 ~ 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-129.easy_rgb_2x_007",
+   "case_id": "v2-129",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     18.0,
+     564.0
+    ],
+    [
+     237.0,
+     564.0
+    ],
+    [
+     237.0,
+     580.0
+    ],
+    [
+     18.0,
+     580.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    564.0,
+    237.0,
+    580.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "금정산 국립공원, 금정산성, 금정산성광장 일원",
+   "text_key": "금정산국립공원금정산성금정산성광장일원",
+   "ocr_text": "금정신 국립공원,금정신성,금정산성령장 일원",
+   "confidence": 0.911729633808136,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1579,
+   "gold_value": "금정산 국립공원, 금정산성, 금정산성광장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-129.easy_rgb_2x_008",
+   "case_id": "v2-129",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     18.5,
+     594.5
+    ],
+    [
+     53.5,
+     594.5
+    ],
+    [
+     53.5,
+     604.5
+    ],
+    [
+     18.5,
+     604.5
+    ]
+   ],
+   "bbox": [
+    18.5,
+    594.5,
+    53.5,
+    604.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "금정구",
+   "text_key": "금정구",
+   "ocr_text": "스금정구",
+   "confidence": 0.7171761989593506,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "금정구",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-129.easy_rgb_2x_009",
+   "case_id": "v2-129",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     62.5,
+     594.0
+    ],
+    [
+     113.5,
+     594.0
+    ],
+    [
+     113.5,
+     604.0
+    ],
+    [
+     62.5,
+     604.0
+    ]
+   ],
+   "bbox": [
+    62.5,
+    594.0,
+    113.5,
+    604.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "금정구축제위원회",
+   "text_key": "금정구축제위원회",
+   "ocr_text": "금정구수제위원회",
+   "confidence": 0.818935751914978,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "금정구축제위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

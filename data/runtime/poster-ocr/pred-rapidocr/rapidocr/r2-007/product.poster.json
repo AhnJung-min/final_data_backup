@@ -1,0 +1,240 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-0bcdc9a92393",
+ "image": {
+  "sha256": "0bcdc9a9239306afb385c08216dceca18a4bf6134c4e2b2d109b4d805a3bd4b6",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "근대 도시 대전 중구 야행",
+  "official": "근대 도시 대전 중구 야행",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_005",
+    "rapi_product_006",
+    "rapi_product_007"
+   ],
+   "bbox": [
+    124.0,
+    114.0,
+    308.0,
+    259.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    126.0,
+    89.0,
+    302.0,
+    114.0
+   ],
+   "confidence": 0.97208
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.11.(금)~13.(일)",
+  "start": {
+   "iso": "2026-09-11",
+   "year": 2026,
+   "month": 9,
+   "day": 11,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-13",
+   "year": 2026,
+   "month": 9,
+   "day": 13,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [
+   {
+    "raw": "18:00~22:00",
+    "start": "18:00",
+    "end": "22:00",
+    "applies_to": null
+   }
+  ],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_008"
+   ],
+   "bbox": [
+    222.0,
+    214.0,
+    347.0,
+    234.0
+   ],
+   "confidence": 0.99643
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "우리들공원 중구원도심국가유산일원",
+  "items": [
+   "우리들공원 중구원도심국가유산일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010",
+    "rapi_product_011"
+   ],
+   "bbox": [
+    149.0,
+    267.0,
+    283.0,
+    306.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "대전 중구",
+  "region": "대전",
+  "district": "중구",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006"
+   ],
+   "bbox": [
+    127.0,
+    161.0,
+    308.0,
+    212.0
+   ],
+   "confidence": 0.96339
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "국가유산청",
+    "roles": [],
+    "role_raw": null,
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_000"
+     ],
+     "bbox": [
+      28.0,
+      15.0,
+      80.0,
+      29.0
+     ],
+     "confidence": 0.9976
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

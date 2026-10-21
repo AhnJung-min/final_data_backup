@@ -1,0 +1,830 @@
+{
+ "case_id": "r2-030",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 27,
+ "lines_matched": 15,
+ "records": [
+  {
+   "id": "r2-030.padd_rgb_1x_000",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     16.0,
+     10.0
+    ],
+    [
+     74.0,
+     12.0
+    ],
+    [
+     73.0,
+     30.0
+    ],
+    [
+     16.0,
+     27.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    10.0,
+    74.0,
+    30.0
+   ],
+   "height": 17.51,
+   "small_text": false,
+   "text": "강동구",
+   "text_key": "강동구",
+   "ocr_text": "강동구",
+   "confidence": 0.9138178825378418,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강동구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_002",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     173.0,
+     164.0
+    ],
+    [
+     249.0,
+     164.0
+    ],
+    [
+     249.0,
+     188.0
+    ],
+    [
+     173.0,
+     188.0
+    ]
+   ],
+   "bbox": [
+    173.0,
+    164.0,
+    249.0,
+    188.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "제31회",
+   "text_key": "제31회",
+   "ocr_text": "제31회",
+   "confidence": 0.9974006414413452,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "제31회 강동 선사문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_003",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     169.0,
+     186.0
+    ],
+    [
+     265.0,
+     186.0
+    ],
+    [
+     265.0,
+     254.0
+    ],
+    [
+     169.0,
+     254.0
+    ]
+   ],
+   "bbox": [
+    169.0,
+    186.0,
+    265.0,
+    254.0
+   ],
+   "height": 68.0,
+   "small_text": false,
+   "text": "강동",
+   "text_key": "강동",
+   "ocr_text": "강동",
+   "confidence": 0.8598615527153015,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "강동 선사문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_004",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     119.0,
+     245.0
+    ],
+    [
+     327.0,
+     245.0
+    ],
+    [
+     327.0,
+     308.0
+    ],
+    [
+     119.0,
+     308.0
+    ]
+   ],
+   "bbox": [
+    119.0,
+    245.0,
+    327.0,
+    308.0
+   ],
+   "height": 63.0,
+   "small_text": false,
+   "text": "선사문화축제",
+   "text_key": "선사문화축제",
+   "ocr_text": "서사문화추제",
+   "confidence": 0.9932952523231506,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "강동 선사문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_005",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     199.0,
+     319.0
+    ],
+    [
+     242.0,
+     319.0
+    ],
+    [
+     242.0,
+     338.0
+    ],
+    [
+     199.0,
+     338.0
+    ]
+   ],
+   "bbox": [
+    199.0,
+    319.0,
+    242.0,
+    338.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9988563060760498,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.16.(금) — 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_006",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     157.0,
+     339.0
+    ],
+    [
+     226.0,
+     339.0
+    ],
+    [
+     226.0,
+     357.0
+    ],
+    [
+     157.0,
+     357.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    339.0,
+    226.0,
+    357.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "10.16.(금)",
+   "text_key": "1016금",
+   "ocr_text": "10.16.(금)",
+   "confidence": 0.9513937830924988,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.16.(금) — 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_007",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     220.0,
+     339.0
+    ],
+    [
+     285.0,
+     339.0
+    ],
+    [
+     285.0,
+     356.0
+    ],
+    [
+     220.0,
+     356.0
+    ]
+   ],
+   "bbox": [
+    220.0,
+    339.0,
+    285.0,
+    356.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "— 18.(일)",
+   "text_key": "18일",
+   "ocr_text": "-18.(일)",
+   "confidence": 0.8536779284477234,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.16.(금) — 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_008",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     172.0,
+     359.0
+    ],
+    [
+     271.0,
+     359.0
+    ],
+    [
+     271.0,
+     377.0
+    ],
+    [
+     172.0,
+     377.0
+    ]
+   ],
+   "bbox": [
+    172.0,
+    359.0,
+    271.0,
+    377.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "서울 암사동 유적",
+   "text_key": "서울암사동유적",
+   "ocr_text": "서울암사동유적",
+   "confidence": 0.9866987466812134,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서울 암사동 유적",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_009",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     21.0,
+     550.0
+    ],
+    [
+     46.0,
+     550.0
+    ],
+    [
+     46.0,
+     561.0
+    ],
+    [
+     21.0,
+     561.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    550.0,
+    46.0,
+    561.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "축하",
+   "text_key": "축하",
+   "ocr_text": "축하",
+   "confidence": 0.9609658718109131,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_011",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     269.0,
+     551.0
+    ],
+    [
+     387.0,
+     551.0
+    ],
+    [
+     387.0,
+     563.0
+    ],
+    [
+     269.0,
+     563.0
+    ]
+   ],
+   "bbox": [
+    269.0,
+    551.0,
+    387.0,
+    563.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "개·폐막식",
+   "text_key": "개폐막식",
+   "ocr_text": "개·막식,0간빛 제(16일~18일]",
+   "confidence": 0.834761381149292,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "개·폐막식",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_013",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     19.0,
+     560.0
+    ],
+    [
+     45.0,
+     560.0
+    ],
+    [
+     45.0,
+     575.0
+    ],
+    [
+     19.0,
+     575.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    560.0,
+    45.0,
+    575.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "공연",
+   "text_key": "공연",
+   "ocr_text": "공연",
+   "confidence": 0.989964485168457,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_018",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     52.0,
+     583.0
+    ],
+    [
+     160.0,
+     583.0
+    ],
+    [
+     160.0,
+     596.0
+    ],
+    [
+     52.0,
+     596.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    583.0,
+    160.0,
+    596.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "미디어파사드",
+   "text_key": "미디어파사드",
+   "ocr_text": "미디어파사드, 선사바비큐체",
+   "confidence": 0.8650862574577332,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "미디어파사드",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_020",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     284.0,
+     583.0
+    ],
+    [
+     388.0,
+     583.0
+    ],
+    [
+     388.0,
+     596.0
+    ],
+    [
+     284.0,
+     596.0
+    ]
+   ],
+   "bbox": [
+    284.0,
+    583.0,
+    388.0,
+    596.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "강동선사노래자랑",
+   "text_key": "강동선사노래자랑",
+   "ocr_text": "강동신사노래자광,억거리정터",
+   "confidence": 0.7849875092506409,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "강동선사노래자랑",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_024",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_024"
+   },
+   "polygon": [
+    [
+     199.0,
+     597.0
+    ],
+    [
+     245.0,
+     597.0
+    ],
+    [
+     245.0,
+     606.0
+    ],
+    [
+     199.0,
+     606.0
+    ]
+   ],
+   "bbox": [
+    199.0,
+    597.0,
+    245.0,
+    606.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "gdsunsa.com",
+   "text_key": "gdsunsacom",
+   "ocr_text": "gdsunsacom",
+   "confidence": 0.9834918975830078,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "gdsunsa.com",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.padd_rgb_1x_025",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_025"
+   },
+   "polygon": [
+    [
+     306.0,
+     595.0
+    ],
+    [
+     388.0,
+     595.0
+    ],
+    [
+     388.0,
+     607.0
+    ],
+    [
+     306.0,
+     607.0
+    ]
+   ],
+   "bbox": [
+    306.0,
+    595.0,
+    388.0,
+    607.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "바위절마을 호상놀이",
+   "text_key": "바위절마을호상놀이",
+   "ocr_text": "비위절마을호상놀이동",
+   "confidence": 0.737311601638794,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "바위절마을 호상놀이",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

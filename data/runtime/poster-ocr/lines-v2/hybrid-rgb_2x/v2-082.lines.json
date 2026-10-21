@@ -1,0 +1,234 @@
+{
+ "case_id": "v2-082",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-082.easy_rgb_2x_001",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     136.5,
+     40.5
+    ],
+    [
+     311.5,
+     40.5
+    ],
+    [
+     311.5,
+     71.5
+    ],
+    [
+     136.5,
+     71.5
+    ]
+   ],
+   "bbox": [
+    136.5,
+    40.5,
+    311.5,
+    71.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "Let's go Global!",
+   "text_key": "letsgoglobal",
+   "ocr_text": "Lets 9o Globall",
+   "confidence": 0.7229895324502223,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "Let's go Global!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.easy_rgb_2x_002",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     149.5,
+     70.5
+    ],
+    [
+     297.5,
+     70.5
+    ],
+    [
+     297.5,
+     90.5
+    ],
+    [
+     149.5,
+     90.5
+    ]
+   ],
+   "bbox": [
+    149.5,
+    70.5,
+    297.5,
+    90.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026 안성맞춤 남사당",
+   "text_key": "2026안성맞춤남사당",
+   "ocr_text": "2026 안성맞춤 남사당",
+   "confidence": 0.8492840528488159,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 안성맞춤 남사당 바우덕이축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.easy_rgb_2x_003",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     71.0,
+     90.0
+    ],
+    [
+     371.5,
+     90.0
+    ],
+    [
+     371.5,
+     158.0
+    ],
+    [
+     71.0,
+     158.0
+    ]
+   ],
+   "bbox": [
+    71.0,
+    90.0,
+    371.5,
+    158.0
+   ],
+   "height": 68.0,
+   "small_text": false,
+   "text": "바우덕이축제",
+   "text_key": "바우덕이축제",
+   "ocr_text": "바우덕이축제",
+   "confidence": 0.9982274174690247,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 안성맞춤 남사당 바우덕이축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.easy_rgb_2x_005",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     88.0,
+     174.0
+    ],
+    [
+     269.0,
+     174.0
+    ],
+    [
+     269.0,
+     198.0
+    ],
+    [
+     88.0,
+     198.0
+    ]
+   ],
+   "bbox": [
+    88.0,
+    174.0,
+    269.0,
+    198.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026.10.2(금)~10.5(월)",
+   "text_key": "2026102금105월",
+   "ocr_text": "2026.10.2()~10.5()",
+   "confidence": 0.9680008292198181,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "2026.10.2(금)~10.5(월)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

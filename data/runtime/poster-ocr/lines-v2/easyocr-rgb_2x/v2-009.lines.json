@@ -1,0 +1,126 @@
+{
+ "case_id": "v2-009",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-009.easy_rgb_2x_004",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     142.5,
+     82.0
+    ],
+    [
+     299.0,
+     82.0
+    ],
+    [
+     299.0,
+     104.0
+    ],
+    [
+     142.5,
+     104.0
+    ]
+   ],
+   "bbox": [
+    142.5,
+    82.0,
+    299.0,
+    104.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026 남구청년예술제",
+   "text_key": "2026남구청년예술제",
+   "ocr_text": "2026 남구청년예술제",
+   "confidence": 0.7417443613199455,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 남구청년예술제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.easy_rgb_2x_015",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     258.0,
+     567.0
+    ],
+    [
+     354.0,
+     567.0
+    ],
+    [
+     354.0,
+     582.0
+    ],
+    [
+     258.0,
+     582.0
+    ]
+   ],
+   "bbox": [
+    258.0,
+    567.0,
+    354.0,
+    582.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "053-664-3118",
+   "text_key": "0536643118",
+   "ocr_text": "r의053-884-3118",
+   "confidence": 0.14852232832169232,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "053-664-3118",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

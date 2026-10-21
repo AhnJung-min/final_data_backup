@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-059",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 53,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-059.easy_rgb_2x_000",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     60.5,
+     39.5
+    ],
+    [
+     207.5,
+     39.5
+    ],
+    [
+     207.5,
+     57.5
+    ],
+    [
+     60.5,
+     57.5
+    ]
+   ],
+   "bbox": [
+    60.5,
+    39.5,
+    207.5,
+    57.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026 울산 야외도서관 소풍",
+   "text_key": "2026울산야외도서관소풍",
+   "ocr_text": "2026 물산 야외도서관",
+   "confidence": 0.8633239269256592,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2308,
+   "gold_value": "2026 울산 야외도서관 소풍",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_001",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     283.0,
+     58.0
+    ],
+    [
+     404.0,
+     58.0
+    ],
+    [
+     404.0,
+     86.0
+    ],
+    [
+     283.0,
+     86.0
+    ]
+   ],
+   "bbox": [
+    283.0,
+    58.0,
+    404.0,
+    86.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "바다를 보며 책 읽는",
+   "text_key": "바다를보며책읽는",
+   "ocr_text": "바다를보며책읽는",
+   "confidence": 0.7837726473808289,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "바다를 보며 책 읽는 특별한 가을 소풍",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_003",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     288.0,
+     79.5
+    ],
+    [
+     406.5,
+     79.5
+    ],
+    [
+     406.5,
+     111.0
+    ],
+    [
+     288.0,
+     111.0
+    ]
+   ],
+   "bbox": [
+    288.0,
+    79.5,
+    406.5,
+    111.0
+   ],
+   "height": 31.5,
+   "small_text": false,
+   "text": "특별한 가을 소",
+   "text_key": "특별한가을소",
+   "ocr_text": "특별한 가을소품",
+   "confidence": 0.8667327165603638,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "바다를 보며 책 읽는 특별한 가을 소풍",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_004",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     259.0,
+     112.5
+    ],
+    [
+     422.5,
+     112.5
+    ],
+    [
+     422.5,
+     144.5
+    ],
+    [
+     259.0,
+     144.5
+    ]
+   ],
+   "bbox": [
+    259.0,
+    112.5,
+    422.5,
+    144.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "울산, 슬독讀에 빠지다",
+   "text_key": "울산슬독讀에빠지다",
+   "ocr_text": "울산,슬독에빠지다",
+   "confidence": 0.9576188325881958,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "울산, 슬독讀에 빠지다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_005",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     307.0,
+     212.0
+    ],
+    [
+     377.0,
+     212.0
+    ],
+    [
+     377.0,
+     228.0
+    ],
+    [
+     307.0,
+     228.0
+    ]
+   ],
+   "bbox": [
+    307.0,
+    212.0,
+    377.0,
+    228.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "9.19-10.18",
+   "text_key": "9191018",
+   "ocr_text": "9.19-10.18",
+   "confidence": 0.9946282505989075,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9.19-10.18",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_006",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     308.0,
+     230.0
+    ],
+    [
+     427.0,
+     230.0
+    ],
+    [
+     427.0,
+     245.0
+    ],
+    [
+     308.0,
+     245.0
+    ]
+   ],
+   "bbox": [
+    308.0,
+    230.0,
+    427.0,
+    245.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "14:00~20:00",
+   "text_key": "14002000",
+   "ocr_text": "주도열140-2800101",
+   "confidence": 0.8130096197128296,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "14:00~20:00",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-059.easy_rgb_2x_026",
+   "case_id": "v2-059",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_026"
+   },
+   "polygon": [
+    [
+     111.5,
+     427.5
+    ],
+    [
+     215.5,
+     427.5
+    ],
+    [
+     215.5,
+     437.5
+    ],
+    [
+     111.5,
+     437.5
+    ]
+   ],
+   "bbox": [
+    111.5,
+    427.5,
+    215.5,
+    437.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "DJ",
+   "text_key": "dj",
+   "ocr_text": "MU버스리여!리다 DJ 샌골기",
+   "confidence": 0.015586596920997672,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "DJ",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

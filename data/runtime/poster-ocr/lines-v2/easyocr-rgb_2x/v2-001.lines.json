@@ -1,0 +1,180 @@
+{
+ "case_id": "v2-001",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-001.easy_rgb_2x_003",
+   "case_id": "v2-001",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     229.5,
+     430.5
+    ],
+    [
+     351.5,
+     430.5
+    ],
+    [
+     351.5,
+     448.5
+    ],
+    [
+     229.5,
+     448.5
+    ]
+   ],
+   "bbox": [
+    229.5,
+    430.5,
+    351.5,
+    448.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "A Performance",
+   "text_key": "aperformance",
+   "ocr_text": "A Performance @",
+   "confidence": 0.5874567598604638,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "A Performance of Traditional Korean Music",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-001.easy_rgb_2x_004",
+   "case_id": "v2-001",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     229.5,
+     446.0
+    ],
+    [
+     399.5,
+     446.0
+    ],
+    [
+     399.5,
+     464.5
+    ],
+    [
+     229.5,
+     464.5
+    ]
+   ],
+   "bbox": [
+    229.5,
+    446.0,
+    399.5,
+    464.5
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "Traditional Korean Music",
+   "text_key": "traditionalkoreanmusic",
+   "ocr_text": "Traditional Korean Music",
+   "confidence": 0.877642371799802,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "A Performance of Traditional Korean Music",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-001.easy_rgb_2x_005",
+   "case_id": "v2-001",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     46.0,
+     421.0
+    ],
+    [
+     407.5,
+     421.0
+    ],
+    [
+     407.5,
+     529.5
+    ],
+    [
+     46.0,
+     529.5
+    ]
+   ],
+   "bbox": [
+    46.0,
+    421.0,
+    407.5,
+    529.5
+   ],
+   "height": 108.5,
+   "small_text": false,
+   "text": "진연",
+   "text_key": "진연",
+   "ocr_text": "진연Jinyeon",
+   "confidence": 0.8173337609536674,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "진연",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

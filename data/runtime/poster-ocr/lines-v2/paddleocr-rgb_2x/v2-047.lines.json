@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-047",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-047.padd_rgb_2x_000",
+   "case_id": "v2-047",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     239.0,
+     93.5
+    ],
+    [
+     359.0,
+     93.5
+    ],
+    [
+     359.0,
+     114.0
+    ],
+    [
+     239.0,
+     114.0
+    ]
+   ],
+   "bbox": [
+    239.0,
+    93.5,
+    359.0,
+    114.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "나를 위한 보라색",
+   "text_key": "나를위한보라색",
+   "ocr_text": "나를 위한 보라색",
+   "confidence": 0.9750936031341553,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "나를 위한 보라색 쉼표, 하나",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-047.padd_rgb_2x_002",
+   "case_id": "v2-047",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     270.0,
+     163.0
+    ],
+    [
+     372.5,
+     165.5
+    ],
+    [
+     371.0,
+     223.5
+    ],
+    [
+     268.5,
+     220.5
+    ]
+   ],
+   "bbox": [
+    268.5,
+    163.0,
+    372.5,
+    223.5
+   ],
+   "height": 57.77,
+   "small_text": false,
+   "text": "하나",
+   "text_key": "하나",
+   "ocr_text": "하나",
+   "confidence": 0.9994667172431946,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "나를 위한 보라색 쉼표, 하나",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-047.padd_rgb_2x_007",
+   "case_id": "v2-047",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     81.0,
+     513.5
+    ],
+    [
+     367.0,
+     513.5
+    ],
+    [
+     367.0,
+     534.0
+    ],
+    [
+     81.0,
+     534.0
+    ]
+   ],
+   "bbox": [
+    81.0,
+    513.5,
+    367.0,
+    534.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "2026. 09. 18.(금)~10. 11.(일)",
+   "text_key": "20260918금1011일",
+   "ocr_text": "2026.09 18.(금)~10.71.(일)",
+   "confidence": 0.9468643069267273,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 09. 18.(금)~10. 11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-047.padd_rgb_2x_008",
+   "case_id": "v2-047",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     218.0,
+     587.0
+    ],
+    [
+     255.0,
+     588.5
+    ],
+    [
+     254.5,
+     603.5
+    ],
+    [
+     217.5,
+     602.0
+    ]
+   ],
+   "bbox": [
+    217.5,
+    587.0,
+    255.0,
+    603.5
+   ],
+   "height": 15.01,
+   "small_text": false,
+   "text": "거창군",
+   "text_key": "거창군",
+   "ocr_text": "거창군",
+   "confidence": 0.9981583952903748,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "거창군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,562 @@
+{
+ "set": "S04",
+ "checked_at": "2026-10-20T19:59:09+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 53.858,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 34.369,
+  "lines": 14,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "누리 해맞이 불꽃 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "누리 / 해맞이 불꽃 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "누리",
+     "confidence": 0.9999,
+     "bbox": [
+      333.0,
+      131.0,
+      547.0,
+      263.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "해맞이",
+     "confidence": 1.0,
+     "bbox": [
+      58.0,
+      265.0,
+      370.0,
+      393.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "불꽃",
+     "confidence": 0.9985,
+     "bbox": [
+      384.0,
+      264.0,
+      603.0,
+      396.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9988,
+     "bbox": [
+      609.0,
+      263.0,
+      826.0,
+      396.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    58.0,
+    131.0,
+    826.0,
+    396.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_025",
+     "text": "제2회 누리 해맞이 불꽃 축제",
+     "confidence": 0.9922,
+     "bbox": [
+      307.0,
+      674.0,
+      609.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    609.0,
+    707.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제2회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026제2회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026제2회",
+     "confidence": 0.9992,
+     "bbox": [
+      355.0,
+      71.0,
+      528.0,
+      110.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    355.0,
+    71.0,
+    528.0,
+    110.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_025",
+     "text": "제2회 누리 해맞이 불꽃 축제",
+     "confidence": 0.9922,
+     "bbox": [
+      307.0,
+      674.0,
+      609.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    609.0,
+    707.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.11.14.(토) ~ 11.16.(월)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.11.14.(토)~11.16.(월)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      87.0,
+      815.0,
+      143.0,
+      850.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "2026.11.14.(토)~11.16.(월)",
+     "confidence": 0.998,
+     "bbox": [
+      196.0,
+      817.0,
+      615.0,
+      851.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    87.0,
+    815.0,
+    615.0,
+    851.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_028",
+     "text": "2026.11.14.(토) ~ 11.16.(월)",
+     "confidence": 0.9566,
+     "bbox": [
+      309.0,
+      733.0,
+      623.0,
+      761.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    623.0,
+    765.0
+   ],
+   "method": "포스터 11.14(토) ~ 11.16(월)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~21:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00~21:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "시간",
+     "confidence": 0.9999,
+     "bbox": [
+      86.0,
+      888.0,
+      145.0,
+      924.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "10:00~21:00",
+     "confidence": 0.9956,
+     "bbox": [
+      200.0,
+      894.0,
+      394.0,
+      922.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    86.0,
+    888.0,
+    394.0,
+    924.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "10:00~21:00",
+     "confidence": 0.9983,
+     "bbox": [
+      307.0,
+      791.0,
+      459.0,
+      819.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "누리 문화예술회관 야외광장",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "누리 문화예술회관 야외광장",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "장소",
+     "confidence": 0.9997,
+     "bbox": [
+      87.0,
+      964.0,
+      145.0,
+      999.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "누리 문화예술회관 야외광장",
+     "confidence": 0.9977,
+     "bbox": [
+      198.0,
+      965.0,
+      562.0,
+      998.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    87.0,
+    964.0,
+    562.0,
+    999.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "누리 문화예술회관 야외광장",
+     "confidence": 0.9993,
+     "bbox": [
+      309.0,
+      850.0,
+      603.0,
+      877.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    603.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "누리군",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "누리군",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 누리군| 주관 누리관광재단|문의 043-000-3174",
+     "confidence": 0.96,
+     "bbox": [
+      168.0,
+      1198.0,
+      718.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1198.0,
+    718.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "누리군",
+     "confidence": 0.9999,
+     "bbox": [
+      304.0,
+      904.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    902.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "누리관광재단",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "누리관광재단",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 누리군| 주관 누리관광재단|문의 043-000-3174",
+     "confidence": 0.96,
+     "bbox": [
+      168.0,
+      1198.0,
+      718.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1198.0,
+    718.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "누리관광재단",
+     "confidence": 0.9999,
+     "bbox": [
+      307.0,
+      963.0,
+      453.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    453.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "043-000-3174",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "043-000-3174",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 누리군| 주관 누리관광재단|문의 043-000-3174",
+     "confidence": 0.96,
+     "bbox": [
+      168.0,
+      1198.0,
+      718.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1198.0,
+    718.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_039",
+     "text": "043-000-3174",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1025.0,
+      462.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "밤하늘을 수놓는 불꽃",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "밤하늘을 수놓는 불꽃",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "밤하늘을 수놓는 불꽃",
+     "confidence": 0.9941,
+     "bbox": [
+      295.0,
+      415.0,
+      592.0,
+      453.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    295.0,
+    415.0,
+    592.0,
+    453.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_042",
+     "text": "밤하늘을 수놓는 불꽃",
+     "confidence": 0.9991,
+     "bbox": [
+      310.0,
+      1081.0,
+      536.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    536.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_045",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9675,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.006
+}

@@ -1,0 +1,145 @@
+{
+  "engine": "rapidocr",
+  "variant": "product",
+  "identity": {
+    "engine": "rapidocr",
+    "rapidocr_version": "3.9.0",
+    "onnxruntime_version": "1.23.2",
+    "method": "rapidocr-ppocrv5-korean/onnx-cpu-v1",
+    "engine_label": "RapidOCR · PP-OCRv5 한국어/영어 · ONNX CPU",
+    "device_requested": "cpu",
+    "device_selected": "cpu",
+    "device": "cpu",
+    "fallback_reason": "",
+    "providers": {
+      "det": [
+        "CPUExecutionProvider"
+      ],
+      "cls": [
+        "CPUExecutionProvider"
+      ],
+      "rec": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "models": {
+      "ch_PP-OCRv5_mobile_det.onnx": "4d97c44a20d30a81aad087d6a396b08f786c4635742afc391f6621f5c6ae78ae",
+      "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+      "korean_PP-OCRv5_rec_mobile_infer.onnx": "cd6e2ea50f6943ca7271eb8c56a877a5a90720b7047fe9c41a2e541a25773c9b"
+    },
+    "models_pinned_match": true,
+    "model_dir": ".runtime/ocr-models",
+    "config": {
+      "Global": {
+        "text_score": 0.0,
+        "use_det": true,
+        "use_cls": false,
+        "use_rec": true,
+        "min_height": 30,
+        "width_height_ratio": 8,
+        "max_side_len": 2000,
+        "min_side_len": 30,
+        "return_word_box": false,
+        "return_single_char_box": false,
+        "log_level": "critical"
+      },
+      "Det": {
+        "engine_type": "ONNXRUNTIME",
+        "lang_type": "CH",
+        "model_type": "MOBILE",
+        "ocr_version": "PPOCRV5",
+        "task_type": "DET",
+        "model_path": "ch_PP-OCRv5_mobile_det.onnx",
+        "model_dir": null,
+        "limit_side_len": 736,
+        "limit_type": "min",
+        "std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "thresh": 0.3,
+        "box_thresh": 0.5,
+        "max_candidates": 1000,
+        "unclip_ratio": 1.6,
+        "use_dilation": true,
+        "score_mode": "fast"
+      },
+      "Cls": {
+        "engine_type": "ONNXRUNTIME",
+        "lang_type": "CH",
+        "model_type": "MOBILE",
+        "ocr_version": "PPOCRV4",
+        "task_type": "CLS",
+        "model_path": "ch_ppocr_mobile_v2.0_cls_infer.onnx",
+        "model_dir": null,
+        "cls_image_shape": [
+          3,
+          48,
+          192
+        ],
+        "cls_batch_num": 6,
+        "cls_thresh": 0.9,
+        "label_list": [
+          "0",
+          "180"
+        ]
+      },
+      "Rec": {
+        "engine_type": "ONNXRUNTIME",
+        "lang_type": "KOREAN",
+        "model_type": "MOBILE",
+        "ocr_version": "PPOCRV5",
+        "task_type": "REC",
+        "model_path": "korean_PP-OCRv5_rec_mobile_infer.onnx",
+        "model_dir": null,
+        "rec_keys_path": null,
+        "rec_img_shape": [
+          3,
+          48,
+          320
+        ],
+        "rec_batch_num": 6,
+        "font_path": null
+      },
+      "onnxruntime": {
+        "intra_op_num_threads": 4,
+        "inter_op_num_threads": 1,
+        "enable_cpu_mem_arena": false,
+        "use_cuda": false,
+        "use_dml": false
+      }
+    },
+    "fingerprint": "254c127b2e7f36f9"
+  },
+  "load_seconds": 1.7416493999771774,
+  "variants": [
+    "product"
+  ],
+  "splits": [
+    "dev",
+    "test",
+    "reserve"
+  ],
+  "cases": 252,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "cpu_count": 8,
+  "started_at": "2026-10-21T16:12:44+0900",
+  "memory_after_load": {
+    "rss_bytes": 122236928,
+    "peak_bytes": 128057344
+  },
+  "input": "원본 파일 바이트를 그대로 엔진에 넣음(확대·회색조·알파 합성 없음, scale 1)",
+  "service_path": "app.inspector.read_ocr → app.ocr._read_rapid → app.ocr._rapid_engine (CPU)",
+  "deviations": [
+    "검사 허용 폴더(inspector.ALLOWED_ROOTS) 확인만 건너뜀: 포스터가 data/img-v2에 있다.",
+    "기록(records)은 엔진 원 검출(다각형 포함)이고, 서비스가 규칙에 넘기는 병합 줄은 service_lines에 따로 둔다."
+  ]
+}

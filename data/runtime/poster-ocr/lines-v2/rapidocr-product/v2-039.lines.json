@@ -1,0 +1,615 @@
+{
+ "case_id": "v2-039",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 11,
+ "records": [
+  {
+   "id": "v2-039.rapi_product_000",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     68.0,
+     25.0
+    ],
+    [
+     184.0,
+     25.0
+    ],
+    [
+     184.0,
+     70.0
+    ],
+    [
+     68.0,
+     70.0
+    ]
+   ],
+   "bbox": [
+    68.0,
+    25.0,
+    184.0,
+    70.0
+   ],
+   "height": 45.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9958,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 음성 명작 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_002",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     8.0,
+     58.0
+    ],
+    [
+     242.0,
+     58.0
+    ],
+    [
+     242.0,
+     196.0
+    ],
+    [
+     8.0,
+     196.0
+    ]
+   ],
+   "bbox": [
+    8.0,
+    58.0,
+    242.0,
+    196.0
+   ],
+   "height": 138.0,
+   "small_text": false,
+   "text": "음성",
+   "text_key": "음성",
+   "ocr_text": "음성",
+   "confidence": 0.99925,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "음성 명작 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_003",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     259.0,
+     70.0
+    ],
+    [
+     423.0,
+     70.0
+    ],
+    [
+     423.0,
+     94.0
+    ],
+    [
+     259.0,
+     94.0
+    ]
+   ],
+   "bbox": [
+    259.0,
+    70.0,
+    423.0,
+    94.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "9. 17. 목 - 9. 20. 일",
+   "text_key": "917목920일",
+   "ocr_text": "9.17.목-9.20.일",
+   "confidence": 0.97795,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 9. 17. 목 - 9. 20. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_004",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     263.0,
+     96.0
+    ],
+    [
+     420.0,
+     96.0
+    ],
+    [
+     420.0,
+     114.0
+    ],
+    [
+     263.0,
+     114.0
+    ]
+   ],
+   "bbox": [
+    263.0,
+    96.0,
+    420.0,
+    114.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "금왕읍 금빛근린공원일원",
+   "text_key": "금왕읍금빛근린공원일원",
+   "ocr_text": "금왕읍 금빛근린공원일원",
+   "confidence": 0.92671,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "금왕읍 금빛근린공원일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_005",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     324.0,
+     130.0
+    ],
+    [
+     419.0,
+     130.0
+    ],
+    [
+     419.0,
+     147.0
+    ],
+    [
+     324.0,
+     147.0
+    ]
+   ],
+   "bbox": [
+    324.0,
+    130.0,
+    419.0,
+    147.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "시간을 품은 맛!",
+   "text_key": "시간을품은맛",
+   "ocr_text": "시간을 플은 맛!",
+   "confidence": 0.90392,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "시간을 품은 맛! 상상을 넘는 음성명작!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_006",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     283.0,
+     149.0
+    ],
+    [
+     419.0,
+     148.0
+    ],
+    [
+     419.0,
+     167.0
+    ],
+    [
+     283.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    283.0,
+    148.0,
+    419.0,
+    168.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "상상을 넘는 음성명작!",
+   "text_key": "상상을넘는음성명작",
+   "ocr_text": "상상을 넘는 음성명작!",
+   "confidence": 0.98177,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0667,
+   "gold_value": "시간을 품은 맛! 상상을 넘는 음성명작!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_007",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     14.0,
+     181.0
+    ],
+    [
+     233.0,
+     181.0
+    ],
+    [
+     233.0,
+     267.0
+    ],
+    [
+     14.0,
+     267.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    181.0,
+    233.0,
+    267.0
+   ],
+   "height": 86.0,
+   "small_text": false,
+   "text": "명작",
+   "text_key": "명작",
+   "ocr_text": "명작",
+   "confidence": 0.99494,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "음성 명작 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_009",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_009"
+   },
+   "polygon": [
+    [
+     123.0,
+     270.0
+    ],
+    [
+     192.0,
+     269.0
+    ],
+    [
+     192.0,
+     292.0
+    ],
+    [
+     124.0,
+     293.0
+    ]
+   ],
+   "bbox": [
+    123.0,
+    269.0,
+    192.0,
+    293.0
+   ],
+   "height": 23.01,
+   "small_text": false,
+   "text": "페스티벌",
+   "text_key": "페스티벌",
+   "ocr_text": "페스티벌",
+   "confidence": 0.95811,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "음성 명작 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_014",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_014"
+   },
+   "polygon": [
+    [
+     29.0,
+     599.0
+    ],
+    [
+     155.0,
+     599.0
+    ],
+    [
+     155.0,
+     614.0
+    ],
+    [
+     29.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    599.0,
+    155.0,
+    614.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "음성군축제추진위원회",
+   "text_key": "음성군축제추진위원회",
+   "ocr_text": "주최|용성군축제추진위원회",
+   "confidence": 0.92898,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "음성군축제추진위원회",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_015",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_015"
+   },
+   "polygon": [
+    [
+     161.0,
+     600.0
+    ],
+    [
+     336.0,
+     600.0
+    ],
+    [
+     336.0,
+     612.0
+    ],
+    [
+     161.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    161.0,
+    600.0,
+    336.0,
+    612.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "음성명작페스티벌 기획실무위원회",
+   "text_key": "음성명작페스티벌기획실무위원회",
+   "ocr_text": "주관|음성명작폐스티벌 기획실무위원회",
+   "confidence": 0.90293,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0667,
+   "gold_value": "음성명작페스티벌 기획실무위원회",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.rapi_product_016",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_016"
+   },
+   "polygon": [
+    [
+     342.0,
+     599.0
+    ],
+    [
+     418.0,
+     599.0
+    ],
+    [
+     418.0,
+     614.0
+    ],
+    [
+     342.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    342.0,
+    599.0,
+    418.0,
+    614.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "음성군",
+   "text_key": "음성군",
+   "ocr_text": "후원|원음성군",
+   "confidence": 0.69729,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "음성군",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

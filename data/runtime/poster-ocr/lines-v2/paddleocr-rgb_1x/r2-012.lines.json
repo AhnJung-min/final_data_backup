@@ -1,0 +1,400 @@
+{
+ "case_id": "r2-012",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-012.padd_rgb_1x_000",
+   "case_id": "r2-012",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     197.0,
+     122.0
+    ],
+    [
+     261.0,
+     122.0
+    ],
+    [
+     261.0,
+     147.0
+    ],
+    [
+     197.0,
+     147.0
+    ]
+   ],
+   "bbox": [
+    197.0,
+    122.0,
+    261.0,
+    147.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9983178377151489,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 하남 이성산성 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-012.padd_rgb_1x_001",
+   "case_id": "r2-012",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     150.0,
+     137.0
+    ],
+    [
+     314.0,
+     137.0
+    ],
+    [
+     314.0,
+     223.0
+    ],
+    [
+     150.0,
+     223.0
+    ]
+   ],
+   "bbox": [
+    150.0,
+    137.0,
+    314.0,
+    223.0
+   ],
+   "height": 86.0,
+   "small_text": false,
+   "text": "하남",
+   "text_key": "하남",
+   "ocr_text": "하남",
+   "confidence": 0.9954442977905273,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "하남 이성산성 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-012.padd_rgb_1x_002",
+   "case_id": "r2-012",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     68.0,
+     199.0
+    ],
+    [
+     372.0,
+     206.0
+    ],
+    [
+     370.0,
+     309.0
+    ],
+    [
+     66.0,
+     302.0
+    ]
+   ],
+   "bbox": [
+    66.0,
+    199.0,
+    372.0,
+    309.0
+   ],
+   "height": 103.02,
+   "small_text": false,
+   "text": "이성산성",
+   "text_key": "이성산성",
+   "ocr_text": "이성산성",
+   "confidence": 0.983059287071228,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "venue.items"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "하남 이성산성 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-012.padd_rgb_1x_003",
+   "case_id": "r2-012",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     112.0,
+     290.0
+    ],
+    [
+     336.0,
+     286.0
+    ],
+    [
+     338.0,
+     393.0
+    ],
+    [
+     114.0,
+     398.0
+    ]
+   ],
+   "bbox": [
+    112.0,
+    286.0,
+    338.0,
+    398.0
+   ],
+   "height": 107.52,
+   "small_text": false,
+   "text": "문화",
+   "text_key": "문화",
+   "ocr_text": "문화서",
+   "confidence": 0.7736398577690125,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "하남 이성산성 문화제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-012.padd_rgb_1x_006",
+   "case_id": "r2-012",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     91.0,
+     401.0
+    ],
+    [
+     352.0,
+     401.0
+    ],
+    [
+     352.0,
+     431.0
+    ],
+    [
+     91.0,
+     431.0
+    ]
+   ],
+   "bbox": [
+    91.0,
+    401.0,
+    352.0,
+    431.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "9월 19일(토)~9월 20일(일)",
+   "text_key": "9월19일토9월20일일",
+   "ocr_text": "9월 19일(토)~9월 20일(일)",
+   "confidence": 0.9822893738746643,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9월 19일(토)~9월 20일(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-012.padd_rgb_1x_007",
+   "case_id": "r2-012",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     113.0,
+     429.0
+    ],
+    [
+     331.0,
+     429.0
+    ],
+    [
+     331.0,
+     449.0
+    ],
+    [
+     113.0,
+     449.0
+    ]
+   ],
+   "bbox": [
+    113.0,
+    429.0,
+    331.0,
+    449.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "역사체험",
+   "text_key": "역사체험",
+   "ocr_text": "역사체험/특별공연|전동놀이먹거리존",
+   "confidence": 0.8889456987380981,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "역사체험",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-012.padd_rgb_1x_008",
+   "case_id": "r2-012",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     140.0,
+     462.0
+    ],
+    [
+     304.0,
+     462.0
+    ],
+    [
+     304.0,
+     479.0
+    ],
+    [
+     140.0,
+     479.0
+    ]
+   ],
+   "bbox": [
+    140.0,
+    462.0,
+    304.0,
+    479.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "미사호수공원잔디광장 · 이성산성",
+   "text_key": "미사호수공원잔디광장이성산성",
+   "ocr_text": "미사호수공원진디광장·이성산성",
+   "confidence": 0.8862488865852356,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0714,
+   "gold_value": "미사호수공원잔디광장 · 이성산성",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

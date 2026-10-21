@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-071",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-071.padd_rgb_1x_007",
+   "case_id": "v2-071",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     116.0,
+     319.0
+    ],
+    [
+     324.0,
+     319.0
+    ],
+    [
+     324.0,
+     346.0
+    ],
+    [
+     116.0,
+     346.0
+    ]
+   ],
+   "bbox": [
+    116.0,
+    319.0,
+    324.0,
+    346.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "정선의 소리 끝없는 비상",
+   "text_key": "정선의소리끝없는비상",
+   "ocr_text": "정선의 조리 끝없는 비상",
+   "confidence": 0.944132924079895,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "정선의 소리 끝없는 비상",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-071.padd_rgb_1x_008",
+   "case_id": "v2-071",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     152.0,
+     379.0
+    ],
+    [
+     290.0,
+     379.0
+    ],
+    [
+     290.0,
+     407.0
+    ],
+    [
+     152.0,
+     407.0
+    ]
+   ],
+   "bbox": [
+    152.0,
+    379.0,
+    290.0,
+    407.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026.10.1~4",
+   "text_key": "20261014",
+   "ocr_text": "2026.10.1'-4*",
+   "confidence": 0.9103869795799255,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.1~4",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-071.padd_rgb_1x_009",
+   "case_id": "v2-071",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     153.0,
+     407.0
+    ],
+    [
+     286.0,
+     407.0
+    ],
+    [
+     286.0,
+     426.0
+    ],
+    [
+     153.0,
+     426.0
+    ]
+   ],
+   "bbox": [
+    153.0,
+    407.0,
+    286.0,
+    426.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "정선공설운동장 일대",
+   "text_key": "정선공설운동장일대",
+   "ocr_text": "정선공설운동장 일대",
+   "confidence": 0.9745485186576843,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "정선공설운동장 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

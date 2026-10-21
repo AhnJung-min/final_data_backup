@@ -1,0 +1,344 @@
+{
+ "case_id": "v2-021",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-021.padd_rgb_2x_002",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     17.0,
+     46.0
+    ],
+    [
+     129.5,
+     50.0
+    ],
+    [
+     126.0,
+     157.5
+    ],
+    [
+     13.5,
+     153.5
+    ]
+   ],
+   "bbox": [
+    13.5,
+    46.0,
+    129.5,
+    157.5
+   ],
+   "height": 107.56,
+   "small_text": false,
+   "text": "성북",
+   "text_key": "성북",
+   "ocr_text": "성북",
+   "confidence": 0.9968178868293762,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성북",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_2x_004",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     303.5,
+     150.5
+    ],
+    [
+     417.0,
+     149.0
+    ],
+    [
+     417.5,
+     167.0
+    ],
+    [
+     303.5,
+     168.0
+    ]
+   ],
+   "bbox": [
+    303.5,
+    149.0,
+    417.5,
+    168.0
+   ],
+   "height": 17.75,
+   "small_text": false,
+   "text": "9월 6일(일)",
+   "text_key": "9월6일일",
+   "ocr_text": "9월 6일(일) 15시~20시",
+   "confidence": 0.9489068984985352,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9월 6일(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_2x_005",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     304.5,
+     172.0
+    ],
+    [
+     408.5,
+     172.0
+    ],
+    [
+     408.5,
+     187.5
+    ],
+    [
+     304.5,
+     187.5
+    ]
+   ],
+   "bbox": [
+    304.5,
+    172.0,
+    408.5,
+    187.5
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "성북구청 앞 바람마당교",
+   "text_key": "성북구청앞바람마당교",
+   "ocr_text": "성북구청앞바람마당교",
+   "confidence": 0.9454962611198425,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성북구청 앞 바람마당교",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_2x_006",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     304.5,
+     189.0
+    ],
+    [
+     417.5,
+     189.0
+    ],
+    [
+     417.5,
+     204.5
+    ],
+    [
+     304.5,
+     204.5
+    ]
+   ],
+   "bbox": [
+    304.5,
+    189.0,
+    417.5,
+    204.5
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "성북천 수변활력거점 일대",
+   "text_key": "성북천수변활력거점일대",
+   "ocr_text": "성북천 수변활력거점일대",
+   "confidence": 0.935840368270874,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성북천 수변활력거점 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_2x_007",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     304.5,
+     224.5
+    ],
+    [
+     401.0,
+     224.5
+    ],
+    [
+     401.0,
+     240.0
+    ],
+    [
+     304.5,
+     240.0
+    ]
+   ],
+   "bbox": [
+    304.5,
+    224.5,
+    401.0,
+    240.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "18시 30분 축하공연",
+   "confidence": 0.9292964935302734,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_2x_011",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     108.0,
+     591.5
+    ],
+    [
+     195.5,
+     591.5
+    ],
+    [
+     195.5,
+     600.0
+    ],
+    [
+     108.0,
+     600.0
+    ]
+   ],
+   "bbox": [
+    108.0,
+    591.5,
+    195.5,
+    600.0
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "참여전시",
+   "text_key": "참여전시",
+   "ocr_text": "어한이여터·장여전시·이벤요",
+   "confidence": 0.6864861249923706,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "참여전시",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

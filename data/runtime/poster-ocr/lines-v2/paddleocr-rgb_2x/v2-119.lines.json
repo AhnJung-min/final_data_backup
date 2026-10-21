@@ -1,0 +1,993 @@
+{
+ "case_id": "v2-119",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 26,
+ "lines_matched": 18,
+ "records": [
+  {
+   "id": "v2-119.padd_rgb_2x_001",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     28.0,
+     47.5
+    ],
+    [
+     64.0,
+     45.0
+    ],
+    [
+     65.0,
+     59.5
+    ],
+    [
+     29.0,
+     62.0
+    ]
+   ],
+   "bbox": [
+    28.0,
+    45.0,
+    65.0,
+    62.0
+   ],
+   "height": 14.53,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9985603094100952,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 제3회 대전중구 북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_002",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     64.0,
+     53.0
+    ],
+    [
+     201.5,
+     38.5
+    ],
+    [
+     206.0,
+     81.5
+    ],
+    [
+     68.5,
+     96.5
+    ]
+   ],
+   "bbox": [
+    64.0,
+    38.5,
+    206.0,
+    96.5
+   ],
+   "height": 43.48,
+   "small_text": false,
+   "text": "대전중구",
+   "text_key": "대전중구",
+   "ocr_text": "대전중구",
+   "confidence": 0.9790487289428711,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "대전중구 북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_003",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     29.0,
+     59.5
+    ],
+    [
+     66.0,
+     56.5
+    ],
+    [
+     67.5,
+     73.5
+    ],
+    [
+     30.0,
+     77.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    56.5,
+    67.5,
+    77.0
+   ],
+   "height": 17.3,
+   "small_text": false,
+   "text": "제3회",
+   "text_key": "제3회",
+   "ocr_text": "제3회",
+   "confidence": 0.9950678944587708,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 제3회 대전중구 북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_004",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     13.5,
+     73.5
+    ],
+    [
+     77.5,
+     68.0
+    ],
+    [
+     83.5,
+     141.5
+    ],
+    [
+     19.5,
+     147.0
+    ]
+   ],
+   "bbox": [
+    13.5,
+    68.0,
+    83.5,
+    147.0
+   ],
+   "height": 73.74,
+   "small_text": false,
+   "text": "북",
+   "text_key": "북",
+   "ocr_text": "북",
+   "confidence": 0.9607364535331726,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "대전중구 북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_005",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     69.5,
+     93.5
+    ],
+    [
+     208.0,
+     80.0
+    ],
+    [
+     212.0,
+     123.0
+    ],
+    [
+     73.5,
+     136.5
+    ]
+   ],
+   "bbox": [
+    69.5,
+    80.0,
+    212.0,
+    136.5
+   ],
+   "height": 43.19,
+   "small_text": false,
+   "text": "페스티벌",
+   "text_key": "페스티벌",
+   "ocr_text": "페스티벌",
+   "confidence": 0.9965997338294983,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "대전중구 북페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_006",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     112.5,
+     136.0
+    ],
+    [
+     193.5,
+     128.5
+    ],
+    [
+     195.5,
+     149.5
+    ],
+    [
+     114.5,
+     157.5
+    ]
+   ],
+   "bbox": [
+    112.5,
+    128.5,
+    195.5,
+    157.5
+   ],
+   "height": 21.34,
+   "small_text": false,
+   "text": "서로의 연결",
+   "text_key": "서로의연결",
+   "ocr_text": "서로의연결",
+   "confidence": 0.9429097175598145,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제2장 서로의 연결",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_007",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     71.0,
+     142.5
+    ],
+    [
+     114.0,
+     137.5
+    ],
+    [
+     116.0,
+     157.0
+    ],
+    [
+     73.0,
+     162.0
+    ]
+   ],
+   "bbox": [
+    71.0,
+    137.5,
+    116.0,
+    162.0
+   ],
+   "height": 19.6,
+   "small_text": false,
+   "text": "제2장",
+   "text_key": "제2장",
+   "ocr_text": "제2장",
+   "confidence": 0.984946072101593,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제2장 서로의 연결",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_008",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     24.5,
+     187.5
+    ],
+    [
+     115.0,
+     187.5
+    ],
+    [
+     115.0,
+     208.5
+    ],
+    [
+     24.5,
+     208.5
+    ]
+   ],
+   "bbox": [
+    24.5,
+    187.5,
+    115.0,
+    208.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "야외도서관",
+   "text_key": "야외도서관",
+   "ocr_text": "야외도서관",
+   "confidence": 0.8931291699409485,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "야외도서관",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_012",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     25.5,
+     274.5
+    ],
+    [
+     115.5,
+     276.0
+    ],
+    [
+     115.0,
+     297.0
+    ],
+    [
+     25.0,
+     296.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    274.5,
+    115.5,
+    297.0
+   ],
+   "height": 21.26,
+   "small_text": false,
+   "text": "북페스티벌",
+   "text_key": "북페스티벌",
+   "ocr_text": "북페스티벌",
+   "confidence": 0.9898543357849121,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0588,
+   "gold_value": "북페스티벌 2026.10.10.(토)–11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_014",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     26.0,
+     301.5
+    ],
+    [
+     164.0,
+     301.5
+    ],
+    [
+     164.0,
+     315.0
+    ],
+    [
+     26.0,
+     315.0
+    ]
+   ],
+   "bbox": [
+    26.0,
+    301.5,
+    164.0,
+    315.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "2026.10.10.(토)–11.(일)",
+   "text_key": "20261010토11일",
+   "ocr_text": "2026.10.10.1토-11.(일]",
+   "confidence": 0.93877112865448,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0588,
+   "gold_value": "북페스티벌 2026.10.10.(토)–11.(일)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_015",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     27.5,
+     318.0
+    ],
+    [
+     122.5,
+     318.0
+    ],
+    [
+     122.5,
+     330.0
+    ],
+    [
+     27.5,
+     330.0
+    ]
+   ],
+   "bbox": [
+    27.5,
+    318.0,
+    122.5,
+    330.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "(토) 14:00~20:00",
+   "text_key": "토14002000",
+   "ocr_text": "[14:00-20:00",
+   "confidence": 0.9857587814331055,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "(토) 14:00~20:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_016",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     40.0,
+     331.5
+    ],
+    [
+     122.0,
+     331.5
+    ],
+    [
+     122.0,
+     343.5
+    ],
+    [
+     40.0,
+     343.5
+    ]
+   ],
+   "bbox": [
+    40.0,
+    331.5,
+    122.0,
+    343.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "(일) 11:00~17:00",
+   "text_key": "일11001700",
+   "ocr_text": "1월)11:00-17:00",
+   "confidence": 0.9211611151695251,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "(일) 11:00~17:00",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_017",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     32.5,
+     347.0
+    ],
+    [
+     113.0,
+     347.0
+    ],
+    [
+     113.0,
+     360.5
+    ],
+    [
+     32.5,
+     360.5
+    ]
+   ],
+   "bbox": [
+    32.5,
+    347.0,
+    113.0,
+    360.5
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "우리들공원 일대",
+   "text_key": "우리들공원일대",
+   "ocr_text": "우리들공원 일대",
+   "confidence": 0.9712893962860107,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "우리들공원 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_022",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     60.0,
+     515.5
+    ],
+    [
+     88.5,
+     515.5
+    ],
+    [
+     88.5,
+     526.5
+    ],
+    [
+     60.0,
+     526.5
+    ]
+   ],
+   "bbox": [
+    60.0,
+    515.5,
+    88.5,
+    526.5
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "책으로",
+   "text_key": "책으로",
+   "ocr_text": "E으로",
+   "confidence": 0.7170729637145996,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_023",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_023"
+   },
+   "polygon": [
+    [
+     48.0,
+     534.0
+    ],
+    [
+     99.5,
+     531.0
+    ],
+    [
+     100.0,
+     544.0
+    ],
+    [
+     49.0,
+     547.0
+    ]
+   ],
+   "bbox": [
+    48.0,
+    531.0,
+    100.0,
+    547.0
+   ],
+   "height": 13.02,
+   "small_text": false,
+   "text": "이어진 골목,",
+   "text_key": "이어진골목",
+   "ocr_text": "이어진 골목",
+   "confidence": 0.8914027214050293,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_024",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_024"
+   },
+   "polygon": [
+    [
+     56.5,
+     551.0
+    ],
+    [
+     95.0,
+     548.0
+    ],
+    [
+     96.0,
+     560.5
+    ],
+    [
+     57.5,
+     563.5
+    ]
+   ],
+   "bbox": [
+    56.5,
+    548.0,
+    96.0,
+    563.5
+   ],
+   "height": 12.54,
+   "small_text": false,
+   "text": "이야기로",
+   "text_key": "이야기로",
+   "ocr_text": "이야기로",
+   "confidence": 0.836365818977356,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_025",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_025"
+   },
+   "polygon": [
+    [
+     49.0,
+     568.5
+    ],
+    [
+     108.0,
+     564.5
+    ],
+    [
+     109.0,
+     576.5
+    ],
+    [
+     50.0,
+     580.5
+    ]
+   ],
+   "bbox": [
+    49.0,
+    564.5,
+    109.0,
+    580.5
+   ],
+   "height": 12.04,
+   "small_text": false,
+   "text": "연결되는 중구",
+   "text_key": "연결되는중구",
+   "ocr_text": "연결되는 중구",
+   "confidence": 0.9263935685157776,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "책으로 이어진 골목, 이야기로 연결되는 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-119.padd_rgb_2x_026",
+   "case_id": "v2-119",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_026"
+   },
+   "polygon": [
+    [
+     203.5,
+     583.5
+    ],
+    [
+     257.0,
+     586.0
+    ],
+    [
+     256.5,
+     598.0
+    ],
+    [
+     203.0,
+     595.5
+    ]
+   ],
+   "bbox": [
+    203.0,
+    583.5,
+    257.0,
+    598.0
+   ],
+   "height": 12.01,
+   "small_text": false,
+   "text": "대전광역시 중구",
+   "text_key": "대전광역시중구",
+   "ocr_text": "대진광역시중구",
+   "confidence": 0.7967305183410645,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "대전광역시 중구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

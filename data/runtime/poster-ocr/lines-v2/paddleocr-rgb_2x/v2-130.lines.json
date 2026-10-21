@@ -1,0 +1,71 @@
+{
+ "case_id": "v2-130",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 6,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-130.padd_rgb_2x_000",
+   "case_id": "v2-130",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     6.0,
+     5.0
+    ],
+    [
+     28.5,
+     5.0
+    ],
+    [
+     26.5,
+     619.0
+    ],
+    [
+     4.0,
+     619.0
+    ]
+   ],
+   "bbox": [
+    4.0,
+    5.0,
+    28.5,
+    619.0
+   ],
+   "height": 614.0,
+   "small_text": false,
+   "text": "경향신문",
+   "text_key": "경향신문",
+   "ocr_text": "주경향신문주SeOgan 서시diKORENAR서식HghKB손해보영LG생건강",
+   "confidence": 0.6946465373039246,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경향신문",
+   "extra_chars": 35,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

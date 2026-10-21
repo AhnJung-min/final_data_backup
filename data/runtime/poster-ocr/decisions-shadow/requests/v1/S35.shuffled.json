@@ -1,0 +1,1499 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 144,
+  "image_tokens": 3281,
+  "text_tokens": 6091,
+  "input_tokens": 9372,
+  "cost_usd": 0.0009372
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S35",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S35.png",
+    "sha256": "19dfbd5520f1fb5b5c6c7782370f305aa11451d698e65a6a7657a8e014805b5e",
+    "bytes": 123374,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S35.png",
+    "sha256": "b2f060f1c72ad726370c5a2d704d99811d490c6bce028cfff26cff865fe5d976",
+    "bytes": 57048,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "바다울 청년 버스킹 페스티벌",
+     "doc_variants": []
+    },
+    "doc_raw": "제24회 바다울 청년 버스킹 페스티벌"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제24회",
+     "number": 24
+    },
+    "doc_raw": "제24회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.10.28.(수) ~10.29.(목)",
+     "points": [
+      [
+       2026,
+       10,
+       28,
+       "수"
+      ],
+      [
+       2026,
+       10,
+       29,
+       "목"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.10.28.(수) ~10.29.(목)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "18:00~22:00"
+    },
+    "doc_raw": "18:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "바다울강변공원 일원"
+    },
+    "doc_raw": "바다울강변공원 일원"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "바다울시"
+    },
+    "doc_raw": "바다울시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "바다울축제위원회"
+    },
+    "doc_raw": "바다울축제위원회"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "051-000-6008"
+    },
+    "doc_raw": "051-000-6008"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "거리 위의 작은 무대"
+    },
+    "doc_raw": "거리 위의 작은 무대"
+   }
+  },
+  "rows": [
+   {
+    "value": "L610",
+    "index": 0,
+    "text": "24",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "24",
+      "confidence": 0.9998043179512024,
+      "bbox_xyxy": [
+       392.0,
+       73.0,
+       852.0,
+       442.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L406",
+    "index": 1,
+    "text": "2026제24회",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "2026제24회",
+      "confidence": 0.9995837211608887,
+      "bbox_xyxy": [
+       67.0,
+       120.0,
+       270.0,
+       162.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L530",
+    "index": 2,
+    "text": "바다울",
+    "conf": 0.9999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "바다울",
+      "confidence": 0.9999270439147949,
+      "bbox_xyxy": [
+       56.0,
+       297.0,
+       386.0,
+       442.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L930",
+    "index": 3,
+    "text": "청년",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "청년",
+      "confidence": 0.9997907280921936,
+      "bbox_xyxy": [
+       56.0,
+       430.0,
+       278.0,
+       568.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L667",
+    "index": 4,
+    "text": "버스킹",
+    "conf": 0.9999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "버스킹",
+      "confidence": 0.9998863339424133,
+      "bbox_xyxy": [
+       58.0,
+       561.0,
+       379.0,
+       700.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L134",
+    "index": 5,
+    "text": "페스티벌",
+    "conf": 0.9968,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "페스티벌",
+      "confidence": 0.9968190789222717,
+      "bbox_xyxy": [
+       57.0,
+       694.0,
+       480.0,
+       825.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L505",
+    "index": 6,
+    "text": "거리 위의 작은 무대",
+    "conf": 0.9964,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "거리 위의 작은 무대",
+      "confidence": 0.9963960647583008,
+      "bbox_xyxy": [
+       69.0,
+       894.0,
+       317.0,
+       931.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L711",
+    "index": 7,
+    "text": "일시 2026.10.28(수)-10.29(목)",
+    "conf": 0.9877,
+    "records": [
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "일시 2026.10.28(수)-10.29(목)",
+      "confidence": 0.9876946210861206,
+      "bbox_xyxy": [
+       370.0,
+       969.0,
+       812.0,
+       1004.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L988",
+    "index": 8,
+    "text": "시간18:00-22:00",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "시간18:00-22:00",
+      "confidence": 0.9997181296348572,
+      "bbox_xyxy": [
+       552.0,
+       1020.0,
+       817.0,
+       1057.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L672",
+    "index": 9,
+    "text": "장소 바다울강변공원 일원",
+    "conf": 0.9405,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "장소 바다울강변공원 일원",
+      "confidence": 0.9404681921005249,
+      "bbox_xyxy": [
+       482.0,
+       1072.0,
+       816.0,
+       1109.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L566",
+    "index": 10,
+    "text": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088",
+    "conf": 0.9497,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088",
+      "confidence": 0.9496799111366272,
+      "bbox_xyxy": [
+       137.0,
+       1198.0,
+       748.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제24회 바다울 청년 버스킹 페스티벌"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.10.28.(수) ~10.29.(목)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "바다울강변공원 일원"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "바다울시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "바다울축제위원회"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "051-000-6008"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "거리 위의 작은 무대"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "바다울 청년 버스킹 페스티벌"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제24회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.10.28.(수) ~10.29.(목)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "바다울강변공원 일원"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "바다울시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "바다울축제위원회"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "051-000-6008"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "거리 위의 작은 무대"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L988",
+    "L667",
+    "L610",
+    "L711",
+    "L505",
+    "L134",
+    "L566",
+    "L672",
+    "L406",
+    "L930",
+    "L530",
+    "none"
+   ],
+   "b_line_edition": [
+    "L672",
+    "L988",
+    "L711",
+    "L667",
+    "L406",
+    "L930",
+    "L610",
+    "L566",
+    "L530",
+    "L134",
+    "L505",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L711",
+    "L566",
+    "L406",
+    "L610",
+    "L672",
+    "L134",
+    "L505",
+    "L667",
+    "L530",
+    "L988",
+    "L930",
+    "none"
+   ],
+   "b_line_time": [
+    "L610",
+    "L505",
+    "L530",
+    "L988",
+    "L930",
+    "L406",
+    "L667",
+    "L711",
+    "L672",
+    "L566",
+    "L134",
+    "none"
+   ],
+   "b_line_venue": [
+    "L930",
+    "L672",
+    "L505",
+    "L566",
+    "L530",
+    "L988",
+    "L406",
+    "L610",
+    "L711",
+    "L134",
+    "L667",
+    "none"
+   ],
+   "b_line_host": [
+    "L610",
+    "L505",
+    "L930",
+    "L988",
+    "L134",
+    "L530",
+    "L711",
+    "L406",
+    "L667",
+    "L566",
+    "L672",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L566",
+    "L610",
+    "L988",
+    "L505",
+    "L530",
+    "L134",
+    "L930",
+    "L672",
+    "L711",
+    "L406",
+    "L667",
+    "none"
+   ],
+   "b_line_contact": [
+    "L672",
+    "L566",
+    "L667",
+    "L505",
+    "L610",
+    "L530",
+    "L711",
+    "L134",
+    "L930",
+    "L988",
+    "L406",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L988",
+    "L505",
+    "L610",
+    "L566",
+    "L406",
+    "L667",
+    "L672",
+    "L711",
+    "L930",
+    "L530",
+    "L134",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 123,374 bytes, sha256 19dfbd5520f1fb5b…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 57,048 bytes, sha256 b2f060f1c72ad726…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제24회 바다울 청년 버스킹 페스티벌'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.10.28.(수) ~10.29.(목)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '18:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '바다울강변공원 일원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '바다울시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '바다울축제위원회'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '051-000-6008'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '거리 위의 작은 무대'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L988",
+      "description": "시간18:00-22:00"
+     },
+     {
+      "value": "L505",
+      "description": "거리 위의 작은 무대"
+     },
+     {
+      "value": "L610",
+      "description": "24"
+     },
+     {
+      "value": "L566",
+      "description": "주최 바다울시 |주관바다울축제위원회 |문의 051-000-6088"
+     },
+     {
+      "value": "L406",
+      "description": "2026제24회"
+     },
+     {
+      "value": "L667",
+      "description": "버스킹"
+     },
+     {
+      "value": "L672",
+      "description": "장소 바다울강변공원 일원"
+     },
+     {
+      "value": "L711",
+      "description": "일시 2026.10.28(수)-10.29(목)"
+     },
+     {
+      "value": "L930",
+      "description": "청년"
+     },
+     {
+      "value": "L530",
+      "description": "바다울"
+     },
+     {
+      "value": "L134",
+      "description": "페스티벌"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '바다울 청년 버스킹 페스티벌'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제24회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.10.28.(수) ~10.29.(목)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '18:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '바다울강변공원 일원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '바다울시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '바다울축제위원회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '051-000-6008'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '거리 위의 작은 무대'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "case_id": "v2-070",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 449,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-070.padd_rgb_1x_000",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     32.0,
+     63.0
+    ],
+    [
+     177.0,
+     63.0
+    ],
+    [
+     177.0,
+     89.0
+    ],
+    [
+     32.0,
+     89.0
+    ]
+   ],
+   "bbox": [
+    32.0,
+    63.0,
+    177.0,
+    89.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "하나로 ONE!",
+   "text_key": "하나로one",
+   "ocr_text": "하나로ONE!",
+   "confidence": 0.9365445971488953,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "하나로 ONE! 세계로 RUN!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.padd_rgb_1x_001",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     32.0,
+     90.0
+    ],
+    [
+     175.0,
+     90.0
+    ],
+    [
+     175.0,
+     118.0
+    ],
+    [
+     32.0,
+     118.0
+    ]
+   ],
+   "bbox": [
+    32.0,
+    90.0,
+    175.0,
+    118.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "세계로 RUN!",
+   "text_key": "세계로run",
+   "ocr_text": "세계로 RUN!",
+   "confidence": 0.9779300689697266,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "하나로 ONE! 세계로 RUN!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.padd_rgb_1x_002",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     31.0,
+     128.0
+    ],
+    [
+     145.0,
+     128.0
+    ],
+    [
+     145.0,
+     168.0
+    ],
+    [
+     31.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    128.0,
+    145.0,
+    168.0
+   ],
+   "height": 40.0,
+   "small_text": false,
+   "text": "제16회",
+   "text_key": "제16회",
+   "ocr_text": "제16회",
+   "confidence": 0.9303162097930908,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "제16회 계룡軍문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.padd_rgb_1x_003",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     26.0,
+     168.0
+    ],
+    [
+     319.0,
+     168.0
+    ],
+    [
+     319.0,
+     215.0
+    ],
+    [
+     26.0,
+     215.0
+    ]
+   ],
+   "bbox": [
+    26.0,
+    168.0,
+    319.0,
+    215.0
+   ],
+   "height": 47.0,
+   "small_text": false,
+   "text": "계룡軍문화축제",
+   "text_key": "계룡軍문화축제",
+   "ocr_text": "계룡문화축제",
+   "confidence": 0.9975383281707764,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "계룡軍문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.padd_rgb_1x_004",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     25.0,
+     228.0
+    ],
+    [
+     205.0,
+     226.0
+    ],
+    [
+     206.0,
+     250.0
+    ],
+    [
+     25.0,
+     252.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    226.0,
+    206.0,
+    252.0
+   ],
+   "height": 24.01,
+   "small_text": false,
+   "text": "2026. 10. 1. 목 ~ 10. 5. 월",
+   "text_key": "2026101목105월",
+   "ocr_text": "2026.10.1.목~10. 5.월",
+   "confidence": 0.9600671529769897,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 1. 목 ~ 10. 5. 월",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.padd_rgb_1x_005",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     28.0,
+     253.0
+    ],
+    [
+     115.0,
+     253.0
+    ],
+    [
+     115.0,
+     270.0
+    ],
+    [
+     28.0,
+     270.0
+    ]
+   ],
+   "bbox": [
+    28.0,
+    253.0,
+    115.0,
+    270.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "충남 계룡시 일원",
+   "text_key": "충남계룡시일원",
+   "ocr_text": "충남계룡시일원",
+   "confidence": 0.9757143259048462,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "충남 계룡시 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

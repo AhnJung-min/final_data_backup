@@ -1,0 +1,290 @@
+{
+ "case_id": "v2-072",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 440,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-072.rapi_product_010",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_010"
+   },
+   "polygon": [
+    [
+     57.0,
+     474.0
+    ],
+    [
+     386.0,
+     474.0
+    ],
+    [
+     386.0,
+     515.0
+    ],
+    [
+     57.0,
+     515.0
+    ]
+   ],
+   "bbox": [
+    57.0,
+    474.0,
+    386.0,
+    515.0
+   ],
+   "height": 41.0,
+   "small_text": false,
+   "text": "천안흥타령춤축제 2026",
+   "text_key": "천안흥타령춤축제2026",
+   "ocr_text": "천안흥타령춤축제 2026",
+   "confidence": 0.98033,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "천안흥타령춤축제 2026",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.rapi_product_011",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_011"
+   },
+   "polygon": [
+    [
+     56.0,
+     518.0
+    ],
+    [
+     384.0,
+     520.0
+    ],
+    [
+     384.0,
+     543.0
+    ],
+    [
+     56.0,
+     541.0
+    ]
+   ],
+   "bbox": [
+    56.0,
+    518.0,
+    384.0,
+    543.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "10.1(목) - 10.5(월)",
+   "text_key": "101목105월",
+   "ocr_text": "10.1(목)-10.5(월)천안종합운동장 및 천안시일원",
+   "confidence": 0.95647,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.1(목) - 10.5(월)",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.rapi_product_013",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_013"
+   },
+   "polygon": [
+    [
+     127.0,
+     577.0
+    ],
+    [
+     170.0,
+     577.0
+    ],
+    [
+     170.0,
+     589.0
+    ],
+    [
+     127.0,
+     589.0
+    ]
+   ],
+   "bbox": [
+    127.0,
+    577.0,
+    170.0,
+    589.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "천안시",
+   "text_key": "천안시",
+   "ocr_text": "©천안시",
+   "confidence": 0.61734,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "천안시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.rapi_product_014",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_014"
+   },
+   "polygon": [
+    [
+     190.0,
+     577.0
+    ],
+    [
+     238.0,
+     577.0
+    ],
+    [
+     238.0,
+     588.0
+    ],
+    [
+     190.0,
+     588.0
+    ]
+   ],
+   "bbox": [
+    190.0,
+    577.0,
+    238.0,
+    588.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "문화체육관광부",
+   "text_key": "문화체육관광부",
+   "ocr_text": "문화재관광부",
+   "confidence": 0.66494,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "문화체육관광부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.rapi_product_016",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_016"
+   },
+   "polygon": [
+    [
+     307.0,
+     577.0
+    ],
+    [
+     346.0,
+     577.0
+    ],
+    [
+     346.0,
+     589.0
+    ],
+    [
+     307.0,
+     589.0
+    ]
+   ],
+   "bbox": [
+    307.0,
+    577.0,
+    346.0,
+    589.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "FIDAF",
+   "text_key": "fidaf",
+   "ocr_text": "FIDRF",
+   "confidence": 0.95599,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "FIDAF",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

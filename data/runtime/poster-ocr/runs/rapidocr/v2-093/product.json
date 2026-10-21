@@ -1,0 +1,194 @@
+{
+ "case_id": "v2-093",
+ "engine": "rapidocr",
+ "variant": "product",
+ "scale": 1,
+ "normalized_dimensions": [
+  455,
+  627
+ ],
+ "input_dimensions": [
+  455,
+  627
+ ],
+ "source_sha256": "e6667da01fab800d50aeb4b7db218cdeea92965f0c269468312d4629e4f2d84f",
+ "input_sha256": "e6667da01fab800d50aeb4b7db218cdeea92965f0c269468312d4629e4f2d84f",
+ "coordinate_space": "normalized_original_pixels",
+ "input": "original_bytes",
+ "device": "cpu",
+ "method": "rapidocr-ppocrv5-korean/onnx-cpu-v1",
+ "engine_fingerprint": "254c127b2e7f36f9",
+ "status": "success",
+ "records": [
+  {
+   "id": "rapi_product_000",
+   "text": "제45",
+   "confidence": 0.72361,
+   "bbox_xyxy": [
+    14.0,
+    14.0,
+    93.0,
+    69.0
+   ],
+   "polygon": [
+    [
+     14.0,
+     14.0
+    ],
+    [
+     93.0,
+     14.0
+    ],
+    [
+     93.0,
+     69.0
+    ],
+    [
+     14.0,
+     69.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_001",
+   "text": "2026.10. 3.([토]~10.4.[일]",
+   "confidence": 0.91207,
+   "bbox_xyxy": [
+    224.0,
+    18.0,
+    437.0,
+    40.0
+   ],
+   "polygon": [
+    [
+     224.0,
+     18.0
+    ],
+    [
+     437.0,
+     18.0
+    ],
+    [
+     437.0,
+     40.0
+    ],
+    [
+     224.0,
+     40.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_002",
+   "text": "태백시청일원",
+   "confidence": 0.99664,
+   "bbox_xyxy": [
+    326.0,
+    40.0,
+    439.0,
+    65.0
+   ],
+   "polygon": [
+    [
+     326.0,
+     40.0
+    ],
+    [
+     439.0,
+     40.0
+    ],
+    [
+     439.0,
+     65.0
+    ],
+    [
+     326.0,
+     65.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_003",
+   "text": "상생과 화합의태백시민 대잔치",
+   "confidence": 0.91037,
+   "bbox_xyxy": [
+    19.0,
+    107.0,
+    440.0,
+    154.0
+   ],
+   "polygon": [
+    [
+     19.0,
+     107.0
+    ],
+    [
+     440.0,
+     107.0
+    ],
+    [
+     440.0,
+     154.0
+    ],
+    [
+     19.0,
+     154.0
+    ]
+   ]
+  }
+ ],
+ "raw_detections": 4,
+ "stage_seconds": {
+  "det": 0.927,
+  "cls": null,
+  "rec": 0.729
+ },
+ "service_status": "succeeded",
+ "service_lines": [
+  {
+   "text": "제45",
+   "confidence": 0.72361,
+   "bbox": [
+    0.030769,
+    0.022329,
+    0.173626,
+    0.087719
+   ]
+  },
+  {
+   "text": "2026.10. 3.([토]~10.4.[일]",
+   "confidence": 0.91207,
+   "bbox": [
+    0.492308,
+    0.028708,
+    0.468132,
+    0.035088
+   ]
+  },
+  {
+   "text": "태백시청일원",
+   "confidence": 0.99664,
+   "bbox": [
+    0.716484,
+    0.063796,
+    0.248352,
+    0.039872
+   ]
+  },
+  {
+   "text": "상생과 화합의태백시민 대잔치",
+   "confidence": 0.91037,
+   "bbox": [
+    0.041758,
+    0.170654,
+    0.925275,
+    0.07496
+   ]
+  }
+ ],
+ "inference_seconds": 1.676,
+ "memory": {
+  "rss_bytes": 129155072,
+  "peak_bytes": 301199360
+ }
+}

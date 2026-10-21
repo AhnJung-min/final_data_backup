@@ -1,0 +1,234 @@
+{
+ "case_id": "v2-077",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 502,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-077.padd_rgb_2x_001",
+   "case_id": "v2-077",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     457.5,
+     87.0
+    ],
+    [
+     479.5,
+     87.0
+    ],
+    [
+     479.5,
+     392.0
+    ],
+    [
+     457.5,
+     392.0
+    ]
+   ],
+   "bbox": [
+    457.5,
+    87.0,
+    479.5,
+    392.0
+   ],
+   "height": 305.0,
+   "small_text": false,
+   "text": "제5회 전주국제그림책도서전",
+   "text_key": "제5회전주국제그림책도서전",
+   "ocr_text": "제도회전주국제그림책도서전",
+   "confidence": 0.9720467925071716,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0769,
+   "gold_value": "제5회 전주국제그림책도서전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-077.padd_rgb_2x_004",
+   "case_id": "v2-077",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     428.5,
+     327.0
+    ],
+    [
+     456.5,
+     327.0
+    ],
+    [
+     456.5,
+     534.0
+    ],
+    [
+     428.5,
+     534.0
+    ]
+   ],
+   "bbox": [
+    428.5,
+    327.0,
+    456.5,
+    534.0
+   ],
+   "height": 207.0,
+   "small_text": false,
+   "text": "기억을 그리다",
+   "text_key": "기억을그리다",
+   "ocr_text": "기억을 그리다",
+   "confidence": 0.9826667904853821,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "기억을 그리다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-077.padd_rgb_2x_007",
+   "case_id": "v2-077",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     378.5,
+     582.5
+    ],
+    [
+     475.5,
+     582.5
+    ],
+    [
+     475.5,
+     593.0
+    ],
+    [
+     378.5,
+     593.0
+    ]
+   ],
+   "bbox": [
+    378.5,
+    582.5,
+    475.5,
+    593.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "2026.10.2.금 - 10.25.일",
+   "text_key": "2026102금1025일",
+   "ocr_text": "2026,10.2금-10.25.일",
+   "confidence": 0.9285000562667847,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.2.금 - 10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-077.padd_rgb_2x_008",
+   "case_id": "v2-077",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     366.0,
+     595.5
+    ],
+    [
+     476.5,
+     595.5
+    ],
+    [
+     476.5,
+     607.5
+    ],
+    [
+     366.0,
+     607.5
+    ]
+   ],
+   "bbox": [
+    366.0,
+    595.5,
+    476.5,
+    607.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "한국소리문화의전당 전시장",
+   "text_key": "한국소리문화의전당전시장",
+   "ocr_text": "한국소리문화의전당 전시장",
+   "confidence": 0.9659819006919861,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "한국소리문화의전당 전시장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

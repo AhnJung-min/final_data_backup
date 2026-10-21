@@ -1,0 +1,71 @@
+{
+ "case_id": "v2-028",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-028.easy_rgb_2x_024",
+   "case_id": "v2-028",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_024"
+   },
+   "polygon": [
+    [
+     186.0,
+     487.0
+    ],
+    [
+     257.0,
+     487.0
+    ],
+    [
+     257.0,
+     501.0
+    ],
+    [
+     186.0,
+     501.0
+    ]
+   ],
+   "bbox": [
+    186.0,
+    487.0,
+    257.0,
+    501.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "KT&G 상상마당",
+   "text_key": "ktg상상마당",
+   "ocr_text": "KTGG 상상마당",
+   "confidence": 0.786993858956556,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "KT&G 상상마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

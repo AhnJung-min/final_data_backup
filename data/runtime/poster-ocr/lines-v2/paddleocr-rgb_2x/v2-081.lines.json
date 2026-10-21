@@ -1,0 +1,775 @@
+{
+ "case_id": "v2-081",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 48,
+ "lines_matched": 14,
+ "records": [
+  {
+   "id": "v2-081.padd_rgb_2x_000",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     20.5,
+     16.5
+    ],
+    [
+     107.5,
+     18.0
+    ],
+    [
+     107.0,
+     32.0
+    ],
+    [
+     20.0,
+     30.5
+    ]
+   ],
+   "bbox": [
+    20.0,
+    16.5,
+    107.5,
+    32.0
+   ],
+   "height": 14.01,
+   "small_text": false,
+   "text": "문경시",
+   "text_key": "문경시",
+   "ocr_text": "주의 G문경시",
+   "confidence": 0.6497126221656799,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "문경시",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_003",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     164.5,
+     17.0
+    ],
+    [
+     222.0,
+     17.0
+    ],
+    [
+     222.0,
+     27.5
+    ],
+    [
+     164.5,
+     27.5
+    ]
+   ],
+   "bbox": [
+    164.5,
+    17.0,
+    222.0,
+    27.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "문경관광공사",
+   "text_key": "문경관광공사",
+   "ocr_text": "문경관광공시",
+   "confidence": 0.9509897232055664,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "문경관광공사",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_004",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     25.0,
+     74.0
+    ],
+    [
+     312.0,
+     78.0
+    ],
+    [
+     311.5,
+     145.0
+    ],
+    [
+     24.0,
+     141.0
+    ]
+   ],
+   "bbox": [
+    24.0,
+    74.0,
+    312.0,
+    145.0
+   ],
+   "height": 67.0,
+   "small_text": false,
+   "text": "가은아자개",
+   "text_key": "가은아자개",
+   "ocr_text": "가은아자개",
+   "confidence": 0.995045006275177,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "가은아자개 장터축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_005",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     25.0,
+     147.5
+    ],
+    [
+     259.5,
+     147.5
+    ],
+    [
+     259.5,
+     217.0
+    ],
+    [
+     25.0,
+     217.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    147.5,
+    259.5,
+    217.0
+   ],
+   "height": 69.5,
+   "small_text": false,
+   "text": "장터축제",
+   "text_key": "장터축제",
+   "ocr_text": "장터축제",
+   "confidence": 0.9895871877670288,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "가은아자개 장터축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_007",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     79.0,
+     230.5
+    ],
+    [
+     267.0,
+     232.0
+    ],
+    [
+     267.0,
+     253.0
+    ],
+    [
+     79.0,
+     251.0
+    ]
+   ],
+   "bbox": [
+    79.0,
+    230.5,
+    267.0,
+    253.0
+   ],
+   "height": 20.75,
+   "small_text": false,
+   "text": "2026. 10. 2.(금) ~ 4.(일)",
+   "text_key": "2026102금4일",
+   "ocr_text": "2026.10.2.(금)-4.(일)",
+   "confidence": 0.9807639122009277,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 2.(금) ~ 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_009",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     81.0,
+     262.0
+    ],
+    [
+     197.0,
+     261.0
+    ],
+    [
+     197.5,
+     279.0
+    ],
+    [
+     81.0,
+     279.5
+    ]
+   ],
+   "bbox": [
+    81.0,
+    261.0,
+    197.5,
+    279.5
+   ],
+   "height": 17.75,
+   "small_text": false,
+   "text": "문경시 가은읍 일원",
+   "text_key": "문경시가은읍일원",
+   "ocr_text": "문경시 가은읍 일원",
+   "confidence": 0.9588568806648254,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "문경시 가은읍 일원 (가은아자개장터 외)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_010",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     82.0,
+     282.5
+    ],
+    [
+     205.0,
+     282.5
+    ],
+    [
+     205.0,
+     301.0
+    ],
+    [
+     82.0,
+     301.0
+    ]
+   ],
+   "bbox": [
+    82.0,
+    282.5,
+    205.0,
+    301.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "(가은아자개장터 외)",
+   "text_key": "가은아자개장터외",
+   "ocr_text": "(가은아자개장터 외)",
+   "confidence": 0.9761802554130554,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "문경시 가은읍 일원 (가은아자개장터 외)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_015",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     87.5,
+     353.5
+    ],
+    [
+     162.5,
+     353.5
+    ],
+    [
+     162.5,
+     366.0
+    ],
+    [
+     87.5,
+     366.0
+    ]
+   ],
+   "bbox": [
+    87.5,
+    353.5,
+    162.5,
+    366.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "미스트롯4 갈라쇼!",
+   "text_key": "미스트롯4갈라쇼",
+   "ocr_text": "미스트롯4 갈라쇼!",
+   "confidence": 0.8965368270874023,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "미스트롯4 갈라쇼!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_016",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     267.5,
+     353.5
+    ],
+    [
+     365.5,
+     353.5
+    ],
+    [
+     365.5,
+     366.0
+    ],
+    [
+     267.5,
+     366.0
+    ]
+   ],
+   "bbox": [
+    267.5,
+    353.5,
+    365.5,
+    366.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "8090 타임캡슐 콘서트!",
+   "text_key": "8090타임캡슐콘서트",
+   "ocr_text": "8090 타임캡슬 콘서트!",
+   "confidence": 0.9408353567123413,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "8090 타임캡슐 콘서트!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_033",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_033"
+   },
+   "polygon": [
+    [
+     68.0,
+     486.5
+    ],
+    [
+     182.5,
+     486.5
+    ],
+    [
+     182.5,
+     497.0
+    ],
+    [
+     68.0,
+     497.0
+    ]
+   ],
+   "bbox": [
+    68.0,
+    486.5,
+    182.5,
+    497.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "흑백요리사x냉장고를 부탁해",
+   "text_key": "흑백요리사x냉장고를부탁해",
+   "ocr_text": "흑백요리사x냉장고를 부탁해",
+   "confidence": 0.9709868431091309,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.05,
+   "gold_value": "흑백요리사x냉장고를 부탁해 중식마녀_이문정",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_034",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_034"
+   },
+   "polygon": [
+    [
+     272.5,
+     486.5
+    ],
+    [
+     301.5,
+     486.5
+    ],
+    [
+     301.5,
+     497.5
+    ],
+    [
+     272.5,
+     497.5
+    ]
+   ],
+   "bbox": [
+    272.5,
+    486.5,
+    301.5,
+    497.5
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "어린이",
+   "text_key": "어린이",
+   "ocr_text": "어린이",
+   "confidence": 0.9930288791656494,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "어린이 BIG SHOW!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_035",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_035"
+   },
+   "polygon": [
+    [
+     299.5,
+     486.0
+    ],
+    [
+     362.0,
+     486.0
+    ],
+    [
+     362.0,
+     498.0
+    ],
+    [
+     299.5,
+     498.0
+    ]
+   ],
+   "bbox": [
+    299.5,
+    486.0,
+    362.0,
+    498.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "BIG SHOW!",
+   "text_key": "bigshow",
+   "ocr_text": "BIG SHOW!",
+   "confidence": 0.9547068476676941,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "어린이 BIG SHOW!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_037",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_037"
+   },
+   "polygon": [
+    [
+     90.5,
+     498.5
+    ],
+    [
+     160.0,
+     498.5
+    ],
+    [
+     160.0,
+     512.0
+    ],
+    [
+     90.5,
+     512.0
+    ]
+   ],
+   "bbox": [
+    90.5,
+    498.5,
+    160.0,
+    512.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "중식마녀_이문",
+   "text_key": "중식마녀이문",
+   "ocr_text": "중식마녀_이문",
+   "confidence": 0.9786315560340881,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.05,
+   "gold_value": "흑백요리사x냉장고를 부탁해 중식마녀_이문정",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-081.padd_rgb_2x_042",
+   "case_id": "v2-081",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_042"
+   },
+   "polygon": [
+    [
+     108.5,
+     541.5
+    ],
+    [
+     190.5,
+     541.5
+    ],
+    [
+     190.5,
+     552.0
+    ],
+    [
+     108.5,
+     552.0
+    ]
+   ],
+   "bbox": [
+    108.5,
+    541.5,
+    190.5,
+    552.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "약돌돼지 동파육 시식!",
+   "text_key": "약돌돼지동파육시식",
+   "ocr_text": "약돌돼지 동파육 시식!",
+   "confidence": 0.9775407910346985,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "약돌돼지 동파육 시식!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

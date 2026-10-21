@@ -1,0 +1,181 @@
+{
+ "case_id": "v2-083",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-083.easy_rgb_2x_000",
+   "case_id": "v2-083",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     197.5,
+     15.5
+    ],
+    [
+     246.5,
+     15.5
+    ],
+    [
+     246.5,
+     34.5
+    ],
+    [
+     197.5,
+     34.5
+    ]
+   ],
+   "bbox": [
+    197.5,
+    15.5,
+    246.5,
+    34.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "제26",
+   "text_key": "제26",
+   "ocr_text": "제263",
+   "confidence": 0.2273256927728653,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "제26회 소래포구축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-083.easy_rgb_2x_001",
+   "case_id": "v2-083",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     147.5,
+     35.0
+    ],
+    [
+     298.0,
+     35.0
+    ],
+    [
+     298.0,
+     75.5
+    ],
+    [
+     147.5,
+     75.5
+    ]
+   ],
+   "bbox": [
+    147.5,
+    35.0,
+    298.0,
+    75.5
+   ],
+   "height": 40.5,
+   "small_text": false,
+   "text": "소래포구축제",
+   "text_key": "소래포구축제",
+   "ocr_text": "소래포구축제",
+   "confidence": 0.9851902761479296,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "소래포구축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-083.easy_rgb_2x_003",
+   "case_id": "v2-083",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     159.5,
+     117.5
+    ],
+    [
+     284.5,
+     117.5
+    ],
+    [
+     284.5,
+     148.5
+    ],
+    [
+     159.5,
+     148.5
+    ]
+   ],
+   "bbox": [
+    159.5,
+    117.5,
+    284.5,
+    148.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "소래포구 일원",
+   "text_key": "소래포구일원",
+   "ocr_text": "소래포구 일원",
+   "confidence": 0.9271385806384629,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "소래포구 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

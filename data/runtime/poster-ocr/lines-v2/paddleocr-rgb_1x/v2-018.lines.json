@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-018",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-018.padd_rgb_1x_003",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     367.0,
+     13.0
+    ],
+    [
+     429.0,
+     13.0
+    ],
+    [
+     429.0,
+     23.0
+    ],
+    [
+     367.0,
+     23.0
+    ]
+   ],
+   "bbox": [
+    367.0,
+    13.0,
+    429.0,
+    23.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "www.firefly.or.kr",
+   "text_key": "wwwfireflyorkr",
+   "ocr_text": "www,firefly.or,kr",
+   "confidence": 0.9057286977767944,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "www.firefly.or.kr",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.padd_rgb_1x_006",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     251.0,
+     459.0
+    ],
+    [
+     288.0,
+     459.0
+    ],
+    [
+     288.0,
+     474.0
+    ],
+    [
+     251.0,
+     474.0
+    ]
+   ],
+   "bbox": [
+    251.0,
+    459.0,
+    288.0,
+    474.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.981931209564209,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.4.금 - 9.12.토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.padd_rgb_1x_007",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     252.0,
+     476.0
+    ],
+    [
+     292.0,
+     476.0
+    ],
+    [
+     292.0,
+     495.0
+    ],
+    [
+     252.0,
+     495.0
+    ]
+   ],
+   "bbox": [
+    252.0,
+    476.0,
+    292.0,
+    495.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "9.4.",
+   "text_key": "94",
+   "ocr_text": "9.4.",
+   "confidence": 0.9309200644493103,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.4.금 - 9.12.토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.padd_rgb_1x_008",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     305.0,
+     474.0
+    ],
+    [
+     357.0,
+     474.0
+    ],
+    [
+     357.0,
+     496.0
+    ],
+    [
+     305.0,
+     496.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    474.0,
+    357.0,
+    496.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "9.12.",
+   "text_key": "912",
+   "ocr_text": "9.12.",
+   "confidence": 0.9281586408615112,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.4.금 - 9.12.토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.padd_rgb_1x_012",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     222.0,
+     601.0
+    ],
+    [
+     300.0,
+     601.0
+    ],
+    [
+     300.0,
+     613.0
+    ],
+    [
+     222.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    222.0,
+    601.0,
+    300.0,
+    613.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "063)324-2440",
+   "text_key": "0633242440",
+   "ocr_text": "1:0531324-24.40",
+   "confidence": 0.9356089234352112,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "063)324-2440",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

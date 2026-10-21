@@ -1,0 +1,775 @@
+{
+ "case_id": "v2-062",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 442,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 14,
+ "records": [
+  {
+   "id": "v2-062.easy_rgb_2x_000",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     370.5,
+     16.5
+    ],
+    [
+     422.5,
+     16.5
+    ],
+    [
+     422.5,
+     37.5
+    ],
+    [
+     370.5,
+     37.5
+    ]
+   ],
+   "bbox": [
+    370.5,
+    16.5,
+    422.5,
+    37.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "군민의",
+   "text_key": "군민의",
+   "ocr_text": "군민의이",
+   "confidence": 0.789427638053894,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "군민의 삶이 먼저인 하동",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_001",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     398.0,
+     31.0
+    ],
+    [
+     425.0,
+     31.0
+    ],
+    [
+     425.0,
+     43.0
+    ],
+    [
+     398.0,
+     43.0
+    ]
+   ],
+   "bbox": [
+    398.0,
+    31.0,
+    425.0,
+    43.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "먼저인",
+   "text_key": "먼저인",
+   "ocr_text": "언저인",
+   "confidence": 0.2364855024051695,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "군민의 삶이 먼저인 하동",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_004",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     157.5,
+     120.5
+    ],
+    [
+     286.5,
+     120.5
+    ],
+    [
+     286.5,
+     140.5
+    ],
+    [
+     157.5,
+     140.5
+    ]
+   ],
+   "bbox": [
+    157.5,
+    120.5,
+    286.5,
+    140.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "별천지 하동 꽃천지 북천",
+   "text_key": "별천지하동꽃천지북천",
+   "ocr_text": "별천지 하동 꽃천지 북천",
+   "confidence": 0.391967039566121,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "별천지 하동 꽃천지 북천",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_005",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     112.5,
+     144.0
+    ],
+    [
+     271.5,
+     144.0
+    ],
+    [
+     271.5,
+     178.0
+    ],
+    [
+     112.5,
+     178.0
+    ]
+   ],
+   "bbox": [
+    112.5,
+    144.0,
+    271.5,
+    178.0
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "제20회 하동 북천",
+   "text_key": "제20회하동북천",
+   "ocr_text": "제20회 하동 북천",
+   "confidence": 0.7962600917664697,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제20회 하동 북천 코스모스 메밀꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_006",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     113.0,
+     172.0
+    ],
+    [
+     335.0,
+     172.0
+    ],
+    [
+     335.0,
+     235.0
+    ],
+    [
+     113.0,
+     235.0
+    ]
+   ],
+   "bbox": [
+    113.0,
+    172.0,
+    335.0,
+    235.0
+   ],
+   "height": 63.0,
+   "small_text": false,
+   "text": "코스모스",
+   "text_key": "코스모스",
+   "ocr_text": "코스모스",
+   "confidence": 0.9990017414093018,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제20회 하동 북천 코스모스 메밀꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_007",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     108.0,
+     227.0
+    ],
+    [
+     336.0,
+     227.0
+    ],
+    [
+     336.0,
+     299.0
+    ],
+    [
+     108.0,
+     299.0
+    ]
+   ],
+   "bbox": [
+    108.0,
+    227.0,
+    336.0,
+    299.0
+   ],
+   "height": 72.0,
+   "small_text": false,
+   "text": "메밀꽃축제",
+   "text_key": "메밀꽃축제",
+   "ocr_text": "메밀꽃축제",
+   "confidence": 0.993248462677002,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제20회 하동 북천 코스모스 메밀꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_008",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     111.0,
+     310.0
+    ],
+    [
+     216.0,
+     310.0
+    ],
+    [
+     216.0,
+     338.0
+    ],
+    [
+     111.0,
+     338.0
+    ]
+   ],
+   "bbox": [
+    111.0,
+    310.0,
+    216.0,
+    338.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026.9.22.",
+   "text_key": "2026922",
+   "ocr_text": "2026.9.22.",
+   "confidence": 0.9643514752388,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "2026.9.22.화 ~ 10.5.월 14일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_009",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     238.0,
+     310.0
+    ],
+    [
+     331.0,
+     310.0
+    ],
+    [
+     331.0,
+     337.0
+    ],
+    [
+     238.0,
+     337.0
+    ]
+   ],
+   "bbox": [
+    238.0,
+    310.0,
+    331.0,
+    337.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "10.5.월 14일간",
+   "text_key": "105월14일간",
+   "ocr_text": "10.514일간",
+   "confidence": 0.9104127883911133,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "2026.9.22.화 ~ 10.5.월 14일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_010",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     115.5,
+     336.0
+    ],
+    [
+     327.5,
+     336.0
+    ],
+    [
+     327.5,
+     354.5
+    ],
+    [
+     115.5,
+     354.5
+    ]
+   ],
+   "bbox": [
+    115.5,
+    336.0,
+    327.5,
+    354.5
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "경남 하동군 북천면 코스모스·메밀꽃 축제장",
+   "text_key": "경남하동군북천면코스모스메밀꽃축제장",
+   "ocr_text": "경남 하동군 부천면 코스모스 데민꽃 축제장",
+   "confidence": 0.4601518701482559,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "경남 하동군 북천면 코스모스·메밀꽃 축제장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_017",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     184.0,
+     488.5
+    ],
+    [
+     305.5,
+     488.5
+    ],
+    [
+     305.5,
+     509.5
+    ],
+    [
+     184.0,
+     509.5
+    ]
+   ],
+   "bbox": [
+    184.0,
+    488.5,
+    305.5,
+    509.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "북천면민 노래자랑",
+   "text_key": "북천면민노래자랑",
+   "ocr_text": "북천면민 노래자랑",
+   "confidence": 0.8975495100021362,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "북천면민 노래자랑",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_018",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     193.0,
+     525.0
+    ],
+    [
+     262.0,
+     525.0
+    ],
+    [
+     262.0,
+     541.0
+    ],
+    [
+     193.0,
+     541.0
+    ]
+   ],
+   "bbox": [
+    193.0,
+    525.0,
+    262.0,
+    541.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "어린이 손수건",
+   "text_key": "어린이손수건",
+   "ocr_text": "어린이 손수건",
+   "confidence": 0.9643387373649978,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "어린이 손수건 코스모스 꽃물들이기 체험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_019",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     165.5,
+     535.5
+    ],
+    [
+     302.0,
+     535.5
+    ],
+    [
+     302.0,
+     557.0
+    ],
+    [
+     165.5,
+     557.0
+    ]
+   ],
+   "bbox": [
+    165.5,
+    535.5,
+    302.0,
+    557.0
+   ],
+   "height": 21.5,
+   "small_text": false,
+   "text": "코스모스 꽃물들이기 체험",
+   "text_key": "코스모스꽃물들이기체험",
+   "ocr_text": "코스모스 꽃물들이기체험",
+   "confidence": 0.7484729290008545,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "어린이 손수건 코스모스 꽃물들이기 체험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_023",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_023"
+   },
+   "polygon": [
+    [
+     305.0,
+     605.5
+    ],
+    [
+     414.5,
+     605.5
+    ],
+    [
+     414.5,
+     619.0
+    ],
+    [
+     305.0,
+     619.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    605.5,
+    414.5,
+    619.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "055) 884-7416",
+   "text_key": "0558847416",
+   "ocr_text": "오래 &입 / 055) 884-7416",
+   "confidence": 0.10667624924641496,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "055) 884-7416",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-062.easy_rgb_2x_024",
+   "case_id": "v2-062",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_024"
+   },
+   "polygon": [
+    [
+     377.47,
+     29.04
+    ],
+    [
+     424.29,
+     42.24
+    ],
+    [
+     414.53,
+     74.46
+    ],
+    [
+     367.21,
+     61.26
+    ]
+   ],
+   "bbox": [
+    367.21,
+    29.04,
+    424.29,
+    74.46
+   ],
+   "height": 33.74,
+   "small_text": false,
+   "text": "하동",
+   "text_key": "하동",
+   "ocr_text": "하동",
+   "confidence": 0.8774796108523456,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "군민의 삶이 먼저인 하동",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

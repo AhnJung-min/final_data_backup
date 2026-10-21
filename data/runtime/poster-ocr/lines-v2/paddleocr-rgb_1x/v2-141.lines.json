@@ -1,0 +1,235 @@
+{
+ "case_id": "v2-141",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 33,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-141.padd_rgb_1x_005",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     85.0,
+     186.0
+    ],
+    [
+     357.0,
+     186.0
+    ],
+    [
+     357.0,
+     210.0
+    ],
+    [
+     85.0,
+     210.0
+    ]
+   ],
+   "bbox": [
+    85.0,
+    186.0,
+    357.0,
+    210.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10.16(금) - 18(일)",
+   "text_key": "1016금18일",
+   "ocr_text": "10.16(금]-18(일),16시-22시",
+   "confidence": 0.9505466818809509,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.16(금) - 18(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_1x_006",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     119.0,
+     217.0
+    ],
+    [
+     324.0,
+     217.0
+    ],
+    [
+     324.0,
+     244.0
+    ],
+    [
+     119.0,
+     244.0
+    ]
+   ],
+   "bbox": [
+    119.0,
+    217.0,
+    324.0,
+    244.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "가락몰 3층 하늘공원",
+   "text_key": "가락몰3층하늘공원",
+   "ocr_text": "가락몰 3층 하늘공원",
+   "confidence": 0.9690919518470764,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "가락몰 3층 하늘공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_1x_009",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     68.0,
+     551.0
+    ],
+    [
+     118.0,
+     551.0
+    ],
+    [
+     118.0,
+     561.0
+    ],
+    [
+     68.0,
+     561.0
+    ]
+   ],
+   "bbox": [
+    68.0,
+    551.0,
+    118.0,
+    561.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "가락 퍼레이드",
+   "text_key": "가락퍼레이드",
+   "ocr_text": "가락 허레이드",
+   "confidence": 0.865615725517273,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "가락 퍼레이드",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_1x_013",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     295.0,
+     551.0
+    ],
+    [
+     329.0,
+     551.0
+    ],
+    [
+     329.0,
+     561.0
+    ],
+    [
+     295.0,
+     561.0
+    ]
+   ],
+   "bbox": [
+    295.0,
+    551.0,
+    329.0,
+    561.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "추첨 경품",
+   "text_key": "추첨경품",
+   "ocr_text": "추첨 경품",
+   "confidence": 0.9327468872070312,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "추첨 경품",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

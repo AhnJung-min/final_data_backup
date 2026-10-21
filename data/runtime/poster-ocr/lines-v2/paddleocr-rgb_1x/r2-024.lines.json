@@ -1,0 +1,397 @@
+{
+ "case_id": "r2-024",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 455,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-024.padd_rgb_1x_000",
+   "case_id": "r2-024",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     21.0,
+     18.0
+    ],
+    [
+     104.0,
+     18.0
+    ],
+    [
+     104.0,
+     38.0
+    ],
+    [
+     21.0,
+     38.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    18.0,
+    104.0,
+    38.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유산",
+   "confidence": 0.7325577735900879,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "국가유산청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-024.padd_rgb_1x_001",
+   "case_id": "r2-024",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     18.0,
+     49.0
+    ],
+    [
+     129.0,
+     49.0
+    ],
+    [
+     129.0,
+     63.0
+    ],
+    [
+     18.0,
+     63.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    49.0,
+    129.0,
+    63.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "2026.10. 9.금 — 10. 10.토",
+   "text_key": "2026109금1010토",
+   "ocr_text": "2026.10.9. - 10.10.*",
+   "confidence": 0.9250685572624207,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "2026.10. 9.금 — 10. 10.토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-024.padd_rgb_1x_002",
+   "case_id": "r2-024",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     260.0,
+     46.0
+    ],
+    [
+     437.0,
+     46.0
+    ],
+    [
+     437.0,
+     99.0
+    ],
+    [
+     260.0,
+     99.0
+    ]
+   ],
+   "bbox": [
+    260.0,
+    46.0,
+    437.0,
+    99.0
+   ],
+   "height": 53.0,
+   "small_text": false,
+   "text": "내 재산은",
+   "text_key": "내재산은",
+   "ocr_text": "내 재산은",
+   "confidence": 0.9849544763565063,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "내 재산은 달빛 아래 숲일 뿐",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-024.padd_rgb_1x_003",
+   "case_id": "r2-024",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     18.0,
+     62.0
+    ],
+    [
+     78.0,
+     62.0
+    ],
+    [
+     78.0,
+     75.0
+    ],
+    [
+     18.0,
+     75.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    62.0,
+    78.0,
+    75.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "17:00~22:00",
+   "text_key": "17002200",
+   "ocr_text": "17:00~22:00",
+   "confidence": 0.988374650478363,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "17:00~22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-024.padd_rgb_1x_006",
+   "case_id": "r2-024",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     220.0,
+     93.0
+    ],
+    [
+     399.0,
+     93.0
+    ],
+    [
+     399.0,
+     149.0
+    ],
+    [
+     220.0,
+     149.0
+    ]
+   ],
+   "bbox": [
+    220.0,
+    93.0,
+    399.0,
+    149.0
+   ],
+   "height": 56.0,
+   "small_text": false,
+   "text": "달빛 아래",
+   "text_key": "달빛아래",
+   "ocr_text": "다빛 아래",
+   "confidence": 0.9332221150398254,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "내 재산은 달빛 아래 숲일 뿐",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-024.padd_rgb_1x_007",
+   "case_id": "r2-024",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     297.0,
+     143.0
+    ],
+    [
+     437.0,
+     140.0
+    ],
+    [
+     438.0,
+     194.0
+    ],
+    [
+     299.0,
+     197.0
+    ]
+   ],
+   "bbox": [
+    297.0,
+    140.0,
+    438.0,
+    197.0
+   ],
+   "height": 54.02,
+   "small_text": false,
+   "text": "숲일 뿐",
+   "text_key": "숲일뿐",
+   "ocr_text": "숲일뿐",
+   "confidence": 0.9969120025634766,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "내 재산은 달빛 아래 숲일 뿐",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-024.padd_rgb_1x_011",
+   "case_id": "r2-024",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     276.0,
+     350.0
+    ],
+    [
+     379.0,
+     350.0
+    ],
+    [
+     379.0,
+     369.0
+    ],
+    [
+     276.0,
+     369.0
+    ]
+   ],
+   "bbox": [
+    276.0,
+    350.0,
+    379.0,
+    369.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "담양국가유산야행",
+   "text_key": "담양국가유산야행",
+   "ocr_text": "담양국가유산야행",
+   "confidence": 0.9976232647895813,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "담양국가유산야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "case_id": "v2-003",
+ "engine": "rapidocr",
+ "variant": "product",
+ "scale": 1,
+ "normalized_dimensions": [
+  520,
+  627
+ ],
+ "input_dimensions": [
+  520,
+  627
+ ],
+ "source_sha256": "1569776c4978ecc455b2abe2f6f2aeb29cca1869c1ac9c587d3f4d8592c70bfc",
+ "input_sha256": "1569776c4978ecc455b2abe2f6f2aeb29cca1869c1ac9c587d3f4d8592c70bfc",
+ "coordinate_space": "normalized_original_pixels",
+ "input": "original_bytes",
+ "device": "cpu",
+ "method": "rapidocr-ppocrv5-korean/onnx-cpu-v1",
+ "engine_fingerprint": "254c127b2e7f36f9",
+ "status": "success",
+ "records": [
+  {
+   "id": "rapi_product_000",
+   "text": "NAORA SHOW 2026",
+   "confidence": 0.97494,
+   "bbox_xyxy": [
+    162.0,
+    90.0,
+    352.0,
+    111.0
+   ],
+   "polygon": [
+    [
+     162.0,
+     90.0
+    ],
+    [
+     352.0,
+     90.0
+    ],
+    [
+     352.0,
+     111.0
+    ],
+    [
+     162.0,
+     111.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_001",
+   "text": "WONJU NEXT",
+   "confidence": 0.98925,
+   "bbox_xyxy": [
+    109.0,
+    118.0,
+    401.0,
+    168.0
+   ],
+   "polygon": [
+    [
+     110.0,
+     118.0
+    ],
+    [
+     401.0,
+     121.0
+    ],
+    [
+     400.0,
+     168.0
+    ],
+    [
+     109.0,
+     165.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_002",
+   "text": "FUTURE OF LIGHT",
+   "confidence": 0.97097,
+   "bbox_xyxy": [
+    167.0,
+    174.0,
+    344.0,
+    192.0
+   ],
+   "polygon": [
+    [
+     167.0,
+     174.0
+    ],
+    [
+     344.0,
+     174.0
+    ],
+    [
+     344.0,
+     192.0
+    ],
+    [
+     167.0,
+     192.0
+    ]
+   ]
+  }
+ ],
+ "raw_detections": 3,
+ "stage_seconds": {
+  "det": 0.84,
+  "cls": null,
+  "rec": 0.364
+ },
+ "service_status": "succeeded",
+ "service_lines": [
+  {
+   "text": "NAORA SHOW 2026",
+   "confidence": 0.97494,
+   "bbox": [
+    0.311538,
+    0.143541,
+    0.365385,
+    0.033493
+   ]
+  },
+  {
+   "text": "WONJU NEXT",
+   "confidence": 0.98925,
+   "bbox": [
+    0.209615,
+    0.188198,
+    0.561538,
+    0.079745
+   ]
+  },
+  {
+   "text": "FUTURE OF LIGHT",
+   "confidence": 0.97097,
+   "bbox": [
+    0.321154,
+    0.277512,
+    0.340385,
+    0.028708
+   ]
+  }
+ ],
+ "inference_seconds": 1.23,
+ "memory": {
+  "rss_bytes": 141651968,
+  "peak_bytes": 250847232
+ }
+}

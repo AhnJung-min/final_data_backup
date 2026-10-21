@@ -1,0 +1,450 @@
+{
+ "case_id": "r2-019",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 423,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "r2-019.padd_rgb_2x_002",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     153.0,
+     28.5
+    ],
+    [
+     358.5,
+     30.5
+    ],
+    [
+     358.0,
+     83.5
+    ],
+    [
+     152.5,
+     82.0
+    ]
+   ],
+   "bbox": [
+    152.5,
+    28.5,
+    358.5,
+    83.5
+   ],
+   "height": 53.25,
+   "small_text": false,
+   "text": "12th",
+   "text_key": "12th",
+   "ocr_text": "CEESE 12th",
+   "confidence": 0.906916618347168,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "12th",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-019.padd_rgb_2x_006",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     143.0,
+     140.0
+    ],
+    [
+     358.0,
+     139.0
+    ],
+    [
+     358.0,
+     177.0
+    ],
+    [
+     143.0,
+     178.0
+    ]
+   ],
+   "bbox": [
+    143.0,
+    139.0,
+    358.0,
+    178.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "임실N치즈축제",
+   "text_key": "임실n치즈축제",
+   "ocr_text": "임실N치즈축제",
+   "confidence": 0.9997026324272156,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "임실N치즈축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-019.padd_rgb_2x_007",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     285.0,
+     179.0
+    ],
+    [
+     398.0,
+     179.0
+    ],
+    [
+     398.0,
+     208.5
+    ],
+    [
+     285.0,
+     208.5
+    ]
+   ],
+   "bbox": [
+    285.0,
+    179.0,
+    398.0,
+    208.5
+   ],
+   "height": 29.5,
+   "small_text": false,
+   "text": "예비문화관광축제",
+   "text_key": "예비문화관광축제",
+   "ocr_text": "예비문화관광축제",
+   "confidence": 0.9985851049423218,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예비문화관광축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-019.padd_rgb_2x_009",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     116.0,
+     535.0
+    ],
+    [
+     204.0,
+     535.0
+    ],
+    [
+     204.0,
+     572.0
+    ],
+    [
+     116.0,
+     572.0
+    ]
+   ],
+   "bbox": [
+    116.0,
+    535.0,
+    204.0,
+    572.0
+   ],
+   "height": 37.0,
+   "small_text": false,
+   "text": "10.8(",
+   "text_key": "108",
+   "ocr_text": "108",
+   "confidence": 0.9989621043205261,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "10.8(목)-11(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-019.padd_rgb_2x_010",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     192.5,
+     536.5
+    ],
+    [
+     295.5,
+     531.5
+    ],
+    [
+     297.5,
+     573.5
+    ],
+    [
+     195.0,
+     579.0
+    ]
+   ],
+   "bbox": [
+    192.5,
+    531.5,
+    297.5,
+    579.0
+   ],
+   "height": 42.31,
+   "small_text": false,
+   "text": ")-11",
+   "text_key": "11",
+   "ocr_text": "(11",
+   "confidence": 0.824148416519165,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "10.8(목)-11(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-019.padd_rgb_2x_011",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     289.5,
+     549.5
+    ],
+    [
+     320.5,
+     549.5
+    ],
+    [
+     320.5,
+     572.0
+    ],
+    [
+     289.5,
+     572.0
+    ]
+   ],
+   "bbox": [
+    289.5,
+    549.5,
+    320.5,
+    572.0
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "(일)",
+   "text_key": "일",
+   "ocr_text": "(일)",
+   "confidence": 0.9990308880805969,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "10.8(목)-11(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-019.padd_rgb_2x_012",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     117.0,
+     575.0
+    ],
+    [
+     318.0,
+     576.0
+    ],
+    [
+     317.5,
+     589.5
+    ],
+    [
+     117.0,
+     589.0
+    ]
+   ],
+   "bbox": [
+    117.0,
+    575.0,
+    318.0,
+    589.5
+   ],
+   "height": 13.75,
+   "small_text": false,
+   "text": "임실치즈테마파크, 임실치즈마을, 임실읍일원",
+   "text_key": "임실치즈테마파크임실치즈마을임실읍일원",
+   "ocr_text": "임실치즈테마파후 임실치즈마을임실읍일원",
+   "confidence": 0.8725196123123169,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0526,
+   "gold_value": "임실치즈테마파크, 임실치즈마을, 임실읍일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-019.padd_rgb_2x_013",
+   "case_id": "r2-019",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     65.0,
+     598.0
+    ],
+    [
+     374.5,
+     598.0
+    ],
+    [
+     374.5,
+     616.5
+    ],
+    [
+     65.0,
+     616.5
+    ]
+   ],
+   "bbox": [
+    65.0,
+    598.0,
+    374.5,
+    616.5
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "WWW.IMSILFESTIVAL.COM",
+   "text_key": "wwwimsilfestivalcom",
+   "ocr_text": "WWW.IMSILFESTIVAL.COM",
+   "confidence": 0.9921284914016724,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "WWW.IMSILFESTIVAL.COM",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

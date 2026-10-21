@@ -1,0 +1,309 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-b4dc381f6d27",
+ "image": {
+  "sha256": "b4dc381f6d27ddc7a740a9fbbb91d8abb248ca850edfcccf86356b616aec09c8",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:43+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "연천국화축제",
+  "official": "연천국화축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_002"
+   ],
+   "bbox": [
+    83.0,
+    62.0,
+    358.0,
+    124.0
+   ],
+   "confidence": 0.99985
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제8회",
+  "number": 8,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001"
+   ],
+   "bbox": [
+    90.0,
+    37.0,
+    158.0,
+    69.0
+   ],
+   "confidence": 0.99969
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    95.0,
+    157.0,
+    341.0,
+    175.0
+   ],
+   "confidence": 0.96507
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "기간: 2026.10.16.(금)~10.25.(일)/10일간",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-25",
+   "year": 2026,
+   "month": 10,
+   "day": 25,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": "10일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    95.0,
+    157.0,
+    341.0,
+    175.0
+   ],
+   "confidence": 0.96507
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "연천군 전곡읍양연로1510(연천전곡리 유적)",
+  "items": [
+   "연천군 전곡읍양연로1510(연천전곡리 유적)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_005"
+   ],
+   "bbox": [
+    95.0,
+    176.0,
+    333.0,
+    191.0
+   ],
+   "confidence": 0.94116
+  }
+ },
+ "address": {
+  "status": "present",
+  "raw": "연천군 전곡읍양연로1510",
+  "kind": "road",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_005"
+   ],
+   "bbox": [
+    95.0,
+    176.0,
+    333.0,
+    191.0
+   ],
+   "confidence": 0.94116
+  }
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "장소:연천군 전곡읍양연로1510(연천전곡리 유적)",
+  "region": null,
+  "district": "연천군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_005"
+   ],
+   "bbox": [
+    95.0,
+    176.0,
+    333.0,
+    191.0
+   ],
+   "confidence": 0.94116
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "연천군",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_013"
+     ],
+     "bbox": [
+      143.0,
+      599.0,
+      233.0,
+      616.0
+     ],
+     "confidence": 0.99206
+    }
+   },
+   {
+    "name": "연천군농업기술센터",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_014"
+     ],
+     "bbox": [
+      263.0,
+      601.0,
+      424.0,
+      615.0
+     ],
+     "confidence": 0.99335
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "present",
+  "raw": "국화축제(유료):입장료5,000원/전액연천사랑상품권지급 무축제(무료):2026.10.23.(금)~10.25.(일)",
+  "free": true,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_011",
+    "rapi_product_012"
+   ],
+   "bbox": [
+    126.0,
+    280.0,
+    350.0,
+    306.0
+   ],
+   "confidence": null
+  }
+ },
+ "notices": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "other",
+    "raw": "[1호선 전철 이용시 전곡역 하차-셔틀버스 이용]",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_006"
+     ],
+     "bbox": [
+      123.0,
+      192.0,
+      313.0,
+      206.0
+     ],
+     "confidence": 0.90021
+    }
+   }
+  ]
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

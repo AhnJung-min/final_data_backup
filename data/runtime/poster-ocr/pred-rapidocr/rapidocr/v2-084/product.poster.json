@@ -1,0 +1,249 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-8186d3bd6543",
+ "image": {
+  "sha256": "8186d3bd6543e92329c35f5e8f3c1180b87ec6028cb8b14efd4c86a48bf48038",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:42+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "함께 내딛는새로운뿌리",
+  "official": "함께 내딛는새로운뿌리",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_008"
+   ],
+   "bbox": [
+    23.0,
+    323.0,
+    49.0,
+    562.0
+   ],
+   "confidence": 0.90946
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제17회",
+  "number": 17,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    110.0,
+    70.0,
+    248.0,
+    103.0
+   ],
+   "confidence": 0.99035
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_014"
+   ],
+   "bbox": [
+    299.0,
+    592.0,
+    355.0,
+    602.0
+   ],
+   "confidence": 0.88308
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "대전효문화뿌리축제 10.2.[금]~10.4.[일)| 뿌리공원일원",
+  "start": {
+   "iso": "2026-10-02",
+   "year": 2026,
+   "month": 10,
+   "day": 2,
+   "weekday": "fri",
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-10-04",
+   "year": 2026,
+   "month": 10,
+   "day": 4,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_005"
+   ],
+   "bbox": [
+    25.0,
+    38.0,
+    404.0,
+    405.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "뿌리공원일원",
+  "items": [
+   "뿌리공원일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_005"
+   ],
+   "bbox": [
+    25.0,
+    38.0,
+    404.0,
+    405.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "대전효문화뿌리축제 10.2.[금]~10.4.[일)| 뿌리공원일원",
+  "region": "대전",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_005"
+   ],
+   "bbox": [
+    25.0,
+    38.0,
+    404.0,
+    405.0
+   ],
+   "confidence": null
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "대진문화뿌리축제 추진위원호",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_010",
+      "rapi_product_011",
+      "rapi_product_012"
+     ],
+     "bbox": [
+      179.0,
+      582.0,
+      267.0,
+      603.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

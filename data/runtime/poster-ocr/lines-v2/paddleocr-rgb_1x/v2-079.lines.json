@@ -1,0 +1,397 @@
+{
+ "case_id": "v2-079",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-079.padd_rgb_1x_000",
+   "case_id": "v2-079",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     16.0,
+     31.0
+    ],
+    [
+     113.0,
+     31.0
+    ],
+    [
+     113.0,
+     44.0
+    ],
+    [
+     16.0,
+     44.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    31.0,
+    113.0,
+    44.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "양재아트살롱_가을마켓",
+   "text_key": "양재아트살롱가을마켓",
+   "ocr_text": "양재아트살동 가울마켓",
+   "confidence": 0.8113893270492554,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "양재아트살롱_가을마켓",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-079.padd_rgb_1x_001",
+   "case_id": "v2-079",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     157.0,
+     26.0
+    ],
+    [
+     304.0,
+     26.0
+    ],
+    [
+     304.0,
+     39.0
+    ],
+    [
+     157.0,
+     39.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    26.0,
+    304.0,
+    39.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "일상과 문화가 만나는 아트마켓",
+   "text_key": "일상과문화가만나는아트마켓",
+   "ocr_text": "일상과 문화가 만나는 아트마켓",
+   "confidence": 0.9138139486312866,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일상과 문화가 만나는 아트마켓",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-079.padd_rgb_1x_002",
+   "case_id": "v2-079",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     17.0,
+     48.0
+    ],
+    [
+     90.0,
+     48.0
+    ],
+    [
+     90.0,
+     58.0
+    ],
+    [
+     17.0,
+     58.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    48.0,
+    90.0,
+    58.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "10.2.(금) ~ 3.(토)",
+   "text_key": "102금3토",
+   "ocr_text": "010.2.(금)-3.(토)",
+   "confidence": 0.9238701462745667,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "10.2.(금) ~ 3.(토) 10.10.(토) ~ 25.(일) / 매주 토,일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-079.padd_rgb_1x_003",
+   "case_id": "v2-079",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     16.0,
+     58.0
+    ],
+    [
+     143.0,
+     58.0
+    ],
+    [
+     143.0,
+     71.0
+    ],
+    [
+     16.0,
+     71.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    58.0,
+    143.0,
+    71.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "10.10.(토) ~ 25.(일) / 매주",
+   "text_key": "1010토25일매주",
+   "ocr_text": "10.10.(토)-25.(일)/매주,일",
+   "confidence": 0.8556974530220032,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "10.2.(금) ~ 3.(토) 10.10.(토) ~ 25.(일) / 매주 토,일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-079.padd_rgb_1x_006",
+   "case_id": "v2-079",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     17.0,
+     71.0
+    ],
+    [
+     103.0,
+     71.0
+    ],
+    [
+     103.0,
+     80.0
+    ],
+    [
+     17.0,
+     80.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    71.0,
+    103.0,
+    80.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "양재천길 살롱스트림",
+   "text_key": "양재천길살롱스트림",
+   "ocr_text": "ㅇ양재첩길 살뱅스트림",
+   "confidence": 0.7982011437416077,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "양재천길 살롱스트림 (영동1교 ~ 수변무대)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-079.padd_rgb_1x_007",
+   "case_id": "v2-079",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     26.0,
+     82.0
+    ],
+    [
+     94.0,
+     82.0
+    ],
+    [
+     94.0,
+     93.0
+    ],
+    [
+     26.0,
+     93.0
+    ]
+   ],
+   "bbox": [
+    26.0,
+    82.0,
+    94.0,
+    93.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "(영동1교 ~ 수변무대)",
+   "text_key": "영동1교수변무대",
+   "ocr_text": "(영동교~수변무대)",
+   "confidence": 0.8817254304885864,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "양재천길 살롱스트림 (영동1교 ~ 수변무대)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-079.padd_rgb_1x_011",
+   "case_id": "v2-079",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     17.0,
+     102.0
+    ],
+    [
+     81.0,
+     102.0
+    ],
+    [
+     81.0,
+     113.0
+    ],
+    [
+     17.0,
+     113.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    102.0,
+    81.0,
+    113.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "서리풀아트살롱",
+   "text_key": "서리풀아트살롱",
+   "ocr_text": "서리풀아트살동",
+   "confidence": 0.9180005192756653,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "서리풀아트살롱",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

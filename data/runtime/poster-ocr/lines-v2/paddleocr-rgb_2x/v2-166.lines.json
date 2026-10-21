@@ -1,0 +1,181 @@
+{
+ "case_id": "v2-166",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 6,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-166.padd_rgb_2x_002",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     231.5,
+     77.5
+    ],
+    [
+     249.0,
+     77.5
+    ],
+    [
+     249.5,
+     172.5
+    ],
+    [
+     232.0,
+     172.5
+    ]
+   ],
+   "bbox": [
+    231.5,
+    77.5,
+    249.5,
+    172.5
+   ],
+   "height": 95.0,
+   "small_text": false,
+   "text": "오곡나루축제",
+   "text_key": "오곡나루축제",
+   "ocr_text": "오곡나루축제",
+   "confidence": 0.9991399645805359,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "여주 오곡나루축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-166.padd_rgb_2x_003",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     248.0,
+     77.0
+    ],
+    [
+     267.0,
+     77.0
+    ],
+    [
+     267.0,
+     113.0
+    ],
+    [
+     248.0,
+     113.0
+    ]
+   ],
+   "bbox": [
+    248.0,
+    77.0,
+    267.0,
+    113.0
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "여주",
+   "text_key": "여주",
+   "ocr_text": "여주",
+   "confidence": 0.957007884979248,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "여주 오곡나루축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-166.padd_rgb_2x_005",
+   "case_id": "v2-166",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     81.5,
+     391.0
+    ],
+    [
+     361.0,
+     391.0
+    ],
+    [
+     361.0,
+     411.0
+    ],
+    [
+     81.5,
+     411.0
+    ]
+   ],
+   "bbox": [
+    81.5,
+    391.0,
+    361.0,
+    411.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026.10.23.금 -10.25.일",
+   "text_key": "20261023금1025일",
+   "ocr_text": "2026.10.23.금-10.25.일 | 신특사 관광지 일원",
+   "confidence": 0.9424102306365967,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.23.금 -10.25.일",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

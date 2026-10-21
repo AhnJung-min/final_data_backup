@@ -1,0 +1,561 @@
+{
+ "case_id": "v2-111",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 35,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-111.padd_rgb_2x_000",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     54.0,
+     29.5
+    ],
+    [
+     84.5,
+     29.5
+    ],
+    [
+     84.5,
+     40.0
+    ],
+    [
+     54.0,
+     40.0
+    ]
+   ],
+   "bbox": [
+    54.0,
+    29.5,
+    84.5,
+    40.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "우선입장",
+   "text_key": "우선입장",
+   "ocr_text": "우선임장",
+   "confidence": 0.8783089518547058,
+   "field": "admission.raw",
+   "field_group": "admission",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "admission.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2222,
+   "gold_value": "우선입장 예매페이지",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_001",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     54.5,
+     39.0
+    ],
+    [
+     91.0,
+     39.0
+    ],
+    [
+     91.0,
+     48.0
+    ],
+    [
+     54.5,
+     48.0
+    ]
+   ],
+   "bbox": [
+    54.5,
+    39.0,
+    91.0,
+    48.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "예매페이지",
+   "text_key": "예매페이지",
+   "ocr_text": "예매이지",
+   "confidence": 0.5711790323257446,
+   "field": "admission.raw",
+   "field_group": "admission",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "admission.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2222,
+   "gold_value": "우선입장 예매페이지",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_002",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     133.5,
+     51.5
+    ],
+    [
+     310.0,
+     54.5
+    ],
+    [
+     309.5,
+     82.0
+    ],
+    [
+     133.0,
+     79.5
+    ]
+   ],
+   "bbox": [
+    133.0,
+    51.5,
+    310.0,
+    82.0
+   ],
+   "height": 27.75,
+   "small_text": false,
+   "text": "2026 GWANGJU",
+   "text_key": "2026gwangju",
+   "ocr_text": "2026 GWANGJU",
+   "confidence": 0.9532546997070312,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_003",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     34.0,
+     73.5
+    ],
+    [
+     418.0,
+     85.0
+    ],
+    [
+     416.0,
+     141.5
+    ],
+    [
+     32.0,
+     130.0
+    ]
+   ],
+   "bbox": [
+    32.0,
+    73.5,
+    418.0,
+    141.5
+   ],
+   "height": 56.54,
+   "small_text": false,
+   "text": "SOUNDPARK FESTIVAL",
+   "text_key": "soundparkfestival",
+   "ocr_text": "SOUNDPARK FESTIVAL",
+   "confidence": 0.9888045787811279,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_004",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     128.5,
+     130.0
+    ],
+    [
+     288.5,
+     135.0
+    ],
+    [
+     287.5,
+     170.0
+    ],
+    [
+     127.0,
+     165.0
+    ]
+   ],
+   "bbox": [
+    127.0,
+    130.0,
+    288.5,
+    170.0
+   ],
+   "height": 35.02,
+   "small_text": false,
+   "text": "× PEAKMUSIC",
+   "text_key": "peakmusic",
+   "ocr_text": "× PEAKMUSIC",
+   "confidence": 0.9381607174873352,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2121,
+   "gold_value": "GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_005",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     122.5,
+     210.5
+    ],
+    [
+     301.5,
+     212.0
+    ],
+    [
+     301.5,
+     232.5
+    ],
+    [
+     122.5,
+     231.0
+    ]
+   ],
+   "bbox": [
+    122.5,
+    210.5,
+    301.5,
+    232.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "광주음악창작소 피크뮤직홀",
+   "text_key": "광주음악창작소피크뮤직홀",
+   "ocr_text": "광주음악참작소 피크뮤직홀",
+   "confidence": 0.973582923412323,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "광주음악창작소 피크뮤직홀",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_006",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     102.0,
+     237.0
+    ],
+    [
+     323.0,
+     237.0
+    ],
+    [
+     323.0,
+     277.0
+    ],
+    [
+     102.0,
+     277.0
+    ]
+   ],
+   "bbox": [
+    102.0,
+    237.0,
+    323.0,
+    277.0
+   ],
+   "height": 40.0,
+   "small_text": false,
+   "text": "10.9(금)",
+   "text_key": "109금",
+   "ocr_text": "10.9(금) 1일차",
+   "confidence": 0.9248785376548767,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.9(금)",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_019",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     151.5,
+     422.5
+    ],
+    [
+     189.0,
+     422.5
+    ],
+    [
+     189.0,
+     433.5
+    ],
+    [
+     151.5,
+     433.5
+    ]
+   ],
+   "bbox": [
+    151.5,
+    422.5,
+    189.0,
+    433.5
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "부산",
+   "text_key": "부산",
+   "ocr_text": "부산Y",
+   "confidence": 0.8042330741882324,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "부산 음악창작소",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_020",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     245.5,
+     422.0
+    ],
+    [
+     278.0,
+     422.0
+    ],
+    [
+     278.0,
+     433.0
+    ],
+    [
+     245.5,
+     433.0
+    ]
+   ],
+   "bbox": [
+    245.5,
+    422.0,
+    278.0,
+    433.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "뮤지시스",
+   "text_key": "뮤지시스",
+   "ocr_text": "뮤지시스",
+   "confidence": 0.9858325719833374,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "뮤지시스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_2x_025",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_025"
+   },
+   "polygon": [
+    [
+     149.5,
+     429.5
+    ],
+    [
+     195.5,
+     431.0
+    ],
+    [
+     195.0,
+     444.0
+    ],
+    [
+     149.0,
+     442.0
+    ]
+   ],
+   "bbox": [
+    149.0,
+    429.5,
+    195.5,
+    444.0
+   ],
+   "height": 12.76,
+   "small_text": false,
+   "text": "음악창작소",
+   "text_key": "음악창작소",
+   "ocr_text": "음학창작소",
+   "confidence": 0.7396892309188843,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "부산 음악창작소",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-149",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-149.padd_rgb_2x_004",
+   "case_id": "v2-149",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     15.5,
+     345.5
+    ],
+    [
+     48.0,
+     345.5
+    ],
+    [
+     48.0,
+     362.0
+    ],
+    [
+     15.5,
+     362.0
+    ]
+   ],
+   "bbox": [
+    15.5,
+    345.5,
+    48.0,
+    362.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "개막제",
+   "text_key": "개막제",
+   "ocr_text": "개막제",
+   "confidence": 0.997694194316864,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "개막제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-149.padd_rgb_2x_006",
+   "case_id": "v2-149",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     16.0,
+     383.0
+    ],
+    [
+     47.0,
+     383.0
+    ],
+    [
+     47.0,
+     398.0
+    ],
+    [
+     16.0,
+     398.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    383.0,
+    47.0,
+    398.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "본행사",
+   "text_key": "본행사",
+   "ocr_text": "본행사",
+   "confidence": 0.9988279342651367,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "본행사 10. 17.(토) - 10. 25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-149.padd_rgb_2x_007",
+   "case_id": "v2-149",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     17.5,
+     398.5
+    ],
+    [
+     163.5,
+     398.5
+    ],
+    [
+     163.5,
+     415.5
+    ],
+    [
+     17.5,
+     415.5
+    ]
+   ],
+   "bbox": [
+    17.5,
+    398.5,
+    163.5,
+    415.5
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "10. 17.(토) - 10. 25.(일)",
+   "text_key": "1017토1025일",
+   "ocr_text": "10.17.(토)-10.25.(일)",
+   "confidence": 0.980105459690094,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "본행사 10. 17.(토) - 10. 25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-149.padd_rgb_2x_008",
+   "case_id": "v2-149",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     16.5,
+     415.5
+    ],
+    [
+     96.0,
+     415.5
+    ],
+    [
+     96.0,
+     432.5
+    ],
+    [
+     16.5,
+     432.5
+    ]
+   ],
+   "bbox": [
+    16.5,
+    415.5,
+    96.0,
+    432.5
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "조선왕릉 12곳",
+   "text_key": "조선왕릉12곳",
+   "ocr_text": "조선왕릉 12곳",
+   "confidence": 0.9357542991638184,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "조선왕릉 12곳",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-149.padd_rgb_2x_009",
+   "case_id": "v2-149",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     320.0,
+     597.0
+    ],
+    [
+     343.0,
+     597.0
+    ],
+    [
+     343.0,
+     604.0
+    ],
+    [
+     320.0,
+     604.0
+    ]
+   ],
+   "bbox": [
+    320.0,
+    597.0,
+    343.0,
+    604.0
+   ],
+   "height": 7.0,
+   "small_text": true,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유진청",
+   "confidence": 0.5722613334655762,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "국가유산청 궁능유적본부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-149.padd_rgb_2x_010",
+   "case_id": "v2-149",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     319.5,
+     603.0
+    ],
+    [
+     357.5,
+     602.5
+    ],
+    [
+     357.5,
+     611.5
+    ],
+    [
+     319.5,
+     612.0
+    ]
+   ],
+   "bbox": [
+    319.5,
+    602.5,
+    357.5,
+    612.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "궁능유적본부",
+   "text_key": "궁능유적본부",
+   "ocr_text": "궁농유적분부",
+   "confidence": 0.8412401080131531,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "국가유산청 궁능유적본부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-149.padd_rgb_2x_011",
+   "case_id": "v2-149",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     383.0,
+     601.5
+    ],
+    [
+     424.0,
+     601.5
+    ],
+    [
+     424.0,
+     610.5
+    ],
+    [
+     383.0,
+     610.5
+    ]
+   ],
+   "bbox": [
+    383.0,
+    601.5,
+    424.0,
+    610.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "국가유산진흥원",
+   "text_key": "국가유산진흥원",
+   "ocr_text": "국까유신진흥원",
+   "confidence": 0.70326167345047,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "국가유산진흥원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

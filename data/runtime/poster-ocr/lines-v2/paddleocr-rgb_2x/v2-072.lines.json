@@ -1,0 +1,345 @@
+{
+ "case_id": "v2-072",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 440,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-072.padd_rgb_2x_002",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     332.0,
+     16.5
+    ],
+    [
+     427.5,
+     15.0
+    ],
+    [
+     428.0,
+     27.0
+    ],
+    [
+     332.0,
+     28.5
+    ]
+   ],
+   "bbox": [
+    332.0,
+    15.0,
+    428.0,
+    28.5
+   ],
+   "height": 12.01,
+   "small_text": false,
+   "text": "충청남도 1시군 1품 축제 선정",
+   "text_key": "충청남도1시군1품축제선정",
+   "ocr_text": "충요남도 1시크 1품 축제 선정",
+   "confidence": 0.753157377243042,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo",
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "충청남도 1시군 1품 축제 선정",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_2x_011",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     58.5,
+     476.0
+    ],
+    [
+     382.0,
+     476.0
+    ],
+    [
+     382.0,
+     513.5
+    ],
+    [
+     58.5,
+     513.5
+    ]
+   ],
+   "bbox": [
+    58.5,
+    476.0,
+    382.0,
+    513.5
+   ],
+   "height": 37.5,
+   "small_text": false,
+   "text": "천안흥타령춤축제 2026",
+   "text_key": "천안흥타령춤축제2026",
+   "ocr_text": "천안흥타령춤축제 2026",
+   "confidence": 0.982340931892395,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "천안흥타령춤축제 2026",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_2x_012",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     58.0,
+     519.0
+    ],
+    [
+     382.0,
+     520.0
+    ],
+    [
+     382.0,
+     540.5
+    ],
+    [
+     58.0,
+     539.5
+    ]
+   ],
+   "bbox": [
+    58.0,
+    519.0,
+    382.0,
+    540.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "10.1(목) - 10.5(월)",
+   "text_key": "101목105월",
+   "ocr_text": "10.1(목)-10.5(월)천안종합운동장 및 천안시 일원",
+   "confidence": 0.9705916047096252,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.1(목) - 10.5(월)",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_2x_014",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     127.5,
+     578.0
+    ],
+    [
+     168.5,
+     578.0
+    ],
+    [
+     168.5,
+     587.0
+    ],
+    [
+     127.5,
+     587.0
+    ]
+   ],
+   "bbox": [
+    127.5,
+    578.0,
+    168.5,
+    587.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "천안시",
+   "text_key": "천안시",
+   "ocr_text": "그 천안시",
+   "confidence": 0.7893387079238892,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "천안시",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_2x_015",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     189.0,
+     577.5
+    ],
+    [
+     236.5,
+     577.5
+    ],
+    [
+     236.5,
+     588.0
+    ],
+    [
+     189.0,
+     588.0
+    ]
+   ],
+   "bbox": [
+    189.0,
+    577.5,
+    236.5,
+    588.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "문화체육관광부",
+   "text_key": "문화체육관광부",
+   "ocr_text": "문화저관광부",
+   "confidence": 0.6588318347930908,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "문화체육관광부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-072.padd_rgb_2x_017",
+   "case_id": "v2-072",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     296.5,
+     575.5
+    ],
+    [
+     345.0,
+     577.0
+    ],
+    [
+     344.5,
+     589.0
+    ],
+    [
+     296.0,
+     587.5
+    ]
+   ],
+   "bbox": [
+    296.0,
+    575.5,
+    345.0,
+    589.0
+   ],
+   "height": 12.01,
+   "small_text": false,
+   "text": "FIDAF",
+   "text_key": "fidaf",
+   "ocr_text": "RFIDAF",
+   "confidence": 0.7663738131523132,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "FIDAF",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

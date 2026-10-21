@@ -1,0 +1,213 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-6cce4beddb5d",
+ "image": {
+  "sha256": "6cce4beddb5d47c9a2836f1ac94619355abe13422b6b5f37c4af7cda8e7ebf07",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:41+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "바다를 보여 책읽는 특별한 가을소품 울산,슬독에 빠지다",
+  "official": "바다를 보여 책읽는 특별한 가을소품 울산,슬독에 빠지다",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_002",
+    "rapi_product_003",
+    "rapi_product_004"
+   ],
+   "bbox": [
+    259.0,
+    57.0,
+    418.0,
+    143.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "absent",
+  "raw": null,
+  "number": null,
+  "evidence": null
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    61.0,
+    39.0,
+    208.0,
+    55.0
+   ],
+   "confidence": 0.91433
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "9.26 9.27 일 14:00버스윙여방학D 정8지/18:30로/13:008화<엄0D",
+  "start": {
+   "iso": "2026-09-26",
+   "year": 2026,
+   "month": 9,
+   "day": 26,
+   "weekday": null,
+   "year_basis": "poster_text"
+  },
+  "end": {
+   "iso": "2026-09-27",
+   "year": 2026,
+   "month": 9,
+   "day": 27,
+   "weekday": "sun",
+   "year_basis": "poster_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_015",
+    "rapi_product_017",
+    "rapi_product_018"
+   ],
+   "bbox": [
+    31.0,
+    400.0,
+    330.0,
+    441.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "물산 야외도서관",
+  "items": [
+   "물산 야외도서관"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    61.0,
+    39.0,
+    208.0,
+    55.0
+   ],
+   "confidence": 0.91433
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "울산,슬독에 빠지다",
+  "region": "울산",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    259.0,
+    113.0,
+    418.0,
+    143.0
+   ],
+   "confidence": 0.93381
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

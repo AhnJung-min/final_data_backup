@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-165",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-165.easy_rgb_2x_003",
+   "case_id": "v2-165",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     120.5,
+     183.0
+    ],
+    [
+     319.5,
+     183.0
+    ],
+    [
+     319.5,
+     220.5
+    ],
+    [
+     120.5,
+     220.5
+    ]
+   ],
+   "bbox": [
+    120.5,
+    183.0,
+    319.5,
+    220.5
+   ],
+   "height": 37.5,
+   "small_text": false,
+   "text": "10 anniversary",
+   "text_key": "10anniversary",
+   "ocr_text": "anniversary",
+   "confidence": 0.7944153939043008,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "10 anniversary",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-165.easy_rgb_2x_004",
+   "case_id": "v2-165",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     167.0,
+     246.0
+    ],
+    [
+     200.0,
+     246.0
+    ],
+    [
+     200.0,
+     260.0
+    ],
+    [
+     167.0,
+     260.0
+    ]
+   ],
+   "bbox": [
+    167.0,
+    246.0,
+    200.0,
+    260.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "제10회",
+   "text_key": "제10회",
+   "ocr_text": "제1O회",
+   "confidence": 0.052814144641160965,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제10회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-165.easy_rgb_2x_013",
+   "case_id": "v2-165",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     163.5,
+     502.5
+    ],
+    [
+     275.5,
+     502.5
+    ],
+    [
+     275.5,
+     524.5
+    ],
+    [
+     163.5,
+     524.5
+    ]
+   ],
+   "bbox": [
+    163.5,
+    502.5,
+    275.5,
+    524.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "예산상설시장 일원",
+   "text_key": "예산상설시장일원",
+   "ocr_text": "예산상설시장일원",
+   "confidence": 0.854337215423584,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예산상설시장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

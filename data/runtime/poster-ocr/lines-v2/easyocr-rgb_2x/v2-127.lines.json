@@ -1,0 +1,506 @@
+{
+ "case_id": "v2-127",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-127.easy_rgb_2x_000",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     238.0,
+     30.0
+    ],
+    [
+     329.0,
+     30.0
+    ],
+    [
+     329.0,
+     93.0
+    ],
+    [
+     238.0,
+     93.0
+    ]
+   ],
+   "bbox": [
+    238.0,
+    30.0,
+    329.0,
+    93.0
+   ],
+   "height": 63.0,
+   "small_text": false,
+   "text": "고창",
+   "text_key": "고창",
+   "ocr_text": "고창",
+   "confidence": 0.9714630018221128,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "고창 모양성제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_001",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     64.0,
+     73.0
+    ],
+    [
+     385.0,
+     73.0
+    ],
+    [
+     385.0,
+     202.5
+    ],
+    [
+     64.0,
+     202.5
+    ]
+   ],
+   "bbox": [
+    64.0,
+    73.0,
+    385.0,
+    202.5
+   ],
+   "height": 129.5,
+   "small_text": false,
+   "text": "모양성",
+   "text_key": "모양성",
+   "ocr_text": "모양성체",
+   "confidence": 0.528423547744751,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "고창 모양성제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_002",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     107.5,
+     185.5
+    ],
+    [
+     316.5,
+     185.5
+    ],
+    [
+     316.5,
+     231.5
+    ],
+    [
+     107.5,
+     231.5
+    ]
+   ],
+   "bbox": [
+    107.5,
+    185.5,
+    316.5,
+    231.5
+   ],
+   "height": 46.0,
+   "small_text": false,
+   "text": "전통을 잇고, 미래를 열다",
+   "text_key": "전통을잇고미래를열다",
+   "ocr_text": "전통은 인고 미래들 열다",
+   "confidence": 0.5772768491952363,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "전통을 잇고, 미래를 열다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_003",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     141.5,
+     234.5
+    ],
+    [
+     205.5,
+     234.5
+    ],
+    [
+     205.5,
+     256.5
+    ],
+    [
+     141.5,
+     256.5
+    ]
+   ],
+   "bbox": [
+    141.5,
+    234.5,
+    205.5,
+    256.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "10. 15.목",
+   "text_key": "1015목",
+   "ocr_text": "10.15. 목",
+   "confidence": 0.6131256141976226,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "10. 15.목 – 10. 19.월",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_004",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     214.5,
+     227.5
+    ],
+    [
+     277.5,
+     227.5
+    ],
+    [
+     277.5,
+     249.5
+    ],
+    [
+     214.5,
+     249.5
+    ]
+   ],
+   "bbox": [
+    214.5,
+    227.5,
+    277.5,
+    249.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "10. 19.",
+   "text_key": "1019",
+   "ocr_text": "10 19.협",
+   "confidence": 0.27443079261723674,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "10. 15.목 – 10. 19.월",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_005",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     232.0,
+     248.0
+    ],
+    [
+     318.5,
+     248.0
+    ],
+    [
+     318.5,
+     273.0
+    ],
+    [
+     232.0,
+     273.0
+    ]
+   ],
+   "bbox": [
+    232.0,
+    248.0,
+    318.5,
+    273.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "고창읍성 일원",
+   "text_key": "고창읍성일원",
+   "ocr_text": "고창음성일원",
+   "confidence": 0.8672681553106266,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "고창읍성 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_006",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     163.0,
+     597.5
+    ],
+    [
+     217.5,
+     597.5
+    ],
+    [
+     217.5,
+     618.0
+    ],
+    [
+     163.0,
+     618.0
+    ]
+   ],
+   "bbox": [
+    163.0,
+    597.5,
+    217.5,
+    618.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "고창군",
+   "text_key": "고창군",
+   "ocr_text": "교고창군",
+   "confidence": 0.45715346932411194,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고창군",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_007",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     224.0,
+     596.0
+    ],
+    [
+     313.5,
+     596.0
+    ],
+    [
+     313.5,
+     617.5
+    ],
+    [
+     224.0,
+     617.5
+    ]
+   ],
+   "bbox": [
+    224.0,
+    596.0,
+    313.5,
+    617.5
+   ],
+   "height": 21.5,
+   "small_text": false,
+   "text": "전북특별자치도",
+   "text_key": "전북특별자치도",
+   "ocr_text": "~ #전북특변자지도",
+   "confidence": 0.07386155083178914,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "전북특별자치도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-127.easy_rgb_2x_008",
+   "case_id": "v2-127",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     117.92,
+     48.61
+    ],
+    [
+     236.46,
+     38.13
+    ],
+    [
+     237.08,
+     84.39
+    ],
+    [
+     118.54,
+     94.37
+    ]
+   ],
+   "bbox": [
+    117.92,
+    38.13,
+    237.08,
+    94.37
+   ],
+   "height": 46.01,
+   "small_text": false,
+   "text": "제53회",
+   "text_key": "제53회",
+   "ocr_text": "제53회",
+   "confidence": 0.9993746876716614,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "제53회 고창 모양성제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

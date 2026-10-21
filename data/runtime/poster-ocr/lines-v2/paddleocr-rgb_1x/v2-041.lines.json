@@ -1,0 +1,559 @@
+{
+ "case_id": "v2-041",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 458,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-041.padd_rgb_1x_000",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     355.0,
+     13.0
+    ],
+    [
+     449.0,
+     13.0
+    ],
+    [
+     449.0,
+     26.0
+    ],
+    [
+     355.0,
+     26.0
+    ]
+   ],
+   "bbox": [
+    355.0,
+    13.0,
+    449.0,
+    26.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "고양문화재단",
+   "text_key": "고양문화재단",
+   "ocr_text": "고양복래시 고양문회재단",
+   "confidence": 0.8814165592193604,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "고양문화재단",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_002",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     0.0,
+     57.0
+    ],
+    [
+     426.0,
+     54.0
+    ],
+    [
+     428.0,
+     194.0
+    ],
+    [
+     0.0,
+     197.0
+    ]
+   ],
+   "bbox": [
+    0.0,
+    54.0,
+    428.0,
+    197.0
+   ],
+   "height": 140.01,
+   "small_text": false,
+   "text": "고양호수",
+   "text_key": "고양호수",
+   "ocr_text": "고양호수",
+   "confidence": 0.8305685520172119,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "고양호수 예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_003",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     0.0,
+     161.0
+    ],
+    [
+     456.0,
+     124.0
+    ],
+    [
+     458.0,
+     354.0
+    ],
+    [
+     14.0,
+     390.0
+    ]
+   ],
+   "bbox": [
+    0.0,
+    124.0,
+    458.0,
+    390.0
+   ],
+   "height": 229.72,
+   "small_text": false,
+   "text": "예술축제",
+   "text_key": "예술축제",
+   "ocr_text": "예술축제",
+   "confidence": 0.8261736631393433,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "고양호수 예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_004",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     232.0,
+     304.0
+    ],
+    [
+     351.0,
+     304.0
+    ],
+    [
+     351.0,
+     324.0
+    ],
+    [
+     232.0,
+     324.0
+    ]
+   ],
+   "bbox": [
+    232.0,
+    304.0,
+    351.0,
+    324.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "예술, 거리에서 놀다!",
+   "text_key": "예술거리에서놀다",
+   "ocr_text": "예술, 거리에서 놀다!",
+   "confidence": 0.9034401774406433,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "예술, 거리에서 놀다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_005",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     233.0,
+     324.0
+    ],
+    [
+     350.0,
+     324.0
+    ],
+    [
+     350.0,
+     338.0
+    ],
+    [
+     233.0,
+     338.0
+    ]
+   ],
+   "bbox": [
+    233.0,
+    324.0,
+    350.0,
+    338.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "Rhythm of the Street",
+   "text_key": "rhythmofthestreet",
+   "ocr_text": "Rhythm of the Street",
+   "confidence": 0.9818690419197083,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "Rhythm of the Street",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_006",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     123.0,
+     349.0
+    ],
+    [
+     338.0,
+     346.0
+    ],
+    [
+     339.0,
+     376.0
+    ],
+    [
+     123.0,
+     379.0
+    ]
+   ],
+   "bbox": [
+    123.0,
+    346.0,
+    339.0,
+    379.0
+   ],
+   "height": 30.01,
+   "small_text": false,
+   "text": "2026. 9. 18. FRI - 20. SUN",
+   "text_key": "2026918fri20sun",
+   "ocr_text": "2026.9.18.FR -20.SUN",
+   "confidence": 0.9413143396377563,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0667,
+   "gold_value": "2026. 9. 18. FRI - 20. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_008",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     163.0,
+     379.0
+    ],
+    [
+     299.0,
+     379.0
+    ],
+    [
+     299.0,
+     403.0
+    ],
+    [
+     163.0,
+     403.0
+    ]
+   ],
+   "bbox": [
+    163.0,
+    379.0,
+    299.0,
+    403.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "일산호수공원 일원",
+   "text_key": "일산호수공원일원",
+   "ocr_text": "일산호수공원 일원",
+   "confidence": 0.9598146080970764,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "일산호수공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_012",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     18.0,
+     502.0
+    ],
+    [
+     84.0,
+     502.0
+    ],
+    [
+     84.0,
+     518.0
+    ],
+    [
+     18.0,
+     518.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    502.0,
+    84.0,
+    518.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "Hey. Listen",
+   "text_key": "heylisten",
+   "ocr_text": "Hey. Listen",
+   "confidence": 0.9399202466011047,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "Hey. Listen",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_013",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     333.0,
+     501.0
+    ],
+    [
+     444.0,
+     501.0
+    ],
+    [
+     444.0,
+     514.0
+    ],
+    [
+     333.0,
+     514.0
+    ]
+   ],
+   "bbox": [
+    333.0,
+    501.0,
+    444.0,
+    514.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "불꽃드론쇼 & 불꽃놀이",
+   "text_key": "불꽃드론쇼불꽃놀이",
+   "ocr_text": "블꽃드론쇼& 불꽃놀이",
+   "confidence": 0.8448806405067444,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "불꽃드론쇼 & 불꽃놀이",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-041.padd_rgb_1x_017",
+   "case_id": "v2-041",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     350.0,
+     539.0
+    ],
+    [
+     429.0,
+     539.0
+    ],
+    [
+     429.0,
+     553.0
+    ],
+    [
+     350.0,
+     553.0
+    ]
+   ],
+   "bbox": [
+    350.0,
+    539.0,
+    429.0,
+    553.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "왁자지껄 유랑단",
+   "text_key": "왁자지껄유랑단",
+   "ocr_text": "왁자지걸 유람단",
+   "confidence": 0.9714364409446716,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "왁자지껄 유랑단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

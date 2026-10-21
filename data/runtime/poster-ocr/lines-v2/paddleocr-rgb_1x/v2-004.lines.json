@@ -1,0 +1,667 @@
+{
+ "case_id": "v2-004",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "v2-004.padd_rgb_1x_001",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     53.0,
+     30.0
+    ],
+    [
+     130.0,
+     30.0
+    ],
+    [
+     130.0,
+     48.0
+    ],
+    [
+     53.0,
+     48.0
+    ]
+   ],
+   "bbox": [
+    53.0,
+    30.0,
+    130.0,
+    48.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026 국가유",
+   "text_key": "2026국가유",
+   "ocr_text": "2026국가유신",
+   "confidence": 0.9856986999511719,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "2026 국가유산 미디어아트 진주성",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_002",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     51.0,
+     46.0
+    ],
+    [
+     133.0,
+     46.0
+    ],
+    [
+     133.0,
+     67.0
+    ],
+    [
+     51.0,
+     67.0
+    ]
+   ],
+   "bbox": [
+    51.0,
+    46.0,
+    133.0,
+    67.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "미디어아트",
+   "text_key": "미디어아트",
+   "ocr_text": "미디어아트",
+   "confidence": 0.9856497049331665,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "2026 국가유산 미디어아트 진주성",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_003",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     54.0,
+     66.0
+    ],
+    [
+     82.0,
+     66.0
+    ],
+    [
+     82.0,
+     78.0
+    ],
+    [
+     54.0,
+     78.0
+    ]
+   ],
+   "bbox": [
+    54.0,
+    66.0,
+    82.0,
+    78.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "진주성",
+   "text_key": "진주성",
+   "ocr_text": "진주성",
+   "confidence": 0.9975221157073975,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "venue.items"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "2026 국가유산 미디어아트 진주성",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_006",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     34.0,
+     307.0
+    ],
+    [
+     114.0,
+     310.0
+    ],
+    [
+     113.0,
+     334.0
+    ],
+    [
+     34.0,
+     332.0
+    ]
+   ],
+   "bbox": [
+    34.0,
+    307.0,
+    114.0,
+    334.0
+   ],
+   "height": 24.51,
+   "small_text": false,
+   "text": "08.14(",
+   "text_key": "0814",
+   "ocr_text": "08.14()",
+   "confidence": 0.9572010040283203,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "08.14(금) -09.06(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_007",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     52.0,
+     337.0
+    ],
+    [
+     131.0,
+     339.0
+    ],
+    [
+     130.0,
+     360.0
+    ],
+    [
+     52.0,
+     357.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    337.0,
+    131.0,
+    360.0
+   ],
+   "height": 20.51,
+   "small_text": false,
+   "text": "-09.06(",
+   "text_key": "0906",
+   "ocr_text": "09.06()",
+   "confidence": 0.9194296002388,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "08.14(금) -09.06(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_008",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     31.0,
+     367.0
+    ],
+    [
+     130.0,
+     369.0
+    ],
+    [
+     129.0,
+     387.0
+    ],
+    [
+     31.0,
+     385.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    367.0,
+    130.0,
+    387.0
+   ],
+   "height": 18.01,
+   "small_text": false,
+   "text": "19:30-22:30",
+   "text_key": "19302230",
+   "ocr_text": "19:30-22:30",
+   "confidence": 0.9724062085151672,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "19:30-22:30",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_009",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     31.0,
+     525.0
+    ],
+    [
+     87.0,
+     525.0
+    ],
+    [
+     87.0,
+     543.0
+    ],
+    [
+     31.0,
+     543.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    525.0,
+    87.0,
+    543.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "진주성 및",
+   "text_key": "진주성및",
+   "ocr_text": "진주성및",
+   "confidence": 0.9919328093528748,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "진주성 및 진주대첩 역사공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_010",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     31.0,
+     543.0
+    ],
+    [
+     163.0,
+     543.0
+    ],
+    [
+     163.0,
+     559.0
+    ],
+    [
+     31.0,
+     559.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    543.0,
+    163.0,
+    559.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "진주대첩 역사공원 일원",
+   "text_key": "진주대첩역사공원일원",
+   "ocr_text": "진주대협역사공원일원",
+   "confidence": 0.94012051820755,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "진주대첩 역사공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_011",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     53.0,
+     594.0
+    ],
+    [
+     88.0,
+     594.0
+    ],
+    [
+     88.0,
+     604.0
+    ],
+    [
+     53.0,
+     604.0
+    ]
+   ],
+   "bbox": [
+    53.0,
+    594.0,
+    88.0,
+    604.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유신청",
+   "confidence": 0.8905359506607056,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "국가유산청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_012",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     119.0,
+     595.0
+    ],
+    [
+     149.0,
+     595.0
+    ],
+    [
+     149.0,
+     608.0
+    ],
+    [
+     119.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    119.0,
+    595.0,
+    149.0,
+    608.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "경상남도",
+   "text_key": "경상남도",
+   "ocr_text": "경성남도",
+   "confidence": 0.8210470676422119,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "경상남도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_013",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     172.0,
+     596.0
+    ],
+    [
+     203.0,
+     596.0
+    ],
+    [
+     203.0,
+     609.0
+    ],
+    [
+     172.0,
+     609.0
+    ]
+   ],
+   "bbox": [
+    172.0,
+    596.0,
+    203.0,
+    609.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "진주시",
+   "text_key": "진주시",
+   "ocr_text": "진주시",
+   "confidence": 0.8787686824798584,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "진주시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-004.padd_rgb_1x_014",
+   "case_id": "v2-004",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     282.0,
+     597.0
+    ],
+    [
+     330.0,
+     597.0
+    ],
+    [
+     330.0,
+     611.0
+    ],
+    [
+     282.0,
+     611.0
+    ]
+   ],
+   "bbox": [
+    282.0,
+    597.0,
+    330.0,
+    611.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "국가유산진흥원",
+   "text_key": "국가유산진흥원",
+   "ocr_text": "국가유산진흥원",
+   "confidence": 0.9758917689323425,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "국가유산진흥원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

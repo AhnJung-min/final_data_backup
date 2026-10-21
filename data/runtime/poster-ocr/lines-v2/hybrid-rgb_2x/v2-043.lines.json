@@ -1,0 +1,449 @@
+{
+ "case_id": "v2-043",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-043.easy_rgb_2x_005",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     23.5,
+     175.5
+    ],
+    [
+     144.5,
+     175.5
+    ],
+    [
+     144.5,
+     209.5
+    ],
+    [
+     23.5,
+     209.5
+    ]
+   ],
+   "bbox": [
+    23.5,
+    175.5,
+    144.5,
+    209.5
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "홍삼의 매력에",
+   "text_key": "홍삼의매력에",
+   "ocr_text": "홍삼의 매력에",
+   "confidence": 0.8830592308835669,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "홍삼의 매력에 삼며들다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_006",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     386.5,
+     204.5
+    ],
+    [
+     425.5,
+     204.5
+    ],
+    [
+     425.5,
+     224.5
+    ],
+    [
+     386.5,
+     224.5
+    ]
+   ],
+   "bbox": [
+    386.5,
+    204.5,
+    425.5,
+    224.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9861680865287781,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.18.금 ~ 20.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_007",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     21.0,
+     206.0
+    ],
+    [
+     119.5,
+     206.0
+    ],
+    [
+     119.5,
+     240.5
+    ],
+    [
+     21.0,
+     240.5
+    ]
+   ],
+   "bbox": [
+    21.0,
+    206.0,
+    119.5,
+    240.5
+   ],
+   "height": 34.5,
+   "small_text": false,
+   "text": "삼며들다!",
+   "text_key": "삼며들다",
+   "ocr_text": "삼며들다!",
+   "confidence": 0.9586237072944641,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "홍삼의 매력에 삼며들다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_008",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     314.5,
+     221.0
+    ],
+    [
+     435.0,
+     221.0
+    ],
+    [
+     435.0,
+     261.0
+    ],
+    [
+     314.5,
+     261.0
+    ]
+   ],
+   "bbox": [
+    314.5,
+    221.0,
+    435.0,
+    261.0
+   ],
+   "height": 40.0,
+   "small_text": false,
+   "text": "9.18.금 ~ 20.",
+   "text_key": "918금20",
+   "ocr_text": "9.18~20.\"",
+   "confidence": 0.8101045489311218,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.18.금 ~ 20.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_009",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     181.0,
+     428.0
+    ],
+    [
+     274.0,
+     428.0
+    ],
+    [
+     274.0,
+     479.0
+    ],
+    [
+     181.0,
+     479.0
+    ]
+   ],
+   "bbox": [
+    181.0,
+    428.0,
+    274.0,
+    479.0
+   ],
+   "height": 51.0,
+   "small_text": false,
+   "text": "마이산",
+   "text_key": "마이산",
+   "ocr_text": "마이산",
+   "confidence": 0.9243602752685547,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "마이산 북부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_010",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     202.0,
+     476.0
+    ],
+    [
+     250.0,
+     476.0
+    ],
+    [
+     250.0,
+     514.0
+    ],
+    [
+     202.0,
+     514.0
+    ]
+   ],
+   "bbox": [
+    202.0,
+    476.0,
+    250.0,
+    514.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "북부",
+   "text_key": "북부",
+   "ocr_text": "북부",
+   "confidence": 0.9968611673979754,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "마이산 북부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_013",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     15.0,
+     598.0
+    ],
+    [
+     55.0,
+     598.0
+    ],
+    [
+     55.0,
+     613.0
+    ],
+    [
+     15.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    15.0,
+    598.0,
+    55.0,
+    613.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "진안고원",
+   "text_key": "진안고원",
+   "ocr_text": "진안고원",
+   "confidence": 0.8801277961285292,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "진안고원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.easy_rgb_2x_014",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     181.0,
+     601.0
+    ],
+    [
+     262.0,
+     601.0
+    ],
+    [
+     262.0,
+     614.0
+    ],
+    [
+     181.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    181.0,
+    601.0,
+    262.0,
+    614.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "진안홍삼축제추진위원회",
+   "text_key": "진안홍삼축제추진위원회",
+   "ocr_text": "전안홍상축계추진위원회",
+   "confidence": 0.7237091064453125,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "진안홍삼축제추진위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

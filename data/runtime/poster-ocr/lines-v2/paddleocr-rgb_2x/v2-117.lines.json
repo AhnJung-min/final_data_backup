@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-117",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-117.padd_rgb_2x_003",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     358.5,
+     25.5
+    ],
+    [
+     419.0,
+     25.5
+    ],
+    [
+     419.0,
+     55.5
+    ],
+    [
+     358.5,
+     55.5
+    ]
+   ],
+   "bbox": [
+    358.5,
+    25.5,
+    419.0,
+    55.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "제22회",
+   "text_key": "제22회",
+   "ocr_text": "제22회",
+   "confidence": 0.9102379679679871,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제22회 포은문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-117.padd_rgb_2x_004",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     355.5,
+     57.5
+    ],
+    [
+     419.0,
+     57.5
+    ],
+    [
+     419.0,
+     424.0
+    ],
+    [
+     355.5,
+     424.0
+    ]
+   ],
+   "bbox": [
+    355.5,
+    57.5,
+    419.0,
+    424.0
+   ],
+   "height": 366.5,
+   "small_text": false,
+   "text": "포은문화제",
+   "text_key": "포은문화제",
+   "ocr_text": "포은문화제",
+   "confidence": 0.9988666772842407,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "포은문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-117.padd_rgb_2x_005",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     316.5,
+     65.5
+    ],
+    [
+     334.5,
+     65.5
+    ],
+    [
+     334.5,
+     263.5
+    ],
+    [
+     316.5,
+     263.5
+    ]
+   ],
+   "bbox": [
+    316.5,
+    65.5,
+    334.5,
+    263.5
+   ],
+   "height": 198.0,
+   "small_text": false,
+   "text": "포은의 숨결 - 620을 잇다",
+   "text_key": "포은의숨결620을잇다",
+   "ocr_text": "포은의숨결-6²ㅇ을잇다",
+   "confidence": 0.8877745270729065,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1818,
+   "gold_value": "포은의 숨결 - 620을 잇다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-117.padd_rgb_2x_008",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     356.5,
+     442.0
+    ],
+    [
+     421.0,
+     439.5
+    ],
+    [
+     422.0,
+     463.5
+    ],
+    [
+     357.5,
+     466.0
+    ]
+   ],
+   "bbox": [
+    356.5,
+    439.5,
+    422.0,
+    466.0
+   ],
+   "height": 24.02,
+   "small_text": false,
+   "text": "10.10",
+   "text_key": "1010",
+   "ocr_text": "10.10",
+   "confidence": 0.997269332408905,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "10.10 토 – 10.11 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-117.padd_rgb_2x_009",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     356.5,
+     477.0
+    ],
+    [
+     422.5,
+     474.5
+    ],
+    [
+     423.5,
+     498.0
+    ],
+    [
+     357.5,
+     500.5
+    ]
+   ],
+   "bbox": [
+    356.5,
+    474.5,
+    423.5,
+    500.5
+   ],
+   "height": 23.52,
+   "small_text": false,
+   "text": "10.11",
+   "text_key": "1011",
+   "ocr_text": "10.11",
+   "confidence": 0.9984608888626099,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "10.10 토 – 10.11 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-117.padd_rgb_2x_010",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     358.0,
+     507.0
+    ],
+    [
+     413.0,
+     507.0
+    ],
+    [
+     413.0,
+     521.0
+    ],
+    [
+     358.0,
+     521.0
+    ]
+   ],
+   "bbox": [
+    358.0,
+    507.0,
+    413.0,
+    521.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "포은 정몽주",
+   "text_key": "포은정몽주",
+   "ocr_text": "포은정몽주",
+   "confidence": 0.992127537727356,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "포은 정몽주 선생 묘역",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-117.padd_rgb_2x_011",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     362.5,
+     520.0
+    ],
+    [
+     407.5,
+     519.0
+    ],
+    [
+     408.0,
+     533.5
+    ],
+    [
+     362.5,
+     534.5
+    ]
+   ],
+   "bbox": [
+    362.5,
+    519.0,
+    408.0,
+    534.5
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "선생 묘역",
+   "text_key": "선생묘역",
+   "ocr_text": "선생묘역",
+   "confidence": 0.988975465297699,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "포은 정몽주 선생 묘역",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-117.padd_rgb_2x_016",
+   "case_id": "v2-117",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     302.5,
+     558.5
+    ],
+    [
+     362.5,
+     558.5
+    ],
+    [
+     362.5,
+     568.5
+    ],
+    [
+     302.5,
+     568.5
+    ]
+   ],
+   "bbox": [
+    302.5,
+    558.5,
+    362.5,
+    568.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "RE-BORN 미션",
+   "text_key": "reborn미션",
+   "ocr_text": "RE-BORN 미션",
+   "confidence": 0.9836480021476746,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "RE-BORN 미션",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

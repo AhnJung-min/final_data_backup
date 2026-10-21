@@ -1,0 +1,1510 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 144,
+  "image_tokens": 3281,
+  "text_tokens": 6067,
+  "input_tokens": 9348,
+  "cost_usd": 0.0009348000000000001
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S05",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S05.png",
+    "sha256": "a1da00c3a2f98e421a4fee18698b800fff9a644f7ea52933436387bffee30414",
+    "bytes": 121061,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S05.png",
+    "sha256": "71b6416a5e2a241ff6e74ae29194fa620170e6ac3124e536d1ef3b4037573e58",
+    "bytes": 57784,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "솔내 단풍 겉기 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제25회 솔내 단풍 겉기 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제25회",
+     "number": 25
+    },
+    "doc_raw": "제25회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.12.3.(목)~12.5.(토)",
+     "points": [
+      [
+       2026,
+       12,
+       3,
+       "목"
+      ],
+      [
+       2026,
+       12,
+       5,
+       "토"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.12.3.(목)~12.5.(토)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "10:00~18:00"
+    },
+    "doc_raw": "10:00~18:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "솔내 문화예술회관 야외광장"
+    },
+    "doc_raw": "솔내 문화예술회관 야외광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "솔내군"
+    },
+    "doc_raw": "솔내군"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "솔내문화원"
+    },
+    "doc_raw": "솔내문화원"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "033-000-5089"
+    },
+    "doc_raw": "033-000-5089"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "붉게 물든 길을 함께 걸어요"
+    },
+    "doc_raw": "붉게 물든 길을 함께 걸어요"
+   }
+  },
+  "rows": [
+   {
+    "value": "L612",
+    "index": 0,
+    "text": "25",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "25",
+      "confidence": 0.9996429681777954,
+      "bbox_xyxy": [
+       378.0,
+       70.0,
+       861.0,
+       425.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L174",
+    "index": 1,
+    "text": "2026제25회",
+    "conf": 0.9994,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "2026제25회",
+      "confidence": 0.999406635761261,
+      "bbox_xyxy": [
+       66.0,
+       120.0,
+       270.0,
+       162.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L806",
+    "index": 2,
+    "text": "솔내",
+    "conf": 1.0,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "솔내",
+      "confidence": 0.999954104423523,
+      "bbox_xyxy": [
+       51.0,
+       296.0,
+       281.0,
+       442.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L459",
+    "index": 3,
+    "text": "단풍",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "단풍",
+      "confidence": 0.9997872114181519,
+      "bbox_xyxy": [
+       54.0,
+       430.0,
+       282.0,
+       568.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L309",
+    "index": 4,
+    "text": "걷기",
+    "conf": 0.9986,
+    "records": [
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "걷기",
+      "confidence": 0.9986305832862854,
+      "bbox_xyxy": [
+       55.0,
+       562.0,
+       277.0,
+       698.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L620",
+    "index": 5,
+    "text": "축제",
+    "conf": 0.9987,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "축제",
+      "confidence": 0.9986722469329834,
+      "bbox_xyxy": [
+       52.0,
+       688.0,
+       279.0,
+       829.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L570",
+    "index": 6,
+    "text": "붉게 물든 길을 힘 께 걸어요",
+    "conf": 0.9202,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "붉게 물든 길을 힘",
+      "confidence": 0.9506012797355652,
+      "bbox_xyxy": [
+       68.0,
+       893.0,
+       274.0,
+       931.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "함께 걸어요",
+      "confidence": 0.920229971408844,
+      "bbox_xyxy": [
+       256.0,
+       895.0,
+       408.0,
+       929.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L988",
+    "index": 7,
+    "text": "일시 2026.12.03(목)-12.05(토)",
+    "conf": 0.99,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "일시 2026.12.03(목)-12.05(토)",
+      "confidence": 0.989951491355896,
+      "bbox_xyxy": [
+       369.0,
+       969.0,
+       815.0,
+       1006.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L696",
+    "index": 8,
+    "text": "시간10:00-18:00",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "시간10:00-18:00",
+      "confidence": 0.9995806813240051,
+      "bbox_xyxy": [
+       554.0,
+       1022.0,
+       815.0,
+       1056.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L416",
+    "index": 9,
+    "text": "장소 솔내 문화예술회관 야외광장",
+    "conf": 0.954,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "장소 솔내 문화예술회관 야외광장",
+      "confidence": 0.9539949893951416,
+      "bbox_xyxy": [
+       393.0,
+       1071.0,
+       814.0,
+       1107.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L507",
+    "index": 10,
+    "text": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089",
+    "conf": 0.9485,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089",
+      "confidence": 0.9484885334968567,
+      "bbox_xyxy": [
+       177.0,
+       1195.0,
+       707.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제25회 솔내 단풍 겉기 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.12.3.(목)~12.5.(토)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "솔내 문화예술회관 야외광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "솔내군"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "솔내문화원"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "033-000-5089"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "붉게 물든 길을 함께 걸어요"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "솔내 단풍 겉기 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제25회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.12.3.(목)~12.5.(토)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "10:00~18:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "솔내 문화예술회관 야외광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "솔내군"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "솔내문화원"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "033-000-5089"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "붉게 물든 길을 함께 걸어요"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L696",
+    "L416",
+    "L988",
+    "L174",
+    "L459",
+    "L309",
+    "L806",
+    "L620",
+    "L507",
+    "L612",
+    "L570",
+    "none"
+   ],
+   "b_line_edition": [
+    "L988",
+    "L570",
+    "L416",
+    "L612",
+    "L507",
+    "L696",
+    "L309",
+    "L459",
+    "L620",
+    "L174",
+    "L806",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L612",
+    "L459",
+    "L570",
+    "L696",
+    "L507",
+    "L174",
+    "L416",
+    "L309",
+    "L620",
+    "L806",
+    "L988",
+    "none"
+   ],
+   "b_line_time": [
+    "L416",
+    "L507",
+    "L459",
+    "L620",
+    "L988",
+    "L696",
+    "L309",
+    "L570",
+    "L612",
+    "L806",
+    "L174",
+    "none"
+   ],
+   "b_line_venue": [
+    "L620",
+    "L696",
+    "L806",
+    "L459",
+    "L174",
+    "L416",
+    "L309",
+    "L570",
+    "L612",
+    "L507",
+    "L988",
+    "none"
+   ],
+   "b_line_host": [
+    "L459",
+    "L570",
+    "L612",
+    "L507",
+    "L174",
+    "L416",
+    "L988",
+    "L696",
+    "L806",
+    "L309",
+    "L620",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L620",
+    "L696",
+    "L570",
+    "L806",
+    "L309",
+    "L612",
+    "L988",
+    "L416",
+    "L174",
+    "L507",
+    "L459",
+    "none"
+   ],
+   "b_line_contact": [
+    "L806",
+    "L309",
+    "L612",
+    "L696",
+    "L570",
+    "L459",
+    "L416",
+    "L174",
+    "L988",
+    "L620",
+    "L507",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L988",
+    "L696",
+    "L459",
+    "L309",
+    "L612",
+    "L570",
+    "L416",
+    "L507",
+    "L806",
+    "L620",
+    "L174",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 121,061 bytes, sha256 a1da00c3a2f98e42…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 57,784 bytes, sha256 71b6416a5e2a241f…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제25회 솔내 단풍 겉기 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.12.3.(목)~12.5.(토)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '10:00~18:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '솔내 문화예술회관 야외광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '솔내군'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '솔내문화원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '033-000-5089'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '붉게 물든 길을 함께 걸어요'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L988",
+      "description": "일시 2026.12.03(목)-12.05(토)"
+     },
+     {
+      "value": "L696",
+      "description": "시간10:00-18:00"
+     },
+     {
+      "value": "L459",
+      "description": "단풍"
+     },
+     {
+      "value": "L309",
+      "description": "걷기"
+     },
+     {
+      "value": "L612",
+      "description": "25"
+     },
+     {
+      "value": "L570",
+      "description": "붉게 물든 길을 힘 께 걸어요"
+     },
+     {
+      "value": "L416",
+      "description": "장소 솔내 문화예술회관 야외광장"
+     },
+     {
+      "value": "L507",
+      "description": "주최 솔내군 | 주관 솔내문화원 ㅣ 문의 033-000-5089"
+     },
+     {
+      "value": "L806",
+      "description": "솔내"
+     },
+     {
+      "value": "L620",
+      "description": "축제"
+     },
+     {
+      "value": "L174",
+      "description": "2026제25회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '솔내 단풍 겉기 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제25회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.12.3.(목)~12.5.(토)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '10:00~18:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '솔내 문화예술회관 야외광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '솔내군'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '솔내문화원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '033-000-5089'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '붉게 물든 길을 함께 걸어요'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1565 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 144,
+  "image_tokens": 3281,
+  "text_tokens": 6180,
+  "input_tokens": 9461,
+  "cost_usd": 0.0009461000000000001
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S01",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S01.png",
+    "sha256": "be37e780b661e66b76cdc3fa0e56d900b00ec03377fa8a5c79301cbfae908c9b",
+    "bytes": 123127,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S01.png",
+    "sha256": "3aad4c7f05617eab976a305eecb2cdd8b6a68f17b4c0349991c6aebeadf5eed0",
+    "bytes": 101114,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "한빛 별빛정원 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제5회 한빛 별빛정원 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제5회",
+     "number": 5
+    },
+    "doc_raw": "제5회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.8.(일) ~ 11.9.(월)",
+     "points": [
+      [
+       2026,
+       11,
+       8,
+       "일"
+      ],
+      [
+       2026,
+       11,
+       9,
+       "월"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.8.(일) ~ 11.9.(월)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "13:00~22:00"
+    },
+    "doc_raw": "13:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "한빛 문화예술회관 야외광장"
+    },
+    "doc_raw": "한빛 문화예술회관 야외광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "한빛시"
+    },
+    "doc_raw": "한빛시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "한빛문화원"
+    },
+    "doc_raw": "한빛문화원"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "031-000-6254"
+    },
+    "doc_raw": "031-000-6254"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "빛으로 물드는 가을밤"
+    },
+    "doc_raw": "빛으로 물드는 가을밤"
+   }
+  },
+  "rows": [
+   {
+    "value": "L758",
+    "index": 0,
+    "text": "2026 제5회",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026",
+      "confidence": 0.9989903569221497,
+      "bbox_xyxy": [
+       356.0,
+       94.0,
+       444.0,
+       128.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "제5회",
+      "confidence": 0.9997363090515137,
+      "bbox_xyxy": [
+       442.0,
+       92.0,
+       528.0,
+       129.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L463",
+    "index": 1,
+    "text": "한빛",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "한빛",
+      "confidence": 0.9997472763061523,
+      "bbox_xyxy": [
+       330.0,
+       161.0,
+       550.0,
+       294.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L957",
+    "index": 2,
+    "text": "별빛정원 축제",
+    "conf": 0.9994,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "별빛정원",
+      "confidence": 0.9997473955154419,
+      "bbox_xyxy": [
+       115.0,
+       301.0,
+       537.0,
+       434.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "축제",
+      "confidence": 0.9993526935577393,
+      "bbox_xyxy": [
+       545.0,
+       297.0,
+       769.0,
+       437.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L587",
+    "index": 3,
+    "text": "빛으로 물드는 가을밤",
+    "conf": 0.8514,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "빛으로 물드는 기",
+      "confidence": 0.851374626159668,
+      "bbox_xyxy": [
+       282.0,
+       455.0,
+       514.0,
+       503.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "가을밤",
+      "confidence": 0.9982245564460754,
+      "bbox_xyxy": [
+       495.0,
+       457.0,
+       603.0,
+       501.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L715",
+    "index": 4,
+    "text": "일시 2026.11.8.(일) ~11.9.(월)",
+    "conf": 0.98,
+    "records": [
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "일시",
+      "confidence": 0.9999276399612427,
+      "bbox_xyxy": [
+       105.0,
+       577.0,
+       166.0,
+       616.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "2026.11.8.(일) ~11.9.(월)",
+      "confidence": 0.9799998998641968,
+      "bbox_xyxy": [
+       207.0,
+       581.0,
+       576.0,
+       615.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L449",
+    "index": 5,
+    "text": "시간 13:00~22:00",
+    "conf": 0.9973,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "시간",
+      "confidence": 0.9999479055404663,
+      "bbox_xyxy": [
+       105.0,
+       638.0,
+       167.0,
+       678.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "13:00~22:00",
+      "confidence": 0.9973354339599609,
+      "bbox_xyxy": [
+       209.0,
+       644.0,
+       397.0,
+       675.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L941",
+    "index": 6,
+    "text": "장소 한빛 문화예술회관 야외광장",
+    "conf": 0.9853,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "장소",
+      "confidence": 0.9989230036735535,
+      "bbox_xyxy": [
+       105.0,
+       701.0,
+       167.0,
+       740.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "한빛 문화예술회관 야외광장",
+      "confidence": 0.9853128790855408,
+      "bbox_xyxy": [
+       208.0,
+       704.0,
+       560.0,
+       739.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L393",
+    "index": 7,
+    "text": "빛 터널 산책",
+    "conf": 0.9307,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "빛 터널 산책",
+      "confidence": 0.9306782484054565,
+      "bbox_xyxy": [
+       378.0,
+       820.0,
+       507.0,
+       857.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L319",
+    "index": 8,
+    "text": "야간 정원 투어",
+    "conf": 0.9833,
+    "records": [
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "야간 정원 투어",
+      "confidence": 0.9832627773284912,
+      "bbox_xyxy": [
+       368.0,
+       881.0,
+       516.0,
+       913.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L262",
+    "index": 9,
+    "text": "별자리 체험",
+    "conf": 0.9682,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "별자리 체험",
+      "confidence": 0.9682386517524719,
+      "bbox_xyxy": [
+       384.0,
+       939.0,
+       502.0,
+       971.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L971",
+    "index": 10,
+    "text": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254",
+    "conf": 0.9582,
+    "records": [
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254",
+      "confidence": 0.9582304954528809,
+      "bbox_xyxy": [
+       177.0,
+       1191.0,
+       710.0,
+       1218.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제5회 한빛 별빛정원 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.8.(일) ~ 11.9.(월)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "한빛 문화예술회관 야외광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "한빛시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "한빛문화원"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "031-000-6254"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "빛으로 물드는 가을밤"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "한빛 별빛정원 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제5회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.8.(일) ~ 11.9.(월)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "한빛 문화예술회관 야외광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "한빛시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "한빛문화원"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "031-000-6254"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "빛으로 물드는 가을밤"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L463",
+    "L393",
+    "L262",
+    "L941",
+    "L449",
+    "L319",
+    "L715",
+    "L758",
+    "L971",
+    "L587",
+    "L957",
+    "none"
+   ],
+   "b_line_edition": [
+    "L262",
+    "L587",
+    "L715",
+    "L957",
+    "L319",
+    "L971",
+    "L758",
+    "L463",
+    "L449",
+    "L941",
+    "L393",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L971",
+    "L941",
+    "L715",
+    "L262",
+    "L463",
+    "L319",
+    "L393",
+    "L587",
+    "L758",
+    "L449",
+    "L957",
+    "none"
+   ],
+   "b_line_time": [
+    "L715",
+    "L463",
+    "L941",
+    "L393",
+    "L587",
+    "L319",
+    "L957",
+    "L262",
+    "L449",
+    "L758",
+    "L971",
+    "none"
+   ],
+   "b_line_venue": [
+    "L463",
+    "L941",
+    "L449",
+    "L393",
+    "L319",
+    "L715",
+    "L587",
+    "L971",
+    "L262",
+    "L758",
+    "L957",
+    "none"
+   ],
+   "b_line_host": [
+    "L393",
+    "L758",
+    "L971",
+    "L715",
+    "L262",
+    "L957",
+    "L449",
+    "L319",
+    "L941",
+    "L587",
+    "L463",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L463",
+    "L393",
+    "L262",
+    "L319",
+    "L957",
+    "L971",
+    "L449",
+    "L715",
+    "L758",
+    "L587",
+    "L941",
+    "none"
+   ],
+   "b_line_contact": [
+    "L758",
+    "L941",
+    "L587",
+    "L463",
+    "L449",
+    "L971",
+    "L715",
+    "L393",
+    "L319",
+    "L262",
+    "L957",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L957",
+    "L393",
+    "L715",
+    "L319",
+    "L941",
+    "L449",
+    "L463",
+    "L587",
+    "L971",
+    "L758",
+    "L262",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 123,127 bytes, sha256 be37e780b661e66b…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 101,114 bytes, sha256 3aad4c7f05617eab…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제5회 한빛 별빛정원 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.8.(일) ~ 11.9.(월)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '13:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '한빛 문화예술회관 야외광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '한빛시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '한빛문화원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '031-000-6254'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '빛으로 물드는 가을밤'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L957",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L393",
+      "description": "빛 터널 산책"
+     },
+     {
+      "value": "L715",
+      "description": "일시 2026.11.8.(일) ~11.9.(월)"
+     },
+     {
+      "value": "L319",
+      "description": "야간 정원 투어"
+     },
+     {
+      "value": "L941",
+      "description": "장소 한빛 문화예술회관 야외광장"
+     },
+     {
+      "value": "L449",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L463",
+      "description": "한빛"
+     },
+     {
+      "value": "L587",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L971",
+      "description": "주최 한빛시 |주관 한빛문화원 | 문의 031-000-6254"
+     },
+     {
+      "value": "L758",
+      "description": "2026 제5회"
+     },
+     {
+      "value": "L262",
+      "description": "별자리 체험"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '한빛 별빛정원 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제5회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.8.(일) ~ 11.9.(월)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '13:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '한빛 문화예술회관 야외광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '한빛시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '한빛문화원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '031-000-6254'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '빛으로 물드는 가을밤'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "case_id": "v2-044",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-044.easy_rgb_2x_006",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     394.0,
+     360.0
+    ],
+    [
+     434.0,
+     360.0
+    ],
+    [
+     434.0,
+     387.0
+    ],
+    [
+     394.0,
+     387.0
+    ]
+   ],
+   "bbox": [
+    394.0,
+    360.0,
+    434.0,
+    387.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "과천",
+   "text_key": "과천",
+   "ocr_text": "과천",
+   "confidence": 0.9982863180596031,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.easy_rgb_2x_011",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     11.5,
+     477.5
+    ],
+    [
+     438.0,
+     477.5
+    ],
+    [
+     438.0,
+     588.0
+    ],
+    [
+     11.5,
+     588.0
+    ]
+   ],
+   "bbox": [
+    11.5,
+    477.5,
+    438.0,
+    588.0
+   ],
+   "height": 110.5,
+   "small_text": false,
+   "text": "공연예술축제",
+   "text_key": "공연예술축제",
+   "ocr_text": "공연예출출제",
+   "confidence": 0.28444891710843323,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

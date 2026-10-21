@@ -1,0 +1,5218 @@
+{
+ "schema": "poster-ocr.calibration.v1.summary",
+ "created_at": "2026-10-21T17:34:39+09:00",
+ "diagnostic_only": true,
+ "notice": "진단용: 내부 평가 전용 자료(posters-v2, internal_eval_only)로 맞춘 값입니다. 팀이 정하기 전까지 서비스 신뢰도에 적용하지 않습니다.",
+ "service_use": "적용하지 않음(팀 결정 전)",
+ "compare_note": "엔진마다 정답과 맞춘 줄 집합이 달라 줄 정확도·CER·보정 지표는 그 출처 안에서만 의미가 있습니다. 엔진끼리 비교할 때는 evaluate.py의 필드 판독률(reads.all.mean_char_accuracy)을 쓰세요.",
+ "lines_dir": "data/runtime/poster-ocr/lines-v2",
+ "out_dir": "data/runtime/poster-ocr/calib",
+ "gold": "data/benchmarks/gold-v2h",
+ "settings": {
+  "bins": 10,
+  "folds": 5,
+  "seed": 20261021,
+  "risks": [
+   0.01,
+   0.02
+  ],
+  "bootstrap": 1000
+ },
+ "labels": {
+  "scopes": {
+   "all": "A_clean 줄 전체",
+   "human_checked": "사람 확인 값 줄",
+   "ai_assisted": "AI 보조 판독 값 줄"
+  },
+  "methods": {
+   "raw": "보정 전(OCR 신뢰도 그대로)",
+   "temperature": "온도 보정 σ(logit(c)/T)",
+   "isotonic": "등위 회귀(PAV)",
+   "platt": "참고: 플랫 보정 σ(a·logit(c)+b)"
+  },
+  "evaluations": {
+   "oof": "교차검증 접힘 밖 예측(dev+test, 시리즈 묶음 5겹)",
+   "reserve": "확인용(이미 노출된 예비분)"
+  },
+  "metrics": {
+   "auroc": "AUROC: 맞은 줄이 틀린 줄보다 점수가 높을 확률(동점 1/2, 보정해도 순서는 거의 그대로)",
+   "brier": "Brier 점수: (점수-정답)² 평균, 낮을수록 좋음",
+   "ece": "ECE: 같은 폭 10칸의 |정답률-평균 점수| 가중 평균, 낮을수록 좋음",
+   "ece_equal_mass": "참고 ECE: 줄 수가 같은 10칸",
+   "aurc": "위험-처리율 곡선 아래 넓이(낮을수록 좋음), eaurc는 완벽한 순서와의 차이",
+   "ci95": "포스터 단위 부트스트랩 95% 구간(보정 모델은 고정, 맞춤 변동은 넣지 않음)",
+   "vs_raw": "같은 부트스트랩 표본에서 잰 (보정 - 보정 전) 차이와 그 95% 구간"
+  },
+  "selective": {
+   "oracle": "사후 최적 문턱: 이 자료의 라벨로 고른 문턱에서 오류율 ≤ 목표인 최대 처리율(낙관적 상한)",
+   "transfer": "학습 자료(교차검증은 학습 접힘, 예비분은 dev+test)의 라벨로 고른 문턱을 그대로 쓴 실제 처리율·오류율",
+   "expected": "라벨 없이 점수만으로 고른 문턱: 받아들인 줄의 예상 오류율 mean(1-점수) ≤ 목표. 보정 전은 OCR 신뢰도를 확률로 그대로 믿은 경우"
+  }
+ },
+ "series": {
+  "rules": [
+   "제목 문구: key(title.official)에 '국가유산야행'·'미디어아트'·'야외도서관' 또는 궁궐·왕릉 낱말(경복궁·창경궁·덕수궁·창덕궁·경희궁·종묘·왕릉·궁중)이 있으면 같은 문구끼리 잇는다.",
+   "기관 틀: 기관 이름에 국가유산청·국가유산진흥원·궁능유적본부가 있으면 '국가유산청 틀'끼리 잇는다(야행·미디어아트·궁궐 사업의 공통 로고 띠).",
+   "같은 축제: 연도·회차 표기를 뺀 key(title.official)가 같으면 잇는다.",
+   "같은 지역 주최: 위 두 규칙에 걸리지 않은 포스터만, 주최·주관 기관 가운데 중앙 부처·광역 시도·국가유산 기관을 건너뛴 첫 기관 key(끝의 시·군·구·특례시·구청 등을 뗌)가 같으면 잇는다.",
+   "이어진 포스터 덩어리 하나가 시리즈 하나다. 흔한 분류 낱말(축제·페스티벌·청년·북·국화·빵 등)은 쓰지 않는다.",
+   "접힘: dev+test 포스터를 시리즈 단위로 5겹에 나눈다(큰 시리즈부터, 같은 크기는 sha256(seed:series_id) 순, 포스터가 가장 적은 접힘에)."
+  ],
+  "posters": 252,
+  "series_total": 198,
+  "multi_series": 29,
+  "posters_in_multi": 83,
+  "groups": [
+   {
+    "series_id": "기관틀:국가유산청",
+    "posters": [
+     "r2-001",
+     "r2-003",
+     "r2-006",
+     "r2-007",
+     "r2-011",
+     "r2-022",
+     "r2-024",
+     "v2-004",
+     "v2-006",
+     "v2-011",
+     "v2-014",
+     "v2-022",
+     "v2-030",
+     "v2-045",
+     "v2-046",
+     "v2-064",
+     "v2-066",
+     "v2-094",
+     "v2-099",
+     "v2-115",
+     "v2-144",
+     "v2-149",
+     "v2-172",
+     "v2-190"
+    ],
+    "size": 24,
+    "tags": [
+     "기관틀:국가유산청",
+     "문구:국가유산 야행",
+     "문구:궁궐·왕릉",
+     "문구:미디어아트"
+    ],
+    "splits": {
+     "reserve": 7,
+     "test": 10,
+     "dev": 7
+    },
+    "fold": 0,
+    "titles": [
+     "원주 국가유산 야행",
+     "국가유산 미디어아트 사비백사",
+     "용산 국가유산 야행",
+     "국가유산 야행 근대 도시 대전 중구 야행",
+     "수원화성 미디어아트",
+     "함안 국가 유산 야행",
+     "담양국가유산야행",
+     "국가유산 미디어아트 진주성",
+     "강경 국가유산 야행",
+     "경복궁 별빛 야행",
+     "공주국가유산야행",
+     "덕수궁 밤의 석조전",
+     "국가유산 미디어아트 철원 노동당사",
+     "경주국가유산야행",
+     "김제 국가유산 야행",
+     "창경궁 야연",
+     "안동국제 탈춤페스티벌",
+     "국가유산 미디어아트 청주 용두사지 철당간 등",
+     "가을 궁중문화축전",
+     "국가유산 미디어아트 여수",
+     "정선 국가유산 야행",
+     "세계유산 조선 왕릉 축전",
+     "울산중구 국가유산야행",
+     "목포 국가유산 야행"
+    ]
+   },
+   {
+    "series_id": "주최:포천",
+    "posters": [
+     "v2-016",
+     "v2-035",
+     "v2-089",
+     "v2-146"
+    ],
+    "size": 4,
+    "tags": [
+     "주최:포천"
+    ],
+    "splits": {
+     "test": 4
+    },
+    "fold": 1,
+    "titles": [
+     "화적연 천년의 약속",
+     "포천 한탄강 가든페스타",
+     "포천 청년 축제",
+     "포천 산정호수 명성산 억새꽃축제"
+    ]
+   },
+   {
+    "series_id": "주최:서초",
+    "posters": [
+     "v2-050",
+     "v2-079",
+     "v2-120"
+    ],
+    "size": 3,
+    "tags": [
+     "주최:서초"
+    ],
+    "splits": {
+     "test": 1,
+     "dev": 2
+    },
+    "fold": 2,
+    "titles": [
+     "서리풀 뮤직 페스티벌",
+     "양재 아트살롱",
+     "물길따라 그림책 여행"
+    ]
+   },
+   {
+    "series_id": "문구:야외도서관",
+    "posters": [
+     "v2-059",
+     "v2-153"
+    ],
+    "size": 2,
+    "tags": [
+     "문구:야외도서관"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 3,
+    "titles": [
+     "울산 야외도서관 소풍",
+     "노원 야외도서관 낭만보장"
+    ]
+   },
+   {
+    "series_id": "주최:강남",
+    "posters": [
+     "v2-057",
+     "v2-096"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:강남"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 3,
+    "titles": [
+     "강남청년축제",
+     "강남페스티벌"
+    ]
+   },
+   {
+    "series_id": "주최:강릉",
+    "posters": [
+     "r2-027",
+     "v2-164"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:강릉"
+    ],
+    "splits": {
+     "reserve": 1,
+     "dev": 1
+    },
+    "fold": 0,
+    "titles": [
+     "강릉 국수 축제",
+     "강릉커피축제"
+    ]
+   },
+   {
+    "series_id": "주최:고양",
+    "posters": [
+     "v2-041",
+     "v2-068"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:고양"
+    ],
+    "splits": {
+     "dev": 1,
+     "test": 1
+    },
+    "fold": 1,
+    "titles": [
+     "고양호수 예술축제",
+     "고양가을 꽃축제"
+    ]
+   },
+   {
+    "series_id": "주최:과천",
+    "posters": [
+     "v2-044",
+     "v2-092"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:과천"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 3,
+    "titles": [
+     "과천 공연예술축제",
+     "과천청년축제"
+    ]
+   },
+   {
+    "series_id": "주최:구미",
+    "posters": [
+     "v2-154",
+     "v2-195"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:구미"
+    ],
+    "splits": {
+     "dev": 1,
+     "test": 1
+    },
+    "fold": 4,
+    "titles": [
+     "구미 푸드 페스티벌",
+     "구미 라면 축제"
+    ]
+   },
+   {
+    "series_id": "주최:금정",
+    "posters": [
+     "r2-008",
+     "v2-129"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:금정"
+    ],
+    "splits": {
+     "reserve": 1,
+     "test": 1
+    },
+    "fold": 0,
+    "titles": [
+     "글로컬 문화 IN 남산 페스티벌",
+     "금정 산성 축제"
+    ]
+   },
+   {
+    "series_id": "주최:대전광역시중",
+    "posters": [
+     "v2-084",
+     "v2-119"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:대전광역시중"
+    ],
+    "splits": {
+     "dev": 1,
+     "test": 1
+    },
+    "fold": 4,
+    "titles": [
+     "대전 효문화 뿌리 축제",
+     "대전중구 북페스티벌"
+    ]
+   },
+   {
+    "series_id": "주최:동대문",
+    "posters": [
+     "v2-091",
+     "v2-162"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:동대문"
+    ],
+    "splits": {
+     "test": 1,
+     "dev": 1
+    },
+    "fold": 2,
+    "titles": [
+     "동대문페스티벌",
+     "동대문구 청소년 페스티벌"
+    ]
+   },
+   {
+    "series_id": "주최:문경",
+    "posters": [
+     "v2-058",
+     "v2-081"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:문경"
+    ],
+    "splits": {
+     "test": 1,
+     "dev": 1
+    },
+    "fold": 2,
+    "titles": [
+     "문경 친환경 캠핑 페스티벌",
+     "가은아자개 장터축제"
+    ]
+   },
+   {
+    "series_id": "주최:시흥",
+    "posters": [
+     "r2-010",
+     "v2-152"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:시흥"
+    ],
+    "splits": {
+     "reserve": 1,
+     "test": 1
+    },
+    "fold": 2,
+    "titles": [
+     "시흥갯골축제",
+     "시흥시 청소년 동아리 축제"
+    ]
+   },
+   {
+    "series_id": "주최:연천",
+    "posters": [
+     "v2-136",
+     "v2-169"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:연천"
+    ],
+    "splits": {
+     "dev": 2
+    },
+    "fold": 4,
+    "titles": [
+     "연천국화축제",
+     "연천율무축제 농특산물 큰장터"
+    ]
+   },
+   {
+    "series_id": "주최:예천",
+    "posters": [
+     "v2-067",
+     "v2-189"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:예천"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 1,
+    "titles": [
+     "예천 삼강나루 주막축제",
+     "예천활축제"
+    ]
+   },
+   {
+    "series_id": "주최:용인",
+    "posters": [
+     "v2-086",
+     "v2-090"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:용인"
+    ],
+    "splits": {
+     "dev": 1,
+     "test": 1
+    },
+    "fold": 4,
+    "titles": [
+     "용인사이버 과학축제",
+     "용인 청년 페스티벌"
+    ]
+   },
+   {
+    "series_id": "주최:원주",
+    "posters": [
+     "v2-025",
+     "v2-175"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:원주"
+    ],
+    "splits": {
+     "test": 1,
+     "dev": 1
+    },
+    "fold": 2,
+    "titles": [
+     "삼토페스티벌",
+     "원주 만두 축제"
+    ]
+   },
+   {
+    "series_id": "주최:익산",
+    "posters": [
+     "r2-050",
+     "v2-179"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:익산"
+    ],
+    "splits": {
+     "reserve": 1,
+     "test": 1
+    },
+    "fold": 2,
+    "titles": [
+     "보물찾기 축제",
+     "익산 천만송이 국화축제"
+    ]
+   },
+   {
+    "series_id": "주최:인천광역시미추홀",
+    "posters": [
+     "r2-037",
+     "v2-037"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:인천광역시미추홀"
+    ],
+    "splits": {
+     "reserve": 1,
+     "test": 1
+    },
+    "fold": 3,
+    "titles": [
+     "수봉산 페스티벌",
+     "미추홀 미디어 문화축제"
+    ]
+   },
+   {
+    "series_id": "주최:제주",
+    "posters": [
+     "v2-032",
+     "v2-183"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:제주"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 3,
+    "titles": [
+     "제주레저 힐링축제",
+     "제주독서대전"
+    ]
+   },
+   {
+    "series_id": "주최:진안",
+    "posters": [
+     "v2-008",
+     "v2-043"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:진안"
+    ],
+    "splits": {
+     "dev": 1,
+     "test": 1
+    },
+    "fold": 2,
+    "titles": [
+     "트레저헌터 진안",
+     "진안 홍삼축제"
+    ]
+   },
+   {
+    "series_id": "주최:창원",
+    "posters": [
+     "v2-167",
+     "v2-194"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:창원"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 3,
+    "titles": [
+     "문화다양성 축제 맘프",
+     "마산가고파 국화축제"
+    ]
+   },
+   {
+    "series_id": "주최:청주",
+    "posters": [
+     "v2-015",
+     "v2-134"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:청주"
+    ],
+    "splits": {
+     "dev": 1,
+     "test": 1
+    },
+    "fold": 3,
+    "titles": [
+     "직지문화축제",
+     "대한민국 산림박람회"
+    ]
+   },
+   {
+    "series_id": "주최:칠곡문화관광재단",
+    "posters": [
+     "v2-122",
+     "v2-163"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:칠곡문화관광재단"
+    ],
+    "splits": {
+     "dev": 1,
+     "test": 1
+    },
+    "fold": 4,
+    "titles": [
+     "칠곡낙동강평화축제",
+     "205 칠곡 문화 거리 Festa"
+    ]
+   },
+   {
+    "series_id": "주최:포항",
+    "posters": [
+     "r2-052",
+     "v2-116"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:포항"
+    ],
+    "splits": {
+     "reserve": 1,
+     "test": 1
+    },
+    "fold": 3,
+    "titles": [
+     "포항 해병대문화축제",
+     "포항 낙화의 밤"
+    ]
+   },
+   {
+    "series_id": "주최:함평",
+    "posters": [
+     "v2-038",
+     "v2-180"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:함평"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 1,
+    "titles": [
+     "함평 모악산 꽃무릇 축제",
+     "대한민국 국향대전"
+    ]
+   },
+   {
+    "series_id": "주최:화순",
+    "posters": [
+     "v2-112",
+     "v2-142"
+    ],
+    "size": 2,
+    "tags": [
+     "주최:화순"
+    ],
+    "splits": {
+     "test": 2
+    },
+    "fold": 1,
+    "titles": [
+     "화순적벽문화축제",
+     "세계문화유산 화순고인돌 가을꽃축제"
+    ]
+   },
+   {
+    "series_id": "축제:계룡軍문화축제",
+    "posters": [
+     "v2-069",
+     "v2-070"
+    ],
+    "size": 2,
+    "tags": [
+     "축제:계룡軍문화축제",
+     "주최:계룡"
+    ],
+    "splits": {
+     "test": 1,
+     "dev": 1
+    },
+    "fold": 4,
+    "titles": [
+     "계룡軍문화축제",
+     "계룡軍문화축제"
+    ]
+   }
+  ],
+  "folds": [
+   {
+    "fold": 0,
+    "posters": 40,
+    "series": 24,
+    "dev": 14,
+    "test": 26
+   },
+   {
+    "fold": 1,
+    "posters": 40,
+    "series": 33,
+    "dev": 9,
+    "test": 31
+   },
+   {
+    "fold": 2,
+    "posters": 40,
+    "series": 34,
+    "dev": 15,
+    "test": 25
+   },
+   {
+    "fold": 3,
+    "posters": 40,
+    "series": 34,
+    "dev": 7,
+    "test": 33
+   },
+   {
+    "fold": 4,
+    "posters": 40,
+    "series": 34,
+    "dev": 15,
+    "test": 25
+   }
+  ],
+  "reserve_overlap": {
+   "note": "예비분 포스터 가운데 같은 시리즈가 dev+test에도 있는 것(보정이 비슷한 틀을 이미 봤을 수 있음)",
+   "posters": 13,
+   "case_ids": [
+    "r2-001",
+    "r2-003",
+    "r2-006",
+    "r2-007",
+    "r2-008",
+    "r2-010",
+    "r2-011",
+    "r2-022",
+    "r2-024",
+    "r2-027",
+    "r2-037",
+    "r2-050",
+    "r2-052"
+   ]
+  },
+  "by_case": {
+   "r2-001": {
+    "series_id": "기관틀:국가유산청",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-002": {
+    "series_id": "포스터:r2-002",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-003": {
+    "series_id": "기관틀:국가유산청",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-004": {
+    "series_id": "포스터:r2-004",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-005": {
+    "series_id": "포스터:r2-005",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-006": {
+    "series_id": "기관틀:국가유산청",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-007": {
+    "series_id": "기관틀:국가유산청",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-008": {
+    "series_id": "주최:금정",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-009": {
+    "series_id": "포스터:r2-009",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-010": {
+    "series_id": "주최:시흥",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-011": {
+    "series_id": "기관틀:국가유산청",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-012": {
+    "series_id": "포스터:r2-012",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-013": {
+    "series_id": "포스터:r2-013",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-014": {
+    "series_id": "포스터:r2-014",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-015": {
+    "series_id": "포스터:r2-015",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-016": {
+    "series_id": "포스터:r2-016",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-017": {
+    "series_id": "포스터:r2-017",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-018": {
+    "series_id": "포스터:r2-018",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-019": {
+    "series_id": "포스터:r2-019",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-020": {
+    "series_id": "포스터:r2-020",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-021": {
+    "series_id": "포스터:r2-021",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-022": {
+    "series_id": "기관틀:국가유산청",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-023": {
+    "series_id": "포스터:r2-023",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-024": {
+    "series_id": "기관틀:국가유산청",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-025": {
+    "series_id": "포스터:r2-025",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-026": {
+    "series_id": "포스터:r2-026",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-027": {
+    "series_id": "주최:강릉",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-028": {
+    "series_id": "포스터:r2-028",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-029": {
+    "series_id": "포스터:r2-029",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-030": {
+    "series_id": "포스터:r2-030",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-031": {
+    "series_id": "포스터:r2-031",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-032": {
+    "series_id": "포스터:r2-032",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-033": {
+    "series_id": "포스터:r2-033",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-034": {
+    "series_id": "포스터:r2-034",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-035": {
+    "series_id": "포스터:r2-035",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-036": {
+    "series_id": "포스터:r2-036",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-037": {
+    "series_id": "주최:인천광역시미추홀",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-038": {
+    "series_id": "포스터:r2-038",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-039": {
+    "series_id": "포스터:r2-039",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-040": {
+    "series_id": "포스터:r2-040",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-041": {
+    "series_id": "포스터:r2-041",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-042": {
+    "series_id": "포스터:r2-042",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-043": {
+    "series_id": "포스터:r2-043",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-044": {
+    "series_id": "포스터:r2-044",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-045": {
+    "series_id": "포스터:r2-045",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-046": {
+    "series_id": "포스터:r2-046",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-047": {
+    "series_id": "포스터:r2-047",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-048": {
+    "series_id": "포스터:r2-048",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-049": {
+    "series_id": "포스터:r2-049",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-050": {
+    "series_id": "주최:익산",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-051": {
+    "series_id": "포스터:r2-051",
+    "split": "reserve",
+    "fold": null
+   },
+   "r2-052": {
+    "series_id": "주최:포항",
+    "split": "reserve",
+    "fold": null
+   },
+   "v2-001": {
+    "series_id": "포스터:v2-001",
+    "split": "dev",
+    "fold": 3
+   },
+   "v2-002": {
+    "series_id": "포스터:v2-002",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-003": {
+    "series_id": "포스터:v2-003",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-004": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-005": {
+    "series_id": "포스터:v2-005",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-006": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-007": {
+    "series_id": "포스터:v2-007",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-008": {
+    "series_id": "주최:진안",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-009": {
+    "series_id": "포스터:v2-009",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-010": {
+    "series_id": "포스터:v2-010",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-011": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-012": {
+    "series_id": "포스터:v2-012",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-013": {
+    "series_id": "포스터:v2-013",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-014": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-015": {
+    "series_id": "주최:청주",
+    "split": "dev",
+    "fold": 3
+   },
+   "v2-016": {
+    "series_id": "주최:포천",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-017": {
+    "series_id": "포스터:v2-017",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-018": {
+    "series_id": "포스터:v2-018",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-019": {
+    "series_id": "포스터:v2-019",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-020": {
+    "series_id": "포스터:v2-020",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-021": {
+    "series_id": "포스터:v2-021",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-022": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-023": {
+    "series_id": "포스터:v2-023",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-024": {
+    "series_id": "포스터:v2-024",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-025": {
+    "series_id": "주최:원주",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-026": {
+    "series_id": "포스터:v2-026",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-027": {
+    "series_id": "포스터:v2-027",
+    "split": "dev",
+    "fold": 3
+   },
+   "v2-028": {
+    "series_id": "포스터:v2-028",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-029": {
+    "series_id": "포스터:v2-029",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-030": {
+    "series_id": "기관틀:국가유산청",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-031": {
+    "series_id": "포스터:v2-031",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-032": {
+    "series_id": "주최:제주",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-033": {
+    "series_id": "포스터:v2-033",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-034": {
+    "series_id": "포스터:v2-034",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-035": {
+    "series_id": "주최:포천",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-036": {
+    "series_id": "포스터:v2-036",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-037": {
+    "series_id": "주최:인천광역시미추홀",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-038": {
+    "series_id": "주최:함평",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-039": {
+    "series_id": "포스터:v2-039",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-040": {
+    "series_id": "포스터:v2-040",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-041": {
+    "series_id": "주최:고양",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-042": {
+    "series_id": "포스터:v2-042",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-043": {
+    "series_id": "주최:진안",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-044": {
+    "series_id": "주최:과천",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-045": {
+    "series_id": "기관틀:국가유산청",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-046": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-047": {
+    "series_id": "포스터:v2-047",
+    "split": "dev",
+    "fold": 3
+   },
+   "v2-048": {
+    "series_id": "포스터:v2-048",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-049": {
+    "series_id": "포스터:v2-049",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-050": {
+    "series_id": "주최:서초",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-051": {
+    "series_id": "포스터:v2-051",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-052": {
+    "series_id": "포스터:v2-052",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-053": {
+    "series_id": "포스터:v2-053",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-054": {
+    "series_id": "포스터:v2-054",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-055": {
+    "series_id": "포스터:v2-055",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-056": {
+    "series_id": "포스터:v2-056",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-057": {
+    "series_id": "주최:강남",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-058": {
+    "series_id": "주최:문경",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-059": {
+    "series_id": "문구:야외도서관",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-060": {
+    "series_id": "포스터:v2-060",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-061": {
+    "series_id": "포스터:v2-061",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-062": {
+    "series_id": "포스터:v2-062",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-063": {
+    "series_id": "포스터:v2-063",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-064": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-065": {
+    "series_id": "포스터:v2-065",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-066": {
+    "series_id": "기관틀:국가유산청",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-067": {
+    "series_id": "주최:예천",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-068": {
+    "series_id": "주최:고양",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-069": {
+    "series_id": "축제:계룡軍문화축제",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-070": {
+    "series_id": "축제:계룡軍문화축제",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-071": {
+    "series_id": "포스터:v2-071",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-072": {
+    "series_id": "포스터:v2-072",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-073": {
+    "series_id": "포스터:v2-073",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-074": {
+    "series_id": "포스터:v2-074",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-075": {
+    "series_id": "포스터:v2-075",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-076": {
+    "series_id": "포스터:v2-076",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-077": {
+    "series_id": "포스터:v2-077",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-078": {
+    "series_id": "포스터:v2-078",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-079": {
+    "series_id": "주최:서초",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-080": {
+    "series_id": "포스터:v2-080",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-081": {
+    "series_id": "주최:문경",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-082": {
+    "series_id": "포스터:v2-082",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-083": {
+    "series_id": "포스터:v2-083",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-084": {
+    "series_id": "주최:대전광역시중",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-085": {
+    "series_id": "포스터:v2-085",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-086": {
+    "series_id": "주최:용인",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-087": {
+    "series_id": "포스터:v2-087",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-088": {
+    "series_id": "포스터:v2-088",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-089": {
+    "series_id": "주최:포천",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-090": {
+    "series_id": "주최:용인",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-091": {
+    "series_id": "주최:동대문",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-092": {
+    "series_id": "주최:과천",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-093": {
+    "series_id": "포스터:v2-093",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-094": {
+    "series_id": "기관틀:국가유산청",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-095": {
+    "series_id": "포스터:v2-095",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-096": {
+    "series_id": "주최:강남",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-097": {
+    "series_id": "포스터:v2-097",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-098": {
+    "series_id": "포스터:v2-098",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-099": {
+    "series_id": "기관틀:국가유산청",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-100": {
+    "series_id": "포스터:v2-100",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-101": {
+    "series_id": "포스터:v2-101",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-102": {
+    "series_id": "포스터:v2-102",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-103": {
+    "series_id": "포스터:v2-103",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-104": {
+    "series_id": "포스터:v2-104",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-105": {
+    "series_id": "포스터:v2-105",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-106": {
+    "series_id": "포스터:v2-106",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-107": {
+    "series_id": "포스터:v2-107",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-108": {
+    "series_id": "포스터:v2-108",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-109": {
+    "series_id": "포스터:v2-109",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-110": {
+    "series_id": "포스터:v2-110",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-111": {
+    "series_id": "포스터:v2-111",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-112": {
+    "series_id": "주최:화순",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-113": {
+    "series_id": "포스터:v2-113",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-114": {
+    "series_id": "포스터:v2-114",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-115": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-116": {
+    "series_id": "주최:포항",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-117": {
+    "series_id": "포스터:v2-117",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-118": {
+    "series_id": "포스터:v2-118",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-119": {
+    "series_id": "주최:대전광역시중",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-120": {
+    "series_id": "주최:서초",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-121": {
+    "series_id": "포스터:v2-121",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-122": {
+    "series_id": "주최:칠곡문화관광재단",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-123": {
+    "series_id": "포스터:v2-123",
+    "split": "dev",
+    "fold": 3
+   },
+   "v2-124": {
+    "series_id": "포스터:v2-124",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-125": {
+    "series_id": "포스터:v2-125",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-126": {
+    "series_id": "포스터:v2-126",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-127": {
+    "series_id": "포스터:v2-127",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-128": {
+    "series_id": "포스터:v2-128",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-129": {
+    "series_id": "주최:금정",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-130": {
+    "series_id": "포스터:v2-130",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-131": {
+    "series_id": "포스터:v2-131",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-132": {
+    "series_id": "포스터:v2-132",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-133": {
+    "series_id": "포스터:v2-133",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-134": {
+    "series_id": "주최:청주",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-135": {
+    "series_id": "포스터:v2-135",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-136": {
+    "series_id": "주최:연천",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-137": {
+    "series_id": "포스터:v2-137",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-138": {
+    "series_id": "포스터:v2-138",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-139": {
+    "series_id": "포스터:v2-139",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-140": {
+    "series_id": "포스터:v2-140",
+    "split": "dev",
+    "fold": 3
+   },
+   "v2-141": {
+    "series_id": "포스터:v2-141",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-142": {
+    "series_id": "주최:화순",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-143": {
+    "series_id": "포스터:v2-143",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-144": {
+    "series_id": "기관틀:국가유산청",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-145": {
+    "series_id": "포스터:v2-145",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-146": {
+    "series_id": "주최:포천",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-147": {
+    "series_id": "포스터:v2-147",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-148": {
+    "series_id": "포스터:v2-148",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-149": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-150": {
+    "series_id": "포스터:v2-150",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-151": {
+    "series_id": "포스터:v2-151",
+    "split": "dev",
+    "fold": 3
+   },
+   "v2-152": {
+    "series_id": "주최:시흥",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-153": {
+    "series_id": "문구:야외도서관",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-154": {
+    "series_id": "주최:구미",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-155": {
+    "series_id": "포스터:v2-155",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-156": {
+    "series_id": "포스터:v2-156",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-157": {
+    "series_id": "포스터:v2-157",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-158": {
+    "series_id": "포스터:v2-158",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-159": {
+    "series_id": "포스터:v2-159",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-160": {
+    "series_id": "포스터:v2-160",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-161": {
+    "series_id": "포스터:v2-161",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-162": {
+    "series_id": "주최:동대문",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-163": {
+    "series_id": "주최:칠곡문화관광재단",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-164": {
+    "series_id": "주최:강릉",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-165": {
+    "series_id": "포스터:v2-165",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-166": {
+    "series_id": "포스터:v2-166",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-167": {
+    "series_id": "주최:창원",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-168": {
+    "series_id": "포스터:v2-168",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-169": {
+    "series_id": "주최:연천",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-170": {
+    "series_id": "포스터:v2-170",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-171": {
+    "series_id": "포스터:v2-171",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-172": {
+    "series_id": "기관틀:국가유산청",
+    "split": "dev",
+    "fold": 0
+   },
+   "v2-173": {
+    "series_id": "포스터:v2-173",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-174": {
+    "series_id": "포스터:v2-174",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-175": {
+    "series_id": "주최:원주",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-176": {
+    "series_id": "포스터:v2-176",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-177": {
+    "series_id": "포스터:v2-177",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-178": {
+    "series_id": "포스터:v2-178",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-179": {
+    "series_id": "주최:익산",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-180": {
+    "series_id": "주최:함평",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-181": {
+    "series_id": "포스터:v2-181",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-182": {
+    "series_id": "포스터:v2-182",
+    "split": "test",
+    "fold": 2
+   },
+   "v2-183": {
+    "series_id": "주최:제주",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-184": {
+    "series_id": "포스터:v2-184",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-185": {
+    "series_id": "포스터:v2-185",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-186": {
+    "series_id": "포스터:v2-186",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-187": {
+    "series_id": "포스터:v2-187",
+    "split": "dev",
+    "fold": 2
+   },
+   "v2-188": {
+    "series_id": "포스터:v2-188",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-189": {
+    "series_id": "주최:예천",
+    "split": "test",
+    "fold": 1
+   },
+   "v2-190": {
+    "series_id": "기관틀:국가유산청",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-191": {
+    "series_id": "포스터:v2-191",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-192": {
+    "series_id": "포스터:v2-192",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-193": {
+    "series_id": "포스터:v2-193",
+    "split": "test",
+    "fold": 0
+   },
+   "v2-194": {
+    "series_id": "주최:창원",
+    "split": "test",
+    "fold": 3
+   },
+   "v2-195": {
+    "series_id": "주최:구미",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-196": {
+    "series_id": "포스터:v2-196",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-197": {
+    "series_id": "포스터:v2-197",
+    "split": "test",
+    "fold": 4
+   },
+   "v2-198": {
+    "series_id": "포스터:v2-198",
+    "split": "dev",
+    "fold": 4
+   },
+   "v2-199": {
+    "series_id": "포스터:v2-199",
+    "split": "dev",
+    "fold": 1
+   },
+   "v2-200": {
+    "series_id": "포스터:v2-200",
+    "split": "test",
+    "fold": 3
+   }
+  }
+ },
+ "sources": [
+  {
+   "source": "easyocr-rgb_2x",
+   "engine": "easyocr",
+   "variant": "rgb_2x",
+   "file": "easyocr-rgb_2x.json",
+   "counts": {
+    "records": 1409,
+    "A_clean": 1037,
+    "usable": 1037,
+    "missing_confidence": 0,
+    "by_split": {
+     "dev": {
+      "lines": 223,
+      "correct": 144,
+      "posters": 57
+     },
+     "test": {
+      "lines": 566,
+      "correct": 352,
+      "posters": 136
+     },
+     "reserve": {
+      "lines": 248,
+      "correct": 167,
+      "posters": 51
+     }
+    },
+    "by_scope": {
+     "all": {
+      "lines": 1037,
+      "correct": 663
+     },
+     "human_checked": {
+      "lines": 547,
+      "correct": 355
+     },
+     "ai_assisted": {
+      "lines": 490,
+      "correct": 308
+     }
+    }
+   },
+   "temperature_T": 1.310055,
+   "platt": {
+    "a": 0.841675,
+    "b": -0.27232
+   },
+   "isotonic_blocks": 19,
+   "line_accuracy": {
+    "all": {
+     "dev+test": {
+      "lines": 789,
+      "exact_rate": 0.6286,
+      "cer_micro": 0.0789
+     },
+     "reserve": {
+      "lines": 248,
+      "exact_rate": 0.6734,
+      "cer_micro": 0.0714
+     }
+    },
+    "human_checked": {
+     "dev+test": {
+      "lines": 409,
+      "exact_rate": 0.6308,
+      "cer_micro": 0.0763
+     },
+     "reserve": {
+      "lines": 138,
+      "exact_rate": 0.7029,
+      "cer_micro": 0.0607
+     }
+    },
+    "ai_assisted": {
+     "dev+test": {
+      "lines": 380,
+      "exact_rate": 0.6263,
+      "cer_micro": 0.0821
+     },
+     "reserve": {
+      "lines": 110,
+      "exact_rate": 0.6364,
+      "cer_micro": 0.0864
+     }
+    }
+   },
+   "scopes": {
+    "all": {
+     "oof": {
+      "n": 789,
+      "errors": 293,
+      "accuracy": 0.6286,
+      "methods": {
+       "raw": {
+        "ece": 0.0589,
+        "brier": 0.1626,
+        "auroc": 0.8347,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.128,
+          "transfer": 0.1115,
+          "transfer_risk": 0.0114,
+          "expected": 0.2129,
+          "expected_risk": 0.0417
+         },
+         "0.02": {
+          "oracle": 0.1622,
+          "transfer": 0.1686,
+          "transfer_risk": 0.0301,
+          "expected": 0.2712,
+          "expected_risk": 0.0421
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0503,
+        "brier": 0.1634,
+        "auroc": 0.833,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1001,
+          "transfer": 0.1115,
+          "transfer_risk": 0.0114,
+          "expected": 0.1546,
+          "expected_risk": 0.0164
+         },
+         "0.02": {
+          "oracle": 0.1584,
+          "transfer": 0.1686,
+          "transfer_risk": 0.0301,
+          "expected": 0.2003,
+          "expected_risk": 0.0443
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.039,
+        "brier": 0.1662,
+        "auroc": 0.8186,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0,
+          "transfer": 0.1115,
+          "transfer_risk": 0.0114,
+          "expected": 0.1293,
+          "expected_risk": 0.0196
+         },
+         "0.02": {
+          "oracle": 0.1293,
+          "transfer": 0.1546,
+          "transfer_risk": 0.0164,
+          "expected": 0.1926,
+          "expected_risk": 0.0461
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0359,
+        "brier": 0.1613,
+        "auroc": 0.8325,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1001,
+          "transfer": 0.1115,
+          "transfer_risk": 0.0114,
+          "expected": 0.1622,
+          "expected_risk": 0.0234
+         },
+         "0.02": {
+          "oracle": 0.1584,
+          "transfer": 0.1686,
+          "transfer_risk": 0.0301,
+          "expected": 0.2053,
+          "expected_risk": 0.0432
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 248,
+      "errors": 81,
+      "accuracy": 0.6734,
+      "methods": {
+       "raw": {
+        "ece": 0.0674,
+        "brier": 0.1429,
+        "auroc": 0.8546,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.125,
+          "transfer": 0.1331,
+          "transfer_risk": 0.0303,
+          "expected": 0.2137,
+          "expected_risk": 0.0189
+         },
+         "0.02": {
+          "oracle": 0.2177,
+          "transfer": 0.1613,
+          "transfer_risk": 0.025,
+          "expected": 0.2581,
+          "expected_risk": 0.0625
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0737,
+        "brier": 0.1463,
+        "auroc": 0.8546,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.125,
+          "transfer": 0.1331,
+          "transfer_risk": 0.0303,
+          "expected": 0.1532,
+          "expected_risk": 0.0263
+         },
+         "0.02": {
+          "oracle": 0.2177,
+          "transfer": 0.1613,
+          "transfer_risk": 0.025,
+          "expected": 0.1976,
+          "expected_risk": 0.0204
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0715,
+        "brier": 0.1422,
+        "auroc": 0.8515,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1129,
+          "transfer": 0.1129,
+          "transfer_risk": 0.0,
+          "expected": 0.1129,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.1129,
+          "transfer": 0.1613,
+          "transfer_risk": 0.025,
+          "expected": 0.1613,
+          "expected_risk": 0.025
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0685,
+        "brier": 0.1456,
+        "auroc": 0.8546,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.125,
+          "transfer": 0.1331,
+          "transfer_risk": 0.0303,
+          "expected": 0.1613,
+          "expected_risk": 0.025
+         },
+         "0.02": {
+          "oracle": 0.2177,
+          "transfer": 0.1613,
+          "transfer_risk": 0.025,
+          "expected": 0.2016,
+          "expected_risk": 0.02
+         }
+        }
+       }
+      }
+     }
+    },
+    "human_checked": {
+     "oof": {
+      "n": 409,
+      "errors": 151,
+      "accuracy": 0.6308,
+      "methods": {
+       "raw": {
+        "ece": 0.0654,
+        "brier": 0.1604,
+        "auroc": 0.8346,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0929,
+          "transfer": 0.0954,
+          "transfer_risk": 0.0256,
+          "expected": 0.1956,
+          "expected_risk": 0.0625
+         },
+         "0.02": {
+          "oracle": 0.0929,
+          "transfer": 0.1565,
+          "transfer_risk": 0.0469,
+          "expected": 0.2567,
+          "expected_risk": 0.0571
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.077,
+        "brier": 0.1621,
+        "auroc": 0.8332,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0831,
+          "transfer": 0.0954,
+          "transfer_risk": 0.0256,
+          "expected": 0.1345,
+          "expected_risk": 0.0364
+         },
+         "0.02": {
+          "oracle": 0.0831,
+          "transfer": 0.1565,
+          "transfer_risk": 0.0469,
+          "expected": 0.1834,
+          "expected_risk": 0.0667
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0456,
+        "brier": 0.1615,
+        "auroc": 0.8207,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0,
+          "transfer": 0.0954,
+          "transfer_risk": 0.0256,
+          "expected": 0.1174,
+          "expected_risk": 0.0417
+         },
+         "0.02": {
+          "oracle": 0.0,
+          "transfer": 0.1418,
+          "transfer_risk": 0.0345,
+          "expected": 0.1785,
+          "expected_risk": 0.0685
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0692,
+        "brier": 0.1598,
+        "auroc": 0.8334,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0831,
+          "transfer": 0.0954,
+          "transfer_risk": 0.0256,
+          "expected": 0.1443,
+          "expected_risk": 0.0339
+         },
+         "0.02": {
+          "oracle": 0.0831,
+          "transfer": 0.1565,
+          "transfer_risk": 0.0469,
+          "expected": 0.1883,
+          "expected_risk": 0.0649
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 138,
+      "errors": 41,
+      "accuracy": 0.7029,
+      "methods": {
+       "raw": {
+        "ece": 0.0801,
+        "brier": 0.1471,
+        "auroc": 0.8308,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1377,
+          "transfer": 0.1449,
+          "transfer_risk": 0.05,
+          "expected": 0.2101,
+          "expected_risk": 0.0345
+         },
+         "0.02": {
+          "oracle": 0.1377,
+          "transfer": 0.1739,
+          "transfer_risk": 0.0417,
+          "expected": 0.2536,
+          "expected_risk": 0.0571
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0787,
+        "brier": 0.1504,
+        "auroc": 0.8308,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1377,
+          "transfer": 0.1449,
+          "transfer_risk": 0.05,
+          "expected": 0.1667,
+          "expected_risk": 0.0435
+         },
+         "0.02": {
+          "oracle": 0.1377,
+          "transfer": 0.1739,
+          "transfer_risk": 0.0417,
+          "expected": 0.2029,
+          "expected_risk": 0.0357
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0921,
+        "brier": 0.1459,
+        "auroc": 0.8317,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1232,
+          "transfer": 0.1232,
+          "transfer_risk": 0.0,
+          "expected": 0.1232,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.1232,
+          "transfer": 0.1739,
+          "transfer_risk": 0.0417,
+          "expected": 0.1739,
+          "expected_risk": 0.0417
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.1126,
+        "brier": 0.1508,
+        "auroc": 0.8308,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1377,
+          "transfer": 0.1449,
+          "transfer_risk": 0.05,
+          "expected": 0.1739,
+          "expected_risk": 0.0417
+         },
+         "0.02": {
+          "oracle": 0.1377,
+          "transfer": 0.1739,
+          "transfer_risk": 0.0417,
+          "expected": 0.2029,
+          "expected_risk": 0.0357
+         }
+        }
+       }
+      }
+     }
+    },
+    "ai_assisted": {
+     "oof": {
+      "n": 380,
+      "errors": 142,
+      "accuracy": 0.6263,
+      "methods": {
+       "raw": {
+        "ece": 0.065,
+        "brier": 0.1649,
+        "auroc": 0.8322,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1789,
+          "transfer": 0.1289,
+          "transfer_risk": 0.0,
+          "expected": 0.2316,
+          "expected_risk": 0.0227
+         },
+         "0.02": {
+          "oracle": 0.1895,
+          "transfer": 0.1816,
+          "transfer_risk": 0.0145,
+          "expected": 0.2816,
+          "expected_risk": 0.0561
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0478,
+        "brier": 0.1647,
+        "auroc": 0.8307,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1711,
+          "transfer": 0.1289,
+          "transfer_risk": 0.0,
+          "expected": 0.1737,
+          "expected_risk": 0.0152
+         },
+         "0.02": {
+          "oracle": 0.1842,
+          "transfer": 0.1816,
+          "transfer_risk": 0.0145,
+          "expected": 0.2184,
+          "expected_risk": 0.0241
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0639,
+        "brier": 0.1714,
+        "auroc": 0.814,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1421,
+          "transfer": 0.1289,
+          "transfer_risk": 0.0,
+          "expected": 0.1421,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.1421,
+          "transfer": 0.1684,
+          "transfer_risk": 0.0,
+          "expected": 0.2079,
+          "expected_risk": 0.0253
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0443,
+        "brier": 0.1629,
+        "auroc": 0.8294,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1737,
+          "transfer": 0.1289,
+          "transfer_risk": 0.0,
+          "expected": 0.1789,
+          "expected_risk": 0.0147
+         },
+         "0.02": {
+          "oracle": 0.1842,
+          "transfer": 0.1816,
+          "transfer_risk": 0.0145,
+          "expected": 0.2211,
+          "expected_risk": 0.0238
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 110,
+      "errors": 40,
+      "accuracy": 0.6364,
+      "methods": {
+       "raw": {
+        "ece": 0.0881,
+        "brier": 0.1377,
+        "auroc": 0.8786,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2273,
+          "transfer": 0.1182,
+          "transfer_risk": 0.0,
+          "expected": 0.2,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.2273,
+          "transfer": 0.1455,
+          "transfer_risk": 0.0,
+          "expected": 0.2545,
+          "expected_risk": 0.0357
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0999,
+        "brier": 0.1412,
+        "auroc": 0.8786,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2273,
+          "transfer": 0.1182,
+          "transfer_risk": 0.0,
+          "expected": 0.1364,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.2273,
+          "transfer": 0.1455,
+          "transfer_risk": 0.0,
+          "expected": 0.1818,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0925,
+        "brier": 0.1376,
+        "auroc": 0.872,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1455,
+          "transfer": 0.1,
+          "transfer_risk": 0.0,
+          "expected": 0.1,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.1455,
+          "transfer": 0.1455,
+          "transfer_risk": 0.0,
+          "expected": 0.1455,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0997,
+        "brier": 0.1391,
+        "auroc": 0.8786,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2273,
+          "transfer": 0.1182,
+          "transfer_risk": 0.0,
+          "expected": 0.1455,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.2273,
+          "transfer": 0.1455,
+          "transfer_risk": 0.0,
+          "expected": 0.1818,
+          "expected_risk": 0.0
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "source": "hybrid-rgb_2x",
+   "engine": "hybrid",
+   "variant": "rgb_2x",
+   "file": "hybrid-rgb_2x.json",
+   "counts": {
+    "records": 1741,
+    "A_clean": 1306,
+    "usable": 1306,
+    "missing_confidence": 0,
+    "by_split": {
+     "dev": {
+      "lines": 290,
+      "correct": 228,
+      "posters": 58
+     },
+     "test": {
+      "lines": 707,
+      "correct": 545,
+      "posters": 137
+     },
+     "reserve": {
+      "lines": 309,
+      "correct": 255,
+      "posters": 51
+     }
+    },
+    "by_scope": {
+     "all": {
+      "lines": 1306,
+      "correct": 1028
+     },
+     "human_checked": {
+      "lines": 631,
+      "correct": 529
+     },
+     "ai_assisted": {
+      "lines": 675,
+      "correct": 499
+     }
+    }
+   },
+   "temperature_T": 1.637534,
+   "platt": {
+    "a": 0.885086,
+    "b": -0.742447
+   },
+   "isotonic_blocks": 18,
+   "line_accuracy": {
+    "all": {
+     "dev+test": {
+      "lines": 997,
+      "exact_rate": 0.7753,
+      "cer_micro": 0.0435
+     },
+     "reserve": {
+      "lines": 309,
+      "exact_rate": 0.8252,
+      "cer_micro": 0.0382
+     }
+    },
+    "human_checked": {
+     "dev+test": {
+      "lines": 477,
+      "exact_rate": 0.826,
+      "cer_micro": 0.0333
+     },
+     "reserve": {
+      "lines": 154,
+      "exact_rate": 0.8766,
+      "cer_micro": 0.0264
+     }
+    },
+    "ai_assisted": {
+     "dev+test": {
+      "lines": 520,
+      "exact_rate": 0.7288,
+      "cer_micro": 0.0533
+     },
+     "reserve": {
+      "lines": 155,
+      "exact_rate": 0.7742,
+      "cer_micro": 0.0508
+     }
+    }
+   },
+   "scopes": {
+    "all": {
+     "oof": {
+      "n": 997,
+      "errors": 224,
+      "accuracy": 0.7753,
+      "methods": {
+       "raw": {
+        "ece": 0.1043,
+        "brier": 0.1513,
+        "auroc": 0.8224,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2447,
+          "transfer": 0.2247,
+          "transfer_risk": 0.0134,
+          "expected": 0.3129,
+          "expected_risk": 0.0224
+         },
+         "0.02": {
+          "oracle": 0.3109,
+          "transfer": 0.332,
+          "transfer_risk": 0.0272,
+          "expected": 0.4473,
+          "expected_risk": 0.0426
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0553,
+        "brier": 0.139,
+        "auroc": 0.8223,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2427,
+          "transfer": 0.2247,
+          "transfer_risk": 0.0134,
+          "expected": 0.0943,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3159,
+          "transfer": 0.332,
+          "transfer_risk": 0.0272,
+          "expected": 0.1585,
+          "expected_risk": 0.0127
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.023,
+        "brier": 0.1351,
+        "auroc": 0.8145,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1234,
+          "transfer": 0.2177,
+          "transfer_risk": 0.0138,
+          "expected": 0.2588,
+          "expected_risk": 0.0194
+         },
+         "0.02": {
+          "oracle": 0.2588,
+          "transfer": 0.326,
+          "transfer_risk": 0.0277,
+          "expected": 0.344,
+          "expected_risk": 0.0321
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0536,
+        "brier": 0.1353,
+        "auroc": 0.8217,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2347,
+          "transfer": 0.2247,
+          "transfer_risk": 0.0134,
+          "expected": 0.1705,
+          "expected_risk": 0.0118
+         },
+         "0.02": {
+          "oracle": 0.3099,
+          "transfer": 0.332,
+          "transfer_risk": 0.0272,
+          "expected": 0.2467,
+          "expected_risk": 0.0122
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 309,
+      "errors": 54,
+      "accuracy": 0.8252,
+      "methods": {
+       "raw": {
+        "ece": 0.0676,
+        "brier": 0.1184,
+        "auroc": 0.8046,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3592,
+          "transfer": 0.2427,
+          "transfer_risk": 0.0133,
+          "expected": 0.3139,
+          "expected_risk": 0.0103
+         },
+         "0.02": {
+          "oracle": 0.4919,
+          "transfer": 0.3074,
+          "transfer_risk": 0.0105,
+          "expected": 0.4401,
+          "expected_risk": 0.0221
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0862,
+        "brier": 0.116,
+        "auroc": 0.8046,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3592,
+          "transfer": 0.2427,
+          "transfer_risk": 0.0133,
+          "expected": 0.0906,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4919,
+          "transfer": 0.3074,
+          "transfer_risk": 0.0105,
+          "expected": 0.1683,
+          "expected_risk": 0.0192
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0775,
+        "brier": 0.1199,
+        "auroc": 0.8044,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3592,
+          "transfer": 0.2427,
+          "transfer_risk": 0.0133,
+          "expected": 0.2427,
+          "expected_risk": 0.0133
+         },
+         "0.02": {
+          "oracle": 0.3883,
+          "transfer": 0.3042,
+          "transfer_risk": 0.0106,
+          "expected": 0.3042,
+          "expected_risk": 0.0106
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0819,
+        "brier": 0.1206,
+        "auroc": 0.8046,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3592,
+          "transfer": 0.2427,
+          "transfer_risk": 0.0133,
+          "expected": 0.1812,
+          "expected_risk": 0.0179
+         },
+         "0.02": {
+          "oracle": 0.4919,
+          "transfer": 0.3074,
+          "transfer_risk": 0.0105,
+          "expected": 0.2524,
+          "expected_risk": 0.0128
+         }
+        }
+       }
+      }
+     }
+    },
+    "human_checked": {
+     "oof": {
+      "n": 477,
+      "errors": 83,
+      "accuracy": 0.826,
+      "methods": {
+       "raw": {
+        "ece": 0.0838,
+        "brier": 0.1257,
+        "auroc": 0.823,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2621,
+          "transfer": 0.2285,
+          "transfer_risk": 0.0183,
+          "expected": 0.327,
+          "expected_risk": 0.0128
+         },
+         "0.02": {
+          "oracle": 0.3396,
+          "transfer": 0.3669,
+          "transfer_risk": 0.0229,
+          "expected": 0.4864,
+          "expected_risk": 0.0302
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0573,
+        "brier": 0.117,
+        "auroc": 0.8237,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2579,
+          "transfer": 0.2285,
+          "transfer_risk": 0.0183,
+          "expected": 0.0818,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3501,
+          "transfer": 0.3669,
+          "transfer_risk": 0.0229,
+          "expected": 0.1426,
+          "expected_risk": 0.0147
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0245,
+        "brier": 0.1134,
+        "auroc": 0.8162,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1132,
+          "transfer": 0.2243,
+          "transfer_risk": 0.0187,
+          "expected": 0.2788,
+          "expected_risk": 0.015
+         },
+         "0.02": {
+          "oracle": 0.2788,
+          "transfer": 0.3543,
+          "transfer_risk": 0.0237,
+          "expected": 0.3564,
+          "expected_risk": 0.0235
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0625,
+        "brier": 0.1141,
+        "auroc": 0.8235,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2537,
+          "transfer": 0.2285,
+          "transfer_risk": 0.0183,
+          "expected": 0.1572,
+          "expected_risk": 0.0133
+         },
+         "0.02": {
+          "oracle": 0.3375,
+          "transfer": 0.3669,
+          "transfer_risk": 0.0229,
+          "expected": 0.2474,
+          "expected_risk": 0.0085
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 154,
+      "errors": 19,
+      "accuracy": 0.8766,
+      "methods": {
+       "raw": {
+        "ece": 0.0547,
+        "brier": 0.0928,
+        "auroc": 0.8168,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1623,
+          "transfer": 0.2987,
+          "transfer_risk": 0.0217,
+          "expected": 0.3701,
+          "expected_risk": 0.0175
+         },
+         "0.02": {
+          "oracle": 0.5714,
+          "transfer": 0.3571,
+          "transfer_risk": 0.0182,
+          "expected": 0.5195,
+          "expected_risk": 0.0125
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0781,
+        "brier": 0.0925,
+        "auroc": 0.8168,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1623,
+          "transfer": 0.2987,
+          "transfer_risk": 0.0217,
+          "expected": 0.0974,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5714,
+          "transfer": 0.3571,
+          "transfer_risk": 0.0182,
+          "expected": 0.1753,
+          "expected_risk": 0.037
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0748,
+        "brier": 0.0958,
+        "auroc": 0.8135,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1364,
+          "transfer": 0.2987,
+          "transfer_risk": 0.0217,
+          "expected": 0.2987,
+          "expected_risk": 0.0217
+         },
+         "0.02": {
+          "oracle": 0.461,
+          "transfer": 0.3506,
+          "transfer_risk": 0.0185,
+          "expected": 0.3506,
+          "expected_risk": 0.0185
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0803,
+        "brier": 0.095,
+        "auroc": 0.8168,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1623,
+          "transfer": 0.2987,
+          "transfer_risk": 0.0217,
+          "expected": 0.1883,
+          "expected_risk": 0.0345
+         },
+         "0.02": {
+          "oracle": 0.5714,
+          "transfer": 0.3571,
+          "transfer_risk": 0.0182,
+          "expected": 0.2857,
+          "expected_risk": 0.0227
+         }
+        }
+       }
+      }
+     }
+    },
+    "ai_assisted": {
+     "oof": {
+      "n": 520,
+      "errors": 141,
+      "accuracy": 0.7288,
+      "methods": {
+       "raw": {
+        "ece": 0.1257,
+        "brier": 0.1748,
+        "auroc": 0.8109,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2288,
+          "transfer": 0.2212,
+          "transfer_risk": 0.0087,
+          "expected": 0.2962,
+          "expected_risk": 0.0195
+         },
+         "0.02": {
+          "oracle": 0.325,
+          "transfer": 0.3,
+          "transfer_risk": 0.0321,
+          "expected": 0.4096,
+          "expected_risk": 0.0563
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0604,
+        "brier": 0.1592,
+        "auroc": 0.8104,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2327,
+          "transfer": 0.2212,
+          "transfer_risk": 0.0087,
+          "expected": 0.1058,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3212,
+          "transfer": 0.3,
+          "transfer_risk": 0.0321,
+          "expected": 0.1692,
+          "expected_risk": 0.0114
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0457,
+        "brier": 0.1551,
+        "auroc": 0.8,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2135,
+          "transfer": 0.2115,
+          "transfer_risk": 0.0091,
+          "expected": 0.2404,
+          "expected_risk": 0.024
+         },
+         "0.02": {
+          "oracle": 0.2135,
+          "transfer": 0.3,
+          "transfer_risk": 0.0321,
+          "expected": 0.3135,
+          "expected_risk": 0.0307
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0527,
+        "brier": 0.1548,
+        "auroc": 0.8094,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2365,
+          "transfer": 0.2212,
+          "transfer_risk": 0.0087,
+          "expected": 0.1808,
+          "expected_risk": 0.0106
+         },
+         "0.02": {
+          "oracle": 0.3115,
+          "transfer": 0.3,
+          "transfer_risk": 0.0321,
+          "expected": 0.2423,
+          "expected_risk": 0.0159
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 155,
+      "errors": 35,
+      "accuracy": 0.7742,
+      "methods": {
+       "raw": {
+        "ece": 0.0855,
+        "brier": 0.1438,
+        "auroc": 0.7767,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2903,
+          "transfer": 0.1871,
+          "transfer_risk": 0.0,
+          "expected": 0.2581,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3355,
+          "transfer": 0.2581,
+          "transfer_risk": 0.0,
+          "expected": 0.3613,
+          "expected_risk": 0.0357
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0999,
+        "brier": 0.1394,
+        "auroc": 0.7767,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2903,
+          "transfer": 0.1871,
+          "transfer_risk": 0.0,
+          "expected": 0.0774,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3355,
+          "transfer": 0.2581,
+          "transfer_risk": 0.0,
+          "expected": 0.1613,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0954,
+        "brier": 0.1439,
+        "auroc": 0.7776,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2903,
+          "transfer": 0.1871,
+          "transfer_risk": 0.0,
+          "expected": 0.1871,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.2903,
+          "transfer": 0.2581,
+          "transfer_risk": 0.0,
+          "expected": 0.2581,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.1039,
+        "brier": 0.1461,
+        "auroc": 0.7767,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2903,
+          "transfer": 0.1871,
+          "transfer_risk": 0.0,
+          "expected": 0.1677,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3355,
+          "transfer": 0.2581,
+          "transfer_risk": 0.0,
+          "expected": 0.2129,
+          "expected_risk": 0.0
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "source": "paddleocr-rgb_1x",
+   "engine": "paddleocr",
+   "variant": "rgb_1x",
+   "file": "paddleocr-rgb_1x.json",
+   "counts": {
+    "records": 2161,
+    "A_clean": 1682,
+    "usable": 1682,
+    "missing_confidence": 0,
+    "by_split": {
+     "dev": {
+      "lines": 365,
+      "correct": 299,
+      "posters": 60
+     },
+     "test": {
+      "lines": 926,
+      "correct": 743,
+      "posters": 137
+     },
+     "reserve": {
+      "lines": 391,
+      "correct": 332,
+      "posters": 52
+     }
+    },
+    "by_scope": {
+     "all": {
+      "lines": 1682,
+      "correct": 1374
+     },
+     "human_checked": {
+      "lines": 740,
+      "correct": 646
+     },
+     "ai_assisted": {
+      "lines": 942,
+      "correct": 728
+     }
+    }
+   },
+   "temperature_T": 1.949395,
+   "platt": {
+    "a": 1.144338,
+    "b": -1.95404
+   },
+   "isotonic_blocks": 16,
+   "line_accuracy": {
+    "all": {
+     "dev+test": {
+      "lines": 1291,
+      "exact_rate": 0.8071,
+      "cer_micro": 0.0372
+     },
+     "reserve": {
+      "lines": 391,
+      "exact_rate": 0.8491,
+      "cer_micro": 0.0318
+     }
+    },
+    "human_checked": {
+     "dev+test": {
+      "lines": 566,
+      "exact_rate": 0.8693,
+      "cer_micro": 0.0244
+     },
+     "reserve": {
+      "lines": 174,
+      "exact_rate": 0.8851,
+      "cer_micro": 0.0199
+     }
+    },
+    "ai_assisted": {
+     "dev+test": {
+      "lines": 725,
+      "exact_rate": 0.7586,
+      "cer_micro": 0.0471
+     },
+     "reserve": {
+      "lines": 217,
+      "exact_rate": 0.8203,
+      "cer_micro": 0.0424
+     }
+    }
+   },
+   "scopes": {
+    "all": {
+     "oof": {
+      "n": 1291,
+      "errors": 249,
+      "accuracy": 0.8071,
+      "methods": {
+       "raw": {
+        "ece": 0.1345,
+        "brier": 0.1517,
+        "auroc": 0.8525,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1696,
+          "transfer": 0.2471,
+          "transfer_risk": 0.0188,
+          "expected": 0.5105,
+          "expected_risk": 0.0288
+         },
+         "0.02": {
+          "oracle": 0.4307,
+          "transfer": 0.4284,
+          "transfer_risk": 0.0217,
+          "expected": 0.6832,
+          "expected_risk": 0.0737
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.076,
+        "brier": 0.1281,
+        "auroc": 0.8512,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1735,
+          "transfer": 0.2471,
+          "transfer_risk": 0.0188,
+          "expected": 0.024,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4105,
+          "transfer": 0.4284,
+          "transfer_risk": 0.0217,
+          "expected": 0.1139,
+          "expected_risk": 0.0068
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0131,
+        "brier": 0.1162,
+        "auroc": 0.8408,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0875,
+          "transfer": 0.2401,
+          "transfer_risk": 0.0194,
+          "expected": 0.268,
+          "expected_risk": 0.0173
+         },
+         "0.02": {
+          "oracle": 0.4136,
+          "transfer": 0.4191,
+          "transfer_risk": 0.0185,
+          "expected": 0.4539,
+          "expected_risk": 0.0273
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0231,
+        "brier": 0.1156,
+        "auroc": 0.8506,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1658,
+          "transfer": 0.2471,
+          "transfer_risk": 0.0188,
+          "expected": 0.3083,
+          "expected_risk": 0.0126
+         },
+         "0.02": {
+          "oracle": 0.4105,
+          "transfer": 0.4284,
+          "transfer_risk": 0.0217,
+          "expected": 0.4028,
+          "expected_risk": 0.0173
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 391,
+      "errors": 59,
+      "accuracy": 0.8491,
+      "methods": {
+       "raw": {
+        "ece": 0.0977,
+        "brier": 0.1234,
+        "auroc": 0.8211,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2967,
+          "transfer": 0.1688,
+          "transfer_risk": 0.0,
+          "expected": 0.555,
+          "expected_risk": 0.023
+         },
+         "0.02": {
+          "oracle": 0.5243,
+          "transfer": 0.4731,
+          "transfer_risk": 0.0216,
+          "expected": 0.7289,
+          "expected_risk": 0.0737
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0507,
+        "brier": 0.1089,
+        "auroc": 0.8211,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2967,
+          "transfer": 0.1688,
+          "transfer_risk": 0.0,
+          "expected": 0.0256,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5243,
+          "transfer": 0.4731,
+          "transfer_risk": 0.0216,
+          "expected": 0.1074,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0385,
+        "brier": 0.1113,
+        "auroc": 0.8234,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1637,
+          "transfer": 0.1611,
+          "transfer_risk": 0.0,
+          "expected": 0.1637,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4578,
+          "transfer": 0.4578,
+          "transfer_risk": 0.0112,
+          "expected": 0.4578,
+          "expected_risk": 0.0112
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0277,
+        "brier": 0.1094,
+        "auroc": 0.8211,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2967,
+          "transfer": 0.1688,
+          "transfer_risk": 0.0,
+          "expected": 0.3376,
+          "expected_risk": 0.0152
+         },
+         "0.02": {
+          "oracle": 0.5243,
+          "transfer": 0.4731,
+          "transfer_risk": 0.0216,
+          "expected": 0.4476,
+          "expected_risk": 0.0114
+         }
+        }
+       }
+      }
+     }
+    },
+    "human_checked": {
+     "oof": {
+      "n": 566,
+      "errors": 74,
+      "accuracy": 0.8693,
+      "methods": {
+       "raw": {
+        "ece": 0.091,
+        "brier": 0.1096,
+        "auroc": 0.8446,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1979,
+          "transfer": 0.3004,
+          "transfer_risk": 0.0235,
+          "expected": 0.6166,
+          "expected_risk": 0.0258
+         },
+         "0.02": {
+          "oracle": 0.5,
+          "transfer": 0.5159,
+          "transfer_risk": 0.024,
+          "expected": 0.8074,
+          "expected_risk": 0.0678
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0575,
+        "brier": 0.0963,
+        "auroc": 0.8424,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2049,
+          "transfer": 0.3004,
+          "transfer_risk": 0.0235,
+          "expected": 0.0406,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4806,
+          "transfer": 0.5159,
+          "transfer_risk": 0.024,
+          "expected": 0.1502,
+          "expected_risk": 0.0118
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0122,
+        "brier": 0.0921,
+        "auroc": 0.8305,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0,
+          "transfer": 0.2915,
+          "transfer_risk": 0.0242,
+          "expected": 0.371,
+          "expected_risk": 0.019
+         },
+         "0.02": {
+          "oracle": 0.4982,
+          "transfer": 0.5071,
+          "transfer_risk": 0.0209,
+          "expected": 0.5406,
+          "expected_risk": 0.0229
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0248,
+        "brier": 0.091,
+        "auroc": 0.8425,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1926,
+          "transfer": 0.3004,
+          "transfer_risk": 0.0235,
+          "expected": 0.371,
+          "expected_risk": 0.0143
+         },
+         "0.02": {
+          "oracle": 0.4929,
+          "transfer": 0.5159,
+          "transfer_risk": 0.024,
+          "expected": 0.4876,
+          "expected_risk": 0.0181
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 174,
+      "errors": 20,
+      "accuracy": 0.8851,
+      "methods": {
+       "raw": {
+        "ece": 0.0829,
+        "brier": 0.1015,
+        "auroc": 0.8185,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3966,
+          "transfer": 0.2184,
+          "transfer_risk": 0.0,
+          "expected": 0.6839,
+          "expected_risk": 0.0504
+         },
+         "0.02": {
+          "oracle": 0.6379,
+          "transfer": 0.569,
+          "transfer_risk": 0.0202,
+          "expected": 0.8448,
+          "expected_risk": 0.068
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0553,
+        "brier": 0.0904,
+        "auroc": 0.8185,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3966,
+          "transfer": 0.2184,
+          "transfer_risk": 0.0,
+          "expected": 0.0575,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.6379,
+          "transfer": 0.569,
+          "transfer_risk": 0.0202,
+          "expected": 0.1667,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0724,
+        "brier": 0.1007,
+        "auroc": 0.8141,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2126,
+          "transfer": 0.2069,
+          "transfer_risk": 0.0,
+          "expected": 0.2126,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5575,
+          "transfer": 0.5575,
+          "transfer_risk": 0.0103,
+          "expected": 0.5575,
+          "expected_risk": 0.0103
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.046,
+        "brier": 0.0958,
+        "auroc": 0.8185,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3966,
+          "transfer": 0.2184,
+          "transfer_risk": 0.0,
+          "expected": 0.4425,
+          "expected_risk": 0.013
+         },
+         "0.02": {
+          "oracle": 0.6379,
+          "transfer": 0.569,
+          "transfer_risk": 0.0202,
+          "expected": 0.569,
+          "expected_risk": 0.0202
+         }
+        }
+       }
+      }
+     }
+    },
+    "ai_assisted": {
+     "oof": {
+      "n": 725,
+      "errors": 175,
+      "accuracy": 0.7586,
+      "methods": {
+       "raw": {
+        "ece": 0.1686,
+        "brier": 0.1846,
+        "auroc": 0.8429,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2938,
+          "transfer": 0.2055,
+          "transfer_risk": 0.0134,
+          "expected": 0.4262,
+          "expected_risk": 0.0356
+         },
+         "0.02": {
+          "oracle": 0.3641,
+          "transfer": 0.36,
+          "transfer_risk": 0.0192,
+          "expected": 0.5834,
+          "expected_risk": 0.0804
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0911,
+        "brier": 0.1529,
+        "auroc": 0.8423,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2786,
+          "transfer": 0.2055,
+          "transfer_risk": 0.0134,
+          "expected": 0.0097,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3586,
+          "transfer": 0.36,
+          "transfer_risk": 0.0192,
+          "expected": 0.0814,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.016,
+        "brier": 0.135,
+        "auroc": 0.8323,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0717,
+          "transfer": 0.2,
+          "transfer_risk": 0.0138,
+          "expected": 0.2179,
+          "expected_risk": 0.0127
+         },
+         "0.02": {
+          "oracle": 0.3462,
+          "transfer": 0.3503,
+          "transfer_risk": 0.0157,
+          "expected": 0.3641,
+          "expected_risk": 0.0265
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0286,
+        "brier": 0.1349,
+        "auroc": 0.8412,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.16,
+          "transfer": 0.2055,
+          "transfer_risk": 0.0134,
+          "expected": 0.2593,
+          "expected_risk": 0.0106
+         },
+         "0.02": {
+          "oracle": 0.36,
+          "transfer": 0.36,
+          "transfer_risk": 0.0192,
+          "expected": 0.3366,
+          "expected_risk": 0.0164
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 217,
+      "errors": 39,
+      "accuracy": 0.8203,
+      "methods": {
+       "raw": {
+        "ece": 0.1142,
+        "brier": 0.141,
+        "auroc": 0.8227,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1521,
+          "transfer": 0.129,
+          "transfer_risk": 0.0,
+          "expected": 0.4424,
+          "expected_risk": 0.0208
+         },
+         "0.02": {
+          "oracle": 0.4793,
+          "transfer": 0.3963,
+          "transfer_risk": 0.0233,
+          "expected": 0.6221,
+          "expected_risk": 0.0519
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0598,
+        "brier": 0.1237,
+        "auroc": 0.8227,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1521,
+          "transfer": 0.129,
+          "transfer_risk": 0.0,
+          "expected": 0.0,
+          "expected_risk": null
+         },
+         "0.02": {
+          "oracle": 0.4793,
+          "transfer": 0.3963,
+          "transfer_risk": 0.0233,
+          "expected": 0.0461,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0491,
+        "brier": 0.1197,
+        "auroc": 0.826,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1244,
+          "transfer": 0.1244,
+          "transfer_risk": 0.0,
+          "expected": 0.1244,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4608,
+          "transfer": 0.3779,
+          "transfer_risk": 0.0122,
+          "expected": 0.3779,
+          "expected_risk": 0.0122
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0404,
+        "brier": 0.1202,
+        "auroc": 0.8227,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1521,
+          "transfer": 0.129,
+          "transfer_risk": 0.0,
+          "expected": 0.2535,
+          "expected_risk": 0.0182
+         },
+         "0.02": {
+          "oracle": 0.4793,
+          "transfer": 0.3963,
+          "transfer_risk": 0.0233,
+          "expected": 0.3456,
+          "expected_risk": 0.0133
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "source": "paddleocr-rgb_2x",
+   "engine": "paddleocr",
+   "variant": "rgb_2x",
+   "file": "paddleocr-rgb_2x.json",
+   "counts": {
+    "records": 2325,
+    "A_clean": 1815,
+    "usable": 1815,
+    "missing_confidence": 0,
+    "by_split": {
+     "dev": {
+      "lines": 389,
+      "correct": 319,
+      "posters": 60
+     },
+     "test": {
+      "lines": 1019,
+      "correct": 837,
+      "posters": 139
+     },
+     "reserve": {
+      "lines": 407,
+      "correct": 349,
+      "posters": 52
+     }
+    },
+    "by_scope": {
+     "all": {
+      "lines": 1815,
+      "correct": 1505
+     },
+     "human_checked": {
+      "lines": 784,
+      "correct": 695
+     },
+     "ai_assisted": {
+      "lines": 1031,
+      "correct": 810
+     }
+    }
+   },
+   "temperature_T": 1.927788,
+   "platt": {
+    "a": 1.143207,
+    "b": -2.014381
+   },
+   "isotonic_blocks": 14,
+   "line_accuracy": {
+    "all": {
+     "dev+test": {
+      "lines": 1408,
+      "exact_rate": 0.821,
+      "cer_micro": 0.0358
+     },
+     "reserve": {
+      "lines": 407,
+      "exact_rate": 0.8575,
+      "cer_micro": 0.032
+     }
+    },
+    "human_checked": {
+     "dev+test": {
+      "lines": 602,
+      "exact_rate": 0.8854,
+      "cer_micro": 0.0216
+     },
+     "reserve": {
+      "lines": 182,
+      "exact_rate": 0.8901,
+      "cer_micro": 0.0208
+     }
+    },
+    "ai_assisted": {
+     "dev+test": {
+      "lines": 806,
+      "exact_rate": 0.773,
+      "cer_micro": 0.0467
+     },
+     "reserve": {
+      "lines": 225,
+      "exact_rate": 0.8311,
+      "cer_micro": 0.0414
+     }
+    }
+   },
+   "scopes": {
+    "all": {
+     "oof": {
+      "n": 1408,
+      "errors": 252,
+      "accuracy": 0.821,
+      "methods": {
+       "raw": {
+        "ece": 0.1273,
+        "brier": 0.1405,
+        "auroc": 0.8665,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3814,
+          "transfer": 0.3835,
+          "transfer_risk": 0.0093,
+          "expected": 0.5774,
+          "expected_risk": 0.032
+         },
+         "0.02": {
+          "oracle": 0.4304,
+          "transfer": 0.4389,
+          "transfer_risk": 0.0243,
+          "expected": 0.7528,
+          "expected_risk": 0.0774
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0662,
+        "brier": 0.1189,
+        "auroc": 0.8628,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3778,
+          "transfer": 0.3835,
+          "transfer_risk": 0.0093,
+          "expected": 0.0298,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4261,
+          "transfer": 0.4389,
+          "transfer_risk": 0.0243,
+          "expected": 0.1513,
+          "expected_risk": 0.0047
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0183,
+        "brier": 0.1069,
+        "auroc": 0.8529,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.38,
+          "transfer": 0.3786,
+          "transfer_risk": 0.0075,
+          "expected": 0.38,
+          "expected_risk": 0.0093
+         },
+         "0.02": {
+          "oracle": 0.4041,
+          "transfer": 0.4062,
+          "transfer_risk": 0.0192,
+          "expected": 0.4808,
+          "expected_risk": 0.0369
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0248,
+        "brier": 0.1058,
+        "auroc": 0.8639,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3871,
+          "transfer": 0.3835,
+          "transfer_risk": 0.0093,
+          "expected": 0.3693,
+          "expected_risk": 0.0096
+         },
+         "0.02": {
+          "oracle": 0.4183,
+          "transfer": 0.4389,
+          "transfer_risk": 0.0243,
+          "expected": 0.4652,
+          "expected_risk": 0.0229
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 407,
+      "errors": 58,
+      "accuracy": 0.8575,
+      "methods": {
+       "raw": {
+        "ece": 0.1008,
+        "brier": 0.1162,
+        "auroc": 0.8487,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.086,
+          "transfer": 0.4275,
+          "transfer_risk": 0.0115,
+          "expected": 0.6314,
+          "expected_risk": 0.0389
+         },
+         "0.02": {
+          "oracle": 0.5184,
+          "transfer": 0.4693,
+          "transfer_risk": 0.0157,
+          "expected": 0.8108,
+          "expected_risk": 0.0667
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.065,
+        "brier": 0.1011,
+        "auroc": 0.8487,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.086,
+          "transfer": 0.4275,
+          "transfer_risk": 0.0115,
+          "expected": 0.0344,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5184,
+          "transfer": 0.4693,
+          "transfer_risk": 0.0157,
+          "expected": 0.1769,
+          "expected_risk": 0.0139
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0399,
+        "brier": 0.0977,
+        "auroc": 0.8483,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0,
+          "transfer": 0.4275,
+          "transfer_risk": 0.0115,
+          "expected": 0.4275,
+          "expected_risk": 0.0115
+         },
+         "0.02": {
+          "oracle": 0.4275,
+          "transfer": 0.4275,
+          "transfer_risk": 0.0115,
+          "expected": 0.5307,
+          "expected_risk": 0.0231
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0331,
+        "brier": 0.0968,
+        "auroc": 0.8487,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.086,
+          "transfer": 0.4275,
+          "transfer_risk": 0.0115,
+          "expected": 0.4079,
+          "expected_risk": 0.012
+         },
+         "0.02": {
+          "oracle": 0.5184,
+          "transfer": 0.4693,
+          "transfer_risk": 0.0157,
+          "expected": 0.5111,
+          "expected_risk": 0.0192
+         }
+        }
+       }
+      }
+     }
+    },
+    "human_checked": {
+     "oof": {
+      "n": 602,
+      "errors": 69,
+      "accuracy": 0.8854,
+      "methods": {
+       "raw": {
+        "ece": 0.0814,
+        "brier": 0.0992,
+        "auroc": 0.8304,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.211,
+          "transfer": 0.4419,
+          "transfer_risk": 0.015,
+          "expected": 0.6628,
+          "expected_risk": 0.0301
+         },
+         "0.02": {
+          "oracle": 0.4635,
+          "transfer": 0.4867,
+          "transfer_risk": 0.0239,
+          "expected": 0.8571,
+          "expected_risk": 0.0717
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0364,
+        "brier": 0.0886,
+        "auroc": 0.8254,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1794,
+          "transfer": 0.4419,
+          "transfer_risk": 0.015,
+          "expected": 0.0465,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5947,
+          "transfer": 0.4867,
+          "transfer_risk": 0.0239,
+          "expected": 0.1811,
+          "expected_risk": 0.0183
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0297,
+        "brier": 0.09,
+        "auroc": 0.8035,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0,
+          "transfer": 0.4385,
+          "transfer_risk": 0.0152,
+          "expected": 0.4551,
+          "expected_risk": 0.0219
+         },
+         "0.02": {
+          "oracle": 0.4419,
+          "transfer": 0.4551,
+          "transfer_risk": 0.0219,
+          "expected": 0.5465,
+          "expected_risk": 0.0365
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0257,
+        "brier": 0.088,
+        "auroc": 0.8264,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1944,
+          "transfer": 0.4419,
+          "transfer_risk": 0.015,
+          "expected": 0.4369,
+          "expected_risk": 0.0152
+         },
+         "0.02": {
+          "oracle": 0.4535,
+          "transfer": 0.4867,
+          "transfer_risk": 0.0239,
+          "expected": 0.5316,
+          "expected_risk": 0.0219
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 182,
+      "errors": 20,
+      "accuracy": 0.8901,
+      "methods": {
+       "raw": {
+        "ece": 0.0784,
+        "brier": 0.0943,
+        "auroc": 0.804,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1264,
+          "transfer": 0.4835,
+          "transfer_risk": 0.0227,
+          "expected": 0.7033,
+          "expected_risk": 0.0547
+         },
+         "0.02": {
+          "oracle": 0.1264,
+          "transfer": 0.5055,
+          "transfer_risk": 0.0217,
+          "expected": 0.8846,
+          "expected_risk": 0.0683
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0583,
+        "brier": 0.0854,
+        "auroc": 0.804,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1264,
+          "transfer": 0.4835,
+          "transfer_risk": 0.0227,
+          "expected": 0.0769,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.1264,
+          "transfer": 0.5055,
+          "transfer_risk": 0.0217,
+          "expected": 0.2418,
+          "expected_risk": 0.0455
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0587,
+        "brier": 0.0864,
+        "auroc": 0.81,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0,
+          "transfer": 0.4835,
+          "transfer_risk": 0.0227,
+          "expected": 0.4835,
+          "expected_risk": 0.0227
+         },
+         "0.02": {
+          "oracle": 0.0,
+          "transfer": 0.4835,
+          "transfer_risk": 0.0227,
+          "expected": 0.5879,
+          "expected_risk": 0.028
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0398,
+        "brier": 0.0854,
+        "auroc": 0.804,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1264,
+          "transfer": 0.4835,
+          "transfer_risk": 0.0227,
+          "expected": 0.478,
+          "expected_risk": 0.023
+         },
+         "0.02": {
+          "oracle": 0.1264,
+          "transfer": 0.5055,
+          "transfer_risk": 0.0217,
+          "expected": 0.5714,
+          "expected_risk": 0.0288
+         }
+        }
+       }
+      }
+     }
+    },
+    "ai_assisted": {
+     "oof": {
+      "n": 806,
+      "errors": 183,
+      "accuracy": 0.773,
+      "methods": {
+       "raw": {
+        "ece": 0.1624,
+        "brier": 0.1713,
+        "auroc": 0.8726,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3747,
+          "transfer": 0.34,
+          "transfer_risk": 0.0036,
+          "expected": 0.5124,
+          "expected_risk": 0.0339
+         },
+         "0.02": {
+          "oracle": 0.3921,
+          "transfer": 0.4032,
+          "transfer_risk": 0.0246,
+          "expected": 0.6749,
+          "expected_risk": 0.0809
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.093,
+        "brier": 0.1416,
+        "auroc": 0.8696,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3536,
+          "transfer": 0.34,
+          "transfer_risk": 0.0036,
+          "expected": 0.0161,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.397,
+          "transfer": 0.4032,
+          "transfer_risk": 0.0246,
+          "expected": 0.1278,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0293,
+        "brier": 0.1196,
+        "auroc": 0.8639,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3337,
+          "transfer": 0.3337,
+          "transfer_risk": 0.0,
+          "expected": 0.3337,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.366,
+          "transfer": 0.3697,
+          "transfer_risk": 0.0168,
+          "expected": 0.4318,
+          "expected_risk": 0.0374
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0325,
+        "brier": 0.1192,
+        "auroc": 0.8704,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3561,
+          "transfer": 0.34,
+          "transfer_risk": 0.0036,
+          "expected": 0.3189,
+          "expected_risk": 0.0039
+         },
+         "0.02": {
+          "oracle": 0.3896,
+          "transfer": 0.4032,
+          "transfer_risk": 0.0246,
+          "expected": 0.4132,
+          "expected_risk": 0.024
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 225,
+      "errors": 38,
+      "accuracy": 0.8311,
+      "methods": {
+       "raw": {
+        "ece": 0.1189,
+        "brier": 0.1338,
+        "auroc": 0.8679,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.4756,
+          "transfer": 0.3822,
+          "transfer_risk": 0.0,
+          "expected": 0.5689,
+          "expected_risk": 0.0234
+         },
+         "0.02": {
+          "oracle": 0.5511,
+          "transfer": 0.44,
+          "transfer_risk": 0.0101,
+          "expected": 0.7467,
+          "expected_risk": 0.0714
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0748,
+        "brier": 0.1138,
+        "auroc": 0.8679,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.4756,
+          "transfer": 0.3822,
+          "transfer_risk": 0.0,
+          "expected": 0.0,
+          "expected_risk": null
+         },
+         "0.02": {
+          "oracle": 0.5511,
+          "transfer": 0.44,
+          "transfer_risk": 0.0101,
+          "expected": 0.1067,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0454,
+        "brier": 0.1067,
+        "auroc": 0.863,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3822,
+          "transfer": 0.3822,
+          "transfer_risk": 0.0,
+          "expected": 0.3822,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4844,
+          "transfer": 0.3822,
+          "transfer_risk": 0.0,
+          "expected": 0.3822,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0557,
+        "brier": 0.106,
+        "auroc": 0.8679,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.4756,
+          "transfer": 0.3822,
+          "transfer_risk": 0.0,
+          "expected": 0.3467,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5511,
+          "transfer": 0.44,
+          "transfer_risk": 0.0101,
+          "expected": 0.4578,
+          "expected_risk": 0.0097
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "source": "rapidocr-product",
+   "engine": "rapidocr",
+   "variant": "product",
+   "file": "rapidocr-product.json",
+   "counts": {
+    "records": 2184,
+    "A_clean": 1685,
+    "usable": 1685,
+    "missing_confidence": 0,
+    "by_split": {
+     "dev": {
+      "lines": 367,
+      "correct": 291,
+      "posters": 60
+     },
+     "test": {
+      "lines": 952,
+      "correct": 768,
+      "posters": 139
+     },
+     "reserve": {
+      "lines": 366,
+      "correct": 307,
+      "posters": 52
+     }
+    },
+    "by_scope": {
+     "all": {
+      "lines": 1685,
+      "correct": 1366
+     },
+     "human_checked": {
+      "lines": 727,
+      "correct": 638
+     },
+     "ai_assisted": {
+      "lines": 958,
+      "correct": 728
+     }
+    }
+   },
+   "temperature_T": 1.845814,
+   "platt": {
+    "a": 1.150697,
+    "b": -1.823002
+   },
+   "isotonic_blocks": 17,
+   "line_accuracy": {
+    "all": {
+     "dev+test": {
+      "lines": 1319,
+      "exact_rate": 0.8029,
+      "cer_micro": 0.04
+     },
+     "reserve": {
+      "lines": 366,
+      "exact_rate": 0.8388,
+      "cer_micro": 0.0331
+     }
+    },
+    "human_checked": {
+     "dev+test": {
+      "lines": 563,
+      "exact_rate": 0.8792,
+      "cer_micro": 0.0232
+     },
+     "reserve": {
+      "lines": 164,
+      "exact_rate": 0.872,
+      "cer_micro": 0.0246
+     }
+    },
+    "ai_assisted": {
+     "dev+test": {
+      "lines": 756,
+      "exact_rate": 0.746,
+      "cer_micro": 0.0524
+     },
+     "reserve": {
+      "lines": 202,
+      "exact_rate": 0.8119,
+      "cer_micro": 0.0405
+     }
+    }
+   },
+   "scopes": {
+    "all": {
+     "oof": {
+      "n": 1319,
+      "errors": 260,
+      "accuracy": 0.8029,
+      "methods": {
+       "raw": {
+        "ece": 0.1296,
+        "brier": 0.1473,
+        "auroc": 0.8623,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2517,
+          "transfer": 0.2123,
+          "transfer_risk": 0.0143,
+          "expected": 0.4784,
+          "expected_risk": 0.0269
+         },
+         "0.02": {
+          "oracle": 0.3715,
+          "transfer": 0.3677,
+          "transfer_risk": 0.0227,
+          "expected": 0.6475,
+          "expected_risk": 0.0539
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.087,
+        "brier": 0.1269,
+        "auroc": 0.8622,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2441,
+          "transfer": 0.2123,
+          "transfer_risk": 0.0143,
+          "expected": 0.022,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.3692,
+          "transfer": 0.3677,
+          "transfer_risk": 0.0227,
+          "expected": 0.1289,
+          "expected_risk": 0.0059
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.021,
+        "brier": 0.1126,
+        "auroc": 0.8522,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0,
+          "transfer": 0.2123,
+          "transfer_risk": 0.0143,
+          "expected": 0.2563,
+          "expected_risk": 0.0118
+         },
+         "0.02": {
+          "oracle": 0.3662,
+          "transfer": 0.3548,
+          "transfer_risk": 0.0192,
+          "expected": 0.395,
+          "expected_risk": 0.023
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0315,
+        "brier": 0.113,
+        "auroc": 0.8606,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.2434,
+          "transfer": 0.2123,
+          "transfer_risk": 0.0143,
+          "expected": 0.3071,
+          "expected_risk": 0.0148
+         },
+         "0.02": {
+          "oracle": 0.3654,
+          "transfer": 0.3677,
+          "transfer_risk": 0.0227,
+          "expected": 0.3988,
+          "expected_risk": 0.0247
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 366,
+      "errors": 59,
+      "accuracy": 0.8388,
+      "methods": {
+       "raw": {
+        "ece": 0.104,
+        "brier": 0.1249,
+        "auroc": 0.8822,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.5219,
+          "transfer": 0.276,
+          "transfer_risk": 0.0,
+          "expected": 0.5246,
+          "expected_risk": 0.0104
+         },
+         "0.02": {
+          "oracle": 0.5792,
+          "transfer": 0.418,
+          "transfer_risk": 0.0,
+          "expected": 0.6885,
+          "expected_risk": 0.0397
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.083,
+        "brier": 0.1082,
+        "auroc": 0.8822,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.5219,
+          "transfer": 0.276,
+          "transfer_risk": 0.0,
+          "expected": 0.0273,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5792,
+          "transfer": 0.418,
+          "transfer_risk": 0.0,
+          "expected": 0.1339,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0303,
+        "brier": 0.0968,
+        "auroc": 0.8823,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.5109,
+          "transfer": 0.276,
+          "transfer_risk": 0.0,
+          "expected": 0.276,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5109,
+          "transfer": 0.4098,
+          "transfer_risk": 0.0,
+          "expected": 0.4098,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0376,
+        "brier": 0.0976,
+        "auroc": 0.8822,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.5219,
+          "transfer": 0.276,
+          "transfer_risk": 0.0,
+          "expected": 0.3333,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5792,
+          "transfer": 0.418,
+          "transfer_risk": 0.0,
+          "expected": 0.4372,
+          "expected_risk": 0.0063
+         }
+        }
+       }
+      }
+     }
+    },
+    "human_checked": {
+     "oof": {
+      "n": 563,
+      "errors": 68,
+      "accuracy": 0.8792,
+      "methods": {
+       "raw": {
+        "ece": 0.0799,
+        "brier": 0.0995,
+        "auroc": 0.8661,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.4618,
+          "transfer": 0.2629,
+          "transfer_risk": 0.0068,
+          "expected": 0.5861,
+          "expected_risk": 0.0152
+         },
+         "0.02": {
+          "oracle": 0.5933,
+          "transfer": 0.4618,
+          "transfer_risk": 0.0115,
+          "expected": 0.7869,
+          "expected_risk": 0.0429
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0693,
+        "brier": 0.0888,
+        "auroc": 0.8657,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.4689,
+          "transfer": 0.2629,
+          "transfer_risk": 0.0068,
+          "expected": 0.0373,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.595,
+          "transfer": 0.4618,
+          "transfer_risk": 0.0115,
+          "expected": 0.1581,
+          "expected_risk": 0.0112
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0173,
+        "brier": 0.0839,
+        "auroc": 0.8532,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.4529,
+          "transfer": 0.2629,
+          "transfer_risk": 0.0068,
+          "expected": 0.3108,
+          "expected_risk": 0.0057
+         },
+         "0.02": {
+          "oracle": 0.5933,
+          "transfer": 0.444,
+          "transfer_risk": 0.008,
+          "expected": 0.4831,
+          "expected_risk": 0.011
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0381,
+        "brier": 0.0841,
+        "auroc": 0.8651,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.4512,
+          "transfer": 0.2629,
+          "transfer_risk": 0.0068,
+          "expected": 0.3677,
+          "expected_risk": 0.0048
+         },
+         "0.02": {
+          "oracle": 0.5861,
+          "transfer": 0.4618,
+          "transfer_risk": 0.0115,
+          "expected": 0.4885,
+          "expected_risk": 0.0109
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 164,
+      "errors": 21,
+      "accuracy": 0.872,
+      "methods": {
+       "raw": {
+        "ece": 0.088,
+        "brier": 0.1066,
+        "auroc": 0.8904,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.622,
+          "transfer": 0.3354,
+          "transfer_risk": 0.0,
+          "expected": 0.6098,
+          "expected_risk": 0.01
+         },
+         "0.02": {
+          "oracle": 0.6707,
+          "transfer": 0.4878,
+          "transfer_risk": 0.0,
+          "expected": 0.7988,
+          "expected_risk": 0.0534
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.0544,
+        "brier": 0.0922,
+        "auroc": 0.8904,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.622,
+          "transfer": 0.3354,
+          "transfer_risk": 0.0,
+          "expected": 0.0366,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.6707,
+          "transfer": 0.4878,
+          "transfer_risk": 0.0,
+          "expected": 0.1585,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.051,
+        "brier": 0.0838,
+        "auroc": 0.8926,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.5915,
+          "transfer": 0.3354,
+          "transfer_risk": 0.0,
+          "expected": 0.3354,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5915,
+          "transfer": 0.4756,
+          "transfer_risk": 0.0,
+          "expected": 0.4756,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0435,
+        "brier": 0.0854,
+        "auroc": 0.8904,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.622,
+          "transfer": 0.3354,
+          "transfer_risk": 0.0,
+          "expected": 0.3963,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.6707,
+          "transfer": 0.4878,
+          "transfer_risk": 0.0,
+          "expected": 0.5122,
+          "expected_risk": 0.0
+         }
+        }
+       }
+      }
+     }
+    },
+    "ai_assisted": {
+     "oof": {
+      "n": 756,
+      "errors": 192,
+      "accuracy": 0.746,
+      "methods": {
+       "raw": {
+        "ece": 0.1689,
+        "brier": 0.1828,
+        "auroc": 0.8484,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1455,
+          "transfer": 0.1746,
+          "transfer_risk": 0.0227,
+          "expected": 0.3981,
+          "expected_risk": 0.0399
+         },
+         "0.02": {
+          "oracle": 0.2116,
+          "transfer": 0.2976,
+          "transfer_risk": 0.0356,
+          "expected": 0.5423,
+          "expected_risk": 0.0634
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.102,
+        "brier": 0.1552,
+        "auroc": 0.8484,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1495,
+          "transfer": 0.1746,
+          "transfer_risk": 0.0227,
+          "expected": 0.0093,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.209,
+          "transfer": 0.2976,
+          "transfer_risk": 0.0356,
+          "expected": 0.1045,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0367,
+        "brier": 0.1339,
+        "auroc": 0.8389,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.0437,
+          "transfer": 0.1746,
+          "transfer_risk": 0.0227,
+          "expected": 0.2156,
+          "expected_risk": 0.0184
+         },
+         "0.02": {
+          "oracle": 0.2156,
+          "transfer": 0.2884,
+          "transfer_risk": 0.0321,
+          "expected": 0.3294,
+          "expected_risk": 0.0361
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0373,
+        "brier": 0.1345,
+        "auroc": 0.846,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.1336,
+          "transfer": 0.1746,
+          "transfer_risk": 0.0227,
+          "expected": 0.2606,
+          "expected_risk": 0.0254
+         },
+         "0.02": {
+          "oracle": 0.2249,
+          "transfer": 0.2976,
+          "transfer_risk": 0.0356,
+          "expected": 0.332,
+          "expected_risk": 0.0398
+         }
+        }
+       }
+      }
+     },
+     "reserve": {
+      "n": 202,
+      "errors": 38,
+      "accuracy": 0.8119,
+      "methods": {
+       "raw": {
+        "ece": 0.117,
+        "brier": 0.1397,
+        "auroc": 0.8782,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3762,
+          "transfer": 0.2277,
+          "transfer_risk": 0.0,
+          "expected": 0.4505,
+          "expected_risk": 0.011
+         },
+         "0.02": {
+          "oracle": 0.5644,
+          "transfer": 0.3614,
+          "transfer_risk": 0.0,
+          "expected": 0.5941,
+          "expected_risk": 0.025
+         }
+        }
+       },
+       "temperature": {
+        "ece": 0.1062,
+        "brier": 0.1212,
+        "auroc": 0.8782,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3762,
+          "transfer": 0.2277,
+          "transfer_risk": 0.0,
+          "expected": 0.0149,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5644,
+          "transfer": 0.3614,
+          "transfer_risk": 0.0,
+          "expected": 0.099,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "isotonic": {
+        "ece": 0.0466,
+        "brier": 0.1074,
+        "auroc": 0.8766,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3564,
+          "transfer": 0.2277,
+          "transfer_risk": 0.0,
+          "expected": 0.2277,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.4455,
+          "transfer": 0.3564,
+          "transfer_risk": 0.0,
+          "expected": 0.3564,
+          "expected_risk": 0.0
+         }
+        }
+       },
+       "platt": {
+        "ece": 0.0505,
+        "brier": 0.1075,
+        "auroc": 0.8782,
+        "coverage": {
+         "0.01": {
+          "oracle": 0.3762,
+          "transfer": 0.2277,
+          "transfer_risk": 0.0,
+          "expected": 0.2772,
+          "expected_risk": 0.0
+         },
+         "0.02": {
+          "oracle": 0.5644,
+          "transfer": 0.3614,
+          "transfer_risk": 0.0,
+          "expected": 0.3762,
+          "expected_risk": 0.0
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,775 @@
+{
+ "case_id": "v2-159",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 35,
+ "lines_matched": 14,
+ "records": [
+  {
+   "id": "v2-159.padd_rgb_2x_000",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     43.5,
+     8.5
+    ],
+    [
+     89.0,
+     8.5
+    ],
+    [
+     89.0,
+     25.0
+    ],
+    [
+     43.5,
+     25.0
+    ]
+   ],
+   "bbox": [
+    43.5,
+    8.5,
+    89.0,
+    25.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "홍성군",
+   "text_key": "홍성군",
+   "ocr_text": "홍성군",
+   "confidence": 0.9983732104301453,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "홍성군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_001",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     229.5,
+     4.5
+    ],
+    [
+     270.5,
+     4.5
+    ],
+    [
+     270.5,
+     16.5
+    ],
+    [
+     229.5,
+     16.5
+    ]
+   ],
+   "bbox": [
+    229.5,
+    4.5,
+    270.5,
+    16.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "대한민국",
+   "text_key": "대한민국",
+   "ocr_text": "대한민국",
+   "confidence": 0.9986995458602905,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "대한민국 문화도시 홍성",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_003",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     364.0,
+     9.0
+    ],
+    [
+     431.0,
+     9.0
+    ],
+    [
+     431.0,
+     21.0
+    ],
+    [
+     364.0,
+     21.0
+    ]
+   ],
+   "bbox": [
+    364.0,
+    9.0,
+    431.0,
+    21.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "홍주문화관광재단",
+   "text_key": "홍주문화관광재단",
+   "ocr_text": "홍주문화관광재단",
+   "confidence": 0.967485785484314,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "홍주문화관광재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_004",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     229.5,
+     15.0
+    ],
+    [
+     295.5,
+     15.0
+    ],
+    [
+     295.5,
+     27.0
+    ],
+    [
+     229.5,
+     27.0
+    ]
+   ],
+   "bbox": [
+    229.5,
+    15.0,
+    295.5,
+    27.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "문화도시",
+   "text_key": "문화도시",
+   "ocr_text": "문화도시ㅎ'*",
+   "confidence": 0.9252400398254395,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "대한민국 문화도시 홍성",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_006",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     327.5,
+     43.5
+    ],
+    [
+     431.0,
+     43.5
+    ],
+    [
+     431.0,
+     57.5
+    ],
+    [
+     327.5,
+     57.5
+    ]
+   ],
+   "bbox": [
+    327.5,
+    43.5,
+    431.0,
+    57.5
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "홍성의 맛을 담은 한 상,",
+   "text_key": "홍성의맛을담은한상",
+   "ocr_text": "홍성의 맛을 담은 한 상,",
+   "confidence": 0.9425362348556519,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "홍성의 맛을 담은 한 상, 100년 시장의 이야기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_008",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     327.0,
+     59.5
+    ],
+    [
+     418.0,
+     59.5
+    ],
+    [
+     418.0,
+     73.0
+    ],
+    [
+     327.0,
+     73.0
+    ]
+   ],
+   "bbox": [
+    327.0,
+    59.5,
+    418.0,
+    73.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "100년 시장의 이야기",
+   "text_key": "100년시장의이야기",
+   "ocr_text": "100년 시장의 이야기",
+   "confidence": 0.9565899968147278,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "홍성의 맛을 담은 한 상, 100년 시장의 이야기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_011",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     197.0,
+     453.5
+    ],
+    [
+     246.5,
+     453.5
+    ],
+    [
+     246.5,
+     465.5
+    ],
+    [
+     197.0,
+     465.5
+    ]
+   ],
+   "bbox": [
+    197.0,
+    453.5,
+    246.5,
+    465.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "홍성은 맛있다",
+   "text_key": "홍성은맛있다",
+   "ocr_text": "홍성은 잇있다",
+   "confidence": 0.8794397115707397,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "홍성은 맛있다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_012",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     192.5,
+     468.5
+    ],
+    [
+     202.5,
+     468.5
+    ],
+    [
+     202.5,
+     479.5
+    ],
+    [
+     192.5,
+     479.5
+    ]
+   ],
+   "bbox": [
+    192.5,
+    468.5,
+    202.5,
+    479.5
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "2",
+   "text_key": "2",
+   "ocr_text": "2",
+   "confidence": 0.9992129802703857,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 홍성백반페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_013",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     205.5,
+     466.0
+    ],
+    [
+     253.0,
+     466.0
+    ],
+    [
+     253.0,
+     480.5
+    ],
+    [
+     205.5,
+     480.5
+    ]
+   ],
+   "bbox": [
+    205.5,
+    466.0,
+    253.0,
+    480.5
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "026",
+   "text_key": "026",
+   "ocr_text": "0 2 6",
+   "confidence": 0.888899028301239,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 홍성백반페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_015",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     148.5,
+     482.0
+    ],
+    [
+     297.0,
+     482.0
+    ],
+    [
+     297.0,
+     508.0
+    ],
+    [
+     148.5,
+     508.0
+    ]
+   ],
+   "bbox": [
+    148.5,
+    482.0,
+    297.0,
+    508.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "홍성백반페스타",
+   "text_key": "홍성백반페스타",
+   "ocr_text": "홍성백반페스타",
+   "confidence": 0.9996520280838013,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "홍성백반페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_019",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     86.5,
+     520.0
+    ],
+    [
+     357.0,
+     521.0
+    ],
+    [
+     356.5,
+     538.0
+    ],
+    [
+     86.0,
+     537.0
+    ]
+   ],
+   "bbox": [
+    86.0,
+    520.0,
+    357.0,
+    538.0
+   ],
+   "height": 17.01,
+   "small_text": false,
+   "text": "10월 17일(토) ~ 10월 18일(일)",
+   "text_key": "10월17일토10월18일일",
+   "ocr_text": "10월 17일(토) ~10월 18일(일) 11:00~21:00",
+   "confidence": 0.9678604006767273,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10월 17일(토) ~ 10월 18일(일)",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_020",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     187.0,
+     542.5
+    ],
+    [
+     257.0,
+     542.5
+    ],
+    [
+     257.0,
+     558.0
+    ],
+    [
+     187.0,
+     558.0
+    ]
+   ],
+   "bbox": [
+    187.0,
+    542.5,
+    257.0,
+    558.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "광천문화시장",
+   "text_key": "광천문화시장",
+   "ocr_text": "광천문화시장",
+   "confidence": 0.9997009634971619,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광천문화시장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_033",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_033"
+   },
+   "polygon": [
+    [
+     35.0,
+     604.5
+    ],
+    [
+     108.5,
+     604.5
+    ],
+    [
+     108.5,
+     618.0
+    ],
+    [
+     35.0,
+     618.0
+    ]
+   ],
+   "bbox": [
+    35.0,
+    604.5,
+    108.5,
+    618.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "문화체육관광부",
+   "text_key": "문화체육관광부",
+   "ocr_text": "문화체육관광부",
+   "confidence": 0.9980207681655884,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "문화체육관광부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-159.padd_rgb_2x_034",
+   "case_id": "v2-159",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_034"
+   },
+   "polygon": [
+    [
+     146.0,
+     604.0
+    ],
+    [
+     190.5,
+     604.0
+    ],
+    [
+     190.5,
+     620.0
+    ],
+    [
+     146.0,
+     620.0
+    ]
+   ],
+   "bbox": [
+    146.0,
+    604.0,
+    190.5,
+    620.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "충청남도",
+   "text_key": "충청남도",
+   "ocr_text": "충청남도",
+   "confidence": 0.9968661069869995,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "충청남도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

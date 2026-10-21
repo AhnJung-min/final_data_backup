@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>데이터 준비 현황</title>
+<style>
+:root{--paper:#f6f7f8;--sheet:#ffffff;--paper-2:#eceef1;--ink:#1f2328;--ink-2:#5b616a;--muted:#686e77;--rule:#d9dde2;
+--grid:#e3e6ea;--axis:#b9bfc7;--accent:#1d5fb3;--accent-wash:rgba(29,95,179,.07);--track:#e6e9ed;
+--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;
+--good:#13733a;--good-wash:#e7f4ec;--warn:#8a5a00;--warn-wash:#fff4dc;--bad:#b8322b;--bad-wash:#fdeceb;
+--shadow:rgba(16,24,40,.14);--check:#d5d9de;
+--font:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+--mono:ui-monospace,SFMono-Regular,Consolas,"Malgun Gothic",monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14171b;--sheet:#1b1f24;--paper-2:#23282e;--ink:#e9ecef;
+--ink-2:#a9b0b9;--muted:#8f96a0;--rule:#2e343b;--grid:#262b31;--axis:#4a515a;--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.09);--track:#2a3037;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;
+--good:#4cc27c;--good-wash:rgba(76,194,124,.12);--warn:#e8b24a;--warn-wash:rgba(232,178,74,.12);--bad:#f07a72;--bad-wash:rgba(240,122,114,.12);
+--shadow:rgba(0,0,0,.5);--check:#9aa1aa;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#14171b;--sheet:#1b1f24;--paper-2:#23282e;--ink:#e9ecef;--ink-2:#a9b0b9;--muted:#8f96a0;--rule:#2e343b;
+--grid:#262b31;--axis:#4a515a;--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.09);--track:#2a3037;
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;
+--good:#4cc27c;--good-wash:rgba(76,194,124,.12);--warn:#e8b24a;--warn-wash:rgba(232,178,74,.12);--bad:#f07a72;--bad-wash:rgba(240,122,114,.12);
+--shadow:rgba(0,0,0,.5);--check:#9aa1aa;color-scheme:dark}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.6 var(--font);word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{width:100%;max-width:78rem;margin:0 auto;padding-left:16px;padding-right:16px}
+@media (min-width:760px){.wrap{padding-left:28px;padding-right:28px}}
+header.top{background:var(--sheet);border-bottom:1px solid var(--rule)}
+.intro{padding-top:20px;padding-bottom:8px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;align-items:flex-end}
+.eyebrow{font:500 .78rem/1.4 var(--mono);color:var(--accent);letter-spacing:.04em;margin:0}
+h1{font-size:clamp(1.45rem,4vw,1.95rem);margin:.15rem 0 .2rem;letter-spacing:-.02em;line-height:1.25}
+.lead{color:var(--ink-2);margin:0;max-width:46rem;font-size:.93rem}
+.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.82rem;color:var(--muted)}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:thin}
+nav.tabs a{padding:9px 12px 8px;border-bottom:2px solid transparent;color:var(--ink-2);text-decoration:none;white-space:nowrap;font-weight:600;font-size:.9rem}
+nav.tabs a:hover{color:var(--ink)}nav.tabs a.on{color:var(--accent);border-bottom-color:var(--accent)}
+main{display:flex;flex-direction:column;gap:2rem;padding-top:1.4rem;padding-bottom:3rem;min-height:60vh}
+main.loading{opacity:.55;transition:opacity .2s}
+section{min-width:0}
+h2{font-size:1.18rem;margin:0 0 .65rem;line-height:1.35;letter-spacing:-.01em}
+h3{font-size:.98rem;margin:0 0 .25rem;line-height:1.4}
+p{margin:0}
+.sub{color:var(--ink-2);font-size:.86rem;margin:0}
+.muted{color:var(--muted)}
+.small{font-size:.82rem}
+code{font-family:var(--mono);font-size:.82em;background:var(--paper-2);border-radius:4px;padding:.08em .35em;overflow-wrap:anywhere;word-break:normal}
+.cmd{display:block;margin-top:.3rem;padding:.4rem .6rem;white-space:pre-wrap}
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:1rem 1.1rem;min-width:0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,9.4rem),1fr));gap:.7rem}
+.tile{display:flex;flex-direction:column;gap:.1rem;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:.75rem .9rem;color:inherit;text-decoration:none;min-width:0}
+a.tile:hover{border-color:var(--axis)}
+.tile .k{font-size:.78rem;color:var(--muted)}.tile .v{font-size:1.45rem;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.tile .d{font-size:.78rem;color:var(--ink-2)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,23rem),1fr));gap:1.1rem}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1.1rem}
+.stackv{display:flex;flex-direction:column;gap:1.1rem;min-width:0}
+.scroll{overflow-x:auto;border:1px solid var(--rule);border-radius:8px;background:var(--sheet)}
+.scroll.tall{max-height:30rem;overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:.84rem;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:.45rem .65rem;border-bottom:1px solid var(--rule)}
+thead th{background:var(--paper-2);font-weight:600;font-size:.78rem;color:var(--ink-2);white-space:nowrap;position:sticky;top:0;z-index:1}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td .k{display:block;font-size:.74rem;color:var(--muted)}
+tr.click{cursor:pointer}tr.click:hover td{background:var(--accent-wash)}tr.sel td{background:var(--accent-wash)}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:99px;background:var(--paper-2);color:var(--ink-2);white-space:nowrap;line-height:1.6}
+.pill.good{background:var(--good-wash);color:var(--good)}.pill.warn{background:var(--warn-wash);color:var(--warn)}.pill.bad{background:var(--bad-wash);color:var(--bad)}
+.pill.accent{background:var(--accent-wash);color:var(--accent)}
+.diag{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:6px;border:1.5px solid var(--warn);color:var(--warn);background:var(--warn-wash)}
+.note{border-left:3px solid var(--accent);background:var(--accent-wash);padding:.6rem .85rem;border-radius:0 6px 6px 0;font-size:.88rem}
+.note.warn{border-left-color:var(--warn);background:var(--warn-wash)}
+.notes{margin:.4rem 0 0;padding-left:1.1rem;font-size:.84rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.25rem}
+details{font-size:.86rem}details summary{cursor:pointer;color:var(--ink-2);font-weight:600}
+.empty{display:flex;flex-direction:column;gap:.35rem;padding:1.1rem;border:1px dashed var(--axis);border-radius:10px;background:var(--sheet);font-size:.9rem}
+.empty span{font-size:.8rem;color:var(--muted)}
+.err{color:var(--bad)}
+.controls{display:flex;flex-wrap:wrap;gap:.55rem 1rem;align-items:center}
+.controls label{display:inline-flex;gap:.4rem;align-items:center;font-size:.84rem;color:var(--ink-2);min-width:0}
+select,input[type=text],input[type=search]{font:inherit;font-size:.86rem;padding:.32rem .5rem;border:1px solid var(--rule);border-radius:6px;background:var(--sheet);color:var(--ink);min-width:0;max-width:100%}
+input[type=checkbox]{accent-color:var(--accent)}
+button{font:inherit;font-size:.84rem;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:.34rem .8rem;cursor:pointer;line-height:1.4}
+button:hover{border-color:var(--axis)}button:disabled{opacity:.5;cursor:default}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet);font-weight:600}
+button.danger{color:var(--bad);border-color:var(--bad)}
+button.ghost{border-color:transparent;color:var(--accent);padding:.2rem .5rem;white-space:nowrap;flex:none}
+button.ghost:hover{border-color:var(--rule)}
+kbd{font:500 .7rem var(--mono);border:1px solid currentColor;border-radius:4px;padding:0 .3rem;opacity:.8;margin-left:.3rem}
+/* 차트 */
+.fig{margin:0;background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:.9rem 1rem 1rem;min-width:0}
+.fig-head{display:flex;justify-content:space-between;gap:.6rem;align-items:flex-start;margin-bottom:.55rem}
+.fig-head .sub{margin-top:.1rem}
+.legend{display:flex;flex-wrap:wrap;gap:.3rem 1rem;list-style:none;margin:0 0 .55rem;padding:0;font-size:.8rem;color:var(--ink-2)}
+.legend li{display:flex;align-items:center;gap:.35rem}
+.sw{display:inline-block;width:11px;height:11px;border-radius:3px;flex:none}.lk{display:inline-block;width:14px;height:2px;border-radius:1px;flex:none}
+.sw.track{background:var(--track)}
+.bars{display:grid;gap:3px}
+.brow{display:grid;grid-template-columns:minmax(5rem,10.5rem) minmax(0,1fr) auto;gap:.65rem;align-items:center;padding:2px 4px;border-radius:4px}
+.brow:hover,.brow:focus-visible{background:var(--accent-wash);outline:none}
+.blabel{font-size:.82rem;min-width:0;overflow-wrap:anywhere}
+.btrack{position:relative;height:14px;border-left:1px solid var(--axis)}
+.bfill{position:absolute;inset:0 auto 0 0;border-radius:0 4px 4px 0}
+.bval{font-size:.78rem;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bval small{color:var(--muted);font-size:.74rem}
+.stack{display:flex;gap:2px;height:14px;min-width:0}
+.stack i{display:block;height:100%;min-width:2px}.stack i:last-child{border-radius:0 4px 4px 0}
+.stack i.rest{background:var(--track)}
+.srow{display:grid;grid-template-columns:minmax(5rem,9rem) minmax(0,1fr) auto;gap:.65rem;align-items:center;padding:3px 4px;border-radius:4px}
+.srow:hover{background:var(--accent-wash)}
+.dots{display:grid;gap:2px;--lw:minmax(6rem,12rem)}
+.drow{display:grid;grid-template-columns:var(--lw) minmax(0,1fr) 7rem;align-items:center;gap:.7rem;padding:3px 4px;border-radius:4px}
+.drow:hover,.drow:focus-visible{background:var(--accent-wash);outline:none}
+.dlabel{font-size:.82rem;min-width:0}
+.dtrack{position:relative}.dtrack .g{position:absolute;top:0;bottom:0;width:1px;background:var(--grid)}
+.dci{position:absolute;height:2px;border-radius:1px}
+.ddot{position:absolute;width:10px;height:10px;border-radius:50%;box-shadow:0 0 0 2px var(--sheet);transform:translate(-50%,-50%)}
+.dval{font-size:.76rem;color:var(--ink-2);font-variant-numeric:tabular-nums;line-height:1.3;text-align:right}
+.daxis{display:grid;grid-template-columns:var(--lw) minmax(0,1fr) 7rem;gap:.7rem;padding:.2rem 4px 0}
+.ticks{position:relative;height:1.2rem;font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}.ticks span:first-child{transform:none}.ticks span:last-child{transform:translateX(-100%)}
+.lc{width:100%;position:relative}
+.lc svg{display:block;overflow:visible}
+.lc .grid{stroke:var(--grid);stroke-width:1}.lc .axis{stroke:var(--axis);stroke-width:1}
+.lc .tick{fill:var(--muted);font-size:11px;font-family:var(--font)}.lc .atitle{fill:var(--ink-2);font-size:12px;font-family:var(--font)}
+.lc .ref{stroke:var(--axis);stroke-width:1}.lc .reflabel{fill:var(--muted);font-size:11px;font-family:var(--font)}
+.lc .cross{stroke:var(--ink-2);stroke-width:1;opacity:.6}
+.heat td.cell{text-align:center;font-variant-numeric:tabular-nums;min-width:3rem}
+.tip{position:fixed;z-index:50;pointer-events:none;min-width:9rem;max-width:20rem;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;box-shadow:0 6px 20px var(--shadow);padding:.45rem .65rem;font-size:.8rem;line-height:1.45}
+.tip strong{display:block;font-size:.9rem;font-weight:700}.tip div{display:flex;gap:.4rem;align-items:center}
+/* 개요 */
+.tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:1rem}
+.track h3{font-size:1.05rem}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin:.6rem 0}
+.trio div{background:var(--paper-2);border-radius:8px;padding:.45rem .6rem}.trio dt{font-size:.74rem;color:var(--muted)}.trio dd{margin:0;font-size:1.1rem;font-weight:700;font-variant-numeric:tabular-nums}
+.facts{margin:.6rem 0 0;padding-left:1.05rem;font-size:.84rem;color:var(--ink-2);display:flex;flex-direction:column;gap:.2rem}
+.todo{margin:0;padding-left:1.3rem;display:flex;flex-direction:column;gap:.55rem;font-size:.9rem}
+.todo li::marker{color:var(--accent);font-weight:700}
+.pbar{height:10px;background:var(--track);border-radius:5px;overflow:hidden;display:flex;gap:2px}.pbar i{display:block;height:100%;background:var(--s1)}
+/* 줄 검토 */
+.rv{display:grid;grid-template-columns:minmax(0,1fr) 21rem;gap:1.1rem;align-items:start}
+@media (max-width:1050px){.rv{grid-template-columns:minmax(0,1fr)}}
+.rc-head{display:flex;flex-wrap:wrap;gap:.35rem .5rem;align-items:center;margin-bottom:.7rem}
+.crop{background:var(--paper-2);border-radius:8px;padding:10px;overflow-x:auto;text-align:center;min-height:84px;display:flex;align-items:center;justify-content:center}
+.crop img{max-width:100%;height:auto;display:block;background:#fff;border-radius:2px}
+.obs{background:var(--paper-2);border-radius:8px;padding:.5rem .7rem;margin-top:.7rem;font-size:.95rem}
+.obs .k,.fk{display:block;font-size:.76rem;color:var(--muted);font-weight:600;margin-bottom:.15rem}
+.fk{margin-top:.75rem}
+.prop{width:100%;font-size:1.2rem!important;padding:.5rem .65rem!important;font-weight:500}
+.prop.changed{border-color:var(--warn)!important;background:var(--warn-wash)!important}
+.actions{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.9rem}
+.actions .spacer{flex:1}
+.msg{min-height:1.4em;margin-top:.55rem;font-size:.86rem;color:var(--ink-2)}.msg.bad{color:var(--bad)}.msg.good{color:var(--good)}
+.qlist{list-style:none;margin:0;padding:0;max-height:24rem;overflow:auto;border:1px solid var(--rule);border-radius:8px;background:var(--sheet)}
+.qlist li{border-bottom:1px solid var(--rule)}.qlist li:last-child{border-bottom:0}
+.qlist button{display:grid;grid-template-columns:1.3rem minmax(0,1fr);gap:.4rem;width:100%;text-align:left;border:0;border-radius:0;padding:.32rem .55rem;font-size:.8rem;background:none}
+.qlist button:hover{background:var(--accent-wash)}.qlist li.cur button{background:var(--accent-wash);font-weight:600}
+.qlist .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seg{margin:.45rem 0}.seg .lab{display:flex;justify-content:space-between;gap:.5rem;font-size:.8rem;color:var(--ink-2);margin-bottom:.15rem}
+.help{font-size:.82rem;color:var(--ink-2);margin:0;padding-left:1.05rem;display:flex;flex-direction:column;gap:.2rem}
+/* 로고 */
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.7rem}
+.tcard{border:1px solid var(--rule);border-radius:8px;overflow:hidden;background:var(--sheet);display:flex;flex-direction:column;min-width:0}
+.tcard .ph{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:8px;
+background-color:#fff;background-image:linear-gradient(45deg,var(--check) 25%,transparent 25%),linear-gradient(-45deg,var(--check) 25%,transparent 25%),linear-gradient(45deg,transparent 75%,var(--check) 75%),linear-gradient(-45deg,transparent 75%,var(--check) 75%);
+background-size:14px 14px;background-position:0 0,0 7px,7px -7px,-7px 0}
+.tcard .ph img{max-width:100%;max-height:100%;object-fit:contain}
+.tcard .ph span{font-size:.75rem;color:#5b616a;background:#fff;padding:2px 6px;border-radius:4px}
+.tcard .meta{padding:.4rem .5rem;font-size:.74rem;display:flex;flex-direction:column;gap:.2rem;min-width:0}
+.tcard .meta b{font-size:.78rem;font-weight:600;overflow-wrap:anywhere}
+.badges{display:flex;flex-wrap:wrap;gap:3px}
+/* 요청 의도 */
+.groups{display:flex;flex-direction:column;gap:.8rem}
+.grp-head{display:flex;flex-wrap:wrap;gap:.35rem .6rem;align-items:center;margin-bottom:.5rem}
+.rq{border-top:1px solid var(--rule);padding:.6rem 0;display:grid;gap:.35rem}
+.rq:first-of-type{border-top:0}
+.rq-text{font-size:.92rem}
+.rq-meta{display:flex;flex-wrap:wrap;gap:.3rem .5rem;align-items:center;font-size:.78rem;color:var(--ink-2)}
+.rq-act{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.rq-act input{flex:1 1 12rem}
+footer{font-size:.84rem;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:1.1rem;padding-bottom:2rem}
+@media (max-width:640px){
+  .brow,.srow{grid-template-columns:minmax(4.5rem,6.5rem) minmax(0,1fr) auto;gap:.45rem}
+  .drow,.daxis{grid-template-columns:minmax(4.5rem,6.5rem) minmax(0,1fr) 4.8rem;gap:.45rem}
+  .tile .v{font-size:1.25rem}.trio dd{font-size:1rem}
+  th,td{padding:.4rem .5rem}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap intro">
+    <div>
+      <p class="eyebrow">posters-v2 · CI 로고 · 요청 의도 · 로컬 전용</p>
+      <h1>데이터 준비 현황</h1>
+      <p class="lead">빌더가 만든 결과를 한곳에서 보고, 줄 정답과 요청 의도를 사람이 확인합니다. 검토 기록 두 파일 말고는 아무것도 쓰지 않습니다.</p>
+    </div>
+    <div class="tools"><span id="updated">불러오는 중…</span><button type="button" id="reload">새로 읽기</button><button type="button" id="theme" aria-label="화면 밝기 바꾸기">밝기: 자동</button></div>
+  </div>
+  <nav class="tabs wrap" id="tabs" aria-label="화면"></nav>
+</header>
+<main class="wrap" id="view" aria-live="polite"></main>
+<footer class="wrap">포스터 원본 ⓒ한국관광공사 TourAPI, 공공누리 제3유형 · 이 화면은 이 컴퓨터에서만 열립니다.</footer>
+<div class="tip" id="tip" hidden></div>
+<script>
+"use strict";
+const TABS = [["overview", "개요"], ["lines", "포스터 줄 정답"], ["review", "줄 검토"], ["calib", "신뢰도 보정"], ["synth", "가상 포스터 박스"], ["logos", "CI 카탈로그"], ["intent", "요청 의도 라벨"]];
+const $ = (s, el = document) => el.querySelector(s);
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const enc = encodeURIComponent;
+const fmtN = v => v == null ? "—" : Number(v).toLocaleString("ko-KR");
+const pct = (v, d = 1) => v == null || isNaN(v) ? "—" : (v * 100).toFixed(d) + "%";
+const fix = (v, d = 3) => v == null || isNaN(v) ? "—" : Number(v).toFixed(d);
+const share = (a, b) => b ? a / b : null;
+const qs = o => new URLSearchParams(Object.entries(o).filter(([, v]) => v != null && v !== "")).toString();
+const tipAttr = lines => ` data-tip="${esc(JSON.stringify(lines))}" tabindex="0"`;
+const store = {get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }};
+const SERIES = ["--s1", "--s2", "--s3", "--s4", "--s5"];
+const S = {
+  tab: "overview", busy: false,
+  lines: {source: null, esplit: "all"},
+  review: {source: null, order: store.get("prep.order") || "shuffle", view: "todo", ocr: true, field: "", items: [], stats: null, cur: null, saving: false},
+  calib: {source: null, ev: "oof", scope: "all", method: "isotonic", bins: "mass", data: null},
+  synth: {metric: "recall", set: null, overlay: null},
+  logos: {usable: false, terms: "all", fmt: "", q: "", entity: null, readyOnly: true, fold: true, data: null},
+  intent: {view: "todo", intent: "", split: "", variant: "raw", data: null},
+};
+
+// ------------------------------------------------------------------ 공통
+async function api(url) {
+  const r = await fetch(url, {cache: "no-store"});
+  let j = null;
+  try { j = await r.json(); } catch (e) {}
+  if (!r.ok) throw new Error((j && j.error) || `HTTP ${r.status}`);
+  return j;
+}
+async function post(url, body) {
+  const r = await fetch(url, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body), cache: "no-store"});
+  let j = null;
+  try { j = await r.json(); } catch (e) {}
+  if (!r.ok) throw new Error((j && j.error) || `HTTP ${r.status}`);
+  return j;
+}
+const emptyBox = d => `<div class="empty"><b>${esc(d.what)} 결과가 아직 없습니다.</b><span>저장소 맨 위 폴더에서 아래 명령으로 만듭니다.</span><code class="cmd">${esc(d.command)}</code></div>`;
+const errBox = e => `<div class="empty"><b class="err">불러오지 못했습니다.</b><span>${esc(e.message || e)}</span></div>`;
+const reviewerName = () => (store.get("prep.reviewer") || "");
+const reviewerInput = () => `<label>검토자 <input type="text" id="reviewer" value="${esc(reviewerName())}" maxlength="60" placeholder="이름" autocomplete="off" style="width:8rem"></label>`;
+const opt = (value, label, cur) => `<option value="${esc(value)}"${String(value) === String(cur) ? " selected" : ""}>${esc(label)}</option>`;
+const table = (head, rows, numCols = []) => `<div class="scroll"><table><thead><tr>${head.map((h, i) => `<th${numCols.includes(i) ? ' class="num"' : ""}>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => `<td${numCols.includes(i) ? ' class="num"' : ""}>${c}</td>`).join("")}</tr>`).join("") || `<tr><td colspan="${head.length}" class="muted">없음</td></tr>`}</tbody></table></div>`;
+const legend = (series, line = false) => series.length < 2 ? "" : `<ul class="legend">${series.map(s => `<li><i class="${line ? "lk" : "sw"} ${s.cls || ""}" style="${s.color ? `background:var(${s.color})` : ""}"></i>${esc(s.label)}</li>`).join("")}</ul>`;
+let figSeq = 0;
+function fig(title, sub, plot, tableHtml, legendHtml = "") {
+  const id = "fig" + (++figSeq);
+  return `<figure class="fig"><div class="fig-head"><div><h3>${esc(title)}</h3>${sub ? `<p class="sub">${sub}</p>` : ""}</div>` +
+    (tableHtml ? `<button type="button" class="ghost" data-toggle="${id}" aria-pressed="false">표로 보기</button>` : "") + `</div>${legendHtml}` +
+    `<div id="${id}-plot">${plot}</div>${tableHtml ? `<div id="${id}-table" hidden>${tableHtml}</div>` : ""}</figure>`;
+}
+function bars(rows, o = {}) {
+  const f = o.fmt || fmtN, max = o.max ?? Math.max(1e-9, ...rows.map(r => r.value || 0));
+  return `<div class="bars">${rows.map(r => `<div class="brow"${tipAttr(r.tip || [f(r.value), r.label])}><span class="blabel">${esc(r.label)}</span>` +
+    `<span class="btrack"><span class="bfill" style="width:${Math.max(0, Math.min(100, (r.value || 0) / max * 100))}%;background:var(${r.color || o.color || "--s1"})"></span></span>` +
+    `<span class="bval">${esc(f(r.value))}${r.sub ? ` <small>${esc(r.sub)}</small>` : ""}</span></div>`).join("")}</div>`;
+}
+function stacks(rows, series, o = {}) {
+  // rows: {label, parts:{key:n}, total, text}; 남는 몫(total - 합)은 회색 바탕으로 둔다
+  return `<div class="bars">${rows.map(r => {
+    const used = series.reduce((a, s) => a + (r.parts[s.key] || 0), 0), rest = Math.max(0, (r.total ?? used) - used);
+    const segs = series.filter(s => r.parts[s.key]).map(s => `<i style="flex:${r.parts[s.key]} 1 0;background:var(${s.color})"${tipAttr([fmtN(r.parts[s.key]) + (o.unit || ""), `${r.label} · ${s.label}`])}></i>`).join("");
+    return `<div class="srow"><span class="blabel">${esc(r.label)}</span><span class="stack">${segs}${rest ? `<i class="rest" style="flex:${rest} 1 0"${tipAttr([fmtN(rest) + (o.unit || ""), `${r.label} · ${o.restLabel || "남음"}`])}></i>` : ""}</span>` +
+      `<span class="bval">${esc(r.text ?? `${fmtN(used)} / ${fmtN(r.total)}`)}</span></div>`;
+  }).join("")}</div>`;
+}
+function dots(rows, series, o = {}) {
+  const [lo, hi] = o.domain || [0, 1], f = o.fmt || pct, ticks = o.ticks || [0, .25, .5, .75, 1];
+  const pos = v => Math.max(0, Math.min(100, (v - lo) / (hi - lo) * 100));
+  const H = 8 + series.length * 10, grid = ticks.map(t => `<span class="g" style="left:${pos(t)}%"></span>`).join("");
+  const body = rows.map(r => {
+    const tip = [r.label], texts = [];
+    let marks = "";
+    series.forEach((s, i) => {
+      const v = (r.values || {})[s.key];
+      if (!v || v.v == null) return;
+      const y = 8 + i * 10;
+      if (v.lo != null && v.hi != null) marks += `<span class="dci" style="left:${pos(v.lo)}%;width:${Math.max(.4, pos(v.hi) - pos(v.lo))}%;top:${y - 1}px;background:var(${s.color})"></span>`;
+      marks += `<span class="ddot" style="left:${pos(v.v)}%;top:${y}px;background:var(${s.color})"></span>`;
+      texts.push(f(v.v));
+      tip.push({t: `${f(v.v)}${v.lo != null ? ` (95% ${f(v.lo)}–${f(v.hi)})` : ""}${series.length > 1 ? " · " + s.label : ""}${v.note ? " · " + v.note : ""}`, c: s.color});
+    });
+    return `<div class="drow"${tipAttr(tip)}><span class="dlabel">${esc(r.label)}</span><span class="dtrack" style="height:${H}px">${grid}${marks}</span><span class="dval">${texts.map(esc).join(" · ") || "—"}</span></div>`;
+  }).join("");
+  return `<div class="dots">${body}<div class="daxis" aria-hidden="true"><span></span><span class="ticks">${ticks.map(t => `<span style="left:${pos(t)}%">${esc(o.tickFmt ? o.tickFmt(t) : f(t, 0))}</span>`).join("")}</span><span></span></div></div>`;
+}
+function heat(labels, names, matrix, rowTitle, colTitle) {
+  const max = Math.max(1, ...matrix.flat());
+  return `<div class="scroll"><table class="heat"><thead><tr><th>${esc(rowTitle)} ↓ · ${esc(colTitle)} →</th>${labels.map(l => `<th class="num">${esc(names[l] || l)}</th>`).join("")}</tr></thead><tbody>` +
+    matrix.map((row, i) => `<tr><th>${esc(names[labels[i]] || labels[i])}</th>${row.map((v, j) => `<td class="cell" style="background:color-mix(in srgb, var(${i === j ? "--s1" : "--s2"}) ${v ? Math.round(12 + 48 * v / max) : 0}%, transparent)"${tipAttr([`${v}건`, `${rowTitle} ${names[labels[i]] || labels[i]} → ${colTitle} ${names[labels[j]] || labels[j]}`])}>${v}</td>`).join("")}</tr>`).join("") +
+    `</tbody></table></div>`;
+}
+// 툴팁: 글자는 textContent로만 넣는다(파일에서 온 이름은 데이터로만 다룬다)
+const TIP = () => document.getElementById("tip");
+function showTip(lines, x, y) {
+  const tip = TIP();
+  tip.replaceChildren();
+  lines.forEach((line, i) => {
+    const el = document.createElement(i === 0 ? "strong" : "div");
+    if (typeof line === "object" && line) {
+      if (line.c) { const k = document.createElement("i"); k.className = "lk"; k.style.background = `var(${line.c})`; el.appendChild(k); }
+      el.appendChild(document.createTextNode(line.t));
+    } else el.textContent = line;
+    tip.appendChild(el);
+  });
+  tip.hidden = false;
+  placeTip(x, y);
+}
+function placeTip(x, y) {
+  const tip = TIP(), w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.max(6, Math.min(x + 14, innerWidth - w - 6)) + "px";
+  tip.style.top = (y - h - 12 < 6 ? y + 18 : y - h - 12) + "px";
+}
+const hideTip = () => { TIP().hidden = true; };
+document.addEventListener("pointerover", e => { const t = e.target.closest && e.target.closest("[data-tip]"); if (t) showTip(JSON.parse(t.dataset.tip), e.clientX, e.clientY); });
+document.addEventListener("pointermove", e => { if (!TIP().hidden && e.target.closest && e.target.closest("[data-tip]")) placeTip(e.clientX, e.clientY); });
+document.addEventListener("pointerout", e => { const t = e.target.closest && e.target.closest("[data-tip]"); if (t && !t.contains(e.relatedTarget)) hideTip(); });
+document.addEventListener("focusin", e => { const t = e.target.closest && e.target.closest("[data-tip]"); if (t) { const r = t.getBoundingClientRect(); showTip(JSON.parse(t.dataset.tip), r.left + r.width / 3, r.top); } });
+document.addEventListener("focusout", e => { if (e.target.closest && e.target.closest("[data-tip]")) hideTip(); });
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-toggle]");
+  if (!b) return;
+  const on = b.getAttribute("aria-pressed") !== "true";
+  b.setAttribute("aria-pressed", String(on)); b.textContent = on ? "차트로 보기" : "표로 보기";
+  document.getElementById(b.dataset.toggle + "-plot").hidden = on;
+  document.getElementById(b.dataset.toggle + "-table").hidden = !on;
+  if (!on) drawCharts();
+});
+
+// ------------------------------------------------------------------ SVG 선 차트(크기를 재서 그린다)
+const CHARTS = {};
+let chartSeq = 0;
+function niceTicks(lo, hi, n = 5) {
+  const step0 = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(step0))), r = step0 / mag;
+  const step = (r < 1.5 ? 1 : r < 3 ? 2 : r < 7 ? 5 : 10) * mag, out = [];
+  for (let v = Math.ceil(lo / step) * step; v <= hi + step * 1e-6; v += step) out.push(+v.toFixed(10));
+  return out;
+}
+function lineChart(cfg) { const id = "c" + (++chartSeq); CHARTS[id] = cfg; return `<div class="lc" data-chart="${id}" style="height:${cfg.height || 300}px"></div>`; }
+function drawCharts(root = document) { root.querySelectorAll(".lc[data-chart]").forEach(el => { const c = CHARTS[el.dataset.chart]; if (c && el.offsetParent !== null) drawLine(el, c); }); }
+function drawLine(el, cfg) {
+  const W = Math.max(240, el.clientWidth), H = cfg.height || 300, m = {l: 48, r: 12, t: 26, b: 40};
+  const iw = W - m.l - m.r, ih = H - m.t - m.b, xs = cfg.x, ys = cfg.y;
+  const X = v => m.l + (v - xs.min) / (xs.max - xs.min) * iw, Y = v => m.t + ih - (Math.max(ys.min, Math.min(ys.max, v)) - ys.min) / (ys.max - ys.min) * ih;
+  let s = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(cfg.aria || "")}">`;
+  (xs.ticks || niceTicks(xs.min, xs.max)).forEach(t => { s += `<line class="grid" x1="${X(t)}" x2="${X(t)}" y1="${m.t}" y2="${m.t + ih}"/><text class="tick" x="${X(t)}" y="${m.t + ih + 15}" text-anchor="middle">${esc(xs.fmt(t))}</text>`; });
+  (ys.ticks || niceTicks(ys.min, ys.max)).forEach(t => { s += `<line class="grid" x1="${m.l}" x2="${m.l + iw}" y1="${Y(t)}" y2="${Y(t)}"/><text class="tick" x="${m.l - 6}" y="${Y(t) + 4}" text-anchor="end">${esc(ys.fmt(t))}</text>`; });
+  s += `<line class="axis" x1="${m.l}" x2="${m.l}" y1="${m.t}" y2="${m.t + ih}"/><line class="axis" x1="${m.l}" x2="${m.l + iw}" y1="${m.t + ih}" y2="${m.t + ih}"/>`;
+  s += `<text class="atitle" x="${m.l + iw / 2}" y="${H - 4}" text-anchor="middle">${esc(xs.label)}</text><text class="atitle" x="4" y="13">↑ ${esc(ys.label)}</text>`;
+  (cfg.refs || []).forEach(r => {
+    if (r.diag) { const a = Math.max(xs.min, ys.min), b = Math.min(xs.max, ys.max); s += `<line class="ref" x1="${X(a)}" y1="${Y(a)}" x2="${X(b)}" y2="${Y(b)}"/>`; if (r.label) { const c = a + (b - a) * .62; s += `<text class="reflabel" x="${X(c) + 6}" y="${Y(c) + 14}">${esc(r.label)}</text>`; } }
+    if (r.y != null && r.y <= ys.max) s += `<line class="ref" x1="${m.l}" x2="${m.l + iw}" y1="${Y(r.y)}" y2="${Y(r.y)}"/><text class="reflabel" x="${m.l + iw - 4}" y="${r.below ? Y(r.y) + 12 : Y(r.y) - 4}" text-anchor="end">${esc(r.label)}</text>`;
+  });
+  cfg.series.forEach(se => {
+    const pts = se.points.filter(p => p.x != null && p.y != null);
+    if (!pts.length) return;
+    let d = "";
+    pts.forEach((p, i) => { const x = X(p.x).toFixed(1), y = Y(p.y).toFixed(1); d += i === 0 ? `M${x},${y}` : se.step ? `H${x}V${y}` : `L${x},${y}`; });
+    s += `<path d="${d}" fill="none" stroke="var(${se.color})" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    if (se.markers) pts.forEach(p => { s += `<circle cx="${X(p.x).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="4" fill="var(${se.color})" stroke="var(--sheet)" stroke-width="2"/>`; });
+  });
+  s += `<line class="cross" x1="-20" x2="-20" y1="${m.t}" y2="${m.t + ih}"/><rect class="hit" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>`;
+  el.innerHTML = s;
+  const svg = el.firstChild, cross = svg.querySelector(".cross"), hit = svg.querySelector(".hit");
+  hit.addEventListener("pointermove", e => {
+    const box = svg.getBoundingClientRect(), xv = xs.min + (e.clientX - box.left - m.l) / iw * (xs.max - xs.min);
+    const near = cfg.series.map(se => [se, se.points.filter(p => p.x != null && p.y != null).reduce((b, p) => b == null || Math.abs(p.x - xv) < Math.abs(b.x - xv) ? p : b, null)]);
+    const snap = near.reduce((b, [, p]) => p && (b == null || Math.abs(p.x - xv) < Math.abs(b - xv)) ? p.x : b, null);
+    if (snap == null) return;
+    cross.setAttribute("x1", X(snap)); cross.setAttribute("x2", X(snap));
+    showTip([`${xs.label} ${xs.fmt(snap, 1)}`, ...near.filter(([, p]) => p).map(([se, p]) => ({t: `${ys.fmt(p.y, 1)} · ${se.label}${p.note ? " · " + p.note : ""}${Math.abs(p.x - snap) > (xs.max - xs.min) * .02 ? ` (${xs.fmt(p.x, 1)}에서)` : ""}`, c: se.color}))], e.clientX, e.clientY);
+  });
+  hit.addEventListener("pointerleave", () => { cross.setAttribute("x1", -20); cross.setAttribute("x2", -20); hideTip(); });
+}
+let resizeTimer = null;
+addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => drawCharts(), 150); });
+
+// ------------------------------------------------------------------ 개요
+async function renderOverview(el, gone) {
+  const d = await api("/api/overview");
+  if (gone()) return;
+  el.innerHTML = `<section><h2>한눈에 보기</h2><div class="tiles">${d.headlines.map(h => `<a class="tile" href="#${esc(h.tab)}"><span class="k">${esc(h.label)}</span><span class="v">${esc(h.value)}</span><span class="d">${esc(h.detail || "")}</span></a>`).join("") || `<p class="muted">아직 보여 줄 숫자가 없습니다.</p>`}</div></section>
+  <section><h2>세 갈래 진행</h2><div class="tracks">${d.tracks.map(trackCard).join("")}</div></section>
+  <section><h2>다음에 할 일</h2><div class="card"><ol class="todo">${d.todo.map(t => `<li>${esc(t.text)}${t.tab ? ` <a href="#${esc(t.tab)}">열기 →</a>` : ""}${t.command ? `<code class="cmd">${esc(t.command)}</code>` : ""}</li>`).join("") || "<li>지금 할 일이 없습니다.</li>"}</ol></div></section>`;
+}
+function trackCard(t) {
+  const p = t.progress;
+  if (!p) return `<div class="card track"><h3>${esc(t.name)}</h3><p class="muted small" style="margin-top:.4rem">결과가 아직 없습니다. 다음에 할 일에서 만드는 명령을 보세요.</p></div>`;
+  const noTool = p.checked == null, done = noTool ? 0 : p.checked;
+  const bar = noTool ? `<div class="pbar"${tipAttr([`${fmtN(p.remaining)}${p.unit}`, "사람 확인 표시가 붙은 파일"])}><i style="width:${share(p.remaining, p.draft) * 100}%;background:var(--s4)"></i></div><p class="small muted" style="margin-top:.3rem">사람이 로고를 확인하는 화면은 아직 없습니다. 노란 막대는 확인 표시가 붙은 파일 몫입니다.</p>`
+    : `<div class="pbar"${tipAttr([pct(share(done, p.draft)), `${p.label} · 사람 확인`])}><i style="width:${(share(done, p.draft) || 0) * 100}%"></i></div>`;
+  return `<div class="card track"><div style="display:flex;justify-content:space-between;gap:.5rem;align-items:baseline"><h3>${esc(t.name)}</h3><a class="small" href="#${esc(t.tab)}">열기 →</a></div>
+    <p class="sub">${esc(p.label)}</p>
+    <dl class="trio"><div><dt>초안</dt><dd>${fmtN(p.draft)}</dd></div><div><dt>사람 확인</dt><dd>${noTool ? "—" : fmtN(p.checked)}</dd></div><div><dt>${noTool ? "확인 표시" : "남음"}</dt><dd>${fmtN(p.remaining)}</dd></div></dl>
+    ${bar}<ul class="facts">${t.facts.map(f => `<li>${esc(f)}</li>`).join("")}</ul></div>`;
+}
+
+// ------------------------------------------------------------------ 포스터 줄 정답
+const TIER = {A_clean: "A 깨끗함", B_edge_missing: "B 가장자리 빠짐", C_partial: "C 일부만"};
+function humanPill(f) {
+  if (f.human === "all") return `<span class="pill good">✓ 사람 확인</span>`;
+  if (f.human === "some") return `<span class="pill warn">◐ 일부 사람 확인 ${fmtN(f.human_checked_values)}/${fmtN(f.gold_present)}</span>`;
+  return `<span class="pill">AI 보조</span>`;
+}
+async function renderLines(el, gone) {
+  const L = S.lines;
+  const [d, e] = await Promise.all([api("/api/lines?" + qs({source: L.source})).catch(err => ({error: err})), api("/api/engines").catch(err => ({error: err}))]);
+  if (gone()) return;
+  if (d.error) { el.innerHTML = errBox(d.error); return; }
+  if (d.empty) { el.innerHTML = `<section>${emptyBox(d)}</section>` + enginesBlock(e); return; }
+  L.source = d.source;
+  const ln = d.lines, t = ln.tiers || {}, hc = (ln.human_checked || {}).true || {};
+  const splitRows = ["dev", "test", "reserve"].filter(s => (d.splits || {})[s]).map(s => { const x = d.splits[s], tt = x.tiers || {};
+    return [esc(s), fmtN(x.posters), fmtN(x.lines_total), fmtN(x.lines_matched), fmtN(x.A_correct), fmtN(x.A_incorrect), fmtN(tt.B_edge_missing), fmtN(tt.C_partial)]; });
+  splitRows.push(["<b>전체</b>", fmtN(d.posters), fmtN(ln.lines_total), fmtN(ln.lines_matched), fmtN(ln.A_correct), fmtN(ln.A_incorrect), fmtN(t.B_edge_missing), fmtN(t.C_partial)]);
+  const fieldRows = d.fields.map(f => [`${esc(f.label)}<span class="k">${esc(f.field)}</span>`, esc(f.group_label), humanPill(f), fmtN(f.gold_present),
+    `${fmtN(f.auto_matched)} <span class="muted">${pct(share(f.auto_matched, f.gold_present), 0)}</span>`, `${fmtN(f.exact)} <span class="muted">${pct(share(f.exact, f.gold_present), 0)}</span>`,
+    fix(f.median_cer, 3), fmtN(f.lines_matched), `${fmtN(f.A_correct)} / ${fmtN(f.A_incorrect)}`, fmtN((f.tiers || {}).B_edge_missing), fmtN((f.tiers || {}).C_partial)]);
+  const hist = (d.small_text || {}).histogram || [];
+  const histPlot = bars(hist.map(h => ({label: `${h.range}px`, value: h.A_accuracy, sub: `A ${fmtN(h.A_correct + h.A_incorrect)}줄`,
+    tip: [pct(h.A_accuracy), `높이 ${h.range}px · A 등급 정확도`, `OCR 줄 ${fmtN(h.lines)} · 맞춘 줄 ${fmtN(h.matched)} · A 일치 ${fmtN(h.A_correct)} / 불일치 ${fmtN(h.A_incorrect)}`]})), {max: 1, fmt: v => pct(v, 0)});
+  const histTable = table(["높이(원본 px)", "OCR 줄", "맞춘 줄", "A 일치", "A 불일치", "A 정확도"], hist.map(h => [esc(h.range), fmtN(h.lines), fmtN(h.matched), fmtN(h.A_correct), fmtN(h.A_incorrect), pct(h.A_accuracy)]), [1, 2, 3, 4, 5]);
+  const cf = d.confusions || {}, kinds = Object.entries(cf.by_kind || {}).sort((a, b) => b[1] - a[1]);
+  const kindPlot = bars(kinds.map(([k, v]) => ({label: k, value: v, tip: [`${fmtN(v)}건`, k]})));
+  const kindTable = table(["종류", "편집 수"], kinds.map(([k, v]) => [esc(k), fmtN(v)]), [1]);
+  const pairs = (cf.top_pairs || []).map((p, i) => [`<b>${esc(p.gold ?? "∅")}</b> → <b>${esc(p.ocr ?? "∅")}</b>`, fmtN(p.count), fmtN(p.posters), esc(p.kind),
+    p.example ? `${esc(p.example.text)}<span class="k">OCR: ${esc(p.example.ocr_text)} · ${esc(p.example.field)}</span>` : "—",
+    p.example ? `<button type="button" class="ghost" data-crop="${esc(p.example.line_id)}">잘라 보기</button><div class="excrop" id="ex-${i}"></div>` : ""]);
+  el.innerHTML = `<section><div class="controls"><label>출처 <select id="l-source">${d.sources.map(s => opt(s.source, `${s.source} · 포스터 ${s.posters}장`, d.source)).join("")}</select></label>
+      <span class="small muted">정답 ${esc(d.gold)} · 만든 때 ${esc((d.built_at || "").replace("T", " ").slice(0, 16))}${d.missing ? ` · 빠진 포스터 ${d.missing}장` : ""}</span></div></section>
+    <section><div class="tiles">
+      <div class="tile"><span class="k">OCR 줄</span><span class="v">${fmtN(ln.lines_total)}</span><span class="d">글자·숫자 있는 줄 ${fmtN(ln.lines_with_alnum)}</span></div>
+      <div class="tile"><span class="k">정답과 맞춘 줄</span><span class="v">${fmtN(ln.lines_matched)}</span><span class="d">포스터 ${fmtN(ln.posters_with_any_matched_line)}장에서</span></div>
+      <div class="tile"><span class="k">A 깨끗함</span><span class="v">${fmtN(t.A_clean)}</span><span class="d">OCR 일치 ${fmtN(ln.A_correct)} · 불일치 ${fmtN(ln.A_incorrect)}</span></div>
+      <div class="tile"><span class="k">B · C</span><span class="v">${fmtN(t.B_edge_missing)} · ${fmtN(t.C_partial)}</span><span class="d">B 중 OCR=정답 ${fmtN(ln.B_correct)}</span></div>
+      <div class="tile"><span class="k">사람 확인 값 줄</span><span class="v">${fmtN(hc.lines_matched)}</span><span class="d">나머지는 AI 보조 판독 값</span></div>
+      <div class="tile"><span class="k">신뢰도 AUROC</span><span class="v">${fix(ln.conf_auroc_correct_vs_incorrect, 3)}</span><span class="d">A 일치 대 불일치 · 작은 글자 ${fmtN(ln.small_text)}줄</span></div>
+    </div></section>
+    <section class="grid2"><div class="card"><h3>등급 뜻</h3><ul class="notes">${Object.entries((d.rules || {}).tier || {}).map(([k, v]) => `<li><b>${esc(TIER[k] || k)}</b> — ${esc(v)}</li>`).join("")}<li><b>사람 확인 값</b> — ${esc((d.rules || {}).human_checked || "")}</li></ul></div>
+      <div><h3>분할별 줄 수</h3>${table(["분할", "포스터", "OCR 줄", "맞춘 줄", "A 일치", "A 불일치", "B", "C"], splitRows, [1, 2, 3, 4, 5, 6, 7])}</div></section>
+    <section><h2>필드별 정답 연결</h2><p class="sub" style="margin-bottom:.6rem">정답 있음 = 정답에 값이 있는 포스터 수, 자동 연결 = 그 값을 OCR 줄과 맞춘 수, 완전 일치 = 맞춘 OCR 문자열이 정답과 같은 수, 중앙 CER = 맞춘 값의 글자 오류율 중앙값.</p>
+      ${table(["필드", "묶음", "정답 출처", "정답 있음", "자동 연결", "완전 일치", "중앙 CER", "맞춘 줄", "A 일치 / 불일치", "B", "C"], fieldRows, [3, 4, 5, 6, 7, 8, 9, 10])}</section>
+    <section class="grid2">${fig("글자 높이별 A 등급 정확도", `높이 ${esc((d.small_text || {}).threshold_px)}px 미만을 작은 글자로 셉니다. 맞춘 작은 글자 줄 ${fmtN((d.small_text || {}).matched_small)}개 · 전체 OCR 작은 글자 줄 ${fmtN((d.small_text || {}).all_small)}개.`, histPlot, histTable)}
+      ${fig("OCR이 틀린 글자 종류", `${esc(cf.scope || "")} · 줄 ${fmtN(cf.lines)}개 · 바꿈 ${fmtN((cf.ops || {}).sub)} · 빠짐 ${fmtN((cf.ops || {}).del)} · 더함 ${fmtN((cf.ops || {}).ins)}`, kindPlot, kindTable)}</section>
+    <section><h2>자주 틀리는 글자 짝</h2><p class="sub" style="margin-bottom:.6rem">정답 → OCR. ‘잘라 보기’는 그 줄을 메모리에서 잘라 이 화면에만 보여 줍니다.</p>
+      <div class="scroll tall">${table(["정답 → OCR", "횟수", "포스터", "종류", "예", ""], pairs, [1, 2]).replace(/^<div class="scroll">|<\/div>$/g, "")}</div></section>
+    ${enginesBlock(e)}`;
+  $("#l-source").onchange = ev => { L.source = ev.target.value; route(); };
+  el.querySelectorAll("[data-crop]").forEach(b => b.onclick = () => {
+    const box = b.nextElementSibling;
+    box.innerHTML = box.innerHTML ? "" : `<img src="/crop?${qs({source: d.source, line: b.dataset.crop})}" alt="포스터 줄 잘라 보기" style="max-width:min(100%,28rem);margin-top:.3rem;background:#fff">`;
+  });
+  bindEngines(el, e);
+}
+function enginesBlock(e) {
+  if (!e || e.error) return `<section><h2>엔진 비교</h2>${errBox(e ? e.error : "자료 없음")}</section>`;
+  if (e.empty) return `<section><h2>엔진 비교</h2>${emptyBox(e)}</section>`;
+  const sp = S.lines.esplit, F = e.field_labels || {};
+  const rows = e.pipelines.filter(p => p.splits[sp]);
+  const plot = dots(rows.map(p => { const r = p.splits[sp].read || {}; return {label: p.label, values: {v: {v: r.mean_char_accuracy, lo: (r.ci95 || [])[0], hi: (r.ci95 || [])[1], note: `문구 ${fmtN(r.strings)}개`}}}; }),
+    [{key: "v", label: "판독률", color: "--s1"}], {domain: [.5, 1], ticks: [.5, .6, .7, .8, .9, 1]});
+  const fields = ["core_all", "title", "schedule_pair", "venue"];
+  const tbl = table(["경로", "포스터", "판독률(95%)", "완전히 읽은 문구", ...fields.map(f => F[f] || f), "장당 중앙 시간"], rows.map(p => { const s = p.splits[sp], r = s.read || {};
+    return [esc(p.label), fmtN(s.n), `${pct(r.mean_char_accuracy)} <span class="muted">${pct((r.ci95 || [])[0])}–${pct((r.ci95 || [])[1])}</span>`, pct(r.fully_read),
+      ...fields.map(f => { const x = (s.fields || {})[f] || {}; return `${pct(x.rate)} <span class="muted">${fmtN(x.correct)}/${fmtN(x.n)}</span>`; }), s.time && s.time.median_s != null ? `${s.time.median_s}초` : "—"]; }), [1, 2, 3, 4, 5, 6, 7, 8]);
+  const h = (e.headline || {})[sp] || {};
+  const mc = ["core_all", "title", "venue"].map(f => { const x = h[f] || {}, m = x.mcnemar || {}; return x.diff == null ? "" : `${esc(F[f] || f)} 차이 ${x.diff > 0 ? "+" : ""}${(x.diff * 100).toFixed(1)}%p(제품만 ${m.only_a} · 기준선만 ${m.only_b}, p=${fix(m.p_exact, 3)})`; }).filter(Boolean).join(" · ");
+  return `<section><h2>엔진 비교 · 판독률</h2>
+    <div class="note" style="margin-bottom:.8rem">맞춘 줄·등급·CER 같은 줄 숫자는 엔진마다 맞춘 줄 집합이 달라 <b>같은 엔진 안에서만</b> 비교합니다. 엔진끼리는 이 판독률(정답 문구 문자 일치율, evaluate.py)로 비교합니다.</div>
+    <div class="controls" style="margin-bottom:.7rem"><label>분할 <select id="e-split">${e.splits.map(s => opt(s, s === "all" ? "전체(dev+test+reserve)" : s, sp)).join("")}</select></label>
+      <span class="small muted">${esc((e.engine || {}).engine_label || "")} ${e.baseline_ok ? "· 기준선 다시 계산 일치" : ""}</span></div>
+    ${fig("경로별 판독률", "점은 평균 문자 일치율, 선은 포스터 단위 부트스트랩 95% 구간입니다. 아래 표에 모든 숫자가 있습니다.", plot, "")}
+    <div style="margin-top:.8rem">${tbl}</div>
+    ${mc ? `<p class="small muted" style="margin-top:.5rem">RapidOCR 제품 − PaddleOCR 2배: ${mc}</p>` : ""}
+    <ul class="notes">${(e.notes || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul></section>`;
+}
+function bindEngines(el, e) { const s = $("#e-split", el); if (s) s.onchange = ev => { S.lines.esplit = ev.target.value; route(); }; }
+
+// ------------------------------------------------------------------ 줄 검토
+const DECISION = {ok: "맞음", fix: "고침", exclude: "제외"};
+const DICON = {ok: "✓", fix: "✎", exclude: "✕"};
+function reviewVisible() {
+  const R = S.review;
+  return R.items.filter(it => (!R.field || it.field_label === R.field) && (R.view === "all" || (R.view === "todo" ? !it.review : !!it.review)));
+}
+async function renderReview(el, gone) {
+  const R = S.review;
+  const q = await api("/api/review/queue?" + qs({source: R.source, order: R.order, ocr: R.ocr ? "1" : "0"}));
+  if (gone()) return;
+  if (q.empty) { el.innerHTML = `<section>${emptyBox(q)}</section>`; return; }
+  R.source = q.source; R.items = q.items; R.stats = q.stats; R.fields = q.field_labels; R.noQueue = q.no_queue;
+  if (!R.items.some(it => it.line_id === R.cur)) R.cur = (reviewVisible()[0] || {}).line_id || null;
+  el.innerHTML = `<section><div class="controls">
+      <label>출처 <select id="r-source">${q.sources.filter(s => s.has_queue).map(s => opt(s.source, s.source, q.source)).join("")}</select></label>
+      <label>순서 <select id="r-order">${opt("shuffle", "섞은 순서", R.order)}${opt("poster", "포스터 순서", R.order)}</select></label>
+      <label>보기 <select id="r-view">${opt("todo", "남은 줄", R.view)}${opt("done", "검토한 줄", R.view)}${opt("all", "전체", R.view)}</select></label>
+      <label>필드 <select id="r-field">${opt("", "전체", R.field)}${R.fields.map(f => opt(f, f, R.field)).join("")}</select></label>
+      <label><input type="checkbox" id="r-ocr"${R.ocr ? " checked" : ""}> OCR 결과 보기</label>
+      ${reviewerInput()}</div>
+      ${R.noQueue.length ? `<p class="small muted" style="margin-top:.4rem">검토 큐가 없는 출처: ${R.noQueue.map(n => `${esc(n.source)} (<code>${esc(n.command)}</code>)`).join(", ")}</p>` : ""}</section>
+    <section class="rv"><div id="r-main"></div><aside class="stackv" id="r-side"></aside></section>`;
+  $("#r-source").onchange = ev => { R.source = ev.target.value; R.cur = null; route(); };
+  $("#r-order").onchange = ev => { R.order = ev.target.value; store.set("prep.order", R.order); route(); };
+  $("#r-view").onchange = ev => { R.view = ev.target.value; R.cur = (reviewVisible()[0] || {}).line_id || null; drawReview(); };
+  $("#r-field").onchange = ev => { R.field = ev.target.value; R.cur = (reviewVisible()[0] || {}).line_id || null; drawReview(); };
+  $("#r-ocr").onchange = ev => { R.ocr = ev.target.checked; route(); };
+  drawReview();
+}
+function drawReview(message, cls) {
+  const R = S.review, list = reviewVisible(), main = $("#r-main"), side = $("#r-side");
+  if (!main) return;
+  const it = R.items.find(x => x.line_id === R.cur);
+  const idx = list.findIndex(x => x.line_id === R.cur);
+  if (!it) {
+    main.innerHTML = `<div class="card"><h3>${R.view === "todo" ? "이 보기에서 남은 줄이 없습니다." : "보여 줄 줄이 없습니다."}</h3><p class="sub" style="margin-top:.3rem">보기나 필드를 바꾸면 다른 줄을 볼 수 있습니다.</p></div>`;
+  } else {
+    const val = it.review && it.review.decision === "fix" ? it.review.text : it.text;
+    main.innerHTML = `<div class="card">
+      <div class="rc-head"><span class="pill accent">${idx >= 0 ? `${idx + 1} / ${list.length}` : "목록 밖"}</span><span class="pill">${esc(it.field_label)}</span>
+        ${it.human_checked ? `<span class="pill good">✓ 사람 확인 값</span>` : `<span class="pill">AI 보조 값</span>`}
+        ${it.tier === "B_edge_missing" ? `<span class="pill warn">⚠ 가장자리 글자 확인</span>` : ""}${it.small_text ? `<span class="pill">작은 글자 ${fix(it.height, 1)}px</span>` : ""}
+        <span class="small muted">${esc(it.case_id)} · ${esc(it.split)}</span></div>
+      <div class="crop"><img id="r-img" src="/crop?${qs({source: R.source, line: it.line_id})}" alt="포스터 줄 잘라 보기(${esc(it.field_label)})"></div>
+      ${R.ocr && it.ocr_text != null ? `<div class="obs"><span class="k">OCR 결과 · 신뢰도 ${fix(it.confidence, 3)}</span>${esc(it.ocr_text)}</div>` : ""}
+      <label class="fk" for="r-prop">제안 전사 · 그림과 다르면 고칩니다</label>
+      <input type="text" id="r-prop" class="prop" lang="ko" autocomplete="off" spellcheck="false" value="${esc(val)}">
+      <div class="actions" style="margin-top:.35rem"><button type="button" class="ghost" data-act="reset">제안으로 되돌리기</button><span class="small muted" id="r-changed"></span></div>
+      <label class="fk" for="r-note">메모(선택)</label><input type="text" id="r-note" maxlength="1000" autocomplete="off" style="width:100%" value="${esc((it.review && it.review.note) || "")}">
+      <div class="actions"><button type="button" class="primary" data-act="ok">맞음<kbd>Enter</kbd></button><button type="button" data-act="fix">고쳐서 저장<kbd>Ctrl+Enter</kbd></button>
+        <button type="button" class="danger" data-act="exclude">제외</button><span class="spacer"></span><button type="button" data-act="prev">이전</button><button type="button" data-act="next">건너뛰기</button></div>
+      <p class="msg ${cls || ""}" id="r-msg" role="status">${esc(message || (it.review ? `이미 검토함: ${DECISION[it.review.decision]} · ${it.review.reviewer || "이름 없음"} · ${(it.review.reviewed_at || "").replace("T", " ").slice(0, 16)}. 다시 저장하면 마지막 결정이 남습니다.` : ""))}</p></div>
+      <div class="card" style="margin-top:1rem"><h3>이렇게 판단합니다</h3><ul class="help">
+        <li><b>맞음</b>: 그림의 글자와 제안 전사가 같습니다(띄어쓰기·문장부호 포함).</li>
+        <li><b>고쳐서 저장</b>: 제안을 그림대로 고친 뒤 저장합니다.</li>
+        <li><b>제외</b>: 잘렸거나 다른 줄이 섞여 줄 정답으로 쓸 수 없습니다.</li>
+        <li>제안 일부에는 검토 품질을 재려고 일부러 넣은 틀린 글자가 섞여 있습니다.</li></ul></div>`;
+    const prop = $("#r-prop");
+    const mark = () => { const ch = prop.value.normalize("NFC").trim() !== it.text; prop.classList.toggle("changed", ch); $("#r-changed").textContent = ch ? "제안과 다릅니다 · Ctrl+Enter로 저장" : ""; };
+    prop.addEventListener("input", mark); mark();
+    $("#r-img").onload = ev => { const img = ev.target, k = Math.min(3, 96 / Math.max(1, img.naturalHeight)); if (k > 1) img.style.width = Math.min(img.naturalWidth * k, img.parentElement.clientWidth - 20) + "px"; };  // 작은 줄은 화면에서만 키운다
+    $("#r-img").onerror = () => { $("#r-img").replaceWith(Object.assign(document.createElement("span"), {className: "small err", textContent: "잘라 보기를 만들지 못했습니다(포스터 원본을 찾을 수 없음)."})); };
+    main.querySelectorAll("[data-act]").forEach(b => b.onclick = () => act(b.dataset.act));
+  }
+  const st = R.stats || {}, segs = Object.entries(st.segments || {});
+  const plantedText = !st.planted ? "" : st.planted.shown ? (st.planted.has_sample ? `<b>${pct(st.planted.caught_rate, 0)}</b> <span class="muted">일부러 넣은 오류 가운데 고침·제외로 잡은 비율</span>` : `<span class="muted">아직 일부러 넣은 오류를 만나지 않았습니다.</span>`)
+    : `<span class="muted">이 큐를 모두 검토하면 보여 줍니다(남은 ${fmtN(st.remaining)}개).</span>`;
+  side.innerHTML = `<div class="card"><h3>진행</h3>
+      <div class="seg"><div class="lab"><span>전체</span><span>${fmtN(st.reviewed)} / ${fmtN(st.queue_total)} · 남음 ${fmtN(st.remaining)}</span></div><div class="pbar"><i style="width:${(share(st.reviewed, st.queue_total) || 0) * 100}%"></i></div></div>
+      ${segs.map(([k, s]) => `<div class="seg"${tipAttr([`${fmtN(s.reviewed)} / ${fmtN(s.total)}`, s.label, `맞음 ${fmtN(s.ok)} · 고침 ${fmtN(s.fix)} · 제외 ${fmtN(s.exclude)}`])}><div class="lab"><span>${esc(s.label)}</span><span>${fmtN(s.reviewed)} / ${fmtN(s.total)}</span></div><div class="pbar"><i style="width:${(share(s.reviewed, s.total) || 0) * 100}%"></i></div></div>`).join("")}
+      <p class="small" style="margin-top:.6rem">검토 품질: ${plantedText}</p>
+      ${st.stale ? `<p class="note warn small" style="margin-top:.6rem">줄 초안을 큐를 만든 뒤 다시 만들었습니다. 몇몇 제안이 지금 초안과 다를 수 있습니다.</p>` : ""}
+      ${Object.keys(st.reviewers || {}).length ? `<p class="small muted" style="margin-top:.5rem">검토자: ${Object.entries(st.reviewers).map(([k, v]) => `${esc(k)} ${fmtN(v)}`).join(" · ")}</p>` : ""}</div>
+    <div class="card"><h3>목록 <span class="small muted">${fmtN(list.length)}줄</span></h3>
+      <ol class="qlist" id="r-list">${list.map(x => `<li class="${x.line_id === R.cur ? "cur" : ""}"><button type="button" data-line="${esc(x.line_id)}"><span>${x.review ? DICON[x.review.decision] : "·"}</span><span class="t">${esc(x.field_label)} · ${esc(x.text)}</span></button></li>`).join("")}</ol></div>`;
+  side.querySelectorAll("[data-line]").forEach(b => b.onclick = () => { S.review.cur = b.dataset.line; drawReview(); });
+  const cur = side.querySelector("li.cur");
+  if (cur) cur.scrollIntoView({block: "nearest"});
+  const prop = $("#r-prop");
+  if (prop && document.activeElement !== $("#reviewer")) prop.focus({preventScroll: true});
+}
+function step(dir) {
+  const list = reviewVisible(), i = list.findIndex(x => x.line_id === S.review.cur);
+  const next = list[i < 0 ? 0 : Math.max(0, Math.min(list.length - 1, i + dir))];
+  if (next) { S.review.cur = next.line_id; drawReview(); }
+}
+function nextAfter(lineId) {
+  // 저장한 뒤 갈 줄: '검토한 줄' 보기면 다음 검토한 줄, 아니면 다음 남은 줄
+  const R = S.review, order = R.items.filter(it => !R.field || it.field_label === R.field), i = order.findIndex(x => x.line_id === lineId);
+  const want = it => R.view === "done" ? !!it.review : !it.review;
+  for (let k = 1; k <= order.length; k++) { const it = order[(i + k) % order.length]; if (want(it)) return it.line_id; }
+  return null;
+}
+async function act(kind) {
+  const R = S.review;
+  if (kind === "prev" || kind === "next") return step(kind === "prev" ? -1 : 1);
+  const it = R.items.find(x => x.line_id === R.cur), prop = $("#r-prop");
+  if (!it || !prop) return;
+  if (kind === "reset") { prop.value = it.text; prop.dispatchEvent(new Event("input")); prop.focus(); return; }
+  if (R.saving) return;
+  const say = (m, c = "bad") => { const el = $("#r-msg"); if (el) { el.textContent = m; el.className = "msg " + c; } };
+  const reviewer = ($("#reviewer").value || "").trim();
+  if (!reviewer) { say("검토자 이름을 먼저 적어 주세요."); $("#reviewer").focus(); return; }
+  const value = prop.value.normalize("NFC").trim();
+  if (kind === "ok" && value !== it.text) { say("제안을 고쳤습니다. 고친 내용을 저장하려면 Ctrl+Enter를 누르세요. 되돌리려면 ‘제안으로 되돌리기’."); return; }
+  if (kind === "fix" && !value) { say("빈 전사는 저장할 수 없습니다. 쓸 수 없는 줄이면 ‘제외’를 누르세요."); return; }
+  if (kind === "fix" && value === it.text) { say("제안과 같습니다. 맞으면 Enter(맞음)를 누르세요."); return; }
+  R.saving = true;
+  try {
+    const r = await post("/api/review/record", {source: R.source, line_id: it.line_id, decision: kind, text: kind === "fix" ? value : null, reviewer, note: $("#r-note").value});
+    it.review = r.saved; R.stats = r.stats;
+    R.cur = nextAfter(it.line_id) || (R.view === "todo" ? null : it.line_id);
+    drawReview(`저장했습니다: ${it.case_id} · ${DECISION[kind]}`, "good");
+  } catch (err) { say(err.message); }
+  finally { R.saving = false; }
+}
+document.addEventListener("keydown", e => {
+  if (S.tab !== "review" || e.isComposing || e.keyCode === 229 || e.key !== "Enter") return;
+  const t = e.target;
+  if (t.id === "reviewer" || ["SELECT", "TEXTAREA", "BUTTON", "A"].includes(t.tagName)) return;
+  if (t.tagName === "INPUT" && !["r-prop", "r-note"].includes(t.id)) return;
+  if (!$("#r-prop")) return;
+  e.preventDefault();
+  act(e.ctrlKey || e.metaKey ? "fix" : "ok");
+});
+document.addEventListener("input", e => { if (e.target.id === "reviewer") store.set("prep.reviewer", e.target.value.trim()); });
+
+// ------------------------------------------------------------------ 신뢰도 보정
+const METHOD_COLOR = {raw: "--s1", temperature: "--s2", isotonic: "--s2", platt: "--s2"};
+async function renderCalib(el, gone) {
+  const C = S.calib;
+  const d = await api("/api/calib");
+  if (gone()) return;
+  if (d.empty) { el.innerHTML = `<section>${emptyBox(d)}</section>`; return; }
+  const names = d.sources.map(s => s.source);
+  if (!names.includes(C.source)) C.source = names.includes("paddleocr-rgb_2x") ? "paddleocr-rgb_2x" : names[0];
+  const det = await api("/api/calib/detail?" + qs({source: C.source, ev: C.ev, scope: C.scope}));
+  if (gone()) return;
+  const lab = d.labels || {}, M = lab.methods || {}, E = lab.evaluations || {}, SC = lab.scopes || {};
+  const raw = det.methods.raw || {}, cal = det.methods[C.method] || {};
+  const relKey = C.bins === "mass" ? "reliability_equal_mass" : "reliability";
+  const relPts = m => (m[relKey] || []).filter(b => b.count && b.mean_confidence != null).map(b => ({x: b.mean_confidence, y: b.accuracy, note: `줄 ${fmtN(b.count)} · 칸 ${fix(b.lo, 3)}–${fix(b.hi, 3)}`}));
+  const pair = [{key: "raw", label: M.raw || "보정 전", color: "--s1"}, {key: C.method, label: M[C.method] || C.method, color: "--s2"}];
+  const lo = Math.max(0, Math.floor(Math.min(...[...relPts(raw), ...relPts(cal)].flatMap(p => [p.x, p.y]), 1) * 10) / 10 - .1);
+  const relPlot = lineChart({height: 320, aria: "신뢰도 그림", x: {min: lo, max: 1, label: "평균 점수", fmt: v => fix(v, 2)}, y: {min: lo, max: 1, label: "실제 정답률", fmt: (v, n) => pct(v, n ?? 0)},
+    refs: [{diag: true, label: "완벽한 보정"}], series: pair.map(s => ({label: s.label, color: s.color, markers: true, points: relPts(det.methods[s.key] || {})}))});
+  const relTable = table(["방법", "칸", "줄", "평균 점수", "정답률", "차이"], pair.flatMap(s => (det.methods[s.key] || {})[relKey] ? det.methods[s.key][relKey].filter(b => b.count).map(b => [esc(s.label), `${fix(b.lo, 3)}–${fix(b.hi, 3)}`, fmtN(b.count), fix(b.mean_confidence, 3), pct(b.accuracy), fix(b.gap, 3)]) : []), [2, 3, 4, 5]);
+  const rc = m => ((m.risk_coverage || {}).points || []).map(p => ({x: p.coverage, y: p.risk}));
+  const maxRisk = Math.max(.03, ...pair.flatMap(s => rc(det.methods[s.key] || {}).map(p => p.y)));
+  const rcPlot = lineChart({height: 300, aria: "위험-처리율 곡선", x: {min: 0, max: 1, label: "처리율(받아들인 줄 비율)", fmt: (v, n) => pct(v, n ?? 0)}, y: {min: 0, max: Math.ceil(maxRisk * 105) / 100, label: "오류율", fmt: (v, d) => pct(v, d ?? 0)},
+    refs: [{y: .01, label: "오류 1%", below: true}, {y: .02, label: "오류 2%"}], series: pair.map(s => ({label: s.label, color: s.color, step: true, points: rc(det.methods[s.key] || {})}))});
+  const rcTable = table(["방법", "AURC", "최적 AURC", "차이(EAURC)"], pair.map(s => { const r = (det.methods[s.key] || {}).risk_coverage || {}; return [esc(s.label), fix(r.aurc, 4), fix(r.aurc_optimal, 4), fix(r.eaurc, 4)]; }), [1, 2, 3]);
+  const ci = v => v ? `<span class="muted">${fix(v[0], 3)}–${fix(v[1], 3)}</span>` : "";
+  const mRows = ["raw", "temperature", "isotonic", "platt"].filter(m => det.methods[m]).map(m => { const x = det.methods[m], vr = x.vs_raw || {};
+    return [esc(M[m] || m), `${fix(x.ece, 3)} ${ci(x.ece_ci95)}`, fix(x.ece_equal_mass, 3), `${fix(x.brier, 4)} ${ci(x.brier_ci95)}`, `${fix(x.auroc, 3)} ${ci(x.auroc_ci95)}`,
+      vr.ece ? `${vr.ece.diff > 0 ? "+" : ""}${fix(vr.ece.diff, 3)} ${ci(vr.ece.ci95)}` : "—"]; });
+  const covCell = c => !c ? "—" : `${pct(c.expected)} <span class="muted">실제 ${pct(c.expected_risk)}</span>`;
+  const covRows = [];
+  d.sources.forEach(s => { const sc = ((s.scopes || {})[C.scope] || {})[C.ev] || {}, mm = sc.methods || {};
+    ["0.01", "0.02"].forEach(r => { const rawc = ((mm.raw || {}).coverage || {})[r];
+      covRows.push([r === "0.01" ? esc(s.source) : "", r === "0.01" ? "1%" : "2%", rawc ? pct(rawc.oracle) : "—", rawc ? `${pct(rawc.transfer)} <span class="muted">실제 ${pct(rawc.transfer_risk)}</span>` : "—",
+        ...["raw", "temperature", "isotonic", "platt"].map(m => covCell(((mm[m] || {}).coverage || {})[r]))]); }); });
+  const baRows = d.sources.map(s => { const mm = ((((s.scopes || {})[C.scope] || {})[C.ev]) || {}).methods || {}; const g = (m, k, n) => fix((mm[m] || {})[k], n);
+    return [`${esc(s.source)}${s.source === C.source ? " ◀" : ""}`, `${g("raw", "ece", 3)} → ${g("temperature", "ece", 3)} → ${g("isotonic", "ece", 3)} · ${g("platt", "ece", 3)}`,
+      `${g("raw", "brier", 4)} → ${g("isotonic", "brier", 4)}`, g("raw", "auroc", 3), fix(s.temperature_T, 2)]; });
+  const cur = d.sources.find(s => s.source === C.source) || {};
+  const scopeRows = ["all", "human_checked", "ai_assisted"].map(k => { const sc = ((cur.scopes || {})[k] || {})[C.ev] || {}, mm = sc.methods || {}, la = (((cur.line_accuracy || {})[k] || {})[C.ev === "oof" ? "dev+test" : "reserve"]) || {};
+    return [esc(SC[k] || k), fmtN(sc.n), fmtN(sc.errors), pct(sc.accuracy), `${fix((mm.raw || {}).ece, 3)} → ${fix((mm.isotonic || {}).ece, 3)}`, `${fix((mm.raw || {}).brier, 4)} → ${fix((mm.isotonic || {}).brier, 4)}`, fix(la.cer_micro, 4)]; });
+  const ser = d.series || {};
+  el.innerHTML = `<section><div style="display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;margin-bottom:.6rem"><span class="diag">⚠ 진단용</span><span class="small">서비스 적용: <b>${esc(d.service_use || "")}</b></span></div>
+      <div class="note warn">${esc(d.notice || "")}</div><p class="small muted" style="margin-top:.5rem">${esc(d.compare_note || "")}</p></section>
+    <section><div class="controls">
+      <label>출처 <select id="c-source">${names.map(n => opt(n, n, C.source)).join("")}</select></label>
+      <label>평가 <select id="c-ev">${["oof", "reserve"].map(k => opt(k, E[k] || k, C.ev)).join("")}</select></label>
+      <label>범위 <select id="c-scope">${["all", "human_checked", "ai_assisted"].map(k => opt(k, SC[k] || k, C.scope)).join("")}</select></label>
+      <label>비교할 보정 <select id="c-method">${["temperature", "isotonic", "platt"].map(k => opt(k, M[k] || k, C.method)).join("")}</select></label>
+      <label>칸 <select id="c-bins">${opt("mass", "줄 수가 같은 10칸", C.bins)}${opt("width", "같은 폭 10칸", C.bins)}</select></label></div></section>
+    <section><div class="tiles">
+      <div class="tile"><span class="k">줄(A 깨끗함)</span><span class="v">${fmtN(det.n)}</span><span class="d">포스터 ${fmtN(det.posters)}장 · ${esc(det.label || "")}</span></div>
+      <div class="tile"><span class="k">틀린 줄</span><span class="v">${fmtN(det.errors)}</span><span class="d">줄 정확도 ${pct(det.accuracy)}</span></div>
+      <div class="tile"><span class="k">ECE ${esc(M.raw || "보정 전")}</span><span class="v">${fix(raw.ece, 3)}</span><span class="d">Brier ${fix(raw.brier, 4)}</span></div>
+      <div class="tile"><span class="k">ECE ${esc(M[C.method] || C.method)}</span><span class="v">${fix(cal.ece, 3)}</span><span class="d">Brier ${fix(cal.brier, 4)}</span></div>
+      <div class="tile"><span class="k">맞춘 보정 값(dev+test 전체)</span><span class="v">T ${fix(det.fit.T, 2)}</span><span class="d">플랫 a ${fix((det.fit.platt || {}).a, 2)} · b ${fix((det.fit.platt || {}).b, 2)} · 등위 ${fmtN(det.fit.isotonic_blocks)}칸</span></div>
+    </div></section>
+    <section class="grid2">${fig("신뢰도 그림(보정 전후)", "대각선에 가까울수록 점수가 실제 정답률과 맞습니다. 점 하나가 칸 하나입니다.", relPlot, relTable, legend(pair, true))}
+      ${fig("위험-처리율 곡선", "점수가 높은 줄부터 받아들일 때 받아들인 줄의 오류율입니다. 보정은 순서를 거의 바꾸지 않아 두 선이 비슷합니다.", rcPlot, rcTable, legend(pair, true))}</section>
+    <section><h2>지표(보정 전후)</h2>${table(["방법", "ECE (95%)", "ECE(같은 줄 수 칸)", "Brier (95%)", "AUROC (95%)", "ECE 차이 vs 보정 전 (95%)"], mRows, [1, 2, 3, 4, 5])}
+      <p class="small muted" style="margin-top:.4rem">${esc((lab.metrics || {}).ci95 || "")}</p></section>
+    <section><h2>오류율 1%·2%에서 받아들일 수 있는 줄</h2><p class="sub" style="margin-bottom:.6rem">${esc(E[C.ev] || C.ev)} · ${esc(SC[C.scope] || C.scope)}. 사후 최적은 라벨로 고른 상한, 학습 문턱은 학습 자료 라벨로 고른 문턱을 그대로 쓴 결과, 나머지 네 칸은 라벨 없이 점수만으로 고른 문턱(예상 오류 ≤ 목표)의 처리율과 실제 오류율입니다.</p>
+      ${table(["출처", "목표", "사후 최적", "학습 문턱", `라벨 없이 · ${M.raw || "보정 전"}`, "라벨 없이 · 온도", "라벨 없이 · 등위", "라벨 없이 · 플랫"], covRows, [2, 3, 4, 5, 6, 7])}</section>
+    <section class="grid2"><div><h2>출처별 보정 전후</h2>${table(["출처", "ECE 보정 전 → 온도 → 등위 · 플랫", "Brier 보정 전 → 등위", "AUROC", "T"], baRows, [3, 4])}<p class="small muted" style="margin-top:.4rem">줄 집합이 출처마다 달라 출처끼리 견주지 않습니다.</p></div>
+      <div><h2>사람 확인 값 줄과 AI 보조 줄</h2>${table(["범위", "줄", "틀린 줄", "정확도", "ECE 보정 전 → 등위", "Brier 보정 전 → 등위", "CER"], scopeRows, [1, 2, 3, 4, 5, 6])}
+      <p class="small muted" style="margin-top:.4rem">${esc(C.source)} · 보정은 전체 줄로 맞추고 범위별로 나눠 잽니다. AI 보조 줄의 ‘틀림’에는 정답 쪽 오류가 섞일 수 있습니다.</p></div></section>
+    <section><h2>시리즈 묶음 교차검증</h2><p class="sub">포스터 ${fmtN(ser.posters)}장 → 시리즈 ${fmtN(ser.series_total)}개(2장 이상 ${fmtN(ser.multi_series)}개, ${fmtN(ser.posters_in_multi)}장). 예비분 중 같은 시리즈가 dev+test에 있는 포스터 ${fmtN(ser.reserve_overlap)}장.</p>
+      <details style="margin-top:.5rem"><summary>묶음 규칙과 큰 시리즈</summary><ul class="notes">${(ser.rules || []).map(r => `<li>${esc(r)}</li>`).join("")}</ul>
+      ${table(["시리즈", "포스터", "분할", "접힘"], (ser.groups || []).map(g => [esc(g.series_id), fmtN(g.size), esc(Object.entries(g.splits || {}).map(([k, v]) => `${k} ${v}`).join(" · ")), g.fold == null ? "—" : g.fold]), [1, 3])}</details></section>`;
+  [["c-source", "source"], ["c-ev", "ev"], ["c-scope", "scope"], ["c-method", "method"], ["c-bins", "bins"]].forEach(([id, k]) => { $("#" + id).onchange = ev => { C[k] = ev.target.value; route(); }; });
+}
+
+// ------------------------------------------------------------------ 가상 포스터 박스
+async function renderSynth(el, gone) {
+  const Y = S.synth, d = await api("/api/synth");
+  if (gone()) return;
+  if (d.empty) { el.innerHTML = `<section>${emptyBox(d)}</section>`; return; }
+  const sets = d.sets, FL = d.field_labels || {}, ST = d.status_labels || {};
+  if (!sets.some(s => s.set === Y.set)) Y.set = sets[sets.length - 1].set;
+  const series = sets.map((s, i) => ({key: s.set, label: s.set + (i === sets.length - 1 && sets.length > 1 ? " (홀드아웃)" : ""), color: SERIES[i % 5]}));
+  const metric = Y.metric, isCer = metric === "cer_matched";
+  const mLabel = {recall: "상자 단위 재현율(IoU≥0.5)", single: "상자 하나로 찾음", found: "어떤 모양으로든 찾음", cer_matched: "맞춘 상자 평균 CER"}[metric];
+  const fields = [...new Set(sets.flatMap(s => Object.keys(((s.sections || {}).poster || {}).by_field || {})))];
+  const val = (st, k) => st ? {v: st[metric], lo: k === "recall" && st.recall_ci95 ? st.recall_ci95[0] : null, hi: k === "recall" && st.recall_ci95 ? st.recall_ci95[1] : null, note: `상자 ${fmtN(st.n)}`} : null;
+  const dom = isCer ? [0, Math.max(.05, ...sets.flatMap(s => Object.values(s.sections.poster.by_field || {}).map(x => x.cer_matched || 0))) * 1.1] : [0, 1];
+  const dopt = isCer ? {domain: dom, fmt: (v, n) => fix(v, n ?? 3), tickFmt: v => fix(v, 2), ticks: niceTicks(dom[0], dom[1], 4)} : {};
+  const fieldPlot = dots(fields.map(f => ({label: FL[f] || f, values: Object.fromEntries(sets.map(s => [s.set, val((s.sections.poster.by_field || {})[f], metric)]))})), series, dopt);
+  const fieldTable = table(["항목", "세트", "상자", "일치", "여백 큰", "나눠 읽음", "합쳐 읽음", "못 찾음", "재현율", "하나로", "찾음", "CER"],
+    fields.flatMap(f => sets.map(s => { const x = (s.sections.poster.by_field || {})[f]; return x ? [esc(FL[f] || f), esc(s.set), fmtN(x.n), fmtN(x.match), fmtN(x.loose), fmtN(x.split), fmtN(x.merged), fmtN(x.missed), pct(x.recall), pct(x.single), pct(x.found), fix(x.cer_matched, 3)] : null; }).filter(Boolean)), [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+  const temps = [...new Set(sets.flatMap(s => Object.keys(s.sections.poster.by_template || {})))].sort();
+  const tempPlot = dots(temps.map(t => ({label: `틀 ${t}`, values: Object.fromEntries(sets.map(s => [s.set, val((s.sections.poster.by_template || {})[t], metric)]))})), series, dopt);
+  const tempTable = table(["틀", "세트", "상자", "재현율", "하나로", "찾음", "CER"], temps.flatMap(t => sets.map(s => { const x = (s.sections.poster.by_template || {})[t]; return x ? [`틀 ${esc(t)}`, esc(s.set), fmtN(x.n), pct(x.recall), pct(x.single), pct(x.found), fix(x.cer_matched, 3)] : null; }).filter(Boolean)), [2, 3, 4, 5, 6]);
+  const cur = sets.find(s => s.set === Y.set), stCodes = ["match", "loose", "split", "merged", "missed"];
+  const stSeries = stCodes.map((k, i) => ({key: k, label: ST[k] || k, color: SERIES[i]}));
+  const stackPlot = stacks(fields.filter(f => (cur.sections.poster.by_field || {})[f]).map(f => { const x = cur.sections.poster.by_field[f]; return {label: FL[f] || f, parts: Object.fromEntries(stCodes.map(k => [k, x[k] || 0])), total: x.n, text: `${fmtN(x.n)}개`}; }), stSeries, {unit: "개"});
+  const stackTable = table(["항목", ...stCodes.map(k => ST[k] || k), "합계"], fields.filter(f => (cur.sections.poster.by_field || {})[f]).map(f => { const x = cur.sections.poster.by_field[f]; return [esc(FL[f] || f), ...stCodes.map(k => fmtN(x[k])), fmtN(x.n)]; }), [1, 2, 3, 4, 5, 6]);
+  if (!cur.overlays.includes(Y.overlay)) Y.overlay = cur.overlays[0] || null;
+  const docO = (cur.sections.document || {}).overall || {};
+  el.innerHTML = `<section><div class="note warn"><b>v1·v2는 같은 디자인 틀 5개를 씁니다.</b> v1은 대조 규칙을 맞출 때 본 세트, v2는 홀드아웃입니다. 이 상자로 검출기나 규칙을 학습·조정하지 않습니다. 학습용 상자는 새 틀(v3)로 만듭니다.</div></section>
+    <section><div class="grid2">${sets.map(s => { const h = (s.headline || {}).poster || {}, b = (s.boxes || {}).poster || {}, dd = (s.boxes || {}).document || {};
+      return `<div class="card"><h3>${esc(s.set)} <span class="small muted">${esc(s.dataset_id || "")}</span></h3><div class="tiles" style="margin-top:.5rem">
+        <div class="tile"><span class="k">포스터 상자</span><span class="v">${fmtN(b.total)}</span><span class="d">문서 상자 ${fmtN(dd.total)} · 같은 그림 ${esc((s.sha256_check || {}).poster || "")}</span></div>
+        <div class="tile"><span class="k">상자 단위 재현율</span><span class="v">${pct(h.recall)}</span><span class="d">95% ${pct((h.recall_ci95 || [])[0])}–${pct((h.recall_ci95 || [])[1])}</span></div>
+        <div class="tile"><span class="k">그린 줄 재현율</span><span class="v">${pct(h.line_recall)}</span><span class="d">찾음 ${pct(h.found)} · 하나로 ${pct(h.single)}</span></div>
+        <div class="tile"><span class="k">맞춘 상자 CER</span><span class="v">${fix(h.cer_matched, 3)}</span><span class="d">설명 안 되는 OCR 상자 ${fmtN(s.sections.poster.unexplained_ocr_boxes)}/${fmtN(s.sections.poster.ocr_boxes)}</span></div></div></div>`; }).join("")}</div>
+      <p class="small muted" style="margin-top:.5rem">상자 단위 수치가 낮은 것은 대부분 단위 차이입니다. PaddleOCR이 ‘주최|주관|문의’ 띠를 한 상자로 읽고 제목·문구는 낱말로 나눠 읽습니다. ‘찾음’과 줄 단위 재현율을 함께 봅니다.</p></section>
+    <section><div class="controls"><label>지표 <select id="y-metric">${["recall", "single", "found", "cer_matched"].map(k => opt(k, {recall: "상자 단위 재현율(IoU≥0.5)", single: "상자 하나로 찾음", found: "어떤 모양으로든 찾음", cer_matched: "맞춘 상자 평균 CER"}[k], metric)).join("")}</select></label></div></section>
+    <section class="grid2">${fig(`항목별 ${mLabel}`, metric === "recall" ? "선은 Wilson 95% 구간입니다." : "", fieldPlot, fieldTable, legend(series))}${fig(`디자인 틀별 ${mLabel}`, "틀 2는 밤하늘·빛 번짐 디자인입니다.", tempPlot, tempTable, legend(series))}</section>
+    <section class="grid2"><div>${fig(`OCR 상자와 맞은 모양 · ${cur.set}`, `<label class="small">세트 <select id="y-set">${sets.map(s => opt(s.set, s.set, Y.set)).join("")}</select></label>`, stackPlot, stackTable, legend(stSeries))}
+        <details style="margin-top:.6rem"><summary>상태 뜻</summary><ul class="notes">${Object.entries(d.definitions || {}).map(([k, v]) => `<li><b>${esc(ST[k] || k)}</b> — ${esc(v)}</li>`).join("")}</ul></details></div>
+      <div class="card"><h3>겹쳐 그린 가상 포스터 · ${esc(cur.set)}</h3><p class="sub">가상 포스터에 정답 상자를 상태 색으로, OCR 상자를 회색으로 겹친 확인용 그림입니다. 색 뜻은 그림 아래 범례를 따릅니다.</p>
+        <div class="controls" style="margin:.5rem 0">${cur.overlays.map(o => `<button type="button" data-ov="${esc(o)}" class="${o === Y.overlay ? "primary" : ""}">${esc(o.replace(".png", ""))}</button>`).join("") || `<span class="muted small">겹친 그림이 없습니다.</span>`}</div>
+        ${Y.overlay ? `<img src="/synth-overlay?${qs({set: cur.set, file: Y.overlay})}" alt="겹쳐 그린 가상 포스터 ${esc(Y.overlay)}" style="width:100%;height:auto;border-radius:6px;border:1px solid var(--rule)">` : ""}</div></section>
+    <section><h2>문서 이미지 OCR <span class="pill">제품과 무관</span></h2><p class="sub">제품은 기준 문서를 글자로 받습니다. 참고로만 적습니다(product_relevant=false).</p>
+      ${table(["세트", "상자", "상자 단위 재현율", "하나로 찾음", "찾음", "맞춘 상자 CER", "그린 줄 재현율"], sets.map(s => { const h = (s.headline || {}).document || {}; return [esc(s.set), fmtN(h.boxes), pct(h.recall), pct(h.single), pct(h.found), fix(h.cer_matched, 4), pct(h.line_recall)]; }), [1, 2, 3, 4, 5, 6])}
+      <details style="margin-top:.6rem"><summary>재현 조건과 메모</summary><ul class="notes">${(cur.notes || []).map(n => `<li>${esc(n)}</li>`).join("")}<li>textbbox와 잉크 상자 평균 IoU ${fix((cur.bbox_vs_ink_iou || {}).mean, 3)}</li></ul></details></section>`;
+  $("#y-metric").onchange = ev => { Y.metric = ev.target.value; route(); };
+  $("#y-set").onchange = ev => { Y.set = ev.target.value; Y.overlay = null; route(); };
+  el.querySelectorAll("[data-ov]").forEach(b => b.onclick = () => { Y.overlay = b.dataset.ov; route(); });
+}
+
+// ------------------------------------------------------------------ CI 카탈로그
+const termBadges = t => [t.hold ? `<span class="pill bad">✕ 보류</span>` : "", t.review ? `<span class="pill warn">⚠ 확인 필요</span>` : "", t.limited_use ? `<span class="pill warn">⚠ 용도 한정</span>` : "",
+  t.approval_required ? `<span class="pill">승인 필요 표시</span>` : ""].join("");
+const hasTerms = t => t.hold || t.review || t.limited_use || t.approval_required || t.blocked;
+async function renderLogos(el, gone) {
+  const G = S.logos, d = await api("/api/logos");
+  if (gone()) return;
+  if (d.empty) { el.innerHTML = `<section><span class="pill warn">내부 개발 참조용 · 공개·재배포 금지</span></section><section>${emptyBox(d)}</section>`; return; }
+  G.data = d;
+  const c = d.counts, LB = d.labels, ents = c.entities || {}, dd = c.dedup || {}, tm = c.terms || {};
+  const fmtRows = Object.entries(c.by_format || {}).sort((a, b) => b[1] - a[1]);
+  const fmtPlot = bars(fmtRows.map(([k, v]) => ({label: LB.formats[k] || k, value: v, tip: [`${fmtN(v)}개`, LB.formats[k] || k]})));
+  const stRows = Object.entries(c.by_render_status || {}).sort((a, b) => b[1] - a[1]);
+  const stPlot = bars(stRows.map(([k, v]) => ({label: LB.status[k] || k, value: v, tip: [`${fmtN(v)}개`, LB.status[k] || k]})));
+  const tsRows = Object.entries(d.terms_split || {}).sort((a, b) => b[1] - a[1]);
+  const tsPlot = bars(tsRows.map(([k, v]) => ({label: k, value: v, sub: pct(share(v, c.files), 0), tip: [`${fmtN(v)}개`, k]})));
+  const flRows = Object.entries(c.by_flag || {}).sort((a, b) => b[1] - a[1]);
+  const flPlot = bars(flRows.map(([k, v]) => ({label: LB.flags[k] || k, value: v, sub: d.human_flags.includes(k) ? "사람 확인" : "", tip: [`${fmtN(v)}개`, LB.flags[k] || k]})));
+  const formats = Object.keys(c.by_format || {});
+  const ln = d.linkage;
+  el.innerHTML = `<section><div style="display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center"><span class="pill warn">내부 개발 참조용 · 공개·재배포 금지</span><span class="small muted">썸네일은 logo-catalog의 파생 PNG입니다. 원본 로고는 열지 않습니다.</span></div>
+      <details style="margin-top:.5rem"><summary>카탈로그 메모</summary><ul class="notes">${(d.notes || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul></details></section>
+    <section><div class="tiles">
+      <div class="tile"><span class="k">파일</span><span class="v">${fmtN(c.files)}</span><span class="d">공식 ${fmtN(c.official_logo_like)} · 커먼즈 ${fmtN(c.commons_logo_like)}</span></div>
+      <div class="tile"><span class="k">참조 가능</span><span class="v">${fmtN(c.reference_ready)}</span><span class="d">이용 조건 통과 ${fmtN(c.usable_for_reference)}</span></div>
+      <div class="tile"><span class="k">기관</span><span class="v">${fmtN(ents.total)}</span><span class="d">공식 참조 가능 ${fmtN((ents.by_tier || {}).official_ready)}곳</span></div>
+      <div class="tile"><span class="k">렌더 성공</span><span class="v">${fmtN((c.by_render_status || {}).ok)}</span><span class="d">Ghostscript 필요 ${fmtN((c.by_render_status || {}).needs_ghostscript)}</span></div>
+      <div class="tile"><span class="k">이용 조건 제외 파일</span><span class="v">${fmtN(tm.blocked_files)}</span><span class="d">보류 ${fmtN(tm.hold_entities)} · 확인 ${fmtN(tm.review_entities)} · 용도 한정 ${fmtN(tm.limited_use_entities)}곳</span></div>
+      <div class="tile"><span class="k">사람 확인 표시</span><span class="v">${fmtN(d.human_check)}</span><span class="d">${d.human_flags.map(f => LB.flags[f] || f).join(" · ")}</span></div>
+    </div></section>
+    <section class="grid2">${fig("실제 형식", "파일 머리말로 판별한 형식입니다(확장자와 다를 수 있음).", fmtPlot, table(["형식", "파일"], fmtRows.map(([k, v]) => [esc(LB.formats[k] || k), fmtN(v)]), [1]))}
+      ${fig("렌더 상태", "PostScript AI/EPS는 Ghostscript가 없어 그리지 않았습니다.", stPlot, table(["상태", "파일"], stRows.map(([k, v]) => [esc(LB.status[k] || k), fmtN(v)]), [1]))}
+      ${fig("참조로 쓸 수 있나", "이용 조건(보류·확인 필요·용도 한정)과 로고 종류, 렌더 성공을 모두 본 결과입니다.", tsPlot, table(["구분", "파일"], tsRows.map(([k, v]) => [esc(k), fmtN(v)]), [1]))}
+      ${fig("품질 표시", "‘사람 확인’ 표시는 사람이 훑어볼 목록입니다. 참조 제외 조건은 아닙니다.", flPlot, table(["표시", "파일"], flRows.map(([k, v]) => [esc(LB.flags[k] || k), fmtN(v)]), [1]))}</section>
+    <section><h2>중복</h2><div class="tiles">
+      <div class="tile"><span class="k">완전히 같은 파일</span><span class="v">${fmtN(dd.exact_groups)}묶음</span><span class="d">남는 사본 ${fmtN(dd.exact_redundant_copies)} · 기관을 넘는 것 ${fmtN(dd.exact_cross_entity)}</span></div>
+      <div class="tile"><span class="k">같은 이름 · 다른 형식</span><span class="v">${fmtN(dd.stem_groups)}묶음</span><span class="d">파일 ${fmtN(dd.stem_group_files)}</span></div>
+      <div class="tile"><span class="k">비슷한 그림(dHash ≤3)</span><span class="v">${fmtN(dd.near_dup_groups)}묶음</span><span class="d">파일 ${fmtN(dd.near_dup_files)} · 기관 ${fmtN(dd.near_dup_entities)} · 표시만</span></div></div></section>
+    <section><h2>기관</h2><div class="controls" style="margin-bottom:.6rem">
+      <label><input type="checkbox" id="g-usable"${G.usable ? " checked" : ""}> 사용 가능만</label>
+      <label>이용 조건 <select id="g-terms">${opt("all", "전체", G.terms)}${opt("yes", "조건 있음", G.terms)}${opt("no", "조건 없음", G.terms)}</select></label>
+      <label>형식 <select id="g-fmt">${opt("", "전체", G.fmt)}${formats.map(f => opt(f, LB.formats[f] || f, G.fmt)).join("")}</select></label>
+      <label>이름 <input type="search" id="g-q" value="${esc(G.q)}" placeholder="예: 서울" style="width:9rem"></label><span class="small muted" id="g-count"></span></div>
+      <div class="scroll tall" id="g-table"></div><div id="g-entity" style="margin-top:1rem"></div></section>
+    ${ln ? linkageBlock(ln, LB) : ""}
+    ${d.render ? `<section><details><summary>렌더 세부(작업 ${fmtN(d.render.jobs)}개 · 실패 ${fmtN(d.render.failure_count)}개 · 디스크 ${esc((d.render.disk || {}).total_mb)}MB)</summary>
+      <p class="small" style="margin-top:.4rem">그린 방법: ${esc(Object.entries(d.render.by_render_source || {}).map(([k, v]) => `${k} ${fmtN(v)}`).join(" · "))} · ICC: ${esc(Object.entries(d.render.icc || {}).map(([k, v]) => `${k} ${fmtN(v)}`).join(" · "))}</p>
+      ${table(["파일", "형식", "상태", "오류"], (d.render.failures || []).map(f => [esc(f.display_path), esc(f.format), esc(f.status), esc(f.error)]))}</details></section>` : ""}`;
+  const redraw = () => drawEntities();
+  $("#g-usable").onchange = ev => { G.usable = ev.target.checked; redraw(); };
+  $("#g-terms").onchange = ev => { G.terms = ev.target.value; redraw(); };
+  $("#g-fmt").onchange = ev => { G.fmt = ev.target.value; redraw(); };
+  $("#g-q").oninput = ev => { G.q = ev.target.value; redraw(); };
+  drawEntities();
+  if (G.entity) openEntity(G.entity);
+}
+function linkageBlock(ln, LB) {
+  const c = ln.counts || {}, lg = c.logo_named || {};
+  const tiers = Object.entries(lg.by_tier || {}).sort((a, b) => b[1] - a[1]);
+  const plot = bars(tiers.map(([k, v]) => ({label: LB.tiers[k] || k, value: v, sub: pct(share(v, lg.mentions), 0), tip: [`${fmtN(v)}개`, LB.tiers[k] || k]})));
+  const cats = Object.entries(ln.unmatched_by_category || {}).sort((a, b) => b[1] - a[1]);
+  return `<section><h2>포스터 정답과 로고 대응</h2>
+    <div class="tiles"><div class="tile"><span class="k">이름 있는 로고 언급</span><span class="v">${fmtN(lg.mentions)}</span><span class="d">포스터 ${fmtN(ln.posters)}장 · 이름 없는 로고 ${fmtN(c.logo_unnamed)}</span></div>
+      <div class="tile"><span class="k">공식 파일 있는 기관</span><span class="v">${fmtN(lg.official_any)}</span><span class="d">${pct(share(lg.official_any, lg.mentions))}</span></div>
+      <div class="tile"><span class="k">렌더된 참조까지</span><span class="v">${fmtN(lg.official_ready)}</span><span class="d">${pct(share(lg.official_ready, lg.mentions))}</span></div>
+      <div class="tile"><span class="k">참조 로고가 하나라도 있는 포스터</span><span class="v">${fmtN(c.posters_with_ready_logo)} / ${fmtN(c.posters_with_named_logo)}</span><span class="d">모든 로고가 준비된 포스터 ${fmtN(c.posters_all_named_logos_ready)}</span></div></div>
+    <div class="grid2" style="margin-top:1rem">${fig("로고 언급의 기관 상태", "이름 있는 로고 언급 기준입니다.", plot, table(["상태", "언급"], tiers.map(([k, v]) => [esc(LB.tiers[k] || k), fmtN(v)]), [1]))}
+      <div class="stackv"><div><h3>분할별</h3>${table(["분할", "로고 언급", "공식 파일", "렌더 참조"], Object.entries(ln.by_split || {}).map(([k, v]) => [esc(k), fmtN(v.mentions), fmtN(v.official_any), fmtN(v.official_ready)]), [1, 2, 3])}</div>
+        <div><h3>대응 못 한 이름</h3><div class="scroll tall" style="max-height:16rem">${table(["이름", "언급", "분류"], (ln.unmatched_top || []).map(u => [esc(u.name), fmtN(u.mentions), esc(u.category)]), [1]).replace(/^<div class="scroll">|<\/div>$/g, "")}</div>
+        <p class="small muted" style="margin-top:.3rem">분류별: ${cats.map(([k, v]) => `${esc(k)} ${fmtN(v)}`).join(" · ")}</p></div></div></div>
+    <ul class="notes">${(ln.notes || []).slice(-1).map(n => `<li>${esc(n)}</li>`).join("")}<li>gold 빈도로 고른 기관 ${fmtN((c.selected_via_gold || {}).entities)}곳 · 그 로고 언급 ${fmtN((c.selected_via_gold || {}).logo_mentions)}개(대응률이 실제보다 높게 나옴)</li></ul></section>`;
+}
+function drawEntities() {
+  const G = S.logos, d = G.data, q = G.q.trim();
+  const rows = d.entities.filter(e => (!G.usable || e.reference_ready > 0) && (G.terms === "all" || (G.terms === "yes" ? hasTerms(e.terms) : !hasTerms(e.terms)))
+    && (!G.fmt || (e.by_format || {})[G.fmt]) && (!q || (e.name || "").includes(q) || (e.entity_id || "").includes(q)))
+    .sort((a, b) => b.gold_logo_posters - a.gold_logo_posters || (a.name || "").localeCompare(b.name || "", "ko"));
+  $("#g-count").textContent = `${fmtN(rows.length)}곳`;
+  $("#g-table").innerHTML = `<table><thead><tr><th>기관</th><th>상태</th><th class="num">파일</th><th class="num">참조 가능</th><th>형식</th><th>이용 조건</th><th class="num">포스터 로고</th></tr></thead><tbody>${rows.map(e =>
+    `<tr class="click${e.entity_id === G.entity ? " sel" : ""}" data-ent="${esc(e.entity_id)}" tabindex="0"><td>${esc(e.name)}<span class="k">${esc(e.kind || "")}${e.commons_only ? " · 커먼즈만" : ""}</span></td><td>${esc(e.tier_label)}</td><td class="num">${fmtN(e.files)}</td><td class="num">${fmtN(e.reference_ready)}</td>
+    <td class="small">${esc(Object.entries(e.by_format || {}).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k, v]) => `${d.labels.formats[k] || k} ${v}`).join(" · "))}</td><td><div class="badges">${termBadges(e.terms)}</div><span class="k">${esc(e.terms.license || "")}</span></td><td class="num">${fmtN(e.gold_logo_posters)}</td></tr>`).join("") ||
+    `<tr><td colspan="7" class="muted">조건에 맞는 기관이 없습니다.</td></tr>`}</tbody></table>`;
+  $("#g-table").querySelectorAll("[data-ent]").forEach(tr => { const go = () => openEntity(tr.dataset.ent); tr.onclick = go; tr.onkeydown = e => { if (e.key === "Enter") go(); }; });
+}
+async function openEntity(id) {
+  const G = S.logos, box = $("#g-entity");
+  if (!box) return;
+  G.entity = id;
+  $("#g-table").querySelectorAll("tr[data-ent]").forEach(tr => tr.classList.toggle("sel", tr.dataset.ent === id));
+  box.innerHTML = `<p class="muted small">불러오는 중…</p>`;
+  let e;
+  try { e = await api("/api/logos/entity?" + qs({id})); } catch (err) { box.innerHTML = errBox(err); return; }
+  const draw = () => {
+    const LB = G.data.labels, files = e.files.filter(f => (!G.readyOnly || f.ready) && (!G.fold || f.rep));
+    box.innerHTML = `<div class="card"><div style="display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:baseline;justify-content:space-between"><h3>${esc(e.name)} <span class="small muted">${esc(e.tier_label)} · 파일 ${fmtN(e.files.length)}개</span></h3>
+      <div class="controls"><label><input type="checkbox" id="g-ready"${G.readyOnly ? " checked" : ""}> 참조 가능 파일만</label><label><input type="checkbox" id="g-fold"${G.fold ? " checked" : ""}> 중복 접기</label><button type="button" class="ghost" id="g-close">닫기</button></div></div>
+      <p class="small muted" style="margin:.3rem 0 .7rem">바탕의 회색 체크무늬는 흰 로고가 보이게 깐 것입니다. 보여 주는 파일 ${fmtN(files.length)}개.</p>
+      ${files.length ? `<div class="thumbs">${files.map(f => `<div class="tcard"><div class="ph">${f.thumb ? `<img loading="lazy" src="/logo-thumb?${qs({path: f.thumb})}" alt="${esc(f.name)}">` : `<span>${esc(LB.status[f.status] || f.status || "그림 없음")}</span>`}</div>
+        <div class="meta"><b>${esc(f.name)}</b><span class="muted">${esc(LB.formats[f.format] || f.format)} · ${esc(f.area)}${f.out_px ? ` · ${f.out_px[0]}×${f.out_px[1]}` : ""}</span>
+        <div class="badges">${f.ready ? `<span class="pill good">✓ 참조 가능</span>` : f.blocked ? `<span class="pill bad">✕ 이용 조건 제외</span>` : f.usable ? `<span class="pill warn">렌더 안 됨</span>` : `<span class="pill">로고 아님</span>`}${e.representatives.includes(f.file_id) ? `<span class="pill accent">대표</span>` : ""}${f.near_dup ? `<span class="pill">비슷한 그림 ${esc(f.near_dup)}</span>` : ""}</div>
+        ${f.flags.length ? `<span class="muted">${esc(f.flags.map(x => LB.flags[x] || x).join(" · "))}</span>` : ""}</div></div>`).join("")}</div>` : `<p class="muted">조건에 맞는 파일이 없습니다. ‘참조 가능 파일만’을 끄면 다른 파일도 볼 수 있습니다.</p>`}</div>`;
+    $("#g-ready").onchange = ev => { G.readyOnly = ev.target.checked; draw(); };
+    $("#g-fold").onchange = ev => { G.fold = ev.target.checked; draw(); };
+    $("#g-close").onclick = () => { G.entity = null; box.innerHTML = ""; $("#g-table").querySelectorAll("tr.sel").forEach(tr => tr.classList.remove("sel")); };
+  };
+  draw();
+}
+
+// ------------------------------------------------------------------ 요청 의도 라벨
+async function renderIntent(el, gone) {
+  const I = S.intent, data = await api("/api/requests");
+  if (gone()) return;
+  I.data = data;
+  drawIntent(el);
+}
+function drawIntent(el, message) {
+  const I = S.intent, d = I.data;
+  el = el || $("#view");
+  if (d.empty) { el.innerHTML = `<section>${emptyBox(d)}</section>`; return; }
+  const st = d.status, N = d.intent_names, SL = d.state_labels, t = st.totals, split = d.split.empty ? null : d.split, base = d.baseline.empty ? null : d.baseline;
+  const stSeries = [{key: "approved", label: SL.approved, color: "--s1"}, {key: "relabelled", label: SL.relabelled, color: "--s2"}, {key: "flagged", label: SL.flagged, color: "--s3"}];
+  const progPlot = stacks(d.intents.filter(i => st.by_intent[i]).map(i => { const x = st.by_intent[i]; return {label: N[i] || i, parts: {approved: x.approved, relabelled: x.relabelled, flagged: x.flagged}, total: x.total, text: `${fmtN(x.total - x.pending)} / ${fmtN(x.total)}`}; }), stSeries, {unit: "건"});
+  const progTable = table(["의도(유효 라벨)", "승인", "변경", "보류", "남음", "합계"], d.intents.filter(i => st.by_intent[i]).map(i => { const x = st.by_intent[i]; return [esc(N[i] || i), fmtN(x.approved), fmtN(x.relabelled), fmtN(x.flagged), fmtN(x.pending), fmtN(x.total)]; }), [1, 2, 3, 4, 5]);
+  const g2s = split ? split.group_to_split || {} : {};
+  const groups = {};
+  st.requests.forEach(r => { (groups[r.request_group_id] = groups[r.request_group_id] || []).push(r); });
+  const shown = Object.entries(groups).filter(([g, rs]) => (!I.intent || rs.some(r => r.draft_intent === I.intent)) && (!I.split || g2s[g] === I.split) &&
+    (I.view === "all" || (I.view === "todo" ? rs.some(r => r.state === "pending") : I.view === "flagged" ? rs.some(r => r.state === "flagged") : rs.some(r => r.changed_from_draft))));
+  const pill = r => r.state === "approved" ? `<span class="pill good">✓ 승인</span>` : r.state === "relabelled" ? `<span class="pill accent">✎ 변경</span>` : r.state === "flagged" ? `<span class="pill warn">⚑ 보류</span>` : `<span class="pill">남음</span>`;
+  const list = shown.map(([g, rs]) => `<div class="card"><div class="grp-head"><b>${esc(g)}</b>${g2s[g] ? `<span class="pill">${esc(g2s[g])}</span>` : ""}<span class="small muted">초안 의도 ${esc([...new Set(rs.map(r => N[r.draft_intent] || r.draft_intent))].join(", "))} · ${fmtN(rs.filter(r => r.state !== "pending").length)}/${fmtN(rs.length)} 검토</span></div>
+    ${rs.map(r => `<div class="rq" data-rid="${esc(r.request_id)}"><div class="rq-text">${esc(r.text || "(원문 없음)")}</div>
+      <div class="rq-meta">${pill(r)}<span>${esc(r.request_id)}</span><span>지금 라벨 <b>${esc(N[r.intent] || r.intent)}</b>${r.changed_from_draft ? ` (초안 ${esc(N[r.draft_intent] || r.draft_intent)})` : ""}</span>${r.suggested_intent ? `<span>제안 ${esc(N[r.suggested_intent] || r.suggested_intent)}</span>` : ""}${r.reviewer ? `<span>${esc(r.reviewer)} · ${esc((r.reviewed_at || "").replace("T", " ").slice(0, 16))}</span>` : ""}${r.note ? `<span>메모: ${esc(r.note)}</span>` : ""}</div>
+      <div class="rq-act"><button type="button" class="primary" data-rq="approve">승인</button><select data-rq-intent aria-label="바꿀 의도">${d.intents.filter(i => i !== r.intent).map(i => opt(i, N[i] || i, "")).join("")}</select><button type="button" data-rq="relabel">이 의도로 변경</button>
+        <input type="text" data-rq-note placeholder="메모(보류에는 꼭 적기)" maxlength="1000" autocomplete="off"><button type="button" data-rq="flag">보류</button></div></div>`).join("")}</div>`).join("");
+  el.innerHTML = `<section><div class="tiles">
+      <div class="tile"><span class="k">요청</span><span class="v">${fmtN(t.total)}</span><span class="d">그룹 ${fmtN(Object.keys(groups).length)}개 · 라벨 상태 DRAFT</span></div>
+      <div class="tile"><span class="k">사람 확인</span><span class="v">${fmtN(t.approved + t.relabelled + t.flagged)}</span><span class="d">승인 ${fmtN(t.approved)} · 변경 ${fmtN(t.relabelled)} · 보류 ${fmtN(t.flagged)}</span></div>
+      <div class="tile"><span class="k">남음</span><span class="v">${fmtN(t.pending)}</span><span class="d">기록 ${fmtN(st.entries)}줄${st.invalid_lines.length ? ` · 깨진 줄 ${st.invalid_lines.length}` : ""}</span></div></div>
+      ${st.group_conflicts.length ? `<p class="note warn" style="margin-top:.7rem">한 그룹 안에서 의도가 갈린 그룹 ${st.group_conflicts.length}개: ${esc(st.group_conflicts.map(g => g.request_group_id).join(", "))}. 분할을 다시 만들어야 합니다.</p>` : ""}</section>
+    <section class="grid2">${fig("의도별 검토 진행", "유효 라벨 기준. 회색은 아직 검토하지 않은 몫입니다.", progPlot, progTable, legend([...stSeries, {label: "남음", cls: "track"}]))}
+      <div class="card"><h3>검토 방법</h3><ul class="help"><li><b>승인</b>: 지금 라벨이 맞습니다.</li><li><b>이 의도로 변경</b>: 고른 의도로 바꿉니다.</li><li><b>보류</b>: 판단이 어렵습니다. 이유를 메모에 꼭 적습니다.</li>
+        <li>같은 그룹의 문장은 한 상황을 다섯 가지로 쓴 것입니다. 그룹 안에서 의도가 갈리면 분할을 다시 만들어야 합니다.</li><li>마지막 결정이 남습니다. 검토가 끝나면 <code>${esc(d.commands.effective)}</code></li></ul></div></section>
+    <section><h2>검토 목록</h2><div class="controls" style="margin-bottom:.7rem">
+      <label>보기 <select id="i-view">${opt("todo", "남은 요청이 있는 그룹", I.view)}${opt("all", "전체", I.view)}${opt("flagged", "보류가 있는 그룹", I.view)}${opt("changed", "라벨이 바뀐 그룹", I.view)}</select></label>
+      <label>초안 의도 <select id="i-intent">${opt("", "전체", I.intent)}${d.intents.map(i => opt(i, N[i] || i, I.intent)).join("")}</select></label>
+      <label>분할 <select id="i-split">${opt("", "전체", I.split)}${["train", "validation", "test"].map(s => opt(s, s, I.split)).join("")}</select></label>
+      ${reviewerInput()}<span class="small muted">그룹 ${fmtN(shown.length)}개</span></div>
+      <p class="msg ${message ? message[1] : ""}" id="i-msg" role="status">${esc(message ? message[0] : "")}</p>
+      <div class="groups">${list || `<p class="muted">조건에 맞는 그룹이 없습니다.</p>`}</div></section>
+    ${split ? splitBlock(split, d) : `<section><h2>분할 명세</h2>${emptyBox(d.split)}</section>`}
+    ${base ? baselineBlock(base, d) : `<section><h2>기준 모델</h2>${emptyBox(d.baseline)}</section>`}`;
+  $("#i-view").onchange = ev => { I.view = ev.target.value; drawIntent(); };
+  $("#i-intent").onchange = ev => { I.intent = ev.target.value; drawIntent(); };
+  $("#i-split").onchange = ev => { I.split = ev.target.value; drawIntent(); };
+  const vs = $("#i-variant"); if (vs) vs.onchange = ev => { I.variant = ev.target.value; drawIntent(); };
+  el.querySelectorAll("[data-rq]").forEach(b => b.onclick = () => recordIntent(b));
+}
+async function recordIntent(b) {
+  const I = S.intent, row = b.closest("[data-rid]"), rid = row.dataset.rid, decision = b.dataset.rq;
+  const reviewer = ($("#reviewer").value || "").trim(), note = $("[data-rq-note]", row).value.trim();
+  const say = (m, c = "bad") => { const el = $("#i-msg"); el.textContent = m; el.className = "msg " + c; el.scrollIntoView({block: "nearest"}); };
+  if (!reviewer) { say("검토자 이름을 먼저 적어 주세요."); $("#reviewer").focus(); return; }
+  if (decision === "flag" && !note) { say("보류에는 이유를 메모에 적어 주세요."); $("[data-rq-note]", row).focus(); return; }
+  const intent = decision === "relabel" ? $("[data-rq-intent]", row).value : null;
+  row.querySelectorAll("button").forEach(x => x.disabled = true);
+  try {
+    const r = await post("/api/requests/record", {request_id: rid, decision, intent, reviewer, note});
+    I.data.status = r.status;
+    const y = scrollY;
+    drawIntent(null, [`저장했습니다: ${rid} · ${{approve: "승인", relabel: "변경", flag: "보류"}[decision]}`, "good"]);
+    scrollTo(0, y);
+  } catch (err) { row.querySelectorAll("button").forEach(x => x.disabled = false); say(err.message); }
+}
+function splitBlock(sp, d) {
+  const N = d.intent_names, near = sp.near || {}, len = sp.lengths || {}, h = (len.histogram || {});
+  const counts = ["train", "validation", "test"].filter(s => (sp.splits || {})[s]);
+  const splitRows = d.intents.map(i => [esc(N[i] || i), ...counts.map(s => { const x = ((sp.splits[s] || {}).by_intent || {})[i] || {}; return `${fmtN(x.groups)}그룹 · ${fmtN(x.requests)}건`; })]);
+  splitRows.push(["<b>합계</b>", ...counts.map(s => `${fmtN(sp.splits[s].groups)}그룹 · ${fmtN(sp.splits[s].requests)}건`)]);
+  const lenPlot = bars((h.counts || []).map((v, i) => ({label: `${h.edges[i]}–${h.edges[i + 1] ?? ""}자`, value: v, tip: [`${fmtN(v)}건`, `글자 수 ${h.edges[i]}–${h.edges[i + 1] ?? ""}`]})).filter((r, i, a) => r.value || a.slice(0, i).some(x => x.value)));
+  const nh = k => { const x = (near[k] || {}).histogram || {}; return (x.counts || []).map((v, i) => ({label: `${fix(x.edges[i], 1)}–${fix(x.edges[i + 1], 1)}`, value: v, tip: [`${fmtN(v)}쌍`, `Jaccard ${fix(x.edges[i], 1)}–${fix(x.edges[i + 1], 1)}`]})); };
+  const nearTable = k => table(["Jaccard", "쌍"], nh(k).map(r => [esc(r.label), fmtN(r.value)]), [1]);
+  const lk = (sp.leakage || {}).by_intent || {};
+  const tp = sp.templates || {};
+  return `<section><h2>분할 명세 <span class="small muted">seed ${esc(sp.seed)} · ${esc(sp.unit)} 단위</span></h2>
+    <div class="grid2"><div>${table(["의도", ...counts], splitRows)}<p class="small muted" style="margin-top:.4rem">결합 ${sp.join.ok ? "이상 없음" : "문제 있음"} · 원문 ${fmtN((sp.join.counts || {}).texts)} · 라벨 ${fmtN((sp.join.counts || {}).labels)} · 그룹 ${fmtN((sp.join.counts || {}).groups)} · 그룹 안 의도 하나 ${((sp.group_intent_check || {}).single_intent) ? "예" : "아니오"}</p>
+      <p class="small muted">정확 중복 ${fmtN(((sp.duplicates || {}).exact || {}).sets)} · 느슨한 중복 ${fmtN(((sp.duplicates || {}).loose || {}).sets)} · 템플릿 문구를 지운 고유 핵심 문장 ${fmtN(((sp.duplicates || {}).core_text || {}).unique)}개</p></div>
+      ${fig("요청 글자 수", `중앙값 ${fmtN((len.chars || {}).median)}자 · 평균 ${fmtN((len.chars || {}).mean)}자 · 최소 ${fmtN((len.chars || {}).min)} · 최대 ${fmtN((len.chars || {}).max)}`, lenPlot, table(["구간", "건"], lenPlot ? (h.counts || []).map((v, i) => [`${h.edges[i]}–${h.edges[i + 1] ?? ""}`, fmtN(v)]) : [], [1]))}</div>
+    <div class="grid2" style="margin-top:1.1rem">${fig("그룹 안 문장 쌍의 비슷함", `문자 3-gram Jaccard · ${fmtN((near.within_group || {}).pairs)}쌍 · 평균 ${fix((near.within_group || {}).mean, 3)} · 기준 ${near.threshold} 이상 ${fmtN((near.within_group || {})["ge_" + near.threshold])}쌍`, bars(nh("within_group")), nearTable("within_group"))}
+      ${fig("다른 그룹 문장 쌍의 비슷함", `${fmtN((near.cross_group || {}).pairs)}쌍 · 평균 ${fix((near.cross_group || {}).mean, 3)} · 최대 ${fix((near.cross_group || {}).max, 3)} · 평가 문장의 train 최대 유사도 ${fix(((near.held_out_max_vs_train || {}).max || 0) / 100, 3)}`, bars(nh("cross_group")), nearTable("cross_group"))}</div>
+    <div class="grid2" style="margin-top:1.1rem"><div><h3>의도를 드러내는 낱말(누수)</h3>${table(["의도", "새는 낱말", "템플릿에서 온 것", "새는 낱말이 든 요청", "템플릿 낱말이 든 요청"], Object.entries(lk).map(([i, x]) => [esc(N[i] || i), fmtN(x.leaky_tokens), fmtN(x.template_tokens), pct(x.requests_with_leaky_token, 0), pct(x.requests_with_template_token, 0)]), [1, 2, 3, 4])}</div>
+      <div><h3>템플릿 고정 문구 ${fmtN(tp.phrases)}개</h3><p class="small muted" style="margin-bottom:.4rem">한 의도 전용 ${fmtN(tp.single_intent)}개 · 세 분할 모두 등장 ${fmtN(tp.in_all_splits)}개. 그룹 단위로 나눠도 이 문구는 모든 분할에 들어갑니다.</p>
+        <div class="scroll tall" style="max-height:15rem">${table(["문구", "의도", "횟수"], (tp.items || []).map(x => [esc(x.phrase), esc(N[x.intent] || x.intent), fmtN(x.count)]), [2]).replace(/^<div class="scroll">|<\/div>$/g, "")}</div></div></div>
+    <ul class="notes">${(sp.notes || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul></section>`;
+}
+function baselineBlock(b, d) {
+  const I = S.intent, N = d.intent_names, sm = b.summary || {}, names = {raw: "원문", template_stripped: "템플릿 문구 지움"};
+  const vkeys = Object.keys(b.variants || {});
+  if (!vkeys.includes(I.variant)) I.variant = vkeys[0];
+  const v = b.variants[I.variant] || {}, test = v.test || {};
+  const series = vkeys.map((k, i) => ({key: k, label: names[k] || k, color: SERIES[i]}));
+  const recPlot = dots(d.intents.map(i => ({label: N[i] || i, values: Object.fromEntries(vkeys.map(k => [k, {v: ((sm[k] || {}).test_recall || {})[i]}]))})), series, {ticks: [0, .25, .5, .75, 1]});
+  const recTable = table(["의도", ...series.map(s => s.label)], d.intents.map(i => [esc(N[i] || i), ...vkeys.map(k => pct(((sm[k] || {}).test_recall || {})[i], 0))]), series.map((_, i) => i + 1));
+  const cm = test.confusion || {};
+  const bt = test.by_template || {};
+  return `<section><h2>기준 모델 <span class="diag">⚠ 초안 라벨 기준</span></h2>
+    <p class="note warn" style="margin:.5rem 0 .8rem">${esc(b.warning || "")}</p>
+    ${table(["변형", "검증 macro-F1", "test macro-F1 (그룹 부트스트랩 95%)", "test 정확도", "문장당 추론"], vkeys.map(k => { const x = sm[k] || {}; return [esc(names[k] || k), fix(x.validation_macro_f1, 3), `${fix(x.test_macro_f1, 3)} <span class="muted">${fix((x.test_macro_f1_ci95 || [])[0], 2)}–${fix((x.test_macro_f1_ci95 || [])[1], 2)}</span>`, pct(x.test_accuracy), `${fix(x.inference_ms_per_sentence, 2)}ms`]; }), [1, 2, 3, 4])}
+    <div class="grid2" style="margin-top:1.1rem">${fig("의도별 test 재현율", "test는 의도마다 2그룹 10건이라 한 그룹이 틀리면 0.5가 됩니다.", recPlot, recTable, legend(series))}
+      <div class="fig"><div class="fig-head"><div><h3>혼동 행렬 · test</h3><p class="sub">행이 정답, 열이 예측입니다. 파란 칸이 맞은 수입니다.</p></div><select id="i-variant" aria-label="모델 변형">${vkeys.map(k => opt(k, names[k] || k, I.variant)).join("")}</select></div>
+        ${cm.matrix ? heat(cm.labels, N, cm.matrix, "정답", "예측") : `<p class="muted">혼동 행렬이 없습니다.</p>`}
+        ${bt.wrapped ? `<p class="small" style="margin-top:.5rem">템플릿 문구가 붙은 문장 정확도 ${pct(bt.wrapped.accuracy)}(${fmtN(bt.wrapped.n)}건) · 안 붙은 문장 ${pct((bt.wrapper_free || {}).accuracy)}(${fmtN((bt.wrapper_free || {}).n)}건)</p>` : ""}
+        ${(test.errors || []).length ? `<details style="margin-top:.5rem"><summary>틀린 문장 ${fmtN(test.errors.length)}개</summary>${table(["요청", "정답", "예측", "확신", "문장"], test.errors.map(x => [esc(x.request_id), esc(N[x.true] || x.true), esc(N[x.pred] || x.pred), fix(x.confidence, 2), esc(x.text)]), [3])}</details>` : ""}</div></div>
+    <ul class="notes">${(b.caveats || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul></section>`;
+}
+
+// ------------------------------------------------------------------ 화면 전환
+const RENDER = {overview: renderOverview, lines: renderLines, review: renderReview, calib: renderCalib, synth: renderSynth, logos: renderLogos, intent: renderIntent};
+let renderSeq = 0;
+async function route() {
+  const tab = (location.hash.replace(/^#/, "") || "overview");
+  S.tab = RENDER[tab] ? tab : "overview";
+  document.getElementById("tabs").innerHTML = TABS.map(([k, label]) => `<a href="#${k}" class="${k === S.tab ? "on" : ""}"${k === S.tab ? ' aria-current="page"' : ""}>${label}</a>`).join("");
+  const on = document.querySelector("#tabs a.on"), nav = document.getElementById("tabs");
+  if (on) nav.scrollLeft = Math.max(0, on.getBoundingClientRect().left - nav.getBoundingClientRect().left + nav.scrollLeft - (nav.clientWidth - on.offsetWidth) / 2);
+  const el = document.getElementById("view"), seq = ++renderSeq;
+  el.classList.add("loading");
+  hideTip();
+  for (const k in CHARTS) delete CHARTS[k];
+  try {
+    await RENDER[S.tab](el, () => seq !== renderSeq);   // 늦게 끝난 이전 화면이 새 화면을 덮지 않게 한다
+    if (seq !== renderSeq) return;
+    drawCharts(el);
+    document.getElementById("updated").textContent = "읽은 때 " + new Date().toLocaleTimeString("ko-KR", {hour12: false});
+  } catch (err) {
+    if (seq === renderSeq) el.innerHTML = errBox(err);
+  } finally {
+    if (seq === renderSeq) el.classList.remove("loading");
+  }
+}
+window.addEventListener("hashchange", () => { scrollTo(0, 0); route(); });
+document.getElementById("reload").onclick = () => route();
+const THEMES = [["auto", "밝기: 자동"], ["light", "밝기: 밝게"], ["dark", "밝기: 어둡게"]];
+function applyTheme(t) { if (t === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t; document.getElementById("theme").textContent = (THEMES.find(x => x[0] === t) || THEMES[0])[1]; drawCharts(); }
+let theme = store.get("prep.theme") || "auto";
+applyTheme(theme);
+document.getElementById("theme").onclick = () => { theme = THEMES[(THEMES.findIndex(x => x[0] === theme) + 1) % THEMES.length][0]; store.set("prep.theme", theme); applyTheme(theme); };
+route();
+</script>
+</body>
+</html>

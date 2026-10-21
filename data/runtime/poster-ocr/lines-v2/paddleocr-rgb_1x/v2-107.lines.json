@@ -1,0 +1,126 @@
+{
+ "case_id": "v2-107",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 452,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 7,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-107.padd_rgb_1x_002",
+   "case_id": "v2-107",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     142.0,
+     238.0
+    ],
+    [
+     309.0,
+     238.0
+    ],
+    [
+     309.0,
+     259.0
+    ],
+    [
+     142.0,
+     259.0
+    ]
+   ],
+   "bbox": [
+    142.0,
+    238.0,
+    309.0,
+    259.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "10.9.(금)-10.11.(일)",
+   "text_key": "109금1011일",
+   "ocr_text": "10.9.(금)-10.11.(일)",
+   "confidence": 0.9903411865234375,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.9.(금)-10.11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-107.padd_rgb_1x_003",
+   "case_id": "v2-107",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     153.0,
+     261.0
+    ],
+    [
+     299.0,
+     261.0
+    ],
+    [
+     299.0,
+     277.0
+    ],
+    [
+     153.0,
+     277.0
+    ]
+   ],
+   "bbox": [
+    153.0,
+    261.0,
+    299.0,
+    277.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "세종호수공원·세종중앙공원",
+   "text_key": "세종호수공원세종중앙공원",
+   "ocr_text": "세종호수공원·세종중앙공원",
+   "confidence": 0.9708713889122009,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "세종호수공원·세종중앙공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

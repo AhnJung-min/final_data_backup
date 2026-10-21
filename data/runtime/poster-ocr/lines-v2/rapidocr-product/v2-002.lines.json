@@ -1,0 +1,181 @@
+{
+ "case_id": "v2-002",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-002.rapi_product_000",
+   "case_id": "v2-002",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     45.0,
+     48.0
+    ],
+    [
+     243.0,
+     48.0
+    ],
+    [
+     243.0,
+     80.0
+    ],
+    [
+     45.0,
+     80.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    48.0,
+    243.0,
+    80.0
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "2026 선명상 축제",
+   "text_key": "2026선명상축제",
+   "ocr_text": "2026 선명상 축제",
+   "confidence": 0.99703,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 선명상 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-002.rapi_product_006",
+   "case_id": "v2-002",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     45.0,
+     169.0
+    ],
+    [
+     164.0,
+     170.0
+    ],
+    [
+     164.0,
+     186.0
+    ],
+    [
+     45.0,
+     185.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    169.0,
+    164.0,
+    186.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "4월 4일(Sat) - 4월 5일(Sun)",
+   "text_key": "4월4일sat4월5일sun",
+   "ocr_text": "4월 4일(Sat)-4월 59(Sun)",
+   "confidence": 0.89117,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0714,
+   "gold_value": "4월 4일(Sat) - 4월 5일(Sun)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-002.rapi_product_007",
+   "case_id": "v2-002",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     178.0,
+     170.0
+    ],
+    [
+     397.0,
+     170.0
+    ],
+    [
+     397.0,
+     185.0
+    ],
+    [
+     178.0,
+     185.0
+    ]
+   ],
+   "bbox": [
+    178.0,
+    170.0,
+    397.0,
+    185.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "봉은사",
+   "text_key": "봉은사",
+   "ocr_text": "봉은사,봉은문화최 Bongeunsa, Bongeun Cullunal Center",
+   "confidence": 0.79996,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "봉은사",
+   "extra_chars": 35,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

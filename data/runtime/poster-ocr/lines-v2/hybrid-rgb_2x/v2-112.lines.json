@@ -1,0 +1,182 @@
+{
+ "case_id": "v2-112",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-112.easy_rgb_2x_000",
+   "case_id": "v2-112",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     13.5,
+     7.5
+    ],
+    [
+     204.5,
+     7.5
+    ],
+    [
+     204.5,
+     40.5
+    ],
+    [
+     13.5,
+     40.5
+    ]
+   ],
+   "bbox": [
+    13.5,
+    7.5,
+    204.5,
+    40.5
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "제39회 화순적벽문화축제",
+   "text_key": "제39회화순적벽문화축제",
+   "ocr_text": "제39회 화순적벽문화축제",
+   "confidence": 0.9413798451423645,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제39회 화순적벽문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-112.easy_rgb_2x_001",
+   "case_id": "v2-112",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     298.5,
+     2.5
+    ],
+    [
+     432.5,
+     2.5
+    ],
+    [
+     432.5,
+     47.0
+    ],
+    [
+     298.5,
+     47.0
+    ]
+   ],
+   "bbox": [
+    298.5,
+    2.5,
+    432.5,
+    47.0
+   ],
+   "height": 44.5,
+   "small_text": false,
+   "text": "이서커뮤니티센터",
+   "text_key": "이서커뮤니티센터",
+   "ocr_text": "이어커뮤니티센터",
+   "confidence": 0.7412044405937195,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "이서커뮤니티센터",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-112.easy_rgb_2x_003",
+   "case_id": "v2-112",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     63.5,
+     136.5
+    ],
+    [
+     380.5,
+     136.5
+    ],
+    [
+     380.5,
+     157.5
+    ],
+    [
+     63.5,
+     157.5
+    ]
+   ],
+   "bbox": [
+    63.5,
+    136.5,
+    380.5,
+    157.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "2026. 10. 9.금 ~ 10. 10.토",
+   "text_key": "2026109금1010토",
+   "ocr_text": "2026.10.9.금 ~10.10.토 1 10:00~17:00",
+   "confidence": 0.9386858940124512,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 9.금 ~ 10. 10.토",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

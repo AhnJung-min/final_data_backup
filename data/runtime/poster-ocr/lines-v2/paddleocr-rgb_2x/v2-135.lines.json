@@ -1,0 +1,506 @@
+{
+ "case_id": "v2-135",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-135.padd_rgb_2x_001",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     94.5,
+     63.5
+    ],
+    [
+     349.0,
+     63.5
+    ],
+    [
+     349.0,
+     87.5
+    ],
+    [
+     94.5,
+     87.5
+    ]
+   ],
+   "bbox": [
+    94.5,
+    63.5,
+    349.0,
+    87.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "왕실 진상품 경산대추 미식페스타",
+   "text_key": "왕실진상품경산대추미식페스타",
+   "ocr_text": "왕실 진상품 경산대추 미식폐스타",
+   "confidence": 0.9847071170806885,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0714,
+   "gold_value": "왕실 진상품 경산대추 미식페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_002",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     68.0,
+     136.0
+    ],
+    [
+     116.5,
+     136.0
+    ],
+    [
+     116.5,
+     157.0
+    ],
+    [
+     68.0,
+     157.0
+    ]
+   ],
+   "bbox": [
+    68.0,
+    136.0,
+    116.5,
+    157.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "제15회",
+   "text_key": "제15회",
+   "ocr_text": "제15회",
+   "confidence": 0.9996422529220581,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제15회 경산대추축제 & 농산물 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_003",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     58.0,
+     143.0
+    ],
+    [
+     384.5,
+     143.0
+    ],
+    [
+     384.5,
+     227.5
+    ],
+    [
+     58.0,
+     227.5
+    ]
+   ],
+   "bbox": [
+    58.0,
+    143.0,
+    384.5,
+    227.5
+   ],
+   "height": 84.5,
+   "small_text": false,
+   "text": "경산대추축제",
+   "text_key": "경산대추축제",
+   "ocr_text": "경산대추축제",
+   "confidence": 0.9794504046440125,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "경산대추축제 & 농산물 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_004",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     122.5,
+     221.5
+    ],
+    [
+     309.5,
+     221.5
+    ],
+    [
+     309.5,
+     254.5
+    ],
+    [
+     122.5,
+     254.5
+    ]
+   ],
+   "bbox": [
+    122.5,
+    221.5,
+    309.5,
+    254.5
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "& 농산물 한마당",
+   "text_key": "농산물한마당",
+   "ocr_text": "& 농산물 한마당",
+   "confidence": 0.943430483341217,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "경산대추축제 & 농산물 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_005",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     114.5,
+     289.5
+    ],
+    [
+     328.0,
+     289.5
+    ],
+    [
+     328.0,
+     308.0
+    ],
+    [
+     114.5,
+     308.0
+    ]
+   ],
+   "bbox": [
+    114.5,
+    289.5,
+    328.0,
+    308.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "2026. 10. 16.금 - 10. 18.일",
+   "text_key": "20261016금1018일",
+   "ocr_text": "2026.10.16.② - 10.18.일",
+   "confidence": 0.9508891701698303,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 10. 16.금 - 10. 18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_006",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     114.0,
+     314.5
+    ],
+    [
+     328.0,
+     314.5
+    ],
+    [
+     328.0,
+     329.5
+    ],
+    [
+     114.0,
+     329.5
+    ]
+   ],
+   "bbox": [
+    114.0,
+    314.5,
+    328.0,
+    329.5
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "경산생활체육공원 온마루광장(구 어귀마당)",
+   "text_key": "경산생활체육공원온마루광장구어귀마당",
+   "ocr_text": "경산생활체육공원 온마루광장(구 어귀마당)",
+   "confidence": 0.9918119311332703,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경산생활체육공원 온마루광장(구 어귀마당)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_010",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     224.5,
+     594.0
+    ],
+    [
+     336.0,
+     594.0
+    ],
+    [
+     336.0,
+     604.0
+    ],
+    [
+     224.5,
+     604.0
+    ]
+   ],
+   "bbox": [
+    224.5,
+    594.0,
+    336.0,
+    604.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "경산대추축제추진위원회",
+   "text_key": "경산대추축제추진위원회",
+   "ocr_text": "공동주관 경산대추축제주진위원회",
+   "confidence": 0.9736985564231873,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "경산대추축제추진위원회",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_014",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     152.5,
+     608.0
+    ],
+    [
+     248.0,
+     608.0
+    ],
+    [
+     248.0,
+     618.5
+    ],
+    [
+     152.5,
+     618.5
+    ]
+   ],
+   "bbox": [
+    152.5,
+    608.0,
+    248.0,
+    618.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "경산시",
+   "text_key": "경산시",
+   "ocr_text": "영방업경양외경산시재보",
+   "confidence": 0.6413703560829163,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경산시",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-135.padd_rgb_2x_016",
+   "case_id": "v2-135",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     335.0,
+     608.0
+    ],
+    [
+     399.0,
+     607.0
+    ],
+    [
+     399.0,
+     617.5
+    ],
+    [
+     335.5,
+     618.5
+    ]
+   ],
+   "bbox": [
+    335.0,
+    607.0,
+    399.0,
+    618.5
+   ],
+   "height": 10.51,
+   "small_text": false,
+   "text": "iM뱅크 경산영업부",
+   "text_key": "im뱅크경산영업부",
+   "ocr_text": "iM병크 경산영업부",
+   "confidence": 0.9321328997612,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "iM뱅크 경산영업부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "case_id": "v2-019",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-019.padd_rgb_2x_002",
+   "case_id": "v2-019",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     343.0,
+     31.5
+    ],
+    [
+     446.0,
+     31.5
+    ],
+    [
+     446.0,
+     47.0
+    ],
+    [
+     343.0,
+     47.0
+    ]
+   ],
+   "bbox": [
+    343.0,
+    31.5,
+    446.0,
+    47.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "평창 효석문화제",
+   "text_key": "평창효석문화제",
+   "ocr_text": "불평면 효석문화마를",
+   "confidence": 0.8518465161323547,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "평창 효석문화제",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-019.padd_rgb_2x_007",
+   "case_id": "v2-019",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     162.5,
+     206.0
+    ],
+    [
+     322.0,
+     206.0
+    ],
+    [
+     322.0,
+     221.0
+    ],
+    [
+     162.5,
+     221.0
+    ]
+   ],
+   "bbox": [
+    162.5,
+    206.0,
+    322.0,
+    221.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "그때 그 시절 아련함 속으로...",
+   "text_key": "그때그시절아련함속으로",
+   "ocr_text": "그때 그 시절 사현함 속스로",
+   "confidence": 0.7915760278701782,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "그때 그 시절 아련함 속으로...",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-019.padd_rgb_2x_009",
+   "case_id": "v2-019",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     234.0,
+     582.5
+    ],
+    [
+     440.5,
+     582.5
+    ],
+    [
+     440.5,
+     591.0
+    ],
+    [
+     234.0,
+     591.0
+    ]
+   ],
+   "bbox": [
+    234.0,
+    582.5,
+    440.5,
+    591.0
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "www.tour.pc.go.kr",
+   "text_key": "wwwtourpcgokr",
+   "ocr_text": "ww.pc.ocjo iwww.four.pc.aoke T.www.hyoneak.cam",
+   "confidence": 0.7750937342643738,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2308,
+   "gold_value": "www.tour.pc.go.kr",
+   "extra_chars": 24,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

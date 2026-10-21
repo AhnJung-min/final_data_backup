@@ -1,0 +1,179 @@
+{
+ "case_id": "r2-040",
+ "split": "reserve",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "r2-040.easy_rgb_2x_002",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     220.5,
+     202.5
+    ],
+    [
+     270.5,
+     202.5
+    ],
+    [
+     270.5,
+     221.5
+    ],
+    [
+     220.5,
+     221.5
+    ]
+   ],
+   "bbox": [
+    220.5,
+    202.5,
+    270.5,
+    221.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "제26회",
+   "text_key": "제26회",
+   "ocr_text": "제26회",
+   "confidence": 0.9991293549537659,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제26회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.easy_rgb_2x_008",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     225.5,
+     407.5
+    ],
+    [
+     340.5,
+     407.5
+    ],
+    [
+     340.5,
+     438.5
+    ],
+    [
+     225.5,
+     438.5
+    ]
+   ],
+   "bbox": [
+    225.5,
+    407.5,
+    340.5,
+    438.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "10.23.금 - 25.일",
+   "text_key": "1023금25일",
+   "ocr_text": "10.230-250",
+   "confidence": 0.3554167510461911,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "10.23.금 - 25.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-040.easy_rgb_2x_009",
+   "case_id": "r2-040",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     157.0,
+     436.0
+    ],
+    [
+     343.0,
+     436.0
+    ],
+    [
+     343.0,
+     460.5
+    ],
+    [
+     157.0,
+     460.5
+    ]
+   ],
+   "bbox": [
+    157.0,
+    436.0,
+    343.0,
+    460.5
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "올림픽공원 88잔디마당 일대",
+   "text_key": "올림픽공원88잔디마당일대",
+   "ocr_text": "올림픽공원 88잔디마당 일대",
+   "confidence": 0.5946238762662677,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "올림픽공원 88잔디마당 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

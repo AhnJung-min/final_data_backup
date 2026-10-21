@@ -1,0 +1,169 @@
+{
+ "set": "v1",
+ "dataset_id": "synthetic-poster-check-v1",
+ "seed": 20261020,
+ "shuffle_pairs": false,
+ "sets": 40,
+ "generator": "app/poster_ocr/sim_data.py를 고치지 않고 다시 그림(ImageDraw.text 기록)",
+ "spec_identical": true,
+ "sha256_check": {
+  "poster": "40/40",
+  "document": "40/40",
+  "mismatched": [],
+  "rule": "다시 그린 PNG(optimize=True)의 sha256이 manifest와 같은 이미지만 상자를 저장"
+ },
+ "boxes": {
+  "poster": {
+   "images": 40,
+   "total": 733,
+   "per_image_min_max": [
+    16,
+    19
+   ],
+   "by_field": {
+    "title": 93,
+    "edition_year": 40,
+    "schedule": 40,
+    "time": 40,
+    "venue": 40,
+    "host": 40,
+    "organizer": 40,
+    "contact": 40,
+    "slogan": 40,
+    "programs": 96,
+    "label": 216,
+    "decor_mark": 8
+   },
+   "split_parts": 360,
+   "clipped": 0
+  },
+  "document": {
+   "images": 40,
+   "total": 2240,
+   "per_image_min_max": [
+    56,
+    56
+   ],
+   "by_field": {
+    "title": 40,
+    "schedule": 40,
+    "time": 40,
+    "venue": 40,
+    "host": 40,
+    "organizer": 40,
+    "contact": 40,
+    "slogan": 40,
+    "label": 480,
+    "boilerplate": 1440
+   },
+   "split_parts": 440,
+   "clipped": 0
+  }
+ },
+ "excluded": {
+  "glow_rgba_draws": 16,
+  "empty_strings": 160,
+  "punct_only_parts": 0
+ },
+ "bbox_vs_ink_iou": {
+  "mean": 0.9462,
+  "min": 0.8715
+ },
+ "templates": {
+  "count": 5,
+  "rule": "template = s % 5 (v1·v2 공통)",
+  "sets_per_template": {
+   "0": 8,
+   "1": 8,
+   "2": 8,
+   "3": 8,
+   "4": 8
+  }
+ },
+ "environment": {
+  "python": "3.12.14",
+  "pillow": "12.3.0",
+  "freetype": "2.14.3",
+  "raqm": false,
+  "fonts_dir": "C:/WINDOWS/Fonts"
+ },
+ "fonts": {
+  "NotoSansKR-VF.ttf": {
+   "sha256": "018174e8cdd366aff67c8d366c7dc806a7babbe7f2819fc23b00d59f7b8353d0",
+   "bytes": 10415532,
+   "used": true
+  },
+  "NotoSerifKR-VF.ttf": {
+   "sha256": "88bb5b81bccef54628e030c269fa803b0f4935e58b347ad1ee21ca8829540a33",
+   "bytes": 23776888,
+   "used": true
+  },
+  "malgun.ttf": {
+   "sha256": "7a183cf1c6c56b9609fcc16eda8b5229fbc11758a21e669ec00343239b02192f",
+   "bytes": 13459196,
+   "used": true
+  },
+  "malgunbd.ttf": {
+   "sha256": "e8cbc0b2afcc14fb45dfb6086d5102c0b23a96e7b6e708f3122acde1b86c9082",
+   "bytes": 12600392,
+   "used": true
+  }
+ },
+ "detection": {
+  "engine": "paddleocr",
+  "variant": "rgb_1x",
+  "runs": "data/runtime/poster-ocr/sim/runs/paddleocr",
+  "iou_threshold": 0.5,
+  "poster": {
+   "images": 40,
+   "boxes": 733,
+   "recall": 0.4789,
+   "recall_ci95": [
+    0.4429,
+    0.515
+   ],
+   "single": 0.487,
+   "found": 1.0,
+   "cer_matched": 0.0349,
+   "read_exact": 0.4243,
+   "line_recall": 0.8323,
+   "checked_fields_recall": 0.5206,
+   "checked_fields_found": 1.0,
+   "product_relevant": true
+  },
+  "document": {
+   "images": 40,
+   "boxes": 2240,
+   "recall": 0.8647,
+   "recall_ci95": [
+    0.8499,
+    0.8783
+   ],
+   "single": 0.9705,
+   "found": 1.0,
+   "cer_matched": 0.0018,
+   "read_exact": 0.8393,
+   "line_recall": 0.8255,
+   "checked_fields_recall": 0.9531,
+   "checked_fields_found": 1.0,
+   "product_relevant": false
+  }
+ },
+ "files": {
+  "boxes": "boxes.json",
+  "detection": "detection.json",
+  "overlays": [
+   "overlays/S01-poster-t0.png",
+   "overlays/S02-poster-t1.png",
+   "overlays/S03-poster-t2.png"
+  ]
+ },
+ "notes": [
+  "v1과 v2는 같은 디자인 틀 5개를 쓴다(template = s % 5). v2는 지역·주제 짝과 세트 순서만 섞었다.",
+  "v1은 sim_check 규칙을 맞출 때 본 세트다. v2는 홀드아웃으로 남겨야 하므로 v1·v2 상자로 검출기나 규칙을 학습·조정하지 않는다. 학습용 상자가 필요하면 새 틀 묶음(v3)으로 만든 세트에서 가져와야 한다(같은 틀을 외우면 홀드아웃 평가가 무의미해진다).",
+  "제품은 기준 문서를 글자(텍스트)로 받으므로 문서 이미지의 OCR 상자는 제품과 관계없다. 문서 수치는 따로 적고 product_relevant=false로 표시한다.",
+  "bbox는 Pillow textbbox(획 두께 포함, 그린 좌표에서 잰 실제 위·아래), ink는 같은 글자를 빈 마스크에 다시 그려 잰 잉크 경계다. 둘 다 캔버스 밖은 잘랐다(clipped).",
+  "한 줄에 이어 쓴 항목은 앞부분 글자 폭으로 나눈 부분 상자다(split=true). line 번호가 같은 상자를 합치면 그린 줄 하나가 된다.",
+  "다른 PC에서는 fonts의 sha256과 Pillow·FreeType 버전이 같아야 같은 PNG가 나온다. sha256이 다르면 그 이미지의 상자는 쓰지 않는다."
+ ]
+}

@@ -1,0 +1,453 @@
+{
+ "case_id": "v2-187",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 19,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-187.padd_rgb_2x_001",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     146.0,
+     88.5
+    ],
+    [
+     330.5,
+     88.5
+    ],
+    [
+     330.5,
+     158.0
+    ],
+    [
+     146.0,
+     158.0
+    ]
+   ],
+   "bbox": [
+    146.0,
+    88.5,
+    330.5,
+    158.0
+   ],
+   "height": 69.5,
+   "small_text": false,
+   "text": "양천가족",
+   "text_key": "양천가족",
+   "ocr_text": "양천가족",
+   "confidence": 0.9997682571411133,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "양천가족 거리축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.padd_rgb_2x_002",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     73.5,
+     94.0
+    ],
+    [
+     142.0,
+     96.0
+    ],
+    [
+     141.5,
+     128.0
+    ],
+    [
+     72.5,
+     126.0
+    ]
+   ],
+   "bbox": [
+    72.5,
+    94.0,
+    142.0,
+    128.0
+   ],
+   "height": 32.01,
+   "small_text": false,
+   "text": "제3회",
+   "text_key": "제3회",
+   "ocr_text": "제3회",
+   "confidence": 0.9992494583129883,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제3회 양천가족 거리축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.padd_rgb_2x_004",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     63.5,
+     119.0
+    ],
+    [
+     393.5,
+     133.5
+    ],
+    [
+     387.0,
+     285.5
+    ],
+    [
+     57.0,
+     271.0
+    ]
+   ],
+   "bbox": [
+    57.0,
+    119.0,
+    393.5,
+    285.5
+   ],
+   "height": 152.14,
+   "small_text": false,
+   "text": "거리축제",
+   "text_key": "거리축제",
+   "ocr_text": "거리축제",
+   "confidence": 0.9049274325370789,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "양천가족 거리축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.padd_rgb_2x_007",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     102.5,
+     283.0
+    ],
+    [
+     338.0,
+     284.0
+    ],
+    [
+     338.0,
+     303.0
+    ],
+    [
+     102.5,
+     302.0
+    ]
+   ],
+   "bbox": [
+    102.5,
+    283.0,
+    338.0,
+    303.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026. 10. 25. (일)",
+   "text_key": "20261025일",
+   "ocr_text": "2026.10.25. (일) 10:30 - 21:00",
+   "confidence": 0.9567875862121582,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 25. (일)",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.padd_rgb_2x_008",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     136.5,
+     310.5
+    ],
+    [
+     279.5,
+     310.5
+    ],
+    [
+     279.5,
+     327.5
+    ],
+    [
+     136.5,
+     327.5
+    ]
+   ],
+   "bbox": [
+    136.5,
+    310.5,
+    279.5,
+    327.5
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "신정네거리역 일대",
+   "text_key": "신정네거리역일대",
+   "ocr_text": "* 신정네거리역 일대",
+   "confidence": 0.9817138314247131,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "신정네거리역 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.padd_rgb_2x_010",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     101.5,
+     332.5
+    ],
+    [
+     339.5,
+     332.5
+    ],
+    [
+     339.5,
+     344.0
+    ],
+    [
+     101.5,
+     344.0
+    ]
+   ],
+   "bbox": [
+    101.5,
+    332.5,
+    339.5,
+    344.0
+   ],
+   "height": 11.5,
+   "small_text": false,
+   "text": "교통통제 안내 : 2026.10.24.(토) 22:00 ~ 10.26.(월) 04:00",
+   "text_key": "교통통제안내20261024토22001026월0400",
+   "ocr_text": "교통통제 안내:2026.10.24.(토)22:00~10.26.(월)04:00",
+   "confidence": 0.9412793517112732,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "교통통제 안내 : 2026.10.24.(토) 22:00 ~ 10.26.(월) 04:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.padd_rgb_2x_015",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     158.5,
+     537.0
+    ],
+    [
+     283.0,
+     537.0
+    ],
+    [
+     283.0,
+     561.0
+    ],
+    [
+     158.5,
+     561.0
+    ]
+   ],
+   "bbox": [
+    158.5,
+    537.0,
+    283.0,
+    561.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "모두가 즐거운",
+   "text_key": "모두가즐거운",
+   "ocr_text": "모두가 즐거운",
+   "confidence": 0.8868136405944824,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "모두가 즐거운 세대공감 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.padd_rgb_2x_016",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     129.0,
+     563.5
+    ],
+    [
+     307.5,
+     562.5
+    ],
+    [
+     307.5,
+     587.0
+    ],
+    [
+     129.0,
+     588.0
+    ]
+   ],
+   "bbox": [
+    129.0,
+    562.5,
+    307.5,
+    588.0
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "세대공감 한마당",
+   "text_key": "세대공감한마당",
+   "ocr_text": "세대공감 한마당",
+   "confidence": 0.9955130815505981,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "모두가 즐거운 세대공감 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

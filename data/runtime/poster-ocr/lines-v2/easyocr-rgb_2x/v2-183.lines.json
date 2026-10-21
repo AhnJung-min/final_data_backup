@@ -1,0 +1,450 @@
+{
+ "case_id": "v2-183",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 49,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-183.easy_rgb_2x_000",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     317.5,
+     34.5
+    ],
+    [
+     425.5,
+     34.5
+    ],
+    [
+     425.5,
+     56.5
+    ],
+    [
+     317.5,
+     56.5
+    ]
+   ],
+   "bbox": [
+    317.5,
+    34.5,
+    425.5,
+    56.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026.10.24.(토) ~",
+   "text_key": "20261024토",
+   "ocr_text": "2026.10.24 (토)",
+   "confidence": 0.9477702220521971,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026.10.24.(토) ~10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-183.easy_rgb_2x_001",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     14.0,
+     30.0
+    ],
+    [
+     292.0,
+     30.0
+    ],
+    [
+     292.0,
+     102.0
+    ],
+    [
+     14.0,
+     102.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    30.0,
+    292.0,
+    102.0
+   ],
+   "height": 72.0,
+   "small_text": false,
+   "text": "제주독서대전",
+   "text_key": "제주독서대전",
+   "ocr_text": "제주독서대전",
+   "confidence": 0.9546417181449747,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제주독서대전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-183.easy_rgb_2x_002",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     349.0,
+     59.0
+    ],
+    [
+     426.0,
+     59.0
+    ],
+    [
+     426.0,
+     83.0
+    ],
+    [
+     349.0,
+     83.0
+    ]
+   ],
+   "bbox": [
+    349.0,
+    59.0,
+    426.0,
+    83.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10.25.(",
+   "text_key": "1025",
+   "ocr_text": "10.25 (월)",
+   "confidence": 0.8796793571774786,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026.10.24.(토) ~10.25.(일)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-183.easy_rgb_2x_003",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     317.0,
+     87.0
+    ],
+    [
+     424.0,
+     87.0
+    ],
+    [
+     424.0,
+     103.0
+    ],
+    [
+     317.0,
+     103.0
+    ]
+   ],
+   "bbox": [
+    317.0,
+    87.0,
+    424.0,
+    103.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "제주시 우당도서관 일원",
+   "text_key": "제주시우당도서관일원",
+   "ocr_text": "제주시우당도서관 입원",
+   "confidence": 0.618789800825047,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "제주시 우당도서관 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-183.easy_rgb_2x_004",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     130.0,
+     98.0
+    ],
+    [
+     275.0,
+     98.0
+    ],
+    [
+     275.0,
+     135.0
+    ],
+    [
+     130.0,
+     135.0
+    ]
+   ],
+   "bbox": [
+    130.0,
+    98.0,
+    275.0,
+    135.0
+   ],
+   "height": 37.0,
+   "small_text": false,
+   "text": "책밭에 모다들엉",
+   "text_key": "책밭에모다들엉",
+   "ocr_text": "책발에 모다들영",
+   "confidence": 0.7474860112261572,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "책밭에 모다들엉",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-183.easy_rgb_2x_008",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     105.0,
+     473.0
+    ],
+    [
+     138.0,
+     473.0
+    ],
+    [
+     138.0,
+     489.0
+    ],
+    [
+     105.0,
+     489.0
+    ]
+   ],
+   "bbox": [
+    105.0,
+    473.0,
+    138.0,
+    489.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "작가",
+   "text_key": "작가",
+   "ocr_text": "작가",
+   "confidence": 0.9981511815538039,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "작가강연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-183.easy_rgb_2x_014",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     104.5,
+     489.5
+    ],
+    [
+     137.5,
+     489.5
+    ],
+    [
+     137.5,
+     507.5
+    ],
+    [
+     104.5,
+     507.5
+    ]
+   ],
+   "bbox": [
+    104.5,
+    489.5,
+    137.5,
+    507.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "강연",
+   "text_key": "강연",
+   "ocr_text": "강연",
+   "confidence": 0.9319832988996718,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "작가강연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-183.easy_rgb_2x_046",
+   "case_id": "v2-183",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_046"
+   },
+   "polygon": [
+    [
+     227.0,
+     605.0
+    ],
+    [
+     261.0,
+     605.0
+    ],
+    [
+     261.0,
+     620.0
+    ],
+    [
+     227.0,
+     620.0
+    ]
+   ],
+   "bbox": [
+    227.0,
+    605.0,
+    261.0,
+    620.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "제주시",
+   "text_key": "제주시",
+   "ocr_text": "제주시",
+   "confidence": 0.9994704752711802,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제주시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

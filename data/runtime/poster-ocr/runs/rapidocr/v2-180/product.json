@@ -1,0 +1,194 @@
+{
+ "case_id": "v2-180",
+ "engine": "rapidocr",
+ "variant": "product",
+ "scale": 1,
+ "normalized_dimensions": [
+  437,
+  627
+ ],
+ "input_dimensions": [
+  437,
+  627
+ ],
+ "source_sha256": "4505f829f3e1ecb8d603f146f76699985b53e81eb010ecf7ab53cb2c115c97e8",
+ "input_sha256": "4505f829f3e1ecb8d603f146f76699985b53e81eb010ecf7ab53cb2c115c97e8",
+ "coordinate_space": "normalized_original_pixels",
+ "input": "original_bytes",
+ "device": "cpu",
+ "method": "rapidocr-ppocrv5-korean/onnx-cpu-v1",
+ "engine_fingerprint": "254c127b2e7f36f9",
+ "status": "success",
+ "records": [
+  {
+   "id": "rapi_product_000",
+   "text": "2026 대한민국",
+   "confidence": 0.99135,
+   "bbox_xyxy": [
+    139.0,
+    24.0,
+    297.0,
+    68.0
+   ],
+   "polygon": [
+    [
+     139.0,
+     27.0
+    ],
+    [
+     296.0,
+     24.0
+    ],
+    [
+     297.0,
+     65.0
+    ],
+    [
+     139.0,
+     68.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_001",
+   "text": "함평엑스포공원",
+   "confidence": 0.99316,
+   "bbox_xyxy": [
+    155.0,
+    325.0,
+    286.0,
+    355.0
+   ],
+   "polygon": [
+    [
+     155.0,
+     327.0
+    ],
+    [
+     286.0,
+     325.0
+    ],
+    [
+     286.0,
+     353.0
+    ],
+    [
+     155.0,
+     355.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_002",
+   "text": "2026.10.23(금)–11.8(일)",
+   "confidence": 0.98316,
+   "bbox_xyxy": [
+    123.0,
+    356.0,
+    320.0,
+    378.0
+   ],
+   "polygon": [
+    [
+     123.0,
+     356.0
+    ],
+    [
+     320.0,
+     356.0
+    ],
+    [
+     320.0,
+     378.0
+    ],
+    [
+     123.0,
+     378.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_003",
+   "text": "1 1",
+   "confidence": 0.52058,
+   "bbox_xyxy": [
+    24.0,
+    597.0,
+    418.0,
+    609.0
+   ],
+   "polygon": [
+    [
+     24.0,
+     597.0
+    ],
+    [
+     418.0,
+     597.0
+    ],
+    [
+     418.0,
+     609.0
+    ],
+    [
+     24.0,
+     609.0
+    ]
+   ]
+  }
+ ],
+ "raw_detections": 4,
+ "stage_seconds": {
+  "det": 0.507,
+  "cls": null,
+  "rec": 1.032
+ },
+ "service_status": "succeeded",
+ "service_lines": [
+  {
+   "text": "2026 대한민국",
+   "confidence": 0.99135,
+   "bbox": [
+    0.318078,
+    0.038278,
+    0.361556,
+    0.070175
+   ]
+  },
+  {
+   "text": "함평엑스포공원",
+   "confidence": 0.99316,
+   "bbox": [
+    0.354691,
+    0.518341,
+    0.299771,
+    0.047847
+   ]
+  },
+  {
+   "text": "2026.10.23(금)–11.8(일)",
+   "confidence": 0.98316,
+   "bbox": [
+    0.281465,
+    0.567783,
+    0.450801,
+    0.035088
+   ]
+  },
+  {
+   "text": "1 1",
+   "confidence": 0.52058,
+   "bbox": [
+    0.05492,
+    0.952153,
+    0.901602,
+    0.019139
+   ]
+  }
+ ],
+ "inference_seconds": 1.554,
+ "memory": {
+  "rss_bytes": 160051200,
+  "peak_bytes": 306663424
+ }
+}

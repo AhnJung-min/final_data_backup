@@ -1,0 +1,233 @@
+{
+ "case_id": "r2-017",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-017.padd_rgb_2x_000",
+   "case_id": "r2-017",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     65.5,
+     314.0
+    ],
+    [
+     375.5,
+     302.0
+    ],
+    [
+     381.5,
+     451.5
+    ],
+    [
+     71.0,
+     464.0
+    ]
+   ],
+   "bbox": [
+    65.5,
+    302.0,
+    381.5,
+    464.0
+   ],
+   "height": 149.86,
+   "small_text": false,
+   "text": "페스티",
+   "text_key": "페스티",
+   "ocr_text": "페스티널",
+   "confidence": 0.7603992819786072,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "페스티벌 광명",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-017.padd_rgb_2x_001",
+   "case_id": "r2-017",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     133.5,
+     415.0
+    ],
+    [
+     316.0,
+     410.5
+    ],
+    [
+     318.5,
+     505.5
+    ],
+    [
+     136.0,
+     510.0
+    ]
+   ],
+   "bbox": [
+    133.5,
+    410.5,
+    318.5,
+    510.0
+   ],
+   "height": 95.03,
+   "small_text": false,
+   "text": "광명",
+   "text_key": "광명",
+   "ocr_text": "광명",
+   "confidence": 0.9999164938926697,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "페스티벌 광명",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-017.padd_rgb_2x_002",
+   "case_id": "r2-017",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     106.5,
+     510.0
+    ],
+    [
+     335.0,
+     508.5
+    ],
+    [
+     335.5,
+     530.5
+    ],
+    [
+     106.5,
+     532.0
+    ]
+   ],
+   "bbox": [
+    106.5,
+    508.5,
+    335.5,
+    532.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "text_key": "2026103토104일",
+   "ocr_text": "2026.10.3.(토)~ 10.4.(일)",
+   "confidence": 0.961783766746521,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-017.padd_rgb_2x_003",
+   "case_id": "r2-017",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     108.0,
+     533.5
+    ],
+    [
+     335.0,
+     533.5
+    ],
+    [
+     335.0,
+     547.0
+    ],
+    [
+     108.0,
+     547.0
+    ]
+   ],
+   "bbox": [
+    108.0,
+    533.5,
+    335.0,
+    547.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "철산로(중앙로 사거리 ~ 철산역 앞 삼거리)",
+   "text_key": "철산로중앙로사거리철산역앞삼거리",
+   "ocr_text": "철산로(중망로 사거리 ~철산역 앞 삼거리)",
+   "confidence": 0.9017127752304077,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0625,
+   "gold_value": "철산로(중앙로 사거리 ~ 철산역 앞 삼거리)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

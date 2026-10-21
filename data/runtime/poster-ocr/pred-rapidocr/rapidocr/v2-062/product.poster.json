@@ -1,0 +1,336 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-1640bcc0d851",
+ "image": {
+  "sha256": "1640bcc0d851f5d4a5242e9a2d0ce793842cd1f4f6bf0820e6cb62f070036acb",
+  "width": 442,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:41+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "제20회하동북천 코스모스* 메밀꽃축제",
+  "official": "하동북천 코스모스* 메밀꽃축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006",
+    "rapi_product_008",
+    "rapi_product_009"
+   ],
+   "bbox": [
+    103.0,
+    143.0,
+    357.0,
+    299.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제20회",
+  "number": 20,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_006"
+   ],
+   "bbox": [
+    111.0,
+    143.0,
+    272.0,
+    177.0
+   ],
+   "confidence": 0.98932
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    110.0,
+    306.0,
+    304.0,
+    341.0
+   ],
+   "confidence": 0.98562
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.9.22~10.5",
+  "start": {
+   "iso": "2026-09-22",
+   "year": 2026,
+   "month": 9,
+   "day": 22,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-05",
+   "year": 2026,
+   "month": 10,
+   "day": 5,
+   "weekday": null,
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": "14일간",
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_010"
+   ],
+   "bbox": [
+    110.0,
+    306.0,
+    304.0,
+    341.0
+   ],
+   "confidence": 0.98562
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "경남 하동군북천면 코스모스·메밀꽃 축제장",
+  "items": [
+   "경남 하동군북천면 코스모스",
+   "메밀꽃 축제장"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_012"
+   ],
+   "bbox": [
+    116.0,
+    337.0,
+    327.0,
+    354.0
+   ],
+   "confidence": 0.89348
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "경남 하동군북천면 코스모스·메밀꽃 축제장",
+  "region": "경남",
+  "district": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_012"
+   ],
+   "bbox": [
+    116.0,
+    337.0,
+    327.0,
+    354.0
+   ],
+   "confidence": 0.89348
+  }
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "※하동북천코스모스",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_023"
+     ],
+     "bbox": [
+      27.0,
+      606.0,
+      298.0,
+      619.0
+     ],
+     "confidence": 0.78864
+    }
+   },
+   {
+    "name": "메밀꽃영농조합법인 추원",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_023"
+     ],
+     "bbox": [
+      27.0,
+      606.0,
+      298.0,
+      619.0
+     ],
+     "confidence": 0.78864
+    }
+   },
+   {
+    "name": "스이동군",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_023"
+     ],
+     "bbox": [
+      27.0,
+      606.0,
+      298.0,
+      619.0
+     ],
+     "confidence": 0.78864
+    }
+   },
+   {
+    "name": "인내",
+    "roles": [
+     "organizer"
+    ],
+    "role_raw": "주관",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_023",
+      "rapi_product_024"
+     ],
+     "bbox": [
+      27.0,
+      606.0,
+      415.0,
+      619.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "phone",
+    "raw": "055)884-7416",
+    "value": "055-884-7416",
+    "label_raw": "문의",
+    "department": "주좌-주관 ※하동북천코스모스·메밀꽃영농조합법인 추원 스이동군 인내",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_023",
+      "rapi_product_024"
+     ],
+     "bbox": [
+      27.0,
+      606.0,
+      415.0,
+      619.0
+     ],
+     "confidence": null
+    }
+   }
+  ]
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-147",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-147.easy_rgb_2x_000",
+   "case_id": "v2-147",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     191.0,
+     16.0
+    ],
+    [
+     265.5,
+     16.0
+    ],
+    [
+     265.5,
+     43.5
+    ],
+    [
+     191.0,
+     43.5
+    ]
+   ],
+   "bbox": [
+    191.0,
+    16.0,
+    265.5,
+    43.5
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "제65회",
+   "text_key": "제65회",
+   "ocr_text": "제65회",
+   "confidence": 0.9888703398056788,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제65회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-147.easy_rgb_2x_003",
+   "case_id": "v2-147",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     127.5,
+     190.5
+    ],
+    [
+     332.5,
+     190.5
+    ],
+    [
+     332.5,
+     222.5
+    ],
+    [
+     127.5,
+     222.5
+    ]
+   ],
+   "bbox": [
+    127.5,
+    190.5,
+    332.5,
+    222.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "2026. 10. 17.(토) - 21.(수)",
+   "text_key": "20261017토21수",
+   "ocr_text": "2026.10.17.(토)-21.()",
+   "confidence": 0.8926209211349487,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "2026. 10. 17.(토) - 21.(수)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-147.easy_rgb_2x_004",
+   "case_id": "v2-147",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     129.0,
+     221.0
+    ],
+    [
+     327.0,
+     221.0
+    ],
+    [
+     327.0,
+     237.0
+    ],
+    [
+     129.0,
+     237.0
+    ]
+   ],
+   "bbox": [
+    129.0,
+    221.0,
+    327.0,
+    237.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "제주도 일원(제주 시민복지타운광장 일대)",
+   "text_key": "제주도일원제주시민복지타운광장일대",
+   "ocr_text": "제주도 일원(제주 시민복지타운광장 일대)",
+   "confidence": 0.9360856413841248,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제주도 일원(제주 시민복지타운광장 일대)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-147.easy_rgb_2x_005",
+   "case_id": "v2-147",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     129.0,
+     238.0
+    ],
+    [
+     327.0,
+     238.0
+    ],
+    [
+     327.0,
+     254.0
+    ],
+    [
+     129.0,
+     254.0
+    ]
+   ],
+   "bbox": [
+    129.0,
+    238.0,
+    327.0,
+    254.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "사전행사",
+   "text_key": "사전행사",
+   "ocr_text": "사전행자10월10일(토)서귀포칠십리야외공연장",
+   "confidence": 0.8834824562072754,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "사전행사",
+   "extra_chars": 19,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

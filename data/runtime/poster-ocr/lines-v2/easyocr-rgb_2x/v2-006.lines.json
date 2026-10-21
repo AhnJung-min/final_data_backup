@@ -1,0 +1,341 @@
+{
+ "case_id": "v2-006",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-006.easy_rgb_2x_000",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     34.5,
+     17.5
+    ],
+    [
+     105.0,
+     17.5
+    ],
+    [
+     105.0,
+     39.0
+    ],
+    [
+     34.5,
+     39.0
+    ]
+   ],
+   "bbox": [
+    34.5,
+    17.5,
+    105.0,
+    39.0
+   ],
+   "height": 21.5,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유산 소개",
+   "confidence": 0.10387145349195002,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "국가유산청",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.easy_rgb_2x_004",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     324.0,
+     192.0
+    ],
+    [
+     354.0,
+     192.0
+    ],
+    [
+     354.0,
+     204.0
+    ],
+    [
+     324.0,
+     204.0
+    ]
+   ],
+   "bbox": [
+    324.0,
+    192.0,
+    354.0,
+    204.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "18:00",
+   "text_key": "1800",
+   "ocr_text": "18.00",
+   "confidence": 0.8377230446092367,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "18:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.easy_rgb_2x_005",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     360.0,
+     191.0
+    ],
+    [
+     392.0,
+     191.0
+    ],
+    [
+     392.0,
+     204.0
+    ],
+    [
+     360.0,
+     204.0
+    ]
+   ],
+   "bbox": [
+    360.0,
+    191.0,
+    392.0,
+    204.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "2:00",
+   "text_key": "200",
+   "ocr_text": "200",
+   "confidence": 0.9272904300573477,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "18:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.easy_rgb_2x_006",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     204.0,
+     208.0
+    ],
+    [
+     338.0,
+     208.0
+    ],
+    [
+     338.0,
+     224.0
+    ],
+    [
+     204.0,
+     224.0
+    ]
+   ],
+   "bbox": [
+    204.0,
+    208.0,
+    338.0,
+    224.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "강경근대역사문화거리 일원",
+   "text_key": "강경근대역사문화거리일원",
+   "ocr_text": "강경근대의사문최거리 입원",
+   "confidence": 0.6275359527292758,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "강경근대역사문화거리 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.easy_rgb_2x_007",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     269.0,
+     245.0
+    ],
+    [
+     319.0,
+     245.0
+    ],
+    [
+     319.0,
+     261.0
+    ],
+    [
+     269.0,
+     261.0
+    ]
+   ],
+   "bbox": [
+    269.0,
+    245.0,
+    319.0,
+    261.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "밤이 되면,",
+   "text_key": "밤이되면",
+   "ocr_text": "밤이 되면 ,",
+   "confidence": 0.5152060483499876,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "밤이 되면, 강경은 다시 흐른다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.easy_rgb_2x_008",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     285.5,
+     259.5
+    ],
+    [
+     383.5,
+     259.5
+    ],
+    [
+     383.5,
+     277.5
+    ],
+    [
+     285.5,
+     277.5
+    ]
+   ],
+   "bbox": [
+    285.5,
+    259.5,
+    383.5,
+    277.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "강경은 다시 흐른다",
+   "text_key": "강경은다시흐른다",
+   "ocr_text": "강경은 다시 흐르다",
+   "confidence": 0.5977079396505744,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "밤이 되면, 강경은 다시 흐른다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

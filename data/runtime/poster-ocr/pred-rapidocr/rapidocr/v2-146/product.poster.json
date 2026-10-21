@@ -1,0 +1,228 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-af8d975399aa",
+ "image": {
+  "sha256": "af8d975399aa4b0ae7816f0342143d0952113fc1c2135d4869d48599b8d156e7",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:44+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "제29회 포천산정호수 명성산 억새꽃축제",
+  "official": "포천산정호수 명성산 억새꽃축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001",
+    "rapi_product_002"
+   ],
+   "bbox": [
+    71.0,
+    49.0,
+    373.0,
+    121.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제29회",
+  "number": 29,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_001"
+   ],
+   "bbox": [
+    131.0,
+    49.0,
+    312.0,
+    72.0
+   ],
+   "confidence": 0.97136
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003"
+   ],
+   "bbox": [
+    122.0,
+    129.0,
+    321.0,
+    152.0
+   ],
+   "confidence": 0.97065
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "2026.10.16.(금)—18.(일)",
+  "start": {
+   "iso": "2026-10-16",
+   "year": 2026,
+   "month": 10,
+   "day": 16,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-18",
+   "year": 2026,
+   "month": 10,
+   "day": 18,
+   "weekday": "sun",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_003"
+   ],
+   "bbox": [
+    122.0,
+    129.0,
+    321.0,
+    152.0
+   ],
+   "confidence": 0.97065
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "18:00ᅵ포천시산정호수명성산일원",
+  "items": [
+   "18:00ᅵ포천시산정호수명성산일원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_004"
+   ],
+   "bbox": [
+    75.0,
+    154.0,
+    368.0,
+    170.0
+   ],
+   "confidence": 0.9587
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "present",
+  "items": [
+   {
+    "kind": "festival_designation",
+    "raw": "2026경기도시·군대표축제",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_000"
+     ],
+     "bbox": [
+      26.0,
+      18.0,
+      135.0,
+      32.0
+     ],
+     "confidence": 0.95994
+    }
+   }
+  ]
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

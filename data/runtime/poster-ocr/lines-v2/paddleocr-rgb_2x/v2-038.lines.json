@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-038",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 434,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-038.padd_rgb_2x_001",
+   "case_id": "v2-038",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     27.5,
+     30.0
+    ],
+    [
+     65.0,
+     30.0
+    ],
+    [
+     65.0,
+     47.0
+    ],
+    [
+     27.5,
+     47.0
+    ]
+   ],
+   "bbox": [
+    27.5,
+    30.0,
+    65.0,
+    47.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9992793798446655,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 9.16.(수)-9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-038.padd_rgb_2x_003",
+   "case_id": "v2-038",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     28.0,
+     47.0
+    ],
+    [
+     180.5,
+     47.0
+    ],
+    [
+     180.5,
+     69.5
+    ],
+    [
+     28.0,
+     69.5
+    ]
+   ],
+   "bbox": [
+    28.0,
+    47.0,
+    180.5,
+    69.5
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "9.16.(수)-9.20.(일)",
+   "text_key": "916수920일",
+   "ocr_text": "9.16.(수)-9.20.(일)",
+   "confidence": 0.9691953063011169,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 9.16.(수)-9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-038.padd_rgb_2x_004",
+   "case_id": "v2-038",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     27.5,
+     73.0
+    ],
+    [
+     180.5,
+     73.0
+    ],
+    [
+     180.5,
+     97.0
+    ],
+    [
+     27.5,
+     97.0
+    ]
+   ],
+   "bbox": [
+    27.5,
+    73.0,
+    180.5,
+    97.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "용천사 꽃무릇 공원",
+   "text_key": "용천사꽃무릇공원",
+   "ocr_text": "용천사 꽃무롯 공원",
+   "confidence": 0.9215019345283508,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "용천사 꽃무릇 공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

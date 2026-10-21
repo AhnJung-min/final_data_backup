@@ -1,0 +1,181 @@
+{
+ "case_id": "v2-121",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 22,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-121.easy_rgb_2x_000",
+   "case_id": "v2-121",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     127.5,
+     48.5
+    ],
+    [
+     316.5,
+     48.5
+    ],
+    [
+     316.5,
+     68.0
+    ],
+    [
+     127.5,
+     68.0
+    ]
+   ],
+   "bbox": [
+    127.5,
+    48.5,
+    316.5,
+    68.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "2026년 시간을 건너 1931 장항으로",
+   "text_key": "2026년시간을건너1931장항으로",
+   "ocr_text": "2026년 시간을 건너 1931 장항으로",
+   "confidence": 0.6295344376069443,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026년 시간을 건너 1931 장항으로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-121.easy_rgb_2x_002",
+   "case_id": "v2-121",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     87.0,
+     137.0
+    ],
+    [
+     344.5,
+     137.0
+    ],
+    [
+     344.5,
+     261.0
+    ],
+    [
+     87.0,
+     261.0
+    ]
+   ],
+   "bbox": [
+    87.0,
+    137.0,
+    344.5,
+    261.0
+   ],
+   "height": 124.0,
+   "small_text": false,
+   "text": "1931",
+   "text_key": "1931",
+   "ocr_text": "1931",
+   "confidence": 0.9994715452194214,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "장항 1931 밤의 기행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-121.easy_rgb_2x_003",
+   "case_id": "v2-121",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     114.0,
+     261.0
+    ],
+    [
+     330.0,
+     261.0
+    ],
+    [
+     330.0,
+     322.0
+    ],
+    [
+     114.0,
+     322.0
+    ]
+   ],
+   "bbox": [
+    114.0,
+    261.0,
+    330.0,
+    322.0
+   ],
+   "height": 61.0,
+   "small_text": false,
+   "text": "밤의 기행",
+   "text_key": "밤의기행",
+   "ocr_text": "밤의 기행",
+   "confidence": 0.9289803162164632,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "장항 1931 밤의 기행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

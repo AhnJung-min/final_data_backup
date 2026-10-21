@@ -1,0 +1,557 @@
+{
+ "case_id": "v2-125",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 32,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-125.padd_rgb_1x_004",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     90.0,
+     55.0
+    ],
+    [
+     108.0,
+     55.0
+    ],
+    [
+     108.0,
+     72.0
+    ],
+    [
+     90.0,
+     72.0
+    ]
+   ],
+   "bbox": [
+    90.0,
+    55.0,
+    108.0,
+    72.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "l,",
+   "text_key": "l",
+   "ocr_text": "L",
+   "confidence": 0.6856065988540649,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.28,
+   "gold_value": "ART-i-fi-cial, SEE WHAT'S BETWEEN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_008",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     26.0,
+     152.0
+    ],
+    [
+     90.0,
+     152.0
+    ],
+    [
+     90.0,
+     166.0
+    ],
+    [
+     26.0,
+     166.0
+    ]
+   ],
+   "bbox": [
+    26.0,
+    152.0,
+    90.0,
+    166.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "롯데시네마 수원",
+   "text_key": "롯데시네마수원",
+   "ocr_text": "롯데시네마수원",
+   "confidence": 0.975598931312561,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "롯데시네마 수원 (수원역)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_012",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     25.0,
+     167.0
+    ],
+    [
+     61.0,
+     167.0
+    ],
+    [
+     61.0,
+     180.0
+    ],
+    [
+     25.0,
+     180.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    167.0,
+    61.0,
+    180.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "(수원역)",
+   "text_key": "수원역",
+   "ocr_text": "(수원역)",
+   "confidence": 0.9779144525527954,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "롯데시네마 수원 (수원역)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_013",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     25.0,
+     222.0
+    ],
+    [
+     50.0,
+     222.0
+    ],
+    [
+     50.0,
+     234.0
+    ],
+    [
+     25.0,
+     234.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    222.0,
+    50.0,
+    234.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9989973306655884,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 15. – 16.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_014",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     25.0,
+     234.0
+    ],
+    [
+     77.0,
+     234.0
+    ],
+    [
+     77.0,
+     245.0
+    ],
+    [
+     25.0,
+     245.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    234.0,
+    77.0,
+    245.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "10. 15. – 16.",
+   "text_key": "101516",
+   "ocr_text": "10.15.-16.",
+   "confidence": 0.9280487298965454,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 15. – 16.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_015",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     98.0,
+     259.0
+    ],
+    [
+     150.0,
+     237.0
+    ],
+    [
+     163.0,
+     266.0
+    ],
+    [
+     111.0,
+     288.0
+    ]
+   ],
+   "bbox": [
+    98.0,
+    237.0,
+    163.0,
+    288.0
+   ],
+   "height": 31.78,
+   "small_text": false,
+   "text": "a",
+   "text_key": "a",
+   "ocr_text": "A/",
+   "confidence": 0.8022648692131042,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.28,
+   "gold_value": "ART-i-fi-cial, SEE WHAT'S BETWEEN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_016",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     155.0,
+     257.0
+    ],
+    [
+     276.0,
+     217.0
+    ],
+    [
+     309.0,
+     314.0
+    ],
+    [
+     187.0,
+     354.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    217.0,
+    309.0,
+    354.0
+   ],
+   "height": 102.3,
+   "small_text": false,
+   "text": "A",
+   "text_key": "a",
+   "ocr_text": "A/",
+   "confidence": 0.8948912620544434,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.28,
+   "gold_value": "ART-i-fi-cial, SEE WHAT'S BETWEEN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_018",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     303.0,
+     274.0
+    ],
+    [
+     402.0,
+     274.0
+    ],
+    [
+     402.0,
+     287.0
+    ],
+    [
+     303.0,
+     287.0
+    ]
+   ],
+   "bbox": [
+    303.0,
+    274.0,
+    402.0,
+    287.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "SEE WHAT'S BETWEEN",
+   "text_key": "seewhatsbetween",
+   "ocr_text": "SEE WHAT'S BETWEEN",
+   "confidence": 0.9520105719566345,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.28,
+   "gold_value": "ART-i-fi-cial, SEE WHAT'S BETWEEN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_019",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     301.0,
+     288.0
+    ],
+    [
+     373.0,
+     286.0
+    ],
+    [
+     373.0,
+     300.0
+    ],
+    [
+     302.0,
+     302.0
+    ]
+   ],
+   "bbox": [
+    301.0,
+    286.0,
+    373.0,
+    302.0
+   ],
+   "height": 14.02,
+   "small_text": false,
+   "text": "그 너머로의 확장",
+   "text_key": "그너머로의확장",
+   "ocr_text": "그너머로의 확장",
+   "confidence": 0.9251387119293213,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "그 너머로의 확장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-125.padd_rgb_1x_031",
+   "case_id": "v2-125",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_031"
+   },
+   "polygon": [
+    [
+     323.0,
+     597.0
+    ],
+    [
+     430.0,
+     597.0
+    ],
+    [
+     430.0,
+     609.0
+    ],
+    [
+     323.0,
+     609.0
+    ]
+   ],
+   "bbox": [
+    323.0,
+    597.0,
+    430.0,
+    609.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "TIMEVILLAS",
+   "text_key": "timevillas",
+   "ocr_text": "에A터스BN TIMEVILLAS",
+   "confidence": 0.6465103030204773,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "TIMEVILLAS",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

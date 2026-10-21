@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>새 시드 대조 재측정</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+:root{--paper:#f6f7f8;--sheet:#ffffff;--paper-2:#eceef1;--ink:#1f2328;--ink-2:#5b616a;--muted:#686e77;--rule:#d9dde2;
+--grid:#e3e6ea;--axis:#b9bfc7;--accent:#1d5fb3;--accent-wash:rgba(29,95,179,.07);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;
+--seq:#2a78d6;--warn:#b26a00;--shadow:rgba(16,24,40,.12);
+--font-display:"Black Han Sans","IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+--font-body:"IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+--font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14171b;--sheet:#1b1f24;--paper-2:#1d2126;--ink:#e9ecef;
+--ink-2:#a9b0b9;--muted:#8b929c;--rule:#2e343b;--grid:#262b31;--axis:#4a515a;--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.09);
+--s1:#3987e5;--s2:#d95926;--s3:#199e70;--seq:#3987e5;--warn:#e0a030;--shadow:rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#14171b;--sheet:#1b1f24;--paper-2:#1d2126;--ink:#e9ecef;--ink-2:#a9b0b9;--muted:#8b929c;--rule:#2e343b;
+--grid:#262b31;--axis:#4a515a;--accent:#7fb0ee;--accent-wash:rgba(127,176,238,.09);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--seq:#3987e5;
+--warn:#e0a030;--shadow:rgba(0,0,0,.45);color-scheme:dark}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.7 var(--font-body);padding:3rem 20px 4rem;word-break:keep-all;overflow-wrap:break-word}
+main{display:flex;flex-direction:column;gap:3.25rem;max-width:64rem;margin-inline:auto}
+.wrap{width:100%;max-width:46rem}.wide{width:100%}.wide>h2,.wide>.sub{max-width:46rem}
+h1,h2,h3{text-wrap:balance;margin:0}h1{font-family:var(--font-display);font-weight:400;font-size:clamp(2rem,5.5vw,3.1rem);line-height:1.15}
+h2{font-size:1.35rem;font-weight:600;line-height:1.35;margin-bottom:.6rem}h3{font-size:1.02rem;font-weight:600;margin:1.4rem 0 .4rem}
+p{margin:0}section>p+p,section>p+ul,section>ul+p,section>p+.scroll,section>.scroll+p{margin-top:.9rem}
+.sub{color:var(--ink-2);font-size:.95rem;margin-bottom:1.2rem}
+code{font-family:var(--font-mono);font-size:.86em;background:var(--paper-2);border-radius:4px;padding:.08em .35em;overflow-wrap:anywhere;word-break:normal}
+pre{margin:0;background:var(--paper-2);border-radius:6px;padding:1rem 1.1rem;overflow-x:auto;font-family:var(--font-mono);font-size:.8rem;line-height:1.6}
+pre code{background:none;padding:0;font-size:inherit}a{color:var(--accent)}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.intro{display:flex;flex-direction:column;gap:1rem}.eyebrow{display:flex;align-items:center;gap:.55rem;font-family:var(--font-mono);font-size:.8rem;letter-spacing:.05em;color:var(--accent)}
+.reg{width:15px;height:15px;flex:none;border:1.5px solid currentColor;border-radius:50%;background:linear-gradient(currentColor,currentColor) center/1.5px 100% no-repeat,linear-gradient(currentColor,currentColor) center/100% 1.5px no-repeat}
+.lead{font-size:1.06rem;max-width:42rem}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(10.5rem,1fr));gap:.75rem 1.5rem;margin:.5rem 0 0;padding-top:1rem;border-top:1px solid var(--rule)}
+.meta div{min-width:0}.meta dt{font-size:.78rem;color:var(--muted);letter-spacing:.03em}.meta dd{margin:.1rem 0 0;font-size:.92rem}
+.points,.plain{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:.55rem}.points li::marker,.plain li::marker{color:var(--accent)}
+.points strong,.plain strong{font-weight:600}
+.scroll{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--sheet)}
+table{width:100%;border-collapse:collapse;font-size:.86rem;line-height:1.5}
+th,td{text-align:left;vertical-align:top;padding:.5rem .7rem;border-bottom:1px solid var(--rule)}
+thead th{background:var(--paper-2);font-weight:600;font-size:.8rem;color:var(--ink-2);white-space:nowrap}tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.scroll code{white-space:nowrap;overflow-wrap:normal}
+td.ci{color:var(--muted);font-size:.8rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.chart{position:relative;margin:0}.chart-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;margin-bottom:1rem}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;list-style:none;margin:0;padding:0;font-size:.88rem;color:var(--ink-2)}
+.legend li{display:flex;align-items:center;gap:.4rem}.sw{display:inline-block;width:12px;height:12px;border-radius:50%;flex:none}
+.c1{background:var(--s1)}.c2{background:var(--s2)}.c3{background:var(--s3)}
+button{font:inherit;font-size:.85rem;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:.35rem .85rem;cursor:pointer}
+button:hover{border-color:var(--axis)}
+.dots{display:grid;gap:2px;--label-w:12rem}
+.drow{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr) 7.5rem;align-items:center;gap:.85rem;padding:4px 6px;border-radius:4px}
+.drow:hover,.drow:focus-visible{background:var(--accent-wash)}.dlabel{font-size:.9rem;min-width:0}
+.dtrack{position:relative;height:34px}.dtrack .g{position:absolute;top:0;bottom:0;width:1px;background:var(--grid)}
+.dmark{position:absolute;height:2px;border-radius:1px}.ddot{position:absolute;width:10px;height:10px;border-radius:50%;box-shadow:0 0 0 2px var(--sheet);transform:translate(-50%,-50%)}
+.dval{font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums;line-height:1.25}
+.daxis{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr) 7.5rem;gap:.85rem;padding:.3rem 6px 0}
+.ticks{position:relative;height:1.2rem;font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums}.ticks span{position:absolute;transform:translateX(-50%)}
+.ticks span:first-child{transform:none}.ticks span:last-child{transform:translateX(-100%)}
+.bars{display:grid;gap:4px;--label-w:7rem}.brow{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr) 3rem;align-items:center;gap:.85rem;padding:3px 6px;border-radius:4px}
+.brow:hover{background:var(--accent-wash)}.btrack{position:relative;height:14px;border-left:1px solid var(--axis)}.bfill{position:absolute;inset:0 auto 0 0;background:var(--seq);border-radius:0 4px 4px 0}
+.bval{font-size:.82rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tip{position:absolute;z-index:3;pointer-events:none;min-width:11rem;max-width:18rem;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;box-shadow:0 6px 20px var(--shadow);padding:.55rem .75rem;font-size:.82rem;line-height:1.45}
+.tip strong{display:block;font-size:.92rem;font-weight:600}
+figcaption{margin-top:1rem;font-size:.86rem;color:var(--ink-2);max-width:46rem}
+.note{border-left:3px solid var(--accent);background:var(--accent-wash);padding:.7rem .9rem;border-radius:0 6px 6px 0;font-size:.92rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem 2rem}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.9rem}
+.tile{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:.8rem .9rem}.tile .k{font-size:.78rem;color:var(--muted)}
+.tile .v{font-size:1.5rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.3}.tile .d{font-size:.8rem;color:var(--ink-2)}
+footer{font-size:.85rem;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+.toc{box-sizing:border-box;border:1px solid var(--rule);border-radius:8px;background:var(--sheet);padding:1rem 1.25rem 1.1rem}.toc h2{font-size:1rem;margin-bottom:.7rem}
+.toc .groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem 2rem}.toc h3{margin:0 0 .35rem;font-size:.84rem;color:var(--ink-2)}
+.toc ol{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:.2rem;font-size:.9rem}.toc li::marker{color:var(--muted)}
+.part{display:flex;align-items:baseline;gap:.85rem;border-top:2px solid var(--ink);padding-top:1rem;margin-bottom:-1.5rem}
+.part b{font-family:var(--font-mono);font-size:.85rem;font-weight:500;color:var(--accent);white-space:nowrap}.part span{font-size:1.55rem;font-weight:600;line-height:1.3}
+td .k{display:block;font-size:.74rem;color:var(--muted);font-weight:400}
+@media (max-width:640px){.drow,.daxis{grid-template-columns:7.2rem minmax(0,1fr) 5.6rem;gap:.5rem}.dots{--label-w:7.2rem}body{padding-block:2rem 3rem}}
+</style>
+</head>
+<body>
+<main>
+<header class="intro wrap"><p class="eyebrow"><span class="reg" aria-hidden="true"></span>synthetic-poster-check-v2 · 고치지 않은 규칙 재측정</p><h1>새 가상 세트로 다시 잰 대조 정확도</h1><p class="lead">v1 40세트를 보고 다듬은 대조 규칙(sim_check r4)을 그대로 두고, 다른 시드로 만든 가상 40세트에서 다시 쟀다. v1의 97.5%는 같은 세트를 보고 고친 낙관적 값이므로, 이 값이 처음 보는 세트에 대한 추정치다.</p><dl class="meta"><div><dt>작성</dt><dd>2026-10-20</dd></div><div><dt>대조 규칙</dt><dd>sim_check r4 (v2를 보고 고치지 않음)</dd></div><div><dt>새 세트</dt><dd>40세트 · 시드 20261021</dd></div><div><dt>비교 대상</dt><dd>docs/reports/sim-check-v1/report.html</dd></div><div><dt>OCR</dt><dd>PaddleOCR 3.7.0 · CPU · rgb_1x</dd></div></dl></header>
+<section class="wrap" id="summary"><h2>결론</h2><ul class="points"><li><strong>고치지 않은 r4로 새 40세트를 대조한 세트 판정 정확도는 92.5%다</strong>(규칙을 맞춘 v1 97.5%). 불일치 20세트 중 18세트를 '위반'으로 잡았고, 일치 20세트 중 1세트를 잘못 '위반'으로 판정했다.</li><li><strong>오답 3건</strong>: S05(오탐), S08(놓침), S13(놓침).</li><li><strong>기준 문서 오독은 3건이다</strong>(v1 3건). S05 행사명 '솔내 단풍 걷기 축제'→'솔내 단풍 겉기 축제'; S10 행사명 '바다울 단풍 걷기 축제'→'바다울 단풍 같기 축제'; S32 행사명 '미르 단풍 걷기 축제'→'미르 단풍 겉기 축제'.</li><li><strong>놓친 2세트(S08·S13)는 '통과'가 아니라 '확인 필요'로 남았다.</strong> 불일치 20세트 중 판정이 '충족'으로 끝난 세트는 없다. 세트 판정을 '위반 / 그 밖'으로 나눠 채점하므로 놓침으로 세지만, 서비스에서는 담당자 확인으로 넘어간다.</li><li><strong>v1에 없던 조합에서 새 오답이 나왔다.</strong> S08은 라벨 없는 밤하늘 틀의 장소 불일치(v1에는 이 조합이 없었다), S13은 그 틀의 빛 번짐 제목에서 오타 음절을 다른 글자로, 낮은 신뢰도로 읽은 경우다. 지역·주제·틀 조합을 섞지 않았다면 드러나지 않았을 수 있다.</li><li><strong>기준 문서 오독(S09 유형)은 그대로 재현됐다.</strong> 행사명 오독 3건이 모두 '단풍 걷기 축제'의 '걷'(맑은 고딕 23px)이고 다른 항목은 모두 맞게 읽었다. S05는 오탐, S10은 문서 안 표기가 서로 달라 '기준 확정 필요'로 우연히 빠졌고, S32는 진짜 오타('풍'→'풀')를 잡았지만 근거에 오독('겉'→'걷')이 섞였다.</li><li><strong>포스터 쪽 고신뢰 오독도 '위반'을 만든다.</strong> S38 슬로건 '는'→'눈'(0.998)은 불일치 세트라 정확도에 드러나지 않았지만 일치 세트였다면 오탐이다. 같은 슬로건 오독이 S05('함께'→'힘 께', 0.92)·S28('작은'→'착은')에서는 신뢰도가 낮아 '확인 필요'로 멈췄다.</li><li><strong>r4 규칙은 v2를 본 뒤 고치지 않았다.</strong> 위 수치가 처음 보는 가상 세트에 대한 값이며, '고친 뒤' 수치는 없다.</li></ul></section>
+<section class="wide" id="sets"><h2>두 세트</h2><p class="sub">v1은 r2~r4 규칙을 고칠 때 본 세트, v2는 규칙을 고치지 않고 처음 대조한 세트다. 생성기(sim_data)와 OCR 엔진·설정은 같다.</p><div class="scroll"><table><thead><tr><th></th><th>v1 (규칙을 맞춘 세트)</th><th>v2 (새 시드)</th></tr></thead><tbody><tr><td>시드</td><td>20261020</td><td>20261021 · 지역·주제·디자인 틀 조합도 섞음(--shuffle-pairs)</td></tr><tr><td>세트</td><td>40 (일치 20 · 불일치 20)</td><td>40 (일치 20 · 불일치 20)</td></tr><tr><td>불일치 유형 분포</td><td>기간 2·기간(요일 그대로) 2·회차 3·장소 3·행사명 3·주관 3·문의처 2·시간 2</td><td>같음</td></tr><tr><td>회차가 있는 세트</td><td>31</td><td>32</td></tr><tr><td>v1과 같은 지역·주제 짝</td><td>—</td><td>16 / 40</td></tr><tr><td>v1과 같은 지역·주제·디자인 틀 조합</td><td>—</td><td>5 / 40</td></tr><tr><td>'단풍 걷기 축제' 세트(v1 문서 오독 주제)</td><td>4</td><td>4</td></tr><tr><td>OCR 시간 중앙값(문서 / 포스터)</td><td>58초 / 39초</td><td>58초 / 38초</td></tr></tbody></table></div></section>
+<section class="wide" id="confusion"><h2>세트 판정</h2><h3>v1 · sim_check r4</h3><div class="scroll"><table><thead><tr><th></th><th class="num">판정: 불일치</th><th class="num">판정: 일치·확인 필요</th></tr></thead><tbody><tr><td><strong>정답 불일치</strong></td><td class="num">20 탐지</td><td class="num">0 놓침</td></tr><tr><td><strong>정답 일치</strong></td><td class="num">1 오탐</td><td class="num">19 통과</td></tr></tbody></table></div><h3>v2 · sim_check r4</h3><div class="scroll"><table><thead><tr><th></th><th class="num">판정: 불일치</th><th class="num">판정: 일치·확인 필요</th></tr></thead><tbody><tr><td><strong>정답 불일치</strong></td><td class="num">18 탐지</td><td class="num">2 놓침</td></tr><tr><td><strong>정답 일치</strong></td><td class="num">1 오탐</td><td class="num">19 통과</td></tr></tbody></table></div><h3>지표</h3><div class="scroll"><table><thead><tr><th></th><th class="num">v1</th><th class="num">v2</th></tr></thead><tbody><tr><td>세트 판정 정확도</td><td class="num">97.5%</td><td class="num"><strong>92.5%</strong></td></tr><tr><td>불일치 탐지율(재현율)</td><td class="num">100.0% (20/20)</td><td class="num">90.0% (18/20)</td></tr><tr><td>'위반' 판정의 정밀도</td><td class="num">95.2% (20/21)</td><td class="num">94.7% (18/19)</td></tr><tr><td>일치 세트 오탐</td><td class="num">1 / 20</td><td class="num">1 / 20</td></tr><tr><td>오류 항목까지 맞힘</td><td class="num">20 / 20</td><td class="num">18 / 20</td></tr><tr><td>정답 아닌 항목에 낸 위반</td><td class="num">1</td><td class="num">2</td></tr><tr><td>일치 세트 중 '확인 필요'가 남은 세트</td><td class="num">1 / 20</td><td class="num">3 / 20</td></tr></tbody></table></div></section>
+<section class="wide" id="types"><h2>오류 유형별 탐지</h2><p class="sub">칸: 위반으로 잡은 세트/세트 수 · 그중 정답 항목에서 위반을 낸 세트 수.</p><div class="scroll"><table><thead><tr><th>오류 유형</th><th class="num">v1</th><th class="num">v2</th></tr></thead><tbody><tr><td>행사 기간 하루 밀림(요일도 다시 계산)</td><td class="num">2/2 · 항목 2</td><td class="num">2/2 · 항목 2</td></tr><tr><td>행사 기간 하루 밀림(요일은 그대로 → 달력과 어긋남)</td><td class="num">2/2 · 항목 2</td><td class="num">2/2 · 항목 2</td></tr><tr><td>회차 숫자 뒤바뀜</td><td class="num">3/3 · 항목 3</td><td class="num">3/3 · 항목 3</td></tr><tr><td>행사 장소 다름</td><td class="num">3/3 · 항목 3</td><td class="num">2/3 · 항목 2</td></tr><tr><td>행사명 한 글자 오타</td><td class="num">3/3 · 항목 3</td><td class="num">2/3 · 항목 2</td></tr><tr><td>주관 기관 다름</td><td class="num">3/3 · 항목 3</td><td class="num">3/3 · 항목 3</td></tr><tr><td>문의 전화번호 한 자리 다름</td><td class="num">2/2 · 항목 2</td><td class="num">2/2 · 항목 2</td></tr><tr><td>운영 시간 다름</td><td class="num">2/2 · 항목 2</td><td class="num">2/2 · 항목 2</td></tr></tbody></table></div></section>
+<section class="wide" id="doc-ocr"><h2>기준 문서 오독</h2><p class="sub">문서 OCR에서 뽑은 기준 값이 생성 정답과 같은 비율(항목별). 오독한 기준은 그대로 대조 기준이 된다.</p><div class="scroll"><table><thead><tr><th>항목</th><th class="num">v1</th><th class="num">v2</th></tr></thead><tbody><tr><td>행사명</td><td class="num">37/40</td><td class="num">37/40</td></tr><tr><td>회차</td><td class="num">31/31</td><td class="num">32/32</td></tr><tr><td>행사 기간</td><td class="num">40/40</td><td class="num">40/40</td></tr><tr><td>운영 시간</td><td class="num">40/40</td><td class="num">40/40</td></tr><tr><td>행사 장소</td><td class="num">40/40</td><td class="num">40/40</td></tr><tr><td>주최</td><td class="num">40/40</td><td class="num">40/40</td></tr><tr><td>주관</td><td class="num">40/40</td><td class="num">40/40</td></tr><tr><td>문의처</td><td class="num">40/40</td><td class="num">40/40</td></tr><tr><td>필수 문구</td><td class="num">40/40</td><td class="num">40/40</td></tr></tbody></table></div><h3>오독 사례</h3><div class="scroll"><table><thead><tr><th>세트</th><th>항목</th><th>정답</th><th>문서에서 읽은 값</th><th>그 항목 판정</th></tr></thead><tbody><tr><td>v1 S09</td><td>행사명</td><td>미르 단풍 걷기 축제</td><td>미르 단풍 겉기 축제</td><td>위반 · 일치 세트</td></tr><tr><td>v1 S25</td><td>행사명</td><td>바다울 단풍 걷기 축제</td><td>바다울 단풍 같기 축제</td><td>확인 필요 · 일치 세트</td></tr><tr><td>v1 S38</td><td>행사명</td><td>다온 단풍 걷기 축제</td><td>다온 단풍 같기 축제</td><td>확인 필요 · 불일치 세트(정답 항목: 행사 기간)</td></tr><tr><td>v2 S05</td><td>행사명</td><td>솔내 단풍 걷기 축제</td><td>솔내 단풍 겉기 축제</td><td>위반 · 일치 세트</td></tr><tr><td>v2 S10</td><td>행사명</td><td>바다울 단풍 걷기 축제</td><td>바다울 단풍 같기 축제</td><td>확인 필요 · 일치 세트</td></tr><tr><td>v2 S32</td><td>행사명</td><td>미르 단풍 걷기 축제</td><td>미르 단풍 겉기 축제</td><td>위반 · 불일치 세트(정답 항목: 행사명)</td></tr></tbody></table></div></section>
+<section class="wide" id="match-status"><h2>일치 세트의 항목별 판정</h2><p class="sub">일치 세트에서는 모든 정보 항목이 '충족'이어야 한다. 로고는 항상 '확인 필요'로 넘긴다.</p><div class="scroll"><table><thead><tr><th>항목</th><th>v1</th><th>v2</th></tr></thead><tbody><tr><td>행사명</td><td>충족 18 · 확인 필요 1 · 위반 1</td><td>충족 18 · 확인 필요 1 · 위반 1</td></tr><tr><td>회차</td><td>충족 14</td><td>충족 16</td></tr><tr><td>행사 기간</td><td>충족 20</td><td>충족 19 · 확인 필요 1</td></tr><tr><td>운영 시간</td><td>충족 20</td><td>충족 20</td></tr><tr><td>행사 장소</td><td>충족 20</td><td>충족 20</td></tr><tr><td>주최</td><td>충족 20</td><td>충족 20</td></tr><tr><td>주관</td><td>충족 20</td><td>충족 20</td></tr><tr><td>문의처</td><td>충족 20</td><td>충족 20</td></tr><tr><td>필수 문구</td><td>충족 20</td><td>충족 18 · 확인 필요 2</td></tr><tr><td>기관 로고</td><td>확인 필요 20</td><td>확인 필요 20</td></tr></tbody></table></div></section>
+<section class="wide" id="cases"><h2>v2 오답·부분 정답 사례</h2><h3>오답(놓침·오탐)</h3><ul class="plain"><li><strong>S05</strong> 오탐 · 일치 세트<br>'행사명' 위반: 포스터 표기가 기준 문서와 다릅니다(&#x27;겉&#x27;→&#x27;걷&#x27;). · 기준 문서에서 읽은 값 '솔내 단풍 겉기 축제' · 포스터 '솔내 / 단풍 / 걷기 / 축제'<br>원인: v1 S09와 같은 기준 문서 오독. 문서 OCR이 계약명·용역 대상·행사명 칸 세 곳 모두 '걷'을 '겉'으로 읽어(신뢰도 0.94~0.97) 문서 안 표기가 서로 같았으므로 '기준 확정 필요'로 빠지지 못하고 포스터의 맞는 표기 '걷기'가 '위반'이 됐다.</li><li><strong>S08</strong> 놓침 · 행사 장소 다름 (문서 '새봄 전통시장 일대' → 포스터 '새봄군청 앞 광장')<br>정답 항목 '행사 장소' 판정 <strong>확인 필요</strong>: 포스터에서 기준 문구를 찾지 못했습니다. (최대 문자 일치율 25%)<br>원인: 밤하늘 틀(2)은 일시·시간·장소를 라벨 없이 가운데 줄로만 적는다. 라벨 경로를 못 타고 기준 문구와 비슷한 줄도 없으니(최대 25%) '없음'과 '다름'을 가르지 못해 '확인 필요'로 넘겼다. v1의 장소 불일치 3세트는 모두 라벨이 있는 틀(0·3)이라 이 경우가 없었다.</li><li><strong>S13</strong> 놓침 · 행사명 한 글자 오타 (문서 '가람 국화향 축제' → 포스터 '가람 국홤향 축제')<br>정답 항목 '행사명' 판정 <strong>확인 필요</strong>: 비슷한 문구가 있지만 판독 신뢰도가 낮아 담당자 확인이 필요합니다. · 포스터에서 읽은 문구 '가람 / 국황향 축제' (문자 일치율 86% · 판독 신뢰도 89%)<br>원인: 포스터의 오타 '국홤향'을 OCR이 '국황향'으로 읽었고, 그 줄의 판독 신뢰도가 0.89로 '위반' 기준(0.93)보다 낮아 '확인 필요'가 됐다. 드문 음절(홤)이 밤하늘 틀의 빛 번짐 제목에 있어 판독이 흔들린 경우다.</li></ul><h3>위반은 잡았지만 다른 항목으로 잡음</h3><ul class="plain"><li>없음</li></ul><h3>정답 항목과 함께 다른 항목에도 위반</h3><ul class="plain"><li><strong>S38</strong> 탐지 + 다른 항목 위반 · 주관 기관 다름 (문서 '솔내축제위원회' → 포스터 '솔내문화원')<br>정답 항목 '주관' 판정 <strong>위반</strong>: 포스터의 &#x27;주관&#x27; 표기가 기준 문서와 다릅니다. · 포스터에서 읽은 문구 '솔내문화원' (&#x27;주관&#x27; 표기 옆 문구 · 문자 일치율 43% · 판독 신뢰도 96%)<br>'필수 문구' 위반: 포스터 표기가 기준 문서와 다릅니다(&#x27;는&#x27;→&#x27;눈&#x27;). · 기준 문서에서 읽은 값 '강바람에 실려 오는 선율' · 포스터 '강바람에 실려 오눈 선율'<br>원인: 정답 항목(주관)은 맞혔지만, 포스터 OCR이 슬로건의 '는'을 '눈'으로 0.998 신뢰도로 잘못 읽어 슬로건도 '위반'이 됐다. 일치 세트였다면 오탐이다. '신뢰도가 높으면 확실히 다르게 읽은 것'이라는 r4 가정이 포스터 쪽에서도 깨진다.</li></ul><h3>참고: v1 남은 오답</h3><ul class="plain"><li><strong>S09</strong> 오탐 · 일치 세트<br>'행사명' 위반: 포스터 표기가 기준 문서와 다릅니다(&#x27;겉&#x27;→&#x27;걷&#x27;). · 기준 문서에서 읽은 값 '미르 단풍 겉기 축제' · 포스터 '미르 / 단풍 걷기 축제'</li></ul></section>
+<section class="wide" id="reproduce"><h2>재현 명령</h2><pre><code>.\.venv\Scripts\python.exe -m app.poster_ocr.sim_data --seed 20261021 --shuffle-pairs --out data\synthetic\poster-check-v2
+.\.runtime\paddle-env\Scripts\python.exe app\poster_ocr\ocr_worker.py --engine paddleocr --manifest data\synthetic\poster-check-v2\manifest.json --splits sim --variants rgb_1x --out data\runtime\poster-ocr\sim-v2\runs\paddleocr --model-dir .runtime\paddle-models
+.\.venv\Scripts\python.exe -m app.poster_ocr.sim_check --all --sim data\synthetic\poster-check-v2 --runs data\runtime\poster-ocr\sim-v2\runs\paddleocr --out data\runtime\poster-ocr\sim-v2\checks --eval-out data\runtime\poster-ocr\sim-v2\eval-r4.json
+.\.venv\Scripts\python.exe -m app.poster_ocr.report_sim_holdout</code></pre></section>
+<footer class="wrap"><p>가상 데이터: 축제·기관·전화번호(국번 000)는 모두 지어낸 것이다.</p><p>원자료: <code>data/synthetic/poster-check-v2/</code> · <code>data/runtime/poster-ocr/sim-v2/</code> · v1 <code>data/runtime/poster-ocr/sim/</code></p></footer>
+</main>
+<script>
+(function(){
+  document.querySelectorAll('[data-toggle]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var plot=document.getElementById(btn.dataset.plot), table=document.getElementById(btn.dataset.toggle);
+      var asTable=btn.getAttribute('aria-pressed')!=='true';
+      btn.setAttribute('aria-pressed',String(asTable)); btn.textContent=asTable?'차트로 보기':'표로 보기';
+      plot.hidden=asTable; table.hidden=!asTable;
+    });
+  });
+  document.querySelectorAll('.chart').forEach(function(chart){
+    var tip=chart.querySelector('.tip'); if(!tip) return;
+    chart.querySelectorAll('[data-tip]').forEach(function(row){
+      function show(){ tip.replaceChildren(); var lines=JSON.parse(row.dataset.tip);
+        lines.forEach(function(t,i){ var el=document.createElement(i===0?'strong':'div'); el.textContent=t; tip.appendChild(el); });
+        tip.hidden=false; var box=chart.getBoundingClientRect(), r=row.getBoundingClientRect();
+        tip.style.left=Math.max(0,Math.min(r.left-box.left+r.width*0.35,box.width-tip.offsetWidth))+'px';
+        var top=r.top-box.top-tip.offsetHeight-6; tip.style.top=(top<0?r.bottom-box.top+6:top)+'px'; }
+      function hide(){ tip.hidden=true; }
+      row.addEventListener('pointerenter',show); row.addEventListener('pointerleave',hide);
+      row.addEventListener('focus',show); row.addEventListener('blur',hide);
+    });
+  });
+})();
+</script>
+</body>
+</html>

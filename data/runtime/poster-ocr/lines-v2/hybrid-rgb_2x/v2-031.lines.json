@@ -1,0 +1,344 @@
+{
+ "case_id": "v2-031",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-031.easy_rgb_2x_001",
+   "case_id": "v2-031",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     102.0,
+     78.5
+    ],
+    [
+     341.0,
+     78.5
+    ],
+    [
+     341.0,
+     116.5
+    ],
+    [
+     102.0,
+     116.5
+    ]
+   ],
+   "bbox": [
+    102.0,
+    78.5,
+    341.0,
+    116.5
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "불멸의 명량! 호국의 울돌목!",
+   "text_key": "불멸의명량호국의울돌목",
+   "ocr_text": "불면의 명량! 효국의 울동목!",
+   "confidence": 0.7667299509048462,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "불멸의 명량! 호국의 울돌목!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-031.easy_rgb_2x_002",
+   "case_id": "v2-031",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     57.0,
+     111.0
+    ],
+    [
+     385.0,
+     111.0
+    ],
+    [
+     385.0,
+     187.0
+    ],
+    [
+     57.0,
+     187.0
+    ]
+   ],
+   "bbox": [
+    57.0,
+    111.0,
+    385.0,
+    187.0
+   ],
+   "height": 76.0,
+   "small_text": false,
+   "text": "명량대첩축제",
+   "text_key": "명량대첩축제",
+   "ocr_text": "명량대첩축제",
+   "confidence": 0.8658483028411865,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "명량대첩축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-031.easy_rgb_2x_003",
+   "case_id": "v2-031",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     103.0,
+     189.5
+    ],
+    [
+     239.0,
+     189.5
+    ],
+    [
+     239.0,
+     214.0
+    ],
+    [
+     103.0,
+     214.0
+    ]
+   ],
+   "bbox": [
+    103.0,
+    189.5,
+    239.0,
+    214.0
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "2026.09.11.(",
+   "text_key": "20260911",
+   "ocr_text": "2026.09.11.()",
+   "confidence": 0.9336357116699219,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026.09.11.(금) - 09.13.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-031.easy_rgb_2x_004",
+   "case_id": "v2-031",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     247.0,
+     190.0
+    ],
+    [
+     337.0,
+     190.0
+    ],
+    [
+     337.0,
+     214.0
+    ],
+    [
+     247.0,
+     214.0
+    ]
+   ],
+   "bbox": [
+    247.0,
+    190.0,
+    337.0,
+    214.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "09.13.(일)",
+   "text_key": "0913일",
+   "ocr_text": "0g13 (일)",
+   "confidence": 0.7251650937912726,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026.09.11.(금) - 09.13.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-031.easy_rgb_2x_005",
+   "case_id": "v2-031",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     113.5,
+     217.5
+    ],
+    [
+     328.5,
+     217.5
+    ],
+    [
+     328.5,
+     235.5
+    ],
+    [
+     113.5,
+     235.5
+    ]
+   ],
+   "bbox": [
+    113.5,
+    217.5,
+    328.5,
+    235.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "진도군 녹진관광지, 해남군 우수영관광지",
+   "text_key": "진도군녹진관광지해남군우수영관광지",
+   "ocr_text": "진도군녹진관광지해남군우수영관광지",
+   "confidence": 0.9665029048919678,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "진도군 녹진관광지, 해남군 우수영관광지",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-031.easy_rgb_2x_008",
+   "case_id": "v2-031",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     228.0,
+     607.0
+    ],
+    [
+     277.0,
+     607.0
+    ],
+    [
+     277.0,
+     622.0
+    ],
+    [
+     228.0,
+     622.0
+    ]
+   ],
+   "bbox": [
+    228.0,
+    607.0,
+    277.0,
+    622.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "관광재단",
+   "text_key": "관광재단",
+   "ocr_text": "집관광재단",
+   "confidence": 0.7560542821884155,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "관광재단",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

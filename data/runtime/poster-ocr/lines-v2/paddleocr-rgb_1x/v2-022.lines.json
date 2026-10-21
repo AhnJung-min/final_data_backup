@@ -1,0 +1,181 @@
+{
+ "case_id": "v2-022",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 5,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-022.padd_rgb_1x_001",
+   "case_id": "v2-022",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     169.0,
+     72.0
+    ],
+    [
+     275.0,
+     75.0
+    ],
+    [
+     274.0,
+     119.0
+    ],
+    [
+     168.0,
+     116.0
+    ]
+   ],
+   "bbox": [
+    168.0,
+    72.0,
+    275.0,
+    119.0
+   ],
+   "height": 44.01,
+   "small_text": false,
+   "text": "덕수궁",
+   "text_key": "덕수궁",
+   "ocr_text": "덕수궁",
+   "confidence": 0.9986114501953125,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "덕수궁 밤의 석조전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-022.padd_rgb_1x_002",
+   "case_id": "v2-022",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     79.0,
+     111.0
+    ],
+    [
+     363.0,
+     109.0
+    ],
+    [
+     364.0,
+     177.0
+    ],
+    [
+     80.0,
+     179.0
+    ]
+   ],
+   "bbox": [
+    79.0,
+    109.0,
+    364.0,
+    179.0
+   ],
+   "height": 68.01,
+   "small_text": false,
+   "text": "밤의 석조전",
+   "text_key": "밤의석조전",
+   "ocr_text": "밤의석조전",
+   "confidence": 0.999505877494812,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "덕수궁 밤의 석조전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-022.padd_rgb_1x_003",
+   "case_id": "v2-022",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     110.0,
+     183.0
+    ],
+    [
+     333.0,
+     181.0
+    ],
+    [
+     333.0,
+     205.0
+    ],
+    [
+     110.0,
+     207.0
+    ]
+   ],
+   "bbox": [
+    110.0,
+    181.0,
+    333.0,
+    207.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026. 9. 9. WED - 10. 18. SUN",
+   "text_key": "202699wed1018sun",
+   "ocr_text": "2026.9.9.WED- 10.18.SUN",
+   "confidence": 0.8914055824279785,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 9. WED - 10. 18. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,560 @@
+{
+ "case_id": "v2-148",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-148.easy_rgb_2x_000",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     25.5,
+     27.5
+    ],
+    [
+     87.0,
+     27.5
+    ],
+    [
+     87.0,
+     51.5
+    ],
+    [
+     25.5,
+     51.5
+    ]
+   ],
+   "bbox": [
+    25.5,
+    27.5,
+    87.0,
+    51.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "제40회",
+   "text_key": "제40회",
+   "ocr_text": "제40회",
+   "confidence": 0.9871797561645508,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제40회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_002",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     22.5,
+     112.0
+    ],
+    [
+     208.5,
+     112.0
+    ],
+    [
+     208.5,
+     176.5
+    ],
+    [
+     22.5,
+     176.5
+    ]
+   ],
+   "bbox": [
+    22.5,
+    112.0,
+    208.5,
+    176.5
+   ],
+   "height": 64.5,
+   "small_text": false,
+   "text": "정약용",
+   "text_key": "정약용",
+   "ocr_text": "정약용",
+   "confidence": 0.9905255436897278,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "제40회 다산 정약용 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_004",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     27.0,
+     279.5
+    ],
+    [
+     176.0,
+     279.5
+    ],
+    [
+     176.0,
+     304.0
+    ],
+    [
+     27.0,
+     304.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    279.5,
+    176.0,
+    304.0
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "시대를 설계한 정약용",
+   "text_key": "시대를설계한정약용",
+   "ocr_text": "시대를설계한정약용",
+   "confidence": 0.9823338985443115,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "시대를 설계한 정약용 오늘을 혁신하다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_005",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     28.0,
+     302.5
+    ],
+    [
+     143.0,
+     302.5
+    ],
+    [
+     143.0,
+     326.5
+    ],
+    [
+     28.0,
+     326.5
+    ]
+   ],
+   "bbox": [
+    28.0,
+    302.5,
+    143.0,
+    326.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "오늘을 혁신하다",
+   "text_key": "오늘을혁신하다",
+   "ocr_text": "오늘올 현신하다",
+   "confidence": 0.9530263384874283,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "시대를 설계한 정약용 오늘을 혁신하다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_006",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     31.0,
+     355.0
+    ],
+    [
+     67.0,
+     355.0
+    ],
+    [
+     67.0,
+     370.0
+    ],
+    [
+     31.0,
+     370.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    355.0,
+    67.0,
+    370.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9671954127942509,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10. 17. 토 - 10. 18. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_007",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     29.5,
+     375.5
+    ],
+    [
+     79.5,
+     375.5
+    ],
+    [
+     79.5,
+     394.5
+    ],
+    [
+     29.5,
+     394.5
+    ]
+   ],
+   "bbox": [
+    29.5,
+    375.5,
+    79.5,
+    394.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "10. 17.",
+   "text_key": "1017",
+   "ocr_text": "10. 17",
+   "confidence": 0.7798586396607119,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10. 17. 토 - 10. 18. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_008",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     29.5,
+     406.5
+    ],
+    [
+     80.5,
+     406.5
+    ],
+    [
+     80.5,
+     425.5
+    ],
+    [
+     29.5,
+     425.5
+    ]
+   ],
+   "bbox": [
+    29.5,
+    406.5,
+    80.5,
+    425.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "10. 18.",
+   "text_key": "1018",
+   "ocr_text": "10. 18",
+   "confidence": 0.9676071348405761,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10. 17. 토 - 10. 18. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_009",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     30.0,
+     430.0
+    ],
+    [
+     109.0,
+     430.0
+    ],
+    [
+     109.0,
+     445.0
+    ],
+    [
+     30.0,
+     445.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    430.0,
+    109.0,
+    445.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "정약용유적지 및",
+   "text_key": "정약용유적지및",
+   "ocr_text": "정약용유적지 및",
+   "confidence": 0.9214922785758972,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "정약용유적지 및 다산생태공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_010",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     30.0,
+     444.0
+    ],
+    [
+     95.0,
+     444.0
+    ],
+    [
+     95.0,
+     459.0
+    ],
+    [
+     30.0,
+     459.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    444.0,
+    95.0,
+    459.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "다산생태공원",
+   "text_key": "다산생태공원",
+   "ocr_text": "다산생태공원",
+   "confidence": 0.9941323399543762,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "다산생태공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-148.easy_rgb_2x_024",
+   "case_id": "v2-148",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_024"
+   },
+   "polygon": [
+    [
+     27.17,
+     195.6
+    ],
+    [
+     214.88,
+     170.66
+    ],
+    [
+     218.83,
+     246.9
+    ],
+    [
+     31.12,
+     271.84
+    ]
+   ],
+   "bbox": [
+    27.17,
+    170.66,
+    218.83,
+    271.84
+   ],
+   "height": 76.34,
+   "small_text": false,
+   "text": "문화",
+   "text_key": "문화",
+   "ocr_text": "문화",
+   "confidence": 0.7774791717529297,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "제40회 다산 정약용 문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

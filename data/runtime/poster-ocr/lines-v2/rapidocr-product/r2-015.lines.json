@@ -1,0 +1,179 @@
+{
+ "case_id": "r2-015",
+ "split": "reserve",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 6,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "r2-015.rapi_product_000",
+   "case_id": "r2-015",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     14.0,
+     15.0
+    ],
+    [
+     309.0,
+     15.0
+    ],
+    [
+     309.0,
+     93.0
+    ],
+    [
+     14.0,
+     93.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    15.0,
+    309.0,
+    93.0
+   ],
+   "height": 78.0,
+   "small_text": false,
+   "text": "언제나 청춘!",
+   "text_key": "언제나청춘",
+   "ocr_text": "언제나 청춘!",
+   "confidence": 0.93974,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "언제나 청춘!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-015.rapi_product_003",
+   "case_id": "r2-015",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     14.0,
+     540.0
+    ],
+    [
+     40.0,
+     540.0
+    ],
+    [
+     40.0,
+     553.0
+    ],
+    [
+     14.0,
+     553.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    540.0,
+    40.0,
+    553.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.99786,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 10.2 금 ~10.11 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-015.rapi_product_004",
+   "case_id": "r2-015",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     12.0,
+     550.0
+    ],
+    [
+     155.0,
+     552.0
+    ],
+    [
+     154.0,
+     578.0
+    ],
+    [
+     11.0,
+     576.0
+    ]
+   ],
+   "bbox": [
+    11.0,
+    550.0,
+    155.0,
+    578.0
+   ],
+   "height": 26.02,
+   "small_text": false,
+   "text": "10.2 금 ~10.11 일",
+   "text_key": "102금1011일",
+   "ocr_text": "10.2금~10.111일",
+   "confidence": 0.96487,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 10.2 금 ~10.11 일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

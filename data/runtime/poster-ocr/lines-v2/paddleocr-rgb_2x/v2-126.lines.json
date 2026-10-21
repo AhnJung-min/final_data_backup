@@ -1,0 +1,398 @@
+{
+ "case_id": "v2-126",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-126.padd_rgb_2x_000",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     29.5,
+     36.5
+    ],
+    [
+     121.0,
+     28.5
+    ],
+    [
+     125.0,
+     72.0
+    ],
+    [
+     33.5,
+     80.0
+    ]
+   ],
+   "bbox": [
+    29.5,
+    28.5,
+    125.0,
+    80.0
+   ],
+   "height": 43.68,
+   "small_text": false,
+   "text": "30주년",
+   "text_key": "30주년",
+   "ocr_text": "30주년",
+   "confidence": 0.9944964051246643,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "30주년 봉화송이축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.padd_rgb_2x_001",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     4.0,
+     59.0
+    ],
+    [
+     426.5,
+     17.0
+    ],
+    [
+     437.0,
+     124.0
+    ],
+    [
+     14.5,
+     166.0
+    ]
+   ],
+   "bbox": [
+    4.0,
+    17.0,
+    437.0,
+    166.0
+   ],
+   "height": 107.51,
+   "small_text": false,
+   "text": "봉화송이축제",
+   "text_key": "봉화송이축제",
+   "ocr_text": "용화송이축제",
+   "confidence": 0.7593948245048523,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "봉화송이축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.padd_rgb_2x_002",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     75.0,
+     143.5
+    ],
+    [
+     424.0,
+     119.0
+    ],
+    [
+     426.0,
+     149.5
+    ],
+    [
+     77.0,
+     174.0
+    ]
+   ],
+   "bbox": [
+    75.0,
+    119.0,
+    426.0,
+    174.0
+   ],
+   "height": 30.57,
+   "small_text": false,
+   "text": "2026.10.15.목 ~ 18.일",
+   "text_key": "20261015목18일",
+   "ocr_text": "봉화읍내성천 일원2026.10.15.목~18.일",
+   "confidence": 0.9420050978660583,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.15.목 ~ 18.일",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.padd_rgb_2x_004",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     36.0,
+     288.5
+    ],
+    [
+     99.0,
+     279.5
+    ],
+    [
+     102.0,
+     303.0
+    ],
+    [
+     39.0,
+     312.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    279.5,
+    102.0,
+    312.0
+   ],
+   "height": 23.69,
+   "small_text": false,
+   "text": "30년의",
+   "text_key": "30년의",
+   "ocr_text": "30년의",
+   "confidence": 0.999884843826294,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 깊은 향",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.padd_rgb_2x_005",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     39.5,
+     308.0
+    ],
+    [
+     101.0,
+     298.5
+    ],
+    [
+     105.0,
+     324.5
+    ],
+    [
+     43.5,
+     334.0
+    ]
+   ],
+   "bbox": [
+    39.5,
+    298.5,
+    105.0,
+    334.0
+   ],
+   "height": 26.31,
+   "small_text": false,
+   "text": "깊은 향",
+   "text_key": "깊은향",
+   "ocr_text": "깊은향",
+   "confidence": 0.999164879322052,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "30년의 깊은 향",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.padd_rgb_2x_006",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     337.0,
+     363.5
+    ],
+    [
+     392.5,
+     358.0
+    ],
+    [
+     395.0,
+     383.5
+    ],
+    [
+     339.5,
+     389.0
+    ]
+   ],
+   "bbox": [
+    337.0,
+    358.0,
+    395.0,
+    389.0
+   ],
+   "height": 25.62,
+   "small_text": false,
+   "text": "봉화를",
+   "text_key": "봉화를",
+   "ocr_text": "봉화를",
+   "confidence": 0.9325644969940186,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "봉화를 물들이다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-126.padd_rgb_2x_007",
+   "case_id": "v2-126",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     328.0,
+     385.5
+    ],
+    [
+     405.5,
+     377.5
+    ],
+    [
+     408.0,
+     402.0
+    ],
+    [
+     330.5,
+     410.0
+    ]
+   ],
+   "bbox": [
+    328.0,
+    377.5,
+    408.0,
+    410.0
+   ],
+   "height": 24.63,
+   "small_text": false,
+   "text": "물들이다!",
+   "text_key": "물들이다",
+   "ocr_text": "물들이다!",
+   "confidence": 0.9624109268188477,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "봉화를 물들이다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

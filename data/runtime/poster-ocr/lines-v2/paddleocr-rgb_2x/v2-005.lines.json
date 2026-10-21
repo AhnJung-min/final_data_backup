@@ -1,0 +1,402 @@
+{
+ "case_id": "v2-005",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-005.padd_rgb_2x_001",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     160.0,
+     44.5
+    ],
+    [
+     290.5,
+     46.0
+    ],
+    [
+     290.0,
+     70.0
+    ],
+    [
+     159.5,
+     69.0
+    ]
+   ],
+   "bbox": [
+    159.5,
+    44.5,
+    290.5,
+    70.0
+   ],
+   "height": 24.26,
+   "small_text": false,
+   "text": "제24회 서천 홍원항",
+   "text_key": "제24회서천홍원항",
+   "ocr_text": "제24회서천 홍원항",
+   "confidence": 0.8691091537475586,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "제24회 서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_2x_002",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     104.5,
+     96.0
+    ],
+    [
+     338.5,
+     70.5
+    ],
+    [
+     348.5,
+     161.5
+    ],
+    [
+     114.0,
+     187.0
+    ]
+   ],
+   "bbox": [
+    104.5,
+    70.5,
+    348.5,
+    187.0
+   ],
+   "height": 91.52,
+   "small_text": false,
+   "text": "자연산",
+   "text_key": "자연산",
+   "ocr_text": "자연산",
+   "confidence": 0.800108015537262,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_2x_003",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     33.0,
+     166.0
+    ],
+    [
+     379.0,
+     136.0
+    ],
+    [
+     389.0,
+     252.0
+    ],
+    [
+     42.5,
+     282.0
+    ]
+   ],
+   "bbox": [
+    33.0,
+    136.0,
+    389.0,
+    282.0
+   ],
+   "height": 116.41,
+   "small_text": false,
+   "text": "전어꽃게",
+   "text_key": "전어꽃게",
+   "ocr_text": "전어꾸게",
+   "confidence": 0.892293393611908,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_2x_004",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     117.5,
+     230.5
+    ],
+    [
+     339.0,
+     213.5
+    ],
+    [
+     347.5,
+     332.0
+    ],
+    [
+     126.0,
+     348.5
+    ]
+   ],
+   "bbox": [
+    117.5,
+    213.5,
+    347.5,
+    348.5
+   ],
+   "height": 118.56,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.6608326435089111,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "서천 홍원항 자연산 전어꽃게 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_2x_005",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     88.5,
+     336.5
+    ],
+    [
+     352.0,
+     337.5
+    ],
+    [
+     352.0,
+     367.0
+    ],
+    [
+     88.5,
+     365.5
+    ]
+   ],
+   "bbox": [
+    88.5,
+    336.5,
+    352.0,
+    367.0
+   ],
+   "height": 29.25,
+   "small_text": false,
+   "text": "2026.8.22(토)-9.6(일)",
+   "text_key": "2026822토96일",
+   "ocr_text": "2026.8.22(토)-9.6(일)",
+   "confidence": 0.9910661578178406,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.8.22(토)-9.6(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_2x_006",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     104.5,
+     378.5
+    ],
+    [
+     195.0,
+     378.5
+    ],
+    [
+     195.0,
+     397.5
+    ],
+    [
+     104.5,
+     397.5
+    ]
+   ],
+   "bbox": [
+    104.5,
+    378.5,
+    195.0,
+    397.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "서천군 홍원항",
+   "text_key": "서천군홍원항",
+   "ocr_text": "서천군 홍원항",
+   "confidence": 0.9937003254890442,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서천군 홍원항 일원 (서면 홍원길 88)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-005.padd_rgb_2x_007",
+   "case_id": "v2-005",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     193.0,
+     377.5
+    ],
+    [
+     338.5,
+     377.5
+    ],
+    [
+     338.5,
+     398.0
+    ],
+    [
+     193.0,
+     398.0
+    ]
+   ],
+   "bbox": [
+    193.0,
+    377.5,
+    338.5,
+    398.0
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "일원 (서면 홍원길 88)",
+   "text_key": "일원서면홍원길88",
+   "ocr_text": "일원 (서면 홍원길 88)",
+   "confidence": 0.9039153456687927,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "address.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서천군 홍원항 일원 (서면 홍원길 88)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+ "case_id": "v2-085",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 48,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-085.easy_rgb_2x_000",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     87.0,
+     21.0
+    ],
+    [
+     114.0,
+     21.0
+    ],
+    [
+     114.0,
+     35.0
+    ],
+    [
+     87.0,
+     35.0
+    ]
+   ],
+   "bbox": [
+    87.0,
+    21.0,
+    114.0,
+    35.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "26th",
+   "text_key": "26th",
+   "ocr_text": "26wh",
+   "confidence": 0.4299853444099426,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "26th",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.easy_rgb_2x_005",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     21.0,
+     155.5
+    ],
+    [
+     210.5,
+     155.5
+    ],
+    [
+     210.5,
+     246.5
+    ],
+    [
+     21.0,
+     246.5
+    ]
+   ],
+   "bbox": [
+    21.0,
+    155.5,
+    210.5,
+    246.5
+   ],
+   "height": 91.0,
+   "small_text": false,
+   "text": "삼랑성",
+   "text_key": "삼랑성",
+   "ocr_text": "삼랑성",
+   "confidence": 0.6258980178466517,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "삼랑성 역사 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.easy_rgb_2x_006",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     3.0,
+     237.0
+    ],
+    [
+     218.0,
+     237.0
+    ],
+    [
+     218.0,
+     313.0
+    ],
+    [
+     3.0,
+     313.0
+    ]
+   ],
+   "bbox": [
+    3.0,
+    237.0,
+    218.0,
+    313.0
+   ],
+   "height": 76.0,
+   "small_text": false,
+   "text": "역사",
+   "text_key": "역사",
+   "ocr_text": "역사금",
+   "confidence": 0.16550160944461823,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "삼랑성 역사 문화축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-085.easy_rgb_2x_009",
+   "case_id": "v2-085",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     21.5,
+     308.5
+    ],
+    [
+     267.5,
+     308.5
+    ],
+    [
+     267.5,
+     388.5
+    ],
+    [
+     21.5,
+     388.5
+    ]
+   ],
+   "bbox": [
+    21.5,
+    308.5,
+    267.5,
+    388.5
+   ],
+   "height": 80.0,
+   "small_text": false,
+   "text": "문화축제",
+   "text_key": "문화축제",
+   "ocr_text": "문화축제",
+   "confidence": 0.9953692239494393,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "삼랑성 역사 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

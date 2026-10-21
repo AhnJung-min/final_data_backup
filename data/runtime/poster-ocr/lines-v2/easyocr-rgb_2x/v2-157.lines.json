@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-157",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 19,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-157.easy_rgb_2x_000",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     73.0,
+     30.0
+    ],
+    [
+     195.0,
+     30.0
+    ],
+    [
+     195.0,
+     54.0
+    ],
+    [
+     73.0,
+     54.0
+    ]
+   ],
+   "bbox": [
+    73.0,
+    30.0,
+    195.0,
+    54.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "제5회 원주농협",
+   "text_key": "제5회원주농협",
+   "ocr_text": "제5회 원주농협",
+   "confidence": 0.2260842077284177,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "제5회 원주농협 치악산 고구마 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-157.easy_rgb_2x_001",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     60.5,
+     72.5
+    ],
+    [
+     384.5,
+     72.5
+    ],
+    [
+     384.5,
+     201.5
+    ],
+    [
+     60.5,
+     201.5
+    ]
+   ],
+   "bbox": [
+    60.5,
+    72.5,
+    384.5,
+    201.5
+   ],
+   "height": 129.0,
+   "small_text": false,
+   "text": "구마 축제",
+   "text_key": "구마축제",
+   "ocr_text": "고마축제",
+   "confidence": 0.649723470211029,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "제5회 원주농협 치악산 고구마 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-157.easy_rgb_2x_003",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     64.5,
+     215.5
+    ],
+    [
+     211.5,
+     215.5
+    ],
+    [
+     211.5,
+     233.5
+    ],
+    [
+     64.5,
+     233.5
+    ]
+   ],
+   "bbox": [
+    64.5,
+    215.5,
+    211.5,
+    233.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "고구마 판매활성화 지원사업",
+   "text_key": "고구마판매활성화지원사업",
+   "ocr_text": "고구마 판매찰성화 지원사업",
+   "confidence": 0.35637877004042506,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "고구마 판매활성화 지원사업",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-157.easy_rgb_2x_005",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     44.0,
+     237.5
+    ],
+    [
+     92.0,
+     237.5
+    ],
+    [
+     92.0,
+     259.5
+    ],
+    [
+     44.0,
+     259.5
+    ]
+   ],
+   "bbox": [
+    44.0,
+    237.5,
+    92.0,
+    259.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9955019358865382,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 10.17.토 ~ 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-157.easy_rgb_2x_007",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     44.5,
+     259.5
+    ],
+    [
+     133.5,
+     259.5
+    ],
+    [
+     133.5,
+     291.5
+    ],
+    [
+     44.5,
+     291.5
+    ]
+   ],
+   "bbox": [
+    44.5,
+    259.5,
+    133.5,
+    291.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "10.17.토",
+   "text_key": "1017토",
+   "ocr_text": "10.17. 토",
+   "confidence": 0.6007037015076532,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 10.17.토 ~ 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-157.easy_rgb_2x_009",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     145.5,
+     258.5
+    ],
+    [
+     218.5,
+     258.5
+    ],
+    [
+     218.5,
+     291.5
+    ],
+    [
+     145.5,
+     291.5
+    ]
+   ],
+   "bbox": [
+    145.5,
+    258.5,
+    218.5,
+    291.5
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "10.18.",
+   "text_key": "1018",
+   "ocr_text": "10.18.",
+   "confidence": 0.9299737778021231,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 10.17.토 ~ 10.18.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-157.easy_rgb_2x_011",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     288.0,
+     275.0
+    ],
+    [
+     372.0,
+     275.0
+    ],
+    [
+     372.0,
+     291.0
+    ],
+    [
+     288.0,
+     291.0
+    ]
+   ],
+   "bbox": [
+    288.0,
+    275.0,
+    372.0,
+    291.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "조명섭 가수 공연",
+   "text_key": "조명섭가수공연",
+   "ocr_text": "조명섭 가수 공업",
+   "confidence": 0.9605610154867872,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "조명섭 가수 공연",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-157.easy_rgb_2x_012",
+   "case_id": "v2-157",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     48.0,
+     293.0
+    ],
+    [
+     228.0,
+     293.0
+    ],
+    [
+     228.0,
+     308.0
+    ],
+    [
+     48.0,
+     308.0
+    ]
+   ],
+   "bbox": [
+    48.0,
+    293.0,
+    228.0,
+    308.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "간현관광지 주차장",
+   "text_key": "간현관광지주차장",
+   "ocr_text": "이간현관광지 주차장 | 원주시 시장번 소금산길 12",
+   "confidence": 0.30690802807797796,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "address.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "간현관광지 주차장",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

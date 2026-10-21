@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-151",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 448,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-151.rapi_product_001",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     396.0,
+     16.0
+    ],
+    [
+     427.0,
+     16.0
+    ],
+    [
+     427.0,
+     32.0
+    ],
+    [
+     396.0,
+     32.0
+    ]
+   ],
+   "bbox": [
+    396.0,
+    16.0,
+    427.0,
+    32.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "SEOUL",
+   "text_key": "seoul",
+   "ocr_text": "SECUL",
+   "confidence": 0.71055,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "SEOUL MY SOUL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-151.rapi_product_003",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     392.0,
+     26.0
+    ],
+    [
+     432.0,
+     26.0
+    ],
+    [
+     432.0,
+     43.0
+    ],
+    [
+     392.0,
+     43.0
+    ]
+   ],
+   "bbox": [
+    392.0,
+    26.0,
+    432.0,
+    43.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "MY SOUL",
+   "text_key": "mysoul",
+   "ocr_text": "MYSOUL",
+   "confidence": 0.89485,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "SEOUL MY SOUL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-151.rapi_product_013",
+   "case_id": "v2-151",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_013"
+   },
+   "polygon": [
+    [
+     51.0,
+     580.0
+    ],
+    [
+     289.0,
+     582.0
+    ],
+    [
+     288.0,
+     614.0
+    ],
+    [
+     50.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    50.0,
+    580.0,
+    289.0,
+    614.0
+   ],
+   "height": 32.52,
+   "small_text": false,
+   "text": "2026.10.17.토-10.25.일",
+   "text_key": "20261017토1025일",
+   "ocr_text": "2026.10.17.-10.25.*",
+   "confidence": 0.95966,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "2026.10.17.토-10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

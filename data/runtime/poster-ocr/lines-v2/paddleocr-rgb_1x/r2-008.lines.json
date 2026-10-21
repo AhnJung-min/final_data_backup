@@ -1,0 +1,507 @@
+{
+ "case_id": "r2-008",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "r2-008.padd_rgb_1x_002",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     184.0,
+     27.0
+    ],
+    [
+     259.0,
+     27.0
+    ],
+    [
+     259.0,
+     49.0
+    ],
+    [
+     184.0,
+     49.0
+    ]
+   ],
+   "bbox": [
+    184.0,
+    27.0,
+    259.0,
+    49.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9971986413002014,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0588,
+   "gold_value": "2026 글로컬 문화 IN 남산 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_004",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     12.0,
+     56.0
+    ],
+    [
+     390.0,
+     54.0
+    ],
+    [
+     391.0,
+     104.0
+    ],
+    [
+     12.0,
+     106.0
+    ]
+   ],
+   "bbox": [
+    12.0,
+    54.0,
+    391.0,
+    106.0
+   ],
+   "height": 50.0,
+   "small_text": false,
+   "text": "글로컬 문화",
+   "text_key": "글로컬문화",
+   "ocr_text": "-글로컬 문화 N",
+   "confidence": 0.9430265426635742,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "글로컬 문화 IN 남산 페스티벌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_005",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     61.0,
+     110.0
+    ],
+    [
+     380.0,
+     110.0
+    ],
+    [
+     380.0,
+     161.0
+    ],
+    [
+     61.0,
+     161.0
+    ]
+   ],
+   "bbox": [
+    61.0,
+    110.0,
+    380.0,
+    161.0
+   ],
+   "height": 51.0,
+   "small_text": false,
+   "text": "남산 페스티벌",
+   "text_key": "남산페스티벌",
+   "ocr_text": "남산 페스티벌",
+   "confidence": 0.9830454587936401,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "글로컬 문화 IN 남산 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_008",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     13.0,
+     197.0
+    ],
+    [
+     111.0,
+     199.0
+    ],
+    [
+     110.0,
+     217.0
+    ],
+    [
+     13.0,
+     214.0
+    ]
+   ],
+   "bbox": [
+    13.0,
+    197.0,
+    111.0,
+    217.0
+   ],
+   "height": 17.51,
+   "small_text": false,
+   "text": "2026. 9.12.(토)",
+   "text_key": "2026912토",
+   "ocr_text": "2026.9.12.(토)",
+   "confidence": 0.9978970885276794,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9.12.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_010",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     361.0,
+     197.0
+    ],
+    [
+     429.0,
+     197.0
+    ],
+    [
+     429.0,
+     215.0
+    ],
+    [
+     361.0,
+     215.0
+    ]
+   ],
+   "bbox": [
+    361.0,
+    197.0,
+    429.0,
+    215.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "부산 금정구",
+   "text_key": "부산금정구",
+   "ocr_text": "부산금정구",
+   "confidence": 0.9868589639663696,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "address.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "부산 금정구 남산로 13~27 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_011",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     15.0,
+     218.0
+    ],
+    [
+     105.0,
+     218.0
+    ],
+    [
+     105.0,
+     232.0
+    ],
+    [
+     15.0,
+     232.0
+    ]
+   ],
+   "bbox": [
+    15.0,
+    218.0,
+    105.0,
+    232.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "15:00~22:00",
+   "text_key": "15002200",
+   "ocr_text": "15:00~22:00",
+   "confidence": 0.9974879622459412,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "15:00~22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_013",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     315.0,
+     216.0
+    ],
+    [
+     428.0,
+     216.0
+    ],
+    [
+     428.0,
+     232.0
+    ],
+    [
+     315.0,
+     232.0
+    ]
+   ],
+   "bbox": [
+    315.0,
+    216.0,
+    428.0,
+    232.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "남산로 13~27 일원",
+   "text_key": "남산로1327일원",
+   "ocr_text": "남산로13~27 일원",
+   "confidence": 0.9416044354438782,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "address.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "부산 금정구 남산로 13~27 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_019",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     144.0,
+     602.0
+    ],
+    [
+     188.0,
+     602.0
+    ],
+    [
+     188.0,
+     615.0
+    ],
+    [
+     144.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    144.0,
+    602.0,
+    188.0,
+    615.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "금정구",
+   "text_key": "금정구",
+   "ocr_text": "금정구",
+   "confidence": 0.9196186065673828,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "금정구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-008.padd_rgb_1x_020",
+   "case_id": "r2-008",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     254.0,
+     603.0
+    ],
+    [
+     300.0,
+     603.0
+    ],
+    [
+     300.0,
+     613.0
+    ],
+    [
+     254.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    254.0,
+    603.0,
+    300.0,
+    613.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "남산로 상인회",
+   "text_key": "남산로상인회",
+   "ocr_text": "남신로 상인회",
+   "confidence": 0.9518465995788574,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "남산로 상인회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

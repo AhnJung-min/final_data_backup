@@ -1,0 +1,507 @@
+{
+ "case_id": "v2-036",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-036.rapi_product_000",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     346.0,
+     7.0
+    ],
+    [
+     433.0,
+     5.0
+    ],
+    [
+     433.0,
+     19.0
+    ],
+    [
+     347.0,
+     21.0
+    ]
+   ],
+   "bbox": [
+    346.0,
+    5.0,
+    433.0,
+    21.0
+   ],
+   "height": 14.02,
+   "small_text": false,
+   "text": "경기도평생교육진흥원",
+   "text_key": "경기도평생교육진흥원",
+   "ocr_text": "경기도광생교육진용원",
+   "confidence": 0.67269,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "경기도평생교육진흥원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_001",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     52.0,
+     26.0
+    ],
+    [
+     159.0,
+     26.0
+    ],
+    [
+     159.0,
+     75.0
+    ],
+    [
+     52.0,
+     75.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    26.0,
+    159.0,
+    75.0
+   ],
+   "height": 49.0,
+   "small_text": false,
+   "text": "파주",
+   "text_key": "파주",
+   "ocr_text": "파주",
+   "confidence": 0.99516,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_002",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     50.0,
+     72.0
+    ],
+    [
+     255.0,
+     72.0
+    ],
+    [
+     255.0,
+     124.0
+    ],
+    [
+     50.0,
+     124.0
+    ]
+   ],
+   "bbox": [
+    50.0,
+    72.0,
+    255.0,
+    124.0
+   ],
+   "height": 52.0,
+   "small_text": false,
+   "text": "K - 컬처",
+   "text_key": "k컬처",
+   "ocr_text": "K - 컬처",
+   "confidence": 0.84098,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_003",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     53.0,
+     121.0
+    ],
+    [
+     255.0,
+     121.0
+    ],
+    [
+     255.0,
+     169.0
+    ],
+    [
+     53.0,
+     169.0
+    ]
+   ],
+   "bbox": [
+    53.0,
+    121.0,
+    255.0,
+    169.0
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "페스티벌",
+   "text_key": "페스티벌",
+   "ocr_text": "페스티벌",
+   "confidence": 0.99172,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_004",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     274.0,
+     118.0
+    ],
+    [
+     392.0,
+     118.0
+    ],
+    [
+     392.0,
+     138.0
+    ],
+    [
+     274.0,
+     138.0
+    ]
+   ],
+   "bbox": [
+    274.0,
+    118.0,
+    392.0,
+    138.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026. 9. 12.(토)",
+   "text_key": "2026912토",
+   "ocr_text": "2026.9.12.(토)",
+   "confidence": 0.99504,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 12.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_005",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     279.0,
+     145.0
+    ],
+    [
+     384.0,
+     146.0
+    ],
+    [
+     384.0,
+     160.0
+    ],
+    [
+     279.0,
+     158.0
+    ]
+   ],
+   "bbox": [
+    279.0,
+    145.0,
+    384.0,
+    160.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "경기미래교육파주캠퍼스",
+   "text_key": "경기미래교육파주캠퍼스",
+   "ocr_text": "광기미래교육파주점스",
+   "confidence": 0.8094,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "경기미래교육파주캠퍼스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_007",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     62.0,
+     506.0
+    ],
+    [
+     157.0,
+     506.0
+    ],
+    [
+     157.0,
+     522.0
+    ],
+    [
+     62.0,
+     522.0
+    ]
+   ],
+   "bbox": [
+    62.0,
+    506.0,
+    157.0,
+    522.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "메인 무대 공연",
+   "text_key": "메인무대공연",
+   "ocr_text": "메인 무대 공인",
+   "confidence": 0.74275,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "메인 무대 공연",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_010",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_010"
+   },
+   "polygon": [
+    [
+     247.0,
+     546.0
+    ],
+    [
+     359.0,
+     546.0
+    ],
+    [
+     359.0,
+     560.0
+    ],
+    [
+     247.0,
+     560.0
+    ]
+   ],
+   "bbox": [
+    247.0,
+    546.0,
+    359.0,
+    560.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "30여 가지 무료 체험 프로그램",
+   "text_key": "30여가지무료체험프로그램",
+   "ocr_text": "30여가지무르체험프르그램",
+   "confidence": 0.8947,
+   "field": "admission.raw",
+   "field_group": "admission",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "admission.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "30여 가지 무료 체험 프로그램",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.rapi_product_016",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_016"
+   },
+   "polygon": [
+    [
+     246.0,
+     596.0
+    ],
+    [
+     296.0,
+     594.0
+    ],
+    [
+     296.0,
+     611.0
+    ],
+    [
+     247.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    246.0,
+    594.0,
+    296.0,
+    612.0
+   ],
+   "height": 16.52,
+   "small_text": false,
+   "text": "K-푸드",
+   "text_key": "k푸드",
+   "ocr_text": "K-푸드",
+   "confidence": 0.97726,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "K-푸드",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

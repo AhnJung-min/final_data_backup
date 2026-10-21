@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-187",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 19,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-187.easy_rgb_2x_002",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     72.5,
+     94.5
+    ],
+    [
+     141.5,
+     94.5
+    ],
+    [
+     141.5,
+     125.5
+    ],
+    [
+     72.5,
+     125.5
+    ]
+   ],
+   "bbox": [
+    72.5,
+    94.5,
+    141.5,
+    125.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "제3회",
+   "text_key": "제3회",
+   "ocr_text": "제3회",
+   "confidence": 0.9442438615901743,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제3회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.easy_rgb_2x_006",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     103.5,
+     284.5
+    ],
+    [
+     282.5,
+     284.5
+    ],
+    [
+     282.5,
+     303.5
+    ],
+    [
+     103.5,
+     303.5
+    ]
+   ],
+   "bbox": [
+    103.5,
+    284.5,
+    282.5,
+    303.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026. 10. 25. (일)",
+   "text_key": "20261025일",
+   "ocr_text": "2026. 10.25. (일) 10:30",
+   "confidence": 0.9473536014556885,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 25. (일)",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.easy_rgb_2x_008",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     161.5,
+     309.5
+    ],
+    [
+     280.5,
+     309.5
+    ],
+    [
+     280.5,
+     329.5
+    ],
+    [
+     161.5,
+     329.5
+    ]
+   ],
+   "bbox": [
+    161.5,
+    309.5,
+    280.5,
+    329.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "신정네거리역 일대",
+   "text_key": "신정네거리역일대",
+   "ocr_text": "신정네거리억 일대",
+   "confidence": 0.8347577280117738,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "신정네거리역 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.easy_rgb_2x_009",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     101.0,
+     333.0
+    ],
+    [
+     260.0,
+     333.0
+    ],
+    [
+     260.0,
+     345.0
+    ],
+    [
+     101.0,
+     345.0
+    ]
+   ],
+   "bbox": [
+    101.0,
+    333.0,
+    260.0,
+    345.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "통제 안내 : 2026.10.24.(토) 22:00",
+   "text_key": "통제안내20261024토2200",
+   "ocr_text": "교제 안내:2026.10.24.()22:00",
+   "confidence": 0.936314582824707,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "교통통제 안내 : 2026.10.24.(토) 22:00 ~ 10.26.(월) 04:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.easy_rgb_2x_010",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     264.0,
+     333.0
+    ],
+    [
+     341.0,
+     333.0
+    ],
+    [
+     341.0,
+     345.0
+    ],
+    [
+     264.0,
+     345.0
+    ]
+   ],
+   "bbox": [
+    264.0,
+    333.0,
+    341.0,
+    345.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "10.26.(월) 04:00",
+   "text_key": "1026월0400",
+   "ocr_text": "10.26.()04:00",
+   "confidence": 0.9562386274337769,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "교통통제 안내 : 2026.10.24.(토) 22:00 ~ 10.26.(월) 04:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.easy_rgb_2x_012",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     157.5,
+     534.5
+    ],
+    [
+     284.5,
+     534.5
+    ],
+    [
+     284.5,
+     564.5
+    ],
+    [
+     157.5,
+     564.5
+    ]
+   ],
+   "bbox": [
+    157.5,
+    534.5,
+    284.5,
+    564.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "모두가 즐거",
+   "text_key": "모두가즐거",
+   "ocr_text": "모두가 즐거문",
+   "confidence": 0.8845702359365478,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "모두가 즐거운 세대공감 한마당",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-187.easy_rgb_2x_013",
+   "case_id": "v2-187",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     128.0,
+     561.5
+    ],
+    [
+     310.0,
+     561.5
+    ],
+    [
+     310.0,
+     590.0
+    ],
+    [
+     128.0,
+     590.0
+    ]
+   ],
+   "bbox": [
+    128.0,
+    561.5,
+    310.0,
+    590.0
+   ],
+   "height": 28.5,
+   "small_text": false,
+   "text": "세대공감 한마당",
+   "text_key": "세대공감한마당",
+   "ocr_text": "서대공감 한마당",
+   "confidence": 0.9202418391796143,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "모두가 즐거운 세대공감 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

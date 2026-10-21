@@ -1,0 +1,194 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-e7a31a697e99",
+ "image": {
+  "sha256": "e7a31a697e991c614df3116e0da81070e3320f8debf12a9cd69d0c3dee8f4eae",
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:43+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "제7회 안양 청년 축제",
+  "official": "안양 청년 축제",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    144.0,
+    23.0,
+    299.0,
+    44.0
+   ],
+   "confidence": 0.96882
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제7회",
+  "number": 7,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000"
+   ],
+   "bbox": [
+    144.0,
+    23.0,
+    299.0,
+    44.0
+   ],
+   "confidence": 0.96882
+  }
+ },
+ "year": {
+  "status": "absent",
+  "raw": null,
+  "value": null,
+  "evidence": null
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "absent",
+  "raw": null,
+  "start": null,
+  "end": null,
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": null
+ },
+ "venue": {
+  "status": "present",
+  "raw": "평촌중앙공원",
+  "items": [
+   "평촌중앙공원"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_020"
+   ],
+   "bbox": [
+    174.0,
+    576.0,
+    271.0,
+    613.0
+   ],
+   "confidence": 0.83037
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "absent",
+  "raw": null,
+  "region": null,
+  "district": null,
+  "evidence": null
+ },
+ "organizations": {
+  "status": "present",
+  "items": [
+   {
+    "name": "주안양시안양청년속제기획단",
+    "roles": [
+     "host"
+    ],
+    "role_raw": "주최",
+    "form": "text",
+    "legibility": "legible",
+    "evidence": {
+     "method": "ocr",
+     "ocr_ids": [
+      "rapi_product_021"
+     ],
+     "bbox": [
+      20.0,
+      601.0,
+      143.0,
+      613.0
+     ],
+     "confidence": 0.84974
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,774 @@
+{
+ "case_id": "v2-097",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 940,
+  "height": 673
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 31,
+ "lines_matched": 14,
+ "records": [
+  {
+   "id": "v2-097.padd_rgb_1x_002",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     528.0,
+     41.0
+    ],
+    [
+     756.0,
+     44.0
+    ],
+    [
+     755.0,
+     82.0
+    ],
+    [
+     528.0,
+     79.0
+    ]
+   ],
+   "bbox": [
+    528.0,
+    41.0,
+    756.0,
+    82.0
+   ],
+   "height": 38.01,
+   "small_text": false,
+   "text": "백제문화제",
+   "text_key": "백제문화제",
+   "ocr_text": "백제문화제",
+   "confidence": 0.9995461702346802,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "백제문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_006",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     528.0,
+     84.0
+    ],
+    [
+     762.0,
+     86.0
+    ],
+    [
+     762.0,
+     106.0
+    ],
+    [
+     528.0,
+     104.0
+    ]
+   ],
+   "bbox": [
+    528.0,
+    84.0,
+    762.0,
+    106.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026.10.3 토 ~ 10.11 일",
+   "text_key": "2026103토1011일",
+   "ocr_text": "2026.10.3.(토) ~ 10.11.(일)",
+   "confidence": 0.9456356167793274,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.3 토 ~ 10.11 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_009",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     840.0,
+     127.0
+    ],
+    [
+     909.0,
+     127.0
+    ],
+    [
+     909.0,
+     134.0
+    ],
+    [
+     840.0,
+     134.0
+    ]
+   ],
+   "bbox": [
+    840.0,
+    127.0,
+    909.0,
+    134.0
+   ],
+   "height": 7.0,
+   "small_text": true,
+   "text": "http://gongju.baekje.org",
+   "text_key": "httpgongjubaekjeorg",
+   "ocr_text": "httpc//gongiu.baekje.",
+   "confidence": 0.821153461933136,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2632,
+   "gold_value": "http://gongju.baekje.org",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_013",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     206.0,
+     200.0
+    ],
+    [
+     263.0,
+     200.0
+    ],
+    [
+     263.0,
+     221.0
+    ],
+    [
+     206.0,
+     221.0
+    ]
+   ],
+   "bbox": [
+    206.0,
+    200.0,
+    263.0,
+    221.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "BUYEO",
+   "text_key": "buyeo",
+   "ocr_text": "BuYEO.",
+   "confidence": 0.6274495124816895,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "Lovely BUYEO",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_014",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     217.0,
+     193.0
+    ],
+    [
+     250.0,
+     193.0
+    ],
+    [
+     250.0,
+     204.0
+    ],
+    [
+     217.0,
+     204.0
+    ]
+   ],
+   "bbox": [
+    217.0,
+    193.0,
+    250.0,
+    204.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "Lovely",
+   "text_key": "lovely",
+   "ocr_text": "Lovely",
+   "confidence": 0.9508576989173889,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "Lovely BUYEO",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_016",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     137.0,
+     229.0
+    ],
+    [
+     331.0,
+     229.0
+    ],
+    [
+     331.0,
+     250.0
+    ],
+    [
+     137.0,
+     250.0
+    ]
+   ],
+   "bbox": [
+    137.0,
+    229.0,
+    331.0,
+    250.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "아름다운 백제, 빛나는 사비",
+   "text_key": "아름다운백제빛나는사비",
+   "ocr_text": "아름다운 백제,빛나는 사비",
+   "confidence": 0.9329195022583008,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "아름다운 백제, 빛나는 사비",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_017",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     135.0,
+     255.0
+    ],
+    [
+     332.0,
+     256.0
+    ],
+    [
+     332.0,
+     270.0
+    ],
+    [
+     135.0,
+     269.0
+    ]
+   ],
+   "bbox": [
+    135.0,
+    255.0,
+    332.0,
+    270.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "백제의 향연 - 기억을 넘어 미래로",
+   "text_key": "백제의향연기억을넘어미래로",
+   "ocr_text": "백제의 함연 – 기억을 넘어 미래로",
+   "confidence": 0.8554283976554871,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0769,
+   "gold_value": "백제의 향연 - 기억을 넘어 미래로",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_020",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     212.0,
+     279.0
+    ],
+    [
+     255.0,
+     279.0
+    ],
+    [
+     255.0,
+     294.0
+    ],
+    [
+     212.0,
+     294.0
+    ]
+   ],
+   "bbox": [
+    212.0,
+    279.0,
+    255.0,
+    294.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "제72회",
+   "text_key": "제72회",
+   "ocr_text": "제72회",
+   "confidence": 0.9991516470909119,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제72회 백제문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_021",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_021"
+   },
+   "polygon": [
+    [
+     135.0,
+     296.0
+    ],
+    [
+     336.0,
+     296.0
+    ],
+    [
+     336.0,
+     334.0
+    ],
+    [
+     135.0,
+     334.0
+    ]
+   ],
+   "bbox": [
+    135.0,
+    296.0,
+    336.0,
+    334.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "백제문화제",
+   "text_key": "백제문화제",
+   "ocr_text": "백제문화제",
+   "confidence": 0.9995858073234558,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제72회 백제문화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_026",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_026"
+   },
+   "polygon": [
+    [
+     136.0,
+     390.0
+    ],
+    [
+     332.0,
+     389.0
+    ],
+    [
+     332.0,
+     403.0
+    ],
+    [
+     136.0,
+     404.0
+    ]
+   ],
+   "bbox": [
+    136.0,
+    389.0,
+    332.0,
+    404.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "부여 시가지 일원 | 정림사지 / 석탑로 / 관북리유적",
+   "text_key": "부여시가지일원정림사지석탑로관북리유적",
+   "ocr_text": "부여시가지일원정림사지/석탑로관북리유적",
+   "confidence": 0.9441361427307129,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부여 시가지 일원 | 정림사지 / 석탑로 / 관북리유적",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_027",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_027"
+   },
+   "polygon": [
+    [
+     181.0,
+     414.0
+    ],
+    [
+     292.0,
+     414.0
+    ],
+    [
+     292.0,
+     424.0
+    ],
+    [
+     181.0,
+     424.0
+    ]
+   ],
+   "bbox": [
+    181.0,
+    414.0,
+    292.0,
+    424.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "부여군",
+   "text_key": "부여군",
+   "ocr_text": "“부여군 …원역제문하새단",
+   "confidence": 0.5128297209739685,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부여군",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_029",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_029"
+   },
+   "polygon": [
+    [
+     484.0,
+     531.0
+    ],
+    [
+     715.0,
+     531.0
+    ],
+    [
+     715.0,
+     602.0
+    ],
+    [
+     484.0,
+     602.0
+    ]
+   ],
+   "bbox": [
+    484.0,
+    531.0,
+    715.0,
+    602.0
+   ],
+   "height": 71.0,
+   "small_text": false,
+   "text": "청동거울",
+   "text_key": "청동거울",
+   "ocr_text": "청동거울",
+   "confidence": 0.8144926428794861,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "청동거울 1500년 백제의 빛을 비추다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_030",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_030"
+   },
+   "polygon": [
+    [
+     646.0,
+     598.0
+    ],
+    [
+     724.0,
+     600.0
+    ],
+    [
+     724.0,
+     625.0
+    ],
+    [
+     645.0,
+     623.0
+    ]
+   ],
+   "bbox": [
+    645.0,
+    598.0,
+    724.0,
+    625.0
+   ],
+   "height": 25.01,
+   "small_text": false,
+   "text": "1500년",
+   "text_key": "1500년",
+   "ocr_text": "1500년",
+   "confidence": 0.9976370930671692,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "청동거울 1500년 백제의 빛을 비추다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-097.padd_rgb_1x_031",
+   "case_id": "v2-097",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_031"
+   },
+   "polygon": [
+    [
+     728.0,
+     599.0
+    ],
+    [
+     919.0,
+     597.0
+    ],
+    [
+     919.0,
+     624.0
+    ],
+    [
+     729.0,
+     626.0
+    ]
+   ],
+   "bbox": [
+    728.0,
+    597.0,
+    919.0,
+    626.0
+   ],
+   "height": 27.01,
+   "small_text": false,
+   "text": "백제의 빛을 비추다",
+   "text_key": "백제의빛을비추다",
+   "ocr_text": "백제의 빛을 비추다",
+   "confidence": 0.9522297978401184,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "청동거울 1500년 백제의 빛을 비추다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

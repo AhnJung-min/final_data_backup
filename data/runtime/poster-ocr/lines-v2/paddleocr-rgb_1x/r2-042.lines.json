@@ -1,0 +1,503 @@
+{
+ "case_id": "r2-042",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "r2-042.padd_rgb_1x_001",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     23.0,
+     44.0
+    ],
+    [
+     196.0,
+     44.0
+    ],
+    [
+     196.0,
+     88.0
+    ],
+    [
+     23.0,
+     88.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    44.0,
+    196.0,
+    88.0
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "2026 부산",
+   "text_key": "2026부산",
+   "ocr_text": "2026 부산",
+   "confidence": 0.9861194491386414,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026 부산 종합 민속 예술제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_002",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     23.0,
+     81.0
+    ],
+    [
+     144.0,
+     81.0
+    ],
+    [
+     144.0,
+     150.0
+    ],
+    [
+     23.0,
+     150.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    81.0,
+    144.0,
+    150.0
+   ],
+   "height": 69.0,
+   "small_text": false,
+   "text": "종합",
+   "text_key": "종합",
+   "ocr_text": "종합",
+   "confidence": 0.9988359808921814,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026 부산 종합 민속 예술제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_005",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     25.0,
+     202.0
+    ],
+    [
+     196.0,
+     202.0
+    ],
+    [
+     196.0,
+     266.0
+    ],
+    [
+     25.0,
+     266.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    202.0,
+    196.0,
+    266.0
+   ],
+   "height": 64.0,
+   "small_text": false,
+   "text": "예술제",
+   "text_key": "예술제",
+   "ocr_text": "예술제",
+   "confidence": 0.9999275803565979,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026 부산 종합 민속 예술제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_006",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     25.0,
+     426.0
+    ],
+    [
+     75.0,
+     426.0
+    ],
+    [
+     75.0,
+     448.0
+    ],
+    [
+     25.0,
+     448.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    426.0,
+    75.0,
+    448.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9968999624252319,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.24.(토) - 10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_007",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     25.0,
+     448.0
+    ],
+    [
+     98.0,
+     446.0
+    ],
+    [
+     99.0,
+     467.0
+    ],
+    [
+     25.0,
+     469.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    446.0,
+    99.0,
+    469.0
+   ],
+   "height": 21.01,
+   "small_text": false,
+   "text": "10.24.(토)",
+   "text_key": "1024토",
+   "ocr_text": "10.24.(토)",
+   "confidence": 0.9966212511062622,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.24.(토) - 10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_008",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     23.0,
+     491.0
+    ],
+    [
+     98.0,
+     488.0
+    ],
+    [
+     99.0,
+     509.0
+    ],
+    [
+     24.0,
+     513.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    488.0,
+    99.0,
+    513.0
+   ],
+   "height": 21.52,
+   "small_text": false,
+   "text": "10.25.(일)",
+   "text_key": "1025일",
+   "ocr_text": "10.25.(일)",
+   "confidence": 0.9821531772613525,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.24.(토) - 10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_009",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     25.0,
+     520.0
+    ],
+    [
+     112.0,
+     522.0
+    ],
+    [
+     111.0,
+     543.0
+    ],
+    [
+     25.0,
+     541.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    520.0,
+    112.0,
+    543.0
+   ],
+   "height": 21.01,
+   "small_text": false,
+   "text": "부산시민공원",
+   "text_key": "부산시민공원",
+   "ocr_text": "부산시민공원",
+   "confidence": 0.9946337342262268,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "부산시민공원 다솜광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_010",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     25.0,
+     540.0
+    ],
+    [
+     85.0,
+     540.0
+    ],
+    [
+     85.0,
+     560.0
+    ],
+    [
+     25.0,
+     560.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    540.0,
+    85.0,
+    560.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "다솜광장",
+   "text_key": "다솜광장",
+   "ocr_text": "다솜광장",
+   "confidence": 0.9968194365501404,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "부산시민공원 다솜광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-042.padd_rgb_1x_011",
+   "case_id": "r2-042",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     45.0,
+     582.0
+    ],
+    [
+     90.0,
+     582.0
+    ],
+    [
+     90.0,
+     593.0
+    ],
+    [
+     45.0,
+     593.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    582.0,
+    90.0,
+    593.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "부산광역시",
+   "text_key": "부산광역시",
+   "ocr_text": "부산광역시",
+   "confidence": 0.9949561357498169,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부산광역시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

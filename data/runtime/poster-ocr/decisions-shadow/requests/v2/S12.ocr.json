@@ -1,0 +1,1614 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 144,
+  "image_tokens": 3281,
+  "text_tokens": 6163,
+  "input_tokens": 9444,
+  "cost_usd": 0.0009444
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S12",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S12.png",
+    "sha256": "cb9ba887c1c69be0bf1d42f888ad8d6dde0735543ead8a9f61d709d738f4dfe5",
+    "bytes": 118875,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S12.png",
+    "sha256": "cf96e6c91ca4823d3acc02012de6617f68a8bada63f77b58448fb4659de4fd83",
+    "bytes": 52286,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "미르 강변 재즈 페스티벌",
+     "doc_variants": []
+    },
+    "doc_raw": "제11회 미르 강변 재즈 페스티벌"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제11회",
+     "number": 11
+    },
+    "doc_raw": "제11회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.30.(월)",
+     "points": [
+      [
+       2026,
+       11,
+       30,
+       "월"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.30.(월)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "13:00~22:00"
+    },
+    "doc_raw": "13:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "미르생태공원"
+    },
+    "doc_raw": "미르생태공원"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "미르시"
+    },
+    "doc_raw": "미르시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "미르축제위원회"
+    },
+    "doc_raw": "미르축제위원회"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "063-000-5661"
+    },
+    "doc_raw": "063-000-5661"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "강바람에 실려 오는 선율"
+    },
+    "doc_raw": "강바람에 실려 오는 선율"
+   }
+  },
+  "rows": [
+   {
+    "value": "L235",
+    "index": 0,
+    "text": "2026 제11회",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026",
+      "confidence": 0.9989586472511292,
+      "bbox_xyxy": [
+       89.0,
+       116.0,
+       179.0,
+       149.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "제11회",
+      "confidence": 0.9991245269775391,
+      "bbox_xyxy": [
+       176.0,
+       110.0,
+       291.0,
+       153.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L605",
+    "index": 1,
+    "text": "미르",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "미르",
+      "confidence": 0.9996811151504517,
+      "bbox_xyxy": [
+       80.0,
+       174.0,
+       262.0,
+       282.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L107",
+    "index": 2,
+    "text": "강변 재즈 페스티벌",
+    "conf": 0.9977,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "강변",
+      "confidence": 0.9998209476470947,
+      "bbox_xyxy": [
+       79.0,
+       289.0,
+       261.0,
+       399.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "재즈",
+      "confidence": 0.9998770952224731,
+      "bbox_xyxy": [
+       267.0,
+       288.0,
+       452.0,
+       398.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "페스티벌",
+      "confidence": 0.9977387189865112,
+      "bbox_xyxy": [
+       460.0,
+       289.0,
+       810.0,
+       399.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L703",
+    "index": 3,
+    "text": "강바람에 실려 오는 선율",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "강바람에",
+      "confidence": 0.9998835921287537,
+      "bbox_xyxy": [
+       86.0,
+       422.0,
+       210.0,
+       464.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "실려",
+      "confidence": 0.9993388652801514,
+      "bbox_xyxy": [
+       210.0,
+       422.0,
+       274.0,
+       465.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "오는",
+      "confidence": 0.9997437000274658,
+      "bbox_xyxy": [
+       274.0,
+       424.0,
+       339.0,
+       463.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "선율",
+      "confidence": 0.9997773170471191,
+      "bbox_xyxy": [
+       339.0,
+       424.0,
+       403.0,
+       463.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L886",
+    "index": 4,
+    "text": "일시 2026.11.30(월)",
+    "conf": 0.9995,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "일시",
+      "confidence": 0.9999091625213623,
+      "bbox_xyxy": [
+       101.0,
+       556.0,
+       159.0,
+       595.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "2026.11.30(월)",
+      "confidence": 0.9995461106300354,
+      "bbox_xyxy": [
+       195.0,
+       557.0,
+       427.0,
+       598.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L808",
+    "index": 5,
+    "text": "시간 13:00-22:00",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "시간",
+      "confidence": 0.9999749660491943,
+      "bbox_xyxy": [
+       101.0,
+       627.0,
+       158.0,
+       663.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "13:00-22:00",
+      "confidence": 0.9995944499969482,
+      "bbox_xyxy": [
+       197.0,
+       627.0,
+       402.0,
+       665.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L754",
+    "index": 6,
+    "text": "장소 미르생태공원",
+    "conf": 0.9995,
+    "records": [
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "장소",
+      "confidence": 0.9995093941688538,
+      "bbox_xyxy": [
+       101.0,
+       697.0,
+       158.0,
+       734.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "미르생태공원",
+      "confidence": 0.9999162554740906,
+      "bbox_xyxy": [
+       196.0,
+       695.0,
+       376.0,
+       737.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L688",
+    "index": 7,
+    "text": "재즈 빅밴드공연",
+    "conf": 0.9965,
+    "records": [
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "재즈",
+      "confidence": 0.996994137763977,
+      "bbox_xyxy": [
+       112.0,
+       792.0,
+       169.0,
+       826.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "빅밴드공연",
+      "confidence": 0.9965472221374512,
+      "bbox_xyxy": [
+       164.0,
+       792.0,
+       299.0,
+       827.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L559",
+    "index": 8,
+    "text": "강변 피크닉존",
+    "conf": 0.9985,
+    "records": [
+     {
+      "id": "padd_rgb_1x_018",
+      "text": "강변 피크닉존",
+      "confidence": 0.9985154867172241,
+      "bbox_xyxy": [
+       110.0,
+       836.0,
+       268.0,
+       871.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L228",
+    "index": 9,
+    "text": "버스킹 무대",
+    "conf": 0.9995,
+    "records": [
+     {
+      "id": "padd_rgb_1x_019",
+      "text": "버스킹",
+      "confidence": 0.9995355010032654,
+      "bbox_xyxy": [
+       105.0,
+       879.0,
+       194.0,
+       916.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_020",
+      "text": "무대",
+      "confidence": 0.999739408493042,
+      "bbox_xyxy": [
+       189.0,
+       882.0,
+       243.0,
+       913.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L229",
+    "index": 10,
+    "text": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661",
+    "conf": 0.9574,
+    "records": [
+     {
+      "id": "padd_rgb_1x_021",
+      "text": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661",
+      "confidence": 0.9573908448219299,
+      "bbox_xyxy": [
+       157.0,
+       1192.0,
+       727.0,
+       1221.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제11회 미르 강변 재즈 페스티벌"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.30.(월)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "미르생태공원"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "미르시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "미르축제위원회"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "063-000-5661"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "강바람에 실려 오는 선율"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "미르 강변 재즈 페스티벌"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제11회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.30.(월)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "미르생태공원"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "미르시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "미르축제위원회"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "063-000-5661"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "강바람에 실려 오는 선율"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_edition": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_time": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_venue": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_host": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_contact": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L235",
+    "L605",
+    "L107",
+    "L703",
+    "L886",
+    "L808",
+    "L754",
+    "L688",
+    "L559",
+    "L228",
+    "L229",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 118,875 bytes, sha256 cb9ba887c1c69be0…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 52,286 bytes, sha256 cf96e6c91ca4823d…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제11회 미르 강변 재즈 페스티벌'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.30.(월)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '13:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '미르생태공원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '미르시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '미르축제위원회'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '063-000-5661'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '강바람에 실려 오는 선율'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L235",
+      "description": "2026 제11회"
+     },
+     {
+      "value": "L605",
+      "description": "미르"
+     },
+     {
+      "value": "L107",
+      "description": "강변 재즈 페스티벌"
+     },
+     {
+      "value": "L703",
+      "description": "강바람에 실려 오는 선율"
+     },
+     {
+      "value": "L886",
+      "description": "일시 2026.11.30(월)"
+     },
+     {
+      "value": "L808",
+      "description": "시간 13:00-22:00"
+     },
+     {
+      "value": "L754",
+      "description": "장소 미르생태공원"
+     },
+     {
+      "value": "L688",
+      "description": "재즈 빅밴드공연"
+     },
+     {
+      "value": "L559",
+      "description": "강변 피크닉존"
+     },
+     {
+      "value": "L228",
+      "description": "버스킹 무대"
+     },
+     {
+      "value": "L229",
+      "description": "주최 미르시| 주관 미르축제위원회|문의 063-000-5661"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '미르 강변 재즈 페스티벌'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제11회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.30.(월)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '13:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '미르생태공원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '미르시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '미르축제위원회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '063-000-5661'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '강바람에 실려 오는 선율'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

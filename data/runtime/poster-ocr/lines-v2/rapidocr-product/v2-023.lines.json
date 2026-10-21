@@ -1,0 +1,180 @@
+{
+ "case_id": "v2-023",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-023.rapi_product_003",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     135.0,
+     92.0
+    ],
+    [
+     206.0,
+     322.0
+    ],
+    [
+     175.0,
+     332.0
+    ],
+    [
+     103.0,
+     102.0
+    ]
+   ],
+   "bbox": [
+    103.0,
+    92.0,
+    206.0,
+    332.0
+   ],
+   "height": 33.05,
+   "small_text": false,
+   "text": "2026 서울국제작가축제",
+   "text_key": "2026서울국제작가축제",
+   "ocr_text": "2026서울국제작가축제",
+   "confidence": 0.99721,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 서울국제작가축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.rapi_product_004",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     68.0,
+     114.0
+    ],
+    [
+     155.0,
+     402.0
+    ],
+    [
+     121.0,
+     412.0
+    ],
+    [
+     34.0,
+     124.0
+    ]
+   ],
+   "bbox": [
+    34.0,
+    114.0,
+    155.0,
+    412.0
+   ],
+   "height": 35.44,
+   "small_text": false,
+   "text": "아라아트센터(Ara Art Center)",
+   "text_key": "아라아트센터araartcenter",
+   "ocr_text": "아라아트센터(AraArt Center)",
+   "confidence": 0.97421,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "아라아트센터(Ara Art Center)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.rapi_product_008",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     431.0,
+     295.0
+    ],
+    [
+     451.0,
+     295.0
+    ],
+    [
+     451.0,
+     370.0
+    ],
+    [
+     431.0,
+     370.0
+    ]
+   ],
+   "bbox": [
+    431.0,
+    295.0,
+    451.0,
+    370.0
+   ],
+   "height": 75.0,
+   "small_text": false,
+   "text": "SIWF.OR.KR",
+   "text_key": "siwforkr",
+   "ocr_text": "SIWFOR.KR",
+   "confidence": 0.95326,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "SIWF.OR.KR",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

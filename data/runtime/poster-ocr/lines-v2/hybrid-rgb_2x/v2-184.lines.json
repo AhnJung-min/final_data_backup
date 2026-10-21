@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-184",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-184.easy_rgb_2x_000",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     17.5,
+     0.0
+    ],
+    [
+     153.0,
+     0.0
+    ],
+    [
+     153.0,
+     58.0
+    ],
+    [
+     17.5,
+     58.0
+    ]
+   ],
+   "bbox": [
+    17.5,
+    0.0,
+    153.0,
+    58.0
+   ],
+   "height": 58.0,
+   "small_text": false,
+   "text": "영등",
+   "text_key": "영등",
+   "ocr_text": "영등표",
+   "confidence": 0.934899122671373,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "영등포 선유도원 축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-184.easy_rgb_2x_001",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     3.0,
+     48.0
+    ],
+    [
+     176.5,
+     48.0
+    ],
+    [
+     176.5,
+     104.0
+    ],
+    [
+     3.0,
+     104.0
+    ]
+   ],
+   "bbox": [
+    3.0,
+    48.0,
+    176.5,
+    104.0
+   ],
+   "height": 56.0,
+   "small_text": false,
+   "text": "선유도원",
+   "text_key": "선유도원",
+   "ocr_text": "선유도원",
+   "confidence": 0.999645471572876,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "영등포 선유도원 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-184.easy_rgb_2x_002",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     2.5,
+     92.5
+    ],
+    [
+     140.5,
+     92.5
+    ],
+    [
+     140.5,
+     182.5
+    ],
+    [
+     2.5,
+     182.5
+    ]
+   ],
+   "bbox": [
+    2.5,
+    92.5,
+    140.5,
+    182.5
+   ],
+   "height": 90.0,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "[축제",
+   "confidence": 0.6995253204017597,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "영등포 선유도원 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-184.easy_rgb_2x_006",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     360.0,
+     446.0
+    ],
+    [
+     444.0,
+     446.0
+    ],
+    [
+     444.0,
+     485.0
+    ],
+    [
+     360.0,
+     485.0
+    ]
+   ],
+   "bbox": [
+    360.0,
+    446.0,
+    444.0,
+    485.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9998235702514648,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 10.24.Sat - 10.25.Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-184.easy_rgb_2x_010",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     305.5,
+     476.5
+    ],
+    [
+     444.0,
+     476.5
+    ],
+    [
+     444.0,
+     518.5
+    ],
+    [
+     305.5,
+     518.5
+    ]
+   ],
+   "bbox": [
+    305.5,
+    476.5,
+    444.0,
+    518.5
+   ],
+   "height": 42.0,
+   "small_text": false,
+   "text": "10.24.Sat",
+   "text_key": "1024sat",
+   "ocr_text": "10.24.Sat",
+   "confidence": 0.9890684485435486,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 10.24.Sat - 10.25.Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-184.easy_rgb_2x_011",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     300.5,
+     510.5
+    ],
+    [
+     443.5,
+     510.5
+    ],
+    [
+     443.5,
+     549.5
+    ],
+    [
+     300.5,
+     549.5
+    ]
+   ],
+   "bbox": [
+    300.5,
+    510.5,
+    443.5,
+    549.5
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "10.25.Sun",
+   "text_key": "1025sun",
+   "ocr_text": "1025.Sun",
+   "confidence": 0.7764614477355501,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 10.24.Sat - 10.25.Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-184.easy_rgb_2x_012",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     322.0,
+     550.0
+    ],
+    [
+     443.0,
+     550.0
+    ],
+    [
+     443.0,
+     578.0
+    ],
+    [
+     322.0,
+     578.0
+    ]
+   ],
+   "bbox": [
+    322.0,
+    550.0,
+    443.0,
+    578.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "선유도공원 /",
+   "text_key": "선유도공원",
+   "ocr_text": "선유도공원!",
+   "confidence": 0.968660295009613,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "선유도공원 / 선유걷고싶은거리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-184.easy_rgb_2x_013",
+   "case_id": "v2-184",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     271.0,
+     574.0
+    ],
+    [
+     442.0,
+     574.0
+    ],
+    [
+     442.0,
+     602.0
+    ],
+    [
+     271.0,
+     602.0
+    ]
+   ],
+   "bbox": [
+    271.0,
+    574.0,
+    442.0,
+    602.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "선유걷고싶은거리",
+   "text_key": "선유걷고싶은거리",
+   "ocr_text": "선유걸고싶은거리",
+   "confidence": 0.8922310471534729,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "선유도공원 / 선유걷고싶은거리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-082",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-082.padd_rgb_2x_001",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     138.0,
+     41.5
+    ],
+    [
+     308.5,
+     43.5
+    ],
+    [
+     308.5,
+     67.5
+    ],
+    [
+     137.5,
+     65.5
+    ]
+   ],
+   "bbox": [
+    137.5,
+    41.5,
+    308.5,
+    67.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "Let's go Global!",
+   "text_key": "letsgoglobal",
+   "ocr_text": "Let's go Global!",
+   "confidence": 0.970954179763794,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "Let's go Global!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.padd_rgb_2x_002",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     152.0,
+     72.0
+    ],
+    [
+     294.0,
+     72.0
+    ],
+    [
+     294.0,
+     89.0
+    ],
+    [
+     152.0,
+     89.0
+    ]
+   ],
+   "bbox": [
+    152.0,
+    72.0,
+    294.0,
+    89.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "2026 안성맞춤 남사",
+   "text_key": "2026안성맞춤남사",
+   "ocr_text": "2026 만성맞즘 남사담",
+   "confidence": 0.8358210921287537,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1765,
+   "gold_value": "2026 안성맞춤 남사당 바우덕이축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.padd_rgb_2x_003",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     72.5,
+     92.0
+    ],
+    [
+     369.5,
+     92.0
+    ],
+    [
+     369.5,
+     154.5
+    ],
+    [
+     72.5,
+     154.5
+    ]
+   ],
+   "bbox": [
+    72.5,
+    92.0,
+    369.5,
+    154.5
+   ],
+   "height": 62.5,
+   "small_text": false,
+   "text": "바우덕이축제",
+   "text_key": "바우덕이축제",
+   "ocr_text": "바우덕이축제",
+   "confidence": 0.9992178082466125,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1765,
+   "gold_value": "2026 안성맞춤 남사당 바우덕이축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.padd_rgb_2x_004",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     170.5,
+     157.0
+    ],
+    [
+     272.0,
+     158.5
+    ],
+    [
+     272.0,
+     170.5
+    ],
+    [
+     170.5,
+     169.5
+    ]
+   ],
+   "bbox": [
+    170.5,
+    157.0,
+    272.0,
+    170.5
+   ],
+   "height": 12.25,
+   "small_text": false,
+   "text": "With 대한민국 문화도시",
+   "text_key": "with대한민국문화도시",
+   "ocr_text": "WH 대안민국 문화도시",
+   "confidence": 0.895078718662262,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "With 대한민국 문화도시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.padd_rgb_2x_005",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     91.5,
+     176.0
+    ],
+    [
+     266.5,
+     177.5
+    ],
+    [
+     266.0,
+     196.5
+    ],
+    [
+     91.5,
+     195.0
+    ]
+   ],
+   "bbox": [
+    91.5,
+    176.0,
+    266.5,
+    196.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026.10.2(금)~10.5(월)",
+   "text_key": "2026102금105월",
+   "ocr_text": "2026.10.2(금)~10.5(월)",
+   "confidence": 0.9648463129997253,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.2(금)~10.5(월)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.padd_rgb_2x_006",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     278.0,
+     178.0
+    ],
+    [
+     353.5,
+     178.0
+    ],
+    [
+     353.5,
+     186.5
+    ],
+    [
+     278.0,
+     186.5
+    ]
+   ],
+   "bbox": [
+    278.0,
+    178.0,
+    353.5,
+    186.5
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "추모제 및 전야제",
+   "text_key": "추모제및전야제",
+   "ocr_text": "추모패 및전에제 10.14",
+   "confidence": 0.7447576522827148,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "추모제 및 전야제",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-082.padd_rgb_2x_008",
+   "case_id": "v2-082",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     191.0,
+     212.5
+    ],
+    [
+     275.0,
+     246.5
+    ],
+    [
+     269.5,
+     260.5
+    ],
+    [
+     185.5,
+     226.5
+    ]
+   ],
+   "bbox": [
+    185.5,
+    212.5,
+    275.0,
+    260.5
+   ],
+   "height": 15.04,
+   "small_text": false,
+   "text": "정3품 조선아이돌",
+   "text_key": "정3품조선아이돌",
+   "ocr_text": "정3품 조선아이동",
+   "confidence": 0.8788562417030334,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "정3품 조선아이돌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

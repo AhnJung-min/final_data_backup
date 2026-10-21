@@ -1,0 +1,562 @@
+{
+ "case_id": "v2-046",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-046.padd_rgb_2x_000",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     17.0,
+     12.0
+    ],
+    [
+     49.0,
+     12.0
+    ],
+    [
+     49.0,
+     25.0
+    ],
+    [
+     17.0,
+     25.0
+    ]
+   ],
+   "bbox": [
+    17.0,
+    12.0,
+    49.0,
+    25.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9962038993835449,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9.18.(금) — 9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_001",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     15.0,
+     26.0
+    ],
+    [
+     80.0,
+     27.0
+    ],
+    [
+     80.0,
+     47.0
+    ],
+    [
+     14.5,
+     45.5
+    ]
+   ],
+   "bbox": [
+    14.5,
+    26.0,
+    80.0,
+    47.0
+   ],
+   "height": 19.75,
+   "small_text": false,
+   "text": "9.18.(금)",
+   "text_key": "918금",
+   "ocr_text": "9.18.(금)",
+   "confidence": 0.9145650267601013,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9.18.(금) — 9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_003",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     36.5,
+     44.0
+    ],
+    [
+     105.0,
+     45.5
+    ],
+    [
+     104.5,
+     65.0
+    ],
+    [
+     36.0,
+     63.5
+    ]
+   ],
+   "bbox": [
+    36.0,
+    44.0,
+    105.0,
+    65.0
+   ],
+   "height": 19.51,
+   "small_text": false,
+   "text": "9.20.(일)",
+   "text_key": "920일",
+   "ocr_text": "9.20.(일)",
+   "confidence": 0.9966082572937012,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9.18.(금) — 9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_004",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     217.0,
+     47.5
+    ],
+    [
+     364.5,
+     46.0
+    ],
+    [
+     365.5,
+     149.5
+    ],
+    [
+     218.0,
+     151.0
+    ]
+   ],
+   "bbox": [
+    217.0,
+    46.0,
+    365.5,
+    151.0
+   ],
+   "height": 103.5,
+   "small_text": false,
+   "text": "김제",
+   "text_key": "김제",
+   "ocr_text": "김제",
+   "confidence": 0.9294255971908569,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "김제 국가유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_005",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     17.0,
+     65.0
+    ],
+    [
+     66.5,
+     65.0
+    ],
+    [
+     66.5,
+     75.5
+    ],
+    [
+     17.0,
+     75.5
+    ]
+   ],
+   "bbox": [
+    17.0,
+    65.0,
+    66.5,
+    75.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "18:00~22:00",
+   "text_key": "18002200",
+   "ocr_text": "18:00-22:00",
+   "confidence": 0.9574741125106812,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "18:00~22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_007",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     207.0,
+     130.0
+    ],
+    [
+     373.0,
+     137.5
+    ],
+    [
+     370.0,
+     199.0
+    ],
+    [
+     204.0,
+     191.5
+    ]
+   ],
+   "bbox": [
+    204.0,
+    130.0,
+    373.0,
+    199.0
+   ],
+   "height": 61.57,
+   "small_text": false,
+   "text": "국가유산",
+   "text_key": "국가유산",
+   "ocr_text": "국가유산",
+   "confidence": 0.9501459002494812,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "김제 국가유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_009",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     206.0,
+     275.0
+    ],
+    [
+     309.5,
+     276.0
+    ],
+    [
+     309.5,
+     295.5
+    ],
+    [
+     205.5,
+     294.5
+    ]
+   ],
+   "bbox": [
+    205.5,
+    275.0,
+    309.5,
+    295.5
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "관아와 향교의 밤,",
+   "text_key": "관아와향교의밤",
+   "ocr_text": "관아와 향교의 밤,",
+   "confidence": 0.9887459874153137,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "관아와 향교의 밤, 김제를 걷다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_010",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     205.5,
+     292.0
+    ],
+    [
+     278.0,
+     292.0
+    ],
+    [
+     278.0,
+     311.5
+    ],
+    [
+     205.5,
+     311.5
+    ]
+   ],
+   "bbox": [
+    205.5,
+    292.0,
+    278.0,
+    311.5
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "김제를 걷다",
+   "text_key": "김제를걷다",
+   "ocr_text": "김제를 걷다",
+   "confidence": 0.9637898802757263,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "관아와 향교의 밤, 김제를 걷다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_011",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     141.5,
+     556.5
+    ],
+    [
+     302.0,
+     557.0
+    ],
+    [
+     302.0,
+     571.0
+    ],
+    [
+     141.5,
+     570.5
+    ]
+   ],
+   "bbox": [
+    141.5,
+    556.5,
+    302.0,
+    571.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "백년 만에 되찾은 김제 관아의 첫 문,",
+   "text_key": "백년만에되찾은김제관아의첫문",
+   "ocr_text": "백년 만에 되찾은 김제 관아의 첫 문,",
+   "confidence": 0.988434910774231,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "백년 만에 되찾은 김제 관아의 첫 문, 외삼문 복원이 시작됩니다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-046.padd_rgb_2x_012",
+   "case_id": "v2-046",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     164.0,
+     573.0
+    ],
+    [
+     280.5,
+     573.0
+    ],
+    [
+     280.5,
+     587.0
+    ],
+    [
+     164.0,
+     587.0
+    ]
+   ],
+   "bbox": [
+    164.0,
+    573.0,
+    280.5,
+    587.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "외삼문 복원이 시작됩니다",
+   "text_key": "외삼문복원이시작됩니다",
+   "ocr_text": "외삼문 복원이 시작됩니다",
+   "confidence": 0.9599615335464478,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "백년 만에 되찾은 김제 관아의 첫 문, 외삼문 복원이 시작됩니다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

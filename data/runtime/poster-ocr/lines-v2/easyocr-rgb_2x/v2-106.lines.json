@@ -1,0 +1,722 @@
+{
+ "case_id": "v2-106",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 24,
+ "lines_matched": 13,
+ "records": [
+  {
+   "id": "v2-106.easy_rgb_2x_002",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     23.0,
+     86.0
+    ],
+    [
+     71.5,
+     86.0
+    ],
+    [
+     71.5,
+     106.0
+    ],
+    [
+     23.0,
+     106.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    86.0,
+    71.5,
+    106.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "제23회",
+   "text_key": "제23회",
+   "ocr_text": "제23회",
+   "confidence": 0.9992803931236267,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "제23회 서산 해미읍성축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_003",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     73.0,
+     74.0
+    ],
+    [
+     148.0,
+     74.0
+    ],
+    [
+     148.0,
+     111.0
+    ],
+    [
+     73.0,
+     111.0
+    ]
+   ],
+   "bbox": [
+    73.0,
+    74.0,
+    148.0,
+    111.0
+   ],
+   "height": 37.0,
+   "small_text": false,
+   "text": "서산",
+   "text_key": "서산",
+   "ocr_text": "서산",
+   "confidence": 0.9998823280268617,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "서산 해미읍성축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_004",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     19.0,
+     107.0
+    ],
+    [
+     400.0,
+     107.0
+    ],
+    [
+     400.0,
+     179.0
+    ],
+    [
+     19.0,
+     179.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    107.0,
+    400.0,
+    179.0
+   ],
+   "height": 72.0,
+   "small_text": false,
+   "text": "해미읍성축제",
+   "text_key": "해미읍성축제",
+   "ocr_text": "해미음성숙제",
+   "confidence": 0.3825213785777103,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "서산 해미읍성축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_005",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     21.5,
+     178.5
+    ],
+    [
+     159.5,
+     178.5
+    ],
+    [
+     159.5,
+     209.5
+    ],
+    [
+     21.5,
+     209.5
+    ]
+   ],
+   "bbox": [
+    21.5,
+    178.5,
+    159.5,
+    209.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "2026. 10. 9. (금)",
+   "text_key": "2026109금",
+   "ocr_text": "2026.10. 9 (금)",
+   "confidence": 0.5440863034487939,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "2026. 10. 9. (금) ~ 11. (일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_007",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     170.5,
+     179.5
+    ],
+    [
+     229.5,
+     179.5
+    ],
+    [
+     229.5,
+     209.5
+    ],
+    [
+     170.5,
+     209.5
+    ]
+   ],
+   "bbox": [
+    170.5,
+    179.5,
+    229.5,
+    209.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "11. (일)",
+   "text_key": "11일",
+   "ocr_text": "I1 (일)",
+   "confidence": 0.6772873664199336,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "2026. 10. 9. (금) ~ 11. (일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_008",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     22.0,
+     208.0
+    ],
+    [
+     151.0,
+     208.0
+    ],
+    [
+     151.0,
+     233.0
+    ],
+    [
+     22.0,
+     233.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    208.0,
+    151.0,
+    233.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "서산해미읍성일원",
+   "text_key": "서산해미읍성일원",
+   "ocr_text": "서산해미음성일원",
+   "confidence": 0.9933592166900181,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "서산해미읍성일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_009",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     246.5,
+     263.0
+    ],
+    [
+     281.0,
+     263.0
+    ],
+    [
+     281.0,
+     278.0
+    ],
+    [
+     246.5,
+     278.0
+    ]
+   ],
+   "bbox": [
+    246.5,
+    263.0,
+    281.0,
+    278.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "1421,",
+   "text_key": "1421",
+   "ocr_text": "1421,",
+   "confidence": 0.7371551689410955,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.16,
+   "gold_value": "HAEMI UNIVERSE : 1421, 시간의 문이 열리다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_017",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     232.0,
+     607.5
+    ],
+    [
+     358.5,
+     607.5
+    ],
+    [
+     358.5,
+     620.0
+    ],
+    [
+     232.0,
+     620.0
+    ]
+   ],
+   "bbox": [
+    232.0,
+    607.5,
+    358.5,
+    620.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "서산시",
+   "text_key": "서산시",
+   "ocr_text": "서산시이쇠, O 시산근국시 그시산소년-시",
+   "confidence": 0.07569831882572323,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서산시",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_019",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     180.09,
+     268.81
+    ],
+    [
+     240.93,
+     263.54
+    ],
+    [
+     241.41,
+     277.69
+    ],
+    [
+     180.57,
+     282.96
+    ]
+   ],
+   "bbox": [
+    180.09,
+    263.54,
+    241.41,
+    282.96
+   ],
+   "height": 14.16,
+   "small_text": false,
+   "text": "UNIVERS",
+   "text_key": "univers",
+   "ocr_text": "UNIVERSI:",
+   "confidence": 0.7685694332489119,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.16,
+   "gold_value": "HAEMI UNIVERSE : 1421, 시간의 문이 열리다",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_020",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     279.45,
+     262.58
+    ],
+    [
+     313.41,
+     267.92
+    ],
+    [
+     310.55,
+     283.92
+    ],
+    [
+     276.59,
+     279.08
+    ]
+   ],
+   "bbox": [
+    276.59,
+    262.58,
+    313.41,
+    283.92
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "시간의",
+   "text_key": "시간의",
+   "ocr_text": "시간의",
+   "confidence": 0.9911243256801018,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.16,
+   "gold_value": "HAEMI UNIVERSE : 1421, 시간의 문이 열리다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_021",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     308.94,
+     266.58
+    ],
+    [
+     334.33,
+     270.69
+    ],
+    [
+     331.06,
+     287.42
+    ],
+    [
+     305.67,
+     283.31
+    ]
+   ],
+   "bbox": [
+    305.67,
+    266.58,
+    334.33,
+    287.42
+   ],
+   "height": 17.05,
+   "small_text": false,
+   "text": "문이",
+   "text_key": "문이",
+   "ocr_text": "문이 드",
+   "confidence": 0.1675877571105957,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.16,
+   "gold_value": "HAEMI UNIVERSE : 1421, 시간의 문이 열리다",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_022",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     138.89,
+     278.5
+    ],
+    [
+     182.32,
+     270.8
+    ],
+    [
+     184.61,
+     285.0
+    ],
+    [
+     141.18,
+     292.7
+    ]
+   ],
+   "bbox": [
+    138.89,
+    270.8,
+    184.61,
+    292.7
+   ],
+   "height": 14.38,
+   "small_text": false,
+   "text": "HAEMI",
+   "text_key": "haemi",
+   "ocr_text": "HAHMI",
+   "confidence": 0.9220638576741694,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.16,
+   "gold_value": "HAEMI UNIVERSE : 1421, 시간의 문이 열리다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.easy_rgb_2x_023",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_023"
+   },
+   "polygon": [
+    [
+     330.07,
+     270.05
+    ],
+    [
+     363.97,
+     279.63
+    ],
+    [
+     358.93,
+     296.45
+    ],
+    [
+     325.03,
+     286.87
+    ]
+   ],
+   "bbox": [
+    325.03,
+    270.05,
+    363.97,
+    296.45
+   ],
+   "height": 17.56,
+   "small_text": false,
+   "text": "열리다",
+   "text_key": "열리다",
+   "ocr_text": "업리다",
+   "confidence": 0.6213485791800504,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.16,
+   "gold_value": "HAEMI UNIVERSE : 1421, 시간의 문이 열리다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

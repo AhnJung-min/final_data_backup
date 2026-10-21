@@ -1,0 +1,235 @@
+{
+ "case_id": "v2-108",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-108.easy_rgb_2x_001",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     196.0,
+     75.0
+    ],
+    [
+     249.0,
+     75.0
+    ],
+    [
+     249.0,
+     91.0
+    ],
+    [
+     196.0,
+     91.0
+    ]
+   ],
+   "bbox": [
+    196.0,
+    75.0,
+    249.0,
+    91.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9977248907089233,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026 대전 서구 아트페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.easy_rgb_2x_002",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     119.0,
+     90.5
+    ],
+    [
+     307.5,
+     90.5
+    ],
+    [
+     307.5,
+     151.0
+    ],
+    [
+     119.0,
+     151.0
+    ]
+   ],
+   "bbox": [
+    119.0,
+    90.5,
+    307.5,
+    151.0
+   ],
+   "height": 60.5,
+   "small_text": false,
+   "text": "대전 서구",
+   "text_key": "대전서구",
+   "ocr_text": "대전 서구",
+   "confidence": 0.9947942548688719,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "대전 서구 아트페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.easy_rgb_2x_003",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     92.5,
+     151.5
+    ],
+    [
+     344.5,
+     151.5
+    ],
+    [
+     344.5,
+     209.5
+    ],
+    [
+     92.5,
+     209.5
+    ]
+   ],
+   "bbox": [
+    92.5,
+    151.5,
+    344.5,
+    209.5
+   ],
+   "height": 58.0,
+   "small_text": false,
+   "text": "아트페스티",
+   "text_key": "아트페스티",
+   "ocr_text": "아트페스티벨",
+   "confidence": 0.9783351421356201,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "대전 서구 아트페스티벌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.easy_rgb_2x_010",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     342.0,
+     539.0
+    ],
+    [
+     381.0,
+     539.0
+    ],
+    [
+     381.0,
+     551.0
+    ],
+    [
+     342.0,
+     551.0
+    ]
+   ],
+   "bbox": [
+    342.0,
+    539.0,
+    381.0,
+    551.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "10월 11일",
+   "text_key": "10월11일",
+   "ocr_text": "10월11일",
+   "confidence": 0.9760059714317322,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10월 11일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,343 @@
+{
+ "case_id": "r2-004",
+ "split": "reserve",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "r2-004.easy_rgb_2x_000",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     16.0,
+     21.0
+    ],
+    [
+     138.0,
+     21.0
+    ],
+    [
+     138.0,
+     47.0
+    ],
+    [
+     16.0,
+     47.0
+    ]
+   ],
+   "bbox": [
+    16.0,
+    21.0,
+    138.0,
+    47.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "제20회",
+   "text_key": "제20회",
+   "ocr_text": "제20희 2026.",
+   "confidence": 0.9492154121398926,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제20회",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.easy_rgb_2x_001",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     17.5,
+     49.5
+    ],
+    [
+     126.0,
+     49.5
+    ],
+    [
+     126.0,
+     81.5
+    ],
+    [
+     17.5,
+     81.5
+    ]
+   ],
+   "bbox": [
+    17.5,
+    49.5,
+    126.0,
+    81.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "9.10.(목)~",
+   "text_key": "910목",
+   "ocr_text": "9.10.(목)",
+   "confidence": 0.9067529439926147,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "2026. 9.10.(목)~ 9.13.(일), 4일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.easy_rgb_2x_002",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     18.0,
+     83.0
+    ],
+    [
+     42.0,
+     83.0
+    ],
+    [
+     42.0,
+     111.0
+    ],
+    [
+     18.0,
+     111.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    83.0,
+    42.0,
+    111.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "9.",
+   "text_key": "9",
+   "ocr_text": "9",
+   "confidence": 0.739447806127444,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "2026. 9.10.(목)~ 9.13.(일), 4일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.easy_rgb_2x_003",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     49.5,
+     82.0
+    ],
+    [
+     160.5,
+     82.0
+    ],
+    [
+     160.5,
+     112.0
+    ],
+    [
+     49.5,
+     112.0
+    ]
+   ],
+   "bbox": [
+    49.5,
+    82.0,
+    160.5,
+    112.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "13.(일), 4일간",
+   "text_key": "13일4일간",
+   "ocr_text": "13 (일) 4일간",
+   "confidence": 0.8979910019365609,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "2026. 9.10.(목)~ 9.13.(일), 4일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.easy_rgb_2x_004",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     19.5,
+     113.5
+    ],
+    [
+     126.0,
+     113.5
+    ],
+    [
+     126.0,
+     132.5
+    ],
+    [
+     19.5,
+     132.5
+    ]
+   ],
+   "bbox": [
+    19.5,
+    113.5,
+    126.0,
+    132.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "장수읍 의암공원 및",
+   "text_key": "장수읍의암공원및",
+   "ocr_text": "장수읍의암공원 및",
+   "confidence": 0.8505674004554749,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "장수읍 의암공원 및 누리파크 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-004.easy_rgb_2x_005",
+   "case_id": "r2-004",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     19.5,
+     133.5
+    ],
+    [
+     99.0,
+     133.5
+    ],
+    [
+     99.0,
+     153.0
+    ],
+    [
+     19.5,
+     153.0
+    ]
+   ],
+   "bbox": [
+    19.5,
+    133.5,
+    99.0,
+    153.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "누리파크 일원",
+   "text_key": "누리파크일원",
+   "ocr_text": "누리파크일원",
+   "confidence": 0.9565983414649963,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "누리파크 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

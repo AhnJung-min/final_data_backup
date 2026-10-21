@@ -1,0 +1,344 @@
+{
+ "case_id": "v2-021",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-021.padd_rgb_1x_003",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     7.0,
+     50.0
+    ],
+    [
+     124.0,
+     41.0
+    ],
+    [
+     132.0,
+     155.0
+    ],
+    [
+     15.0,
+     163.0
+    ]
+   ],
+   "bbox": [
+    7.0,
+    41.0,
+    132.0,
+    163.0
+   ],
+   "height": 113.78,
+   "small_text": false,
+   "text": "성북",
+   "text_key": "성북",
+   "ocr_text": "성북",
+   "confidence": 0.8997765779495239,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성북",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_1x_005",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     303.0,
+     150.0
+    ],
+    [
+     417.0,
+     149.0
+    ],
+    [
+     417.0,
+     167.0
+    ],
+    [
+     303.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    303.0,
+    149.0,
+    417.0,
+    168.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "9월 6일(일)",
+   "text_key": "9월6일일",
+   "ocr_text": "9월 6일(일)15시~20시",
+   "confidence": 0.947268545627594,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9월 6일(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_1x_006",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     306.0,
+     172.0
+    ],
+    [
+     408.0,
+     172.0
+    ],
+    [
+     408.0,
+     186.0
+    ],
+    [
+     306.0,
+     186.0
+    ]
+   ],
+   "bbox": [
+    306.0,
+    172.0,
+    408.0,
+    186.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "성북구청 앞 바람마당교",
+   "text_key": "성북구청앞바람마당교",
+   "ocr_text": "성북구청앞바람마당교",
+   "confidence": 0.946978747844696,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성북구청 앞 바람마당교",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_1x_007",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     305.0,
+     190.0
+    ],
+    [
+     416.0,
+     190.0
+    ],
+    [
+     416.0,
+     203.0
+    ],
+    [
+     305.0,
+     203.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    190.0,
+    416.0,
+    203.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "성북천 수변활력거점 일대",
+   "text_key": "성북천수변활력거점일대",
+   "ocr_text": "성북천수변활력거점일대",
+   "confidence": 0.966676652431488,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "성북천 수변활력거점 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_1x_009",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     303.0,
+     223.0
+    ],
+    [
+     401.0,
+     223.0
+    ],
+    [
+     401.0,
+     240.0
+    ],
+    [
+     303.0,
+     240.0
+    ]
+   ],
+   "bbox": [
+    303.0,
+    223.0,
+    401.0,
+    240.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "18시30분축하공연",
+   "confidence": 0.9927757382392883,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-021.padd_rgb_1x_015",
+   "case_id": "v2-021",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     107.0,
+     591.0
+    ],
+    [
+     195.0,
+     591.0
+    ],
+    [
+     195.0,
+     601.0
+    ],
+    [
+     107.0,
+     601.0
+    ]
+   ],
+   "bbox": [
+    107.0,
+    591.0,
+    195.0,
+    601.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "참여전시",
+   "text_key": "참여전시",
+   "ocr_text": "어랜이 좋여터·장여전시-이벤트",
+   "confidence": 0.685690701007843,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "참여전시",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

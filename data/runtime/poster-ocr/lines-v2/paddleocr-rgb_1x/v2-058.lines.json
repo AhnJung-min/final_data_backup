@@ -1,0 +1,669 @@
+{
+ "case_id": "v2-058",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 27,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "v2-058.padd_rgb_1x_000",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     40.0,
+     19.0
+    ],
+    [
+     401.0,
+     19.0
+    ],
+    [
+     401.0,
+     38.0
+    ],
+    [
+     40.0,
+     38.0
+    ]
+   ],
+   "bbox": [
+    40.0,
+    19.0,
+    401.0,
+    38.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "문경에서 달리고, 놀고, 자자!",
+   "text_key": "문경에서달리고놀고자자",
+   "ocr_text": "문경에서달리고,놀고,자자!RUN·MUSIC·CAMP·ECO",
+   "confidence": 0.9465080499649048,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "문경에서 달리고, 놀고, 자자!",
+   "extra_chars": 15,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_001",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     118.0,
+     37.0
+    ],
+    [
+     333.0,
+     42.0
+    ],
+    [
+     331.0,
+     124.0
+    ],
+    [
+     116.0,
+     119.0
+    ]
+   ],
+   "bbox": [
+    116.0,
+    37.0,
+    333.0,
+    124.0
+   ],
+   "height": 82.02,
+   "small_text": false,
+   "text": "문경 친환경",
+   "text_key": "문경친환경",
+   "ocr_text": "문경친환경",
+   "confidence": 0.9976882934570312,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "문경 친환경 캠핑 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_004",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     90.0,
+     102.0
+    ],
+    [
+     190.0,
+     104.0
+    ],
+    [
+     188.0,
+     177.0
+    ],
+    [
+     88.0,
+     174.0
+    ]
+   ],
+   "bbox": [
+    88.0,
+    102.0,
+    190.0,
+    177.0
+   ],
+   "height": 72.53,
+   "small_text": false,
+   "text": "캠핑",
+   "text_key": "캠핑",
+   "ocr_text": "캠핑",
+   "confidence": 0.9508470296859741,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "문경 친환경 캠핑 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_007",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     187.0,
+     117.0
+    ],
+    [
+     312.0,
+     124.0
+    ],
+    [
+     310.0,
+     166.0
+    ],
+    [
+     184.0,
+     159.0
+    ]
+   ],
+   "bbox": [
+    184.0,
+    117.0,
+    312.0,
+    166.0
+   ],
+   "height": 42.08,
+   "small_text": false,
+   "text": "페스티",
+   "text_key": "페스티",
+   "ocr_text": "페스티",
+   "confidence": 0.999708890914917,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "문경 친환경 캠핑 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_010",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     125.0,
+     194.0
+    ],
+    [
+     203.0,
+     194.0
+    ],
+    [
+     203.0,
+     218.0
+    ],
+    [
+     125.0,
+     218.0
+    ]
+   ],
+   "bbox": [
+    125.0,
+    194.0,
+    203.0,
+    218.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "다이나믹",
+   "text_key": "다이나믹",
+   "ocr_text": "다이나믹",
+   "confidence": 0.9831520318984985,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "다이나믹 리버런 5KM",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_011",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     202.0,
+     193.0
+    ],
+    [
+     261.0,
+     195.0
+    ],
+    [
+     260.0,
+     221.0
+    ],
+    [
+     200.0,
+     218.0
+    ]
+   ],
+   "bbox": [
+    200.0,
+    193.0,
+    261.0,
+    221.0
+   ],
+   "height": 25.55,
+   "small_text": false,
+   "text": "리버런",
+   "text_key": "리버런",
+   "ocr_text": "리버런",
+   "confidence": 0.9975454211235046,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "다이나믹 리버런 5KM",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_012",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     266.0,
+     189.0
+    ],
+    [
+     310.0,
+     189.0
+    ],
+    [
+     310.0,
+     212.0
+    ],
+    [
+     266.0,
+     212.0
+    ]
+   ],
+   "bbox": [
+    266.0,
+    189.0,
+    310.0,
+    212.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "5KM",
+   "text_key": "5km",
+   "ocr_text": "5KM",
+   "confidence": 0.9674882888793945,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "다이나믹 리버런 5KM",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_016",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     50.0,
+     429.0
+    ],
+    [
+     203.0,
+     429.0
+    ],
+    [
+     203.0,
+     449.0
+    ],
+    [
+     50.0,
+     449.0
+    ]
+   ],
+   "bbox": [
+    50.0,
+    429.0,
+    203.0,
+    449.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "다이나믹 리버런 참가시",
+   "text_key": "다이나믹리버런참가시",
+   "ocr_text": "다이나믹리버런참가시",
+   "confidence": 0.9631160497665405,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "다이나믹 리버런 참가시 영강 뮤직 페스타 우선 자리 배정",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_018",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     50.0,
+     452.0
+    ],
+    [
+     161.0,
+     452.0
+    ],
+    [
+     161.0,
+     471.0
+    ],
+    [
+     50.0,
+     471.0
+    ]
+   ],
+   "bbox": [
+    50.0,
+    452.0,
+    161.0,
+    471.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "영강 뮤직 페스타",
+   "text_key": "영강뮤직페스타",
+   "ocr_text": "영강뮤직페스타",
+   "confidence": 0.9791568517684937,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs",
+    "notices"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영강 뮤직 페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_020",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     51.0,
+     476.0
+    ],
+    [
+     145.0,
+     476.0
+    ],
+    [
+     145.0,
+     494.0
+    ],
+    [
+     51.0,
+     494.0
+    ]
+   ],
+   "bbox": [
+    51.0,
+    476.0,
+    145.0,
+    494.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "우선 자리 배정",
+   "text_key": "우선자리배정",
+   "ocr_text": "우선자리배정",
+   "confidence": 0.9954719543457031,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "다이나믹 리버런 참가시 영강 뮤직 페스타 우선 자리 배정",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_022",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_022"
+   },
+   "polygon": [
+    [
+     140.0,
+     526.0
+    ],
+    [
+     300.0,
+     526.0
+    ],
+    [
+     300.0,
+     553.0
+    ],
+    [
+     140.0,
+     553.0
+    ]
+   ],
+   "bbox": [
+    140.0,
+    526.0,
+    300.0,
+    553.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "26.9.19-9.20",
+   "text_key": "26919920",
+   "ocr_text": "26.9.19-9.20",
+   "confidence": 0.9736562371253967,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "26.9.19-9.20",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-058.padd_rgb_1x_023",
+   "case_id": "v2-058",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_023"
+   },
+   "polygon": [
+    [
+     156.0,
+     554.0
+    ],
+    [
+     286.0,
+     554.0
+    ],
+    [
+     286.0,
+     580.0
+    ],
+    [
+     156.0,
+     580.0
+    ]
+   ],
+   "bbox": [
+    156.0,
+    554.0,
+    286.0,
+    580.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "문경 영강체육공원",
+   "text_key": "문경영강체육공원",
+   "ocr_text": "문경 영강체육공원",
+   "confidence": 0.9881522059440613,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "문경 영강체육공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

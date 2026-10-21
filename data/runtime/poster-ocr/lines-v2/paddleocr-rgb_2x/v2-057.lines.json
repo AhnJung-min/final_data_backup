@@ -1,0 +1,613 @@
+{
+ "case_id": "v2-057",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 19,
+ "lines_matched": 11,
+ "records": [
+  {
+   "id": "v2-057.padd_rgb_2x_000",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     45.5,
+     20.5
+    ],
+    [
+     81.0,
+     22.0
+    ],
+    [
+     80.5,
+     37.0
+    ],
+    [
+     45.0,
+     35.5
+    ]
+   ],
+   "bbox": [
+    45.0,
+    20.5,
+    81.0,
+    37.0
+   ],
+   "height": 15.01,
+   "small_text": false,
+   "text": "강남구",
+   "text_key": "강남구",
+   "ocr_text": "강남구",
+   "confidence": 0.9984925389289856,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강남구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_008",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     139.0,
+     149.5
+    ],
+    [
+     348.5,
+     151.5
+    ],
+    [
+     348.0,
+     219.5
+    ],
+    [
+     138.5,
+     218.0
+    ]
+   ],
+   "bbox": [
+    138.5,
+    149.5,
+    348.5,
+    219.5
+   ],
+   "height": 68.25,
+   "small_text": false,
+   "text": "강남청년축제",
+   "text_key": "강남청년축제",
+   "ocr_text": "강남청년축제",
+   "confidence": 0.9974803328514099,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강남청년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_009",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     83.5,
+     171.0
+    ],
+    [
+     139.0,
+     167.0
+    ],
+    [
+     140.5,
+     191.0
+    ],
+    [
+     85.5,
+     195.0
+    ]
+   ],
+   "bbox": [
+    83.5,
+    167.0,
+    140.5,
+    195.0
+   ],
+   "height": 24.07,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.999312698841095,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 강남청년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_010",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     70.5,
+     223.5
+    ],
+    [
+     376.5,
+     223.5
+    ],
+    [
+     376.5,
+     345.5
+    ],
+    [
+     70.5,
+     345.5
+    ]
+   ],
+   "bbox": [
+    70.5,
+    223.5,
+    376.5,
+    345.5
+   ],
+   "height": 122.0,
+   "small_text": false,
+   "text": "웰니스",
+   "text_key": "웰니스",
+   "ocr_text": "윗니스",
+   "confidence": 0.8439918160438538,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "웰니스 소셜링",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_013",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     75.5,
+     327.0
+    ],
+    [
+     369.5,
+     323.5
+    ],
+    [
+     370.5,
+     440.5
+    ],
+    [
+     77.0,
+     443.5
+    ]
+   ],
+   "bbox": [
+    75.5,
+    323.5,
+    370.5,
+    443.5
+   ],
+   "height": 116.76,
+   "small_text": false,
+   "text": "소셜링",
+   "text_key": "소셜링",
+   "ocr_text": "소셜링",
+   "confidence": 0.9993627071380615,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "웰니스 소셜링",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_016",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     117.0,
+     443.5
+    ],
+    [
+     325.5,
+     443.0
+    ],
+    [
+     325.5,
+     458.0
+    ],
+    [
+     117.0,
+     458.5
+    ]
+   ],
+   "bbox": [
+    117.0,
+    443.0,
+    325.5,
+    458.5
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "SAUNA BUS",
+   "text_key": "saunabus",
+   "ocr_text": "SAUNA BUS · ICE BATH · BODY JAM",
+   "confidence": 0.923258900642395,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "SAUNA BUS",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_017",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     124.5,
+     462.0
+    ],
+    [
+     317.5,
+     461.5
+    ],
+    [
+     317.5,
+     476.0
+    ],
+    [
+     124.5,
+     476.5
+    ]
+   ],
+   "bbox": [
+    124.5,
+    461.5,
+    317.5,
+    476.5
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "One - Day CLASS",
+   "text_key": "onedayclass",
+   "ocr_text": "One -Day CLASS · ANIMAL FLOW",
+   "confidence": 0.9442209005355835,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "One - Day CLASS",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_018",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     79.5,
+     484.0
+    ],
+    [
+     365.5,
+     484.0
+    ],
+    [
+     365.5,
+     506.0
+    ],
+    [
+     79.5,
+     506.0
+    ]
+   ],
+   "bbox": [
+    79.5,
+    484.0,
+    365.5,
+    506.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026. 09. 19 (토)",
+   "text_key": "20260919토",
+   "ocr_text": "2026.09.19(토)15:00- 20:00",
+   "confidence": 0.9858275055885315,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 09. 19 (토)",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_019",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     159.5,
+     518.5
+    ],
+    [
+     205.0,
+     518.5
+    ],
+    [
+     205.0,
+     543.0
+    ],
+    [
+     159.5,
+     543.0
+    ]
+   ],
+   "bbox": [
+    159.5,
+    518.5,
+    205.0,
+    543.0
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "강남",
+   "text_key": "강남",
+   "ocr_text": "강남",
+   "confidence": 0.9986315965652466,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "강남 스퀘어 광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_020",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     200.5,
+     517.5
+    ],
+    [
+     304.5,
+     517.5
+    ],
+    [
+     304.5,
+     543.5
+    ],
+    [
+     200.5,
+     543.5
+    ]
+   ],
+   "bbox": [
+    200.5,
+    517.5,
+    304.5,
+    543.5
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "스퀘어 광장",
+   "text_key": "스퀘어광장",
+   "ocr_text": "스퀘어광장",
+   "confidence": 0.9469848871231079,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "강남 스퀘어 광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.padd_rgb_2x_022",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     73.0,
+     588.0
+    ],
+    [
+     111.5,
+     586.5
+    ],
+    [
+     112.0,
+     602.5
+    ],
+    [
+     73.5,
+     604.0
+    ]
+   ],
+   "bbox": [
+    73.0,
+    586.5,
+    112.0,
+    604.0
+   ],
+   "height": 16.01,
+   "small_text": false,
+   "text": "한요한",
+   "text_key": "한요한",
+   "ocr_text": "한요한",
+   "confidence": 0.999469518661499,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "한요한",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

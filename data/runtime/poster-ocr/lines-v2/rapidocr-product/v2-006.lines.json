@@ -1,0 +1,346 @@
+{
+ "case_id": "v2-006",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-006.rapi_product_000",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     32.0,
+     18.0
+    ],
+    [
+     104.0,
+     15.0
+    ],
+    [
+     105.0,
+     39.0
+    ],
+    [
+     33.0,
+     42.0
+    ]
+   ],
+   "bbox": [
+    32.0,
+    15.0,
+    105.0,
+    42.0
+   ],
+   "height": 24.02,
+   "small_text": false,
+   "text": "국가유산 야",
+   "text_key": "국가유산야",
+   "ocr_text": "국가유산야해",
+   "confidence": 0.843,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "organizations.logo",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "강경 국가유산 야행",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.rapi_product_001",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     197.0,
+     42.0
+    ],
+    [
+     336.0,
+     47.0
+    ],
+    [
+     333.0,
+     139.0
+    ],
+    [
+     193.0,
+     133.0
+    ]
+   ],
+   "bbox": [
+    193.0,
+    42.0,
+    336.0,
+    139.0
+   ],
+   "height": 91.57,
+   "small_text": false,
+   "text": "강경",
+   "text_key": "강경",
+   "ocr_text": "강경",
+   "confidence": 0.95022,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "강경 국가유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.rapi_product_003",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     148.0,
+     190.0
+    ],
+    [
+     393.0,
+     190.0
+    ],
+    [
+     393.0,
+     206.0
+    ],
+    [
+     148.0,
+     206.0
+    ]
+   ],
+   "bbox": [
+    148.0,
+    190.0,
+    393.0,
+    206.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "2026. 8. 28.(금) ~ 29.(토) / 9. 4.(금) ~ 5.(토)",
+   "text_key": "2026828금29토94금5토",
+   "ocr_text": "2026.8.28.)29.()/9.4.)5118:0022:00",
+   "confidence": 0.91553,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "2026. 8. 28.(금) ~ 29.(토) / 9. 4.(금) ~ 5.(토)",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.rapi_product_004",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     204.0,
+     208.0
+    ],
+    [
+     337.0,
+     208.0
+    ],
+    [
+     337.0,
+     223.0
+    ],
+    [
+     204.0,
+     223.0
+    ]
+   ],
+   "bbox": [
+    204.0,
+    208.0,
+    337.0,
+    223.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "강경근대역사문화거리 일원",
+   "text_key": "강경근대역사문화거리일원",
+   "ocr_text": "강경근대역사문화거리 일원",
+   "confidence": 0.96964,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강경근대역사문화거리 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.rapi_product_005",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     269.0,
+     241.0
+    ],
+    [
+     320.0,
+     243.0
+    ],
+    [
+     319.0,
+     262.0
+    ],
+    [
+     269.0,
+     261.0
+    ]
+   ],
+   "bbox": [
+    269.0,
+    241.0,
+    320.0,
+    262.0
+   ],
+   "height": 19.51,
+   "small_text": false,
+   "text": "밤이 되면,",
+   "text_key": "밤이되면",
+   "ocr_text": "밤이 되면.",
+   "confidence": 0.90205,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "밤이 되면, 강경은 다시 흐른다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-006.rapi_product_006",
+   "case_id": "v2-006",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     285.0,
+     256.0
+    ],
+    [
+     383.0,
+     258.0
+    ],
+    [
+     383.0,
+     279.0
+    ],
+    [
+     285.0,
+     277.0
+    ]
+   ],
+   "bbox": [
+    285.0,
+    256.0,
+    383.0,
+    279.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "강경은 다시 흐른다",
+   "text_key": "강경은다시흐른다",
+   "ocr_text": "강경은 다시 효른다",
+   "confidence": 0.92843,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "밤이 되면, 강경은 다시 흐른다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

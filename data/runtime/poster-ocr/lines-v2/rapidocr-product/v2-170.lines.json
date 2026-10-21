@@ -1,0 +1,558 @@
+{
+ "case_id": "v2-170",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-170.rapi_product_000",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     172.0,
+     29.0
+    ],
+    [
+     272.0,
+     27.0
+    ],
+    [
+     273.0,
+     55.0
+    ],
+    [
+     172.0,
+     56.0
+    ]
+   ],
+   "bbox": [
+    172.0,
+    27.0,
+    273.0,
+    56.0
+   ],
+   "height": 27.51,
+   "small_text": false,
+   "text": "2026 대덕",
+   "text_key": "2026대덕",
+   "ocr_text": "2026대덕",
+   "confidence": 0.97377,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 대덕 대청호 물결축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_001",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     118.0,
+     51.0
+    ],
+    [
+     322.0,
+     51.0
+    ],
+    [
+     322.0,
+     113.0
+    ],
+    [
+     118.0,
+     113.0
+    ]
+   ],
+   "bbox": [
+    118.0,
+    51.0,
+    322.0,
+    113.0
+   ],
+   "height": 62.0,
+   "small_text": false,
+   "text": "대청호",
+   "text_key": "대청호",
+   "ocr_text": "대정호",
+   "confidence": 0.95617,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 대덕 대청호 물결축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_002",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     75.0,
+     107.0
+    ],
+    [
+     349.0,
+     105.0
+    ],
+    [
+     349.0,
+     170.0
+    ],
+    [
+     75.0,
+     171.0
+    ]
+   ],
+   "bbox": [
+    75.0,
+    105.0,
+    349.0,
+    171.0
+   ],
+   "height": 64.5,
+   "small_text": false,
+   "text": "물결축제",
+   "text_key": "물결축제",
+   "ocr_text": "물결축제",
+   "confidence": 0.99946,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 대덕 대청호 물결축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_003",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     89.0,
+     176.0
+    ],
+    [
+     356.0,
+     174.0
+    ],
+    [
+     356.0,
+     199.0
+    ],
+    [
+     90.0,
+     201.0
+    ]
+   ],
+   "bbox": [
+    89.0,
+    174.0,
+    356.0,
+    201.0
+   ],
+   "height": 25.01,
+   "small_text": false,
+   "text": "2026. 10. 23.(금) - 25.(일)",
+   "text_key": "20261023금25일",
+   "ocr_text": "2026.10.23.(금)-25.()| 대청공원",
+   "confidence": 0.89232,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "2026. 10. 23.(금) - 25.(일)",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_004",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     329.0,
+     238.0
+    ],
+    [
+     382.0,
+     238.0
+    ],
+    [
+     382.0,
+     251.0
+    ],
+    [
+     329.0,
+     251.0
+    ]
+   ],
+   "bbox": [
+    329.0,
+    238.0,
+    382.0,
+    251.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "10. 23.(금)",
+   "text_key": "1023금",
+   "ocr_text": "10.23.(금)",
+   "confidence": 0.96386,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 23.(금)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_007",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     329.0,
+     284.0
+    ],
+    [
+     383.0,
+     284.0
+    ],
+    [
+     383.0,
+     297.0
+    ],
+    [
+     329.0,
+     297.0
+    ]
+   ],
+   "bbox": [
+    329.0,
+    284.0,
+    383.0,
+    297.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "10. 24.(토)",
+   "text_key": "1024토",
+   "ocr_text": "10.24.(로)",
+   "confidence": 0.95371,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "10. 24.(토)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_011",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_011"
+   },
+   "polygon": [
+    [
+     329.0,
+     343.0
+    ],
+    [
+     412.0,
+     343.0
+    ],
+    [
+     412.0,
+     357.0
+    ],
+    [
+     329.0,
+     357.0
+    ]
+   ],
+   "bbox": [
+    329.0,
+    343.0,
+    412.0,
+    357.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "든든노래자랑 결선",
+   "text_key": "든든노래자랑결선",
+   "ocr_text": "든든노래자람 결선",
+   "confidence": 0.8885,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "든든노래자랑 결선",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_013",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_013"
+   },
+   "polygon": [
+    [
+     115.0,
+     587.0
+    ],
+    [
+     198.0,
+     585.0
+    ],
+    [
+     198.0,
+     599.0
+    ],
+    [
+     116.0,
+     601.0
+    ]
+   ],
+   "bbox": [
+    115.0,
+    585.0,
+    198.0,
+    601.0
+   ],
+   "height": 14.02,
+   "small_text": false,
+   "text": "대전광역시 대덕구",
+   "text_key": "대전광역시대덕구",
+   "ocr_text": "대전광역시 대덕구",
+   "confidence": 0.96843,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시 대덕구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_014",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_014"
+   },
+   "polygon": [
+    [
+     216.0,
+     585.0
+    ],
+    [
+     295.0,
+     585.0
+    ],
+    [
+     295.0,
+     599.0
+    ],
+    [
+     216.0,
+     599.0
+    ]
+   ],
+   "bbox": [
+    216.0,
+    585.0,
+    295.0,
+    599.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "대덕문화관광재단",
+   "text_key": "대덕문화관광재단",
+   "ocr_text": "대문화관광재",
+   "confidence": 0.82997,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "대덕문화관광재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-170.rapi_product_017",
+   "case_id": "v2-170",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_017"
+   },
+   "polygon": [
+    [
+     342.0,
+     587.0
+    ],
+    [
+     398.0,
+     587.0
+    ],
+    [
+     398.0,
+     599.0
+    ],
+    [
+     342.0,
+     599.0
+    ]
+   ],
+   "bbox": [
+    342.0,
+    587.0,
+    398.0,
+    599.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "대전광역시",
+   "text_key": "대전광역시",
+   "ocr_text": "대전광역시",
+   "confidence": 0.99614,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대전광역시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

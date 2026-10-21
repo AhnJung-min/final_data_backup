@@ -1,0 +1,614 @@
+{
+ "case_id": "r2-030",
+ "split": "reserve",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 27,
+ "lines_matched": 11,
+ "records": [
+  {
+   "id": "r2-030.easy_rgb_2x_000",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     39.0,
+     15.0
+    ],
+    [
+     72.0,
+     15.0
+    ],
+    [
+     72.0,
+     28.0
+    ],
+    [
+     39.0,
+     28.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    15.0,
+    72.0,
+    28.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "강동구",
+   "text_key": "강동구",
+   "ocr_text": "강동구",
+   "confidence": 0.9980704509598481,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강동구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_002",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     172.0,
+     163.0
+    ],
+    [
+     250.5,
+     163.0
+    ],
+    [
+     250.5,
+     191.5
+    ],
+    [
+     172.0,
+     191.5
+    ]
+   ],
+   "bbox": [
+    172.0,
+    163.0,
+    250.5,
+    191.5
+   ],
+   "height": 28.5,
+   "small_text": false,
+   "text": "제31",
+   "text_key": "제31",
+   "ocr_text": "'제312",
+   "confidence": 0.2210046158627318,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "제31회 강동 선사문화축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_003",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     169.0,
+     183.5
+    ],
+    [
+     272.5,
+     183.5
+    ],
+    [
+     272.5,
+     258.0
+    ],
+    [
+     169.0,
+     258.0
+    ]
+   ],
+   "bbox": [
+    169.0,
+    183.5,
+    272.5,
+    258.0
+   ],
+   "height": 74.5,
+   "small_text": false,
+   "text": "강동",
+   "text_key": "강동",
+   "ocr_text": "강동",
+   "confidence": 0.9831202419035793,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "강동 선사문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_004",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     114.0,
+     235.5
+    ],
+    [
+     333.5,
+     235.5
+    ],
+    [
+     333.5,
+     324.0
+    ],
+    [
+     114.0,
+     324.0
+    ]
+   ],
+   "bbox": [
+    114.0,
+    235.5,
+    333.5,
+    324.0
+   ],
+   "height": 88.5,
+   "small_text": false,
+   "text": "선사문화축제",
+   "text_key": "선사문화축제",
+   "ocr_text": "전사문화축제",
+   "confidence": 0.5314680152031502,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "강동 선사문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_005",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     200.5,
+     320.5
+    ],
+    [
+     243.5,
+     320.5
+    ],
+    [
+     243.5,
+     338.5
+    ],
+    [
+     200.5,
+     338.5
+    ]
+   ],
+   "bbox": [
+    200.5,
+    320.5,
+    243.5,
+    338.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9865388552513257,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.16.(금) — 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_006",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     156.5,
+     338.5
+    ],
+    [
+     227.5,
+     338.5
+    ],
+    [
+     227.5,
+     357.5
+    ],
+    [
+     156.5,
+     357.5
+    ]
+   ],
+   "bbox": [
+    156.5,
+    338.5,
+    227.5,
+    357.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "10.16.(금)",
+   "text_key": "1016금",
+   "ocr_text": "10,16 (금)",
+   "confidence": 0.7057978111957316,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.16.(금) — 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_007",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     240.5,
+     339.5
+    ],
+    [
+     288.5,
+     339.5
+    ],
+    [
+     288.5,
+     357.5
+    ],
+    [
+     240.5,
+     357.5
+    ]
+   ],
+   "bbox": [
+    240.5,
+    339.5,
+    288.5,
+    357.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "18.(일)",
+   "text_key": "18일",
+   "ocr_text": "18 (일)",
+   "confidence": 0.9897688684402495,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.16.(금) — 18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_008",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     173.5,
+     358.5
+    ],
+    [
+     271.5,
+     358.5
+    ],
+    [
+     271.5,
+     376.5
+    ],
+    [
+     173.5,
+     376.5
+    ]
+   ],
+   "bbox": [
+    173.5,
+    358.5,
+    271.5,
+    376.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "서울 암사동 유적",
+   "text_key": "서울암사동유적",
+   "ocr_text": "서울 암시동유적",
+   "confidence": 0.5406767599315702,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "서울 암사동 유적",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_011",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     268.0,
+     550.5
+    ],
+    [
+     387.5,
+     550.5
+    ],
+    [
+     387.5,
+     563.0
+    ],
+    [
+     268.0,
+     563.0
+    ]
+   ],
+   "bbox": [
+    268.0,
+    550.5,
+    387.5,
+    563.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "개·폐막식",
+   "text_key": "개폐막식",
+   "ocr_text": "개 기막식 야간넷 3*l168189l",
+   "confidence": 0.07189350788613415,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "개·폐막식",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_018",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     52.0,
+     583.0
+    ],
+    [
+     161.0,
+     583.0
+    ],
+    [
+     161.0,
+     595.0
+    ],
+    [
+     52.0,
+     595.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    583.0,
+    161.0,
+    595.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "미디어파사드",
+   "text_key": "미디어파사드",
+   "ocr_text": "미디어피사드 선사비 규처러",
+   "confidence": 0.09169080876469508,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "미디어파사드",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-030.easy_rgb_2x_023",
+   "case_id": "r2-030",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_023"
+   },
+   "polygon": [
+    [
+     199.0,
+     597.0
+    ],
+    [
+     245.5,
+     597.0
+    ],
+    [
+     245.5,
+     607.5
+    ],
+    [
+     199.0,
+     607.5
+    ]
+   ],
+   "bbox": [
+    199.0,
+    597.0,
+    245.5,
+    607.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "gdsunsa.com",
+   "text_key": "gdsunsacom",
+   "ocr_text": "3dsunsaromr",
+   "confidence": 0.21724247491110066,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "gdsunsa.com",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

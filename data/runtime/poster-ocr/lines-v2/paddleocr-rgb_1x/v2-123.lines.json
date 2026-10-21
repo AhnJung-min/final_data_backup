@@ -1,0 +1,829 @@
+{
+ "case_id": "v2-123",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 15,
+ "records": [
+  {
+   "id": "v2-123.padd_rgb_1x_000",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     13.0,
+     14.0
+    ],
+    [
+     86.0,
+     19.0
+    ],
+    [
+     85.0,
+     41.0
+    ],
+    [
+     11.0,
+     36.0
+    ]
+   ],
+   "bbox": [
+    11.0,
+    14.0,
+    86.0,
+    41.0
+   ],
+   "height": 22.06,
+   "small_text": false,
+   "text": "#착한도시 서구",
+   "text_key": "착한도시서구",
+   "ocr_text": "\"착한도시 서구",
+   "confidence": 0.8652939796447754,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "#착한도시 서구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_001",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     343.0,
+     16.0
+    ],
+    [
+     424.0,
+     16.0
+    ],
+    [
+     424.0,
+     29.0
+    ],
+    [
+     343.0,
+     29.0
+    ]
+   ],
+   "bbox": [
+    343.0,
+    16.0,
+    424.0,
+    29.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "소요예산 : 425백만원",
+   "text_key": "소요예산425백만원",
+   "ocr_text": "소요예산:425백만원",
+   "confidence": 0.9638774394989014,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "소요예산 : 425백만원 (시비 259, 구비 166)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_002",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     343.0,
+     28.0
+    ],
+    [
+     424.0,
+     28.0
+    ],
+    [
+     424.0,
+     41.0
+    ],
+    [
+     343.0,
+     41.0
+    ]
+   ],
+   "bbox": [
+    343.0,
+    28.0,
+    424.0,
+    41.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "(시비 259, 구비 166)",
+   "text_key": "시비259구비166",
+   "ocr_text": "(시비259, 구비166)",
+   "confidence": 0.9586697220802307,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "소요예산 : 425백만원 (시비 259, 구비 166)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_003",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     391.0,
+     68.0
+    ],
+    [
+     410.0,
+     68.0
+    ],
+    [
+     410.0,
+     230.0
+    ],
+    [
+     391.0,
+     230.0
+    ]
+   ],
+   "bbox": [
+    391.0,
+    68.0,
+    410.0,
+    230.0
+   ],
+   "height": 162.0,
+   "small_text": false,
+   "text": "은빛 억새가 전하는",
+   "text_key": "은빛억새가전하는",
+   "ocr_text": "은빛 억새가 전하는",
+   "confidence": 0.9605411291122437,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "은빛 억새가 전하는 가을로의 산책",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_004",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     40.0,
+     80.0
+    ],
+    [
+     206.0,
+     80.0
+    ],
+    [
+     206.0,
+     108.0
+    ],
+    [
+     40.0,
+     108.0
+    ]
+   ],
+   "bbox": [
+    40.0,
+    80.0,
+    206.0,
+    108.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "제11회 광주서창",
+   "text_key": "제11회광주서창",
+   "ocr_text": "제11회 광주서창",
+   "confidence": 0.9326651692390442,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제11회 광주서창 억새 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_005",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     29.0,
+     107.0
+    ],
+    [
+     216.0,
+     107.0
+    ],
+    [
+     216.0,
+     217.0
+    ],
+    [
+     29.0,
+     217.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    107.0,
+    216.0,
+    217.0
+   ],
+   "height": 110.0,
+   "small_text": false,
+   "text": "억새",
+   "text_key": "억새",
+   "ocr_text": "억새",
+   "confidence": 0.9998096227645874,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제11회 광주서창 억새 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_006",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     366.0,
+     116.0
+    ],
+    [
+     386.0,
+     116.0
+    ],
+    [
+     386.0,
+     229.0
+    ],
+    [
+     366.0,
+     229.0
+    ]
+   ],
+   "bbox": [
+    366.0,
+    116.0,
+    386.0,
+    229.0
+   ],
+   "height": 113.0,
+   "small_text": false,
+   "text": "가을로의 산책",
+   "text_key": "가을로의산책",
+   "ocr_text": "가을료의산책",
+   "confidence": 0.9210718274116516,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "은빛 억새가 전하는 가을로의 산책",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_007",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     26.0,
+     203.0
+    ],
+    [
+     219.0,
+     206.0
+    ],
+    [
+     217.0,
+     325.0
+    ],
+    [
+     24.0,
+     322.0
+    ]
+   ],
+   "bbox": [
+    24.0,
+    203.0,
+    219.0,
+    325.0
+   ],
+   "height": 119.02,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.9980242848396301,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제11회 광주서창 억새 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_008",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     32.0,
+     345.0
+    ],
+    [
+     80.0,
+     345.0
+    ],
+    [
+     80.0,
+     367.0
+    ],
+    [
+     32.0,
+     367.0
+    ]
+   ],
+   "bbox": [
+    32.0,
+    345.0,
+    80.0,
+    367.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9955521821975708,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 10.15 목 10.18 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_009",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     32.0,
+     367.0
+    ],
+    [
+     120.0,
+     370.0
+    ],
+    [
+     119.0,
+     402.0
+    ],
+    [
+     31.0,
+     399.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    367.0,
+    120.0,
+    402.0
+   ],
+   "height": 32.02,
+   "small_text": false,
+   "text": "10.15 목",
+   "text_key": "1015목",
+   "ocr_text": "10.15목",
+   "confidence": 0.9956855177879333,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 10.15 목 10.18 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_010",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     150.0,
+     371.0
+    ],
+    [
+     256.0,
+     369.0
+    ],
+    [
+     256.0,
+     393.0
+    ],
+    [
+     151.0,
+     395.0
+    ]
+   ],
+   "bbox": [
+    150.0,
+    369.0,
+    256.0,
+    395.0
+   ],
+   "height": 24.01,
+   "small_text": false,
+   "text": "영산강변 일원",
+   "text_key": "영산강변일원",
+   "ocr_text": "영산강변 일원",
+   "confidence": 0.9307188391685486,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "영산강변 일원 극락교 ~ 서창교 나눔누리숲",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_011",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     155.0,
+     400.0
+    ],
+    [
+     212.0,
+     400.0
+    ],
+    [
+     212.0,
+     420.0
+    ],
+    [
+     155.0,
+     420.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    400.0,
+    212.0,
+    420.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "극락교 ~",
+   "text_key": "극락교",
+   "ocr_text": "극락교 »",
+   "confidence": 0.7163721323013306,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "영산강변 일원 극락교 ~ 서창교 나눔누리숲",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_012",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     34.0,
+     415.0
+    ],
+    [
+     118.0,
+     415.0
+    ],
+    [
+     118.0,
+     444.0
+    ],
+    [
+     34.0,
+     444.0
+    ]
+   ],
+   "bbox": [
+    34.0,
+    415.0,
+    118.0,
+    444.0
+   ],
+   "height": 29.0,
+   "small_text": false,
+   "text": "10.18 일",
+   "text_key": "1018일",
+   "ocr_text": "10.18일",
+   "confidence": 0.9981253147125244,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 10.15 목 10.18 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_013",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     155.0,
+     421.0
+    ],
+    [
+     262.0,
+     421.0
+    ],
+    [
+     262.0,
+     442.0
+    ],
+    [
+     155.0,
+     442.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    421.0,
+    262.0,
+    442.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "서창교 나눔누리숲",
+   "text_key": "서창교나눔누리숲",
+   "ocr_text": "서창교 나눔누리숲",
+   "confidence": 0.8510910272598267,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "영산강변 일원 극락교 ~ 서창교 나눔누리숲",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.padd_rgb_1x_016",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     189.0,
+     602.0
+    ],
+    [
+     400.0,
+     602.0
+    ],
+    [
+     400.0,
+     614.0
+    ],
+    [
+     189.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    189.0,
+    602.0,
+    400.0,
+    614.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "전남광주통합특별시",
+   "text_key": "전남광주통합특별시",
+   "ocr_text": "후립 전남광주통암특별시 순 전남광주통합특법시 서구의회",
+   "confidence": 0.7690653800964355,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "전남광주통합특별시",
+   "extra_chars": 16,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

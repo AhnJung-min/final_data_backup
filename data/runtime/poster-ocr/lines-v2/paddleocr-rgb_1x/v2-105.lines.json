@@ -1,0 +1,505 @@
+{
+ "case_id": "v2-105",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 425,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-105.padd_rgb_1x_001",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     279.0,
+     20.0
+    ],
+    [
+     406.0,
+     20.0
+    ],
+    [
+     406.0,
+     36.0
+    ],
+    [
+     279.0,
+     36.0
+    ]
+   ],
+   "bbox": [
+    279.0,
+    20.0,
+    406.0,
+    36.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "전주 한지문화축제",
+   "text_key": "전주한지문화축제",
+   "ocr_text": "저제30회전주한지문화출제",
+   "confidence": 0.8112054467201233,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "전주 한지문화축제",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_003",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     18.0,
+     46.0
+    ],
+    [
+     405.0,
+     46.0
+    ],
+    [
+     405.0,
+     100.0
+    ],
+    [
+     18.0,
+     100.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    46.0,
+    405.0,
+    100.0
+   ],
+   "height": 54.0,
+   "small_text": false,
+   "text": "NOW HANJI",
+   "text_key": "nowhanji",
+   "ocr_text": "NODW HANJI",
+   "confidence": 0.8561224937438965,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "NOW HANJI",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_004",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     321.0,
+     92.0
+    ],
+    [
+     414.0,
+     92.0
+    ],
+    [
+     414.0,
+     169.0
+    ],
+    [
+     321.0,
+     169.0
+    ]
+   ],
+   "bbox": [
+    321.0,
+    92.0,
+    414.0,
+    169.0
+   ],
+   "height": 77.0,
+   "small_text": false,
+   "text": "한지",
+   "text_key": "한지",
+   "ocr_text": "한지",
+   "confidence": 0.7628937363624573,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "지금, 한지",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_005",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     271.0,
+     111.0
+    ],
+    [
+     327.0,
+     111.0
+    ],
+    [
+     327.0,
+     121.0
+    ],
+    [
+     271.0,
+     121.0
+    ]
+   ],
+   "bbox": [
+    271.0,
+    111.0,
+    327.0,
+    121.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "전주국제한지산업대전",
+   "text_key": "전주국제한지산업대전",
+   "ocr_text": "전추국제합지산업대전",
+   "confidence": 0.7514408826828003,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026 전주국제한지산업대전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_006",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     309.0,
+     102.0
+    ],
+    [
+     328.0,
+     102.0
+    ],
+    [
+     328.0,
+     113.0
+    ],
+    [
+     309.0,
+     113.0
+    ]
+   ],
+   "bbox": [
+    309.0,
+    102.0,
+    328.0,
+    113.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.8681862354278564,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026 전주국제한지산업대전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_007",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     269.0,
+     125.0
+    ],
+    [
+     336.0,
+     125.0
+    ],
+    [
+     336.0,
+     163.0
+    ],
+    [
+     269.0,
+     163.0
+    ]
+   ],
+   "bbox": [
+    269.0,
+    125.0,
+    336.0,
+    163.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "지금,",
+   "text_key": "지금",
+   "ocr_text": "지금,",
+   "confidence": 0.9867010712623596,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "지금, 한지",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_008",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     334.0,
+     175.0
+    ],
+    [
+     405.0,
+     175.0
+    ],
+    [
+     405.0,
+     189.0
+    ],
+    [
+     334.0,
+     189.0
+    ]
+   ],
+   "bbox": [
+    334.0,
+    175.0,
+    405.0,
+    189.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "2026. 10. 08.",
+   "text_key": "20261008",
+   "ocr_text": "2026.10.08.",
+   "confidence": 0.9868888854980469,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 08. — 10. 10.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_009",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     367.0,
+     191.0
+    ],
+    [
+     406.0,
+     191.0
+    ],
+    [
+     406.0,
+     205.0
+    ],
+    [
+     367.0,
+     205.0
+    ]
+   ],
+   "bbox": [
+    367.0,
+    191.0,
+    406.0,
+    205.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "10. 10.",
+   "text_key": "1010",
+   "ocr_text": "10.10.",
+   "confidence": 0.9979379177093506,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 08. — 10. 10.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-105.padd_rgb_1x_010",
+   "case_id": "v2-105",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     334.0,
+     207.0
+    ],
+    [
+     404.0,
+     207.0
+    ],
+    [
+     404.0,
+     217.0
+    ],
+    [
+     334.0,
+     217.0
+    ]
+   ],
+   "bbox": [
+    334.0,
+    207.0,
+    404.0,
+    217.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "한국전통문화전당 일원",
+   "text_key": "한국전통문화전당일원",
+   "ocr_text": "한국전동문회전당 일원",
+   "confidence": 0.8897181153297424,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "한국전통문화전당 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

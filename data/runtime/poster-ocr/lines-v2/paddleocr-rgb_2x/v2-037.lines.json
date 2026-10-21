@@ -1,0 +1,1263 @@
+{
+ "case_id": "v2-037",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 31,
+ "lines_matched": 23,
+ "records": [
+  {
+   "id": "v2-037.padd_rgb_2x_000",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     49.5,
+     25.5
+    ],
+    [
+     126.5,
+     26.5
+    ],
+    [
+     126.5,
+     36.5
+    ],
+    [
+     49.0,
+     35.5
+    ]
+   ],
+   "bbox": [
+    49.0,
+    25.5,
+    126.5,
+    36.5
+   ],
+   "height": 10.01,
+   "small_text": false,
+   "text": "인천광역시 미추홀구",
+   "text_key": "인천광역시미추홀구",
+   "ocr_text": "인천광학시 미추홀구",
+   "confidence": 0.9196213483810425,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "인천광역시 미추홀구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_002",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     326.5,
+     26.0
+    ],
+    [
+     376.0,
+     26.0
+    ],
+    [
+     376.0,
+     36.5
+    ],
+    [
+     326.5,
+     36.5
+    ]
+   ],
+   "bbox": [
+    326.5,
+    26.0,
+    376.0,
+    36.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "인천대학교",
+   "text_key": "인천대학교",
+   "ocr_text": "6 인천대학교",
+   "confidence": 0.8113152384757996,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "인천대학교",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_003",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     390.0,
+     26.0
+    ],
+    [
+     427.0,
+     26.0
+    ],
+    [
+     427.0,
+     36.5
+    ],
+    [
+     390.0,
+     36.5
+    ]
+   ],
+   "bbox": [
+    390.0,
+    26.0,
+    427.0,
+    36.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "청운대학교",
+   "text_key": "청운대학교",
+   "ocr_text": "청운대학교",
+   "confidence": 0.9224804639816284,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "청운대학교",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_004",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     32.0,
+     62.0
+    ],
+    [
+     163.0,
+     62.0
+    ],
+    [
+     163.0,
+     88.0
+    ],
+    [
+     32.0,
+     88.0
+    ]
+   ],
+   "bbox": [
+    32.0,
+    62.0,
+    163.0,
+    88.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "2026 제23회",
+   "text_key": "2026제23회",
+   "ocr_text": "2026 제23회",
+   "confidence": 0.9739543199539185,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "2026 제23회 미추홀 미디어 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_005",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     21.0,
+     81.0
+    ],
+    [
+     227.5,
+     79.0
+    ],
+    [
+     228.0,
+     169.5
+    ],
+    [
+     22.0,
+     171.5
+    ]
+   ],
+   "bbox": [
+    21.0,
+    79.0,
+    228.0,
+    171.5
+   ],
+   "height": 90.5,
+   "small_text": false,
+   "text": "미추",
+   "text_key": "미추",
+   "ocr_text": "미추를",
+   "confidence": 0.8344604969024658,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "미추홀 미디어 문화축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_006",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     23.0,
+     161.0
+    ],
+    [
+     224.5,
+     161.0
+    ],
+    [
+     224.5,
+     243.5
+    ],
+    [
+     23.0,
+     243.5
+    ]
+   ],
+   "bbox": [
+    23.0,
+    161.0,
+    224.5,
+    243.5
+   ],
+   "height": 82.5,
+   "small_text": false,
+   "text": "미디어",
+   "text_key": "미디어",
+   "ocr_text": "미디어",
+   "confidence": 0.9690632820129395,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "미추홀 미디어 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_007",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     23.0,
+     234.0
+    ],
+    [
+     268.0,
+     234.0
+    ],
+    [
+     268.0,
+     307.0
+    ],
+    [
+     23.0,
+     307.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    234.0,
+    268.0,
+    307.0
+   ],
+   "height": 73.0,
+   "small_text": false,
+   "text": "문화축제",
+   "text_key": "문화축제",
+   "ocr_text": "문화축제",
+   "confidence": 0.9998488426208496,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "미추홀 미디어 문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_008",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     27.5,
+     316.5
+    ],
+    [
+     166.0,
+     316.5
+    ],
+    [
+     166.0,
+     335.0
+    ],
+    [
+     27.5,
+     335.0
+    ]
+   ],
+   "bbox": [
+    27.5,
+    316.5,
+    166.0,
+    335.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "9. 12.(토) - 9. 13.(일)",
+   "text_key": "912토913일",
+   "ocr_text": "9.12.(토)-9.13.(일)",
+   "confidence": 0.9970787167549133,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 12.(토) - 9. 13.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_009",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     28.5,
+     339.0
+    ],
+    [
+     227.5,
+     339.0
+    ],
+    [
+     227.5,
+     351.0
+    ],
+    [
+     28.5,
+     351.0
+    ]
+   ],
+   "bbox": [
+    28.5,
+    339.0,
+    227.5,
+    351.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "인천대학교 제물포캠퍼스 평생교육원 옆 광장",
+   "text_key": "인천대학교제물포캠퍼스평생교육원옆광장",
+   "ocr_text": "인천대학교 제물포캠퍼스 평생교육원 옆 광장",
+   "confidence": 0.9976910352706909,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "인천대학교 제물포캠퍼스 평생교육원 옆 광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_014",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     40.5,
+     547.0
+    ],
+    [
+     89.0,
+     547.0
+    ],
+    [
+     89.0,
+     556.0
+    ],
+    [
+     40.5,
+     556.0
+    ]
+   ],
+   "bbox": [
+    40.5,
+    547.0,
+    89.0,
+    556.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "개막축하공연",
+   "text_key": "개막축하공연",
+   "ocr_text": "-개막축하공연-",
+   "confidence": 0.9015237092971802,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "개막축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_015",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     150.5,
+     546.5
+    ],
+    [
+     187.5,
+     546.5
+    ],
+    [
+     187.5,
+     557.0
+    ],
+    [
+     150.5,
+     557.0
+    ]
+   ],
+   "bbox": [
+    150.5,
+    546.5,
+    187.5,
+    557.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "미디어 체험",
+   "text_key": "미디어체험",
+   "ocr_text": "미디어체험",
+   "confidence": 0.8568089604377747,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "미디어 체험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_016",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     249.5,
+     546.5
+    ],
+    [
+     297.5,
+     546.5
+    ],
+    [
+     297.5,
+     557.0
+    ],
+    [
+     249.5,
+     557.0
+    ]
+   ],
+   "bbox": [
+    249.5,
+    546.5,
+    297.5,
+    557.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "제1회 AI 영화제",
+   "text_key": "제1회ai영화제",
+   "ocr_text": "제회A영화제",
+   "confidence": 0.9502382278442383,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제1회 AI 영화제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_017",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     332.0,
+     546.5
+    ],
+    [
+     425.0,
+     546.5
+    ],
+    [
+     425.0,
+     557.0
+    ],
+    [
+     332.0,
+     557.0
+    ]
+   ],
+   "bbox": [
+    332.0,
+    546.5,
+    425.0,
+    557.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "미추홀 음식문화 어울림 한마당",
+   "text_key": "미추홀음식문화어울림한마당",
+   "ocr_text": "미추홀 음식문화 어울림 한마당",
+   "confidence": 0.925445556640625,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "미추홀 음식문화 어울림 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_019",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     147.5,
+     558.5
+    ],
+    [
+     190.5,
+     558.5
+    ],
+    [
+     190.5,
+     567.5
+    ],
+    [
+     147.5,
+     567.5
+    ]
+   ],
+   "bbox": [
+    147.5,
+    558.5,
+    190.5,
+    567.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "아트 프리마켓",
+   "text_key": "아트프리마켓",
+   "ocr_text": "아트 프리마짓",
+   "confidence": 0.9372467398643494,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "아트 프리마켓",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_020",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     252.0,
+     558.5
+    ],
+    [
+     295.0,
+     558.5
+    ],
+    [
+     295.0,
+     567.5
+    ],
+    [
+     252.0,
+     567.5
+    ]
+   ],
+   "bbox": [
+    252.0,
+    558.5,
+    295.0,
+    567.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "드론 라이트쇼",
+   "text_key": "드론라이트쇼",
+   "ocr_text": "드론라이트쇼",
+   "confidence": 0.8739113807678223,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "드론 라이트쇼",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_021",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     349.0,
+     558.0
+    ],
+    [
+     407.5,
+     558.0
+    ],
+    [
+     407.5,
+     568.5
+    ],
+    [
+     349.0,
+     568.5
+    ]
+   ],
+   "bbox": [
+    349.0,
+    558.0,
+    407.5,
+    568.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "주민자치 어울마당",
+   "text_key": "주민자치어울마당",
+   "ocr_text": "주민자치 어울미당",
+   "confidence": 0.8984342217445374,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "주민자치 어울마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_022",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     36.0,
+     568.5
+    ],
+    [
+     94.5,
+     568.5
+    ],
+    [
+     94.5,
+     577.5
+    ],
+    [
+     36.0,
+     577.5
+    ]
+   ],
+   "bbox": [
+    36.0,
+    568.5,
+    94.5,
+    577.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "대학 밴드 콘서트",
+   "text_key": "대학밴드콘서트",
+   "ocr_text": "-대학밴드 곤서트-",
+   "confidence": 0.9550700187683105,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "대학 밴드 콘서트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_023",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_023"
+   },
+   "polygon": [
+    [
+     158.0,
+     569.0
+    ],
+    [
+     180.5,
+     569.0
+    ],
+    [
+     180.5,
+     579.0
+    ],
+    [
+     158.0,
+     579.0
+    ]
+   ],
+   "bbox": [
+    158.0,
+    569.0,
+    180.5,
+    579.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "포토존",
+   "text_key": "포토존",
+   "ocr_text": "포토존",
+   "confidence": 0.9852805137634277,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "포토존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_024",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_024"
+   },
+   "polygon": [
+    [
+     240.0,
+     568.0
+    ],
+    [
+     307.0,
+     569.5
+    ],
+    [
+     307.0,
+     580.0
+    ],
+    [
+     240.0,
+     578.5
+    ]
+   ],
+   "bbox": [
+    240.0,
+    568.0,
+    307.0,
+    580.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "미디어 월 특설 상영관",
+   "text_key": "미디어월특설상영관",
+   "ocr_text": "미디어 월 특설상엄간",
+   "confidence": 0.8632186651229858,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2222,
+   "gold_value": "미디어 월 특설 상영관",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_025",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_025"
+   },
+   "polygon": [
+    [
+     352.0,
+     568.5
+    ],
+    [
+     404.5,
+     568.5
+    ],
+    [
+     404.5,
+     579.5
+    ],
+    [
+     352.0,
+     579.5
+    ]
+   ],
+   "bbox": [
+    352.0,
+    568.5,
+    404.5,
+    579.5
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "나이스 미추마켓",
+   "text_key": "나이스미추마켓",
+   "ocr_text": "나이스미추마켓",
+   "confidence": 0.9544757604598999,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "나이스 미추마켓",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_027",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_027"
+   },
+   "polygon": [
+    [
+     158.0,
+     580.5
+    ],
+    [
+     180.5,
+     580.5
+    ],
+    [
+     180.5,
+     590.0
+    ],
+    [
+     158.0,
+     590.0
+    ]
+   ],
+   "bbox": [
+    158.0,
+    580.5,
+    180.5,
+    590.0
+   ],
+   "height": 9.5,
+   "small_text": true,
+   "text": "키즈존",
+   "text_key": "키즈존",
+   "ocr_text": "키즈존",
+   "confidence": 0.9947945475578308,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "키즈존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_028",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_028"
+   },
+   "polygon": [
+    [
+     261.5,
+     580.0
+    ],
+    [
+     285.0,
+     580.0
+    ],
+    [
+     285.0,
+     591.0
+    ],
+    [
+     261.5,
+     591.0
+    ]
+   ],
+   "bbox": [
+    261.5,
+    580.0,
+    285.0,
+    591.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "푸드존",
+   "text_key": "푸드존",
+   "ocr_text": "푸드존",
+   "confidence": 0.9976754784584045,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "푸드존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-037.padd_rgb_2x_029",
+   "case_id": "v2-037",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_029"
+   },
+   "polygon": [
+    [
+     342.0,
+     580.0
+    ],
+    [
+     412.5,
+     580.0
+    ],
+    [
+     412.5,
+     590.0
+    ],
+    [
+     342.0,
+     590.0
+    ]
+   ],
+   "bbox": [
+    342.0,
+    580.0,
+    412.5,
+    590.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "미추홀구 청년주간행사",
+   "text_key": "미추홀구청년주간행사",
+   "ocr_text": "미주홀구청년주간권사",
+   "confidence": 0.9084102511405945,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "미추홀구 청년주간행사",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

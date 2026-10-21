@@ -1,0 +1,182 @@
+{
+ "case_id": "v2-115",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-115.easy_rgb_2x_001",
+   "case_id": "v2-115",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     356.0,
+     22.0
+    ],
+    [
+     420.0,
+     22.0
+    ],
+    [
+     420.0,
+     36.0
+    ],
+    [
+     356.0,
+     36.0
+    ]
+   ],
+   "bbox": [
+    356.0,
+    22.0,
+    420.0,
+    36.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "2026 국가유산",
+   "text_key": "2026국가유산",
+   "ocr_text": "2026 국가유산",
+   "confidence": 0.8893569869059214,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "organizations.logo",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "2026 국가유산 미디어아트 여수",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-115.easy_rgb_2x_002",
+   "case_id": "v2-115",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     23.0,
+     36.0
+    ],
+    [
+     146.0,
+     36.0
+    ],
+    [
+     146.0,
+     49.0
+    ],
+    [
+     23.0,
+     49.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    36.0,
+    146.0,
+    49.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "고소대",
+   "text_key": "고소대",
+   "ocr_text": "신문근 . 고소대 . 기순신관심 일대",
+   "confidence": 0.20491181040827164,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.items"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고소대",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-115.easy_rgb_2x_003",
+   "case_id": "v2-115",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     355.5,
+     32.5
+    ],
+    [
+     420.5,
+     32.5
+    ],
+    [
+     420.5,
+     50.5
+    ],
+    [
+     355.5,
+     50.5
+    ]
+   ],
+   "bbox": [
+    355.5,
+    32.5,
+    420.5,
+    50.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "미디어아트",
+   "text_key": "미디어아트",
+   "ocr_text": "미디어마트",
+   "confidence": 0.8999137384715443,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 국가유산 미디어아트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

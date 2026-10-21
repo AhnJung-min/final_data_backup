@@ -1,0 +1,1499 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 144,
+  "image_tokens": 3281,
+  "text_tokens": 6002,
+  "input_tokens": 9283,
+  "cost_usd": 0.0009283
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S15",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S15.png",
+    "sha256": "09d6959e25774b83dd3b30ee3fedbd7c76f19cc58e516f6547b3c3909f450585",
+    "bytes": 123520,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S15.png",
+    "sha256": "af06c57bdd820526a2ff742c3743de94dfd748722352743ff2933e194394316b",
+    "bytes": 57217,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "한빛 해맞이 불꽃 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제46회 한빛 해맞이 불꽃 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제46회",
+     "number": 46
+    },
+    "doc_raw": "제46회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.8.(일) ~ 11.10.(화)",
+     "points": [
+      [
+       2026,
+       11,
+       8,
+       "일"
+      ],
+      [
+       2026,
+       11,
+       10,
+       "화"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.8.(일) ~ 11.10.(화)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "10:00~21:00"
+    },
+    "doc_raw": "10:00~21:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "한빛시청 앞 광장"
+    },
+    "doc_raw": "한빛시청 앞 광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "한빛시"
+    },
+    "doc_raw": "한빛시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "한빛문화원"
+    },
+    "doc_raw": "한빛문화원"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "031-000-2261"
+    },
+    "doc_raw": "031-000-2261"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "밤하늘을 수놓는 불꽃"
+    },
+    "doc_raw": "밤하늘을 수놓는 불꽃"
+   }
+  },
+  "rows": [
+   {
+    "value": "L635",
+    "index": 0,
+    "text": "64",
+    "conf": 0.9994,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "64",
+      "confidence": 0.9993897080421448,
+      "bbox_xyxy": [
+       379.0,
+       62.0,
+       879.0,
+       431.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L484",
+    "index": 1,
+    "text": "2026제64회",
+    "conf": 0.9991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "2026제64회",
+      "confidence": 0.9990667700767517,
+      "bbox_xyxy": [
+       65.0,
+       118.0,
+       270.0,
+       163.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L315",
+    "index": 2,
+    "text": "한빛",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "한빛",
+      "confidence": 0.9998373985290527,
+      "bbox_xyxy": [
+       55.0,
+       300.0,
+       279.0,
+       437.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L319",
+    "index": 3,
+    "text": "해맞이",
+    "conf": 1.0,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "해맞이",
+      "confidence": 0.9999749660491943,
+      "bbox_xyxy": [
+       55.0,
+       432.0,
+       376.0,
+       567.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L675",
+    "index": 4,
+    "text": "불꽃",
+    "conf": 0.9994,
+    "records": [
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "불꽃",
+      "confidence": 0.9993579387664795,
+      "bbox_xyxy": [
+       55.0,
+       561.0,
+       280.0,
+       700.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L600",
+    "index": 5,
+    "text": "축제",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "축제",
+      "confidence": 0.9993253946304321,
+      "bbox_xyxy": [
+       54.0,
+       688.0,
+       279.0,
+       830.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L908",
+    "index": 6,
+    "text": "밤하늘을 수놓는 불꽃",
+    "conf": 0.9558,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "밤하늘을 수놓는 불꽃",
+      "confidence": 0.9557536840438843,
+      "bbox_xyxy": [
+       68.0,
+       894.0,
+       339.0,
+       932.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L587",
+    "index": 7,
+    "text": "일시 2026.11.08(일)-11.10(화)",
+    "conf": 0.9922,
+    "records": [
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "일시 2026.11.08(일)-11.10(화)",
+      "confidence": 0.9921842813491821,
+      "bbox_xyxy": [
+       369.0,
+       967.0,
+       814.0,
+       1007.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L526",
+    "index": 8,
+    "text": "시간10:00-21:00",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "시간10:00-21:00",
+      "confidence": 0.999632716178894,
+      "bbox_xyxy": [
+       550.0,
+       1018.0,
+       818.0,
+       1059.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L624",
+    "index": 9,
+    "text": "장소 한빛시청 앞 광장",
+    "conf": 0.9859,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "장소 한빛시청 앞 광장",
+      "confidence": 0.9859318137168884,
+      "bbox_xyxy": [
+       527.0,
+       1068.0,
+       818.0,
+       1112.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L222",
+    "index": 10,
+    "text": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261",
+    "conf": 0.9607,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261",
+      "confidence": 0.9606653451919556,
+      "bbox_xyxy": [
+       178.0,
+       1198.0,
+       708.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제46회 한빛 해맞이 불꽃 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.8.(일) ~ 11.10.(화)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "10:00~21:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "한빛시청 앞 광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "한빛시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "한빛문화원"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "031-000-2261"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "밤하늘을 수놓는 불꽃"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "한빛 해맞이 불꽃 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제46회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.8.(일) ~ 11.10.(화)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "10:00~21:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "한빛시청 앞 광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "한빛시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "한빛문화원"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "031-000-2261"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "밤하늘을 수놓는 불꽃"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L908",
+    "L484",
+    "L635",
+    "L526",
+    "L624",
+    "L587",
+    "L600",
+    "L222",
+    "L315",
+    "L319",
+    "L675",
+    "none"
+   ],
+   "b_line_edition": [
+    "L484",
+    "L587",
+    "L675",
+    "L624",
+    "L908",
+    "L315",
+    "L635",
+    "L600",
+    "L526",
+    "L222",
+    "L319",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L484",
+    "L600",
+    "L222",
+    "L624",
+    "L315",
+    "L526",
+    "L587",
+    "L319",
+    "L675",
+    "L908",
+    "L635",
+    "none"
+   ],
+   "b_line_time": [
+    "L484",
+    "L526",
+    "L908",
+    "L635",
+    "L675",
+    "L319",
+    "L600",
+    "L624",
+    "L587",
+    "L222",
+    "L315",
+    "none"
+   ],
+   "b_line_venue": [
+    "L600",
+    "L908",
+    "L635",
+    "L484",
+    "L675",
+    "L587",
+    "L526",
+    "L315",
+    "L222",
+    "L624",
+    "L319",
+    "none"
+   ],
+   "b_line_host": [
+    "L222",
+    "L315",
+    "L624",
+    "L675",
+    "L526",
+    "L587",
+    "L319",
+    "L908",
+    "L600",
+    "L484",
+    "L635",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L635",
+    "L222",
+    "L315",
+    "L908",
+    "L484",
+    "L526",
+    "L624",
+    "L319",
+    "L600",
+    "L675",
+    "L587",
+    "none"
+   ],
+   "b_line_contact": [
+    "L600",
+    "L675",
+    "L635",
+    "L319",
+    "L908",
+    "L484",
+    "L222",
+    "L526",
+    "L587",
+    "L315",
+    "L624",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L624",
+    "L319",
+    "L222",
+    "L315",
+    "L526",
+    "L600",
+    "L484",
+    "L675",
+    "L587",
+    "L908",
+    "L635",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 123,520 bytes, sha256 09d6959e25774b83…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 57,217 bytes, sha256 af06c57bdd820526…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제46회 한빛 해맞이 불꽃 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.8.(일) ~ 11.10.(화)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '10:00~21:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '한빛시청 앞 광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '한빛시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '한빛문화원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '031-000-2261'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '밤하늘을 수놓는 불꽃'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L624",
+      "description": "장소 한빛시청 앞 광장"
+     },
+     {
+      "value": "L319",
+      "description": "해맞이"
+     },
+     {
+      "value": "L222",
+      "description": "주최 한빛시 |주관 한빛문화원 |문의 031-000-2261"
+     },
+     {
+      "value": "L315",
+      "description": "한빛"
+     },
+     {
+      "value": "L526",
+      "description": "시간10:00-21:00"
+     },
+     {
+      "value": "L600",
+      "description": "축제"
+     },
+     {
+      "value": "L484",
+      "description": "2026제64회"
+     },
+     {
+      "value": "L675",
+      "description": "불꽃"
+     },
+     {
+      "value": "L587",
+      "description": "일시 2026.11.08(일)-11.10(화)"
+     },
+     {
+      "value": "L908",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L635",
+      "description": "64"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '한빛 해맞이 불꽃 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제46회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.8.(일) ~ 11.10.(화)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '10:00~21:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '한빛시청 앞 광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '한빛시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '한빛문화원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '031-000-2261'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '밤하늘을 수놓는 불꽃'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

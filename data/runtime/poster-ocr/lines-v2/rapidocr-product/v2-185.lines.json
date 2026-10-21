@@ -1,0 +1,881 @@
+{
+ "case_id": "v2-185",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 34,
+ "lines_matched": 16,
+ "records": [
+  {
+   "id": "v2-185.rapi_product_000",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     305.0,
+     3.0
+    ],
+    [
+     428.0,
+     3.0
+    ],
+    [
+     428.0,
+     13.0
+    ],
+    [
+     305.0,
+     13.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    3.0,
+    428.0,
+    13.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "사업비:190,000천원 (도비50%, 시비50%)",
+   "text_key": "사업비190000천원도비50시비50",
+   "ocr_text": "사업비:190.000전원 (5비50%시비50%)",
+   "confidence": 0.87304,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1053,
+   "gold_value": "사업비:190,000천원 (도비50%, 시비50%)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_001",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     40.0,
+     29.0
+    ],
+    [
+     402.0,
+     29.0
+    ],
+    [
+     402.0,
+     93.0
+    ],
+    [
+     40.0,
+     93.0
+    ]
+   ],
+   "bbox": [
+    40.0,
+    29.0,
+    402.0,
+    93.0
+   ],
+   "height": 64.0,
+   "small_text": false,
+   "text": "2026 한미친선",
+   "text_key": "2026한미친선",
+   "ocr_text": "2026 한미친선",
+   "confidence": 0.99683,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 한미친선 문화 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_002",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     25.0,
+     81.0
+    ],
+    [
+     415.0,
+     83.0
+    ],
+    [
+     414.0,
+     179.0
+    ],
+    [
+     25.0,
+     177.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    81.0,
+    415.0,
+    179.0
+   ],
+   "height": 96.0,
+   "small_text": false,
+   "text": "문화 한마당",
+   "text_key": "문화한마당",
+   "ocr_text": "문화한마당",
+   "confidence": 0.96764,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 한미친선 문화 한마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_004",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     78.0,
+     216.0
+    ],
+    [
+     141.0,
+     216.0
+    ],
+    [
+     141.0,
+     243.0
+    ],
+    [
+     78.0,
+     243.0
+    ]
+   ],
+   "bbox": [
+    78.0,
+    216.0,
+    141.0,
+    243.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.99577,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 24.[SAT] 10. 25.[SUN]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_005",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     308.0,
+     218.0
+    ],
+    [
+     417.0,
+     218.0
+    ],
+    [
+     417.0,
+     244.0
+    ],
+    [
+     308.0,
+     244.0
+    ]
+   ],
+   "bbox": [
+    308.0,
+    218.0,
+    417.0,
+    244.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "K-55 정문 앞",
+   "text_key": "k55정문앞",
+   "ocr_text": "K-S5 정문 앞",
+   "confidence": 0.8461,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "K-55 정문 앞 신장쇼핑몰 일대 / S.E.D",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_006",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     38.0,
+     237.0
+    ],
+    [
+     142.0,
+     239.0
+    ],
+    [
+     142.0,
+     269.0
+    ],
+    [
+     38.0,
+     267.0
+    ]
+   ],
+   "bbox": [
+    38.0,
+    237.0,
+    142.0,
+    269.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "10. 24.[SAT]",
+   "text_key": "1024sat",
+   "ocr_text": "10.24.[SAT]",
+   "confidence": 0.93489,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 24.[SAT] 10. 25.[SUN]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_007",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     289.0,
+     245.0
+    ],
+    [
+     417.0,
+     245.0
+    ],
+    [
+     417.0,
+     261.0
+    ],
+    [
+     289.0,
+     261.0
+    ]
+   ],
+   "bbox": [
+    289.0,
+    245.0,
+    417.0,
+    261.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "신장쇼핑몰 일대 / S.E.D",
+   "text_key": "신장쇼핑몰일대sed",
+   "ocr_text": "신장쇼핑콜일대/S.E.D",
+   "confidence": 0.91835,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "K-55 정문 앞 신장쇼핑몰 일대 / S.E.D",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_008",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     39.0,
+     262.0
+    ],
+    [
+     143.0,
+     264.0
+    ],
+    [
+     142.0,
+     292.0
+    ],
+    [
+     38.0,
+     290.0
+    ]
+   ],
+   "bbox": [
+    38.0,
+    262.0,
+    143.0,
+    292.0
+   ],
+   "height": 28.02,
+   "small_text": false,
+   "text": "10. 25.[SUN]",
+   "text_key": "1025sun",
+   "ocr_text": "10.25.[SUN]",
+   "confidence": 0.8934,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 24.[SAT] 10. 25.[SUN]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_009",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_009"
+   },
+   "polygon": [
+    [
+     40.0,
+     290.0
+    ],
+    [
+     141.0,
+     290.0
+    ],
+    [
+     141.0,
+     310.0
+    ],
+    [
+     40.0,
+     310.0
+    ]
+   ],
+   "bbox": [
+    40.0,
+    290.0,
+    141.0,
+    310.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "13:00 - 20:00",
+   "text_key": "13002000",
+   "ocr_text": "13:00- 20:00",
+   "confidence": 0.96195,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "13:00 - 20:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_016",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_016"
+   },
+   "polygon": [
+    [
+     28.0,
+     466.0
+    ],
+    [
+     68.0,
+     466.0
+    ],
+    [
+     68.0,
+     484.0
+    ],
+    [
+     28.0,
+     484.0
+    ]
+   ],
+   "bbox": [
+    28.0,
+    466.0,
+    68.0,
+    484.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "개막식",
+   "text_key": "개막식",
+   "ocr_text": "개막식",
+   "confidence": 0.99916,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "개막식",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_018",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_018"
+   },
+   "polygon": [
+    [
+     29.0,
+     499.0
+    ],
+    [
+     79.0,
+     499.0
+    ],
+    [
+     79.0,
+     515.0
+    ],
+    [
+     29.0,
+     515.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    499.0,
+    79.0,
+    515.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "축하공연",
+   "confidence": 0.98232,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_021",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_021"
+   },
+   "polygon": [
+    [
+     320.0,
+     490.0
+    ],
+    [
+     412.0,
+     490.0
+    ],
+    [
+     412.0,
+     506.0
+    ],
+    [
+     320.0,
+     506.0
+    ]
+   ],
+   "bbox": [
+    320.0,
+    490.0,
+    412.0,
+    506.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "한·미 음식 체험존",
+   "text_key": "한미음식체험존",
+   "ocr_text": "한·미음식체험존",
+   "confidence": 0.89793,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "한·미 음식 체험존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_023",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_023"
+   },
+   "polygon": [
+    [
+     338.0,
+     461.0
+    ],
+    [
+     412.0,
+     461.0
+    ],
+    [
+     412.0,
+     477.0
+    ],
+    [
+     338.0,
+     477.0
+    ]
+   ],
+   "bbox": [
+    338.0,
+    461.0,
+    412.0,
+    477.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "영어 페스타존",
+   "text_key": "영어페스타존",
+   "ocr_text": "영어 페스타존",
+   "confidence": 0.92218,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영어 페스타존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_025",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_025"
+   },
+   "polygon": [
+    [
+     29.0,
+     530.0
+    ],
+    [
+     93.0,
+     530.0
+    ],
+    [
+     93.0,
+     547.0
+    ],
+    [
+     29.0,
+     547.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    530.0,
+    93.0,
+    547.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "무대 이벤트",
+   "text_key": "무대이벤트",
+   "ocr_text": "무대 이벤트",
+   "confidence": 0.94762,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "무대 이벤트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_026",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_026"
+   },
+   "polygon": [
+    [
+     326.0,
+     530.0
+    ],
+    [
+     412.0,
+     530.0
+    ],
+    [
+     412.0,
+     546.0
+    ],
+    [
+     326.0,
+     546.0
+    ]
+   ],
+   "bbox": [
+    326.0,
+    530.0,
+    412.0,
+    546.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "한·미 문화 체험존",
+   "text_key": "한미문화체험존",
+   "ocr_text": "한·미문화체험존",
+   "confidence": 0.95188,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "한·미 문화 체험존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-185.rapi_product_031",
+   "case_id": "v2-185",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_031"
+   },
+   "polygon": [
+    [
+     154.0,
+     605.0
+    ],
+    [
+     210.0,
+     605.0
+    ],
+    [
+     210.0,
+     621.0
+    ],
+    [
+     154.0,
+     621.0
+    ]
+   ],
+   "bbox": [
+    154.0,
+    605.0,
+    210.0,
+    621.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "평택시",
+   "text_key": "평택시",
+   "ocr_text": "2평택시",
+   "confidence": 0.87973,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "평택시",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

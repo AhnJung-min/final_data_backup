@@ -1,0 +1,236 @@
+{
+ "case_id": "r2-016",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-016.padd_rgb_2x_005",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     49.0,
+     153.5
+    ],
+    [
+     95.0,
+     153.5
+    ],
+    [
+     95.0,
+     170.0
+    ],
+    [
+     49.0,
+     170.0
+    ]
+   ],
+   "bbox": [
+    49.0,
+    153.5,
+    95.0,
+    170.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "제26회",
+   "text_key": "제26회",
+   "ocr_text": "제26회",
+   "confidence": 0.9981375336647034,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제26회 산청한방약초축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_2x_007",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     31.0,
+     172.5
+    ],
+    [
+     409.5,
+     170.0
+    ],
+    [
+     410.0,
+     225.0
+    ],
+    [
+     31.5,
+     227.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    170.0,
+    410.0,
+    227.0
+   ],
+   "height": 54.75,
+   "small_text": false,
+   "text": "산청한방약초축제",
+   "text_key": "산청한방약초축제",
+   "ocr_text": "산청한방약초축제",
+   "confidence": 0.990420937538147,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "산청한방약초축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_2x_008",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     133.0,
+     241.5
+    ],
+    [
+     322.0,
+     241.5
+    ],
+    [
+     322.0,
+     265.5
+    ],
+    [
+     133.0,
+     265.5
+    ]
+   ],
+   "bbox": [
+    133.0,
+    241.5,
+    322.0,
+    265.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10.02.(금) ~ 10.11.(일)",
+   "text_key": "1002금1011일",
+   "ocr_text": "10.02.()~10.11.()",
+   "confidence": 0.9084059596061707,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "10.02.(금) ~ 10.11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-016.padd_rgb_2x_009",
+   "case_id": "r2-016",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     139.5,
+     270.5
+    ],
+    [
+     308.0,
+     270.5
+    ],
+    [
+     308.0,
+     292.5
+    ],
+    [
+     139.5,
+     292.5
+    ]
+   ],
+   "bbox": [
+    139.5,
+    270.5,
+    308.0,
+    292.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "산청군 동의보감촌 일원",
+   "text_key": "산청군동의보감촌일원",
+   "ocr_text": "산청군동의보감촌 일원",
+   "confidence": 0.9818260073661804,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "산청군 동의보감촌 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

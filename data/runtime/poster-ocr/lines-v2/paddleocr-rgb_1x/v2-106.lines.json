@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-106",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-106.padd_rgb_1x_001",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     114.0,
+     16.0
+    ],
+    [
+     179.0,
+     16.0
+    ],
+    [
+     179.0,
+     29.0
+    ],
+    [
+     114.0,
+     29.0
+    ]
+   ],
+   "bbox": [
+    114.0,
+    16.0,
+    179.0,
+    29.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "해뜨는 서산",
+   "text_key": "해뜨는서산",
+   "ocr_text": "s행뜨는서산",
+   "confidence": 0.7387558817863464,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "해뜨는 서산",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.padd_rgb_1x_002",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     72.0,
+     73.0
+    ],
+    [
+     147.0,
+     73.0
+    ],
+    [
+     147.0,
+     111.0
+    ],
+    [
+     72.0,
+     111.0
+    ]
+   ],
+   "bbox": [
+    72.0,
+    73.0,
+    147.0,
+    111.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "서산",
+   "text_key": "서산",
+   "ocr_text": "서산",
+   "confidence": 0.999651312828064,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서산 해미읍성축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.padd_rgb_1x_003",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     23.0,
+     86.0
+    ],
+    [
+     69.0,
+     86.0
+    ],
+    [
+     69.0,
+     104.0
+    ],
+    [
+     23.0,
+     104.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    86.0,
+    69.0,
+    104.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "제23회",
+   "text_key": "제23회",
+   "ocr_text": "제23회",
+   "confidence": 0.9996424913406372,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제23회 서산 해미읍성축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.padd_rgb_1x_004",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     23.0,
+     112.0
+    ],
+    [
+     388.0,
+     112.0
+    ],
+    [
+     388.0,
+     172.0
+    ],
+    [
+     23.0,
+     172.0
+    ]
+   ],
+   "bbox": [
+    23.0,
+    112.0,
+    388.0,
+    172.0
+   ],
+   "height": 60.0,
+   "small_text": false,
+   "text": "해미읍성축제",
+   "text_key": "해미읍성축제",
+   "ocr_text": "해미읍성축제",
+   "confidence": 0.9993543028831482,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서산 해미읍성축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.padd_rgb_1x_005",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     21.0,
+     177.0
+    ],
+    [
+     227.0,
+     179.0
+    ],
+    [
+     226.0,
+     210.0
+    ],
+    [
+     21.0,
+     208.0
+    ]
+   ],
+   "bbox": [
+    21.0,
+    177.0,
+    227.0,
+    210.0
+   ],
+   "height": 31.01,
+   "small_text": false,
+   "text": "2026. 10. 9. (금) ~ 11. (일)",
+   "text_key": "2026109금11일",
+   "ocr_text": "2026.10. 9. (금) ~11.(일)",
+   "confidence": 0.9191449880599976,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 9. (금) ~ 11. (일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.padd_rgb_1x_006",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     25.0,
+     211.0
+    ],
+    [
+     149.0,
+     211.0
+    ],
+    [
+     149.0,
+     231.0
+    ],
+    [
+     25.0,
+     231.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    211.0,
+    149.0,
+    231.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "서산해미읍성일원",
+   "text_key": "서산해미읍성일원",
+   "ocr_text": "서산해미읍성일원",
+   "confidence": 0.9972256422042847,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서산해미읍성일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.padd_rgb_1x_008",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     11.0,
+     609.0
+    ],
+    [
+     224.0,
+     609.0
+    ],
+    [
+     224.0,
+     619.0
+    ],
+    [
+     11.0,
+     619.0
+    ]
+   ],
+   "bbox": [
+    11.0,
+    609.0,
+    224.0,
+    619.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "문화체육관광부",
+   "text_key": "문화체육관광부",
+   "ocr_text": "추원| 문화채육관광부, +한국관광공사,의중청남도,후중남도이회",
+   "confidence": 0.7915402054786682,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "문화체육관광부",
+   "extra_chars": 19,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-106.padd_rgb_1x_009",
+   "case_id": "v2-106",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     230.0,
+     607.0
+    ],
+    [
+     428.0,
+     608.0
+    ],
+    [
+     428.0,
+     619.0
+    ],
+    [
+     230.0,
+     618.0
+    ]
+   ],
+   "bbox": [
+    230.0,
+    607.0,
+    428.0,
+    619.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "서산시의회",
+   "text_key": "서산시의회",
+   "ocr_text": "세산시의회, ②서산정출사 서산소방서, 경교제전투비험단",
+   "confidence": 0.6867738962173462,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "서산시의회",
+   "extra_chars": 19,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,449 @@
+{
+ "case_id": "v2-020",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 24,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-020.easy_rgb_2x_000",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     315.5,
+     96.5
+    ],
+    [
+     333.5,
+     96.5
+    ],
+    [
+     333.5,
+     114.5
+    ],
+    [
+     315.5,
+     114.5
+    ]
+   ],
+   "bbox": [
+    315.5,
+    96.5,
+    333.5,
+    114.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "K-",
+   "text_key": "k",
+   "ocr_text": "K",
+   "confidence": 0.36681994600166945,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "K-TASTE",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_006",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     123.0,
+     391.5
+    ],
+    [
+     214.5,
+     391.5
+    ],
+    [
+     214.5,
+     411.5
+    ],
+    [
+     123.0,
+     411.5
+    ]
+   ],
+   "bbox": [
+    123.0,
+    391.5,
+    214.5,
+    411.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "09.05. SAT",
+   "text_key": "0905sat",
+   "ocr_text": "09.05.SAT",
+   "confidence": 0.8999597128369116,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "09.05. SAT & 09.06. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_007",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     227.0,
+     391.5
+    ],
+    [
+     320.5,
+     391.5
+    ],
+    [
+     320.5,
+     411.5
+    ],
+    [
+     227.0,
+     411.5
+    ]
+   ],
+   "bbox": [
+    227.0,
+    391.5,
+    320.5,
+    411.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "09.06. SUN",
+   "text_key": "0906sun",
+   "ocr_text": "09.06.SUN",
+   "confidence": 0.9961465803413411,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "09.05. SAT & 09.06. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_009",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     136.0,
+     410.0
+    ],
+    [
+     200.0,
+     410.0
+    ],
+    [
+     200.0,
+     423.0
+    ],
+    [
+     136.0,
+     423.0
+    ]
+   ],
+   "bbox": [
+    136.0,
+    410.0,
+    200.0,
+    423.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "19:00-24:00",
+   "text_key": "19002400",
+   "ocr_text": "19.00-24.00",
+   "confidence": 0.5848663760157585,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "19:00-24:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_010",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     242.0,
+     410.0
+    ],
+    [
+     306.0,
+     410.0
+    ],
+    [
+     306.0,
+     423.0
+    ],
+    [
+     242.0,
+     423.0
+    ]
+   ],
+   "bbox": [
+    242.0,
+    410.0,
+    306.0,
+    423.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "08:00-21:00",
+   "text_key": "08002100",
+   "ocr_text": "08.00-21.00",
+   "confidence": 0.6604333775855522,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "08:00-21:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_018",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     242.0,
+     601.0
+    ],
+    [
+     265.0,
+     601.0
+    ],
+    [
+     265.0,
+     613.0
+    ],
+    [
+     242.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    242.0,
+    601.0,
+    265.0,
+    613.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "서초",
+   "text_key": "서초",
+   "ocr_text": "서초",
+   "confidence": 0.4435924759020049,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서초",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_020",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     67.02,
+     111.53
+    ],
+    [
+     227.31,
+     43.75
+    ],
+    [
+     236.98,
+     78.47
+    ],
+    [
+     76.69,
+     146.25
+    ]
+   ],
+   "bbox": [
+    67.02,
+    43.75,
+    236.98,
+    146.25
+   ],
+   "height": 36.04,
+   "small_text": false,
+   "text": "SHOWKASE",
+   "text_key": "showkase",
+   "ocr_text": "SHOWKASE",
+   "confidence": 0.6161428891581758,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "SHOWKASE",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_021",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     336.21,
+     99.52
+    ],
+    [
+     385.49,
+     120.35
+    ],
+    [
+     377.79,
+     137.48
+    ],
+    [
+     328.01,
+     116.65
+    ]
+   ],
+   "bbox": [
+    328.01,
+    99.52,
+    385.49,
+    137.48
+   ],
+   "height": 18.89,
+   "small_text": false,
+   "text": "TASTE",
+   "text_key": "taste",
+   "ocr_text": "TASIE",
+   "confidence": 0.5322715046808406,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "K-TASTE",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

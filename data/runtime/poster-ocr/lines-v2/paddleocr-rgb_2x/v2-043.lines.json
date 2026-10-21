@@ -1,0 +1,505 @@
+{
+ "case_id": "v2-043",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-043.padd_rgb_2x_004",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     19.5,
+     172.0
+    ],
+    [
+     146.0,
+     172.0
+    ],
+    [
+     146.0,
+     214.5
+    ],
+    [
+     19.5,
+     214.5
+    ]
+   ],
+   "bbox": [
+    19.5,
+    172.0,
+    146.0,
+    214.5
+   ],
+   "height": 42.5,
+   "small_text": false,
+   "text": "홍삼의 매력에",
+   "text_key": "홍삼의매력에",
+   "ocr_text": "홍삼의 매력에",
+   "confidence": 0.9718502759933472,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "홍삼의 매력에 삼며들다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_005",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     22.0,
+     209.0
+    ],
+    [
+     116.5,
+     205.5
+    ],
+    [
+     117.5,
+     238.0
+    ],
+    [
+     23.0,
+     241.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    205.5,
+    117.5,
+    241.0
+   ],
+   "height": 32.27,
+   "small_text": false,
+   "text": "삼며들다!",
+   "text_key": "삼며들다",
+   "ocr_text": "삼며들다!",
+   "confidence": 0.9805644750595093,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "홍삼의 매력에 삼며들다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_006",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     388.5,
+     205.0
+    ],
+    [
+     424.0,
+     205.0
+    ],
+    [
+     424.0,
+     224.0
+    ],
+    [
+     388.5,
+     224.0
+    ]
+   ],
+   "bbox": [
+    388.5,
+    205.0,
+    424.0,
+    224.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9967650175094604,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.18.금 ~ 20.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_007",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     317.0,
+     222.5
+    ],
+    [
+     431.0,
+     223.5
+    ],
+    [
+     431.0,
+     261.5
+    ],
+    [
+     316.5,
+     260.0
+    ]
+   ],
+   "bbox": [
+    316.5,
+    222.5,
+    431.0,
+    261.5
+   ],
+   "height": 37.75,
+   "small_text": false,
+   "text": "9.18.금 ~ 20.",
+   "text_key": "918금20",
+   "ocr_text": "9.18.~20.",
+   "confidence": 0.9421104788780212,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.18.금 ~ 20.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_009",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     182.5,
+     428.0
+    ],
+    [
+     270.5,
+     428.0
+    ],
+    [
+     270.5,
+     479.0
+    ],
+    [
+     182.5,
+     479.0
+    ]
+   ],
+   "bbox": [
+    182.5,
+    428.0,
+    270.5,
+    479.0
+   ],
+   "height": 51.0,
+   "small_text": false,
+   "text": "마이산",
+   "text_key": "마이산",
+   "ocr_text": "마이산",
+   "confidence": 0.9945998191833496,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "마이산 북부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_011",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     201.5,
+     477.0
+    ],
+    [
+     250.5,
+     477.0
+    ],
+    [
+     250.5,
+     514.5
+    ],
+    [
+     201.5,
+     514.5
+    ]
+   ],
+   "bbox": [
+    201.5,
+    477.0,
+    250.5,
+    514.5
+   ],
+   "height": 37.5,
+   "small_text": false,
+   "text": "북부",
+   "text_key": "북부",
+   "ocr_text": "북부",
+   "confidence": 0.9933900833129883,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "마이산 북부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_012",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     15.5,
+     598.0
+    ],
+    [
+     53.0,
+     598.0
+    ],
+    [
+     53.0,
+     609.0
+    ],
+    [
+     15.5,
+     609.0
+    ]
+   ],
+   "bbox": [
+    15.5,
+    598.0,
+    53.0,
+    609.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "진안고원",
+   "text_key": "진안고원",
+   "ocr_text": "진안고원",
+   "confidence": 0.9747509956359863,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "진안고원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_015",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     182.0,
+     602.5
+    ],
+    [
+     260.0,
+     602.5
+    ],
+    [
+     260.0,
+     613.0
+    ],
+    [
+     182.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    182.0,
+    602.5,
+    260.0,
+    613.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "진안홍삼축제추진위원회",
+   "text_key": "진안홍삼축제추진위원회",
+   "ocr_text": "진안홍삼축재주진위원회",
+   "confidence": 0.8170933127403259,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1818,
+   "gold_value": "진안홍삼축제추진위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-043.padd_rgb_2x_017",
+   "case_id": "v2-043",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     297.0,
+     603.5
+    ],
+    [
+     356.5,
+     603.5
+    ],
+    [
+     356.5,
+     612.0
+    ],
+    [
+     297.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    297.0,
+    603.5,
+    356.5,
+    612.0
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "063)430-2391~3",
+   "text_key": "06343023913",
+   "ocr_text": "063)430-2391~3",
+   "confidence": 0.9789708256721497,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "063)430-2391~3",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

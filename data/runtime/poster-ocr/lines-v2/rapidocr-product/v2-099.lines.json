@@ -1,0 +1,71 @@
+{
+ "case_id": "v2-099",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 434,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-099.rapi_product_008",
+   "case_id": "v2-099",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     13.0,
+     593.0
+    ],
+    [
+     255.0,
+     591.0
+    ],
+    [
+     255.0,
+     616.0
+    ],
+    [
+     13.0,
+     618.0
+    ]
+   ],
+   "bbox": [
+    13.0,
+    591.0,
+    255.0,
+    618.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "2026.10.7.(수)-10.11.(일)",
+   "text_key": "2026107수1011일",
+   "ocr_text": "2026.10.7.(수)–10.11.(일)",
+   "confidence": 0.98537,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.7.(수)-10.11.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

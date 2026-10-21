@@ -1,0 +1,559 @@
+{
+ "case_id": "v2-108",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 24,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-108.padd_rgb_2x_000",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     348.5,
+     18.5
+    ],
+    [
+     395.0,
+     20.5
+    ],
+    [
+     394.0,
+     45.0
+    ],
+    [
+     347.5,
+     43.0
+    ]
+   ],
+   "bbox": [
+    347.5,
+    18.5,
+    395.0,
+    45.0
+   ],
+   "height": 24.52,
+   "small_text": false,
+   "text": "10th",
+   "text_key": "10th",
+   "ocr_text": "10th",
+   "confidence": 0.9729810357093811,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "10th ANNIVERSARY",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_001",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     350.0,
+     43.5
+    ],
+    [
+     392.5,
+     43.5
+    ],
+    [
+     392.5,
+     50.5
+    ],
+    [
+     350.0,
+     50.5
+    ]
+   ],
+   "bbox": [
+    350.0,
+    43.5,
+    392.5,
+    50.5
+   ],
+   "height": 7.0,
+   "small_text": true,
+   "text": "ANNIVERSARY",
+   "text_key": "anniversary",
+   "ocr_text": "ANNVERSAIRY",
+   "confidence": 0.8160579800605774,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1333,
+   "gold_value": "10th ANNIVERSARY",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_002",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     196.5,
+     75.5
+    ],
+    [
+     247.5,
+     75.5
+    ],
+    [
+     247.5,
+     90.0
+    ],
+    [
+     196.5,
+     90.0
+    ]
+   ],
+   "bbox": [
+    196.5,
+    75.5,
+    247.5,
+    90.0
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9984049201011658,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026 대전 서구 아트페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_003",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     125.0,
+     95.0
+    ],
+    [
+     307.5,
+     90.0
+    ],
+    [
+     309.0,
+     147.5
+    ],
+    [
+     126.5,
+     152.0
+    ]
+   ],
+   "bbox": [
+    125.0,
+    90.0,
+    309.0,
+    152.0
+   ],
+   "height": 57.27,
+   "small_text": false,
+   "text": "대전 서구",
+   "text_key": "대전서구",
+   "ocr_text": "대전서구",
+   "confidence": 0.9910181164741516,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "대전 서구 아트페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_004",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     92.5,
+     152.5
+    ],
+    [
+     345.0,
+     152.5
+    ],
+    [
+     345.0,
+     207.0
+    ],
+    [
+     92.5,
+     207.0
+    ]
+   ],
+   "bbox": [
+    92.5,
+    152.5,
+    345.0,
+    207.0
+   ],
+   "height": 54.5,
+   "small_text": false,
+   "text": "아트페스티",
+   "text_key": "아트페스티",
+   "ocr_text": "아트페스티벨",
+   "confidence": 0.9776749014854431,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "대전 서구 아트페스티벌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_009",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     146.5,
+     275.0
+    ],
+    [
+     281.5,
+     275.0
+    ],
+    [
+     281.5,
+     293.5
+    ],
+    [
+     146.5,
+     293.5
+    ]
+   ],
+   "bbox": [
+    146.5,
+    275.0,
+    281.5,
+    293.5
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "10.9. FRI — 10.11.",
+   "text_key": "109fri1011",
+   "ocr_text": "10.9.5R1 — 10.11.",
+   "confidence": 0.8506833910942078,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "10.9. FRI — 10.11. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_011",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     276.0,
+     278.5
+    ],
+    [
+     296.0,
+     278.5
+    ],
+    [
+     296.0,
+     289.5
+    ],
+    [
+     276.0,
+     289.5
+    ]
+   ],
+   "bbox": [
+    276.0,
+    278.5,
+    296.0,
+    289.5
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "SUN",
+   "text_key": "sun",
+   "ocr_text": "SUN",
+   "confidence": 0.9823086857795715,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "10.9. FRI — 10.11. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_013",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     67.5,
+     539.0
+    ],
+    [
+     101.0,
+     539.0
+    ],
+    [
+     101.0,
+     550.0
+    ],
+    [
+     67.5,
+     550.0
+    ]
+   ],
+   "bbox": [
+    67.5,
+    539.0,
+    101.0,
+    550.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "10월 9일",
+   "text_key": "10월9일",
+   "ocr_text": "10월9일",
+   "confidence": 0.9794526100158691,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10월 9일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_014",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     203.0,
+     539.5
+    ],
+    [
+     240.5,
+     538.5
+    ],
+    [
+     241.0,
+     549.5
+    ],
+    [
+     203.5,
+     550.5
+    ]
+   ],
+   "bbox": [
+    203.0,
+    538.5,
+    241.0,
+    550.5
+   ],
+   "height": 11.01,
+   "small_text": false,
+   "text": "10월 10일",
+   "text_key": "10월10일",
+   "ocr_text": "10월10일",
+   "confidence": 0.9148820042610168,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10월 10일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-108.padd_rgb_2x_015",
+   "case_id": "v2-108",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     343.5,
+     540.0
+    ],
+    [
+     379.5,
+     540.0
+    ],
+    [
+     379.5,
+     549.0
+    ],
+    [
+     343.5,
+     549.0
+    ]
+   ],
+   "bbox": [
+    343.5,
+    540.0,
+    379.5,
+    549.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "10월 11일",
+   "text_key": "10월11일",
+   "ocr_text": "10월11일",
+   "confidence": 0.9934065937995911,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10월 11일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

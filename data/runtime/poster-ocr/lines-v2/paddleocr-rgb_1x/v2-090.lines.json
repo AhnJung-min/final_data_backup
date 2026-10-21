@@ -1,0 +1,1207 @@
+{
+ "case_id": "v2-090",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 29,
+ "lines_matched": 22,
+ "records": [
+  {
+   "id": "v2-090.padd_rgb_1x_001",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     364.0,
+     44.0
+    ],
+    [
+     405.0,
+     44.0
+    ],
+    [
+     405.0,
+     55.0
+    ],
+    [
+     364.0,
+     55.0
+    ]
+   ],
+   "bbox": [
+    364.0,
+    44.0,
+    405.0,
+    55.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "용인 르네상스 2.0",
+   "text_key": "용인르네상스20",
+   "ocr_text": "르네상스20",
+   "confidence": 0.9191285967826843,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "용인 르네상스 2.0",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_002",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     44.0,
+     67.0
+    ],
+    [
+     175.0,
+     67.0
+    ],
+    [
+     175.0,
+     83.0
+    ],
+    [
+     44.0,
+     83.0
+    ]
+   ],
+   "bbox": [
+    44.0,
+    67.0,
+    175.0,
+    83.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "제 6회 용인 청년 페스티벌",
+   "text_key": "제6회용인청년페스티벌",
+   "ocr_text": "제6회용인 청년페스티벌",
+   "confidence": 0.9559513926506042,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제 6회 용인 청년 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_003",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     38.0,
+     85.0
+    ],
+    [
+     338.0,
+     90.0
+    ],
+    [
+     337.0,
+     141.0
+    ],
+    [
+     37.0,
+     136.0
+    ]
+   ],
+   "bbox": [
+    37.0,
+    85.0,
+    338.0,
+    141.0
+   ],
+   "height": 51.01,
+   "small_text": false,
+   "text": "청년? 너도용?",
+   "text_key": "청년너도용",
+   "ocr_text": "첨년?너도용?",
+   "confidence": 0.9769339561462402,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "청년? 너도용? 나도용!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_004",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     240.0,
+     139.0
+    ],
+    [
+     413.0,
+     142.0
+    ],
+    [
+     412.0,
+     199.0
+    ],
+    [
+     239.0,
+     196.0
+    ]
+   ],
+   "bbox": [
+    239.0,
+    139.0,
+    413.0,
+    199.0
+   ],
+   "height": 57.01,
+   "small_text": false,
+   "text": "나도용!",
+   "text_key": "나도용",
+   "ocr_text": "나도용!",
+   "confidence": 0.9836151003837585,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "청년? 너도용? 나도용!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_005",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     237.0,
+     381.0
+    ],
+    [
+     393.0,
+     381.0
+    ],
+    [
+     393.0,
+     402.0
+    ],
+    [
+     237.0,
+     402.0
+    ]
+   ],
+   "bbox": [
+    237.0,
+    381.0,
+    393.0,
+    402.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "용인미르스타디움",
+   "text_key": "용인미르스타디움",
+   "ocr_text": "용인피르스타디움",
+   "confidence": 0.8840481042861938,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "용인미르스타디움",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_010",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     193.0,
+     443.0
+    ],
+    [
+     288.0,
+     443.0
+    ],
+    [
+     288.0,
+     456.0
+    ],
+    [
+     193.0,
+     456.0
+    ]
+   ],
+   "bbox": [
+    193.0,
+    443.0,
+    288.0,
+    456.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "와리가리 스피드 OX 퀴즈",
+   "text_key": "와리가리스피드ox퀴즈",
+   "ocr_text": "·와리가리스피드이X퀴즈",
+   "confidence": 0.8764577507972717,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "와리가리 스피드 OX 퀴즈",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_011",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     301.0,
+     445.0
+    ],
+    [
+     387.0,
+     445.0
+    ],
+    [
+     387.0,
+     455.0
+    ],
+    [
+     301.0,
+     455.0
+    ]
+   ],
+   "bbox": [
+    301.0,
+    445.0,
+    387.0,
+    455.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "이달의 청년강사 클래스",
+   "text_key": "이달의청년강사클래스",
+   "ocr_text": "·이달의 청낸강사 클래스",
+   "confidence": 0.8985729813575745,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "이달의 청년강사 클래스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_013",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     193.0,
+     463.0
+    ],
+    [
+     268.0,
+     463.0
+    ],
+    [
+     268.0,
+     474.0
+    ],
+    [
+     193.0,
+     474.0
+    ]
+   ],
+   "bbox": [
+    193.0,
+    463.0,
+    268.0,
+    474.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "청년 LAB 프로그램",
+   "text_key": "청년lab프로그램",
+   "ocr_text": "·청년 LAB 프로그램",
+   "confidence": 0.9318356513977051,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "청년 LAB 프로그램",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_014",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     313.0,
+     459.0
+    ],
+    [
+     374.0,
+     459.0
+    ],
+    [
+     374.0,
+     470.0
+    ],
+    [
+     313.0,
+     470.0
+    ]
+   ],
+   "bbox": [
+    313.0,
+    459.0,
+    374.0,
+    470.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "샴푸바 만들기",
+   "text_key": "샴푸바만들기",
+   "ocr_text": "(토)삼푸바만들기",
+   "confidence": 0.9536763429641724,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "샴푸바 만들기",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_015",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     71.0,
+     479.0
+    ],
+    [
+     131.0,
+     479.0
+    ],
+    [
+     131.0,
+     490.0
+    ],
+    [
+     71.0,
+     490.0
+    ]
+   ],
+   "bbox": [
+    71.0,
+    479.0,
+    131.0,
+    490.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "우당탕탕 가짜찾기",
+   "text_key": "우당탕탕가짜찾기",
+   "ocr_text": "우당탐향 가짜찾기",
+   "confidence": 0.8501386046409607,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "우당탕탕 가짜찾기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_016",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     205.0,
+     478.0
+    ],
+    [
+     274.0,
+     478.0
+    ],
+    [
+     274.0,
+     489.0
+    ],
+    [
+     205.0,
+     489.0
+    ]
+   ],
+   "bbox": [
+    205.0,
+    478.0,
+    274.0,
+    489.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "플라워벌룬 DIY",
+   "text_key": "플라워벌룬diy",
+   "ocr_text": "(토)플라워벌분 DIY",
+   "confidence": 0.9578660130500793,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "플라워벌룬 DIY",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_017",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     328.0,
+     471.0
+    ],
+    [
+     375.0,
+     471.0
+    ],
+    [
+     375.0,
+     482.0
+    ],
+    [
+     328.0,
+     482.0
+    ]
+   ],
+   "bbox": [
+    328.0,
+    471.0,
+    375.0,
+    482.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "펫푸드 만들기",
+   "text_key": "펫푸드만들기",
+   "ocr_text": "덧푸드 만들기",
+   "confidence": 0.9350963234901428,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "펫푸드 만들기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_018",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_018"
+   },
+   "polygon": [
+    [
+     58.0,
+     492.0
+    ],
+    [
+     143.0,
+     492.0
+    ],
+    [
+     143.0,
+     505.0
+    ],
+    [
+     58.0,
+     505.0
+    ]
+   ],
+   "bbox": [
+    58.0,
+    492.0,
+    143.0,
+    505.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "요리조리 축제탐방 챌린지",
+   "text_key": "요리조리축제탐방챌린지",
+   "ocr_text": "요리조리 축제탐방챔린지",
+   "confidence": 0.8650280833244324,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "요리조리 축제탐방 챌린지",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_019",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     204.0,
+     494.0
+    ],
+    [
+     275.0,
+     494.0
+    ],
+    [
+     275.0,
+     504.0
+    ],
+    [
+     204.0,
+     504.0
+    ]
+   ],
+   "bbox": [
+    204.0,
+    494.0,
+    275.0,
+    504.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "도토리 캐리커쳐",
+   "text_key": "도토리캐리커쳐",
+   "ocr_text": "(일) 도토리 캐리커져",
+   "confidence": 0.8904388546943665,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "도토리 캐리커쳐",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_020",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     312.0,
+     485.0
+    ],
+    [
+     392.0,
+     485.0
+    ],
+    [
+     392.0,
+     498.0
+    ],
+    [
+     312.0,
+     498.0
+    ]
+   ],
+   "bbox": [
+    312.0,
+    485.0,
+    392.0,
+    498.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "비즈 스트랩 만들기",
+   "text_key": "비즈스트랩만들기",
+   "ocr_text": "(일) 비즈 스트럽 만들기",
+   "confidence": 0.8423228859901428,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "비즈 스트랩 만들기",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_021",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_021"
+   },
+   "polygon": [
+    [
+     72.0,
+     506.0
+    ],
+    [
+     129.0,
+     506.0
+    ],
+    [
+     129.0,
+     516.0
+    ],
+    [
+     72.0,
+     516.0
+    ]
+   ],
+   "bbox": [
+    72.0,
+    506.0,
+    129.0,
+    516.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "SNS 구독 이벤트",
+   "text_key": "sns구독이벤트",
+   "ocr_text": "SNS 구독 이벤트",
+   "confidence": 0.9060463905334473,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "SNS 구독 이벤트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_022",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_022"
+   },
+   "polygon": [
+    [
+     328.0,
+     498.0
+    ],
+    [
+     374.0,
+     498.0
+    ],
+    [
+     374.0,
+     508.0
+    ],
+    [
+     328.0,
+     508.0
+    ]
+   ],
+   "bbox": [
+    328.0,
+    498.0,
+    374.0,
+    508.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "분갈이의 정석",
+   "text_key": "분갈이의정석",
+   "ocr_text": "분감이의 정석",
+   "confidence": 0.9400186538696289,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "분갈이의 정석",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_023",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_023"
+   },
+   "polygon": [
+    [
+     77.0,
+     518.0
+    ],
+    [
+     125.0,
+     518.0
+    ],
+    [
+     125.0,
+     529.0
+    ],
+    [
+     77.0,
+     529.0
+    ]
+   ],
+   "bbox": [
+    77.0,
+    518.0,
+    125.0,
+    529.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "360도 포토존",
+   "text_key": "360도포토존",
+   "ocr_text": "360도 포토존",
+   "confidence": 0.9299553632736206,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "360도 포토존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_024",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_024"
+   },
+   "polygon": [
+    [
+     42.0,
+     560.0
+    ],
+    [
+     159.0,
+     560.0
+    ],
+    [
+     159.0,
+     573.0
+    ],
+    [
+     42.0,
+     573.0
+    ]
+   ],
+   "bbox": [
+    42.0,
+    560.0,
+    159.0,
+    573.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "10. 3.(토) ~ 10. 4.(일)",
+   "text_key": "103토104일",
+   "ocr_text": "행사일자10.3.(토)~10,4.(일)",
+   "confidence": 0.9157856702804565,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10. 3.(토) ~ 10. 4.(일)",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_025",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_025"
+   },
+   "polygon": [
+    [
+     185.0,
+     561.0
+    ],
+    [
+     279.0,
+     561.0
+    ],
+    [
+     279.0,
+     574.0
+    ],
+    [
+     185.0,
+     574.0
+    ]
+   ],
+   "bbox": [
+    185.0,
+    561.0,
+    279.0,
+    574.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "10:00 ~17:00",
+   "text_key": "10001700",
+   "ocr_text": "운영시간10:00~17:00",
+   "confidence": 0.9543384909629822,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10:00 ~17:00",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_027",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_027"
+   },
+   "polygon": [
+    [
+     44.0,
+     587.0
+    ],
+    [
+     126.0,
+     587.0
+    ],
+    [
+     126.0,
+     597.0
+    ],
+    [
+     44.0,
+     597.0
+    ]
+   ],
+   "bbox": [
+    44.0,
+    587.0,
+    126.0,
+    597.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "용인특례시",
+   "text_key": "용인특례시",
+   "ocr_text": "주최·주관| 용인특레시",
+   "confidence": 0.8064947724342346,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "용인특례시",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.padd_rgb_1x_028",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_028"
+   },
+   "polygon": [
+    [
+     249.0,
+     586.0
+    ],
+    [
+     400.0,
+     586.0
+    ],
+    [
+     400.0,
+     596.0
+    ],
+    [
+     249.0,
+     596.0
+    ]
+   ],
+   "bbox": [
+    249.0,
+    586.0,
+    400.0,
+    596.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "용인시청년정책네트워크 축제기획TF단",
+   "text_key": "용인시청년정책네트워크축제기획tf단",
+   "ocr_text": "기획용인시청년점책네트위크 축제기획TF던",
+   "confidence": 0.9119399189949036,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "용인시청년정책네트워크 축제기획TF단",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

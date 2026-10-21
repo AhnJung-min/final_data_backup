@@ -1,0 +1,342 @@
+{
+ "case_id": "v2-009",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-009.padd_rgb_1x_002",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     143.0,
+     83.0
+    ],
+    [
+     297.0,
+     83.0
+    ],
+    [
+     297.0,
+     103.0
+    ],
+    [
+     143.0,
+     103.0
+    ]
+   ],
+   "bbox": [
+    143.0,
+    83.0,
+    297.0,
+    103.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026 남구청년예술제",
+   "text_key": "2026남구청년예술제",
+   "ocr_text": "2026 남구청년예술제",
+   "confidence": 0.9837841987609863,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 남구청년예술제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_1x_006",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     79.0,
+     408.0
+    ],
+    [
+     353.0,
+     408.0
+    ],
+    [
+     353.0,
+     434.0
+    ],
+    [
+     79.0,
+     434.0
+    ]
+   ],
+   "bbox": [
+    79.0,
+    408.0,
+    353.0,
+    434.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "8. 18.(Tue) - 9. 18.(Fri)",
+   "text_key": "818tue918fri",
+   "ocr_text": "8.18.(rue) –9.18.(ri)",
+   "confidence": 0.9459916353225708,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "8. 18.(Tue) - 9. 18.(Fri)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_1x_008",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     134.0,
+     480.0
+    ],
+    [
+     310.0,
+     480.0
+    ],
+    [
+     310.0,
+     497.0
+    ],
+    [
+     134.0,
+     497.0
+    ]
+   ],
+   "bbox": [
+    134.0,
+    480.0,
+    310.0,
+    497.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "대덕문화전당 제1~3전시실",
+   "text_key": "대덕문화전당제13전시실",
+   "ocr_text": "대덕문화전당 제1~3전시실",
+   "confidence": 0.9743359684944153,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대덕문화전당 제1~3전시실",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_1x_009",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     90.0,
+     506.0
+    ],
+    [
+     352.0,
+     506.0
+    ],
+    [
+     352.0,
+     519.0
+    ],
+    [
+     90.0,
+     519.0
+    ]
+   ],
+   "bbox": [
+    90.0,
+    506.0,
+    352.0,
+    519.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "부산대학교 미술학과",
+   "text_key": "부산대학교미술학과",
+   "ocr_text": "면대학교미승대학통대학교미부산대학교 미학과",
+   "confidence": 0.5759285688400269,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "부산대학교 미술학과",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_1x_010",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     87.0,
+     566.0
+    ],
+    [
+     246.0,
+     566.0
+    ],
+    [
+     246.0,
+     579.0
+    ],
+    [
+     87.0,
+     579.0
+    ]
+   ],
+   "bbox": [
+    87.0,
+    566.0,
+    246.0,
+    579.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "대구 남구 대덕문화전당",
+   "text_key": "대구남구대덕문화전당",
+   "ocr_text": "주화주관 6 대구남구대덕문회전당",
+   "confidence": 0.8475056290626526,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "대구 남구 대덕문화전당",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.padd_rgb_1x_011",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     256.0,
+     567.0
+    ],
+    [
+     353.0,
+     567.0
+    ],
+    [
+     353.0,
+     580.0
+    ],
+    [
+     256.0,
+     580.0
+    ]
+   ],
+   "bbox": [
+    256.0,
+    567.0,
+    353.0,
+    580.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "053-664-3118",
+   "text_key": "0536643118",
+   "ocr_text": "문의053-684-3118",
+   "confidence": 0.9571614265441895,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "053-664-3118",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

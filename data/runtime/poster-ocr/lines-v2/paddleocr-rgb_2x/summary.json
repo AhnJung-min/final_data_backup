@@ -1,0 +1,1556 @@
+{
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "built_at": "2026-10-21T16:20:01+09:00",
+ "fingerprint": "60dd503caee3c0a9",
+ "posters": 252,
+ "missing": [],
+ "thresholds": {
+  "accept_cer": 0.3,
+  "piece_max": 0.34,
+  "min_gold": 2,
+  "min_piece": 2,
+  "lenient_edge": 0,
+  "one_char_pieces": true,
+  "small_text_px": 10
+ },
+ "rules": {
+  "tier": {
+   "A_clean": "줄 글자 전체가 정답 일부와 정렬되고 가장자리 누락 없음(줄 전사 정답 후보)",
+   "B_edge_missing": "정답 가장자리 글자가 줄에 없거나 다중 조각 사이에 틈·겹침이 있음(잘린 글자일 수 있어 확인 필요)",
+   "C_partial": "줄에 정답과 무관한 글자가 섞임(text는 줄의 일부만 덮음, 줄 전사 정답으로 쓰지 않음)"
+  },
+  "human_checked": "사람 검토 8칸에서 온 값만 참: title.official·venue.raw·venue.items는 항상, edition.raw는 회차 칸을, schedule.raw는 연도·시작/종료일·요일 칸을 사람이 고치지 않았을 때만(원문은 AI 전사라 고친 경우 낡았을 수 있음). 나머지는 AI 보조 판독값.",
+  "text": "정답 원문(NFC)에서 이 줄에 해당하는 부분. 단일 줄 정렬은 정답 원문 전체, 다중 줄 정렬은 조각마다 나누되 글자에 바로 붙은 가장자리 문장부호는 남기고(OCR 줄에 보이는 쪽 우선, 없으면 닫는 부호는 앞 줄·여는 부호는 뒤 줄), 공백으로 떨어진 부호는 OCR 줄에 보일 때만 붙인다. text_key는 evaluate.key(NFKC·casefold·글자/숫자만).",
+  "line_correct": "정렬용 정규화(NFC·casefold·글자/숫자만)로 OCR 줄과 정답 부분이 같은가",
+  "small_text": "상자 높이(원본 픽셀, 사각형 좌우 변 길이 평균) < 10"
+ },
+ "group_labels": {
+  "title": "축제명",
+  "edition": "회차",
+  "schedule": "일정",
+  "time": "시간",
+  "venue": "장소",
+  "address": "주소",
+  "contact": "연락처",
+  "link": "링크",
+  "budget": "예산",
+  "admission": "입장",
+  "organization": "기관",
+  "slogan": "문구",
+  "program": "프로그램",
+  "notice": "안내",
+  "badge": "배지"
+ },
+ "lines": {
+  "lines_total": 4658,
+  "lines_with_alnum": 4624,
+  "unmatched_lines_with_alnum": 2299,
+  "lines_matched": 2325,
+  "tiers": {
+   "A_clean": 1815,
+   "B_edge_missing": 132,
+   "C_partial": 378
+  },
+  "A_correct": 1505,
+  "A_incorrect": 310,
+  "B_correct": 86,
+  "human_checked": {
+   "true": {
+    "lines_matched": 948,
+    "tiers": {
+     "A_clean": 784,
+     "B_edge_missing": 63,
+     "C_partial": 101
+    },
+    "A_correct": 695,
+    "A_incorrect": 89,
+    "B_correct": 44
+   },
+   "false": {
+    "lines_matched": 1377,
+    "tiers": {
+     "A_clean": 1031,
+     "B_edge_missing": 69,
+     "C_partial": 277
+    },
+    "A_correct": 810,
+    "A_incorrect": 221,
+    "B_correct": 42
+   }
+  },
+  "small_text": 136,
+  "conf_mean_correct": 0.9642,
+  "conf_mean_incorrect": 0.8713,
+  "conf_auroc_correct_vs_incorrect": 0.8634,
+  "text_edge_punct_kept": 210,
+  "key_disagrees_line_correct": 0,
+  "posters_with_any_matched_line": 252
+ },
+ "splits": {
+  "dev": {
+   "posters": 60,
+   "lines_total": 1059,
+   "lines_matched": 499,
+   "tiers": {
+    "A_clean": 389,
+    "B_edge_missing": 21,
+    "C_partial": 89
+   },
+   "A_correct": 319,
+   "A_incorrect": 70,
+   "B_correct": 12
+  },
+  "reserve": {
+   "posters": 52,
+   "lines_total": 968,
+   "lines_matched": 521,
+   "tiers": {
+    "A_clean": 407,
+    "B_edge_missing": 32,
+    "C_partial": 82
+   },
+   "A_correct": 349,
+   "A_incorrect": 58,
+   "B_correct": 24
+  },
+  "test": {
+   "posters": 140,
+   "lines_total": 2631,
+   "lines_matched": 1305,
+   "tiers": {
+    "A_clean": 1019,
+    "B_edge_missing": 79,
+    "C_partial": 207
+   },
+   "A_correct": 837,
+   "A_incorrect": 182,
+   "B_correct": 50
+  }
+ },
+ "fields": {
+  "title.official": {
+   "field_group": "title",
+   "human_checked_values": 252,
+   "gold_present": 252,
+   "auto_matched": 184,
+   "exact": 100,
+   "exact_substring": 121,
+   "median_cer": 0.0839,
+   "multi_line": 100,
+   "by_split": {
+    "dev": {
+     "gold_present": 60,
+     "auto_matched": 43,
+     "exact": 28
+    },
+    "reserve": {
+     "gold_present": 52,
+     "auto_matched": 36,
+     "exact": 19
+    },
+    "test": {
+     "gold_present": 140,
+     "auto_matched": 105,
+     "exact": 53
+    }
+   },
+   "lines_matched": 303,
+   "tiers": {
+    "A_clean": 255,
+    "B_edge_missing": 21,
+    "C_partial": 27
+   },
+   "A_correct": 232,
+   "A_incorrect": 23,
+   "B_correct": 21
+  },
+  "title.raw": {
+   "field_group": "title",
+   "human_checked_values": 0,
+   "gold_present": 252,
+   "auto_matched": 191,
+   "exact": 115,
+   "exact_substring": 116,
+   "median_cer": 0.067,
+   "multi_line": 161,
+   "by_split": {
+    "dev": {
+     "gold_present": 60,
+     "auto_matched": 43,
+     "exact": 31
+    },
+    "reserve": {
+     "gold_present": 52,
+     "auto_matched": 38,
+     "exact": 18
+    },
+    "test": {
+     "gold_present": 140,
+     "auto_matched": 110,
+     "exact": 66
+    }
+   },
+   "lines_matched": 215,
+   "tiers": {
+    "A_clean": 184,
+    "B_edge_missing": 21,
+    "C_partial": 10
+   },
+   "A_correct": 176,
+   "A_incorrect": 8,
+   "B_correct": 17
+  },
+  "edition.raw": {
+   "field_group": "edition",
+   "human_checked_values": 102,
+   "gold_present": 102,
+   "auto_matched": 85,
+   "exact": 58,
+   "exact_substring": 78,
+   "median_cer": 0.0,
+   "multi_line": 2,
+   "by_split": {
+    "dev": {
+     "gold_present": 25,
+     "auto_matched": 19,
+     "exact": 15
+    },
+    "reserve": {
+     "gold_present": 23,
+     "auto_matched": 22,
+     "exact": 13
+    },
+    "test": {
+     "gold_present": 54,
+     "auto_matched": 44,
+     "exact": 30
+    }
+   },
+   "lines_matched": 27,
+   "tiers": {
+    "A_clean": 17,
+    "B_edge_missing": 0,
+    "C_partial": 10
+   },
+   "A_correct": 15,
+   "A_incorrect": 2,
+   "B_correct": 0
+  },
+  "schedule.raw": {
+   "field_group": "schedule",
+   "human_checked_values": 246,
+   "gold_present": 249,
+   "auto_matched": 235,
+   "exact": 135,
+   "exact_substring": 159,
+   "median_cer": 0.0,
+   "multi_line": 76,
+   "by_split": {
+    "dev": {
+     "gold_present": 58,
+     "auto_matched": 57,
+     "exact": 29
+    },
+    "reserve": {
+     "gold_present": 52,
+     "auto_matched": 50,
+     "exact": 33
+    },
+    "test": {
+     "gold_present": 139,
+     "auto_matched": 128,
+     "exact": 73
+    }
+   },
+   "lines_matched": 344,
+   "tiers": {
+    "A_clean": 260,
+    "B_edge_missing": 37,
+    "C_partial": 47
+   },
+   "A_correct": 230,
+   "A_incorrect": 30,
+   "B_correct": 20
+  },
+  "schedule.times": {
+   "field_group": "time",
+   "human_checked_values": 0,
+   "gold_present": 68,
+   "auto_matched": 66,
+   "exact": 28,
+   "exact_substring": 60,
+   "median_cer": 0.0,
+   "multi_line": 3,
+   "by_split": {
+    "dev": {
+     "gold_present": 12,
+     "auto_matched": 12,
+     "exact": 5
+    },
+    "reserve": {
+     "gold_present": 18,
+     "auto_matched": 18,
+     "exact": 8
+    },
+    "test": {
+     "gold_present": 38,
+     "auto_matched": 36,
+     "exact": 15
+    }
+   },
+   "lines_matched": 48,
+   "tiers": {
+    "A_clean": 32,
+    "B_edge_missing": 2,
+    "C_partial": 14
+   },
+   "A_correct": 31,
+   "A_incorrect": 1,
+   "B_correct": 0
+  },
+  "venue.items": {
+   "field_group": "venue",
+   "human_checked_values": 108,
+   "gold_present": 108,
+   "auto_matched": 91,
+   "exact": 18,
+   "exact_substring": 81,
+   "median_cer": 0.0,
+   "multi_line": 1,
+   "by_split": {
+    "dev": {
+     "gold_present": 29,
+     "auto_matched": 23,
+     "exact": 2
+    },
+    "reserve": {
+     "gold_present": 35,
+     "auto_matched": 27,
+     "exact": 3
+    },
+    "test": {
+     "gold_present": 44,
+     "auto_matched": 41,
+     "exact": 13
+    }
+   },
+   "lines_matched": 21,
+   "tiers": {
+    "A_clean": 18,
+    "B_edge_missing": 0,
+    "C_partial": 3
+   },
+   "A_correct": 17,
+   "A_incorrect": 1,
+   "B_correct": 0
+  },
+  "venue.raw": {
+   "field_group": "venue",
+   "human_checked_values": 241,
+   "gold_present": 241,
+   "auto_matched": 229,
+   "exact": 152,
+   "exact_substring": 181,
+   "median_cer": 0.0,
+   "multi_line": 60,
+   "by_split": {
+    "dev": {
+     "gold_present": 57,
+     "auto_matched": 54,
+     "exact": 35
+    },
+    "reserve": {
+     "gold_present": 51,
+     "auto_matched": 48,
+     "exact": 33
+    },
+    "test": {
+     "gold_present": 133,
+     "auto_matched": 127,
+     "exact": 84
+    }
+   },
+   "lines_matched": 256,
+   "tiers": {
+    "A_clean": 236,
+    "B_edge_missing": 5,
+    "C_partial": 15
+   },
+   "A_correct": 202,
+   "A_incorrect": 34,
+   "B_correct": 3
+  },
+  "address.raw": {
+   "field_group": "address",
+   "human_checked_values": 0,
+   "gold_present": 14,
+   "auto_matched": 13,
+   "exact": 1,
+   "exact_substring": 7,
+   "median_cer": 0.0417,
+   "multi_line": 1,
+   "by_split": {
+    "dev": {
+     "gold_present": 5,
+     "auto_matched": 4,
+     "exact": 0
+    },
+    "reserve": {
+     "gold_present": 2,
+     "auto_matched": 2,
+     "exact": 0
+    },
+    "test": {
+     "gold_present": 7,
+     "auto_matched": 7,
+     "exact": 1
+    }
+   },
+   "lines_matched": 3,
+   "tiers": {
+    "A_clean": 3,
+    "B_edge_missing": 0,
+    "C_partial": 0
+   },
+   "A_correct": 1,
+   "A_incorrect": 2,
+   "B_correct": 0
+  },
+  "contacts": {
+   "field_group": "contact",
+   "human_checked_values": 0,
+   "gold_present": 29,
+   "auto_matched": 28,
+   "exact": 8,
+   "exact_substring": 19,
+   "median_cer": 0.0,
+   "multi_line": 4,
+   "by_split": {
+    "dev": {
+     "gold_present": 11,
+     "auto_matched": 10,
+     "exact": 3
+    },
+    "reserve": {
+     "gold_present": 6,
+     "auto_matched": 6,
+     "exact": 2
+    },
+    "test": {
+     "gold_present": 12,
+     "auto_matched": 12,
+     "exact": 3
+    }
+   },
+   "lines_matched": 31,
+   "tiers": {
+    "A_clean": 16,
+    "B_edge_missing": 2,
+    "C_partial": 13
+   },
+   "A_correct": 12,
+   "A_incorrect": 4,
+   "B_correct": 1
+  },
+  "links": {
+   "field_group": "link",
+   "human_checked_values": 0,
+   "gold_present": 17,
+   "auto_matched": 13,
+   "exact": 7,
+   "exact_substring": 8,
+   "median_cer": 0.1053,
+   "multi_line": 0,
+   "by_split": {
+    "dev": {
+     "gold_present": 6,
+     "auto_matched": 4,
+     "exact": 2
+    },
+    "reserve": {
+     "gold_present": 5,
+     "auto_matched": 5,
+     "exact": 5
+    },
+    "test": {
+     "gold_present": 6,
+     "auto_matched": 4,
+     "exact": 0
+    }
+   },
+   "lines_matched": 11,
+   "tiers": {
+    "A_clean": 8,
+    "B_edge_missing": 0,
+    "C_partial": 3
+   },
+   "A_correct": 6,
+   "A_incorrect": 2,
+   "B_correct": 0
+  },
+  "budget.raw": {
+   "field_group": "budget",
+   "human_checked_values": 0,
+   "gold_present": 16,
+   "auto_matched": 10,
+   "exact": 2,
+   "exact_substring": 2,
+   "median_cer": 0.1255,
+   "multi_line": 1,
+   "by_split": {
+    "dev": {
+     "gold_present": 6,
+     "auto_matched": 4,
+     "exact": 1
+    },
+    "reserve": {
+     "gold_present": 3,
+     "auto_matched": 3,
+     "exact": 0
+    },
+    "test": {
+     "gold_present": 7,
+     "auto_matched": 3,
+     "exact": 1
+    }
+   },
+   "lines_matched": 11,
+   "tiers": {
+    "A_clean": 8,
+    "B_edge_missing": 2,
+    "C_partial": 1
+   },
+   "A_correct": 3,
+   "A_incorrect": 5,
+   "B_correct": 0
+  },
+  "admission.raw": {
+   "field_group": "admission",
+   "human_checked_values": 0,
+   "gold_present": 8,
+   "auto_matched": 5,
+   "exact": 3,
+   "exact_substring": 3,
+   "median_cer": 0.1496,
+   "multi_line": 1,
+   "by_split": {
+    "dev": {
+     "gold_present": 1,
+     "auto_matched": 1,
+     "exact": 1
+    },
+    "reserve": {
+     "gold_present": 2,
+     "auto_matched": 1,
+     "exact": 1
+    },
+    "test": {
+     "gold_present": 5,
+     "auto_matched": 3,
+     "exact": 1
+    }
+   },
+   "lines_matched": 6,
+   "tiers": {
+    "A_clean": 6,
+    "B_edge_missing": 0,
+    "C_partial": 0
+   },
+   "A_correct": 3,
+   "A_incorrect": 3,
+   "B_correct": 0
+  },
+  "organizations.text": {
+   "field_group": "organization",
+   "human_checked_values": 0,
+   "gold_present": 111,
+   "auto_matched": 60,
+   "exact": 3,
+   "exact_substring": 24,
+   "median_cer": 0.2727,
+   "multi_line": 2,
+   "by_split": {
+    "dev": {
+     "gold_present": 21,
+     "auto_matched": 15,
+     "exact": 0
+    },
+    "reserve": {
+     "gold_present": 23,
+     "auto_matched": 11,
+     "exact": 3
+    },
+    "test": {
+     "gold_present": 67,
+     "auto_matched": 34,
+     "exact": 0
+    }
+   },
+   "lines_matched": 43,
+   "tiers": {
+    "A_clean": 10,
+    "B_edge_missing": 0,
+    "C_partial": 33
+   },
+   "A_correct": 2,
+   "A_incorrect": 8,
+   "B_correct": 0
+  },
+  "organizations.logo": {
+   "field_group": "organization",
+   "human_checked_values": 0,
+   "gold_present": 594,
+   "auto_matched": 275,
+   "exact": 110,
+   "exact_substring": 188,
+   "median_cer": 0.3333,
+   "multi_line": 5,
+   "by_split": {
+    "dev": {
+     "gold_present": 131,
+     "auto_matched": 60,
+     "exact": 24
+    },
+    "reserve": {
+     "gold_present": 120,
+     "auto_matched": 63,
+     "exact": 29
+    },
+    "test": {
+     "gold_present": 343,
+     "auto_matched": 152,
+     "exact": 57
+    }
+   },
+   "lines_matched": 218,
+   "tiers": {
+    "A_clean": 148,
+    "B_edge_missing": 3,
+    "C_partial": 67
+   },
+   "A_correct": 106,
+   "A_incorrect": 42,
+   "B_correct": 0
+  },
+  "slogans": {
+   "field_group": "slogan",
+   "human_checked_values": 0,
+   "gold_present": 252,
+   "auto_matched": 203,
+   "exact": 125,
+   "exact_substring": 128,
+   "median_cer": 0.0,
+   "multi_line": 105,
+   "by_split": {
+    "dev": {
+     "gold_present": 61,
+     "auto_matched": 49,
+     "exact": 32
+    },
+    "reserve": {
+     "gold_present": 47,
+     "auto_matched": 37,
+     "exact": 23
+    },
+    "test": {
+     "gold_present": 144,
+     "auto_matched": 117,
+     "exact": 70
+    }
+   },
+   "lines_matched": 364,
+   "tiers": {
+    "A_clean": 326,
+    "B_edge_missing": 25,
+    "C_partial": 13
+   },
+   "A_correct": 270,
+   "A_incorrect": 56,
+   "B_correct": 17
+  },
+  "programs": {
+   "field_group": "program",
+   "human_checked_values": 0,
+   "gold_present": 502,
+   "auto_matched": 365,
+   "exact": 119,
+   "exact_substring": 215,
+   "median_cer": 0.125,
+   "multi_line": 28,
+   "by_split": {
+    "dev": {
+     "gold_present": 107,
+     "auto_matched": 81,
+     "exact": 23
+    },
+    "reserve": {
+     "gold_present": 113,
+     "auto_matched": 80,
+     "exact": 27
+    },
+    "test": {
+     "gold_present": 282,
+     "auto_matched": 204,
+     "exact": 69
+    }
+   },
+   "lines_matched": 324,
+   "tiers": {
+    "A_clean": 208,
+    "B_edge_missing": 6,
+    "C_partial": 110
+   },
+   "A_correct": 144,
+   "A_incorrect": 64,
+   "B_correct": 3
+  },
+  "notices": {
+   "field_group": "notice",
+   "human_checked_values": 0,
+   "gold_present": 17,
+   "auto_matched": 10,
+   "exact": 4,
+   "exact_substring": 4,
+   "median_cer": 0.2308,
+   "multi_line": 5,
+   "by_split": {
+    "dev": {
+     "gold_present": 7,
+     "auto_matched": 4,
+     "exact": 2
+    },
+    "reserve": {
+     "gold_present": 5,
+     "auto_matched": 2,
+     "exact": 1
+    },
+    "test": {
+     "gold_present": 5,
+     "auto_matched": 4,
+     "exact": 1
+    }
+   },
+   "lines_matched": 15,
+   "tiers": {
+    "A_clean": 12,
+    "B_edge_missing": 2,
+    "C_partial": 1
+   },
+   "A_correct": 6,
+   "A_incorrect": 6,
+   "B_correct": 1
+  },
+  "badges": {
+   "field_group": "badge",
+   "human_checked_values": 0,
+   "gold_present": 108,
+   "auto_matched": 59,
+   "exact": 25,
+   "exact_substring": 29,
+   "median_cer": 0.2516,
+   "multi_line": 27,
+   "by_split": {
+    "dev": {
+     "gold_present": 29,
+     "auto_matched": 13,
+     "exact": 6
+    },
+    "reserve": {
+     "gold_present": 24,
+     "auto_matched": 16,
+     "exact": 7
+    },
+    "test": {
+     "gold_present": 55,
+     "auto_matched": 30,
+     "exact": 12
+    }
+   },
+   "lines_matched": 85,
+   "tiers": {
+    "A_clean": 68,
+    "B_edge_missing": 6,
+    "C_partial": 11
+   },
+   "A_correct": 49,
+   "A_incorrect": 19,
+   "B_correct": 3
+  }
+ },
+ "groups": {
+  "title": {
+   "lines_matched": 518,
+   "tiers": {
+    "A_clean": 439,
+    "B_edge_missing": 42,
+    "C_partial": 37
+   },
+   "A_correct": 408,
+   "A_incorrect": 31,
+   "B_correct": 38
+  },
+  "edition": {
+   "lines_matched": 27,
+   "tiers": {
+    "A_clean": 17,
+    "B_edge_missing": 0,
+    "C_partial": 10
+   },
+   "A_correct": 15,
+   "A_incorrect": 2,
+   "B_correct": 0
+  },
+  "schedule": {
+   "lines_matched": 344,
+   "tiers": {
+    "A_clean": 260,
+    "B_edge_missing": 37,
+    "C_partial": 47
+   },
+   "A_correct": 230,
+   "A_incorrect": 30,
+   "B_correct": 20
+  },
+  "time": {
+   "lines_matched": 48,
+   "tiers": {
+    "A_clean": 32,
+    "B_edge_missing": 2,
+    "C_partial": 14
+   },
+   "A_correct": 31,
+   "A_incorrect": 1,
+   "B_correct": 0
+  },
+  "venue": {
+   "lines_matched": 277,
+   "tiers": {
+    "A_clean": 254,
+    "B_edge_missing": 5,
+    "C_partial": 18
+   },
+   "A_correct": 219,
+   "A_incorrect": 35,
+   "B_correct": 3
+  },
+  "address": {
+   "lines_matched": 3,
+   "tiers": {
+    "A_clean": 3,
+    "B_edge_missing": 0,
+    "C_partial": 0
+   },
+   "A_correct": 1,
+   "A_incorrect": 2,
+   "B_correct": 0
+  },
+  "contact": {
+   "lines_matched": 31,
+   "tiers": {
+    "A_clean": 16,
+    "B_edge_missing": 2,
+    "C_partial": 13
+   },
+   "A_correct": 12,
+   "A_incorrect": 4,
+   "B_correct": 1
+  },
+  "link": {
+   "lines_matched": 11,
+   "tiers": {
+    "A_clean": 8,
+    "B_edge_missing": 0,
+    "C_partial": 3
+   },
+   "A_correct": 6,
+   "A_incorrect": 2,
+   "B_correct": 0
+  },
+  "budget": {
+   "lines_matched": 11,
+   "tiers": {
+    "A_clean": 8,
+    "B_edge_missing": 2,
+    "C_partial": 1
+   },
+   "A_correct": 3,
+   "A_incorrect": 5,
+   "B_correct": 0
+  },
+  "admission": {
+   "lines_matched": 6,
+   "tiers": {
+    "A_clean": 6,
+    "B_edge_missing": 0,
+    "C_partial": 0
+   },
+   "A_correct": 3,
+   "A_incorrect": 3,
+   "B_correct": 0
+  },
+  "organization": {
+   "lines_matched": 261,
+   "tiers": {
+    "A_clean": 158,
+    "B_edge_missing": 3,
+    "C_partial": 100
+   },
+   "A_correct": 108,
+   "A_incorrect": 50,
+   "B_correct": 0
+  },
+  "slogan": {
+   "lines_matched": 364,
+   "tiers": {
+    "A_clean": 326,
+    "B_edge_missing": 25,
+    "C_partial": 13
+   },
+   "A_correct": 270,
+   "A_incorrect": 56,
+   "B_correct": 17
+  },
+  "program": {
+   "lines_matched": 324,
+   "tiers": {
+    "A_clean": 208,
+    "B_edge_missing": 6,
+    "C_partial": 110
+   },
+   "A_correct": 144,
+   "A_incorrect": 64,
+   "B_correct": 3
+  },
+  "notice": {
+   "lines_matched": 15,
+   "tiers": {
+    "A_clean": 12,
+    "B_edge_missing": 2,
+    "C_partial": 1
+   },
+   "A_correct": 6,
+   "A_incorrect": 6,
+   "B_correct": 1
+  },
+  "badge": {
+   "lines_matched": 85,
+   "tiers": {
+    "A_clean": 68,
+    "B_edge_missing": 6,
+    "C_partial": 11
+   },
+   "A_correct": 49,
+   "A_incorrect": 19,
+   "B_correct": 3
+  }
+ },
+ "small_text": {
+  "threshold_px": 10,
+  "matched_small": 136,
+  "all_small": 1010,
+  "histogram": [
+   {
+    "range": "0-8",
+    "lines": 405,
+    "matched": 18,
+    "A_correct": 0,
+    "A_incorrect": 7,
+    "A_accuracy": 0.0
+   },
+   {
+    "range": "8-10",
+    "lines": 605,
+    "matched": 118,
+    "A_correct": 36,
+    "A_incorrect": 41,
+    "A_accuracy": 0.4675
+   },
+   {
+    "range": "10-12",
+    "lines": 714,
+    "matched": 290,
+    "A_correct": 118,
+    "A_incorrect": 67,
+    "A_accuracy": 0.6378
+   },
+   {
+    "range": "12-16",
+    "lines": 992,
+    "matched": 553,
+    "A_correct": 340,
+    "A_incorrect": 76,
+    "A_accuracy": 0.8173
+   },
+   {
+    "range": "16-24",
+    "lines": 805,
+    "matched": 583,
+    "A_correct": 447,
+    "A_incorrect": 48,
+    "A_accuracy": 0.903
+   },
+   {
+    "range": "24-40",
+    "lines": 468,
+    "matched": 346,
+    "A_correct": 268,
+    "A_incorrect": 30,
+    "A_accuracy": 0.8993
+   },
+   {
+    "range": "40+",
+    "lines": 669,
+    "matched": 417,
+    "A_correct": 296,
+    "A_incorrect": 41,
+    "A_accuracy": 0.8783
+   }
+  ]
+ },
+ "confusions": {
+  "scope": "A_clean 등급 OCR 불일치 줄만(줄마다 고른 라벨 1개)",
+  "lines": 310,
+  "ops": {
+   "sub": 379,
+   "del": 47,
+   "ins": 11
+  },
+  "by_kind": {
+   "한글 중성 다름": 110,
+   "한글 초성 다름": 78,
+   "한글 종성 다름": 55,
+   "한글 초성+중성 다름": 37,
+   "기타": 27,
+   "한글 중성+종성 다름": 21,
+   "한글<->비한글": 21,
+   "한글 초성+중성+종성 다름": 12,
+   "숫자/영문": 11,
+   "한글 초성+종성 다름": 7
+  },
+  "top_pairs": [
+   {
+    "gold": "산",
+    "ocr": "신",
+    "count": 9,
+    "posters": 7,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-014.padd_rgb_2x_013",
+     "field": "organizations.logo",
+     "text": "국가유산청",
+     "ocr_text": "국가유신청"
+    }
+   },
+   {
+    "gold": "통",
+    "ocr": "동",
+    "count": 4,
+    "posters": 4,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-105.padd_rgb_2x_012",
+     "field": "venue.raw",
+     "text": "한국전통문화전당 일원",
+     "ocr_text": "한국전동문회전당 일원"
+    }
+   },
+   {
+    "gold": "금",
+    "ocr": "②",
+    "count": 4,
+    "posters": 4,
+    "kind": "한글<->비한글",
+    "example": {
+     "line_id": "v2-110.padd_rgb_2x_012",
+     "field": "schedule.raw",
+     "text": "2026. 10. 9.금 - 11. 1.일",
+     "ocr_text": "2026.10.9.②- 11.1.일"
+    }
+   },
+   {
+    "gold": "초",
+    "ocr": "조",
+    "count": 3,
+    "posters": 2,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-020.padd_rgb_2x_024",
+     "field": "organizations.logo",
+     "text": "서초여성일자리주식회사",
+     "ocr_text": "서조여성일자리주식회사"
+    }
+   },
+   {
+    "gold": "화",
+    "ocr": "회",
+    "count": 3,
+    "posters": 3,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-048.padd_rgb_2x_006",
+     "field": "venue.raw",
+     "text": "한국만화박물관 일대",
+     "ocr_text": "한국민회박물관 일대"
+    }
+   },
+   {
+    "gold": "림",
+    "ocr": "립",
+    "count": 3,
+    "posters": 3,
+    "kind": "한글 종성 다름",
+    "example": {
+     "line_id": "v2-060.padd_rgb_2x_017",
+     "field": "programs",
+     "text": "현장 참여 대회(림보)",
+     "ocr_text": "현장 참여 대회(립보)"
+    }
+   },
+   {
+    "gold": "전",
+    "ocr": "진",
+    "count": 3,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-084.padd_rgb_2x_010",
+     "field": "organizations.logo",
+     "text": "대전광역시 중구",
+     "ocr_text": "대진광역시 중구"
+    }
+   },
+   {
+    "gold": "성",
+    "ocr": "섬",
+    "count": 3,
+    "posters": 2,
+    "kind": "한글 종성 다름",
+    "example": {
+     "line_id": "v2-087.padd_rgb_2x_008",
+     "field": "slogans",
+     "text": "슈퍼푸드 의성의",
+     "ocr_text": "슈피푸드의섬의"
+    }
+   },
+   {
+    "gold": "자",
+    "ocr": "지",
+    "count": 3,
+    "posters": 3,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-109.padd_rgb_2x_031",
+     "field": "organizations.text",
+     "text": "강원특별자치도",
+     "ocr_text": "강원특별지치도"
+    }
+   },
+   {
+    "gold": "별",
+    "ocr": "법",
+    "count": 3,
+    "posters": 3,
+    "kind": "한글 중성+종성 다름",
+    "example": {
+     "line_id": "v2-200.padd_rgb_2x_005",
+     "field": "venue.raw",
+     "text": "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지 일원",
+     "ocr_text": "전남광주통합록법시 고홀군 풍영면 한동리 701-7번지 일원"
+    }
+   },
+   {
+    "gold": "일",
+    "ocr": "임",
+    "count": 3,
+    "posters": 3,
+    "kind": "한글 종성 다름",
+    "example": {
+     "line_id": "r2-002.padd_rgb_2x_013",
+     "field": "venue.raw",
+     "text": "예산황새공원 일원",
+     "ocr_text": "예산황새공원 임원"
+    }
+   },
+   {
+    "gold": "매",
+    "ocr": "대",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-001.padd_rgb_2x_008",
+     "field": "notices",
+     "text": "매일(월~일) 11시, 14시, 16시",
+     "ocr_text": "대입(월–입) 11시,14시,16시"
+    }
+   },
+   {
+    "gold": "일",
+    "ocr": "입",
+    "count": 2,
+    "posters": 1,
+    "kind": "한글 종성 다름",
+    "example": {
+     "line_id": "v2-001.padd_rgb_2x_008",
+     "field": "notices",
+     "text": "매일(월~일) 11시, 14시, 16시",
+     "ocr_text": "대입(월–입) 11시,14시,16시"
+    }
+   },
+   {
+    "gold": "길",
+    "ocr": "결",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-001.padd_rgb_2x_012",
+     "field": "address.raw",
+     "text": "서울시 종로구 인사동5길 10, 2층",
+     "ocr_text": "서울시동로구 인사동5결 10.2층"
+    }
+   },
+   {
+    "gold": "체",
+    "ocr": "재",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성+중성 다름",
+    "example": {
+     "line_id": "v2-018.padd_rgb_2x_000",
+     "field": "organizations.logo",
+     "text": "문화체육관광부",
+     "ocr_text": "문화재육리광부"
+    }
+   },
+   {
+    "gold": "잇",
+    "ocr": "임",
+    "count": 2,
+    "posters": 1,
+    "kind": "한글 종성 다름",
+    "example": {
+     "line_id": "v2-028.padd_rgb_2x_001",
+     "field": "slogans",
+     "text": "사람과 지역을 잇는 새로운 문화",
+     "ocr_text": "사람과지역을 임는애로운문화"
+    }
+   },
+   {
+    "gold": "마",
+    "ocr": "미",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-037.padd_rgb_2x_021",
+     "field": "programs",
+     "text": "주민자치 어울마당",
+     "ocr_text": "주민자치 어울미당"
+    }
+   },
+   {
+    "gold": "콘",
+    "ocr": "곤",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-037.padd_rgb_2x_022",
+     "field": "programs",
+     "text": "대학 밴드 콘서트",
+     "ocr_text": "-대학밴드 곤서트-"
+    }
+   },
+   {
+    "gold": "추",
+    "ocr": "주",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-037.padd_rgb_2x_029",
+     "field": "programs",
+     "text": "미추홀구 청년주간행사",
+     "ocr_text": "미주홀구청년주간권사"
+    }
+   },
+   {
+    "gold": "읍",
+    "ocr": "을",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 종성 다름",
+    "example": {
+     "line_id": "v2-039.padd_rgb_2x_004",
+     "field": "venue.raw",
+     "text": "금왕읍 금빛근린공원일원",
+     "ocr_text": "금왕을 금빛근린공원일원"
+    }
+   },
+   {
+    "gold": "등",
+    "ocr": "동",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-040.padd_rgb_2x_005",
+     "field": "organizations.logo",
+     "text": "영등포문화재단",
+     "ocr_text": "영동포문화재단"
+    }
+   },
+   {
+    "gold": "안",
+    "ocr": "인",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-042.padd_rgb_2x_005",
+     "field": "badges",
+     "text": "스마트안양",
+     "ocr_text": "스마트인양"
+    }
+   },
+   {
+    "gold": "제",
+    "ocr": "재",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-043.padd_rgb_2x_015",
+     "field": "organizations.text",
+     "text": "진안홍삼축제추진위원회",
+     "ocr_text": "진안홍삼축재주진위원회"
+    }
+   },
+   {
+    "gold": "로",
+    "ocr": "트",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성+중성 다름",
+    "example": {
+     "line_id": "v2-050.padd_rgb_2x_013",
+     "field": "notices",
+     "text": "장소 반포대로 (서초역~서초3동사거리)",
+     "ocr_text": "장소 반포다트(서초역-서초3통사거리)"
+    }
+   },
+   {
+    "gold": "동",
+    "ocr": "통",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-050.padd_rgb_2x_013",
+     "field": "notices",
+     "text": "장소 반포대로 (서초역~서초3동사거리)",
+     "ocr_text": "장소 반포다트(서초역-서초3통사거리)"
+    }
+   },
+   {
+    "gold": "e",
+    "ocr": "o",
+    "count": 2,
+    "posters": 2,
+    "kind": "기타",
+    "example": {
+     "line_id": "v2-076.padd_rgb_2x_002",
+     "field": "badges",
+     "text": "Modern",
+     "ocr_text": "Modorn"
+    }
+   },
+   {
+    "gold": "시",
+    "ocr": "사",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-083.padd_rgb_2x_012",
+     "field": "budget.raw",
+     "text": "소요예산: 600백만원(시비33% 구비67%)",
+     "ocr_text": "소요예산:600백만원(사비33% 구비67%)"
+    }
+   },
+   {
+    "gold": "울",
+    "ocr": "물",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-088.padd_rgb_2x_011",
+     "field": "venue.raw",
+     "text": "(어울림마당)",
+     "ocr_text": "(어물림마당)"
+    }
+   },
+   {
+    "gold": "i",
+    "ocr": "l",
+    "count": 2,
+    "posters": 2,
+    "kind": "기타",
+    "example": {
+     "line_id": "v2-125.padd_rgb_2x_022",
+     "field": "slogans",
+     "text": "ART-i-fi-cial,",
+     "ocr_text": "ART--fi-clal"
+    }
+   },
+   {
+    "gold": "치",
+    "ocr": "지",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-128.padd_rgb_2x_017",
+     "field": "organizations.logo",
+     "text": "전북특별자치도",
+     "ocr_text": "전북특별자지도"
+    }
+   },
+   {
+    "gold": "y",
+    "ocr": "t",
+    "count": 2,
+    "posters": 2,
+    "kind": "기타",
+    "example": {
+     "line_id": "v2-151.padd_rgb_2x_004",
+     "field": "badges",
+     "text": "MY SOUL",
+     "ocr_text": "MTSOUL"
+    }
+   },
+   {
+    "gold": "탬",
+    "ocr": "템",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-161.padd_rgb_2x_032",
+     "field": "programs",
+     "text": "스탬프 투어 이벤트",
+     "ocr_text": "스템프 투어 이벤트"
+    }
+   },
+   {
+    "gold": "f",
+    "ocr": "r",
+    "count": 2,
+    "posters": 1,
+    "kind": "기타",
+    "example": {
+     "line_id": "v2-164.padd_rgb_2x_007",
+     "field": "slogans",
+     "text": "Coffeeful Gangneung",
+     "ocr_text": "cofreerul Gangneung"
+    }
+   },
+   {
+    "gold": "양",
+    "ocr": "영",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-193.padd_rgb_2x_013",
+     "field": "organizations.logo",
+     "text": "삼양식품",
+     "ocr_text": "삼영식품"
+    }
+   },
+   {
+    "gold": "특",
+    "ocr": "록",
+    "count": 2,
+    "posters": 2,
+    "kind": "한글 초성+중성 다름",
+    "example": {
+     "line_id": "v2-200.padd_rgb_2x_005",
+     "field": "venue.raw",
+     "text": "전남광주통합특별시 고흥군 풍양면 한동리 701-7번지 일원",
+     "ocr_text": "전남광주통합록법시 고홀군 풍영면 한동리 701-7번지 일원"
+    }
+   },
+   {
+    "gold": "o",
+    "ocr": "a",
+    "count": 2,
+    "posters": 2,
+    "kind": "기타",
+    "example": {
+     "line_id": "r2-003.padd_rgb_2x_000",
+     "field": "badges",
+     "text": "Lovely",
+     "ocr_text": "Lavely"
+    }
+   },
+   {
+    "gold": "예",
+    "ocr": "에",
+    "count": 1,
+    "posters": 1,
+    "kind": "한글 중성 다름",
+    "example": {
+     "line_id": "v2-001.padd_rgb_2x_000",
+     "field": "slogans",
+     "text": "대한민국 전통예술의 다채로움을 한 무대에서 경험하다",
+     "ocr_text": "대한민국 전통에술의 다채로움을 한 무대에서 경험하다"
+    }
+   },
+   {
+    "gold": "a",
+    "ocr": "n",
+    "count": 1,
+    "posters": 1,
+    "kind": "기타",
+    "example": {
+     "line_id": "v2-001.padd_rgb_2x_001",
+     "field": "slogans",
+     "text": "Experience the full spectrum of Traditional Korean Music in one performance",
+     "ocr_text": "Experience the full spectrum of Traditionnl Korean Music in one performange"
+    }
+   },
+   {
+    "gold": "c",
+    "ocr": "g",
+    "count": 1,
+    "posters": 1,
+    "kind": "기타",
+    "example": {
+     "line_id": "v2-001.padd_rgb_2x_001",
+     "field": "slogans",
+     "text": "Experience the full spectrum of Traditional Korean Music in one performance",
+     "ocr_text": "Experience the full spectrum of Traditionnl Korean Music in one performange"
+    }
+   },
+   {
+    "gold": "종",
+    "ocr": "동",
+    "count": 1,
+    "posters": 1,
+    "kind": "한글 초성 다름",
+    "example": {
+     "line_id": "v2-001.padd_rgb_2x_012",
+     "field": "address.raw",
+     "text": "서울시 종로구 인사동5길 10, 2층",
+     "ocr_text": "서울시동로구 인사동5결 10.2층"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,233 @@
+{
+ "case_id": "r2-010",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 4,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-010.padd_rgb_2x_000",
+   "case_id": "r2-010",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     15.0,
+     11.0
+    ],
+    [
+     59.0,
+     11.0
+    ],
+    [
+     59.0,
+     33.5
+    ],
+    [
+     15.0,
+     33.5
+    ]
+   ],
+   "bbox": [
+    15.0,
+    11.0,
+    59.0,
+    33.5
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "시흥",
+   "text_key": "시흥",
+   "ocr_text": "시흥",
+   "confidence": 0.4331820607185364,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "시흥",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-010.padd_rgb_2x_001",
+   "case_id": "r2-010",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     360.0,
+     29.5
+    ],
+    [
+     401.5,
+     29.5
+    ],
+    [
+     401.5,
+     42.0
+    ],
+    [
+     360.0,
+     42.0
+    ]
+   ],
+   "bbox": [
+    360.0,
+    29.5,
+    401.5,
+    42.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "문화관광축제",
+   "text_key": "문화관광축제",
+   "ocr_text": "품화관광축제",
+   "confidence": 0.7236759662628174,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "문화관광축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-010.padd_rgb_2x_002",
+   "case_id": "r2-010",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     279.5,
+     101.0
+    ],
+    [
+     345.0,
+     102.0
+    ],
+    [
+     344.0,
+     130.0
+    ],
+    [
+     279.0,
+     128.5
+    ]
+   ],
+   "bbox": [
+    279.0,
+    101.0,
+    345.0,
+    130.0
+   ],
+   "height": 27.76,
+   "small_text": false,
+   "text": "제21회",
+   "text_key": "제21회",
+   "ocr_text": "제21회",
+   "confidence": 0.9995828866958618,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제21회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-010.padd_rgb_2x_003",
+   "case_id": "r2-010",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     103.0,
+     276.0
+    ],
+    [
+     343.5,
+     276.0
+    ],
+    [
+     343.5,
+     303.0
+    ],
+    [
+     103.0,
+     303.0
+    ]
+   ],
+   "bbox": [
+    103.0,
+    276.0,
+    343.5,
+    303.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "2026.9.18.(금)~ 9.20.(일)",
+   "text_key": "2026918금920일",
+   "ocr_text": "2026.9.18.(금)~9.20.(일)",
+   "confidence": 0.9887476563453674,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.9.18.(금)~ 9.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

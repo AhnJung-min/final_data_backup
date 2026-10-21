@@ -1,0 +1,396 @@
+{
+ "case_id": "r2-027",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-027.padd_rgb_2x_001",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     132.0,
+     40.5
+    ],
+    [
+     291.5,
+     40.5
+    ],
+    [
+     291.5,
+     63.5
+    ],
+    [
+     132.0,
+     63.5
+    ]
+   ],
+   "bbox": [
+    132.0,
+    40.5,
+    291.5,
+    63.5
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "10.15.(목) - 10.18.",
+   "text_key": "1015목1018",
+   "ocr_text": "10.15.()-10.18.",
+   "confidence": 0.9750548005104065,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "10.15.(목) - 10.18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.padd_rgb_2x_002",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     290.0,
+     43.0
+    ],
+    [
+     308.5,
+     43.0
+    ],
+    [
+     308.5,
+     55.0
+    ],
+    [
+     290.0,
+     55.0
+    ]
+   ],
+   "bbox": [
+    290.0,
+    43.0,
+    308.5,
+    55.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "(일)",
+   "text_key": "일",
+   "ocr_text": "(일)",
+   "confidence": 0.9779141545295715,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "10.15.(목) - 10.18.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.padd_rgb_2x_003",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     181.5,
+     66.5
+    ],
+    [
+     261.5,
+     66.5
+    ],
+    [
+     261.5,
+     89.0
+    ],
+    [
+     181.5,
+     89.0
+    ]
+   ],
+   "bbox": [
+    181.5,
+    66.5,
+    261.5,
+    89.0
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "월화거리",
+   "text_key": "월화거리",
+   "ocr_text": "월화거리",
+   "confidence": 0.9997609853744507,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "월화거리",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.padd_rgb_2x_004",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     129.5,
+     121.0
+    ],
+    [
+     265.0,
+     90.0
+    ],
+    [
+     272.0,
+     121.5
+    ],
+    [
+     136.5,
+     152.5
+    ]
+   ],
+   "bbox": [
+    129.5,
+    90.0,
+    272.0,
+    152.5
+   ],
+   "height": 32.27,
+   "small_text": false,
+   "text": "2026 제5회",
+   "text_key": "2026제5회",
+   "ocr_text": "2026 제5회",
+   "confidence": 0.9645023345947266,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026 제5회 강릉 국수 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.padd_rgb_2x_005",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     133.0,
+     153.5
+    ],
+    [
+     315.5,
+     147.5
+    ],
+    [
+     319.5,
+     267.5
+    ],
+    [
+     137.0,
+     273.5
+    ]
+   ],
+   "bbox": [
+    133.0,
+    147.5,
+    319.5,
+    273.5
+   ],
+   "height": 120.07,
+   "small_text": false,
+   "text": "강릉",
+   "text_key": "강릉",
+   "ocr_text": "강릉",
+   "confidence": 0.9749172925949097,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026 제5회 강릉 국수 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.padd_rgb_2x_006",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     137.5,
+     249.5
+    ],
+    [
+     307.5,
+     257.5
+    ],
+    [
+     302.5,
+     368.5
+    ],
+    [
+     132.0,
+     360.5
+    ]
+   ],
+   "bbox": [
+    132.0,
+    249.5,
+    307.5,
+    368.5
+   ],
+   "height": 111.12,
+   "small_text": false,
+   "text": "국수",
+   "text_key": "국수",
+   "ocr_text": "국수",
+   "confidence": 0.9202513694763184,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1538,
+   "gold_value": "2026 제5회 강릉 국수 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-027.padd_rgb_2x_009",
+   "case_id": "r2-027",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     375.0,
+     581.5
+    ],
+    [
+     413.5,
+     581.5
+    ],
+    [
+     413.5,
+     598.0
+    ],
+    [
+     375.0,
+     598.0
+    ]
+   ],
+   "bbox": [
+    375.0,
+    581.5,
+    413.5,
+    598.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "강릉시",
+   "text_key": "강릉시",
+   "ocr_text": "강릉시",
+   "confidence": 0.9234413504600525,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강릉시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

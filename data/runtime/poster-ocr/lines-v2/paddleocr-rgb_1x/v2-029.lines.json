@@ -1,0 +1,182 @@
+{
+ "case_id": "v2-029",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-029.padd_rgb_1x_000",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     272.0,
+     9.0
+    ],
+    [
+     433.0,
+     9.0
+    ],
+    [
+     433.0,
+     32.0
+    ],
+    [
+     272.0,
+     32.0
+    ]
+   ],
+   "bbox": [
+    272.0,
+    9.0,
+    433.0,
+    32.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "2026 광명마당극축제",
+   "text_key": "2026광명마당극축제",
+   "ocr_text": "2026광명마당극축제",
+   "confidence": 0.9976289868354797,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 광명마당극축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-029.padd_rgb_1x_002",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     232.0,
+     30.0
+    ],
+    [
+     433.0,
+     30.0
+    ],
+    [
+     433.0,
+     54.0
+    ],
+    [
+     232.0,
+     54.0
+    ]
+   ],
+   "bbox": [
+    232.0,
+    30.0,
+    433.0,
+    54.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "제36회",
+   "text_key": "제36회",
+   "ocr_text": "제36회 대한민국마당극축제",
+   "confidence": 0.9484897255897522,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제36회",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-029.padd_rgb_1x_009",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     10.0,
+     592.0
+    ],
+    [
+     362.0,
+     592.0
+    ],
+    [
+     362.0,
+     615.0
+    ],
+    [
+     10.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    10.0,
+    592.0,
+    362.0,
+    615.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "2026.9.11.금 ~ 9.13.일",
+   "text_key": "2026911금913일",
+   "ocr_text": "2026.9.11.~9.13.광명시민운동장 일대",
+   "confidence": 0.9770025610923767,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "2026.9.11.금 ~ 9.13.일",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

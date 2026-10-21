@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-077",
+ "engine": "rapidocr",
+ "variant": "product",
+ "scale": 1,
+ "normalized_dimensions": [
+  502,
+  627
+ ],
+ "input_dimensions": [
+  502,
+  627
+ ],
+ "source_sha256": "66ad18df5f9311a591fcac3b29a5ad742ea565912133abe3cc0082198d535426",
+ "input_sha256": "66ad18df5f9311a591fcac3b29a5ad742ea565912133abe3cc0082198d535426",
+ "coordinate_space": "normalized_original_pixels",
+ "input": "original_bytes",
+ "device": "cpu",
+ "method": "rapidocr-ppocrv5-korean/onnx-cpu-v1",
+ "engine_fingerprint": "254c127b2e7f36f9",
+ "status": "success",
+ "records": [
+  {
+   "id": "rapi_product_000",
+   "text": "제도회전주국제그림책도서전",
+   "confidence": 0.98089,
+   "bbox_xyxy": [
+    455.0,
+    86.0,
+    482.0,
+    395.0
+   ],
+   "polygon": [
+    [
+     455.0,
+     86.0
+    ],
+    [
+     482.0,
+     86.0
+    ],
+    [
+     482.0,
+     395.0
+    ],
+    [
+     455.0,
+     395.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_001",
+   "text": "기억을그리다",
+   "confidence": 0.99792,
+   "bbox_xyxy": [
+    426.0,
+    328.0,
+    458.0,
+    534.0
+   ],
+   "polygon": [
+    [
+     426.0,
+     328.0
+    ],
+    [
+     458.0,
+     328.0
+    ],
+    [
+     458.0,
+     534.0
+    ],
+    [
+     426.0,
+     534.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_002",
+   "text": "2",
+   "confidence": 0.69569,
+   "bbox_xyxy": [
+    113.0,
+    580.0,
+    209.0,
+    595.0
+   ],
+   "polygon": [
+    [
+     113.0,
+     580.0
+    ],
+    [
+     209.0,
+     580.0
+    ],
+    [
+     209.0,
+     595.0
+    ],
+    [
+     113.0,
+     595.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_003",
+   "text": "2026.10.2.금-10.25.일",
+   "confidence": 0.9781,
+   "bbox_xyxy": [
+    376.0,
+    580.0,
+    479.0,
+    594.0
+   ],
+   "polygon": [
+    [
+     376.0,
+     580.0
+    ],
+    [
+     479.0,
+     580.0
+    ],
+    [
+     479.0,
+     594.0
+    ],
+    [
+     376.0,
+     594.0
+    ]
+   ]
+  },
+  {
+   "id": "rapi_product_004",
+   "text": "한국소리문화의전당전시장",
+   "confidence": 0.97908,
+   "bbox_xyxy": [
+    364.0,
+    593.0,
+    479.0,
+    609.0
+   ],
+   "polygon": [
+    [
+     364.0,
+     593.0
+    ],
+    [
+     479.0,
+     593.0
+    ],
+    [
+     479.0,
+     609.0
+    ],
+    [
+     364.0,
+     609.0
+    ]
+   ]
+  }
+ ],
+ "raw_detections": 5,
+ "stage_seconds": {
+  "det": 0.651,
+  "cls": null,
+  "rec": 1.128
+ },
+ "service_status": "succeeded",
+ "service_lines": [
+  {
+   "text": "제도회전주국제그림책도서전",
+   "confidence": 0.98089,
+   "bbox": [
+    0.906375,
+    0.137161,
+    0.053785,
+    0.492823
+   ]
+  },
+  {
+   "text": "기억을그리다",
+   "confidence": 0.99792,
+   "bbox": [
+    0.848606,
+    0.523126,
+    0.063745,
+    0.328549
+   ]
+  },
+  {
+   "text": "2",
+   "confidence": 0.69569,
+   "bbox": [
+    0.2251,
+    0.92504,
+    0.191235,
+    0.023923
+   ]
+  },
+  {
+   "text": "2026.10.2.금-10.25.일",
+   "confidence": 0.9781,
+   "bbox": [
+    0.749004,
+    0.92504,
+    0.205179,
+    0.022329
+   ]
+  },
+  {
+   "text": "한국소리문화의전당전시장",
+   "confidence": 0.97908,
+   "bbox": [
+    0.7251,
+    0.945774,
+    0.229084,
+    0.025518
+   ]
+  }
+ ],
+ "inference_seconds": 1.804,
+ "memory": {
+  "rss_bytes": 155320320,
+  "peak_bytes": 301199360
+ }
+}

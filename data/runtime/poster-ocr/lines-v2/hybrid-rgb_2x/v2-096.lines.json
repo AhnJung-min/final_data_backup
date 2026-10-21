@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-096",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-096.easy_rgb_2x_001",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     60.0,
+     42.0
+    ],
+    [
+     91.0,
+     42.0
+    ],
+    [
+     91.0,
+     58.0
+    ],
+    [
+     60.0,
+     58.0
+    ]
+   ],
+   "bbox": [
+    60.0,
+    42.0,
+    91.0,
+    58.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "강남구",
+   "text_key": "강남구",
+   "ocr_text": "강남구",
+   "confidence": 0.7514868378639221,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강남구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-096.easy_rgb_2x_003",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     39.0,
+     85.0
+    ],
+    [
+     349.0,
+     85.0
+    ],
+    [
+     349.0,
+     113.0
+    ],
+    [
+     39.0,
+     113.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    85.0,
+    349.0,
+    113.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "15TH",
+   "text_key": "15th",
+   "ocr_text": "15TH GANGNAM FESTIVAL",
+   "confidence": 0.8345021585257704,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw",
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "15TH",
+   "extra_chars": 15,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-096.easy_rgb_2x_005",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     45.0,
+     347.0
+    ],
+    [
+     150.0,
+     347.0
+    ],
+    [
+     150.0,
+     398.0
+    ],
+    [
+     45.0,
+     398.0
+    ]
+   ],
+   "bbox": [
+    45.0,
+    347.0,
+    150.0,
+    398.0
+   ],
+   "height": 51.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9987838656215724,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 강남페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-096.easy_rgb_2x_006",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     48.5,
+     394.5
+    ],
+    [
+     300.5,
+     394.5
+    ],
+    [
+     300.5,
+     449.5
+    ],
+    [
+     48.5,
+     449.5
+    ]
+   ],
+   "bbox": [
+    48.5,
+    394.5,
+    300.5,
+    449.5
+   ],
+   "height": 55.0,
+   "small_text": false,
+   "text": "강남페스티벌",
+   "text_key": "강남페스티벌",
+   "ocr_text": "강남페스티벌",
+   "confidence": 0.9727585315704346,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "강남페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-096.easy_rgb_2x_007",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     54.5,
+     484.5
+    ],
+    [
+     137.5,
+     484.5
+    ],
+    [
+     137.5,
+     505.5
+    ],
+    [
+     54.5,
+     505.5
+    ]
+   ],
+   "bbox": [
+    54.5,
+    484.5,
+    137.5,
+    505.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "강남구 전역",
+   "text_key": "강남구전역",
+   "ocr_text": "감남구 전역",
+   "confidence": 0.7438186085773983,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "강남구 전역",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-096.easy_rgb_2x_008",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     51.5,
+     507.5
+    ],
+    [
+     161.0,
+     507.5
+    ],
+    [
+     161.0,
+     541.5
+    ],
+    [
+     51.5,
+     541.5
+    ]
+   ],
+   "bbox": [
+    51.5,
+    507.5,
+    161.0,
+    541.5
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "10.3(토)",
+   "text_key": "103토",
+   "ocr_text": "10.3[토]",
+   "confidence": 0.9029668569564819,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.3(토) - 10.5(월)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-096.easy_rgb_2x_010",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     177.5,
+     507.5
+    ],
+    [
+     287.5,
+     507.5
+    ],
+    [
+     287.5,
+     541.5
+    ],
+    [
+     177.5,
+     541.5
+    ]
+   ],
+   "bbox": [
+    177.5,
+    507.5,
+    287.5,
+    541.5
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "10.5(월)",
+   "text_key": "105월",
+   "ocr_text": "10.5(월)",
+   "confidence": 0.8703665419912631,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.3(토) - 10.5(월)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-096.easy_rgb_2x_013",
+   "case_id": "v2-096",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     318.5,
+     574.5
+    ],
+    [
+     351.5,
+     574.5
+    ],
+    [
+     351.5,
+     590.5
+    ],
+    [
+     318.5,
+     590.5
+    ]
+   ],
+   "bbox": [
+    318.5,
+    574.5,
+    351.5,
+    590.5
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "CGV",
+   "text_key": "cgv",
+   "ocr_text": "CGV\"",
+   "confidence": 0.8252501487731934,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "CGV",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

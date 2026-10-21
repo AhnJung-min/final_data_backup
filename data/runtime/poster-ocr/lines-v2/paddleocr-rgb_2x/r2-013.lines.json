@@ -1,0 +1,612 @@
+{
+ "case_id": "r2-013",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 22,
+ "lines_matched": 11,
+ "records": [
+  {
+   "id": "r2-013.padd_rgb_2x_002",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     26.5,
+     65.0
+    ],
+    [
+     220.0,
+     22.0
+    ],
+    [
+     225.0,
+     46.0
+    ],
+    [
+     31.5,
+     88.5
+    ]
+   ],
+   "bbox": [
+    26.5,
+    22.0,
+    225.0,
+    88.5
+   ],
+   "height": 24.27,
+   "small_text": false,
+   "text": "2026 남양주 청년축제",
+   "text_key": "2026남양주청년축제",
+   "ocr_text": "2026 남양주 청년축제",
+   "confidence": 0.9388965964317322,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026 남양주 청년축제 유플페",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_003",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     3.0,
+     80.5
+    ],
+    [
+     328.0,
+     6.0
+    ],
+    [
+     360.5,
+     151.0
+    ],
+    [
+     35.5,
+     225.5
+    ]
+   ],
+   "bbox": [
+    3.0,
+    6.0,
+    360.5,
+    225.5
+   ],
+   "height": 148.6,
+   "small_text": false,
+   "text": "유플페",
+   "text_key": "유플페",
+   "ocr_text": "유풍페",
+   "confidence": 0.6962838768959045,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026 남양주 청년축제 유플페",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_005",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     92.5,
+     217.0
+    ],
+    [
+     260.0,
+     215.0
+    ],
+    [
+     260.0,
+     235.5
+    ],
+    [
+     93.0,
+     237.5
+    ]
+   ],
+   "bbox": [
+    92.5,
+    215.0,
+    260.0,
+    237.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "2026. 9. 19. 토요일",
+   "text_key": "2026919토요일",
+   "ocr_text": "2026.9.19.토요일",
+   "confidence": 0.9944506287574768,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. 토요일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_006",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     118.0,
+     243.0
+    ],
+    [
+     169.5,
+     243.0
+    ],
+    [
+     169.5,
+     260.5
+    ],
+    [
+     118.0,
+     260.5
+    ]
+   ],
+   "bbox": [
+    118.0,
+    243.0,
+    169.5,
+    260.5
+   ],
+   "height": 17.5,
+   "small_text": false,
+   "text": "남양주",
+   "text_key": "남양주",
+   "ocr_text": "남양주",
+   "confidence": 0.9998111128807068,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "남양주 한강시민공원 삼패지구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_007",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     164.0,
+     243.0
+    ],
+    [
+     314.0,
+     243.0
+    ],
+    [
+     314.0,
+     260.0
+    ],
+    [
+     164.0,
+     260.0
+    ]
+   ],
+   "bbox": [
+    164.0,
+    243.0,
+    314.0,
+    260.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "한강시민공원 삼패지구",
+   "text_key": "한강시민공원삼패지구",
+   "ocr_text": "한강시민공원 삼패지구",
+   "confidence": 0.9950714111328125,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "남양주 한강시민공원 삼패지구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_008",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     148.0,
+     279.0
+    ],
+    [
+     298.5,
+     279.0
+    ],
+    [
+     298.5,
+     292.5
+    ],
+    [
+     148.0,
+     292.5
+    ]
+   ],
+   "bbox": [
+    148.0,
+    279.0,
+    298.5,
+    292.5
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "체험·홍보부스",
+   "text_key": "체험홍보부스",
+   "ocr_text": "| 체험·흥보부스 PM1:00-5:00",
+   "confidence": 0.9487186670303345,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "체험·홍보부스",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_010",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     156.5,
+     320.0
+    ],
+    [
+     310.5,
+     320.0
+    ],
+    [
+     310.5,
+     331.5
+    ],
+    [
+     156.5,
+     331.5
+    ]
+   ],
+   "bbox": [
+    156.5,
+    320.0,
+    310.5,
+    331.5
+   ],
+   "height": 11.5,
+   "small_text": false,
+   "text": "푸드트럭",
+   "text_key": "푸드트럭",
+   "ocr_text": "푸드트럭 ·플리마켓 논알콜수제애주",
+   "confidence": 0.9056670069694519,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "푸드트럭",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_011",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     157.5,
+     340.5
+    ],
+    [
+     341.0,
+     341.0
+    ],
+    [
+     341.0,
+     356.0
+    ],
+    [
+     157.5,
+     355.5
+    ]
+   ],
+   "bbox": [
+    157.5,
+    340.5,
+    341.0,
+    356.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "청년스타★스테이지",
+   "text_key": "청년스타스테이지",
+   "ocr_text": "|청년스타츠스테이지PM3:30-5:20",
+   "confidence": 0.9875941276550293,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "청년스타★스테이지",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_014",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     163.0,
+     389.5
+    ],
+    [
+     347.5,
+     391.0
+    ],
+    [
+     347.5,
+     404.5
+    ],
+    [
+     163.0,
+     403.0
+    ]
+   ],
+   "bbox": [
+    163.0,
+    389.5,
+    347.5,
+    404.5
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "아티스트★스테이지",
+   "text_key": "아티스트스테이지",
+   "ocr_text": "|아티스트츠스테이지PM 5:20-6:40",
+   "confidence": 0.9545280337333679,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "아티스트★스테이지",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_020",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     376.0,
+     597.0
+    ],
+    [
+     431.0,
+     597.0
+    ],
+    [
+     431.0,
+     607.0
+    ],
+    [
+     376.0,
+     607.0
+    ]
+   ],
+   "bbox": [
+    376.0,
+    597.0,
+    431.0,
+    607.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "남양주 청년담당관",
+   "text_key": "남양주청년담당관",
+   "ocr_text": "남양주 청면담당관",
+   "confidence": 0.7553343176841736,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "남양주 청년담당관 031 - 590- 8226",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-013.padd_rgb_2x_021",
+   "case_id": "r2-013",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     376.0,
+     606.5
+    ],
+    [
+     430.0,
+     606.5
+    ],
+    [
+     430.0,
+     615.0
+    ],
+    [
+     376.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    376.0,
+    606.5,
+    430.0,
+    615.0
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "031 - 590- 8226",
+   "text_key": "0315908226",
+   "ocr_text": "031-590-8226",
+   "confidence": 0.9559051394462585,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "남양주 청년담당관 031 - 590- 8226",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

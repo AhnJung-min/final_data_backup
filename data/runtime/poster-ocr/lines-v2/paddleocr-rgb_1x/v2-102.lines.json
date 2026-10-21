@@ -1,0 +1,342 @@
+{
+ "case_id": "v2-102",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-102.padd_rgb_1x_002",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     382.0,
+     22.0
+    ],
+    [
+     435.0,
+     22.0
+    ],
+    [
+     435.0,
+     31.0
+    ],
+    [
+     382.0,
+     31.0
+    ]
+   ],
+   "bbox": [
+    382.0,
+    22.0,
+    435.0,
+    31.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "KANGWON LAND",
+   "text_key": "kangwonland",
+   "ocr_text": "KANCWON LAND",
+   "confidence": 0.8984651565551758,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "KANGWON LAND",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.padd_rgb_1x_004",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     188.0,
+     47.0
+    ],
+    [
+     256.0,
+     47.0
+    ],
+    [
+     256.0,
+     80.0
+    ],
+    [
+     188.0,
+     80.0
+    ]
+   ],
+   "bbox": [
+    188.0,
+    47.0,
+    256.0,
+    80.0
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9991946220397949,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "2026 탄광문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.padd_rgb_1x_005",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     55.0,
+     76.0
+    ],
+    [
+     388.0,
+     76.0
+    ],
+    [
+     388.0,
+     177.0
+    ],
+    [
+     55.0,
+     177.0
+    ]
+   ],
+   "bbox": [
+    55.0,
+    76.0,
+    388.0,
+    177.0
+   ],
+   "height": 101.0,
+   "small_text": false,
+   "text": "탄광문화축제",
+   "text_key": "탄광문화축제",
+   "ocr_text": "타감문화축제",
+   "confidence": 0.8543701171875,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "2026 탄광문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.padd_rgb_1x_006",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     137.0,
+     176.0
+    ],
+    [
+     295.0,
+     176.0
+    ],
+    [
+     295.0,
+     196.0
+    ],
+    [
+     137.0,
+     196.0
+    ]
+   ],
+   "bbox": [
+    137.0,
+    176.0,
+    295.0,
+    196.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "제30회",
+   "text_key": "제30회",
+   "ocr_text": "·제30회 석탄문화제",
+   "confidence": 0.9625571966171265,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제30회",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.padd_rgb_1x_007",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     104.0,
+     204.0
+    ],
+    [
+     336.0,
+     204.0
+    ],
+    [
+     336.0,
+     227.0
+    ],
+    [
+     104.0,
+     227.0
+    ]
+   ],
+   "bbox": [
+    104.0,
+    204.0,
+    336.0,
+    227.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "2026. 10. 7.(수) ~ 10.(토)",
+   "text_key": "2026107수10토",
+   "ocr_text": "2026.10.7.(수)~10.(토)",
+   "confidence": 0.9981840252876282,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 7.(수) ~ 10.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.padd_rgb_1x_008",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     145.0,
+     230.0
+    ],
+    [
+     297.0,
+     230.0
+    ],
+    [
+     297.0,
+     244.0
+    ],
+    [
+     145.0,
+     244.0
+    ]
+   ],
+   "bbox": [
+    145.0,
+    230.0,
+    297.0,
+    244.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "M650 박물관 및 사북읍 일대",
+   "text_key": "m650박물관및사북읍일대",
+   "ocr_text": "M650박물관및 사북읍일대",
+   "confidence": 0.9239506721496582,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "M650 박물관 및 사북읍 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

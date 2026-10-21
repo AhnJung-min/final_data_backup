@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-104",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-104.easy_rgb_2x_003",
+   "case_id": "v2-104",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     322.0,
+     123.0
+    ],
+    [
+     416.5,
+     123.0
+    ],
+    [
+     416.5,
+     154.0
+    ],
+    [
+     322.0,
+     154.0
+    ]
+   ],
+   "bbox": [
+    322.0,
+    123.0,
+    416.5,
+    154.0
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "제54회",
+   "text_key": "제54회",
+   "ocr_text": "제54회",
+   "confidence": 0.5899389386177063,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제54회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-104.easy_rgb_2x_010",
+   "case_id": "v2-104",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     15.5,
+     540.5
+    ],
+    [
+     142.5,
+     540.5
+    ],
+    [
+     142.5,
+     571.5
+    ],
+    [
+     15.5,
+     571.5
+    ]
+   ],
+   "bbox": [
+    15.5,
+    540.5,
+    142.5,
+    571.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "충주탄금공원",
+   "text_key": "충주탄금공원",
+   "ocr_text": "0 충주단금공원",
+   "confidence": 0.3225408433805232,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "충주탄금공원",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-104.easy_rgb_2x_011",
+   "case_id": "v2-104",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     39.0,
+     569.0
+    ],
+    [
+     142.0,
+     569.0
+    ],
+    [
+     142.0,
+     597.0
+    ],
+    [
+     39.0,
+     597.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    569.0,
+    142.0,
+    597.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "충주문화회관",
+   "text_key": "충주문화회관",
+   "ocr_text": "충주문화회관",
+   "confidence": 0.9977413754698915,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "충주문화회관",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-104.easy_rgb_2x_019",
+   "case_id": "v2-104",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     42.36,
+     405.35
+    ],
+    [
+     116.87,
+     394.8
+    ],
+    [
+     118.64,
+     411.15
+    ],
+    [
+     44.63,
+     421.7
+    ]
+   ],
+   "bbox": [
+    42.36,
+    394.8,
+    118.64,
+    421.7
+   ],
+   "height": 16.48,
+   "small_text": false,
+   "text": "BACK IN THE",
+   "text_key": "backinthe",
+   "ocr_text": "BACKINTHE",
+   "confidence": 0.9898676682527038,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "BACK IN THE 8090's",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-104.easy_rgb_2x_020",
+   "case_id": "v2-104",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     43.35,
+     418.73
+    ],
+    [
+     119.24,
+     410.77
+    ],
+    [
+     120.65,
+     436.27
+    ],
+    [
+     44.76,
+     444.23
+    ]
+   ],
+   "bbox": [
+    43.35,
+    410.77,
+    120.65,
+    444.23
+   ],
+   "height": 25.54,
+   "small_text": false,
+   "text": "8090's",
+   "text_key": "8090s",
+   "ocr_text": "8090's",
+   "confidence": 0.953730399164028,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "BACK IN THE 8090's",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

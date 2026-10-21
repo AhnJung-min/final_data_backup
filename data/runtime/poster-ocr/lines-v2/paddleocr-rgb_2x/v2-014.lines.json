@@ -1,0 +1,450 @@
+{
+ "case_id": "v2-014",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-014.padd_rgb_2x_001",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     358.0,
+     16.5
+    ],
+    [
+     427.5,
+     16.5
+    ],
+    [
+     427.5,
+     36.0
+    ],
+    [
+     358.0,
+     36.0
+    ]
+   ],
+   "bbox": [
+    358.0,
+    16.5,
+    427.5,
+    36.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "국가유산 야행",
+   "text_key": "국가유산야행",
+   "ocr_text": "유국가유산야개",
+   "confidence": 0.7845398783683777,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "국가유산 야행",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_2x_002",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     173.0,
+     27.0
+    ],
+    [
+     271.0,
+     28.5
+    ],
+    [
+     270.5,
+     67.0
+    ],
+    [
+     172.5,
+     65.5
+    ]
+   ],
+   "bbox": [
+    172.5,
+    27.0,
+    271.0,
+    67.0
+   ],
+   "height": 38.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9993370771408081,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026 공주국가유산야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_2x_003",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     67.0,
+     66.0
+    ],
+    [
+     372.5,
+     56.0
+    ],
+    [
+     374.5,
+     119.0
+    ],
+    [
+     69.0,
+     128.5
+    ]
+   ],
+   "bbox": [
+    67.0,
+    56.0,
+    374.5,
+    128.5
+   ],
+   "height": 62.78,
+   "small_text": false,
+   "text": "공주국가유산야행",
+   "text_key": "공주국가유산야행",
+   "ocr_text": "공주국가유산아하",
+   "confidence": 0.9120413064956665,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "공주국가유산야행",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_2x_005",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     158.5,
+     165.5
+    ],
+    [
+     283.5,
+     165.5
+    ],
+    [
+     283.5,
+     180.5
+    ],
+    [
+     158.5,
+     180.5
+    ]
+   ],
+   "bbox": [
+    158.5,
+    165.5,
+    283.5,
+    180.5
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "2026. 9. 4.(금) ~ 9. 6.(일)",
+   "text_key": "202694금96일",
+   "ocr_text": "2026.9.4(금)~9.6.(일)",
+   "confidence": 0.9942378997802734,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 4.(금) ~ 9. 6.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_2x_006",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     183.0,
+     180.5
+    ],
+    [
+     259.5,
+     180.5
+    ],
+    [
+     259.5,
+     196.0
+    ],
+    [
+     183.0,
+     196.0
+    ]
+   ],
+   "bbox": [
+    183.0,
+    180.5,
+    259.5,
+    196.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "18:00 ~ 22:00",
+   "text_key": "18002200",
+   "ocr_text": "18:00~22:00",
+   "confidence": 0.9948576092720032,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "18:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_2x_007",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     163.5,
+     203.0
+    ],
+    [
+     281.0,
+     203.0
+    ],
+    [
+     281.0,
+     216.5
+    ],
+    [
+     163.5,
+     216.5
+    ]
+   ],
+   "bbox": [
+    163.5,
+    203.0,
+    281.0,
+    216.5
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "공주 왕도심 일원 근대 국가유산",
+   "text_key": "공주왕도심일원근대국가유산",
+   "ocr_text": "공주왕도심 일원근대국가유산",
+   "confidence": 0.9397596120834351,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0476,
+   "gold_value": "공주 왕도심 일원 근대 국가유산 (옛 공주읍사무소 등)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_2x_008",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     181.5,
+     216.0
+    ],
+    [
+     260.5,
+     216.0
+    ],
+    [
+     260.5,
+     229.5
+    ],
+    [
+     181.5,
+     229.5
+    ]
+   ],
+   "bbox": [
+    181.5,
+    216.0,
+    260.5,
+    229.5
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "(옛 공주읍사무소 등)",
+   "text_key": "옛공주읍사무소등",
+   "ocr_text": "(옛공주합사무소등)",
+   "confidence": 0.6858912110328674,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0476,
+   "gold_value": "공주 왕도심 일원 근대 국가유산 (옛 공주읍사무소 등)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_2x_013",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     121.0,
+     593.0
+    ],
+    [
+     155.0,
+     593.0
+    ],
+    [
+     155.0,
+     603.5
+    ],
+    [
+     121.0,
+     603.5
+    ]
+   ],
+   "bbox": [
+    121.0,
+    593.0,
+    155.0,
+    603.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유신청",
+   "confidence": 0.8369815945625305,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "국가유산청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

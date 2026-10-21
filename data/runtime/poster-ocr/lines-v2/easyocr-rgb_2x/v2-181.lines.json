@@ -1,0 +1,234 @@
+{
+ "case_id": "v2-181",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-181.easy_rgb_2x_000",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     149.5,
+     40.0
+    ],
+    [
+     257.0,
+     40.0
+    ],
+    [
+     257.0,
+     92.0
+    ],
+    [
+     149.5,
+     92.0
+    ]
+   ],
+   "bbox": [
+    149.5,
+    40.0,
+    257.0,
+    92.0
+   ],
+   "height": 52.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026)",
+   "confidence": 0.9035117846968724,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "2026 제주마축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-181.easy_rgb_2x_002",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     137.5,
+     70.5
+    ],
+    [
+     363.5,
+     70.5
+    ],
+    [
+     363.5,
+     172.5
+    ],
+    [
+     137.5,
+     172.5
+    ]
+   ],
+   "bbox": [
+    137.5,
+    70.5,
+    363.5,
+    172.5
+   ],
+   "height": 102.0,
+   "small_text": false,
+   "text": "주마축제",
+   "text_key": "주마축제",
+   "ocr_text": "주마축제",
+   "confidence": 0.6861233711242676,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "2026 제주마축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-181.easy_rgb_2x_003",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     131.5,
+     201.5
+    ],
+    [
+     313.5,
+     201.5
+    ],
+    [
+     313.5,
+     220.5
+    ],
+    [
+     131.5,
+     220.5
+    ]
+   ],
+   "bbox": [
+    131.5,
+    201.5,
+    313.5,
+    220.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026.10.24.토 ~ 25.일 2일간",
+   "text_key": "20261024토25일2일간",
+   "ocr_text": "2026.10.249 ~ 25@ 2입간",
+   "confidence": 0.4210573576954438,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "2026.10.24.토 ~ 25.일 2일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-181.easy_rgb_2x_004",
+   "case_id": "v2-181",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     169.5,
+     223.5
+    ],
+    [
+     273.5,
+     223.5
+    ],
+    [
+     273.5,
+     244.5
+    ],
+    [
+     169.5,
+     244.5
+    ]
+   ],
+   "bbox": [
+    169.5,
+    223.5,
+    273.5,
+    244.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "렛츠런파크 제주",
+   "text_key": "렛츠런파크제주",
+   "ocr_text": "릿스런파크 제주",
+   "confidence": 0.2622687580374676,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "렛츠런파크 제주",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

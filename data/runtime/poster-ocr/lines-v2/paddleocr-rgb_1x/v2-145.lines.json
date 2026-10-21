@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-145",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-145.padd_rgb_1x_001",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     364.0,
+     7.0
+    ],
+    [
+     437.0,
+     7.0
+    ],
+    [
+     437.0,
+     24.0
+    ],
+    [
+     364.0,
+     24.0
+    ]
+   ],
+   "bbox": [
+    364.0,
+    7.0,
+    437.0,
+    24.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "양양문화재단",
+   "text_key": "양양문화재단",
+   "ocr_text": "양양문화재단",
+   "confidence": 0.9990087151527405,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "양양문화재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.padd_rgb_1x_004",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     302.0,
+     81.0
+    ],
+    [
+     433.0,
+     96.0
+    ],
+    [
+     431.0,
+     112.0
+    ],
+    [
+     300.0,
+     97.0
+    ]
+   ],
+   "bbox": [
+    300.0,
+    81.0,
+    433.0,
+    112.0
+   ],
+   "height": 16.12,
+   "small_text": false,
+   "text": "오전 10시 ~ 오후 9시",
+   "text_key": "오전10시오후9시",
+   "ocr_text": "18일(일) 오전 10시 ~오후9시",
+   "confidence": 0.8283241391181946,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "오전 10시 ~ 오후 9시",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.padd_rgb_1x_005",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     179.0,
+     223.0
+    ],
+    [
+     260.0,
+     214.0
+    ],
+    [
+     265.0,
+     263.0
+    ],
+    [
+     185.0,
+     272.0
+    ]
+   ],
+   "bbox": [
+    179.0,
+    214.0,
+    265.0,
+    272.0
+   ],
+   "height": 49.31,
+   "small_text": false,
+   "text": "양양",
+   "text_key": "양양",
+   "ocr_text": "양양",
+   "confidence": 0.9985065460205078,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "양양 송이연어 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.padd_rgb_1x_006",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     101.0,
+     264.0
+    ],
+    [
+     338.0,
+     240.0
+    ],
+    [
+     348.0,
+     334.0
+    ],
+    [
+     110.0,
+     357.0
+    ]
+   ],
+   "bbox": [
+    101.0,
+    240.0,
+    348.0,
+    357.0
+   ],
+   "height": 93.98,
+   "small_text": false,
+   "text": "송이연어",
+   "text_key": "송이연어",
+   "ocr_text": "송이연어",
+   "confidence": 0.6749109029769897,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "양양 송이연어 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.padd_rgb_1x_007",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     170.0,
+     334.0
+    ],
+    [
+     270.0,
+     327.0
+    ],
+    [
+     275.0,
+     394.0
+    ],
+    [
+     175.0,
+     401.0
+    ]
+   ],
+   "bbox": [
+    170.0,
+    327.0,
+    275.0,
+    401.0
+   ],
+   "height": 67.19,
+   "small_text": false,
+   "text": "축제",
+   "text_key": "축제",
+   "ocr_text": "축제",
+   "confidence": 0.9937397241592407,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "양양 송이연어 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.padd_rgb_1x_008",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     152.0,
+     406.0
+    ],
+    [
+     339.0,
+     388.0
+    ],
+    [
+     342.0,
+     415.0
+    ],
+    [
+     155.0,
+     433.0
+    ]
+   ],
+   "bbox": [
+    152.0,
+    388.0,
+    342.0,
+    433.0
+   ],
+   "height": 27.17,
+   "small_text": false,
+   "text": "청정자연이 차린 가장 깊은 식탁!",
+   "text_key": "청정자연이차린가장깊은식탁",
+   "ocr_text": "청정자연이차련가장 깊은 식탁!",
+   "confidence": 0.7978802919387817,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0769,
+   "gold_value": "청정자연이 차린 가장 깊은 식탁!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-145.padd_rgb_1x_011",
+   "case_id": "v2-145",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     159.0,
+     551.0
+    ],
+    [
+     268.0,
+     554.0
+    ],
+    [
+     268.0,
+     578.0
+    ],
+    [
+     159.0,
+     576.0
+    ]
+   ],
+   "bbox": [
+    159.0,
+    551.0,
+    268.0,
+    578.0
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "남대천 둔치 일원",
+   "text_key": "남대천둔치일원",
+   "ocr_text": "남대천둔치일원",
+   "confidence": 0.8924857974052429,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "남대천 둔치 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-039",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-039.easy_rgb_2x_000",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     69.5,
+     26.5
+    ],
+    [
+     185.5,
+     26.5
+    ],
+    [
+     185.5,
+     70.5
+    ],
+    [
+     69.5,
+     70.5
+    ]
+   ],
+   "bbox": [
+    69.5,
+    26.5,
+    185.5,
+    70.5
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.58861817702939,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 9. 17. 목 - 9. 20. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_002",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     258.0,
+     69.0
+    ],
+    [
+     422.0,
+     69.0
+    ],
+    [
+     422.0,
+     94.0
+    ],
+    [
+     258.0,
+     94.0
+    ]
+   ],
+   "bbox": [
+    258.0,
+    69.0,
+    422.0,
+    94.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "9. 17. 목 - 9. 20. 일",
+   "text_key": "917목920일",
+   "ocr_text": "9 17. 목 - 9.20.일",
+   "confidence": 0.3876802055596277,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 9. 17. 목 - 9. 20. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_003",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     262.5,
+     95.5
+    ],
+    [
+     421.5,
+     95.5
+    ],
+    [
+     421.5,
+     115.5
+    ],
+    [
+     262.5,
+     115.5
+    ]
+   ],
+   "bbox": [
+    262.5,
+    95.5,
+    421.5,
+    115.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "금왕읍 금빛근린공원일원",
+   "text_key": "금왕읍금빛근린공원일원",
+   "ocr_text": "금왕올 급빛근린공원일원",
+   "confidence": 0.3149204745149215,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1818,
+   "gold_value": "금왕읍 금빛근린공원일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-039.easy_rgb_2x_009",
+   "case_id": "v2-039",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     28.0,
+     598.0
+    ],
+    [
+     155.0,
+     598.0
+    ],
+    [
+     155.0,
+     614.0
+    ],
+    [
+     28.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    28.0,
+    598.0,
+    155.0,
+    614.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "음성군축제추진위원회",
+   "text_key": "음성군축제추진위원회",
+   "ocr_text": "주치 | 음성근프제추 진위원화",
+   "confidence": 0.35496794191282455,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "음성군축제추진위원회",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

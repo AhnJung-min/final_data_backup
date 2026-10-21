@@ -1,0 +1,343 @@
+{
+ "case_id": "v2-048",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-048.padd_rgb_2x_000",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     167.5,
+     429.0
+    ],
+    [
+     272.5,
+     429.0
+    ],
+    [
+     272.5,
+     457.5
+    ],
+    [
+     167.5,
+     457.5
+    ]
+   ],
+   "bbox": [
+    167.5,
+    429.0,
+    272.5,
+    457.5
+   ],
+   "height": 28.5,
+   "small_text": false,
+   "text": "만화.웹",
+   "text_key": "만화웹",
+   "ocr_text": "만화.웹둔",
+   "confidence": 0.9148674011230469,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "만화.웹툰 만만합니다!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.padd_rgb_2x_001",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     155.5,
+     459.0
+    ],
+    [
+     284.0,
+     459.0
+    ],
+    [
+     284.0,
+     485.5
+    ],
+    [
+     155.5,
+     485.5
+    ]
+   ],
+   "bbox": [
+    155.5,
+    459.0,
+    284.0,
+    485.5
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "만만합니다!",
+   "text_key": "만만합니다",
+   "ocr_text": "만만합니다!",
+   "confidence": 0.9965552687644958,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "만화.웹툰 만만합니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.padd_rgb_2x_004",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     100.0,
+     515.5
+    ],
+    [
+     351.0,
+     515.5
+    ],
+    [
+     351.0,
+     550.0
+    ],
+    [
+     100.0,
+     550.0
+    ]
+   ],
+   "bbox": [
+    100.0,
+    515.5,
+    351.0,
+    550.0
+   ],
+   "height": 34.5,
+   "small_text": false,
+   "text": "부천국제만화축제",
+   "text_key": "부천국제만화축제",
+   "ocr_text": "부천국제만화축제",
+   "confidence": 0.9928643703460693,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부천국제만화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.padd_rgb_2x_005",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     115.5,
+     557.0
+    ],
+    [
+     247.0,
+     557.5
+    ],
+    [
+     247.0,
+     569.5
+    ],
+    [
+     115.5,
+     569.0
+    ]
+   ],
+   "bbox": [
+    115.5,
+    557.0,
+    247.0,
+    569.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "2026.9.18(금) - 9.20(일)",
+   "text_key": "2026918금920일",
+   "ocr_text": "2026.9.18(3):9.20(9)1",
+   "confidence": 0.9211219549179077,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "2026.9.18(금) - 9.20(일)",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.padd_rgb_2x_006",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     242.5,
+     558.0
+    ],
+    [
+     336.0,
+     558.0
+    ],
+    [
+     336.0,
+     568.5
+    ],
+    [
+     242.5,
+     568.5
+    ]
+   ],
+   "bbox": [
+    242.5,
+    558.0,
+    336.0,
+    568.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "한국만화박물관 일대",
+   "text_key": "한국만화박물관일대",
+   "ocr_text": "한국민회박물관 일대",
+   "confidence": 0.8323835134506226,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2222,
+   "gold_value": "한국만화박물관 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.padd_rgb_2x_007",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     44.5,
+     604.5
+    ],
+    [
+     73.5,
+     604.5
+    ],
+    [
+     73.5,
+     617.5
+    ],
+    [
+     44.5,
+     617.5
+    ]
+   ],
+   "bbox": [
+    44.5,
+    604.5,
+    73.5,
+    617.5
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "부천시",
+   "text_key": "부천시",
+   "ocr_text": "부천시",
+   "confidence": 0.9642845988273621,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부천시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,668 @@
+{
+ "case_id": "v2-044",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "v2-044.padd_rgb_1x_001",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     7.0,
+     273.0
+    ],
+    [
+     59.0,
+     273.0
+    ],
+    [
+     59.0,
+     308.0
+    ],
+    [
+     7.0,
+     308.0
+    ]
+   ],
+   "bbox": [
+    7.0,
+    273.0,
+    59.0,
+    308.0
+   ],
+   "height": 35.0,
+   "small_text": false,
+   "text": "9.18.",
+   "text_key": "918",
+   "ocr_text": "9.18.",
+   "confidence": 0.9925657510757446,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_003",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     396.0,
+     291.0
+    ],
+    [
+     433.0,
+     291.0
+    ],
+    [
+     433.0,
+     320.0
+    ],
+    [
+     396.0,
+     320.0
+    ]
+   ],
+   "bbox": [
+    396.0,
+    291.0,
+    433.0,
+    320.0
+   ],
+   "height": 29.0,
+   "small_text": false,
+   "text": "시민",
+   "text_key": "시민",
+   "ocr_text": "시민",
+   "confidence": 0.9982186555862427,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "과천 시민 광장 과천 시민회관 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_004",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     7.0,
+     304.0
+    ],
+    [
+     47.0,
+     304.0
+    ],
+    [
+     47.0,
+     337.0
+    ],
+    [
+     7.0,
+     337.0
+    ]
+   ],
+   "bbox": [
+    7.0,
+    304.0,
+    47.0,
+    337.0
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "FRI.",
+   "text_key": "fri",
+   "ocr_text": "FRI.",
+   "confidence": 0.9730299115180969,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_005",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     396.0,
+     316.0
+    ],
+    [
+     432.0,
+     316.0
+    ],
+    [
+     432.0,
+     341.0
+    ],
+    [
+     396.0,
+     341.0
+    ]
+   ],
+   "bbox": [
+    396.0,
+    316.0,
+    432.0,
+    341.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "광장",
+   "text_key": "광장",
+   "ocr_text": "광장",
+   "confidence": 0.9995471239089966,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "과천 시민 광장 과천 시민회관 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_006",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     7.0,
+     363.0
+    ],
+    [
+     60.0,
+     363.0
+    ],
+    [
+     60.0,
+     398.0
+    ],
+    [
+     7.0,
+     398.0
+    ]
+   ],
+   "bbox": [
+    7.0,
+    363.0,
+    60.0,
+    398.0
+   ],
+   "height": 35.0,
+   "small_text": false,
+   "text": "9.20.",
+   "text_key": "920",
+   "ocr_text": "9.20.",
+   "confidence": 0.9340987205505371,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_007",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     394.0,
+     360.0
+    ],
+    [
+     434.0,
+     360.0
+    ],
+    [
+     434.0,
+     386.0
+    ],
+    [
+     394.0,
+     386.0
+    ]
+   ],
+   "bbox": [
+    394.0,
+    360.0,
+    434.0,
+    386.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "과천",
+   "text_key": "과천",
+   "ocr_text": "과천",
+   "confidence": 0.9997450113296509,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_008",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     362.0,
+     382.0
+    ],
+    [
+     433.0,
+     382.0
+    ],
+    [
+     433.0,
+     408.0
+    ],
+    [
+     362.0,
+     408.0
+    ]
+   ],
+   "bbox": [
+    362.0,
+    382.0,
+    433.0,
+    408.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "시민회관",
+   "text_key": "시민회관",
+   "ocr_text": "시민회관",
+   "confidence": 0.9963308572769165,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "과천 시민 광장 과천 시민회관 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_009",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     7.0,
+     395.0
+    ],
+    [
+     57.0,
+     395.0
+    ],
+    [
+     57.0,
+     428.0
+    ],
+    [
+     7.0,
+     428.0
+    ]
+   ],
+   "bbox": [
+    7.0,
+    395.0,
+    57.0,
+    428.0
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "SUN.",
+   "text_key": "sun",
+   "ocr_text": "SUN.",
+   "confidence": 0.9910727739334106,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.18. FRI. 9.20. SUN.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_010",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     395.0,
+     404.0
+    ],
+    [
+     435.0,
+     404.0
+    ],
+    [
+     435.0,
+     430.0
+    ],
+    [
+     395.0,
+     430.0
+    ]
+   ],
+   "bbox": [
+    395.0,
+    404.0,
+    435.0,
+    430.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "일대",
+   "text_key": "일대",
+   "ocr_text": "일대",
+   "confidence": 0.998066782951355,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "과천 시민 광장 과천 시민회관 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_011",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     66.0,
+     424.0
+    ],
+    [
+     251.0,
+     437.0
+    ],
+    [
+     245.0,
+     513.0
+    ],
+    [
+     60.0,
+     499.0
+    ]
+   ],
+   "bbox": [
+    60.0,
+    424.0,
+    251.0,
+    513.0
+   ],
+   "height": 75.74,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9994456171989441,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_013",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     2.0,
+     472.0
+    ],
+    [
+     443.0,
+     462.0
+    ],
+    [
+     443.0,
+     594.0
+    ],
+    [
+     5.0,
+     604.0
+    ]
+   ],
+   "bbox": [
+    2.0,
+    462.0,
+    443.0,
+    604.0
+   ],
+   "height": 132.02,
+   "small_text": false,
+   "text": "공연예술축제",
+   "text_key": "공연예술축제",
+   "ocr_text": "공연에술축제",
+   "confidence": 0.881779670715332,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "과천 공연예술축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-044.padd_rgb_1x_019",
+   "case_id": "v2-044",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     294.0,
+     606.0
+    ],
+    [
+     351.0,
+     606.0
+    ],
+    [
+     351.0,
+     617.0
+    ],
+    [
+     294.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    294.0,
+    606.0,
+    351.0,
+    617.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "KTR",
+   "text_key": "ktr",
+   "ocr_text": "2mKTR",
+   "confidence": 0.6920874714851379,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "KTR",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

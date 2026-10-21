@@ -1,0 +1,71 @@
+{
+ "case_id": "v2-052",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-052.easy_rgb_2x_005",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     258.0,
+     527.0
+    ],
+    [
+     384.0,
+     527.0
+    ],
+    [
+     384.0,
+     555.0
+    ],
+    [
+     258.0,
+     555.0
+    ]
+   ],
+   "bbox": [
+    258.0,
+    527.0,
+    384.0,
+    555.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026. 9. 19. 토",
+   "text_key": "2026919토",
+   "ocr_text": "2026.9. 19 토",
+   "confidence": 0.7563691120656589,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. 토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

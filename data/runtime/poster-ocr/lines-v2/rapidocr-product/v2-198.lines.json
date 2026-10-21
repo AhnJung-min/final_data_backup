@@ -1,0 +1,235 @@
+{
+ "case_id": "v2-198",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 432,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-198.rapi_product_002",
+   "case_id": "v2-198",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     83.0,
+     27.0
+    ],
+    [
+     334.0,
+     25.0
+    ],
+    [
+     335.0,
+     75.0
+    ],
+    [
+     83.0,
+     77.0
+    ]
+   ],
+   "bbox": [
+    83.0,
+    25.0,
+    335.0,
+    77.0
+   ],
+   "height": 50.0,
+   "small_text": false,
+   "text": "부산불꽃축제",
+   "text_key": "부산불꽃축제",
+   "ocr_text": "부산불꽃축제",
+   "confidence": 0.99939,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부산불꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-198.rapi_product_003",
+   "case_id": "v2-198",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     31.0,
+     39.0
+    ],
+    [
+     87.0,
+     39.0
+    ],
+    [
+     87.0,
+     61.0
+    ],
+    [
+     31.0,
+     61.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    39.0,
+    87.0,
+    61.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "제 21회",
+   "text_key": "제21회",
+   "ocr_text": "제21회",
+   "confidence": 0.99859,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제 21회 부산불꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-198.rapi_product_004",
+   "case_id": "v2-198",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     334.0,
+     37.0
+    ],
+    [
+     414.0,
+     36.0
+    ],
+    [
+     414.0,
+     52.0
+    ],
+    [
+     334.0,
+     54.0
+    ]
+   ],
+   "bbox": [
+    334.0,
+    36.0,
+    414.0,
+    54.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "2026. 11. 7. (토)",
+   "text_key": "2026117토",
+   "ocr_text": "2026.11.7.(토)",
+   "confidence": 0.95655,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 11. 7. (토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-198.rapi_product_005",
+   "case_id": "v2-198",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     336.0,
+     50.0
+    ],
+    [
+     415.0,
+     50.0
+    ],
+    [
+     415.0,
+     64.0
+    ],
+    [
+     336.0,
+     64.0
+    ]
+   ],
+   "bbox": [
+    336.0,
+    50.0,
+    415.0,
+    64.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "광안리 해수욕장 일원",
+   "text_key": "광안리해수욕장일원",
+   "ocr_text": "광안리 해수욕장 일원",
+   "confidence": 0.8919,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광안리 해수욕장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

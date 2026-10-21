@@ -1,0 +1,573 @@
+{
+ "set": "S22",
+ "checked_at": "2026-10-20T19:59:09+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 86.233,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 45.706,
+  "lines": 17,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "하람 국화향 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "하람 국화향 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "하람",
+     "confidence": 0.9994,
+     "bbox": [
+      77.0,
+      174.0,
+      285.0,
+      297.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "국화향",
+     "confidence": 1.0,
+     "bbox": [
+      295.0,
+      174.0,
+      597.0,
+      298.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "축제",
+     "confidence": 0.9996,
+     "bbox": [
+      605.0,
+      172.0,
+      809.0,
+      300.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    77.0,
+    172.0,
+    809.0,
+    300.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제16회 하람 국화향 축제",
+     "confidence": 0.9634,
+     "bbox": [
+      307.0,
+      674.0,
+      569.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    569.0,
+    708.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제16회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제16회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "20267",
+     "confidence": 0.8995,
+     "bbox": [
+      88.0,
+      115.0,
+      194.0,
+      150.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제16회",
+     "confidence": 0.9997,
+     "bbox": [
+      176.0,
+      112.0,
+      290.0,
+      152.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    88.0,
+    112.0,
+    290.0,
+    152.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제16회 하람 국화향 축제",
+     "confidence": 0.9634,
+     "bbox": [
+      307.0,
+      674.0,
+      569.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    673.0,
+    569.0,
+    708.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026. 11.1.(일) ~ 11.4.(수)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.11.01(일)-11.04(수)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      102.0,
+      454.0,
+      157.0,
+      490.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "2026.11.01(일)-11.04(수)",
+     "confidence": 0.9981,
+     "bbox": [
+      196.0,
+      453.0,
+      593.0,
+      493.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    102.0,
+    453.0,
+    593.0,
+    493.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026. 11.1.(일) ~ 11.4.(수)",
+     "confidence": 0.9539,
+     "bbox": [
+      307.0,
+      733.0,
+      597.0,
+      763.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    597.0,
+    765.0
+   ],
+   "method": "포스터 11.1(일) ~ 11.4(수)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "11:00~20:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 11:00-20:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "시간",
+     "confidence": 1.0,
+     "bbox": [
+      101.0,
+      525.0,
+      157.0,
+      561.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "11:00-20:00",
+     "confidence": 0.999,
+     "bbox": [
+      199.0,
+      528.0,
+      399.0,
+      559.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    101.0,
+    525.0,
+    399.0,
+    561.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "11:00~20:00",
+     "confidence": 0.9973,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "하람 전통시장 일대",
+   "status": "fail",
+   "reason": "포스터의 '장소' 표기가 기준 문서와 다릅니다.",
+   "observed": "하람군청 앞 광장",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "장소",
+     "confidence": 0.9991,
+     "bbox": [
+      101.0,
+      595.0,
+      157.0,
+      630.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "하람군청 앞 광장",
+     "confidence": 0.9791,
+     "bbox": [
+      197.0,
+      595.0,
+      418.0,
+      633.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    101.0,
+    595.0,
+    418.0,
+    633.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "하람 전통시장 일대",
+     "confidence": 0.9885,
+     "bbox": [
+      309.0,
+      850.0,
+      512.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    512.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 25% · 판독 신뢰도 98%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "하람군",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "하람군",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 하람군 |주관 하람문화원 | 문의 064-000-9852",
+     "confidence": 0.9607,
+     "bbox": [
+      179.0,
+      1195.0,
+      706.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    179.0,
+    1195.0,
+    706.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "하람군",
+     "confidence": 0.9977,
+     "bbox": [
+      304.0,
+      901.0,
+      385.0,
+      942.0
+     ]
+    }
+   ],
+   "source_box": [
+    88.0,
+    900.0,
+    385.0,
+    944.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "하람문화원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "하람문화원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 하람군 |주관 하람문화원 | 문의 064-000-9852",
+     "confidence": 0.9607,
+     "bbox": [
+      179.0,
+      1195.0,
+      706.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    179.0,
+    1195.0,
+    706.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "하람문화원",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      963.0,
+      429.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    429.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 96%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "064-000-9852",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "064-000-9852",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 하람군 |주관 하람문화원 | 문의 064-000-9852",
+     "confidence": 0.9607,
+     "bbox": [
+      179.0,
+      1195.0,
+      706.0,
+      1219.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    179.0,
+    1195.0,
+    706.0,
+    1219.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "064-000-9852",
+     "confidence": 0.9994,
+     "bbox": [
+      307.0,
+      1024.0,
+      461.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    461.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "가을 향기 가득한 하루",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가을 향기 가득한 하루",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "가을 향기 가득한",
+     "confidence": 0.964,
+     "bbox": [
+      86.0,
+      320.0,
+      315.0,
+      361.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "하루",
+     "confidence": 0.9999,
+     "bbox": [
+      308.0,
+      322.0,
+      372.0,
+      357.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    86.0,
+    320.0,
+    372.0,
+    361.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "가을 향기 가득한 하루",
+     "confidence": 0.9755,
+     "bbox": [
+      310.0,
+      1081.0,
+      544.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    544.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.967,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 8,
+  "fail": 1,
+  "review": 1
+ },
+ "verdict": "fail",
+ "predicted_mismatch": true,
+ "check_seconds": 0.006
+}

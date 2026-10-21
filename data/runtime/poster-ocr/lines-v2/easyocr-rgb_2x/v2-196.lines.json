@@ -1,0 +1,126 @@
+{
+ "case_id": "v2-196",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-196.easy_rgb_2x_002",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     18.0,
+     598.5
+    ],
+    [
+     129.5,
+     598.5
+    ],
+    [
+     129.5,
+     615.0
+    ],
+    [
+     18.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    598.5,
+    129.5,
+    615.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "통영 트라이애슬론광장",
+   "text_key": "통영트라이애슬론광장",
+   "ocr_text": "동영 트라이애습총광장",
+   "confidence": 0.1070344191781314,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "통영 트라이애슬론광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.easy_rgb_2x_003",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     135.0,
+     600.0
+    ],
+    [
+     280.0,
+     600.0
+    ],
+    [
+     280.0,
+     614.0
+    ],
+    [
+     135.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    135.0,
+    600.0,
+    280.0,
+    614.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "11.6(금)-8(일)",
+   "text_key": "116금8일",
+   "ocr_text": "11.6(금)-8(밑) 10:00-21.00",
+   "confidence": 0.37484884058998796,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "11.6(금)-8(일)",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

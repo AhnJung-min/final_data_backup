@@ -1,0 +1,291 @@
+{
+ "case_id": "v2-196",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-196.rapi_product_000",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     292.0,
+     8.0
+    ],
+    [
+     425.0,
+     42.0
+    ],
+    [
+     412.0,
+     96.0
+    ],
+    [
+     278.0,
+     62.0
+    ]
+   ],
+   "bbox": [
+    278.0,
+    8.0,
+    425.0,
+    96.0
+   ],
+   "height": 55.66,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9976,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "2026 어부장터 X포트빌리지통영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.rapi_product_001",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     36.0,
+     38.0
+    ],
+    [
+     387.0,
+     25.0
+    ],
+    [
+     393.0,
+     185.0
+    ],
+    [
+     41.0,
+     197.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    25.0,
+    393.0,
+    197.0
+   ],
+   "height": 159.6,
+   "small_text": false,
+   "text": "어부장터",
+   "text_key": "어부장터",
+   "ocr_text": "어부정터",
+   "confidence": 0.85674,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "어부장터 X 포트빌리지통영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.rapi_product_002",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     44.0,
+     161.0
+    ],
+    [
+     383.0,
+     161.0
+    ],
+    [
+     383.0,
+     244.0
+    ],
+    [
+     44.0,
+     244.0
+    ]
+   ],
+   "bbox": [
+    44.0,
+    161.0,
+    383.0,
+    244.0
+   ],
+   "height": 83.0,
+   "small_text": false,
+   "text": "X 포트빌리지통영",
+   "text_key": "x포트빌리지통영",
+   "ocr_text": "X포트빌린지통영",
+   "confidence": 0.8936,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "어부장터 X 포트빌리지통영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.rapi_product_006",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     18.0,
+     600.0
+    ],
+    [
+     281.0,
+     600.0
+    ],
+    [
+     281.0,
+     614.0
+    ],
+    [
+     18.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    600.0,
+    281.0,
+    614.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "11.6(금)-8(일)",
+   "text_key": "116금8일",
+   "ocr_text": "통영 트라이애슬론광장|11.6(금)-8(일) 10:00-21:00",
+   "confidence": 0.92499,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "11.6(금)-8(일)",
+   "extra_chars": 18,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-196.rapi_product_007",
+   "case_id": "v2-196",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     343.0,
+     599.0
+    ],
+    [
+     425.0,
+     599.0
+    ],
+    [
+     425.0,
+     611.0
+    ],
+    [
+     343.0,
+     611.0
+    ]
+   ],
+   "bbox": [
+    343.0,
+    599.0,
+    425.0,
+    611.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "FOOD TRAVEL",
+   "text_key": "foodtravel",
+   "ocr_text": "통행시FOOOTRAVEL",
+   "confidence": 0.81242,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "FOOD TRAVEL",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "case_id": "v2-028",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "v2-028.easy_rgb_2x_022",
+   "case_id": "v2-028",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     173.0,
+     473.0
+    ],
+    [
+     243.0,
+     473.0
+    ],
+    [
+     243.0,
+     488.0
+    ],
+    [
+     173.0,
+     488.0
+    ]
+   ],
+   "bbox": [
+    173.0,
+    473.0,
+    243.0,
+    488.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "2026.09.11. ~ 12.",
+   "text_key": "2026091112",
+   "ocr_text": "2026.09.1.",
+   "confidence": 0.9241653680801392,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "2026.09.11. ~ 12.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-028.easy_rgb_2x_024",
+   "case_id": "v2-028",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_024"
+   },
+   "polygon": [
+    [
+     186.0,
+     487.0
+    ],
+    [
+     257.0,
+     487.0
+    ],
+    [
+     257.0,
+     501.0
+    ],
+    [
+     186.0,
+     501.0
+    ]
+   ],
+   "bbox": [
+    186.0,
+    487.0,
+    257.0,
+    501.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "KT&G 상상마당",
+   "text_key": "ktg상상마당",
+   "ocr_text": "KTGG 상상마당",
+   "confidence": 0.786993858956556,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "KT&G 상상마당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

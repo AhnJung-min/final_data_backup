@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-103",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-103.easy_rgb_2x_000",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     88.0,
+     22.0
+    ],
+    [
+     112.0,
+     22.0
+    ],
+    [
+     112.0,
+     34.0
+    ],
+    [
+     88.0,
+     34.0
+    ]
+   ],
+   "bbox": [
+    88.0,
+    22.0,
+    112.0,
+    34.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "23rd",
+   "text_key": "23rd",
+   "ocr_text": "23d",
+   "confidence": 0.8630645960117916,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "23rd",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-103.easy_rgb_2x_001",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     304.0,
+     27.0
+    ],
+    [
+     415.0,
+     27.0
+    ],
+    [
+     415.0,
+     43.0
+    ],
+    [
+     304.0,
+     43.0
+    ]
+   ],
+   "bbox": [
+    304.0,
+    27.0,
+    415.0,
+    43.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "광주특별시 동구 충장로",
+   "text_key": "광주특별시동구충장로",
+   "ocr_text": "광주m변시동구 손장로",
+   "confidence": 0.27824919349911886,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1852,
+   "gold_value": "광주특별시 동구 충장로 금남로 5.18민주광장 예술의거리 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-103.easy_rgb_2x_002",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     25.0,
+     32.0
+    ],
+    [
+     176.0,
+     32.0
+    ],
+    [
+     176.0,
+     69.0
+    ],
+    [
+     25.0,
+     69.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    32.0,
+    176.0,
+    69.0
+   ],
+   "height": 37.0,
+   "small_text": false,
+   "text": "광주 추억의",
+   "text_key": "광주추억의",
+   "ocr_text": "광주 추억의",
+   "confidence": 0.6247636664506234,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "광주 추억의 충장축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-103.easy_rgb_2x_003",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     379.0,
+     43.0
+    ],
+    [
+     414.0,
+     43.0
+    ],
+    [
+     414.0,
+     58.0
+    ],
+    [
+     379.0,
+     58.0
+    ]
+   ],
+   "bbox": [
+    379.0,
+    43.0,
+    414.0,
+    58.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "금남로",
+   "text_key": "금남로",
+   "ocr_text": "금남로",
+   "confidence": 0.3722228144214148,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1852,
+   "gold_value": "광주특별시 동구 충장로 금남로 5.18민주광장 예술의거리 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-103.easy_rgb_2x_004",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     350.0,
+     57.0
+    ],
+    [
+     415.0,
+     57.0
+    ],
+    [
+     415.0,
+     73.0
+    ],
+    [
+     350.0,
+     73.0
+    ]
+   ],
+   "bbox": [
+    350.0,
+    57.0,
+    415.0,
+    73.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "5.18민주광장",
+   "text_key": "518민주광장",
+   "ocr_text": "518민주광장",
+   "confidence": 0.9203003370222104,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1852,
+   "gold_value": "광주특별시 동구 충장로 금남로 5.18민주광장 예술의거리 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-103.easy_rgb_2x_005",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     335.5,
+     71.5
+    ],
+    [
+     415.0,
+     71.5
+    ],
+    [
+     415.0,
+     87.0
+    ],
+    [
+     335.5,
+     87.0
+    ]
+   ],
+   "bbox": [
+    335.5,
+    71.5,
+    415.0,
+    87.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "예술의거리 일원",
+   "text_key": "예술의거리일원",
+   "ocr_text": "예순의거리인원",
+   "confidence": 0.259710864337887,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1852,
+   "gold_value": "광주특별시 동구 충장로 금남로 5.18민주광장 예술의거리 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-103.easy_rgb_2x_006",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     23.5,
+     61.0
+    ],
+    [
+     179.0,
+     61.0
+    ],
+    [
+     179.0,
+     112.0
+    ],
+    [
+     23.5,
+     112.0
+    ]
+   ],
+   "bbox": [
+    23.5,
+    61.0,
+    179.0,
+    112.0
+   ],
+   "height": 51.0,
+   "small_text": false,
+   "text": "충장축제",
+   "text_key": "충장축제",
+   "ocr_text": "중장축제",
+   "confidence": 0.5441845059394836,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "광주 추억의 충장축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-103.easy_rgb_2x_014",
+   "case_id": "v2-103",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     85.5,
+     500.5
+    ],
+    [
+     359.5,
+     500.5
+    ],
+    [
+     359.5,
+     567.5
+    ],
+    [
+     85.5,
+     567.5
+    ]
+   ],
+   "bbox": [
+    85.5,
+    500.5,
+    359.5,
+    567.5
+   ],
+   "height": 67.0,
+   "small_text": false,
+   "text": "추억의 노래",
+   "text_key": "추억의노래",
+   "ocr_text": "추억의노래",
+   "confidence": 0.8519393274217405,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "추억의 노래",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

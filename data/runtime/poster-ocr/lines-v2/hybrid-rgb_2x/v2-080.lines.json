@@ -1,0 +1,449 @@
+{
+ "case_id": "v2-080",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-080.easy_rgb_2x_004",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     170.5,
+     236.5
+    ],
+    [
+     330.5,
+     236.5
+    ],
+    [
+     330.5,
+     256.5
+    ],
+    [
+     170.5,
+     256.5
+    ]
+   ],
+   "bbox": [
+    170.5,
+    236.5,
+    330.5,
+    256.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "2026.10.2(금)~10.4(일)",
+   "text_key": "2026102금104일",
+   "ocr_text": "2026.10.2(금)~10.4(입)",
+   "confidence": 0.949367880821228,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "2026.10.2(금)~10.4(일)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-080.easy_rgb_2x_005",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     107.0,
+     258.0
+    ],
+    [
+     129.0,
+     258.0
+    ],
+    [
+     129.0,
+     271.0
+    ],
+    [
+     107.0,
+     271.0
+    ]
+   ],
+   "bbox": [
+    107.0,
+    258.0,
+    129.0,
+    271.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "부안",
+   "text_key": "부안",
+   "ocr_text": "부안",
+   "confidence": 0.9948757625321714,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "부안 곰소 젓갈과 왕새우가 함께 FOOD FESTA",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-080.easy_rgb_2x_006",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     145.5,
+     255.5
+    ],
+    [
+     328.5,
+     255.5
+    ],
+    [
+     328.5,
+     274.0
+    ],
+    [
+     145.5,
+     274.0
+    ]
+   ],
+   "bbox": [
+    145.5,
+    255.5,
+    328.5,
+    274.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "젓갈과 왕새우가 함께 FOOD FESTA",
+   "text_key": "젓갈과왕새우가함께foodfesta",
+   "ocr_text": "젓갈과왕새우가함께 FOODFESTA",
+   "confidence": 0.5082889949970292,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "부안 곰소 젓갈과 왕새우가 함께 FOOD FESTA",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-080.easy_rgb_2x_007",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     145.0,
+     273.0
+    ],
+    [
+     292.0,
+     273.0
+    ],
+    [
+     292.0,
+     288.0
+    ],
+    [
+     145.0,
+     288.0
+    ]
+   ],
+   "bbox": [
+    145.0,
+    273.0,
+    292.0,
+    288.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "부안군 진서면 곰소다용도부지 일원",
+   "text_key": "부안군진서면곰소다용도부지일원",
+   "ocr_text": "부안군 진서면공소다용도부지일원",
+   "confidence": 0.8720908761024475,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0667,
+   "gold_value": "부안군 진서면 곰소다용도부지 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-080.easy_rgb_2x_008",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     54.0,
+     606.0
+    ],
+    [
+     277.0,
+     606.0
+    ],
+    [
+     277.0,
+     621.0
+    ],
+    [
+     54.0,
+     621.0
+    ]
+   ],
+   "bbox": [
+    54.0,
+    606.0,
+    277.0,
+    621.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "곰소젓갈축제추진위원회",
+   "text_key": "곰소젓갈축제추진위원회",
+   "ocr_text": "주치: 급소젓갈국세추진위원회 부안양식어민합회",
+   "confidence": 0.23367227310897007,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "곰소젓갈축제추진위원회",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-080.easy_rgb_2x_011",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     357.0,
+     606.0
+    ],
+    [
+     390.0,
+     606.0
+    ],
+    [
+     390.0,
+     621.0
+    ],
+    [
+     357.0,
+     621.0
+    ]
+   ],
+   "bbox": [
+    357.0,
+    606.0,
+    390.0,
+    621.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "부안군",
+   "text_key": "부안군",
+   "ocr_text": "부안군",
+   "confidence": 0.5022941055523386,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부안군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-080.easy_rgb_2x_016",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     76.88,
+     61.38
+    ],
+    [
+     138.47,
+     46.8
+    ],
+    [
+     143.62,
+     70.62
+    ],
+    [
+     82.03,
+     85.7
+    ]
+   ],
+   "bbox": [
+    76.88,
+    46.8,
+    143.62,
+    85.7
+   ],
+   "height": 24.61,
+   "small_text": false,
+   "text": "제18회",
+   "text_key": "제18회",
+   "ocr_text": "T18회",
+   "confidence": 0.7035154104232788,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제18회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-080.easy_rgb_2x_017",
+   "case_id": "v2-080",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     126.3,
+     258.67
+    ],
+    [
+     147.71,
+     257.12
+    ],
+    [
+     148.2,
+     270.83
+    ],
+    [
+     126.79,
+     272.38
+    ]
+   ],
+   "bbox": [
+    126.3,
+    257.12,
+    148.2,
+    272.38
+   ],
+   "height": 13.72,
+   "small_text": false,
+   "text": "곰소",
+   "text_key": "곰소",
+   "ocr_text": "곰소",
+   "confidence": 0.220562160255103,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "부안 곰소 젓갈과 왕새우가 함께 FOOD FESTA",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

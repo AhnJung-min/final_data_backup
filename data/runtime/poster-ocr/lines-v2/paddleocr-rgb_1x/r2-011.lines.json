@@ -1,0 +1,236 @@
+{
+ "case_id": "r2-011",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "r2-011.padd_rgb_1x_000",
+   "case_id": "r2-011",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     116.0,
+     118.0
+    ],
+    [
+     162.0,
+     118.0
+    ],
+    [
+     162.0,
+     150.0
+    ],
+    [
+     116.0,
+     150.0
+    ]
+   ],
+   "bbox": [
+    116.0,
+    118.0,
+    162.0,
+    150.0
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "20",
+   "text_key": "20",
+   "ocr_text": "20",
+   "confidence": 0.9993637800216675,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 수원화성 미디어아트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-011.padd_rgb_1x_002",
+   "case_id": "r2-011",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     113.0,
+     133.0
+    ],
+    [
+     329.0,
+     130.0
+    ],
+    [
+     330.0,
+     178.0
+    ],
+    [
+     114.0,
+     181.0
+    ]
+   ],
+   "bbox": [
+    113.0,
+    130.0,
+    330.0,
+    181.0
+   ],
+   "height": 48.01,
+   "small_text": false,
+   "text": "26 수원화성",
+   "text_key": "26수원화성",
+   "ocr_text": "26수원화성",
+   "confidence": 0.8511490821838379,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 수원화성 미디어아트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-011.padd_rgb_1x_003",
+   "case_id": "r2-011",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     115.0,
+     179.0
+    ],
+    [
+     328.0,
+     179.0
+    ],
+    [
+     328.0,
+     220.0
+    ],
+    [
+     115.0,
+     220.0
+    ]
+   ],
+   "bbox": [
+    115.0,
+    179.0,
+    328.0,
+    220.0
+   ],
+   "height": 41.0,
+   "small_text": false,
+   "text": "미디어아트",
+   "text_key": "미디어아트",
+   "ocr_text": "미디어아트",
+   "confidence": 0.9998511075973511,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2222,
+   "gold_value": "수원화성 미디어아트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-011.padd_rgb_1x_005",
+   "case_id": "r2-011",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     225.0,
+     224.0
+    ],
+    [
+     327.0,
+     224.0
+    ],
+    [
+     327.0,
+     237.0
+    ],
+    [
+     225.0,
+     237.0
+    ]
+   ],
+   "bbox": [
+    225.0,
+    224.0,
+    327.0,
+    237.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "화서문, 장안문, 장안공원",
+   "text_key": "화서문장안문장안공원",
+   "ocr_text": "화서문, 장안문, 장안공원",
+   "confidence": 0.8373414278030396,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "화서문, 장안문, 장안공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

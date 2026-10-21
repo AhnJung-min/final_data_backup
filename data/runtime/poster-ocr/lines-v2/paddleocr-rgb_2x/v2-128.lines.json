@@ -1,0 +1,669 @@
+{
+ "case_id": "v2-128",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 20,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "v2-128.padd_rgb_2x_000",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     19.5,
+     22.5
+    ],
+    [
+     145.5,
+     22.5
+    ],
+    [
+     145.5,
+     32.5
+    ],
+    [
+     19.5,
+     32.5
+    ]
+   ],
+   "bbox": [
+    19.5,
+    22.5,
+    145.5,
+    32.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "유네스코 등재 - 한국의 장 담그기 문화",
+   "text_key": "유네스코등재한국의장담그기문화",
+   "ocr_text": "유네스코등재·한국의장담그기문화",
+   "confidence": 0.9393227696418762,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "유네스코 등재 - 한국의 장 담그기 문화",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_001",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     18.5,
+     36.0
+    ],
+    [
+     75.0,
+     36.0
+    ],
+    [
+     75.0,
+     46.0
+    ],
+    [
+     18.5,
+     46.0
+    ]
+   ],
+   "bbox": [
+    18.5,
+    36.0,
+    75.0,
+    46.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "List of Unesco -",
+   "text_key": "listofunesco",
+   "ocr_text": "List ofUnesco-",
+   "confidence": 0.9489736557006836,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2532,
+   "gold_value": "List of Unesco - Knowledge, beliefs and practices related to jang making in the Republic of korea",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_004",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     19.0,
+     45.5
+    ],
+    [
+     145.5,
+     45.5
+    ],
+    [
+     145.5,
+     53.0
+    ],
+    [
+     19.0,
+     53.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    45.5,
+    145.5,
+    53.0
+   ],
+   "height": 7.5,
+   "small_text": true,
+   "text": "Knowledge, beliefs and practices related to",
+   "text_key": "knowledgebeliefsandpracticesrelatedto",
+   "ocr_text": "Kemwlecnr. belits and prexetices relatesto",
+   "confidence": 0.7495293021202087,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2532,
+   "gold_value": "List of Unesco - Knowledge, beliefs and practices related to jang making in the Republic of korea",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_006",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     19.0,
+     54.5
+    ],
+    [
+     126.0,
+     54.5
+    ],
+    [
+     126.0,
+     61.5
+    ],
+    [
+     19.0,
+     61.5
+    ]
+   ],
+   "bbox": [
+    19.0,
+    54.5,
+    126.0,
+    61.5
+   ],
+   "height": 7.0,
+   "small_text": true,
+   "text": "aking in the Republic of kore",
+   "text_key": "akingintherepublicofkore",
+   "ocr_text": "ag mong in the Recuslc of kore",
+   "confidence": 0.7743436098098755,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2532,
+   "gold_value": "List of Unesco - Knowledge, beliefs and practices related to jang making in the Republic of korea",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_007",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     102.5,
+     89.5
+    ],
+    [
+     347.0,
+     87.0
+    ],
+    [
+     347.5,
+     114.0
+    ],
+    [
+     103.0,
+     116.5
+    ]
+   ],
+   "bbox": [
+    102.5,
+    87.0,
+    347.5,
+    116.5
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "제21회",
+   "text_key": "제21회",
+   "ocr_text": "제21회 세계인의 입맛,순차에단다",
+   "confidence": 0.8511677980422974,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제21회",
+   "extra_chars": 11,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_010",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     259.5,
+     539.5
+    ],
+    [
+     287.0,
+     539.5
+    ],
+    [
+     287.0,
+     553.0
+    ],
+    [
+     259.5,
+     553.0
+    ]
+   ],
+   "bbox": [
+    259.5,
+    539.5,
+    287.0,
+    553.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "4일간",
+   "text_key": "4일간",
+   "ocr_text": "4일간",
+   "confidence": 0.998457670211792,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1176,
+   "gold_value": "2026. 10.15목 ~ 10.18일 4일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_011",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     55.5,
+     552.5
+    ],
+    [
+     281.0,
+     552.5
+    ],
+    [
+     281.0,
+     580.0
+    ],
+    [
+     55.5,
+     580.0
+    ]
+   ],
+   "bbox": [
+    55.5,
+    552.5,
+    281.0,
+    580.0
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "2026. 10.15목 ~ 10.18",
+   "text_key": "20261015목1018",
+   "ocr_text": "2026.10.15s~ 10.18.",
+   "confidence": 0.9352666735649109,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1176,
+   "gold_value": "2026. 10.15목 ~ 10.18일 4일간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_012",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     296.5,
+     555.5
+    ],
+    [
+     393.0,
+     555.5
+    ],
+    [
+     393.0,
+     566.0
+    ],
+    [
+     296.5,
+     566.0
+    ]
+   ],
+   "bbox": [
+    296.5,
+    555.5,
+    393.0,
+    566.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "순창전통고추장민속마을",
+   "text_key": "순창전통고추장민속마을",
+   "ocr_text": "순창전동고추장민속마을,",
+   "confidence": 0.9177188873291016,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "순창전통고추장민속마을",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_013",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     296.5,
+     566.0
+    ],
+    [
+     384.5,
+     566.0
+    ],
+    [
+     384.5,
+     577.0
+    ],
+    [
+     296.5,
+     577.0
+    ]
+   ],
+   "bbox": [
+    296.5,
+    566.0,
+    384.5,
+    577.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "순창발효테마파크 일원",
+   "text_key": "순창발효테마파크일원",
+   "ocr_text": "순창발효테마파크 일원",
+   "confidence": 0.903773307800293,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "순창발효테마파크 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_015",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     60.5,
+     604.0
+    ],
+    [
+     172.5,
+     604.0
+    ],
+    [
+     172.5,
+     614.5
+    ],
+    [
+     60.5,
+     614.5
+    ]
+   ],
+   "bbox": [
+    60.5,
+    604.0,
+    172.5,
+    614.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "순창장류축제",
+   "text_key": "순창장류축제",
+   "ocr_text": "순창군 순창장류축제추진위원회",
+   "confidence": 0.9080812335014343,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "organizations.text",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "순창장류축제",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_016",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     193.0,
+     603.5
+    ],
+    [
+     250.0,
+     603.5
+    ],
+    [
+     250.0,
+     615.5
+    ],
+    [
+     193.0,
+     615.5
+    ]
+   ],
+   "bbox": [
+    193.0,
+    603.5,
+    250.0,
+    615.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "문화체육관광부",
+   "text_key": "문화체육관광부",
+   "ocr_text": "문화처육관광부",
+   "confidence": 0.9197775721549988,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "문화체육관광부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-128.padd_rgb_2x_017",
+   "case_id": "v2-128",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     253.0,
+     603.0
+    ],
+    [
+     307.0,
+     603.0
+    ],
+    [
+     307.0,
+     615.0
+    ],
+    [
+     253.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    253.0,
+    603.0,
+    307.0,
+    615.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "전북특별자치도",
+   "text_key": "전북특별자치도",
+   "ocr_text": "전북특별자지도",
+   "confidence": 0.9651175737380981,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "전북특별자치도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

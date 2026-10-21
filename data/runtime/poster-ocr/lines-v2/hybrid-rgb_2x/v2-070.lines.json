@@ -1,0 +1,398 @@
+{
+ "case_id": "v2-070",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 449,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-070.easy_rgb_2x_000",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     31.0,
+     63.0
+    ],
+    [
+     180.0,
+     63.0
+    ],
+    [
+     180.0,
+     91.0
+    ],
+    [
+     31.0,
+     91.0
+    ]
+   ],
+   "bbox": [
+    31.0,
+    63.0,
+    180.0,
+    91.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "하나로 O",
+   "text_key": "하나로o",
+   "ocr_text": "하나로OE",
+   "confidence": 0.8299600029145486,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "하나로 ONE! 세계로 RUN!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.easy_rgb_2x_001",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     33.0,
+     90.0
+    ],
+    [
+     178.0,
+     90.0
+    ],
+    [
+     178.0,
+     118.0
+    ],
+    [
+     33.0,
+     118.0
+    ]
+   ],
+   "bbox": [
+    33.0,
+    90.0,
+    178.0,
+    118.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "세계로 RUN!",
+   "text_key": "세계로run",
+   "ocr_text": ",세계로 RUN!",
+   "confidence": 0.9234300255775452,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "하나로 ONE! 세계로 RUN!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.easy_rgb_2x_002",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     34.5,
+     126.5
+    ],
+    [
+     145.0,
+     126.5
+    ],
+    [
+     145.0,
+     167.0
+    ],
+    [
+     34.5,
+     167.0
+    ]
+   ],
+   "bbox": [
+    34.5,
+    126.5,
+    145.0,
+    167.0
+   ],
+   "height": 40.5,
+   "small_text": false,
+   "text": "제16회",
+   "text_key": "제16회",
+   "ocr_text": "제16회",
+   "confidence": 0.9651421904563904,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제16회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.easy_rgb_2x_003",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     28.0,
+     162.0
+    ],
+    [
+     322.5,
+     162.0
+    ],
+    [
+     322.5,
+     218.5
+    ],
+    [
+     28.0,
+     218.5
+    ]
+   ],
+   "bbox": [
+    28.0,
+    162.0,
+    322.5,
+    218.5
+   ],
+   "height": 56.5,
+   "small_text": false,
+   "text": "계룡軍문화축제",
+   "text_key": "계룡軍문화축제",
+   "ocr_text": "계름문화축제",
+   "confidence": 0.886715829372406,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "계룡軍문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.easy_rgb_2x_004",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     26.0,
+     227.0
+    ],
+    [
+     131.0,
+     227.0
+    ],
+    [
+     131.0,
+     251.0
+    ],
+    [
+     26.0,
+     251.0
+    ]
+   ],
+   "bbox": [
+    26.0,
+    227.0,
+    131.0,
+    251.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026. 10. 1. 목",
+   "text_key": "2026101목",
+   "ocr_text": "2026.10.1.목",
+   "confidence": 0.9343162178993225,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 1. 목 ~ 10. 5. 월",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.easy_rgb_2x_005",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     141.0,
+     227.0
+    ],
+    [
+     206.0,
+     227.0
+    ],
+    [
+     206.0,
+     251.0
+    ],
+    [
+     141.0,
+     251.0
+    ]
+   ],
+   "bbox": [
+    141.0,
+    227.0,
+    206.0,
+    251.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10. 5. 월",
+   "text_key": "105월",
+   "ocr_text": "10 5, 월",
+   "confidence": 0.733511885838708,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 1. 목 ~ 10. 5. 월",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-070.easy_rgb_2x_006",
+   "case_id": "v2-070",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     27.5,
+     252.5
+    ],
+    [
+     117.5,
+     252.5
+    ],
+    [
+     117.5,
+     271.5
+    ],
+    [
+     27.5,
+     271.5
+    ]
+   ],
+   "bbox": [
+    27.5,
+    252.5,
+    117.5,
+    271.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "충남 계룡시 일원",
+   "text_key": "충남계룡시일원",
+   "ocr_text": "충남계룡시일원",
+   "confidence": 0.9691601395606995,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "충남 계룡시 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,397 @@
+{
+ "case_id": "v2-173",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-173.easy_rgb_2x_000",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     52.0,
+     17.0
+    ],
+    [
+     94.0,
+     17.0
+    ],
+    [
+     94.0,
+     32.0
+    ],
+    [
+     52.0,
+     32.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    17.0,
+    94.0,
+    32.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "김천시",
+   "text_key": "김천시",
+   "ocr_text": "김천시",
+   "confidence": 0.9669801592826843,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "김천시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-173.easy_rgb_2x_001",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     84.5,
+     44.0
+    ],
+    [
+     236.0,
+     44.0
+    ],
+    [
+     236.0,
+     95.0
+    ],
+    [
+     84.5,
+     95.0
+    ]
+   ],
+   "bbox": [
+    84.5,
+    44.0,
+    236.0,
+    95.0
+   ],
+   "height": 51.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "20261",
+   "confidence": 0.8237935900688171,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2,
+   "gold_value": "2026 김천김밥축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-173.easy_rgb_2x_005",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     78.5,
+     81.0
+    ],
+    [
+     362.0,
+     81.0
+    ],
+    [
+     362.0,
+     148.5
+    ],
+    [
+     78.5,
+     148.5
+    ]
+   ],
+   "bbox": [
+    78.5,
+    81.0,
+    362.0,
+    148.5
+   ],
+   "height": 67.5,
+   "small_text": false,
+   "text": "김천김밥축제",
+   "text_key": "김천김밥축제",
+   "ocr_text": "김천김밥축지",
+   "confidence": 0.7028599381446838,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "김천김밥축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-173.easy_rgb_2x_006",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     99.0,
+     166.0
+    ],
+    [
+     345.0,
+     166.0
+    ],
+    [
+     345.0,
+     194.0
+    ],
+    [
+     99.0,
+     194.0
+    ]
+   ],
+   "bbox": [
+    99.0,
+    166.0,
+    345.0,
+    194.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026. 10. 23 금 ~ 10. 25 일",
+   "text_key": "20261023금1025일",
+   "ocr_text": "2026.10.23②~10.25일",
+   "confidence": 0.9388382434844971,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0714,
+   "gold_value": "2026. 10. 23 금 ~ 10. 25 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-173.easy_rgb_2x_007",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     76.5,
+     204.5
+    ],
+    [
+     369.0,
+     204.5
+    ],
+    [
+     369.0,
+     224.0
+    ],
+    [
+     76.5,
+     224.0
+    ]
+   ],
+   "bbox": [
+    76.5,
+    204.5,
+    369.0,
+    224.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "김천시 직지문화공원, 사명대사공원, 친환경생태공원 일원",
+   "text_key": "김천시직지문화공원사명대사공원친환경생태공원일원",
+   "ocr_text": "김천시 직지문화공원,사명대사공원,친환경생태공원일원",
+   "confidence": 0.904403567314148,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "김천시 직지문화공원, 사명대사공원, 친환경생태공원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-173.easy_rgb_2x_008",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     199.0,
+     316.0
+    ],
+    [
+     261.5,
+     316.0
+    ],
+    [
+     261.5,
+     336.5
+    ],
+    [
+     199.0,
+     336.5
+    ]
+   ],
+   "bbox": [
+    199.0,
+    316.0,
+    261.5,
+    336.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "김밥특별시",
+   "text_key": "김밥특별시",
+   "ocr_text": "김밥특별시",
+   "confidence": 0.9523391723632812,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "김밥특별시 방문을 환영합니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-173.easy_rgb_2x_009",
+   "case_id": "v2-173",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     189.5,
+     329.0
+    ],
+    [
+     269.0,
+     329.0
+    ],
+    [
+     269.0,
+     348.0
+    ],
+    [
+     189.5,
+     348.0
+    ]
+   ],
+   "bbox": [
+    189.5,
+    329.0,
+    269.0,
+    348.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "방문을 환영합니다!",
+   "text_key": "방문을환영합니다",
+   "ocr_text": "방문을 친영합니다!",
+   "confidence": 0.6887556314468384,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "김밥특별시 방문을 환영합니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

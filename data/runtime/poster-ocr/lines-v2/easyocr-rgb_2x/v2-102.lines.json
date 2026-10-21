@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-102",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-102.easy_rgb_2x_004",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     188.0,
+     48.5
+    ],
+    [
+     267.0,
+     48.5
+    ],
+    [
+     267.0,
+     80.5
+    ],
+    [
+     188.0,
+     80.5
+    ]
+   ],
+   "bbox": [
+    188.0,
+    48.5,
+    267.0,
+    80.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026 .",
+   "confidence": 0.5007844670887093,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "2026 탄광문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.easy_rgb_2x_005",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     54.5,
+     73.5
+    ],
+    [
+     388.5,
+     73.5
+    ],
+    [
+     388.5,
+     179.5
+    ],
+    [
+     54.5,
+     179.5
+    ]
+   ],
+   "bbox": [
+    54.5,
+    73.5,
+    388.5,
+    179.5
+   ],
+   "height": 106.0,
+   "small_text": false,
+   "text": "탄광문화축제",
+   "text_key": "탄광문화축제",
+   "ocr_text": "타광문화축제",
+   "confidence": 0.4554947072039399,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "탄광문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.easy_rgb_2x_006",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     145.0,
+     174.0
+    ],
+    [
+     297.0,
+     174.0
+    ],
+    [
+     297.0,
+     198.0
+    ],
+    [
+     145.0,
+     198.0
+    ]
+   ],
+   "bbox": [
+    145.0,
+    174.0,
+    297.0,
+    198.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "제30회",
+   "text_key": "제30회",
+   "ocr_text": "제30회 석단문화제",
+   "confidence": 0.887272486006444,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제30회",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.easy_rgb_2x_007",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     102.0,
+     201.0
+    ],
+    [
+     339.5,
+     201.0
+    ],
+    [
+     339.5,
+     229.0
+    ],
+    [
+     102.0,
+     229.0
+    ]
+   ],
+   "bbox": [
+    102.0,
+    201.0,
+    339.5,
+    229.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026. 10. 7.(수) ~ 10.(토)",
+   "text_key": "2026107수10토",
+   "ocr_text": "2026 10 7 (수) ~ 10 (토)",
+   "confidence": 0.8112721013937245,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 7.(수) ~ 10.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-102.easy_rgb_2x_008",
+   "case_id": "v2-102",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     144.5,
+     228.5
+    ],
+    [
+     299.5,
+     228.5
+    ],
+    [
+     299.5,
+     247.5
+    ],
+    [
+     144.5,
+     247.5
+    ]
+   ],
+   "bbox": [
+    144.5,
+    228.5,
+    299.5,
+    247.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "M650 박물관 및 사북읍 일대",
+   "text_key": "m650박물관및사북읍일대",
+   "ocr_text": "M650 박물관 및 사북음 일대",
+   "confidence": 0.7782728680783914,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0769,
+   "gold_value": "M650 박물관 및 사북읍 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

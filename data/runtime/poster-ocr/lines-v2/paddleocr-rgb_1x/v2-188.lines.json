@@ -1,0 +1,398 @@
+{
+ "case_id": "v2-188",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-188.padd_rgb_1x_000",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     69.0,
+     35.0
+    ],
+    [
+     365.0,
+     14.0
+    ],
+    [
+     368.0,
+     43.0
+    ],
+    [
+     71.0,
+     64.0
+    ]
+   ],
+   "bbox": [
+    69.0,
+    14.0,
+    368.0,
+    64.0
+   ],
+   "height": 29.11,
+   "small_text": false,
+   "text": "고등어는 맛있게! 서구는 신나게!",
+   "text_key": "고등어는맛있게서구는신나게",
+   "ocr_text": "고등어는 맛있게!서구는 신나게!",
+   "confidence": 0.9716314673423767,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고등어는 맛있게! 서구는 신나게!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.padd_rgb_1x_004",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     99.0,
+     367.0
+    ],
+    [
+     251.0,
+     367.0
+    ],
+    [
+     251.0,
+     412.0
+    ],
+    [
+     99.0,
+     412.0
+    ]
+   ],
+   "bbox": [
+    99.0,
+    367.0,
+    251.0,
+    412.0
+   ],
+   "height": 45.0,
+   "small_text": false,
+   "text": "제17회",
+   "text_key": "제17회",
+   "ocr_text": "제17회",
+   "confidence": 0.9988747835159302,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0909,
+   "gold_value": "제17회 부산 고등어축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.padd_rgb_1x_005",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     249.0,
+     361.0
+    ],
+    [
+     364.0,
+     361.0
+    ],
+    [
+     364.0,
+     414.0
+    ],
+    [
+     249.0,
+     414.0
+    ]
+   ],
+   "bbox": [
+    249.0,
+    361.0,
+    364.0,
+    414.0
+   ],
+   "height": 53.0,
+   "small_text": false,
+   "text": "부산",
+   "text_key": "부산",
+   "ocr_text": "부산",
+   "confidence": 0.9998437762260437,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "부산 고등어축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.padd_rgb_1x_006",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     55.0,
+     419.0
+    ],
+    [
+     388.0,
+     419.0
+    ],
+    [
+     388.0,
+     483.0
+    ],
+    [
+     55.0,
+     483.0
+    ]
+   ],
+   "bbox": [
+    55.0,
+    419.0,
+    388.0,
+    483.0
+   ],
+   "height": 64.0,
+   "small_text": false,
+   "text": "고등어축제",
+   "text_key": "고등어축제",
+   "ocr_text": "고등어죽제",
+   "confidence": 0.8886162042617798,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "부산 고등어축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.padd_rgb_1x_007",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     75.0,
+     487.0
+    ],
+    [
+     368.0,
+     488.0
+    ],
+    [
+     368.0,
+     511.0
+    ],
+    [
+     75.0,
+     510.0
+    ]
+   ],
+   "bbox": [
+    75.0,
+    487.0,
+    368.0,
+    511.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "2026. 10. 30.금 ~ 11. 1.일",
+   "text_key": "20261030금111일",
+   "ocr_text": "2026.10.30.0 ~ 11.1.0",
+   "confidence": 0.9260926842689514,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "2026. 10. 30.금 ~ 11. 1.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.padd_rgb_1x_008",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     145.0,
+     516.0
+    ],
+    [
+     297.0,
+     514.0
+    ],
+    [
+     298.0,
+     535.0
+    ],
+    [
+     146.0,
+     537.0
+    ]
+   ],
+   "bbox": [
+    145.0,
+    514.0,
+    298.0,
+    537.0
+   ],
+   "height": 21.02,
+   "small_text": false,
+   "text": "송도해수욕장 일원",
+   "text_key": "송도해수욕장일원",
+   "ocr_text": "송도해수욕정 일원",
+   "confidence": 0.9613823294639587,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "송도해수욕장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-188.padd_rgb_1x_010",
+   "case_id": "v2-188",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     124.0,
+     597.0
+    ],
+    [
+     191.0,
+     597.0
+    ],
+    [
+     191.0,
+     606.0
+    ],
+    [
+     124.0,
+     606.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    597.0,
+    191.0,
+    606.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "서구",
+   "text_key": "서구",
+   "ocr_text": "관부산서구문",
+   "confidence": 0.5797013640403748,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서구",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

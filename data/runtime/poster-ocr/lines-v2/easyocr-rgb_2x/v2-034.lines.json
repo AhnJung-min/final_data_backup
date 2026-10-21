@@ -1,0 +1,179 @@
+{
+ "case_id": "v2-034",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-034.easy_rgb_2x_000",
+   "case_id": "v2-034",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     359.0,
+     27.0
+    ],
+    [
+     421.0,
+     27.0
+    ],
+    [
+     421.0,
+     54.0
+    ],
+    [
+     359.0,
+     54.0
+    ]
+   ],
+   "bbox": [
+    359.0,
+    27.0,
+    421.0,
+    54.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "제35회",
+   "text_key": "제35회",
+   "ocr_text": "제35화1",
+   "confidence": 0.2080365192169958,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제35회",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-034.easy_rgb_2x_006",
+   "case_id": "v2-034",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     357.5,
+     442.5
+    ],
+    [
+     403.5,
+     442.5
+    ],
+    [
+     403.5,
+     464.5
+    ],
+    [
+     357.5,
+     464.5
+    ]
+   ],
+   "bbox": [
+    357.5,
+    442.5,
+    403.5,
+    464.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "9.12",
+   "text_key": "912",
+   "ocr_text": "9.12",
+   "confidence": 0.8982976078987122,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "9.12 토 - 9.13 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-034.easy_rgb_2x_007",
+   "case_id": "v2-034",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     358.5,
+     477.5
+    ],
+    [
+     405.5,
+     477.5
+    ],
+    [
+     405.5,
+     499.5
+    ],
+    [
+     358.5,
+     499.5
+    ]
+   ],
+   "bbox": [
+    358.5,
+    477.5,
+    405.5,
+    499.5
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "9.13",
+   "text_key": "913",
+   "ocr_text": "9.13",
+   "confidence": 0.9798505033842709,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "9.12 토 - 9.13 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

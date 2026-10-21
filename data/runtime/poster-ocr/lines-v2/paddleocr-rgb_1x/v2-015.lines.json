@@ -1,0 +1,343 @@
+{
+ "case_id": "v2-015",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 418,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-015.padd_rgb_1x_000",
+   "case_id": "v2-015",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     164.0,
+     27.0
+    ],
+    [
+     253.0,
+     27.0
+    ],
+    [
+     253.0,
+     72.0
+    ],
+    [
+     164.0,
+     72.0
+    ]
+   ],
+   "bbox": [
+    164.0,
+    27.0,
+    253.0,
+    72.0
+   ],
+   "height": 45.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9994070529937744,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 직지문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-015.padd_rgb_1x_001",
+   "case_id": "v2-015",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     18.0,
+     42.0
+    ],
+    [
+     55.0,
+     42.0
+    ],
+    [
+     55.0,
+     52.0
+    ],
+    [
+     18.0,
+     52.0
+    ]
+   ],
+   "bbox": [
+    18.0,
+    42.0,
+    55.0,
+    52.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "unesco",
+   "text_key": "unesco",
+   "ocr_text": "unesco",
+   "confidence": 0.7115368247032166,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "unesco",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-015.padd_rgb_1x_002",
+   "case_id": "v2-015",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     69.0,
+     72.0
+    ],
+    [
+     349.0,
+     72.0
+    ],
+    [
+     349.0,
+     133.0
+    ],
+    [
+     69.0,
+     133.0
+    ]
+   ],
+   "bbox": [
+    69.0,
+    72.0,
+    349.0,
+    133.0
+   ],
+   "height": 61.0,
+   "small_text": false,
+   "text": "직지문화축제",
+   "text_key": "직지문화축제",
+   "ocr_text": "직지문화축제",
+   "confidence": 0.9995695948600769,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "직지문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-015.padd_rgb_1x_003",
+   "case_id": "v2-015",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     119.0,
+     133.0
+    ],
+    [
+     299.0,
+     133.0
+    ],
+    [
+     299.0,
+     160.0
+    ],
+    [
+     119.0,
+     160.0
+    ]
+   ],
+   "bbox": [
+    119.0,
+    133.0,
+    299.0,
+    160.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "직지, 시간의 문을 열다",
+   "text_key": "직지시간의문을열다",
+   "ocr_text": "직지,시간의 문을 열다",
+   "confidence": 0.9790511727333069,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "직지, 시간의 문을 열다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-015.padd_rgb_1x_008",
+   "case_id": "v2-015",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     79.0,
+     532.0
+    ],
+    [
+     332.0,
+     534.0
+    ],
+    [
+     331.0,
+     567.0
+    ],
+    [
+     78.0,
+     565.0
+    ]
+   ],
+   "bbox": [
+    78.0,
+    532.0,
+    332.0,
+    567.0
+   ],
+   "height": 33.02,
+   "small_text": false,
+   "text": "2026.9.4.금 - 9.6.일",
+   "text_key": "202694금96일",
+   "ocr_text": "2026.9.4.금-9.6.일",
+   "confidence": 0.9601813554763794,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.9.4.금 - 9.6.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-015.padd_rgb_1x_009",
+   "case_id": "v2-015",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     107.0,
+     568.0
+    ],
+    [
+     311.0,
+     568.0
+    ],
+    [
+     311.0,
+     588.0
+    ],
+    [
+     107.0,
+     588.0
+    ]
+   ],
+   "bbox": [
+    107.0,
+    568.0,
+    311.0,
+    588.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "청주고인쇄박물관, 청주예술의전당 일원",
+   "text_key": "청주고인쇄박물관청주예술의전당일원",
+   "ocr_text": "청주고인쇄박물관,청주예술의전당 일원",
+   "confidence": 0.9824760556221008,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "청주고인쇄박물관, 청주예술의전당 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

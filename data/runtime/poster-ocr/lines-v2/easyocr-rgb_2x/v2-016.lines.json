@@ -1,0 +1,342 @@
+{
+ "case_id": "v2-016",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-016.easy_rgb_2x_006",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     45.5,
+     234.5
+    ],
+    [
+     136.5,
+     234.5
+    ],
+    [
+     136.5,
+     255.5
+    ],
+    [
+     45.5,
+     255.5
+    ]
+   ],
+   "bbox": [
+    45.5,
+    234.5,
+    136.5,
+    255.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "전석 무료관람",
+   "text_key": "전석무료관람",
+   "ocr_text": "전석 무료관람",
+   "confidence": 0.7715745813959104,
+   "field": "admission.raw",
+   "field_group": "admission",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "admission.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "전석 무료관람",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.easy_rgb_2x_007",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     35.0,
+     264.5
+    ],
+    [
+     253.5,
+     264.5
+    ],
+    [
+     253.5,
+     282.5
+    ],
+    [
+     35.0,
+     282.5
+    ]
+   ],
+   "bbox": [
+    35.0,
+    264.5,
+    253.5,
+    282.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026. 9. 4.(금) - 5.(토)",
+   "text_key": "202694금5토",
+   "ocr_text": "2026.9. 4(금 - 5(퇴 19.30/ 중2회공면",
+   "confidence": 0.300433627726889,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "2026. 9. 4.(금) - 5.(토)",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.easy_rgb_2x_008",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     36.0,
+     285.0
+    ],
+    [
+     298.0,
+     285.0
+    ],
+    [
+     298.0,
+     301.0
+    ],
+    [
+     36.0,
+     301.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    285.0,
+    298.0,
+    301.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "관인면 사정리 66",
+   "text_key": "관인면사정리66",
+   "ocr_text": "대인민국멈숙 구천회즈연 특선무-관인면 사점리651",
+   "confidence": 0.07766703755984315,
+   "field": "address.raw",
+   "field_group": "address",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "address.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "관인면 사정리 66",
+   "extra_chars": 16,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.easy_rgb_2x_009",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     29.0,
+     514.0
+    ],
+    [
+     242.0,
+     514.0
+    ],
+    [
+     242.0,
+     540.0
+    ],
+    [
+     29.0,
+     540.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    514.0,
+    242.0,
+    540.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "대한민국 대표 뮤지컬 배우",
+   "text_key": "대한민국대표뮤지컬배우",
+   "ocr_text": "대한민국대표 유지걸배우",
+   "confidence": 0.35810048349109164,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "대한민국 대표 뮤지컬 배우 홍지민과 함께하는 수도권 유일의 실경 뮤지컬!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.easy_rgb_2x_010",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     29.0,
+     542.0
+    ],
+    [
+     181.0,
+     542.0
+    ],
+    [
+     181.0,
+     569.0
+    ],
+    [
+     29.0,
+     569.0
+    ]
+   ],
+   "bbox": [
+    29.0,
+    542.0,
+    181.0,
+    569.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "홍지민과 함께하는",
+   "text_key": "홍지민과함께하는",
+   "ocr_text": "흥지민과함께하는",
+   "confidence": 0.6872073293779178,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "대한민국 대표 뮤지컬 배우 홍지민과 함께하는 수도권 유일의 실경 뮤지컬!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-016.easy_rgb_2x_011",
+   "case_id": "v2-016",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     30.0,
+     572.0
+    ],
+    [
+     250.0,
+     572.0
+    ],
+    [
+     250.0,
+     599.0
+    ],
+    [
+     30.0,
+     599.0
+    ]
+   ],
+   "bbox": [
+    30.0,
+    572.0,
+    250.0,
+    599.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "수도권 유일의 실경 뮤지",
+   "text_key": "수도권유일의실경뮤지",
+   "ocr_text": "수도권유일의실경묶지철!",
+   "confidence": 0.20125686127734715,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "대한민국 대표 뮤지컬 배우 홍지민과 함께하는 수도권 유일의 실경 뮤지컬!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

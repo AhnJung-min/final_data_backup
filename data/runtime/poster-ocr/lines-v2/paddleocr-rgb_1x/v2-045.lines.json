@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-045",
+ "split": "dev",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-045.padd_rgb_1x_000",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     10.0,
+     7.0
+    ],
+    [
+     62.0,
+     10.0
+    ],
+    [
+     60.0,
+     36.0
+    ],
+    [
+     9.0,
+     33.0
+    ]
+   ],
+   "bbox": [
+    9.0,
+    7.0,
+    62.0,
+    36.0
+   ],
+   "height": 26.05,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.999494194984436,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 경주국가유산야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-045.padd_rgb_1x_001",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     162.0,
+     10.0
+    ],
+    [
+     429.0,
+     10.0
+    ],
+    [
+     429.0,
+     32.0
+    ],
+    [
+     162.0,
+     32.0
+    ]
+   ],
+   "bbox": [
+    162.0,
+    10.0,
+    429.0,
+    32.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "파편(破片) - 지켜 온, 그리고 지켜낼",
+   "text_key": "파편破片지켜온그리고지켜낼",
+   "ocr_text": "파편()-지켜온그리고지커낼",
+   "confidence": 0.8867005705833435,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2308,
+   "gold_value": "파편(破片) - 지켜 온, 그리고 지켜낼",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-045.padd_rgb_1x_002",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     13.0,
+     33.0
+    ],
+    [
+     436.0,
+     33.0
+    ],
+    [
+     436.0,
+     111.0
+    ],
+    [
+     13.0,
+     111.0
+    ]
+   ],
+   "bbox": [
+    13.0,
+    33.0,
+    436.0,
+    111.0
+   ],
+   "height": 78.0,
+   "small_text": false,
+   "text": "경주국가유산야행",
+   "text_key": "경주국가유산야행",
+   "ocr_text": "경주국가유산야행",
+   "confidence": 0.9998205304145813,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경주국가유산야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-045.padd_rgb_1x_003",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     106.0,
+     107.0
+    ],
+    [
+     337.0,
+     108.0
+    ],
+    [
+     337.0,
+     131.0
+    ],
+    [
+     106.0,
+     130.0
+    ]
+   ],
+   "bbox": [
+    106.0,
+    107.0,
+    337.0,
+    131.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "월정교, 경주교촌마을, 경주읍성",
+   "text_key": "월정교경주교촌마을경주읍성",
+   "ocr_text": "월정교,경주교촌마을.경주읍성",
+   "confidence": 0.970633864402771,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "월정교, 경주교촌마을, 경주읍성",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-045.padd_rgb_1x_008",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     124.0,
+     586.0
+    ],
+    [
+     161.0,
+     586.0
+    ],
+    [
+     161.0,
+     600.0
+    ],
+    [
+     124.0,
+     600.0
+    ]
+   ],
+   "bbox": [
+    124.0,
+    586.0,
+    161.0,
+    600.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유산행",
+   "confidence": 0.8220961689949036,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "국가유산청",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-045.padd_rgb_1x_012",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     297.0,
+     588.0
+    ],
+    [
+     357.0,
+     588.0
+    ],
+    [
+     357.0,
+     599.0
+    ],
+    [
+     297.0,
+     599.0
+    ]
+   ],
+   "bbox": [
+    297.0,
+    588.0,
+    357.0,
+    599.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "경주문화원",
+   "text_key": "경주문화원",
+   "ocr_text": "경주문화원",
+   "confidence": 0.9412257075309753,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경주문화원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-045.padd_rgb_1x_013",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     107.0,
+     605.0
+    ],
+    [
+     227.0,
+     605.0
+    ],
+    [
+     227.0,
+     615.0
+    ],
+    [
+     107.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    107.0,
+    605.0,
+    227.0,
+    615.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "경주시 문화유산과 | 054 779 6108",
+   "text_key": "경주시문화유산과0547796108",
+   "ocr_text": "경주시 문화유산과054779 6108",
+   "confidence": 0.9308425188064575,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경주시 문화유산과 | 054 779 6108",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-045.padd_rgb_1x_014",
+   "case_id": "v2-045",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     242.0,
+     605.0
+    ],
+    [
+     335.0,
+     605.0
+    ],
+    [
+     335.0,
+     615.0
+    ],
+    [
+     242.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    242.0,
+    605.0,
+    335.0,
+    615.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "경주문화원 | 054 743 7182",
+   "text_key": "경주문화원0547437182",
+   "ocr_text": "경주문화원10547437182",
+   "confidence": 0.9447070360183716,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0667,
+   "gold_value": "경주문화원 | 054 743 7182",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

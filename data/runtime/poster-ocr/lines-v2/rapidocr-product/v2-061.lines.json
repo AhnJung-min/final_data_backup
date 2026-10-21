@@ -1,0 +1,452 @@
+{
+ "case_id": "v2-061",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-061.rapi_product_000",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     176.0,
+     42.0
+    ],
+    [
+     269.0,
+     42.0
+    ],
+    [
+     269.0,
+     65.0
+    ],
+    [
+     176.0,
+     65.0
+    ]
+   ],
+   "bbox": [
+    176.0,
+    42.0,
+    269.0,
+    65.0
+   ],
+   "height": 23.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "-2026",
+   "confidence": 0.91902,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.rapi_product_001",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     168.0,
+     73.0
+    ],
+    [
+     278.0,
+     73.0
+    ],
+    [
+     278.0,
+     108.0
+    ],
+    [
+     168.0,
+     108.0
+    ]
+   ],
+   "bbox": [
+    168.0,
+    73.0,
+    278.0,
+    108.0
+   ],
+   "height": 35.0,
+   "small_text": false,
+   "text": "경남고성",
+   "text_key": "경남고성",
+   "ocr_text": "경남고성",
+   "confidence": 0.99903,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.rapi_product_002",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     64.0,
+     104.0
+    ],
+    [
+     380.0,
+     104.0
+    ],
+    [
+     380.0,
+     179.0
+    ],
+    [
+     64.0,
+     179.0
+    ]
+   ],
+   "bbox": [
+    64.0,
+    104.0,
+    380.0,
+    179.0
+   ],
+   "height": 75.0,
+   "small_text": false,
+   "text": "공룡세계엑스포",
+   "text_key": "공룡세계엑스포",
+   "ocr_text": "공룡세계엑스포",
+   "confidence": 0.98169,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "경남고성 공룡세계엑스포",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.rapi_product_003",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     38.0,
+     174.0
+    ],
+    [
+     363.0,
+     172.0
+    ],
+    [
+     363.0,
+     204.0
+    ],
+    [
+     38.0,
+     206.0
+    ]
+   ],
+   "bbox": [
+    38.0,
+    172.0,
+    363.0,
+    206.0
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "2026. 9. 22.(화) ~ 11. 1.(일)",
+   "text_key": "2026922화111일",
+   "ocr_text": "2026.9.22.(화)~11.1.(일)",
+   "confidence": 0.98149,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 22.(화) ~ 11. 1.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.rapi_product_004",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     127.0,
+     210.0
+    ],
+    [
+     317.0,
+     210.0
+    ],
+    [
+     317.0,
+     234.0
+    ],
+    [
+     127.0,
+     234.0
+    ]
+   ],
+   "bbox": [
+    127.0,
+    210.0,
+    317.0,
+    234.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "공룡과 떠나는 신나는 모험",
+   "text_key": "공룡과떠나는신나는모험",
+   "ocr_text": "공룡과 떠나는 신나는 모험",
+   "confidence": 0.92701,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "공룡과 떠나는 신나는 모험",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.rapi_product_005",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     46.0,
+     593.0
+    ],
+    [
+     154.0,
+     593.0
+    ],
+    [
+     154.0,
+     613.0
+    ],
+    [
+     46.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    46.0,
+    593.0,
+    154.0,
+    613.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "고성문화관광재단",
+   "text_key": "고성문화관광재단",
+   "ocr_text": "고성문화관광재단",
+   "confidence": 0.99727,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "고성문화관광재단",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.rapi_product_006",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     167.0,
+     590.0
+    ],
+    [
+     374.0,
+     590.0
+    ],
+    [
+     374.0,
+     603.0
+    ],
+    [
+     167.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    167.0,
+    590.0,
+    374.0,
+    603.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "경남 고성 당항포관광지",
+   "text_key": "경남고성당항포관광지",
+   "ocr_text": "장소:경남 고성 당항포관광지 문의:055-670-7400",
+   "confidence": 0.96946,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "경남 고성 당항포관광지",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-061.rapi_product_007",
+   "case_id": "v2-061",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     167.0,
+     601.0
+    ],
+    [
+     337.0,
+     602.0
+    ],
+    [
+     337.0,
+     616.0
+    ],
+    [
+     167.0,
+     615.0
+    ]
+   ],
+   "bbox": [
+    167.0,
+    601.0,
+    337.0,
+    616.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "www.gngsctf.or.kr/dinoexpo",
+   "text_key": "wwwgngsctforkrdinoexpo",
+   "ocr_text": "홈페o지: www.gngsctf.or.kr/dinoexpo",
+   "confidence": 0.95202,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "www.gngsctf.or.kr/dinoexpo",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

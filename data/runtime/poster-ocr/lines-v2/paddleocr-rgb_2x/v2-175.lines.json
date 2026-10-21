@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-175",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 454,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-175.padd_rgb_2x_004",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     29.0,
+     507.0
+    ],
+    [
+     425.5,
+     507.0
+    ],
+    [
+     425.5,
+     549.5
+    ],
+    [
+     29.0,
+     549.5
+    ]
+   ],
+   "bbox": [
+    29.0,
+    507.0,
+    425.5,
+    549.5
+   ],
+   "height": 42.5,
+   "small_text": false,
+   "text": "10.23.(금) - 10.25.(일)",
+   "text_key": "1023금1025일",
+   "ocr_text": "10.23.(금)- 10.25.(일)",
+   "confidence": 0.9477458000183105,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.23.(금) - 10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.padd_rgb_2x_005",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     28.5,
+     551.0
+    ],
+    [
+     256.0,
+     551.0
+    ],
+    [
+     256.0,
+     586.0
+    ],
+    [
+     28.5,
+     586.0
+    ]
+   ],
+   "bbox": [
+    28.5,
+    551.0,
+    256.0,
+    586.0
+   ],
+   "height": 35.0,
+   "small_text": false,
+   "text": "중앙동 전통시장 일원",
+   "text_key": "중앙동전통시장일원",
+   "ocr_text": "중앙동 전통시장 일원",
+   "confidence": 0.9348222613334656,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "중앙동 전통시장 일원 (원주천 및 문화의거리 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.padd_rgb_2x_006",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     254.0,
+     562.5
+    ],
+    [
+     423.0,
+     562.5
+    ],
+    [
+     423.0,
+     581.5
+    ],
+    [
+     254.0,
+     581.5
+    ]
+   ],
+   "bbox": [
+    254.0,
+    562.5,
+    423.0,
+    581.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "(원주천 및 문화의거리 일원)",
+   "text_key": "원주천및문화의거리일원",
+   "ocr_text": "(원주천 및 문화의거리 일원)",
+   "confidence": 0.9691853523254395,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "중앙동 전통시장 일원 (원주천 및 문화의거리 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.padd_rgb_2x_007",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     82.5,
+     589.0
+    ],
+    [
+     176.5,
+     592.0
+    ],
+    [
+     176.0,
+     613.5
+    ],
+    [
+     82.0,
+     610.5
+    ]
+   ],
+   "bbox": [
+    82.0,
+    589.0,
+    176.5,
+    613.5
+   ],
+   "height": 21.51,
+   "small_text": false,
+   "text": "원주시",
+   "text_key": "원주시",
+   "ocr_text": "출원주시  제",
+   "confidence": 0.628437876701355,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주시",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

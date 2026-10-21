@@ -1,0 +1,1531 @@
+{
+ "case_id": "v2-055",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 45,
+ "lines_matched": 28,
+ "records": [
+  {
+   "id": "v2-055.padd_rgb_2x_000",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     393.0,
+     11.5
+    ],
+    [
+     429.0,
+     11.5
+    ],
+    [
+     429.0,
+     24.0
+    ],
+    [
+     393.0,
+     24.0
+    ]
+   ],
+   "bbox": [
+    393.0,
+    11.5,
+    429.0,
+    24.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "YouTube",
+   "text_key": "youtube",
+   "ocr_text": "YonTube",
+   "confidence": 0.8555331826210022,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "YouTube 생방송",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_001",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     134.0,
+     29.0
+    ],
+    [
+     327.0,
+     29.0
+    ],
+    [
+     327.0,
+     46.0
+    ],
+    [
+     134.0,
+     46.0
+    ]
+   ],
+   "bbox": [
+    134.0,
+    29.0,
+    327.0,
+    46.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "사람과 반려동물이 행복한 도시! 기장",
+   "text_key": "사람과반려동물이행복한도시기장",
+   "ocr_text": "사림과 반리동물비 행복한도시! 지장",
+   "confidence": 0.9540464282035828,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2667,
+   "gold_value": "사람과 반려동물이 행복한 도시! 기장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_002",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     371.0,
+     32.0
+    ],
+    [
+     420.0,
+     32.0
+    ],
+    [
+     420.0,
+     58.0
+    ],
+    [
+     371.0,
+     58.0
+    ]
+   ],
+   "bbox": [
+    371.0,
+    32.0,
+    420.0,
+    58.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "생방송",
+   "text_key": "생방송",
+   "ocr_text": "생방송",
+   "confidence": 0.9622294902801514,
+   "field": "notices",
+   "field_group": "notice",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "notices"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "YouTube 생방송",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_003",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     59.5,
+     59.0
+    ],
+    [
+     129.0,
+     63.0
+    ],
+    [
+     127.5,
+     94.5
+    ],
+    [
+     58.0,
+     90.5
+    ]
+   ],
+   "bbox": [
+    58.0,
+    59.0,
+    129.0,
+    94.5
+   ],
+   "height": 31.54,
+   "small_text": false,
+   "text": "제3회",
+   "text_key": "제3회",
+   "ocr_text": "제크회",
+   "confidence": 0.9785374999046326,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "제3회 기장 반려동물문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_004",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     185.0,
+     58.5
+    ],
+    [
+     272.0,
+     58.5
+    ],
+    [
+     272.0,
+     108.5
+    ],
+    [
+     185.0,
+     108.5
+    ]
+   ],
+   "bbox": [
+    185.0,
+    58.5,
+    272.0,
+    108.5
+   ],
+   "height": 50.0,
+   "small_text": false,
+   "text": "기장",
+   "text_key": "기장",
+   "ocr_text": "기장",
+   "confidence": 0.9992965459823608,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "기장 반려동물문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_005",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     55.5,
+     111.5
+    ],
+    [
+     399.0,
+     109.5
+    ],
+    [
+     399.0,
+     155.5
+    ],
+    [
+     56.0,
+     158.0
+    ]
+   ],
+   "bbox": [
+    55.5,
+    109.5,
+    399.0,
+    158.0
+   ],
+   "height": 46.25,
+   "small_text": false,
+   "text": "반려동물문화축제",
+   "text_key": "반려동물문화축제",
+   "ocr_text": "반려동물문화축제",
+   "confidence": 0.9984835386276245,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "기장 반려동물문화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_006",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     122.5,
+     159.5
+    ],
+    [
+     210.0,
+     159.5
+    ],
+    [
+     210.0,
+     186.0
+    ],
+    [
+     122.5,
+     186.0
+    ]
+   ],
+   "bbox": [
+    122.5,
+    159.5,
+    210.0,
+    186.0
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "9.19(토)",
+   "text_key": "919토",
+   "ocr_text": "9.19[토]",
+   "confidence": 0.9956169128417969,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9.19(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_007",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     222.0,
+     159.5
+    ],
+    [
+     351.0,
+     159.5
+    ],
+    [
+     351.0,
+     185.5
+    ],
+    [
+     222.0,
+     185.5
+    ]
+   ],
+   "bbox": [
+    222.0,
+    159.5,
+    351.0,
+    185.5
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "정관중앙공원",
+   "text_key": "정관중앙공원",
+   "ocr_text": "정관중앙공원",
+   "confidence": 0.9504000544548035,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "정관중앙공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_010",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     15.5,
+     216.0
+    ],
+    [
+     101.0,
+     216.0
+    ],
+    [
+     101.0,
+     241.0
+    ],
+    [
+     15.5,
+     241.0
+    ]
+   ],
+   "bbox": [
+    15.5,
+    216.0,
+    101.0,
+    241.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "위드펫츠",
+   "text_key": "위드펫츠",
+   "ocr_text": "위드펫츠",
+   "confidence": 0.9898496866226196,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "위드펫츠 걷기대회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_011",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     344.5,
+     216.0
+    ],
+    [
+     416.0,
+     216.0
+    ],
+    [
+     416.0,
+     243.5
+    ],
+    [
+     344.5,
+     243.5
+    ]
+   ],
+   "bbox": [
+    344.5,
+    216.0,
+    416.0,
+    243.5
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "K-pet",
+   "text_key": "kpet",
+   "ocr_text": "K-pet",
+   "confidence": 0.9842472076416016,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "K-pet 갓 텔런트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_012",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     14.0,
+     240.5
+    ],
+    [
+     101.0,
+     239.0
+    ],
+    [
+     101.5,
+     265.5
+    ],
+    [
+     14.5,
+     267.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    239.0,
+    101.5,
+    267.0
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "걷기대회",
+   "text_key": "걷기대회",
+   "ocr_text": "겉기대회",
+   "confidence": 0.8494231700897217,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.125,
+   "gold_value": "위드펫츠 걷기대회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_013",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     336.5,
+     242.0
+    ],
+    [
+     429.0,
+     240.5
+    ],
+    [
+     429.5,
+     267.0
+    ],
+    [
+     337.0,
+     268.5
+    ]
+   ],
+   "bbox": [
+    336.5,
+    240.5,
+    429.5,
+    268.5
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "갓 텔런트",
+   "text_key": "갓텔런트",
+   "ocr_text": "갓텔런트",
+   "confidence": 0.9978888034820557,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "K-pet 갓 텔런트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_017",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     53.5,
+     404.5
+    ],
+    [
+     92.5,
+     404.5
+    ],
+    [
+     92.5,
+     417.0
+    ],
+    [
+     53.5,
+     417.0
+    ]
+   ],
+   "bbox": [
+    53.5,
+    404.5,
+    92.5,
+    417.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "위생미용",
+   "text_key": "위생미용",
+   "ocr_text": "위생미용",
+   "confidence": 0.9478445649147034,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "위생미용",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_018",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     181.0,
+     404.5
+    ],
+    [
+     258.5,
+     404.5
+    ],
+    [
+     258.5,
+     416.5
+    ],
+    [
+     181.0,
+     416.5
+    ]
+   ],
+   "bbox": [
+    181.0,
+    404.5,
+    258.5,
+    416.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "댕사인볼트 달리기",
+   "text_key": "댕사인볼트달리기",
+   "ocr_text": "댕사인불트 달리기",
+   "confidence": 0.8854660391807556,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "댕사인볼트 달리기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_019",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     306.0,
+     404.0
+    ],
+    [
+     366.5,
+     405.0
+    ],
+    [
+     366.0,
+     417.5
+    ],
+    [
+     305.5,
+     416.5
+    ]
+   ],
+   "bbox": [
+    305.5,
+    404.0,
+    366.5,
+    417.5
+   ],
+   "height": 12.51,
+   "small_text": false,
+   "text": "댕댕이 수영장",
+   "text_key": "댕댕이수영장",
+   "ocr_text": "명댕이 수영장",
+   "confidence": 0.8889482617378235,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "댕댕이 수영장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_020",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     53.5,
+     418.0
+    ],
+    [
+     113.0,
+     418.0
+    ],
+    [
+     113.0,
+     430.5
+    ],
+    [
+     53.5,
+     430.5
+    ]
+   ],
+   "bbox": [
+    53.5,
+    418.0,
+    113.0,
+    430.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "펫간식 만들기",
+   "text_key": "펫간식만들기",
+   "ocr_text": "펭간식 만들기",
+   "confidence": 0.8312748670578003,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "펫간식 만들기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_021",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     180.5,
+     418.0
+    ],
+    [
+     219.5,
+     418.0
+    ],
+    [
+     219.5,
+     430.5
+    ],
+    [
+     180.5,
+     430.5
+    ]
+   ],
+   "bbox": [
+    180.5,
+    418.0,
+    219.5,
+    430.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "멍때리기",
+   "text_key": "멍때리기",
+   "ocr_text": "멍때리기",
+   "confidence": 0.8229691982269287,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "멍때리기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_022",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     306.0,
+     418.5
+    ],
+    [
+     365.5,
+     418.5
+    ],
+    [
+     365.5,
+     430.5
+    ],
+    [
+     306.0,
+     430.5
+    ]
+   ],
+   "bbox": [
+    306.0,
+    418.5,
+    365.5,
+    430.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "반려견 놀이터",
+   "text_key": "반려견놀이터",
+   "ocr_text": "반려견 놀이터",
+   "confidence": 0.9307002425193787,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "반려견 놀이터",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_023",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_023"
+   },
+   "polygon": [
+    [
+     53.5,
+     432.0
+    ],
+    [
+     123.0,
+     432.0
+    ],
+    [
+     123.0,
+     445.5
+    ],
+    [
+     53.5,
+     445.5
+    ]
+   ],
+   "bbox": [
+    53.5,
+    432.0,
+    123.0,
+    445.5
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "펫목걸이 만들기",
+   "text_key": "펫목걸이만들기",
+   "ocr_text": "펫목걸이 만들기",
+   "confidence": 0.8627187013626099,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "펫목걸이 만들기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_024",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_024"
+   },
+   "polygon": [
+    [
+     181.0,
+     432.0
+    ],
+    [
+     239.5,
+     432.0
+    ],
+    [
+     239.5,
+     444.5
+    ],
+    [
+     181.0,
+     444.5
+    ]
+   ],
+   "bbox": [
+    181.0,
+    432.0,
+    239.5,
+    444.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "어질리티 경주",
+   "text_key": "어질리티경주",
+   "ocr_text": "어질리티 경주",
+   "confidence": 0.8553457856178284,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "어질리티 경주",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_025",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_025"
+   },
+   "polygon": [
+    [
+     305.5,
+     432.0
+    ],
+    [
+     335.5,
+     432.0
+    ],
+    [
+     335.5,
+     444.5
+    ],
+    [
+     305.5,
+     444.5
+    ]
+   ],
+   "bbox": [
+    305.5,
+    432.0,
+    335.5,
+    444.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "포토존",
+   "text_key": "포토존",
+   "ocr_text": "포토존",
+   "confidence": 0.993793785572052,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "포토존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_027",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_027"
+   },
+   "polygon": [
+    [
+     236.0,
+     474.0
+    ],
+    [
+     296.0,
+     474.0
+    ],
+    [
+     296.0,
+     486.0
+    ],
+    [
+     236.0,
+     486.0
+    ]
+   ],
+   "bbox": [
+    236.0,
+    474.0,
+    296.0,
+    486.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "행동교정 강의",
+   "text_key": "행동교정강의",
+   "ocr_text": "행동교정 강의",
+   "confidence": 0.9409933686256409,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "행동교정 강의",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_028",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_028"
+   },
+   "polygon": [
+    [
+     355.5,
+     474.0
+    ],
+    [
+     394.5,
+     474.0
+    ],
+    [
+     394.5,
+     486.5
+    ],
+    [
+     355.5,
+     486.5
+    ]
+   ],
+   "bbox": [
+    355.5,
+    474.0,
+    394.5,
+    486.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "산책교실",
+   "text_key": "산책교실",
+   "ocr_text": "산책교실",
+   "confidence": 0.8735060691833496,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "산책교실",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_029",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_029"
+   },
+   "polygon": [
+    [
+     38.0,
+     480.5
+    ],
+    [
+     142.0,
+     478.5
+    ],
+    [
+     142.5,
+     491.0
+    ],
+    [
+     38.0,
+     492.5
+    ]
+   ],
+   "bbox": [
+    38.0,
+    478.5,
+    142.5,
+    492.5
+   ],
+   "height": 12.25,
+   "small_text": false,
+   "text": "SNS 축제 알리기 이벤트",
+   "text_key": "sns축제알리기이벤트",
+   "ocr_text": "SNS 축제 알리기 아벤트",
+   "confidence": 0.9430542588233948,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "SNS 축제 알리기 이벤트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_032",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_032"
+   },
+   "polygon": [
+    [
+     37.5,
+     493.5
+    ],
+    [
+     176.0,
+     493.0
+    ],
+    [
+     176.0,
+     505.5
+    ],
+    [
+     37.5,
+     506.0
+    ]
+   ],
+   "bbox": [
+    37.5,
+    493.0,
+    176.0,
+    506.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "반려동물동반 관광객 환영 이벤트",
+   "text_key": "반려동물동반관광객환영이벤트",
+   "ocr_text": "반려동물동반 관광객 환영 이벤트",
+   "confidence": 0.9891241788864136,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "반려동물동반 관광객 환영 이벤트",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_035",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_035"
+   },
+   "polygon": [
+    [
+     127.0,
+     533.5
+    ],
+    [
+     171.0,
+     533.5
+    ],
+    [
+     171.0,
+     545.5
+    ],
+    [
+     127.0,
+     545.5
+    ]
+   ],
+   "bbox": [
+    127.0,
+    533.5,
+    171.0,
+    545.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "어질리티존",
+   "text_key": "어질리티존",
+   "ocr_text": "어질리타존",
+   "confidence": 0.7693380117416382,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "어질리티존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_036",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_036"
+   },
+   "polygon": [
+    [
+     357.5,
+     529.0
+    ],
+    [
+     404.5,
+     529.0
+    ],
+    [
+     404.5,
+     541.0
+    ],
+    [
+     357.5,
+     541.0
+    ]
+   ],
+   "bbox": [
+    357.5,
+    529.0,
+    404.5,
+    541.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "초대가수 공연",
+   "text_key": "초대가수공연",
+   "ocr_text": "초가수공연",
+   "confidence": 0.9839495420455933,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "초대가수 공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-055.padd_rgb_2x_039",
+   "case_id": "v2-055",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_039"
+   },
+   "polygon": [
+    [
+     127.5,
+     545.0
+    ],
+    [
+     165.0,
+     545.0
+    ],
+    [
+     165.0,
+     557.5
+    ],
+    [
+     127.5,
+     557.5
+    ]
+   ],
+   "bbox": [
+    127.5,
+    545.0,
+    165.0,
+    557.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "펫 포토존",
+   "text_key": "펫포토존",
+   "ocr_text": "펫포토존",
+   "confidence": 0.775734543800354,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "펫 포토존",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

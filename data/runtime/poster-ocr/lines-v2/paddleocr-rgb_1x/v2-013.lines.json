@@ -1,0 +1,507 @@
+{
+ "case_id": "v2-013",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 25,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-013.padd_rgb_1x_000",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     159.0,
+     136.0
+    ],
+    [
+     407.0,
+     136.0
+    ],
+    [
+     407.0,
+     213.0
+    ],
+    [
+     159.0,
+     213.0
+    ]
+   ],
+   "bbox": [
+    159.0,
+    136.0,
+    407.0,
+    213.0
+   ],
+   "height": 77.0,
+   "small_text": false,
+   "text": "홍성남당항",
+   "text_key": "홍성남당항",
+   "ocr_text": "흥성남당항",
+   "confidence": 0.8839332461357117,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "홍성남당항 대하축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_001",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     55.0,
+     163.0
+    ],
+    [
+     154.0,
+     160.0
+    ],
+    [
+     155.0,
+     200.0
+    ],
+    [
+     56.0,
+     202.0
+    ]
+   ],
+   "bbox": [
+    55.0,
+    160.0,
+    155.0,
+    202.0
+   ],
+   "height": 39.51,
+   "small_text": false,
+   "text": "제31회",
+   "text_key": "제31회",
+   "ocr_text": "제31회",
+   "confidence": 0.9960748553276062,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "제31회 홍성남당항 대하축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_002",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     52.0,
+     200.0
+    ],
+    [
+     398.0,
+     200.0
+    ],
+    [
+     398.0,
+     296.0
+    ],
+    [
+     52.0,
+     296.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    200.0,
+    398.0,
+    296.0
+   ],
+   "height": 96.0,
+   "small_text": false,
+   "text": "대하축제",
+   "text_key": "대하축제",
+   "ocr_text": "대하축제",
+   "confidence": 0.973032534122467,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "홍성남당항 대하축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_003",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     121.0,
+     320.0
+    ],
+    [
+     368.0,
+     322.0
+    ],
+    [
+     368.0,
+     349.0
+    ],
+    [
+     121.0,
+     347.0
+    ]
+   ],
+   "bbox": [
+    121.0,
+    320.0,
+    368.0,
+    349.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "2026. 09.04.(금)~11.08.(일) ]",
+   "text_key": "20260904금1108일",
+   "ocr_text": "2026.09.04.(금)~11.08.(일)]",
+   "confidence": 0.9751699566841125,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "축제기간 [ 2026. 09.04.(금)~11.08.(일) ]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_004",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     76.0,
+     330.0
+    ],
+    [
+     113.0,
+     330.0
+    ],
+    [
+     113.0,
+     345.0
+    ],
+    [
+     76.0,
+     345.0
+    ]
+   ],
+   "bbox": [
+    76.0,
+    330.0,
+    113.0,
+    345.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "축제기간",
+   "text_key": "축제기간",
+   "ocr_text": "축재기간",
+   "confidence": 0.7707065939903259,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "축제기간 [ 2026. 09.04.(금)~11.08.(일) ]",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_005",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     76.0,
+     357.0
+    ],
+    [
+     112.0,
+     357.0
+    ],
+    [
+     112.0,
+     370.0
+    ],
+    [
+     76.0,
+     370.0
+    ]
+   ],
+   "bbox": [
+    76.0,
+    357.0,
+    112.0,
+    370.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "개막공연",
+   "text_key": "개막공연",
+   "ocr_text": "개학공연",
+   "confidence": 0.7098531723022461,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "개막공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_007",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     76.0,
+     382.0
+    ],
+    [
+     112.0,
+     382.0
+    ],
+    [
+     112.0,
+     397.0
+    ],
+    [
+     76.0,
+     397.0
+    ]
+   ],
+   "bbox": [
+    76.0,
+    382.0,
+    112.0,
+    397.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "추석공연",
+   "text_key": "추석공연",
+   "ocr_text": "추석공언",
+   "confidence": 0.9021843075752258,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "추석공연",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_009",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     169.0,
+     405.0
+    ],
+    [
+     304.0,
+     405.0
+    ],
+    [
+     304.0,
+     424.0
+    ],
+    [
+     169.0,
+     424.0
+    ]
+   ],
+   "bbox": [
+    169.0,
+    405.0,
+    304.0,
+    424.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "홍성군 남당항 특설무대",
+   "text_key": "홍성군남당항특설무대",
+   "ocr_text": "홍성군 남당항 특설무대",
+   "confidence": 0.973663330078125,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "홍성군 남당항 특설무대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-013.padd_rgb_1x_022",
+   "case_id": "v2-013",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_022"
+   },
+   "polygon": [
+    [
+     68.0,
+     596.0
+    ],
+    [
+     177.0,
+     594.0
+    ],
+    [
+     177.0,
+     607.0
+    ],
+    [
+     68.0,
+     609.0
+    ]
+   ],
+   "bbox": [
+    68.0,
+    594.0,
+    177.0,
+    609.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "홍성남당항축제추진위원회",
+   "text_key": "홍성남당항축제추진위원회",
+   "ocr_text": "통성남당향촉제추진위원회",
+   "confidence": 0.7198718190193176,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "홍성남당항축제추진위원회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -440,10 +440,12 @@ def main():
     parser.add_argument("--set", nargs="*")
     parser.add_argument("--runs", type=Path, default=RUNS)
     parser.add_argument("--out", type=Path, default=CHECKS)
+    parser.add_argument("--sim", type=Path, default=SIM, help="가상 세트 폴더(sets.json이 있는 곳)")
+    parser.add_argument("--eval-out", type=Path, help="채점 결과(evaluate)를 이 JSON 파일에 저장")
     args = parser.parse_args()
     import sys
     sys.stdout.reconfigure(encoding="utf-8")
-    sets = load(SIM / "sets.json")["sets"]
+    sets = load(args.sim / "sets.json")["sets"]
     ids = [s["id"] for s in sets] if args.all else (args.set or [])
     checks = {}
     for set_id in ids:
@@ -453,6 +455,10 @@ def main():
             print(set_id, c["verdict"], {r["key"]: r["status"] for r in c["results"]})
     report = evaluate([s for s in sets if s["id"] in checks], checks)
     print(json.dumps({k: v for k, v in report.items() if k != "rows"}, ensure_ascii=False, indent=1))
+    if args.eval_out:
+        args.eval_out.parent.mkdir(parents=True, exist_ok=True)
+        args.eval_out.write_text(json.dumps({**report, "rules": RULES, "sim": args.sim.resolve().relative_to(ROOT).as_posix()}, ensure_ascii=False, indent=1),
+                                 encoding="utf-8")
 
 
 if __name__ == "__main__":

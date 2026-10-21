@@ -1,0 +1,342 @@
+{
+ "case_id": "v2-143",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 13,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-143.padd_rgb_1x_001",
+   "case_id": "v2-143",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     168.0,
+     42.0
+    ],
+    [
+     273.0,
+     44.0
+    ],
+    [
+     272.0,
+     84.0
+    ],
+    [
+     167.0,
+     81.0
+    ]
+   ],
+   "bbox": [
+    167.0,
+    42.0,
+    273.0,
+    84.0
+   ],
+   "height": 39.51,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9995077252388,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 부산돼지국밥대전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-143.padd_rgb_1x_003",
+   "case_id": "v2-143",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     0.0,
+     75.0
+    ],
+    [
+     443.0,
+     69.0
+    ],
+    [
+     443.0,
+     205.0
+    ],
+    [
+     2.0,
+     211.0
+    ]
+   ],
+   "bbox": [
+    0.0,
+    69.0,
+    443.0,
+    211.0
+   ],
+   "height": 136.01,
+   "small_text": false,
+   "text": "부산돼지국밥대전",
+   "text_key": "부산돼지국밥대전",
+   "ocr_text": "부산돼지국납대전",
+   "confidence": 0.865145206451416,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "부산돼지국밥대전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-143.padd_rgb_1x_004",
+   "case_id": "v2-143",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     14.0,
+     479.0
+    ],
+    [
+     73.0,
+     479.0
+    ],
+    [
+     73.0,
+     501.0
+    ],
+    [
+     14.0,
+     501.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    479.0,
+    73.0,
+    501.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "국밥주간",
+   "text_key": "국밥주간",
+   "ocr_text": "국밥주간",
+   "confidence": 0.9972357153892517,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "국밥주간",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-143.padd_rgb_1x_005",
+   "case_id": "v2-143",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     342.0,
+     480.0
+    ],
+    [
+     426.0,
+     480.0
+    ],
+    [
+     426.0,
+     498.0
+    ],
+    [
+     342.0,
+     498.0
+    ]
+   ],
+   "bbox": [
+    342.0,
+    480.0,
+    426.0,
+    498.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "국밥쇼케이스",
+   "text_key": "국밥쇼케이스",
+   "ocr_text": "국밥쇼케이스",
+   "confidence": 0.9214723706245422,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "국밥쇼케이스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-143.padd_rgb_1x_011",
+   "case_id": "v2-143",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     157.0,
+     599.0
+    ],
+    [
+     215.0,
+     599.0
+    ],
+    [
+     215.0,
+     609.0
+    ],
+    [
+     157.0,
+     609.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    599.0,
+    215.0,
+    609.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "부산관광공사",
+   "text_key": "부산관광공사",
+   "ocr_text": "bto부산관광공사",
+   "confidence": 0.9216700792312622,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부산관광공사",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-143.padd_rgb_1x_012",
+   "case_id": "v2-143",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     254.0,
+     598.0
+    ],
+    [
+     301.0,
+     598.0
+    ],
+    [
+     301.0,
+     608.0
+    ],
+    [
+     254.0,
+     608.0
+    ]
+   ],
+   "bbox": [
+    254.0,
+    598.0,
+    301.0,
+    608.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "LTOPLAN",
+   "text_key": "ltoplan",
+   "ocr_text": "LTOPLAN",
+   "confidence": 0.9904865026473999,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "LTOPLAN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

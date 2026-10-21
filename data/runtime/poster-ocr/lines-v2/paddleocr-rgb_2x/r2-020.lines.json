@@ -1,0 +1,289 @@
+{
+ "case_id": "r2-020",
+ "split": "reserve",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 438,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "r2-020.padd_rgb_2x_004",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     355.5,
+     160.5
+    ],
+    [
+     434.0,
+     160.5
+    ],
+    [
+     434.0,
+     187.5
+    ],
+    [
+     355.5,
+     187.5
+    ]
+   ],
+   "bbox": [
+    355.5,
+    160.5,
+    434.0,
+    187.5
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "제34회",
+   "text_key": "제34회",
+   "ocr_text": "제34원",
+   "confidence": 0.9291039109230042,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제34회",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-020.padd_rgb_2x_006",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     20.5,
+     297.5
+    ],
+    [
+     214.5,
+     297.5
+    ],
+    [
+     214.5,
+     316.5
+    ],
+    [
+     20.5,
+     316.5
+    ]
+   ],
+   "bbox": [
+    20.5,
+    297.5,
+    214.5,
+    316.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026.10.9(금)~10.11(일)",
+   "text_key": "2026109금1011일",
+   "ocr_text": "2026.10.9(금)~10.11(일)",
+   "confidence": 0.9767818450927734,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.9(금)~10.11(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-020.padd_rgb_2x_007",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     37.0,
+     322.0
+    ],
+    [
+     198.5,
+     322.0
+    ],
+    [
+     198.5,
+     337.5
+    ],
+    [
+     37.0,
+     337.5
+    ]
+   ],
+   "bbox": [
+    37.0,
+    322.0,
+    198.5,
+    337.5
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "광한루원 일원 및 원도심 연계",
+   "text_key": "광한루원일원및원도심연계",
+   "ocr_text": "광한루원 일원 및 원도심 연계",
+   "confidence": 0.9672232270240784,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광한루원 일원 및 원도심 연계",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-020.padd_rgb_2x_008",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     44.5,
+     350.5
+    ],
+    [
+     184.5,
+     350.5
+    ],
+    [
+     184.5,
+     362.5
+    ],
+    [
+     44.5,
+     362.5
+    ]
+   ],
+   "bbox": [
+    44.5,
+    350.5,
+    184.5,
+    362.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "흥부제",
+   "text_key": "흥부제",
+   "ocr_text": "주 ©님원시 제 흥부제전위원회",
+   "confidence": 0.849027156829834,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "흥부제",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-020.padd_rgb_2x_009",
+   "case_id": "r2-020",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     66.0,
+     364.5
+    ],
+    [
+     140.5,
+     364.5
+    ],
+    [
+     140.5,
+     380.5
+    ],
+    [
+     66.0,
+     380.5
+    ]
+   ],
+   "bbox": [
+    66.0,
+    364.5,
+    140.5,
+    380.5
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "전북특별자치도",
+   "text_key": "전북특별자치도",
+   "ocr_text": "전북특별지치도",
+   "confidence": 0.8294795751571655,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "전북특별자치도",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,451 @@
+{
+ "case_id": "v2-197",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-197.padd_rgb_2x_002",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     147.0,
+     39.0
+    ],
+    [
+     310.5,
+     57.5
+    ],
+    [
+     301.0,
+     147.0
+    ],
+    [
+     137.5,
+     128.5
+    ]
+   ],
+   "bbox": [
+    137.5,
+    39.0,
+    310.5,
+    147.0
+   ],
+   "height": 90.0,
+   "small_text": false,
+   "text": "의좋은",
+   "text_key": "의좋은",
+   "ocr_text": "이좋은",
+   "confidence": 0.7921604514122009,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "의좋은 형제축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_2x_003",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     211.0,
+     38.5
+    ],
+    [
+     261.5,
+     38.5
+    ],
+    [
+     261.5,
+     61.0
+    ],
+    [
+     211.0,
+     61.0
+    ]
+   ],
+   "bbox": [
+    211.0,
+    38.5,
+    261.5,
+    61.0
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9996612071990967,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026 의좋은 형제축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_2x_004",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     106.0,
+     118.0
+    ],
+    [
+     345.0,
+     128.0
+    ],
+    [
+     341.0,
+     217.0
+    ],
+    [
+     102.0,
+     207.0
+    ]
+   ],
+   "bbox": [
+    102.0,
+    118.0,
+    345.0,
+    217.0
+   ],
+   "height": 89.09,
+   "small_text": false,
+   "text": "형제축",
+   "text_key": "형제축",
+   "ocr_text": "형제축세",
+   "confidence": 0.7537523508071899,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "의좋은 형제축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_2x_005",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     93.0,
+     262.0
+    ],
+    [
+     329.0,
+     263.5
+    ],
+    [
+     328.5,
+     292.5
+    ],
+    [
+     93.0,
+     291.5
+    ]
+   ],
+   "bbox": [
+    93.0,
+    262.0,
+    329.0,
+    292.5
+   ],
+   "height": 29.25,
+   "small_text": false,
+   "text": "2026.11.07.(토) ~ 08.(일)",
+   "text_key": "20261107토08일",
+   "ocr_text": "2026.11.07.(토)~08",
+   "confidence": 0.9853878021240234,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "2026.11.07.(토) ~ 08.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_2x_006",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     93.0,
+     297.5
+    ],
+    [
+     358.5,
+     299.5
+    ],
+    [
+     358.5,
+     323.5
+    ],
+    [
+     93.0,
+     321.5
+    ]
+   ],
+   "bbox": [
+    93.0,
+    297.5,
+    358.5,
+    323.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "의좋은 형제 공원 일원 (충남 예산군 대흥면)",
+   "text_key": "의좋은형제공원일원충남예산군대흥면",
+   "ocr_text": "의종은 형제 공원 일원(충남 예산 대)",
+   "confidence": 0.8597599267959595,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2353,
+   "gold_value": "의좋은 형제 공원 일원 (충남 예산군 대흥면)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_2x_011",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     300.5,
+     586.0
+    ],
+    [
+     434.0,
+     585.5
+    ],
+    [
+     434.0,
+     596.0
+    ],
+    [
+     300.5,
+     596.5
+    ]
+   ],
+   "bbox": [
+    300.5,
+    585.5,
+    434.0,
+    596.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "총 예산 : 200,000,000원(전액군비)",
+   "text_key": "총예산200000000원전액군비",
+   "ocr_text": "예산:200,000,000원(전액군비)",
+   "confidence": 0.8690099120140076,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0588,
+   "gold_value": "총 예산 : 200,000,000원(전액군비)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_2x_013",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     53.5,
+     611.0
+    ],
+    [
+     92.5,
+     611.0
+    ],
+    [
+     92.5,
+     620.0
+    ],
+    [
+     53.5,
+     620.0
+    ]
+   ],
+   "bbox": [
+    53.5,
+    611.0,
+    92.5,
+    620.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "대흥현보존회",
+   "text_key": "대흥현보존회",
+   "ocr_text": "대접현보존회",
+   "confidence": 0.5851696133613586,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "대흥현보존회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.padd_rgb_2x_018",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     376.5,
+     611.5
+    ],
+    [
+     432.0,
+     611.5
+    ],
+    [
+     432.0,
+     620.0
+    ],
+    [
+     376.5,
+     620.0
+    ]
+   ],
+   "bbox": [
+    376.5,
+    611.5,
+    432.0,
+    620.0
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "041) 331 - 0619",
+   "text_key": "0413310619",
+   "ocr_text": "0411331-0615",
+   "confidence": 0.9266427159309387,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "041) 331 - 0619",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

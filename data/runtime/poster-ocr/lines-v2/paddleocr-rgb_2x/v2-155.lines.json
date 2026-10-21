@@ -1,0 +1,505 @@
+{
+ "case_id": "v2-155",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-155.padd_rgb_2x_001",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     138.0,
+     69.0
+    ],
+    [
+     306.0,
+     69.0
+    ],
+    [
+     306.0,
+     134.0
+    ],
+    [
+     138.0,
+     134.0
+    ]
+   ],
+   "bbox": [
+    138.0,
+    69.0,
+    306.0,
+    134.0
+   ],
+   "height": 65.0,
+   "small_text": false,
+   "text": "제10회",
+   "text_key": "제10회",
+   "ocr_text": "제10회",
+   "confidence": 0.9922846555709839,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제10회 전포커피축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_003",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     38.0,
+     130.5
+    ],
+    [
+     403.0,
+     127.0
+    ],
+    [
+     403.5,
+     215.0
+    ],
+    [
+     38.5,
+     218.5
+    ]
+   ],
+   "bbox": [
+    38.0,
+    127.0,
+    403.5,
+    218.5
+   ],
+   "height": 88.0,
+   "small_text": false,
+   "text": "전포커피축제",
+   "text_key": "전포커피축제",
+   "ocr_text": "전포커피축제",
+   "confidence": 0.8609407544136047,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "전포커피축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_004",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     127.0,
+     211.5
+    ],
+    [
+     326.0,
+     210.5
+    ],
+    [
+     326.0,
+     239.5
+    ],
+    [
+     127.0,
+     240.5
+    ]
+   ],
+   "bbox": [
+    127.0,
+    210.5,
+    326.0,
+    240.5
+   ],
+   "height": 29.0,
+   "small_text": false,
+   "text": "10. 17. Sat - 10. 18.",
+   "text_key": "1017sat1018",
+   "ocr_text": ".10.17.5at -10.18.",
+   "confidence": 0.9531853795051575,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_005",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     326.0,
+     214.5
+    ],
+    [
+     357.5,
+     216.5
+    ],
+    [
+     356.5,
+     231.0
+    ],
+    [
+     325.5,
+     229.0
+    ]
+   ],
+   "bbox": [
+    325.5,
+    214.5,
+    357.5,
+    231.0
+   ],
+   "height": 14.52,
+   "small_text": false,
+   "text": "Sun",
+   "text_key": "sun",
+   "ocr_text": "Sun",
+   "confidence": 0.9675397872924805,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_006",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     87.5,
+     222.5
+    ],
+    [
+     133.5,
+     222.5
+    ],
+    [
+     133.5,
+     237.0
+    ],
+    [
+     87.5,
+     237.0
+    ]
+   ],
+   "bbox": [
+    87.5,
+    222.5,
+    133.5,
+    237.0
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.9968330264091492,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0556,
+   "gold_value": "2026. 10. 17. Sat - 10. 18. Sun",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_007",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     112.5,
+     241.5
+    ],
+    [
+     330.5,
+     241.5
+    ],
+    [
+     330.5,
+     260.0
+    ],
+    [
+     112.5,
+     260.0
+    ]
+   ],
+   "bbox": [
+    112.5,
+    241.5,
+    330.5,
+    260.0
+   ],
+   "height": 18.5,
+   "small_text": false,
+   "text": "전포카페거리 (전포 놀이마루 일원)",
+   "text_key": "전포카페거리전포놀이마루일원",
+   "ocr_text": "맨포카페거리 (견포 놀이마루 일원)",
+   "confidence": 0.8628513216972351,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "전포카페거리 (전포 놀이마루 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_008",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     146.5,
+     266.0
+    ],
+    [
+     297.5,
+     266.0
+    ],
+    [
+     297.5,
+     276.0
+    ],
+    [
+     146.5,
+     276.0
+    ]
+   ],
+   "bbox": [
+    146.5,
+    266.0,
+    297.5,
+    276.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "(토) 12:00 ~ 20:00",
+   "text_key": "토12002000",
+   "ocr_text": "(토112:00-20:00/1)12:00-18:00",
+   "confidence": 0.9809106588363647,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "(토) 12:00 ~ 20:00",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_015",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     127.5,
+     598.5
+    ],
+    [
+     200.0,
+     600.0
+    ],
+    [
+     199.5,
+     611.0
+    ],
+    [
+     127.5,
+     609.5
+    ]
+   ],
+   "bbox": [
+    127.5,
+    598.5,
+    200.0,
+    611.0
+   ],
+   "height": 11.01,
+   "small_text": false,
+   "text": "부산진구",
+   "text_key": "부산진구",
+   "ocr_text": "busanjin 부산진구",
+   "confidence": 0.8754914402961731,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부산진구",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-155.padd_rgb_2x_016",
+   "case_id": "v2-155",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     239.0,
+     602.5
+    ],
+    [
+     359.5,
+     602.5
+    ],
+    [
+     359.5,
+     609.5
+    ],
+    [
+     239.0,
+     609.5
+    ]
+   ],
+   "bbox": [
+    239.0,
+    602.5,
+    359.5,
+    609.5
+   ],
+   "height": 7.0,
+   "small_text": true,
+   "text": "전포카페거리 · 전포공구길 · 전포사잇길 상인회",
+   "text_key": "전포카페거리전포공구길전포사잇길상인회",
+   "ocr_text": "전모카페거래·전포공구길·전포사잇길 상인최",
+   "confidence": 0.8762451410293579,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1579,
+   "gold_value": "전포카페거리 · 전포공구길 · 전포사잇길 상인회",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

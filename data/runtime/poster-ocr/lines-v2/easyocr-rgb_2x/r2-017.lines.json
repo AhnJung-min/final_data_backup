@@ -1,0 +1,125 @@
+{
+ "case_id": "r2-017",
+ "split": "reserve",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 2,
+ "records": [
+  {
+   "id": "r2-017.easy_rgb_2x_003",
+   "case_id": "r2-017",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     106.5,
+     508.0
+    ],
+    [
+     239.0,
+     508.0
+    ],
+    [
+     239.0,
+     532.5
+    ],
+    [
+     106.5,
+     532.5
+    ]
+   ],
+   "bbox": [
+    106.5,
+    508.0,
+    239.0,
+    532.5
+   ],
+   "height": 24.5,
+   "small_text": false,
+   "text": "2026. 10. 3.(토)",
+   "text_key": "2026103토",
+   "ocr_text": "2026.10.3 (토)",
+   "confidence": 0.4352266477283361,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-017.easy_rgb_2x_005",
+   "case_id": "r2-017",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     253.0,
+     508.0
+    ],
+    [
+     337.5,
+     508.0
+    ],
+    [
+     337.5,
+     533.0
+    ],
+    [
+     253.0,
+     533.0
+    ]
+   ],
+   "bbox": [
+    253.0,
+    508.0,
+    337.5,
+    533.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "10. 4.(일)",
+   "text_key": "104일",
+   "ocr_text": "10 4 (일)",
+   "confidence": 0.6312727356797204,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

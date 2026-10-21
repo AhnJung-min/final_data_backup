@@ -1,0 +1,73 @@
+{
+ "case_id": "v2-048",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-048.easy_rgb_2x_003",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     97.0,
+     510.0
+    ],
+    [
+     356.5,
+     510.0
+    ],
+    [
+     356.5,
+     556.5
+    ],
+    [
+     97.0,
+     556.5
+    ]
+   ],
+   "bbox": [
+    97.0,
+    510.0,
+    356.5,
+    556.5
+   ],
+   "height": 46.5,
+   "small_text": false,
+   "text": "부천국제만화축제",
+   "text_key": "부천국제만화축제",
+   "ocr_text": "부천국제만화축제",
+   "confidence": 0.4885950141713512,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부천국제만화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

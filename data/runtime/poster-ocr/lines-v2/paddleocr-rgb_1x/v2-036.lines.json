@@ -1,0 +1,561 @@
+{
+ "case_id": "v2-036",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 10,
+ "records": [
+  {
+   "id": "v2-036.padd_rgb_1x_000",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     359.0,
+     8.0
+    ],
+    [
+     431.0,
+     8.0
+    ],
+    [
+     431.0,
+     19.0
+    ],
+    [
+     359.0,
+     19.0
+    ]
+   ],
+   "bbox": [
+    359.0,
+    8.0,
+    431.0,
+    19.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "경기도평생교육진흥원",
+   "text_key": "경기도평생교육진흥원",
+   "ocr_text": "경기도평생교육진홍원",
+   "confidence": 0.8522083163261414,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "경기도평생교육진흥원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_001",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     51.0,
+     28.0
+    ],
+    [
+     157.0,
+     25.0
+    ],
+    [
+     158.0,
+     73.0
+    ],
+    [
+     52.0,
+     76.0
+    ]
+   ],
+   "bbox": [
+    51.0,
+    25.0,
+    158.0,
+    76.0
+   ],
+   "height": 48.01,
+   "small_text": false,
+   "text": "파주",
+   "text_key": "파주",
+   "ocr_text": "파주",
+   "confidence": 0.9994568228721619,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_002",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     52.0,
+     73.0
+    ],
+    [
+     253.0,
+     73.0
+    ],
+    [
+     253.0,
+     121.0
+    ],
+    [
+     52.0,
+     121.0
+    ]
+   ],
+   "bbox": [
+    52.0,
+    73.0,
+    253.0,
+    121.0
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "K - 컬처",
+   "text_key": "k컬처",
+   "ocr_text": "K - 컬처",
+   "confidence": 0.8694241642951965,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_003",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     54.0,
+     122.0
+    ],
+    [
+     254.0,
+     122.0
+    ],
+    [
+     254.0,
+     168.0
+    ],
+    [
+     54.0,
+     168.0
+    ]
+   ],
+   "bbox": [
+    54.0,
+    122.0,
+    254.0,
+    168.0
+   ],
+   "height": 46.0,
+   "small_text": false,
+   "text": "페스티벌",
+   "text_key": "페스티벌",
+   "ocr_text": "페스티벌",
+   "confidence": 0.9929051995277405,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "파주 K - 컬처 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_004",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     273.0,
+     118.0
+    ],
+    [
+     391.0,
+     115.0
+    ],
+    [
+     391.0,
+     135.0
+    ],
+    [
+     273.0,
+     137.0
+    ]
+   ],
+   "bbox": [
+    273.0,
+    115.0,
+    391.0,
+    137.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "2026. 9. 12.(토)",
+   "text_key": "2026912토",
+   "ocr_text": "2026.9.12.(토)",
+   "confidence": 0.9579910039901733,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 12.(토)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_005",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     279.0,
+     146.0
+    ],
+    [
+     383.0,
+     146.0
+    ],
+    [
+     383.0,
+     159.0
+    ],
+    [
+     279.0,
+     159.0
+    ]
+   ],
+   "bbox": [
+    279.0,
+    146.0,
+    383.0,
+    159.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "경기미래교육파주캠퍼스",
+   "text_key": "경기미래교육파주캠퍼스",
+   "ocr_text": "광기미래교육파주캡스",
+   "confidence": 0.9120631217956543,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2727,
+   "gold_value": "경기미래교육파주캠퍼스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_007",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     61.0,
+     506.0
+    ],
+    [
+     158.0,
+     506.0
+    ],
+    [
+     158.0,
+     522.0
+    ],
+    [
+     61.0,
+     522.0
+    ]
+   ],
+   "bbox": [
+    61.0,
+    506.0,
+    158.0,
+    522.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "메인 무대 공연",
+   "text_key": "메인무대공연",
+   "ocr_text": "메인 무대 공인",
+   "confidence": 0.6848148107528687,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "메인 무대 공연",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_010",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     247.0,
+     546.0
+    ],
+    [
+     357.0,
+     546.0
+    ],
+    [
+     357.0,
+     558.0
+    ],
+    [
+     247.0,
+     558.0
+    ]
+   ],
+   "bbox": [
+    247.0,
+    546.0,
+    357.0,
+    558.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "30여 가지 무료 체험 프로그램",
+   "text_key": "30여가지무료체험프로그램",
+   "ocr_text": "30여 가지 무르체험프르그램",
+   "confidence": 0.8732377290725708,
+   "field": "admission.raw",
+   "field_group": "admission",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "admission.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1538,
+   "gold_value": "30여 가지 무료 체험 프로그램",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_011",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     248.0,
+     571.0
+    ],
+    [
+     326.0,
+     571.0
+    ],
+    [
+     326.0,
+     585.0
+    ],
+    [
+     248.0,
+     585.0
+    ]
+   ],
+   "bbox": [
+    248.0,
+    571.0,
+    326.0,
+    585.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "K-전통놀이",
+   "text_key": "k전통놀이",
+   "ocr_text": "K-전동놀이",
+   "confidence": 0.8116228580474854,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "K-전통놀이",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-036.padd_rgb_1x_015",
+   "case_id": "v2-036",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     247.0,
+     597.0
+    ],
+    [
+     294.0,
+     597.0
+    ],
+    [
+     294.0,
+     610.0
+    ],
+    [
+     247.0,
+     610.0
+    ]
+   ],
+   "bbox": [
+    247.0,
+    597.0,
+    294.0,
+    610.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "K-푸드",
+   "text_key": "k푸드",
+   "ocr_text": "K-푸드",
+   "confidence": 0.9656936526298523,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "K-푸드",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

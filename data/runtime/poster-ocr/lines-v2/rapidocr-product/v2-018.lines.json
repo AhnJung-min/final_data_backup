@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-018",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-018.rapi_product_000",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     36.0,
+     13.0
+    ],
+    [
+     85.0,
+     13.0
+    ],
+    [
+     85.0,
+     26.0
+    ],
+    [
+     36.0,
+     26.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    13.0,
+    85.0,
+    26.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "문화체육관광부",
+   "text_key": "문화체육관광부",
+   "ocr_text": "문회제육관광부",
+   "confidence": 0.89746,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "문화체육관광부",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.rapi_product_002",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     365.0,
+     13.0
+    ],
+    [
+     429.0,
+     13.0
+    ],
+    [
+     429.0,
+     25.0
+    ],
+    [
+     365.0,
+     25.0
+    ]
+   ],
+   "bbox": [
+    365.0,
+    13.0,
+    429.0,
+    25.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "www.firefly.or.kr",
+   "text_key": "wwwfireflyorkr",
+   "ocr_text": "www.firefly.or,kr",
+   "confidence": 0.88358,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "www.firefly.or.kr",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.rapi_product_004",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     251.0,
+     457.0
+    ],
+    [
+     291.0,
+     457.0
+    ],
+    [
+     291.0,
+     475.0
+    ],
+    [
+     251.0,
+     475.0
+    ]
+   ],
+   "bbox": [
+    251.0,
+    457.0,
+    291.0,
+    475.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.99574,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.4.금 - 9.12.토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.rapi_product_005",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_005"
+   },
+   "polygon": [
+    [
+     249.0,
+     471.0
+    ],
+    [
+     359.0,
+     471.0
+    ],
+    [
+     359.0,
+     498.0
+    ],
+    [
+     249.0,
+     498.0
+    ]
+   ],
+   "bbox": [
+    249.0,
+    471.0,
+    359.0,
+    498.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "9.4.금 - 9.12.",
+   "text_key": "94금912",
+   "ocr_text": "9.4.- 9.12.",
+   "confidence": 0.96223,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1818,
+   "gold_value": "2026. 9.4.금 - 9.12.토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-018.rapi_product_011",
+   "case_id": "v2-018",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_011"
+   },
+   "polygon": [
+    [
+     222.0,
+     602.0
+    ],
+    [
+     300.0,
+     602.0
+    ],
+    [
+     300.0,
+     612.0
+    ],
+    [
+     222.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    222.0,
+    602.0,
+    300.0,
+    612.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "063)324-2440",
+   "text_key": "0633242440",
+   "ocr_text": "의:0531324-24.40",
+   "confidence": 0.94532,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "063)324-2440",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

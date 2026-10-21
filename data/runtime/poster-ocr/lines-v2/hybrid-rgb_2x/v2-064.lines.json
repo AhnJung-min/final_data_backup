@@ -1,0 +1,180 @@
+{
+ "case_id": "v2-064",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 10,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-064.easy_rgb_2x_000",
+   "case_id": "v2-064",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     24.0,
+     30.5
+    ],
+    [
+     81.5,
+     30.5
+    ],
+    [
+     81.5,
+     54.5
+    ],
+    [
+     24.0,
+     54.5
+    ]
+   ],
+   "bbox": [
+    24.0,
+    30.5,
+    81.5,
+    54.5
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9999997019767761,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 창경궁 야연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-064.easy_rgb_2x_002",
+   "case_id": "v2-064",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     21.5,
+     56.0
+    ],
+    [
+     213.0,
+     56.0
+    ],
+    [
+     213.0,
+     105.0
+    ],
+    [
+     21.5,
+     105.0
+    ]
+   ],
+   "bbox": [
+    21.5,
+    56.0,
+    213.0,
+    105.0
+   ],
+   "height": 49.0,
+   "small_text": false,
+   "text": "창경궁 야연",
+   "text_key": "창경궁야연",
+   "ocr_text": "창경궁 야연",
+   "confidence": 0.9005710213777305,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "창경궁 야연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-064.easy_rgb_2x_004",
+   "case_id": "v2-064",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     23.5,
+     109.0
+    ],
+    [
+     168.5,
+     109.0
+    ],
+    [
+     168.5,
+     137.0
+    ],
+    [
+     23.5,
+     137.0
+    ]
+   ],
+   "bbox": [
+    23.5,
+    109.0,
+    168.5,
+    137.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "9.24.목 - 10.4.일",
+   "text_key": "924목104일",
+   "ocr_text": "9.24.-10.4.일",
+   "confidence": 0.9191408753395081,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "9.24.목 - 10.4.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

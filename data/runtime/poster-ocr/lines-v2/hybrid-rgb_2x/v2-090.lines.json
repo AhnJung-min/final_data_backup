@@ -1,0 +1,343 @@
+{
+ "case_id": "v2-090",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 446,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 35,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-090.easy_rgb_2x_003",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     43.5,
+     66.5
+    ],
+    [
+     176.5,
+     66.5
+    ],
+    [
+     176.5,
+     84.5
+    ],
+    [
+     43.5,
+     84.5
+    ]
+   ],
+   "bbox": [
+    43.5,
+    66.5,
+    176.5,
+    84.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "제 6회 용인 청년 페스티벌",
+   "text_key": "제6회용인청년페스티벌",
+   "ocr_text": "제6회 용인청년 페스티벌",
+   "confidence": 0.9032291173934937,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제 6회 용인 청년 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.easy_rgb_2x_006",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     235.0,
+     378.0
+    ],
+    [
+     395.0,
+     378.0
+    ],
+    [
+     395.0,
+     405.0
+    ],
+    [
+     235.0,
+     405.0
+    ]
+   ],
+   "bbox": [
+    235.0,
+    378.0,
+    395.0,
+    405.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "용인미르스타디움",
+   "text_key": "용인미르스타디움",
+   "ocr_text": "용민미르스타디움",
+   "confidence": 0.6791258454322815,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "용인미르스타디움",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.easy_rgb_2x_011",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     198.0,
+     443.0
+    ],
+    [
+     289.0,
+     443.0
+    ],
+    [
+     289.0,
+     455.0
+    ],
+    [
+     198.0,
+     455.0
+    ]
+   ],
+   "bbox": [
+    198.0,
+    443.0,
+    289.0,
+    455.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "와리가리 스피드 OX 퀴즈",
+   "text_key": "와리가리스피드ox퀴즈",
+   "ocr_text": "와리가리 스프드 Ox 키즈",
+   "confidence": 0.2093940927236769,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1818,
+   "gold_value": "와리가리 스피드 OX 퀴즈",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.easy_rgb_2x_012",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     306.0,
+     443.0
+    ],
+    [
+     390.0,
+     443.0
+    ],
+    [
+     390.0,
+     456.0
+    ],
+    [
+     306.0,
+     456.0
+    ]
+   ],
+   "bbox": [
+    306.0,
+    443.0,
+    390.0,
+    456.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "이달의 청년강사 클래스",
+   "text_key": "이달의청년강사클래스",
+   "ocr_text": "이달의 정년강사 콤라스",
+   "confidence": 0.31935914327290427,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.3,
+   "gold_value": "이달의 청년강사 클래스",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.easy_rgb_2x_022",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_022"
+   },
+   "polygon": [
+    [
+     327.0,
+     497.0
+    ],
+    [
+     377.0,
+     497.0
+    ],
+    [
+     377.0,
+     510.0
+    ],
+    [
+     327.0,
+     510.0
+    ]
+   ],
+   "bbox": [
+    327.0,
+    497.0,
+    377.0,
+    510.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "분갈이의 정석",
+   "text_key": "분갈이의정석",
+   "ocr_text": "분길이의 정석",
+   "confidence": 0.2303423808793199,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "분갈이의 정석",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-090.easy_rgb_2x_029",
+   "case_id": "v2-090",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_029"
+   },
+   "polygon": [
+    [
+     223.0,
+     562.0
+    ],
+    [
+     280.0,
+     562.0
+    ],
+    [
+     280.0,
+     574.0
+    ],
+    [
+     223.0,
+     574.0
+    ]
+   ],
+   "bbox": [
+    223.0,
+    562.0,
+    280.0,
+    574.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "10:00 ~17:00",
+   "text_key": "10001700",
+   "ocr_text": "10.03 .' 700",
+   "confidence": 0.4432693777241689,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "10:00 ~17:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

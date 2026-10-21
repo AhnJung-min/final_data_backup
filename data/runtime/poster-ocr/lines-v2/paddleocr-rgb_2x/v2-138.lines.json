@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-138",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 11,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-138.padd_rgb_2x_000",
+   "case_id": "v2-138",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     22.0,
+     29.5
+    ],
+    [
+     270.0,
+     29.5
+    ],
+    [
+     270.0,
+     69.5
+    ],
+    [
+     22.0,
+     69.5
+    ]
+   ],
+   "bbox": [
+    22.0,
+    29.5,
+    270.0,
+    69.5
+   ],
+   "height": 40.0,
+   "small_text": false,
+   "text": "NS푸드페스타",
+   "text_key": "ns푸드페스타",
+   "ocr_text": "NS푸드페스타",
+   "confidence": 0.999148428440094,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "NS푸드페스타 2026 익산",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-138.padd_rgb_2x_003",
+   "case_id": "v2-138",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     22.0,
+     75.5
+    ],
+    [
+     187.5,
+     75.5
+    ],
+    [
+     187.5,
+     114.0
+    ],
+    [
+     22.0,
+     114.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    75.5,
+    187.5,
+    114.0
+   ],
+   "height": 38.5,
+   "small_text": false,
+   "text": "2026 익산",
+   "text_key": "2026익산",
+   "ocr_text": "2026 익산",
+   "confidence": 0.9586764574050903,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "NS푸드페스타 2026 익산",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-138.padd_rgb_2x_004",
+   "case_id": "v2-138",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     342.0,
+     85.5
+    ],
+    [
+     419.5,
+     85.5
+    ],
+    [
+     419.5,
+     97.5
+    ],
+    [
+     342.0,
+     97.5
+    ]
+   ],
+   "bbox": [
+    342.0,
+    85.5,
+    419.5,
+    97.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "하림 퍼스트 키",
+   "text_key": "하림퍼스트키",
+   "ocr_text": "하림 피스트 키진",
+   "confidence": 0.9043892621994019,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "하림 퍼스트 키친 (익산 제4산업단지)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-138.padd_rgb_2x_005",
+   "case_id": "v2-138",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     342.0,
+     100.0
+    ],
+    [
+     418.0,
+     100.0
+    ],
+    [
+     418.0,
+     110.5
+    ],
+    [
+     342.0,
+     110.5
+    ]
+   ],
+   "bbox": [
+    342.0,
+    100.0,
+    418.0,
+    110.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "(익산 제4산업단지)",
+   "text_key": "익산제4산업단지",
+   "ocr_text": "(이신 제4산업단지)",
+   "confidence": 0.704334020614624,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2667,
+   "gold_value": "하림 퍼스트 키친 (익산 제4산업단지)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-138.padd_rgb_2x_010",
+   "case_id": "v2-138",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     113.0,
+     591.5
+    ],
+    [
+     142.0,
+     591.5
+    ],
+    [
+     142.0,
+     604.5
+    ],
+    [
+     113.0,
+     604.5
+    ]
+   ],
+   "bbox": [
+    113.0,
+    591.5,
+    142.0,
+    604.5
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "익산시",
+   "text_key": "익산시",
+   "ocr_text": "익산시",
+   "confidence": 0.8953983187675476,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "익산시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

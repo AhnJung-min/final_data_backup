@@ -1,0 +1,505 @@
+{
+ "case_id": "v2-141",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 37,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-141.padd_rgb_2x_001",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     193.5,
+     81.5
+    ],
+    [
+     248.5,
+     83.5
+    ],
+    [
+     248.0,
+     101.0
+    ],
+    [
+     193.0,
+     99.5
+    ]
+   ],
+   "bbox": [
+    193.0,
+    81.5,
+    248.5,
+    101.0
+   ],
+   "height": 17.76,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2 0 26",
+   "confidence": 0.8325905203819275,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "2026 가락 OKTOBER Fest",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_002",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     193.5,
+     98.0
+    ],
+    [
+     252.0,
+     98.0
+    ],
+    [
+     252.0,
+     128.0
+    ],
+    [
+     193.5,
+     128.0
+    ]
+   ],
+   "bbox": [
+    193.5,
+    98.0,
+    252.0,
+    128.0
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "가락",
+   "text_key": "가락",
+   "ocr_text": "가락",
+   "confidence": 0.9995485544204712,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "2026 가락 OKTOBER Fest",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_003",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     81.5,
+     130.0
+    ],
+    [
+     360.0,
+     129.0
+    ],
+    [
+     360.0,
+     174.0
+    ],
+    [
+     81.5,
+     175.0
+    ]
+   ],
+   "bbox": [
+    81.5,
+    129.0,
+    360.0,
+    175.0
+   ],
+   "height": 45.0,
+   "small_text": false,
+   "text": "OKTOBER",
+   "text_key": "oktober",
+   "ocr_text": "OKTOBER",
+   "confidence": 0.9981212019920349,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "2026 가락 OKTOBER Fest",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_004",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     86.5,
+     186.0
+    ],
+    [
+     356.0,
+     187.0
+    ],
+    [
+     356.0,
+     211.0
+    ],
+    [
+     86.5,
+     210.0
+    ]
+   ],
+   "bbox": [
+    86.5,
+    186.0,
+    356.0,
+    211.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "10.16(금) - 18(일)",
+   "text_key": "1016금18일",
+   "ocr_text": "10.16(금]-18(일),16시-22시",
+   "confidence": 0.9720127582550049,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.16(금) - 18(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_005",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     119.0,
+     218.5
+    ],
+    [
+     189.0,
+     218.5
+    ],
+    [
+     189.0,
+     244.0
+    ],
+    [
+     119.0,
+     244.0
+    ]
+   ],
+   "bbox": [
+    119.0,
+    218.5,
+    189.0,
+    244.0
+   ],
+   "height": 25.5,
+   "small_text": false,
+   "text": "가락몰",
+   "text_key": "가락몰",
+   "ocr_text": "가락몰",
+   "confidence": 0.9942575097084045,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "가락몰 3층 하늘공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_006",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     189.0,
+     218.0
+    ],
+    [
+     233.0,
+     218.0
+    ],
+    [
+     233.0,
+     245.0
+    ],
+    [
+     189.0,
+     245.0
+    ]
+   ],
+   "bbox": [
+    189.0,
+    218.0,
+    233.0,
+    245.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "3층",
+   "text_key": "3층",
+   "ocr_text": "3층",
+   "confidence": 0.9998725652694702,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "가락몰 3층 하늘공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_007",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     232.5,
+     218.0
+    ],
+    [
+     324.5,
+     218.0
+    ],
+    [
+     324.5,
+     244.5
+    ],
+    [
+     232.5,
+     244.5
+    ]
+   ],
+   "bbox": [
+    232.5,
+    218.0,
+    324.5,
+    244.5
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "하늘공원",
+   "text_key": "하늘공원",
+   "ocr_text": "하늘공원",
+   "confidence": 0.9953738451004028,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "가락몰 3층 하늘공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_011",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     133.0,
+     550.5
+    ],
+    [
+     176.0,
+     550.5
+    ],
+    [
+     176.0,
+     561.0
+    ],
+    [
+     133.0,
+     561.0
+    ]
+   ],
+   "bbox": [
+    133.0,
+    550.5,
+    176.0,
+    561.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "가락 오락관",
+   "text_key": "가락오락관",
+   "ocr_text": "가락 오리관",
+   "confidence": 0.6940925717353821,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "가락 오락관",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.padd_rgb_2x_014",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     294.5,
+     551.0
+    ],
+    [
+     330.0,
+     551.0
+    ],
+    [
+     330.0,
+     561.5
+    ],
+    [
+     294.5,
+     561.5
+    ]
+   ],
+   "bbox": [
+    294.5,
+    551.0,
+    330.0,
+    561.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "추첨 경품",
+   "text_key": "추첨경품",
+   "ocr_text": "추첨 경품",
+   "confidence": 0.8427175283432007,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "추첨 경품",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

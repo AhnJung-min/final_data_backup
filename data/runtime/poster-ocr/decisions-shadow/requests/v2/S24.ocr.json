@@ -1,0 +1,1426 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 6050,
+  "input_tokens": 9331,
+  "cost_usd": 0.0009331000000000001
+ },
+ "meta": {
+  "dataset": "v2",
+  "set": "S24",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v2/documents/S24.png",
+    "sha256": "161a8a6bf5be0e88611426fea93b9cc91cddda655221e7fc48e3eb5fdfbc5bbc",
+    "bytes": 120491,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v2/posters/S24.png",
+    "sha256": "2c605b523179b23b942f319bbf6e80eba47191273e56f526e501806e72e3c4b9",
+    "bytes": 54878,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "가람 별빛정원 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제8회 가람 별빛정원 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제8회",
+     "number": 8
+    },
+    "doc_raw": "제8회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.11.(수) ~11.12.(목)",
+     "points": [
+      [
+       2026,
+       11,
+       11,
+       "수"
+      ],
+      [
+       2026,
+       11,
+       12,
+       "목"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.11.(수) ~11.12.(목)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "11:00~20:00"
+    },
+    "doc_raw": "11:00~20:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "가람 전통시장 일대"
+    },
+    "doc_raw": "가람 전통시장 일대"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "가람시"
+    },
+    "doc_raw": "가람시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "가람관광재단"
+    },
+    "doc_raw": "가람관광재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "041-000-4527"
+    },
+    "doc_raw": "041-000-4527"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "빛으로 물드는 가을밤"
+    },
+    "doc_raw": "빛으로 물드는 가을밤"
+   }
+  },
+  "rows": [
+   {
+    "value": "L534",
+    "index": 0,
+    "text": "2026제8회",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026제8회",
+      "confidence": 0.9993031620979309,
+      "bbox_xyxy": [
+       355.0,
+       71.0,
+       528.0,
+       110.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L725",
+    "index": 1,
+    "text": "가람",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "가람",
+      "confidence": 0.9997851252555847,
+      "bbox_xyxy": [
+       332.0,
+       130.0,
+       553.0,
+       261.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L742",
+    "index": 2,
+    "text": "별빛정원 축제",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "별빛정원",
+      "confidence": 0.9996082186698914,
+      "bbox_xyxy": [
+       125.0,
+       264.0,
+       539.0,
+       395.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "축제",
+      "confidence": 0.9993462562561035,
+      "bbox_xyxy": [
+       547.0,
+       260.0,
+       761.0,
+       394.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L983",
+    "index": 3,
+    "text": "빛으로 물드는 가을밤",
+    "conf": 0.9909,
+    "records": [
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "빛으로 물드는",
+      "confidence": 0.990936815738678,
+      "bbox_xyxy": [
+       294.0,
+       415.0,
+       494.0,
+       453.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "가을밤",
+      "confidence": 0.9973115921020508,
+      "bbox_xyxy": [
+       490.0,
+       414.0,
+       592.0,
+       453.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L809",
+    "index": 4,
+    "text": "일시 2026.11.11.(수)~11.12.(목)",
+    "conf": 0.9956,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "일시",
+      "confidence": 0.9999164342880249,
+      "bbox_xyxy": [
+       87.0,
+       815.0,
+       143.0,
+       850.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "2026.11.11.(수)~11.12.(목)",
+      "confidence": 0.9955720901489258,
+      "bbox_xyxy": [
+       197.0,
+       818.0,
+       615.0,
+       852.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L815",
+    "index": 5,
+    "text": "시간 11:00~20:00",
+    "conf": 0.9971,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "시간",
+      "confidence": 0.9999452829360962,
+      "bbox_xyxy": [
+       87.0,
+       888.0,
+       144.0,
+       924.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "11:00~20:00",
+      "confidence": 0.9971055388450623,
+      "bbox_xyxy": [
+       200.0,
+       894.0,
+       395.0,
+       922.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L457",
+    "index": 6,
+    "text": "장소 가람 전통시장 일대",
+    "conf": 0.9759,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "장소",
+      "confidence": 0.9996548891067505,
+      "bbox_xyxy": [
+       87.0,
+       964.0,
+       145.0,
+       999.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "가람 전통시장 일대",
+      "confidence": 0.9759448766708374,
+      "bbox_xyxy": [
+       198.0,
+       966.0,
+       446.0,
+       1000.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L900",
+    "index": 7,
+    "text": "빛 터널 산책|야간 정원 투어|별자리 체험",
+    "conf": 0.9794,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "빛 터널 산책|야간 정원 투어|별자리 체험",
+      "confidence": 0.9793615937232971,
+      "bbox_xyxy": [
+       227.0,
+       1053.0,
+       657.0,
+       1080.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L316",
+    "index": 8,
+    "text": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527",
+    "conf": 0.9353,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527",
+      "confidence": 0.9353097081184387,
+      "bbox_xyxy": [
+       168.0,
+       1198.0,
+       715.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제8회 가람 별빛정원 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.11.(수) ~11.12.(목)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "11:00~20:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "가람 전통시장 일대"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "가람시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "가람관광재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "041-000-4527"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "빛으로 물드는 가을밤"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "가람 별빛정원 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제8회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.11.(수) ~11.12.(목)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "11:00~20:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "가람 전통시장 일대"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "가람시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "가람관광재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "041-000-4527"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "빛으로 물드는 가을밤"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_edition": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_time": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_venue": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_host": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_contact": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L534",
+    "L725",
+    "L742",
+    "L983",
+    "L809",
+    "L815",
+    "L457",
+    "L900",
+    "L316",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 120,491 bytes, sha256 161a8a6bf5be0e88…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 54,878 bytes, sha256 2c605b523179b23b…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제8회 가람 별빛정원 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.11.(수) ~11.12.(목)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '11:00~20:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '가람 전통시장 일대'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '가람시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '가람관광재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '041-000-4527'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '빛으로 물드는 가을밤'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L534",
+      "description": "2026제8회"
+     },
+     {
+      "value": "L725",
+      "description": "가람"
+     },
+     {
+      "value": "L742",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L983",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L809",
+      "description": "일시 2026.11.11.(수)~11.12.(목)"
+     },
+     {
+      "value": "L815",
+      "description": "시간 11:00~20:00"
+     },
+     {
+      "value": "L457",
+      "description": "장소 가람 전통시장 일대"
+     },
+     {
+      "value": "L900",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L316",
+      "description": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '가람 별빛정원 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제8회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.11.(수) ~11.12.(목)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '11:00~20:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '가람 전통시장 일대'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '가람시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '가람관광재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '041-000-4527'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '빛으로 물드는 가을밤'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

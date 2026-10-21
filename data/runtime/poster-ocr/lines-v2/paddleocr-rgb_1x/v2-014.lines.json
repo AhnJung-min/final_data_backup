@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-014",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-014.padd_rgb_1x_002",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     171.0,
+     29.0
+    ],
+    [
+     271.0,
+     26.0
+    ],
+    [
+     272.0,
+     66.0
+    ],
+    [
+     172.0,
+     69.0
+    ]
+   ],
+   "bbox": [
+    171.0,
+    26.0,
+    272.0,
+    69.0
+   ],
+   "height": 40.01,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9988325834274292,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "2026 공주국가유산야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_1x_003",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     68.0,
+     63.0
+    ],
+    [
+     372.0,
+     59.0
+    ],
+    [
+     373.0,
+     120.0
+    ],
+    [
+     69.0,
+     125.0
+    ]
+   ],
+   "bbox": [
+    68.0,
+    59.0,
+    373.0,
+    125.0
+   ],
+   "height": 61.51,
+   "small_text": false,
+   "text": "공주국가유산야행",
+   "text_key": "공주국가유산야행",
+   "ocr_text": "공주국가유산아하영",
+   "confidence": 0.9078624248504639,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "공주국가유산야행",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_1x_005",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     157.0,
+     164.0
+    ],
+    [
+     282.0,
+     164.0
+    ],
+    [
+     282.0,
+     180.0
+    ],
+    [
+     157.0,
+     180.0
+    ]
+   ],
+   "bbox": [
+    157.0,
+    164.0,
+    282.0,
+    180.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "2026. 9. 4.(금) ~ 9. 6.(일)",
+   "text_key": "202694금96일",
+   "ocr_text": "2026.9.4.(금)~9.6.(일)",
+   "confidence": 0.9302513003349304,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 4.(금) ~ 9. 6.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_1x_006",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     184.0,
+     181.0
+    ],
+    [
+     258.0,
+     181.0
+    ],
+    [
+     258.0,
+     195.0
+    ],
+    [
+     184.0,
+     195.0
+    ]
+   ],
+   "bbox": [
+    184.0,
+    181.0,
+    258.0,
+    195.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "18:00 ~ 22:00",
+   "text_key": "18002200",
+   "ocr_text": "18:00~22:00",
+   "confidence": 0.9926689267158508,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "18:00 ~ 22:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-014.padd_rgb_1x_010",
+   "case_id": "v2-014",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     123.0,
+     593.0
+    ],
+    [
+     154.0,
+     593.0
+    ],
+    [
+     154.0,
+     603.0
+    ],
+    [
+     123.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    123.0,
+    593.0,
+    154.0,
+    603.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "국가유산청",
+   "text_key": "국가유산청",
+   "ocr_text": "국가유신청",
+   "confidence": 0.797645092010498,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "국가유산청",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

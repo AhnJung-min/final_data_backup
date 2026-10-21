@@ -1,0 +1,235 @@
+{
+ "case_id": "v2-048",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-048.rapi_product_000",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     165.0,
+     428.0
+    ],
+    [
+     274.0,
+     427.0
+    ],
+    [
+     275.0,
+     457.0
+    ],
+    [
+     165.0,
+     458.0
+    ]
+   ],
+   "bbox": [
+    165.0,
+    427.0,
+    275.0,
+    458.0
+   ],
+   "height": 30.01,
+   "small_text": false,
+   "text": "만화.웹",
+   "text_key": "만화웹",
+   "ocr_text": "만화.웹둔",
+   "confidence": 0.80411,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "만화.웹툰 만만합니다!",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.rapi_product_001",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     155.0,
+     455.0
+    ],
+    [
+     287.0,
+     457.0
+    ],
+    [
+     286.0,
+     489.0
+    ],
+    [
+     155.0,
+     487.0
+    ]
+   ],
+   "bbox": [
+    155.0,
+    455.0,
+    287.0,
+    489.0
+   ],
+   "height": 32.01,
+   "small_text": false,
+   "text": "만만합니다!",
+   "text_key": "만만합니다",
+   "ocr_text": "만만합니다!",
+   "confidence": 0.98802,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1111,
+   "gold_value": "만화.웹툰 만만합니다!",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.rapi_product_003",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     99.0,
+     514.0
+    ],
+    [
+     355.0,
+     514.0
+    ],
+    [
+     355.0,
+     552.0
+    ],
+    [
+     99.0,
+     552.0
+    ]
+   ],
+   "bbox": [
+    99.0,
+    514.0,
+    355.0,
+    552.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "부천국제만화축제",
+   "text_key": "부천국제만화축제",
+   "ocr_text": "부천국제만화축제",
+   "confidence": 0.99885,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부천국제만화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-048.rapi_product_004",
+   "case_id": "v2-048",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_004"
+   },
+   "polygon": [
+    [
+     114.0,
+     556.0
+    ],
+    [
+     338.0,
+     555.0
+    ],
+    [
+     338.0,
+     571.0
+    ],
+    [
+     114.0,
+     572.0
+    ]
+   ],
+   "bbox": [
+    114.0,
+    555.0,
+    338.0,
+    572.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "2026.9.18(금) - 9.20(일)",
+   "text_key": "2026918금920일",
+   "ocr_text": "2026.9.18(금) 9.20(일)한국민회박물원일대",
+   "confidence": 0.84083,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.9.18(금) - 9.20(일)",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

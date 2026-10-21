@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-025",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-025.rapi_product_006",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     22.0,
+     401.0
+    ],
+    [
+     418.0,
+     399.0
+    ],
+    [
+     418.0,
+     492.0
+    ],
+    [
+     22.0,
+     494.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    399.0,
+    418.0,
+    494.0
+   ],
+   "height": 93.0,
+   "small_text": false,
+   "text": "삼토페스티벌",
+   "text_key": "삼토페스티벌",
+   "ocr_text": "삼토페스티벌",
+   "confidence": 0.93414,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "삼토페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.rapi_product_007",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     36.0,
+     497.0
+    ],
+    [
+     321.0,
+     495.0
+    ],
+    [
+     321.0,
+     531.0
+    ],
+    [
+     36.0,
+     533.0
+    ]
+   ],
+   "bbox": [
+    36.0,
+    495.0,
+    321.0,
+    533.0
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "2026. 9. 11. 금 ~ 9. 13. 일",
+   "text_key": "2026911금913일",
+   "ocr_text": "2026.9.11. ~9.13.",
+   "confidence": 0.9627,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "2026. 9. 11. 금 ~ 9. 13. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.rapi_product_008",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     39.0,
+     538.0
+    ],
+    [
+     210.0,
+     538.0
+    ],
+    [
+     210.0,
+     562.0
+    ],
+    [
+     39.0,
+     562.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    538.0,
+    210.0,
+    562.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "원주종합운동장 일원",
+   "text_key": "원주종합운동장일원",
+   "ocr_text": "원주종합운동장 일원",
+   "confidence": 0.98047,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주종합운동장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.rapi_product_013",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_013"
+   },
+   "polygon": [
+    [
+     75.0,
+     584.0
+    ],
+    [
+     172.0,
+     584.0
+    ],
+    [
+     172.0,
+     605.0
+    ],
+    [
+     75.0,
+     605.0
+    ]
+   ],
+   "bbox": [
+    75.0,
+    584.0,
+    172.0,
+    605.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "원주시",
+   "text_key": "원주시",
+   "ocr_text": "주최원주시",
+   "confidence": 0.98682,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주시",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.rapi_product_015",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_015"
+   },
+   "polygon": [
+    [
+     265.0,
+     588.0
+    ],
+    [
+     369.0,
+     588.0
+    ],
+    [
+     369.0,
+     601.0
+    ],
+    [
+     265.0,
+     601.0
+    ]
+   ],
+   "bbox": [
+    265.0,
+    588.0,
+    369.0,
+    601.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "한국농촌지도자원주시연합회",
+   "text_key": "한국농촌지도자원주시연합회",
+   "ocr_text": "·한국농촌지도자원주사연합회",
+   "confidence": 0.869,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0769,
+   "gold_value": "한국농촌지도자원주시연합회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

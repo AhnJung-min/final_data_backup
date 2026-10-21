@@ -1,0 +1,234 @@
+{
+ "case_id": "v2-093",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 455,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 4,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-093.rapi_product_000",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_000"
+   },
+   "polygon": [
+    [
+     14.0,
+     14.0
+    ],
+    [
+     93.0,
+     14.0
+    ],
+    [
+     93.0,
+     69.0
+    ],
+    [
+     14.0,
+     69.0
+    ]
+   ],
+   "bbox": [
+    14.0,
+    14.0,
+    93.0,
+    69.0
+   ],
+   "height": 55.0,
+   "small_text": false,
+   "text": "제45회",
+   "text_key": "제45회",
+   "ocr_text": "제45",
+   "confidence": 0.72361,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "제45회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-093.rapi_product_001",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     224.0,
+     18.0
+    ],
+    [
+     437.0,
+     18.0
+    ],
+    [
+     437.0,
+     40.0
+    ],
+    [
+     224.0,
+     40.0
+    ]
+   ],
+   "bbox": [
+    224.0,
+    18.0,
+    437.0,
+    40.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "text_key": "2026103토104일",
+   "ocr_text": "2026.10. 3.([토]~10.4.[일]",
+   "confidence": 0.91207,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-093.rapi_product_002",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     326.0,
+     40.0
+    ],
+    [
+     439.0,
+     40.0
+    ],
+    [
+     439.0,
+     65.0
+    ],
+    [
+     326.0,
+     65.0
+    ]
+   ],
+   "bbox": [
+    326.0,
+    40.0,
+    439.0,
+    65.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "태백시청 일원",
+   "text_key": "태백시청일원",
+   "ocr_text": "태백시청일원",
+   "confidence": 0.99664,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "태백시청 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-093.rapi_product_003",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     19.0,
+     107.0
+    ],
+    [
+     440.0,
+     107.0
+    ],
+    [
+     440.0,
+     154.0
+    ],
+    [
+     19.0,
+     154.0
+    ]
+   ],
+   "bbox": [
+    19.0,
+    107.0,
+    440.0,
+    154.0
+   ],
+   "height": 47.0,
+   "small_text": false,
+   "text": "상생과 화합의 태백시민 대잔치",
+   "text_key": "상생과화합의태백시민대잔치",
+   "ocr_text": "상생과 화합의태백시민 대잔치",
+   "confidence": 0.91037,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "상생과 화합의 태백시민 대잔치",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,1536 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 6014,
+  "input_tokens": 9295,
+  "cost_usd": 0.0009295
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S03",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S03.png",
+    "sha256": "2a52183a31b6df44607efc095a11836c3ad907bf2a30cfe900f2853c63bf8e53",
+    "bytes": 122467,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S03.png",
+    "sha256": "34875162ca0d0c68e744d430abaedb46ad90cbd44d01ae0eea49fb257ea45c2b",
+    "bytes": 110229,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "가람 한지 공예 문화제",
+     "doc_variants": []
+    },
+    "doc_raw": "제20회 가람 한지 공예 문화제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제20회",
+     "number": 20
+    },
+    "doc_raw": "제20회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.5.(목) ~ 11.7.(토)",
+     "points": [
+      [
+       2026,
+       11,
+       5,
+       "목"
+      ],
+      [
+       2026,
+       11,
+       7,
+       "토"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.5.(목) ~ 11.7.(토)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "13:00~22:00"
+    },
+    "doc_raw": "13:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "가람 전통시장 일대"
+    },
+    "doc_raw": "가람 전통시장 일대"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "가람시"
+    },
+    "doc_raw": "가람시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "가람문화원"
+    },
+    "doc_raw": "가람문화원"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "041-000-8285"
+    },
+    "doc_raw": "041-000-8285"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "손끝에서 피어나는 전통"
+    },
+    "doc_raw": "손끝에서 피어나는 전통"
+   }
+  },
+  "rows": [
+   {
+    "value": "L201",
+    "index": 0,
+    "text": "2026제20회",
+    "conf": 0.9989,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026제20회",
+      "confidence": 0.9989053010940552,
+      "bbox_xyxy": [
+       342.0,
+       305.0,
+       541.0,
+       348.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L466",
+    "index": 1,
+    "text": "가람",
+    "conf": 1.0,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "가람",
+      "confidence": 0.999952495098114,
+      "bbox_xyxy": [
+       330.0,
+       383.0,
+       558.0,
+       518.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L867",
+    "index": 2,
+    "text": "한지 공예 문화제",
+    "conf": 0.9999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "한지",
+      "confidence": 0.9999502897262573,
+      "bbox_xyxy": [
+       49.0,
+       535.0,
+       263.0,
+       668.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "공예",
+      "confidence": 0.9998838901519775,
+      "bbox_xyxy": [
+       282.0,
+       535.0,
+       498.0,
+       667.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "문화제",
+      "confidence": 0.9999286532402039,
+      "bbox_xyxy": [
+       511.0,
+       539.0,
+       829.0,
+       666.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L747",
+    "index": 3,
+    "text": "손끝에서 피어나는 전통",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "손끝에서",
+      "confidence": 0.9998883008956909,
+      "bbox_xyxy": [
+       290.0,
+       690.0,
+       408.0,
+       729.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "피어나는",
+      "confidence": 0.9998693466186523,
+      "bbox_xyxy": [
+       409.0,
+       688.0,
+       531.0,
+       730.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "전통",
+      "confidence": 0.9995757341384888,
+      "bbox_xyxy": [
+       534.0,
+       690.0,
+       597.0,
+       729.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L573",
+    "index": 4,
+    "text": "11월 6일(목) 8일(토)",
+    "conf": 0.9985,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "11월",
+      "confidence": 0.998507559299469,
+      "bbox_xyxy": [
+       245.0,
+       796.0,
+       333.0,
+       841.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "6일(목)",
+      "confidence": 0.9996692538261414,
+      "bbox_xyxy": [
+       335.0,
+       793.0,
+       471.0,
+       849.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "8일(토)",
+      "confidence": 0.9994457960128784,
+      "bbox_xyxy": [
+       508.0,
+       795.0,
+       639.0,
+       846.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L418",
+    "index": 5,
+    "text": "13:00 ~ 22:00",
+    "conf": 0.9989,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "13:00",
+      "confidence": 0.9989312291145325,
+      "bbox_xyxy": [
+       345.0,
+       868.0,
+       428.0,
+       901.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "~",
+      "confidence": 0.9965776801109314,
+      "bbox_xyxy": [
+       432.0,
+       871.0,
+       454.0,
+       897.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "22:00",
+      "confidence": 0.9991138577461243,
+      "bbox_xyxy": [
+       456.0,
+       868.0,
+       541.0,
+       901.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L468",
+    "index": 6,
+    "text": "가람 전통 시장 일대",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_016",
+      "text": "가람",
+      "confidence": 0.9996815919876099,
+      "bbox_xyxy": [
+       308.0,
+       919.0,
+       376.0,
+       963.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_017",
+      "text": "전통",
+      "confidence": 0.9996145963668823,
+      "bbox_xyxy": [
+       380.0,
+       921.0,
+       447.0,
+       961.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_018",
+      "text": "시장",
+      "confidence": 0.9998425245285034,
+      "bbox_xyxy": [
+       439.0,
+       921.0,
+       506.0,
+       961.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_019",
+      "text": "일대",
+      "confidence": 0.9997317790985107,
+      "bbox_xyxy": [
+       511.0,
+       919.0,
+       577.0,
+       963.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L401",
+    "index": 7,
+    "text": "한지 등 만들기 공예 장인 시연 전통 놀이 마당",
+    "conf": 0.9395,
+    "records": [
+     {
+      "id": "padd_rgb_1x_020",
+      "text": "한지 등 만들기",
+      "confidence": 0.9436509013175964,
+      "bbox_xyxy": [
+       195.0,
+       1006.0,
+       340.0,
+       1037.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_021",
+      "text": "공예",
+      "confidence": 0.9998282194137573,
+      "bbox_xyxy": [
+       369.0,
+       1006.0,
+       418.0,
+       1037.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_022",
+      "text": "장인",
+      "confidence": 0.9990473985671997,
+      "bbox_xyxy": [
+       418.0,
+       1006.0,
+       474.0,
+       1036.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_023",
+      "text": "시연",
+      "confidence": 0.9977347254753113,
+      "bbox_xyxy": [
+       461.0,
+       1006.0,
+       514.0,
+       1036.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_024",
+      "text": "전통 놀이 마당",
+      "confidence": 0.9394994974136353,
+      "bbox_xyxy": [
+       544.0,
+       1006.0,
+       689.0,
+       1037.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L475",
+    "index": 8,
+    "text": "주최 가람시 |주관가람문화원 |문의 041-000-8285",
+    "conf": 0.9577,
+    "records": [
+     {
+      "id": "padd_rgb_1x_025",
+      "text": "주최 가람시 |주관가람문화원 |문의 041-000-8285",
+      "confidence": 0.9577484726905823,
+      "bbox_xyxy": [
+       178.0,
+       1196.0,
+       706.0,
+       1220.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제20회 가람 한지 공예 문화제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.5.(목) ~ 11.7.(토)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "가람 전통시장 일대"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "가람시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "가람문화원"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "041-000-8285"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "손끝에서 피어나는 전통"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "가람 한지 공예 문화제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제20회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.5.(목) ~ 11.7.(토)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "가람 전통시장 일대"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "가람시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "가람문화원"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "041-000-8285"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "손끝에서 피어나는 전통"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L475",
+    "L573",
+    "L466",
+    "L418",
+    "L867",
+    "L747",
+    "L401",
+    "L468",
+    "L201",
+    "none"
+   ],
+   "b_line_edition": [
+    "L573",
+    "L401",
+    "L468",
+    "L747",
+    "L475",
+    "L418",
+    "L466",
+    "L867",
+    "L201",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L401",
+    "L418",
+    "L747",
+    "L573",
+    "L867",
+    "L468",
+    "L466",
+    "L201",
+    "L475",
+    "none"
+   ],
+   "b_line_time": [
+    "L475",
+    "L418",
+    "L747",
+    "L401",
+    "L466",
+    "L201",
+    "L573",
+    "L468",
+    "L867",
+    "none"
+   ],
+   "b_line_venue": [
+    "L418",
+    "L466",
+    "L573",
+    "L867",
+    "L201",
+    "L401",
+    "L468",
+    "L747",
+    "L475",
+    "none"
+   ],
+   "b_line_host": [
+    "L747",
+    "L867",
+    "L466",
+    "L401",
+    "L468",
+    "L573",
+    "L475",
+    "L201",
+    "L418",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L466",
+    "L201",
+    "L867",
+    "L573",
+    "L475",
+    "L747",
+    "L418",
+    "L401",
+    "L468",
+    "none"
+   ],
+   "b_line_contact": [
+    "L475",
+    "L418",
+    "L401",
+    "L573",
+    "L867",
+    "L468",
+    "L201",
+    "L747",
+    "L466",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L401",
+    "L201",
+    "L466",
+    "L418",
+    "L573",
+    "L468",
+    "L867",
+    "L747",
+    "L475",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 122,467 bytes, sha256 2a52183a31b6df44…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 110,229 bytes, sha256 34875162ca0d0c68…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제20회 가람 한지 공예 문화제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.5.(목) ~ 11.7.(토)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '13:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '가람 전통시장 일대'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '가람시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '가람문화원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '041-000-8285'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '손끝에서 피어나는 전통'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L401",
+      "description": "한지 등 만들기 공예 장인 시연 전통 놀이 마당"
+     },
+     {
+      "value": "L201",
+      "description": "2026제20회"
+     },
+     {
+      "value": "L466",
+      "description": "가람"
+     },
+     {
+      "value": "L418",
+      "description": "13:00 ~ 22:00"
+     },
+     {
+      "value": "L573",
+      "description": "11월 6일(목) 8일(토)"
+     },
+     {
+      "value": "L468",
+      "description": "가람 전통 시장 일대"
+     },
+     {
+      "value": "L867",
+      "description": "한지 공예 문화제"
+     },
+     {
+      "value": "L747",
+      "description": "손끝에서 피어나는 전통"
+     },
+     {
+      "value": "L475",
+      "description": "주최 가람시 |주관가람문화원 |문의 041-000-8285"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '가람 한지 공예 문화제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제20회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.5.(목) ~ 11.7.(토)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '13:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '가람 전통시장 일대'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '가람시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '가람문화원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '041-000-8285'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '손끝에서 피어나는 전통'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

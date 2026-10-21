@@ -1,0 +1,884 @@
+{
+ "case_id": "v2-092",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 28,
+ "lines_matched": 16,
+ "records": [
+  {
+   "id": "v2-092.padd_rgb_2x_000",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     29.5,
+     14.0
+    ],
+    [
+     64.5,
+     14.0
+    ],
+    [
+     64.5,
+     28.5
+    ],
+    [
+     29.5,
+     28.5
+    ]
+   ],
+   "bbox": [
+    29.5,
+    14.0,
+    64.5,
+    28.5
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "과천시",
+   "text_key": "과천시",
+   "ocr_text": "과천시",
+   "confidence": 0.9989091753959656,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "과천시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_001",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     390.5,
+     9.5
+    ],
+    [
+     434.0,
+     9.5
+    ],
+    [
+     434.0,
+     26.0
+    ],
+    [
+     390.5,
+     26.0
+    ]
+   ],
+   "bbox": [
+    390.5,
+    9.5,
+    434.0,
+    26.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "비행지구",
+   "text_key": "비행지구",
+   "ocr_text": "이행지구",
+   "confidence": 0.9266306161880493,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "비행지구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_002",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     169.0,
+     15.0
+    ],
+    [
+     266.0,
+     13.5
+    ],
+    [
+     266.5,
+     37.5
+    ],
+    [
+     169.5,
+     39.5
+    ]
+   ],
+   "bbox": [
+    169.0,
+    13.5,
+    266.5,
+    39.5
+   ],
+   "height": 24.26,
+   "small_text": false,
+   "text": "2026 제5회",
+   "text_key": "2026제5회",
+   "ocr_text": "2026제5회",
+   "confidence": 0.914799690246582,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0769,
+   "gold_value": "2026 제5회 과천청년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_004",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     142.0,
+     30.0
+    ],
+    [
+     294.0,
+     26.5
+    ],
+    [
+     295.0,
+     78.5
+    ],
+    [
+     143.0,
+     82.0
+    ]
+   ],
+   "bbox": [
+    142.0,
+    26.5,
+    295.0,
+    82.0
+   ],
+   "height": 52.01,
+   "small_text": false,
+   "text": "과천청년축제",
+   "text_key": "과천청년축제",
+   "ocr_text": "과천청년축지",
+   "confidence": 0.8155890107154846,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "과천청년축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_008",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     140.5,
+     323.5
+    ],
+    [
+     280.5,
+     323.5
+    ],
+    [
+     280.5,
+     342.5
+    ],
+    [
+     140.5,
+     342.5
+    ]
+   ],
+   "bbox": [
+    140.5,
+    323.5,
+    280.5,
+    342.5
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026. 10. 3. 토요일",
+   "text_key": "2026103토요일",
+   "ocr_text": "2026.10.3.토요일",
+   "confidence": 0.9969021081924438,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 3. 토요일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_009",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     140.5,
+     343.5
+    ],
+    [
+     281.0,
+     343.5
+    ],
+    [
+     281.0,
+     357.0
+    ],
+    [
+     140.5,
+     357.0
+    ]
+   ],
+   "bbox": [
+    140.5,
+    343.5,
+    281.0,
+    357.0
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "13:00-22:00",
+   "text_key": "13002200",
+   "ocr_text": "13:00-22:00/과천중앙공원",
+   "confidence": 0.9941107630729675,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.times",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "13:00-22:00",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_010",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     129.0,
+     378.0
+    ],
+    [
+     183.0,
+     378.0
+    ],
+    [
+     183.0,
+     400.0
+    ],
+    [
+     129.0,
+     400.0
+    ]
+   ],
+   "bbox": [
+    129.0,
+    378.0,
+    183.0,
+    400.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "하루,",
+   "text_key": "하루",
+   "ocr_text": "하루,",
+   "confidence": 0.9861905574798584,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "오늘 하루, 과하게 충전하는 날",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_011",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     174.0,
+     376.5
+    ],
+    [
+     241.0,
+     374.5
+    ],
+    [
+     241.5,
+     397.5
+    ],
+    [
+     174.5,
+     399.5
+    ]
+   ],
+   "bbox": [
+    174.0,
+    374.5,
+    241.5,
+    399.5
+   ],
+   "height": 23.01,
+   "small_text": false,
+   "text": "과하게",
+   "text_key": "과하게",
+   "ocr_text": "과하게",
+   "confidence": 0.9987058639526367,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "오늘 하루, 과하게 충전하는 날",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_012",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     234.5,
+     375.0
+    ],
+    [
+     346.0,
+     379.0
+    ],
+    [
+     345.0,
+     401.5
+    ],
+    [
+     233.5,
+     397.5
+    ]
+   ],
+   "bbox": [
+    233.5,
+    375.0,
+    346.0,
+    401.5
+   ],
+   "height": 22.52,
+   "small_text": false,
+   "text": "충전하는 날",
+   "text_key": "충전하는날",
+   "ocr_text": "층전하는 날",
+   "confidence": 0.8374865055084229,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "오늘 하루, 과하게 충전하는 날",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_013",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     88.0,
+     382.0
+    ],
+    [
+     130.0,
+     380.0
+    ],
+    [
+     131.0,
+     400.5
+    ],
+    [
+     89.0,
+     402.5
+    ]
+   ],
+   "bbox": [
+    88.0,
+    380.0,
+    131.0,
+    402.5
+   ],
+   "height": 20.52,
+   "small_text": false,
+   "text": "오늘",
+   "text_key": "오늘",
+   "ocr_text": "오늘",
+   "confidence": 0.9899090528488159,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "오늘 하루, 과하게 충전하는 날",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_016",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_016"
+   },
+   "polygon": [
+    [
+     134.0,
+     458.5
+    ],
+    [
+     191.5,
+     458.5
+    ],
+    [
+     191.5,
+     473.0
+    ],
+    [
+     134.0,
+     473.0
+    ]
+   ],
+   "bbox": [
+    134.0,
+    458.5,
+    191.5,
+    473.0
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "팝업스토어",
+   "text_key": "팝업스토어",
+   "ocr_text": "팝업스토어",
+   "confidence": 0.9996013641357422,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "팝업스토어",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_017",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     197.5,
+     458.0
+    ],
+    [
+     309.5,
+     458.0
+    ],
+    [
+     309.5,
+     473.5
+    ],
+    [
+     197.5,
+     473.5
+    ]
+   ],
+   "bbox": [
+    197.5,
+    458.0,
+    309.5,
+    473.5
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "체험이벤트",
+   "text_key": "체험이벤트",
+   "ocr_text": "체험이벤트·플리마켓",
+   "confidence": 0.9925938844680786,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "체험이벤트",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_018",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     111.5,
+     476.0
+    ],
+    [
+     148.5,
+     476.0
+    ],
+    [
+     148.5,
+     490.5
+    ],
+    [
+     111.5,
+     490.5
+    ]
+   ],
+   "bbox": [
+    111.5,
+    476.0,
+    148.5,
+    490.5
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "버스킹",
+   "text_key": "버스킹",
+   "ocr_text": "버스킹",
+   "confidence": 0.9996621012687683,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "버스킹",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_019",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     155.0,
+     476.0
+    ],
+    [
+     201.0,
+     476.0
+    ],
+    [
+     201.0,
+     490.5
+    ],
+    [
+     155.0,
+     490.5
+    ]
+   ],
+   "bbox": [
+    155.0,
+    476.0,
+    201.0,
+    490.5
+   ],
+   "height": 14.5,
+   "small_text": false,
+   "text": "푸드트럭",
+   "text_key": "푸드트럭",
+   "ocr_text": "푸드트럭",
+   "confidence": 0.9998805522918701,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "푸드트럭",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_020",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_020"
+   },
+   "polygon": [
+    [
+     205.5,
+     476.0
+    ],
+    [
+     331.0,
+     476.0
+    ],
+    [
+     331.0,
+     491.0
+    ],
+    [
+     205.5,
+     491.0
+    ]
+   ],
+   "bbox": [
+    205.5,
+    476.0,
+    331.0,
+    491.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "낭만콘서트",
+   "text_key": "낭만콘서트",
+   "ocr_text": "·낭만콘서트·청년라운지",
+   "confidence": 0.9756612777709961,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "낭만콘서트",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-092.padd_rgb_2x_021",
+   "case_id": "v2-092",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     148.0,
+     505.0
+    ],
+    [
+     296.5,
+     505.0
+    ],
+    [
+     296.5,
+     525.5
+    ],
+    [
+     148.0,
+     525.5
+    ]
+   ],
+   "bbox": [
+    148.0,
+    505.0,
+    296.5,
+    525.5
+   ],
+   "height": 20.5,
+   "small_text": false,
+   "text": "ARTIST LINE UP",
+   "text_key": "artistlineup",
+   "ocr_text": "ARTIST LINE UP:",
+   "confidence": 0.9570773839950562,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "ARTIST LINE UP",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

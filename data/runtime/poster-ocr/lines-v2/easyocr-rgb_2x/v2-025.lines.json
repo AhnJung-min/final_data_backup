@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-025",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-025.easy_rgb_2x_001",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     88.0,
+     53.5
+    ],
+    [
+     357.5,
+     53.5
+    ],
+    [
+     357.5,
+     76.0
+    ],
+    [
+     88.0,
+     76.0
+    ]
+   ],
+   "bbox": [
+    88.0,
+    53.5,
+    357.5,
+    76.0
+   ],
+   "height": 22.5,
+   "small_text": false,
+   "text": "삼토페스티벌",
+   "text_key": "삼토페스티벌",
+   "ocr_text": "제63회 농업인의 날 기념 왼주삼토패스티벌",
+   "confidence": 0.6916290719357735,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "삼토페스티벌",
+   "extra_chars": 13,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.easy_rgb_2x_006",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     36.5,
+     496.0
+    ],
+    [
+     216.0,
+     496.0
+    ],
+    [
+     216.0,
+     532.0
+    ],
+    [
+     36.5,
+     532.0
+    ]
+   ],
+   "bbox": [
+    36.5,
+    496.0,
+    216.0,
+    532.0
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "2026. 9. 11.",
+   "text_key": "2026911",
+   "ocr_text": "2026.9.11.e",
+   "confidence": 0.5607842854486134,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026. 9. 11. 금 ~ 9. 13. 일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.easy_rgb_2x_008",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     241.5,
+     495.5
+    ],
+    [
+     318.5,
+     495.5
+    ],
+    [
+     318.5,
+     529.5
+    ],
+    [
+     241.5,
+     529.5
+    ]
+   ],
+   "bbox": [
+    241.5,
+    495.5,
+    318.5,
+    529.5
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "9. 13.",
+   "text_key": "913",
+   "ocr_text": "9.13.",
+   "confidence": 0.7764537519601608,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026. 9. 11. 금 ~ 9. 13. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.easy_rgb_2x_010",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     36.5,
+     534.5
+    ],
+    [
+     212.0,
+     534.5
+    ],
+    [
+     212.0,
+     565.0
+    ],
+    [
+     36.5,
+     565.0
+    ]
+   ],
+   "bbox": [
+    36.5,
+    534.5,
+    212.0,
+    565.0
+   ],
+   "height": 30.5,
+   "small_text": false,
+   "text": "원주종합운동장 일원",
+   "text_key": "원주종합운동장일원",
+   "ocr_text": "원주종합운동장 일원",
+   "confidence": 0.8903313958330162,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주종합운동장 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-025.easy_rgb_2x_013",
+   "case_id": "v2-025",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     134.5,
+     585.5
+    ],
+    [
+     171.5,
+     585.5
+    ],
+    [
+     171.5,
+     603.5
+    ],
+    [
+     134.5,
+     603.5
+    ]
+   ],
+   "bbox": [
+    134.5,
+    585.5,
+    171.5,
+    603.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "원주시",
+   "text_key": "원주시",
+   "ocr_text": "원주시",
+   "confidence": 0.9275553360517823,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "원주시",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

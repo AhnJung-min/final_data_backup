@@ -75,6 +75,18 @@
 - `ocr_worker.py` 변경: 결과에 `source_sha256`을 남기고, 같은 원본을 성공적으로 읽은 결과만 건너뛴다. 결과는 `.json.tmp`에 쓴 뒤 바꿔 넣고, 실행마다 `runs.jsonl`에 기록한다. 기존 가상 결과 77건에는 입력 해시를 확인한 뒤 원본 해시를 채웠다(`source_sha256_backfilled`). `sim/runs/paddleocr/run*.json`은 S03·S05·S08 포스터를 다시 읽은 실행의 기록이고, 이 백업의 결과에는 `runs.jsonl`이 없다(변경 전 실행).
 - 원래 PC에서는 새 시드(20261021) 세트로 r4를 고치지 않고 다시 재는 작업을 진행 중이었다(이 백업에는 없음).
 
+## 10-21 데이터 준비(전처리·라벨링)와 대시보드
+
+- 목적: ML·DL·OCR 개선에 쓸 라벨을 만든다. 정답은 '포스터 한 장 = 칸별 값'뿐이고 줄·박스 라벨이 0건이라, 저장된 OCR 줄을 정답 값에 맞춰 줄 정답 초안을 만들었다. 사람 승인은 아직 0건이다(검토 화면만 준비).
+- `line_labels.py`: 줄 정답 초안(`data/runtime/poster-ocr/lines-v2/<엔진>-<변형>/`). paddleocr rgb_2x는 OCR 줄 4,658개 중 2,325개를 맞췄고, A등급 1,815(OCR 맞음 1,505 / 틀림 310)이다. `human_checked`는 사람 검토 8칸에서 온 값만 참이고 슬로건·기관·문의처 등은 AI 보조값이다. 검토 큐(틀린 줄 → 가장자리 누락 → 맞은 줄 표본 150, 5%는 일부러 틀린 제안을 심음)와 기록 `review.jsonl`은 공개 백업에서 뺀다.
+- `rapid_runs.py`: 서비스 OCR(RapidOCR 3.9.0, CPU ONNX)로 252장을 읽은 기준선(`runs/rapidocr/<case>/product.json`, `pred-rapidocr/`, `eval/rapidocr-product.json`). 판독률 82.5%(Paddle 2배 83.2%), 장당 1.99초. 장소 정확도만 유의하게 낮다(56.4% 대 65.1%).
+- `calibration.py`: A등급 줄로 신뢰도 보정(온도·등위 회귀, dev+test를 포스터·시리즈 단위 5겹 교차검증, 예비분은 확인용 1회). paddle 2배 ECE 0.127 → 0.018. 평가 전용 데이터로 맞춘 **진단용**이라 서비스에는 적용하지 않았다.
+- `synth_boxes.py`: 가상 세트를 다시 그려 글자 박스를 공짜로 얻는다(160장 바이트 일치 확인). v1·v2는 같은 틀 5종이라 v2는 홀드아웃으로 두고, 학습용은 새 틀 v3로 만든다.
+- `logo_catalog.py` + `logo_render_worker.py`: 기관 로고(`data/runtime/logo-assets`, 공개 금지·이 백업에 없음) 목록화·중복·변형 태그·이용 조건·PNG 변환. 벡터 렌더는 PyMuPDF가 있는 시스템 Python을 `-I`로 따로 띄운다. PostScript AI·EPS는 Ghostscript가 없어 `needs_ghostscript`. PATH의 `convert`는 Windows 디스크 변환기라 절대 부르지 않는다.
+- `app/request_labels.py`: 요청 의도 250문장(교육 필수 ED03/D03) 그룹 단위 분할(30/10/10그룹), 검토 기록, numpy TF-IDF+로지스틱 기준 모델. 초안 라벨 기준 test macro-F1 0.94지만 템플릿 문구를 빼면 0.70으로, 템플릿 누수가 크다.
+- `prep_dashboard.py` + `static/prep_dashboard.html`: 데이터 준비 대시보드(`:8767`). 개요, 줄 정답, 줄 검토, 신뢰도 보정, 가상 박스, CI 카탈로그, 요청 의도 라벨 탭. 포스터 줄 조각은 메모리에서만 만들고 저장하지 않는다.
+- 남은 결함(검증에서 나옴): 로고 대표 파일 고르기가 기관을 넘는 중복에서 일부 기관의 대표를 빠뜨림, 검토 기록이 큐 판(version)과 묶이지 않음, 일시 실패한 렌더를 다시 시도하지 않음.
+
 ## 남은 일 / 다음 단계
 
 1. **VLM 실험**: 같은 정답·지표·분할로 소형 로컬 VLM, RunPod 중형(설계 `docs/poster-ocr-vlm-testbed.md`). 규칙을 만들지 않으므로 전 분할을 평가에 쓸 수 있다.
@@ -97,6 +109,9 @@
 .\.venv\Scripts\python.exe -m app.poster_ocr.sim_check --all          # 가상 대조·채점(checks/*.json 다시 씀, 확인만 할 때는 --out <폴더>)
 .\.venv\Scripts\python.exe -m app.poster_ocr.report sim               # 비교 보고서
 .\.venv\Scripts\python.exe -m app.poster_ocr.sim_dashboard --port 8766
+.\.venv\Scripts\python.exe -m app.poster_ocr.line_labels build       # 줄 정답 초안(있는 OCR 결과 전부)
+.\.venv\Scripts\python.exe -m app.poster_ocr.calibration              # 신뢰도 보정(진단용)
+.\.venv\Scripts\python.exe -m app.poster_ocr.prep_dashboard --port 8767
 ```
 
 주의: `rule_dev --extract`로 돌릴 후보 사본은 저장소 루트에서 두 단계 깊이(예: `.runtime/poster-ocr/<이름>.py`)에 둔다(`ROOT = parents[2]`). Windows 콘솔 한글은 `PYTHONIOENCODING=utf-8`로 출력한다. pytest는 임시 폴더 권한 문제로 `-p no:cacheprovider --basetemp=<쓰기 가능한 폴더>`를 붙인다. 테스트·Django는 `data/runtime/.django-secret-key`를 만든다(백업 .gitignore에서 제외). 내보내기 폴더 안에서는 테스트를 돌리지 않는다. Bash heredoc 안의 한글·백슬래시 치환은 깨지기 쉬우니 패치 스크립트는 파일로 써서 실행한다.

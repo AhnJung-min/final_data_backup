@@ -1,0 +1,1532 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 144,
+  "image_tokens": 3281,
+  "text_tokens": 6103,
+  "input_tokens": 9384,
+  "cost_usd": 0.0009384
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S07",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S07.png",
+    "sha256": "5d708d9f545f2f65d471b42fbbb9136acdc1ccd44ba0e5549edb15c635b38343",
+    "bytes": 123898,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S07.png",
+    "sha256": "dd988beaf43691747eaa62dd085b74b5ac79cf66275664bb5be5413274154e24",
+    "bytes": 57604,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "은하 가을 책 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제35회 은하 가을 책 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제35회",
+     "number": 35
+    },
+    "doc_raw": "제35회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.10.11.(일) ~ 10.13.(화)",
+     "points": [
+      [
+       2026,
+       10,
+       11,
+       "일"
+      ],
+      [
+       2026,
+       10,
+       13,
+       "화"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.10.11.(일) ~ 10.13.(화)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "18:00~22:00"
+    },
+    "doc_raw": "18:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "은하생태공원"
+    },
+    "doc_raw": "은하생태공원"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "은하시"
+    },
+    "doc_raw": "은하시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "은하문화원"
+    },
+    "doc_raw": "은하문화원"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "055-000-3146"
+    },
+    "doc_raw": "055-000-3146"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "책장을 넘기는 가을"
+    },
+    "doc_raw": "책장을 넘기는 가을"
+   }
+  },
+  "rows": [
+   {
+    "value": "L261",
+    "index": 0,
+    "text": "2026제35회",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026제35회",
+      "confidence": 0.9993486404418945,
+      "bbox_xyxy": [
+       86.0,
+       111.0,
+       290.0,
+       153.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L883",
+    "index": 1,
+    "text": "은하",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "은하",
+      "confidence": 0.9996546506881714,
+      "bbox_xyxy": [
+       78.0,
+       174.0,
+       288.0,
+       297.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L638",
+    "index": 2,
+    "text": "가을 책 축제",
+    "conf": 0.9408,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "가을 책 축제",
+      "confidence": 0.9408156275749207,
+      "bbox_xyxy": [
+       74.0,
+       295.0,
+       621.0,
+       435.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L641",
+    "index": 3,
+    "text": "책장을 넘기는 가을",
+    "conf": 0.9668,
+    "records": [
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "책장을 넘기는 가을",
+      "confidence": 0.9668092727661133,
+      "bbox_xyxy": [
+       85.0,
+       448.0,
+       341.0,
+       493.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L833",
+    "index": 4,
+    "text": "일시 2026.10.12(월)-10.14(수)",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "일시",
+      "confidence": 0.9999265670776367,
+      "bbox_xyxy": [
+       101.0,
+       583.0,
+       162.0,
+       623.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "2026.10.12(월)-10.14(수)",
+      "confidence": 0.9996141791343689,
+      "bbox_xyxy": [
+       195.0,
+       581.0,
+       595.0,
+       624.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L181",
+    "index": 5,
+    "text": "시간 18:00-22:00",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "시간",
+      "confidence": 0.9999786019325256,
+      "bbox_xyxy": [
+       99.0,
+       652.0,
+       159.0,
+       691.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "18:00-22:00",
+      "confidence": 0.9990341067314148,
+      "bbox_xyxy": [
+       198.0,
+       655.0,
+       399.0,
+       689.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L184",
+    "index": 6,
+    "text": "장소 은하생태공원",
+    "conf": 0.9994,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "장소",
+      "confidence": 0.9993728399276733,
+      "bbox_xyxy": [
+       99.0,
+       722.0,
+       160.0,
+       763.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "은하생태공원",
+      "confidence": 0.999786913394928,
+      "bbox_xyxy": [
+       196.0,
+       722.0,
+       377.0,
+       764.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L379",
+    "index": 7,
+    "text": "·작가와의 만남",
+    "conf": 0.9871,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "·작가와의 만남",
+      "confidence": 0.9871124625205994,
+      "bbox_xyxy": [
+       97.0,
+       819.0,
+       267.0,
+       853.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L460",
+    "index": 8,
+    "text": "· 헌책 장터",
+    "conf": 0.8722,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "· 헌책 장터",
+      "confidence": 0.8721734285354614,
+      "bbox_xyxy": [
+       97.0,
+       861.0,
+       220.0,
+       898.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L505",
+    "index": 9,
+    "text": "·어린이 낭독회",
+    "conf": 0.9741,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "·어린이 낭독회",
+      "confidence": 0.974071741104126,
+      "bbox_xyxy": [
+       97.0,
+       906.0,
+       266.0,
+       941.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L988",
+    "index": 10,
+    "text": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146",
+    "conf": 0.953,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146",
+      "confidence": 0.9529666900634766,
+      "bbox_xyxy": [
+       178.0,
+       1193.0,
+       707.0,
+       1220.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제35회 은하 가을 책 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.10.11.(일) ~ 10.13.(화)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "은하생태공원"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "은하시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "은하문화원"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "055-000-3146"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "책장을 넘기는 가을"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "은하 가을 책 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제35회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.10.11.(일) ~ 10.13.(화)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "은하생태공원"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "은하시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "은하문화원"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "055-000-3146"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "책장을 넘기는 가을"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_edition": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_time": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_venue": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_host": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_contact": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L261",
+    "L883",
+    "L638",
+    "L641",
+    "L833",
+    "L181",
+    "L184",
+    "L379",
+    "L460",
+    "L505",
+    "L988",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 123,898 bytes, sha256 5d708d9f545f2f65…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 57,604 bytes, sha256 dd988beaf4369174…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제35회 은하 가을 책 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.10.11.(일) ~ 10.13.(화)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '18:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '은하생태공원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '은하시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '은하문화원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '055-000-3146'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '책장을 넘기는 가을'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L261",
+      "description": "2026제35회"
+     },
+     {
+      "value": "L883",
+      "description": "은하"
+     },
+     {
+      "value": "L638",
+      "description": "가을 책 축제"
+     },
+     {
+      "value": "L641",
+      "description": "책장을 넘기는 가을"
+     },
+     {
+      "value": "L833",
+      "description": "일시 2026.10.12(월)-10.14(수)"
+     },
+     {
+      "value": "L181",
+      "description": "시간 18:00-22:00"
+     },
+     {
+      "value": "L184",
+      "description": "장소 은하생태공원"
+     },
+     {
+      "value": "L379",
+      "description": "·작가와의 만남"
+     },
+     {
+      "value": "L460",
+      "description": "· 헌책 장터"
+     },
+     {
+      "value": "L505",
+      "description": "·어린이 낭독회"
+     },
+     {
+      "value": "L988",
+      "description": "주최 은하시| 주관 은하문화원 | 문의 055-000-3146"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '은하 가을 책 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제35회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.10.11.(일) ~ 10.13.(화)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '18:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '은하생태공원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '은하시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '은하문화원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '055-000-3146'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '책장을 넘기는 가을'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

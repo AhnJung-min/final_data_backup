@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-076",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 24,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-076.padd_rgb_1x_007",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     39.0,
+     330.0
+    ],
+    [
+     134.0,
+     335.0
+    ],
+    [
+     132.0,
+     371.0
+    ],
+    [
+     37.0,
+     366.0
+    ]
+   ],
+   "bbox": [
+    37.0,
+    330.0,
+    134.0,
+    371.0
+   ],
+   "height": 36.06,
+   "small_text": false,
+   "text": "10.2.",
+   "text_key": "102",
+   "ocr_text": "10.2.3",
+   "confidence": 0.9183900356292725,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "10.2.금 | 10.5.월",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_1x_010",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     39.0,
+     386.0
+    ],
+    [
+     134.0,
+     389.0
+    ],
+    [
+     133.0,
+     425.0
+    ],
+    [
+     37.0,
+     421.0
+    ]
+   ],
+   "bbox": [
+    37.0,
+    386.0,
+    134.0,
+    425.0
+   ],
+   "height": 35.54,
+   "small_text": false,
+   "text": "10.5.",
+   "text_key": "105",
+   "ocr_text": "10.5.",
+   "confidence": 0.9959262609481812,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "10.2.금 | 10.5.월",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_1x_013",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     43.0,
+     428.0
+    ],
+    [
+     101.0,
+     428.0
+    ],
+    [
+     101.0,
+     439.0
+    ],
+    [
+     43.0,
+     439.0
+    ]
+   ],
+   "bbox": [
+    43.0,
+    428.0,
+    101.0,
+    439.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "구·시청광장",
+   "text_key": "구시청광장",
+   "ocr_text": "구·시청광장빛",
+   "confidence": 0.9319334626197815,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "구·시청광장",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_1x_014",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_014"
+   },
+   "polygon": [
+    [
+     42.0,
+     440.0
+    ],
+    [
+     116.0,
+     440.0
+    ],
+    [
+     116.0,
+     454.0
+    ],
+    [
+     42.0,
+     454.0
+    ]
+   ],
+   "bbox": [
+    42.0,
+    440.0,
+    116.0,
+    454.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "시간여행마을 일원",
+   "text_key": "시간여행마을일원",
+   "ocr_text": "시간여행마을일원",
+   "confidence": 0.9932178854942322,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "시간여행마을 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-076.padd_rgb_1x_023",
+   "case_id": "v2-076",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_023"
+   },
+   "polygon": [
+    [
+     150.0,
+     595.0
+    ],
+    [
+     317.0,
+     595.0
+    ],
+    [
+     317.0,
+     614.0
+    ],
+    [
+     150.0,
+     614.0
+    ]
+   ],
+   "bbox": [
+    150.0,
+    595.0,
+    317.0,
+    614.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "전북특별자치도",
+   "text_key": "전북특별자치도",
+   "ocr_text": "근산시 추원 전복록별자치도법환",
+   "confidence": 0.5714876651763916,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "전북특별자치도",
+   "extra_chars": 7,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

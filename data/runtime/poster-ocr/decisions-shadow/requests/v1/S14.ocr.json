@@ -1,0 +1,1420 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 5982,
+  "input_tokens": 9263,
+  "cost_usd": 0.0009263000000000001
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S14",
+  "order": "ocr",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S14.png",
+    "sha256": "24916bf88bc8df8bbbdd4b09ee5b0abd6a4a5892a77eb0ee11f729f49b599509",
+    "bytes": 117279,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S14.png",
+    "sha256": "bd5a2d6eb3b4f6c87f9bd4a26c43ccdd1e6425cfd5884588217fcab8f30d1f55",
+    "bytes": 51305,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "누리 별빛정원 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제10회 누리 별빛정원 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제10회",
+     "number": 10
+    },
+    "doc_raw": "제10회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.11.28.(토)",
+     "points": [
+      [
+       2026,
+       11,
+       28,
+       "토"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.11.28.(토)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "13:00~22:00"
+    },
+    "doc_raw": "13:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "누리생태공원"
+    },
+    "doc_raw": "누리생태공원"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "누리군"
+    },
+    "doc_raw": "누리군"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "누리문화원"
+    },
+    "doc_raw": "누리문화원"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "043-000-2741"
+    },
+    "doc_raw": "043-000-2741"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "빛으로 물드는 가을밤"
+    },
+    "doc_raw": "빛으로 물드는 가을밤"
+   }
+  },
+  "rows": [
+   {
+    "value": "L486",
+    "index": 0,
+    "text": "2026 제10회",
+    "conf": 0.9591,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026 제10회",
+      "confidence": 0.9591329097747803,
+      "bbox_xyxy": [
+       346.0,
+       72.0,
+       537.0,
+       108.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L436",
+    "index": 1,
+    "text": "누리",
+    "conf": 0.9999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "누리",
+      "confidence": 0.999920666217804,
+      "bbox_xyxy": [
+       331.0,
+       129.0,
+       549.0,
+       264.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L922",
+    "index": 2,
+    "text": "별빛정원 축제",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "별빛정원",
+      "confidence": 0.9992595314979553,
+      "bbox_xyxy": [
+       127.0,
+       264.0,
+       538.0,
+       393.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "축제",
+      "confidence": 0.9995753169059753,
+      "bbox_xyxy": [
+       548.0,
+       261.0,
+       762.0,
+       395.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L825",
+    "index": 3,
+    "text": "빛으로 물드는 가을밤",
+    "conf": 0.991,
+    "records": [
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "빛으로 물드는",
+      "confidence": 0.9910451173782349,
+      "bbox_xyxy": [
+       294.0,
+       415.0,
+       493.0,
+       453.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "가을밤",
+      "confidence": 0.9973115921020508,
+      "bbox_xyxy": [
+       490.0,
+       414.0,
+       592.0,
+       453.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L198",
+    "index": 4,
+    "text": "일시 2026.11.29.(토)",
+    "conf": 0.9811,
+    "records": [
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "일시",
+      "confidence": 0.9999054074287415,
+      "bbox_xyxy": [
+       87.0,
+       816.0,
+       143.0,
+       850.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "2026.11.29.(토)",
+      "confidence": 0.9811419248580933,
+      "bbox_xyxy": [
+       196.0,
+       817.0,
+       435.0,
+       851.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L702",
+    "index": 5,
+    "text": "시간 13:00~22:00",
+    "conf": 0.9982,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "시간",
+      "confidence": 0.9999452829360962,
+      "bbox_xyxy": [
+       87.0,
+       888.0,
+       144.0,
+       924.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "13:00~22:00",
+      "confidence": 0.998207151889801,
+      "bbox_xyxy": [
+       199.0,
+       892.0,
+       396.0,
+       923.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L399",
+    "index": 6,
+    "text": "장소 누리생태공원",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "장소",
+      "confidence": 0.9996548891067505,
+      "bbox_xyxy": [
+       87.0,
+       964.0,
+       145.0,
+       999.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "누리생태공원",
+      "confidence": 0.9998528957366943,
+      "bbox_xyxy": [
+       197.0,
+       964.0,
+       374.0,
+       1000.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L881",
+    "index": 7,
+    "text": "빛 터널 산책|야간 정원 투어|별자리 체험",
+    "conf": 0.9814,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "빛 터널 산책|야간 정원 투어|별자리 체험",
+      "confidence": 0.9813833832740784,
+      "bbox_xyxy": [
+       227.0,
+       1053.0,
+       657.0,
+       1080.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L502",
+    "index": 8,
+    "text": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741",
+    "conf": 0.9257,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741",
+      "confidence": 0.925685465335846,
+      "bbox_xyxy": [
+       178.0,
+       1198.0,
+       706.0,
+       1222.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제10회 누리 별빛정원 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.11.28.(토)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "누리생태공원"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "누리문화원"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "043-000-2741"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "빛으로 물드는 가을밤"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "누리 별빛정원 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제10회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.11.28.(토)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "누리생태공원"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "누리군"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "누리문화원"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "043-000-2741"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "빛으로 물드는 가을밤"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_edition": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_time": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_venue": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_host": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_contact": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L486",
+    "L436",
+    "L922",
+    "L825",
+    "L198",
+    "L702",
+    "L399",
+    "L881",
+    "L502",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 117,279 bytes, sha256 24916bf88bc8df8b…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 51,305 bytes, sha256 bd5a2d6eb3b4f6c8…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제10회 누리 별빛정원 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.11.28.(토)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '13:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '누리생태공원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '누리군'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '누리문화원'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '043-000-2741'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '빛으로 물드는 가을밤'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L486",
+      "description": "2026 제10회"
+     },
+     {
+      "value": "L436",
+      "description": "누리"
+     },
+     {
+      "value": "L922",
+      "description": "별빛정원 축제"
+     },
+     {
+      "value": "L825",
+      "description": "빛으로 물드는 가을밤"
+     },
+     {
+      "value": "L198",
+      "description": "일시 2026.11.29.(토)"
+     },
+     {
+      "value": "L702",
+      "description": "시간 13:00~22:00"
+     },
+     {
+      "value": "L399",
+      "description": "장소 누리생태공원"
+     },
+     {
+      "value": "L881",
+      "description": "빛 터널 산책|야간 정원 투어|별자리 체험"
+     },
+     {
+      "value": "L502",
+      "description": "주최 누리군 ㅣ 주관 누리문화원 | 문의 043-000-2741"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '누리 별빛정원 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제10회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.11.28.(토)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '13:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '누리생태공원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '누리군'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '누리문화원'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '043-000-2741'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '빛으로 물드는 가을밤'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

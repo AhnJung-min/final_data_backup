@@ -1,0 +1,399 @@
+{
+ "case_id": "r2-001",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 444,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-001.padd_rgb_1x_000",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     115.0,
+     20.0
+    ],
+    [
+     328.0,
+     20.0
+    ],
+    [
+     328.0,
+     36.0
+    ],
+    [
+     115.0,
+     36.0
+    ]
+   ],
+   "bbox": [
+    115.0,
+    20.0,
+    328.0,
+    36.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "원주 관찰사(史): 원주의 역사를 관찰하다",
+   "text_key": "원주관찰사史원주의역사를관찰하다",
+   "ocr_text": "원주 관찰사():원주의 역사를 관찰하다",
+   "confidence": 0.9138369560241699,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0625,
+   "gold_value": "원주 관찰사(史): 원주의 역사를 관찰하다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.padd_rgb_1x_001",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     136.0,
+     41.0
+    ],
+    [
+     300.0,
+     41.0
+    ],
+    [
+     300.0,
+     89.0
+    ],
+    [
+     136.0,
+     89.0
+    ]
+   ],
+   "bbox": [
+    136.0,
+    41.0,
+    300.0,
+    89.0
+   ],
+   "height": 48.0,
+   "small_text": false,
+   "text": "2026 원주",
+   "text_key": "2026원주",
+   "ocr_text": "2026원주",
+   "confidence": 0.9993807673454285,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 원주 국가유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.padd_rgb_1x_002",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     139.0,
+     82.0
+    ],
+    [
+     304.0,
+     82.0
+    ],
+    [
+     304.0,
+     134.0
+    ],
+    [
+     139.0,
+     134.0
+    ]
+   ],
+   "bbox": [
+    139.0,
+    82.0,
+    304.0,
+    134.0
+   ],
+   "height": 52.0,
+   "small_text": false,
+   "text": "국가유산",
+   "text_key": "국가유산",
+   "ocr_text": "굼가유산",
+   "confidence": 0.9505690932273865,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 원주 국가유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.padd_rgb_1x_003",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     132.0,
+     121.0
+    ],
+    [
+     308.0,
+     121.0
+    ],
+    [
+     308.0,
+     230.0
+    ],
+    [
+     132.0,
+     230.0
+    ]
+   ],
+   "bbox": [
+    132.0,
+    121.0,
+    308.0,
+    230.0
+   ],
+   "height": 109.0,
+   "small_text": false,
+   "text": "야행",
+   "text_key": "야행",
+   "ocr_text": "야행",
+   "confidence": 0.9714275598526001,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "2026 원주 국가유산 야행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.padd_rgb_1x_008",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     25.0,
+     553.0
+    ],
+    [
+     201.0,
+     553.0
+    ],
+    [
+     201.0,
+     562.0
+    ],
+    [
+     25.0,
+     562.0
+    ]
+   ],
+   "bbox": [
+    25.0,
+    553.0,
+    201.0,
+    562.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "2026.09.04.(금)~06.(일)",
+   "text_key": "20260904금06일",
+   "ocr_text": "2026.09.04.(3)~06.(일)17:00~22:00",
+   "confidence": 0.9903072714805603,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "2026.09.04.(금)~06.(일)",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.padd_rgb_1x_011",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_011"
+   },
+   "polygon": [
+    [
+     24.0,
+     565.0
+    ],
+    [
+     192.0,
+     565.0
+    ],
+    [
+     192.0,
+     578.0
+    ],
+    [
+     24.0,
+     578.0
+    ]
+   ],
+   "bbox": [
+    24.0,
+    565.0,
+    192.0,
+    578.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "강원감영일원, 원동성당, 조선식산은행",
+   "text_key": "강원감영일원원동성당조선식산은행",
+   "ocr_text": "감원감영일원,원동성당,조선식산은행",
+   "confidence": 0.9638057351112366,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0625,
+   "gold_value": "강원감영일원, 원동성당, 조선식산은행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-001.padd_rgb_1x_012",
+   "case_id": "r2-001",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     209.0,
+     566.0
+    ],
+    [
+     328.0,
+     565.0
+    ],
+    [
+     328.0,
+     576.0
+    ],
+    [
+     209.0,
+     577.0
+    ]
+   ],
+   "bbox": [
+    209.0,
+    565.0,
+    328.0,
+    577.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "인열왕후 선발대회",
+   "text_key": "인열왕후선발대회",
+   "ocr_text": "[개식/인업왕후 선발대회/드론스]",
+   "confidence": 0.8231005668640137,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "인열왕후 선발대회",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

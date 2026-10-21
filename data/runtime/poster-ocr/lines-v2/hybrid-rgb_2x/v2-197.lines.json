@@ -1,0 +1,449 @@
+{
+ "case_id": "v2-197",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-197.easy_rgb_2x_000",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     210.5,
+     39.5
+    ],
+    [
+     262.5,
+     39.5
+    ],
+    [
+     262.5,
+     60.5
+    ],
+    [
+     210.5,
+     60.5
+    ]
+   ],
+   "bbox": [
+    210.5,
+    39.5,
+    262.5,
+    60.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9999966621398926,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "2026 의좋은 형제축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.easy_rgb_2x_001",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     101.5,
+     120.5
+    ],
+    [
+     342.5,
+     120.5
+    ],
+    [
+     342.5,
+     213.5
+    ],
+    [
+     101.5,
+     213.5
+    ]
+   ],
+   "bbox": [
+    101.5,
+    120.5,
+    342.5,
+    213.5
+   ],
+   "height": 93.0,
+   "small_text": false,
+   "text": "형제축",
+   "text_key": "형제축",
+   "ocr_text": "형제축세",
+   "confidence": 0.7748510241508484,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "2026 의좋은 형제축제",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.easy_rgb_2x_002",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     91.5,
+     263.5
+    ],
+    [
+     275.5,
+     263.5
+    ],
+    [
+     275.5,
+     294.5
+    ],
+    [
+     91.5,
+     294.5
+    ]
+   ],
+   "bbox": [
+    91.5,
+    263.5,
+    275.5,
+    294.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "2026.11.07.(토)",
+   "text_key": "20261107토",
+   "ocr_text": "2026.11.07(토)",
+   "confidence": 0.9773920774459839,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.07.(토) ~ 08.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.easy_rgb_2x_003",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     288.5,
+     263.5
+    ],
+    [
+     337.5,
+     263.5
+    ],
+    [
+     337.5,
+     294.5
+    ],
+    [
+     288.5,
+     294.5
+    ]
+   ],
+   "bbox": [
+    288.5,
+    263.5,
+    337.5,
+    294.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "08.",
+   "text_key": "08",
+   "ocr_text": "08.",
+   "confidence": 0.8496783375740051,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.07.(토) ~ 08.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.easy_rgb_2x_004",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     334.0,
+     276.0
+    ],
+    [
+     355.0,
+     276.0
+    ],
+    [
+     355.0,
+     289.0
+    ],
+    [
+     334.0,
+     289.0
+    ]
+   ],
+   "bbox": [
+    334.0,
+    276.0,
+    355.0,
+    289.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "(일)",
+   "text_key": "일",
+   "ocr_text": "일)",
+   "confidence": 0.8722801453380522,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026.11.07.(토) ~ 08.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.easy_rgb_2x_005",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     91.0,
+     297.0
+    ],
+    [
+     358.0,
+     297.0
+    ],
+    [
+     358.0,
+     325.0
+    ],
+    [
+     91.0,
+     325.0
+    ]
+   ],
+   "bbox": [
+    91.0,
+    297.0,
+    358.0,
+    325.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "의좋은 형제축제",
+   "text_key": "의좋은형제축제",
+   "ocr_text": "의좋은 형제 공원 일원(승남 예신크내)",
+   "confidence": 0.7121372222900391,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2857,
+   "gold_value": "의좋은 형제축제",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.easy_rgb_2x_010",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     333.0,
+     584.0
+    ],
+    [
+     435.0,
+     584.0
+    ],
+    [
+     435.0,
+     597.0
+    ],
+    [
+     333.0,
+     597.0
+    ]
+   ],
+   "bbox": [
+    333.0,
+    584.0,
+    435.0,
+    597.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "총 예산 : 200,000,000원(전액군비)",
+   "text_key": "총예산200000000원전액군비",
+   "ocr_text": "200,000,000원(전액군비)",
+   "confidence": 0.9032315015792847,
+   "field": "budget.raw",
+   "field_group": "budget",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "budget.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1765,
+   "gold_value": "총 예산 : 200,000,000원(전액군비)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-197.easy_rgb_2x_017",
+   "case_id": "v2-197",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     214.4,
+     56.02
+    ],
+    [
+     304.79,
+     68.62
+    ],
+    [
+     291.1,
+     143.98
+    ],
+    [
+     201.21,
+     130.88
+    ]
+   ],
+   "bbox": [
+    201.21,
+    56.02,
+    304.79,
+    143.98
+   ],
+   "height": 76.3,
+   "small_text": false,
+   "text": "은",
+   "text_key": "은",
+   "ocr_text": "은",
+   "confidence": 0.45881152153015137,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2727,
+   "gold_value": "2026 의좋은 형제축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

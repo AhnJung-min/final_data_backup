@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-141",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 32,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-141.easy_rgb_2x_000",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     195.0,
+     87.0
+    ],
+    [
+     207.0,
+     87.0
+    ],
+    [
+     207.0,
+     99.0
+    ],
+    [
+     195.0,
+     99.0
+    ]
+   ],
+   "bbox": [
+    195.0,
+    87.0,
+    207.0,
+    99.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "2",
+   "text_key": "2",
+   "ocr_text": "2",
+   "confidence": 0.9916988748205426,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "2026 가락 OKTOBER Fest",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.easy_rgb_2x_001",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     191.5,
+     95.0
+    ],
+    [
+     254.0,
+     95.0
+    ],
+    [
+     254.0,
+     131.0
+    ],
+    [
+     191.5,
+     131.0
+    ]
+   ],
+   "bbox": [
+    191.5,
+    95.0,
+    254.0,
+    131.0
+   ],
+   "height": 36.0,
+   "small_text": false,
+   "text": "가락",
+   "text_key": "가락",
+   "ocr_text": "가락",
+   "confidence": 0.9995057375445164,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "2026 가락 OKTOBER Fest",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.easy_rgb_2x_002",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     80.0,
+     125.0
+    ],
+    [
+     361.0,
+     125.0
+    ],
+    [
+     361.0,
+     177.0
+    ],
+    [
+     80.0,
+     177.0
+    ]
+   ],
+   "bbox": [
+    80.0,
+    125.0,
+    361.0,
+    177.0
+   ],
+   "height": 52.0,
+   "small_text": false,
+   "text": "OKTOBER",
+   "text_key": "oktober",
+   "ocr_text": "OKTOBER",
+   "confidence": 0.995380429213397,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "2026 가락 OKTOBER Fest",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.easy_rgb_2x_006",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     116.5,
+     216.5
+    ],
+    [
+     325.5,
+     216.5
+    ],
+    [
+     325.5,
+     246.5
+    ],
+    [
+     116.5,
+     246.5
+    ]
+   ],
+   "bbox": [
+    116.5,
+    216.5,
+    325.5,
+    246.5
+   ],
+   "height": 30.0,
+   "small_text": false,
+   "text": "가락몰 3층 하늘공원",
+   "text_key": "가락몰3층하늘공원",
+   "ocr_text": "가락물 3층 하늘공원",
+   "confidence": 0.513010554964627,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "가락몰 3층 하늘공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-141.easy_rgb_2x_031",
+   "case_id": "v2-141",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_031"
+   },
+   "polygon": [
+    [
+     210.11,
+     79.55
+    ],
+    [
+     248.97,
+     86.2
+    ],
+    [
+     245.89,
+     100.95
+    ],
+    [
+     207.03,
+     94.8
+    ]
+   ],
+   "bbox": [
+    207.03,
+    79.55,
+    248.97,
+    100.95
+   ],
+   "height": 15.31,
+   "small_text": false,
+   "text": "026",
+   "text_key": "026",
+   "ocr_text": "0 2 6",
+   "confidence": 0.9218498667538116,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2353,
+   "gold_value": "2026 가락 OKTOBER Fest",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

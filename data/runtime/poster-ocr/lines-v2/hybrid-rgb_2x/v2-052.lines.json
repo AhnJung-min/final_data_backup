@@ -1,0 +1,233 @@
+{
+ "case_id": "v2-052",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-052.easy_rgb_2x_001",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     387.5,
+     14.5
+    ],
+    [
+     431.0,
+     14.5
+    ],
+    [
+     431.0,
+     31.0
+    ],
+    [
+     387.5,
+     31.0
+    ]
+   ],
+   "bbox": [
+    387.5,
+    14.5,
+    431.0,
+    31.0
+   ],
+   "height": 16.5,
+   "small_text": false,
+   "text": "광진구",
+   "text_key": "광진구",
+   "ocr_text": "광진구",
+   "confidence": 0.927990734577179,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광진구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.easy_rgb_2x_005",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     258.0,
+     527.0
+    ],
+    [
+     384.0,
+     527.0
+    ],
+    [
+     384.0,
+     555.0
+    ],
+    [
+     258.0,
+     555.0
+    ]
+   ],
+   "bbox": [
+    258.0,
+    527.0,
+    384.0,
+    555.0
+   ],
+   "height": 28.0,
+   "small_text": false,
+   "text": "2026. 9. 19. 토",
+   "text_key": "2026919토",
+   "ocr_text": "2026.9.19. 토",
+   "confidence": 0.8990241885185242,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 19. 토",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.easy_rgb_2x_006",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     237.5,
+     552.0
+    ],
+    [
+     404.5,
+     552.0
+    ],
+    [
+     404.5,
+     583.0
+    ],
+    [
+     237.5,
+     583.0
+    ]
+   ],
+   "bbox": [
+    237.5,
+    552.0,
+    404.5,
+    583.0
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "서울어린이대공원 일대",
+   "text_key": "서울어린이대공원일대",
+   "ocr_text": "서울어린이대공원일대",
+   "confidence": 0.8807967305183411,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서울어린이대공원 일대 (어린이대공원역 1.2번 출구)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-052.easy_rgb_2x_007",
+   "case_id": "v2-052",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     266.0,
+     580.0
+    ],
+    [
+     374.0,
+     580.0
+    ],
+    [
+     374.0,
+     594.0
+    ],
+    [
+     266.0,
+     594.0
+    ]
+   ],
+   "bbox": [
+    266.0,
+    580.0,
+    374.0,
+    594.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "(어린이대공원역 1.2번 출구)",
+   "text_key": "어린이대공원역12번출구",
+   "ocr_text": "(어린이대공원역 1.2번 출구)",
+   "confidence": 0.9210377931594849,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "서울어린이대공원 일대 (어린이대공원역 1.2번 출구)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

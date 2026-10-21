@@ -1,0 +1,71 @@
+{
+ "case_id": "v2-198",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 432,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 1,
+ "records": [
+  {
+   "id": "v2-198.easy_rgb_2x_001",
+   "case_id": "v2-198",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     80.0,
+     23.5
+    ],
+    [
+     336.5,
+     23.5
+    ],
+    [
+     336.5,
+     79.0
+    ],
+    [
+     80.0,
+     79.0
+    ]
+   ],
+   "bbox": [
+    80.0,
+    23.5,
+    336.5,
+    79.0
+   ],
+   "height": 55.5,
+   "small_text": false,
+   "text": "부산불꽃축제",
+   "text_key": "부산불꽃축제",
+   "ocr_text": "'부산불꽃축제",
+   "confidence": 0.6321630773478284,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "부산불꽃축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

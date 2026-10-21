@@ -1,0 +1,562 @@
+{
+ "set": "S24",
+ "checked_at": "2026-10-20T19:59:09+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 60.504,
+  "lines": 54,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 40.82,
+  "lines": 14,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "가람 별빛정원 축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람 / 별빛정원 축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "가람",
+     "confidence": 0.9998,
+     "bbox": [
+      332.0,
+      130.0,
+      553.0,
+      261.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "별빛정원",
+     "confidence": 0.9996,
+     "bbox": [
+      125.0,
+      264.0,
+      539.0,
+      395.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "축제",
+     "confidence": 0.9993,
+     "bbox": [
+      547.0,
+      260.0,
+      761.0,
+      394.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    125.0,
+    130.0,
+    761.0,
+    395.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제8회 가람 별빛정원 축제",
+     "confidence": 0.9767,
+     "bbox": [
+      307.0,
+      674.0,
+      579.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    579.0,
+    707.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제8회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026제8회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026제8회",
+     "confidence": 0.9993,
+     "bbox": [
+      355.0,
+      71.0,
+      528.0,
+      110.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    355.0,
+    71.0,
+    528.0,
+    110.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_023",
+     "text": "제8회 가람 별빛정원 축제",
+     "confidence": 0.9767,
+     "bbox": [
+      307.0,
+      674.0,
+      579.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    579.0,
+    707.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.11.11.(수) ~11.12.(목)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.11.11.(수)~11.12.(목)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "일시",
+     "confidence": 0.9999,
+     "bbox": [
+      87.0,
+      815.0,
+      143.0,
+      850.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "2026.11.11.(수)~11.12.(목)",
+     "confidence": 0.9956,
+     "bbox": [
+      197.0,
+      818.0,
+      615.0,
+      852.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    87.0,
+    815.0,
+    615.0,
+    852.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_026",
+     "text": "2026.11.11.(수) ~11.12.(목)",
+     "confidence": 0.9855,
+     "bbox": [
+      309.0,
+      733.0,
+      623.0,
+      761.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    623.0,
+    765.0
+   ],
+   "method": "포스터 11.11(수) ~ 11.12(목)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "11:00~20:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 11:00~20:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "시간",
+     "confidence": 0.9999,
+     "bbox": [
+      87.0,
+      888.0,
+      144.0,
+      924.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "11:00~20:00",
+     "confidence": 0.9971,
+     "bbox": [
+      200.0,
+      894.0,
+      395.0,
+      922.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    87.0,
+    888.0,
+    395.0,
+    924.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_029",
+     "text": "11:00~20:00",
+     "confidence": 0.9973,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "가람 전통시장 일대",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람 전통시장 일대",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "장소",
+     "confidence": 0.9997,
+     "bbox": [
+      87.0,
+      964.0,
+      145.0,
+      999.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "가람 전통시장 일대",
+     "confidence": 0.9759,
+     "bbox": [
+      198.0,
+      966.0,
+      446.0,
+      1000.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    87.0,
+    964.0,
+    446.0,
+    1000.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_031",
+     "text": "가람 전통시장 일대",
+     "confidence": 0.9915,
+     "bbox": [
+      309.0,
+      850.0,
+      512.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    512.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 98%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "가람시",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람시",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527",
+     "confidence": 0.9353,
+     "bbox": [
+      168.0,
+      1198.0,
+      715.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1198.0,
+    715.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_033",
+     "text": "가람시",
+     "confidence": 0.9996,
+     "bbox": [
+      306.0,
+      903.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    902.0,
+    385.0,
+    941.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "가람관광재단",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "가람관광재단",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527",
+     "confidence": 0.9353,
+     "bbox": [
+      168.0,
+      1198.0,
+      715.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1198.0,
+    715.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_035",
+     "text": "가람관광재단",
+     "confidence": 0.9998,
+     "bbox": [
+      307.0,
+      963.0,
+      453.0,
+      996.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    453.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 94%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "041-000-4527",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "041-000-4527",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "주최 가람시 ㅣ 주관 가람관광재단 | 문의 041-000-4527",
+     "confidence": 0.9353,
+     "bbox": [
+      168.0,
+      1198.0,
+      715.0,
+      1222.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    168.0,
+    1198.0,
+    715.0,
+    1222.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_037",
+     "text": "041-000-4527",
+     "confidence": 0.9995,
+     "bbox": [
+      307.0,
+      1024.0,
+      462.0,
+      1051.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "빛으로 물드는 가을밤",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "빛으로 물드는 가을밤",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "빛으로 물드는",
+     "confidence": 0.9909,
+     "bbox": [
+      294.0,
+      415.0,
+      494.0,
+      453.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "가을밤",
+     "confidence": 0.9973,
+     "bbox": [
+      490.0,
+      414.0,
+      592.0,
+      453.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    294.0,
+    414.0,
+    592.0,
+    453.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_040",
+     "text": "빛으로 물드는 가을밤",
+     "confidence": 0.9984,
+     "bbox": [
+      310.0,
+      1081.0,
+      537.0,
+      1110.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    537.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_043",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9617,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.006
+}

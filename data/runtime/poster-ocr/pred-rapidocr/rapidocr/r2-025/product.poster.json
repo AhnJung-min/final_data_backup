@@ -1,0 +1,232 @@
+{
+ "standard": "festival-poster",
+ "schema_version": "1.0.0",
+ "record_id": "festival-edfbc3048057",
+ "image": {
+  "sha256": "edfbc30480579e6ca80f84d8a1b5711385c05de5f6fd1ab3cd04ba437227d9fc",
+  "width": 353,
+  "height": 627
+ },
+ "coordinate_space": "original_pixels",
+ "extraction": {
+  "status": "partial",
+  "method": "ocr",
+  "extracted_at": "2026-10-21T16:22:39+09:00",
+  "extractor": {
+   "name": "poster_rules_v2",
+   "version": "2",
+   "model": "rapidocr"
+  },
+  "notes": [
+   "OCR 문자를 고치지 않은 규칙 추출. absent는 규칙으로 찾지 못함을 뜻한다.",
+   "slogans·programs·qr_codes·visual은 규칙 범위 밖(not_checked)."
+  ]
+ },
+ "title": {
+  "status": "present",
+  "raw": "제7회 양평 부 양평 농록산물도",
+  "official": "양평 부 양평 농록산물도",
+  "variants": [],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_002",
+    "rapi_product_003",
+    "rapi_product_001",
+    "rapi_product_008"
+   ],
+   "bbox": [
+    18.0,
+    19.0,
+    352.0,
+    151.0
+   ],
+   "confidence": null
+  }
+ },
+ "edition": {
+  "status": "present",
+  "raw": "제7회",
+  "number": 7,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_000",
+    "rapi_product_002",
+    "rapi_product_003"
+   ],
+   "bbox": [
+    18.0,
+    19.0,
+    224.0,
+    63.0
+   ],
+   "confidence": null
+  }
+ },
+ "year": {
+  "status": "present",
+  "raw": "2026",
+  "value": 2026,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_022"
+   ],
+   "bbox": [
+    61.0,
+    344.0,
+    103.0,
+    363.0
+   ],
+   "confidence": 0.99716
+  }
+ },
+ "slogans": {
+  "status": "not_checked",
+  "items": []
+ },
+ "schedule": {
+  "status": "present",
+  "raw": "10.10.(토) 10.9.(금) 2026.",
+  "start": {
+   "iso": "2026-10-09",
+   "year": 2026,
+   "month": 10,
+   "day": 9,
+   "weekday": "fri",
+   "year_basis": "date_text"
+  },
+  "end": {
+   "iso": "2026-10-10",
+   "year": 2026,
+   "month": 10,
+   "day": 10,
+   "weekday": "sat",
+   "year_basis": "date_text"
+  },
+  "times": [],
+  "duration_raw": null,
+  "operating_raw": null,
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_024",
+    "rapi_product_023",
+    "rapi_product_022"
+   ],
+   "bbox": [
+    61.0,
+    338.0,
+    296.0,
+    364.0
+   ],
+   "confidence": null
+  }
+ },
+ "venue": {
+  "status": "present",
+  "raw": "양평군 양동역일원 (예인무대, 부추국밥존,농복산을 판마장 등)",
+  "items": [
+   "양평군 양동역일원 (예인무대",
+   "부추국밥존",
+   "농복산을 판마장 등)"
+  ],
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_025",
+    "rapi_product_026"
+   ],
+   "bbox": [
+    128.0,
+    363.0,
+    259.0,
+    388.0
+   ],
+   "confidence": null
+  }
+ },
+ "address": {
+  "status": "absent",
+  "raw": null,
+  "kind": null,
+  "evidence": null
+ },
+ "admin_area": {
+  "status": "present",
+  "raw": "양평군 양동역일원",
+  "region": null,
+  "district": "양평군",
+  "evidence": {
+   "method": "ocr",
+   "ocr_ids": [
+    "rapi_product_025"
+   ],
+   "bbox": [
+    128.0,
+    363.0,
+    220.0,
+    379.0
+   ],
+   "confidence": 0.93226
+  }
+ },
+ "organizations": {
+  "status": "absent",
+  "items": []
+ },
+ "contacts": {
+  "status": "absent",
+  "items": []
+ },
+ "links": {
+  "status": "absent",
+  "items": []
+ },
+ "qr_codes": {
+  "status": "not_checked",
+  "items": []
+ },
+ "programs": {
+  "status": "not_checked",
+  "items": []
+ },
+ "admission": {
+  "status": "absent",
+  "raw": null,
+  "free": null,
+  "prices": [],
+  "reservation_raw": null,
+  "evidence": null
+ },
+ "notices": {
+  "status": "absent",
+  "items": []
+ },
+ "budget_disclosure": {
+  "status": "absent",
+  "raw": null,
+  "total_krw": null,
+  "evidence": null
+ },
+ "badges": {
+  "status": "absent",
+  "items": []
+ },
+ "visual": {
+  "styles": [],
+  "main_colors": [],
+  "main_objects": [],
+  "has_character": null,
+  "has_photo": null,
+  "vertical_text": null,
+  "scripts": [],
+  "description": null
+ },
+ "quality": {
+  "small_text": null,
+  "notes": []
+ }
+}

@@ -1,0 +1,343 @@
+{
+ "case_id": "v2-057",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 19,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-057.easy_rgb_2x_006",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     83.0,
+     167.0
+    ],
+    [
+     141.5,
+     167.0
+    ],
+    [
+     141.5,
+     194.5
+    ],
+    [
+     83.0,
+     194.5
+    ]
+   ],
+   "bbox": [
+    83.0,
+    167.0,
+    141.5,
+    194.5
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9987574723423311,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1,
+   "gold_value": "2026 강남청년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.easy_rgb_2x_007",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     144.0,
+     152.0
+    ],
+    [
+     343.0,
+     152.0
+    ],
+    [
+     343.0,
+     212.0
+    ],
+    [
+     144.0,
+     212.0
+    ]
+   ],
+   "bbox": [
+    144.0,
+    152.0,
+    343.0,
+    212.0
+   ],
+   "height": 60.0,
+   "small_text": false,
+   "text": "강남청년축제",
+   "text_key": "강남청년축제",
+   "ocr_text": "'가남청년축제",
+   "confidence": 0.533390848769715,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "강남청년축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.easy_rgb_2x_011",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     116.0,
+     443.0
+    ],
+    [
+     327.0,
+     443.0
+    ],
+    [
+     327.0,
+     459.0
+    ],
+    [
+     116.0,
+     459.0
+    ]
+   ],
+   "bbox": [
+    116.0,
+    443.0,
+    327.0,
+    459.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "SAUNA BUS",
+   "text_key": "saunabus",
+   "ocr_text": "SAUNABUS :ICEBATH: BODY JAM",
+   "confidence": 0.6799537699716531,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "SAUNA BUS",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.easy_rgb_2x_013",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     181.0,
+     461.0
+    ],
+    [
+     320.0,
+     461.0
+    ],
+    [
+     320.0,
+     477.0
+    ],
+    [
+     181.0,
+     477.0
+    ]
+   ],
+   "bbox": [
+    181.0,
+    461.0,
+    320.0,
+    477.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "ANIMAL FLOW",
+   "text_key": "animalflow",
+   "ocr_text": "CLASS : ANIMALFLOW",
+   "confidence": 0.6894547143018482,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "ANIMAL FLOW",
+   "extra_chars": 5,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.easy_rgb_2x_014",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     78.0,
+     482.0
+    ],
+    [
+     368.0,
+     482.0
+    ],
+    [
+     368.0,
+     508.0
+    ],
+    [
+     78.0,
+     508.0
+    ]
+   ],
+   "bbox": [
+    78.0,
+    482.0,
+    368.0,
+    508.0
+   ],
+   "height": 26.0,
+   "small_text": false,
+   "text": "2026. 09. 19 (토)",
+   "text_key": "20260919토",
+   "ocr_text": "2026.09.19 (토) 15,00 - 2000",
+   "confidence": 0.3231697456623143,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 09. 19 (토)",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-057.easy_rgb_2x_015",
+   "case_id": "v2-057",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     142.0,
+     518.0
+    ],
+    [
+     305.0,
+     518.0
+    ],
+    [
+     305.0,
+     545.0
+    ],
+    [
+     142.0,
+     545.0
+    ]
+   ],
+   "bbox": [
+    142.0,
+    518.0,
+    305.0,
+    545.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "강남 스퀘어 광장",
+   "text_key": "강남스퀘어광장",
+   "ocr_text": "@강남 스웨어광장",
+   "confidence": 0.912461930392138,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "강남 스퀘어 광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

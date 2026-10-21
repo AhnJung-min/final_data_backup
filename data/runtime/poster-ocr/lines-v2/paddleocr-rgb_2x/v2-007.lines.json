@@ -1,0 +1,396 @@
+{
+ "case_id": "v2-007",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 12,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-007.padd_rgb_2x_000",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     170.5,
+     14.0
+    ],
+    [
+     271.5,
+     14.0
+    ],
+    [
+     271.5,
+     49.5
+    ],
+    [
+     170.5,
+     49.5
+    ]
+   ],
+   "bbox": [
+    170.5,
+    14.0,
+    271.5,
+    49.5
+   ],
+   "height": 35.5,
+   "small_text": false,
+   "text": "제12회",
+   "text_key": "제12회",
+   "ocr_text": "제12회",
+   "confidence": 0.993659257888794,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제12회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_2x_002",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     337.5,
+     70.0
+    ],
+    [
+     398.5,
+     70.0
+    ],
+    [
+     398.5,
+     97.5
+    ],
+    [
+     337.5,
+     97.5
+    ]
+   ],
+   "bbox": [
+    337.5,
+    70.0,
+    398.5,
+    97.5
+   ],
+   "height": 27.5,
+   "small_text": false,
+   "text": "갯벌이",
+   "text_key": "갯벌이",
+   "ocr_text": "것벌이",
+   "confidence": 0.6311262249946594,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "갯벌이 '살아있다'",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_2x_003",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     328.5,
+     101.0
+    ],
+    [
+     427.0,
+     91.5
+    ],
+    [
+     430.5,
+     127.5
+    ],
+    [
+     331.5,
+     137.0
+    ]
+   ],
+   "bbox": [
+    328.5,
+    91.5,
+    430.5,
+    137.0
+   ],
+   "height": 36.15,
+   "small_text": false,
+   "text": "'살아있다'",
+   "text_key": "살아있다",
+   "ocr_text": "'살아았다'",
+   "confidence": 0.7803964018821716,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2857,
+   "gold_value": "갯벌이 '살아있다'",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_2x_006",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     81.5,
+     280.5
+    ],
+    [
+     359.0,
+     279.0
+    ],
+    [
+     359.0,
+     296.0
+    ],
+    [
+     81.5,
+     297.5
+    ]
+   ],
+   "bbox": [
+    81.5,
+    279.0,
+    359.0,
+    297.5
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "text_key": "무안갯벌유네스코세계자연유산등재기념식",
+   "ocr_text": "with 무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "confidence": 0.9740075469017029,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "무안갯벌 유네스코 세계자연유산 등재 기념식",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_2x_007",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     75.5,
+     303.0
+    ],
+    [
+     366.5,
+     303.0
+    ],
+    [
+     366.5,
+     326.5
+    ],
+    [
+     75.5,
+     326.5
+    ]
+   ],
+   "bbox": [
+    75.5,
+    303.0,
+    366.5,
+    326.5
+   ],
+   "height": 23.5,
+   "small_text": false,
+   "text": "2026. 8. 29.(토) ~ 9. 6.(일)",
+   "text_key": "2026829토96일",
+   "ocr_text": "2026.8.29.(토)~9.6.(일) 주말집중운영",
+   "confidence": 0.9452487826347351,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 8. 29.(토) ~ 9. 6.(일)",
+   "extra_chars": 6,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_2x_008",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     134.5,
+     328.0
+    ],
+    [
+     307.0,
+     328.0
+    ],
+    [
+     307.0,
+     347.0
+    ],
+    [
+     134.5,
+     347.0
+    ]
+   ],
+   "bbox": [
+    134.5,
+    328.0,
+    307.0,
+    347.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "무안황토갯벌랜드 일원",
+   "text_key": "무안황토갯벌랜드일원",
+   "ocr_text": "무안황토갯벌랜드 일원",
+   "confidence": 0.9145088791847229,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "무안황토갯벌랜드 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-007.padd_rgb_2x_011",
+   "case_id": "v2-007",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     160.0,
+     602.5
+    ],
+    [
+     287.0,
+     602.5
+    ],
+    [
+     287.0,
+     614.5
+    ],
+    [
+     160.0,
+     614.5
+    ]
+   ],
+   "bbox": [
+    160.0,
+    602.5,
+    287.0,
+    614.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "무안군축제추진위원회",
+   "text_key": "무안군축제추진위원회",
+   "ocr_text": "크무인군/무인군축제주진위원회",
+   "confidence": 0.903876006603241,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "무안군축제추진위원회",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

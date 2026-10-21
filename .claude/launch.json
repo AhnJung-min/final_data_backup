@@ -25,6 +25,17 @@
         "8766"
       ],
       "port": 8766
+    },
+    {
+      "name": "prep-dashboard",
+      "runtimeExecutable": ".venv/Scripts/python.exe",
+      "runtimeArgs": [
+        "-m",
+        "app.poster_ocr.prep_dashboard",
+        "--port",
+        "8767"
+      ],
+      "port": 8767
     }
   ]
 }

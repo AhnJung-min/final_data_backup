@@ -1,0 +1,504 @@
+{
+ "case_id": "v2-042",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 445,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-042.padd_rgb_2x_000",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     19.0,
+     19.0
+    ],
+    [
+     130.5,
+     19.0
+    ],
+    [
+     130.5,
+     65.5
+    ],
+    [
+     19.0,
+     65.5
+    ]
+   ],
+   "bbox": [
+    19.0,
+    19.0,
+    130.5,
+    65.5
+   ],
+   "height": 46.5,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9993913173675537,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 안양춤축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_002",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     241.5,
+     23.5
+    ],
+    [
+     281.0,
+     23.5
+    ],
+    [
+     281.0,
+     32.5
+    ],
+    [
+     241.5,
+     32.5
+    ]
+   ],
+   "bbox": [
+    241.5,
+    23.5,
+    281.0,
+    32.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "WALKING",
+   "text_key": "walking",
+   "ocr_text": "WALRING",
+   "confidence": 0.9524736404418945,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0476,
+   "gold_value": "WALKING RUNNING DANCING",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_004",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     240.5,
+     35.5
+    ],
+    [
+     281.0,
+     34.0
+    ],
+    [
+     281.0,
+     44.5
+    ],
+    [
+     240.5,
+     46.0
+    ]
+   ],
+   "bbox": [
+    240.5,
+    34.0,
+    281.0,
+    46.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "RUNNING",
+   "text_key": "running",
+   "ocr_text": "RUNNING",
+   "confidence": 0.9539784789085388,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0476,
+   "gold_value": "WALKING RUNNING DANCING",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_005",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     373.0,
+     31.5
+    ],
+    [
+     423.0,
+     33.0
+    ],
+    [
+     422.5,
+     46.5
+    ],
+    [
+     373.0,
+     45.0
+    ]
+   ],
+   "bbox": [
+    373.0,
+    31.5,
+    423.0,
+    46.5
+   ],
+   "height": 13.5,
+   "small_text": false,
+   "text": "스마트안양",
+   "text_key": "스마트안양",
+   "ocr_text": "스마트인양",
+   "confidence": 0.9879366755485535,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "스마트안양",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_007",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     241.5,
+     47.5
+    ],
+    [
+     280.0,
+     47.5
+    ],
+    [
+     280.0,
+     56.5
+    ],
+    [
+     241.5,
+     56.5
+    ]
+   ],
+   "bbox": [
+    241.5,
+    47.5,
+    280.0,
+    56.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "DANCING",
+   "text_key": "dancing",
+   "ocr_text": "DANCING",
+   "confidence": 0.992994487285614,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0476,
+   "gold_value": "WALKING RUNNING DANCING",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_009",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     19.5,
+     65.5
+    ],
+    [
+     287.5,
+     64.0
+    ],
+    [
+     287.5,
+     131.0
+    ],
+    [
+     19.5,
+     132.0
+    ]
+   ],
+   "bbox": [
+    19.5,
+    64.0,
+    287.5,
+    132.0
+   ],
+   "height": 66.75,
+   "small_text": false,
+   "text": "안양춤축제",
+   "text_key": "안양춤축제",
+   "ocr_text": "안양춤축제",
+   "confidence": 0.9994562864303589,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "안양춤축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_012",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     21.5,
+     520.0
+    ],
+    [
+     126.5,
+     520.0
+    ],
+    [
+     126.5,
+     554.0
+    ],
+    [
+     21.5,
+     554.0
+    ]
+   ],
+   "bbox": [
+    21.5,
+    520.0,
+    126.5,
+    554.0
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "삼덕공원",
+   "text_key": "삼덕공원",
+   "ocr_text": "삼덕공원",
+   "confidence": 0.999557375907898,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "삼덕공원 평촌중앙공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_013",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     22.0,
+     555.0
+    ],
+    [
+     176.0,
+     555.0
+    ],
+    [
+     176.0,
+     587.0
+    ],
+    [
+     22.0,
+     587.0
+    ]
+   ],
+   "bbox": [
+    22.0,
+    555.0,
+    176.0,
+    587.0
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "평촌중앙공원",
+   "text_key": "평촌중앙공원",
+   "ocr_text": "평촌중앙공원",
+   "confidence": 0.9997313618659973,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "삼덕공원 평촌중앙공원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-042.padd_rgb_2x_014",
+   "case_id": "v2-042",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     224.5,
+     570.5
+    ],
+    [
+     417.5,
+     572.5
+    ],
+    [
+     417.0,
+     609.0
+    ],
+    [
+     224.5,
+     607.5
+    ]
+   ],
+   "bbox": [
+    224.5,
+    570.5,
+    417.5,
+    609.0
+   ],
+   "height": 36.75,
+   "small_text": false,
+   "text": "09.18.(금) ▶ 09.20.(일)",
+   "text_key": "0918금0920일",
+   "ocr_text": "09.18. 09.20.",
+   "confidence": 0.9376067519187927,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "09.18.(금) ▶ 09.20.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

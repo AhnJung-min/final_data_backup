@@ -1,0 +1,616 @@
+{
+ "case_id": "r2-043",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 461,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 21,
+ "lines_matched": 11,
+ "records": [
+  {
+   "id": "r2-043.padd_rgb_1x_000",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     62.0,
+     38.0
+    ],
+    [
+     129.0,
+     35.0
+    ],
+    [
+     130.0,
+     63.0
+    ],
+    [
+     64.0,
+     66.0
+    ]
+   ],
+   "bbox": [
+    62.0,
+    35.0,
+    130.0,
+    66.0
+   ],
+   "height": 28.04,
+   "small_text": false,
+   "text": "제34회",
+   "text_key": "제34회",
+   "ocr_text": "제34회",
+   "confidence": 0.9995300769805908,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "제34회 영도다리 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_001",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     50.0,
+     51.0
+    ],
+    [
+     376.0,
+     45.0
+    ],
+    [
+     378.0,
+     147.0
+    ],
+    [
+     52.0,
+     153.0
+    ]
+   ],
+   "bbox": [
+    50.0,
+    45.0,
+    378.0,
+    153.0
+   ],
+   "height": 102.02,
+   "small_text": false,
+   "text": "영도다리 축제",
+   "text_key": "영도다리축제",
+   "ocr_text": "영도다리축제",
+   "confidence": 0.9988599419593811,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영도다리 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_003",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     146.0,
+     178.0
+    ],
+    [
+     193.0,
+     178.0
+    ],
+    [
+     193.0,
+     189.0
+    ],
+    [
+     146.0,
+     189.0
+    ]
+   ],
+   "bbox": [
+    146.0,
+    178.0,
+    193.0,
+    189.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "봉래동 물양장",
+   "text_key": "봉래동물양장",
+   "ocr_text": "봉래동 물양장",
+   "confidence": 0.7997482419013977,
+   "field": "venue.items",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "봉래동 물양장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_007",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     232.0,
+     230.0
+    ],
+    [
+     255.0,
+     230.0
+    ],
+    [
+     255.0,
+     242.0
+    ],
+    [
+     232.0,
+     242.0
+    ]
+   ],
+   "bbox": [
+    232.0,
+    230.0,
+    255.0,
+    242.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "레트로",
+   "text_key": "레트로",
+   "ocr_text": "레트로",
+   "confidence": 0.7814186215400696,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "레트로 EDM 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_010",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_010"
+   },
+   "polygon": [
+    [
+     218.0,
+     240.0
+    ],
+    [
+     268.0,
+     240.0
+    ],
+    [
+     268.0,
+     251.0
+    ],
+    [
+     218.0,
+     251.0
+    ]
+   ],
+   "bbox": [
+    218.0,
+    240.0,
+    268.0,
+    251.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "EDM 페스",
+   "text_key": "edm페스",
+   "ocr_text": "EDMI스E",
+   "confidence": 0.9393393397331238,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "레트로 EDM 페스티벌",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_015",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_015"
+   },
+   "polygon": [
+    [
+     64.0,
+     282.0
+    ],
+    [
+     162.0,
+     279.0
+    ],
+    [
+     163.0,
+     306.0
+    ],
+    [
+     66.0,
+     310.0
+    ]
+   ],
+   "bbox": [
+    64.0,
+    279.0,
+    163.0,
+    310.0
+   ],
+   "height": 27.54,
+   "small_text": false,
+   "text": "시간을 잇고",
+   "text_key": "시간을잇고",
+   "ocr_text": "시간을 잇고",
+   "confidence": 0.9596580862998962,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "시간을 잇고 사람을 잇다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_016",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_016"
+   },
+   "polygon": [
+    [
+     79.0,
+     308.0
+    ],
+    [
+     184.0,
+     304.0
+    ],
+    [
+     186.0,
+     333.0
+    ],
+    [
+     80.0,
+     336.0
+    ]
+   ],
+   "bbox": [
+    79.0,
+    304.0,
+    186.0,
+    336.0
+   ],
+   "height": 28.54,
+   "small_text": false,
+   "text": "사람을 잇다",
+   "text_key": "사람을잇다",
+   "ocr_text": "사람을 잇다",
+   "confidence": 0.945289134979248,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "시간을 잇고 사람을 잇다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_017",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_017"
+   },
+   "polygon": [
+    [
+     73.0,
+     568.0
+    ],
+    [
+     387.0,
+     568.0
+    ],
+    [
+     387.0,
+     582.0
+    ],
+    [
+     73.0,
+     582.0
+    ]
+   ],
+   "bbox": [
+    73.0,
+    568.0,
+    387.0,
+    582.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "2026. 10. 30. 금 - 11. 1. 일",
+   "text_key": "20261030금111일",
+   "ocr_text": "2026.10.30.금-11.1.일/봉래동물양장및아미르공원일원",
+   "confidence": 0.952995777130127,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw",
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10. 30. 금 - 11. 1. 일",
+   "extra_chars": 14,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_019",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_019"
+   },
+   "polygon": [
+    [
+     204.0,
+     596.0
+    ],
+    [
+     258.0,
+     596.0
+    ],
+    [
+     258.0,
+     609.0
+    ],
+    [
+     204.0,
+     609.0
+    ]
+   ],
+   "bbox": [
+    204.0,
+    596.0,
+    258.0,
+    609.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "영도문화원",
+   "text_key": "영도문화원",
+   "ocr_text": "영도문화원",
+   "confidence": 0.9897245168685913,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영도문화원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_020",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_020"
+   },
+   "polygon": [
+    [
+     265.0,
+     592.0
+    ],
+    [
+     304.0,
+     592.0
+    ],
+    [
+     304.0,
+     603.0
+    ],
+    [
+     265.0,
+     603.0
+    ]
+   ],
+   "bbox": [
+    265.0,
+    592.0,
+    304.0,
+    603.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "해양클러스터",
+   "text_key": "해양클러스터",
+   "ocr_text": "해양플러스터",
+   "confidence": 0.9043390154838562,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "해양클러스터 기관장협의회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-043.padd_rgb_1x_021",
+   "case_id": "r2-043",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_021"
+   },
+   "polygon": [
+    [
+     264.0,
+     602.0
+    ],
+    [
+     304.0,
+     602.0
+    ],
+    [
+     304.0,
+     612.0
+    ],
+    [
+     264.0,
+     612.0
+    ]
+   ],
+   "bbox": [
+    264.0,
+    602.0,
+    304.0,
+    612.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "기관장협의",
+   "text_key": "기관장협의",
+   "ocr_text": "기관집협의희",
+   "confidence": 0.6409053802490234,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "해양클러스터 기관장협의회",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

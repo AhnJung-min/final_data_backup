@@ -1,0 +1,1099 @@
+{
+ "case_id": "v2-060",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 467,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 50,
+ "lines_matched": 20,
+ "records": [
+  {
+   "id": "v2-060.padd_rgb_2x_001",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     191.5,
+     29.5
+    ],
+    [
+     303.0,
+     30.5
+    ],
+    [
+     303.0,
+     45.0
+    ],
+    [
+     191.0,
+     43.5
+    ]
+   ],
+   "bbox": [
+    191.0,
+    29.5,
+    303.0,
+    45.0
+   ],
+   "height": 14.25,
+   "small_text": false,
+   "text": "26. 9. 19(토) - 9. 20(일)",
+   "text_key": "26919토920일",
+   "ocr_text": "26.9.19(토)-9.20(g)",
+   "confidence": 0.9340795874595642,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "26. 9. 19(토) - 9. 20(일)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_002",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     191.5,
+     44.0
+    ],
+    [
+     297.5,
+     45.5
+    ],
+    [
+     297.5,
+     61.5
+    ],
+    [
+     191.0,
+     60.0
+    ]
+   ],
+   "bbox": [
+    191.0,
+    44.0,
+    297.5,
+    61.5
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "하효항 및 쇠소깍 일원",
+   "text_key": "하효항및쇠소깍일원",
+   "ocr_text": "하효항 및 쇠소깍일원",
+   "confidence": 0.922839879989624,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.items",
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "하효항 및 쇠소깍 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_003",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     28.0,
+     60.5
+    ],
+    [
+     304.5,
+     58.0
+    ],
+    [
+     305.0,
+     138.5
+    ],
+    [
+     28.5,
+     141.0
+    ]
+   ],
+   "bbox": [
+    28.0,
+    58.0,
+    305.0,
+    141.0
+   ],
+   "height": 80.5,
+   "small_text": false,
+   "text": "쇠소깍축제",
+   "text_key": "쇠소깍축제",
+   "ocr_text": "쇠소깍축제",
+   "confidence": 0.9931729435920715,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "쇠소깍축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_011",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     122.0,
+     184.5
+    ],
+    [
+     215.0,
+     184.5
+    ],
+    [
+     215.0,
+     195.0
+    ],
+    [
+     122.0,
+     195.0
+    ]
+   ],
+   "bbox": [
+    122.0,
+    184.5,
+    215.0,
+    195.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "현장참여대회(여자팔씨름)",
+   "text_key": "현장참여대회여자팔씨름",
+   "ocr_text": "현장참여대회(여자밀씨름)",
+   "confidence": 0.8300644755363464,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "현장참여대회(여자팔씨름)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_013",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     328.0,
+     183.5
+    ],
+    [
+     395.0,
+     183.5
+    ],
+    [
+     395.0,
+     195.5
+    ],
+    [
+     328.0,
+     195.5
+    ]
+   ],
+   "bbox": [
+    328.0,
+    183.5,
+    395.0,
+    195.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "검은해변 보물찾기",
+   "text_key": "검은해변보물찾기",
+   "ocr_text": "검은해면 보물찾기",
+   "confidence": 0.8676123023033142,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "검은해변 보물찾기",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_015",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     121.0,
+     199.5
+    ],
+    [
+     180.0,
+     199.5
+    ],
+    [
+     180.0,
+     211.5
+    ],
+    [
+     121.0,
+     211.5
+    ]
+   ],
+   "bbox": [
+    121.0,
+    199.5,
+    180.0,
+    211.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "청소년 페스티벌",
+   "text_key": "청소년페스티벌",
+   "ocr_text": "청소년 팩스티벌",
+   "confidence": 0.9097294807434082,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "청소년 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_017",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     327.5,
+     199.5
+    ],
+    [
+     403.5,
+     199.5
+    ],
+    [
+     403.5,
+     211.5
+    ],
+    [
+     327.5,
+     211.5
+    ]
+   ],
+   "bbox": [
+    327.5,
+    199.5,
+    403.5,
+    211.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "현장 참여 대회(림보)",
+   "text_key": "현장참여대회림보",
+   "ocr_text": "현장 참여 대회(립보)",
+   "confidence": 0.8484011292457581,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "현장 참여 대회(림보)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_019",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     121.0,
+     214.5
+    ],
+    [
+     164.5,
+     214.5
+    ],
+    [
+     164.5,
+     227.0
+    ],
+    [
+     121.0,
+     227.0
+    ]
+   ],
+   "bbox": [
+    121.0,
+    214.5,
+    164.5,
+    227.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "길트기 공연",
+   "text_key": "길트기공연",
+   "ocr_text": "길므기 공연",
+   "confidence": 0.8448114991188049,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "길트기 공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_025",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_025"
+   },
+   "polygon": [
+    [
+     327.5,
+     230.0
+    ],
+    [
+     362.0,
+     230.0
+    ],
+    [
+     362.0,
+     242.5
+    ],
+    [
+     327.5,
+     242.5
+    ]
+   ],
+   "bbox": [
+    327.5,
+    230.0,
+    362.0,
+    242.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "축하공연",
+   "text_key": "축하공연",
+   "ocr_text": "축하공연",
+   "confidence": 0.9109674692153931,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "축하공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_027",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_027"
+   },
+   "polygon": [
+    [
+     120.0,
+     245.5
+    ],
+    [
+     148.0,
+     245.5
+    ],
+    [
+     148.0,
+     258.0
+    ],
+    [
+     120.0,
+     258.0
+    ]
+   ],
+   "bbox": [
+    120.0,
+    245.5,
+    148.0,
+    258.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "개회식",
+   "text_key": "개회식",
+   "ocr_text": "개회식",
+   "confidence": 0.9827004075050354,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "개회식",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_031",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_031"
+   },
+   "polygon": [
+    [
+     121.5,
+     263.0
+    ],
+    [
+     216.0,
+     263.0
+    ],
+    [
+     216.0,
+     273.5
+    ],
+    [
+     121.5,
+     273.5
+    ]
+   ],
+   "bbox": [
+    121.5,
+    263.0,
+    216.0,
+    273.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "초대가수 공연 및 불꽃놀이",
+   "text_key": "초대가수공연및불꽃놀이",
+   "ocr_text": "조대가수 공연 및 불꽃놀이",
+   "confidence": 0.877633273601532,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "초대가수 공연 및 불꽃놀이",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_033",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_033"
+   },
+   "polygon": [
+    [
+     327.5,
+     262.5
+    ],
+    [
+     379.0,
+     262.5
+    ],
+    [
+     379.0,
+     273.0
+    ],
+    [
+     327.5,
+     273.0
+    ]
+   ],
+   "bbox": [
+    327.5,
+    262.5,
+    379.0,
+    273.0
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "초대가수 공연",
+   "text_key": "초대가수공연",
+   "ocr_text": "조대가수 공연",
+   "confidence": 0.8544976115226746,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "초대가수 공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_038",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_038"
+   },
+   "polygon": [
+    [
+     57.0,
+     345.0
+    ],
+    [
+     146.5,
+     346.0
+    ],
+    [
+     146.5,
+     358.5
+    ],
+    [
+     57.0,
+     357.0
+    ]
+   ],
+   "bbox": [
+    57.0,
+    345.0,
+    146.5,
+    358.5
+   ],
+   "height": 12.25,
+   "small_text": false,
+   "text": "어린이 야외수영장 운영",
+   "text_key": "어린이야외수영장운영",
+   "ocr_text": "어린이 야외수영장 운영",
+   "confidence": 0.9872429966926575,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "어린이 야외수영장 운영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_039",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_039"
+   },
+   "polygon": [
+    [
+     57.5,
+     357.5
+    ],
+    [
+     122.0,
+     357.5
+    ],
+    [
+     122.0,
+     370.0
+    ],
+    [
+     57.5,
+     370.0
+    ]
+   ],
+   "bbox": [
+    57.5,
+    357.5,
+    122.0,
+    370.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "황토길 걷기 운영",
+   "text_key": "황토길걷기운영",
+   "ocr_text": "황토길 걷기 운영",
+   "confidence": 0.9019696712493896,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "황토길 걷기 운영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_040",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_040"
+   },
+   "polygon": [
+    [
+     58.0,
+     370.5
+    ],
+    [
+     159.5,
+     370.5
+    ],
+    [
+     159.5,
+     382.5
+    ],
+    [
+     58.0,
+     382.5
+    ]
+   ],
+   "bbox": [
+    58.0,
+    370.5,
+    159.5,
+    382.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "각종 음식 및 체험부스 운영",
+   "text_key": "각종음식및체험부스운영",
+   "ocr_text": "각종 음식 및 체험부스 운영",
+   "confidence": 0.9768602848052979,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "각종 음식 및 체험부스 운영",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_042",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_042"
+   },
+   "polygon": [
+    [
+     63.0,
+     414.0
+    ],
+    [
+     226.0,
+     414.5
+    ],
+    [
+     226.0,
+     426.5
+    ],
+    [
+     63.0,
+     426.0
+    ]
+   ],
+   "bbox": [
+    63.0,
+    414.0,
+    226.0,
+    426.5
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "쇠소깍 가요제",
+   "text_key": "쇠소깍가요제",
+   "ocr_text": "청소년 폐스티벌 및 쇠소짝 가요제 사전접수",
+   "confidence": 0.9388579726219177,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "쇠소깍 가요제",
+   "extra_chars": 12,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_043",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_043"
+   },
+   "polygon": [
+    [
+     64.5,
+     426.0
+    ],
+    [
+     214.5,
+     426.0
+    ],
+    [
+     214.5,
+     437.5
+    ],
+    [
+     64.5,
+     437.5
+    ]
+   ],
+   "bbox": [
+    64.5,
+    426.0,
+    214.5,
+    437.5
+   ],
+   "height": 11.5,
+   "small_text": false,
+   "text": "010-4614-4281(효돈동연합청년회장)",
+   "text_key": "01046144281효돈동연합청년회장",
+   "ocr_text": "010-4614-4281(효돈동연합청년회장)",
+   "confidence": 0.9951990246772766,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts",
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "010-4614-4281(효돈동연합청년회장)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_046",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_046"
+   },
+   "polygon": [
+    [
+     64.5,
+     452.0
+    ],
+    [
+     175.0,
+     452.0
+    ],
+    [
+     175.0,
+     464.0
+    ],
+    [
+     64.5,
+     464.0
+    ]
+   ],
+   "bbox": [
+    64.5,
+    452.0,
+    175.0,
+    464.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "010-4242-2409(사무국장)",
+   "text_key": "01042422409사무국장",
+   "ocr_text": "010-4242-2409(사무국장)",
+   "confidence": 0.9929897785186768,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "010-4242-2409(사무국장)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_048",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_048"
+   },
+   "polygon": [
+    [
+     145.0,
+     608.0
+    ],
+    [
+     276.5,
+     608.0
+    ],
+    [
+     276.5,
+     616.5
+    ],
+    [
+     145.0,
+     616.5
+    ]
+   ],
+   "bbox": [
+    145.0,
+    608.0,
+    276.5,
+    616.5
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "효돈동주민센터",
+   "text_key": "효돈동주민센터",
+   "ocr_text": "후천 | 효돈동주민센터 및 효돈동 자생단제",
+   "confidence": 0.8677123785018921,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "효돈동주민센터",
+   "extra_chars": 10,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-060.padd_rgb_2x_049",
+   "case_id": "v2-060",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_049"
+   },
+   "polygon": [
+    [
+     317.5,
+     608.0
+    ],
+    [
+     447.0,
+     608.0
+    ],
+    [
+     447.0,
+     616.5
+    ],
+    [
+     317.5,
+     616.5
+    ]
+   ],
+   "bbox": [
+    317.5,
+    608.0,
+    447.0,
+    616.5
+   ],
+   "height": 8.5,
+   "small_text": true,
+   "text": "제주특별자치도 지방보조금 지원 축제",
+   "text_key": "제주특별자치도지방보조금지원축제",
+   "ocr_text": "그나브 제주록명자치도 지방보조금 지원 축제",
+   "confidence": 0.8376021385192871,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "제주특별자치도 지방보조금 지원 축제",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,396 @@
+{
+ "case_id": "r2-044",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 527,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-044.padd_rgb_1x_000",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     50.0,
+     25.0
+    ],
+    [
+     471.0,
+     25.0
+    ],
+    [
+     471.0,
+     82.0
+    ],
+    [
+     50.0,
+     82.0
+    ]
+   ],
+   "bbox": [
+    50.0,
+    25.0,
+    471.0,
+    82.0
+   ],
+   "height": 57.0,
+   "small_text": false,
+   "text": "2026 월출산국화축제",
+   "text_key": "2026월출산국화축제",
+   "ocr_text": "20월출산국화축제",
+   "confidence": 0.9634376168251038,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1818,
+   "gold_value": "2026 월출산국화축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_1x_001",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     13.0,
+     365.0
+    ],
+    [
+     89.0,
+     365.0
+    ],
+    [
+     89.0,
+     375.0
+    ],
+    [
+     13.0,
+     375.0
+    ]
+   ],
+   "bbox": [
+    13.0,
+    365.0,
+    89.0,
+    375.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "2027-2028",
+   "text_key": "20272028",
+   "ocr_text": "2027-2028",
+   "confidence": 0.997950553894043,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2027-2028 영암방문의해",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_1x_002",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     92.0,
+     363.0
+    ],
+    [
+     157.0,
+     363.0
+    ],
+    [
+     157.0,
+     374.0
+    ],
+    [
+     92.0,
+     374.0
+    ]
+   ],
+   "bbox": [
+    92.0,
+    363.0,
+    157.0,
+    374.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "영암방문의해",
+   "text_key": "영암방문의해",
+   "ocr_text": "영암방문의해",
+   "confidence": 0.9714467525482178,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2027-2028 영암방문의해",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_1x_003",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     27.0,
+     566.0
+    ],
+    [
+     330.0,
+     566.0
+    ],
+    [
+     330.0,
+     597.0
+    ],
+    [
+     27.0,
+     597.0
+    ]
+   ],
+   "bbox": [
+    27.0,
+    566.0,
+    330.0,
+    597.0
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "2026 10. 30. 금 - 11. 15. 일",
+   "text_key": "20261030금1115일",
+   "ocr_text": "2026 10.30.–11.15.",
+   "confidence": 0.9414494633674622,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "2026 10. 30. 금 - 11. 15. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_1x_004",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     406.0,
+     580.0
+    ],
+    [
+     494.0,
+     580.0
+    ],
+    [
+     494.0,
+     590.0
+    ],
+    [
+     406.0,
+     590.0
+    ]
+   ],
+   "bbox": [
+    406.0,
+    580.0,
+    494.0,
+    590.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "061-470-2259",
+   "text_key": "0614702259",
+   "ocr_text": "문의 061-470-2259",
+   "confidence": 0.9866989254951477,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "061-470-2259",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_1x_005",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     97.0,
+     597.0
+    ],
+    [
+     256.0,
+     595.0
+    ],
+    [
+     256.0,
+     615.0
+    ],
+    [
+     97.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    97.0,
+    595.0,
+    256.0,
+    617.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "월출산기찬랜드 일원",
+   "text_key": "월출산기찬랜드일원",
+   "ocr_text": "월출산기찬랜드 일원",
+   "confidence": 0.9722382426261902,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "월출산기찬랜드 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-044.padd_rgb_1x_007",
+   "case_id": "r2-044",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     466.0,
+     596.0
+    ],
+    [
+     494.0,
+     596.0
+    ],
+    [
+     494.0,
+     605.0
+    ],
+    [
+     466.0,
+     605.0
+    ]
+   ],
+   "bbox": [
+    466.0,
+    596.0,
+    494.0,
+    605.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "영암군",
+   "text_key": "영암군",
+   "ocr_text": "영암군",
+   "confidence": 0.7591145038604736,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영암군",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

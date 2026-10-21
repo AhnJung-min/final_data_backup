@@ -1,0 +1,719 @@
+{
+ "case_id": "v2-162",
+ "split": "dev",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 56,
+ "lines_matched": 13,
+ "records": [
+  {
+   "id": "v2-162.padd_rgb_2x_000",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     31.0,
+     28.5
+    ],
+    [
+     292.5,
+     28.5
+    ],
+    [
+     292.5,
+     66.5
+    ],
+    [
+     31.0,
+     66.5
+    ]
+   ],
+   "bbox": [
+    31.0,
+    28.5,
+    292.5,
+    66.5
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "2026 동대문구",
+   "text_key": "2026동대문구",
+   "ocr_text": "2026 동대문구",
+   "confidence": 0.9905189871788025,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 동대문구 청소년 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_001",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     30.0,
+     63.0
+    ],
+    [
+     292.5,
+     63.0
+    ],
+    [
+     292.5,
+     104.5
+    ],
+    [
+     30.0,
+     104.5
+    ]
+   ],
+   "bbox": [
+    30.0,
+    63.0,
+    292.5,
+    104.5
+   ],
+   "height": 41.5,
+   "small_text": false,
+   "text": "청소년 페스티벌",
+   "text_key": "청소년페스티벌",
+   "ocr_text": "청소년 페스티벌",
+   "confidence": 0.9764562845230103,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 동대문구 청소년 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_002",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     30.5,
+     112.0
+    ],
+    [
+     288.5,
+     110.5
+    ],
+    [
+     289.0,
+     134.0
+    ],
+    [
+     31.0,
+     135.5
+    ]
+   ],
+   "bbox": [
+    30.5,
+    110.5,
+    289.0,
+    135.5
+   ],
+   "height": 23.51,
+   "small_text": false,
+   "text": "뻔한건 SKIP, 힙한건 PLAY",
+   "text_key": "뻔한건skip힙한건play",
+   "ocr_text": "뻔한건 SKIPO,힙한건PLAYO",
+   "confidence": 0.8748175501823425,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0714,
+   "gold_value": "뻔한건 SKIP, 힙한건 PLAY",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_003",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     31.5,
+     142.5
+    ],
+    [
+     255.0,
+     141.5
+    ],
+    [
+     255.0,
+     161.0
+    ],
+    [
+     31.5,
+     162.0
+    ]
+   ],
+   "bbox": [
+    31.5,
+    141.5,
+    255.0,
+    162.0
+   ],
+   "height": 19.5,
+   "small_text": false,
+   "text": "2026.10.17.토",
+   "text_key": "20261017토",
+   "ocr_text": "2026.10.17.토12:00- 17:00",
+   "confidence": 0.9782370924949646,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026.10.17.토",
+   "extra_chars": 8,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_004",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     30.5,
+     166.0
+    ],
+    [
+     178.5,
+     166.0
+    ],
+    [
+     178.5,
+     183.0
+    ],
+    [
+     30.5,
+     183.0
+    ]
+   ],
+   "bbox": [
+    30.5,
+    166.0,
+    178.5,
+    183.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "배봉산근린공원 열린광장",
+   "text_key": "배봉산근린공원열린광장",
+   "ocr_text": "배봉산근린공원 열린광장",
+   "confidence": 0.9852433800697327,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "배봉산근린공원 열린광장",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_014",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     291.0,
+     463.5
+    ],
+    [
+     342.0,
+     463.5
+    ],
+    [
+     342.0,
+     476.0
+    ],
+    [
+     291.0,
+     476.0
+    ]
+   ],
+   "bbox": [
+    291.0,
+    463.5,
+    342.0,
+    476.0
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "문화예술공연",
+   "text_key": "문화예술공연",
+   "ocr_text": "문화이술공연",
+   "confidence": 0.853670597076416,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "문화예술공연",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_015",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     385.5,
+     466.0
+    ],
+    [
+     426.5,
+     466.0
+    ],
+    [
+     426.5,
+     475.5
+    ],
+    [
+     385.5,
+     475.5
+    ]
+   ],
+   "bbox": [
+    385.5,
+    466.0,
+    426.5,
+    475.5
+   ],
+   "height": 9.5,
+   "small_text": true,
+   "text": "12:00 - 17:00",
+   "text_key": "12001700",
+   "ocr_text": "1200-17:00",
+   "confidence": 0.9606513977050781,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "12:00 - 17:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_017",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     290.5,
+     479.0
+    ],
+    [
+     429.0,
+     478.5
+    ],
+    [
+     429.0,
+     489.0
+    ],
+    [
+     290.5,
+     489.5
+    ]
+   ],
+   "bbox": [
+    290.5,
+    478.5,
+    429.0,
+    489.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "우리동네키움센터 청소년 축하공연",
+   "text_key": "우리동네키움센터청소년축하공연",
+   "ocr_text": "사전공인 우리응네키홈센터 청소년 축하공연",
+   "confidence": 0.8540922403335571,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1333,
+   "gold_value": "우리동네키움센터 청소년 축하공연",
+   "extra_chars": 4,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_025",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_025"
+   },
+   "polygon": [
+    [
+     291.5,
+     504.5
+    ],
+    [
+     341.5,
+     504.5
+    ],
+    [
+     341.5,
+     514.5
+    ],
+    [
+     291.5,
+     514.5
+    ]
+   ],
+   "bbox": [
+    291.5,
+    504.5,
+    341.5,
+    514.5
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "청소년 동아리 공연",
+   "text_key": "청소년동아리공연",
+   "ocr_text": "청소선 동아리공면",
+   "confidence": 0.7959802150726318,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "청소년 동아리 공연",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_038",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_038"
+   },
+   "polygon": [
+    [
+     63.0,
+     548.0
+    ],
+    [
+     112.0,
+     549.5
+    ],
+    [
+     111.0,
+     574.5
+    ],
+    [
+     62.0,
+     573.0
+    ]
+   ],
+   "bbox": [
+    62.0,
+    548.0,
+    112.0,
+    574.5
+   ],
+   "height": 25.02,
+   "small_text": false,
+   "text": "동대문구",
+   "text_key": "동대문구",
+   "ocr_text": "동대문구",
+   "confidence": 0.9250237941741943,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "동대문구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_041",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_041"
+   },
+   "polygon": [
+    [
+     291.0,
+     550.0
+    ],
+    [
+     360.0,
+     550.0
+    ],
+    [
+     360.0,
+     560.5
+    ],
+    [
+     291.0,
+     560.5
+    ]
+   ],
+   "bbox": [
+    291.0,
+    550.0,
+    360.0,
+    560.5
+   ],
+   "height": 10.5,
+   "small_text": false,
+   "text": "체험프로그램 운영",
+   "text_key": "체험프로그램운영",
+   "ocr_text": "체험프로그럼 운염",
+   "confidence": 0.7659067511558533,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "체험프로그램 운영",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_049",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_049"
+   },
+   "polygon": [
+    [
+     64.0,
+     576.0
+    ],
+    [
+     121.5,
+     576.0
+    ],
+    [
+     121.5,
+     588.5
+    ],
+    [
+     64.0,
+     588.5
+    ]
+   ],
+   "bbox": [
+    64.0,
+    576.0,
+    121.5,
+    588.5
+   ],
+   "height": 12.5,
+   "small_text": false,
+   "text": "아동청소년과",
+   "text_key": "아동청소년과",
+   "ocr_text": "아동청소년과",
+   "confidence": 0.9922366142272949,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "아동청소년과 02-2127-4231",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-162.padd_rgb_2x_053",
+   "case_id": "v2-162",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_053"
+   },
+   "polygon": [
+    [
+     64.5,
+     588.0
+    ],
+    [
+     140.0,
+     588.0
+    ],
+    [
+     140.0,
+     600.0
+    ],
+    [
+     64.5,
+     600.0
+    ]
+   ],
+   "bbox": [
+    64.5,
+    588.0,
+    140.0,
+    600.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "02-2127-4231",
+   "text_key": "0221274231",
+   "ocr_text": "02-2127-4231",
+   "confidence": 0.9994861483573914,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "아동청소년과 02-2127-4231",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

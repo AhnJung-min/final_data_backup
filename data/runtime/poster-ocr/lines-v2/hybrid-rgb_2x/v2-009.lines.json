@@ -1,0 +1,396 @@
+{
+ "case_id": "v2-009",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 16,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-009.easy_rgb_2x_004",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     142.5,
+     82.0
+    ],
+    [
+     299.0,
+     82.0
+    ],
+    [
+     299.0,
+     104.0
+    ],
+    [
+     142.5,
+     104.0
+    ]
+   ],
+   "bbox": [
+    142.5,
+    82.0,
+    299.0,
+    104.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "2026 남구청년예술제",
+   "text_key": "2026남구청년예술제",
+   "ocr_text": "2026 남구청년예술제",
+   "confidence": 0.7417443613199455,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 남구청년예술제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.easy_rgb_2x_008",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     77.5,
+     406.5
+    ],
+    [
+     209.0,
+     406.5
+    ],
+    [
+     209.0,
+     437.5
+    ],
+    [
+     77.5,
+     437.5
+    ]
+   ],
+   "bbox": [
+    77.5,
+    406.5,
+    209.0,
+    437.5
+   ],
+   "height": 31.0,
+   "small_text": false,
+   "text": "8. 18.(Tue)",
+   "text_key": "818tue",
+   "ocr_text": "8.18,crue)",
+   "confidence": 0.9349859952926636,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "8. 18.(Tue) - 9. 18.(Fri)",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.easy_rgb_2x_009",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     234.5,
+     405.5
+    ],
+    [
+     357.0,
+     405.5
+    ],
+    [
+     357.0,
+     437.5
+    ],
+    [
+     234.5,
+     437.5
+    ]
+   ],
+   "bbox": [
+    234.5,
+    405.5,
+    357.0,
+    437.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "9. 18.(Fri)",
+   "text_key": "918fri",
+   "ocr_text": "9.18.0ri)",
+   "confidence": 0.8252370357513428,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.25,
+   "gold_value": "8. 18.(Tue) - 9. 18.(Fri)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.easy_rgb_2x_011",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     130.5,
+     476.0
+    ],
+    [
+     312.0,
+     476.0
+    ],
+    [
+     312.0,
+     500.0
+    ],
+    [
+     130.5,
+     500.0
+    ]
+   ],
+   "bbox": [
+    130.5,
+    476.0,
+    312.0,
+    500.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "대덕문화전당 제1~3전시실",
+   "text_key": "대덕문화전당제13전시실",
+   "ocr_text": "대덕문화전당 제1-3전시실",
+   "confidence": 0.9607450366020203,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대덕문화전당 제1~3전시실",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.easy_rgb_2x_012",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_012"
+   },
+   "polygon": [
+    [
+     89.0,
+     505.0
+    ],
+    [
+     355.0,
+     505.0
+    ],
+    [
+     355.0,
+     521.0
+    ],
+    [
+     89.0,
+     521.0
+    ]
+   ],
+   "bbox": [
+    89.0,
+    505.0,
+    355.0,
+    521.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "동아대학교 미술학과",
+   "text_key": "동아대학교미술학과",
+   "ocr_text": "대하교 대승대학동아대학교 미승학과 부산대학교 미승학과",
+   "confidence": 0.6364312171936035,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1111,
+   "gold_value": "동아대학교 미술학과",
+   "extra_chars": 16,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.easy_rgb_2x_014",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     154.0,
+     566.5
+    ],
+    [
+     247.0,
+     566.5
+    ],
+    [
+     247.0,
+     582.0
+    ],
+    [
+     154.0,
+     582.0
+    ]
+   ],
+   "bbox": [
+    154.0,
+    566.5,
+    247.0,
+    582.0
+   ],
+   "height": 15.5,
+   "small_text": false,
+   "text": "대구 남구 대덕문화전당",
+   "text_key": "대구남구대덕문화전당",
+   "ocr_text": "대구남구 대덕문회전당",
+   "confidence": 0.837907075881958,
+   "field": "organizations.text",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.text"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1,
+   "gold_value": "대구 남구 대덕문화전당",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-009.easy_rgb_2x_015",
+   "case_id": "v2-009",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_015"
+   },
+   "polygon": [
+    [
+     258.0,
+     567.0
+    ],
+    [
+     354.0,
+     567.0
+    ],
+    [
+     354.0,
+     582.0
+    ],
+    [
+     258.0,
+     582.0
+    ]
+   ],
+   "bbox": [
+    258.0,
+    567.0,
+    354.0,
+    582.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "053-664-3118",
+   "text_key": "0536643118",
+   "ocr_text": "r의053-884-3118",
+   "confidence": 0.14852232832169232,
+   "field": "contacts",
+   "field_group": "contact",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "contacts"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2,
+   "gold_value": "053-664-3118",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

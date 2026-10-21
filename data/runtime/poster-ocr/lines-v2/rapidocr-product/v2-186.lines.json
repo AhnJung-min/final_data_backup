@@ -1,0 +1,503 @@
+{
+ "case_id": "v2-186",
+ "split": "dev",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 49,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-186.rapi_product_006",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_006"
+   },
+   "polygon": [
+    [
+     163.0,
+     152.0
+    ],
+    [
+     239.0,
+     150.0
+    ],
+    [
+     239.0,
+     177.0
+    ],
+    [
+     163.0,
+     178.0
+    ]
+   ],
+   "bbox": [
+    163.0,
+    150.0,
+    239.0,
+    178.0
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "제31회",
+   "text_key": "제31회",
+   "ocr_text": "제31회",
+   "confidence": 0.99723,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제31회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_007",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_007"
+   },
+   "polygon": [
+    [
+     166.0,
+     290.0
+    ],
+    [
+     213.0,
+     290.0
+    ],
+    [
+     213.0,
+     309.0
+    ],
+    [
+     166.0,
+     309.0
+    ]
+   ],
+   "bbox": [
+    166.0,
+    290.0,
+    213.0,
+    309.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026.",
+   "confidence": 0.99688,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.24.토 ~ 10.25.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_008",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_008"
+   },
+   "polygon": [
+    [
+     211.0,
+     286.0
+    ],
+    [
+     422.0,
+     287.0
+    ],
+    [
+     422.0,
+     311.0
+    ],
+    [
+     211.0,
+     309.0
+    ]
+   ],
+   "bbox": [
+    211.0,
+    286.0,
+    422.0,
+    311.0
+   ],
+   "height": 23.5,
+   "small_text": false,
+   "text": "10.24.토 ~ 10.25.",
+   "text_key": "1024토1025",
+   "ocr_text": "10.24.0~10.25.9",
+   "confidence": 0.98873,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1429,
+   "gold_value": "2026. 10.24.토 ~ 10.25.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_009",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_009"
+   },
+   "polygon": [
+    [
+     165.0,
+     314.0
+    ],
+    [
+     280.0,
+     314.0
+    ],
+    [
+     280.0,
+     331.0
+    ],
+    [
+     165.0,
+     331.0
+    ]
+   ],
+   "bbox": [
+    165.0,
+    314.0,
+    280.0,
+    331.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "11:00 ~ 17:00",
+   "text_key": "11001700",
+   "ocr_text": "11:00~17:00|",
+   "confidence": 0.97416,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "11:00 ~ 17:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_010",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_010"
+   },
+   "polygon": [
+    [
+     275.0,
+     314.0
+    ],
+    [
+     377.0,
+     314.0
+    ],
+    [
+     377.0,
+     331.0
+    ],
+    [
+     275.0,
+     331.0
+    ]
+   ],
+   "bbox": [
+    275.0,
+    314.0,
+    377.0,
+    331.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "순천 낙안읍성 일원",
+   "text_key": "순천낙안읍성일원",
+   "ocr_text": "순천낙안음성일원",
+   "confidence": 0.9286,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "순천 낙안읍성 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_024",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_024"
+   },
+   "polygon": [
+    [
+     235.0,
+     479.0
+    ],
+    [
+     304.0,
+     479.0
+    ],
+    [
+     304.0,
+     490.0
+    ],
+    [
+     235.0,
+     490.0
+    ]
+   ],
+   "bbox": [
+    235.0,
+    479.0,
+    304.0,
+    490.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "수문장교대식",
+   "text_key": "수문장교대식",
+   "ocr_text": "수문장교대식대",
+   "confidence": 0.75147,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "수문장교대식",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_025",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_025"
+   },
+   "polygon": [
+    [
+     349.0,
+     479.0
+    ],
+    [
+     400.0,
+     479.0
+    ],
+    [
+     400.0,
+     490.0
+    ],
+    [
+     349.0,
+     490.0
+    ]
+   ],
+   "bbox": [
+    349.0,
+    479.0,
+    400.0,
+    490.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "길거리 노래방 대회",
+   "text_key": "길거리노래방대회",
+   "ocr_text": "집거리노데방대회",
+   "confidence": 0.5516,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "길거리 노래방 대회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_034",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_034"
+   },
+   "polygon": [
+    [
+     385.0,
+     520.0
+    ],
+    [
+     415.0,
+     520.0
+    ],
+    [
+     415.0,
+     530.0
+    ],
+    [
+     385.0,
+     530.0
+    ]
+   ],
+   "bbox": [
+    385.0,
+    520.0,
+    415.0,
+    530.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "사찰음식",
+   "text_key": "사찰음식",
+   "ocr_text": "사업음식",
+   "confidence": 0.48898,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "사찰음식",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-186.rapi_product_036",
+   "case_id": "v2-186",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_036"
+   },
+   "polygon": [
+    [
+     245.0,
+     531.0
+    ],
+    [
+     296.0,
+     531.0
+    ],
+    [
+     296.0,
+     541.0
+    ],
+    [
+     245.0,
+     541.0
+    ]
+   ],
+   "bbox": [
+    245.0,
+    531.0,
+    296.0,
+    541.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "연날리기",
+   "text_key": "연날리기",
+   "ocr_text": "연날리기밝보기",
+   "confidence": 0.59721,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "연날리기",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

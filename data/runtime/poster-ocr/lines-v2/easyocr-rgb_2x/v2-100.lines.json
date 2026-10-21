@@ -1,0 +1,395 @@
+{
+ "case_id": "v2-100",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 423,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 17,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "v2-100.easy_rgb_2x_000",
+   "case_id": "v2-100",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     241.0,
+     20.0
+    ],
+    [
+     393.0,
+     20.0
+    ],
+    [
+     393.0,
+     35.0
+    ],
+    [
+     241.0,
+     35.0
+    ]
+   ],
+   "bbox": [
+    241.0,
+    20.0,
+    393.0,
+    35.0
+   ],
+   "height": 15.0,
+   "small_text": false,
+   "text": "Hello 나주 Festival, 다시 뜨겁게",
+   "text_key": "hello나주festival다시뜨겁게",
+   "ocr_text": "Hello 나주 Festivol, 다시 뜨저계",
+   "confidence": 0.522134204579637,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.15,
+   "gold_value": "Hello 나주 Festival, 다시 뜨겁게",
+   "extra_chars": 2,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-100.easy_rgb_2x_004",
+   "case_id": "v2-100",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     216.5,
+     346.0
+    ],
+    [
+     263.5,
+     346.0
+    ],
+    [
+     263.5,
+     364.0
+    ],
+    [
+     216.5,
+     364.0
+    ]
+   ],
+   "bbox": [
+    216.5,
+    346.0,
+    263.5,
+    364.0
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "2026.",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9999237060546875,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.7. 수 ~ 10.11. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-100.easy_rgb_2x_005",
+   "case_id": "v2-100",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     260.0,
+     342.0
+    ],
+    [
+     357.0,
+     342.0
+    ],
+    [
+     357.0,
+     381.0
+    ],
+    [
+     260.0,
+     381.0
+    ]
+   ],
+   "bbox": [
+    260.0,
+    342.0,
+    357.0,
+    381.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "10.7. 수",
+   "text_key": "107수",
+   "ocr_text": "10.7수",
+   "confidence": 0.6344835193595832,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.7. 수 ~ 10.11. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-100.easy_rgb_2x_006",
+   "case_id": "v2-100",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     305.0,
+     380.0
+    ],
+    [
+     407.0,
+     380.0
+    ],
+    [
+     407.0,
+     419.0
+    ],
+    [
+     305.0,
+     419.0
+    ]
+   ],
+   "bbox": [
+    305.0,
+    380.0,
+    407.0,
+    419.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "10.11. 일",
+   "text_key": "1011일",
+   "ocr_text": "10.11 일",
+   "confidence": 0.8492098534246945,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026. 10.7. 수 ~ 10.11. 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-100.easy_rgb_2x_007",
+   "case_id": "v2-100",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     309.0,
+     415.5
+    ],
+    [
+     408.5,
+     415.5
+    ],
+    [
+     408.5,
+     436.5
+    ],
+    [
+     309.0,
+     436.5
+    ]
+   ],
+   "bbox": [
+    309.0,
+    415.5,
+    408.5,
+    436.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "영산강정원 일원",
+   "text_key": "영산강정원일원",
+   "ocr_text": "영산강정원 일원",
+   "confidence": 0.6816764809754237,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "영산강정원 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-100.easy_rgb_2x_008",
+   "case_id": "v2-100",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     326.5,
+     446.5
+    ],
+    [
+     408.5,
+     446.5
+    ],
+    [
+     408.5,
+     464.5
+    ],
+    [
+     326.5,
+     464.5
+    ]
+   ],
+   "bbox": [
+    326.5,
+    446.5,
+    408.5,
+    464.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "나주농업페스타",
+   "text_key": "나주농업페스타",
+   "ocr_text": "나주농업렉스타",
+   "confidence": 0.5820804155372296,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1429,
+   "gold_value": "나주농업페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-100.easy_rgb_2x_010",
+   "case_id": "v2-100",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     274.0,
+     476.0
+    ],
+    [
+     408.5,
+     476.0
+    ],
+    [
+     408.5,
+     495.0
+    ],
+    [
+     274.0,
+     495.0
+    ]
+   ],
+   "bbox": [
+    274.0,
+    476.0,
+    408.5,
+    495.0
+   ],
+   "height": 19.0,
+   "small_text": false,
+   "text": "MBN 전국 나주 마라톤대회",
+   "text_key": "mbn전국나주마라톤대회",
+   "ocr_text": "MEN전국 나주 마라b대회",
+   "confidence": 0.6106932393250287,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.1667,
+   "gold_value": "MBN 전국 나주 마라톤대회",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

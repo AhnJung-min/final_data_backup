@@ -1,0 +1,396 @@
+{
+ "case_id": "r2-050",
+ "split": "reserve",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 439,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 8,
+ "lines_matched": 7,
+ "records": [
+  {
+   "id": "r2-050.padd_rgb_1x_001",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     64.0,
+     18.0
+    ],
+    [
+     100.0,
+     18.0
+    ],
+    [
+     100.0,
+     27.0
+    ],
+    [
+     64.0,
+     27.0
+    ]
+   ],
+   "bbox": [
+    64.0,
+    18.0,
+    100.0,
+    27.0
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "익산시",
+   "text_key": "익산시",
+   "ocr_text": "소익산시",
+   "confidence": 0.58881676197052,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "익산시",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.padd_rgb_1x_003",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     355.0,
+     17.0
+    ],
+    [
+     415.0,
+     17.0
+    ],
+    [
+     415.0,
+     27.0
+    ],
+    [
+     355.0,
+     27.0
+    ]
+   ],
+   "bbox": [
+    355.0,
+    17.0,
+    415.0,
+    27.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "보석문화도시 익산,",
+   "text_key": "보석문화도시익산",
+   "ocr_text": "보석문화도시 익산",
+   "confidence": 0.8666722774505615,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "보석문화도시 익산, 익산의 역사는 보석이다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.padd_rgb_1x_004",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     341.0,
+     28.0
+    ],
+    [
+     416.0,
+     28.0
+    ],
+    [
+     416.0,
+     40.0
+    ],
+    [
+     341.0,
+     40.0
+    ]
+   ],
+   "bbox": [
+    341.0,
+    28.0,
+    416.0,
+    40.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "익산의 역사는 보석이다",
+   "text_key": "익산의역사는보석이다",
+   "ocr_text": "익산의 역사는 보석이다",
+   "confidence": 0.9468693137168884,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "보석문화도시 익산, 익산의 역사는 보석이다",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.padd_rgb_1x_005",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     175.0,
+     57.0
+    ],
+    [
+     265.0,
+     57.0
+    ],
+    [
+     265.0,
+     71.0
+    ],
+    [
+     175.0,
+     71.0
+    ]
+   ],
+   "bbox": [
+    175.0,
+    57.0,
+    265.0,
+    71.0
+   ],
+   "height": 14.0,
+   "small_text": false,
+   "text": "제4회 보물찾기 축제",
+   "text_key": "제4회보물찾기축제",
+   "ocr_text": "제4회보물활기 하제",
+   "confidence": 0.7396947145462036,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw",
+    "edition.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.2222,
+   "gold_value": "제4회 보물찾기 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.padd_rgb_1x_006",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     93.0,
+     87.0
+    ],
+    [
+     352.0,
+     87.0
+    ],
+    [
+     352.0,
+     230.0
+    ],
+    [
+     93.0,
+     230.0
+    ]
+   ],
+   "bbox": [
+    93.0,
+    87.0,
+    352.0,
+    230.0
+   ],
+   "height": 143.0,
+   "small_text": false,
+   "text": "금괴를",
+   "text_key": "금괴를",
+   "ocr_text": "금괴를",
+   "confidence": 0.7533442378044128,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "1945, 그날의 금괴를 찾아라",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.padd_rgb_1x_007",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     168.0,
+     93.0
+    ],
+    [
+     269.0,
+     93.0
+    ],
+    [
+     269.0,
+     114.0
+    ],
+    [
+     168.0,
+     114.0
+    ]
+   ],
+   "bbox": [
+    168.0,
+    93.0,
+    269.0,
+    114.0
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "1945, 그날의",
+   "text_key": "1945그날의",
+   "ocr_text": "1945,그날의",
+   "confidence": 0.997133195400238,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "1945, 그날의 금괴를 찾아라",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "r2-050.padd_rgb_1x_008",
+   "case_id": "r2-050",
+   "split": "reserve",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     89.0,
+     192.0
+    ],
+    [
+     356.0,
+     192.0
+    ],
+    [
+     356.0,
+     311.0
+    ],
+    [
+     89.0,
+     311.0
+    ]
+   ],
+   "bbox": [
+    89.0,
+    192.0,
+    356.0,
+    311.0
+   ],
+   "height": 119.0,
+   "small_text": false,
+   "text": "찾아라",
+   "text_key": "찾아라",
+   "ocr_text": "찾아라",
+   "confidence": 0.8989028930664062,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "1945, 그날의 금괴를 찾아라",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,1307 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 32,
+  "by_probe": {
+   "a": 8,
+   "b": 8,
+   "c": 8,
+   "d": 8
+  },
+  "options": 112,
+  "image_tokens": 3281,
+  "text_tokens": 5338,
+  "input_tokens": 8619,
+  "cost_usd": 0.0008619000000000001
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S08",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S08.png",
+    "sha256": "219bf65e656cd52fbbb24b8c5f1941653f7e713e43f473f14f456572444cc0bf",
+    "bytes": 118833,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S08.png",
+    "sha256": "13c2ce6426bae2799657ec1937be272b8316ebd186e932eabb47fc8da51f06fd",
+    "bytes": 106242,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "다온 국화향 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "다온 국화향 축제"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.10.1.(목)",
+     "points": [
+      [
+       2026,
+       10,
+       1,
+       "목"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.10.1.(목)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "18:00~22:00"
+    },
+    "doc_raw": "18:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "다온종합운동장"
+    },
+    "doc_raw": "다온종합운동장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "다온군"
+    },
+    "doc_raw": "다온군"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "다온축제위원회"
+    },
+    "doc_raw": "다온축제위원회"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "061-000-8052"
+    },
+    "doc_raw": "061-000-8052"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "가을 향기 가득한 하루"
+    },
+    "doc_raw": "가을 향기 가득한 하루"
+   }
+  },
+  "rows": [
+   {
+    "value": "L441",
+    "index": 0,
+    "text": "2026",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026",
+      "confidence": 0.9997760057449341,
+      "bbox_xyxy": [
+       399.0,
+       304.0,
+       489.0,
+       347.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L979",
+    "index": 1,
+    "text": "다온",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "다온",
+      "confidence": 0.9997667074203491,
+      "bbox_xyxy": [
+       314.0,
+       377.0,
+       572.0,
+       537.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L499",
+    "index": 2,
+    "text": "국환향 축제",
+    "conf": 0.9997,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "국환향",
+      "confidence": 0.999969482421875,
+      "bbox_xyxy": [
+       137.0,
+       545.0,
+       501.0,
+       696.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "축제",
+      "confidence": 0.9996554851531982,
+      "bbox_xyxy": [
+       503.0,
+       544.0,
+       744.0,
+       693.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L358",
+    "index": 3,
+    "text": "가을 향기 가득한 하루",
+    "conf": 0.998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "가을",
+      "confidence": 0.9980241060256958,
+      "bbox_xyxy": [
+       300.0,
+       713.0,
+       363.0,
+       753.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "향기",
+      "confidence": 0.9999339580535889,
+      "bbox_xyxy": [
+       362.0,
+       709.0,
+       423.0,
+       755.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "가득한",
+      "confidence": 0.9997861981391907,
+      "bbox_xyxy": [
+       428.0,
+       710.0,
+       523.0,
+       755.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "하루",
+      "confidence": 0.9998759031295776,
+      "bbox_xyxy": [
+       521.0,
+       712.0,
+       586.0,
+       752.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L573",
+    "index": 4,
+    "text": "10월 1일(목)",
+    "conf": 0.999,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "10월",
+      "confidence": 0.99900883436203,
+      "bbox_xyxy": [
+       328.0,
+       814.0,
+       419.0,
+       867.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "1일(목)",
+      "confidence": 0.9996277689933777,
+      "bbox_xyxy": [
+       421.0,
+       816.0,
+       556.0,
+       869.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L279",
+    "index": 5,
+    "text": "18:00~22:00",
+    "conf": 0.9996,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "18:00~22:00",
+      "confidence": 0.9996322393417358,
+      "bbox_xyxy": [
+       345.0,
+       891.0,
+       541.0,
+       925.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L656",
+    "index": 6,
+    "text": "다온종합운동장",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_013",
+      "text": "다온종합운동장",
+      "confidence": 0.9998239874839783,
+      "bbox_xyxy": [
+       334.0,
+       945.0,
+       552.0,
+       983.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L608",
+    "index": 7,
+    "text": "국화 분재 전시 · 꽃차 시음· 가을 음악회",
+    "conf": 0.9131,
+    "records": [
+     {
+      "id": "padd_rgb_1x_014",
+      "text": "국화 분재 전시 · 꽃차 시음· 가을 음악회",
+      "confidence": 0.913129985332489,
+      "bbox_xyxy": [
+       234.0,
+       1031.0,
+       650.0,
+       1058.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L872",
+    "index": 8,
+    "text": "주최 다온군 |주관다온축제위원회|문의 061-000-8052",
+    "conf": 0.9583,
+    "records": [
+     {
+      "id": "padd_rgb_1x_015",
+      "text": "주최 다온군 |주관다온축제위원회|문의 061-000-8052",
+      "confidence": 0.9583451151847839,
+      "bbox_xyxy": [
+       158.0,
+       1196.0,
+       727.0,
+       1220.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "다온 국화향 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.10.1.(목)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "다온종합운동장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "다온군"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "다온축제위원회"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "061-000-8052"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "가을 향기 가득한 하루"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "다온 국화향 축제"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.10.1.(목)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "18:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "다온종합운동장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "다온군"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "다온축제위원회"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "061-000-8052"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "가을 향기 가득한 하루"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L279",
+    "L979",
+    "L499",
+    "L608",
+    "L573",
+    "L441",
+    "L872",
+    "L358",
+    "L656",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L656",
+    "L499",
+    "L979",
+    "L441",
+    "L872",
+    "L573",
+    "L358",
+    "L279",
+    "L608",
+    "none"
+   ],
+   "b_line_time": [
+    "L656",
+    "L872",
+    "L573",
+    "L358",
+    "L608",
+    "L441",
+    "L979",
+    "L279",
+    "L499",
+    "none"
+   ],
+   "b_line_venue": [
+    "L872",
+    "L358",
+    "L608",
+    "L499",
+    "L279",
+    "L656",
+    "L979",
+    "L573",
+    "L441",
+    "none"
+   ],
+   "b_line_host": [
+    "L441",
+    "L573",
+    "L656",
+    "L979",
+    "L358",
+    "L279",
+    "L499",
+    "L608",
+    "L872",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L608",
+    "L279",
+    "L872",
+    "L441",
+    "L979",
+    "L573",
+    "L656",
+    "L499",
+    "L358",
+    "none"
+   ],
+   "b_line_contact": [
+    "L872",
+    "L979",
+    "L441",
+    "L358",
+    "L608",
+    "L656",
+    "L279",
+    "L573",
+    "L499",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L872",
+    "L499",
+    "L573",
+    "L279",
+    "L979",
+    "L358",
+    "L608",
+    "L441",
+    "L656",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 118,833 bytes, sha256 219bf65e656cd52f…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 106,242 bytes, sha256 13c2ce6426bae279…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '다온 국화향 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.10.1.(목)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '18:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '다온종합운동장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '다온군'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '다온축제위원회'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '061-000-8052'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '가을 향기 가득한 하루'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L872",
+      "description": "주최 다온군 |주관다온축제위원회|문의 061-000-8052"
+     },
+     {
+      "value": "L499",
+      "description": "국환향 축제"
+     },
+     {
+      "value": "L573",
+      "description": "10월 1일(목)"
+     },
+     {
+      "value": "L279",
+      "description": "18:00~22:00"
+     },
+     {
+      "value": "L979",
+      "description": "다온"
+     },
+     {
+      "value": "L358",
+      "description": "가을 향기 가득한 하루"
+     },
+     {
+      "value": "L608",
+      "description": "국화 분재 전시 · 꽃차 시음· 가을 음악회"
+     },
+     {
+      "value": "L441",
+      "description": "2026"
+     },
+     {
+      "value": "L656",
+      "description": "다온종합운동장"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '다온 국화향 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.10.1.(목)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '18:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '다온종합운동장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '다온군'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '다온축제위원회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '061-000-8052'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '가을 향기 가득한 하루'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

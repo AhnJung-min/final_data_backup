@@ -1,0 +1,289 @@
+{
+ "case_id": "v2-029",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 9,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-029.easy_rgb_2x_000",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     272.0,
+     8.0
+    ],
+    [
+     436.0,
+     8.0
+    ],
+    [
+     436.0,
+     35.0
+    ],
+    [
+     272.0,
+     35.0
+    ]
+   ],
+   "bbox": [
+    272.0,
+    8.0,
+    436.0,
+    35.0
+   ],
+   "height": 27.0,
+   "small_text": false,
+   "text": "2026 광명마당극축제",
+   "text_key": "2026광명마당극축제",
+   "ocr_text": "2026 광명미당극축제",
+   "confidence": 0.6454541633933829,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0909,
+   "gold_value": "2026 광명마당극축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-029.easy_rgb_2x_001",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     230.5,
+     31.0
+    ],
+    [
+     435.0,
+     31.0
+    ],
+    [
+     435.0,
+     56.0
+    ],
+    [
+     230.5,
+     56.0
+    ]
+   ],
+   "bbox": [
+    230.5,
+    31.0,
+    435.0,
+    56.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "제36회",
+   "text_key": "제36회",
+   "ocr_text": "제36회대한민국마당극축제",
+   "confidence": 0.6851847275828377,
+   "field": "edition.raw",
+   "field_group": "edition",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "edition.raw",
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "제36회",
+   "extra_chars": 9,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-029.easy_rgb_2x_005",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     9.0,
+     593.0
+    ],
+    [
+     132.0,
+     593.0
+    ],
+    [
+     132.0,
+     617.0
+    ],
+    [
+     9.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    9.0,
+    593.0,
+    132.0,
+    617.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026.9.11.",
+   "text_key": "2026911",
+   "ocr_text": "2026.911e",
+   "confidence": 0.6959742889632082,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026.9.11.금 ~ 9.13.일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-029.easy_rgb_2x_007",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     144.0,
+     593.0
+    ],
+    [
+     192.0,
+     593.0
+    ],
+    [
+     192.0,
+     617.0
+    ],
+    [
+     144.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    144.0,
+    593.0,
+    192.0,
+    617.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "9.13.",
+   "text_key": "913",
+   "ocr_text": "9.13",
+   "confidence": 0.8158318933027959,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "2026.9.11.금 ~ 9.13.일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-029.easy_rgb_2x_008",
+   "case_id": "v2-029",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_008"
+   },
+   "polygon": [
+    [
+     219.0,
+     592.0
+    ],
+    [
+     363.0,
+     592.0
+    ],
+    [
+     363.0,
+     617.0
+    ],
+    [
+     219.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    219.0,
+    592.0,
+    363.0,
+    617.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "광명시민운동장 일대",
+   "text_key": "광명시민운동장일대",
+   "ocr_text": "광명시민운동장 일대",
+   "confidence": 0.935743165006354,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "광명시민운동장 일대",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

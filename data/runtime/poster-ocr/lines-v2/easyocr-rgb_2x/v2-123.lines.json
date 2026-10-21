@@ -1,0 +1,287 @@
+{
+ "case_id": "v2-123",
+ "split": "dev",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 441,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 18,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-123.easy_rgb_2x_001",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     61.0,
+     21.0
+    ],
+    [
+     86.0,
+     21.0
+    ],
+    [
+     86.0,
+     37.0
+    ],
+    [
+     61.0,
+     37.0
+    ]
+   ],
+   "bbox": [
+    61.0,
+    21.0,
+    86.0,
+    37.0
+   ],
+   "height": 16.0,
+   "small_text": false,
+   "text": "서구",
+   "text_key": "서구",
+   "ocr_text": "서구",
+   "confidence": 0.9999540602441991,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "#착한도시 서구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.easy_rgb_2x_010",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     32.5,
+     346.5
+    ],
+    [
+     80.5,
+     346.5
+    ],
+    [
+     80.5,
+     367.5
+    ],
+    [
+     32.5,
+     367.5
+    ]
+   ],
+   "bbox": [
+    32.5,
+    346.5,
+    80.5,
+    367.5
+   ],
+   "height": 21.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.7066077764764842,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026 10.15 목 10.18 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.easy_rgb_2x_011",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_011"
+   },
+   "polygon": [
+    [
+     33.5,
+     368.5
+    ],
+    [
+     120.5,
+     368.5
+    ],
+    [
+     120.5,
+     401.5
+    ],
+    [
+     33.5,
+     401.5
+    ]
+   ],
+   "bbox": [
+    33.5,
+    368.5,
+    120.5,
+    401.5
+   ],
+   "height": 33.0,
+   "small_text": false,
+   "text": "10.15",
+   "text_key": "1015",
+   "ocr_text": "10.15 욕",
+   "confidence": 0.4393330704729602,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026 10.15 목 10.18 일",
+   "extra_chars": 1,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.easy_rgb_2x_014",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_014"
+   },
+   "polygon": [
+    [
+     34.5,
+     414.5
+    ],
+    [
+     119.5,
+     414.5
+    ],
+    [
+     119.5,
+     446.5
+    ],
+    [
+     34.5,
+     446.5
+    ]
+   ],
+   "bbox": [
+    34.5,
+    414.5,
+    119.5,
+    446.5
+   ],
+   "height": 32.0,
+   "small_text": false,
+   "text": "10.18 일",
+   "text_key": "1018일",
+   "ocr_text": "10.18일",
+   "confidence": 0.9235054272101147,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0714,
+   "gold_value": "2026 10.15 목 10.18 일",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-123.easy_rgb_2x_017",
+   "case_id": "v2-123",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_017"
+   },
+   "polygon": [
+    [
+     14.1,
+     13.54
+    ],
+    [
+     65.47,
+     23.16
+    ],
+    [
+     60.9,
+     41.96
+    ],
+    [
+     9.53,
+     32.84
+    ]
+   ],
+   "bbox": [
+    9.53,
+    13.54,
+    65.47,
+    41.96
+   ],
+   "height": 19.59,
+   "small_text": false,
+   "text": "#착한도시",
+   "text_key": "착한도시",
+   "ocr_text": "#화한도시",
+   "confidence": 0.08242132630691201,
+   "field": "badges",
+   "field_group": "badge",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "badges"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "#착한도시 서구",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

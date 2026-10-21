@@ -1,0 +1,667 @@
+{
+ "case_id": "v2-020",
+ "split": "test",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 24,
+ "lines_matched": 12,
+ "records": [
+  {
+   "id": "v2-020.easy_rgb_2x_000",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     315.5,
+     96.5
+    ],
+    [
+     333.5,
+     96.5
+    ],
+    [
+     333.5,
+     114.5
+    ],
+    [
+     315.5,
+     114.5
+    ]
+   ],
+   "bbox": [
+    315.5,
+    96.5,
+    333.5,
+    114.5
+   ],
+   "height": 18.0,
+   "small_text": false,
+   "text": "K",
+   "text_key": "k",
+   "ocr_text": "K",
+   "confidence": 0.36681994600166945,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "K-STYLE",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_002",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     35.5,
+     172.0
+    ],
+    [
+     405.0,
+     172.0
+    ],
+    [
+     405.0,
+     257.0
+    ],
+    [
+     35.5,
+     257.0
+    ]
+   ],
+   "bbox": [
+    35.5,
+    172.0,
+    405.0,
+    257.0
+   ],
+   "height": 85.0,
+   "small_text": false,
+   "text": "CHEMI STREET",
+   "text_key": "chemistreet",
+   "ocr_text": "CHEMiSTREET",
+   "confidence": 0.8880634307861328,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo",
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "CHEMI STREET",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_003",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     65.0,
+     233.0
+    ],
+    [
+     400.0,
+     233.0
+    ],
+    [
+     400.0,
+     337.5
+    ],
+    [
+     65.0,
+     337.5
+    ]
+   ],
+   "bbox": [
+    65.0,
+    233.0,
+    400.0,
+    337.5
+   ],
+   "height": 104.5,
+   "small_text": false,
+   "text": "FESTIVAL",
+   "text_key": "festival",
+   "ocr_text": "FESTWAL",
+   "confidence": 0.7239074110984802,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1053,
+   "gold_value": "CHEMISTREET FESTIVAL",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_004",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     207.0,
+     343.0
+    ],
+    [
+     236.0,
+     343.0
+    ],
+    [
+     236.0,
+     355.0
+    ],
+    [
+     207.0,
+     355.0
+    ]
+   ],
+   "bbox": [
+    207.0,
+    343.0,
+    236.0,
+    355.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2076",
+   "confidence": 0.5899775624275208,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0625,
+   "gold_value": "2026 케미스트릿 강남역 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_005",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     122.0,
+     357.5
+    ],
+    [
+     320.0,
+     357.5
+    ],
+    [
+     320.0,
+     384.0
+    ],
+    [
+     122.0,
+     384.0
+    ]
+   ],
+   "bbox": [
+    122.0,
+    357.5,
+    320.0,
+    384.0
+   ],
+   "height": 26.5,
+   "small_text": false,
+   "text": "케미스트릿 강남역 페스티벌",
+   "text_key": "케미스트릿강남역페스티벌",
+   "ocr_text": "케미스트릿강남역페스티벌",
+   "confidence": 0.9675081372261047,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "케미스트릿 강남역 페스티벌",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_006",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     123.0,
+     391.5
+    ],
+    [
+     214.5,
+     391.5
+    ],
+    [
+     214.5,
+     411.5
+    ],
+    [
+     123.0,
+     411.5
+    ]
+   ],
+   "bbox": [
+    123.0,
+    391.5,
+    214.5,
+    411.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "09.05. SAT",
+   "text_key": "0905sat",
+   "ocr_text": "09.05.SAT",
+   "confidence": 0.8999597128369116,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "09.05. SAT & 09.06. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_007",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_007"
+   },
+   "polygon": [
+    [
+     227.0,
+     391.5
+    ],
+    [
+     320.5,
+     391.5
+    ],
+    [
+     320.5,
+     411.5
+    ],
+    [
+     227.0,
+     411.5
+    ]
+   ],
+   "bbox": [
+    227.0,
+    391.5,
+    320.5,
+    411.5
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "09.06. SUN",
+   "text_key": "0906sun",
+   "ocr_text": "09.06.SUN",
+   "confidence": 0.9961465803413411,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "09.05. SAT & 09.06. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_009",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     136.0,
+     410.0
+    ],
+    [
+     200.0,
+     410.0
+    ],
+    [
+     200.0,
+     423.0
+    ],
+    [
+     136.0,
+     423.0
+    ]
+   ],
+   "bbox": [
+    136.0,
+    410.0,
+    200.0,
+    423.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "19:00-24:00",
+   "text_key": "19002400",
+   "ocr_text": "19.00-24.00",
+   "confidence": 0.5848663760157585,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "19:00-24:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_010",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_010"
+   },
+   "polygon": [
+    [
+     242.0,
+     410.0
+    ],
+    [
+     306.0,
+     410.0
+    ],
+    [
+     306.0,
+     423.0
+    ],
+    [
+     242.0,
+     423.0
+    ]
+   ],
+   "bbox": [
+    242.0,
+    410.0,
+    306.0,
+    423.0
+   ],
+   "height": 13.0,
+   "small_text": false,
+   "text": "08:00-21:00",
+   "text_key": "08002100",
+   "ocr_text": "08.00-21.00",
+   "confidence": 0.6604333775855522,
+   "field": "schedule.times",
+   "field_group": "time",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.times"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "08:00-21:00",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_018",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_018"
+   },
+   "polygon": [
+    [
+     242.0,
+     601.0
+    ],
+    [
+     265.0,
+     601.0
+    ],
+    [
+     265.0,
+     613.0
+    ],
+    [
+     242.0,
+     613.0
+    ]
+   ],
+   "bbox": [
+    242.0,
+    601.0,
+    265.0,
+    613.0
+   ],
+   "height": 12.0,
+   "small_text": false,
+   "text": "서초",
+   "text_key": "서초",
+   "ocr_text": "서초",
+   "confidence": 0.4435924759020049,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "서초",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_019",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_019"
+   },
+   "polygon": [
+    [
+     312.01,
+     56.66
+    ],
+    [
+     361.21,
+     46.47
+    ],
+    [
+     364.49,
+     63.84
+    ],
+    [
+     315.29,
+     74.03
+    ]
+   ],
+   "bbox": [
+    312.01,
+    46.47,
+    364.49,
+    74.03
+   ],
+   "height": 17.68,
+   "small_text": false,
+   "text": "-STYLE",
+   "text_key": "style",
+   "ocr_text": "-STVLE",
+   "confidence": 0.8271755576133728,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.1667,
+   "gold_value": "K-STYLE",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-020.easy_rgb_2x_021",
+   "case_id": "v2-020",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_021"
+   },
+   "polygon": [
+    [
+     336.21,
+     99.52
+    ],
+    [
+     385.49,
+     120.35
+    ],
+    [
+     377.79,
+     137.48
+    ],
+    [
+     328.01,
+     116.65
+    ]
+   ],
+   "bbox": [
+    328.01,
+    99.52,
+    385.49,
+    137.48
+   ],
+   "height": 18.89,
+   "small_text": false,
+   "text": "-TASTE",
+   "text_key": "taste",
+   "ocr_text": "-TASTE",
+   "confidence": 0.749824047088623,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "K-TASTE",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

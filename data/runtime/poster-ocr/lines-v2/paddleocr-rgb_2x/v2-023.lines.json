@@ -1,0 +1,288 @@
+{
+ "case_id": "v2-023",
+ "split": "test",
+ "source": "paddleocr-rgb_2x",
+ "engine": "paddleocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 470,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 7,
+ "lines_matched": 5,
+ "records": [
+  {
+   "id": "v2-023.padd_rgb_2x_000",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     2.5,
+     0.0
+    ],
+    [
+     469.0,
+     0.0
+    ],
+    [
+     469.0,
+     117.5
+    ],
+    [
+     2.5,
+     117.5
+    ]
+   ],
+   "bbox": [
+    2.5,
+    0.0,
+    469.0,
+    117.5
+   ],
+   "height": 117.5,
+   "small_text": false,
+   "text": "누구세요?",
+   "text_key": "누구세요",
+   "ocr_text": "누구세요",
+   "confidence": 0.999158501625061,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "누구세요?",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_2x_001",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_001"
+   },
+   "polygon": [
+    [
+     131.5,
+     98.0
+    ],
+    [
+     201.5,
+     319.0
+    ],
+    [
+     177.5,
+     326.5
+    ],
+    [
+     107.0,
+     106.0
+    ]
+   ],
+   "bbox": [
+    107.0,
+    98.0,
+    201.5,
+    326.5
+   ],
+   "height": 25.46,
+   "small_text": false,
+   "text": "2026 서울국제작가축제",
+   "text_key": "2026서울국제작가축제",
+   "ocr_text": "2026 서울국제작가축제",
+   "confidence": 0.9672411680221558,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026 서울국제작가축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_2x_003",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     84.0,
+     114.0
+    ],
+    [
+     122.0,
+     237.5
+    ],
+    [
+     103.0,
+     243.5
+    ],
+    [
+     64.5,
+     119.5
+    ]
+   ],
+   "bbox": [
+    64.5,
+    114.0,
+    122.0,
+    243.5
+   ],
+   "height": 20.09,
+   "small_text": false,
+   "text": "9. 11. - 9. 16.",
+   "text_key": "911916",
+   "ocr_text": "9.11.-9.16.",
+   "confidence": 0.9879036545753479,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "9. 11. - 9. 16.",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_2x_004",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     63.0,
+     120.0
+    ],
+    [
+     153.5,
+     406.0
+    ],
+    [
+     130.0,
+     413.5
+    ],
+    [
+     39.0,
+     127.0
+    ]
+   ],
+   "bbox": [
+    39.0,
+    120.0,
+    153.5,
+    413.5
+   ],
+   "height": 24.83,
+   "small_text": false,
+   "text": "아라아트센터(Ara Art Center)",
+   "text_key": "아라아트센터araartcenter",
+   "ocr_text": "아라아트센터(Ara Art Center)",
+   "confidence": 0.9574215412139893,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "아라아트센터(Ara Art Center)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-023.padd_rgb_2x_005",
+   "case_id": "v2-023",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_2x",
+    "ocr_id": "padd_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     433.5,
+     298.5
+    ],
+    [
+     447.0,
+     298.5
+    ],
+    [
+     447.0,
+     367.0
+    ],
+    [
+     433.5,
+     367.0
+    ]
+   ],
+   "bbox": [
+    433.5,
+    298.5,
+    447.0,
+    367.0
+   ],
+   "height": 68.5,
+   "small_text": false,
+   "text": "SIWF.OR.KR",
+   "text_key": "siwforkr",
+   "ocr_text": "SIWEOR.KR",
+   "confidence": 0.9837836027145386,
+   "field": "links",
+   "field_group": "link",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "links"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.125,
+   "gold_value": "SIWF.OR.KR",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

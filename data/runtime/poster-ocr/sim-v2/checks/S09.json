@@ -1,0 +1,595 @@
+{
+ "set": "S09",
+ "checked_at": "2026-10-20T19:59:09+0900",
+ "variant": "rgb_1x",
+ "rules": "sim_check r4",
+ "document": {
+  "ocr_seconds": 54.478,
+  "lines": 55,
+  "size": [
+   1240,
+   1754
+  ],
+  "conditions": 10
+ },
+ "poster": {
+  "ocr_seconds": 35.39,
+  "lines": 17,
+  "size": [
+   886,
+   1254
+  ]
+ },
+ "results": [
+  {
+   "key": "title",
+   "label": "행사명",
+   "kind": "info",
+   "expected": "솔내 갯벌 생태 체험축제",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "솔내 / 갯벌 생태 체험축제",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_002",
+     "text": "솔내",
+     "confidence": 0.9999,
+     "bbox": [
+      348.0,
+      133.0,
+      535.0,
+      246.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_003",
+     "text": "갯벌",
+     "confidence": 0.9767,
+     "bbox": [
+      55.0,
+      252.0,
+      245.0,
+      365.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_004",
+     "text": "생태",
+     "confidence": 0.9998,
+     "bbox": [
+      255.0,
+      252.0,
+      446.0,
+      366.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_005",
+     "text": "체험축제",
+     "confidence": 0.9999,
+     "bbox": [
+      459.0,
+      253.0,
+      826.0,
+      364.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    55.0,
+    133.0,
+    826.0,
+    366.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제2회 솔내 갯벌 생태 체험축제",
+     "confidence": 0.9655,
+     "bbox": [
+      307.0,
+      674.0,
+      632.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    632.0,
+    707.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "edition",
+   "label": "회차",
+   "kind": "info",
+   "expected": "제2회",
+   "status": "pass",
+   "reason": "기준 회차와 같습니다.",
+   "observed": "2026 제2회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_000",
+     "text": "2026",
+     "confidence": 0.9995,
+     "bbox": [
+      356.0,
+      74.0,
+      442.0,
+      108.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_001",
+     "text": "제2회",
+     "confidence": 0.9998,
+     "bbox": [
+      441.0,
+      70.0,
+      529.0,
+      111.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    356.0,
+    70.0,
+    529.0,
+    111.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_024",
+     "text": "제2회 솔내 갯벌 생태 체험축제",
+     "confidence": 0.9655,
+     "bbox": [
+      307.0,
+      674.0,
+      632.0,
+      704.0
+     ]
+    }
+   ],
+   "source_box": [
+    89.0,
+    673.0,
+    632.0,
+    707.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "schedule",
+   "label": "행사 기간",
+   "kind": "info",
+   "expected": "2026.9. 24.(목) ~ 9.27.(일)",
+   "status": "pass",
+   "reason": "기준 기간과 같고 요일도 달력과 맞습니다.",
+   "observed": "일시 2026.9.24.(목)~9.27.(일)",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_009",
+     "text": "일시",
+     "confidence": 1.0,
+     "bbox": [
+      86.0,
+      814.0,
+      144.0,
+      850.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_010",
+     "text": "2026.9.24.(목)~9.27.(일)",
+     "confidence": 0.9991,
+     "bbox": [
+      196.0,
+      817.0,
+      579.0,
+      851.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    86.0,
+    814.0,
+    579.0,
+    851.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_027",
+     "text": "2026.9. 24.(목) ~ 9.27.(일)",
+     "confidence": 0.9297,
+     "bbox": [
+      309.0,
+      734.0,
+      598.0,
+      762.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    730.0,
+    598.0,
+    765.0
+   ],
+   "method": "포스터 9.24(목) ~ 9.27(일)"
+  },
+  {
+   "key": "time",
+   "label": "운영 시간",
+   "kind": "info",
+   "expected": "10:00~21:00",
+   "status": "pass",
+   "reason": "기준 운영 시간과 같습니다.",
+   "observed": "시간 10:00~21:00",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_011",
+     "text": "시간",
+     "confidence": 0.9999,
+     "bbox": [
+      85.0,
+      886.0,
+      147.0,
+      925.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_012",
+     "text": "10:00~21:00",
+     "confidence": 0.9964,
+     "bbox": [
+      200.0,
+      894.0,
+      394.0,
+      922.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    85.0,
+    886.0,
+    394.0,
+    925.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_030",
+     "text": "10:00~21:00",
+     "confidence": 0.9975,
+     "bbox": [
+      307.0,
+      792.0,
+      459.0,
+      821.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    789.0,
+    459.0,
+    824.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "venue",
+   "label": "행사 장소",
+   "kind": "info",
+   "expected": "솔내강변공원 일원",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "솔내강변공원 일원",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_013",
+     "text": "장소",
+     "confidence": 0.9994,
+     "bbox": [
+      84.0,
+      960.0,
+      147.0,
+      1000.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_014",
+     "text": "솔내강변공원 일원",
+     "confidence": 0.9985,
+     "bbox": [
+      198.0,
+      964.0,
+      438.0,
+      1000.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    84.0,
+    960.0,
+    438.0,
+    1000.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_032",
+     "text": "솔내강변공원 일원",
+     "confidence": 0.9951,
+     "bbox": [
+      309.0,
+      850.0,
+      504.0,
+      878.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    847.0,
+    504.0,
+    881.0
+   ],
+   "method": "'장소' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 100%"
+  },
+  {
+   "key": "host",
+   "label": "주최",
+   "kind": "info",
+   "expected": "솔내군",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "솔내군",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 솔내군 | 주관 솔내축제위원회 ㅣ 문의 033-000-7734",
+     "confidence": 0.9503,
+     "bbox": [
+      156.0,
+      1195.0,
+      729.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    156.0,
+    1195.0,
+    729.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_034",
+     "text": "솔내군",
+     "confidence": 0.9747,
+     "bbox": [
+      304.0,
+      904.0,
+      385.0,
+      940.0
+     ]
+    }
+   ],
+   "source_box": [
+    88.0,
+    900.0,
+    385.0,
+    944.0
+   ],
+   "method": "'주최' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "organizer",
+   "label": "주관",
+   "kind": "info",
+   "expected": "솔내축제위원회",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "솔내축제위원회",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 솔내군 | 주관 솔내축제위원회 ㅣ 문의 033-000-7734",
+     "confidence": 0.9503,
+     "bbox": [
+      156.0,
+      1195.0,
+      729.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    156.0,
+    1195.0,
+    729.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_036",
+     "text": "솔내축제위원회",
+     "confidence": 0.9995,
+     "bbox": [
+      309.0,
+      966.0,
+      473.0,
+      995.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    961.0,
+    473.0,
+    999.0
+   ],
+   "method": "'주관' 표기 옆 문구 · 문자 일치율 100% · 판독 신뢰도 95%"
+  },
+  {
+   "key": "contact",
+   "label": "문의처",
+   "kind": "info",
+   "expected": "033-000-7734",
+   "status": "pass",
+   "reason": "기준 문의처 번호와 같습니다.",
+   "observed": "033-000-7734",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_016",
+     "text": "주최 솔내군 | 주관 솔내축제위원회 ㅣ 문의 033-000-7734",
+     "confidence": 0.9503,
+     "bbox": [
+      156.0,
+      1195.0,
+      729.0,
+      1223.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    156.0,
+    1195.0,
+    729.0,
+    1223.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_038",
+     "text": "033-000-7734",
+     "confidence": 0.9997,
+     "bbox": [
+      307.0,
+      1025.0,
+      462.0,
+      1052.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1021.0,
+    462.0,
+    1057.0
+   ],
+   "method": ""
+  },
+  {
+   "key": "slogan",
+   "label": "필수 문구",
+   "kind": "info",
+   "expected": "바다가 준 선물",
+   "status": "pass",
+   "reason": "기준 문구가 포스터에 그대로 있습니다.",
+   "observed": "바다가 준 선물",
+   "evidence": [
+    {
+     "id": "padd_rgb_1x_006",
+     "text": "바다가",
+     "confidence": 0.9999,
+     "bbox": [
+      340.0,
+      388.0,
+      444.0,
+      427.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_007",
+     "text": "준",
+     "confidence": 0.9998,
+     "bbox": [
+      428.0,
+      390.0,
+      478.0,
+      426.0
+     ]
+    },
+    {
+     "id": "padd_rgb_1x_008",
+     "text": "선물",
+     "confidence": 0.9999,
+     "bbox": [
+      478.0,
+      389.0,
+      546.0,
+      427.0
+     ]
+    }
+   ],
+   "evidence_box": [
+    340.0,
+    388.0,
+    546.0,
+    427.0
+   ],
+   "source": [
+    {
+     "id": "padd_rgb_1x_041",
+     "text": "바다가 준 선물",
+     "confidence": 0.9502,
+     "bbox": [
+      307.0,
+      1078.0,
+      469.0,
+      1111.0
+     ]
+    }
+   ],
+   "source_box": [
+    91.0,
+    1078.0,
+    469.0,
+    1113.0
+   ],
+   "method": "문자 일치율 100%"
+  },
+  {
+   "key": "logo",
+   "label": "기관 로고",
+   "kind": "visual",
+   "expected": "주최·주관 기관 로고 하단 배치",
+   "status": "review",
+   "reason": "시각 조건은 담당자가 이미지에서 직접 확인합니다(이번 자동 검수 범위 밖).",
+   "observed": null,
+   "evidence": [],
+   "evidence_box": null,
+   "source": [
+    {
+     "id": "padd_rgb_1x_044",
+     "text": "주최·주관 기관 로고 하단 배치",
+     "confidence": 0.9687,
+     "bbox": [
+      310.0,
+      1140.0,
+      626.0,
+      1168.0
+     ]
+    }
+   ],
+   "source_box": [
+    90.0,
+    1136.0,
+    626.0,
+    1170.0
+   ],
+   "method": "시각 검수"
+  }
+ ],
+ "counts": {
+  "pass": 9,
+  "fail": 0,
+  "review": 1
+ },
+ "verdict": "pass",
+ "predicted_mismatch": false,
+ "check_seconds": 0.005
+}

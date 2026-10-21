@@ -1,0 +1,1415 @@
+{
+ "note": "dry-run 요청 본문(호출하지 않음)",
+ "estimate": {
+  "questions": 35,
+  "by_probe": {
+   "a": 8,
+   "b": 9,
+   "c": 9,
+   "d": 9
+  },
+  "options": 126,
+  "image_tokens": 3281,
+  "text_tokens": 6033,
+  "input_tokens": 9314,
+  "cost_usd": 0.0009314
+ },
+ "meta": {
+  "dataset": "v1",
+  "set": "S13",
+  "order": "shuffled",
+  "seed": 20261021,
+  "model": "gpt-6-luna",
+  "rules": "sim_check r4",
+  "images": {
+   "document": {
+    "path": "data/synthetic/poster-check-v1/documents/S13.png",
+    "sha256": "c61ba758530bd79c74070e496c7af5d6de28d2f637c026b3d5e5241d59d56729",
+    "bytes": 123500,
+    "size": [
+     1240,
+     1754
+    ]
+   },
+   "poster": {
+    "path": "data/synthetic/poster-check-v1/posters/S13.png",
+    "sha256": "218cb7ab44d78ed4ccf40ba90c579527a0b7718b52d3ac306435f009b7f2ef9a",
+    "bytes": 113938,
+    "size": [
+     886,
+     1254
+    ]
+   }
+  },
+  "items": {
+   "title": {
+    "cond": {
+     "key": "title",
+     "label": "행사명",
+     "kind": "info",
+     "expected": "가람 해맞이 불꽃 축제",
+     "doc_variants": []
+    },
+    "doc_raw": "제21회 가람 해맞이 불꽃 축제"
+   },
+   "edition": {
+    "cond": {
+     "key": "edition",
+     "label": "회차",
+     "kind": "info",
+     "expected": "제21회",
+     "number": 21
+    },
+    "doc_raw": "제21회"
+   },
+   "schedule": {
+    "cond": {
+     "key": "schedule",
+     "label": "행사 기간",
+     "kind": "info",
+     "expected": "2026.10.25.(일) ~ 10.28.(수)",
+     "points": [
+      [
+       2026,
+       10,
+       25,
+       "일"
+      ],
+      [
+       2026,
+       10,
+       28,
+       "수"
+      ]
+     ],
+     "year": 2026
+    },
+    "doc_raw": "2026.10.25.(일) ~ 10.28.(수)"
+   },
+   "time": {
+    "cond": {
+     "key": "time",
+     "label": "운영 시간",
+     "kind": "info",
+     "expected": "13:00~22:00"
+    },
+    "doc_raw": "13:00~22:00"
+   },
+   "venue": {
+    "cond": {
+     "key": "venue",
+     "label": "행사 장소",
+     "kind": "info",
+     "expected": "가람 문화예술회관 야외광장"
+    },
+    "doc_raw": "가람 문화예술회관 야외광장"
+   },
+   "host": {
+    "cond": {
+     "key": "host",
+     "label": "주최",
+     "kind": "info",
+     "expected": "가람시"
+    },
+    "doc_raw": "가람시"
+   },
+   "organizer": {
+    "cond": {
+     "key": "organizer",
+     "label": "주관",
+     "kind": "info",
+     "expected": "가람문화재단"
+    },
+    "doc_raw": "가람문화재단"
+   },
+   "contact": {
+    "cond": {
+     "key": "contact",
+     "label": "문의처",
+     "kind": "info",
+     "expected": "041-000-7069"
+    },
+    "doc_raw": "041-000-7069"
+   },
+   "slogan": {
+    "cond": {
+     "key": "slogan",
+     "label": "필수 문구",
+     "kind": "info",
+     "expected": "밤하늘을 수놓는 불꽃"
+    },
+    "doc_raw": "밤하늘을 수놓는 불꽃"
+   }
+  },
+  "rows": [
+   {
+    "value": "L411",
+    "index": 0,
+    "text": "2026 제21회",
+    "conf": 0.9441,
+    "records": [
+     {
+      "id": "padd_rgb_1x_000",
+      "text": "2026 제21회",
+      "confidence": 0.9440504908561707,
+      "bbox_xyxy": [
+       342.0,
+       304.0,
+       539.0,
+       350.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L139",
+    "index": 1,
+    "text": "가람",
+    "conf": 0.9998,
+    "records": [
+     {
+      "id": "padd_rgb_1x_001",
+      "text": "가람",
+      "confidence": 0.9998036623001099,
+      "bbox_xyxy": [
+       329.0,
+       381.0,
+       562.0,
+       522.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L911",
+    "index": 2,
+    "text": "해맞이 불꽃 축제",
+    "conf": 0.9993,
+    "records": [
+     {
+      "id": "padd_rgb_1x_002",
+      "text": "해맞이",
+      "confidence": 0.9999249577522278,
+      "bbox_xyxy": [
+       53.0,
+       537.0,
+       368.0,
+       668.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_003",
+      "text": "불꽃",
+      "confidence": 0.9994444251060486,
+      "bbox_xyxy": [
+       380.0,
+       536.0,
+       611.0,
+       671.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_004",
+      "text": "축제",
+      "confidence": 0.9992645978927612,
+      "bbox_xyxy": [
+       607.0,
+       532.0,
+       832.0,
+       673.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L455",
+    "index": 3,
+    "text": "밤하늘을 수놓는 불꽃",
+    "conf": 0.9885,
+    "records": [
+     {
+      "id": "padd_rgb_1x_005",
+      "text": "밤하늘을",
+      "confidence": 0.99989253282547,
+      "bbox_xyxy": [
+       304.0,
+       690.0,
+       427.0,
+       729.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_006",
+      "text": "수놓는",
+      "confidence": 0.9884607791900635,
+      "bbox_xyxy": [
+       422.0,
+       689.0,
+       525.0,
+       733.0
+      ]
+     },
+     {
+      "id": "padd_rgb_1x_007",
+      "text": "불꽃",
+      "confidence": 0.9989808797836304,
+      "bbox_xyxy": [
+       516.0,
+       690.0,
+       582.0,
+       729.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L871",
+    "index": 4,
+    "text": "10월 25일(일)~28일(수)",
+    "conf": 0.9724,
+    "records": [
+     {
+      "id": "padd_rgb_1x_008",
+      "text": "10월 25일(일)~28일(수)",
+      "confidence": 0.9723621606826782,
+      "bbox_xyxy": [
+       218.0,
+       792.0,
+       664.0,
+       849.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L238",
+    "index": 5,
+    "text": "13:00~22:00",
+    "conf": 0.9989,
+    "records": [
+     {
+      "id": "padd_rgb_1x_009",
+      "text": "13:00~22:00",
+      "confidence": 0.998889148235321,
+      "bbox_xyxy": [
+       343.0,
+       869.0,
+       542.0,
+       903.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L209",
+    "index": 6,
+    "text": "가람 문화예술회관 야외광장",
+    "conf": 0.9981,
+    "records": [
+     {
+      "id": "padd_rgb_1x_010",
+      "text": "가람 문화예술회관 야외광장",
+      "confidence": 0.9981152415275574,
+      "bbox_xyxy": [
+       246.0,
+       921.0,
+       639.0,
+       963.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L382",
+    "index": 7,
+    "text": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트",
+    "conf": 0.8961,
+    "records": [
+     {
+      "id": "padd_rgb_1x_011",
+      "text": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트",
+      "confidence": 0.8960980176925659,
+      "bbox_xyxy": [
+       245.0,
+       1009.0,
+       640.0,
+       1036.0
+      ]
+     }
+    ]
+   },
+   {
+    "value": "L732",
+    "index": 8,
+    "text": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069",
+    "conf": 0.9612,
+    "records": [
+     {
+      "id": "padd_rgb_1x_012",
+      "text": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069",
+      "confidence": 0.9612364172935486,
+      "bbox_xyxy": [
+       168.0,
+       1196.0,
+       717.0,
+       1219.0
+      ]
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "name": "a_doc_title",
+    "probe": "a",
+    "item": "title",
+    "value": "제21회 가람 해맞이 불꽃 축제"
+   },
+   {
+    "name": "a_doc_schedule",
+    "probe": "a",
+    "item": "schedule",
+    "value": "2026.10.25.(일) ~ 10.28.(수)"
+   },
+   {
+    "name": "a_doc_time",
+    "probe": "a",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "a_doc_venue",
+    "probe": "a",
+    "item": "venue",
+    "value": "가람 문화예술회관 야외광장"
+   },
+   {
+    "name": "a_doc_host",
+    "probe": "a",
+    "item": "host",
+    "value": "가람시"
+   },
+   {
+    "name": "a_doc_organizer",
+    "probe": "a",
+    "item": "organizer",
+    "value": "가람문화재단"
+   },
+   {
+    "name": "a_doc_contact",
+    "probe": "a",
+    "item": "contact",
+    "value": "041-000-7069"
+   },
+   {
+    "name": "a_doc_slogan",
+    "probe": "a",
+    "item": "slogan",
+    "value": "밤하늘을 수놓는 불꽃"
+   },
+   {
+    "name": "b_line_title",
+    "probe": "b",
+    "item": "title"
+   },
+   {
+    "name": "b_line_edition",
+    "probe": "b",
+    "item": "edition"
+   },
+   {
+    "name": "b_line_schedule",
+    "probe": "b",
+    "item": "schedule"
+   },
+   {
+    "name": "b_line_time",
+    "probe": "b",
+    "item": "time"
+   },
+   {
+    "name": "b_line_venue",
+    "probe": "b",
+    "item": "venue"
+   },
+   {
+    "name": "b_line_host",
+    "probe": "b",
+    "item": "host"
+   },
+   {
+    "name": "b_line_organizer",
+    "probe": "b",
+    "item": "organizer"
+   },
+   {
+    "name": "b_line_contact",
+    "probe": "b",
+    "item": "contact"
+   },
+   {
+    "name": "b_line_slogan",
+    "probe": "b",
+    "item": "slogan"
+   },
+   {
+    "name": "c_direct_title",
+    "probe": "c",
+    "item": "title",
+    "value": "가람 해맞이 불꽃 축제"
+   },
+   {
+    "name": "c_direct_edition",
+    "probe": "c",
+    "item": "edition",
+    "value": "제21회"
+   },
+   {
+    "name": "c_direct_schedule",
+    "probe": "c",
+    "item": "schedule",
+    "value": "2026.10.25.(일) ~ 10.28.(수)"
+   },
+   {
+    "name": "c_direct_time",
+    "probe": "c",
+    "item": "time",
+    "value": "13:00~22:00"
+   },
+   {
+    "name": "c_direct_venue",
+    "probe": "c",
+    "item": "venue",
+    "value": "가람 문화예술회관 야외광장"
+   },
+   {
+    "name": "c_direct_host",
+    "probe": "c",
+    "item": "host",
+    "value": "가람시"
+   },
+   {
+    "name": "c_direct_organizer",
+    "probe": "c",
+    "item": "organizer",
+    "value": "가람문화재단"
+   },
+   {
+    "name": "c_direct_contact",
+    "probe": "c",
+    "item": "contact",
+    "value": "041-000-7069"
+   },
+   {
+    "name": "c_direct_slogan",
+    "probe": "c",
+    "item": "slogan",
+    "value": "밤하늘을 수놓는 불꽃"
+   },
+   {
+    "name": "d_legible_title",
+    "probe": "d",
+    "item": "title"
+   },
+   {
+    "name": "d_legible_edition",
+    "probe": "d",
+    "item": "edition"
+   },
+   {
+    "name": "d_legible_schedule",
+    "probe": "d",
+    "item": "schedule"
+   },
+   {
+    "name": "d_legible_time",
+    "probe": "d",
+    "item": "time"
+   },
+   {
+    "name": "d_legible_venue",
+    "probe": "d",
+    "item": "venue"
+   },
+   {
+    "name": "d_legible_host",
+    "probe": "d",
+    "item": "host"
+   },
+   {
+    "name": "d_legible_organizer",
+    "probe": "d",
+    "item": "organizer"
+   },
+   {
+    "name": "d_legible_contact",
+    "probe": "d",
+    "item": "contact"
+   },
+   {
+    "name": "d_legible_slogan",
+    "probe": "d",
+    "item": "slogan"
+   }
+  ],
+  "choice_order": {
+   "b_line_title": [
+    "L455",
+    "L871",
+    "L411",
+    "L911",
+    "L209",
+    "L238",
+    "L382",
+    "L732",
+    "L139",
+    "none"
+   ],
+   "b_line_edition": [
+    "L139",
+    "L911",
+    "L871",
+    "L455",
+    "L238",
+    "L732",
+    "L411",
+    "L209",
+    "L382",
+    "none"
+   ],
+   "b_line_schedule": [
+    "L411",
+    "L209",
+    "L139",
+    "L911",
+    "L238",
+    "L732",
+    "L382",
+    "L455",
+    "L871",
+    "none"
+   ],
+   "b_line_time": [
+    "L209",
+    "L732",
+    "L871",
+    "L382",
+    "L455",
+    "L411",
+    "L238",
+    "L139",
+    "L911",
+    "none"
+   ],
+   "b_line_venue": [
+    "L209",
+    "L139",
+    "L382",
+    "L238",
+    "L911",
+    "L732",
+    "L455",
+    "L411",
+    "L871",
+    "none"
+   ],
+   "b_line_host": [
+    "L382",
+    "L139",
+    "L209",
+    "L732",
+    "L911",
+    "L238",
+    "L411",
+    "L455",
+    "L871",
+    "none"
+   ],
+   "b_line_organizer": [
+    "L455",
+    "L238",
+    "L732",
+    "L139",
+    "L209",
+    "L411",
+    "L911",
+    "L871",
+    "L382",
+    "none"
+   ],
+   "b_line_contact": [
+    "L382",
+    "L911",
+    "L732",
+    "L139",
+    "L411",
+    "L209",
+    "L455",
+    "L871",
+    "L238",
+    "none"
+   ],
+   "b_line_slogan": [
+    "L455",
+    "L411",
+    "L871",
+    "L911",
+    "L139",
+    "L382",
+    "L732",
+    "L209",
+    "L238",
+    "none"
+   ]
+  }
+ },
+ "body": {
+  "model": "gpt-6-luna",
+  "input": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "input_text",
+      "text": "이미지 1은 축제 포스터 디자인 용역 계약서의 '표기 사항' 표(기준 문서)이고, 이미지 2는 그 계약으로 만든 포스터다. 둘 다 실험용 가상 자료다. 각 문항은 이미지에 보이는 글자만 근거로 답한다. 맞춤법이 틀려 보이거나 흔하지 않은 낱말이어도 고쳐 읽지 말고 보이는 글자 그대로 판단한다."
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 1 — 기준 문서"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 123,500 bytes, sha256 c61ba758530bd79c…>",
+      "detail": "original"
+     },
+     {
+      "type": "input_text",
+      "text": "이미지 2 — 포스터"
+     },
+     {
+      "type": "input_image",
+      "image_url": "data:image/png;base64,<생략: 113,938 bytes, sha256 218cb7ab44d78ed4…>",
+      "detail": "original"
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "type": "predicate",
+    "name": "a_doc_title",
+    "instructions": "기준 문서(이미지 1) 표의 '행사명' 칸에 다음 값이 그대로 적혀 있다: '제21회 가람 해맞이 불꽃 축제'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_schedule",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 기간' 칸에 다음 값이 그대로 적혀 있다: '2026.10.25.(일) ~ 10.28.(수)'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_time",
+    "instructions": "기준 문서(이미지 1) 표의 '운영 시간' 칸에 다음 값이 그대로 적혀 있다: '13:00~22:00'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_venue",
+    "instructions": "기준 문서(이미지 1) 표의 '행사 장소' 칸에 다음 값이 그대로 적혀 있다: '가람 문화예술회관 야외광장'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_host",
+    "instructions": "기준 문서(이미지 1) 표의 '주최' 칸에 다음 값이 그대로 적혀 있다: '가람시'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_organizer",
+    "instructions": "기준 문서(이미지 1) 표의 '주관' 칸에 다음 값이 그대로 적혀 있다: '가람문화재단'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_contact",
+    "instructions": "기준 문서(이미지 1) 표의 '문의처' 칸에 다음 값이 그대로 적혀 있다: '041-000-7069'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "a_doc_slogan",
+    "instructions": "기준 문서(이미지 1) 표의 '필수 문구' 칸에 다음 값이 그대로 적혀 있다: '밤하늘을 수놓는 불꽃'. 띄어쓰기·줄바꿈 차이는 무시하고, 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_title",
+    "choices": [
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_edition",
+    "choices": [
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_schedule",
+    "choices": [
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_time",
+    "choices": [
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_venue",
+    "choices": [
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_host",
+    "choices": [
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_organizer",
+    "choices": [
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_contact",
+    "choices": [
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "choice",
+    "name": "b_line_slogan",
+    "choices": [
+     {
+      "value": "L455",
+      "description": "밤하늘을 수놓는 불꽃"
+     },
+     {
+      "value": "L411",
+      "description": "2026 제21회"
+     },
+     {
+      "value": "L871",
+      "description": "10월 25일(일)~28일(수)"
+     },
+     {
+      "value": "L911",
+      "description": "해맞이 불꽃 축제"
+     },
+     {
+      "value": "L139",
+      "description": "가람"
+     },
+     {
+      "value": "L382",
+      "description": "불꽃 쇼· 소원 등 날리기 · 해변 콘서트"
+     },
+     {
+      "value": "L732",
+      "description": "주최 가람시 |주관 가람문화재단 |문의 041-000-7069"
+     },
+     {
+      "value": "L209",
+      "description": "가람 문화예술회관 야외광장"
+     },
+     {
+      "value": "L238",
+      "description": "13:00~22:00"
+     },
+     {
+      "value": "none",
+      "description": "해당 줄 없음(이 항목을 나타내는 줄이 보기에 없다)"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 항목을 나타내는 줄을 고른다. 보기는 포스터를 OCR로 읽은 줄이라 글자가 틀려 있을 수 있으니 포스터에서 그 줄이 무엇을 나타내는지를 보고 고른다. '장소'·'주최' 같은 라벨이 있든 없든 상관없다. 여러 줄에 나뉘어 있으면 가장 많은 부분을 담은 줄을 고르고, 그런 줄이 없으면 '해당 줄 없음'을 고른다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_title",
+    "instructions": "포스터(이미지 2)에 다음 행사명 표기가 그대로 나와 있다: '가람 해맞이 불꽃 축제'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_edition",
+    "instructions": "포스터(이미지 2)에 다음 회차 표기가 그대로 나와 있다: '제21회'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_schedule",
+    "instructions": "포스터(이미지 2)에 다음 행사 기간 표기가 그대로 나와 있다: '2026.10.25.(일) ~ 10.28.(수)'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_time",
+    "instructions": "포스터(이미지 2)에 다음 운영 시간 표기가 그대로 나와 있다: '13:00~22:00'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_venue",
+    "instructions": "포스터(이미지 2)에 다음 행사 장소 표기가 그대로 나와 있다: '가람 문화예술회관 야외광장'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_host",
+    "instructions": "포스터(이미지 2)에 다음 주최 표기가 그대로 나와 있다: '가람시'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_organizer",
+    "instructions": "포스터(이미지 2)에 다음 주관 표기가 그대로 나와 있다: '가람문화재단'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_contact",
+    "instructions": "포스터(이미지 2)에 다음 문의처 표기가 그대로 나와 있다: '041-000-7069'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "predicate",
+    "name": "c_direct_slogan",
+    "instructions": "포스터(이미지 2)에 다음 필수 문구 표기가 그대로 나와 있다: '밤하늘을 수놓는 불꽃'. 띄어쓰기·줄바꿈, 라벨 유무, 날짜·시각 표기 형식(예: '2026. 1. 2.(금)'와 '1월 2일(금)', '9:00'과 '09:00') 차이는 같은 것으로 본다. 글자나 숫자가 하나라도 다르면 거짓이다."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_title",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사명(축제 이름) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_edition",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 회차(제○회) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_schedule",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 기간(날짜) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_time",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 운영 시간(시각) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_venue",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 행사 장소 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_host",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주최 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_organizer",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 주관 기관 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_contact",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 문의 전화번호 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   },
+   {
+    "type": "score",
+    "name": "d_legible_slogan",
+    "levels": [
+     {
+      "label": "판독 불가",
+      "description": "이 항목 표기가 없거나 글자를 알아볼 수 없다"
+     },
+     {
+      "label": "일부 판독",
+      "description": "일부 글자만 확실하게 읽힌다"
+     },
+     {
+      "label": "대체로 판독",
+      "description": "대부분 읽히지만 한두 글자가 확실하지 않다"
+     },
+     {
+      "label": "완전 판독",
+      "description": "모든 글자가 또렷하게 읽힌다"
+     }
+    ],
+    "instructions": "포스터(이미지 2)에서 필수 문구(슬로건) 표기의 글자를 판독할 수 있는 정도를 고른다(낮은 등급부터 높은 등급 순)."
+   }
+  ]
+ }
+}

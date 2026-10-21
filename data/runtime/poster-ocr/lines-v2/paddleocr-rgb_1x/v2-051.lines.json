@@ -1,0 +1,504 @@
+{
+ "case_id": "v2-051",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 447,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 14,
+ "lines_matched": 9,
+ "records": [
+  {
+   "id": "v2-051.padd_rgb_1x_000",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_000"
+   },
+   "polygon": [
+    [
+     140.0,
+     125.0
+    ],
+    [
+     257.0,
+     99.0
+    ],
+    [
+     264.0,
+     127.0
+    ],
+    [
+     146.0,
+     153.0
+    ]
+   ],
+   "bbox": [
+    140.0,
+    99.0,
+    264.0,
+    153.0
+   ],
+   "height": 28.75,
+   "small_text": false,
+   "text": "상상 그 이상! 함께",
+   "text_key": "상상그이상함께",
+   "ocr_text": "상상고이상! 함께",
+   "confidence": 0.8492717742919922,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2308,
+   "gold_value": "상상 그 이상! 함께 MAKE IT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_001",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_001"
+   },
+   "polygon": [
+    [
+     95.0,
+     163.0
+    ],
+    [
+     314.0,
+     96.0
+    ],
+    [
+     344.0,
+     191.0
+    ],
+    [
+     125.0,
+     258.0
+    ]
+   ],
+   "bbox": [
+    95.0,
+    96.0,
+    344.0,
+    258.0
+   ],
+   "height": 99.62,
+   "small_text": false,
+   "text": "MAKE",
+   "text_key": "make",
+   "ocr_text": "MAKE",
+   "confidence": 0.9967911839485168,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.2308,
+   "gold_value": "상상 그 이상! 함께 MAKE IT",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_005",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     64.0,
+     456.0
+    ],
+    [
+     122.0,
+     456.0
+    ],
+    [
+     122.0,
+     480.0
+    ],
+    [
+     64.0,
+     480.0
+    ]
+   ],
+   "bbox": [
+    64.0,
+    456.0,
+    122.0,
+    480.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9992967247962952,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "2026 대구메이커페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_006",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     65.0,
+     479.0
+    ],
+    [
+     381.0,
+     481.0
+    ],
+    [
+     381.0,
+     525.0
+    ],
+    [
+     65.0,
+     523.0
+    ]
+   ],
+   "bbox": [
+    65.0,
+    479.0,
+    381.0,
+    525.0
+   ],
+   "height": 44.0,
+   "small_text": false,
+   "text": "대구메이커페스타",
+   "text_key": "대구메이커페스타",
+   "ocr_text": "대구메이커페스타",
+   "confidence": 0.9903426766395569,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대구메이커페스타",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_007",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     81.0,
+     540.0
+    ],
+    [
+     160.0,
+     542.0
+    ],
+    [
+     159.0,
+     566.0
+    ],
+    [
+     81.0,
+     564.0
+    ]
+   ],
+   "bbox": [
+    81.0,
+    540.0,
+    160.0,
+    566.0
+   ],
+   "height": 24.01,
+   "small_text": false,
+   "text": "9.19(토)",
+   "text_key": "919토",
+   "ocr_text": "9.19(토)",
+   "confidence": 0.9894952774047852,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.19(토) - 20(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_008",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     172.0,
+     543.0
+    ],
+    [
+     224.0,
+     543.0
+    ],
+    [
+     224.0,
+     565.0
+    ],
+    [
+     172.0,
+     565.0
+    ]
+   ],
+   "bbox": [
+    172.0,
+    543.0,
+    224.0,
+    565.0
+   ],
+   "height": 22.0,
+   "small_text": false,
+   "text": "20(일)",
+   "text_key": "20일",
+   "ocr_text": "20(일)",
+   "confidence": 0.9879758954048157,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "9.19(토) - 20(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_009",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     228.0,
+     549.0
+    ],
+    [
+     363.0,
+     550.0
+    ],
+    [
+     363.0,
+     566.0
+    ],
+    [
+     227.0,
+     565.0
+    ]
+   ],
+   "bbox": [
+    227.0,
+    549.0,
+    363.0,
+    566.0
+   ],
+   "height": 16.02,
+   "small_text": false,
+   "text": "대구삼성창조캠퍼스 일원",
+   "text_key": "대구삼성창조캠퍼스일원",
+   "ocr_text": "대구삼성창조캠퍼스 일원",
+   "confidence": 0.9568930268287659,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대구삼성창조캠퍼스 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_012",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_012"
+   },
+   "polygon": [
+    [
+     216.0,
+     606.0
+    ],
+    [
+     258.0,
+     606.0
+    ],
+    [
+     258.0,
+     616.0
+    ],
+    [
+     216.0,
+     616.0
+    ]
+   ],
+   "bbox": [
+    216.0,
+    606.0,
+    258.0,
+    616.0
+   ],
+   "height": 10.0,
+   "small_text": false,
+   "text": "대구광역시",
+   "text_key": "대구광역시",
+   "ocr_text": "대구광역시교속항",
+   "confidence": 0.7139463424682617,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "C_partial",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "대구광역시",
+   "extra_chars": 3,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-051.padd_rgb_1x_013",
+   "case_id": "v2-051",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_013"
+   },
+   "polygon": [
+    [
+     270.0,
+     606.0
+    ],
+    [
+     322.0,
+     606.0
+    ],
+    [
+     322.0,
+     617.0
+    ],
+    [
+     270.0,
+     617.0
+    ]
+   ],
+   "bbox": [
+    270.0,
+    606.0,
+    322.0,
+    617.0
+   ],
+   "height": 11.0,
+   "small_text": false,
+   "text": "매일신문",
+   "text_key": "매일신문",
+   "ocr_text": "©매일신문",
+   "confidence": 0.9154547452926636,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "매일신문",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "case_id": "v2-093",
+ "split": "test",
+ "source": "easyocr-rgb_2x",
+ "engine": "easyocr",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 455,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 7,
+ "lines_matched": 4,
+ "records": [
+  {
+   "id": "v2-093.easy_rgb_2x_000",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     223.0,
+     18.0
+    ],
+    [
+     439.0,
+     18.0
+    ],
+    [
+     439.0,
+     42.0
+    ],
+    [
+     223.0,
+     42.0
+    ]
+   ],
+   "bbox": [
+    223.0,
+    18.0,
+    439.0,
+    42.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "text_key": "2026103토104일",
+   "ocr_text": "2026.10. 3 (토) ~ I0 4 (일)",
+   "confidence": 0.4723858777748672,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0833,
+   "gold_value": "2026. 10. 3.(토) ~ 10. 4.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-093.easy_rgb_2x_002",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_002"
+   },
+   "polygon": [
+    [
+     325.0,
+     40.0
+    ],
+    [
+     400.0,
+     40.0
+    ],
+    [
+     400.0,
+     65.0
+    ],
+    [
+     325.0,
+     65.0
+    ]
+   ],
+   "bbox": [
+    325.0,
+    40.0,
+    400.0,
+    65.0
+   ],
+   "height": 25.0,
+   "small_text": false,
+   "text": "태백시청",
+   "text_key": "태백시청",
+   "ocr_text": "태백시청",
+   "confidence": 0.8578169600380763,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "태백시청 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-093.easy_rgb_2x_003",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_003"
+   },
+   "polygon": [
+    [
+     20.5,
+     111.5
+    ],
+    [
+     438.5,
+     111.5
+    ],
+    [
+     438.5,
+     153.5
+    ],
+    [
+     20.5,
+     153.5
+    ]
+   ],
+   "bbox": [
+    20.5,
+    111.5,
+    438.5,
+    153.5
+   ],
+   "height": 42.0,
+   "small_text": false,
+   "text": "상생과 화합의 태백시민 대잔치",
+   "text_key": "상생과화합의태백시민대잔치",
+   "ocr_text": "상생과 화합의 태백시민 대잔",
+   "confidence": 0.5641547534236295,
+   "field": "slogans",
+   "field_group": "slogan",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "slogans"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0769,
+   "gold_value": "상생과 화합의 태백시민 대잔치",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-093.easy_rgb_2x_006",
+   "case_id": "v2-093",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "easyocr",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     401.51,
+     33.03
+    ],
+    [
+     455,
+     47.26
+    ],
+    [
+     448.99,
+     75.47
+    ],
+    [
+     393.08,
+     61.24
+    ]
+   ],
+   "bbox": [
+    393.08,
+    33.03,
+    455,
+    75.47
+   ],
+   "height": 29.14,
+   "small_text": false,
+   "text": "일원",
+   "text_key": "일원",
+   "ocr_text": "'일원 / '",
+   "confidence": 0.6669758283796918,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "태백시청 일원",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

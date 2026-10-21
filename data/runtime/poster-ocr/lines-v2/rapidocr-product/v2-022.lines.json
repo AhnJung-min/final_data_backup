@@ -1,0 +1,181 @@
+{
+ "case_id": "v2-022",
+ "split": "test",
+ "source": "rapidocr-product",
+ "engine": "rapidocr",
+ "variant": "product",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 5,
+ "lines_matched": 3,
+ "records": [
+  {
+   "id": "v2-022.rapi_product_001",
+   "case_id": "v2-022",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_001"
+   },
+   "polygon": [
+    [
+     165.0,
+     70.0
+    ],
+    [
+     280.0,
+     73.0
+    ],
+    [
+     279.0,
+     121.0
+    ],
+    [
+     164.0,
+     119.0
+    ]
+   ],
+   "bbox": [
+    164.0,
+    70.0,
+    280.0,
+    121.0
+   ],
+   "height": 48.51,
+   "small_text": false,
+   "text": "덕수궁",
+   "text_key": "덕수궁",
+   "ocr_text": "덕수궁",
+   "confidence": 0.97422,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "덕수궁 밤의 석조전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-022.rapi_product_002",
+   "case_id": "v2-022",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_002"
+   },
+   "polygon": [
+    [
+     73.0,
+     106.0
+    ],
+    [
+     369.0,
+     106.0
+    ],
+    [
+     369.0,
+     185.0
+    ],
+    [
+     73.0,
+     185.0
+    ]
+   ],
+   "bbox": [
+    73.0,
+    106.0,
+    369.0,
+    185.0
+   ],
+   "height": 79.0,
+   "small_text": false,
+   "text": "밤의 석조전",
+   "text_key": "밤의석조전",
+   "ocr_text": "밤의석조전",
+   "confidence": 0.9994,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "덕수궁 밤의 석조전",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-022.rapi_product_003",
+   "case_id": "v2-022",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "rapidocr",
+    "variant": "product",
+    "ocr_id": "rapi_product_003"
+   },
+   "polygon": [
+    [
+     108.0,
+     182.0
+    ],
+    [
+     336.0,
+     180.0
+    ],
+    [
+     337.0,
+     208.0
+    ],
+    [
+     108.0,
+     209.0
+    ]
+   ],
+   "bbox": [
+    108.0,
+    180.0,
+    337.0,
+    209.0
+   ],
+   "height": 27.51,
+   "small_text": false,
+   "text": "2026. 9. 9. WED - 10. 18. SUN",
+   "text_key": "202699wed1018sun",
+   "ocr_text": "2026.9.9. WED-10. 18. SUN",
+   "confidence": 0.88243,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "2026. 9. 9. WED - 10. 18. SUN",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

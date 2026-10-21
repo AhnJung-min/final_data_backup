@@ -1,0 +1,341 @@
+{
+ "case_id": "v2-175",
+ "split": "dev",
+ "source": "hybrid-rgb_2x",
+ "engine": "hybrid",
+ "variant": "rgb_2x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 454,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 15,
+ "lines_matched": 6,
+ "records": [
+  {
+   "id": "v2-175.easy_rgb_2x_000",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_000"
+   },
+   "polygon": [
+    [
+     84.0,
+     23.5
+    ],
+    [
+     284.5,
+     23.5
+    ],
+    [
+     284.5,
+     88.0
+    ],
+    [
+     84.0,
+     88.0
+    ]
+   ],
+   "bbox": [
+    84.0,
+    23.5,
+    284.5,
+    88.0
+   ],
+   "height": 64.5,
+   "small_text": false,
+   "text": "2026 원주",
+   "text_key": "2026원주",
+   "ocr_text": "2026원주",
+   "confidence": 0.7360514846509334,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "2026 원주 만두 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.easy_rgb_2x_004",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_004"
+   },
+   "polygon": [
+    [
+     27.5,
+     504.5
+    ],
+    [
+     299.5,
+     504.5
+    ],
+    [
+     299.5,
+     550.5
+    ],
+    [
+     27.5,
+     550.5
+    ]
+   ],
+   "bbox": [
+    27.5,
+    504.5,
+    299.5,
+    550.5
+   ],
+   "height": 46.0,
+   "small_text": false,
+   "text": "10.23.(금) - 10.",
+   "text_key": "1023금10",
+   "ocr_text": "10.23 (금) - 10",
+   "confidence": 0.9097110087068488,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.23.(금) - 10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.easy_rgb_2x_005",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_005"
+   },
+   "polygon": [
+    [
+     299.5,
+     505.5
+    ],
+    [
+     429.5,
+     505.5
+    ],
+    [
+     429.5,
+     551.5
+    ],
+    [
+     299.5,
+     551.5
+    ]
+   ],
+   "bbox": [
+    299.5,
+    505.5,
+    429.5,
+    551.5
+   ],
+   "height": 46.0,
+   "small_text": false,
+   "text": "25.(일)",
+   "text_key": "25일",
+   "ocr_text": "25 (일)",
+   "confidence": 0.8421269019509504,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0,
+   "gold_value": "10.23.(금) - 10.25.(일)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.easy_rgb_2x_006",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_006"
+   },
+   "polygon": [
+    [
+     28.5,
+     550.5
+    ],
+    [
+     426.5,
+     550.5
+    ],
+    [
+     426.5,
+     584.5
+    ],
+    [
+     28.5,
+     584.5
+    ]
+   ],
+   "bbox": [
+    28.5,
+    550.5,
+    426.5,
+    584.5
+   ],
+   "height": 34.0,
+   "small_text": false,
+   "text": "중앙동 전통시장 일원 (원주천 및 문화의거리 일원)",
+   "text_key": "중앙동전통시장일원원주천및문화의거리일원",
+   "ocr_text": "중앙동 전통시장일원(원주천 및 문화의거리일원)",
+   "confidence": 0.8770939707756042,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "중앙동 전통시장 일원 (원주천 및 문화의거리 일원)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.easy_rgb_2x_009",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_009"
+   },
+   "polygon": [
+    [
+     206.5,
+     597.5
+    ],
+    [
+     234.5,
+     597.5
+    ],
+    [
+     234.5,
+     606.5
+    ],
+    [
+     206.5,
+     606.5
+    ]
+   ],
+   "bbox": [
+    206.5,
+    597.5,
+    234.5,
+    606.5
+   ],
+   "height": 9.0,
+   "small_text": true,
+   "text": "신한은행",
+   "text_key": "신한은행",
+   "ocr_text": "신현은행",
+   "confidence": 0.5140063166618347,
+   "field": "organizations.logo",
+   "field_group": "organization",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "organizations.logo"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.25,
+   "gold_value": "신한은행",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-175.easy_rgb_2x_013",
+   "case_id": "v2-175",
+   "split": "dev",
+   "ocr_ref": {
+    "engine": "hybrid",
+    "variant": "rgb_2x",
+    "ocr_id": "easy_rgb_2x_013"
+   },
+   "polygon": [
+    [
+     74.95,
+     50.51
+    ],
+    [
+     239.0,
+     82.22
+    ],
+    [
+     217.55,
+     171.99
+    ],
+    [
+     53.0,
+     140.28
+    ]
+   ],
+   "bbox": [
+    53.0,
+    50.51,
+    239.0,
+    171.99
+   ],
+   "height": 92.36,
+   "small_text": false,
+   "text": "만",
+   "text_key": "만",
+   "ocr_text": "만",
+   "confidence": 0.7035711407661438,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.3,
+   "gold_value": "2026 원주 만두 축제",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}

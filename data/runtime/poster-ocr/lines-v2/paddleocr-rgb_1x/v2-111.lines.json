@@ -1,0 +1,453 @@
+{
+ "case_id": "v2-111",
+ "split": "test",
+ "source": "paddleocr-rgb_1x",
+ "engine": "paddleocr",
+ "variant": "rgb_1x",
+ "gold": "gold-v2h",
+ "image": {
+  "width": 443,
+  "height": 627
+ },
+ "coordinate_space": "normalized_original_pixels",
+ "lines_total": 30,
+ "lines_matched": 8,
+ "records": [
+  {
+   "id": "v2-111.padd_rgb_1x_002",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_002"
+   },
+   "polygon": [
+    [
+     133.0,
+     54.0
+    ],
+    [
+     191.0,
+     54.0
+    ],
+    [
+     191.0,
+     78.0
+    ],
+    [
+     133.0,
+     78.0
+    ]
+   ],
+   "bbox": [
+    133.0,
+    54.0,
+    191.0,
+    78.0
+   ],
+   "height": 24.0,
+   "small_text": false,
+   "text": "2026",
+   "text_key": "2026",
+   "ocr_text": "2026",
+   "confidence": 0.9989118576049805,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": true,
+   "fields": [
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.027,
+   "gold_value": "2026 GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_1x_003",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_003"
+   },
+   "polygon": [
+    [
+     179.0,
+     52.0
+    ],
+    [
+     310.0,
+     55.0
+    ],
+    [
+     309.0,
+     83.0
+    ],
+    [
+     179.0,
+     79.0
+    ]
+   ],
+   "bbox": [
+    179.0,
+    52.0,
+    310.0,
+    83.0
+   ],
+   "height": 27.51,
+   "small_text": false,
+   "text": "6 GWANGJU",
+   "text_key": "6gwangju",
+   "ocr_text": "5 GWANGJU",
+   "confidence": 0.9563668370246887,
+   "field": "title.raw",
+   "field_group": "title",
+   "human_checked": false,
+   "tier": "B_edge_missing",
+   "line_correct": false,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.027,
+   "gold_value": "2026 GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_1x_004",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_004"
+   },
+   "polygon": [
+    [
+     35.0,
+     75.0
+    ],
+    [
+     417.0,
+     89.0
+    ],
+    [
+     415.0,
+     140.0
+    ],
+    [
+     33.0,
+     126.0
+    ]
+   ],
+   "bbox": [
+    33.0,
+    75.0,
+    417.0,
+    140.0
+   ],
+   "height": 51.04,
+   "small_text": false,
+   "text": "SOUNDPARK FESTIVAL",
+   "text_key": "soundparkfestival",
+   "ocr_text": "SOUNDPARK FESTIVAL",
+   "confidence": 0.9921493530273438,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0303,
+   "gold_value": "GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_1x_005",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_005"
+   },
+   "polygon": [
+    [
+     127.0,
+     129.0
+    ],
+    [
+     287.0,
+     136.0
+    ],
+    [
+     286.0,
+     170.0
+    ],
+    [
+     125.0,
+     163.0
+    ]
+   ],
+   "bbox": [
+    125.0,
+    129.0,
+    287.0,
+    170.0
+   ],
+   "height": 34.04,
+   "small_text": false,
+   "text": "× PEAKMUSIC",
+   "text_key": "peakmusic",
+   "ocr_text": "× PEAKMUSIC",
+   "confidence": 0.9403876662254333,
+   "field": "title.official",
+   "field_group": "title",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "title.official",
+    "title.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0303,
+   "gold_value": "GWANGJU SOUNDPARK FESTIVAL × PEAKMUSIC",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_1x_006",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_006"
+   },
+   "polygon": [
+    [
+     123.0,
+     212.0
+    ],
+    [
+     228.0,
+     212.0
+    ],
+    [
+     228.0,
+     232.0
+    ],
+    [
+     123.0,
+     232.0
+    ]
+   ],
+   "bbox": [
+    123.0,
+    212.0,
+    228.0,
+    232.0
+   ],
+   "height": 20.0,
+   "small_text": false,
+   "text": "광주음악창작소",
+   "text_key": "광주음악창작소",
+   "ocr_text": "광주음악참작소",
+   "confidence": 0.9654983282089233,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": false,
+   "fields": [
+    "venue.raw",
+    "organizations.logo"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "광주음악창작소 피크뮤직홀",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_1x_007",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_007"
+   },
+   "polygon": [
+    [
+     224.0,
+     214.0
+    ],
+    [
+     301.0,
+     214.0
+    ],
+    [
+     301.0,
+     231.0
+    ],
+    [
+     224.0,
+     231.0
+    ]
+   ],
+   "bbox": [
+    224.0,
+    214.0,
+    301.0,
+    231.0
+   ],
+   "height": 17.0,
+   "small_text": false,
+   "text": "피크뮤직홀",
+   "text_key": "피크뮤직홀",
+   "ocr_text": "피크뮤직홀",
+   "confidence": 0.9907177090644836,
+   "field": "venue.raw",
+   "field_group": "venue",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "venue.raw"
+   ],
+   "match_kind": "multi",
+   "value_cer": 0.0833,
+   "gold_value": "광주음악창작소 피크뮤직홀",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_1x_008",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_008"
+   },
+   "polygon": [
+    [
+     102.0,
+     238.0
+    ],
+    [
+     225.0,
+     238.0
+    ],
+    [
+     225.0,
+     276.0
+    ],
+    [
+     102.0,
+     276.0
+    ]
+   ],
+   "bbox": [
+    102.0,
+    238.0,
+    225.0,
+    276.0
+   ],
+   "height": 38.0,
+   "small_text": false,
+   "text": "10.9(금)",
+   "text_key": "109금",
+   "ocr_text": "10.9(금)",
+   "confidence": 0.9841234087944031,
+   "field": "schedule.raw",
+   "field_group": "schedule",
+   "human_checked": true,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "schedule.raw"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "10.9(금)",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  },
+  {
+   "id": "v2-111.padd_rgb_1x_009",
+   "case_id": "v2-111",
+   "split": "test",
+   "ocr_ref": {
+    "engine": "paddleocr",
+    "variant": "rgb_1x",
+    "ocr_id": "padd_rgb_1x_009"
+   },
+   "polygon": [
+    [
+     234.0,
+     237.0
+    ],
+    [
+     322.0,
+     237.0
+    ],
+    [
+     322.0,
+     276.0
+    ],
+    [
+     234.0,
+     276.0
+    ]
+   ],
+   "bbox": [
+    234.0,
+    237.0,
+    322.0,
+    276.0
+   ],
+   "height": 39.0,
+   "small_text": false,
+   "text": "1일차",
+   "text_key": "1일차",
+   "ocr_text": "1일차",
+   "confidence": 0.9996463656425476,
+   "field": "programs",
+   "field_group": "program",
+   "human_checked": false,
+   "tier": "A_clean",
+   "line_correct": true,
+   "fields": [
+    "programs"
+   ],
+   "match_kind": "single",
+   "value_cer": 0.0,
+   "gold_value": "1일차",
+   "extra_chars": 0,
+   "source": "auto_align",
+   "review_status": "unreviewed"
+  }
+ ]
+}
